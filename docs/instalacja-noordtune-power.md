@@ -238,7 +238,39 @@ Sprawdź w przeglądarce:
 - Sitemap: `https://noordtune.nl/power/sitemap.xml`
 - Robots: `https://noordtune.nl/power/robots.txt`
 
-## 12. Najczęstsze problemy
+## 12. Błąd Vercel `FALLBACK_BODY_TOO_LARGE`
+
+Jeśli Vercel pokazuje błąd:
+
+```text
+Oversized Incremental Static Regeneration (ISR) page: 0/sitemap.xml.fallback
+FALLBACK_BODY_TOO_LARGE
+```
+
+nie ustawiaj tego jako stałego rozwiązania:
+
+```bash
+VERCEL_BYPASS_FALLBACK_OVERSIZED_ERROR=1
+```
+
+Ta zmienna tylko omija błąd, ale zostawia za duży sitemap. Poprawne rozwiązanie jest już w projekcie: `/sitemap.xml` działa jako mały indeks sitemap, a duża baza pojazdów jest podzielona na mniejsze pliki:
+
+```text
+/sitemaps/core.xml
+/sitemaps/vehicles-0.xml
+/sitemaps/vehicles-1.xml
+...
+```
+
+Po wdrożeniu sprawdź:
+
+```text
+https://noordtune.nl/power/sitemap.xml
+https://noordtune.nl/power/sitemaps/core.xml
+https://noordtune.nl/power/sitemaps/vehicles-0.xml
+```
+
+## 13. Najczęstsze problemy
 
 Jeśli obrazy lub linki mają zły adres:
 
@@ -256,7 +288,7 @@ Jeśli WordPress przechwytuje `/power`:
 - Wyklucz `/power/*` z routingu WordPress.
 - Ustaw reverse proxy przed WordPressem, np. Cloudflare Worker albo Nginx.
 
-## 13. Rekomendacja końcowa
+## 14. Rekomendacja końcowa
 
 Najczystsza konfiguracja produkcyjna:
 

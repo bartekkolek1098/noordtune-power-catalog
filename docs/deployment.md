@@ -47,6 +47,16 @@ The catalog can run as a separate high-performance Next.js/Vercel system while W
 
 Cloudflare Worker, Nginx, Apache `ProxyPass`, or a managed host path proxy can all handle this. If the WordPress host cannot proxy a subpath reliably, use `power.noordtune.nl` as the production domain and add a WordPress navigation link.
 
+## Vercel Sitemap Size
+
+The catalog uses a large generated vehicle database, so `/sitemap.xml` is implemented as a sitemap index. It points to smaller files such as `/sitemaps/core.xml` and `/sitemaps/vehicles-0.xml`.
+
+Do not use `VERCEL_BYPASS_FALLBACK_OVERSIZED_ERROR` as the normal fix for sitemap failures. If Vercel reports `FALLBACK_BODY_TOO_LARGE`, verify that the deployed branch contains the split sitemap routes:
+
+- `src/app/sitemap.xml/route.ts`
+- `src/app/sitemaps/[file]/route.ts`
+- `src/lib/sitemap-xml.ts`
+
 ## RDW Token
 
 Create a free Socrata/RDW app token from the RDW Open Data profile page and store it as `RDW_APP_TOKEN`.
