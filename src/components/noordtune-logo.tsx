@@ -23,12 +23,11 @@ export function NoordTuneLogo({
     >
       <Image
         alt={`NoordTune.nl - ${tagline}`}
-        className="object-contain object-left"
+        className="object-contain object-left mix-blend-screen"
         fill
         priority={!compact}
         sizes={compact ? "166px" : "(min-width: 768px) 250px, 202px"}
-        src={assetPath("/brand/v8/header-logo-no-bg.svg")}
-        unoptimized
+        src={assetPath("/brand/v8/header-logo-dark.png")}
       />
     </span>
   );
