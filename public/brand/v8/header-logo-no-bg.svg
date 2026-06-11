@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" width="520" height="150">
+  <defs>
+    <filter id="remove-black" color-interpolation-filters="sRGB">
+      <feColorMatrix
+        in="SourceGraphic"
+        type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                1.5 1.5 1.5 0 -0.08"
+      />
+    </filter>
+  </defs>
+  <image
+    href="header-logo-dark.png"
+    width="520"
+    height="150"
+    preserveAspectRatio="xMinYMid meet"
+    filter="url(#remove-black)"
+  />
+</svg>
