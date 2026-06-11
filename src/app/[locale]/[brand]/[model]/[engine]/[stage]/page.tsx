@@ -10,6 +10,7 @@ import {
 import {homeVisualCopy} from "@/data/homepage";
 import {LanguageSwitcher} from "@/components/language-switcher";
 import {NoordTuneLogo} from "@/components/noordtune-logo";
+import {VehicleContactCta} from "@/components/vehicle-contact-cta";
 import {VehicleDetail} from "@/components/vehicle-detail";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
@@ -195,6 +196,12 @@ export default async function VehicleStagePage({params}: PageProps) {
           vehicle={vehicle}
         />
       </section>
+      <VehicleContactCta
+        locale={safeLocale}
+        quoteLabel={t("requestQuote")}
+        vehicleLabel={`${vehicle.brand} ${vehicle.model} ${vehicle.engine}`}
+        whatsappLabel={t("whatsapp")}
+      />
     </main>
   );
 }
