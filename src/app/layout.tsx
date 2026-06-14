@@ -31,6 +31,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="nl" suppressHydrationWarning>
       <body>
+        {/* Root layout cannot access [locale] params without a larger app restructure. */}
         <script
           dangerouslySetInnerHTML={{
             __html:

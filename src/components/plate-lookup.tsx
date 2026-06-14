@@ -476,7 +476,7 @@ const lookupRuntimeCopy: Record<
     cacheMiss: "nowe sprawdzenie RDW",
     exactMatch: "NoordTune potwierdzi dokładny ECU i wariant silnika w wycenie.",
     networkError: "Nie udało się załadować wyszukiwania RDW.",
-    requestQuote: "Popros o wycene",
+    requestQuote: "Poproś o wycenę",
     unknownFuel: "Paliwo nieznane",
     indicativeRequirement: "Wymagane dopasowanie katalogu",
     hardwareRequirement: "Wymagana kontrola hardware",
@@ -559,7 +559,9 @@ function createLookupQuoteMessage({
   vehiclePower?: string;
 }) {
   const optionText = options.length > 0 ? options.join(", ") : "-";
-  const engineLine = vehiclePower ? `\n${locale === "en" ? "Power" : locale === "pl" ? "Moc" : "Vermogen"}: ${vehiclePower}` : "";
+  const engineLabel =
+    locale === "en" ? "Power" : locale === "pl" ? "Moc" : "Vermogen";
+  const engineLine = vehiclePower ? `\n${engineLabel}: ${vehiclePower}` : "";
 
   if (locale === "en") {
     return `Hello NoordTune, I would like a quote for this car:
@@ -573,14 +575,14 @@ Could you check this and advise?`;
   }
 
   if (locale === "pl") {
-    return `Czesc NoordTune, prosze o wycene tego auta:
-Jezyk: Polski
+    return `Cześć NoordTune, proszę o wycenę tego auta:
+Język: Polski
 Rejestracja: ${plate}
 Auto: ${vehicle}${engineLine}
 Stage: ${stage}
 Opcje dodatkowe: ${optionText}
 Orientacyjna cena: ${price}
-Prosze o sprawdzenie i porade.`;
+Proszę o sprawdzenie i poradę.`;
   }
 
   return `Hallo NoordTune, ik wil graag een offerte voor deze auto:

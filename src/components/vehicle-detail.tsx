@@ -199,7 +199,7 @@ export function VehicleDetail({
           <div className="grid gap-2">
             {vehicle.stages.map((stage, index) => (
               <button
-              className={`rounded-[3px] border p-3 text-left transition ${
+                className={`rounded-[3px] border p-3 text-left transition ${
                   stageIndex === index
                     ? "border-primary bg-primary/15"
                     : "border-white/10 bg-white/[0.035] hover:border-primary/50"
@@ -320,14 +320,14 @@ Could you check this and advise?`;
   }
 
   if (locale === "pl") {
-    return `Czesc NoordTune, prosze o wycene tego auta:
-Jezyk: Polski
+    return `Cześć NoordTune, proszę o wycenę tego auta:
+Język: Polski
 Auto: ${vehicle}
 Moc: ${vehiclePower}
 Stage: ${stage}
 Opcje dodatkowe: ${optionText}
 Orientacyjna cena: ${price}
-Prosze o sprawdzenie i porade.`;
+Proszę o sprawdzenie i poradę.`;
   }
 
   return `Hallo NoordTune, ik wil graag een offerte voor deze auto:

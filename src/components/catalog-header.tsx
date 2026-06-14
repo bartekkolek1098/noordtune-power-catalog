@@ -32,7 +32,7 @@ export function CatalogHeader({
           href={mainLocaleHref(locale)}
           rel="noreferrer"
         >
-          <NoordTuneLogo className="h-[54px] w-[188px] sm:h-[64px] sm:w-[222px] xl:h-[70px] xl:w-[244px]" />
+          <NoordTuneLogo className="h-[46px] w-[160px] min-[390px]:h-[52px] min-[390px]:w-[180px] sm:h-[64px] sm:w-[222px] xl:h-[70px] xl:w-[244px]" />
         </a>
 
         <CatalogNav

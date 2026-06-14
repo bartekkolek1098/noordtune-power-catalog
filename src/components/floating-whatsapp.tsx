@@ -6,7 +6,7 @@ import {cn} from "@/lib/utils";
 const labels: Record<Locale, string> = {
   nl: "Vraag offerte via WhatsApp",
   en: "Request a quote on WhatsApp",
-  pl: "Popros o wycene przez WhatsApp"
+  pl: "Poproś o wycenę przez WhatsApp"
 };
 
 export function FloatingWhatsappButton({
