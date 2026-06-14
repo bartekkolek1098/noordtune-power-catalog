@@ -19,14 +19,18 @@ const vehicleMessages: Record<Locale, (vehicle: string) => string> = {
 
 export function whatsappHref({
   locale,
+  message,
   vehicleLabel
 }: {
   locale: Locale;
+  message?: string;
   vehicleLabel?: string;
 }) {
-  const message = vehicleLabel
+  const text = message
+    ? message
+    : vehicleLabel
     ? vehicleMessages[locale](vehicleLabel)
     : genericMessages[locale];
 
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 }

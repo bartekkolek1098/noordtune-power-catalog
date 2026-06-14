@@ -7,6 +7,7 @@ import {
   Check,
   ChevronRight,
   Loader2,
+  MessageCircle,
   Search,
   ShieldCheck
 } from "lucide-react";
@@ -17,6 +18,7 @@ import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {sitePath} from "@/lib/site-path";
+import {whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
@@ -41,6 +43,7 @@ type LookupCopy = {
   torque: string;
   options: string;
   viewDetails: string;
+  quoteForCar: string;
 };
 
 type LookupError = {
@@ -86,11 +89,34 @@ export function PlateLookup({
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
   const powerUnit = locale === "en" ? "hp" : locale === "pl" ? "KM" : "pk";
   const localCopy = lookupRuntimeCopy[locale];
+  const quoteVehicleLabel = match
+    ? `${match.brand} ${match.model} ${match.engine}`
+    : result
+      ? `${result.vehicle.make} ${result.vehicle.model}`.trim()
+      : undefined;
   const optionsTotal = selectedOptions.reduce((total, id) => {
     const option = serviceOptions.find((item) => item.id === id);
     return total + (option?.price ?? 0);
   }, 0);
   const total = (selectedStage?.price ?? 0) + optionsTotal;
+  const selectedOptionLabels = availableOptions
+    .filter((option) => selectedOptions.includes(option.id))
+    .map((option) => option.name);
+  const lookupQuoteMessage =
+    result && selectedStage
+      ? createLookupQuoteMessage({
+          locale,
+          options: selectedOptionLabels,
+          plate: result.vehicle.plate,
+          price: formatCurrency(total, localeCode),
+          stage: selectedStage.name,
+          vehicle: quoteVehicleLabel ?? `${result.vehicle.make} ${result.vehicle.model}`.trim(),
+          vehiclePower:
+            result.vehicle.engine.powerHp
+              ? `${result.vehicle.engine.powerHp} ${powerUnit}`
+              : undefined
+        })
+      : undefined;
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -131,7 +157,7 @@ export function PlateLookup({
   }
 
   return (
-    <Card className="carbon-panel border-primary/20 shadow-glow">
+    <Card className="panel-edge carbon-panel border-primary/20 shadow-glow">
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between gap-4">
           <div>
@@ -163,7 +189,7 @@ export function PlateLookup({
                 value={plate}
               />
             </div>
-            <Button className="h-14 px-6" disabled={loading} type="submit">
+            <Button className="h-14 rounded-[3px] px-6 font-black uppercase" disabled={loading} type="submit">
               {loading ? (
                 <Loader2 className="h-4 w-4 animate-spin" />
               ) : (
@@ -256,6 +282,20 @@ export function PlateLookup({
                   <div className="mt-2 text-3xl font-black">
                     {formatCurrency(total, localeCode)}
                   </div>
+                  <Button asChild className="mt-4 h-12 w-full rounded-[3px] text-sm font-black uppercase shadow-[0_0_32px_rgba(227,6,19,.38)]">
+                    <a
+                      href={whatsappHref({
+                        locale,
+                        message: lookupQuoteMessage,
+                        vehicleLabel: quoteVehicleLabel
+                      })}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      {text.quoteForCar}
+                    </a>
+                  </Button>
                 </div>
               </div>
 
@@ -369,6 +409,7 @@ const lookupRuntimeCopy: Record<
     cacheMiss: string;
     exactMatch: string;
     networkError: string;
+    requestQuote: string;
     unknownFuel: string;
     indicativeRequirement: string;
     hardwareRequirement: string;
@@ -383,6 +424,7 @@ const lookupRuntimeCopy: Record<
     cacheMiss: "nieuwe RDW check",
     exactMatch: "NoordTune bevestigt de exacte ECU en motorvariant in de offerte.",
     networkError: "RDW lookup kon niet worden geladen.",
+    requestQuote: "Vraag offerte aan",
     unknownFuel: "Brandstof onbekend",
     indicativeRequirement: "Catalogusmatch vereist",
     hardwareRequirement: "Hardwarecontrole vereist",
@@ -408,6 +450,7 @@ const lookupRuntimeCopy: Record<
     cacheMiss: "fresh RDW check",
     exactMatch: "NoordTune confirms the exact ECU and engine variant in the quote.",
     networkError: "RDW lookup could not be loaded.",
+    requestQuote: "Request quote",
     unknownFuel: "Fuel unknown",
     indicativeRequirement: "Catalog match required",
     hardwareRequirement: "Hardware check required",
@@ -433,6 +476,7 @@ const lookupRuntimeCopy: Record<
     cacheMiss: "nowe sprawdzenie RDW",
     exactMatch: "NoordTune potwierdzi dokładny ECU i wariant silnika w wycenie.",
     networkError: "Nie udało się załadować wyszukiwania RDW.",
+    requestQuote: "Popros o wycene",
     unknownFuel: "Paliwo nieznane",
     indicativeRequirement: "Wymagane dopasowanie katalogu",
     hardwareRequirement: "Wymagana kontrola hardware",
@@ -495,4 +539,56 @@ function estimateStockTorque(result: RdwLookupResult) {
   }
 
   return Math.round(power * 1.55);
+}
+
+function createLookupQuoteMessage({
+  locale,
+  options,
+  plate,
+  price,
+  stage,
+  vehicle,
+  vehiclePower
+}: {
+  locale: Locale;
+  options: string[];
+  plate: string;
+  price: string;
+  stage: string;
+  vehicle: string;
+  vehiclePower?: string;
+}) {
+  const optionText = options.length > 0 ? options.join(", ") : "-";
+  const engineLine = vehiclePower ? `\n${locale === "en" ? "Power" : locale === "pl" ? "Moc" : "Vermogen"}: ${vehiclePower}` : "";
+
+  if (locale === "en") {
+    return `Hello NoordTune, I would like a quote for this car:
+Language: English
+Plate: ${plate}
+Car: ${vehicle}${engineLine}
+Stage: ${stage}
+Extra options: ${optionText}
+Estimated price: ${price}
+Could you check this and advise?`;
+  }
+
+  if (locale === "pl") {
+    return `Czesc NoordTune, prosze o wycene tego auta:
+Jezyk: Polski
+Rejestracja: ${plate}
+Auto: ${vehicle}${engineLine}
+Stage: ${stage}
+Opcje dodatkowe: ${optionText}
+Orientacyjna cena: ${price}
+Prosze o sprawdzenie i porade.`;
+  }
+
+  return `Hallo NoordTune, ik wil graag een offerte voor deze auto:
+Taal: Nederlands
+Kenteken: ${plate}
+Auto: ${vehicle}${engineLine}
+Stage: ${stage}
+Extra opties: ${optionText}
+Indicatie: ${price}
+Kunnen jullie dit controleren en advies geven?`;
 }

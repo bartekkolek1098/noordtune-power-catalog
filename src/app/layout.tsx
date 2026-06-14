@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://noordtune.nl"
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://power.noordtune.nl"
   ),
   title: {
     default: "NoordTune Power Catalog",
@@ -30,7 +30,15 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="nl" suppressHydrationWarning>
-      <body>{children}</body>
+      <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(()=>{const l=location.pathname.split('/')[1];if(['nl','en','pl'].includes(l))document.documentElement.lang=l;})()"
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

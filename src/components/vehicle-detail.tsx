@@ -7,6 +7,7 @@ import {serviceOptions} from "@/data/catalog";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
+import {whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {PowerChart} from "@/components/power-chart";
@@ -73,6 +74,9 @@ export function VehicleDetail({
   const total = selectedStage.price + optionsTotal;
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
   const powerUnit = locale === "en" ? "hp" : locale === "pl" ? "KM" : "pk";
+  const selectedOptionLabels = availableOptions
+    .filter((option) => selectedOptions.includes(option.id))
+    .map((option) => option.name);
   const localizedPackage =
     selectedStage.name === "Stage 1"
       ? text.stage1Package
@@ -85,9 +89,22 @@ export function VehicleDetail({
       : selectedStage.name === "Stage 2"
         ? text.stage2Requirements
         : text.stage3Requirements;
+  const vehicleLabel = `${vehicle.brand} ${vehicle.model} ${vehicle.engine}`;
+  const quoteHref = whatsappHref({
+    locale,
+    message: createVehicleQuoteMessage({
+      locale,
+      options: selectedOptionLabels,
+      price: formatCurrency(total, localeCode),
+      stage: selectedStage.name,
+      vehicle: `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${vehicle.version}`,
+      vehiclePower: `${vehicle.stockPowerHp} ${powerUnit} -> ${selectedStage.powerHp} ${powerUnit}`
+    }),
+    vehicleLabel
+  });
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1fr_420px]">
+    <div className="grid gap-6 pb-24 lg:grid-cols-[1fr_420px] lg:pb-0">
       <div className="space-y-6">
         <div className="grid gap-4 md:grid-cols-3">
           {[
@@ -159,7 +176,7 @@ export function VehicleDetail({
         </div>
       </div>
 
-      <aside className="space-y-4 rounded-lg border border-primary/30 bg-black/70 p-5 shadow-[0_0_70px_rgba(226,0,15,.15)]">
+      <aside className="space-y-4 rounded-lg border border-primary/40 bg-black/70 p-5 shadow-[0_0_80px_rgba(226,0,15,.2)]">
         <div>
           <div className="text-sm font-bold uppercase tracking-[0.18em] text-primary">
             {text.calculator}
@@ -167,6 +184,12 @@ export function VehicleDetail({
           <div className="mt-2 text-4xl font-black">
             {text.fromPrice} {formatCurrency(total, localeCode)}
           </div>
+          <Button asChild className="mt-4 h-14 w-full rounded-[3px] text-base font-black uppercase shadow-[0_0_30px_rgba(227,6,19,.38)]">
+            <a href={quoteHref} rel="noreferrer" target="_blank">
+              <MessageCircle className="h-5 w-5" />
+              {text.requestQuote}
+            </a>
+          </Button>
         </div>
 
         <div>
@@ -176,7 +199,7 @@ export function VehicleDetail({
           <div className="grid gap-2">
             {vehicle.stages.map((stage, index) => (
               <button
-                className={`rounded-lg border p-3 text-left transition ${
+              className={`rounded-[3px] border p-3 text-left transition ${
                   stageIndex === index
                     ? "border-primary bg-primary/15"
                     : "border-white/10 bg-white/[0.035] hover:border-primary/50"
@@ -206,7 +229,7 @@ export function VehicleDetail({
           <div className="space-y-2">
             {availableOptions.map((option) => (
               <label
-                className="flex cursor-pointer items-start justify-between gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-3 text-sm"
+                className="flex cursor-pointer items-start justify-between gap-3 rounded-[3px] border border-white/10 bg-white/[0.035] p-3 text-sm"
                 key={option.id}
               >
                 <span>
@@ -237,14 +260,82 @@ export function VehicleDetail({
           </div>
         </div>
 
-        <Button asChild className="h-12 w-full">
-          <a href="https://wa.me/31685759600">
+        <Button asChild className="h-12 w-full rounded-[3px] font-black uppercase" variant="outline">
+          <a href={quoteHref} rel="noreferrer" target="_blank">
             <MessageCircle className="h-4 w-4" />
             {text.whatsapp}
           </a>
         </Button>
         <p className="text-xs leading-5 text-muted-foreground">{text.disclaimer}</p>
       </aside>
+
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-primary/30 bg-black/92 p-3 shadow-[0_-18px_50px_rgba(0,0,0,.62)] backdrop-blur lg:hidden">
+        <div className="container grid grid-cols-[1fr_auto] gap-3">
+          <Button asChild className="h-12 text-sm shadow-[0_0_26px_rgba(226,0,15,.32)]">
+            <a href={quoteHref} rel="noreferrer" target="_blank">
+              {text.requestQuote}
+            </a>
+          </Button>
+          <Button
+            asChild
+            className="h-12 w-12 border-[#25d366]/50 bg-[#25d366] p-0 text-white hover:bg-[#1fbd5a]"
+            variant="outline"
+          >
+            <a aria-label={text.whatsapp} href={quoteHref} rel="noreferrer" target="_blank">
+              <MessageCircle className="h-5 w-5" />
+            </a>
+          </Button>
+        </div>
+      </div>
     </div>
   );
+}
+
+function createVehicleQuoteMessage({
+  locale,
+  options,
+  price,
+  stage,
+  vehicle,
+  vehiclePower
+}: {
+  locale: Locale;
+  options: string[];
+  price: string;
+  stage: string;
+  vehicle: string;
+  vehiclePower: string;
+}) {
+  const optionText = options.length > 0 ? options.join(", ") : "-";
+
+  if (locale === "en") {
+    return `Hello NoordTune, I would like a quote for this car:
+Language: English
+Car: ${vehicle}
+Power: ${vehiclePower}
+Stage: ${stage}
+Extra options: ${optionText}
+Estimated price: ${price}
+Could you check this and advise?`;
+  }
+
+  if (locale === "pl") {
+    return `Czesc NoordTune, prosze o wycene tego auta:
+Jezyk: Polski
+Auto: ${vehicle}
+Moc: ${vehiclePower}
+Stage: ${stage}
+Opcje dodatkowe: ${optionText}
+Orientacyjna cena: ${price}
+Prosze o sprawdzenie i porade.`;
+  }
+
+  return `Hallo NoordTune, ik wil graag een offerte voor deze auto:
+Taal: Nederlands
+Auto: ${vehicle}
+Vermogen: ${vehiclePower}
+Stage: ${stage}
+Extra opties: ${optionText}
+Indicatie: ${price}
+Kunnen jullie dit controleren en advies geven?`;
 }

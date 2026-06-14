@@ -37,7 +37,8 @@
     "power": "Vermogen",
     "torque": "Koppel",
     "options": "Opties",
-    "viewDetails": "Bekijk tuning pagina"
+    "viewDetails": "Bekijk tuning pagina",
+    "quoteForCar": "Vraag offerte voor deze auto"
   },
   "ManualSelector": {
     "title": "Kies je auto handmatig",
