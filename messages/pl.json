@@ -37,7 +37,8 @@
     "power": "Moc",
     "torque": "Moment",
     "options": "Opcje",
-    "viewDetails": "Otwórz stronę tuningu"
+    "viewDetails": "Otwórz stronę tuningu",
+    "quoteForCar": "Zapytaj o wycenę tego auta"
   },
   "ManualSelector": {
     "title": "Wybierz auto ręcznie",

@@ -37,7 +37,8 @@
     "power": "Power",
     "torque": "Torque",
     "options": "Options",
-    "viewDetails": "Open tuning page"
+    "viewDetails": "Open tuning page",
+    "quoteForCar": "Request quote for this car"
   },
   "ManualSelector": {
     "title": "Choose your car manually",

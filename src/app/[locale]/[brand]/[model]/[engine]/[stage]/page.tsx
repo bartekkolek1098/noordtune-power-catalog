@@ -7,14 +7,14 @@ import {
   getVehicleSeoSlugs,
   stageSlugMap
 } from "@/data/catalog";
-import {homeVisualCopy} from "@/data/homepage";
-import {LanguageSwitcher} from "@/components/language-switcher";
-import {NoordTuneLogo} from "@/components/noordtune-logo";
-import {VehicleContactCta} from "@/components/vehicle-contact-cta";
+import {CatalogFooter} from "@/components/catalog-footer";
+import {CatalogHeader} from "@/components/catalog-header";
+import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {VehicleDetail} from "@/components/vehicle-detail";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
+import {catalogHref, chiptuningHref, mainLocaleHref} from "@/lib/noordtune-links";
 import {assetPath, sitePath} from "@/lib/site-path";
 
 type PageProps = {
@@ -98,10 +98,16 @@ export default async function VehicleStagePage({params}: PageProps) {
 
   const safeLocale = locale as Locale;
   const t = await getTranslations({locale: safeLocale, namespace: "Vehicle"});
-  const visualCopy = homeVisualCopy[safeLocale];
   const powerUnit = safeLocale === "en" ? "hp" : safeLocale === "pl" ? "KM" : "pk";
   const slugs = getVehicleSeoSlugs(vehicle);
   const stagePath = `/${slugs.brand}/${slugs.model}/${slugs.engine}/${stage}`;
+  const catalogLabel = safeLocale === "en" ? "Power Catalog" : safeLocale === "pl" ? "Katalog mocy" : "Catalogus";
+  const chiptuningLabel =
+    safeLocale === "en"
+      ? "Main chiptuning page"
+      : safeLocale === "pl"
+        ? "Strona chiptuningu"
+        : "Chiptuning hoofdsite";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Vehicle",
@@ -128,6 +134,7 @@ export default async function VehicleStagePage({params}: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
       />
+      <CatalogHeader locale={safeLocale} languagePath={stagePath} />
       <section className="relative overflow-hidden border-b border-white/10">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -136,23 +143,41 @@ export default async function VehicleStagePage({params}: PageProps) {
           }}
         />
         <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(226,0,15,.22),transparent_42%,rgba(255,255,255,.08))]" />
-        <header className="container relative z-10 flex flex-col items-start gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
-          <a aria-label="NoordTune.nl" href={sitePath(`/${safeLocale}`)}>
-            <NoordTuneLogo tagline={visualCopy.footerTagline} />
-          </a>
-          <LanguageSwitcher locale={safeLocale} path={stagePath} />
-        </header>
         <div className="container relative z-10 pb-16 pt-8">
-          <Button asChild className="mb-8" variant="outline">
-            <a href={sitePath(`/${safeLocale}/vehicles/${vehicle.id}`)}>
+          <nav className="mb-6 flex flex-wrap items-center gap-2 text-xs font-bold uppercase text-muted-foreground">
+            <a className="hover:text-primary" href={mainLocaleHref(safeLocale)}>
+              NoordTune.nl
+            </a>
+            <span>/</span>
+            <a className="hover:text-primary" href={catalogHref(safeLocale)}>
+              {catalogLabel}
+            </a>
+            <span>/</span>
+            <a
+              className="hover:text-primary"
+              href={sitePath(`/${safeLocale}/vehicles/${vehicle.id}`)}
+            >
               {vehicle.brand} {vehicle.model}
             </a>
-          </Button>
+            <span>/</span>
+            <span className="text-white">{stageName}</span>
+          </nav>
+
+          <div className="mb-8 flex flex-wrap gap-3">
+            <Button asChild className="rounded-[3px]" variant="outline">
+              <a href={sitePath(`/${safeLocale}/vehicles/${vehicle.id}`)}>
+                {vehicle.brand} {vehicle.model}
+              </a>
+            </Button>
+            <Button asChild className="rounded-[3px]" variant="outline">
+              <a href={chiptuningHref(safeLocale)}>{chiptuningLabel}</a>
+            </Button>
+          </div>
           <div className="max-w-4xl">
             <Badge className="mb-4 border-primary/30 bg-primary/15 text-primary">
               {stageName} {t("fromPrice")} €{selectedStage.price}
             </Badge>
-            <h1 className="text-5xl font-black uppercase leading-none tracking-normal md:text-7xl">
+            <h1 className="racing-title text-5xl leading-none md:text-7xl">
               {vehicle.brand} {vehicle.model} {stageName}
             </h1>
             <p className="mt-4 text-2xl font-bold text-slate-100 md:text-3xl">
@@ -196,11 +221,11 @@ export default async function VehicleStagePage({params}: PageProps) {
           vehicle={vehicle}
         />
       </section>
-      <VehicleContactCta
+      <CatalogFooter locale={safeLocale} />
+      <FloatingWhatsappButton
         locale={safeLocale}
-        quoteLabel={t("requestQuote")}
+        mobileCtaOffset
         vehicleLabel={`${vehicle.brand} ${vehicle.model} ${vehicle.engine}`}
-        whatsappLabel={t("whatsapp")}
       />
     </main>
   );

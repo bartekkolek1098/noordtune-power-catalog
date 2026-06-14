@@ -9,9 +9,6 @@ import {
   Euro,
   Gauge,
   Info,
-  MapPin,
-  MessageCircle,
-  Phone,
   Settings2,
   ShieldCheck,
   SlidersHorizontal,
@@ -24,9 +21,10 @@ import {
   performanceBanners,
   popularCars
 } from "@/data/homepage";
-import {LanguageSwitcher} from "@/components/language-switcher";
+import {CatalogFooter} from "@/components/catalog-footer";
+import {CatalogHeader} from "@/components/catalog-header";
+import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {ManualSelector} from "@/components/manual-selector";
-import {NoordTuneLogo} from "@/components/noordtune-logo";
 import {PlateLookup} from "@/components/plate-lookup";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
@@ -34,20 +32,11 @@ import {isLocale, routing, type Locale} from "@/i18n/routing";
 import {localizedServiceOptions} from "@/lib/service-copy";
 import {assetPath, sitePath} from "@/lib/site-path";
 import {formatCurrency} from "@/lib/utils";
+import {whatsappHref} from "@/lib/whatsapp";
 
 type PageProps = {
   params: Promise<{locale: string}>;
 };
-
-const navHrefs = [
-  "#top",
-  "#manual-selector",
-  "#services",
-  "#how",
-  "#results",
-  "#about",
-  "#quote"
-];
 
 export async function generateMetadata({params}: PageProps) {
   const {locale} = await params;
@@ -87,6 +76,27 @@ export default async function HomePage({params}: PageProps) {
     .map((id) => services.find((option) => option.id === id))
     .filter(Boolean)
     .slice(0, 8);
+  const manualText = {
+    title: manual("title"),
+    subtitle: manual("subtitle"),
+    quickSearch: manual("quickSearch"),
+    quickPlaceholder: manual("quickPlaceholder"),
+    popular: manual("popular"),
+    brand: manual("brand"),
+    brandSearch: manual("brandSearch"),
+    model: manual("model"),
+    year: manual("year"),
+    engine: manual("engine"),
+    choose: manual("choose"),
+    selectBrand: manual("selectBrand"),
+    selectModel: manual("selectModel"),
+    selectYear: manual("selectYear"),
+    selectEngine: manual("selectEngine"),
+    noResults: manual("noResults"),
+    manualPath: manual("manualPath"),
+    rdwPrimary: manual("rdwPrimary"),
+    from: t("from")
+  };
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -110,7 +120,9 @@ export default async function HomePage({params}: PageProps) {
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
       />
 
-      <section className="relative min-h-screen border-b border-white/10">
+      <CatalogHeader locale={safeLocale} />
+
+      <section className="relative border-b border-white/10">
         <Image
           alt="Dark performance car in a tuning workshop"
           className="absolute inset-0 object-cover object-center opacity-72"
@@ -126,42 +138,13 @@ export default async function HomePage({params}: PageProps) {
         <div className="absolute right-0 top-24 hidden h-[34rem] w-[58%] skew-y-[-7deg] bg-[repeating-linear-gradient(100deg,transparent_0_28px,rgba(226,0,15,.18)_30px,transparent_33px)] opacity-45 lg:block" />
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#050505] to-transparent" />
 
-        <header className="container relative z-10 flex flex-col gap-4 border-b border-white/10 py-4 lg:flex-row lg:items-center lg:justify-between">
-          <a aria-label="NoordTune.nl" href={sitePath(`/${safeLocale}`)}>
-            <NoordTuneLogo tagline={copy.footerTagline} />
-          </a>
-          <nav className="flex flex-wrap items-center gap-x-7 gap-y-3 text-[0.72rem] font-black uppercase tracking-normal text-white">
-            {copy.nav.map((item, index) => (
-              <a
-                className={`transition hover:text-primary ${
-                  index === 1 ? "text-primary" : "text-white"
-                }`}
-                href={navHrefs[index]}
-                key={item}
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-          <div className="flex flex-wrap items-center gap-3">
-            <LanguageSwitcher locale={safeLocale} />
-            <a
-              className="inline-flex h-11 items-center gap-2 rounded-md border border-white/25 bg-black/60 px-4 text-sm font-semibold text-white transition hover:border-primary hover:text-primary"
-              href="https://wa.me/31685759600"
-            >
-              <MessageCircle className="h-4 w-4" />
-              {copy.phone}
-            </a>
-          </div>
-        </header>
-
         <div className="container relative z-10 pb-10 pt-10 lg:pt-14">
           <div className="grid gap-9 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
               <Badge className="mb-5 border-primary/30 bg-primary/10 text-primary">
                 {copy.heroKicker}
               </Badge>
-              <h1 className="max-w-3xl text-[2.65rem] font-black uppercase italic leading-[0.92] tracking-normal text-white sm:text-5xl md:text-7xl">
+              <h1 className="racing-title max-w-3xl text-[2.65rem] leading-[0.92] text-white sm:text-5xl md:text-7xl">
                 {copy.heroLineA}
                 <span className="block text-primary max-sm:text-[1.9rem] max-sm:leading-none max-sm:hyphens-auto">
                   {copy.heroLineB}
@@ -174,7 +157,7 @@ export default async function HomePage({params}: PageProps) {
             </div>
           </div>
 
-          <div className="mt-9 grid gap-4 rounded-lg border border-white/15 bg-black/78 p-4 shadow-[0_0_80px_rgba(0,0,0,.42)] backdrop-blur lg:grid-cols-[1.1fr_.9fr]">
+          <div className="panel-edge mt-9 grid gap-4 bg-black/78 p-4 shadow-[0_0_80px_rgba(0,0,0,.42)] backdrop-blur">
             <PlateLookup
               locale={safeLocale}
               text={{
@@ -194,31 +177,12 @@ export default async function HomePage({params}: PageProps) {
                 power: lookup("power"),
                 torque: lookup("torque"),
                 options: lookup("options"),
-                viewDetails: lookup("viewDetails")
+                viewDetails: lookup("viewDetails"),
+                quoteForCar: lookup("quoteForCar")
               }}
             />
 
-            <div className="rounded-lg border border-white/10 bg-white/[0.035] p-5">
-              <div className="text-lg font-black text-white">{copy.manualPanelTitle}</div>
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                {[manual("brand"), manual("model"), manual("year"), manual("engine")].map(
-                  (item) => (
-                    <a
-                      className="flex h-12 items-center justify-between rounded-md border border-white/15 bg-black/55 px-3 text-sm text-muted-foreground transition hover:border-primary hover:text-white"
-                      href="#manual-selector"
-                      key={item}
-                    >
-                      {item}
-                      <ChevronRight className="h-4 w-4 text-primary" />
-                    </a>
-                  )
-                )}
-              </div>
-              <p className="mt-5 flex gap-2 text-xs leading-5 text-muted-foreground">
-                <Info className="mt-0.5 h-4 w-4 shrink-0 text-white" />
-                {copy.manualPanelText}
-              </p>
-            </div>
+            <ManualSelector locale={safeLocale} text={manualText} />
           </div>
 
           <div className="mt-4 grid gap-4 lg:grid-cols-3">
@@ -405,8 +369,12 @@ export default async function HomePage({params}: PageProps) {
                 {formatCurrency(bmwExample.stages[0].price, localeCode)}
               </div>
               <div className="mt-5 grid gap-3">
-                <Button asChild className="h-12">
-                  <a href="https://wa.me/31685759600">
+                <Button asChild className="h-12 shadow-[0_0_30px_rgba(226,0,15,.35)]">
+                  <a
+                    href={whatsappHref({locale: safeLocale, vehicleLabel: "BMW 320d"})}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
                     {copy.requestQuote}
                     <ChevronRight className="h-4 w-4" />
                   </a>
@@ -426,31 +394,6 @@ export default async function HomePage({params}: PageProps) {
           </p>
         </section>
       ) : null}
-
-      <ManualSelector
-        locale={safeLocale}
-        text={{
-          title: manual("title"),
-          subtitle: manual("subtitle"),
-          quickSearch: manual("quickSearch"),
-          quickPlaceholder: manual("quickPlaceholder"),
-          popular: manual("popular"),
-          brand: manual("brand"),
-          brandSearch: manual("brandSearch"),
-          model: manual("model"),
-          year: manual("year"),
-          engine: manual("engine"),
-          choose: manual("choose"),
-          selectBrand: manual("selectBrand"),
-          selectModel: manual("selectModel"),
-          selectYear: manual("selectYear"),
-          selectEngine: manual("selectEngine"),
-          noResults: manual("noResults"),
-          manualPath: manual("manualPath"),
-          rdwPrimary: manual("rdwPrimary"),
-          from: t("from")
-        }}
-      />
 
       <section className="container py-14">
         <Badge className="mb-3 border-primary/30 bg-primary/10 text-primary">
@@ -578,57 +521,10 @@ export default async function HomePage({params}: PageProps) {
         </div>
       </section>
 
-      <footer className="container py-12" id="quote">
-        <div className="grid gap-7 border-b border-white/10 pb-8 lg:grid-cols-[1.1fr_.8fr_.7fr_.8fr]">
-          <div>
-            <div className="text-2xl font-black uppercase italic text-primary">
-              NoordTune.nl
-            </div>
-            <div className="mt-3 font-semibold text-white">{copy.footerTagline}</div>
-            <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">
-              {copy.footerText}
-            </p>
-          </div>
-          <div>
-            <div className="mb-3 font-black uppercase text-white">{copy.contactTitle}</div>
-            <div className="space-y-3 text-sm text-muted-foreground">
-              <a className="flex items-center gap-2 hover:text-primary" href="tel:+31685759600">
-                <Phone className="h-4 w-4 text-primary" />
-                +31 685 759 600
-              </a>
-              <a className="flex items-center gap-2 hover:text-primary" href="mailto:info@noordtune.nl">
-                <MessageCircle className="h-4 w-4 text-primary" />
-                info@noordtune.nl
-              </a>
-              <span className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-primary" />
-                {copy.location}
-              </span>
-            </div>
-          </div>
-          <div>
-            <div className="mb-3 font-black uppercase text-white">{copy.hoursTitle}</div>
-            <div className="space-y-2 text-sm text-muted-foreground">
-              <div>{copy.hoursWeek}</div>
-              <div>{copy.hoursSunday}</div>
-            </div>
-          </div>
-          <div>
-            <div className="mb-3 font-black uppercase text-white">{copy.areaTitle}</div>
-            <div className="rounded-lg border border-white/10 bg-black/55 p-4">
-              <MapPin className="h-8 w-8 text-primary" />
-              <div className="mt-3 text-sm text-muted-foreground">{copy.areaText}</div>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col gap-3 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <div>© 2026 NoordTune.nl - {copy.rights}</div>
-          <div className="flex gap-5">
-            <a href="#top" className="hover:text-primary">{copy.terms}</a>
-            <a href="#top" className="hover:text-primary">{copy.privacy}</a>
-          </div>
-        </div>
-      </footer>
+      <div id="quote">
+        <CatalogFooter locale={safeLocale} />
+      </div>
+      <FloatingWhatsappButton locale={safeLocale} />
     </main>
   );
 }

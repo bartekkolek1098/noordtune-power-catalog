@@ -50,7 +50,7 @@ const config: Config = {
         nord: {
           silver: "#d9dde3",
           blue: "#0087ff",
-          red: "#e2000f",
+          red: "#e30613",
           steel: "#8ea4b8",
           graphite: "#05070b"
         }
@@ -59,7 +59,7 @@ const config: Config = {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
       },
       boxShadow: {
-        glow: "0 0 44px rgba(226, 0, 15, 0.30)"
+        glow: "0 0 44px rgba(227, 6, 19, 0.30)"
       },
       backgroundImage: {
         carbon:

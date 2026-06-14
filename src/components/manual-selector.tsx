@@ -1,7 +1,7 @@
 "use client";
 
 import {CarFront, ChevronRight, Search, Star} from "lucide-react";
-import {useEffect, useMemo, useState} from "react";
+import {useMemo, useState} from "react";
 import type {Locale} from "@/i18n/routing";
 import {
   getBrands,
@@ -16,7 +16,6 @@ import {cn, formatCurrency} from "@/lib/utils";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
-import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 
 type ManualSelectorCopy = {
   title: string;
@@ -81,22 +80,6 @@ export function ManualSelector({
   const searchResults = useMemo(() => searchVehicles(query).slice(0, 4), [query]);
   const selectedVehicle = getVehicleById(vehicleId);
 
-  useEffect(() => {
-    const section = document.getElementById("manual-selector");
-    const manualLinks = Array.from(
-      document.querySelectorAll<HTMLAnchorElement>('a[href="#manual-selector"]')
-    );
-    const heroLink = manualLinks.find((link) => {
-      const grid = link.closest("div.grid");
-      return grid?.querySelectorAll('a[href="#manual-selector"]').length === 4;
-    });
-    const heroPanel = heroLink?.closest("div.grid")?.parentElement;
-
-    if (section && heroPanel && !heroPanel.contains(section)) {
-      heroPanel.replaceWith(section);
-    }
-  }, []);
-
   function resetAfterBrand(nextBrand: string) {
     setBrand(nextBrand);
     setModel("");
@@ -117,7 +100,7 @@ export function ManualSelector({
   return (
     <section
       className={cn(
-        "relative mx-auto w-full max-w-[920px] scroll-mt-24 overflow-hidden rounded-xl border border-primary/25 bg-[linear-gradient(135deg,rgba(14,14,14,.96),rgba(5,5,5,.9)_54%,rgba(226,0,15,.13))] p-4 shadow-[0_24px_90px_rgba(0,0,0,.48)] ring-1 ring-white/5 sm:p-5",
+        "panel-edge relative mx-auto w-full max-w-[920px] scroll-mt-24 overflow-hidden bg-[linear-gradient(135deg,rgba(14,14,14,.96),rgba(5,5,5,.9)_54%,rgba(227,6,19,.13))] p-4 shadow-[0_24px_90px_rgba(0,0,0,.48)] ring-1 ring-white/5 sm:p-5",
         className
       )}
       id="manual-selector"
@@ -131,7 +114,7 @@ export function ManualSelector({
             <Badge className="mb-3 w-fit border-primary/35 bg-primary/15 text-primary">
               {text.manualPath}
             </Badge>
-            <h2 className="text-2xl font-black uppercase italic leading-tight tracking-normal text-white md:text-[1.75rem]">
+            <h2 className="racing-title text-2xl leading-tight text-white md:text-[1.75rem]">
               {text.title}
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
@@ -167,7 +150,7 @@ export function ManualSelector({
             <div className="grid gap-2">
               {visibleVehicles.map((vehicle) => (
                 <a
-                  className="group grid gap-2 rounded-lg border border-white/10 bg-white/[0.035] p-3 transition hover:border-primary/50 hover:bg-primary/10"
+                className="group grid gap-2 rounded-[3px] border border-white/10 bg-white/[0.035] p-3 transition hover:border-primary/50 hover:bg-primary/10"
                   href={detailHref(vehicle.id)}
                   key={vehicle.id}
                 >
@@ -266,7 +249,7 @@ export function ManualSelector({
               </p>
             ) : null}
 
-            <div className="mt-4 rounded-lg border border-primary/20 bg-[linear-gradient(135deg,rgba(226,0,15,.14),rgba(255,255,255,.035))] p-4">
+            <div className="mt-4 rounded-[3px] border border-primary/20 bg-[linear-gradient(135deg,rgba(227,6,19,.14),rgba(255,255,255,.035))] p-4">
               {selectedVehicle ? (
                 <div className="grid gap-3 md:grid-cols-[1fr_auto] md:items-center">
                   <div>
@@ -278,7 +261,7 @@ export function ManualSelector({
                       {selectedVehicle.ecuType}
                     </p>
                   </div>
-                  <Button asChild className="shadow-[0_0_28px_rgba(226,0,15,.32)]">
+                  <Button asChild className="rounded-[3px] font-black uppercase shadow-[0_0_28px_rgba(227,6,19,.32)]">
                     <a href={detailHref(selectedVehicle.id)}>
                       {text.choose}
                       <ChevronRight className="h-4 w-4" />
@@ -295,7 +278,6 @@ export function ManualSelector({
           </div>
         </div>
       </div>
-      <FloatingWhatsappButton locale={locale} />
     </section>
   );
 }
@@ -321,7 +303,7 @@ function SelectBox({
         {label}
       </span>
       <select
-        className="h-12 w-full rounded-lg border border-white/10 bg-black/65 px-3 text-sm text-white outline-none transition focus:border-primary disabled:cursor-not-allowed disabled:opacity-45"
+        className="h-12 w-full rounded-[3px] border border-white/10 bg-black/65 px-3 text-sm text-white outline-none transition focus:border-primary disabled:cursor-not-allowed disabled:opacity-45"
         disabled={disabled}
         onChange={(event) => onChange(event.target.value)}
         value={value}
