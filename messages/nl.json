@@ -85,6 +85,21 @@
     "stage3Package": "Volledige maatwerk calibratie|Turbo- en brandstofupgrade afstemming|Meerdere logrondes en nazorg",
     "stage1Requirements": "Originele hardware",
     "stage2Requirements": "Hardware en onderhoudsstaat gecontroleerd",
-    "stage3Requirements": "Maatwerk hardware setup en uitgebreide logs"
+    "stage3Requirements": "Maatwerk hardware setup en uitgebreide logs",
+    "seo": {
+      "eyebrow": "NoordTune advies",
+      "title": "Voertuigspecifiek tuningadvies",
+      "checksTitle": "Wat controleren wij voor tuning?",
+      "checksText": "Voor een veilige afstelling kijken we naar ECU-type, motorvariant, foutcodes, onderhoudsstaat, transmissie en beschikbare logwaarden. Zo blijft de tuning afgestemd op de echte staat van de auto.",
+      "vehicleSpecificTitle": "Waarom zijn resultaten voertuigafhankelijk?",
+      "vehicleSpecificText": "Vermogen en koppel verschillen per bouwjaar, softwareversie, brandstofkwaliteit, kilometerstand en hardware. Daarom gebruikt NoordTune de catalogus als indicatie en bevestigen we de exacte mogelijkheden per voertuig.",
+      "stageChoiceTitle": "Stage 1 of Stage 2?",
+      "stageChoiceText": "Stage 1 is bedoeld voor originele hardware en dagelijks betrouwbaar gebruik. Stage 2 is pas logisch wanneer ondersteunende hardware en onderhoudsstaat geschikt zijn voor extra belasting.",
+      "quoteTitle": "Vraag een voertuigspecifieke offerte aan",
+      "quoteText": "Stuur je selectie via WhatsApp of vraag advies. We controleren de gekozen stage, opties en voertuiggegevens voordat we een definitieve offerte bevestigen.",
+      "quoteLink": "Vraag offerte aan",
+      "backToVehicle": "Terug naar voertuigoverzicht",
+      "mainChiptuning": "Meer over chiptuning"
+    }
   }
 }

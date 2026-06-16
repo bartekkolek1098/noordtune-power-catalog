@@ -1,22 +1,13 @@
 import type {MetadataRoute} from "next";
-import {sitePath} from "@/lib/site-path";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://noordtune.nl";
+import {absoluteUrl, POWER_SITE_URL} from "@/lib/site-url";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
-      disallow: [sitePath("/api/")]
+      allow: "/"
     },
-    sitemap: absoluteUrl("/sitemap.xml")
+    sitemap: absoluteUrl("/sitemap.xml"),
+    host: POWER_SITE_URL
   };
-}
-
-function absoluteUrl(path: string) {
-  const base = siteUrl.endsWith("/") ? siteUrl : `${siteUrl}/`;
-  const prefixedPath = sitePath(path).replace(/^\/+/, "");
-
-  return new URL(prefixedPath, base).toString();
 }
