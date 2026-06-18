@@ -30,7 +30,9 @@ import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
 import {localizedServiceOptions} from "@/lib/service-copy";
+import {stageSeoPath} from "@/lib/seo";
 import {assetPath, sitePath} from "@/lib/site-path";
+import {absoluteUrl} from "@/lib/site-url";
 import {formatCurrency} from "@/lib/utils";
 import {whatsappHref} from "@/lib/whatsapp";
 
@@ -47,12 +49,25 @@ export async function generateMetadata({params}: PageProps) {
     title: t("title"),
     description: t("intro"),
     alternates: {
-      canonical: sitePath(`/${safeLocale}`),
+      canonical: absoluteUrl(`/${safeLocale}`),
       languages: {
-        nl: sitePath("/nl"),
-        en: sitePath("/en"),
-        pl: sitePath("/pl")
+        nl: absoluteUrl("/nl"),
+        en: absoluteUrl("/en"),
+        pl: absoluteUrl("/pl")
       }
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("intro"),
+      url: absoluteUrl(`/${safeLocale}`),
+      siteName: "NoordTune Power Catalog",
+      locale: safeLocale === "en" ? "en_US" : safeLocale === "pl" ? "pl_PL" : "nl_NL",
+      type: "website"
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("intro")
     }
   };
 }
@@ -403,40 +418,55 @@ export default async function HomePage({params}: PageProps) {
           {t("featured")}
         </h2>
         <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-          {popularCars.map((car, index) => (
-            <a
-              className="group overflow-hidden rounded-lg border border-white/10 bg-black/70 shadow-[0_0_42px_rgba(0,0,0,.28)] transition hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_0_44px_rgba(226,0,15,.16)]"
-              href={sitePath(`/${safeLocale}/vehicles/${car.detailId}`)}
-              key={car.id}
-            >
-              <span className="relative block aspect-[4/3] overflow-hidden bg-black">
-                <Image
-                  alt={`${car.title} ${car.platform}`}
-                  className="object-cover transition duration-500 group-hover:scale-[1.05]"
-                  fill
-                  loading={index < 2 ? "eager" : "lazy"}
-                  quality={78}
-                  sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
-                  src={assetPath(car.image)}
-                />
-                <span className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(0,0,0,.88))]" />
-                <span className="absolute left-3 top-3 rounded-md border border-primary/30 bg-black/70 px-2 py-1 text-xs font-black uppercase text-primary">
-                  {car.platform}
-                </span>
-              </span>
-              <span className="block p-4">
-                <span className="block text-lg font-black uppercase leading-tight tracking-normal text-white">
-                  {car.title}
-                </span>
-                <span className="mt-2 block rounded-md border border-primary/20 bg-primary/10 px-3 py-2 text-sm font-semibold text-primary">
-                  {car.stageLine[safeLocale]}
-                </span>
-                <span className="mt-3 block text-sm leading-6 text-muted-foreground">
-                  {car.note[safeLocale]}
-                </span>
-              </span>
-            </a>
-          ))}
+          {popularCars.map((car, index) => {
+            const detailVehicle = getVehicleById(car.detailId);
+            const detailHref = sitePath(`/${safeLocale}/vehicles/${car.detailId}`);
+            const stageHref = detailVehicle?.stages[0]
+              ? sitePath(stageSeoPath(safeLocale, detailVehicle, detailVehicle.stages[0].name))
+              : detailHref;
+
+            return (
+              <article
+                className="group overflow-hidden rounded-lg border border-white/10 bg-black/70 shadow-[0_0_42px_rgba(0,0,0,.28)] transition hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_0_44px_rgba(226,0,15,.16)]"
+                key={car.id}
+              >
+                <a href={detailHref}>
+                  <span className="relative block aspect-[4/3] overflow-hidden bg-black">
+                    <Image
+                      alt={`${car.title} ${car.platform}`}
+                      className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                      fill
+                      loading={index < 2 ? "eager" : "lazy"}
+                      quality={78}
+                      sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
+                      src={assetPath(car.image)}
+                    />
+                    <span className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(0,0,0,.88))]" />
+                    <span className="absolute left-3 top-3 rounded-md border border-primary/30 bg-black/70 px-2 py-1 text-xs font-black uppercase text-primary">
+                      {car.platform}
+                    </span>
+                  </span>
+                </a>
+                <div className="p-4">
+                  <a
+                    className="block text-lg font-black uppercase leading-tight tracking-normal text-white transition hover:text-primary"
+                    href={detailHref}
+                  >
+                    {car.title}
+                  </a>
+                  <a
+                    className="mt-2 block rounded-md border border-primary/20 bg-primary/10 px-3 py-2 text-sm font-semibold text-primary transition hover:border-primary hover:bg-primary/15"
+                    href={stageHref}
+                  >
+                    {car.stageLine[safeLocale]}
+                  </a>
+                  <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                    {car.note[safeLocale]}
+                  </p>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
 

@@ -10,11 +10,23 @@ import {
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
+import {SeoInfoSections} from "@/components/seo-info-sections";
 import {VehicleDetail} from "@/components/vehicle-detail";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
 import {catalogHref, chiptuningHref, mainLocaleHref} from "@/lib/noordtune-links";
+import {
+  absoluteUrl,
+  alternateLanguageUrls,
+  areaServedJsonLd,
+  breadcrumbListJsonLd,
+  noordTuneProviderJsonLd,
+  stageMetadata,
+  stageSeoPath,
+  stageSeoPathWithoutLocale,
+  vehicleDetailPath
+} from "@/lib/seo";
 import {assetPath, sitePath} from "@/lib/site-path";
 
 type PageProps = {
@@ -49,29 +61,18 @@ export async function generateMetadata({params}: PageProps) {
   const vehicle = getVehicleBySeoSlugs(brand, model, engine);
   const stageName = getStageNameFromSlug(stage);
   const selectedStage = vehicle?.stages.find((item) => item.name === stageName);
-  const powerUnit = safeLocale === "en" ? "hp" : safeLocale === "pl" ? "KM" : "pk";
-  const fromWord = safeLocale === "en" ? "from" : safeLocale === "pl" ? "z" : "van";
-  const toWord = safeLocale === "en" ? "to" : safeLocale === "pl" ? "do" : "naar";
-  const andWord = safeLocale === "en" ? "and" : safeLocale === "pl" ? "i" : "en";
-  const priceFrom = safeLocale === "en" ? "from" : safeLocale === "pl" ? "od" : "vanaf";
 
   if (!vehicle || !stageName || !selectedStage) {
     return {};
   }
 
-  const slugs = getVehicleSeoSlugs(vehicle);
-  const path = `/${slugs.brand}/${slugs.model}/${slugs.engine}/${stage}`;
+  const path = stageSeoPathWithoutLocale(vehicle, selectedStage.name);
 
   return {
-    title: `${stageName} ${vehicle.brand} ${vehicle.model} ${vehicle.engine} chiptuning`,
-    description: `${vehicle.brand} ${vehicle.model} ${stageName}: ${fromWord} ${vehicle.stockPowerHp} ${powerUnit} ${toWord} ${selectedStage.powerHp} ${powerUnit} ${andWord} ${selectedStage.torqueNm} Nm ${priceFrom} €${selectedStage.price}.`,
+    ...stageMetadata(safeLocale, vehicle, selectedStage),
     alternates: {
-      canonical: sitePath(`/${safeLocale}${path}`),
-      languages: {
-        nl: sitePath(`/nl${path}`),
-        en: sitePath(`/en${path}`),
-        pl: sitePath(`/pl${path}`)
-      }
+      canonical: absoluteUrl(`/${safeLocale}${path}`),
+      languages: alternateLanguageUrls(path)
     }
   };
 }
@@ -100,7 +101,10 @@ export default async function VehicleStagePage({params}: PageProps) {
   const t = await getTranslations({locale: safeLocale, namespace: "Vehicle"});
   const powerUnit = safeLocale === "en" ? "hp" : safeLocale === "pl" ? "KM" : "pk";
   const slugs = getVehicleSeoSlugs(vehicle);
-  const stagePath = `/${slugs.brand}/${slugs.model}/${slugs.engine}/${stage}`;
+  const stagePath = `/${slugs.brand}/${slugs.model}/${slugs.engine}/${stageSlugMap[selectedStage.name]}`;
+  const currentStageUrl = absoluteUrl(stageSeoPath(safeLocale, vehicle, selectedStage.name));
+  const vehicleUrl = absoluteUrl(vehicleDetailPath(safeLocale, vehicle));
+  const provider = noordTuneProviderJsonLd();
   const catalogLabel = safeLocale === "en" ? "Power Catalog" : safeLocale === "pl" ? "Katalog mocy" : "Catalogus";
   const chiptuningLabel =
     safeLocale === "en"
@@ -108,6 +112,15 @@ export default async function VehicleStagePage({params}: PageProps) {
       : safeLocale === "pl"
         ? "Strona chiptuningu"
         : "Chiptuning hoofdsite";
+  const breadcrumbJsonLd = breadcrumbListJsonLd([
+    {name: "NoordTune.nl", url: mainLocaleHref(safeLocale)},
+    {name: catalogLabel, url: absoluteUrl(`/${safeLocale}`)},
+    {
+      name: `${vehicle.brand} ${vehicle.model}`,
+      url: vehicleUrl
+    },
+    {name: stageName, url: currentStageUrl}
+  ]);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Vehicle",
@@ -116,23 +129,54 @@ export default async function VehicleStagePage({params}: PageProps) {
     vehicleEngine: vehicle.engine,
     fuelType: vehicle.fuel,
     productionDate: vehicle.yearRange,
+    url: currentStageUrl,
     offers: {
       "@type": "Offer",
       price: selectedStage.price,
       priceCurrency: "EUR",
-      url: sitePath(`/${safeLocale}${stagePath}`),
+      url: currentStageUrl,
+      seller: provider,
       itemOffered: {
         "@type": "Service",
-        name: `${stageName} ${vehicle.brand} ${vehicle.model} chiptuning`
+        name: `${stageName} ${vehicle.brand} ${vehicle.model} chiptuning`,
+        provider,
+        areaServed: areaServedJsonLd(),
+        serviceType: ["Chiptuning", "ECU tuning", "Stage tuning"],
+        url: currentStageUrl
       }
     }
   };
+  const seoCards = [
+    {title: t("seo.checksTitle"), text: t("seo.checksText")},
+    {title: t("seo.vehicleSpecificTitle"), text: t("seo.vehicleSpecificText")},
+    {title: t("seo.stageChoiceTitle"), text: t("seo.stageChoiceText")},
+    {title: t("seo.quoteTitle"), text: t("seo.quoteText")}
+  ];
+  const seoLinks = [
+    {
+      href: "#tuning-calculator",
+      label: t("seo.quoteLink"),
+      primary: true
+    },
+    {
+      href: sitePath(vehicleDetailPath(safeLocale, vehicle)),
+      label: t("seo.backToVehicle")
+    },
+    {
+      href: chiptuningHref(safeLocale),
+      label: t("seo.mainChiptuning")
+    }
+  ];
 
   return (
     <main className="min-h-screen bg-background">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbJsonLd)}}
       />
       <CatalogHeader locale={safeLocale} languagePath={stagePath} />
       <section className="relative overflow-hidden border-b border-white/10">
@@ -188,7 +232,7 @@ export default async function VehicleStagePage({params}: PageProps) {
         </div>
       </section>
 
-      <section className="container py-10">
+      <section className="container py-10" id="tuning-calculator">
         <VehicleDetail
           initialStageName={stageName}
           locale={safeLocale}
@@ -219,6 +263,12 @@ export default async function VehicleStagePage({params}: PageProps) {
             stage3Requirements: t("stage3Requirements")
           }}
           vehicle={vehicle}
+        />
+        <SeoInfoSections
+          cards={seoCards}
+          eyebrow={t("seo.eyebrow")}
+          links={seoLinks}
+          title={t("seo.title")}
         />
       </section>
       <CatalogFooter locale={safeLocale} />

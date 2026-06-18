@@ -85,6 +85,21 @@
     "stage3Package": "Full custom calibration|Turbo and fuel-upgrade tuning|Multiple log rounds and aftercare",
     "stage1Requirements": "Original hardware",
     "stage2Requirements": "Hardware and maintenance condition checked",
-    "stage3Requirements": "Custom hardware setup and extended logging"
+    "stage3Requirements": "Custom hardware setup and extended logging",
+    "seo": {
+      "eyebrow": "NoordTune advice",
+      "title": "Vehicle-specific tuning advice",
+      "checksTitle": "What do we check before tuning?",
+      "checksText": "For a safe calibration we check ECU type, engine variant, fault codes, maintenance condition, transmission and available log data. This keeps the tune matched to the real condition of the car.",
+      "vehicleSpecificTitle": "Why are results vehicle-specific?",
+      "vehicleSpecificText": "Power and torque vary by model year, software version, fuel quality, mileage and hardware. NoordTune therefore treats the catalog as an indication and confirms exact possibilities per vehicle.",
+      "stageChoiceTitle": "Stage 1 or Stage 2?",
+      "stageChoiceText": "Stage 1 is intended for original hardware and reliable daily use. Stage 2 only makes sense when supporting hardware and maintenance condition are suitable for extra load.",
+      "quoteTitle": "Request a vehicle-specific quote",
+      "quoteText": "Send your selection via WhatsApp or ask for advice. We check the selected stage, options and vehicle data before confirming a final quote.",
+      "quoteLink": "Request quote",
+      "backToVehicle": "Back to vehicle overview",
+      "mainChiptuning": "More about chiptuning"
+    }
   }
 }

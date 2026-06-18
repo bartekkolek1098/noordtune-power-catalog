@@ -85,6 +85,21 @@
     "stage3Package": "Pełna kalibracja indywidualna|Strojenie turbo i układu paliwowego|Kilka rund logów i wsparcie po usłudze",
     "stage1Requirements": "Seryjny osprzęt",
     "stage2Requirements": "Sprawdzony osprzęt i stan techniczny",
-    "stage3Requirements": "Indywidualny setup hardware i rozszerzone logi"
+    "stage3Requirements": "Indywidualny setup hardware i rozszerzone logi",
+    "seo": {
+      "eyebrow": "Doradztwo NoordTune",
+      "title": "Doradztwo tuningowe dla konkretnego auta",
+      "checksTitle": "Co sprawdzamy przed tuningiem?",
+      "checksText": "Dla bezpiecznej kalibracji sprawdzamy typ ECU, wariant silnika, błędy, stan serwisowy, skrzynię biegów i dostępne logi. Dzięki temu program pasuje do realnego stanu auta.",
+      "vehicleSpecificTitle": "Dlaczego wynik zależy od konkretnego auta?",
+      "vehicleSpecificText": "Moc i moment różnią się zależnie od rocznika, wersji oprogramowania, jakości paliwa, przebiegu i osprzętu. Dlatego katalog jest orientacyjny, a NoordTune potwierdza dokładne możliwości dla pojazdu.",
+      "stageChoiceTitle": "Stage 1 czy Stage 2?",
+      "stageChoiceText": "Stage 1 jest przeznaczony do seryjnego osprzętu i codziennej, bezpiecznej jazdy. Stage 2 ma sens dopiero wtedy, gdy dodatkowy osprzęt i stan techniczny pozwalają na większe obciążenie.",
+      "quoteTitle": "Zapytaj o wycenę dla konkretnego auta",
+      "quoteText": "Wyślij swój wybór przez WhatsApp albo poproś o poradę. Przed finalną wyceną sprawdzamy wybrany stage, opcje i dane pojazdu.",
+      "quoteLink": "Zapytaj o wycenę",
+      "backToVehicle": "Wróć do strony pojazdu",
+      "mainChiptuning": "Więcej o chiptuningu"
+    }
   }
 }

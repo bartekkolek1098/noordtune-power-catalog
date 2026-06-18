@@ -4,11 +4,20 @@ import {engineCatalog, getVehicleById} from "@/data/catalog";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
+import {SeoInfoSections} from "@/components/seo-info-sections";
 import {VehicleDetail} from "@/components/vehicle-detail";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
 import {catalogHref, chiptuningHref, mainLocaleHref} from "@/lib/noordtune-links";
+import {
+  absoluteUrl,
+  alternateLanguageUrls,
+  breadcrumbListJsonLd,
+  stageSeoPath,
+  vehicleDetailPath,
+  vehicleMetadata
+} from "@/lib/seo";
 import {assetPath, sitePath} from "@/lib/site-path";
 import {getTranslations} from "next-intl/server";
 
@@ -32,25 +41,16 @@ export async function generateMetadata({params}: PageProps) {
   const {locale, vehicleId} = await params;
   const safeLocale = isLocale(locale) ? locale : routing.defaultLocale;
   const vehicle = getVehicleById(vehicleId);
-  const powerUnit = safeLocale === "en" ? "hp" : safeLocale === "pl" ? "KM" : "pk";
-  const fromWord = safeLocale === "en" ? "from" : safeLocale === "pl" ? "z" : "van";
-  const toWord = safeLocale === "en" ? "to" : safeLocale === "pl" ? "do" : "naar";
-  const priceFrom = safeLocale === "en" ? "from" : safeLocale === "pl" ? "od" : "vanaf";
 
   if (!vehicle) {
     return {};
   }
 
   return {
-    title: `${vehicle.brand} ${vehicle.model} ${vehicle.engine} tuning`,
-    description: `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${fromWord} ${vehicle.stockPowerHp} ${powerUnit} ${toWord} ${vehicle.stages[0].powerHp} ${powerUnit} ${priceFrom} €${vehicle.stages[0].price}.`,
+    ...vehicleMetadata(safeLocale, vehicle),
     alternates: {
-      canonical: sitePath(`/${safeLocale}/vehicles/${vehicle.id}`),
-      languages: {
-        nl: sitePath(`/nl/vehicles/${vehicle.id}`),
-        en: sitePath(`/en/vehicles/${vehicle.id}`),
-        pl: sitePath(`/pl/vehicles/${vehicle.id}`)
-      }
+      canonical: absoluteUrl(vehicleDetailPath(safeLocale, vehicle)),
+      languages: alternateLanguageUrls(`/vehicles/${vehicle.id}`)
     }
   };
 }
@@ -78,9 +78,38 @@ export default async function VehiclePage({params}: PageProps) {
       : safeLocale === "pl"
         ? "Strona chiptuningu"
         : "Chiptuning hoofdsite";
+  const breadcrumbJsonLd = breadcrumbListJsonLd([
+    {name: "NoordTune.nl", url: mainLocaleHref(safeLocale)},
+    {name: catalogLabel, url: absoluteUrl(`/${safeLocale}`)},
+    {
+      name: `${vehicle.brand} ${vehicle.model}`,
+      url: absoluteUrl(vehicleDetailPath(safeLocale, vehicle))
+    }
+  ]);
+  const seoCards = [
+    {title: t("seo.checksTitle"), text: t("seo.checksText")},
+    {title: t("seo.vehicleSpecificTitle"), text: t("seo.vehicleSpecificText")},
+    {title: t("seo.stageChoiceTitle"), text: t("seo.stageChoiceText")},
+    {title: t("seo.quoteTitle"), text: t("seo.quoteText")}
+  ];
+  const seoLinks = [
+    {
+      href: "#tuning-calculator",
+      label: t("seo.quoteLink"),
+      primary: true
+    },
+    ...vehicle.stages.map((stage) => ({
+      href: sitePath(stageSeoPath(safeLocale, vehicle, stage.name)),
+      label: `${stage.name} ${vehicle.brand} ${vehicle.model}`
+    }))
+  ];
 
   return (
     <main className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbJsonLd)}}
+      />
       <CatalogHeader locale={safeLocale} languagePath={`/vehicles/${vehicle.id}`} />
       <section className="relative overflow-hidden border-b border-white/10">
         <div
@@ -142,7 +171,7 @@ export default async function VehiclePage({params}: PageProps) {
         </div>
       </section>
 
-      <section className="container py-10">
+      <section className="container py-10" id="tuning-calculator">
         <VehicleDetail
           locale={safeLocale}
           text={{
@@ -172,6 +201,12 @@ export default async function VehiclePage({params}: PageProps) {
             stage3Requirements: t("stage3Requirements")
           }}
           vehicle={vehicle}
+        />
+        <SeoInfoSections
+          cards={seoCards}
+          eyebrow={t("seo.eyebrow")}
+          links={seoLinks}
+          title={t("seo.title")}
         />
       </section>
       <CatalogFooter locale={safeLocale} />

@@ -16,7 +16,7 @@ export function LanguageSwitcher({
   path?: string;
 }) {
   return (
-    <nav aria-label="Language" className="flex items-center gap-1">
+    <nav aria-label="Language" className="flex shrink-0 items-center gap-1">
       {routing.locales.map((candidate) => {
         const item = languageLabels[candidate];
         const href = sitePath(`/${candidate}${path}`);
@@ -25,7 +25,7 @@ export function LanguageSwitcher({
           <a
             aria-label={item.label}
             className={cn(
-              "flex h-10 w-10 items-center justify-center rounded-[3px] border text-xl transition-colors",
+              "flex h-8 w-8 items-center justify-center rounded-[3px] border text-lg transition-colors min-[360px]:h-9 min-[360px]:w-9 min-[430px]:h-10 min-[430px]:w-10 min-[430px]:text-xl",
               candidate === locale
                 ? "border-primary bg-primary/15 shadow-[0_0_24px_rgba(227,6,19,.28)]"
                 : "border-white/10 bg-black/30 hover:border-primary/50 hover:bg-primary/10"

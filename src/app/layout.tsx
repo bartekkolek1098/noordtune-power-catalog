@@ -1,10 +1,10 @@
 import type {Metadata} from "next";
-import {sitePath} from "@/lib/site-path";
+import {absoluteUrl, POWER_SITE_URL} from "@/lib/site-url";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://power.noordtune.nl"
+    process.env.NEXT_PUBLIC_SITE_URL ?? POWER_SITE_URL
   ),
   title: {
     default: "NoordTune Power Catalog",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "NoordTune Power Catalog",
     description:
       "Vind direct tuning mogelijkheden per kenteken met RDW Open Data.",
-    url: sitePath("/nl"),
+    url: absoluteUrl("/nl"),
     siteName: "NoordTune Power Catalog",
     locale: "nl_NL",
     type: "website"
