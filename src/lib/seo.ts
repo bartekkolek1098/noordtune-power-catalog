@@ -152,8 +152,6 @@ export function noordTuneProviderJsonLd() {
     telephone: "+31685759600",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "A. Vogelstraat 1",
-      postalCode: "9406 XD",
       addressLocality: "Assen",
       addressCountry: "NL"
     }
