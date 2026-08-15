@@ -232,7 +232,7 @@ export default async function VehicleStagePage({params}: PageProps) {
         </div>
       </section>
 
-      <section className="container py-10" id="tuning-calculator">
+      <section className="container scroll-mt-32 py-10" id="tuning-calculator">
         <VehicleDetail
           initialStageName={stageName}
           locale={safeLocale}
@@ -260,7 +260,26 @@ export default async function VehicleStagePage({params}: PageProps) {
             stage3Package: t("stage3Package"),
             stage1Requirements: t("stage1Requirements"),
             stage2Requirements: t("stage2Requirements"),
-            stage3Requirements: t("stage3Requirements")
+            stage3Requirements: t("stage3Requirements"),
+            recommendation: {
+              eyebrow: t("recommendation.eyebrow"),
+              title: t("recommendation.title"),
+              intro: t("recommendation.intro"),
+              recommendedBadge: t("recommendation.recommendedBadge"),
+              bestDaily: t("recommendation.bestDaily"),
+              bestDailyText: t("recommendation.bestDailyText"),
+              performance: t("recommendation.performance"),
+              performanceText: t("recommendation.performanceText"),
+              custom: t("recommendation.custom"),
+              customText: t("recommendation.customText"),
+              selectSetup: t("recommendation.selectSetup"),
+              setupSelected: t("recommendation.setupSelected"),
+              recommendedAddOns: t("recommendation.recommendedAddOns"),
+              gearboxText: t("recommendation.gearboxText"),
+              addGearbox: t("recommendation.addGearbox"),
+              removeGearbox: t("recommendation.removeGearbox"),
+              quoteSelected: t("recommendation.quoteSelected")
+            }
           }}
           vehicle={vehicle}
         />

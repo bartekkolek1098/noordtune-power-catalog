@@ -1,13 +1,13 @@
 "use client";
 
-import {Check, Gauge, MessageCircle} from "lucide-react";
+import {Check, Gauge, MessageCircle, ShieldCheck, Sparkles, Wrench} from "lucide-react";
 import {useMemo, useState} from "react";
 import type {EngineVariant, StageDefinition} from "@/data/catalog";
 import {serviceOptions} from "@/data/catalog";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
-import {whatsappHref} from "@/lib/whatsapp";
+import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {PowerChart} from "@/components/power-chart";
@@ -37,6 +37,25 @@ type VehicleCopy = {
   stage1Requirements: string;
   stage2Requirements: string;
   stage3Requirements: string;
+  recommendation: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    recommendedBadge: string;
+    bestDaily: string;
+    bestDailyText: string;
+    performance: string;
+    performanceText: string;
+    custom: string;
+    customText: string;
+    selectSetup: string;
+    setupSelected: string;
+    recommendedAddOns: string;
+    gearboxText: string;
+    addGearbox: string;
+    removeGearbox: string;
+    quoteSelected: string;
+  };
 };
 
 export function VehicleDetail({
@@ -59,6 +78,7 @@ export function VehicleDetail({
     )
   );
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+  const [recommendedPackage, setRecommendedPackage] = useState<StageDefinition["name"] | null>(null);
   const selectedStage = vehicle.stages[stageIndex] ?? vehicle.stages[0];
   const availableOptions = useMemo(
     () =>
@@ -77,6 +97,10 @@ export function VehicleDetail({
   const selectedOptionLabels = availableOptions
     .filter((option) => selectedOptions.includes(option.id))
     .map((option) => option.name);
+  const gearboxOption =
+    vehicle.gearbox && vehicle.gearbox !== "Manual"
+      ? availableOptions.find((option) => option.id === "gearbox")
+      : undefined;
   const localizedPackage =
     selectedStage.name === "Stage 1"
       ? text.stage1Package
@@ -90,23 +114,52 @@ export function VehicleDetail({
         ? text.stage2Requirements
         : text.stage3Requirements;
   const vehicleLabel = `${vehicle.brand} ${vehicle.model} ${vehicle.engine}`;
+  const recommendedPackageLabel =
+    recommendedPackage === selectedStage.name
+      ? `${recommendationLabel(selectedStage.name, text)} · ${selectedStage.name}`
+      : undefined;
   const quoteHref = whatsappHref({
     locale,
     message: createVehicleQuoteMessage({
       locale,
       options: selectedOptionLabels,
       price: formatCurrency(total, localeCode),
+      recommendedPackage: recommendedPackageLabel,
       stage: selectedStage.name,
       vehicle: `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${vehicle.version}`,
       vehiclePower: `${vehicle.stockPowerHp} ${powerUnit} -> ${selectedStage.powerHp} ${powerUnit}`
     }),
     vehicleLabel
   });
+  const recommendationCards = vehicle.stages.map((stage, index) => ({
+    description:
+      stage.name === "Stage 1"
+        ? text.recommendation.bestDailyText
+        : stage.name === "Stage 2"
+          ? text.recommendation.performanceText
+          : text.recommendation.customText,
+    index,
+    label: recommendationLabel(stage.name, text),
+    stage
+  }));
+
+  function selectStage(index: number, recommended = false) {
+    setStageIndex(index);
+    setRecommendedPackage(recommended ? vehicle.stages[index]?.name ?? null : null);
+  }
+
+  function toggleOption(id: string) {
+    setSelectedOptions((current) =>
+      current.includes(id)
+        ? current.filter((optionId) => optionId !== id)
+        : [...current, id]
+    );
+  }
 
   return (
-    <div className="grid gap-6 pb-24 lg:grid-cols-[1fr_420px] lg:pb-0">
-      <div className="space-y-6">
-        <div className="grid gap-4 md:grid-cols-3">
+    <div className="grid min-w-0 gap-6 pb-24 lg:grid-cols-[minmax(0,1fr)_420px] lg:pb-0">
+      <div className="min-w-0 space-y-6">
+        <div className="grid min-w-0 gap-4 md:grid-cols-3">
           {[
             {
               label: text.power,
@@ -120,7 +173,7 @@ export function VehicleDetail({
               } Nm`
             }
           ].map((item) => (
-            <div className="rounded-lg border border-white/10 bg-black/45 p-4" key={item.label}>
+            <div className="min-w-0 rounded-[3px] border border-white/10 bg-black/45 p-4" key={item.label}>
               <div className="text-xs font-bold uppercase tracking-[0.18em] text-primary">
                 {item.label}
               </div>
@@ -129,7 +182,120 @@ export function VehicleDetail({
           ))}
         </div>
 
-        <div className="rounded-lg border border-white/10 bg-black/45 p-4">
+        <section
+          className="panel-edge min-w-0 overflow-hidden border-primary/30 p-5 md:p-6"
+          data-testid="vehicle-recommendation"
+        >
+          <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-3">
+                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[3px] border border-primary/35 bg-primary/15 text-primary">
+                  <Sparkles className="h-5 w-5" />
+                </span>
+                <div>
+                  <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">
+                    {text.recommendation.eyebrow}
+                  </div>
+                  <h2 className="racing-title mt-1 text-2xl leading-none text-white md:text-3xl">
+                    {text.recommendation.title}
+                  </h2>
+                </div>
+              </div>
+              <p className="mt-4 text-sm leading-6 text-muted-foreground">
+                {text.recommendation.intro}
+              </p>
+            </div>
+            <Badge className="w-fit border-primary/35 bg-primary/15 text-primary">
+              {text.recommendation.recommendedBadge}: Stage 1
+            </Badge>
+          </div>
+
+          <div className="mt-6 grid min-w-0 gap-3 md:grid-cols-3">
+            {recommendationCards.map(({description, index, label, stage}) => {
+              const isRecommendedSelection = recommendedPackage === stage.name;
+
+              return (
+                <article
+                  className={`flex min-h-full min-w-0 flex-col rounded-[3px] border p-4 transition ${
+                    isRecommendedSelection
+                      ? "border-primary bg-primary/[0.12] shadow-[0_0_32px_rgba(227,6,19,.16)]"
+                      : stage.name === "Stage 1"
+                        ? "border-primary/35 bg-[linear-gradient(155deg,rgba(227,6,19,.12),rgba(255,255,255,.025))]"
+                        : "border-white/10 bg-black/35"
+                  }`}
+                  key={stage.name}
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <div className="text-xs font-black uppercase tracking-[0.14em] text-primary">
+                        {label}
+                      </div>
+                      <h3 className="mt-1 text-xl font-black text-white">{stage.name}</h3>
+                    </div>
+                    {stage.name === "Stage 1" ? (
+                      <ShieldCheck className="h-5 w-5 shrink-0 text-primary" />
+                    ) : (
+                      <Wrench className="h-5 w-5 shrink-0 text-slate-400" />
+                    )}
+                  </div>
+                  <p className="mt-3 flex-1 text-sm leading-6 text-muted-foreground">
+                    {description}
+                  </p>
+                  <div className="mt-4 border-t border-white/10 pt-3 text-sm font-black text-white">
+                    <span className="block">
+                      {stage.powerHp} {powerUnit} / {stage.torqueNm} Nm
+                    </span>
+                    <span className="mt-1 block text-xs text-primary">
+                      {text.fromPrice} {formatCurrency(stage.price, localeCode)}
+                    </span>
+                  </div>
+                  <Button
+                    className="mt-3 w-full rounded-[3px] text-xs font-black uppercase"
+                    onClick={() => selectStage(index, true)}
+                    type="button"
+                    variant={stage.name === "Stage 1" ? "default" : "outline"}
+                  >
+                    {isRecommendedSelection
+                      ? text.recommendation.setupSelected
+                      : text.recommendation.selectSetup}
+                  </Button>
+                </article>
+              );
+            })}
+          </div>
+
+          {gearboxOption ? (
+            <div className="mt-4 grid gap-3 rounded-[3px] border border-white/10 bg-black/40 p-4 md:grid-cols-[1fr_auto] md:items-center">
+              <div>
+                <div className="text-xs font-black uppercase tracking-[0.14em] text-primary">
+                  {text.recommendation.recommendedAddOns}
+                </div>
+                <p className="mt-1 text-sm leading-6 text-muted-foreground">
+                  {text.recommendation.gearboxText}
+                </p>
+              </div>
+              <Button
+                className="rounded-[3px] text-xs font-black uppercase"
+                onClick={() => toggleOption(gearboxOption.id)}
+                type="button"
+                variant="outline"
+              >
+                {selectedOptions.includes(gearboxOption.id)
+                  ? text.recommendation.removeGearbox
+                  : `${text.recommendation.addGearbox} · ${formatCurrency(gearboxOption.price, localeCode)}`}
+              </Button>
+            </div>
+          ) : null}
+
+          <Button asChild className="mt-4 h-auto min-h-12 w-full whitespace-normal rounded-[3px] py-3 text-center font-black uppercase leading-tight md:w-auto">
+            <a data-testid="vehicle-recommendation-quote" href={quoteHref} rel="noreferrer" target="_blank">
+              <MessageCircle className="h-4 w-4" />
+              {text.recommendation.quoteSelected}
+            </a>
+          </Button>
+        </section>
+
+        <div className="rounded-[3px] border border-white/10 bg-black/45 p-4">
           <PowerChart
             powerUnit={powerUnit}
             stages={vehicle.stages}
@@ -139,7 +305,7 @@ export function VehicleDetail({
           />
         </div>
 
-        <div className="rounded-lg border border-white/10 bg-black/45 p-5">
+        <div className="rounded-[3px] border border-white/10 bg-black/45 p-5">
           <div className="mb-4 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-primary">
             <Gauge className="h-4 w-4" />
             {text.packageBreakdown}
@@ -158,7 +324,7 @@ export function VehicleDetail({
                 ))}
               </ul>
             </div>
-            <div className="rounded-lg border border-white/10 bg-white/[0.035] p-4">
+            <div className="rounded-[3px] border border-white/10 bg-white/[0.035] p-4">
               <div className="text-xs font-bold uppercase tracking-[0.18em] text-muted-foreground">
                 {text.requirements}
               </div>
@@ -176,7 +342,7 @@ export function VehicleDetail({
         </div>
       </div>
 
-      <aside className="space-y-4 rounded-lg border border-primary/40 bg-black/70 p-5 shadow-[0_0_80px_rgba(226,0,15,.2)]">
+      <aside className="min-w-0 space-y-4 rounded-[3px] border border-primary/40 bg-black/70 p-5 shadow-[0_0_80px_rgba(226,0,15,.2)]">
         <div>
           <div className="text-sm font-bold uppercase tracking-[0.18em] text-primary">
             {text.calculator}
@@ -205,7 +371,7 @@ export function VehicleDetail({
                     : "border-white/10 bg-white/[0.035] hover:border-primary/50"
                 }`}
                 key={stage.name}
-                onClick={() => setStageIndex(index)}
+                onClick={() => selectStage(index)}
                 type="button"
               >
                 <span className="flex items-center justify-between gap-3">
@@ -245,13 +411,7 @@ export function VehicleDetail({
                   <input
                     checked={selectedOptions.includes(option.id)}
                     className="h-4 w-4 accent-[#e2000f]"
-                    onChange={(event) => {
-                      setSelectedOptions((current) =>
-                        event.target.checked
-                          ? [...current, option.id]
-                          : current.filter((id) => id !== option.id)
-                      );
-                    }}
+                    onChange={() => toggleOption(option.id)}
                     type="checkbox"
                   />
                 </span>
@@ -291,51 +451,14 @@ export function VehicleDetail({
   );
 }
 
-function createVehicleQuoteMessage({
-  locale,
-  options,
-  price,
-  stage,
-  vehicle,
-  vehiclePower
-}: {
-  locale: Locale;
-  options: string[];
-  price: string;
-  stage: string;
-  vehicle: string;
-  vehiclePower: string;
-}) {
-  const optionText = options.length > 0 ? options.join(", ") : "-";
-
-  if (locale === "en") {
-    return `Hello NoordTune, I would like a quote for this car:
-Language: English
-Car: ${vehicle}
-Power: ${vehiclePower}
-Stage: ${stage}
-Extra options: ${optionText}
-Estimated price: ${price}
-Could you check this and advise?`;
+function recommendationLabel(stageName: StageDefinition["name"], text: VehicleCopy) {
+  if (stageName === "Stage 1") {
+    return text.recommendation.bestDaily;
   }
 
-  if (locale === "pl") {
-    return `Cześć NoordTune, proszę o wycenę tego auta:
-Język: Polski
-Auto: ${vehicle}
-Moc: ${vehiclePower}
-Stage: ${stage}
-Opcje dodatkowe: ${optionText}
-Orientacyjna cena: ${price}
-Proszę o sprawdzenie i poradę.`;
+  if (stageName === "Stage 2") {
+    return text.recommendation.performance;
   }
 
-  return `Hallo NoordTune, ik wil graag een offerte voor deze auto:
-Taal: Nederlands
-Auto: ${vehicle}
-Vermogen: ${vehiclePower}
-Stage: ${stage}
-Extra opties: ${optionText}
-Indicatie: ${price}
-Kunnen jullie dit controleren en advies geven?`;
+  return text.recommendation.custom;
 }
