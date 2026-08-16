@@ -9,6 +9,7 @@ import {
 } from "@/data/catalog";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
+import {CatalogVerificationNotice} from "@/components/catalog-verification-notice";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {SeoInfoSections} from "@/components/seo-info-sections";
 import {VehicleDetail} from "@/components/vehicle-detail";
@@ -165,7 +166,13 @@ export default async function VehicleStagePage({params}: PageProps) {
     {
       href: chiptuningHref(safeLocale),
       label: t("seo.mainChiptuning")
-    }
+    },
+    ...vehicle.stages
+      .filter((candidate) => candidate.name !== selectedStage.name)
+      .map((candidate) => ({
+        href: sitePath(stageSeoPath(safeLocale, vehicle, candidate.name)),
+        label: t("seo.otherStage", {stage: candidate.name})
+      }))
   ];
 
   return (
@@ -231,6 +238,17 @@ export default async function VehicleStagePage({params}: PageProps) {
           </div>
         </div>
       </section>
+
+      {vehicle.verificationRequired ? (
+        <CatalogVerificationNotice
+          text={{
+            badge: t("verification.badge"),
+            title: t("verification.title"),
+            text: t("verification.text"),
+            footer: t("verification.footer")
+          }}
+        />
+      ) : null}
 
       <section className="container scroll-mt-32 py-10" id="tuning-calculator">
         <VehicleDetail

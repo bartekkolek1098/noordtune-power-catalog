@@ -129,6 +129,12 @@
       "removeGearbox": "Usuń DSG/TCU",
       "quoteSelected": "Zapytaj o wycenę wybranego zestawu"
     },
+    "verification": {
+      "badge": "Orientacyjne dane dla tego pojazdu",
+      "title": "Wymagana ręczna weryfikacja",
+      "text": "Ta strona powstała na podstawie istniejących danych katalogowych. Moc, obsługa ECU/TCU i dostępne opcje pozostają orientacyjne, dopóki NoordTune nie sprawdzi dokładnego wariantu silnika, oprogramowania i stanu auta.",
+      "footer": "Ostateczne możliwości i cena po sprawdzeniu"
+    },
     "seo": {
       "eyebrow": "Doradztwo NoordTune",
       "title": "Doradztwo tuningowe dla konkretnego auta",
@@ -142,7 +148,9 @@
       "quoteText": "Wyślij swój wybór przez WhatsApp albo poproś o poradę. Przed finalną wyceną sprawdzamy wybrany stage, opcje i dane pojazdu.",
       "quoteLink": "Zapytaj o wycenę",
       "backToVehicle": "Wróć do strony pojazdu",
-      "mainChiptuning": "Więcej o chiptuningu"
+      "mainChiptuning": "Więcej o chiptuningu",
+      "relatedVehicle": "Zobacz {vehicle}",
+      "otherStage": "Zobacz {stage}"
     }
   }
 }

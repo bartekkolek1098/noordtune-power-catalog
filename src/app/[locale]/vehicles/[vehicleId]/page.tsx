@@ -3,6 +3,7 @@ import {ArrowLeft} from "lucide-react";
 import {engineCatalog, getVehicleById} from "@/data/catalog";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
+import {CatalogVerificationNotice} from "@/components/catalog-verification-notice";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {SeoInfoSections} from "@/components/seo-info-sections";
 import {VehicleDetail} from "@/components/vehicle-detail";
@@ -92,6 +93,17 @@ export default async function VehiclePage({params}: PageProps) {
     {title: t("seo.stageChoiceTitle"), text: t("seo.stageChoiceText")},
     {title: t("seo.quoteTitle"), text: t("seo.quoteText")}
   ];
+  const relatedBrands = ["Volkswagen", "Audi", "Skoda", "SEAT"].includes(
+    vehicle.brand
+  )
+    ? ["Volkswagen", "Audi", "Skoda", "SEAT"]
+    : [vehicle.brand];
+  const relatedVehicles = engineCatalog
+    .filter(
+      (candidate) =>
+        candidate.id !== vehicle.id && relatedBrands.includes(candidate.brand)
+    )
+    .slice(0, 3);
   const seoLinks = [
     {
       href: "#tuning-calculator",
@@ -101,6 +113,12 @@ export default async function VehiclePage({params}: PageProps) {
     ...vehicle.stages.map((stage) => ({
       href: sitePath(stageSeoPath(safeLocale, vehicle, stage.name)),
       label: `${stage.name} ${vehicle.brand} ${vehicle.model}`
+    })),
+    ...relatedVehicles.map((candidate) => ({
+      href: sitePath(vehicleDetailPath(safeLocale, candidate)),
+      label: t("seo.relatedVehicle", {
+        vehicle: `${candidate.brand} ${candidate.model}`
+      })
     }))
   ];
 
@@ -170,6 +188,17 @@ export default async function VehiclePage({params}: PageProps) {
           </div>
         </div>
       </section>
+
+      {vehicle.verificationRequired ? (
+        <CatalogVerificationNotice
+          text={{
+            badge: t("verification.badge"),
+            title: t("verification.title"),
+            text: t("verification.text"),
+            footer: t("verification.footer")
+          }}
+        />
+      ) : null}
 
       <section className="container scroll-mt-32 py-10" id="tuning-calculator">
         <VehicleDetail

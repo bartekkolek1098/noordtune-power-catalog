@@ -5,6 +5,11 @@ import type {
   StageDefinition
 } from "@/data/catalog-shared";
 import type {VehicleSelectorItem} from "@/data/catalog-selector";
+import {
+  curatedVehiclePublicationById,
+  curatedVehiclePublications,
+  type CuratedVehiclePublication
+} from "./curated-catalog.ts";
 import type {PricingTierId} from "@/data/pricing";
 
 export type {
@@ -420,7 +425,7 @@ const curatedEngineCatalog: EngineVariant[] = [
   }
 ];
 
-export const engineCatalog: EngineVariant[] = curatedEngineCatalog.map((vehicle) =>
+const existingCuratedEngineCatalog: EngineVariant[] = curatedEngineCatalog.map((vehicle) =>
   withCatalogAuditMetadata(vehicle, "curated")
 );
 
@@ -1438,14 +1443,79 @@ export const generatedVehicleCatalog: EngineVariant[] = allGeneratedFamilies.fla
 
 // Canonical server-side data. Client components must use the selector DTO/API instead.
 export const vehicleDatabase: EngineVariant[] = dedupeVehicles([
-  ...engineCatalog,
+  ...existingCuratedEngineCatalog,
   ...generatedVehicleCatalog
 ]);
 
 export const vehicleDatabaseCount = vehicleDatabase.length;
 
+function publishCuratedVehicle(
+  source: EngineVariant,
+  publication: CuratedVehiclePublication
+): EngineVariant {
+  return {
+    ...source,
+    id: publication.id,
+    model: publication.model,
+    version: publication.version,
+    generation: publication.generation,
+    platform: publication.platform,
+    yearRange: publication.yearRange,
+    years: [...publication.years],
+    confidenceLevel: "estimated",
+    verificationRequired: true,
+    dataNotes: [...(source.dataNotes ?? []), ...publication.dataNotes],
+    technicalNotes: [
+      ...(source.technicalNotes ?? []),
+      ...publication.technicalNotes
+    ],
+    recommendedPackage: {
+      stage: "Stage 1",
+      recommendedOptionIds: [],
+      verificationRequired: true,
+      notes: [
+        "Stage 1 is the indicative daily-use starting point; paid add-ons require explicit customer selection and compatibility confirmation."
+      ]
+    },
+    stages: source.stages.map((stage) => ({
+      ...stage,
+      confidenceLevel: "estimated",
+      notes: [
+        ...(stage.notes ?? []),
+        "Published catalog estimate; confirm the exact engine/ECU variant and vehicle condition before quoting."
+      ]
+    })),
+    tags: Array.from(
+      new Set([
+        ...source.tags,
+        publication.generation,
+        publication.platform,
+        publication.model
+      ])
+    )
+  };
+}
+
+const promotedCuratedEngineCatalog: EngineVariant[] =
+  curatedVehiclePublications.flatMap((publication) => {
+    const source = vehicleDatabase.find(
+      (vehicle) => vehicle.id === publication.sourceId
+    );
+
+    return source ? [publishCuratedVehicle(source, publication)] : [];
+  });
+
+// Only this explicit, compact set may produce public vehicle and Stage pages.
+export const engineCatalog: EngineVariant[] = [
+  ...existingCuratedEngineCatalog,
+  ...promotedCuratedEngineCatalog
+];
+
 export function getVehicleById(id: string) {
-  return vehicleDatabase.find((vehicle) => vehicle.id === id);
+  return (
+    engineCatalog.find((vehicle) => vehicle.id === id) ??
+    vehicleDatabase.find((vehicle) => vehicle.id === id)
+  );
 }
 
 export function getBrands() {
@@ -2281,6 +2351,16 @@ export const stageSlugMap: Record<StageDefinition["name"], StageSlug> = {
 };
 
 export function getVehicleSeoSlugs(vehicle: EngineVariant) {
+  const publication = curatedVehiclePublicationById.get(vehicle.id);
+
+  if (publication) {
+    return {
+      brand: slugify(vehicle.brand),
+      model: publication.seoModelSlug,
+      engine: publication.seoEngineSlug
+    };
+  }
+
   const engineCode = extractEngineCode(vehicle);
   const modelFamily = vehicle.model
     .replace(new RegExp(`\\b${escapeRegExp(engineCode)}\\b`, "i"), "")
@@ -2299,7 +2379,7 @@ export function getVehicleBySeoSlugs(
   modelSlug: string,
   engineSlug: string
 ) {
-  return vehicleDatabase.find((vehicle) => {
+  return engineCatalog.find((vehicle) => {
     const slugs = getVehicleSeoSlugs(vehicle);
 
     return (

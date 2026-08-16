@@ -6,24 +6,25 @@ Generated from the current catalog sources by `pnpm catalog:audit`.
 
 | Metric | Count |
 | --- | ---: |
-| Curated vehicles used for static SEO | 7 |
+| Curated vehicles used for static SEO | 24 |
+| Newly published vehicles in Batch 1 | 17 |
 | Generated source records before canonical dedupe | 65469 |
 | Canonical selector/RDW vehicle records | 58586 |
 | Stage definitions in canonical database | 175758 |
-| Localized vehicle detail pages in sitemap | 21 |
-| Localized stage SEO pages in sitemap | 63 |
-| Total sitemap URLs | 87 |
+| Localized vehicle detail pages in sitemap | 72 |
+| Localized stage SEO pages in sitemap | 216 |
+| Total sitemap URLs | 291 |
 | Service options | 9 |
 | Brands | 32 |
 | Critical issue groups | 0 |
-| Warning groups | 5 |
+| Warning groups | 11 |
 | Client imports of canonical server catalog | 0 |
 
 ## Coverage
 
 - Brands: Abarth, Alfa Romeo, Audi, BMW, Citroën, Cupra, DS Automobiles, Dacia, Fiat, Ford, Honda, Hyundai, Jaguar, Jeep, Kia, Land Rover, MINI, Maserati, Mazda, Mercedes-Benz, Mitsubishi, Nissan, Opel, Peugeot, Porsche, Renault, SEAT, Skoda, Subaru, Toyota, Volkswagen, Volvo
 - Fuel types: Diesel, Hybrid, Petrol
-- Curated confidence levels: {"estimated":7}
+- Curated confidence levels: {"estimated":24}
 - Canonical database confidence levels: {"estimated":58586}
 - Pricing tiers: stage1-standard, stage1-modern-ecu, stage1-bench, stage2-standard, stage3-custom, tcu-standard, diagnostics, log-analysis, custom-service
 
@@ -51,6 +52,56 @@ None.
   - bmw/1-series/320d (23: bmw-1-serie-320d-2012, bmw-1-serie-320d-2013, bmw-1-serie-320d-2014, ...)
   - bmw/1-series/330d (23: bmw-1-serie-330d-2012, bmw-1-serie-330d-2013, bmw-1-serie-330d-2014, ...)
   - bmw/1-series/330i (23: bmw-1-serie-330i-2012, bmw-1-serie-330i-2013, bmw-1-serie-330i-2014, ...)
+- **ESTIMATED_PUBLIC_VEHICLE** (17): Published generated records remain estimates and require vehicle-specific confirmation.
+  - bmw-1-series-f20-f21-118i
+  - bmw-1-series-f20-f21-118d
+  - bmw-1-series-f20-f21-120d
+  - bmw-3-series-f30-f31-318d
+  - bmw-3-series-f30-f31-330d
+  - bmw-5-series-f10-f11-520d
+  - bmw-3-series-g20-g21-320i
+  - volkswagen-golf-7-16-tdi
+- **MISSING_PUBLIC_ENGINE_CODE** (17): No engine code is stored; do not claim one until manually verified.
+  - bmw-1-series-f20-f21-118i
+  - bmw-1-series-f20-f21-118d
+  - bmw-1-series-f20-f21-120d
+  - bmw-3-series-f30-f31-318d
+  - bmw-3-series-f30-f31-330d
+  - bmw-5-series-f10-f11-520d
+  - bmw-3-series-g20-g21-320i
+  - volkswagen-golf-7-16-tdi
+- **MISSING_PUBLIC_TCU_TYPE** (17): Automatic gearbox is listed but the exact TCU type is not stored.
+  - bmw-1-series-f20-f21-118i
+  - bmw-1-series-f20-f21-118d
+  - bmw-1-series-f20-f21-120d
+  - bmw-3-series-f30-f31-318d
+  - bmw-3-series-f30-f31-330d
+  - bmw-5-series-f10-f11-520d
+  - bmw-3-series-g20-g21-320i
+  - volkswagen-golf-7-16-tdi
+- **PUBLIC_PLACEHOLDER_IMAGE** (17): Published record uses a generic placeholder pending owned/licensed media.
+  - bmw-1-series-f20-f21-118i
+  - bmw-1-series-f20-f21-118d
+  - bmw-1-series-f20-f21-120d
+  - bmw-3-series-f30-f31-318d
+  - bmw-3-series-f30-f31-330d
+  - bmw-5-series-f10-f11-520d
+  - bmw-3-series-g20-g21-320i
+  - volkswagen-golf-7-16-tdi
+- **UNMAPPED_PUBLIC_PRICING_TIER** (4): Effective price is preserved, but no exact safe pricing tier mapping exists.
+  - volkswagen-golf-7-r-20-tsi: Stage 1
+  - volkswagen-golf-7-r-20-tsi: Stage 2
+  - seat-leon-cupra-5f-20-tsi-300: Stage 1
+  - seat-leon-cupra-5f-20-tsi-300: Stage 2
+- **PUBLIC_SERVICE_COMPATIBILITY_REVIEW** (17): Published options remain available only subject to diagnosis, legal review and compatibility confirmation.
+  - bmw-1-series-f20-f21-118i
+  - bmw-1-series-f20-f21-118d
+  - bmw-1-series-f20-f21-120d
+  - bmw-3-series-f30-f31-318d
+  - bmw-3-series-f30-f31-330d
+  - bmw-5-series-f10-f11-520d
+  - bmw-3-series-g20-g21-320i
+  - volkswagen-golf-7-16-tdi
 - **OPTION_COMPATIBILITY_NOT_CONFIRMED** (178225): Vehicle option assignments conflict with existing fuel/gearbox hints and require an explicit compatibility matrix.
   - vw-golf-20-tsi-ea888: dpf is not listed for Petrol
   - vw-golf-20-tsi-ea888: adblue is not listed for Petrol
@@ -74,9 +125,9 @@ None.
 
 ## Recommended Next Additions
 
-1. Manually verify and promote high-demand generated variants into curated records, starting with BMW 3/5 Series diesel, Volkswagen Golf GTI/R and 2.0 TDI, Audi A3/A4 2.0 TDI, Mercedes-Benz C-Class diesel, Volvo V60/XC60 and Ford Focus ST.
-2. Split verified records by generation, engine code, ECU/TCU and drivetrain only when workshop evidence is available.
-3. Replace shared placeholder photography with licensed brand/model-family assets before exposing generated records as SEO landing pages.
+1. Manually verify the Batch 1 public records, prioritizing exact engine codes, ECU/TCU variants, drivetrain and production applicability.
+2. Review the held BMW and VAG candidates in CURATED_BATCH_1_REVIEW.md before any later promotion; do not bulk-publish adjacent templates.
+3. Replace shared placeholder photography with owned or licensed brand/model-family assets.
 4. Assign remaining pricing tiers only after the workshop confirms the access method and service scope; keep current effective prices unchanged until then.
 
 ## Interpretation
