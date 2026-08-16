@@ -14,7 +14,11 @@ import {
   SlidersHorizontal,
   Wrench
 } from "lucide-react";
-import {getVehicleById} from "@/data/catalog";
+import {
+  getBrands,
+  getPopularVehicleSelectorItems,
+  getVehicleById
+} from "@/data/catalog";
 import {
   homeVisualCopy,
   homepageHeroImage,
@@ -85,6 +89,8 @@ export default async function HomePage({params}: PageProps) {
   const localeCode = safeLocale === "en" ? "en-US" : safeLocale === "pl" ? "pl-PL" : "nl-NL";
   const services = localizedServiceOptions(safeLocale);
   const bmwExample = getVehicleById("bmw-320d-b47");
+  const selectorBrands = getBrands();
+  const selectorPopularVehicles = getPopularVehicleSelectorItems(4);
   const serviceName = (id: string) =>
     services.find((option) => option.id === id)?.name ?? id;
   const exampleOptions = ["dpf", "egr", "adblue", "gearbox", "speed-limiter", "pops", "launch", "immo"]
@@ -221,7 +227,12 @@ export default async function HomePage({params}: PageProps) {
               }}
             />
 
-            <ManualSelector locale={safeLocale} text={manualText} />
+            <ManualSelector
+              initialBrands={selectorBrands}
+              initialPopularVehicles={selectorPopularVehicles}
+              locale={safeLocale}
+              text={manualText}
+            />
           </div>
 
           <div className="mt-4 grid gap-4 lg:grid-cols-3">

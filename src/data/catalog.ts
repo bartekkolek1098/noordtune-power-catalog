@@ -1,120 +1,26 @@
-export type FuelType = "Petrol" | "Diesel" | "Hybrid" | "Electric";
+import {allServiceOptionIds} from "./catalog-shared.ts";
+import type {
+  EngineVariant,
+  FuelType,
+  StageDefinition
+} from "@/data/catalog-shared";
+import type {VehicleSelectorItem} from "@/data/catalog-selector";
+import type {PricingTierId} from "@/data/pricing";
 
-export type StageDefinition = {
-  name: "Stage 1" | "Stage 2" | "Stage 3+";
-  powerHp: number;
-  torqueNm: number;
-  price: number;
-  requirements: string;
-  packageItems: string[];
-};
+export type {
+  ConfidenceLevel,
+  EngineVariant,
+  FuelType,
+  RecommendedPackageDefinition,
+  RecommendedUse,
+  ServiceOption,
+  StageDefinition,
+  StageName
+} from "@/data/catalog-shared";
 
-export type ServiceOption = {
-  id: string;
-  name: string;
-  price: number;
-  fuels?: FuelType[];
-  requiresGearbox?: boolean;
-  category: "software" | "emissions" | "gearbox" | "performance" | "security";
-  description: string;
-};
+export {allServiceOptionIds};
 
-export type EngineVariant = {
-  id: string;
-  brand: string;
-  model: string;
-  engine: string;
-  version: string;
-  fuel: FuelType;
-  yearRange: string;
-  years: number[];
-  stockPowerHp: number;
-  stockTorqueNm: number;
-  ecuType: string;
-  gearbox?: "DSG" | "ZF" | "TCU" | "Manual";
-  stages: StageDefinition[];
-  options: string[];
-  image: string;
-  popular?: boolean;
-  tags: string[];
-};
-
-export const serviceOptions: ServiceOption[] = [
-  {
-    id: "dpf",
-    name: "DPF delete",
-    price: 185,
-    fuels: ["Diesel"],
-    category: "emissions",
-    description: "DPF off / delete software for off-road or export use where legally permitted."
-  },
-  {
-    id: "adblue",
-    name: "AdBlue off",
-    price: 199,
-    fuels: ["Diesel"],
-    category: "emissions",
-    description: "AdBlue / SCR off diagnostics and software solution where legally permitted."
-  },
-  {
-    id: "egr",
-    name: "EGR off",
-    price: 149,
-    fuels: ["Diesel", "Petrol"],
-    category: "emissions",
-    description: "EGR off calibration for vehicles with EGR-related faults or race/export use."
-  },
-  {
-    id: "scr",
-    name: "SCR delete",
-    price: 219,
-    fuels: ["Diesel"],
-    category: "emissions",
-    description: "SCR system software solution where legally permitted."
-  },
-  {
-    id: "immo",
-    name: "Immo off",
-    price: 169,
-    category: "security",
-    description: "Immobilizer software service for ECU replacement and diagnostic repair scenarios."
-  },
-  {
-    id: "speed-limiter",
-    name: "Speed limiter removal",
-    price: 119,
-    category: "performance",
-    description: "Vmax / speed limiter adjustment after drivetrain suitability check."
-  },
-  {
-    id: "launch",
-    name: "Launch control",
-    price: 165,
-    fuels: ["Petrol", "Hybrid"],
-    category: "performance",
-    description: "Launch control strategy for supported ECU/TCU combinations."
-  },
-  {
-    id: "pops",
-    name: "Pops & Bangs / Crackle",
-    price: 149,
-    fuels: ["Petrol"],
-    category: "performance",
-    description: "Crackle calibration for petrol engines, set conservatively for hardware safety."
-  },
-  {
-    id: "gearbox",
-    name: "DSG / TCU tuning",
-    price: 239,
-    requiresGearbox: true,
-    category: "gearbox",
-    description: "DSG, ZF or TCU shift strategy, torque limits and launch behavior where supported."
-  }
-];
-
-export const allServiceOptionIds = serviceOptions.map((option) => option.id);
-
-export const engineCatalog: EngineVariant[] = [
+const curatedEngineCatalog: EngineVariant[] = [
   {
     id: "vw-golf-20-tsi-ea888",
     brand: "Volkswagen",
@@ -513,6 +419,10 @@ export const engineCatalog: EngineVariant[] = [
     ]
   }
 ];
+
+export const engineCatalog: EngineVariant[] = curatedEngineCatalog.map((vehicle) =>
+  withCatalogAuditMetadata(vehicle, "curated")
+);
 
 type GeneratedTrim = {
   code: string;
@@ -1526,6 +1436,7 @@ export const generatedVehicleCatalog: EngineVariant[] = allGeneratedFamilies.fla
     })
 );
 
+// Canonical server-side data. Client components must use the selector DTO/API instead.
 export const vehicleDatabase: EngineVariant[] = dedupeVehicles([
   ...engineCatalog,
   ...generatedVehicleCatalog
@@ -1595,6 +1506,84 @@ export function searchVehicles(query: string) {
     .map((item) => item.vehicle);
 }
 
+export function getPopularVehicleSelectorItems(limit = 4) {
+  return vehicleDatabase
+    .filter((vehicle) => vehicle.popular)
+    .slice(0, limit)
+    .map(toVehicleSelectorItem);
+}
+
+export function searchVehicleSelectorItems(query: string, limit = 4) {
+  return uniqueVehicleSelectorItems(
+    searchVehicles(query).map(toVehicleSelectorItem),
+    limit
+  );
+}
+
+export function getVehicleSelectorItems({
+  brand,
+  model,
+  year
+}: {
+  brand: string;
+  model: string;
+  year: number;
+}, limit = Number.POSITIVE_INFINITY) {
+  return uniqueVehicleSelectorItems(
+    vehicleDatabase
+      .filter(
+        (vehicle) =>
+          vehicle.brand === brand &&
+          vehicle.model === model &&
+          vehicle.years.includes(year)
+      )
+      .map(toVehicleSelectorItem),
+    limit
+  );
+}
+
+function toVehicleSelectorItem(vehicle: EngineVariant): VehicleSelectorItem {
+  return {
+    id: vehicle.id,
+    brand: vehicle.brand,
+    model: vehicle.model,
+    engine: vehicle.engine,
+    version: vehicle.version,
+    yearRange: vehicle.yearRange,
+    ecuType: vehicle.ecuType,
+    popular: Boolean(vehicle.popular),
+    priceFrom: vehicle.stages[0]?.price ?? 0
+  };
+}
+
+function uniqueVehicleSelectorItems(
+  vehicles: VehicleSelectorItem[],
+  limit: number
+) {
+  const seen = new Set<string>();
+  const result: VehicleSelectorItem[] = [];
+  const safeLimit = Math.max(0, Math.floor(limit));
+
+  if (safeLimit === 0) {
+    return result;
+  }
+
+  for (const vehicle of vehicles) {
+    if (seen.has(vehicle.id)) {
+      continue;
+    }
+
+    seen.add(vehicle.id);
+    result.push(vehicle);
+
+    if (result.length >= safeLimit) {
+      break;
+    }
+  }
+
+  return result;
+}
+
 export function findCatalogMatch(input: {
   make?: string;
   model?: string;
@@ -1662,7 +1651,7 @@ function createGeneratedVehicle(
 ): EngineVariant {
   const model = `${modelName} ${trim.code}`;
 
-  return {
+  return withCatalogAuditMetadata({
     id: `${slugify(brand)}-${slugify(modelName)}-${slugify(trim.code)}-${year}`,
     brand,
     model,
@@ -1688,7 +1677,69 @@ function createGeneratedVehicle(
       String(year),
       ...trim.tags
     ]
+  }, "generated");
+}
+
+function withCatalogAuditMetadata(
+  vehicle: EngineVariant,
+  source: "curated" | "generated"
+): EngineVariant {
+  const tcuRecommended = Boolean(
+    vehicle.gearbox &&
+      vehicle.gearbox !== "Manual" &&
+      vehicle.options.includes("gearbox")
+  );
+
+  return {
+    ...vehicle,
+    confidenceLevel: vehicle.confidenceLevel ?? "estimated",
+    verificationRequired: vehicle.verificationRequired ?? true,
+    dataNotes:
+      vehicle.dataNotes ??
+      (source === "generated"
+        ? [
+            "Generated from family, trim and year templates; exact engine and ECU/TCU support require manual verification."
+          ]
+        : undefined),
+    recommendedPackage:
+      vehicle.recommendedPackage ?? {
+        stage: "Stage 1",
+        recommendedOptionIds: tcuRecommended ? ["gearbox"] : [],
+        verificationRequired: true,
+        notes: ["Paid add-ons require explicit customer selection."]
+      },
+    stages: vehicle.stages.map((stage) => ({
+      ...stage,
+      pricingTier: stage.pricingTier ?? safePricingTierForStage(stage),
+      confidenceLevel: stage.confidenceLevel ?? "estimated",
+      recommendedUse:
+        stage.recommendedUse ??
+        (stage.name === "Stage 1"
+          ? "daily"
+          : stage.name === "Stage 2"
+            ? "performance"
+            : "custom"),
+      hardwareRequired: stage.hardwareRequired ?? stage.name !== "Stage 1",
+      tcuRecommended: stage.tcuRecommended ?? tcuRecommended,
+      logCheckRecommended: stage.logCheckRecommended ?? stage.name !== "Stage 1"
+    }))
   };
+}
+
+function safePricingTierForStage(stage: StageDefinition): PricingTierId | undefined {
+  if (stage.name === "Stage 1" && stage.price === 269) {
+    return "stage1-standard";
+  }
+
+  if (stage.name === "Stage 2" && stage.price === 399) {
+    return "stage2-standard";
+  }
+
+  if (stage.name === "Stage 3+") {
+    return "stage3-custom";
+  }
+
+  return undefined;
 }
 
 function buildGeneratedStages(trim: GeneratedTrim): StageDefinition[] {

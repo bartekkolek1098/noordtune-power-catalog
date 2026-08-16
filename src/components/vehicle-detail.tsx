@@ -2,8 +2,11 @@
 
 import {Check, Gauge, MessageCircle, ShieldCheck, Sparkles, Wrench} from "lucide-react";
 import {useMemo, useState} from "react";
-import type {EngineVariant, StageDefinition} from "@/data/catalog";
-import {serviceOptions} from "@/data/catalog";
+import {
+  serviceOptions,
+  type EngineVariant,
+  type StageDefinition
+} from "@/data/catalog-shared";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";

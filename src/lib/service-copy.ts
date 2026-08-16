@@ -1,4 +1,4 @@
-import {serviceOptions, type ServiceOption} from "@/data/catalog";
+import {serviceOptions, type ServiceOption} from "@/data/catalog-shared";
 import type {Locale} from "@/i18n/routing";
 
 type ServiceOptionCopy = {
