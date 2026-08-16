@@ -27,6 +27,10 @@ import {Button} from "@/components/ui/button";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import {Input} from "@/components/ui/input";
 import {PowerChart} from "@/components/power-chart";
+import {
+  CatalogVerificationNotice,
+  type CatalogVerificationText
+} from "@/components/catalog-verification-notice";
 
 type LookupCopy = {
   label: string;
@@ -47,6 +51,9 @@ type LookupCopy = {
   options: string;
   viewDetails: string;
   quoteForCar: string;
+  verification: CatalogVerificationText & {
+    success: string;
+  };
   recommendation: {
     eyebrow: string;
     bestDaily: string;
@@ -212,7 +219,7 @@ export function PlateLookup({
   }
 
   return (
-    <Card className="panel-edge carbon-panel border-primary/20 shadow-glow">
+    <Card className="panel-edge min-w-0 carbon-panel border-primary/20 shadow-glow">
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between gap-4">
           <div>
@@ -305,10 +312,15 @@ export function PlateLookup({
 
               <div className="grid gap-4 md:grid-cols-[1fr_0.9fr]">
                 {match ? (
-                  <div className="rounded-[3px] border border-white/10 bg-black/30 p-4">
-                    <div className="mb-3 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                      <ShieldCheck className="h-4 w-4" />
-                      {text.catalogMatch}
+                  <div className="rounded-[3px] border border-emerald-400/25 bg-[linear-gradient(145deg,rgba(16,185,129,.08),rgba(0,0,0,.34))] p-4">
+                    <div className="mb-3 flex flex-wrap items-center gap-2">
+                      <Badge className="rounded-[3px] border-emerald-400/35 bg-emerald-400/10 text-emerald-300">
+                        <Check className="mr-1 h-3.5 w-3.5" />
+                        {text.verification.success}
+                      </Badge>
+                      <span className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
+                        {text.catalogMatch}
+                      </span>
                     </div>
                     <div className="font-bold">
                       {match.brand} {match.model}
@@ -393,6 +405,10 @@ export function PlateLookup({
                   </Button>
                 </div>
               </div>
+
+              {match ? (
+                <CatalogVerificationNotice compact text={text.verification} />
+              ) : null}
 
               {match ? (
                 <section

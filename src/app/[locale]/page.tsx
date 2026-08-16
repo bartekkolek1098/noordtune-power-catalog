@@ -200,6 +200,13 @@ export default async function HomePage({params}: PageProps) {
                 options: lookup("options"),
                 viewDetails: lookup("viewDetails"),
                 quoteForCar: lookup("quoteForCar"),
+                verification: {
+                  success: lookup("verification.success"),
+                  badge: lookup("verification.badge"),
+                  title: lookup("verification.title"),
+                  text: lookup("verification.text"),
+                  footer: lookup("verification.footer")
+                },
                 recommendation: {
                   eyebrow: lookup("recommendation.eyebrow"),
                   bestDaily: lookup("recommendation.bestDaily"),

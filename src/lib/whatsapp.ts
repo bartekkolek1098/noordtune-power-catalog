@@ -84,6 +84,7 @@ Car: ${vehicle}${vehiclePower ? `\nPower: ${vehiclePower}` : ""}
 Stage: ${stage}${recommendedPackage ? `\nRecommended package selected: ${recommendedPackage}` : ""}
 Extra options: ${optionText}
 Estimated price: ${price}
+RDW catalog match: please confirm the exact engine/ECU variant and final setup.
 Could you check this and advise?`;
   }
 
@@ -95,6 +96,7 @@ Auto: ${vehicle}${vehiclePower ? `\nMoc: ${vehiclePower}` : ""}
 Stage: ${stage}${recommendedPackage ? `\nWybrany polecany pakiet: ${recommendedPackage}` : ""}
 Opcje dodatkowe: ${optionText}
 Orientacyjna cena: ${price}
+Wynik dopasowania RDW: proszę potwierdzić dokładny wariant silnika/ECU i końcową konfigurację.
 Proszę o sprawdzenie i poradę.`;
   }
 
@@ -105,6 +107,7 @@ Auto: ${vehicle}${vehiclePower ? `\nVermogen: ${vehiclePower}` : ""}
 Stage: ${stage}${recommendedPackage ? `\nAanbevolen pakket geselecteerd: ${recommendedPackage}` : ""}
 Extra opties: ${optionText}
 Indicatie: ${price}
+RDW-catalogusmatch: controleer de exacte motor-/ECU-variant en definitieve setup.
 Kunnen jullie dit controleren en advies geven?`;
 }
 

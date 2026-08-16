@@ -39,6 +39,13 @@
     "options": "Opcje",
     "viewDetails": "Otwórz stronę tuningu",
     "quoteForCar": "Zapytaj o wycenę tego auta",
+    "verification": {
+      "success": "Pojazd znaleziony",
+      "badge": "Wymagana ręczna weryfikacja",
+      "title": "Sprawdzenie przed ostatecznym potwierdzeniem",
+      "text": "RDW dopasował pojazd do odpowiedniego wariantu w katalogu. Przed ostatecznym potwierdzeniem tuningu, mocy i ceny NoordTune sprawdzi dokładny wariant silnika, ECU/TCU, oprogramowanie oraz konfigurację pojazdu.",
+      "footer": "Pokazane wyniki pozostają orientacyjne do czasu tej weryfikacji."
+    },
     "recommendation": {
       "eyebrow": "Polecany pakiet",
       "bestDaily": "Najlepszy zestaw na co dzień",

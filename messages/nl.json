@@ -39,6 +39,13 @@
     "options": "Opties",
     "viewDetails": "Bekijk tuning pagina",
     "quoteForCar": "Vraag offerte voor deze auto",
+    "verification": {
+      "success": "Voertuig gevonden",
+      "badge": "Handmatige verificatie vereist",
+      "title": "Controle vóór definitieve bevestiging",
+      "text": "RDW heeft je voertuig gekoppeld aan een passende catalogusvariant. Voordat we tuning, vermogen en prijs definitief bevestigen, controleert NoordTune de exacte motorvariant, ECU/TCU, software en voertuigconfiguratie.",
+      "footer": "Getoonde resultaten zijn indicatief tot deze controle is uitgevoerd."
+    },
     "recommendation": {
       "eyebrow": "Aanbevolen pakket",
       "bestDaily": "Beste daily setup",
