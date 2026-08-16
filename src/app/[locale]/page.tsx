@@ -193,7 +193,31 @@ export default async function HomePage({params}: PageProps) {
                 torque: lookup("torque"),
                 options: lookup("options"),
                 viewDetails: lookup("viewDetails"),
-                quoteForCar: lookup("quoteForCar")
+                quoteForCar: lookup("quoteForCar"),
+                recommendation: {
+                  eyebrow: lookup("recommendation.eyebrow"),
+                  bestDaily: lookup("recommendation.bestDaily"),
+                  dailyDescription: lookup("recommendation.dailyDescription"),
+                  stage1Benefit: lookup("recommendation.stage1Benefit"),
+                  diagnosticBenefit: lookup("recommendation.diagnosticBenefit"),
+                  gearboxBenefit: lookup("recommendation.gearboxBenefit"),
+                  selectStage1: lookup("recommendation.selectStage1"),
+                  stage1Selected: lookup("recommendation.stage1Selected"),
+                  recommendedAddOn: lookup("recommendation.recommendedAddOn"),
+                  addGearbox: lookup("recommendation.addGearbox"),
+                  removeGearbox: lookup("recommendation.removeGearbox"),
+                  manualBadge: lookup("recommendation.manualBadge"),
+                  manualTitle: lookup("recommendation.manualTitle"),
+                  manualDescription: lookup("recommendation.manualDescription"),
+                  manualDetected: lookup("recommendation.manualDetected"),
+                  manualEcu: lookup("recommendation.manualEcu"),
+                  manualStage: lookup("recommendation.manualStage"),
+                  manualQuote: lookup("recommendation.manualQuote"),
+                  nextStep: lookup("recommendation.nextStep"),
+                  nextStepDescription: lookup("recommendation.nextStepDescription"),
+                  manualCta: lookup("recommendation.manualCta"),
+                  indicativeEstimate: lookup("recommendation.indicativeEstimate")
+                }
               }}
             />
 

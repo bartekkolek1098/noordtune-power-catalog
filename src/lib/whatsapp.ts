@@ -34,3 +34,182 @@ export function whatsappHref({
 
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 }
+
+export function createLookupQuoteMessage({
+  displacementCc,
+  exactMatch,
+  fuel,
+  locale,
+  options,
+  plate,
+  price,
+  recommendedPackage,
+  stage,
+  vehicle,
+  vehiclePower
+}: {
+  displacementCc?: number | null;
+  exactMatch: boolean;
+  fuel?: string;
+  locale: Locale;
+  options: string[];
+  plate: string;
+  price: string;
+  recommendedPackage?: string;
+  stage: string;
+  vehicle: string;
+  vehiclePower?: string;
+}) {
+  const optionText = options.length > 0 ? options.join(", ") : "-";
+
+  if (!exactMatch) {
+    return createManualReviewMessage({
+      displacementCc,
+      fuel,
+      locale,
+      optionText,
+      plate,
+      price,
+      stage,
+      vehicle,
+      vehiclePower
+    });
+  }
+
+  if (locale === "en") {
+    return `Hello NoordTune, I would like a quote for this car:
+Language: English
+Plate: ${plate}
+Car: ${vehicle}${vehiclePower ? `\nPower: ${vehiclePower}` : ""}
+Stage: ${stage}${recommendedPackage ? `\nRecommended package selected: ${recommendedPackage}` : ""}
+Extra options: ${optionText}
+Estimated price: ${price}
+Could you check this and advise?`;
+  }
+
+  if (locale === "pl") {
+    return `Cześć NoordTune, proszę o wycenę tego auta:
+Język: polski
+Rejestracja: ${plate}
+Auto: ${vehicle}${vehiclePower ? `\nMoc: ${vehiclePower}` : ""}
+Stage: ${stage}${recommendedPackage ? `\nWybrany polecany pakiet: ${recommendedPackage}` : ""}
+Opcje dodatkowe: ${optionText}
+Orientacyjna cena: ${price}
+Proszę o sprawdzenie i poradę.`;
+  }
+
+  return `Hallo NoordTune, ik wil graag een offerte voor deze auto:
+Taal: Nederlands
+Kenteken: ${plate}
+Auto: ${vehicle}${vehiclePower ? `\nVermogen: ${vehiclePower}` : ""}
+Stage: ${stage}${recommendedPackage ? `\nAanbevolen pakket geselecteerd: ${recommendedPackage}` : ""}
+Extra opties: ${optionText}
+Indicatie: ${price}
+Kunnen jullie dit controleren en advies geven?`;
+}
+
+export function createVehicleQuoteMessage({
+  locale,
+  options,
+  price,
+  recommendedPackage,
+  stage,
+  vehicle,
+  vehiclePower
+}: {
+  locale: Locale;
+  options: string[];
+  price: string;
+  recommendedPackage?: string;
+  stage: string;
+  vehicle: string;
+  vehiclePower: string;
+}) {
+  const optionText = options.length > 0 ? options.join(", ") : "-";
+
+  if (locale === "en") {
+    return `Hello NoordTune, I would like a quote for this car:
+Language: English
+Car: ${vehicle}
+Power: ${vehiclePower}
+Stage: ${stage}${recommendedPackage ? `\nRecommended package selected: ${recommendedPackage}` : ""}
+Extra options: ${optionText}
+Estimated price: ${price}
+Could you check this and advise?`;
+  }
+
+  if (locale === "pl") {
+    return `Cześć NoordTune, proszę o wycenę tego auta:
+Język: polski
+Auto: ${vehicle}
+Moc: ${vehiclePower}
+Stage: ${stage}${recommendedPackage ? `\nWybrany polecany pakiet: ${recommendedPackage}` : ""}
+Opcje dodatkowe: ${optionText}
+Orientacyjna cena: ${price}
+Proszę o sprawdzenie i poradę.`;
+  }
+
+  return `Hallo NoordTune, ik wil graag een offerte voor deze auto:
+Taal: Nederlands
+Auto: ${vehicle}
+Vermogen: ${vehiclePower}
+Stage: ${stage}${recommendedPackage ? `\nAanbevolen pakket geselecteerd: ${recommendedPackage}` : ""}
+Extra opties: ${optionText}
+Indicatie: ${price}
+Kunnen jullie dit controleren en advies geven?`;
+}
+
+function createManualReviewMessage({
+  displacementCc,
+  fuel,
+  locale,
+  optionText,
+  plate,
+  price,
+  stage,
+  vehicle,
+  vehiclePower
+}: {
+  displacementCc?: number | null;
+  fuel?: string;
+  locale: Locale;
+  optionText: string;
+  plate: string;
+  price: string;
+  stage: string;
+  vehicle: string;
+  vehiclePower?: string;
+}) {
+  const displacementLine = displacementCc ? `${displacementCc} cc` : undefined;
+
+  if (locale === "en") {
+    return `Hello NoordTune, I would like you to manually check this car.
+Plate: ${plate}
+Car: ${vehicle}${fuel ? `\nFuel: ${fuel}` : ""}${vehiclePower ? `\nRDW power: ${vehiclePower}` : ""}${displacementLine ? `\nDisplacement: ${displacementLine}` : ""}
+Catalog: no exact match
+Indicative choice: ${stage}
+Extra options: ${optionText}
+Estimated price: ${price}
+Could you confirm the ECU/engine variant and advise?`;
+  }
+
+  if (locale === "pl") {
+    return `Cześć NoordTune, proszę o ręczne sprawdzenie tego auta.
+Rejestracja: ${plate}
+Auto: ${vehicle}${fuel ? `\nPaliwo: ${fuel}` : ""}${vehiclePower ? `\nMoc z RDW: ${vehiclePower}` : ""}${displacementLine ? `\nPojemność: ${displacementLine}` : ""}
+Katalog: brak dokładnego dopasowania
+Orientacyjny wybór: ${stage}
+Opcje dodatkowe: ${optionText}
+Orientacyjna cena: ${price}
+Proszę o potwierdzenie ECU/wariantu silnika i poradę.`;
+  }
+
+  return `Hallo NoordTune, ik wil graag dat jullie deze auto handmatig controleren.
+Kenteken: ${plate}
+Auto: ${vehicle}${fuel ? `\nBrandstof: ${fuel}` : ""}${vehiclePower ? `\nRDW vermogen: ${vehiclePower}` : ""}${displacementLine ? `\nCilinderinhoud: ${displacementLine}` : ""}
+Catalogus: geen exacte match
+Indicatieve keuze: ${stage}
+Extra opties: ${optionText}
+Indicatie: ${price}
+Kunnen jullie de ECU/motorvariant controleren en advies geven?`;
+}

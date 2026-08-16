@@ -6,10 +6,13 @@ import {
   Car,
   Check,
   ChevronRight,
+  ClipboardCheck,
   Loader2,
   MessageCircle,
   Search,
-  ShieldCheck
+  ShieldCheck,
+  Sparkles,
+  Wrench
 } from "lucide-react";
 import {useMemo, useState} from "react";
 import type {RdwLookupResult} from "@/lib/rdw";
@@ -18,7 +21,7 @@ import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {sitePath} from "@/lib/site-path";
-import {whatsappHref} from "@/lib/whatsapp";
+import {createLookupQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
@@ -44,6 +47,30 @@ type LookupCopy = {
   options: string;
   viewDetails: string;
   quoteForCar: string;
+  recommendation: {
+    eyebrow: string;
+    bestDaily: string;
+    dailyDescription: string;
+    stage1Benefit: string;
+    diagnosticBenefit: string;
+    gearboxBenefit: string;
+    selectStage1: string;
+    stage1Selected: string;
+    recommendedAddOn: string;
+    addGearbox: string;
+    removeGearbox: string;
+    manualBadge: string;
+    manualTitle: string;
+    manualDescription: string;
+    manualDetected: string;
+    manualEcu: string;
+    manualStage: string;
+    manualQuote: string;
+    nextStep: string;
+    nextStepDescription: string;
+    manualCta: string;
+    indicativeEstimate: string;
+  };
 };
 
 type LookupError = {
@@ -64,6 +91,7 @@ export function PlateLookup({
   const [loading, setLoading] = useState(false);
   const [stageIndex, setStageIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+  const [recommendedPackageUsed, setRecommendedPackageUsed] = useState(false);
 
   const match = result?.tuningMatch?.variant;
   const stages = useMemo(() => {
@@ -86,6 +114,10 @@ export function PlateLookup({
   }, [locale, match]);
 
   const selectedStage = stages[stageIndex] ?? stages[0];
+  const stage1Index = stages.findIndex((stage) => stage.name === "Stage 1");
+  const gearboxOption = match && match.gearbox !== "Manual"
+    ? availableOptions.find((option) => option.id === "gearbox")
+    : undefined;
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
   const powerUnit = locale === "en" ? "hp" : locale === "pl" ? "KM" : "pk";
   const localCopy = lookupRuntimeCopy[locale];
@@ -102,17 +134,26 @@ export function PlateLookup({
   const selectedOptionLabels = availableOptions
     .filter((option) => selectedOptions.includes(option.id))
     .map((option) => option.name);
+  const recommendedPackage =
+    recommendedPackageUsed && selectedStage?.name === "Stage 1"
+      ? `${text.recommendation.bestDaily} · Stage 1`
+      : undefined;
   const lookupQuoteMessage =
     result && selectedStage
       ? createLookupQuoteMessage({
+          displacementCc: result.vehicle.engine.displacementCc,
+          exactMatch: Boolean(match),
+          fuel: result.vehicle.fuel,
           locale,
           options: selectedOptionLabels,
           plate: result.vehicle.plate,
           price: formatCurrency(total, localeCode),
+          recommendedPackage,
           stage: selectedStage.name,
           vehicle: quoteVehicleLabel ?? `${result.vehicle.make} ${result.vehicle.model}`.trim(),
           vehiclePower:
-            result.vehicle.engine.powerHp
+            result.vehicle.engine.powerHp !== null &&
+            result.vehicle.engine.powerHp !== undefined
               ? `${result.vehicle.engine.powerHp} ${powerUnit}`
               : undefined
         })
@@ -125,6 +166,7 @@ export function PlateLookup({
     setResult(null);
     setSelectedOptions([]);
     setStageIndex(0);
+    setRecommendedPackageUsed(false);
 
     try {
       const response = await fetch(sitePath("/api/rdw-lookup"), {
@@ -154,6 +196,19 @@ export function PlateLookup({
     } finally {
       setLoading(false);
     }
+  }
+
+  function selectStage(index: number, recommended = false) {
+    setStageIndex(index);
+    setRecommendedPackageUsed(recommended);
+  }
+
+  function toggleOption(id: string) {
+    setSelectedOptions((current) =>
+      current.includes(id)
+        ? current.filter((optionId) => optionId !== id)
+        : [...current, id]
+    );
   }
 
   return (
@@ -219,10 +274,11 @@ export function PlateLookup({
             <motion.div
               animate={{opacity: 1, y: 0}}
               className="mt-6 space-y-5"
+              data-testid="rdw-result"
               exit={{opacity: 0, y: -8}}
               initial={{opacity: 0, y: 8}}
             >
-              <div className="rounded-lg border border-white/10 bg-black/25 p-4">
+              <div className="rounded-[3px] border border-white/10 bg-black/35 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,.04)]">
                 <div className="mb-3 flex items-center justify-between gap-3">
                   <div className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
                     {text.detected}
@@ -248,42 +304,81 @@ export function PlateLookup({
               </div>
 
               <div className="grid gap-4 md:grid-cols-[1fr_0.9fr]">
-                <div className="rounded-lg border border-white/10 bg-black/20 p-4">
-                  <div className="mb-3 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                    <ShieldCheck className="h-4 w-4" />
-                    {text.catalogMatch}
-                  </div>
-                  {match ? (
-                    <>
-                      <div className="font-bold">
-                        {match.brand} {match.model}
-                      </div>
-                      <p className="mt-1 text-sm text-muted-foreground">
-                        {match.engine} · {match.ecuType}
-                      </p>
-                      <Button asChild className="mt-4" variant="outline">
-                        <a href={sitePath(`/${locale}/vehicles/${match.id}`)}>
-                          {text.viewDetails}
-                          <ChevronRight className="h-4 w-4" />
-                        </a>
-                      </Button>
-                    </>
-                  ) : (
-                    <p className="text-sm text-muted-foreground">
-                      {localCopy.exactMatch}
+                {match ? (
+                  <div className="rounded-[3px] border border-white/10 bg-black/30 p-4">
+                    <div className="mb-3 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
+                      <ShieldCheck className="h-4 w-4" />
+                      {text.catalogMatch}
+                    </div>
+                    <div className="font-bold">
+                      {match.brand} {match.model}
+                    </div>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      {match.engine} · {match.ecuType}
                     </p>
-                  )}
-                </div>
+                    <Button asChild className="mt-4 rounded-[3px]" variant="outline">
+                      <a href={sitePath(`/${locale}/vehicles/${match.id}`)}>
+                        {text.viewDetails}
+                        <ChevronRight className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  </div>
+                ) : (
+                  <div
+                    className="panel-edge overflow-hidden border-primary/35 p-5"
+                    data-testid="rdw-manual-review"
+                  >
+                    <div className="flex flex-wrap items-center gap-3">
+                      <Badge className="border-primary/40 bg-primary/15 text-primary">
+                        {text.recommendation.manualBadge}
+                      </Badge>
+                      <span className="text-xs font-black uppercase tracking-[0.16em] text-slate-400">
+                        {text.recommendation.nextStep}
+                      </span>
+                    </div>
+                    <h3 className="racing-title mt-4 text-2xl leading-tight text-white">
+                      {text.recommendation.manualTitle}
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                      {text.recommendation.manualDescription}
+                    </p>
+                    <ul className="mt-5 grid gap-3 text-sm text-slate-200 sm:grid-cols-2">
+                      {[
+                        text.recommendation.manualDetected,
+                        text.recommendation.manualEcu,
+                        text.recommendation.manualStage,
+                        text.recommendation.manualQuote
+                      ].map((item) => (
+                        <li className="flex gap-2" key={item}>
+                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-5 rounded-[3px] border border-white/10 bg-black/35 p-3 text-sm leading-6 text-slate-300">
+                      <span className="font-black text-white">
+                        {text.recommendation.nextStep}:
+                      </span>{" "}
+                      {text.recommendation.nextStepDescription}
+                    </div>
+                  </div>
+                )}
 
-                <div className="rounded-lg border border-primary/20 bg-primary/10 p-4">
+                <div className="rounded-[3px] border border-primary/30 bg-[linear-gradient(145deg,rgba(227,6,19,.16),rgba(0,0,0,.42))] p-4">
                   <div className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                    {text.estimate}
+                    {match ? text.estimate : text.recommendation.indicativeEstimate}
                   </div>
                   <div className="mt-2 text-3xl font-black">
                     {formatCurrency(total, localeCode)}
                   </div>
-                  <Button asChild className="mt-4 h-12 w-full rounded-[3px] text-sm font-black uppercase shadow-[0_0_32px_rgba(227,6,19,.38)]">
+                  {!match ? (
+                    <p className="mt-3 text-sm leading-6 text-slate-300">
+                      {text.recommendation.nextStepDescription}
+                    </p>
+                  ) : null}
+                  <Button asChild className="mt-4 h-auto min-h-12 w-full whitespace-normal rounded-[3px] py-3 text-sm font-black uppercase leading-tight shadow-[0_0_32px_rgba(227,6,19,.38)]">
                     <a
+                      data-testid={match ? "rdw-exact-quote" : "rdw-manual-review-quote"}
                       href={whatsappHref({
                         locale,
                         message: lookupQuoteMessage,
@@ -293,13 +388,116 @@ export function PlateLookup({
                       target="_blank"
                     >
                       <MessageCircle className="h-4 w-4" />
-                      {text.quoteForCar}
+                      {match ? text.quoteForCar : text.recommendation.manualCta}
                     </a>
                   </Button>
                 </div>
               </div>
 
-              <div className="rounded-lg border border-white/10 bg-black/20 p-4">
+              {match ? (
+                <section
+                  className="panel-edge overflow-hidden border-primary/35 p-5"
+                  data-testid="rdw-recommended-package"
+                >
+                  <div className="grid gap-5 lg:grid-cols-[1fr_0.8fr] lg:items-center">
+                    <div>
+                      <div className="flex flex-wrap items-center gap-3">
+                        <span className="grid h-10 w-10 place-items-center rounded-[3px] border border-primary/35 bg-primary/15 text-primary">
+                          <Sparkles className="h-5 w-5" />
+                        </span>
+                        <div>
+                          <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">
+                            {text.recommendation.eyebrow}
+                          </div>
+                          <h3 className="racing-title mt-1 text-2xl leading-none text-white">
+                            {text.recommendation.bestDaily}
+                          </h3>
+                        </div>
+                      </div>
+                      <p className="mt-4 max-w-2xl text-sm leading-6 text-muted-foreground">
+                        {text.recommendation.dailyDescription}
+                      </p>
+                      <ul className="mt-4 grid gap-3 text-sm text-slate-200 sm:grid-cols-2">
+                        <li className="flex gap-2">
+                          <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                          {text.recommendation.stage1Benefit}
+                        </li>
+                        <li className="flex gap-2">
+                          <ClipboardCheck className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                          {text.recommendation.diagnosticBenefit}
+                        </li>
+                        {gearboxOption ? (
+                          <li className="flex gap-2 sm:col-span-2">
+                            <Wrench className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                            {text.recommendation.gearboxBenefit}
+                          </li>
+                        ) : null}
+                      </ul>
+                    </div>
+
+                    <div className="rounded-[3px] border border-white/10 bg-black/40 p-4">
+                      <Button
+                        className="h-12 w-full rounded-[3px] font-black uppercase"
+                        disabled={stage1Index < 0}
+                        onClick={() => selectStage(stage1Index, true)}
+                        type="button"
+                      >
+                        <Check className="h-4 w-4" />
+                        {recommendedPackageUsed && selectedStage?.name === "Stage 1"
+                          ? text.recommendation.stage1Selected
+                          : text.recommendation.selectStage1}
+                      </Button>
+
+                      {gearboxOption ? (
+                        <div className="mt-4 border-t border-white/10 pt-4">
+                          <div className="mb-2 text-xs font-black uppercase tracking-[0.14em] text-muted-foreground">
+                            {text.recommendation.recommendedAddOn}
+                          </div>
+                          <Button
+                            className="h-auto min-h-11 w-full justify-between gap-3 rounded-[3px] px-3 py-2 text-left text-xs font-bold"
+                            onClick={() => toggleOption(gearboxOption.id)}
+                            type="button"
+                            variant="outline"
+                          >
+                            <span>
+                              {gearboxOption.name} · {formatCurrency(gearboxOption.price, localeCode)}
+                            </span>
+                            <span className="text-primary">
+                              {selectedOptions.includes(gearboxOption.id)
+                                ? text.recommendation.removeGearbox
+                                : text.recommendation.addGearbox}
+                            </span>
+                          </Button>
+                        </div>
+                      ) : null}
+
+                      <Button asChild className="mt-4 h-auto min-h-11 w-full whitespace-normal rounded-[3px] py-3 text-xs font-black uppercase leading-tight">
+                        <a
+                          data-testid="rdw-recommendation-quote"
+                          href={whatsappHref({
+                            locale,
+                            message: lookupQuoteMessage,
+                            vehicleLabel: quoteVehicleLabel
+                          })}
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          <MessageCircle className="h-4 w-4" />
+                          {text.quoteForCar}
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </section>
+              ) : null}
+
+              <div className="rounded-[3px] border border-white/10 bg-black/25 p-4">
+                {!match ? (
+                  <div className="mb-4 flex items-center gap-2 text-xs font-black uppercase tracking-[0.16em] text-primary">
+                    <AlertTriangle className="h-4 w-4" />
+                    {text.recommendation.indicativeEstimate}
+                  </div>
+                ) : null}
                 <PowerChart
                   powerUnit={powerUnit}
                   stages={stages}
@@ -310,7 +508,7 @@ export function PlateLookup({
               </div>
 
               <div className="grid gap-4 md:grid-cols-[1fr_0.85fr]">
-                <div className="overflow-hidden rounded-lg border border-white/10">
+                <div className="overflow-hidden rounded-[3px] border border-white/10">
                   <table className="w-full text-sm">
                     <thead className="bg-white/[0.04] text-left text-muted-foreground">
                       <tr>
@@ -324,7 +522,7 @@ export function PlateLookup({
                         <tr
                           className="cursor-pointer border-t border-white/10 hover:bg-white/[0.04]"
                           key={stage.name}
-                          onClick={() => setStageIndex(index)}
+                          onClick={() => selectStage(index)}
                         >
                           <td className="px-3 py-3">
                             <span className="inline-flex items-center gap-2">
@@ -352,7 +550,7 @@ export function PlateLookup({
                   </table>
                 </div>
 
-                <div className="rounded-lg border border-white/10 p-4">
+                <div className="rounded-[3px] border border-white/10 p-4">
                   <div className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
                     {text.options}
                   </div>
@@ -375,13 +573,7 @@ export function PlateLookup({
                           <input
                             checked={selectedOptions.includes(option.id)}
                             className="h-4 w-4 accent-[#e2000f]"
-                            onChange={(event) => {
-                              setSelectedOptions((current) =>
-                                event.target.checked
-                                  ? [...current, option.id]
-                                  : current.filter((id) => id !== option.id)
-                              );
-                            }}
+                            onChange={() => toggleOption(option.id)}
                             type="checkbox"
                           />
                         </span>
@@ -539,58 +731,4 @@ function estimateStockTorque(result: RdwLookupResult) {
   }
 
   return Math.round(power * 1.55);
-}
-
-function createLookupQuoteMessage({
-  locale,
-  options,
-  plate,
-  price,
-  stage,
-  vehicle,
-  vehiclePower
-}: {
-  locale: Locale;
-  options: string[];
-  plate: string;
-  price: string;
-  stage: string;
-  vehicle: string;
-  vehiclePower?: string;
-}) {
-  const optionText = options.length > 0 ? options.join(", ") : "-";
-  const engineLabel =
-    locale === "en" ? "Power" : locale === "pl" ? "Moc" : "Vermogen";
-  const engineLine = vehiclePower ? `\n${engineLabel}: ${vehiclePower}` : "";
-
-  if (locale === "en") {
-    return `Hello NoordTune, I would like a quote for this car:
-Language: English
-Plate: ${plate}
-Car: ${vehicle}${engineLine}
-Stage: ${stage}
-Extra options: ${optionText}
-Estimated price: ${price}
-Could you check this and advise?`;
-  }
-
-  if (locale === "pl") {
-    return `Cześć NoordTune, proszę o wycenę tego auta:
-Język: Polski
-Rejestracja: ${plate}
-Auto: ${vehicle}${engineLine}
-Stage: ${stage}
-Opcje dodatkowe: ${optionText}
-Orientacyjna cena: ${price}
-Proszę o sprawdzenie i poradę.`;
-  }
-
-  return `Hallo NoordTune, ik wil graag een offerte voor deze auto:
-Taal: Nederlands
-Kenteken: ${plate}
-Auto: ${vehicle}${engineLine}
-Stage: ${stage}
-Extra opties: ${optionText}
-Indicatie: ${price}
-Kunnen jullie dit controleren en advies geven?`;
 }
