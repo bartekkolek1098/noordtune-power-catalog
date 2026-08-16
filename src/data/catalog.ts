@@ -1,12 +1,31 @@
+import type {PricingTierId} from "@/data/pricing";
+
 export type FuelType = "Petrol" | "Diesel" | "Hybrid" | "Electric";
+export type ConfidenceLevel = "verified" | "estimated" | "manual-review";
+export type RecommendedUse = "daily" | "performance" | "custom";
+export type StageName = "Stage 1" | "Stage 2" | "Stage 3+";
+
+export type RecommendedPackageDefinition = {
+  stage: StageName;
+  recommendedOptionIds?: string[];
+  verificationRequired?: boolean;
+  notes?: string[];
+};
 
 export type StageDefinition = {
-  name: "Stage 1" | "Stage 2" | "Stage 3+";
+  name: StageName;
   powerHp: number;
   torqueNm: number;
   price: number;
   requirements: string;
   packageItems: string[];
+  pricingTier?: PricingTierId;
+  confidenceLevel?: ConfidenceLevel;
+  recommendedUse?: RecommendedUse;
+  hardwareRequired?: boolean;
+  tcuRecommended?: boolean;
+  logCheckRecommended?: boolean;
+  notes?: string[];
 };
 
 export type ServiceOption = {
@@ -17,6 +36,11 @@ export type ServiceOption = {
   requiresGearbox?: boolean;
   category: "software" | "emissions" | "gearbox" | "performance" | "security";
   description: string;
+  pricingTier?: PricingTierId;
+  legalReviewRequired?: boolean;
+  diagnosisRequired?: boolean;
+  recommendedByDefault?: boolean;
+  compatibilityNotes?: string[];
 };
 
 export type EngineVariant = {
@@ -32,6 +56,17 @@ export type EngineVariant = {
   stockTorqueNm: number;
   ecuType: string;
   gearbox?: "DSG" | "ZF" | "TCU" | "Manual";
+  generation?: string;
+  platform?: string;
+  engineCode?: string;
+  tcuType?: string;
+  drivetrain?: string;
+  emissionsStandard?: string;
+  confidenceLevel?: ConfidenceLevel;
+  verificationRequired?: boolean;
+  dataNotes?: string[];
+  technicalNotes?: string[];
+  recommendedPackage?: RecommendedPackageDefinition;
   stages: StageDefinition[];
   options: string[];
   image: string;
@@ -46,6 +81,9 @@ export const serviceOptions: ServiceOption[] = [
     price: 185,
     fuels: ["Diesel"],
     category: "emissions",
+    legalReviewRequired: true,
+    diagnosisRequired: true,
+    recommendedByDefault: false,
     description: "DPF off / delete software for off-road or export use where legally permitted."
   },
   {
@@ -54,6 +92,9 @@ export const serviceOptions: ServiceOption[] = [
     price: 199,
     fuels: ["Diesel"],
     category: "emissions",
+    legalReviewRequired: true,
+    diagnosisRequired: true,
+    recommendedByDefault: false,
     description: "AdBlue / SCR off diagnostics and software solution where legally permitted."
   },
   {
@@ -62,6 +103,9 @@ export const serviceOptions: ServiceOption[] = [
     price: 149,
     fuels: ["Diesel", "Petrol"],
     category: "emissions",
+    legalReviewRequired: true,
+    diagnosisRequired: true,
+    recommendedByDefault: false,
     description: "EGR off calibration for vehicles with EGR-related faults or race/export use."
   },
   {
@@ -70,6 +114,9 @@ export const serviceOptions: ServiceOption[] = [
     price: 219,
     fuels: ["Diesel"],
     category: "emissions",
+    legalReviewRequired: true,
+    diagnosisRequired: true,
+    recommendedByDefault: false,
     description: "SCR system software solution where legally permitted."
   },
   {
@@ -77,6 +124,8 @@ export const serviceOptions: ServiceOption[] = [
     name: "Immo off",
     price: 169,
     category: "security",
+    diagnosisRequired: true,
+    recommendedByDefault: false,
     description: "Immobilizer software service for ECU replacement and diagnostic repair scenarios."
   },
   {
@@ -84,6 +133,8 @@ export const serviceOptions: ServiceOption[] = [
     name: "Speed limiter removal",
     price: 119,
     category: "performance",
+    diagnosisRequired: true,
+    recommendedByDefault: false,
     description: "Vmax / speed limiter adjustment after drivetrain suitability check."
   },
   {
@@ -92,6 +143,8 @@ export const serviceOptions: ServiceOption[] = [
     price: 165,
     fuels: ["Petrol", "Hybrid"],
     category: "performance",
+    diagnosisRequired: true,
+    recommendedByDefault: false,
     description: "Launch control strategy for supported ECU/TCU combinations."
   },
   {
@@ -100,6 +153,8 @@ export const serviceOptions: ServiceOption[] = [
     price: 149,
     fuels: ["Petrol"],
     category: "performance",
+    diagnosisRequired: true,
+    recommendedByDefault: false,
     description: "Crackle calibration for petrol engines, set conservatively for hardware safety."
   },
   {
@@ -108,13 +163,16 @@ export const serviceOptions: ServiceOption[] = [
     price: 239,
     requiresGearbox: true,
     category: "gearbox",
+    pricingTier: "tcu-standard",
+    diagnosisRequired: true,
+    recommendedByDefault: false,
     description: "DSG, ZF or TCU shift strategy, torque limits and launch behavior where supported."
   }
 ];
 
 export const allServiceOptionIds = serviceOptions.map((option) => option.id);
 
-export const engineCatalog: EngineVariant[] = [
+const curatedEngineCatalog: EngineVariant[] = [
   {
     id: "vw-golf-20-tsi-ea888",
     brand: "Volkswagen",
@@ -513,6 +571,10 @@ export const engineCatalog: EngineVariant[] = [
     ]
   }
 ];
+
+export const engineCatalog: EngineVariant[] = curatedEngineCatalog.map((vehicle) =>
+  withCatalogAuditMetadata(vehicle, "curated")
+);
 
 type GeneratedTrim = {
   code: string;
@@ -1662,7 +1724,7 @@ function createGeneratedVehicle(
 ): EngineVariant {
   const model = `${modelName} ${trim.code}`;
 
-  return {
+  return withCatalogAuditMetadata({
     id: `${slugify(brand)}-${slugify(modelName)}-${slugify(trim.code)}-${year}`,
     brand,
     model,
@@ -1688,7 +1750,69 @@ function createGeneratedVehicle(
       String(year),
       ...trim.tags
     ]
+  }, "generated");
+}
+
+function withCatalogAuditMetadata(
+  vehicle: EngineVariant,
+  source: "curated" | "generated"
+): EngineVariant {
+  const tcuRecommended = Boolean(
+    vehicle.gearbox &&
+      vehicle.gearbox !== "Manual" &&
+      vehicle.options.includes("gearbox")
+  );
+
+  return {
+    ...vehicle,
+    confidenceLevel: vehicle.confidenceLevel ?? "estimated",
+    verificationRequired: vehicle.verificationRequired ?? true,
+    dataNotes:
+      vehicle.dataNotes ??
+      (source === "generated"
+        ? [
+            "Generated from family, trim and year templates; exact engine and ECU/TCU support require manual verification."
+          ]
+        : undefined),
+    recommendedPackage:
+      vehicle.recommendedPackage ?? {
+        stage: "Stage 1",
+        recommendedOptionIds: tcuRecommended ? ["gearbox"] : [],
+        verificationRequired: true,
+        notes: ["Paid add-ons require explicit customer selection."]
+      },
+    stages: vehicle.stages.map((stage) => ({
+      ...stage,
+      pricingTier: stage.pricingTier ?? safePricingTierForStage(stage),
+      confidenceLevel: stage.confidenceLevel ?? "estimated",
+      recommendedUse:
+        stage.recommendedUse ??
+        (stage.name === "Stage 1"
+          ? "daily"
+          : stage.name === "Stage 2"
+            ? "performance"
+            : "custom"),
+      hardwareRequired: stage.hardwareRequired ?? stage.name !== "Stage 1",
+      tcuRecommended: stage.tcuRecommended ?? tcuRecommended,
+      logCheckRecommended: stage.logCheckRecommended ?? stage.name !== "Stage 1"
+    }))
   };
+}
+
+function safePricingTierForStage(stage: StageDefinition): PricingTierId | undefined {
+  if (stage.name === "Stage 1" && stage.price === 269) {
+    return "stage1-standard";
+  }
+
+  if (stage.name === "Stage 2" && stage.price === 399) {
+    return "stage2-standard";
+  }
+
+  if (stage.name === "Stage 3+") {
+    return "stage3-custom";
+  }
+
+  return undefined;
 }
 
 function buildGeneratedStages(trim: GeneratedTrim): StageDefinition[] {
