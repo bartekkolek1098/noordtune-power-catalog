@@ -39,6 +39,13 @@
     "options": "Options",
     "viewDetails": "Open tuning page",
     "quoteForCar": "Request quote for this car",
+    "verification": {
+      "success": "Vehicle found",
+      "badge": "Manual verification required",
+      "title": "Check before final confirmation",
+      "text": "RDW has matched your vehicle to a suitable catalog variant. Before tuning, power figures and pricing are finally confirmed, NoordTune checks the exact engine variant, ECU/TCU, software and vehicle configuration.",
+      "footer": "Displayed results remain indicative until this check is completed."
+    },
     "recommendation": {
       "eyebrow": "Recommended package",
       "bestDaily": "Best daily setup",
