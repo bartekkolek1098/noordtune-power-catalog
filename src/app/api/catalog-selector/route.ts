@@ -8,6 +8,8 @@ import {
 
 export const runtime = "nodejs";
 
+const MAX_SEARCH_RESULTS = 4;
+const MAX_ENGINE_RESULTS = 25;
 const cacheHeaders = {
   "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400"
 };
@@ -21,9 +23,9 @@ export function GET(request: NextRequest) {
   if (mode === "search") {
     const query = readParam(params, "q");
 
-    return query === null
+    return !query || query.length < 2
       ? invalidRequest()
-      : json({vehicles: searchVehicleSelectorItems(query, 4)});
+      : json({vehicles: searchVehicleSelectorItems(query, MAX_SEARCH_RESULTS)});
   }
 
   if (mode === "models") {
@@ -38,17 +40,25 @@ export function GET(request: NextRequest) {
 
   if (mode === "engines") {
     const rawYear = readParam(params, "year");
-    const year = rawYear ? Number(rawYear) : undefined;
+    const year = Number(rawYear);
 
     if (
       !brand ||
       !model ||
-      (rawYear && (!Number.isInteger(year) || Number(year) < 1900))
+      !rawYear ||
+      !Number.isInteger(year) ||
+      Number(year) < 1900 ||
+      Number(year) > 2100
     ) {
       return invalidRequest();
     }
 
-    return json({vehicles: getVehicleSelectorItems({brand, model, year})});
+    return json({
+      vehicles: getVehicleSelectorItems(
+        {brand, model, year},
+        MAX_ENGINE_RESULTS
+      )
+    });
   }
 
   return invalidRequest();

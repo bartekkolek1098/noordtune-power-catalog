@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 // Node's built-in TypeScript loader keeps this audit runnable without another dependency.
-const {writeFileSync} = require("node:fs") as typeof import("node:fs");
-const {resolve} = require("node:path") as typeof import("node:path");
+const {readdirSync, readFileSync, writeFileSync} = require("node:fs") as typeof import(
+  "node:fs"
+);
+const {dirname, relative, resolve} = require("node:path") as typeof import("node:path");
 const catalog = require("../src/data/catalog.ts") as typeof import("../src/data/catalog");
 const {serviceOptions} = require("../src/data/catalog-shared.ts") as typeof import(
   "../src/data/catalog-shared"
@@ -68,6 +70,65 @@ function addIssue(
     samples: items.slice(0, 8)
   });
 }
+
+function listSourceFiles(directory: string): string[] {
+  return readdirSync(directory, {withFileTypes: true}).flatMap((entry) => {
+    const path = resolve(directory, entry.name);
+
+    if (entry.isDirectory()) {
+      return listSourceFiles(path);
+    }
+
+    return /\.(?:ts|tsx)$/.test(entry.name) ? [path] : [];
+  });
+}
+
+function importedModules(source: string) {
+  const patterns = [
+    /\bfrom\s*["']([^"']+)["']/g,
+    /\bimport\s*(?:\(\s*)?["']([^"']+)["']/g,
+    /\brequire\s*\(\s*["']([^"']+)["']/g
+  ];
+
+  return patterns.flatMap((pattern) =>
+    Array.from(source.matchAll(pattern), (match) => match[1])
+  );
+}
+
+function importsCanonicalCatalog(file: string, source: string) {
+  const canonicalCatalogPath = resolve(process.cwd(), "src/data/catalog");
+
+  return importedModules(source).some((specifier) => {
+    const normalized = specifier.replace(/\.(?:ts|tsx|js)$/, "");
+
+    if (normalized === "@/data/catalog") {
+      return true;
+    }
+
+    return (
+      normalized.startsWith(".") &&
+      resolve(dirname(file), normalized) === canonicalCatalogPath
+    );
+  });
+}
+
+const clientImportsServerCatalog = listSourceFiles(resolve(process.cwd(), "src"))
+  .filter((file) => {
+    const source = readFileSync(file, "utf8");
+
+    return (
+      /^\s*["']use client["'];/.test(source) &&
+      importsCanonicalCatalog(file, source)
+    );
+  })
+  .map((file) => relative(process.cwd(), file));
+
+addIssue(
+  "critical",
+  "CLIENT_IMPORTS_SERVER_CATALOG",
+  "Client components must import only lightweight catalog-shared or catalog-selector modules.",
+  clientImportsServerCatalog
+);
 
 function duplicateGroups<T>(
   items: T[],
@@ -477,6 +538,7 @@ Generated from the current catalog sources by \`pnpm catalog:audit\`.
 | Brands | ${brands.length} |
 | Critical issue groups | ${criticalIssues.length} |
 | Warning groups | ${warningIssues.length} |
+| Client imports of canonical server catalog | ${clientImportsServerCatalog.length} |
 
 ## Coverage
 
@@ -518,6 +580,7 @@ console.log(`  Sitemap URLs: ${sitemapUrlCount}`);
 console.log(`  Brands: ${brands.length}`);
 console.log(`  Critical issue groups: ${criticalIssues.length}`);
 console.log(`  Warning groups: ${warningIssues.length}`);
+console.log(`  Client imports server catalog: ${clientImportsServerCatalog.length}`);
 
 for (const issue of issues) {
   issueConsole(issue);

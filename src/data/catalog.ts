@@ -1,3 +1,4 @@
+import {allServiceOptionIds} from "./catalog-shared.ts";
 import type {
   EngineVariant,
   FuelType,
@@ -17,17 +18,7 @@ export type {
   StageName
 } from "@/data/catalog-shared";
 
-export const allServiceOptionIds = [
-  "dpf",
-  "adblue",
-  "egr",
-  "scr",
-  "immo",
-  "speed-limiter",
-  "launch",
-  "pops",
-  "gearbox"
-];
+export {allServiceOptionIds};
 
 const curatedEngineCatalog: EngineVariant[] = [
   {
@@ -1523,7 +1514,10 @@ export function getPopularVehicleSelectorItems(limit = 4) {
 }
 
 export function searchVehicleSelectorItems(query: string, limit = 4) {
-  return searchVehicles(query).slice(0, limit).map(toVehicleSelectorItem);
+  return uniqueVehicleSelectorItems(
+    searchVehicles(query).map(toVehicleSelectorItem),
+    limit
+  );
 }
 
 export function getVehicleSelectorItems({
@@ -1533,16 +1527,19 @@ export function getVehicleSelectorItems({
 }: {
   brand: string;
   model: string;
-  year?: number;
-}) {
-  return vehicleDatabase
-    .filter(
-      (vehicle) =>
-        vehicle.brand === brand &&
-        vehicle.model === model &&
-        (!year || vehicle.years.includes(year))
-    )
-    .map(toVehicleSelectorItem);
+  year: number;
+}, limit = Number.POSITIVE_INFINITY) {
+  return uniqueVehicleSelectorItems(
+    vehicleDatabase
+      .filter(
+        (vehicle) =>
+          vehicle.brand === brand &&
+          vehicle.model === model &&
+          vehicle.years.includes(year)
+      )
+      .map(toVehicleSelectorItem),
+    limit
+  );
 }
 
 function toVehicleSelectorItem(vehicle: EngineVariant): VehicleSelectorItem {
@@ -1557,6 +1554,34 @@ function toVehicleSelectorItem(vehicle: EngineVariant): VehicleSelectorItem {
     popular: Boolean(vehicle.popular),
     priceFrom: vehicle.stages[0]?.price ?? 0
   };
+}
+
+function uniqueVehicleSelectorItems(
+  vehicles: VehicleSelectorItem[],
+  limit: number
+) {
+  const seen = new Set<string>();
+  const result: VehicleSelectorItem[] = [];
+  const safeLimit = Math.max(0, Math.floor(limit));
+
+  if (safeLimit === 0) {
+    return result;
+  }
+
+  for (const vehicle of vehicles) {
+    if (seen.has(vehicle.id)) {
+      continue;
+    }
+
+    seen.add(vehicle.id);
+    result.push(vehicle);
+
+    if (result.length >= safeLimit) {
+      break;
+    }
+  }
+
+  return result;
 }
 
 export function findCatalogMatch(input: {

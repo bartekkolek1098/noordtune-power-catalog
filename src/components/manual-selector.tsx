@@ -65,7 +65,7 @@ export function ManualSelector({
   useEffect(() => {
     const normalized = query.trim();
 
-    if (!normalized) {
+    if (normalized.length < 2) {
       setSearchResults([]);
       return;
     }
@@ -135,17 +135,13 @@ export function ManualSelector({
   }, [brand, model]);
 
   useEffect(() => {
-    if (!brand || !model) {
+    if (!brand || !model || !year) {
       setEngines([]);
       return;
     }
 
     const controller = new AbortController();
-    const params: Record<string, string> = {mode: "engines", brand, model};
-
-    if (year) {
-      params.year = year;
-    }
+    const params: Record<string, string> = {mode: "engines", brand, model, year};
 
     fetchSelector<{vehicles: VehicleSelectorItem[]}>(params, controller.signal)
       .then((data) => setEngines(data.vehicles))
@@ -172,7 +168,7 @@ export function ManualSelector({
     return sitePath(`/${locale}/vehicles/${id}`);
   }
 
-  const hasSearchQuery = Boolean(query.trim());
+  const hasSearchQuery = query.trim().length >= 2;
   const visibleVehicles = hasSearchQuery
     ? searchResults
     : initialPopularVehicles;
@@ -310,7 +306,7 @@ export function ManualSelector({
                 value={year}
               />
               <SelectBox
-                disabled={!model}
+                disabled={!year}
                 label={text.engine}
                 onChange={(value) => {
                   setVehicleId(value);
@@ -323,7 +319,7 @@ export function ManualSelector({
                   label: `${vehicle.engine} · ${vehicle.version}`,
                   value: vehicle.id
                 }))}
-                placeholder={model ? text.selectEngine : text.selectModel}
+                placeholder={year ? text.selectEngine : model ? text.selectYear : text.selectModel}
                 value={vehicleId}
               />
             </div>

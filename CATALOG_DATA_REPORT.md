@@ -17,6 +17,7 @@ Generated from the current catalog sources by `pnpm catalog:audit`.
 | Brands | 32 |
 | Critical issue groups | 0 |
 | Warning groups | 5 |
+| Client imports of canonical server catalog | 0 |
 
 ## Coverage
 
