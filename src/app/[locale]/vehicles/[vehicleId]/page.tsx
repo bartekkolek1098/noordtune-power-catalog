@@ -165,7 +165,16 @@ export default async function VehiclePage({params}: PageProps) {
           </div>
           <div className="max-w-4xl">
             <Badge className="mb-4 border-primary/30 bg-primary/15 text-primary">
-              {vehicle.ecuType}
+              {vehicle.ecuSupport?.family ?? vehicle.ecuType}
+              {vehicle.ecuSupport
+                ? ` · ${t(
+                    vehicle.ecuSupport.status === "supported-family"
+                      ? "technical.familyEstimate"
+                      : vehicle.ecuSupport.status === "verified"
+                        ? "technical.verified"
+                      : "technical.estimated"
+                  )}`
+                : ""}
             </Badge>
             <h1 className="racing-title text-5xl leading-none md:text-7xl">
               {vehicle.brand} {vehicle.model}
@@ -228,6 +237,15 @@ export default async function VehiclePage({params}: PageProps) {
             stage1Requirements: t("stage1Requirements"),
             stage2Requirements: t("stage2Requirements"),
             stage3Requirements: t("stage3Requirements"),
+            technical: {
+              verified: t("technical.verified"),
+              familyEstimate: t("technical.familyEstimate"),
+              estimated: t("technical.estimated"),
+              manualConfirmation: t("technical.manualConfirmation"),
+              identityNote: t("technical.identityNote"),
+              conditional: t("technical.conditional"),
+              manualReview: t("technical.manualReview")
+            },
             recommendation: {
               eyebrow: t("recommendation.eyebrow"),
               title: t("recommendation.title"),

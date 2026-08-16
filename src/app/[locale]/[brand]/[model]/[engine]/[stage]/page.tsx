@@ -279,6 +279,15 @@ export default async function VehicleStagePage({params}: PageProps) {
             stage1Requirements: t("stage1Requirements"),
             stage2Requirements: t("stage2Requirements"),
             stage3Requirements: t("stage3Requirements"),
+            technical: {
+              verified: t("technical.verified"),
+              familyEstimate: t("technical.familyEstimate"),
+              estimated: t("technical.estimated"),
+              manualConfirmation: t("technical.manualConfirmation"),
+              identityNote: t("technical.identityNote"),
+              conditional: t("technical.conditional"),
+              manualReview: t("technical.manualReview")
+            },
             recommendation: {
               eyebrow: t("recommendation.eyebrow"),
               title: t("recommendation.title"),

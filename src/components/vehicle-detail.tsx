@@ -5,7 +5,9 @@ import {useMemo, useState} from "react";
 import {
   serviceOptions,
   type EngineVariant,
-  type StageDefinition
+  type ServiceCompatibilityStatus,
+  type StageDefinition,
+  type TechnicalIdentityStatus
 } from "@/data/catalog-shared";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
@@ -40,6 +42,15 @@ type VehicleCopy = {
   stage1Requirements: string;
   stage2Requirements: string;
   stage3Requirements: string;
+  technical: {
+    verified: string;
+    familyEstimate: string;
+    estimated: string;
+    manualConfirmation: string;
+    identityNote: string;
+    conditional: string;
+    manualReview: string;
+  };
   recommendation: {
     eyebrow: string;
     title: string;
@@ -86,9 +97,16 @@ export function VehicleDetail({
   const availableOptions = useMemo(
     () =>
       serviceOptions
-        .filter((option) => vehicle.options.includes(option.id))
-        .map((option) => localizeServiceOption(option, locale)),
-    [locale, vehicle.options]
+        .filter((option) => {
+          const status = vehicle.serviceCompatibility?.[option.id]?.status;
+
+          return vehicle.options.includes(option.id) && status !== "not-applicable";
+        })
+        .map((option) => ({
+          ...localizeServiceOption(option, locale),
+          compatibilityStatus: vehicle.serviceCompatibility?.[option.id]?.status
+        })),
+    [locale, vehicle.options, vehicle.serviceCompatibility]
   );
   const optionsTotal = selectedOptions.reduce((total, id) => {
     const option = serviceOptions.find((item) => item.id === id);
@@ -100,8 +118,13 @@ export function VehicleDetail({
   const selectedOptionLabels = availableOptions
     .filter((option) => selectedOptions.includes(option.id))
     .map((option) => option.name);
+  const gearboxCompatibility = vehicle.serviceCompatibility?.gearbox?.status;
   const gearboxOption =
-    vehicle.gearbox && vehicle.gearbox !== "Manual"
+    vehicle.gearbox &&
+    vehicle.gearbox !== "Manual" &&
+    (!gearboxCompatibility ||
+      gearboxCompatibility === "supported" ||
+      gearboxCompatibility === "conditional")
       ? availableOptions.find((option) => option.id === "gearbox")
       : undefined;
   const localizedPackage =
@@ -335,11 +358,30 @@ export function VehicleDetail({
                 {localizedRequirements}
               </p>
               <div className="mt-4 grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                <span>{text.ecu}: {vehicle.ecuType}</span>
-                <span>{text.gearbox}: {vehicle.gearbox ?? "-"}</span>
+                <span>
+                  {text.ecu}: {vehicle.ecuSupport?.family ?? vehicle.ecuType}
+                  {vehicle.ecuSupport ? (
+                    <small className="mt-1 block text-[11px] font-bold uppercase tracking-[0.08em] text-primary">
+                      {technicalStatusLabel(vehicle.ecuSupport.status, text)}
+                    </small>
+                  ) : null}
+                </span>
+                <span>
+                  {text.gearbox}: {vehicle.transmissionSupport?.gearboxFamily ?? vehicle.gearbox ?? "-"}
+                  {vehicle.transmissionSupport ? (
+                    <small className="mt-1 block text-[11px] font-bold uppercase tracking-[0.08em] text-primary">
+                      {technicalStatusLabel(vehicle.transmissionSupport.status, text)}
+                    </small>
+                  ) : null}
+                </span>
                 <span>{text.fuel}: {vehicle.fuel}</span>
                 <span>{text.yearRange}: {vehicle.yearRange}</span>
               </div>
+              {vehicle.technicalEvidence ? (
+                <p className="mt-4 border-t border-white/10 pt-3 text-xs leading-5 text-muted-foreground">
+                  {text.technical.identityNote}
+                </p>
+              ) : null}
             </div>
           </div>
         </div>
@@ -402,7 +444,18 @@ export function VehicleDetail({
                 key={option.id}
               >
                 <span>
-                  <span className="block font-semibold">{option.name}</span>
+                  <span className="flex flex-wrap items-center gap-2">
+                    <span className="font-semibold">{option.name}</span>
+                    {option.compatibilityStatus === "conditional" ||
+                    option.compatibilityStatus === "manual-review" ? (
+                      <Badge
+                        className="rounded-[3px] border-white/15 bg-white/[0.06] px-1.5 py-0 text-[10px] text-slate-200"
+                        variant="outline"
+                      >
+                        {compatibilityStatusLabel(option.compatibilityStatus, text)}
+                      </Badge>
+                    ) : null}
+                  </span>
                   <span className="mt-1 block text-xs leading-5 text-muted-foreground">
                     {option.description}
                   </span>
@@ -464,4 +517,32 @@ function recommendationLabel(stageName: StageDefinition["name"], text: VehicleCo
   }
 
   return text.recommendation.custom;
+}
+
+function compatibilityStatusLabel(
+  status: ServiceCompatibilityStatus,
+  text: VehicleCopy
+) {
+  return status === "manual-review"
+    ? text.technical.manualReview
+    : text.technical.conditional;
+}
+
+function technicalStatusLabel(
+  status: TechnicalIdentityStatus,
+  text: VehicleCopy
+) {
+  if (status === "supported-family") {
+    return text.technical.familyEstimate;
+  }
+
+  if (status === "manual-review") {
+    return text.technical.manualConfirmation;
+  }
+
+  if (status === "verified") {
+    return text.technical.verified;
+  }
+
+  return text.technical.estimated;
 }

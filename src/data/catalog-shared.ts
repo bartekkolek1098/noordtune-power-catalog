@@ -4,6 +4,66 @@ export type FuelType = "Petrol" | "Diesel" | "Hybrid" | "Electric";
 export type ConfidenceLevel = "verified" | "estimated" | "manual-review";
 export type RecommendedUse = "daily" | "performance" | "custom";
 export type StageName = "Stage 1" | "Stage 2" | "Stage 3+";
+export type TechnicalIdentityStatus =
+  | "verified"
+  | "supported-family"
+  | "estimated"
+  | "manual-review";
+export type ServiceCompatibilityStatus =
+  | "supported"
+  | "conditional"
+  | "manual-review"
+  | "not-applicable";
+
+export type EngineIdentity = {
+  engineCodes?: string[];
+  status: TechnicalIdentityStatus;
+  notes?: string[];
+};
+
+export type EcuSupport = {
+  family?: string;
+  variants?: string[];
+  status: TechnicalIdentityStatus;
+  notes?: string[];
+};
+
+export type TransmissionSupport = {
+  gearboxFamily?: string;
+  variants?: string[];
+  status: TechnicalIdentityStatus;
+  notes?: string[];
+};
+
+export type TcuSupport = {
+  family?: string;
+  variants?: string[];
+  status: TechnicalIdentityStatus;
+  notes?: string[];
+};
+
+export type TechnicalEvidence = {
+  sourceType?:
+    | "manufacturer"
+    | "tool-documentation"
+    | "workshop"
+    | "internal"
+    | "unknown";
+  sourceReference?: string;
+  verifiedAt?: string;
+  verifiedBy?: string;
+  notes?: string[];
+};
+
+export type ServiceCompatibilityEntry = {
+  status: ServiceCompatibilityStatus;
+  note?: string;
+};
+
+export type ServiceCompatibilityMap = Record<
+  string,
+  ServiceCompatibilityEntry
+>;
 
 export type RecommendedPackageDefinition = {
   stage: StageName;
@@ -59,6 +119,15 @@ export type EngineVariant = {
   generation?: string;
   platform?: string;
   engineCode?: string;
+  engineIdentity?: EngineIdentity;
+  ecuSupport?: EcuSupport;
+  transmissionSupport?: TransmissionSupport;
+  tcuSupport?: TcuSupport;
+  technicalEvidence?: TechnicalEvidence;
+  serviceCompatibility?: ServiceCompatibilityMap;
+  sourceCanonicalId?: string;
+  publicationSource?: "existing-curated" | "canonical-publication";
+  imageStatus?: "dedicated" | "family-level" | "generic-placeholder";
   tcuType?: string;
   drivetrain?: string;
   emissionsStandard?: string;

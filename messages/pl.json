@@ -117,6 +117,15 @@
     "stage1Requirements": "Seryjny osprzęt",
     "stage2Requirements": "Sprawdzony osprzęt i stan techniczny",
     "stage3Requirements": "Indywidualny setup hardware i rozszerzone logi",
+    "technical": {
+      "verified": "Zweryfikowane",
+      "familyEstimate": "Rodzina / typ",
+      "estimated": "Orientacyjnie",
+      "manualConfirmation": "Ręczne potwierdzenie",
+      "identityNote": "Pokazane oznaczenia ECU i skrzyni opisują znaną rodzinę albo dane orientacyjne z katalogu. Przed wykonaniem usługi NoordTune potwierdza dokładny wariant silnika, ECU i TCU.",
+      "conditional": "Po weryfikacji",
+      "manualReview": "Ręczne potwierdzenie"
+    },
     "recommendation": {
       "eyebrow": "Polecany pakiet",
       "title": "Wybierz zestaw dopasowany do auta",

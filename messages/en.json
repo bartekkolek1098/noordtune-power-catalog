@@ -117,6 +117,15 @@
     "stage1Requirements": "Original hardware",
     "stage2Requirements": "Hardware and maintenance condition checked",
     "stage3Requirements": "Custom hardware setup and extended logging",
+    "technical": {
+      "verified": "Verified",
+      "familyEstimate": "Family estimate",
+      "estimated": "Indicative",
+      "manualConfirmation": "Manual confirmation",
+      "identityNote": "The displayed ECU and transmission labels describe the known family or catalog estimate. NoordTune confirms the exact engine, ECU and TCU variant before work starts.",
+      "conditional": "After verification",
+      "manualReview": "Manual confirmation"
+    },
     "recommendation": {
       "eyebrow": "Recommended package",
       "title": "Choose the setup that fits your car",
