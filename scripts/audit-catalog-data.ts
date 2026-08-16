@@ -5,6 +5,9 @@ const {readdirSync, readFileSync, writeFileSync} = require("node:fs") as typeof 
 );
 const {dirname, relative, resolve} = require("node:path") as typeof import("node:path");
 const catalog = require("../src/data/catalog.ts") as typeof import("../src/data/catalog");
+const {curatedVehiclePublications} = require("../src/data/curated-catalog.ts") as typeof import(
+  "../src/data/curated-catalog"
+);
 const {serviceOptions} = require("../src/data/catalog-shared.ts") as typeof import(
   "../src/data/catalog-shared"
 );
@@ -51,6 +54,12 @@ const brands = Array.from(
 const fuelTypes = Array.from(
   new Set(catalog.vehicleDatabase.map((vehicle) => vehicle.fuel))
 ).sort();
+const canonicalVehicleById = new Map(
+  catalog.vehicleDatabase.map((vehicle) => [vehicle.id, vehicle])
+);
+const publicVehicleById = new Map(
+  catalog.engineCatalog.map((vehicle) => [vehicle.id, vehicle])
+);
 
 function addIssue(
   severity: AuditSeverity,
@@ -220,6 +229,76 @@ addIssue(
   seoRouteDuplicates.map(displayDuplicate)
 );
 
+const publicIdDuplicates = duplicateGroups(
+  curatedVehiclePublications,
+  (publication) => publication.id,
+  (publication) => publication.sourceId
+);
+addIssue(
+  "critical",
+  "DUPLICATE_PUBLIC_VEHICLE_ID",
+  "Explicit curated publication IDs must be unique.",
+  publicIdDuplicates.map(displayDuplicate)
+);
+
+const missingPublishedSources = curatedVehiclePublications
+  .filter((publication) => !canonicalVehicleById.has(publication.sourceId))
+  .map((publication) => `${publication.id}: ${publication.sourceId}`);
+addIssue(
+  "critical",
+  "UNRESOLVED_PUBLICATION_SOURCE",
+  "Every published vehicle must resolve to its canonical source record.",
+  missingPublishedSources
+);
+
+const missingPublishedVehicles = curatedVehiclePublications
+  .filter((publication) => !publicVehicleById.has(publication.id))
+  .map((publication) => publication.id);
+addIssue(
+  "critical",
+  "UNRESOLVED_PUBLIC_VEHICLE",
+  "Every explicit publication must resolve through the public catalog.",
+  missingPublishedVehicles
+);
+
+const publishedValueDrift: string[] = [];
+for (const publication of curatedVehiclePublications) {
+  const source = canonicalVehicleById.get(publication.sourceId);
+  const published = publicVehicleById.get(publication.id);
+
+  if (!source || !published) {
+    continue;
+  }
+
+  const sourceStages = source.stages.map((stage) => ({
+    name: stage.name,
+    powerHp: stage.powerHp,
+    torqueNm: stage.torqueNm,
+    price: stage.price
+  }));
+  const publishedStages = published.stages.map((stage) => ({
+    name: stage.name,
+    powerHp: stage.powerHp,
+    torqueNm: stage.torqueNm,
+    price: stage.price
+  }));
+
+  if (
+    source.stockPowerHp !== published.stockPowerHp ||
+    source.stockTorqueNm !== published.stockTorqueNm ||
+    JSON.stringify(sourceStages) !== JSON.stringify(publishedStages) ||
+    JSON.stringify(source.options) !== JSON.stringify(published.options)
+  ) {
+    publishedValueDrift.push(`${publication.id}: ${publication.sourceId}`);
+  }
+}
+addIssue(
+  "critical",
+  "PUBLISHED_SOURCE_VALUE_DRIFT",
+  "Published stock values, stage values, prices and options must match their canonical source.",
+  publishedValueDrift
+);
+
 const selectorSeoCollisions = duplicateGroups(
   catalog.vehicleDatabase,
   seoSlugKey,
@@ -230,6 +309,163 @@ addIssue(
   "SELECTOR_SEO_SLUG_COLLISION",
   "Year-specific selector records collapse onto shared SEO slugs; do not add all selector records to the sitemap blindly.",
   selectorSeoCollisions.map(displayDuplicate)
+);
+
+const invalidPublicCore: string[] = [];
+const invalidPublicStages: string[] = [];
+const missingPublicConfidence: string[] = [];
+const missingPublicVerificationState: string[] = [];
+const missingPublicRecommendedPackage: string[] = [];
+const brokenPublicStageSlugs: string[] = [];
+const estimatedPublicVehicles: string[] = [];
+const missingPublicEngineCodes: string[] = [];
+const missingPublicTcuTypes: string[] = [];
+const placeholderPublicImages: string[] = [];
+const unmappedPublicPricingTiers: string[] = [];
+const publicServiceCompatibilityReview: string[] = [];
+
+for (const publication of curatedVehiclePublications) {
+  const vehicle = publicVehicleById.get(publication.id);
+
+  if (!vehicle) {
+    continue;
+  }
+
+  if (
+    !vehicle.brand ||
+    !vehicle.model ||
+    !vehicle.engine ||
+    !vehicle.yearRange ||
+    !Number.isFinite(vehicle.stockPowerHp) ||
+    vehicle.stockPowerHp <= 0 ||
+    !Number.isFinite(vehicle.stockTorqueNm) ||
+    vehicle.stockTorqueNm <= 0
+  ) {
+    invalidPublicCore.push(vehicle.id);
+  }
+
+  if (
+    vehicle.stages.length === 0 ||
+    vehicle.stages.some(
+      (stage) =>
+        !Number.isFinite(stage.price) ||
+        stage.price <= 0 ||
+        stage.powerHp < vehicle.stockPowerHp ||
+        stage.torqueNm < vehicle.stockTorqueNm
+    )
+  ) {
+    invalidPublicStages.push(vehicle.id);
+  }
+
+  if (!vehicle.confidenceLevel) {
+    missingPublicConfidence.push(vehicle.id);
+  } else if (vehicle.confidenceLevel === "estimated") {
+    estimatedPublicVehicles.push(vehicle.id);
+  }
+
+  if (typeof vehicle.verificationRequired !== "boolean") {
+    missingPublicVerificationState.push(vehicle.id);
+  }
+
+  if (!vehicle.recommendedPackage) {
+    missingPublicRecommendedPackage.push(vehicle.id);
+  }
+
+  for (const stage of vehicle.stages) {
+    if (!catalog.stageSlugMap[stage.name]) {
+      brokenPublicStageSlugs.push(`${vehicle.id}: ${stage.name}`);
+    }
+    if (!stage.pricingTier) {
+      unmappedPublicPricingTiers.push(`${vehicle.id}: ${stage.name}`);
+    }
+  }
+
+  if (!vehicle.engineCode) {
+    missingPublicEngineCodes.push(vehicle.id);
+  }
+
+  if (vehicle.gearbox && vehicle.gearbox !== "Manual" && !vehicle.tcuType) {
+    missingPublicTcuTypes.push(vehicle.id);
+  }
+
+  if (publication.imageStatus === "generic-placeholder") {
+    placeholderPublicImages.push(vehicle.id);
+  }
+
+  publicServiceCompatibilityReview.push(vehicle.id);
+}
+
+addIssue(
+  "critical",
+  "INVALID_PUBLIC_VEHICLE_CORE",
+  "Published records require brand/model/engine/year and valid stock power/torque.",
+  invalidPublicCore
+);
+addIssue(
+  "critical",
+  "INVALID_PUBLIC_STAGE",
+  "Published records require stages with valid prices and no stock-value regression.",
+  invalidPublicStages
+);
+addIssue(
+  "critical",
+  "MISSING_PUBLIC_CONFIDENCE",
+  "Published records require an explicit confidence level.",
+  missingPublicConfidence
+);
+addIssue(
+  "critical",
+  "MISSING_PUBLIC_VERIFICATION_STATE",
+  "Published records require an explicit verificationRequired state.",
+  missingPublicVerificationState
+);
+addIssue(
+  "critical",
+  "MISSING_PUBLIC_RECOMMENDED_PACKAGE",
+  "Published records require a recommended package.",
+  missingPublicRecommendedPackage
+);
+addIssue(
+  "critical",
+  "BROKEN_PUBLIC_STAGE_SLUG",
+  "Every published stage must be covered by stageSlugMap.",
+  brokenPublicStageSlugs
+);
+addIssue(
+  "warning",
+  "ESTIMATED_PUBLIC_VEHICLE",
+  "Published generated records remain estimates and require vehicle-specific confirmation.",
+  estimatedPublicVehicles
+);
+addIssue(
+  "warning",
+  "MISSING_PUBLIC_ENGINE_CODE",
+  "No engine code is stored; do not claim one until manually verified.",
+  missingPublicEngineCodes
+);
+addIssue(
+  "warning",
+  "MISSING_PUBLIC_TCU_TYPE",
+  "Automatic gearbox is listed but the exact TCU type is not stored.",
+  missingPublicTcuTypes
+);
+addIssue(
+  "warning",
+  "PUBLIC_PLACEHOLDER_IMAGE",
+  "Published record uses a generic placeholder pending owned/licensed media.",
+  placeholderPublicImages
+);
+addIssue(
+  "warning",
+  "UNMAPPED_PUBLIC_PRICING_TIER",
+  "Effective price is preserved, but no exact safe pricing tier mapping exists.",
+  unmappedPublicPricingTiers
+);
+addIssue(
+  "warning",
+  "PUBLIC_SERVICE_COMPATIBILITY_REVIEW",
+  "Published options remain available only subject to diagnosis, legal review and compatibility confirmation.",
+  publicServiceCompatibilityReview
 );
 
 const missingCoreFields: string[] = [];
@@ -528,6 +764,7 @@ Generated from the current catalog sources by \`pnpm catalog:audit\`.
 | Metric | Count |
 | --- | ---: |
 | Curated vehicles used for static SEO | ${catalog.engineCatalog.length} |
+| Newly published vehicles in Batch 1 | ${curatedVehiclePublications.length} |
 | Generated source records before canonical dedupe | ${catalog.generatedVehicleCatalog.length} |
 | Canonical selector/RDW vehicle records | ${catalog.vehicleDatabase.length} |
 | Stage definitions in canonical database | ${stageCount} |
@@ -558,9 +795,9 @@ ${warningIssues.length > 0 ? warningIssues.map(issueMarkdown).join("\n") : "None
 
 ## Recommended Next Additions
 
-1. Manually verify and promote high-demand generated variants into curated records, starting with BMW 3/5 Series diesel, Volkswagen Golf GTI/R and 2.0 TDI, Audi A3/A4 2.0 TDI, Mercedes-Benz C-Class diesel, Volvo V60/XC60 and Ford Focus ST.
-2. Split verified records by generation, engine code, ECU/TCU and drivetrain only when workshop evidence is available.
-3. Replace shared placeholder photography with licensed brand/model-family assets before exposing generated records as SEO landing pages.
+1. Manually verify the Batch 1 public records, prioritizing exact engine codes, ECU/TCU variants, drivetrain and production applicability.
+2. Review the held BMW and VAG candidates in CURATED_BATCH_1_REVIEW.md before any later promotion; do not bulk-publish adjacent templates.
+3. Replace shared placeholder photography with owned or licensed brand/model-family assets.
 4. Assign remaining pricing tiers only after the workshop confirms the access method and service scope; keep current effective prices unchanged until then.
 
 ## Interpretation
@@ -573,6 +810,7 @@ writeFileSync(reportPath, report, "utf8");
 
 console.log("NoordTune catalog data audit");
 console.log(`  Curated SEO vehicles: ${catalog.engineCatalog.length}`);
+console.log(`  Batch 1 published vehicles: ${curatedVehiclePublications.length}`);
 console.log(`  Canonical selector/RDW vehicles: ${catalog.vehicleDatabase.length}`);
 console.log(`  Stage definitions: ${stageCount}`);
 console.log(`  Localized stage SEO pages: ${sitemapStagePageCount}`);

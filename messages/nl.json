@@ -129,6 +129,12 @@
       "removeGearbox": "DSG/TCU verwijderen",
       "quoteSelected": "Vraag offerte voor gekozen setup"
     },
+    "verification": {
+      "badge": "Voertuigspecifieke catalogusindicatie",
+      "title": "Handmatige verificatie vereist",
+      "text": "Deze pagina is samengesteld uit bestaande catalogusgegevens. Vermogen, ECU/TCU-ondersteuning en beschikbare opties blijven indicatief totdat NoordTune de exacte motorvariant, software en voertuigstaat heeft gecontroleerd.",
+      "footer": "Definitieve mogelijkheden en prijs na controle"
+    },
     "seo": {
       "eyebrow": "NoordTune advies",
       "title": "Voertuigspecifiek tuningadvies",
@@ -142,7 +148,9 @@
       "quoteText": "Stuur je selectie via WhatsApp of vraag advies. We controleren de gekozen stage, opties en voertuiggegevens voordat we een definitieve offerte bevestigen.",
       "quoteLink": "Vraag offerte aan",
       "backToVehicle": "Terug naar voertuigoverzicht",
-      "mainChiptuning": "Meer over chiptuning"
+      "mainChiptuning": "Meer over chiptuning",
+      "relatedVehicle": "Bekijk {vehicle}",
+      "otherStage": "Bekijk {stage}"
     }
   }
 }

@@ -129,6 +129,12 @@
       "removeGearbox": "Remove DSG/TCU",
       "quoteSelected": "Request quote for selected setup"
     },
+    "verification": {
+      "badge": "Vehicle-specific catalog estimate",
+      "title": "Manual verification required",
+      "text": "This page is based on existing catalog data. Power, ECU/TCU support and available options remain indicative until NoordTune has checked the exact engine variant, software and vehicle condition.",
+      "footer": "Final availability and price after inspection"
+    },
     "seo": {
       "eyebrow": "NoordTune advice",
       "title": "Vehicle-specific tuning advice",
@@ -142,7 +148,9 @@
       "quoteText": "Send your selection via WhatsApp or ask for advice. We check the selected stage, options and vehicle data before confirming a final quote.",
       "quoteLink": "Request quote",
       "backToVehicle": "Back to vehicle overview",
-      "mainChiptuning": "More about chiptuning"
+      "mainChiptuning": "More about chiptuning",
+      "relatedVehicle": "View {vehicle}",
+      "otherStage": "View {stage}"
     }
   }
 }
