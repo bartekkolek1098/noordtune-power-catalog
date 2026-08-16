@@ -1,16 +1,9 @@
 "use client";
 
 import {CarFront, ChevronRight, Search, Star} from "lucide-react";
-import {useMemo, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import type {Locale} from "@/i18n/routing";
-import {
-  getBrands,
-  getModelsForBrand,
-  getVehicleById,
-  getYearsForModel,
-  searchVehicles,
-  vehicleDatabase
-} from "@/data/catalog";
+import type {VehicleSelectorItem} from "@/data/catalog-selector";
 import {sitePath} from "@/lib/site-path";
 import {cn, formatCurrency} from "@/lib/utils";
 import {Badge} from "@/components/ui/badge";
@@ -41,10 +34,14 @@ type ManualSelectorCopy = {
 
 export function ManualSelector({
   className,
+  initialBrands,
+  initialPopularVehicles,
   locale,
   text
 }: {
   className?: string;
+  initialBrands: string[];
+  initialPopularVehicles: VehicleSelectorItem[];
   locale: Locale;
   text: ManualSelectorCopy;
 }) {
@@ -54,46 +51,131 @@ export function ManualSelector({
   const [model, setModel] = useState("");
   const [year, setYear] = useState("");
   const [vehicleId, setVehicleId] = useState("");
+  const [models, setModels] = useState<string[]>([]);
+  const [years, setYears] = useState<number[]>([]);
+  const [engines, setEngines] = useState<VehicleSelectorItem[]>([]);
+  const [searchResults, setSearchResults] = useState<VehicleSelectorItem[]>([]);
 
-  const brands = useMemo(() => getBrands(), []);
   const filteredBrands = useMemo(() => {
     const normalized = brandFilter.toLowerCase();
-    return brands.filter((item) => item.toLowerCase().includes(normalized));
-  }, [brandFilter, brands]);
-  const models = useMemo(() => (brand ? getModelsForBrand(brand) : []), [brand]);
-  const years = useMemo(
-    () => (brand && model ? getYearsForModel(brand, model) : []),
-    [brand, model]
-  );
-  const engines = useMemo(
-    () =>
-      vehicleDatabase.filter((vehicle) => {
-        const yearNumber = Number(year);
-        return (
-          vehicle.brand === brand &&
-          vehicle.model === model &&
-          (!year || vehicle.years.includes(yearNumber))
-        );
-      }),
-    [brand, model, year]
-  );
-  const searchResults = useMemo(() => searchVehicles(query).slice(0, 4), [query]);
-  const selectedVehicle = getVehicleById(vehicleId);
+    return initialBrands.filter((item) => item.toLowerCase().includes(normalized));
+  }, [brandFilter, initialBrands]);
+  const selectedVehicle = engines.find((vehicle) => vehicle.id === vehicleId);
+
+  useEffect(() => {
+    const normalized = query.trim();
+
+    if (!normalized) {
+      setSearchResults([]);
+      return;
+    }
+
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => {
+      fetchSelector<{vehicles: VehicleSelectorItem[]}>(
+        {mode: "search", q: normalized},
+        controller.signal
+      )
+        .then((data) => setSearchResults(data.vehicles))
+        .catch((error: unknown) => {
+          if (!(error instanceof DOMException && error.name === "AbortError")) {
+            setSearchResults([]);
+          }
+        });
+    }, 180);
+
+    return () => {
+      window.clearTimeout(timeout);
+      controller.abort();
+    };
+  }, [query]);
+
+  useEffect(() => {
+    if (!brand) {
+      setModels([]);
+      return;
+    }
+
+    const controller = new AbortController();
+
+    fetchSelector<{models: string[]}>(
+      {mode: "models", brand},
+      controller.signal
+    )
+      .then((data) => setModels(data.models))
+      .catch((error: unknown) => {
+        if (!(error instanceof DOMException && error.name === "AbortError")) {
+          setModels([]);
+        }
+      });
+
+    return () => controller.abort();
+  }, [brand]);
+
+  useEffect(() => {
+    if (!brand || !model) {
+      setYears([]);
+      return;
+    }
+
+    const controller = new AbortController();
+
+    fetchSelector<{years: number[]}>(
+      {mode: "years", brand, model},
+      controller.signal
+    )
+      .then((data) => setYears(data.years))
+      .catch((error: unknown) => {
+        if (!(error instanceof DOMException && error.name === "AbortError")) {
+          setYears([]);
+        }
+      });
+
+    return () => controller.abort();
+  }, [brand, model]);
+
+  useEffect(() => {
+    if (!brand || !model) {
+      setEngines([]);
+      return;
+    }
+
+    const controller = new AbortController();
+    const params: Record<string, string> = {mode: "engines", brand, model};
+
+    if (year) {
+      params.year = year;
+    }
+
+    fetchSelector<{vehicles: VehicleSelectorItem[]}>(params, controller.signal)
+      .then((data) => setEngines(data.vehicles))
+      .catch((error: unknown) => {
+        if (!(error instanceof DOMException && error.name === "AbortError")) {
+          setEngines([]);
+        }
+      });
+
+    return () => controller.abort();
+  }, [brand, model, year]);
 
   function resetAfterBrand(nextBrand: string) {
     setBrand(nextBrand);
     setModel("");
     setYear("");
     setVehicleId("");
+    setModels([]);
+    setYears([]);
+    setEngines([]);
   }
 
   function detailHref(id: string) {
     return sitePath(`/${locale}/vehicles/${id}`);
   }
 
-  const visibleVehicles = query
+  const hasSearchQuery = Boolean(query.trim());
+  const visibleVehicles = hasSearchQuery
     ? searchResults
-    : vehicleDatabase.filter((vehicle) => vehicle.popular).slice(0, 4);
+    : initialPopularVehicles;
   const brandOptions =
     brand && !filteredBrands.includes(brand) ? [brand, ...filteredBrands] : filteredBrands;
 
@@ -168,14 +250,14 @@ export function ManualSelector({
                   <span className="flex items-center justify-between gap-3 text-sm font-black text-primary">
                     {text.from}{" "}
                     {formatCurrency(
-                      vehicle.stages[0].price,
+                      vehicle.priceFrom,
                       locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL"
                     )}
                     <ChevronRight className="h-4 w-4 transition group-hover:translate-x-1" />
                   </span>
                 </a>
               ))}
-              {visibleVehicles.length === 0 && query ? (
+              {visibleVehicles.length === 0 && hasSearchQuery ? (
                 <p className="rounded-lg border border-white/10 bg-black/45 p-3 text-sm text-muted-foreground">
                   {text.noResults}
                 </p>
@@ -208,6 +290,8 @@ export function ManualSelector({
                   setModel(value);
                   setYear("");
                   setVehicleId("");
+                  setYears([]);
+                  setEngines([]);
                 }}
                 options={models}
                 placeholder={brand ? text.selectModel : text.selectBrand}
@@ -219,6 +303,7 @@ export function ManualSelector({
                 onChange={(value) => {
                   setYear(value);
                   setVehicleId("");
+                  setEngines([]);
                 }}
                 options={years.map(String)}
                 placeholder={model ? text.selectYear : text.selectModel}
@@ -280,6 +365,22 @@ export function ManualSelector({
       </div>
     </section>
   );
+}
+
+async function fetchSelector<T>(
+  params: Record<string, string>,
+  signal: AbortSignal
+) {
+  const query = new URLSearchParams(params);
+  const response = await fetch(`${sitePath("/api/catalog-selector")}?${query}`, {
+    signal
+  });
+
+  if (!response.ok) {
+    throw new Error("Catalog selector request failed.");
+  }
+
+  return (await response.json()) as T;
 }
 
 function SelectBox({

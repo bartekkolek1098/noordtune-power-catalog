@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import type {EngineVariant, StageDefinition} from "@/data/catalog";
+import type {EngineVariant, StageDefinition} from "@/data/catalog-shared";
 import {getVehicleSeoSlugs, stageSlugMap} from "@/data/catalog";
 import {routing, type Locale} from "@/i18n/routing";
 import {MAIN_SITE_URL} from "@/lib/noordtune-links";

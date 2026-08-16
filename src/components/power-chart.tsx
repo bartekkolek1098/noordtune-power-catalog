@@ -10,7 +10,7 @@ import {
   YAxis
 } from "recharts";
 import {useEffect, useState} from "react";
-import type {StageDefinition} from "@/data/catalog";
+import type {StageDefinition} from "@/data/catalog-shared";
 
 export function PowerChart({
   powerUnit = "pk",

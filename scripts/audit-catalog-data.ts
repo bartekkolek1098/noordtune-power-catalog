@@ -3,6 +3,9 @@
 const {writeFileSync} = require("node:fs") as typeof import("node:fs");
 const {resolve} = require("node:path") as typeof import("node:path");
 const catalog = require("../src/data/catalog.ts") as typeof import("../src/data/catalog");
+const {serviceOptions} = require("../src/data/catalog-shared.ts") as typeof import(
+  "../src/data/catalog-shared"
+);
 const pricing = require("../src/data/pricing.ts") as typeof import("../src/data/pricing");
 const {routing} = require("../src/i18n/routing.ts") as typeof import("../src/i18n/routing");
 
@@ -23,9 +26,9 @@ type DuplicateGroup = {
 
 const issues: AuditIssue[] = [];
 const sourceVehicles = [...catalog.engineCatalog, ...catalog.generatedVehicleCatalog];
-const knownOptionIds = new Set(catalog.serviceOptions.map((option) => option.id));
+const knownOptionIds = new Set(serviceOptions.map((option) => option.id));
 const serviceOptionById = new Map(
-  catalog.serviceOptions.map((option) => [option.id, option])
+  serviceOptions.map((option) => [option.id, option])
 );
 const knownPricingTierIds = new Set(pricing.pricingTiers.map((tier) => tier.id));
 const stageCount = catalog.vehicleDatabase.reduce(
@@ -121,7 +124,7 @@ addIssue(
 );
 
 const serviceOptionDuplicates = duplicateGroups(
-  catalog.serviceOptions,
+  serviceOptions,
   (option) => option.id,
   (option) => option.id
 );
@@ -288,7 +291,7 @@ for (const vehicle of catalog.vehicleDatabase) {
   }
 }
 
-for (const option of catalog.serviceOptions) {
+for (const option of serviceOptions) {
   if (!option.pricingTier) {
     continue;
   }
@@ -470,7 +473,7 @@ Generated from the current catalog sources by \`pnpm catalog:audit\`.
 | Localized vehicle detail pages in sitemap | ${sitemapVehiclePageCount} |
 | Localized stage SEO pages in sitemap | ${sitemapStagePageCount} |
 | Total sitemap URLs | ${sitemapUrlCount} |
-| Service options | ${catalog.serviceOptions.length} |
+| Service options | ${serviceOptions.length} |
 | Brands | ${brands.length} |
 | Critical issue groups | ${criticalIssues.length} |
 | Warning groups | ${warningIssues.length} |

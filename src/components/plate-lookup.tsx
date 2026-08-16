@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import {useMemo, useState} from "react";
 import type {RdwLookupResult} from "@/lib/rdw";
-import {serviceOptions, type StageDefinition} from "@/data/catalog";
+import {serviceOptions, type StageDefinition} from "@/data/catalog-shared";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";

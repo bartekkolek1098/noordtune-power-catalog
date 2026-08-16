@@ -25,6 +25,21 @@ The published SEO layer currently contains:
 - 63 localized stage URLs (7 vehicles x 3 stages x 3 locales).
 - 87 sitemap URLs including the three locale home pages.
 
+## Runtime Data Boundaries
+
+The catalog is split by runtime responsibility so the canonical database is not sent to browsers:
+
+- `src/data/catalog.ts` owns the full canonical `vehicleDatabase`, generated records, RDW matching helpers and curated SEO records. It is imported only by server components, route handlers, metadata/sitemap code and the audit script.
+- `src/app/api/catalog-selector/route.ts` performs manual-selector search and Brand -> Model -> Year -> Engine filtering on the server. It returns only the small result set needed for the current interaction.
+- `src/data/catalog-selector.ts` defines the lightweight selector response shape. Selector records contain display identity, ECU label, popularity and the unchanged first-stage from-price, but no stages, tags, years, options, power curves or generated templates.
+- `src/data/catalog-shared.ts` contains shared TypeScript shapes and the nine global service definitions needed by client calculators. It does not import or create vehicle records.
+- `engineCatalog` remains the seven-record curated publishing set used for vehicle/stage SEO generation and the 87-URL sitemap.
+- `src/data/pricing.ts` contains tier definitions. Existing inline prices remain authoritative until an explicit, verified migration.
+
+The homepage server component serializes only 32 brand names and four popular selector records. RDW matching continues to query the canonical data on the server through the existing RDW route; its matching logic is unchanged.
+
+The canonical module still materializes all 58,586 records in a server process. That is acceptable for the current API boundary and removes the browser cost, but serverless cold-start memory and latency should be monitored. A future managed-data migration should replace eager in-memory generation with indexed server queries; it should not move this data back into client JavaScript.
+
 ## Existing Data Model
 
 ### Vehicle / Engine Variant
