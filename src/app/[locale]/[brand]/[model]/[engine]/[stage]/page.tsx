@@ -176,7 +176,7 @@ export default async function VehicleStagePage({params}: PageProps) {
   ];
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background pb-[calc(5.25rem+env(safe-area-inset-bottom))] lg:pb-0">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}

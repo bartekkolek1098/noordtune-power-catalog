@@ -6,8 +6,7 @@ import {
   serviceOptions,
   type EngineVariant,
   type ServiceCompatibilityStatus,
-  type StageDefinition,
-  type TechnicalIdentityStatus
+  type StageDefinition
 } from "@/data/catalog-shared";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
@@ -360,24 +359,24 @@ export function VehicleDetail({
               <div className="mt-4 grid grid-cols-2 gap-2 text-sm text-muted-foreground">
                 <span>
                   {text.ecu}: {vehicle.ecuSupport?.family ?? vehicle.ecuType}
-                  {vehicle.ecuSupport ? (
+                  {vehicle.ecuSupport?.status === "verified" ? (
                     <small className="mt-1 block text-[11px] font-bold uppercase tracking-[0.08em] text-primary">
-                      {technicalStatusLabel(vehicle.ecuSupport.status, text)}
+                      {text.technical.verified}
                     </small>
                   ) : null}
                 </span>
                 <span>
                   {text.gearbox}: {vehicle.transmissionSupport?.gearboxFamily ?? vehicle.gearbox ?? "-"}
-                  {vehicle.transmissionSupport ? (
+                  {vehicle.transmissionSupport?.status === "verified" ? (
                     <small className="mt-1 block text-[11px] font-bold uppercase tracking-[0.08em] text-primary">
-                      {technicalStatusLabel(vehicle.transmissionSupport.status, text)}
+                      {text.technical.verified}
                     </small>
                   ) : null}
                 </span>
                 <span>{text.fuel}: {vehicle.fuel}</span>
                 <span>{text.yearRange}: {vehicle.yearRange}</span>
               </div>
-              {vehicle.technicalEvidence ? (
+              {vehicle.ecuSupport || vehicle.transmissionSupport ? (
                 <p className="mt-4 border-t border-white/10 pt-3 text-xs leading-5 text-muted-foreground">
                   {text.technical.identityNote}
                 </p>
@@ -449,7 +448,7 @@ export function VehicleDetail({
                     {option.compatibilityStatus === "conditional" ||
                     option.compatibilityStatus === "manual-review" ? (
                       <Badge
-                        className="rounded-[3px] border-white/15 bg-white/[0.06] px-1.5 py-0 text-[10px] text-slate-200"
+                        className="rounded-[3px] border-white/10 bg-black/20 px-1.5 py-0 text-[10px] font-medium leading-4 text-slate-400"
                         variant="outline"
                       >
                         {compatibilityStatusLabel(option.compatibilityStatus, text)}
@@ -485,7 +484,10 @@ export function VehicleDetail({
         <p className="text-xs leading-5 text-muted-foreground">{text.disclaimer}</p>
       </aside>
 
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-primary/30 bg-black/92 p-3 shadow-[0_-18px_50px_rgba(0,0,0,.62)] backdrop-blur lg:hidden">
+      <div
+        className="fixed inset-x-0 bottom-0 z-40 border-t border-primary/30 bg-black/92 px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 shadow-[0_-18px_50px_rgba(0,0,0,.62)] backdrop-blur lg:hidden"
+        data-testid="vehicle-sticky-quote"
+      >
         <div className="container grid grid-cols-[1fr_auto] gap-3">
           <Button asChild className="h-12 text-sm shadow-[0_0_26px_rgba(226,0,15,.32)]">
             <a href={quoteHref} rel="noreferrer" target="_blank">
@@ -526,23 +528,4 @@ function compatibilityStatusLabel(
   return status === "manual-review"
     ? text.technical.manualReview
     : text.technical.conditional;
-}
-
-function technicalStatusLabel(
-  status: TechnicalIdentityStatus,
-  text: VehicleCopy
-) {
-  if (status === "supported-family") {
-    return text.technical.familyEstimate;
-  }
-
-  if (status === "manual-review") {
-    return text.technical.manualConfirmation;
-  }
-
-  if (status === "verified") {
-    return text.technical.verified;
-  }
-
-  return text.technical.estimated;
 }

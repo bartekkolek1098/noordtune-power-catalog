@@ -123,7 +123,7 @@ export default async function VehiclePage({params}: PageProps) {
   ];
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background pb-[calc(5.25rem+env(safe-area-inset-bottom))] lg:pb-0">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbJsonLd)}}
@@ -165,16 +165,7 @@ export default async function VehiclePage({params}: PageProps) {
           </div>
           <div className="max-w-4xl">
             <Badge className="mb-4 border-primary/30 bg-primary/15 text-primary">
-              {vehicle.ecuSupport?.family ?? vehicle.ecuType}
-              {vehicle.ecuSupport
-                ? ` · ${t(
-                    vehicle.ecuSupport.status === "supported-family"
-                      ? "technical.familyEstimate"
-                      : vehicle.ecuSupport.status === "verified"
-                        ? "technical.verified"
-                      : "technical.estimated"
-                  )}`
-                : ""}
+              {t("technical.ecuFamily")}: {vehicle.ecuSupport?.family ?? vehicle.ecuType}
             </Badge>
             <h1 className="racing-title text-5xl leading-none md:text-7xl">
               {vehicle.brand} {vehicle.model}
