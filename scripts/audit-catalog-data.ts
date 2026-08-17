@@ -3,10 +3,14 @@
 const {readdirSync, readFileSync, writeFileSync} = require("node:fs") as typeof import(
   "node:fs"
 );
+const {createHash} = require("node:crypto") as typeof import("node:crypto");
 const {dirname, relative, resolve} = require("node:path") as typeof import("node:path");
 const catalog = require("../src/data/catalog.ts") as typeof import("../src/data/catalog");
 const {curatedVehiclePublications} = require("../src/data/curated-catalog.ts") as typeof import(
   "../src/data/curated-catalog"
+);
+const {curatedVehicleTechnicalProfiles} = require("../src/data/curated-technical.ts") as typeof import(
+  "../src/data/curated-technical"
 );
 const {serviceOptions} = require("../src/data/catalog-shared.ts") as typeof import(
   "../src/data/catalog-shared"
@@ -59,6 +63,9 @@ const canonicalVehicleById = new Map(
 );
 const publicVehicleById = new Map(
   catalog.engineCatalog.map((vehicle) => [vehicle.id, vehicle])
+);
+const technicalProfileById = new Map(
+  curatedVehicleTechnicalProfiles.map((profile) => [profile.vehicleId, profile])
 );
 
 function addIssue(
@@ -324,12 +331,7 @@ const placeholderPublicImages: string[] = [];
 const unmappedPublicPricingTiers: string[] = [];
 const publicServiceCompatibilityReview: string[] = [];
 
-for (const publication of curatedVehiclePublications) {
-  const vehicle = publicVehicleById.get(publication.id);
-
-  if (!vehicle) {
-    continue;
-  }
+for (const vehicle of catalog.engineCatalog) {
 
   if (
     !vehicle.brand ||
@@ -380,19 +382,29 @@ for (const publication of curatedVehiclePublications) {
     }
   }
 
-  if (!vehicle.engineCode) {
+  if (!vehicle.engineIdentity?.engineCodes?.length) {
     missingPublicEngineCodes.push(vehicle.id);
   }
 
-  if (vehicle.gearbox && vehicle.gearbox !== "Manual" && !vehicle.tcuType) {
+  if (
+    vehicle.gearbox &&
+    vehicle.gearbox !== "Manual" &&
+    (!vehicle.tcuSupport || vehicle.tcuSupport.status === "manual-review")
+  ) {
     missingPublicTcuTypes.push(vehicle.id);
   }
 
-  if (publication.imageStatus === "generic-placeholder") {
+  if (vehicle.imageStatus === "generic-placeholder") {
     placeholderPublicImages.push(vehicle.id);
   }
 
-  publicServiceCompatibilityReview.push(vehicle.id);
+  if (
+    Object.values(vehicle.serviceCompatibility ?? {}).some(
+      (entry) => entry.status === "manual-review"
+    )
+  ) {
+    publicServiceCompatibilityReview.push(vehicle.id);
+  }
 }
 
 addIssue(
@@ -466,6 +478,260 @@ addIssue(
   "PUBLIC_SERVICE_COMPATIBILITY_REVIEW",
   "Published options remain available only subject to diagnosis, legal review and compatibility confirmation.",
   publicServiceCompatibilityReview
+);
+
+const technicalProfileDuplicates = duplicateGroups(
+  curatedVehicleTechnicalProfiles,
+  (profile) => profile.vehicleId,
+  (profile) => profile.sourceCanonicalId
+);
+addIssue(
+  "critical",
+  "DUPLICATE_CURATED_TECHNICAL_PROFILE",
+  "Every public vehicle may have only one curated technical profile.",
+  technicalProfileDuplicates.map(displayDuplicate)
+);
+
+const missingTechnicalProfiles = catalog.engineCatalog
+  .filter((vehicle) => !technicalProfileById.has(vehicle.id))
+  .map((vehicle) => vehicle.id);
+addIssue(
+  "critical",
+  "MISSING_CURATED_TECHNICAL_PROFILE",
+  "Every public vehicle requires an explicit technical/service profile.",
+  missingTechnicalProfiles
+);
+
+const orphanTechnicalProfiles = curatedVehicleTechnicalProfiles
+  .filter((profile) => !publicVehicleById.has(profile.vehicleId))
+  .map((profile) => profile.vehicleId);
+addIssue(
+  "critical",
+  "ORPHAN_CURATED_TECHNICAL_PROFILE",
+  "Technical profiles must resolve to an active public vehicle.",
+  orphanTechnicalProfiles
+);
+
+const missingPublicationSource: string[] = [];
+const unresolvedTechnicalSources: string[] = [];
+const unknownCompatibilityServices: string[] = [];
+const incompleteCompatibilityMatrices: string[] = [];
+const prohibitedPetrolCompatibility: string[] = [];
+const prohibitedDieselCompatibility: string[] = [];
+const prohibitedManualGearboxCompatibility: string[] = [];
+const unsupportedVerifiedEcuClaims: string[] = [];
+const unsupportedVerifiedTcuClaims: string[] = [];
+const broadEcuFamilies: string[] = [];
+const missingTechnicalEngineCodes: string[] = [];
+const unknownTechnicalTcu: string[] = [];
+const ambiguousTransmissions: string[] = [];
+const manualReviewCompatibility: string[] = [];
+const missingTechnicalProvenance: string[] = [];
+
+function hasVerifiedTechnicalEvidence(
+  evidence: (typeof catalog.engineCatalog)[number]["technicalEvidence"]
+) {
+  return Boolean(
+    evidence &&
+      evidence.sourceReference &&
+      evidence.verifiedAt &&
+      evidence.verifiedBy &&
+      evidence.sourceType &&
+      !["internal", "unknown"].includes(evidence.sourceType)
+  );
+}
+
+for (const vehicle of catalog.engineCatalog) {
+  if (!vehicle.publicationSource || !vehicle.sourceCanonicalId) {
+    missingPublicationSource.push(vehicle.id);
+  } else if (!canonicalVehicleById.has(vehicle.sourceCanonicalId)) {
+    unresolvedTechnicalSources.push(
+      `${vehicle.id}: ${vehicle.sourceCanonicalId}`
+    );
+  }
+
+  const compatibilityEntries = Object.entries(
+    vehicle.serviceCompatibility ?? {}
+  );
+  const compatibilityIds = new Set(compatibilityEntries.map(([id]) => id));
+
+  for (const [optionId, entry] of compatibilityEntries) {
+    if (!knownOptionIds.has(optionId)) {
+      unknownCompatibilityServices.push(`${vehicle.id}: ${optionId}`);
+    }
+
+    if (entry.status === "manual-review") {
+      manualReviewCompatibility.push(`${vehicle.id}: ${optionId}`);
+    }
+  }
+
+  const missingCompatibility = vehicle.options.filter(
+    (optionId) => knownOptionIds.has(optionId) && !compatibilityIds.has(optionId)
+  );
+  if (missingCompatibility.length > 0) {
+    incompleteCompatibilityMatrices.push(
+      `${vehicle.id}: ${missingCompatibility.join(", ")}`
+    );
+  }
+
+  if (vehicle.fuel === "Petrol") {
+    for (const optionId of ["dpf", "adblue", "scr"]) {
+      if (vehicle.serviceCompatibility?.[optionId]?.status === "supported") {
+        prohibitedPetrolCompatibility.push(`${vehicle.id}: ${optionId}`);
+      }
+    }
+  }
+
+  if (
+    vehicle.fuel === "Diesel" &&
+    vehicle.serviceCompatibility?.pops?.status === "supported"
+  ) {
+    prohibitedDieselCompatibility.push(`${vehicle.id}: pops`);
+  }
+
+  if (
+    vehicle.gearbox === "Manual" &&
+    vehicle.serviceCompatibility?.gearbox?.status === "supported"
+  ) {
+    prohibitedManualGearboxCompatibility.push(`${vehicle.id}: gearbox`);
+  }
+
+  if (
+    vehicle.ecuSupport?.status === "verified" &&
+    !hasVerifiedTechnicalEvidence(vehicle.technicalEvidence)
+  ) {
+    unsupportedVerifiedEcuClaims.push(vehicle.id);
+  }
+
+  if (
+    vehicle.tcuSupport?.status === "verified" &&
+    !hasVerifiedTechnicalEvidence(vehicle.technicalEvidence)
+  ) {
+    unsupportedVerifiedTcuClaims.push(vehicle.id);
+  }
+
+  if (vehicle.ecuSupport?.status === "supported-family") {
+    broadEcuFamilies.push(
+      `${vehicle.id}: ${vehicle.ecuSupport.family ?? vehicle.ecuType}`
+    );
+  }
+
+  if (!vehicle.engineIdentity?.engineCodes?.length) {
+    missingTechnicalEngineCodes.push(vehicle.id);
+  }
+
+  if (
+    vehicle.gearbox &&
+    vehicle.gearbox !== "Manual" &&
+    (!vehicle.tcuSupport || vehicle.tcuSupport.status === "manual-review")
+  ) {
+    unknownTechnicalTcu.push(vehicle.id);
+  }
+
+  if (
+    !vehicle.transmissionSupport ||
+    ["estimated", "manual-review"].includes(vehicle.transmissionSupport.status)
+  ) {
+    ambiguousTransmissions.push(vehicle.id);
+  }
+
+  if (
+    !vehicle.technicalEvidence?.sourceReference ||
+    !vehicle.technicalEvidence.sourceType
+  ) {
+    missingTechnicalProvenance.push(vehicle.id);
+  }
+}
+
+addIssue(
+  "critical",
+  "MISSING_PUBLICATION_SOURCE",
+  "Every public vehicle requires a traceable publication source.",
+  missingPublicationSource
+);
+addIssue(
+  "critical",
+  "UNRESOLVED_TECHNICAL_SOURCE",
+  "Technical profile source IDs must resolve to the unchanged canonical database.",
+  unresolvedTechnicalSources
+);
+addIssue(
+  "critical",
+  "UNKNOWN_SERVICE_COMPATIBILITY",
+  "Service compatibility may reference only canonical service option IDs.",
+  unknownCompatibilityServices
+);
+addIssue(
+  "critical",
+  "INCOMPLETE_SERVICE_COMPATIBILITY",
+  "Every current public option requires an explicit compatibility status.",
+  incompleteCompatibilityMatrices
+);
+addIssue(
+  "critical",
+  "PETROL_DIESEL_SERVICE_SUPPORTED",
+  "Petrol vehicles must not mark DPF, AdBlue or SCR services as supported.",
+  prohibitedPetrolCompatibility
+);
+addIssue(
+  "critical",
+  "DIESEL_POPS_SUPPORTED",
+  "Diesel vehicles must not mark Pops & Bangs as supported.",
+  prohibitedDieselCompatibility
+);
+addIssue(
+  "critical",
+  "MANUAL_GEARBOX_TCU_SUPPORTED",
+  "Manual vehicles must not mark gearbox/TCU tuning as supported.",
+  prohibitedManualGearboxCompatibility
+);
+addIssue(
+  "critical",
+  "VERIFIED_ECU_WITHOUT_EVIDENCE",
+  "Verified ECU claims require dated, attributable primary/tool/workshop evidence.",
+  unsupportedVerifiedEcuClaims
+);
+addIssue(
+  "critical",
+  "VERIFIED_TCU_WITHOUT_EVIDENCE",
+  "Verified TCU claims require dated, attributable primary/tool/workshop evidence.",
+  unsupportedVerifiedTcuClaims
+);
+addIssue(
+  "warning",
+  "BROAD_ECU_FAMILY_ONLY",
+  "Broad ECU-family labels are not exact ECU identification.",
+  broadEcuFamilies
+);
+addIssue(
+  "warning",
+  "CURATED_ENGINE_CODE_REVIEW",
+  "No supported engine-family code is stored; manual identification remains required.",
+  missingTechnicalEngineCodes
+);
+addIssue(
+  "warning",
+  "CURATED_TCU_UNKNOWN",
+  "Automatic transmission is listed without an evidence-backed exact TCU variant.",
+  unknownTechnicalTcu
+);
+addIssue(
+  "warning",
+  "CURATED_TRANSMISSION_AMBIGUOUS",
+  "Transmission identity is estimated or requires manual review.",
+  ambiguousTransmissions
+);
+addIssue(
+  "warning",
+  "MANUAL_REVIEW_SERVICE_COMPATIBILITY",
+  "Service remains commercially visible only with explicit manual confirmation.",
+  manualReviewCompatibility
+);
+addIssue(
+  "warning",
+  "MISSING_TECHNICAL_PROVENANCE",
+  "Public technical metadata requires a traceable, non-fabricated source reference.",
+  missingTechnicalProvenance
 );
 
 const missingCoreFields: string[] = [];
@@ -724,6 +990,85 @@ if (sitemapRouteKeys.length !== sitemapUrlCount) {
   );
 }
 
+function semanticHash(value: unknown) {
+  return createHash("sha256").update(JSON.stringify(value)).digest("hex");
+}
+
+function commercialVehicleProjection(
+  vehicle: (typeof catalog.engineCatalog)[number]
+) {
+  return {
+    id: vehicle.id,
+    stockPowerHp: vehicle.stockPowerHp,
+    stockTorqueNm: vehicle.stockTorqueNm,
+    stages: vehicle.stages.map((stage) => ({
+      name: stage.name,
+      powerHp: stage.powerHp,
+      torqueNm: stage.torqueNm,
+      price: stage.price
+    })),
+    options: vehicle.options
+  };
+}
+
+const productionSemanticBaseline = {
+  canonicalFull:
+    "780d89bd3c83ef89cf1a9a4f62ebe4dad6f1fae31afbfccbe01f4943def89d6d",
+  canonicalCommercial:
+    "6bbb5115dbeb201851e4ac356adedb1db5841c526164f5feb5999d4540915ee3",
+  publicCommercial:
+    "ae7effd261f06a57286a313be70a4629c0205c5965b50b63b80f3eb0b1dc2ec2",
+  publicRoutes:
+    "dff24cf3c6ff6425ed2c121fb97f5da1959c7dad8ff5f974911a88cb63167775",
+  serviceDefinitions:
+    "7d1644c1deec54f5c02f454b3ef01bf721e6c798df055b3ad5fce1f18438a886",
+  rdwMatcher:
+    "c9c9fda79732266e7bf65d3b4b025f71f8d06a66ac914ba2d1340768c1c12df8"
+} as const;
+
+const currentSemanticHashes = {
+  canonicalFull: semanticHash(catalog.vehicleDatabase),
+  canonicalCommercial: semanticHash(
+    catalog.vehicleDatabase.map(commercialVehicleProjection)
+  ),
+  publicCommercial: semanticHash(
+    catalog.engineCatalog.map(commercialVehicleProjection)
+  ),
+  publicRoutes: semanticHash(sitemapRouteKeys),
+  serviceDefinitions: semanticHash(serviceOptions),
+  rdwMatcher: semanticHash(String(catalog.findCatalogMatch))
+} as const;
+
+const semanticIntegrityFailures = Object.entries(productionSemanticBaseline)
+  .filter(
+    ([key, expected]) =>
+      currentSemanticHashes[key as keyof typeof currentSemanticHashes] !== expected
+  )
+  .map(
+    ([key, expected]) =>
+      `${key}: expected ${expected}, received ${
+        currentSemanticHashes[key as keyof typeof currentSemanticHashes]
+      }`
+  );
+
+if (
+  catalog.engineCatalog.length !== 24 ||
+  catalog.vehicleDatabase.length !== 58_586 ||
+  stageCount !== 175_758 ||
+  sitemapUrlCount !== 291
+) {
+  semanticIntegrityFailures.push(
+    `counts: public=${catalog.engineCatalog.length}, canonical=${catalog.vehicleDatabase.length}, stages=${stageCount}, sitemap=${sitemapUrlCount}`
+  );
+}
+
+addIssue(
+  "critical",
+  "PRODUCTION_SEMANTIC_INTEGRITY",
+  "Protected catalog values, routes, services and RDW matching must remain identical to production.",
+  semanticIntegrityFailures
+);
+
 const criticalIssues = issues.filter((issue) => issue.severity === "critical");
 const warningIssues = issues.filter((issue) => issue.severity === "warning");
 const curatedConfidence = countBy(
@@ -755,6 +1100,293 @@ function issueConsole(issue: AuditIssue) {
   }
 }
 
+function statusLabel(status: string | undefined, fallback = "MANUAL_REVIEW") {
+  return (status ?? fallback).replaceAll("-", "_").toUpperCase();
+}
+
+function transmissionStatusLabel(
+  vehicle: (typeof catalog.engineCatalog)[number]
+) {
+  if (!vehicle.transmissionSupport) {
+    return "AMBIGUOUS";
+  }
+
+  return vehicle.transmissionSupport.status === "manual-review"
+    ? "AMBIGUOUS"
+    : statusLabel(vehicle.transmissionSupport.status);
+}
+
+function tcuStatusLabel(vehicle: (typeof catalog.engineCatalog)[number]) {
+  if (vehicle.gearbox === "Manual") {
+    return "NOT_APPLICABLE";
+  }
+
+  return statusLabel(vehicle.tcuSupport?.status);
+}
+
+function serviceStatus(
+  vehicle: (typeof catalog.engineCatalog)[number],
+  optionId: string
+) {
+  return statusLabel(vehicle.serviceCompatibility?.[optionId]?.status);
+}
+
+function pricingMapping(
+  vehicle: (typeof catalog.engineCatalog)[number]
+) {
+  return vehicle.stages
+    .map((stage) => {
+      const tier = pricing.getPricingTier(stage.pricingTier);
+      const exact = Boolean(tier && tier.priceFrom === stage.price);
+      return `${stage.name}: ${stage.pricingTier ?? "none"} (${exact ? "EXACT" : "REVIEW"})`;
+    })
+    .join("; ");
+}
+
+function vehiclePricingStatus(
+  vehicle: (typeof catalog.engineCatalog)[number]
+) {
+  if (vehicle.stages.some((stage) => !stage.pricingTier)) {
+    return "MISSING_TIER_MAPPING";
+  }
+
+  return "TECHNICAL_COMPLEXITY_REVIEW";
+}
+
+const compatibilityCounts = countBy(
+  catalog.engineCatalog.flatMap((vehicle) =>
+    Object.values(vehicle.serviceCompatibility ?? {}).map((entry) => entry.status)
+  )
+);
+const engineIdentityCounts = countBy(
+  catalog.engineCatalog.map((vehicle) => vehicle.engineIdentity?.status ?? "missing")
+);
+const ecuIdentityCounts = countBy(
+  catalog.engineCatalog.map((vehicle) => vehicle.ecuSupport?.status ?? "missing")
+);
+const transmissionIdentityCounts = countBy(
+  catalog.engineCatalog.map(
+    (vehicle) => vehicle.transmissionSupport?.status ?? "missing"
+  )
+);
+const tcuIdentityCounts = countBy(
+  catalog.engineCatalog.map((vehicle) =>
+    vehicle.gearbox === "Manual"
+      ? "not-applicable"
+      : vehicle.tcuSupport?.status ?? "missing"
+  )
+);
+
+const technicalMatrixRows = catalog.engineCatalog
+  .map(
+    (vehicle) =>
+      `| ${vehicle.brand} ${vehicle.model} | ${statusLabel(vehicle.engineIdentity?.status)} | ${statusLabel(vehicle.ecuSupport?.status)} | ${transmissionStatusLabel(vehicle)} / ${tcuStatusLabel(vehicle)} | ${serviceStatus(vehicle, "dpf")} | ${serviceStatus(vehicle, "adblue")} / ${serviceStatus(vehicle, "scr")} | ${serviceStatus(vehicle, "egr")} | ${serviceStatus(vehicle, "immo")} | ${serviceStatus(vehicle, "speed-limiter")} | ${serviceStatus(vehicle, "launch")} | ${serviceStatus(vehicle, "pops")} | ${serviceStatus(vehicle, "gearbox")} | ${vehiclePricingStatus(vehicle)} | ${statusLabel(vehicle.confidenceLevel)} |`
+  )
+  .join("\n");
+
+const technicalVehicleDetails = catalog.engineCatalog
+  .map((vehicle) => {
+    const stageRows = vehicle.stages
+      .map(
+        (stage) =>
+          `| ${stage.name} | ${stage.powerHp} hp | ${stage.torqueNm} Nm | EUR ${stage.price} | ${stage.pricingTier ?? "none"} |`
+      )
+      .join("\n");
+    const compatibility = vehicle.options
+      .map(
+        (optionId) =>
+          `\`${optionId}\`: ${serviceStatus(vehicle, optionId)}`
+      )
+      .join(", ");
+    const provenanceStatus = vehicle.technicalEvidence?.sourceReference
+      ? "ESTIMATED"
+      : "MANUAL_REVIEW";
+
+    return `### ${vehicle.brand} ${vehicle.model}
+
+| Field | Current reviewed value |
+| --- | --- |
+| Public ID | \`${vehicle.id}\` |
+| Source canonical ID | \`${vehicle.sourceCanonicalId ?? "missing"}\` |
+| Generation / platform | ${vehicle.generation ?? "MANUAL_REVIEW"} / ${vehicle.platform ?? "MANUAL_REVIEW"} |
+| Fuel / years | ${vehicle.fuel} / ${vehicle.yearRange} |
+| Stock output | ${vehicle.stockPowerHp} hp / ${vehicle.stockTorqueNm} Nm |
+| Current ECU label | ${vehicle.ecuType} |
+| Current gearbox label | ${vehicle.gearbox ?? "MANUAL_REVIEW"} |
+| Engine code status | ${statusLabel(vehicle.engineIdentity?.status)}${vehicle.engineIdentity?.engineCodes?.length ? ` (${vehicle.engineIdentity.engineCodes.join(", ")})` : ""} |
+| ECU identity status | ${statusLabel(vehicle.ecuSupport?.status)} |
+| Transmission identity status | ${transmissionStatusLabel(vehicle)} |
+| TCU identity status | ${tcuStatusLabel(vehicle)} |
+| confidenceLevel / verificationRequired | ${statusLabel(vehicle.confidenceLevel)} / ${String(vehicle.verificationRequired)} |
+| Current service option IDs | ${vehicle.options.map((id) => `\`${id}\``).join(", ")} |
+| Service compatibility | ${compatibility} |
+| Image status | ${statusLabel(vehicle.imageStatus)} |
+| Pricing tier mappings | ${pricingMapping(vehicle)} |
+| Provenance status | ${provenanceStatus}: ${vehicle.technicalEvidence?.sourceType ?? "unknown"} / ${vehicle.technicalEvidence?.sourceReference ?? "missing"} |
+
+| Stage | Tuned power | Tuned torque | Current price | Current tier |
+| --- | ---: | ---: | ---: | --- |
+${stageRows}`;
+  })
+  .join("\n\n");
+
+const technicalReview = `# Curated Technical and Service Review
+
+This report is generated by \`pnpm catalog:audit\` for the 24 intentionally public vehicles. It documents current evidence boundaries; it does not promote any technical claim to verified status.
+
+## Status Policy
+
+- **VERIFIED** requires dated, attributable manufacturer, official tool or workshop evidence.
+- **SUPPORTED_FAMILY** identifies only a broad family already present in curated data.
+- **ESTIMATED** is a catalog indication and not proof of the installed component.
+- **AMBIGUOUS** means the broad transmission label cannot identify the exact installed variant.
+- **MANUAL_REVIEW** requires vehicle-specific confirmation.
+- **NOT_APPLICABLE** is hidden on curated customer pages.
+
+## Compact 24-Vehicle Matrix
+
+| Vehicle | Engine identity | ECU | Transmission/TCU | DPF | AdBlue/SCR | EGR | Immo | Vmax | Launch | Pops | TCU tune | Pricing status | Overall confidence |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+${technicalMatrixRows}
+
+## Coverage Summary
+
+- Engine identity: ${JSON.stringify(engineIdentityCounts)}
+- ECU identity: ${JSON.stringify(ecuIdentityCounts)}
+- Transmission identity: ${JSON.stringify(transmissionIdentityCounts)}
+- TCU identity: ${JSON.stringify(tcuIdentityCounts)}
+- Service compatibility: ${JSON.stringify(compatibilityCounts)}
+- No exact ECU or TCU variant is marked VERIFIED.
+- Internal/canonical provenance records explain where an estimate came from; they are not used as proof of exact control-unit support.
+
+## Vehicle Details
+
+${technicalVehicleDetails}
+
+## Semantic Integrity Comparison
+
+| Protected area | Production baseline | Current | Result |
+| --- | --- | --- | --- |
+${Object.entries(productionSemanticBaseline)
+  .map(([key, expected]) => {
+    const current = currentSemanticHashes[key as keyof typeof currentSemanticHashes];
+    return `| ${key} | \`${expected}\` | \`${current}\` | ${current === expected ? "PASS" : "FAIL"} |`;
+  })
+  .join("\n")}
+
+Protected counts: 24 public vehicles, 58,586 canonical vehicles, 175,758 canonical stage definitions and 291 sitemap URLs.
+`;
+
+type PricingReviewRow = {
+  category:
+    | "A. SAFE_CURRENT"
+    | "B. MISSING_TIER_MAPPING"
+    | "C. TECHNICAL_COMPLEXITY_REVIEW"
+    | "D. OWNER_DECISION_REQUIRED";
+  item: string;
+  currentPrice: number;
+  tier: string;
+  exact: boolean;
+  complexity: string;
+  consistent: boolean;
+  manualReview: boolean;
+};
+
+const stagePricingRows: PricingReviewRow[] = catalog.engineCatalog.flatMap(
+  (vehicle) =>
+    vehicle.stages.map((stage) => {
+      const tier = pricing.getPricingTier(stage.pricingTier);
+      const exact = Boolean(tier && tier.priceFrom === stage.price);
+      const consistent = Boolean(
+        stage.price > 0 && (!tier?.priceFrom || stage.price >= tier.priceFrom)
+      );
+      const category: PricingReviewRow["category"] = !stage.pricingTier
+        ? "B. MISSING_TIER_MAPPING"
+        : stage.name === "Stage 3+"
+          ? "D. OWNER_DECISION_REQUIRED"
+          : stage.name === "Stage 2"
+            ? "C. TECHNICAL_COMPLEXITY_REVIEW"
+            : exact
+              ? "A. SAFE_CURRENT"
+              : "C. TECHNICAL_COMPLEXITY_REVIEW";
+      const complexity =
+        stage.name === "Stage 1"
+          ? "Access method and exact ECU remain unconfirmed; no access method is inferred."
+          : stage.name === "Stage 2"
+            ? "Hardware, condition, logging and access scope require confirmation."
+            : "Custom turbo/fueling/drivetrain scope and access method require an owner quote.";
+
+      return {
+        category,
+        item: `${vehicle.brand} ${vehicle.model} — ${stage.name}`,
+        currentPrice: stage.price,
+        tier: stage.pricingTier ?? "none",
+        exact,
+        complexity,
+        consistent,
+        manualReview: category !== "A. SAFE_CURRENT"
+      };
+    })
+);
+
+const servicePricingRows: PricingReviewRow[] = serviceOptions.map((option) => {
+  const tier = pricing.getPricingTier(option.pricingTier);
+  const exact = Boolean(tier && tier.priceFrom === option.price);
+
+  return {
+    category: option.pricingTier
+      ? exact
+        ? "A. SAFE_CURRENT"
+        : "C. TECHNICAL_COMPLEXITY_REVIEW"
+      : "B. MISSING_TIER_MAPPING",
+    item: `Service — ${option.name}`,
+    currentPrice: option.price,
+    tier: option.pricingTier ?? "none",
+    exact,
+    complexity:
+      option.id === "gearbox"
+        ? "Exact transmission/TCU and service scope require confirmation."
+        : "Diagnosis, legal/use-case and technical scope remain vehicle-specific.",
+    consistent: Boolean(option.price > 0 && (!tier?.priceFrom || option.price >= tier.priceFrom)),
+    manualReview: !option.pricingTier || !exact
+  };
+});
+
+const allPricingRows = [...stagePricingRows, ...servicePricingRows];
+const pricingSections = [
+  "A. SAFE_CURRENT",
+  "B. MISSING_TIER_MAPPING",
+  "C. TECHNICAL_COMPLEXITY_REVIEW",
+  "D. OWNER_DECISION_REQUIRED"
+]
+  .map((category) => {
+    const rows = allPricingRows.filter((row) => row.category === category);
+    return `## ${category}
+
+| Vehicle / service | Current price | Current pricingTier | Exact mapping | Known technical/access complexity | Internally consistent | Manual commercial review |
+| --- | ---: | --- | --- | --- | --- | --- |
+${rows
+  .map(
+    (row) =>
+      `| ${row.item} | EUR ${row.currentPrice} | ${row.tier} | ${row.exact ? "YES" : "NO"} | ${row.complexity} | ${row.consistent ? "YES" : "NO"} | ${row.manualReview ? "YES" : "NO"} |`
+  )
+  .join("\n") || "| None | - | - | - | - | - | - |"}`;
+  })
+  .join("\n\n");
+
+const pricingReview = `# Curated Pricing Review
+
+No public Stage or service price is changed by this review. Exact tier mapping means only that the current price equals the current centralized tier; it does not prove ECU/TCU access complexity.
+
+${pricingSections}
+
+## Suggested Pricing Structure for Owner Review
+
+**PROPOSAL ONLY — NOT IMPLEMENTED**
+
+Future owner-approved pricing may distinguish older OBD-access ECU work, bench-required ECU work, modern MG1/MD1, locked/unlock-required ECU work, standard DSG/TCU, complex TCU, custom Stage 2 and custom Stage 3+. No vehicle is assigned to any of those access categories without primary/tool/workshop evidence. Current effective prices remain unchanged.
+`;
+
 const report = `# Catalog Data Report
 
 Generated from the current catalog sources by \`pnpm catalog:audit\`.
@@ -776,6 +1408,7 @@ Generated from the current catalog sources by \`pnpm catalog:audit\`.
 | Critical issue groups | ${criticalIssues.length} |
 | Warning groups | ${warningIssues.length} |
 | Client imports of canonical server catalog | ${clientImportsServerCatalog.length} |
+| Curated technical profiles | ${curatedVehicleTechnicalProfiles.length} |
 
 ## Coverage
 
@@ -784,6 +1417,7 @@ Generated from the current catalog sources by \`pnpm catalog:audit\`.
 - Curated confidence levels: ${JSON.stringify(curatedConfidence)}
 - Canonical database confidence levels: ${JSON.stringify(databaseConfidence)}
 - Pricing tiers: ${pricing.pricingTiers.map((tier) => tier.id).join(", ")}
+- Curated service compatibility: ${JSON.stringify(compatibilityCounts)}
 
 ## Critical Errors
 
@@ -807,6 +1441,13 @@ The canonical selector/RDW database is deduplicated and structurally usable, but
 
 const reportPath = resolve(process.cwd(), "CATALOG_DATA_REPORT.md");
 writeFileSync(reportPath, report, "utf8");
+const technicalReviewPath = resolve(
+  process.cwd(),
+  "CURATED_TECHNICAL_SERVICE_REVIEW.md"
+);
+writeFileSync(technicalReviewPath, technicalReview, "utf8");
+const pricingReviewPath = resolve(process.cwd(), "CURATED_PRICING_REVIEW.md");
+writeFileSync(pricingReviewPath, pricingReview, "utf8");
 
 console.log("NoordTune catalog data audit");
 console.log(`  Curated SEO vehicles: ${catalog.engineCatalog.length}`);
@@ -819,12 +1460,16 @@ console.log(`  Brands: ${brands.length}`);
 console.log(`  Critical issue groups: ${criticalIssues.length}`);
 console.log(`  Warning groups: ${warningIssues.length}`);
 console.log(`  Client imports server catalog: ${clientImportsServerCatalog.length}`);
+console.log(`  Curated technical profiles: ${curatedVehicleTechnicalProfiles.length}`);
+console.log(`  Service compatibility: ${JSON.stringify(compatibilityCounts)}`);
 
 for (const issue of issues) {
   issueConsole(issue);
 }
 
 console.log(`  Report: ${reportPath}`);
+console.log(`  Technical review: ${technicalReviewPath}`);
+console.log(`  Pricing review: ${pricingReviewPath}`);
 
 if (criticalIssues.length > 0) {
   process.exitCode = 1;

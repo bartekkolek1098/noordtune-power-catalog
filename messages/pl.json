@@ -117,6 +117,16 @@
     "stage1Requirements": "Seryjny osprzęt",
     "stage2Requirements": "Sprawdzony osprzęt i stan techniczny",
     "stage3Requirements": "Indywidualny setup hardware i rozszerzone logi",
+    "technical": {
+      "verified": "Zweryfikowane",
+      "ecuFamily": "Rodzina ECU",
+      "familyEstimate": "Rodzina / typ",
+      "estimated": "Orientacyjnie",
+      "manualConfirmation": "Ręczne potwierdzenie",
+      "identityNote": "Oznaczenia ECU i skrzyni opisują znaną rodzinę. Dokładny wariant zostanie potwierdzony przed rozpoczęciem prac.",
+      "conditional": "Po weryfikacji",
+      "manualReview": "Ręczne potwierdzenie"
+    },
     "recommendation": {
       "eyebrow": "Polecany pakiet",
       "title": "Wybierz zestaw dopasowany do auta",
@@ -137,10 +147,10 @@
       "quoteSelected": "Zapytaj o wycenę wybranego zestawu"
     },
     "verification": {
-      "badge": "Orientacyjne dane dla tego pojazdu",
-      "title": "Wymagana ręczna weryfikacja",
-      "text": "Ta strona powstała na podstawie istniejących danych katalogowych. Moc, obsługa ECU/TCU i dostępne opcje pozostają orientacyjne, dopóki NoordTune nie sprawdzi dokładnego wariantu silnika, oprogramowania i stanu auta.",
-      "footer": "Ostateczne możliwości i cena po sprawdzeniu"
+      "badge": "Dane katalogowe dla tego pojazdu",
+      "title": "Weryfikacja techniczna przed tuningiem",
+      "text": "Dopasowaliśmy pojazd do znanej konfiguracji tuningowej. Przed rozpoczęciem prac NoordTune potwierdzi dokładny wariant silnika, oprogramowanie ECU/TCU oraz konfigurację pojazdu.",
+      "footer": "Ostateczna konfiguracja zostanie potwierdzona przed tuningiem"
     },
     "seo": {
       "eyebrow": "Doradztwo NoordTune",

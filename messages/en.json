@@ -117,6 +117,16 @@
     "stage1Requirements": "Original hardware",
     "stage2Requirements": "Hardware and maintenance condition checked",
     "stage3Requirements": "Custom hardware setup and extended logging",
+    "technical": {
+      "verified": "Verified",
+      "ecuFamily": "ECU family",
+      "familyEstimate": "Family estimate",
+      "estimated": "Indicative",
+      "manualConfirmation": "Manual confirmation",
+      "identityNote": "ECU and transmission labels describe the known family. The exact variant is confirmed before work starts.",
+      "conditional": "After verification",
+      "manualReview": "Manual confirmation"
+    },
     "recommendation": {
       "eyebrow": "Recommended package",
       "title": "Choose the setup that fits your car",
@@ -137,10 +147,10 @@
       "quoteSelected": "Request quote for selected setup"
     },
     "verification": {
-      "badge": "Vehicle-specific catalog estimate",
-      "title": "Manual verification required",
-      "text": "This page is based on existing catalog data. Power, ECU/TCU support and available options remain indicative until NoordTune has checked the exact engine variant, software and vehicle condition.",
-      "footer": "Final availability and price after inspection"
+      "badge": "Vehicle-specific catalog data",
+      "title": "Technical verification before tuning",
+      "text": "We have matched this vehicle to a known tuning configuration. Before work starts, NoordTune confirms the exact engine, ECU/TCU software and vehicle configuration.",
+      "footer": "Final setup confirmed before tuning"
     },
     "seo": {
       "eyebrow": "NoordTune advice",

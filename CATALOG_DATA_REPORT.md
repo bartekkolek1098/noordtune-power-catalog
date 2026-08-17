@@ -17,8 +17,9 @@ Generated from the current catalog sources by `pnpm catalog:audit`.
 | Service options | 9 |
 | Brands | 32 |
 | Critical issue groups | 0 |
-| Warning groups | 11 |
+| Warning groups | 16 |
 | Client imports of canonical server catalog | 0 |
+| Curated technical profiles | 24 |
 
 ## Coverage
 
@@ -27,6 +28,7 @@ Generated from the current catalog sources by `pnpm catalog:audit`.
 - Curated confidence levels: {"estimated":24}
 - Canonical database confidence levels: {"estimated":58586}
 - Pricing tiers: stage1-standard, stage1-modern-ecu, stage1-bench, stage2-standard, stage3-custom, tcu-standard, diagnostics, log-analysis, custom-service
+- Curated service compatibility: {"not-applicable":41,"conditional":76,"manual-review":99}
 
 ## Critical Errors
 
@@ -52,56 +54,104 @@ None.
   - bmw/1-series/320d (23: bmw-1-serie-320d-2012, bmw-1-serie-320d-2013, bmw-1-serie-320d-2014, ...)
   - bmw/1-series/330d (23: bmw-1-serie-330d-2012, bmw-1-serie-330d-2013, bmw-1-serie-330d-2014, ...)
   - bmw/1-series/330i (23: bmw-1-serie-330i-2012, bmw-1-serie-330i-2013, bmw-1-serie-330i-2014, ...)
-- **ESTIMATED_PUBLIC_VEHICLE** (17): Published generated records remain estimates and require vehicle-specific confirmation.
+- **ESTIMATED_PUBLIC_VEHICLE** (24): Published generated records remain estimates and require vehicle-specific confirmation.
+  - vw-golf-20-tsi-ea888
+  - bmw-320d-b47
+  - audi-a3-20-tdi
+  - mercedes-a45-amg-m133
+  - bmw-x3-e83-20d
+  - volvo-xc60-d5
+  - ford-focus-st-20-ecoboost
+  - bmw-1-series-f20-f21-118i
+- **MISSING_PUBLIC_ENGINE_CODE** (20): No engine code is stored; do not claim one until manually verified.
+  - audi-a3-20-tdi
+  - volvo-xc60-d5
+  - ford-focus-st-20-ecoboost
   - bmw-1-series-f20-f21-118i
   - bmw-1-series-f20-f21-118d
   - bmw-1-series-f20-f21-120d
   - bmw-3-series-f30-f31-318d
   - bmw-3-series-f30-f31-330d
-  - bmw-5-series-f10-f11-520d
-  - bmw-3-series-g20-g21-320i
-  - volkswagen-golf-7-16-tdi
-- **MISSING_PUBLIC_ENGINE_CODE** (17): No engine code is stored; do not claim one until manually verified.
+- **MISSING_PUBLIC_TCU_TYPE** (23): Automatic gearbox is listed but the exact TCU type is not stored.
+  - vw-golf-20-tsi-ea888
+  - bmw-320d-b47
+  - audi-a3-20-tdi
+  - mercedes-a45-amg-m133
+  - bmw-x3-e83-20d
+  - volvo-xc60-d5
+  - bmw-1-series-f20-f21-118i
+  - bmw-1-series-f20-f21-118d
+- **PUBLIC_PLACEHOLDER_IMAGE** (24): Published record uses a generic placeholder pending owned/licensed media.
+  - vw-golf-20-tsi-ea888
+  - bmw-320d-b47
+  - audi-a3-20-tdi
+  - mercedes-a45-amg-m133
+  - bmw-x3-e83-20d
+  - volvo-xc60-d5
+  - ford-focus-st-20-ecoboost
+  - bmw-1-series-f20-f21-118i
+- **UNMAPPED_PUBLIC_PRICING_TIER** (12): Effective price is preserved, but no exact safe pricing tier mapping exists.
+  - vw-golf-20-tsi-ea888: Stage 1
+  - vw-golf-20-tsi-ea888: Stage 2
+  - mercedes-a45-amg-m133: Stage 1
+  - mercedes-a45-amg-m133: Stage 2
+  - volvo-xc60-d5: Stage 1
+  - volvo-xc60-d5: Stage 2
+  - ford-focus-st-20-ecoboost: Stage 1
+  - ford-focus-st-20-ecoboost: Stage 2
+- **PUBLIC_SERVICE_COMPATIBILITY_REVIEW** (24): Published options remain available only subject to diagnosis, legal review and compatibility confirmation.
+  - vw-golf-20-tsi-ea888
+  - bmw-320d-b47
+  - audi-a3-20-tdi
+  - mercedes-a45-amg-m133
+  - bmw-x3-e83-20d
+  - volvo-xc60-d5
+  - ford-focus-st-20-ecoboost
+  - bmw-1-series-f20-f21-118i
+- **BROAD_ECU_FAMILY_ONLY** (7): Broad ECU-family labels are not exact ECU identification.
+  - vw-golf-20-tsi-ea888: Bosch MED17 / MG1
+  - bmw-320d-b47: Bosch EDC17 / MD1
+  - audi-a3-20-tdi: Bosch EDC17
+  - mercedes-a45-amg-m133: Bosch MED17
+  - bmw-x3-e83-20d: Bosch EDC16
+  - volvo-xc60-d5: Bosch EDC17
+  - ford-focus-st-20-ecoboost: Bosch MED17
+- **CURATED_ENGINE_CODE_REVIEW** (20): No supported engine-family code is stored; manual identification remains required.
+  - audi-a3-20-tdi
+  - volvo-xc60-d5
+  - ford-focus-st-20-ecoboost
   - bmw-1-series-f20-f21-118i
   - bmw-1-series-f20-f21-118d
   - bmw-1-series-f20-f21-120d
   - bmw-3-series-f30-f31-318d
   - bmw-3-series-f30-f31-330d
-  - bmw-5-series-f10-f11-520d
-  - bmw-3-series-g20-g21-320i
-  - volkswagen-golf-7-16-tdi
-- **MISSING_PUBLIC_TCU_TYPE** (17): Automatic gearbox is listed but the exact TCU type is not stored.
+- **CURATED_TCU_UNKNOWN** (23): Automatic transmission is listed without an evidence-backed exact TCU variant.
+  - vw-golf-20-tsi-ea888
+  - bmw-320d-b47
+  - audi-a3-20-tdi
+  - mercedes-a45-amg-m133
+  - bmw-x3-e83-20d
+  - volvo-xc60-d5
+  - bmw-1-series-f20-f21-118i
+  - bmw-1-series-f20-f21-118d
+- **CURATED_TRANSMISSION_AMBIGUOUS** (20): Transmission identity is estimated or requires manual review.
+  - mercedes-a45-amg-m133
+  - volvo-xc60-d5
+  - ford-focus-st-20-ecoboost
   - bmw-1-series-f20-f21-118i
   - bmw-1-series-f20-f21-118d
   - bmw-1-series-f20-f21-120d
   - bmw-3-series-f30-f31-318d
   - bmw-3-series-f30-f31-330d
-  - bmw-5-series-f10-f11-520d
-  - bmw-3-series-g20-g21-320i
-  - volkswagen-golf-7-16-tdi
-- **PUBLIC_PLACEHOLDER_IMAGE** (17): Published record uses a generic placeholder pending owned/licensed media.
-  - bmw-1-series-f20-f21-118i
-  - bmw-1-series-f20-f21-118d
-  - bmw-1-series-f20-f21-120d
-  - bmw-3-series-f30-f31-318d
-  - bmw-3-series-f30-f31-330d
-  - bmw-5-series-f10-f11-520d
-  - bmw-3-series-g20-g21-320i
-  - volkswagen-golf-7-16-tdi
-- **UNMAPPED_PUBLIC_PRICING_TIER** (4): Effective price is preserved, but no exact safe pricing tier mapping exists.
-  - volkswagen-golf-7-r-20-tsi: Stage 1
-  - volkswagen-golf-7-r-20-tsi: Stage 2
-  - seat-leon-cupra-5f-20-tsi-300: Stage 1
-  - seat-leon-cupra-5f-20-tsi-300: Stage 2
-- **PUBLIC_SERVICE_COMPATIBILITY_REVIEW** (17): Published options remain available only subject to diagnosis, legal review and compatibility confirmation.
-  - bmw-1-series-f20-f21-118i
-  - bmw-1-series-f20-f21-118d
-  - bmw-1-series-f20-f21-120d
-  - bmw-3-series-f30-f31-318d
-  - bmw-3-series-f30-f31-330d
-  - bmw-5-series-f10-f11-520d
-  - bmw-3-series-g20-g21-320i
-  - volkswagen-golf-7-16-tdi
+- **MANUAL_REVIEW_SERVICE_COMPATIBILITY** (99): Service remains commercially visible only with explicit manual confirmation.
+  - vw-golf-20-tsi-ea888: immo
+  - vw-golf-20-tsi-ea888: launch
+  - bmw-320d-b47: adblue
+  - bmw-320d-b47: scr
+  - bmw-320d-b47: immo
+  - bmw-320d-b47: launch
+  - audi-a3-20-tdi: adblue
+  - audi-a3-20-tdi: scr
 - **OPTION_COMPATIBILITY_NOT_CONFIRMED** (178225): Vehicle option assignments conflict with existing fuel/gearbox hints and require an explicit compatibility matrix.
   - vw-golf-20-tsi-ea888: dpf is not listed for Petrol
   - vw-golf-20-tsi-ea888: adblue is not listed for Petrol

@@ -117,6 +117,16 @@
     "stage1Requirements": "Originele hardware",
     "stage2Requirements": "Hardware en onderhoudsstaat gecontroleerd",
     "stage3Requirements": "Maatwerk hardware setup en uitgebreide logs",
+    "technical": {
+      "verified": "Geverifieerd",
+      "ecuFamily": "ECU-familie",
+      "familyEstimate": "Familie-indicatie",
+      "estimated": "Indicatief",
+      "manualConfirmation": "Handmatig bevestigen",
+      "identityNote": "ECU- en transmissielabels beschrijven de bekende familie. De exacte variant wordt vóór de werkzaamheden bevestigd.",
+      "conditional": "Na controle",
+      "manualReview": "Handmatig bevestigen"
+    },
     "recommendation": {
       "eyebrow": "Aanbevolen pakket",
       "title": "Kies de setup die bij jouw auto past",
@@ -137,10 +147,10 @@
       "quoteSelected": "Vraag offerte voor gekozen setup"
     },
     "verification": {
-      "badge": "Voertuigspecifieke catalogusindicatie",
-      "title": "Handmatige verificatie vereist",
-      "text": "Deze pagina is samengesteld uit bestaande catalogusgegevens. Vermogen, ECU/TCU-ondersteuning en beschikbare opties blijven indicatief totdat NoordTune de exacte motorvariant, software en voertuigstaat heeft gecontroleerd.",
-      "footer": "Definitieve mogelijkheden en prijs na controle"
+      "badge": "Voertuigspecifieke catalogusdata",
+      "title": "Technische controle vóór tuning",
+      "text": "We hebben dit voertuig gekoppeld aan een bekende tuningconfiguratie. Voor de werkzaamheden controleert NoordTune de exacte motorvariant, ECU/TCU-software en voertuigconfiguratie.",
+      "footer": "Definitieve setup wordt vóór tuning bevestigd"
     },
     "seo": {
       "eyebrow": "NoordTune advies",

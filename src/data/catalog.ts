@@ -11,6 +11,7 @@ import {
   type CuratedVehiclePublication
 } from "./curated-catalog.ts";
 import type {PricingTierId} from "@/data/pricing";
+import {applyCuratedTechnicalProfile} from "./curated-technical.ts";
 
 export type {
   ConfidenceLevel,
@@ -1502,12 +1503,14 @@ const promotedCuratedEngineCatalog: EngineVariant[] =
       (vehicle) => vehicle.id === publication.sourceId
     );
 
-    return source ? [publishCuratedVehicle(source, publication)] : [];
+    return source
+      ? [applyCuratedTechnicalProfile(publishCuratedVehicle(source, publication))]
+      : [];
   });
 
 // Only this explicit, compact set may produce public vehicle and Stage pages.
 export const engineCatalog: EngineVariant[] = [
-  ...existingCuratedEngineCatalog,
+  ...existingCuratedEngineCatalog.map(applyCuratedTechnicalProfile),
   ...promotedCuratedEngineCatalog
 ];
 
