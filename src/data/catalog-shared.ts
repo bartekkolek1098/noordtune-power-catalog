@@ -1,4 +1,4 @@
-import type {PricingTierId} from "@/data/pricing";
+import {getPublicServicePrice, type PricingTierId} from "./pricing.ts";
 
 export type FuelType = "Petrol" | "Diesel" | "Hybrid" | "Electric";
 export type ConfidenceLevel = "verified" | "estimated" | "manual-review";
@@ -77,6 +77,7 @@ export type StageDefinition = {
   powerHp: number;
   torqueNm: number;
   price: number;
+  sourcePrice?: number;
   requirements: string;
   packageItems: string[];
   pricingTier?: PricingTierId;
@@ -230,7 +231,7 @@ export const serviceOptions: ServiceOption[] = [
   {
     id: "gearbox",
     name: "DSG / TCU tuning",
-    price: 239,
+    price: getPublicServicePrice({price: 239, pricingTier: "tcu-standard"}),
     requiresGearbox: true,
     category: "gearbox",
     pricingTier: "tcu-standard",

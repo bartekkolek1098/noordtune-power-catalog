@@ -193,6 +193,7 @@ export default async function HomePage({params}: PageProps) {
                 detected: lookup("detected"),
                 catalogMatch: lookup("catalogMatch"),
                 estimate: lookup("estimate"),
+                fromPrice: lookup("fromPrice"),
                 stage: lookup("stage"),
                 stock: lookup("stock"),
                 power: lookup("power"),

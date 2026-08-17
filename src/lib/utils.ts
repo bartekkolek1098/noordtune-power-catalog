@@ -6,9 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatCurrency(value: number, locale = "nl-NL") {
-  return new Intl.NumberFormat(locale, {
-    style: "currency",
-    currency: "EUR",
+  const amount = new Intl.NumberFormat(locale, {
     maximumFractionDigits: 0
   }).format(value);
+
+  return `€${amount}`;
 }

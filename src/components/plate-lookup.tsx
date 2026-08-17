@@ -17,6 +17,10 @@ import {
 import {useMemo, useState} from "react";
 import type {RdwLookupResult} from "@/lib/rdw";
 import {serviceOptions, type StageDefinition} from "@/data/catalog-shared";
+import {
+  getPublicStagePrice,
+  getPublicStagePricingTier
+} from "@/data/pricing";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
@@ -44,6 +48,7 @@ type LookupCopy = {
   detected: string;
   catalogMatch: string;
   estimate: string;
+  fromPrice: string;
   stage: string;
   stock: string;
   power: string;
@@ -103,7 +108,12 @@ export function PlateLookup({
   const match = result?.tuningMatch?.variant;
   const stages = useMemo(() => {
     if (match) {
-      return match.stages;
+      return match.stages.map((stage) => ({
+        ...stage,
+        sourcePrice: stage.sourcePrice ?? stage.price,
+        price: getPublicStagePrice(match, stage),
+        pricingTier: getPublicStagePricingTier(match, stage) ?? stage.pricingTier
+      }));
     }
 
     const detectedPower = result?.vehicle.engine.powerHp ?? 150;
@@ -381,7 +391,7 @@ export function PlateLookup({
                     {match ? text.estimate : text.recommendation.indicativeEstimate}
                   </div>
                   <div className="mt-2 text-3xl font-black">
-                    {formatCurrency(total, localeCode)}
+                    {text.fromPrice} {formatCurrency(total, localeCode)}
                   </div>
                   {!match ? (
                     <p className="mt-3 text-sm leading-6 text-slate-300">
@@ -476,7 +486,8 @@ export function PlateLookup({
                             variant="outline"
                           >
                             <span>
-                              {gearboxOption.name} · {formatCurrency(gearboxOption.price, localeCode)}
+                              {gearboxOption.name} · {text.fromPrice}{" "}
+                              {formatCurrency(gearboxOption.price, localeCode)}
                             </span>
                             <span className="text-primary">
                               {selectedOptions.includes(gearboxOption.id)
@@ -584,7 +595,7 @@ export function PlateLookup({
                         </span>
                         <span className="flex shrink-0 items-center gap-3">
                           <span className="text-muted-foreground">
-                            {formatCurrency(option.price, localeCode)}
+                            {text.fromPrice} {formatCurrency(option.price, localeCode)}
                           </span>
                           <input
                             checked={selectedOptions.includes(option.id)}

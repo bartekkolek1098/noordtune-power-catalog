@@ -17,7 +17,7 @@ Generated from the current catalog sources by `pnpm catalog:audit`.
 | Service options | 9 |
 | Brands | 32 |
 | Critical issue groups | 0 |
-| Warning groups | 16 |
+| Warning groups | 18 |
 | Client imports of canonical server catalog | 0 |
 | Curated technical profiles | 24 |
 
@@ -27,7 +27,7 @@ Generated from the current catalog sources by `pnpm catalog:audit`.
 - Fuel types: Diesel, Hybrid, Petrol
 - Curated confidence levels: {"estimated":24}
 - Canonical database confidence levels: {"estimated":58586}
-- Pricing tiers: stage1-standard, stage1-modern-ecu, stage1-bench, stage2-standard, stage3-custom, tcu-standard, diagnostics, log-analysis, custom-service
+- Pricing tiers: stage1-standard, stage1-advanced, stage1-modern, stage2-standard, stage2-advanced, stage2-performance, stage3-standard, stage3-advanced, stage3-performance, tcu-standard, diagnostics, log-analysis, custom-service, stage1-modern-ecu, stage1-bench, stage3-custom
 - Curated service compatibility: {"not-applicable":41,"conditional":76,"manual-review":99}
 
 ## Critical Errors
@@ -90,15 +90,15 @@ None.
   - volvo-xc60-d5
   - ford-focus-st-20-ecoboost
   - bmw-1-series-f20-f21-118i
-- **UNMAPPED_PUBLIC_PRICING_TIER** (12): Effective price is preserved, but no exact safe pricing tier mapping exists.
-  - vw-golf-20-tsi-ea888: Stage 1
-  - vw-golf-20-tsi-ea888: Stage 2
-  - mercedes-a45-amg-m133: Stage 1
-  - mercedes-a45-amg-m133: Stage 2
-  - volvo-xc60-d5: Stage 1
-  - volvo-xc60-d5: Stage 2
-  - ford-focus-st-20-ecoboost: Stage 1
-  - ford-focus-st-20-ecoboost: Stage 2
+- **PUBLIC_PRICING_ACCESS_METHOD_UNVERIFIED** (24): Pricing tiers are commercial groups only; the technical ECU access method remains vehicle-specific.
+  - vw-golf-20-tsi-ea888
+  - bmw-320d-b47
+  - audi-a3-20-tdi
+  - mercedes-a45-amg-m133
+  - bmw-x3-e83-20d
+  - volvo-xc60-d5
+  - ford-focus-st-20-ecoboost
+  - bmw-1-series-f20-f21-118i
 - **PUBLIC_SERVICE_COMPATIBILITY_REVIEW** (24): Published options remain available only subject to diagnosis, legal review and compatibility confirmation.
   - vw-golf-20-tsi-ea888
   - bmw-320d-b47
@@ -161,7 +161,7 @@ None.
   - audi-a3-20-tdi: launch is not listed for Diesel
   - audi-a3-20-tdi: pops is not listed for Diesel
   - mercedes-a45-amg-m133: dpf is not listed for Petrol
-- **MISSING_STAGE_PRICING_TIER** (24124): Stages retain their effective price but are not yet mapped to a verified pricing tier.
+- **MISSING_STAGE_PRICING_TIER** (24124): Canonical stages retain source pricing and may not have a centralized tier.
   - vw-golf-20-tsi-ea888: Stage 1
   - vw-golf-20-tsi-ea888: Stage 2
   - mercedes-a45-amg-m133: Stage 1
@@ -170,6 +170,24 @@ None.
   - volvo-xc60-d5: Stage 2
   - ford-focus-st-20-ecoboost: Stage 1
   - ford-focus-st-20-ecoboost: Stage 2
+- **CANONICAL_LEGACY_STAGE_PRICING** (175758): Generated/non-curated canonical records intentionally retain legacy source prices; Pricing V2 applies only to the curated public layer.
+  - vw-golf-20-tsi-ea888: Stage 1: EUR 305
+  - vw-golf-20-tsi-ea888: Stage 2: EUR 439
+  - vw-golf-20-tsi-ea888: Stage 3+: EUR 799
+  - bmw-320d-b47: Stage 1: EUR 269
+  - bmw-320d-b47: Stage 2: EUR 399
+  - bmw-320d-b47: Stage 3+: EUR 679
+  - audi-a3-20-tdi: Stage 1: EUR 269
+  - audi-a3-20-tdi: Stage 2: EUR 399
+- **SERVICE_PRICE_NOT_MIGRATED_TO_V2** (8): This service keeps its existing public price and is outside the ECU Stage/TCU Pricing V2 scope.
+  - dpf: EUR 185
+  - adblue: EUR 199
+  - egr: EUR 149
+  - scr: EUR 219
+  - immo: EUR 169
+  - speed-limiter: EUR 119
+  - launch: EUR 165
+  - pops: EUR 149
 - **REPEATED_PLACEHOLDER_IMAGE** (1): A small image pool is reused across many vehicle records.
   - 58580 vehicles: https://images.unsplash.com/photo-1769968313283-d6336681ce8b?ixlib=rb-4.1.0&q=80&fm=jpg&crop=entropy&cs=srgb&w=1200
 
@@ -178,7 +196,7 @@ None.
 1. Manually verify the Batch 1 public records, prioritizing exact engine codes, ECU/TCU variants, drivetrain and production applicability.
 2. Review the held BMW and VAG candidates in CURATED_BATCH_1_REVIEW.md before any later promotion; do not bulk-publish adjacent templates.
 3. Replace shared placeholder photography with owned or licensed brand/model-family assets.
-4. Assign remaining pricing tiers only after the workshop confirms the access method and service scope; keep current effective prices unchanged until then.
+4. Keep Pricing V2 commercial groups separate from ECU/TCU access-method claims; confirm exact technical scope before the final quote.
 
 ## Interpretation
 

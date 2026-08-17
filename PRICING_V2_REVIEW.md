@@ -1,4 +1,4 @@
-# Curated Pricing Review — Pricing V2
+# NoordTune Pricing V2 Review
 
 Pricing V2 is a public commercial overlay for the 24 intentionally curated vehicles. Canonical technical records retain their source prices. All displayed amounts below are VAT-inclusive public **from** prices; final availability and price remain subject to the existing vehicle/ECU verification flow.
 
