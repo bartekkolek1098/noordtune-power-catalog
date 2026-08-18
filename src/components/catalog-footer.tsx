@@ -60,7 +60,7 @@ export function CatalogFooter({locale}: {locale: Locale}) {
               </span>
               <span className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary" />
-                A. Vogelstraat 1, 9406 XD Assen
+                Assen
               </span>
             </div>
           </div>
