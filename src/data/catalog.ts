@@ -10,7 +10,11 @@ import {
   curatedVehiclePublications,
   type CuratedVehiclePublication
 } from "./curated-catalog.ts";
-import type {PricingTierId} from "@/data/pricing";
+import {
+  getPublicStagePrice,
+  getPublicStagePricingTier,
+  type PricingTierId
+} from "./pricing.ts";
 import {applyCuratedTechnicalProfile} from "./curated-technical.ts";
 
 export type {
@@ -1508,11 +1512,27 @@ const promotedCuratedEngineCatalog: EngineVariant[] =
       : [];
   });
 
+function applyPublicPricing(vehicle: EngineVariant): EngineVariant {
+  return {
+    ...vehicle,
+    stages: vehicle.stages.map((stage) => ({
+      ...stage,
+      sourcePrice: stage.sourcePrice ?? stage.price,
+      price: getPublicStagePrice(vehicle, stage),
+      pricingTier: getPublicStagePricingTier(vehicle, stage) ?? stage.pricingTier
+    }))
+  };
+}
+
 // Only this explicit, compact set may produce public vehicle and Stage pages.
 export const engineCatalog: EngineVariant[] = [
   ...existingCuratedEngineCatalog.map(applyCuratedTechnicalProfile),
   ...promotedCuratedEngineCatalog
-];
+].map(applyPublicPricing);
+
+const publicVehicleByCanonicalId = new Map(
+  engineCatalog.map((vehicle) => [vehicle.sourceCanonicalId ?? vehicle.id, vehicle])
+);
 
 export function getVehicleById(id: string) {
   return (
@@ -1587,8 +1607,29 @@ export function getPopularVehicleSelectorItems(limit = 4) {
 }
 
 export function searchVehicleSelectorItems(query: string, limit = 4) {
+  const tokens = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const publicMatches = engineCatalog.filter((vehicle) => {
+    const haystack = [
+      vehicle.brand,
+      vehicle.model,
+      vehicle.engine,
+      vehicle.version,
+      vehicle.yearRange,
+      vehicle.fuel,
+      ...vehicle.tags
+    ]
+      .join(" ")
+      .toLowerCase();
+
+    return tokens.length > 0 && tokens.every((token) => haystack.includes(token));
+  });
+  const selectorItems = [
+    ...publicMatches.map(toVehicleSelectorItem),
+    ...searchVehicles(query).map(toVehicleSelectorItem)
+  ];
+
   return uniqueVehicleSelectorItems(
-    searchVehicles(query).map(toVehicleSelectorItem),
+    selectorItems,
     limit
   );
 }
@@ -1616,16 +1657,19 @@ export function getVehicleSelectorItems({
 }
 
 function toVehicleSelectorItem(vehicle: EngineVariant): VehicleSelectorItem {
+  const publicVehicle = publicVehicleByCanonicalId.get(vehicle.id) ?? vehicle;
+  const stage = publicVehicle.stages[0];
+
   return {
-    id: vehicle.id,
-    brand: vehicle.brand,
-    model: vehicle.model,
-    engine: vehicle.engine,
-    version: vehicle.version,
-    yearRange: vehicle.yearRange,
-    ecuType: vehicle.ecuType,
-    popular: Boolean(vehicle.popular),
-    priceFrom: vehicle.stages[0]?.price ?? 0
+    id: publicVehicle.id,
+    brand: publicVehicle.brand,
+    model: publicVehicle.model,
+    engine: publicVehicle.engine,
+    version: publicVehicle.version,
+    yearRange: publicVehicle.yearRange,
+    ecuType: publicVehicle.ecuType,
+    popular: Boolean(publicVehicle.popular),
+    priceFrom: stage ? getPublicStagePrice(publicVehicle, stage) : 0
   };
 }
 
