@@ -1136,7 +1136,11 @@ const vehicleDetailSource = readFileSync(
   "utf8"
 );
 const tuningLookupSource = readFileSync(
-  resolve(process.cwd(), "src/components/tuning-plate-lookup.tsx"),
+  resolve(process.cwd(), "src/components/plate-lookup.tsx"),
+  "utf8"
+);
+const catalogHomepageSource = readFileSync(
+  resolve(process.cwd(), "src/app/[locale]/page.tsx"),
   "utf8"
 );
 const vehicleCheckLookupSource = readFileSync(
@@ -1258,7 +1262,7 @@ addIssue(
         : null
     ]),
     !/method:\s*["']POST["']/.test(tuningLookupSource)
-      ? "TuningPlateLookup does not explicitly use POST"
+      ? "PlateLookup does not explicitly use POST"
       : null,
     !/method:\s*["']POST["']/.test(vehicleCheckLookupSource)
       ? "VehicleCheckLookup does not explicitly use POST"
@@ -1398,13 +1402,104 @@ addIssue(
   "Power Catalog and Vehicle Check must use separate lookup and result components without a shared tabbed result.",
   [
     /RdwPurchaseCheck|purchaseSignals|roadworthiness|apkHistory|recalls/.test(tuningLookupSource)
-      ? "TuningPlateLookup imports or renders purchase-report data"
+      ? "PlateLookup imports or renders purchase-report data"
       : null,
     /role=["']tablist["']|purchaseTab|tuningTab/.test(tuningLookupSource)
-      ? "TuningPlateLookup contains a purchase/tuning tab interface"
+      ? "PlateLookup contains a purchase/tuning tab interface"
       : null,
     /Stage\s*1|PowerChart|selectedStage|selectedOptions/.test(vehicleCheckLookupSource)
       ? "VehicleCheckLookup contains tuning calculator state"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+
+const tuningResultStart = tuningLookupSource.indexOf('data-testid="rdw-result"');
+const tuningResultSource =
+  tuningResultStart >= 0 ? tuningLookupSource.slice(tuningResultStart) : "";
+const productionTuningOrder = [
+  '{text.detected}',
+  'md:grid-cols-[1fr_0.9fr]',
+  '<CatalogVerificationNotice',
+  'data-testid="rdw-recommended-package"',
+  '<PowerChart',
+  '<table',
+  'availableOptions.map',
+  '{text.disclaimer}'
+];
+const productionTuningPositions = productionTuningOrder.map((token) =>
+  tuningResultSource.indexOf(token)
+);
+
+addIssue(
+  "critical",
+  "POWER_CATALOG_TUNING_STRUCTURE_REGRESSION",
+  "The Power Catalog must preserve the approved production PlateLookup structure and PlateLookup -> ManualSelector page order.",
+  [
+    tuningResultStart < 0 ? "PlateLookup result wrapper is missing" : null,
+    productionTuningPositions.some((position) => position < 0)
+      ? `Missing production result token(s): ${productionTuningOrder.filter((_, index) => productionTuningPositions[index] < 0).join(", ")}`
+      : null,
+    productionTuningPositions.some(
+      (position, index) => index > 0 && position <= productionTuningPositions[index - 1]
+    )
+      ? "Production tuning-result section order changed"
+      : null,
+    catalogHomepageSource.indexOf("<PlateLookup") < 0
+      ? "Catalog homepage does not render PlateLookup"
+      : null,
+    catalogHomepageSource.indexOf("<ManualSelector") <
+    catalogHomepageSource.indexOf("<PlateLookup")
+      ? "ManualSelector is rendered before PlateLookup"
+      : null,
+    /<VehicleCheckLookup\b/.test(catalogHomepageSource)
+      ? "Power Catalog homepage renders VehicleCheckLookup"
+      : null,
+    /tuningEyebrow|tuningTitle|checkedAt|temporaryCache/.test(tuningLookupSource)
+      ? "PlateLookup contains non-production tuning heading/cache rows"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+
+addIssue(
+  "critical",
+  "POWER_CATALOG_TUNING_RESULT_CLIPPED",
+  "The complete tuning result must remain in normal document flow without a constrained height or internal vertical scrollbar.",
+  [
+    /max-h-|overflow-y-(?:hidden|auto|scroll)|maxHeight\s*:/.test(tuningResultSource)
+      ? "Tuning result contains a max-height or vertical-overflow constraint"
+      : null,
+    !/className="mt-6 space-y-5"[\s\S]*data-testid="rdw-result"/.test(
+      tuningLookupSource
+    )
+      ? "Production natural-height RDW result wrapper is missing"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+
+addIssue(
+  "critical",
+  "POWER_CATALOG_TUNING_CONTENT_INCOMPLETE",
+  "The production tuning result must retain recommendations, all Stage choices, chart, compatible options, live total and quote CTA.",
+  [
+    !/data-testid="rdw-recommended-package"/.test(tuningLookupSource)
+      ? "Recommended package is missing"
+      : null,
+    !/<PowerChart\b/.test(tuningLookupSource) ? "Power chart is missing" : null,
+    !/stages\.map\(\(stage, index\)/.test(tuningLookupSource)
+      ? "Complete Stage selector is missing"
+      : null,
+    !/availableOptions\.map\(\(option\)/.test(tuningLookupSource)
+      ? "Complete compatible options section is missing"
+      : null,
+    !/formatCurrency\(total, localeCode\)/.test(tuningLookupSource)
+      ? "Live total is missing"
+      : null,
+    !/rdw-exact-quote|rdw-manual-review-quote/.test(tuningLookupSource)
+      ? "Final tuning quote CTA is missing"
+      : null,
+    !/rdw-open-published-tuning/.test(tuningLookupSource) ||
+    !/rdw-open-inline-tuning/.test(tuningLookupSource)
+      ? "Published/inline tuning details CTA behavior is incomplete"
       : null
   ].filter((item): item is string => Boolean(item))
 );
@@ -1414,7 +1509,7 @@ addIssue(
   "Customer-visible RDW results must use Pricing V2 or the Pricing V2 indicative fallback.",
   [
     /price:\s*(?:269|305|339|399|439|509|679|799|949|749)\b/.test(tuningLookupSource)
-      ? "TuningPlateLookup contains a legacy public Stage price"
+      ? "PlateLookup contains a legacy public Stage price"
       : null,
     !/getPublicStagePrice/.test(rdwPublicSource)
       ? "Public tuning DTO does not resolve exact-match Stage prices"

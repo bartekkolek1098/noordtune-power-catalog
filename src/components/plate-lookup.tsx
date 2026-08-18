@@ -90,7 +90,7 @@ type LookupError = {
   message: string;
 };
 
-export function TuningPlateLookup({
+export function PlateLookup({
   locale,
   text
 }: {
@@ -313,24 +313,11 @@ export function TuningPlateLookup({
                     {result.vehicle.engine.displacementCc ?? "-"} cc ·{" "}
                     {result.vehicle.engine.powerHp ?? "-"} {powerUnit}
                   </span>
+                  <span>
+                    APK {result.vehicle.registration.apkExpiry ?? "-"}
+                  </span>
                   <span>Type {result.vehicle.variant ?? result.vehicle.type ?? "-"}</span>
                 </div>
-                <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-white/10 pt-3 text-xs text-muted-foreground">
-                  <span>{localCopy.checkedAt}: {formatCheckedAt(result.fetchedAt, locale)}</span>
-                  {result.cached ? <span>{localCopy.temporaryCache}</span> : null}
-                </div>
-              </div>
-
-              <div className="border-t border-white/10 pt-5">
-                <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">
-                  {localCopy.tuningEyebrow}
-                </div>
-                <h3 className="racing-title mt-2 text-2xl text-white sm:text-3xl">
-                  {localCopy.tuningTitle}
-                </h3>
-                <p className="mt-2 max-w-3xl text-sm leading-6 text-muted-foreground">
-                  {localCopy.tuningText}
-                </p>
               </div>
 
               <div className="grid gap-4 md:grid-cols-[1fr_0.9fr]">
@@ -352,7 +339,7 @@ export function TuningPlateLookup({
                       {match.engine} · {match.ecuType}
                     </p>
                     {result.tuningMatch?.publicVehicleId ? (
-                      <Button asChild className="mt-4 rounded-[3px] font-black uppercase">
+                      <Button asChild className="mt-4 rounded-[3px]" variant="outline">
                         <a
                           data-testid="rdw-open-published-tuning"
                           href={sitePath(`/${locale}/vehicles/${result.tuningMatch.publicVehicleId}`)}
@@ -363,10 +350,11 @@ export function TuningPlateLookup({
                       </Button>
                     ) : (
                       <Button
-                        className="mt-4 rounded-[3px] font-black uppercase"
+                        className="mt-4 rounded-[3px]"
                         data-testid="rdw-open-inline-tuning"
                         onClick={() => document.getElementById("rdw-inline-tuning")?.scrollIntoView({behavior: "smooth", block: "start"})}
                         type="button"
+                        variant="outline"
                       >
                         {localCopy.viewInlineDetails}
                         <ChevronRight className="h-4 w-4" />
@@ -412,10 +400,11 @@ export function TuningPlateLookup({
                       {text.recommendation.nextStepDescription}
                     </div>
                     <Button
-                      className="mt-4 rounded-[3px] font-black uppercase"
+                      className="mt-4 rounded-[3px]"
                       data-testid="rdw-open-inline-tuning"
                       onClick={() => document.getElementById("rdw-inline-tuning")?.scrollIntoView({behavior: "smooth", block: "start"})}
                       type="button"
+                      variant="outline"
                     >
                       {localCopy.viewInlineDetails}
                       <ChevronRight className="h-4 w-4" />
@@ -555,7 +544,10 @@ export function TuningPlateLookup({
                 </section>
               ) : null}
 
-              <div className="scroll-mt-36 rounded-[3px] border border-white/10 bg-black/25 p-4" id="rdw-inline-tuning">
+              <div
+                className="scroll-mt-36 rounded-[3px] border border-white/10 bg-black/25 p-4"
+                id="rdw-inline-tuning"
+              >
                 {!match ? (
                   <div className="mb-4 flex items-center gap-2 text-xs font-black uppercase tracking-[0.16em] text-primary">
                     <AlertTriangle className="h-4 w-4" />
@@ -666,13 +658,8 @@ const lookupRuntimeCopy: Record<
     exactMatch: string;
     networkError: string;
     requestQuote: string;
-    tuningEyebrow: string;
-    tuningTitle: string;
-    tuningText: string;
     openTuningPage: string;
     viewInlineDetails: string;
-    checkedAt: string;
-    temporaryCache: string;
     unknownFuel: string;
     indicativeRequirement: string;
     hardwareRequirement: string;
@@ -683,18 +670,13 @@ const lookupRuntimeCopy: Record<
   }
 > = {
   nl: {
-    cacheHit: "tijdelijke cache",
-    cacheMiss: "nieuw van RDW",
+    cacheHit: "cache hit",
+    cacheMiss: "nieuwe RDW check",
     exactMatch: "NoordTune bevestigt de exacte ECU en motorvariant in de offerte.",
     networkError: "RDW lookup kon niet worden geladen.",
     requestQuote: "Vraag offerte aan",
-    tuningEyebrow: "Tuningmogelijkheden",
-    tuningTitle: "Bekijk het tuningpotentieel",
-    tuningText: "De onderstaande vermogens en prijzen zijn tuningindicaties. NoordTune controleert de exacte voertuig- en ECU-configuratie voor de definitieve setup.",
     openTuningPage: "Open tuningpagina",
     viewInlineDetails: "Bekijk volledige tuningdetails",
-    checkedAt: "RDW gecontroleerd",
-    temporaryCache: "Herbruikt uit tijdelijke cache",
     unknownFuel: "Brandstof onbekend",
     indicativeRequirement: "Catalogusmatch vereist",
     hardwareRequirement: "Hardwarecontrole vereist",
@@ -716,18 +698,13 @@ const lookupRuntimeCopy: Record<
     ]
   },
   en: {
-    cacheHit: "temporary cache",
-    cacheMiss: "fresh from RDW",
+    cacheHit: "cache hit",
+    cacheMiss: "fresh RDW check",
     exactMatch: "NoordTune confirms the exact ECU and engine variant in the quote.",
     networkError: "RDW lookup could not be loaded.",
     requestQuote: "Request quote",
-    tuningEyebrow: "Tuning possibilities",
-    tuningTitle: "Explore the tuning potential",
-    tuningText: "The power figures and prices below are tuning estimates. NoordTune verifies the exact vehicle and ECU configuration before confirming the final setup.",
     openTuningPage: "Open tuning page",
     viewInlineDetails: "View full tuning details",
-    checkedAt: "RDW checked",
-    temporaryCache: "Reused from temporary cache",
     unknownFuel: "Fuel unknown",
     indicativeRequirement: "Catalog match required",
     hardwareRequirement: "Hardware check required",
@@ -749,18 +726,13 @@ const lookupRuntimeCopy: Record<
     ]
   },
   pl: {
-    cacheHit: "tymczasowy cache",
-    cacheMiss: "nowe dane z RDW",
+    cacheHit: "z cache",
+    cacheMiss: "nowe sprawdzenie RDW",
     exactMatch: "NoordTune potwierdzi dokładny ECU i wariant silnika w wycenie.",
     networkError: "Nie udało się załadować wyszukiwania RDW.",
     requestQuote: "Poproś o wycenę",
-    tuningEyebrow: "Możliwości tuningu",
-    tuningTitle: "Sprawdź potencjał tuningu",
-    tuningText: "Poniższe wartości mocy i ceny są orientacyjne. NoordTune potwierdzi dokładną konfigurację pojazdu i ECU przed ustaleniem finalnego zestawu.",
     openTuningPage: "Otwórz stronę tuningu",
     viewInlineDetails: "Zobacz pełne szczegóły tuningu",
-    checkedAt: "Sprawdzono w RDW",
-    temporaryCache: "Wynik z tymczasowej pamięci cache",
     unknownFuel: "Paliwo nieznane",
     indicativeRequirement: "Wymagane dopasowanie katalogu",
     hardwareRequirement: "Wymagana kontrola hardware",
@@ -823,17 +795,4 @@ function estimateStockTorque(result: RdwTuningLookupResult) {
   }
 
   return Math.round(power * 1.55);
-}
-
-function formatCheckedAt(value: string, locale: Locale) {
-  const date = new Date(value);
-
-  if (Number.isNaN(date.getTime())) {
-    return value;
-  }
-
-  return new Intl.DateTimeFormat(
-    locale === "en" ? "en-GB" : locale === "pl" ? "pl-PL" : "nl-NL",
-    {dateStyle: "medium", timeStyle: "short"}
-  ).format(date);
 }

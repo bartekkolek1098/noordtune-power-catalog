@@ -55,7 +55,8 @@ export function toTuningLookupResult(
       body: vehicle.body,
       fuel: vehicle.fuel,
       fuels: vehicle.fuels,
-      engine: vehicle.engine
+      engine: vehicle.engine,
+      registration: vehicle.registration
     },
     tuningMatch
   };

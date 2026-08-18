@@ -239,6 +239,7 @@ export type RdwTuningLookupResult = Pick<
     | "fuel"
     | "fuels"
     | "engine"
+    | "registration"
   >;
   tuningMatch: (NonNullable<RdwLookupResult["tuningMatch"]> & {
     publicVehicleId?: string;
