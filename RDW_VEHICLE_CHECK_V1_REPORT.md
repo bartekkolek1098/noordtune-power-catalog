@@ -200,4 +200,21 @@ Critical audit checks now prevent:
 - clear plates in cache values
 - plate-specific SEO routes
 
-Local QA covers catalog audit, deterministic Vehicle Check fixtures, ESLint, TypeScript and production build. Authenticated Vercel Preview QA is performed after the corrective commit is pushed and is reported with the PR head verification.
+Local QA covers catalog audit, deterministic Vehicle Check fixtures, ESLint, TypeScript and production build.
+
+## Authenticated Vercel Preview QA
+
+The corrective commit `bcf33d09870895dc613d62e37c530b203403b3d7` was deployed successfully to the authenticated PR #12 Preview:
+
+- `https://noordtune-power-catalog-git-fe-9740b9-bartekkolek1098s-projects.vercel.app`
+- Vercel deployment status: Ready
+- Power Catalog lookup checked on `/nl`, `/en` and `/pl`
+- dedicated report checked on `/nl/kentekencheck`, `/en/vehicle-check` and `/pl/sprawdz-auto`
+- V380ST detected as Ford Transit Connect, Diesel, 1499 cc and 100 hp
+- V380ST did not match Ford Transit 1.6 TDCi
+- Power Catalog showed Stage configuration without purchase cards or result tabs
+- dedicated Vehicle Check showed one core status-card set without Stage or calculator content
+- no customer-visible legacy EUR 269 price was present
+- the manual-review tuning CTA and plate-free Power Catalog cross-link were present
+
+The deterministic BMW fixture remains the regression check for a structurally aligned exact catalog match without transmitting an unrelated real customer plate.
