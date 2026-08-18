@@ -1,11 +1,11 @@
 import {NextRequest, NextResponse} from "next/server";
 import {z} from "zod";
+import {rateLimit} from "@/lib/rate-limit";
 import {
   lookupRdwVehicle,
   RdwLookupError
 } from "@/lib/rdw";
-import {toTuningLookupResult} from "@/lib/rdw-public";
-import {rateLimit} from "@/lib/rate-limit";
+import {toVehicleCheckResult} from "@/lib/rdw-public";
 
 export const runtime = "nodejs";
 
@@ -21,10 +21,6 @@ export async function POST(request: NextRequest) {
     return errorResponse("INVALID_INPUT", "Kenteken is required.", 400);
   }
 
-  return handleLookup(request, parsed.data.kenteken);
-}
-
-async function handleLookup(request: NextRequest, input: string | null) {
   const ip =
     request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
     request.headers.get("x-real-ip") ||
@@ -43,12 +39,8 @@ async function handleLookup(request: NextRequest, input: string | null) {
     );
   }
 
-  if (!input) {
-    return errorResponse("INVALID_INPUT", "Kenteken is required.", 400);
-  }
-
   try {
-    const result = await lookupRdwVehicle(input);
+    const result = await lookupRdwVehicle(parsed.data.kenteken);
 
     if (!result) {
       return errorResponse(
@@ -58,17 +50,14 @@ async function handleLookup(request: NextRequest, input: string | null) {
       );
     }
 
-    return NextResponse.json(
-      toTuningLookupResult(result),
-      {
-        headers: {
-          "Cache-Control": "no-store",
-          "X-RDW-Cache": result.cached ? "hit" : "miss",
-          "X-RateLimit-Remaining": String(limited.remaining),
-          "X-RateLimit-Reset": String(Math.ceil(limited.resetAt / 1000))
-        }
+    return NextResponse.json(toVehicleCheckResult(result), {
+      headers: {
+        "Cache-Control": "no-store",
+        "X-RDW-Cache": result.cached ? "hit" : "miss",
+        "X-RateLimit-Remaining": String(limited.remaining),
+        "X-RateLimit-Reset": String(Math.ceil(limited.resetAt / 1000))
       }
-    );
+    });
   } catch (error) {
     if (error instanceof RdwLookupError && error.code === "INVALID_PLATE") {
       return errorResponse("INVALID_PLATE", error.message, 400);
@@ -89,12 +78,7 @@ function errorResponse(
   headers?: HeadersInit
 ) {
   return NextResponse.json(
-    {
-      error: {
-        code,
-        message
-      }
-    },
+    {error: {code, message}},
     {
       status,
       headers: {

@@ -1534,6 +1534,13 @@ const publicVehicleByCanonicalId = new Map(
   engineCatalog.map((vehicle) => [vehicle.sourceCanonicalId ?? vehicle.id, vehicle])
 );
 
+export function getPublishedVehicleIdForMatch(vehicleId: string) {
+  return (
+    engineCatalog.find((vehicle) => vehicle.id === vehicleId)?.id ??
+    publicVehicleByCanonicalId.get(vehicleId)?.id
+  );
+}
+
 export function getVehicleById(id: string) {
   return (
     engineCatalog.find((vehicle) => vehicle.id === id) ??
@@ -1706,6 +1713,7 @@ export function findCatalogMatch(input: {
   model?: string;
   fuel?: string;
   powerHp?: number | null;
+  displacementCc?: number | null;
 }) {
   const make = normalizeSearch(input.make);
   const model = normalizeSearch(input.model);
@@ -1717,7 +1725,11 @@ export function findCatalogMatch(input: {
 
   const candidates = vehicleDatabase
     .map((variant) => {
-      if (!brandMatches(make, variant.brand)) {
+      if (!exactBrandMatches(make, variant.brand)) {
+        return {variant, score: 0};
+      }
+
+      if (!hasCompatibleModelFamily(model, variant)) {
         return {variant, score: 0};
       }
 
@@ -1730,7 +1742,27 @@ export function findCatalogMatch(input: {
         return {variant, score: 0};
       }
 
-      let score = 45 + modelScore + (fuel ? 18 : 0);
+      // Prefer an intentionally published variant when identity, fuel, power and
+      // displacement all align. This only resolves otherwise equivalent records;
+      // it never bypasses the structural compatibility checks above.
+      const publicationScore = getPublishedVehicleIdForMatch(variant.id) ? 12 : 0;
+      let score = 45 + modelScore + (fuel ? 18 : 0) + publicationScore;
+      const nominalDisplacementCc = getNominalDisplacementCc(variant);
+
+      if (
+        input.displacementCc &&
+        nominalDisplacementCc &&
+        Math.abs(input.displacementCc - nominalDisplacementCc) > 80
+      ) {
+        return {variant, score: 0};
+      }
+
+      if (input.displacementCc && nominalDisplacementCc) {
+        score += Math.max(
+          0,
+          15 - Math.floor(Math.abs(input.displacementCc - nominalDisplacementCc) / 8)
+        );
+      }
 
       if (input.powerHp) {
         const delta = Math.abs(input.powerHp - variant.stockPowerHp);
@@ -1743,21 +1775,103 @@ export function findCatalogMatch(input: {
         score += Math.max(0, 25 - Math.floor(delta / 4));
       }
 
-      return {variant, score};
+      return {variant, score, nominalDisplacementCc};
     })
     .filter((candidate) => candidate.score > 0)
     .sort((a, b) => b.score - a.score);
 
   const best = candidates[0];
+  const second = candidates[1];
 
   if (!best || best.score < 78) {
     return null;
   }
 
+  if (
+    second &&
+    best.score - second.score <= 4 &&
+    matchIdentityKey(best.variant) !== matchIdentityKey(second.variant)
+  ) {
+    return null;
+  }
+
+  const powerDelta = input.powerHp
+    ? Math.abs(input.powerHp - best.variant.stockPowerHp)
+    : null;
+  const displacementDelta =
+    input.displacementCc && best.nominalDisplacementCc
+      ? Math.abs(input.displacementCc - best.nominalDisplacementCc)
+      : null;
+  const fullyAligned =
+    powerDelta !== null &&
+    powerDelta <= Math.max(5, Math.round(best.variant.stockPowerHp * 0.05)) &&
+    displacementDelta !== null &&
+    displacementDelta <= 50;
+
   return {
-    confidence: Math.min(100, best.score),
+    confidence: Math.min(fullyAligned ? 100 : 99, best.score),
     variant: best.variant
   };
+}
+
+function exactBrandMatches(make: string, brand: string) {
+  const normalizedBrand = normalizeSearch(brand);
+  const aliases: Record<string, string[]> = {
+    volkswagen: ["volkswagen", "vw"],
+    "mercedes benz": ["mercedes benz", "mercedes"],
+    "alfa romeo": ["alfa romeo", "alfa"],
+    mini: ["mini", "bmw mini"]
+  };
+
+  return (aliases[normalizedBrand] ?? [normalizedBrand]).includes(make);
+}
+
+function hasCompatibleModelFamily(inputModel: string, variant: EngineVariant) {
+  const candidateIdentity = normalizeSearch(
+    [variant.model, variant.version, ...variant.tags].join(" ")
+  );
+  const ignoredTokens = new Set([
+    "diesel", "benzine", "petrol", "hybrid", "turbo", "tdi", "tdci",
+    "tsi", "tfsi", "ecoboost", "ecoblue", "dci", "hdi", "bluehdi",
+    "serie", "series", "klasse", "class", "edition", "performance"
+  ]);
+  const requiredTokens = inputModel
+    .split(/\s+/)
+    .filter((token) => {
+      if (!token || ignoredTokens.has(token) || /^\d+(?:\.\d+)?$/.test(token)) {
+        return false;
+      }
+
+      return token.length >= 3 || /[a-z]/.test(token) && /\d/.test(token);
+    });
+
+  return requiredTokens.every((token) =>
+    candidateIdentity.split(/\s+/).includes(token)
+  );
+}
+
+function getNominalDisplacementCc(variant: EngineVariant) {
+  const identity = normalizeSearch(
+    [variant.engine, variant.model, variant.version, ...variant.tags].join(" ")
+  );
+  const decimal = identity.match(/(?:^|\s)([0-6])\s([0-9])(?:[a-z]{0,8})(?:\s|$)/);
+
+  if (decimal) {
+    return Number(decimal[1]) * 1000 + Number(decimal[2]) * 100;
+  }
+
+  const cubicCentimetres = identity.match(/(?:^|\s)([6-9]\d{2}|[1-6]\d{3})\s*cc(?:\s|$)/);
+  return cubicCentimetres ? Number(cubicCentimetres[1]) : null;
+}
+
+function matchIdentityKey(variant: EngineVariant) {
+  return [
+    normalizeSearch(variant.brand),
+    normalizeSearch(variant.model),
+    normalizeSearch(variant.engine),
+    variant.fuel,
+    variant.stockPowerHp
+  ].join("|");
 }
 
 function createGeneratedVehicle(
@@ -2310,19 +2424,6 @@ function normalizeSearch(value?: string) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
-}
-
-function brandMatches(make: string, brand: string) {
-  const normalizedBrand = normalizeSearch(brand);
-  const aliases: Record<string, string[]> = {
-    volkswagen: ["volkswagen", "vw"],
-    "mercedes benz": ["mercedes benz", "mercedes"],
-    "alfa romeo": ["alfa romeo", "alfa"],
-    mini: ["mini", "bmw mini"]
-  };
-  const candidates = aliases[normalizedBrand] ?? [normalizedBrand];
-
-  return candidates.some((candidate) => make === candidate || make.includes(candidate));
 }
 
 function scoreModelIdentity(inputModel: string, variant: EngineVariant) {

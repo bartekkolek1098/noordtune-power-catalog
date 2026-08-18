@@ -17,6 +17,9 @@ const {serviceOptions} = require("../src/data/catalog-shared.ts") as typeof impo
 );
 const pricing = require("../src/data/pricing.ts") as typeof import("../src/data/pricing");
 const {routing} = require("../src/i18n/routing.ts") as typeof import("../src/i18n/routing");
+const {vehicleCheckPaths} = require("../src/lib/vehicle-check-path.ts") as typeof import(
+  "../src/lib/vehicle-check-path"
+);
 
 type AuditSeverity = "critical" | "warning";
 type PricingV2StageTierId = import("../src/data/pricing").PricingV2StageTierId;
@@ -55,7 +58,9 @@ const seoStageDefinitionCount = catalog.engineCatalog.reduce(
 const localeCount = routing.locales.length;
 const sitemapVehiclePageCount = catalog.engineCatalog.length * localeCount;
 const sitemapStagePageCount = seoStageDefinitionCount * localeCount;
-const sitemapUrlCount = localeCount + sitemapVehiclePageCount + sitemapStagePageCount;
+const sitemapVehicleCheckPageCount = localeCount;
+const sitemapUrlCount =
+  localeCount + sitemapVehicleCheckPageCount + sitemapVehiclePageCount + sitemapStagePageCount;
 const brands = Array.from(
   new Set(catalog.vehicleDatabase.map((vehicle) => vehicle.brand))
 ).sort();
@@ -148,6 +153,26 @@ addIssue(
   "CLIENT_IMPORTS_SERVER_CATALOG",
   "Client components must import only lightweight catalog-shared or catalog-selector modules.",
   clientImportsServerCatalog
+);
+
+const clientImportsServerRdw = listSourceFiles(resolve(process.cwd(), "src"))
+  .filter((file) => {
+    const source = readFileSync(file, "utf8");
+
+    return (
+      /^\s*["']use client["'];/.test(source) &&
+      importedModules(source).some((specifier) =>
+        /(?:^@\/lib\/rdw$|\/lib\/rdw(?:\.ts)?$)/.test(specifier)
+      )
+    );
+  })
+  .map((file) => relative(process.cwd(), file));
+
+addIssue(
+  "critical",
+  "CLIENT_IMPORTS_SERVER_RDW",
+  "Client components must import only the client-safe RDW result types, never the server lookup implementation.",
+  clientImportsServerRdw
 );
 
 function duplicateGroups<T>(
@@ -1110,9 +1135,209 @@ const vehicleDetailSource = readFileSync(
   resolve(process.cwd(), "src/components/vehicle-detail.tsx"),
   "utf8"
 );
-const plateLookupSource = readFileSync(
+const tuningLookupSource = readFileSync(
   resolve(process.cwd(), "src/components/plate-lookup.tsx"),
   "utf8"
+);
+const catalogHomepageSource = readFileSync(
+  resolve(process.cwd(), "src/app/[locale]/page.tsx"),
+  "utf8"
+);
+const vehicleCheckLookupSource = readFileSync(
+  resolve(process.cwd(), "src/components/vehicle-check-lookup.tsx"),
+  "utf8"
+);
+const purchaseReportSource = readFileSync(
+  resolve(process.cwd(), "src/components/rdw-purchase-check.tsx"),
+  "utf8"
+);
+const rdwServerSource = readFileSync(
+  resolve(process.cwd(), "src/lib/rdw.ts"),
+  "utf8"
+);
+const rdwResultTypeSource = readFileSync(
+  resolve(process.cwd(), "src/lib/rdw-types.ts"),
+  "utf8"
+);
+const rdwRouteSource = readFileSync(
+  resolve(process.cwd(), "src/app/api/rdw-lookup/route.ts"),
+  "utf8"
+);
+const rdwVehicleCheckRouteSource = readFileSync(
+  resolve(process.cwd(), "src/app/api/rdw-vehicle-check/route.ts"),
+  "utf8"
+);
+const rdwPublicSource = readFileSync(
+  resolve(process.cwd(), "src/lib/rdw-public.ts"),
+  "utf8"
+);
+const rdwCacheCoreSource = readFileSync(
+  resolve(process.cwd(), "src/lib/rdw-cache-core.ts"),
+  "utf8"
+);
+const rdwSignalTestSource = readFileSync(
+  resolve(process.cwd(), "scripts/test-rdw-signals.ts"),
+  "utf8"
+);
+const vehicleCheckRouteSource = readFileSync(
+  resolve(process.cwd(), "src/app/[locale]/[brand]/page.tsx"),
+  "utf8"
+);
+const vehicleCheckPathSource = readFileSync(
+  resolve(process.cwd(), "src/lib/vehicle-check-path.ts"),
+  "utf8"
+);
+const sitemapSource = readFileSync(
+  resolve(process.cwd(), "src/app/sitemap.ts"),
+  "utf8"
+);
+const rdwClientSources = [
+  tuningLookupSource,
+  vehicleCheckLookupSource,
+  vehicleCheckRouteSource,
+  purchaseReportSource
+];
+
+addIssue(
+  "critical",
+  "RDW_QUERY_WITHOUT_LIMIT",
+  "Every official RDW source request must pass through the required bounded query limit.",
+  [
+    !/type RdwQuery = \{[\s\S]*?limit:\s*number;/.test(rdwServerSource)
+      ? "RdwQuery.limit is not required"
+      : null,
+    !/url\.searchParams\.set\("\$limit",/.test(rdwServerSource)
+      ? "RDW request builder does not set $limit"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_RAW_PAYLOAD_EXPOSED",
+  "The public RDW DTO and API route must not expose raw upstream records.",
+  [
+    /\braw\??\s*:/.test(rdwResultTypeSource) ? "rdw-types.ts exposes a raw field" : null,
+    /\bincludeRaw\b|\braw\s*:/.test(rdwRouteSource) ? "Tuning API route exposes raw output" : null,
+    /\bincludeRaw\b|\braw\s*:/.test(rdwVehicleCheckRouteSource)
+      ? "Vehicle Check API route exposes raw output"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_AUXILIARY_FAILURE_NOT_ISOLATED",
+  "Auxiliary fuel, recall and APK requests must use partial-source handling without breaking the core vehicle result.",
+  [
+    !/Promise\.allSettled/.test(rdwServerSource) ? "Promise.allSettled is missing" : null,
+    !/settledSource/.test(rdwServerSource) ? "settledSource fallback is missing" : null,
+    !/vehicleResult\.status\.status === "unavailable"/.test(rdwServerSource)
+      ? "Core vehicle source is not isolated from auxiliary source status"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "PLATE_PERSISTED_IN_BROWSER",
+  "RDW client code must not persist searched plates in localStorage, sessionStorage or analytics events.",
+  rdwClientSources.flatMap((source, index) => [
+    /\blocalStorage\b|\bsessionStorage\b/.test(source)
+      ? `RDW client source ${index + 1} uses browser storage`
+      : null,
+    /analytics\.(?:track|event)|gtag\s*\(/.test(source)
+      ? `RDW client source ${index + 1} sends an analytics event`
+      : null
+  ]).filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_PLATE_GET_ENDPOINT_ENABLED",
+  "The customer RDW endpoint must accept a plate only through a POST JSON body.",
+  [
+    ...[
+      ["Tuning", rdwRouteSource],
+      ["Vehicle Check", rdwVehicleCheckRouteSource]
+    ].flatMap(([label, source]) => [
+      /export\s+async\s+function\s+GET\s*\(/.test(source)
+        ? `${label} route exports a GET handler`
+        : null
+    ]),
+    !/method:\s*["']POST["']/.test(tuningLookupSource)
+      ? "PlateLookup does not explicitly use POST"
+      : null,
+    !/method:\s*["']POST["']/.test(vehicleCheckLookupSource)
+      ? "VehicleCheckLookup does not explicitly use POST"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_CACHE_CONTAINS_CLEAR_PLATE",
+  "RDW cache and in-flight values must be plate-free and rehydrate the plate only at the response boundary.",
+  [
+    !/type CacheEntry = \{expiresAt: number; result: RdwLookupCore\}/.test(rdwServerSource)
+      ? "Memory cache is not typed as a plate-free RdwLookupCore"
+      : null,
+    !/Promise<RdwLookupCore \| null>/.test(rdwServerSource)
+      ? "In-flight lookup values are not plate-free cores"
+      : null,
+    !/toPlateFreeRdwCore/.test(rdwServerSource) || !/attachPlateToRdwCore/.test(rdwServerSource)
+      ? "Plate-free cache boundary helpers are not used by the RDW lookup"
+      : null,
+    !/JSON\.stringify\(cacheCore\)/.test(rdwSignalTestSource) ||
+    !/serializedCacheValue\.includes\(normalizedPlate\)/.test(rdwSignalTestSource)
+      ? "Deterministic serialized cache-value privacy fixture is missing"
+      : null,
+    /plate:\s*string/.test(rdwCacheCoreSource.split("export function attachPlateToRdwCore")[0] ?? "")
+      ? "Plate-free cache core declares a clear plate field"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_PUBLIC_DTO_EXPOSES_OPERATIONAL_METADATA",
+  "The public RDW DTO must not expose request timings, duplicate normalized plates or cache implementation TTLs.",
+  [
+    /durationMs\s*:/.test(rdwResultTypeSource) ? "Public source status exposes durationMs" : null,
+    /cacheTtlSeconds\s*:/.test(rdwResultTypeSource) ? "Public result exposes cacheTtlSeconds" : null,
+    /normalizedKenteken/.test(rdwRouteSource) ? "Tuning API response exposes redundant normalizedKenteken" : null,
+    /normalizedKenteken/.test(rdwVehicleCheckRouteSource)
+      ? "Vehicle Check API response exposes redundant normalizedKenteken"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_CACHE_TTL_DEFAULT_INVALID",
+  "Vehicle Check volatile RDW data must default to a six-hour temporary cache.",
+  /RDW_CACHE_TTL_SECONDS \?\? 21600/.test(rdwServerSource)
+    ? []
+    : ["RDW cache TTL does not default to 21600 seconds"]
+);
+addIssue(
+  "critical",
+  "VEHICLE_CHECK_STATIC_ROUTE_MISSING",
+  "The three localized Vehicle Check landing routes must be statically declared and included in the sitemap.",
+  [
+    ...routing.locales
+      .filter((locale) => !vehicleCheckPathSource.includes(vehicleCheckPaths[locale]))
+      .map((locale) => `route source missing ${vehicleCheckPaths[locale]}`),
+    !/vehicleCheckPath\(locale\)/.test(sitemapSource)
+      ? "sitemap.ts does not include Vehicle Check routes"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "PLATE_SPECIFIC_SEO_ROUTE",
+  "Vehicle Check must not create plate-specific canonicals or sitemap routes.",
+  [
+    /canonical[\s\S]{0,200}(?:plate|kenteken)/i.test(vehicleCheckRouteSource)
+      ? "Vehicle Check canonical appears to depend on a plate"
+      : null,
+    /(?:plate|kenteken)[\s\S]{0,100}sitemap/i.test(sitemapSource)
+      ? "Sitemap appears to include plate-specific data"
+      : null
+  ].filter((item): item is string => Boolean(item))
 );
 addIssue(
   "critical",
@@ -1132,8 +1357,194 @@ addIssue(
     )
       ? "Vehicle calculator total does not use selectedStage.price"
       : null,
-    !/getPublicStagePrice\(match, stage\)/.test(plateLookupSource)
-      ? "RDW exact-match stages do not use getPublicStagePrice"
+    !/toTuningLookupResult\(result\)/.test(rdwRouteSource) ||
+    !/getPublicStagePrice\(result\.tuningMatch!\.variant, stage\)/.test(rdwPublicSource)
+      ? "RDW exact-match stages do not pass through the public Pricing V2 serializer"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+const transitConnectFixture = catalog.findCatalogMatch({
+  make: "Ford",
+  model: "Transit Connect",
+  fuel: "Diesel",
+  powerHp: 100,
+  displacementCc: 1499
+});
+const deterministicBmwFixture = catalog.findCatalogMatch({
+  make: "BMW",
+  model: "320D",
+  fuel: "Diesel",
+  powerHp: 190,
+  displacementCc: 1995
+});
+
+addIssue(
+  "critical",
+  "RDW_FALSE_EXACT_MATCH",
+  "Structurally conflicting RDW vehicle identities must use manual review.",
+  [
+    transitConnectFixture?.variant.id === "ford-transit-16-tdci"
+      ? "V380ST fixture matched Ford Transit 1.6 TDCi"
+      : transitConnectFixture
+        ? `V380ST fixture unexpectedly matched ${transitConnectFixture.variant.id}`
+        : null,
+    deterministicBmwFixture?.variant.id !== "bmw-320d-b47"
+      ? "Deterministic BMW 320D fixture no longer matches bmw-320d-b47"
+      : null,
+    deterministicBmwFixture?.confidence !== 100
+      ? `Deterministic BMW fixture confidence is ${deterministicBmwFixture?.confidence ?? "missing"}`
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "SHARED_TABBED_RDW_RESULT",
+  "Power Catalog and Vehicle Check must use separate lookup and result components without a shared tabbed result.",
+  [
+    /RdwPurchaseCheck|purchaseSignals|roadworthiness|apkHistory|recalls/.test(tuningLookupSource)
+      ? "PlateLookup imports or renders purchase-report data"
+      : null,
+    /role=["']tablist["']|purchaseTab|tuningTab/.test(tuningLookupSource)
+      ? "PlateLookup contains a purchase/tuning tab interface"
+      : null,
+    /Stage\s*1|PowerChart|selectedStage|selectedOptions/.test(vehicleCheckLookupSource)
+      ? "VehicleCheckLookup contains tuning calculator state"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+
+const tuningResultStart = tuningLookupSource.indexOf('data-testid="rdw-result"');
+const tuningResultSource =
+  tuningResultStart >= 0 ? tuningLookupSource.slice(tuningResultStart) : "";
+const productionTuningOrder = [
+  '{text.detected}',
+  'md:grid-cols-[1fr_0.9fr]',
+  '<CatalogVerificationNotice',
+  'data-testid="rdw-recommended-package"',
+  '<PowerChart',
+  '<table',
+  'availableOptions.map',
+  '{text.disclaimer}'
+];
+const productionTuningPositions = productionTuningOrder.map((token) =>
+  tuningResultSource.indexOf(token)
+);
+
+addIssue(
+  "critical",
+  "POWER_CATALOG_TUNING_STRUCTURE_REGRESSION",
+  "The Power Catalog must preserve the approved production PlateLookup structure and PlateLookup -> ManualSelector page order.",
+  [
+    tuningResultStart < 0 ? "PlateLookup result wrapper is missing" : null,
+    productionTuningPositions.some((position) => position < 0)
+      ? `Missing production result token(s): ${productionTuningOrder.filter((_, index) => productionTuningPositions[index] < 0).join(", ")}`
+      : null,
+    productionTuningPositions.some(
+      (position, index) => index > 0 && position <= productionTuningPositions[index - 1]
+    )
+      ? "Production tuning-result section order changed"
+      : null,
+    catalogHomepageSource.indexOf("<PlateLookup") < 0
+      ? "Catalog homepage does not render PlateLookup"
+      : null,
+    catalogHomepageSource.indexOf("<ManualSelector") <
+    catalogHomepageSource.indexOf("<PlateLookup")
+      ? "ManualSelector is rendered before PlateLookup"
+      : null,
+    /<VehicleCheckLookup\b/.test(catalogHomepageSource)
+      ? "Power Catalog homepage renders VehicleCheckLookup"
+      : null,
+    /tuningEyebrow|tuningTitle|checkedAt|temporaryCache/.test(tuningLookupSource)
+      ? "PlateLookup contains non-production tuning heading/cache rows"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+
+addIssue(
+  "critical",
+  "POWER_CATALOG_TUNING_RESULT_CLIPPED",
+  "The complete tuning result must remain in normal document flow without a constrained height or internal vertical scrollbar.",
+  [
+    /max-h-|overflow-y-(?:hidden|auto|scroll)|maxHeight\s*:/.test(tuningResultSource)
+      ? "Tuning result contains a max-height or vertical-overflow constraint"
+      : null,
+    !/className="mt-6 space-y-5"[\s\S]*data-testid="rdw-result"/.test(
+      tuningLookupSource
+    )
+      ? "Production natural-height RDW result wrapper is missing"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+
+addIssue(
+  "critical",
+  "POWER_CATALOG_TUNING_CONTENT_INCOMPLETE",
+  "The production tuning result must retain recommendations, all Stage choices, chart, compatible options, live total and quote CTA.",
+  [
+    !/data-testid="rdw-recommended-package"/.test(tuningLookupSource)
+      ? "Recommended package is missing"
+      : null,
+    !/<PowerChart\b/.test(tuningLookupSource) ? "Power chart is missing" : null,
+    !/stages\.map\(\(stage, index\)/.test(tuningLookupSource)
+      ? "Complete Stage selector is missing"
+      : null,
+    !/availableOptions\.map\(\(option\)/.test(tuningLookupSource)
+      ? "Complete compatible options section is missing"
+      : null,
+    !/formatCurrency\(total, localeCode\)/.test(tuningLookupSource)
+      ? "Live total is missing"
+      : null,
+    !/rdw-exact-quote|rdw-manual-review-quote/.test(tuningLookupSource)
+      ? "Final tuning quote CTA is missing"
+      : null,
+    !/rdw-open-published-tuning/.test(tuningLookupSource) ||
+    !/rdw-open-inline-tuning/.test(tuningLookupSource)
+      ? "Published/inline tuning details CTA behavior is incomplete"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "CUSTOMER_VISIBLE_LEGACY_RDW_PRICE",
+  "Customer-visible RDW results must use Pricing V2 or the Pricing V2 indicative fallback.",
+  [
+    /price:\s*(?:269|305|339|399|439|509|679|799|949|749)\b/.test(tuningLookupSource)
+      ? "PlateLookup contains a legacy public Stage price"
+      : null,
+    !/getPublicStagePrice/.test(rdwPublicSource)
+      ? "Public tuning DTO does not resolve exact-match Stage prices"
+      : null,
+    !/sourcePrice:\s*_sourcePrice/.test(rdwPublicSource)
+      ? "Public tuning DTO does not explicitly strip canonical sourcePrice"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "BROKEN_RDW_TUNING_CTA",
+  "RDW tuning CTAs may link only to deliberately published vehicle routes; unpublished matches must scroll inline.",
+  [
+    /vehicles\/\$\{match\.id\}/.test(tuningLookupSource)
+      ? "Tuning CTA links directly to an arbitrary canonical match ID"
+      : null,
+    !/tuningMatch\?\.publicVehicleId/.test(tuningLookupSource)
+      ? "Published-route guard is missing"
+      : null,
+    !/rdw-inline-tuning/.test(tuningLookupSource)
+      ? "Inline tuning-details fallback target is missing"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "DUPLICATE_PURCHASE_SUMMARY",
+  "The dedicated Vehicle Check must render one summary and one core status-card set.",
+  [
+    (purchaseReportSource.match(/<PurchaseSummaryCards\b/g) ?? []).length !== 1
+      ? `PurchaseSummaryCards rendered ${(purchaseReportSource.match(/<PurchaseSummaryCards\b/g) ?? []).length} times`
+      : null,
+    /variant\s*=\s*["']compact["']|rdw-purchase-summary/.test(purchaseReportSource)
+      ? "Legacy compact purchase summary remains"
       : null
   ].filter((item): item is string => Boolean(item))
 );
@@ -1161,7 +1572,7 @@ addIssue(
   repeatedImages
 );
 
-const sitemapRouteKeys = routing.locales.flatMap((locale) => [
+const legacySitemapRouteKeys = routing.locales.flatMap((locale) => [
   `/${locale}`,
   ...catalog.engineCatalog.map((vehicle) => `/${locale}/vehicles/${vehicle.id}`),
   ...catalog.engineCatalog.flatMap((vehicle) => {
@@ -1172,6 +1583,10 @@ const sitemapRouteKeys = routing.locales.flatMap((locale) => [
     );
   })
 ]);
+const sitemapRouteKeys = [
+  ...legacySitemapRouteKeys,
+  ...routing.locales.map((locale) => vehicleCheckPaths[locale])
+];
 const duplicateSitemapRoutes = duplicateGroups(
   sitemapRouteKeys,
   (route) => route,
@@ -1257,7 +1672,7 @@ const productionTechnicalBaseline = {
   serviceTechnical:
     "32145c26a8c81c430edde2acf1467c849a0b89fcf06709d1e0ea5a85983a90eb",
   rdwMatcher:
-    "c9c9fda79732266e7bf65d3b4b025f71f8d06a66ac914ba2d1340768c1c12df8"
+    "03334e090caa141a1a3697199a5d67dfe06a2c9b3e8f589916e7f3028fba5f5b"
 } as const;
 
 const previousPublicCommercialHashes = {
@@ -1275,7 +1690,7 @@ const currentTechnicalHashes = {
   publicTechnical: semanticHash(
     catalog.engineCatalog.map(technicalVehicleProjection)
   ),
-  publicRoutes: semanticHash(sitemapRouteKeys),
+  publicRoutes: semanticHash(legacySitemapRouteKeys),
   serviceTechnical: semanticHash(serviceOptions.map(technicalServiceProjection)),
   rdwMatcher: semanticHash(String(catalog.findCatalogMatch))
 } as const;
@@ -1303,7 +1718,7 @@ if (
   catalog.engineCatalog.length !== 24 ||
   catalog.vehicleDatabase.length !== 58_586 ||
   stageCount !== 175_758 ||
-  sitemapUrlCount !== 291
+  sitemapUrlCount !== 294
 ) {
   semanticIntegrityFailures.push(
     `counts: public=${catalog.engineCatalog.length}, canonical=${catalog.vehicleDatabase.length}, stages=${stageCount}, sitemap=${sitemapUrlCount}`
@@ -1533,7 +1948,7 @@ ${Object.entries(previousPublicCommercialHashes)
   })
   .join("\n")}
 
-Protected counts: 24 public vehicles, 58,586 canonical vehicles, 175,758 canonical stage definitions and 291 sitemap URLs.
+Protected counts: 24 public vehicles, 58,586 canonical vehicles, 175,758 canonical stage definitions and 294 sitemap URLs, including the three localized Vehicle Check landing pages.
 `;
 
 function stageByName(
@@ -1656,6 +2071,7 @@ Generated from the current catalog sources by \`pnpm catalog:audit\`.
 | Generated source records before canonical dedupe | ${catalog.generatedVehicleCatalog.length} |
 | Canonical selector/RDW vehicle records | ${catalog.vehicleDatabase.length} |
 | Stage definitions in canonical database | ${stageCount} |
+| Localized Vehicle Check landing pages | ${sitemapVehicleCheckPageCount} |
 | Localized vehicle detail pages in sitemap | ${sitemapVehiclePageCount} |
 | Localized stage SEO pages in sitemap | ${sitemapStagePageCount} |
 | Total sitemap URLs | ${sitemapUrlCount} |

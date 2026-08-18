@@ -11,9 +11,10 @@ Generated from the current catalog sources by `pnpm catalog:audit`.
 | Generated source records before canonical dedupe | 65469 |
 | Canonical selector/RDW vehicle records | 58586 |
 | Stage definitions in canonical database | 175758 |
+| Localized Vehicle Check landing pages | 3 |
 | Localized vehicle detail pages in sitemap | 72 |
 | Localized stage SEO pages in sitemap | 216 |
-| Total sitemap URLs | 291 |
+| Total sitemap URLs | 294 |
 | Service options | 9 |
 | Brands | 32 |
 | Critical issue groups | 0 |

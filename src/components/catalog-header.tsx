@@ -10,10 +10,12 @@ import {whatsappHref} from "@/lib/whatsapp";
 export function CatalogHeader({
   className,
   languagePath = "",
+  languagePaths,
   locale
 }: {
   className?: string;
   languagePath?: string;
+  languagePaths?: Partial<Record<Locale, string>>;
   locale: Locale;
 }) {
   const navItems = mainNavItems(locale);
@@ -41,7 +43,7 @@ export function CatalogHeader({
         />
 
         <div className="ml-auto flex min-w-0 shrink-0 items-center gap-1.5 min-[390px]:gap-2 sm:gap-3">
-          <LanguageSwitcher locale={locale} path={languagePath} />
+          <LanguageSwitcher locale={locale} path={languagePath} paths={languagePaths} />
           <Button
             asChild
             className="hidden h-11 rounded-[3px] border border-white/20 bg-black/50 px-4 text-xs font-black uppercase text-white hover:border-primary hover:bg-primary/10 hover:text-primary min-[1400px]:inline-flex"
