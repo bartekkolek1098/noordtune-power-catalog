@@ -92,12 +92,15 @@ type LookupError = {
 };
 
 export function PlateLookup({
+  context = "catalog",
   locale,
   text
 }: {
+  context?: "catalog" | "vehicle-check";
   locale: Locale;
   text: LookupCopy;
 }) {
+  const defaultResultView = context === "vehicle-check" ? "purchase" : "tuning";
   const [plate, setPlate] = useState("");
   const [result, setResult] = useState<RdwLookupResult | null>(null);
   const [error, setError] = useState<LookupError | null>(null);
@@ -105,6 +108,9 @@ export function PlateLookup({
   const [stageIndex, setStageIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [recommendedPackageUsed, setRecommendedPackageUsed] = useState(false);
+  const [activeResultView, setActiveResultView] = useState<"purchase" | "tuning">(
+    defaultResultView
+  );
 
   const match = result?.tuningMatch?.variant;
   const stages = useMemo(() => {
@@ -185,6 +191,7 @@ export function PlateLookup({
     setSelectedOptions([]);
     setStageIndex(0);
     setRecommendedPackageUsed(false);
+    setActiveResultView(defaultResultView);
 
     try {
       const response = await fetch(sitePath("/api/rdw-lookup"), {
@@ -319,9 +326,53 @@ export function PlateLookup({
                   </span>
                   <span>Type {result.vehicle.variant ?? result.vehicle.type ?? "-"}</span>
                 </div>
+                <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-white/10 pt-3 text-xs text-muted-foreground">
+                  <span>{localCopy.checkedAt}: {formatCheckedAt(result.fetchedAt, locale)}</span>
+                  {result.cached ? <span>{localCopy.temporaryCache}</span> : null}
+                </div>
               </div>
 
-              <RdwPurchaseCheck locale={locale} result={result} />
+              {context === "catalog" ? (
+                <RdwPurchaseCheck locale={locale} result={result} variant="compact" />
+              ) : null}
+
+              <div
+                aria-label={localCopy.resultViews}
+                className="grid grid-cols-2 gap-1 rounded-[3px] border border-white/10 bg-black/45 p-1"
+                role="tablist"
+              >
+                <button
+                  aria-selected={activeResultView === "purchase"}
+                  className={`min-h-11 rounded-[3px] px-3 py-2 text-xs font-black uppercase transition ${
+                    activeResultView === "purchase"
+                      ? "bg-primary text-white shadow-[0_0_22px_rgba(227,6,19,.28)]"
+                      : "text-slate-300 hover:bg-white/[0.05] hover:text-white"
+                  }`}
+                  onClick={() => setActiveResultView("purchase")}
+                  role="tab"
+                  type="button"
+                >
+                  {localCopy.purchaseTab}
+                </button>
+                <button
+                  aria-selected={activeResultView === "tuning"}
+                  className={`min-h-11 rounded-[3px] px-3 py-2 text-xs font-black uppercase transition ${
+                    activeResultView === "tuning"
+                      ? "bg-primary text-white shadow-[0_0_22px_rgba(227,6,19,.28)]"
+                      : "text-slate-300 hover:bg-white/[0.05] hover:text-white"
+                  }`}
+                  onClick={() => setActiveResultView("tuning")}
+                  role="tab"
+                  type="button"
+                >
+                  {localCopy.tuningTab}
+                </button>
+              </div>
+
+              {activeResultView === "purchase" ? (
+                <RdwPurchaseCheck locale={locale} result={result} />
+              ) : (
+                <>
 
               <div className="border-t border-white/10 pt-5">
                 <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">
@@ -628,6 +679,8 @@ export function PlateLookup({
               <p className="text-xs leading-5 text-muted-foreground">
                 {text.disclaimer}
               </p>
+                </>
+              )}
             </motion.div>
           ) : null}
         </AnimatePresence>
@@ -647,6 +700,11 @@ const lookupRuntimeCopy: Record<
     tuningEyebrow: string;
     tuningTitle: string;
     tuningText: string;
+    resultViews: string;
+    purchaseTab: string;
+    tuningTab: string;
+    checkedAt: string;
+    temporaryCache: string;
     unknownFuel: string;
     indicativeRequirement: string;
     hardwareRequirement: string;
@@ -657,14 +715,19 @@ const lookupRuntimeCopy: Record<
   }
 > = {
   nl: {
-    cacheHit: "cache hit",
-    cacheMiss: "nieuwe RDW check",
+    cacheHit: "tijdelijke cache",
+    cacheMiss: "nieuw van RDW",
     exactMatch: "NoordTune bevestigt de exacte ECU en motorvariant in de offerte.",
     networkError: "RDW lookup kon niet worden geladen.",
     requestQuote: "Vraag offerte aan",
     tuningEyebrow: "Na de voertuigcheck",
     tuningTitle: "Bekijk het tuningpotentieel",
     tuningText: "De onderstaande vermogens en prijzen zijn tuningindicaties. NoordTune controleert de exacte voertuig- en ECU-configuratie voor de definitieve setup.",
+    resultViews: "Kies resultaatweergave",
+    purchaseTab: "Aankoopcheck",
+    tuningTab: "Tuning & vermogen",
+    checkedAt: "RDW gecontroleerd",
+    temporaryCache: "Herbruikt uit tijdelijke cache",
     unknownFuel: "Brandstof onbekend",
     indicativeRequirement: "Catalogusmatch vereist",
     hardwareRequirement: "Hardwarecontrole vereist",
@@ -686,14 +749,19 @@ const lookupRuntimeCopy: Record<
     ]
   },
   en: {
-    cacheHit: "cache hit",
-    cacheMiss: "fresh RDW check",
+    cacheHit: "temporary cache",
+    cacheMiss: "fresh from RDW",
     exactMatch: "NoordTune confirms the exact ECU and engine variant in the quote.",
     networkError: "RDW lookup could not be loaded.",
     requestQuote: "Request quote",
     tuningEyebrow: "After the vehicle check",
     tuningTitle: "Explore the tuning potential",
     tuningText: "The power figures and prices below are tuning estimates. NoordTune verifies the exact vehicle and ECU configuration before confirming the final setup.",
+    resultViews: "Choose result view",
+    purchaseTab: "Purchase check",
+    tuningTab: "Tuning & power",
+    checkedAt: "RDW checked",
+    temporaryCache: "Reused from temporary cache",
     unknownFuel: "Fuel unknown",
     indicativeRequirement: "Catalog match required",
     hardwareRequirement: "Hardware check required",
@@ -715,14 +783,19 @@ const lookupRuntimeCopy: Record<
     ]
   },
   pl: {
-    cacheHit: "z cache",
-    cacheMiss: "nowe sprawdzenie RDW",
+    cacheHit: "tymczasowy cache",
+    cacheMiss: "nowe dane z RDW",
     exactMatch: "NoordTune potwierdzi dokładny ECU i wariant silnika w wycenie.",
     networkError: "Nie udało się załadować wyszukiwania RDW.",
     requestQuote: "Poproś o wycenę",
     tuningEyebrow: "Po sprawdzeniu pojazdu",
     tuningTitle: "Sprawdź potencjał tuningu",
     tuningText: "Poniższe wartości mocy i ceny są orientacyjne. NoordTune potwierdzi dokładną konfigurację pojazdu i ECU przed ustaleniem finalnego zestawu.",
+    resultViews: "Wybierz widok wyniku",
+    purchaseTab: "Kontrola przed zakupem",
+    tuningTab: "Tuning i moc",
+    checkedAt: "Sprawdzono w RDW",
+    temporaryCache: "Wynik z tymczasowej pamięci cache",
     unknownFuel: "Paliwo nieznane",
     indicativeRequirement: "Wymagane dopasowanie katalogu",
     hardwareRequirement: "Wymagana kontrola hardware",
@@ -785,4 +858,17 @@ function estimateStockTorque(result: RdwLookupResult) {
   }
 
   return Math.round(power * 1.55);
+}
+
+function formatCheckedAt(value: string, locale: Locale) {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return new Intl.DateTimeFormat(
+    locale === "en" ? "en-GB" : locale === "pl" ? "pl-PL" : "nl-NL",
+    {dateStyle: "medium", timeStyle: "short"}
+  ).format(date);
 }

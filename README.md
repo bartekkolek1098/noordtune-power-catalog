@@ -28,7 +28,7 @@ Copy `.env.example` to `.env.local` and fill:
 
 ```bash
 RDW_APP_TOKEN=your_socrata_app_token
-RDW_CACHE_TTL_SECONDS=172800
+RDW_CACHE_TTL_SECONDS=21600
 RDW_RATE_LIMIT_PER_HOUR=60
 NEXT_PUBLIC_SITE_URL=https://power.noordtune.nl
 NEXT_PUBLIC_BASE_PATH=

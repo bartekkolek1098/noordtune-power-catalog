@@ -29,14 +29,22 @@ import {Button} from "@/components/ui/button";
 
 export function RdwPurchaseCheck({
   locale,
-  result
+  result,
+  variant = "full"
 }: {
   locale: Locale;
   result: RdwLookupResult;
+  variant?: "compact" | "full";
 }) {
-  const t = vehicleCheckCopy[locale];
+  const t = getVehicleCheckCopy(locale);
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
   const signalCounts = countSignals(result.purchaseSignals);
+  const prioritySignals = result.purchaseSignals.filter(
+    (signal) => signal.level !== "positive"
+  );
+  const positiveSignals = result.purchaseSignals.filter(
+    (signal) => signal.level === "positive"
+  );
   const importantSignals = result.purchaseSignals
     .filter((signal) => signal.level !== "positive")
     .map((signal) => t.signals[signal.code].title);
@@ -49,6 +57,29 @@ export function RdwPurchaseCheck({
     recalls: formatRecallSummary(result, locale),
     vehicle: `${result.vehicle.make} ${result.vehicle.model}`.trim()
   });
+
+  if (variant === "compact") {
+    return (
+      <section className="space-y-3" data-testid="rdw-purchase-summary">
+        <div className="panel-edge border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,.05),rgba(0,0,0,.42))] p-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <div className="text-xs font-black uppercase tracking-[0.14em] text-primary">
+                {t.summaryTitle}
+              </div>
+              <p className="mt-1 text-xs leading-5 text-muted-foreground">{t.compactText}</p>
+            </div>
+            <div className="grid grid-cols-3 gap-2 text-center text-[0.68rem] sm:min-w-[280px]">
+              <SignalCount level="positive" label={t.positive} value={signalCounts.positive} />
+              <SignalCount level="attention" label={t.attention} value={signalCounts.attention} />
+              <SignalCount level="check-required" label={t.checkRequired} value={signalCounts["check-required"]} />
+            </div>
+          </div>
+        </div>
+        <PurchaseSummaryCards locale={locale} result={result} />
+      </section>
+    );
+  }
 
   return (
     <section className="space-y-4" data-testid="rdw-purchase-check">
@@ -79,48 +110,49 @@ export function RdwPurchaseCheck({
         </div>
 
         <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-          {result.purchaseSignals.map((signal) => (
-            <SignalCard key={signal.code} locale={locale} signal={signal} />
+          {prioritySignals.map((signal) => (
+            <SignalCard
+              key={signal.code}
+              locale={locale}
+              reportedOverride={
+                signal.code === "recall-open" && !result.recalls.detailsAvailable
+                  ? t.openRecallDetailsUnavailable
+                  : undefined
+              }
+              signal={signal}
+            />
           ))}
         </div>
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-        <SummaryCard
-          icon={CalendarCheck}
-          label={t.apk}
-          tone={signalTone(result.purchaseSignals, ["apk-expired", "apk-expiring", "apk-unknown"])}
-          value={formatApkSummary(result, locale)}
-        >
-          {t.until} {formatDate(result.roadworthiness.apkExpiry, locale)}
-        </SummaryCard>
-        <SummaryCard
-          icon={Gauge}
-          label={t.odometer}
-          tone={signalTone(result.purchaseSignals, ["odometer-illogical", "odometer-unknown"])}
-          value={result.odometer.judgement ?? t.unavailable}
-        >
-          {result.odometer.lastRegistrationYear
-            ? `${t.lastRecordedYear}: ${result.odometer.lastRegistrationYear}`
-            : t.noIndividualReadings}
-        </SummaryCard>
-        <SummaryCard
-          icon={RotateCcw}
-          label={t.recalls}
-          tone={signalTone(result.purchaseSignals, ["recall-open", "recall-unknown"])}
-          value={formatRecallSummary(result, locale)}
-        >
-          {t.recallCaveat}
-        </SummaryCard>
-        <SummaryCard
-          icon={ClipboardCheck}
-          label={t.registration}
-          tone={signalTone(result.purchaseSignals, ["transfer-blocked", "exported", "waiting-for-inspection"])}
-          value={booleanLabel(result.ownershipRegistration.transferPossible, t)}
-        >
-          {t.lastRegistration}: {formatDate(result.ownershipRegistration.currentRegistrationDate, locale)}
-        </SummaryCard>
+      <PurchaseSummaryCards locale={locale} result={result} />
+
+      <div className="panel-edge grid gap-5 border-primary/35 bg-[linear-gradient(120deg,rgba(227,6,19,.16),rgba(0,0,0,.5))] p-5 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div>
+          <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">{t.inspectionEyebrow}</div>
+          <h3 className="racing-title mt-2 text-2xl text-white sm:text-3xl">{t.inspectionTitle}</h3>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-300">{t.inspectionText}</p>
+        </div>
+        <Button asChild className="h-auto min-h-12 rounded-[3px] px-5 py-3 font-black uppercase shadow-[0_0_32px_rgba(227,6,19,.35)]">
+          <a data-testid="purchase-inspection-quote" href={whatsappHref({locale, message})} rel="noreferrer" target="_blank">
+            <MessageCircle className="h-4 w-4" />{t.inspectionCta}
+          </a>
+        </Button>
       </div>
+
+      <details className="group panel-edge border-white/10 p-4 sm:p-5">
+        <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-black uppercase text-white">
+          {t.secondaryDetails}
+          <ChevronRight className="h-4 w-4 shrink-0 transition-transform group-open:rotate-90" />
+        </summary>
+        <div className="mt-5 space-y-4 border-t border-white/10 pt-5">
+          {positiveSignals.length > 0 ? (
+            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+              {positiveSignals.map((signal) => (
+                <SignalCard key={signal.code} locale={locale} signal={signal} />
+              ))}
+            </div>
+          ) : null}
 
       <div className="grid gap-4 xl:grid-cols-[1.15fr_.85fr]">
         <div className="panel-edge border-white/10 p-4 sm:p-5">
@@ -128,7 +160,7 @@ export function RdwPurchaseCheck({
           <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             <Detail label={t.firstAdmission} value={formatDate(result.ownershipRegistration.firstAdmission, locale)} />
             <Detail label={t.firstRegistrationNl} value={formatDate(result.ownershipRegistration.firstRegistrationNl, locale)} />
-            <Detail label={t.importSignal} value={importLabel(result.ownershipRegistration.likelyImported, t)} />
+            <Detail label={t.importSignal} value={importLabel(result.ownershipRegistration.likelyImported, result.ownershipRegistration.daysBetweenFirstAdmissionAndNlRegistration, t)} />
             <Detail label={t.wam} value={booleanLabel(result.insurance.wamInsured, t)} />
             <Detail label={t.exportIndicator} value={booleanLabel(result.ownershipRegistration.exportIndicator, t)} />
             <Detail label={t.waitingInspection} value={booleanLabel(result.ownershipRegistration.waitingForInspection, t)} />
@@ -138,8 +170,8 @@ export function RdwPurchaseCheck({
             <Detail label={t.runningWeight} value={unit(result.towing.runningWeightKg, "kg", t.unavailable)} />
             <Detail label={t.payload} value={unit(result.towing.payloadKg, "kg", t.unavailable)} />
             <Detail label={t.towing} value={`${unit(result.towing.unbrakedKg, "kg", "-")} / ${unit(result.towing.brakedKg, "kg", "-")}`} />
-            <Detail label={t.catalogPrice} value={currency(result.financial.catalogPriceEur, localeCode, t.unavailable)} />
-            <Detail label={t.grossBpm} value={currency(result.financial.grossBpmEur, localeCode, t.unavailable)} />
+            <Detail helper={t.catalogPriceHelp} label={t.catalogPrice} value={currency(result.financial.catalogPriceEur, localeCode, t.unavailable)} />
+            <Detail helper={t.grossBpmHelp} label={t.grossBpm} value={currency(result.financial.grossBpmEur, localeCode, t.unavailable)} />
           </div>
         </div>
 
@@ -204,6 +236,11 @@ export function RdwPurchaseCheck({
         <div className="panel-edge border-white/10 p-4 sm:p-5">
           <SectionTitle icon={RotateCcw} title={t.recallDetails} />
           <p className="mt-2 text-xs leading-5 text-muted-foreground">{t.recallCaveat}</p>
+          {result.recalls.status === "open" && !result.recalls.detailsAvailable ? (
+            <div className="mt-4 rounded-[3px] border border-red-400/25 bg-red-400/[0.08] p-3 text-sm leading-6 text-red-100">
+              {t.openRecallDetailsUnavailable}
+            </div>
+          ) : null}
           {result.recalls.items.length > 0 ? (
             <div className="mt-4 space-y-2">
               {result.recalls.items.map((item) => (
@@ -223,26 +260,15 @@ export function RdwPurchaseCheck({
                 </div>
               ))}
             </div>
-          ) : (
+          ) : result.recalls.status === "open" && !result.recalls.detailsAvailable ? null : (
             <div className="mt-4 rounded-[3px] border border-white/10 bg-black/30 p-3 text-sm leading-6 text-muted-foreground">
               {t.noOpenRecallRows}
             </div>
           )}
         </div>
       </div>
-
-      <div className="panel-edge grid gap-5 border-primary/35 bg-[linear-gradient(120deg,rgba(227,6,19,.16),rgba(0,0,0,.5))] p-5 lg:grid-cols-[1fr_auto] lg:items-center">
-        <div>
-          <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">{t.inspectionEyebrow}</div>
-          <h3 className="racing-title mt-2 text-2xl text-white sm:text-3xl">{t.inspectionTitle}</h3>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-300">{t.inspectionText}</p>
         </div>
-        <Button asChild className="h-auto min-h-12 rounded-[3px] px-5 py-3 font-black uppercase shadow-[0_0_32px_rgba(227,6,19,.35)]">
-          <a data-testid="purchase-inspection-quote" href={whatsappHref({locale, message})} rel="noreferrer" target="_blank">
-            <MessageCircle className="h-4 w-4" />{t.inspectionCta}
-          </a>
-        </Button>
-      </div>
+      </details>
 
       <div className="rounded-[3px] border border-white/10 bg-black/25 p-4 text-xs leading-5 text-muted-foreground">
         <div className="flex gap-2">
@@ -270,8 +296,59 @@ export function RdwPurchaseCheck({
   );
 }
 
-function SignalCard({locale, signal}: {locale: Locale; signal: PurchaseSignal}) {
-  const t = vehicleCheckCopy[locale];
+function PurchaseSummaryCards({locale, result}: {locale: Locale; result: RdwLookupResult}) {
+  const t = getVehicleCheckCopy(locale);
+
+  return (
+    <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+      <SummaryCard
+        icon={CalendarCheck}
+        label={t.apk}
+        tone={signalTone(result.purchaseSignals, ["apk-expired", "apk-expiring", "apk-unknown"])}
+        value={formatApkSummary(result, locale)}
+      >
+        {t.until} {formatDate(result.roadworthiness.apkExpiry, locale)}
+      </SummaryCard>
+      <SummaryCard
+        icon={Gauge}
+        label={t.odometer}
+        tone={signalTone(result.purchaseSignals, ["odometer-illogical", "odometer-unknown"])}
+        value={result.odometer.judgement ?? t.unavailable}
+      >
+        {result.odometer.lastRegistrationYear
+          ? `${t.lastRecordedYear}: ${result.odometer.lastRegistrationYear}`
+          : t.noIndividualReadings}
+      </SummaryCard>
+      <SummaryCard
+        icon={RotateCcw}
+        label={t.recalls}
+        tone={signalTone(result.purchaseSignals, ["recall-open", "recall-unknown"])}
+        value={formatRecallSummary(result, locale)}
+      >
+        {t.recallCaveat}
+      </SummaryCard>
+      <SummaryCard
+        icon={ClipboardCheck}
+        label={t.registration}
+        tone={signalTone(result.purchaseSignals, ["transfer-blocked", "exported", "waiting-for-inspection"])}
+        value={booleanLabel(result.ownershipRegistration.transferPossible, t)}
+      >
+        {t.lastRegistration}: {formatDate(result.ownershipRegistration.currentRegistrationDate, locale)}
+      </SummaryCard>
+    </div>
+  );
+}
+
+function SignalCard({
+  locale,
+  reportedOverride,
+  signal
+}: {
+  locale: Locale;
+  reportedOverride?: string;
+  signal: PurchaseSignal;
+}) {
+  const t = getVehicleCheckCopy(locale);
   const item = t.signals[signal.code];
   const Icon = signal.level === "positive" ? CheckCircle2 : signal.level === "attention" ? AlertTriangle : FileWarning;
   return (
@@ -280,7 +357,7 @@ function SignalCard({locale, signal}: {locale: Locale; signal: PurchaseSignal}) 
         <Icon className="mt-0.5 h-4 w-4 shrink-0" />
         <div>
           <div className="font-black text-white">{item.title}</div>
-          <p className="mt-1 text-xs leading-5 text-slate-300">{item.reported}</p>
+          <p className="mt-1 text-xs leading-5 text-slate-300">{reportedOverride ?? item.reported}</p>
           {(signal.date || signal.value !== undefined || signal.days !== undefined) ? (
             <div className="mt-2 text-xs font-bold text-white">
               {signal.date ? formatDate(signal.date, locale) : null}
@@ -314,8 +391,8 @@ function SectionTitle({icon: Icon, title}: {icon: typeof ShieldCheck; title: str
   return <div className="flex items-center gap-2"><span className="grid h-9 w-9 place-items-center rounded-[3px] border border-primary/30 bg-primary/10 text-primary"><Icon className="h-4 w-4" /></span><h3 className="racing-title text-xl text-white">{title}</h3></div>;
 }
 
-function Detail({label, value}: {label: string; value: string}) {
-  return <div className="rounded-[3px] border border-white/10 bg-black/25 p-2.5"><div className="text-[0.68rem] font-bold uppercase text-muted-foreground">{label}</div><div className="mt-1 break-words text-sm font-semibold text-slate-100">{value}</div></div>;
+function Detail({helper, label, value}: {helper?: string; label: string; value: string}) {
+  return <div className="rounded-[3px] border border-white/10 bg-black/25 p-2.5"><div className="text-[0.68rem] font-bold uppercase text-muted-foreground">{label}</div><div className="mt-1 break-words text-sm font-semibold text-slate-100">{value}</div>{helper ? <p className="mt-1.5 text-[0.68rem] leading-4 text-muted-foreground">{helper}</p> : null}</div>;
 }
 
 function countSignals(signals: PurchaseSignal[]) {
@@ -337,28 +414,32 @@ function toneText(level: PurchaseSignalLevel) {
 }
 
 function formatDate(value: string | undefined, locale: Locale) {
-  if (!value) return vehicleCheckCopy[locale].unavailable;
+  if (!value) return getVehicleCheckCopy(locale).unavailable;
   const date = new Date(`${value}T00:00:00Z`);
   if (Number.isNaN(date.getTime())) return value;
   return new Intl.DateTimeFormat(locale === "en" ? "en-GB" : locale === "pl" ? "pl-PL" : "nl-NL", {dateStyle: "medium", timeZone: "UTC"}).format(date);
 }
 
 function formatApkSummary(result: RdwLookupResult, locale: Locale) {
-  return vehicleCheckCopy[locale].apkStatus[result.roadworthiness.status];
+  return getVehicleCheckCopy(locale).apkStatus[result.roadworthiness.status];
 }
 
 function formatRecallSummary(result: RdwLookupResult, locale: Locale) {
-  const t = vehicleCheckCopy[locale];
-  if (result.recalls.openCount === null) return t.unavailable;
-  return result.recalls.openCount === 0 ? t.noOpenRecalls : `${result.recalls.openCount} ${t.openRecalls}`;
+  const t = getVehicleCheckCopy(locale);
+  if (result.recalls.status === "clear") return t.noOpenRecalls;
+  if (result.recalls.status === "unknown") return t.recallUnknown;
+  if (result.recalls.openCount === null) return t.openRecallReported;
+  return `${result.recalls.openCount} ${t.openRecalls}`;
 }
 
 function booleanLabel(value: boolean | null, t: VehicleCheckCopy) {
   return value === null ? t.unavailable : value ? t.yes : t.no;
 }
 
-function importLabel(value: boolean | null, t: VehicleCheckCopy) {
-  return value === null ? t.unavailable : value ? t.possibleImport : t.noImportSignal;
+function importLabel(value: boolean | null, days: number | null, t: VehicleCheckCopy) {
+  if (value === null) return t.unavailable;
+  if (value) return `${t.possibleImport}${days === null ? "" : ` · ${days} ${t.days}`}`;
+  return t.noImportSignal;
 }
 
 function currency(value: number | null | undefined, locale: string, fallback: string) {
@@ -371,30 +452,56 @@ function unit(value: number | null | undefined, suffix: string, fallback: string
 
 type SignalCopy = {title: string; reported: string; why: string; action: string};
 type VehicleCheckCopy = {
-  officialCheck: string; noScore: string; summaryTitle: string; summaryText: string;
+  officialCheck: string; noScore: string; summaryTitle: string; summaryText: string; compactText: string;
   positive: string; attention: string; checkRequired: string; days: string;
   apk: string; odometer: string; recalls: string; registration: string; until: string;
   lastRecordedYear: string; noIndividualReadings: string; recallCaveat: string;
   lastRegistration: string; vehicleDetails: string; firstAdmission: string;
   firstRegistrationNl: string; importSignal: string; wam: string; exportIndicator: string;
   waitingInspection: string; taxiIndicator: string; color: string; seatsDoors: string;
-  runningWeight: string; payload: string; towing: string; catalogPrice: string;
-  grossBpm: string; environment: string; power: string; emissionClass: string;
+  runningWeight: string; payload: string; towing: string; catalogPrice: string; catalogPriceHelp: string;
+  grossBpm: string; grossBpmHelp: string; environment: string; power: string; emissionClass: string;
   consumption: string; consumptionWltp: string; co2: string; co2Wltp: string;
   electricConsumption: string; range: string; hybridClass: string; apkHistory: string;
   apkHistoryIntro: string; defectCode: string; descriptionUnavailable: string;
   officialDutchDescription: string; noApkRows: string; recallDetails: string;
-  producerCode: string; remedy: string; moreInfo: string; noOpenRecallRows: string;
+  producerCode: string; remedy: string; moreInfo: string; noOpenRecallRows: string; openRecallDetailsUnavailable: string;
   inspectionEyebrow: string; inspectionTitle: string; inspectionText: string;
   inspectionCta: string; disclaimer: string; inspectionDisclaimer: string;
-  sourceStatus: string; sourceUnavailable: string; unavailable: string; yes: string; no: string;
-  possibleImport: string; noImportSignal: string; noOpenRecalls: string; openRecalls: string;
+  sourceStatus: string; sourceUnavailable: string; secondaryDetails: string; unavailable: string; yes: string; no: string;
+  possibleImport: string; noImportSignal: string; noOpenRecalls: string; openRecalls: string; openRecallReported: string; recallUnknown: string;
   apkStatus: Record<RdwLookupResult["roadworthiness"]["status"], string>;
   status: Record<RdwLookupResult["sourceStatus"][number]["status"], string>;
   signals: Record<PurchaseSignalCode, SignalCopy>;
 };
 
-const vehicleCheckCopy: Record<Locale, VehicleCheckCopy> = {
+type VehicleCheckSupplement = Pick<
+  VehicleCheckCopy,
+  | "compactText"
+  | "catalogPrice"
+  | "catalogPriceHelp"
+  | "grossBpm"
+  | "grossBpmHelp"
+  | "openRecallDetailsUnavailable"
+  | "secondaryDetails"
+  | "possibleImport"
+  | "noImportSignal"
+  | "openRecallReported"
+  | "recallUnknown"
+> & {likelyImportSignal: SignalCopy};
+
+type VehicleCheckBaseCopy = Omit<
+  VehicleCheckCopy,
+  | "compactText"
+  | "catalogPriceHelp"
+  | "grossBpmHelp"
+  | "openRecallDetailsUnavailable"
+  | "secondaryDetails"
+  | "openRecallReported"
+  | "recallUnknown"
+>;
+
+const vehicleCheckCopy: Record<Locale, VehicleCheckBaseCopy> = {
   nl: {
     officialCheck: "Officiële RDW-check", noScore: "Aandachtssignalen, geen voertuigscore", summaryTitle: "Aankoopcheck in één overzicht", summaryText: "We tonen wat RDW officieel registreert, waarom een punt aandacht verdient en wat je vóór aankoop praktisch kunt controleren.", positive: "Positief", attention: "Aandacht", checkRequired: "Controleren", days: "dagen", apk: "APK", odometer: "Tellerstand", recalls: "Terugroepacties", registration: "Tenaamstelling mogelijk", until: "Geldig tot", lastRecordedYear: "Laatste registratiejaar", noIndividualReadings: "Geen individuele tellerstanden beschikbaar", recallCaveat: "Geen open melding in deze bron bewijst niet dat het voertuig nooit een terugroepactie heeft gehad.", lastRegistration: "Laatste tenaamstelling", vehicleDetails: "Registratie en voertuigdetails", firstAdmission: "Eerste toelating", firstRegistrationNl: "Eerste registratie NL", importSignal: "Importsignaal", wam: "WAM verzekerd", exportIndicator: "Exportindicator", waitingInspection: "Wacht op keuren", taxiIndicator: "Taxi-indicator", color: "Kleur(en)", seatsDoors: "Zitplaatsen / deuren", runningWeight: "Massa rijklaar", payload: "Laadvermogen", towing: "Trekgewicht ongeremd / geremd", catalogPrice: "Catalogusprijs RDW", grossBpm: "Bruto BPM", environment: "Brandstof en milieu", power: "Netto maximumvermogen", emissionClass: "Emissieklasse", consumption: "Verbruik gecombineerd", consumptionWltp: "Verbruik WLTP", co2: "CO₂ gecombineerd", co2Wltp: "CO₂ WLTP", electricConsumption: "Elektrisch verbruik WLTP", range: "Elektrische actieradius", hybridClass: "Hybrideklasse", apkHistory: "Recente APK-gebreken", apkHistoryIntro: "Maximaal twaalf recente gebrekregels, nieuwste eerst. Dit zijn gemelde APK-gebreken, geen volledige onderhoudshistorie.", defectCode: "Gebrekcode", descriptionUnavailable: "Geen omschrijving beschikbaar in de officiële referentiedataset.", officialDutchDescription: "Officiële RDW-omschrijving (Nederlands).", noApkRows: "De recente RDW-query gaf geen gebrekregels terug. Dat is geen bewijs dat het voertuig nooit een APK-gebrek heeft gehad.", recallDetails: "Open terugroepacties", producerCode: "Producentcode", remedy: "Herstel", moreInfo: "Meer informatie", noOpenRecallRows: "Deze RDW-query gaf geen open terugroepactieregels terug. Controleer bij twijfel ook bij merk of dealer.", inspectionEyebrow: "Technische aankoopcontrole", inspectionTitle: "Laat deze auto controleren vóór aankoop", inspectionText: "Een RDW-check zegt niets over actuele foutcodes, live data, slijtage of de mechanische staat. NoordTune kan die technische punten vóór aankoop controleren.", inspectionCta: "Laat deze auto controleren vóór aankoop", disclaimer: "Bron: officiële RDW Open Data. Dit is geen schadeverleden, geen complete eigenaarshistorie en toont geen individuele tellerstanden.", inspectionDisclaimer: "Geen RDW-waarschuwing garandeert geen goede mechanische staat. Een fysieke inspectie en diagnosescan blijven aanbevolen vóór aankoop.", sourceStatus: "Status officiële bronnen", sourceUnavailable: "Deze aanvullende RDW-bron was tijdelijk niet beschikbaar. De kerngegevens en tuningcheck blijven bruikbaar.", unavailable: "Niet beschikbaar", yes: "Ja", no: "Nee", possibleImport: "Verschil tussen eerste toelating en eerste registratie in NL", noImportSignal: "Geen datumverschil geregistreerd", noOpenRecalls: "Geen open actie gemeld", openRecalls: "open acties", apkStatus: {valid: "Geldig", "expiring-soon": "Verloopt binnen 60 dagen", expired: "Verlopen", unknown: "Niet beschikbaar"}, status: {available: "beschikbaar", unavailable: "tijdelijk niet beschikbaar", partial: "gedeeltelijk", "not-applicable": "niet van toepassing"},
     signals: {
@@ -465,3 +572,77 @@ const vehicleCheckCopy: Record<Locale, VehicleCheckCopy> = {
     }
   }
 };
+
+const vehicleCheckSupplement: Record<Locale, VehicleCheckSupplement> = {
+  nl: {
+    compactText: "APK, tellerstand, terugroepacties en tenaamstelling in één korte samenvatting.",
+    catalogPrice: "Oorspronkelijke catalogusprijs RDW",
+    catalogPriceHelp: "Historische nieuwprijs in de RDW-registratie; dit is geen actuele marktwaarde.",
+    grossBpm: "Bruto BPM bij registratie",
+    grossBpmHelp: "Registratiegegeven uit RDW; dit is niet automatisch het huidige te betalen BPM-bedrag.",
+    openRecallDetailsUnavailable: "RDW meldt een open terugroepactie. Details zijn tijdelijk niet beschikbaar.",
+    secondaryDetails: "Alle voertuig-, milieu- en brongegevens",
+    possibleImport: "Mogelijk importvoertuig",
+    noImportSignal: "Geen importsignaal bij een datumverschil tot en met 30 dagen",
+    openRecallReported: "Open terugroepactie gemeld",
+    recallUnknown: "Terugroepstatus niet volledig beschikbaar",
+    likelyImportSignal: {
+      title: "Mogelijk importvoertuig",
+      reported: "Tussen eerste toelating en eerste registratie in Nederland zit meer dan 30 dagen.",
+      why: "Deze conservatieve NoordTune-presentatieregel is geen officiële RDW-classificatie van import of fraude.",
+      action: "Vraag herkomst-, onderhouds- en importdocumenten op."
+    }
+  },
+  en: {
+    compactText: "APK, odometer judgement, recalls and transfer status in one concise summary.",
+    catalogPrice: "Original RDW list price",
+    catalogPriceHelp: "Historical new-vehicle price in the RDW registration; this is not the current market value.",
+    grossBpm: "Gross BPM at registration",
+    grossBpmHelp: "RDW registration information; this is not automatically the BPM currently payable.",
+    openRecallDetailsUnavailable: "RDW reports an open recall. Details are temporarily unavailable.",
+    secondaryDetails: "All vehicle, environment and source details",
+    possibleImport: "Possible imported vehicle",
+    noImportSignal: "No import signal for a date difference of 30 days or less",
+    openRecallReported: "Open recall reported",
+    recallUnknown: "Recall status not fully available",
+    likelyImportSignal: {
+      title: "Possible imported vehicle",
+      reported: "The first admission and first registration in the Netherlands differ by more than 30 days.",
+      why: "This conservative NoordTune presentation rule is not an official RDW import or fraud classification.",
+      action: "Request origin, maintenance and import documents."
+    }
+  },
+  pl: {
+    compactText: "APK, ocena przebiegu, akcje serwisowe i możliwość rejestracji w krótkim podsumowaniu.",
+    catalogPrice: "Pierwotna cena katalogowa RDW",
+    catalogPriceHelp: "Historyczna cena nowego pojazdu w rejestrze RDW; nie jest to aktualna wartość rynkowa.",
+    grossBpm: "BPM brutto przy rejestracji",
+    grossBpmHelp: "Dane rejestracyjne RDW; nie oznaczają automatycznie aktualnej kwoty BPM do zapłaty.",
+    openRecallDetailsUnavailable: "RDW zgłasza otwartą akcję serwisową. Szczegóły są chwilowo niedostępne.",
+    secondaryDetails: "Wszystkie dane pojazdu, emisji i źródeł",
+    possibleImport: "Możliwy pojazd importowany",
+    noImportSignal: "Brak sygnału importu przy różnicy dat do 30 dni włącznie",
+    openRecallReported: "Zgłoszona otwarta akcja serwisowa",
+    recallUnknown: "Status akcji serwisowych nie jest w pełni dostępny",
+    likelyImportSignal: {
+      title: "Możliwy pojazd importowany",
+      reported: "Między pierwszym dopuszczeniem a pierwszą rejestracją w Holandii jest ponad 30 dni różnicy.",
+      why: "Ta ostrożna reguła prezentacji NoordTune nie jest oficjalną klasyfikacją importu ani oszustwa RDW.",
+      action: "Poproś o dokumenty pochodzenia, serwisu i importu."
+    }
+  }
+};
+
+function getVehicleCheckCopy(locale: Locale): VehicleCheckCopy {
+  const base = vehicleCheckCopy[locale];
+  const supplement = vehicleCheckSupplement[locale];
+
+  return {
+    ...base,
+    ...supplement,
+    signals: {
+      ...base.signals,
+      "likely-import": supplement.likelyImportSignal
+    }
+  };
+}

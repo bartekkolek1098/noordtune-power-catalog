@@ -28,6 +28,9 @@ type PageProps = {
 
 export const dynamicParams = false;
 
+// Reserved dispatcher for localized top-level landing slugs. The historical
+// segment name must not be interpreted as a vehicle-brand page.
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({
     locale,
@@ -36,9 +39,9 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({params}: PageProps) {
-  const {locale, brand} = await params;
+  const {locale, brand: landingSlug} = await params;
 
-  if (!isLocale(locale) || vehicleCheckSlugs[locale] !== brand) {
+  if (!isLocale(locale) || vehicleCheckSlugs[locale] !== landingSlug) {
     return {};
   }
 
@@ -73,9 +76,9 @@ export async function generateMetadata({params}: PageProps) {
 }
 
 export default async function VehicleCheckPage({params}: PageProps) {
-  const {locale, brand} = await params;
+  const {locale, brand: landingSlug} = await params;
 
-  if (!isLocale(locale) || vehicleCheckSlugs[locale] !== brand) {
+  if (!isLocale(locale) || vehicleCheckSlugs[locale] !== landingSlug) {
     notFound();
   }
 
@@ -168,6 +171,7 @@ export default async function VehicleCheckPage({params}: PageProps) {
 
           <div className="mt-8">
             <PlateLookup
+              context="vehicle-check"
               locale={safeLocale}
               text={{
                 label: lookup("label"), placeholder: lookup("placeholder"), submit: lookup("submit"), loading: lookup("loading"), notFound: lookup("notFound"), invalid: lookup("invalid"), disclaimer: lookup("disclaimer"), source: lookup("source"), detected: lookup("detected"), catalogMatch: lookup("catalogMatch"), estimate: lookup("estimate"), fromPrice: lookup("fromPrice"), stage: lookup("stage"), stock: lookup("stock"), power: lookup("power"), torque: lookup("torque"), options: lookup("options"), viewDetails: lookup("viewDetails"), quoteForCar: lookup("quoteForCar"),

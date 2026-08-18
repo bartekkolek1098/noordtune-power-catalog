@@ -2,7 +2,6 @@ import {NextRequest, NextResponse} from "next/server";
 import {z} from "zod";
 import {
   lookupRdwVehicle,
-  normalizeKenteken,
   RdwLookupError
 } from "@/lib/rdw";
 import {rateLimit} from "@/lib/rate-limit";
@@ -12,10 +11,6 @@ export const runtime = "nodejs";
 const lookupSchema = z.object({
   kenteken: z.string().min(1).max(16)
 });
-
-export async function GET(request: NextRequest) {
-  return handleLookup(request, request.nextUrl.searchParams.get("kenteken"));
-}
 
 export async function POST(request: NextRequest) {
   const body = await request.json().catch(() => null);
@@ -63,10 +58,7 @@ async function handleLookup(request: NextRequest, input: string | null) {
     }
 
     return NextResponse.json(
-      {
-        ...result,
-        normalizedKenteken: normalizeKenteken(input)
-      },
+      result,
       {
         headers: {
           "Cache-Control": "no-store",

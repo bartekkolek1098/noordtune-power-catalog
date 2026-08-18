@@ -2,7 +2,18 @@ import "server-only";
 
 import {createHash} from "node:crypto";
 import {findCatalogMatch} from "@/data/catalog";
-import {buildPurchaseSignals, getApkFacts, getDaysSince, isLikelyImported} from "@/lib/rdw-signals";
+import {
+  buildPurchaseSignals,
+  getApkFacts,
+  getDaysBetweenFirstAdmissionAndNlRegistration,
+  getDaysSince,
+  isLikelyImported
+} from "@/lib/rdw-signals";
+import {
+  attachPlateToRdwCore,
+  toPlateFreeRdwCore,
+  type RdwLookupCore
+} from "@/lib/rdw-cache-core";
 import type {
   RdwApkDefectItem,
   RdwFuelEnvironment,
@@ -123,8 +134,9 @@ type RdwDefectReferenceRow = {
   ingangsdatum_gebrek_dt?: string;
 };
 
-type SourceResult<T> = {rows: T[]; status: RdwSourceStatus};
-type CacheEntry = {expiresAt: number; result: RdwLookupResult};
+type InternalRdwSourceStatus = RdwSourceStatus & {durationMs: number};
+type SourceResult<T> = {rows: T[]; status: InternalRdwSourceStatus};
+type CacheEntry = {expiresAt: number; result: RdwLookupCore};
 type RdwQuery = {
   filters?: Record<string, string>;
   limit: number;
@@ -160,12 +172,15 @@ const fuelFields = [
 ] as const;
 
 const memoryCache = new Map<string, CacheEntry>();
-const inFlightLookups = new Map<string, Promise<RdwLookupResult | null>>();
+const inFlightLookups = new Map<string, Promise<RdwLookupCore | null>>();
 
 export const __rdwTestHooks = {
   clearMemoryState() {
     memoryCache.clear();
     inFlightLookups.clear();
+  },
+  serializedCacheValues() {
+    return JSON.stringify(Array.from(memoryCache.values(), (entry) => entry.result));
   }
 };
 
@@ -191,17 +206,19 @@ export async function lookupRdwVehicle(input: string): Promise<RdwLookupResult |
   const cached = memoryCache.get(cacheKey);
 
   if (cached && cached.expiresAt > now) {
-    return {...cached.result, cached: true};
+    return attachPlateToRdwCore(cached.result, plate, true);
   }
 
   const inFlight = inFlightLookups.get(cacheKey);
 
   if (inFlight) {
     const result = await inFlight;
-    return result ? {...result, cached: false} : null;
+    return result ? attachPlateToRdwCore(result, plate, false) : null;
   }
 
-  const lookup = fetchAndBuildResult(plate, ttl);
+  const lookup = fetchAndBuildResult(plate).then((result) =>
+    result ? toPlateFreeRdwCore(result) : null
+  );
   inFlightLookups.set(cacheKey, lookup);
 
   try {
@@ -211,13 +228,13 @@ export async function lookupRdwVehicle(input: string): Promise<RdwLookupResult |
       setMemoryCache(cacheKey, result, ttl);
     }
 
-    return result;
+    return result ? attachPlateToRdwCore(result, plate, false) : null;
   } finally {
     inFlightLookups.delete(cacheKey);
   }
 }
 
-async function fetchAndBuildResult(plate: string, ttl: number) {
+async function fetchAndBuildResult(plate: string) {
   const baseResults = await Promise.allSettled([
     fetchSource<RdwVehicleRow>("vehicle", {filters: {kenteken: plate}, limit: 1, select: vehicleFields}),
     fetchSource<RdwFuelRow>("fuel", {
@@ -297,6 +314,8 @@ async function fetchAndBuildResult(plate: string, ttl: number) {
     waitingForInspection: toOfficialBoolean(vehicle.wacht_op_keuren),
     taxiIndicator: toOfficialBoolean(vehicle.taxi_indicator),
     likelyImported: isLikelyImported(firstAdmission, firstRegistrationNl),
+    daysBetweenFirstAdmissionAndNlRegistration:
+      getDaysBetweenFirstAdmissionAndNlRegistration(firstAdmission, firstRegistrationNl),
     daysSinceLastRegistration: getDaysSince(currentRegistrationDate)
   };
   const insurance = {wamInsured: toOfficialBoolean(vehicle.wam_verzekerd)};
@@ -306,14 +325,27 @@ async function fetchAndBuildResult(plate: string, ttl: number) {
     lastRegistrationYear: toNumber(vehicle.jaar_laatste_registratie_tellerstand)
   };
   const openIndicator = toOfficialBoolean(vehicle.openstaande_terugroepactie_indicator);
+  const hasOpenRecallRows = openRecallRows.length > 0;
+  const recallStatus: RdwLookupResult["recalls"]["status"] =
+    openIndicator === true || hasOpenRecallRows
+      ? "open"
+      : openIndicator === false && recallStatusResult.status.status === "available"
+        ? "clear"
+        : "unknown";
   const recalls: RdwLookupResult["recalls"] = {
+    status: recallStatus,
     openIndicator,
     openCount:
       recallCodes.length > 0
         ? recallCodes.length
-        : openIndicator === false && recallStatusResult.status.status === "available"
+        : recallStatus === "clear"
           ? 0
           : null,
+    detailsAvailable:
+      recallStatus === "clear" ||
+      (recallStatus === "open" &&
+        hasOpenRecallRows &&
+        recallDetailResult.status.status !== "unavailable"),
     items: buildRecallItems(openRecallRows, recallDetailResult.rows)
   };
   const apkHistoryItems = buildApkHistory(apkDefectResult.rows, defectReferenceResult.rows);
@@ -323,7 +355,6 @@ async function fetchAndBuildResult(plate: string, ttl: number) {
   const result: RdwLookupResult = {
     source: "RDW Open Data",
     cached: false,
-    cacheTtlSeconds: ttl,
     fetchedAt: new Date().toISOString(),
     vehicle: {
       plate,
@@ -374,13 +405,12 @@ async function fetchAndBuildResult(plate: string, ttl: number) {
       runningWeightKg: toNumber(vehicle.massa_rijklaar)
     },
     environment: {fuels: fuels.map(toFuelEnvironment)},
-    sourceStatus,
+    sourceStatus: sourceStatus.map(stripInternalSourceTiming),
     tuningMatch: null
   };
 
   result.purchaseSignals = buildPurchaseSignals({
-    insurance, odometer, ownershipRegistration, recalls, roadworthiness,
-    recallSourceStatus: recallStatusResult.status.status
+    insurance, odometer, ownershipRegistration, recalls, roadworthiness
   });
   result.tuningMatch = findCatalogMatch({
     make: result.vehicle.make,
@@ -462,8 +492,14 @@ function sourceStatus(
   status: RdwSourceAvailability,
   rowCount: number,
   durationMs: number
-): RdwSourceStatus {
+): InternalRdwSourceStatus {
   return {source, datasetId: rdwDatasets[source].id, label: rdwDatasets[source].label, status, rowCount, durationMs};
+}
+
+function stripInternalSourceTiming(status: InternalRdwSourceStatus): RdwSourceStatus {
+  const {durationMs, ...publicStatus} = status;
+  void durationMs;
+  return publicStatus;
 }
 
 function buildRecallItems(rows: RdwRecallStatusRow[], detailRows: RdwRecallDetailRow[]): RdwRecallItem[] {
@@ -605,8 +641,8 @@ function safeHttpUrl(value: string | undefined) {
 }
 
 function getCacheTtl() {
-  const value = Number(process.env.RDW_CACHE_TTL_SECONDS ?? 172800);
-  return Number.isFinite(value) && value > 0 ? value : 172800;
+  const value = Number(process.env.RDW_CACHE_TTL_SECONDS ?? 21600);
+  return Number.isFinite(value) && value > 0 ? value : 21600;
 }
 
 function getRequestTimeoutMs() {
@@ -618,7 +654,7 @@ function pruneMemoryCache(now = Date.now()) {
   for (const [key, entry] of memoryCache) if (entry.expiresAt <= now) memoryCache.delete(key);
 }
 
-function setMemoryCache(key: string, result: RdwLookupResult, ttl: number) {
+function setMemoryCache(key: string, result: RdwLookupCore, ttl: number) {
   pruneMemoryCache();
   if (memoryCache.size >= MAX_CACHE_ENTRIES) {
     const oldestKey = memoryCache.keys().next().value as string | undefined;

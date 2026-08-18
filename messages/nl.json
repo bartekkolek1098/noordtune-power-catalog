@@ -207,6 +207,6 @@
     "faq3Question": "Betekent geen waarschuwing dat de auto technisch goed is?",
     "faq3Answer": "Nee. Een RDW-check zegt niets over actuele foutcodes, slijtage, lekkages of de mechanische staat. Een fysieke inspectie en diagnose blijven aanbevolen.",
     "faq4Question": "Wordt mijn kenteken opgeslagen?",
-    "faq4Answer": "NoordTune maakt geen openbare kentekenpagina en slaat het kenteken niet op in localStorage of analytics. De server gebruikt een gehashte, tijdelijke cache om de officiële bron te ontlasten."
+    "faq4Answer": "NoordTune maakt geen openbare kentekenpagina en slaat het kenteken niet op in localStorage of analytics. De server gebruikt een gehashte cachesleutel en bewaart maximaal zes uur een tijdelijk resultaat zonder leesbaar kenteken."
   }
 }

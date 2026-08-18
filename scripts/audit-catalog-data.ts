@@ -1151,6 +1151,14 @@ const rdwRouteSource = readFileSync(
   resolve(process.cwd(), "src/app/api/rdw-lookup/route.ts"),
   "utf8"
 );
+const rdwCacheCoreSource = readFileSync(
+  resolve(process.cwd(), "src/lib/rdw-cache-core.ts"),
+  "utf8"
+);
+const rdwSignalTestSource = readFileSync(
+  resolve(process.cwd(), "scripts/test-rdw-signals.ts"),
+  "utf8"
+);
 const vehicleCheckRouteSource = readFileSync(
   resolve(process.cwd(), "src/app/[locale]/[brand]/page.tsx"),
   "utf8"
@@ -1214,6 +1222,60 @@ addIssue(
       ? `RDW client source ${index + 1} sends an analytics event`
       : null
   ]).filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_PLATE_GET_ENDPOINT_ENABLED",
+  "The customer RDW endpoint must accept a plate only through a POST JSON body.",
+  [
+    /export\s+async\s+function\s+GET\s*\(/.test(rdwRouteSource)
+      ? "RDW route exports a GET handler"
+      : null,
+    !/method:\s*["']POST["']/.test(plateLookupSource)
+      ? "PlateLookup does not explicitly use POST"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_CACHE_CONTAINS_CLEAR_PLATE",
+  "RDW cache and in-flight values must be plate-free and rehydrate the plate only at the response boundary.",
+  [
+    !/type CacheEntry = \{expiresAt: number; result: RdwLookupCore\}/.test(rdwServerSource)
+      ? "Memory cache is not typed as a plate-free RdwLookupCore"
+      : null,
+    !/Promise<RdwLookupCore \| null>/.test(rdwServerSource)
+      ? "In-flight lookup values are not plate-free cores"
+      : null,
+    !/toPlateFreeRdwCore/.test(rdwServerSource) || !/attachPlateToRdwCore/.test(rdwServerSource)
+      ? "Plate-free cache boundary helpers are not used by the RDW lookup"
+      : null,
+    !/JSON\.stringify\(cacheCore\)/.test(rdwSignalTestSource) ||
+    !/serializedCacheValue\.includes\(normalizedPlate\)/.test(rdwSignalTestSource)
+      ? "Deterministic serialized cache-value privacy fixture is missing"
+      : null,
+    /plate:\s*string/.test(rdwCacheCoreSource.split("export function attachPlateToRdwCore")[0] ?? "")
+      ? "Plate-free cache core declares a clear plate field"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_PUBLIC_DTO_EXPOSES_OPERATIONAL_METADATA",
+  "The public RDW DTO must not expose request timings, duplicate normalized plates or cache implementation TTLs.",
+  [
+    /durationMs\s*:/.test(rdwResultTypeSource) ? "Public source status exposes durationMs" : null,
+    /cacheTtlSeconds\s*:/.test(rdwResultTypeSource) ? "Public result exposes cacheTtlSeconds" : null,
+    /normalizedKenteken/.test(rdwRouteSource) ? "API response exposes redundant normalizedKenteken" : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_CACHE_TTL_DEFAULT_INVALID",
+  "Vehicle Check volatile RDW data must default to a six-hour temporary cache.",
+  /RDW_CACHE_TTL_SECONDS \?\? 21600/.test(rdwServerSource)
+    ? []
+    : ["RDW cache TTL does not default to 21600 seconds"]
 );
 addIssue(
   "critical",

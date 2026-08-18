@@ -20,7 +20,6 @@ export type RdwSourceStatus = {
   label: string;
   status: RdwSourceAvailability;
   rowCount: number;
-  durationMs: number;
 };
 
 export type PurchaseSignalLevel = "positive" | "attention" | "check-required";
@@ -88,7 +87,6 @@ export type RdwFuelEnvironment = {
 export type RdwLookupResult = {
   source: "RDW Open Data";
   cached: boolean;
-  cacheTtlSeconds: number;
   fetchedAt: string;
   vehicle: {
     plate: string;
@@ -141,6 +139,7 @@ export type RdwLookupResult = {
     waitingForInspection: boolean | null;
     taxiIndicator: boolean | null;
     likelyImported: boolean | null;
+    daysBetweenFirstAdmissionAndNlRegistration: number | null;
     daysSinceLastRegistration: number | null;
   };
   roadworthiness: {
@@ -157,8 +156,10 @@ export type RdwLookupResult = {
     wamInsured: boolean | null;
   };
   recalls: {
+    status: "open" | "clear" | "unknown";
     openIndicator: boolean | null;
     openCount: number | null;
+    detailsAvailable: boolean;
     items: RdwRecallItem[];
   };
   apkHistory: {

@@ -1,15 +1,12 @@
 import type {
   PurchaseSignal,
-  RdwLookupResult,
-  RdwSourceAvailability
+  RdwLookupResult
 } from "@/lib/rdw-types";
 
 type SignalInput = Pick<
   RdwLookupResult,
   "insurance" | "odometer" | "ownershipRegistration" | "recalls" | "roadworthiness"
-> & {
-  recallSourceStatus: RdwSourceAvailability;
-};
+>;
 
 const DAY_MS = 86_400_000;
 
@@ -66,16 +63,13 @@ export function buildPurchaseSignals(
     });
   }
 
-  if (input.recalls.openIndicator === true || (input.recalls.openCount ?? 0) > 0) {
+  if (input.recalls.status === "open") {
     signals.push({
       code: "recall-open",
       level: "check-required",
       value: input.recalls.openCount
     });
-  } else if (
-    input.recalls.openIndicator === false &&
-    input.recallSourceStatus !== "unavailable"
-  ) {
+  } else if (input.recalls.status === "clear") {
     signals.push({code: "recall-clear", level: "positive", value: 0});
   } else {
     signals.push({code: "recall-unknown", level: "attention"});
@@ -166,11 +160,19 @@ export function isLikelyImported(
   firstAdmission: string | undefined,
   firstRegistrationNl: string | undefined
 ) {
-  if (!firstAdmission || !firstRegistrationNl) {
-    return null;
-  }
+  const days = getDaysBetweenFirstAdmissionAndNlRegistration(
+    firstAdmission,
+    firstRegistrationNl
+  );
+  return days === null ? null : days > 30;
+}
 
-  return firstAdmission !== firstRegistrationNl;
+export function getDaysBetweenFirstAdmissionAndNlRegistration(
+  firstAdmission: string | undefined,
+  firstRegistrationNl: string | undefined
+) {
+  const days = daysBetween(firstAdmission, firstRegistrationNl);
+  return days === null ? null : Math.abs(days);
 }
 
 function daysBetween(from: Date | string | undefined, to: Date | string | undefined) {

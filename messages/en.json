@@ -207,6 +207,6 @@
     "faq3Question": "Does no warning mean the car is mechanically sound?",
     "faq3Answer": "No. An RDW check cannot reveal current fault codes, wear, leaks or mechanical condition. A physical inspection and diagnostic scan remain recommended.",
     "faq4Question": "Is my license plate stored?",
-    "faq4Answer": "NoordTune creates no public plate page and does not store the plate in localStorage or analytics. The server uses a hashed temporary cache to reduce load on the official source."
+    "faq4Answer": "NoordTune creates no public plate page and does not store the plate in localStorage or analytics. The server uses a hashed cache key and keeps a temporary plate-free result for up to six hours."
   }
 }

@@ -1,6 +1,15 @@
 import assert from "node:assert/strict";
-import {buildPurchaseSignals, getApkFacts, isLikelyImported} from "../src/lib/rdw-signals.ts";
-import type {PurchaseSignalCode} from "../src/lib/rdw-types.ts";
+import {
+  attachPlateToRdwCore,
+  toPlateFreeRdwCore
+} from "../src/lib/rdw-cache-core.ts";
+import {
+  buildPurchaseSignals,
+  getApkFacts,
+  getDaysBetweenFirstAdmissionAndNlRegistration,
+  isLikelyImported
+} from "../src/lib/rdw-signals.ts";
+import type {PurchaseSignalCode, RdwLookupResult} from "../src/lib/rdw-types.ts";
 
 type SignalInput = Parameters<typeof buildPurchaseSignals>[0];
 
@@ -10,8 +19,14 @@ assert.equal(getApkFacts("2026-04-15", now).status, "valid");
 assert.equal(getApkFacts("2026-02-15", now).status, "expiring-soon");
 assert.equal(getApkFacts("2025-12-31", now).status, "expired");
 assert.equal(getApkFacts(undefined, now).status, "unknown");
-assert.equal(isLikelyImported("2018-01-01", "2020-06-01"), true);
 assert.equal(isLikelyImported("2018-01-01", "2018-01-01"), false);
+assert.equal(isLikelyImported("2018-01-01", "2018-01-02"), false);
+assert.equal(isLikelyImported("2018-01-01", "2018-01-31"), false);
+assert.equal(isLikelyImported("2018-01-01", "2018-02-01"), true);
+assert.equal(isLikelyImported("2018-01-01", "2020-06-01"), true);
+assert.equal(isLikelyImported(undefined, "2020-06-01"), null);
+assert.equal(getDaysBetweenFirstAdmissionAndNlRegistration("2018-01-01", "2018-01-31"), 30);
+assert.equal(getDaysBetweenFirstAdmissionAndNlRegistration("2018-01-01", "2018-02-01"), 31);
 
 const base: SignalInput = {
   insurance: {wamInsured: true},
@@ -25,11 +40,17 @@ const base: SignalInput = {
     waitingForInspection: false,
     taxiIndicator: false,
     likelyImported: false,
+    daysBetweenFirstAdmissionAndNlRegistration: 0,
     daysSinceLastRegistration: 17
   },
-  recalls: {openIndicator: false, openCount: 0, items: []},
-  roadworthiness: {apkExpiry: "2026-04-15", ...getApkFacts("2026-04-15", now)},
-  recallSourceStatus: "available"
+  recalls: {
+    status: "clear",
+    openIndicator: false,
+    openCount: 0,
+    detailsAvailable: true,
+    items: []
+  },
+  roadworthiness: {apkExpiry: "2026-04-15", ...getApkFacts("2026-04-15", now)}
 };
 
 const positiveCodes = codes(buildPurchaseSignals(base));
@@ -49,7 +70,13 @@ const checkRequired = buildPurchaseSignals({
     waitingForInspection: true,
     likelyImported: true
   },
-  recalls: {openIndicator: true, openCount: 1, items: []},
+  recalls: {
+    status: "open",
+    openIndicator: true,
+    openCount: 1,
+    detailsAvailable: true,
+    items: []
+  },
   roadworthiness: {apkExpiry: "2025-12-31", ...getApkFacts("2025-12-31", now)}
 });
 const requiredCodes = codes(checkRequired);
@@ -69,16 +96,46 @@ for (const expected of [
 const partialSourceCodes = codes(buildPurchaseSignals({
   ...base,
   odometer: {...base.odometer, judgement: undefined},
-  recalls: {openIndicator: null, openCount: null, items: []},
-  roadworthiness: {apkExpiry: "2026-02-15", ...getApkFacts("2026-02-15", now)},
-  recallSourceStatus: "unavailable"
+  recalls: {
+    status: "unknown",
+    openIndicator: null,
+    openCount: null,
+    detailsAvailable: false,
+    items: []
+  },
+  roadworthiness: {apkExpiry: "2026-02-15", ...getApkFacts("2026-02-15", now)}
 }));
 assert(partialSourceCodes.includes("apk-expiring"));
 assert(partialSourceCodes.includes("odometer-unknown"));
 assert(partialSourceCodes.includes("recall-unknown"));
 assert(!partialSourceCodes.includes("recall-clear"));
 
-console.log("RDW purchase signal fixtures passed: valid, expiring, expired, odometer, recall, import, WAM, transfer and partial-source states.");
+const openWithoutDetails = buildPurchaseSignals({
+  ...base,
+  recalls: {
+    status: "open",
+    openIndicator: true,
+    openCount: null,
+    detailsAvailable: false,
+    items: []
+  }
+});
+assert(codes(openWithoutDetails).includes("recall-open"));
+assert(!codes(openWithoutDetails).includes("recall-unknown"));
+
+const normalizedPlate = "AB12CD";
+const publicResult = {
+  source: "RDW Open Data",
+  cached: false,
+  fetchedAt: "2026-01-01T12:00:00.000Z",
+  vehicle: {plate: normalizedPlate, make: "Test", model: "Vehicle", fuels: []}
+} as unknown as RdwLookupResult;
+const cacheCore = toPlateFreeRdwCore(publicResult);
+const serializedCacheValue = JSON.stringify(cacheCore);
+assert.equal(serializedCacheValue.includes(normalizedPlate), false);
+assert.equal(attachPlateToRdwCore(cacheCore, normalizedPlate, true).vehicle.plate, normalizedPlate);
+
+console.log("RDW purchase signal fixtures passed: valid, expiring, expired, odometer, four recall states, conservative import threshold, WAM, transfer, partial-source and plate-free cache states.");
 
 function codes(signals: ReturnType<typeof buildPurchaseSignals>) {
   return signals.map((signal) => signal.code);

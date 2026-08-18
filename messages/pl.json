@@ -207,6 +207,6 @@
     "faq3Question": "Czy brak ostrzeżeń oznacza dobry stan techniczny?",
     "faq3Answer": "Nie. Kontrola RDW nie pokazuje aktualnych błędów, zużycia, wycieków ani stanu mechanicznego. Nadal zalecamy oględziny i diagnostykę.",
     "faq4Question": "Czy numer rejestracyjny jest zapisywany?",
-    "faq4Answer": "NoordTune nie tworzy publicznych stron dla tablic i nie zapisuje numeru w localStorage ani analytics. Serwer używa zahaszowanego, tymczasowego cache, aby odciążyć oficjalne źródło."
+    "faq4Answer": "NoordTune nie tworzy publicznych stron dla tablic i nie zapisuje numeru w localStorage ani analytics. Serwer używa zahaszowanego klucza cache i przez maksymalnie sześć godzin przechowuje tymczasowy wynik bez jawnego numeru rejestracyjnego."
   }
 }

@@ -185,6 +185,7 @@ export default async function HomePage({params}: PageProps) {
 
           <div className="panel-edge mt-9 grid gap-4 bg-black/78 p-4 shadow-[0_0_80px_rgba(0,0,0,.42)] backdrop-blur">
             <PlateLookup
+              context="catalog"
               locale={safeLocale}
               text={{
                 label: lookup("label"),
