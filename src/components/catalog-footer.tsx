@@ -9,11 +9,14 @@ import {
   whatsappPhoneLabel
 } from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
+import {vehicleCheckPath} from "@/lib/vehicle-check-path";
 
 export function CatalogFooter({locale}: {locale: Locale}) {
   const copy = footerCopy(locale);
   const nav = mainNavItems(locale);
   const legal = legalLinks(locale);
+  const vehicleCheckLabel =
+    locale === "nl" ? "Kentekencheck" : locale === "pl" ? "Sprawdź auto" : "Vehicle check";
 
   return (
     <footer className="border-t border-white/10 bg-[#050505]">
@@ -60,7 +63,7 @@ export function CatalogFooter({locale}: {locale: Locale}) {
               </span>
               <span className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary" />
-                A. Vogelstraat 1, 9406 XD Assen
+                Assen
               </span>
             </div>
           </div>
@@ -68,6 +71,9 @@ export function CatalogFooter({locale}: {locale: Locale}) {
           <div>
             <h2 className="racing-title text-lg text-white">{copy.links}</h2>
             <div className="mt-4 grid grid-cols-2 gap-2 text-sm text-muted-foreground">
+              <a className="hover:text-primary" href={vehicleCheckPath(locale)}>
+                {vehicleCheckLabel}
+              </a>
               {nav
                 .filter((item) => !item.active)
                 .map((item) => (

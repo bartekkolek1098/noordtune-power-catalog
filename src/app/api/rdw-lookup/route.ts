@@ -7,6 +7,8 @@ import {
 } from "@/lib/rdw";
 import {rateLimit} from "@/lib/rate-limit";
 
+export const runtime = "nodejs";
+
 const lookupSchema = z.object({
   kenteken: z.string().min(1).max(16)
 });
@@ -60,18 +62,9 @@ async function handleLookup(request: NextRequest, input: string | null) {
       );
     }
 
-    const includeRaw =
-      request.nextUrl.searchParams.get("includeRaw") === "1" ||
-      request.nextUrl.searchParams.get("includeRaw") === "true";
-    const payload: Partial<typeof result> = {...result};
-
-    if (!includeRaw) {
-      delete payload.raw;
-    }
-
     return NextResponse.json(
       {
-        ...payload,
+        ...result,
         normalizedKenteken: normalizeKenteken(input)
       },
       {

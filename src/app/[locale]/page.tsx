@@ -39,6 +39,7 @@ import {assetPath, sitePath} from "@/lib/site-path";
 import {absoluteUrl} from "@/lib/site-url";
 import {formatCurrency} from "@/lib/utils";
 import {whatsappHref} from "@/lib/whatsapp";
+import {vehicleCheckPath} from "@/lib/vehicle-check-path";
 
 type PageProps = {
   params: Promise<{locale: string}>;
@@ -84,6 +85,10 @@ export default async function HomePage({params}: PageProps) {
   const manual = await getTranslations({
     locale: safeLocale,
     namespace: "ManualSelector"
+  });
+  const vehicleCheck = await getTranslations({
+    locale: safeLocale,
+    namespace: "VehicleCheck"
   });
   const copy = homeVisualCopy[safeLocale];
   const localeCode = safeLocale === "en" ? "en-US" : safeLocale === "pl" ? "pl-PL" : "nl-NL";
@@ -234,6 +239,23 @@ export default async function HomePage({params}: PageProps) {
                 }
               }}
             />
+
+            <div className="flex flex-col gap-3 rounded-[3px] border border-white/10 bg-black/35 p-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <div className="text-sm font-black uppercase text-white">
+                  {vehicleCheck("title")}
+                </div>
+                <p className="mt-1 text-xs leading-5 text-muted-foreground">
+                  {vehicleCheck("metaDescription")}
+                </p>
+              </div>
+              <Button asChild className="shrink-0 rounded-[3px]" variant="outline">
+                <a href={vehicleCheckPath(safeLocale)}>
+                  {vehicleCheck("learnMore")}
+                  <ChevronRight className="h-4 w-4" />
+                </a>
+              </Button>
+            </div>
 
             <ManualSelector
               initialBrands={selectorBrands}

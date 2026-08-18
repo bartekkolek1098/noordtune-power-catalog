@@ -15,7 +15,7 @@ import {
   Wrench
 } from "lucide-react";
 import {useMemo, useState} from "react";
-import type {RdwLookupResult} from "@/lib/rdw";
+import type {RdwLookupResult} from "@/lib/rdw-types";
 import {serviceOptions, type StageDefinition} from "@/data/catalog-shared";
 import {
   getPublicStagePrice,
@@ -35,6 +35,7 @@ import {
   CatalogVerificationNotice,
   type CatalogVerificationText
 } from "@/components/catalog-verification-notice";
+import {RdwPurchaseCheck} from "@/components/rdw-purchase-check";
 
 type LookupCopy = {
   label: string;
@@ -318,6 +319,20 @@ export function PlateLookup({
                   </span>
                   <span>Type {result.vehicle.variant ?? result.vehicle.type ?? "-"}</span>
                 </div>
+              </div>
+
+              <RdwPurchaseCheck locale={locale} result={result} />
+
+              <div className="border-t border-white/10 pt-5">
+                <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">
+                  {localCopy.tuningEyebrow}
+                </div>
+                <h3 className="racing-title mt-2 text-2xl text-white sm:text-3xl">
+                  {localCopy.tuningTitle}
+                </h3>
+                <p className="mt-2 max-w-3xl text-sm leading-6 text-muted-foreground">
+                  {localCopy.tuningText}
+                </p>
               </div>
 
               <div className="grid gap-4 md:grid-cols-[1fr_0.9fr]">
@@ -629,6 +644,9 @@ const lookupRuntimeCopy: Record<
     exactMatch: string;
     networkError: string;
     requestQuote: string;
+    tuningEyebrow: string;
+    tuningTitle: string;
+    tuningText: string;
     unknownFuel: string;
     indicativeRequirement: string;
     hardwareRequirement: string;
@@ -644,6 +662,9 @@ const lookupRuntimeCopy: Record<
     exactMatch: "NoordTune bevestigt de exacte ECU en motorvariant in de offerte.",
     networkError: "RDW lookup kon niet worden geladen.",
     requestQuote: "Vraag offerte aan",
+    tuningEyebrow: "Na de voertuigcheck",
+    tuningTitle: "Bekijk het tuningpotentieel",
+    tuningText: "De onderstaande vermogens en prijzen zijn tuningindicaties. NoordTune controleert de exacte voertuig- en ECU-configuratie voor de definitieve setup.",
     unknownFuel: "Brandstof onbekend",
     indicativeRequirement: "Catalogusmatch vereist",
     hardwareRequirement: "Hardwarecontrole vereist",
@@ -670,6 +691,9 @@ const lookupRuntimeCopy: Record<
     exactMatch: "NoordTune confirms the exact ECU and engine variant in the quote.",
     networkError: "RDW lookup could not be loaded.",
     requestQuote: "Request quote",
+    tuningEyebrow: "After the vehicle check",
+    tuningTitle: "Explore the tuning potential",
+    tuningText: "The power figures and prices below are tuning estimates. NoordTune verifies the exact vehicle and ECU configuration before confirming the final setup.",
     unknownFuel: "Fuel unknown",
     indicativeRequirement: "Catalog match required",
     hardwareRequirement: "Hardware check required",
@@ -696,6 +720,9 @@ const lookupRuntimeCopy: Record<
     exactMatch: "NoordTune potwierdzi dokładny ECU i wariant silnika w wycenie.",
     networkError: "Nie udało się załadować wyszukiwania RDW.",
     requestQuote: "Poproś o wycenę",
+    tuningEyebrow: "Po sprawdzeniu pojazdu",
+    tuningTitle: "Sprawdź potencjał tuningu",
+    tuningText: "Poniższe wartości mocy i ceny są orientacyjne. NoordTune potwierdzi dokładną konfigurację pojazdu i ECU przed ustaleniem finalnego zestawu.",
     unknownFuel: "Paliwo nieznane",
     indicativeRequirement: "Wymagane dopasowanie katalogu",
     hardwareRequirement: "Wymagana kontrola hardware",

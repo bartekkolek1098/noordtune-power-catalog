@@ -17,6 +17,9 @@ const {serviceOptions} = require("../src/data/catalog-shared.ts") as typeof impo
 );
 const pricing = require("../src/data/pricing.ts") as typeof import("../src/data/pricing");
 const {routing} = require("../src/i18n/routing.ts") as typeof import("../src/i18n/routing");
+const {vehicleCheckPaths} = require("../src/lib/vehicle-check-path.ts") as typeof import(
+  "../src/lib/vehicle-check-path"
+);
 
 type AuditSeverity = "critical" | "warning";
 type PricingV2StageTierId = import("../src/data/pricing").PricingV2StageTierId;
@@ -55,7 +58,9 @@ const seoStageDefinitionCount = catalog.engineCatalog.reduce(
 const localeCount = routing.locales.length;
 const sitemapVehiclePageCount = catalog.engineCatalog.length * localeCount;
 const sitemapStagePageCount = seoStageDefinitionCount * localeCount;
-const sitemapUrlCount = localeCount + sitemapVehiclePageCount + sitemapStagePageCount;
+const sitemapVehicleCheckPageCount = localeCount;
+const sitemapUrlCount =
+  localeCount + sitemapVehicleCheckPageCount + sitemapVehiclePageCount + sitemapStagePageCount;
 const brands = Array.from(
   new Set(catalog.vehicleDatabase.map((vehicle) => vehicle.brand))
 ).sort();
@@ -148,6 +153,26 @@ addIssue(
   "CLIENT_IMPORTS_SERVER_CATALOG",
   "Client components must import only lightweight catalog-shared or catalog-selector modules.",
   clientImportsServerCatalog
+);
+
+const clientImportsServerRdw = listSourceFiles(resolve(process.cwd(), "src"))
+  .filter((file) => {
+    const source = readFileSync(file, "utf8");
+
+    return (
+      /^\s*["']use client["'];/.test(source) &&
+      importedModules(source).some((specifier) =>
+        /(?:^@\/lib\/rdw$|\/lib\/rdw(?:\.ts)?$)/.test(specifier)
+      )
+    );
+  })
+  .map((file) => relative(process.cwd(), file));
+
+addIssue(
+  "critical",
+  "CLIENT_IMPORTS_SERVER_RDW",
+  "Client components must import only the client-safe RDW result types, never the server lookup implementation.",
+  clientImportsServerRdw
 );
 
 function duplicateGroups<T>(
@@ -1114,6 +1139,108 @@ const plateLookupSource = readFileSync(
   resolve(process.cwd(), "src/components/plate-lookup.tsx"),
   "utf8"
 );
+const rdwServerSource = readFileSync(
+  resolve(process.cwd(), "src/lib/rdw.ts"),
+  "utf8"
+);
+const rdwResultTypeSource = readFileSync(
+  resolve(process.cwd(), "src/lib/rdw-types.ts"),
+  "utf8"
+);
+const rdwRouteSource = readFileSync(
+  resolve(process.cwd(), "src/app/api/rdw-lookup/route.ts"),
+  "utf8"
+);
+const vehicleCheckRouteSource = readFileSync(
+  resolve(process.cwd(), "src/app/[locale]/[brand]/page.tsx"),
+  "utf8"
+);
+const vehicleCheckPathSource = readFileSync(
+  resolve(process.cwd(), "src/lib/vehicle-check-path.ts"),
+  "utf8"
+);
+const sitemapSource = readFileSync(
+  resolve(process.cwd(), "src/app/sitemap.ts"),
+  "utf8"
+);
+const rdwClientSources = [plateLookupSource, vehicleCheckRouteSource, readFileSync(
+  resolve(process.cwd(), "src/components/rdw-purchase-check.tsx"),
+  "utf8"
+)];
+
+addIssue(
+  "critical",
+  "RDW_QUERY_WITHOUT_LIMIT",
+  "Every official RDW source request must pass through the required bounded query limit.",
+  [
+    !/type RdwQuery = \{[\s\S]*?limit:\s*number;/.test(rdwServerSource)
+      ? "RdwQuery.limit is not required"
+      : null,
+    !/url\.searchParams\.set\("\$limit",/.test(rdwServerSource)
+      ? "RDW request builder does not set $limit"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_RAW_PAYLOAD_EXPOSED",
+  "The public RDW DTO and API route must not expose raw upstream records.",
+  [
+    /\braw\??\s*:/.test(rdwResultTypeSource) ? "rdw-types.ts exposes a raw field" : null,
+    /\bincludeRaw\b|\braw\s*:/.test(rdwRouteSource) ? "RDW API route exposes raw output" : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "RDW_AUXILIARY_FAILURE_NOT_ISOLATED",
+  "Auxiliary fuel, recall and APK requests must use partial-source handling without breaking the core vehicle result.",
+  [
+    !/Promise\.allSettled/.test(rdwServerSource) ? "Promise.allSettled is missing" : null,
+    !/settledSource/.test(rdwServerSource) ? "settledSource fallback is missing" : null,
+    !/vehicleResult\.status\.status === "unavailable"/.test(rdwServerSource)
+      ? "Core vehicle source is not isolated from auxiliary source status"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "PLATE_PERSISTED_IN_BROWSER",
+  "RDW client code must not persist searched plates in localStorage, sessionStorage or analytics events.",
+  rdwClientSources.flatMap((source, index) => [
+    /\blocalStorage\b|\bsessionStorage\b/.test(source)
+      ? `RDW client source ${index + 1} uses browser storage`
+      : null,
+    /analytics\.(?:track|event)|gtag\s*\(/.test(source)
+      ? `RDW client source ${index + 1} sends an analytics event`
+      : null
+  ]).filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "VEHICLE_CHECK_STATIC_ROUTE_MISSING",
+  "The three localized Vehicle Check landing routes must be statically declared and included in the sitemap.",
+  [
+    ...routing.locales
+      .filter((locale) => !vehicleCheckPathSource.includes(vehicleCheckPaths[locale]))
+      .map((locale) => `route source missing ${vehicleCheckPaths[locale]}`),
+    !/vehicleCheckPath\(locale\)/.test(sitemapSource)
+      ? "sitemap.ts does not include Vehicle Check routes"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "PLATE_SPECIFIC_SEO_ROUTE",
+  "Vehicle Check must not create plate-specific canonicals or sitemap routes.",
+  [
+    /canonical[\s\S]{0,200}(?:plate|kenteken)/i.test(vehicleCheckRouteSource)
+      ? "Vehicle Check canonical appears to depend on a plate"
+      : null,
+    /(?:plate|kenteken)[\s\S]{0,100}sitemap/i.test(sitemapSource)
+      ? "Sitemap appears to include plate-specific data"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
 addIssue(
   "critical",
   "STRUCTURED_DATA_PUBLIC_PRICE_MISMATCH",
@@ -1161,7 +1288,7 @@ addIssue(
   repeatedImages
 );
 
-const sitemapRouteKeys = routing.locales.flatMap((locale) => [
+const legacySitemapRouteKeys = routing.locales.flatMap((locale) => [
   `/${locale}`,
   ...catalog.engineCatalog.map((vehicle) => `/${locale}/vehicles/${vehicle.id}`),
   ...catalog.engineCatalog.flatMap((vehicle) => {
@@ -1172,6 +1299,10 @@ const sitemapRouteKeys = routing.locales.flatMap((locale) => [
     );
   })
 ]);
+const sitemapRouteKeys = [
+  ...legacySitemapRouteKeys,
+  ...routing.locales.map((locale) => vehicleCheckPaths[locale])
+];
 const duplicateSitemapRoutes = duplicateGroups(
   sitemapRouteKeys,
   (route) => route,
@@ -1275,7 +1406,7 @@ const currentTechnicalHashes = {
   publicTechnical: semanticHash(
     catalog.engineCatalog.map(technicalVehicleProjection)
   ),
-  publicRoutes: semanticHash(sitemapRouteKeys),
+  publicRoutes: semanticHash(legacySitemapRouteKeys),
   serviceTechnical: semanticHash(serviceOptions.map(technicalServiceProjection)),
   rdwMatcher: semanticHash(String(catalog.findCatalogMatch))
 } as const;
@@ -1303,7 +1434,7 @@ if (
   catalog.engineCatalog.length !== 24 ||
   catalog.vehicleDatabase.length !== 58_586 ||
   stageCount !== 175_758 ||
-  sitemapUrlCount !== 291
+  sitemapUrlCount !== 294
 ) {
   semanticIntegrityFailures.push(
     `counts: public=${catalog.engineCatalog.length}, canonical=${catalog.vehicleDatabase.length}, stages=${stageCount}, sitemap=${sitemapUrlCount}`
@@ -1533,7 +1664,7 @@ ${Object.entries(previousPublicCommercialHashes)
   })
   .join("\n")}
 
-Protected counts: 24 public vehicles, 58,586 canonical vehicles, 175,758 canonical stage definitions and 291 sitemap URLs.
+Protected counts: 24 public vehicles, 58,586 canonical vehicles, 175,758 canonical stage definitions and 294 sitemap URLs, including the three localized Vehicle Check landing pages.
 `;
 
 function stageByName(
@@ -1656,6 +1787,7 @@ Generated from the current catalog sources by \`pnpm catalog:audit\`.
 | Generated source records before canonical dedupe | ${catalog.generatedVehicleCatalog.length} |
 | Canonical selector/RDW vehicle records | ${catalog.vehicleDatabase.length} |
 | Stage definitions in canonical database | ${stageCount} |
+| Localized Vehicle Check landing pages | ${sitemapVehicleCheckPageCount} |
 | Localized vehicle detail pages in sitemap | ${sitemapVehiclePageCount} |
 | Localized stage SEO pages in sitemap | ${sitemapStagePageCount} |
 | Total sitemap URLs | ${sitemapUrlCount} |

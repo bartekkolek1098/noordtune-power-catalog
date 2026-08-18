@@ -21,6 +21,7 @@ import {
 } from "@/lib/seo";
 import {assetPath, sitePath} from "@/lib/site-path";
 import {getTranslations} from "next-intl/server";
+import {vehicleCheckPath} from "@/lib/vehicle-check-path";
 
 type PageProps = {
   params: Promise<{
@@ -109,6 +110,15 @@ export default async function VehiclePage({params}: PageProps) {
       href: "#tuning-calculator",
       label: t("seo.quoteLink"),
       primary: true
+    },
+    {
+      href: sitePath(vehicleCheckPath(safeLocale)),
+      label:
+        safeLocale === "nl"
+          ? "Controleer een auto vóór aankoop"
+          : safeLocale === "pl"
+            ? "Sprawdź auto przed zakupem"
+            : "Check a car before buying"
     },
     ...vehicle.stages.map((stage) => ({
       href: sitePath(stageSeoPath(safeLocale, vehicle, stage.name)),

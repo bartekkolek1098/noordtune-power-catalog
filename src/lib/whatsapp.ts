@@ -162,6 +162,63 @@ Indicatie: ${price}
 Kunnen jullie dit controleren en advies geven?`;
 }
 
+export function createPurchaseInspectionMessage({
+  apkStatus,
+  attentionSignals,
+  locale,
+  odometerJudgement,
+  plate,
+  recalls,
+  vehicle
+}: {
+  apkStatus: string;
+  attentionSignals: string[];
+  locale: Locale;
+  odometerJudgement: string;
+  plate: string;
+  recalls: string;
+  vehicle: string;
+}) {
+  const attentionText = attentionSignals.length > 0 ? attentionSignals.join(", ") : "-";
+
+  if (locale === "en") {
+    return `Hello NoordTune, I am considering buying this car and would like a technical pre-purchase inspection.
+
+Plate: ${plate}
+Car: ${vehicle}
+APK: ${apkStatus}
+Odometer judgement: ${odometerJudgement}
+Recalls: ${recalls}
+RDW attention points: ${attentionText}
+
+Could you check diagnostics, fault codes, live data and the technical condition?`;
+  }
+
+  if (locale === "pl") {
+    return `Cześć NoordTune, rozważam zakup tego auta i proszę o techniczną kontrolę przed zakupem.
+
+Rejestracja: ${plate}
+Auto: ${vehicle}
+APK: ${apkStatus}
+Ocena licznika: ${odometerJudgement}
+Akcje serwisowe: ${recalls}
+Punkty wymagające uwagi według RDW: ${attentionText}
+
+Czy możecie sprawdzić diagnostykę, kody błędów, live data i stan techniczny?`;
+  }
+
+  return `Hallo NoordTune, ik overweeg deze auto te kopen en wil graag een technische aankoopcontrole.
+
+Kenteken: ${plate}
+Auto: ${vehicle}
+APK: ${apkStatus}
+Tellerstandoordeel: ${odometerJudgement}
+Terugroepacties: ${recalls}
+RDW-aandachtspunten: ${attentionText}
+
+Kunnen jullie diagnose, foutcodes, live data en de technische staat controleren?`;
+}
+
 function createManualReviewMessage({
   displacementCc,
   fuel,

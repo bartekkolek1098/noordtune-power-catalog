@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "catalog:audit": "node --no-warnings scripts/audit-catalog-data.ts"
+    "catalog:audit": "node --no-warnings scripts/audit-catalog-data.ts",
+    "vehicle-check:test": "node --no-warnings scripts/test-rdw-signals.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",

@@ -10,16 +10,18 @@ const languageLabels: Record<Locale, {flag: string; label: string}> = {
 
 export function LanguageSwitcher({
   locale,
-  path = ""
+  path = "",
+  paths
 }: {
   locale: Locale;
   path?: string;
+  paths?: Partial<Record<Locale, string>>;
 }) {
   return (
     <nav aria-label="Language" className="flex shrink-0 items-center gap-1">
       {routing.locales.map((candidate) => {
         const item = languageLabels[candidate];
-        const href = sitePath(`/${candidate}${path}`);
+        const href = sitePath(paths?.[candidate] ?? `/${candidate}${path}`);
 
         return (
           <a

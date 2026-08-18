@@ -2,6 +2,7 @@ import type {MetadataRoute} from "next";
 import {engineCatalog, getVehicleSeoSlugs, stageSlugMap} from "@/data/catalog";
 import {routing} from "@/i18n/routing";
 import {absoluteUrl} from "@/lib/site-url";
+import {vehicleCheckPath} from "@/lib/vehicle-check-path";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -10,6 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified,
     changeFrequency: "weekly" as const,
     priority: 1
+  }));
+  const vehicleCheckPages = routing.locales.map((locale) => ({
+    url: absoluteUrl(vehicleCheckPath(locale)),
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.95
   }));
   const vehiclePages = routing.locales.flatMap((locale) =>
     engineCatalog.map((vehicle) => ({
@@ -34,5 +41,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  return [...homePages, ...vehiclePages, ...stagePages];
+  return [...homePages, ...vehicleCheckPages, ...vehiclePages, ...stagePages];
 }
