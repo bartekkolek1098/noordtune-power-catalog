@@ -15,7 +15,7 @@ import {
   Wrench
 } from "lucide-react";
 import {useMemo, useState} from "react";
-import type {RdwLookupResult} from "@/lib/rdw-types";
+import type {RdwTuningLookupResult} from "@/lib/rdw-types";
 import {serviceOptions, type StageDefinition} from "@/data/catalog-shared";
 import {
   getPublicStagePrice,
@@ -35,7 +35,6 @@ import {
   CatalogVerificationNotice,
   type CatalogVerificationText
 } from "@/components/catalog-verification-notice";
-import {RdwPurchaseCheck} from "@/components/rdw-purchase-check";
 
 type LookupCopy = {
   label: string;
@@ -91,26 +90,20 @@ type LookupError = {
   message: string;
 };
 
-export function PlateLookup({
-  context = "catalog",
+export function TuningPlateLookup({
   locale,
   text
 }: {
-  context?: "catalog" | "vehicle-check";
   locale: Locale;
   text: LookupCopy;
 }) {
-  const defaultResultView = context === "vehicle-check" ? "purchase" : "tuning";
   const [plate, setPlate] = useState("");
-  const [result, setResult] = useState<RdwLookupResult | null>(null);
+  const [result, setResult] = useState<RdwTuningLookupResult | null>(null);
   const [error, setError] = useState<LookupError | null>(null);
   const [loading, setLoading] = useState(false);
   const [stageIndex, setStageIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [recommendedPackageUsed, setRecommendedPackageUsed] = useState(false);
-  const [activeResultView, setActiveResultView] = useState<"purchase" | "tuning">(
-    defaultResultView
-  );
 
   const match = result?.tuningMatch?.variant;
   const stages = useMemo(() => {
@@ -191,7 +184,6 @@ export function PlateLookup({
     setSelectedOptions([]);
     setStageIndex(0);
     setRecommendedPackageUsed(false);
-    setActiveResultView(defaultResultView);
 
     try {
       const response = await fetch(sitePath("/api/rdw-lookup"), {
@@ -212,7 +204,7 @@ export function PlateLookup({
         return;
       }
 
-      setResult(payload as RdwLookupResult);
+      setResult(payload as RdwTuningLookupResult);
     } catch {
       setError({
         code: "NETWORK_ERROR",
@@ -321,9 +313,6 @@ export function PlateLookup({
                     {result.vehicle.engine.displacementCc ?? "-"} cc ·{" "}
                     {result.vehicle.engine.powerHp ?? "-"} {powerUnit}
                   </span>
-                  <span>
-                    APK {result.vehicle.registration.apkExpiry ?? "-"}
-                  </span>
                   <span>Type {result.vehicle.variant ?? result.vehicle.type ?? "-"}</span>
                 </div>
                 <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-white/10 pt-3 text-xs text-muted-foreground">
@@ -331,48 +320,6 @@ export function PlateLookup({
                   {result.cached ? <span>{localCopy.temporaryCache}</span> : null}
                 </div>
               </div>
-
-              {context === "catalog" ? (
-                <RdwPurchaseCheck locale={locale} result={result} variant="compact" />
-              ) : null}
-
-              <div
-                aria-label={localCopy.resultViews}
-                className="grid grid-cols-2 gap-1 rounded-[3px] border border-white/10 bg-black/45 p-1"
-                role="tablist"
-              >
-                <button
-                  aria-selected={activeResultView === "purchase"}
-                  className={`min-h-11 rounded-[3px] px-3 py-2 text-xs font-black uppercase transition ${
-                    activeResultView === "purchase"
-                      ? "bg-primary text-white shadow-[0_0_22px_rgba(227,6,19,.28)]"
-                      : "text-slate-300 hover:bg-white/[0.05] hover:text-white"
-                  }`}
-                  onClick={() => setActiveResultView("purchase")}
-                  role="tab"
-                  type="button"
-                >
-                  {localCopy.purchaseTab}
-                </button>
-                <button
-                  aria-selected={activeResultView === "tuning"}
-                  className={`min-h-11 rounded-[3px] px-3 py-2 text-xs font-black uppercase transition ${
-                    activeResultView === "tuning"
-                      ? "bg-primary text-white shadow-[0_0_22px_rgba(227,6,19,.28)]"
-                      : "text-slate-300 hover:bg-white/[0.05] hover:text-white"
-                  }`}
-                  onClick={() => setActiveResultView("tuning")}
-                  role="tab"
-                  type="button"
-                >
-                  {localCopy.tuningTab}
-                </button>
-              </div>
-
-              {activeResultView === "purchase" ? (
-                <RdwPurchaseCheck locale={locale} result={result} />
-              ) : (
-                <>
 
               <div className="border-t border-white/10 pt-5">
                 <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">
@@ -404,12 +351,27 @@ export function PlateLookup({
                     <p className="mt-1 text-sm text-muted-foreground">
                       {match.engine} · {match.ecuType}
                     </p>
-                    <Button asChild className="mt-4 rounded-[3px]" variant="outline">
-                      <a href={sitePath(`/${locale}/vehicles/${match.id}`)}>
-                        {text.viewDetails}
+                    {result.tuningMatch?.publicVehicleId ? (
+                      <Button asChild className="mt-4 rounded-[3px] font-black uppercase">
+                        <a
+                          data-testid="rdw-open-published-tuning"
+                          href={sitePath(`/${locale}/vehicles/${result.tuningMatch.publicVehicleId}`)}
+                        >
+                          {localCopy.openTuningPage}
+                          <ChevronRight className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button
+                        className="mt-4 rounded-[3px] font-black uppercase"
+                        data-testid="rdw-open-inline-tuning"
+                        onClick={() => document.getElementById("rdw-inline-tuning")?.scrollIntoView({behavior: "smooth", block: "start"})}
+                        type="button"
+                      >
+                        {localCopy.viewInlineDetails}
                         <ChevronRight className="h-4 w-4" />
-                      </a>
-                    </Button>
+                      </Button>
+                    )}
                   </div>
                 ) : (
                   <div
@@ -449,6 +411,15 @@ export function PlateLookup({
                       </span>{" "}
                       {text.recommendation.nextStepDescription}
                     </div>
+                    <Button
+                      className="mt-4 rounded-[3px] font-black uppercase"
+                      data-testid="rdw-open-inline-tuning"
+                      onClick={() => document.getElementById("rdw-inline-tuning")?.scrollIntoView({behavior: "smooth", block: "start"})}
+                      type="button"
+                    >
+                      {localCopy.viewInlineDetails}
+                      <ChevronRight className="h-4 w-4" />
+                    </Button>
                   </div>
                 )}
 
@@ -584,7 +555,7 @@ export function PlateLookup({
                 </section>
               ) : null}
 
-              <div className="rounded-[3px] border border-white/10 bg-black/25 p-4">
+              <div className="scroll-mt-36 rounded-[3px] border border-white/10 bg-black/25 p-4" id="rdw-inline-tuning">
                 {!match ? (
                   <div className="mb-4 flex items-center gap-2 text-xs font-black uppercase tracking-[0.16em] text-primary">
                     <AlertTriangle className="h-4 w-4" />
@@ -679,8 +650,6 @@ export function PlateLookup({
               <p className="text-xs leading-5 text-muted-foreground">
                 {text.disclaimer}
               </p>
-                </>
-              )}
             </motion.div>
           ) : null}
         </AnimatePresence>
@@ -700,9 +669,8 @@ const lookupRuntimeCopy: Record<
     tuningEyebrow: string;
     tuningTitle: string;
     tuningText: string;
-    resultViews: string;
-    purchaseTab: string;
-    tuningTab: string;
+    openTuningPage: string;
+    viewInlineDetails: string;
     checkedAt: string;
     temporaryCache: string;
     unknownFuel: string;
@@ -720,12 +688,11 @@ const lookupRuntimeCopy: Record<
     exactMatch: "NoordTune bevestigt de exacte ECU en motorvariant in de offerte.",
     networkError: "RDW lookup kon niet worden geladen.",
     requestQuote: "Vraag offerte aan",
-    tuningEyebrow: "Na de voertuigcheck",
+    tuningEyebrow: "Tuningmogelijkheden",
     tuningTitle: "Bekijk het tuningpotentieel",
     tuningText: "De onderstaande vermogens en prijzen zijn tuningindicaties. NoordTune controleert de exacte voertuig- en ECU-configuratie voor de definitieve setup.",
-    resultViews: "Kies resultaatweergave",
-    purchaseTab: "Aankoopcheck",
-    tuningTab: "Tuning & vermogen",
+    openTuningPage: "Open tuningpagina",
+    viewInlineDetails: "Bekijk volledige tuningdetails",
     checkedAt: "RDW gecontroleerd",
     temporaryCache: "Herbruikt uit tijdelijke cache",
     unknownFuel: "Brandstof onbekend",
@@ -754,12 +721,11 @@ const lookupRuntimeCopy: Record<
     exactMatch: "NoordTune confirms the exact ECU and engine variant in the quote.",
     networkError: "RDW lookup could not be loaded.",
     requestQuote: "Request quote",
-    tuningEyebrow: "After the vehicle check",
+    tuningEyebrow: "Tuning possibilities",
     tuningTitle: "Explore the tuning potential",
     tuningText: "The power figures and prices below are tuning estimates. NoordTune verifies the exact vehicle and ECU configuration before confirming the final setup.",
-    resultViews: "Choose result view",
-    purchaseTab: "Purchase check",
-    tuningTab: "Tuning & power",
+    openTuningPage: "Open tuning page",
+    viewInlineDetails: "View full tuning details",
     checkedAt: "RDW checked",
     temporaryCache: "Reused from temporary cache",
     unknownFuel: "Fuel unknown",
@@ -788,12 +754,11 @@ const lookupRuntimeCopy: Record<
     exactMatch: "NoordTune potwierdzi dokładny ECU i wariant silnika w wycenie.",
     networkError: "Nie udało się załadować wyszukiwania RDW.",
     requestQuote: "Poproś o wycenę",
-    tuningEyebrow: "Po sprawdzeniu pojazdu",
+    tuningEyebrow: "Możliwości tuningu",
     tuningTitle: "Sprawdź potencjał tuningu",
     tuningText: "Poniższe wartości mocy i ceny są orientacyjne. NoordTune potwierdzi dokładną konfigurację pojazdu i ECU przed ustaleniem finalnego zestawu.",
-    resultViews: "Wybierz widok wyniku",
-    purchaseTab: "Kontrola przed zakupem",
-    tuningTab: "Tuning i moc",
+    openTuningPage: "Otwórz stronę tuningu",
+    viewInlineDetails: "Zobacz pełne szczegóły tuningu",
     checkedAt: "Sprawdzono w RDW",
     temporaryCache: "Wynik z tymczasowej pamięci cache",
     unknownFuel: "Paliwo nieznane",
@@ -826,7 +791,7 @@ function createIndicativeStages(powerHp: number, locale: Locale): StageDefinitio
       name: "Stage 1",
       powerHp: Math.round(powerHp * 1.18),
       torqueNm: Math.round(powerHp * 2.7),
-      price: 269,
+      price: 299,
       requirements: copy.indicativeRequirement,
       packageItems: copy.stage1Items
     },
@@ -834,7 +799,7 @@ function createIndicativeStages(powerHp: number, locale: Locale): StageDefinitio
       name: "Stage 2",
       powerHp: Math.round(powerHp * 1.32),
       torqueNm: Math.round(powerHp * 3.05),
-      price: 399,
+      price: 449,
       requirements: copy.hardwareRequirement,
       packageItems: copy.stage2Items
     },
@@ -842,14 +807,14 @@ function createIndicativeStages(powerHp: number, locale: Locale): StageDefinitio
       name: "Stage 3+",
       powerHp: Math.round(powerHp * 1.58),
       torqueNm: Math.round(powerHp * 3.45),
-      price: 749,
+      price: 699,
       requirements: copy.customRequirement,
       packageItems: copy.stage3Items
     }
   ];
 }
 
-function estimateStockTorque(result: RdwLookupResult) {
+function estimateStockTorque(result: RdwTuningLookupResult) {
   const power = result.vehicle.engine.powerHp ?? 150;
   const fuel = result.vehicle.fuel?.toLowerCase() ?? "";
 

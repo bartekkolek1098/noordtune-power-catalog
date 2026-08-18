@@ -172,11 +172,11 @@
     }
   },
   "VehicleCheck": {
-    "metaTitle": "Free vehicle check with tuning advice | NoordTune Assen",
-    "metaDescription": "Check APK, odometer judgement, recalls, vehicle details and tuning potential using official RDW data.",
+    "metaTitle": "Free pre-purchase vehicle check | NoordTune Assen",
+    "metaDescription": "Check APK, odometer judgement, recalls and official vehicle details using RDW Open Data.",
     "eyebrow": "Official RDW data + NoordTune advice",
     "title": "Vehicle check before you buy",
-    "intro": "Review important official vehicle information before you decide. See RDW attention points, recent APK defects, recalls and then the car's tuning potential.",
+    "intro": "Review important official vehicle information before you decide. See RDW attention points, recent APK defects, recalls and practical checks before purchase.",
     "privacy": "Your plate is used only for the current RDW check and is not stored in a customer profile or public results page.",
     "learnMore": "More about the vehicle check",
     "shownTitle": "What does this vehicle check show?",

@@ -10,9 +10,12 @@ import {
   FileWarning,
   Gauge,
   Info,
+  ListTree,
   MessageCircle,
   ReceiptEuro,
+  Ruler,
   RotateCcw,
+  Scale,
   ShieldCheck
 } from "lucide-react";
 import type {Locale} from "@/i18n/routing";
@@ -20,7 +23,7 @@ import type {
   PurchaseSignal,
   PurchaseSignalCode,
   PurchaseSignalLevel,
-  RdwLookupResult
+  RdwVehicleCheckResult
 } from "@/lib/rdw-types";
 import {createPurchaseInspectionMessage, whatsappHref} from "@/lib/whatsapp";
 import {formatCurrency} from "@/lib/utils";
@@ -29,12 +32,10 @@ import {Button} from "@/components/ui/button";
 
 export function RdwPurchaseCheck({
   locale,
-  result,
-  variant = "full"
+  result
 }: {
   locale: Locale;
-  result: RdwLookupResult;
-  variant?: "compact" | "full";
+  result: RdwVehicleCheckResult;
 }) {
   const t = getVehicleCheckCopy(locale);
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
@@ -57,29 +58,6 @@ export function RdwPurchaseCheck({
     recalls: formatRecallSummary(result, locale),
     vehicle: `${result.vehicle.make} ${result.vehicle.model}`.trim()
   });
-
-  if (variant === "compact") {
-    return (
-      <section className="space-y-3" data-testid="rdw-purchase-summary">
-        <div className="panel-edge border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,.05),rgba(0,0,0,.42))] p-4">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <div className="text-xs font-black uppercase tracking-[0.14em] text-primary">
-                {t.summaryTitle}
-              </div>
-              <p className="mt-1 text-xs leading-5 text-muted-foreground">{t.compactText}</p>
-            </div>
-            <div className="grid grid-cols-3 gap-2 text-center text-[0.68rem] sm:min-w-[280px]">
-              <SignalCount level="positive" label={t.positive} value={signalCounts.positive} />
-              <SignalCount level="attention" label={t.attention} value={signalCounts.attention} />
-              <SignalCount level="check-required" label={t.checkRequired} value={signalCounts["check-required"]} />
-            </div>
-          </div>
-        </div>
-        <PurchaseSummaryCards locale={locale} result={result} />
-      </section>
-    );
-  }
 
   return (
     <section className="space-y-4" data-testid="rdw-purchase-check">
@@ -127,80 +105,123 @@ export function RdwPurchaseCheck({
 
       <PurchaseSummaryCards locale={locale} result={result} />
 
-      <div className="panel-edge grid gap-5 border-primary/35 bg-[linear-gradient(120deg,rgba(227,6,19,.16),rgba(0,0,0,.5))] p-5 lg:grid-cols-[1fr_auto] lg:items-center">
-        <div>
-          <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">{t.inspectionEyebrow}</div>
-          <h3 className="racing-title mt-2 text-2xl text-white sm:text-3xl">{t.inspectionTitle}</h3>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-300">{t.inspectionText}</p>
-        </div>
-        <Button asChild className="h-auto min-h-12 rounded-[3px] px-5 py-3 font-black uppercase shadow-[0_0_32px_rgba(227,6,19,.35)]">
-          <a data-testid="purchase-inspection-quote" href={whatsappHref({locale, message})} rel="noreferrer" target="_blank">
-            <MessageCircle className="h-4 w-4" />{t.inspectionCta}
-          </a>
-        </Button>
-      </div>
-
-      <details className="group panel-edge border-white/10 p-4 sm:p-5">
-        <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-black uppercase text-white">
-          {t.secondaryDetails}
-          <ChevronRight className="h-4 w-4 shrink-0 transition-transform group-open:rotate-90" />
-        </summary>
-        <div className="mt-5 space-y-4 border-t border-white/10 pt-5">
-          {positiveSignals.length > 0 ? (
-            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-              {positiveSignals.map((signal) => (
-                <SignalCard key={signal.code} locale={locale} signal={signal} />
-              ))}
-            </div>
-          ) : null}
-
-      <div className="grid gap-4 xl:grid-cols-[1.15fr_.85fr]">
-        <div className="panel-edge border-white/10 p-4 sm:p-5">
-          <SectionTitle icon={CarFront} title={t.vehicleDetails} />
-          <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            <Detail label={t.firstAdmission} value={formatDate(result.ownershipRegistration.firstAdmission, locale)} />
-            <Detail label={t.firstRegistrationNl} value={formatDate(result.ownershipRegistration.firstRegistrationNl, locale)} />
-            <Detail label={t.importSignal} value={importLabel(result.ownershipRegistration.likelyImported, result.ownershipRegistration.daysBetweenFirstAdmissionAndNlRegistration, t)} />
-            <Detail label={t.wam} value={booleanLabel(result.insurance.wamInsured, t)} />
-            <Detail label={t.exportIndicator} value={booleanLabel(result.ownershipRegistration.exportIndicator, t)} />
-            <Detail label={t.waitingInspection} value={booleanLabel(result.ownershipRegistration.waitingForInspection, t)} />
-            <Detail label={t.taxiIndicator} value={booleanLabel(result.ownershipRegistration.taxiIndicator, t)} />
-            <Detail label={t.color} value={[result.vehicle.color, result.vehicle.secondColor].filter(Boolean).join(" / ") || t.unavailable} />
-            <Detail label={t.seatsDoors} value={`${result.vehicle.seats ?? "-"} / ${result.vehicle.doors ?? "-"}`} />
-            <Detail label={t.runningWeight} value={unit(result.towing.runningWeightKg, "kg", t.unavailable)} />
-            <Detail label={t.payload} value={unit(result.towing.payloadKg, "kg", t.unavailable)} />
-            <Detail label={t.towing} value={`${unit(result.towing.unbrakedKg, "kg", "-")} / ${unit(result.towing.brakedKg, "kg", "-")}`} />
-            <Detail helper={t.catalogPriceHelp} label={t.catalogPrice} value={currency(result.financial.catalogPriceEur, localeCode, t.unavailable)} />
-            <Detail helper={t.grossBpmHelp} label={t.grossBpm} value={currency(result.financial.grossBpmEur, localeCode, t.unavailable)} />
+      {positiveSignals.length > 0 ? (
+        <ReportSection icon={CheckCircle2} title={t.positiveDetails}>
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {positiveSignals.map((signal) => (
+              <SignalCard key={signal.code} locale={locale} signal={signal} />
+            ))}
           </div>
-        </div>
+        </ReportSection>
+      ) : null}
 
-        <div className="panel-edge border-white/10 p-4 sm:p-5">
-          <SectionTitle icon={ReceiptEuro} title={t.environment} />
-          {result.environment.fuels.length > 0 ? (
-            <div className="mt-4 space-y-3">
-              {result.environment.fuels.map((fuel, index) => (
-                <div className="rounded-[3px] border border-white/10 bg-black/30 p-3" key={`${fuel.fuel ?? "fuel"}-${index}`}>
-                  <div className="font-black text-white">{fuel.fuel ?? t.unavailable}</div>
-                  <div className="mt-3 grid gap-2 text-xs sm:grid-cols-2">
-                    <Detail label={t.power} value={unit(fuel.powerKw, "kW", t.unavailable)} />
-                    <Detail label={t.emissionClass} value={fuel.exhaustEmissionLevel ?? fuel.emissionClass ?? t.unavailable} />
-                    <Detail label={t.consumption} value={unit(fuel.combinedConsumption, "l/100 km", t.unavailable)} />
-                    <Detail label={t.consumptionWltp} value={unit(fuel.combinedConsumptionWltp, "l/100 km", t.unavailable)} />
-                    <Detail label={t.co2} value={unit(fuel.co2CombinedGkm, "g/km", t.unavailable)} />
-                    <Detail label={t.co2Wltp} value={unit(fuel.co2CombinedWltpGkm, "g/km", t.unavailable)} />
-                    <Detail label={t.electricConsumption} value={unit(fuel.electricConsumptionWltp, "Wh/km", t.unavailable)} />
-                    <Detail label={t.range} value={unit(fuel.electricRangeWltpKm ?? fuel.rangeKm, "km", t.unavailable)} />
-                    {fuel.hybridClass ? <Detail label={t.hybridClass} value={fuel.hybridClass} /> : null}
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="mt-4 text-sm leading-6 text-muted-foreground">{t.sourceUnavailable}</p>
-          )}
+      <ReportSection defaultOpen icon={CarFront} title={t.generalInformation}>
+        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          <Detail label={t.makeModel} value={`${result.vehicle.make} ${result.vehicle.model}`.trim()} />
+          <Detail label={t.vehicleType} value={result.vehicle.vehicleType ?? t.unavailable} />
+          <Detail label={t.bodyType} value={result.bodyDetails.type ?? result.vehicle.body ?? t.unavailable} />
+          <Detail label={t.typeVariantExecution} value={[result.vehicle.type, result.vehicle.variant, result.vehicle.execution].filter(Boolean).join(" / ") || t.unavailable} />
+          <Detail label={t.europeanCategory} value={result.vehicle.europeanVehicleCategory ?? t.unavailable} />
+          <Detail label={t.color} value={[result.vehicle.color, result.vehicle.secondColor].filter(Boolean).join(" / ") || t.unavailable} />
+          <Detail label={t.seatsDoors} value={`${result.vehicle.seats ?? "-"} / ${result.vehicle.doors ?? "-"}`} />
+          <Detail label={t.firstAdmission} value={formatDate(result.ownershipRegistration.firstAdmission, locale)} />
+          <Detail label={t.firstRegistrationNl} value={formatDate(result.ownershipRegistration.firstRegistrationNl, locale)} />
+          <Detail label={t.lastRegistration} value={formatDate(result.ownershipRegistration.currentRegistrationDate, locale)} />
+          <Detail label={t.importSignal} value={importLabel(result.ownershipRegistration.likelyImported, result.ownershipRegistration.daysBetweenFirstAdmissionAndNlRegistration, t)} />
         </div>
-      </div>
+      </ReportSection>
+
+      <ReportSection icon={Gauge} title={t.engineEnvironment}>
+        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          <Detail label={t.fuel} value={result.vehicle.fuel ?? t.unavailable} />
+          <Detail label={t.cylinders} value={unit(result.vehicle.engine.cylinders, "", t.unavailable)} />
+          <Detail label={t.displacement} value={unit(result.vehicle.engine.displacementCc, "cc", t.unavailable)} />
+          <Detail label={t.power} value={formatPower(result, t.unavailable)} />
+          <Detail label={t.emissionClass} value={result.vehicle.emissions.exhaustLevel ?? result.vehicle.emissions.euroClass ?? t.unavailable} />
+          <Detail label={t.co2} value={unit(result.vehicle.emissions.co2Gkm, "g/km", t.unavailable)} />
+          <Detail label={t.topSpeed} value={unit(result.vehicle.performance.topSpeedKmh, "km/h", t.unavailable)} />
+        </div>
+        {result.environment.fuels.length > 0 ? (
+          <div className="mt-4 space-y-3">
+            {result.environment.fuels.map((fuel, index) => (
+              <div className="rounded-[3px] border border-white/10 bg-black/30 p-3" key={`${fuel.fuel ?? "fuel"}-${index}`}>
+                <div className="font-black text-white">{fuel.fuel ?? t.unavailable}</div>
+                <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+                  <Detail label={t.consumption} value={unit(fuel.combinedConsumption, "l/100 km", t.unavailable)} />
+                  <Detail label={t.consumptionWltp} value={unit(fuel.combinedConsumptionWltp, "l/100 km", t.unavailable)} />
+                  <Detail label={t.co2Wltp} value={unit(fuel.co2CombinedWltpGkm, "g/km", t.unavailable)} />
+                  <Detail label={t.electricConsumption} value={unit(fuel.electricConsumptionWltp, "Wh/km", t.unavailable)} />
+                  <Detail label={t.range} value={unit(fuel.electricRangeWltpKm ?? fuel.rangeKm, "km", t.unavailable)} />
+                  {fuel.hybridClass ? <Detail label={t.hybridClass} value={fuel.hybridClass} /> : null}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="mt-4 text-sm leading-6 text-muted-foreground">{t.sourceUnavailable}</p>
+        )}
+      </ReportSection>
+
+      <ReportSection icon={Scale} title={t.dimensionsWeights}>
+        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          <Detail label={t.length} value={unit(result.vehicle.dimensions.lengthCm, "cm", t.unavailable)} />
+          <Detail label={t.width} value={unit(result.vehicle.dimensions.widthCm, "cm", t.unavailable)} />
+          <Detail label={t.height} value={unit(result.vehicle.dimensions.heightCm, "cm", t.unavailable)} />
+          <Detail label={t.wheelbase} value={unit(result.vehicle.wheelbaseCm, "cm", t.unavailable)} />
+          <Detail label={t.emptyWeight} value={unit(result.vehicle.dimensions.weightKg, "kg", t.unavailable)} />
+          <Detail label={t.runningWeight} value={unit(result.towing.runningWeightKg, "kg", t.unavailable)} />
+          <Detail label={t.payload} value={unit(result.towing.payloadKg, "kg", t.unavailable)} />
+          <Detail label={t.maximumPermittedMass} value={unit(result.towing.maximumPermittedMassKg, "kg", t.unavailable)} />
+          <Detail label={t.technicalMaximumMass} value={unit(result.towing.technicalMaximumMassKg, "kg", t.unavailable)} />
+          <Detail label={t.towing} value={`${unit(result.towing.unbrakedKg, "kg", "-")} / ${unit(result.towing.brakedKg, "kg", "-")}`} />
+          <Detail label={t.maximumCombinationMass} value={unit(result.towing.maximumCombinationMassKg, "kg", t.unavailable)} />
+        </div>
+      </ReportSection>
+
+      <ReportSection icon={Ruler} title={t.bodyWheelsAxles}>
+        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          <Detail label={t.bodyType} value={result.bodyDetails.type ?? t.unavailable} />
+          <Detail label={t.bodyEuropeanDescription} value={result.bodyDetails.europeanDescription ?? t.unavailable} />
+          <Detail label={t.wheelCount} value={unit(result.vehicle.wheelCount, "", t.unavailable)} />
+          <Detail label={t.axleCount} value={unit(result.axles.items[0]?.axleCount, "", t.unavailable)} />
+          <Detail label={t.chassisNumberLocation} value={result.vehicle.chassisNumberLocation ?? t.unavailable} />
+          <Detail label={t.typeApproval} value={result.vehicle.typeApprovalNumber ?? t.unavailable} />
+          <Detail label={t.typeApprovalRevision} value={unit(result.vehicle.typeApprovalRevision, "", t.unavailable)} />
+        </div>
+        {result.axles.items.length > 0 ? (
+          <div className="mt-4 grid gap-3 lg:grid-cols-2">
+            {result.axles.items.map((axle, index) => (
+              <article className="rounded-[3px] border border-white/10 bg-black/30 p-3" key={`${axle.axleNumber ?? index}-${index}`}>
+                <div className="font-black uppercase text-white">{t.axle} {axle.axleNumber ?? index + 1}</div>
+                <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                  <Detail label={t.drivenAxle} value={booleanLabel(axle.driven, t)} />
+                  <Detail label={t.brakedAxle} value={booleanLabel(axle.braked, t)} />
+                  <Detail label={t.trackWidth} value={unit(axle.trackWidthMm, "mm", t.unavailable)} />
+                  <Detail label={t.maximumAxleLoad} value={unit(axle.legalMaximumLoadKg ?? axle.technicalMaximumLoadKg, "kg", t.unavailable)} />
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <p className="mt-4 text-sm leading-6 text-muted-foreground">{t.sourceUnavailable}</p>
+        )}
+      </ReportSection>
+
+      <ReportSection icon={ReceiptEuro} title={t.registrationFinancial}>
+        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          <Detail helper={t.catalogPriceHelp} label={t.catalogPrice} value={currency(result.financial.catalogPriceEur, localeCode, t.unavailable)} />
+          <Detail helper={t.grossBpmHelp} label={t.grossBpm} value={currency(result.financial.grossBpmEur, localeCode, t.unavailable)} />
+          <Detail label={t.wam} value={booleanLabel(result.insurance.wamInsured, t)} />
+          <Detail label={t.exportIndicator} value={booleanLabel(result.ownershipRegistration.exportIndicator, t)} />
+          <Detail label={t.waitingInspection} value={booleanLabel(result.ownershipRegistration.waitingForInspection, t)} />
+          <Detail label={t.registration} value={booleanLabel(result.ownershipRegistration.transferPossible, t)} />
+          <Detail label={t.taxiIndicator} value={booleanLabel(result.ownershipRegistration.taxiIndicator, t)} />
+        </div>
+      </ReportSection>
+
+      <ReportSection defaultOpen icon={ListTree} title={t.officialTimeline}>
+        <OfficialTimeline locale={locale} result={result} t={t} />
+      </ReportSection>
 
       <div className="grid gap-4 xl:grid-cols-2">
         <div className="panel-edge border-white/10 p-4 sm:p-5">
@@ -267,8 +288,19 @@ export function RdwPurchaseCheck({
           )}
         </div>
       </div>
+
+      <div className="panel-edge grid gap-5 border-primary/35 bg-[linear-gradient(120deg,rgba(227,6,19,.16),rgba(0,0,0,.5))] p-5 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div>
+          <div className="text-xs font-black uppercase tracking-[0.16em] text-primary">{t.inspectionEyebrow}</div>
+          <h3 className="racing-title mt-2 text-2xl text-white sm:text-3xl">{t.inspectionTitle}</h3>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-300">{t.inspectionText}</p>
         </div>
-      </details>
+        <Button asChild className="h-auto min-h-12 rounded-[3px] px-5 py-3 font-black uppercase shadow-[0_0_32px_rgba(227,6,19,.35)]">
+          <a data-testid="purchase-inspection-quote" href={whatsappHref({locale, message})} rel="noreferrer" target="_blank">
+            <MessageCircle className="h-4 w-4" />{t.inspectionCta}
+          </a>
+        </Button>
+      </div>
 
       <div className="rounded-[3px] border border-white/10 bg-black/25 p-4 text-xs leading-5 text-muted-foreground">
         <div className="flex gap-2">
@@ -296,11 +328,11 @@ export function RdwPurchaseCheck({
   );
 }
 
-function PurchaseSummaryCards({locale, result}: {locale: Locale; result: RdwLookupResult}) {
+function PurchaseSummaryCards({locale, result}: {locale: Locale; result: RdwVehicleCheckResult}) {
   const t = getVehicleCheckCopy(locale);
 
   return (
-    <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+    <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4" data-testid="rdw-purchase-core-cards">
       <SummaryCard
         icon={CalendarCheck}
         label={t.apk}
@@ -391,6 +423,71 @@ function SectionTitle({icon: Icon, title}: {icon: typeof ShieldCheck; title: str
   return <div className="flex items-center gap-2"><span className="grid h-9 w-9 place-items-center rounded-[3px] border border-primary/30 bg-primary/10 text-primary"><Icon className="h-4 w-4" /></span><h3 className="racing-title text-xl text-white">{title}</h3></div>;
 }
 
+function ReportSection({
+  children,
+  defaultOpen = false,
+  icon,
+  title
+}: {
+  children: React.ReactNode;
+  defaultOpen?: boolean;
+  icon: typeof ShieldCheck;
+  title: string;
+}) {
+  return (
+    <details className="group panel-edge border-white/10 p-4 sm:p-5" open={defaultOpen || undefined}>
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3">
+        <SectionTitle icon={icon} title={title} />
+        <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-90" />
+      </summary>
+      <div className="mt-5 border-t border-white/10 pt-5">{children}</div>
+    </details>
+  );
+}
+
+function OfficialTimeline({
+  locale,
+  result,
+  t
+}: {
+  locale: Locale;
+  result: RdwVehicleCheckResult;
+  t: VehicleCheckCopy;
+}) {
+  const events = [
+    {date: result.ownershipRegistration.firstAdmission, label: t.firstAdmission},
+    {date: result.ownershipRegistration.firstRegistrationNl, label: t.firstRegistrationNl},
+    {date: result.ownershipRegistration.currentRegistrationDate, label: t.lastRegistration},
+    ...result.apkHistory.items.slice(0, 5).map((item) => ({
+      date: item.inspectionDate,
+      label: `${t.apkInspection}: ${item.defectCode}`
+    })),
+    {date: result.roadworthiness.apkExpiry, label: t.currentApkExpiry}
+  ]
+    .filter((event): event is {date: string; label: string} => Boolean(event.date))
+    .sort((a, b) => a.date.localeCompare(b.date));
+
+  return (
+    <div className="space-y-3">
+      {events.map((event, index) => (
+        <div className="grid grid-cols-[auto_1fr] gap-3" key={`${event.date}-${event.label}-${index}`}>
+          <div className="flex flex-col items-center">
+            <span className="mt-1 h-3 w-3 rounded-full border border-primary bg-primary/30" />
+            {index < events.length - 1 ? <span className="h-full min-h-7 w-px bg-white/10" /> : null}
+          </div>
+          <div className="pb-3">
+            <div className="text-sm font-black text-white">{event.label}</div>
+            <div className="mt-1 text-xs text-muted-foreground">{formatDate(event.date, locale)}</div>
+          </div>
+        </div>
+      ))}
+      <div className="rounded-[3px] border border-white/10 bg-black/25 p-3 text-sm text-muted-foreground">
+        {t.recallTimeline}: {formatRecallSummary(result, locale)}
+      </div>
+    </div>
+  );
+}
+
 function Detail({helper, label, value}: {helper?: string; label: string; value: string}) {
   return <div className="rounded-[3px] border border-white/10 bg-black/25 p-2.5"><div className="text-[0.68rem] font-bold uppercase text-muted-foreground">{label}</div><div className="mt-1 break-words text-sm font-semibold text-slate-100">{value}</div>{helper ? <p className="mt-1.5 text-[0.68rem] leading-4 text-muted-foreground">{helper}</p> : null}</div>;
 }
@@ -420,11 +517,11 @@ function formatDate(value: string | undefined, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "en" ? "en-GB" : locale === "pl" ? "pl-PL" : "nl-NL", {dateStyle: "medium", timeZone: "UTC"}).format(date);
 }
 
-function formatApkSummary(result: RdwLookupResult, locale: Locale) {
+function formatApkSummary(result: RdwVehicleCheckResult, locale: Locale) {
   return getVehicleCheckCopy(locale).apkStatus[result.roadworthiness.status];
 }
 
-function formatRecallSummary(result: RdwLookupResult, locale: Locale) {
+function formatRecallSummary(result: RdwVehicleCheckResult, locale: Locale) {
   const t = getVehicleCheckCopy(locale);
   if (result.recalls.status === "clear") return t.noOpenRecalls;
   if (result.recalls.status === "unknown") return t.recallUnknown;
@@ -447,7 +544,17 @@ function currency(value: number | null | undefined, locale: string, fallback: st
 }
 
 function unit(value: number | null | undefined, suffix: string, fallback: string) {
-  return value === null || value === undefined ? fallback : `${value} ${suffix}`;
+  return value === null || value === undefined ? fallback : `${value}${suffix ? ` ${suffix}` : ""}`;
+}
+
+function formatPower(result: RdwVehicleCheckResult, fallback: string) {
+  const {powerHp, powerKw} = result.vehicle.engine;
+
+  if (powerKw === null || powerKw === undefined) {
+    return powerHp === null || powerHp === undefined ? fallback : `${powerHp} hp`;
+  }
+
+  return `${powerKw} kW${powerHp === null || powerHp === undefined ? "" : ` / ${powerHp} hp`}`;
 }
 
 type SignalCopy = {title: string; reported: string; why: string; action: string};
@@ -470,8 +577,18 @@ type VehicleCheckCopy = {
   inspectionCta: string; disclaimer: string; inspectionDisclaimer: string;
   sourceStatus: string; sourceUnavailable: string; secondaryDetails: string; unavailable: string; yes: string; no: string;
   possibleImport: string; noImportSignal: string; noOpenRecalls: string; openRecalls: string; openRecallReported: string; recallUnknown: string;
-  apkStatus: Record<RdwLookupResult["roadworthiness"]["status"], string>;
-  status: Record<RdwLookupResult["sourceStatus"][number]["status"], string>;
+  positiveDetails: string; generalInformation: string; makeModel: string; vehicleType: string;
+  bodyType: string; typeVariantExecution: string; europeanCategory: string;
+  engineEnvironment: string; fuel: string; cylinders: string; displacement: string; topSpeed: string;
+  dimensionsWeights: string; length: string; width: string; height: string; wheelbase: string;
+  emptyWeight: string; maximumPermittedMass: string; technicalMaximumMass: string;
+  maximumCombinationMass: string; bodyWheelsAxles: string; bodyEuropeanDescription: string;
+  wheelCount: string; axleCount: string; chassisNumberLocation: string; typeApproval: string;
+  typeApprovalRevision: string; axle: string; drivenAxle: string; brakedAxle: string;
+  trackWidth: string; maximumAxleLoad: string; registrationFinancial: string;
+  officialTimeline: string; apkInspection: string; currentApkExpiry: string; recallTimeline: string;
+  apkStatus: Record<RdwVehicleCheckResult["roadworthiness"]["status"], string>;
+  status: Record<RdwVehicleCheckResult["sourceStatus"][number]["status"], string>;
   signals: Record<PurchaseSignalCode, SignalCopy>;
 };
 
@@ -488,17 +605,55 @@ type VehicleCheckSupplement = Pick<
   | "noImportSignal"
   | "openRecallReported"
   | "recallUnknown"
+  | "lastRegistration"
+  | "sourceUnavailable"
+  | "positiveDetails"
+  | "generalInformation"
+  | "makeModel"
+  | "vehicleType"
+  | "bodyType"
+  | "typeVariantExecution"
+  | "europeanCategory"
+  | "engineEnvironment"
+  | "fuel"
+  | "cylinders"
+  | "displacement"
+  | "topSpeed"
+  | "dimensionsWeights"
+  | "length"
+  | "width"
+  | "height"
+  | "wheelbase"
+  | "emptyWeight"
+  | "maximumPermittedMass"
+  | "technicalMaximumMass"
+  | "maximumCombinationMass"
+  | "bodyWheelsAxles"
+  | "bodyEuropeanDescription"
+  | "wheelCount"
+  | "axleCount"
+  | "chassisNumberLocation"
+  | "typeApproval"
+  | "typeApprovalRevision"
+  | "axle"
+  | "drivenAxle"
+  | "brakedAxle"
+  | "trackWidth"
+  | "maximumAxleLoad"
+  | "registrationFinancial"
+  | "officialTimeline"
+  | "apkInspection"
+  | "currentApkExpiry"
+  | "recallTimeline"
 > & {likelyImportSignal: SignalCopy};
 
 type VehicleCheckBaseCopy = Omit<
   VehicleCheckCopy,
-  | "compactText"
-  | "catalogPriceHelp"
-  | "grossBpmHelp"
-  | "openRecallDetailsUnavailable"
-  | "secondaryDetails"
-  | "openRecallReported"
-  | "recallUnknown"
+  Exclude<
+    keyof VehicleCheckSupplement,
+    "catalogPrice" | "grossBpm" | "possibleImport" | "noImportSignal" |
+    "lastRegistration" | "sourceUnavailable"
+  >
 >;
 
 const vehicleCheckCopy: Record<Locale, VehicleCheckBaseCopy> = {
@@ -586,6 +741,46 @@ const vehicleCheckSupplement: Record<Locale, VehicleCheckSupplement> = {
     noImportSignal: "Geen importsignaal bij een datumverschil tot en met 30 dagen",
     openRecallReported: "Open terugroepactie gemeld",
     recallUnknown: "Terugroepstatus niet volledig beschikbaar",
+    lastRegistration: "Huidige registratiedatum",
+    sourceUnavailable: "Deze aanvullende RDW-bron was tijdelijk niet beschikbaar. De overige officiële voertuiggegevens blijven bruikbaar.",
+    positiveDetails: "Positieve officiële signalen",
+    generalInformation: "A. Algemene informatie",
+    makeModel: "Merk en model",
+    vehicleType: "Voertuigsoort",
+    bodyType: "Carrosserie",
+    typeVariantExecution: "Type / variant / uitvoering",
+    europeanCategory: "Europese voertuigcategorie",
+    engineEnvironment: "B. Motor en milieu",
+    fuel: "Brandstof",
+    cylinders: "Cilinders",
+    displacement: "Cilinderinhoud",
+    topSpeed: "Constructiesnelheid",
+    dimensionsWeights: "C. Afmetingen en gewichten",
+    length: "Lengte",
+    width: "Breedte",
+    height: "Hoogte",
+    wheelbase: "Wielbasis",
+    emptyWeight: "Massa ledig voertuig",
+    maximumPermittedMass: "Toegestane maximummassa",
+    technicalMaximumMass: "Technische maximummassa",
+    maximumCombinationMass: "Maximummassa samenstelling",
+    bodyWheelsAxles: "D. Carrosserie, wielen en assen",
+    bodyEuropeanDescription: "Europese carrosserieomschrijving",
+    wheelCount: "Aantal wielen",
+    axleCount: "Aantal assen",
+    chassisNumberLocation: "Plaats chassisnummer",
+    typeApproval: "Typegoedkeuringsnummer",
+    typeApprovalRevision: "Wijzigingsvolgnummer typegoedkeuring",
+    axle: "As",
+    drivenAxle: "Aangedreven as",
+    brakedAxle: "Geremde as",
+    trackWidth: "Spoorbreedte",
+    maximumAxleLoad: "Maximale aslast",
+    registrationFinancial: "E. Registratie en financiële gegevens",
+    officialTimeline: "F. Officiële tijdlijn",
+    apkInspection: "APK-gebeurtenis",
+    currentApkExpiry: "Huidige APK-vervaldatum",
+    recallTimeline: "Actuele terugroepstatus",
     likelyImportSignal: {
       title: "Mogelijk importvoertuig",
       reported: "Tussen eerste toelating en eerste registratie in Nederland zit meer dan 30 dagen.",
@@ -605,6 +800,46 @@ const vehicleCheckSupplement: Record<Locale, VehicleCheckSupplement> = {
     noImportSignal: "No import signal for a date difference of 30 days or less",
     openRecallReported: "Open recall reported",
     recallUnknown: "Recall status not fully available",
+    lastRegistration: "Current registration date",
+    sourceUnavailable: "This additional RDW source was temporarily unavailable. The other official vehicle data remains usable.",
+    positiveDetails: "Positive official signals",
+    generalInformation: "A. General information",
+    makeModel: "Make and model",
+    vehicleType: "Vehicle type",
+    bodyType: "Body",
+    typeVariantExecution: "Type / variant / execution",
+    europeanCategory: "European vehicle category",
+    engineEnvironment: "B. Engine and environment",
+    fuel: "Fuel",
+    cylinders: "Cylinders",
+    displacement: "Displacement",
+    topSpeed: "Construction speed",
+    dimensionsWeights: "C. Dimensions and weights",
+    length: "Length",
+    width: "Width",
+    height: "Height",
+    wheelbase: "Wheelbase",
+    emptyWeight: "Unladen mass",
+    maximumPermittedMass: "Maximum permitted mass",
+    technicalMaximumMass: "Technical maximum mass",
+    maximumCombinationMass: "Maximum combination mass",
+    bodyWheelsAxles: "D. Body, wheels and axles",
+    bodyEuropeanDescription: "European body description",
+    wheelCount: "Number of wheels",
+    axleCount: "Number of axles",
+    chassisNumberLocation: "Chassis-number location",
+    typeApproval: "Type-approval number",
+    typeApprovalRevision: "Type-approval revision",
+    axle: "Axle",
+    drivenAxle: "Driven axle",
+    brakedAxle: "Braked axle",
+    trackWidth: "Track width",
+    maximumAxleLoad: "Maximum axle load",
+    registrationFinancial: "E. Registration and financial data",
+    officialTimeline: "F. Official timeline",
+    apkInspection: "APK event",
+    currentApkExpiry: "Current APK expiry",
+    recallTimeline: "Current recall status",
     likelyImportSignal: {
       title: "Possible imported vehicle",
       reported: "The first admission and first registration in the Netherlands differ by more than 30 days.",
@@ -624,6 +859,46 @@ const vehicleCheckSupplement: Record<Locale, VehicleCheckSupplement> = {
     noImportSignal: "Brak sygnału importu przy różnicy dat do 30 dni włącznie",
     openRecallReported: "Zgłoszona otwarta akcja serwisowa",
     recallUnknown: "Status akcji serwisowych nie jest w pełni dostępny",
+    lastRegistration: "Data aktualnej rejestracji",
+    sourceUnavailable: "To dodatkowe źródło RDW było chwilowo niedostępne. Pozostałe oficjalne dane pojazdu nadal są dostępne.",
+    positiveDetails: "Pozytywne sygnały oficjalne",
+    generalInformation: "A. Informacje ogólne",
+    makeModel: "Marka i model",
+    vehicleType: "Rodzaj pojazdu",
+    bodyType: "Nadwozie",
+    typeVariantExecution: "Typ / wariant / wersja",
+    europeanCategory: "Europejska kategoria pojazdu",
+    engineEnvironment: "B. Silnik i środowisko",
+    fuel: "Paliwo",
+    cylinders: "Cylindry",
+    displacement: "Pojemność skokowa",
+    topSpeed: "Prędkość konstrukcyjna",
+    dimensionsWeights: "C. Wymiary i masy",
+    length: "Długość",
+    width: "Szerokość",
+    height: "Wysokość",
+    wheelbase: "Rozstaw osi",
+    emptyWeight: "Masa własna",
+    maximumPermittedMass: "Dopuszczalna masa całkowita",
+    technicalMaximumMass: "Techniczna masa maksymalna",
+    maximumCombinationMass: "Maksymalna masa zespołu",
+    bodyWheelsAxles: "D. Nadwozie, koła i osie",
+    bodyEuropeanDescription: "Europejski opis nadwozia",
+    wheelCount: "Liczba kół",
+    axleCount: "Liczba osi",
+    chassisNumberLocation: "Położenie numeru nadwozia",
+    typeApproval: "Numer homologacji typu",
+    typeApprovalRevision: "Numer zmiany homologacji",
+    axle: "Oś",
+    drivenAxle: "Oś napędzana",
+    brakedAxle: "Oś hamowana",
+    trackWidth: "Rozstaw kół",
+    maximumAxleLoad: "Maksymalny nacisk osi",
+    registrationFinancial: "E. Dane rejestracyjne i finansowe",
+    officialTimeline: "F. Oficjalna oś czasu",
+    apkInspection: "Zdarzenie APK",
+    currentApkExpiry: "Aktualna data ważności APK",
+    recallTimeline: "Aktualny status akcji serwisowych",
     likelyImportSignal: {
       title: "Możliwy pojazd importowany",
       reported: "Między pierwszym dopuszczeniem a pierwszą rejestracją w Holandii jest ponad 30 dni różnicy.",

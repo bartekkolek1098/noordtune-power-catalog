@@ -310,10 +310,16 @@ export function getPublicStagePricingTier(
   stage: PublicPricingStage
 ) {
   const publicVehicleId = resolvePublicPricingVehicleId(vehicle.id);
-
-  return publicVehicleId
+  const assignedTier = publicVehicleId
     ? publicVehiclePricingAssignments[publicVehicleId]?.[stage.name]
     : undefined;
+
+  if (assignedTier) {
+    return assignedTier;
+  }
+
+  const legacyPrice = stage.sourcePrice ?? stage.price;
+  return pricingV2LegacyMigration[stage.name]?.[legacyPrice];
 }
 
 export function getPublicStagePrice(

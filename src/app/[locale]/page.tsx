@@ -29,7 +29,7 @@ import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {ManualSelector} from "@/components/manual-selector";
-import {PlateLookup} from "@/components/plate-lookup";
+import {TuningPlateLookup} from "@/components/tuning-plate-lookup";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
@@ -86,10 +86,23 @@ export default async function HomePage({params}: PageProps) {
     locale: safeLocale,
     namespace: "ManualSelector"
   });
-  const vehicleCheck = await getTranslations({
-    locale: safeLocale,
-    namespace: "VehicleCheck"
-  });
+  const vehicleCheckPrompt = {
+    nl: {
+      title: "Kentekencheck vóór aankoop",
+      text: "Wil je deze auto vóór aankoop controleren? Open de kentekencheck.",
+      link: "Open kentekencheck"
+    },
+    en: {
+      title: "Vehicle Check before purchase",
+      text: "Checking a car before purchase? Open the Vehicle Check.",
+      link: "Open Vehicle Check"
+    },
+    pl: {
+      title: "Kontrola auta przed zakupem",
+      text: "Sprawdzasz auto przed zakupem? Otwórz kontrolę pojazdu.",
+      link: "Otwórz kontrolę pojazdu"
+    }
+  }[safeLocale];
   const copy = homeVisualCopy[safeLocale];
   const localeCode = safeLocale === "en" ? "en-US" : safeLocale === "pl" ? "pl-PL" : "nl-NL";
   const services = localizedServiceOptions(safeLocale);
@@ -184,8 +197,7 @@ export default async function HomePage({params}: PageProps) {
           </div>
 
           <div className="panel-edge mt-9 grid gap-4 bg-black/78 p-4 shadow-[0_0_80px_rgba(0,0,0,.42)] backdrop-blur">
-            <PlateLookup
-              context="catalog"
+            <TuningPlateLookup
               locale={safeLocale}
               text={{
                 label: lookup("label"),
@@ -244,15 +256,15 @@ export default async function HomePage({params}: PageProps) {
             <div className="flex flex-col gap-3 rounded-[3px] border border-white/10 bg-black/35 p-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <div className="text-sm font-black uppercase text-white">
-                  {vehicleCheck("title")}
+                  {vehicleCheckPrompt.title}
                 </div>
                 <p className="mt-1 text-xs leading-5 text-muted-foreground">
-                  {vehicleCheck("metaDescription")}
+                  {vehicleCheckPrompt.text}
                 </p>
               </div>
               <Button asChild className="shrink-0 rounded-[3px]" variant="outline">
                 <a href={vehicleCheckPath(safeLocale)}>
-                  {vehicleCheck("learnMore")}
+                  {vehicleCheckPrompt.link}
                   <ChevronRight className="h-4 w-4" />
                 </a>
               </Button>

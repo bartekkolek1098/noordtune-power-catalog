@@ -15,6 +15,7 @@ import {
   type RdwLookupCore
 } from "@/lib/rdw-cache-core";
 import type {
+  RdwAxleItem,
   RdwApkDefectItem,
   RdwFuelEnvironment,
   RdwLookupResult,
@@ -33,10 +34,14 @@ const APK_HISTORY_PUBLIC_LIMIT = 12;
 const RECALL_STATUS_LIMIT = 20;
 const RECALL_DETAILS_LIMIT = 20;
 const DEFECT_REFERENCE_LIMIT = 100;
+const AXLE_PUBLIC_LIMIT = 10;
+const BODY_PUBLIC_LIMIT = 5;
 
 export const rdwDatasets = {
   vehicle: {id: "m9d7-ebf2", label: "Open Data RDW: Gekentekende_voertuigen"},
   fuel: {id: "8ys7-d773", label: "Open Data RDW: Gekentekende_voertuigen_brandstof"},
+  axles: {id: "3huj-srit", label: "Open Data RDW: Gekentekende_voertuigen_assen"},
+  body: {id: "vezc-m2t6", label: "Open Data RDW: Gekentekende_voertuigen_carrosserie"},
   "recall-status": {id: "t49b-isb7", label: "Open Data RDW: Terugroep_actie_status"},
   "recall-details": {id: "j9yg-7rg9", label: "Open Data RDW: Terugroep_actie"},
   "apk-defects": {id: "a34c-vvps", label: "Open Data RDW: Geconstateerde Gebreken"},
@@ -86,6 +91,15 @@ type RdwVehicleRow = {
   type?: string;
   variant?: string;
   uitvoering?: string;
+  europese_voertuigcategorie?: string;
+  typegoedkeuringsnummer?: string;
+  volgnummer_wijziging_eu_typegoedkeuring?: string;
+  aantal_wielen?: string;
+  wielbasis?: string;
+  plaats_chassisnummer?: string;
+  technische_max_massa_voertuig?: string;
+  maximum_massa_samenstelling?: string;
+  hoogte_voertuig?: string;
 };
 
 type RdwFuelRow = {
@@ -134,6 +148,26 @@ type RdwDefectReferenceRow = {
   ingangsdatum_gebrek_dt?: string;
 };
 
+type RdwAxleRow = {
+  kenteken?: string;
+  as_nummer?: string;
+  aantal_assen?: string;
+  aangedreven_as?: string;
+  hefas?: string;
+  plaatscode_as?: string;
+  spoorbreedte?: string;
+  wettelijk_toegestane_maximum_aslast?: string;
+  technisch_toegestane_maximum_aslast?: string;
+  geremde_as_indicator?: string;
+};
+
+type RdwBodyRow = {
+  kenteken?: string;
+  carrosserie_volgnummer?: string;
+  carrosserietype?: string;
+  type_carrosserie_europese_omschrijving?: string;
+};
+
 type InternalRdwSourceStatus = RdwSourceStatus & {durationMs: number};
 type SourceResult<T> = {rows: T[]; status: InternalRdwSourceStatus};
 type CacheEntry = {expiresAt: number; result: RdwLookupCore};
@@ -159,7 +193,10 @@ const vehicleFields = [
   "maximum_massa_trekken_ongeremd", "maximum_trekken_massa_geremd",
   "laadvermogen", "eerste_kleur", "tweede_kleur", "aantal_zitplaatsen",
   "aantal_deuren", "maximale_constructiesnelheid", "lengte", "breedte", "type",
-  "variant", "uitvoering"
+  "variant", "uitvoering", "europese_voertuigcategorie", "typegoedkeuringsnummer",
+  "volgnummer_wijziging_eu_typegoedkeuring", "aantal_wielen", "wielbasis",
+  "plaats_chassisnummer", "technische_max_massa_voertuig",
+  "maximum_massa_samenstelling", "hoogte_voertuig"
 ] as const;
 
 const fuelFields = [
@@ -240,6 +277,18 @@ async function fetchAndBuildResult(plate: string) {
     fetchSource<RdwFuelRow>("fuel", {
       filters: {kenteken: plate}, limit: 5, order: "brandstof_volgnummer ASC", select: fuelFields
     }),
+    fetchSource<RdwAxleRow>("axles", {
+      filters: {kenteken: plate}, limit: AXLE_PUBLIC_LIMIT, order: "as_nummer ASC",
+      select: ["kenteken", "as_nummer", "aantal_assen", "aangedreven_as", "hefas",
+        "plaatscode_as", "spoorbreedte", "wettelijk_toegestane_maximum_aslast",
+        "technisch_toegestane_maximum_aslast", "geremde_as_indicator"]
+    }),
+    fetchSource<RdwBodyRow>("body", {
+      filters: {kenteken: plate}, limit: BODY_PUBLIC_LIMIT,
+      order: "carrosserie_volgnummer ASC",
+      select: ["kenteken", "carrosserie_volgnummer", "carrosserietype",
+        "type_carrosserie_europese_omschrijving"]
+    }),
     fetchSource<RdwRecallStatusRow>("recall-status", {
       filters: {kenteken: plate}, limit: RECALL_STATUS_LIMIT,
       select: ["kenteken", "referentiecode_rdw", "code_status", "status"]
@@ -264,8 +313,10 @@ async function fetchAndBuildResult(plate: string) {
   }
 
   const fuelResult = settledSource(baseResults[1], "fuel");
-  const recallStatusResult = settledSource(baseResults[2], "recall-status");
-  const apkDefectResult = settledSource(baseResults[3], "apk-defects");
+  const axleResult = settledSource(baseResults[2], "axles");
+  const bodyResult = settledSource(baseResults[3], "body");
+  const recallStatusResult = settledSource(baseResults[4], "recall-status");
+  const apkDefectResult = settledSource(baseResults[5], "apk-defects");
   const fuels = fuelResult.rows;
   const openRecallRows = recallStatusResult.rows.filter(isOpenRecall);
   const recallCodes = uniqueStrings(openRecallRows.map((row) => cleanText(row.referentiecode_rdw)))
@@ -293,6 +344,8 @@ async function fetchAndBuildResult(plate: string) {
   const sourceStatus = [
     vehicleResult.status,
     fuelResult.status,
+    axleResult.status,
+    bodyResult.status,
     recallStatusResult.status,
     adjustDetailStatus(recallDetailResult, recallCodes),
     apkDefectResult.status,
@@ -366,6 +419,12 @@ async function fetchAndBuildResult(plate: string) {
       execution: cleanText(vehicle.uitvoering),
       vehicleType: titleCase(vehicle.voertuigsoort),
       body: titleCase(vehicle.inrichting),
+      europeanVehicleCategory: cleanText(vehicle.europese_voertuigcategorie),
+      typeApprovalNumber: cleanText(vehicle.typegoedkeuringsnummer),
+      typeApprovalRevision: toNumber(vehicle.volgnummer_wijziging_eu_typegoedkeuring),
+      wheelCount: toNumber(vehicle.aantal_wielen),
+      wheelbaseCm: toNumber(vehicle.wielbasis),
+      chassisNumberLocation: displayText(vehicle.plaats_chassisnummer),
       color: titleCase(vehicle.eerste_kleur),
       secondColor: titleCase(vehicle.tweede_kleur),
       doors: toNumber(vehicle.aantal_deuren),
@@ -380,6 +439,7 @@ async function fetchAndBuildResult(plate: string) {
       },
       dimensions: {
         lengthCm: toNumber(vehicle.lengte), widthCm: toNumber(vehicle.breedte),
+        heightCm: toNumber(vehicle.hoogte_voertuig),
         weightKg: toNumber(vehicle.massa_ledig_voertuig), runningWeightKg: toNumber(vehicle.massa_rijklaar)
       },
       performance: {topSpeedKmh: toNumber(vehicle.maximale_constructiesnelheid)},
@@ -402,7 +462,21 @@ async function fetchAndBuildResult(plate: string) {
       unbrakedKg: toNumber(vehicle.maximum_massa_trekken_ongeremd),
       brakedKg: toNumber(vehicle.maximum_trekken_massa_geremd),
       payloadKg: toNumber(vehicle.laadvermogen),
-      runningWeightKg: toNumber(vehicle.massa_rijklaar)
+      runningWeightKg: toNumber(vehicle.massa_rijklaar),
+      maximumPermittedMassKg: toNumber(vehicle.toegestane_maximum_massa_voertuig),
+      technicalMaximumMassKg: toNumber(vehicle.technische_max_massa_voertuig),
+      maximumCombinationMassKg: toNumber(vehicle.maximum_massa_samenstelling)
+    },
+    bodyDetails: {
+      type: titleCase(bodyResult.rows[0]?.carrosserietype) ?? titleCase(vehicle.inrichting),
+      europeanDescription: displayText(
+        bodyResult.rows[0]?.type_carrosserie_europese_omschrijving
+      )
+    },
+    axles: {
+      items: axleResult.rows.slice(0, AXLE_PUBLIC_LIMIT).map(toAxleItem),
+      returnedRows: Math.min(axleResult.rows.length, AXLE_PUBLIC_LIMIT),
+      maximumRows: AXLE_PUBLIC_LIMIT
     },
     environment: {fuels: fuels.map(toFuelEnvironment)},
     sourceStatus: sourceStatus.map(stripInternalSourceTiming),
@@ -416,7 +490,8 @@ async function fetchAndBuildResult(plate: string) {
     make: result.vehicle.make,
     model: result.vehicle.model,
     fuel: result.vehicle.fuel,
-    powerHp: result.vehicle.engine.powerHp
+    powerHp: result.vehicle.engine.powerHp,
+    displacementCc: result.vehicle.engine.displacementCc
   });
 
   return result;
@@ -523,6 +598,20 @@ function buildRecallItems(rows: RdwRecallStatusRow[], detailRows: RdwRecallDetai
       informationUrl: safeHttpUrl(detail?.meer_informatie_op_internet)
     }];
   });
+}
+
+function toAxleItem(row: RdwAxleRow): RdwAxleItem {
+  return {
+    axleNumber: toNumber(row.as_nummer),
+    axleCount: toNumber(row.aantal_assen),
+    driven: toOfficialBoolean(row.aangedreven_as),
+    lifted: toOfficialBoolean(row.hefas),
+    braked: toOfficialBoolean(row.geremde_as_indicator),
+    positionCode: cleanText(row.plaatscode_as),
+    trackWidthMm: toNumber(row.spoorbreedte),
+    legalMaximumLoadKg: toNumber(row.wettelijk_toegestane_maximum_aslast),
+    technicalMaximumLoadKg: toNumber(row.technisch_toegestane_maximum_aslast)
+  };
 }
 
 function buildApkHistory(rows: RdwApkDefectRow[], referenceRows: RdwDefectReferenceRow[]): RdwApkDefectItem[] {

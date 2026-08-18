@@ -172,11 +172,11 @@
     }
   },
   "VehicleCheck": {
-    "metaTitle": "Bezpłatne sprawdzenie auta z poradą tuningową | NoordTune Assen",
-    "metaDescription": "Sprawdź APK, ocenę licznika, akcje serwisowe, dane pojazdu i możliwości tuningu na podstawie oficjalnych danych RDW.",
+    "metaTitle": "Bezpłatne sprawdzenie auta przed zakupem | NoordTune Assen",
+    "metaDescription": "Sprawdź APK, ocenę licznika, akcje serwisowe i oficjalne dane pojazdu w RDW Open Data.",
     "eyebrow": "Oficjalne dane RDW + doradztwo NoordTune",
     "title": "Sprawdź auto przed zakupem",
-    "intro": "Przed podjęciem decyzji sprawdź ważne oficjalne dane pojazdu. Zobacz sygnały RDW, ostatnie usterki APK, akcje serwisowe, a następnie potencjał tuningu auta.",
+    "intro": "Przed podjęciem decyzji sprawdź ważne oficjalne dane pojazdu. Zobacz sygnały RDW, ostatnie usterki APK, akcje serwisowe i praktyczne punkty kontroli przed zakupem.",
     "privacy": "Numer rejestracyjny jest używany wyłącznie do bieżącego zapytania RDW i nie trafia do profilu klienta ani publicznej strony wyniku.",
     "learnMore": "Więcej o sprawdzeniu auta",
     "shownTitle": "Co pokazuje to sprawdzenie auta?",

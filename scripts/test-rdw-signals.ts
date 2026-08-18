@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import {findCatalogMatch, vehicleDatabase} from "../src/data/catalog.ts";
+import {getPublicStagePrice} from "../src/data/pricing.ts";
 import {
   attachPlateToRdwCore,
   toPlateFreeRdwCore
@@ -135,7 +137,39 @@ const serializedCacheValue = JSON.stringify(cacheCore);
 assert.equal(serializedCacheValue.includes(normalizedPlate), false);
 assert.equal(attachPlateToRdwCore(cacheCore, normalizedPlate, true).vehicle.plate, normalizedPlate);
 
-console.log("RDW purchase signal fixtures passed: valid, expiring, expired, odometer, four recall states, conservative import threshold, WAM, transfer, partial-source and plate-free cache states.");
+const transitConnect = findCatalogMatch({
+  make: "Ford",
+  model: "Transit Connect",
+  fuel: "Diesel",
+  powerHp: 100,
+  displacementCc: 1499
+});
+assert.equal(
+  transitConnect,
+  null,
+  "V380ST fixture must not match a generic Ford Transit 1.6 TDCi"
+);
+
+const deterministicBmw = findCatalogMatch({
+  make: "BMW",
+  model: "320D",
+  fuel: "Diesel",
+  powerHp: 190,
+  displacementCc: 1995
+});
+assert.equal(deterministicBmw?.variant.id, "bmw-320d-b47");
+assert.equal(deterministicBmw?.confidence, 100);
+
+const legacyStageVehicle = vehicleDatabase.find((vehicle) =>
+  vehicle.stages.some((stage) => (stage.sourcePrice ?? stage.price) === 269)
+);
+const legacyStage = legacyStageVehicle?.stages.find(
+  (stage) => (stage.sourcePrice ?? stage.price) === 269
+);
+assert(legacyStageVehicle && legacyStage, "Expected a canonical legacy Stage 1 fixture");
+assert.equal(getPublicStagePrice(legacyStageVehicle, legacyStage), 299);
+
+console.log("RDW fixtures passed: purchase signals, privacy cache, V380ST manual review, deterministic BMW matching and Pricing V2 fallback.");
 
 function codes(signals: ReturnType<typeof buildPurchaseSignals>) {
   return signals.map((signal) => signal.code);

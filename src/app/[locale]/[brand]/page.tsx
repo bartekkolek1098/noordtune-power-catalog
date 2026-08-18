@@ -1,7 +1,6 @@
 import {notFound} from "next/navigation";
 import {getTranslations} from "next-intl/server";
 import {
-  ArrowRight,
   CheckCircle2,
   ClipboardCheck,
   Gauge,
@@ -12,7 +11,7 @@ import {
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
-import {PlateLookup} from "@/components/plate-lookup";
+import {VehicleCheckLookup} from "@/components/vehicle-check-lookup";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
@@ -170,13 +169,17 @@ export default async function VehicleCheckPage({params}: PageProps) {
           </div>
 
           <div className="mt-8">
-            <PlateLookup
-              context="vehicle-check"
+            <VehicleCheckLookup
               locale={safeLocale}
               text={{
-                label: lookup("label"), placeholder: lookup("placeholder"), submit: lookup("submit"), loading: lookup("loading"), notFound: lookup("notFound"), invalid: lookup("invalid"), disclaimer: lookup("disclaimer"), source: lookup("source"), detected: lookup("detected"), catalogMatch: lookup("catalogMatch"), estimate: lookup("estimate"), fromPrice: lookup("fromPrice"), stage: lookup("stage"), stock: lookup("stock"), power: lookup("power"), torque: lookup("torque"), options: lookup("options"), viewDetails: lookup("viewDetails"), quoteForCar: lookup("quoteForCar"),
-                verification: {success: lookup("verification.success"), badge: lookup("verification.badge"), title: lookup("verification.title"), text: lookup("verification.text"), footer: lookup("verification.footer")},
-                recommendation: {eyebrow: lookup("recommendation.eyebrow"), bestDaily: lookup("recommendation.bestDaily"), dailyDescription: lookup("recommendation.dailyDescription"), stage1Benefit: lookup("recommendation.stage1Benefit"), diagnosticBenefit: lookup("recommendation.diagnosticBenefit"), gearboxBenefit: lookup("recommendation.gearboxBenefit"), selectStage1: lookup("recommendation.selectStage1"), stage1Selected: lookup("recommendation.stage1Selected"), recommendedAddOn: lookup("recommendation.recommendedAddOn"), addGearbox: lookup("recommendation.addGearbox"), removeGearbox: lookup("recommendation.removeGearbox"), manualBadge: lookup("recommendation.manualBadge"), manualTitle: lookup("recommendation.manualTitle"), manualDescription: lookup("recommendation.manualDescription"), manualDetected: lookup("recommendation.manualDetected"), manualEcu: lookup("recommendation.manualEcu"), manualStage: lookup("recommendation.manualStage"), manualQuote: lookup("recommendation.manualQuote"), nextStep: lookup("recommendation.nextStep"), nextStepDescription: lookup("recommendation.nextStepDescription"), manualCta: lookup("recommendation.manualCta"), indicativeEstimate: lookup("recommendation.indicativeEstimate")}
+                label: lookup("label"),
+                placeholder: lookup("placeholder"),
+                submit: lookup("submit"),
+                loading: lookup("loading"),
+                notFound: lookup("notFound"),
+                invalid: lookup("invalid"),
+                source: lookup("source"),
+                detected: lookup("detected")
               }}
             />
           </div>
@@ -232,8 +235,8 @@ export default async function VehicleCheckPage({params}: PageProps) {
         </div>
       </section>
 
-      <section className="container grid gap-8 py-12 lg:grid-cols-[1fr_.85fr]">
-        <div>
+      <section className="container py-12">
+        <div className="max-w-4xl">
           <h2 className="racing-title text-3xl text-white sm:text-4xl">{t("faqTitle")}</h2>
           <div className="mt-6 space-y-2">
             {faq.map((item) => (
@@ -244,14 +247,6 @@ export default async function VehicleCheckPage({params}: PageProps) {
             ))}
           </div>
         </div>
-        <aside className="panel-edge self-start border-white/10 p-6">
-          <ShieldCheck className="h-8 w-8 text-primary" />
-          <h2 className="racing-title mt-4 text-3xl text-white">{t("tuningTitle")}</h2>
-          <p className="mt-3 text-sm leading-6 text-muted-foreground">{t("tuningText")}</p>
-          <Button asChild className="mt-6 rounded-[3px]" variant="outline">
-            <a href={sitePath(`/${safeLocale}`)}>{t("tuningLink")}<ArrowRight className="h-4 w-4" /></a>
-          </Button>
-        </aside>
       </section>
 
       <CatalogFooter locale={safeLocale} />

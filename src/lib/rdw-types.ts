@@ -9,6 +9,8 @@ export type RdwSourceAvailability =
 export type RdwSourceKey =
   | "vehicle"
   | "fuel"
+  | "axles"
+  | "body"
   | "recall-status"
   | "recall-details"
   | "apk-defects"
@@ -84,6 +86,18 @@ export type RdwFuelEnvironment = {
   hybridClass?: string;
 };
 
+export type RdwAxleItem = {
+  axleNumber?: number | null;
+  axleCount?: number | null;
+  driven: boolean | null;
+  lifted: boolean | null;
+  braked: boolean | null;
+  positionCode?: string;
+  trackWidthMm?: number | null;
+  legalMaximumLoadKg?: number | null;
+  technicalMaximumLoadKg?: number | null;
+};
+
 export type RdwLookupResult = {
   source: "RDW Open Data";
   cached: boolean;
@@ -98,6 +112,12 @@ export type RdwLookupResult = {
     execution?: string;
     vehicleType?: string;
     body?: string;
+    europeanVehicleCategory?: string;
+    typeApprovalNumber?: string;
+    typeApprovalRevision?: number | null;
+    wheelCount?: number | null;
+    wheelbaseCm?: number | null;
+    chassisNumberLocation?: string;
     color?: string;
     secondColor?: string;
     doors?: number | null;
@@ -113,6 +133,7 @@ export type RdwLookupResult = {
     dimensions: {
       lengthCm?: number | null;
       widthCm?: number | null;
+      heightCm?: number | null;
       weightKg?: number | null;
       runningWeightKg?: number | null;
     };
@@ -177,6 +198,18 @@ export type RdwLookupResult = {
     brakedKg?: number | null;
     payloadKg?: number | null;
     runningWeightKg?: number | null;
+    maximumPermittedMassKg?: number | null;
+    technicalMaximumMassKg?: number | null;
+    maximumCombinationMassKg?: number | null;
+  };
+  bodyDetails: {
+    type?: string;
+    europeanDescription?: string;
+  };
+  axles: {
+    items: RdwAxleItem[];
+    returnedRows: number;
+    maximumRows: number;
   };
   environment: {
     fuels: RdwFuelEnvironment[];
@@ -187,3 +220,29 @@ export type RdwLookupResult = {
     variant: EngineVariant;
   } | null;
 };
+
+export type RdwTuningLookupResult = Pick<
+  RdwLookupResult,
+  "source" | "cached" | "fetchedAt"
+> & {
+  vehicle: Pick<
+    RdwLookupResult["vehicle"],
+    | "plate"
+    | "make"
+    | "model"
+    | "version"
+    | "type"
+    | "variant"
+    | "execution"
+    | "vehicleType"
+    | "body"
+    | "fuel"
+    | "fuels"
+    | "engine"
+  >;
+  tuningMatch: (NonNullable<RdwLookupResult["tuningMatch"]> & {
+    publicVehicleId?: string;
+  }) | null;
+};
+
+export type RdwVehicleCheckResult = Omit<RdwLookupResult, "tuningMatch">;

@@ -1135,8 +1135,16 @@ const vehicleDetailSource = readFileSync(
   resolve(process.cwd(), "src/components/vehicle-detail.tsx"),
   "utf8"
 );
-const plateLookupSource = readFileSync(
-  resolve(process.cwd(), "src/components/plate-lookup.tsx"),
+const tuningLookupSource = readFileSync(
+  resolve(process.cwd(), "src/components/tuning-plate-lookup.tsx"),
+  "utf8"
+);
+const vehicleCheckLookupSource = readFileSync(
+  resolve(process.cwd(), "src/components/vehicle-check-lookup.tsx"),
+  "utf8"
+);
+const purchaseReportSource = readFileSync(
+  resolve(process.cwd(), "src/components/rdw-purchase-check.tsx"),
   "utf8"
 );
 const rdwServerSource = readFileSync(
@@ -1149,6 +1157,14 @@ const rdwResultTypeSource = readFileSync(
 );
 const rdwRouteSource = readFileSync(
   resolve(process.cwd(), "src/app/api/rdw-lookup/route.ts"),
+  "utf8"
+);
+const rdwVehicleCheckRouteSource = readFileSync(
+  resolve(process.cwd(), "src/app/api/rdw-vehicle-check/route.ts"),
+  "utf8"
+);
+const rdwPublicSource = readFileSync(
+  resolve(process.cwd(), "src/lib/rdw-public.ts"),
   "utf8"
 );
 const rdwCacheCoreSource = readFileSync(
@@ -1171,10 +1187,12 @@ const sitemapSource = readFileSync(
   resolve(process.cwd(), "src/app/sitemap.ts"),
   "utf8"
 );
-const rdwClientSources = [plateLookupSource, vehicleCheckRouteSource, readFileSync(
-  resolve(process.cwd(), "src/components/rdw-purchase-check.tsx"),
-  "utf8"
-)];
+const rdwClientSources = [
+  tuningLookupSource,
+  vehicleCheckLookupSource,
+  vehicleCheckRouteSource,
+  purchaseReportSource
+];
 
 addIssue(
   "critical",
@@ -1195,7 +1213,10 @@ addIssue(
   "The public RDW DTO and API route must not expose raw upstream records.",
   [
     /\braw\??\s*:/.test(rdwResultTypeSource) ? "rdw-types.ts exposes a raw field" : null,
-    /\bincludeRaw\b|\braw\s*:/.test(rdwRouteSource) ? "RDW API route exposes raw output" : null
+    /\bincludeRaw\b|\braw\s*:/.test(rdwRouteSource) ? "Tuning API route exposes raw output" : null,
+    /\bincludeRaw\b|\braw\s*:/.test(rdwVehicleCheckRouteSource)
+      ? "Vehicle Check API route exposes raw output"
+      : null
   ].filter((item): item is string => Boolean(item))
 );
 addIssue(
@@ -1228,11 +1249,19 @@ addIssue(
   "RDW_PLATE_GET_ENDPOINT_ENABLED",
   "The customer RDW endpoint must accept a plate only through a POST JSON body.",
   [
-    /export\s+async\s+function\s+GET\s*\(/.test(rdwRouteSource)
-      ? "RDW route exports a GET handler"
+    ...[
+      ["Tuning", rdwRouteSource],
+      ["Vehicle Check", rdwVehicleCheckRouteSource]
+    ].flatMap(([label, source]) => [
+      /export\s+async\s+function\s+GET\s*\(/.test(source)
+        ? `${label} route exports a GET handler`
+        : null
+    ]),
+    !/method:\s*["']POST["']/.test(tuningLookupSource)
+      ? "TuningPlateLookup does not explicitly use POST"
       : null,
-    !/method:\s*["']POST["']/.test(plateLookupSource)
-      ? "PlateLookup does not explicitly use POST"
+    !/method:\s*["']POST["']/.test(vehicleCheckLookupSource)
+      ? "VehicleCheckLookup does not explicitly use POST"
       : null
   ].filter((item): item is string => Boolean(item))
 );
@@ -1266,7 +1295,10 @@ addIssue(
   [
     /durationMs\s*:/.test(rdwResultTypeSource) ? "Public source status exposes durationMs" : null,
     /cacheTtlSeconds\s*:/.test(rdwResultTypeSource) ? "Public result exposes cacheTtlSeconds" : null,
-    /normalizedKenteken/.test(rdwRouteSource) ? "API response exposes redundant normalizedKenteken" : null
+    /normalizedKenteken/.test(rdwRouteSource) ? "Tuning API response exposes redundant normalizedKenteken" : null,
+    /normalizedKenteken/.test(rdwVehicleCheckRouteSource)
+      ? "Vehicle Check API response exposes redundant normalizedKenteken"
+      : null
   ].filter((item): item is string => Boolean(item))
 );
 addIssue(
@@ -1321,8 +1353,103 @@ addIssue(
     )
       ? "Vehicle calculator total does not use selectedStage.price"
       : null,
-    !/getPublicStagePrice\(match, stage\)/.test(plateLookupSource)
-      ? "RDW exact-match stages do not use getPublicStagePrice"
+    !/toTuningLookupResult\(result\)/.test(rdwRouteSource) ||
+    !/getPublicStagePrice\(result\.tuningMatch!\.variant, stage\)/.test(rdwPublicSource)
+      ? "RDW exact-match stages do not pass through the public Pricing V2 serializer"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+const transitConnectFixture = catalog.findCatalogMatch({
+  make: "Ford",
+  model: "Transit Connect",
+  fuel: "Diesel",
+  powerHp: 100,
+  displacementCc: 1499
+});
+const deterministicBmwFixture = catalog.findCatalogMatch({
+  make: "BMW",
+  model: "320D",
+  fuel: "Diesel",
+  powerHp: 190,
+  displacementCc: 1995
+});
+
+addIssue(
+  "critical",
+  "RDW_FALSE_EXACT_MATCH",
+  "Structurally conflicting RDW vehicle identities must use manual review.",
+  [
+    transitConnectFixture?.variant.id === "ford-transit-16-tdci"
+      ? "V380ST fixture matched Ford Transit 1.6 TDCi"
+      : transitConnectFixture
+        ? `V380ST fixture unexpectedly matched ${transitConnectFixture.variant.id}`
+        : null,
+    deterministicBmwFixture?.variant.id !== "bmw-320d-b47"
+      ? "Deterministic BMW 320D fixture no longer matches bmw-320d-b47"
+      : null,
+    deterministicBmwFixture?.confidence !== 100
+      ? `Deterministic BMW fixture confidence is ${deterministicBmwFixture?.confidence ?? "missing"}`
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "SHARED_TABBED_RDW_RESULT",
+  "Power Catalog and Vehicle Check must use separate lookup and result components without a shared tabbed result.",
+  [
+    /RdwPurchaseCheck|purchaseSignals|roadworthiness|apkHistory|recalls/.test(tuningLookupSource)
+      ? "TuningPlateLookup imports or renders purchase-report data"
+      : null,
+    /role=["']tablist["']|purchaseTab|tuningTab/.test(tuningLookupSource)
+      ? "TuningPlateLookup contains a purchase/tuning tab interface"
+      : null,
+    /Stage\s*1|PowerChart|selectedStage|selectedOptions/.test(vehicleCheckLookupSource)
+      ? "VehicleCheckLookup contains tuning calculator state"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "CUSTOMER_VISIBLE_LEGACY_RDW_PRICE",
+  "Customer-visible RDW results must use Pricing V2 or the Pricing V2 indicative fallback.",
+  [
+    /price:\s*(?:269|305|339|399|439|509|679|799|949|749)\b/.test(tuningLookupSource)
+      ? "TuningPlateLookup contains a legacy public Stage price"
+      : null,
+    !/getPublicStagePrice/.test(rdwPublicSource)
+      ? "Public tuning DTO does not resolve exact-match Stage prices"
+      : null,
+    !/sourcePrice:\s*_sourcePrice/.test(rdwPublicSource)
+      ? "Public tuning DTO does not explicitly strip canonical sourcePrice"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "BROKEN_RDW_TUNING_CTA",
+  "RDW tuning CTAs may link only to deliberately published vehicle routes; unpublished matches must scroll inline.",
+  [
+    /vehicles\/\$\{match\.id\}/.test(tuningLookupSource)
+      ? "Tuning CTA links directly to an arbitrary canonical match ID"
+      : null,
+    !/tuningMatch\?\.publicVehicleId/.test(tuningLookupSource)
+      ? "Published-route guard is missing"
+      : null,
+    !/rdw-inline-tuning/.test(tuningLookupSource)
+      ? "Inline tuning-details fallback target is missing"
+      : null
+  ].filter((item): item is string => Boolean(item))
+);
+addIssue(
+  "critical",
+  "DUPLICATE_PURCHASE_SUMMARY",
+  "The dedicated Vehicle Check must render one summary and one core status-card set.",
+  [
+    (purchaseReportSource.match(/<PurchaseSummaryCards\b/g) ?? []).length !== 1
+      ? `PurchaseSummaryCards rendered ${(purchaseReportSource.match(/<PurchaseSummaryCards\b/g) ?? []).length} times`
+      : null,
+    /variant\s*=\s*["']compact["']|rdw-purchase-summary/.test(purchaseReportSource)
+      ? "Legacy compact purchase summary remains"
       : null
   ].filter((item): item is string => Boolean(item))
 );
@@ -1450,7 +1577,7 @@ const productionTechnicalBaseline = {
   serviceTechnical:
     "32145c26a8c81c430edde2acf1467c849a0b89fcf06709d1e0ea5a85983a90eb",
   rdwMatcher:
-    "c9c9fda79732266e7bf65d3b4b025f71f8d06a66ac914ba2d1340768c1c12df8"
+    "03334e090caa141a1a3697199a5d67dfe06a2c9b3e8f589916e7f3028fba5f5b"
 } as const;
 
 const previousPublicCommercialHashes = {
