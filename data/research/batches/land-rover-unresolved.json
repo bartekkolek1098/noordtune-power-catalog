@@ -1,0 +1,62 @@
+[
+  {
+    "id": "shiftech-defender-d240-research-unresolved",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/defender/2020/diesel/d240-240",
+    "retrievedAt": "2026-09-15T22:53:41.806Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "447dbc40d6a31e189c853bada9d3045121b5afb4e9b81b93ca1b2f123c0b4bba",
+    "unresolvedIdentity": {
+      "brand": "Land Rover",
+      "modelFamily": "Defender",
+      "generation": "2020",
+      "yearFrom": 2020,
+      "engineMarketingName": "D240",
+      "fuel": "Diesel",
+      "stockPowerHp": 240,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "notes": [
+      "Actual opened rendered page reports no available tuning. Search discovery showed a different snapshot; its Stage figures are not accepted.",
+      "Source hash is the rendered text extraction. Displacement is not published in the retrieved label."
+    ]
+  },
+  {
+    "id": "unlimited-defender-d240-research-unresolved",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-landrover-defender-d240-240-pk.html",
+    "retrievedAt": "2026-09-15T22:53:39.497Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "4a0f3854d8c968d9bf9e470aad8f09f6adfe6f600f34259113f3b7ddf15e76e0",
+    "unresolvedIdentity": {
+      "brand": "Land Rover",
+      "modelFamily": "Defender",
+      "engineMarketingName": "D240",
+      "fuel": "Diesel",
+      "stockPowerHp": 240,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 280,
+        "torqueNm": 550
+      }
+    },
+    "notes": [
+      "Actual product table: stock240PS/500Nm; Ecotuning250/520; Normal280/550; Xtreme290/560. Only Normal is Stage1; Xtreme is not relabelledStage2.",
+      "This page does not establish displacement or a bounded year/generation scope. Comparison is retained without runtime acceptance."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ]
+  }
+]

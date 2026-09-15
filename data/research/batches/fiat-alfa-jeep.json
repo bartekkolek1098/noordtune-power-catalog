@@ -1,0 +1,852 @@
+[
+  {
+    "id": "shiftech-113",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulia/2015/diesel/2.2-jtd-180",
+    "retrievedAt": "2026-09-15T22:37:36.559Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c93b727dffd48948a25386b6962eae584613450b65b2929c63909de4fe0afe85",
+    "identity": {
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulia",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.2 JTD",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 520,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-114",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulia/2015/diesel/2.2-jtd-150",
+    "retrievedAt": "2026-09-15T22:37:40.082Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7a05c016547b6a4c4b9e56eedd148bf07874a34b4a5d2db32e8d70b62928b4bd",
+    "identity": {
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulia",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.2 JTD",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 520,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-117",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulia/2015/petrol/2.0-tb-200",
+    "retrievedAt": "2026-09-15T22:37:43.649Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b5ff6f4c48b7900742ba957fc1a8acc36f78b2963c2e47ad872e1f4eec953e18",
+    "identity": {
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulia",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "2.0 TB",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 200,
+      "stockTorqueNm": 330,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 280,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 294,
+        "torqueNm": 483,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-122",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulietta/2010/petrol/1.4-multi-air-170",
+    "retrievedAt": "2026-09-15T22:37:47.206Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "532b5c3ee79fce0ff6aa5d361e126984b992cfbc475b6180bf2cc7ad50f60cd7",
+    "identity": {
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulietta",
+      "generation": "2010",
+      "aliases": [],
+      "yearFrom": 2010,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 Multi-Air",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 195,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 205,
+        "torqueNm": 315,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulietta/2010/diesel/2.0-jtdm-140",
+    "retrievedAt": "2026-09-15T22:37:51.069Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c50090cf27888c3954dc8d95c0caee606772329e6ffacde7addffaf49beafb15",
+    "identity": {
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulietta",
+      "generation": "2010",
+      "aliases": [],
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 JTDm",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 390
+      },
+      "stage2": {
+        "powerHp": 190,
+        "torqueNm": 410,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-130",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulietta/2010/diesel/1.6-jtdm-120",
+    "retrievedAt": "2026-09-15T22:38:12.545Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dfba1442a7d8ad3896219f5b75ba7a543db3c05adc0884961e94b3e3988e2ade",
+    "identity": {
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulietta",
+      "generation": "2010",
+      "aliases": [],
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 JTDm",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 380
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 400,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-135",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulietta/2016/diesel/2.0-jtdm-eu6-150",
+    "retrievedAt": "2026-09-15T22:38:17.135Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3aa1715133ee94c7c6b703441bb4f998ffc98b826034a6ea25a1976fd8857082",
+    "identity": {
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulietta",
+      "generation": "2016",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 JTDm EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 190,
+        "torqueNm": 420,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-3216",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/500x/2014/petrol/1.4-multi-air-140",
+    "retrievedAt": "2026-09-15T22:36:47.384Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "be4d013112f5875ec0696da94f4a8c892d0424fc233c0056a6c02084b4f23d21",
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "500X",
+      "generation": "2014",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 Multi-Air",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 160,
+        "torqueNm": 290
+      },
+      "stage2": {
+        "powerHp": 168,
+        "torqueNm": 305,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-3218",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/500x/2014/diesel/1.6-jtdm-eu5-120",
+    "retrievedAt": "2026-09-15T22:36:55.360Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3b406672cd5ccf1b26f31b166107351fe8e5f9e4ad5fda77eb3a614344d0740e",
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "500X",
+      "generation": "2014",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 JTDm EU5",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 380
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 400,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-3220",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/500x/2014/diesel/1.3-mjet-eu6-95",
+    "retrievedAt": "2026-09-15T22:36:51.675Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0ea96a5d2368a9eb61a9ff9752cd1cb18527efef1198002d4985d9975c601c14",
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "500X",
+      "generation": "2014",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.3 Mjet EU6",
+      "displacementCc": 1300,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 95,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 120,
+        "torqueNm": 250
+      },
+      "stage2": {
+        "powerHp": 130,
+        "torqueNm": 270,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-3303",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/grande-punto/2005/diesel/1.3-mjet-75",
+    "retrievedAt": "2026-09-15T22:37:29.230Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "89f87880bd43dcc12ab86cb6f778fe14a8eeecfbc89026c753c6ee54a8217fb1",
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "Grande Punto",
+      "generation": "2005",
+      "aliases": [],
+      "yearFrom": 2005,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.3 Mjet",
+      "displacementCc": 1300,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 75,
+      "stockTorqueNm": 190,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 95,
+        "torqueNm": 240
+      },
+      "stage2": {
+        "powerHp": 105,
+        "torqueNm": 260,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-3307",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/grande-punto/2005/petrol/1.4-t-jet-eu5-120",
+    "retrievedAt": "2026-09-15T22:37:32.788Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d1ade005d49c757f0ce89e066b6cd0cdbf1e804331aa4de808899669f7c3b0a9",
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "Grande Punto",
+      "generation": "2005",
+      "aliases": [],
+      "yearFrom": 2005,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 T-Jet EU5",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 201,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 250
+      },
+      "stage2": {
+        "powerHp": 158,
+        "torqueNm": 263,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-3409",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/tipo-egea/2016/diesel/1.6-jtdm-120",
+    "retrievedAt": "2026-09-15T22:37:01.358Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f0323ee0c91f5bcd66c8d7a405132b3902ce9adaed5ccb516814555a77750d4a",
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "Tipo",
+      "generation": "2016",
+      "aliases": [
+        "Egea"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 JTDm",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 380
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 400,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-3411",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/tipo-egea/2016/petrol/1.4-t-jet-eu6-120",
+    "retrievedAt": "2026-09-15T22:37:25.577Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "40b14f14382ef055ad145b7e9357ccfe438fc98eb810f43f70acb8eb8286f1cf",
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "Tipo",
+      "generation": "2016",
+      "aliases": [
+        "Egea"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 T-Jet EU6",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 215,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 255
+      },
+      "stage2": {
+        "powerHp": 158,
+        "torqueNm": 268,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-4724",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jeep/renegade/2014/diesel/2.0-jtdm-140",
+    "retrievedAt": "2026-09-15T22:38:20.756Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d4fce91a3fc87a3e184e10014b7d7a07c99980e602383e33bc5f8881b3ea2148",
+    "identity": {
+      "brand": "Jeep",
+      "modelFamily": "Renegade",
+      "generation": "2014",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 JTDm",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 180,
+        "torqueNm": 440,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-4725",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jeep/renegade/2014/diesel/2.0-jtdm-170",
+    "retrievedAt": "2026-09-15T22:38:24.455Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c67e28d8a5df884d1d12b942a44e05bb748ce37dacfa0e753272096241302956",
+    "identity": {
+      "brand": "Jeep",
+      "modelFamily": "Renegade",
+      "generation": "2014",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 JTDm",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 440,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-4726",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jeep/renegade/2014/diesel/1.6-jtdm-120",
+    "retrievedAt": "2026-09-15T22:38:28.129Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b4f7a887bf47b3a0af544afc631fc463c7982d93918aa5e370bc865322bdf74e",
+    "identity": {
+      "brand": "Jeep",
+      "modelFamily": "Renegade",
+      "generation": "2014",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 JTDm",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 380
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 400,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-4727",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jeep/renegade/2014/petrol/1.4-multi-air-140",
+    "retrievedAt": "2026-09-15T22:38:31.640Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "91a02ea1b174390824336c33cf6934f8ae571a745555926aff934b0e0b6e78b6",
+    "identity": {
+      "brand": "Jeep",
+      "modelFamily": "Renegade",
+      "generation": "2014",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 Multi-Air",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 160,
+        "torqueNm": 290
+      },
+      "stage2": {
+        "powerHp": 168,
+        "torqueNm": 305,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  }
+]

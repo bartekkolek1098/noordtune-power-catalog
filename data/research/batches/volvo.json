@@ -1,0 +1,472 @@
+[
+  {
+    "id": "shiftech-11216",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v40/2015/diesel/2.0-d4-eu6-190",
+    "retrievedAt": "2026-09-15T22:34:47.747Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "902efc533f0a0fe9f6d2816086ce0c9f1ec0616390d3c5943f89e9d35d611959",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V40",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 D4 EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 235,
+        "torqueNm": 470
+      },
+      "stage2": {
+        "powerHp": 245,
+        "torqueNm": 490,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-11221",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v40/2015/petrol/t4-2.0-190",
+    "retrievedAt": "2026-09-15T22:35:09.738Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dc5379860400fb6b106d4b6fd643db552f8d30643fe045f8c5cc3e5ddbb0b0a2",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V40",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "T4 (2.0)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 225,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 236,
+        "torqueNm": 420,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-11222",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v40/2015/petrol/t5-2.0-245",
+    "retrievedAt": "2026-09-15T22:35:13.705Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c265d4ab10ae24d6bbd906c56553ee373c4537a96b5c645069dfbdf47cb7dcd8",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V40",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "T5 (2.0)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 245,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 275,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 289,
+        "torqueNm": 441,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-11242",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2010/diesel/2.0-d3-163",
+    "retrievedAt": "2026-09-15T22:35:48.360Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3a965348f79c91508447d00377e0dcf0ad0ada5856d76cb6a55d7e77cdc9881a",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2010",
+      "aliases": [],
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 D3",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 163,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 190,
+        "torqueNm": 470,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-11244",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2010/diesel/2.4-d5-205",
+    "retrievedAt": "2026-09-15T22:35:52.003Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c352190d677d9fe8ef1192cde4c7aa92c747c35feb539dc5ed026aaed83980b7",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2010",
+      "aliases": [],
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.4 D5",
+      "displacementCc": 2400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 205,
+      "stockTorqueNm": 420,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 230,
+        "torqueNm": 480
+      },
+      "stage2": {
+        "powerHp": 240,
+        "torqueNm": 500,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-11245",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2010/diesel/2.4-d5-215",
+    "retrievedAt": "2026-09-15T22:34:55.188Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9801cc29f928d7a7dc7aa45389fdc4c9e3c4e63f916993f88a6a065fc22db440",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2010",
+      "aliases": [],
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.4 D5",
+      "displacementCc": 2400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 215,
+      "stockTorqueNm": 440,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 245,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 255,
+        "torqueNm": 520,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-11259",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2015/petrol/t4-2.0-190",
+    "retrievedAt": "2026-09-15T22:34:58.698Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "419c7e0c36b5e81f1e37dd5896b514250627ece1a7690c645ca08df053fc4065",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "T4 (2.0)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 225,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 236,
+        "torqueNm": 420,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-11260",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2015/petrol/t5-2.0-245",
+    "retrievedAt": "2026-09-15T22:35:02.392Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e86913ab9b0b61f2f47eec6ee5c75c8a300c6919c7fcda6fd0534ec8dbef08e1",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "T5 (2.0)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 245,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 275,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 289,
+        "torqueNm": 441,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-11262",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2015/diesel/2.0-d4-eu6-190",
+    "retrievedAt": "2026-09-15T22:35:05.986Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "965f590dcc14a13b5711431f4899466e1b4b5181fd6090bdd1bcb8a371c259ca",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 D4 EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 235,
+        "torqueNm": 470
+      },
+      "stage2": {
+        "powerHp": 245,
+        "torqueNm": 490,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-11265",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2015/diesel/2.0-d3-eu6-150",
+    "retrievedAt": "2026-09-15T22:34:51.629Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e3fa6efaef2d4115ec86b3de76cf0951bf07c005ba5914816724c4b7f4191a00",
+    "identity": {
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 D3 EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 380
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 400,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  }
+]

@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
-import {mkdirSync, readFileSync, readdirSync, writeFileSync} from "node:fs";
+import {existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync} from "node:fs";
 import {join, resolve} from "node:path";
 import {independentProvider, metricPower, metricTorque, stageConsensus} from "../src/data/tuning-profiles/consensus.ts";
 import type {SourceObservation, SourcedTuningProfile} from "../src/data/tuning-profiles/schema.ts";
+import {compatibleGeneration, effectiveGenerationScope, flagNonMonotonicStages, type GenerationBoundary} from "./tuning-profile-scope.ts";
 
 const root = resolve("data/research");
 const batchRoot = join(root, "batches");
@@ -11,11 +12,14 @@ const observations = readdirSync(batchRoot).filter(file => file.endsWith(".json"
 const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const ids = new Set<string>();
 const rejected: {sourceId: string; reasons: string[]}[] = [];
+const supportingEvidence: string[] = [];
 const groups = new Map<string, SourceObservation[]>();
+const boundaries: GenerationBoundary[] = existsSync(join(root, "generation-boundaries.json")) ? JSON.parse(readFileSync(join(root, "generation-boundaries.json"), "utf8")) : [];
 for (const source of observations) {
   assert.ok(source.id && !ids.has(source.id), `Duplicate/missing observation ID: ${source.id}`);
   ids.add(source.id);
   assert.ok(/^https:\/\//.test(source.url) && Number.isFinite(Date.parse(source.retrievedAt)), `${source.id}: URL and real retrieval timestamp required`);
+  if (source.provider === "manufacturer" && source.status === "retrieved" && !source.stages) { supportingEvidence.push(source.id); continue; }
   const identity = source.identity;
   const reasons = [];
   if (source.status !== "retrieved" || source.retrievalMethod === "search-index") reasons.push("ACTUAL_PUBLIC_FACT_RETRIEVAL_REQUIRED");
@@ -36,7 +40,7 @@ for (const source of observations) {
   // Deliberately strict grouping: generation and published year band stay distinct.
   // Wider cross-model/year relationships require explicit evidence, never Cartesian expansion.
   const key = [identity.brand, identity.modelFamily, identity.generation, identity.fuel, identity.displacementCc,
-    Math.round(metricPower(identity.stockPowerHp, identity.powerUnit)), identity.stockTorqueNm ?? "unknown", identity.yearFrom, identity.yearTo ?? "open", identity.engineFamily ?? ""].map(value => normalize(String(value))).join("|");
+    Math.round(metricPower(identity.stockPowerHp, identity.powerUnit)), identity.stockTorqueNm===undefined?"unknown":Math.round(metricTorque(identity.stockTorqueNm,identity.torqueUnit)), identity.yearFrom, identity.yearTo ?? "open", identity.engineFamily ?? ""].map(value => normalize(String(value))).join("|");
   const groupKey = source.consensusGroup ? `reviewed:${source.consensusGroup}` : key;
   groups.set(groupKey, [...(groups.get(groupKey) ?? []), source]);
 }
@@ -44,36 +48,41 @@ for (const source of observations) {
 const profiles: SourcedTuningProfile[] = [...groups.entries()].map(([key, sources]) => {
   const source = sources.find(item => item.identity?.displacementPrecision === "exact") ?? sources[0];
   const identity = source.identity!;
-  const yearFrom = Math.max(...sources.map(item => item.identity!.yearFrom));
-  const ends = sources.flatMap(item => item.identity!.yearTo === undefined ? [] : [item.identity!.yearTo!]);
-  const yearTo = ends.length ? Math.min(...ends) : undefined;
+  const {yearFrom,yearTo,boundary,adjusted,rawFrom,rawTo}=effectiveGenerationScope(sources.map(item=>item.identity!),boundaries);
   assert.ok(yearTo === undefined || yearTo >= yearFrom, `${key}: counterpart years do not overlap`);
   for (const item of sources) {
     const other = item.identity!;
     assert.equal(normalize(other.brand), normalize(identity.brand), `${key}: counterpart make conflict`);
     assert.equal(normalize(other.modelFamily), normalize(identity.modelFamily), `${key}: counterpart family conflict`);
     assert.equal(other.fuel, identity.fuel, `${key}: counterpart fuel conflict`);
+    assert.ok(compatibleGeneration(other.generation,identity.generation,other.yearFrom,identity.yearFrom),`${key}: counterpart body generation conflict`);
     assert.ok(Math.abs(other.displacementCc - identity.displacementCc) <= (other.displacementPrecision === "nominal" || identity.displacementPrecision === "nominal" ? 49 : 2), `${key}: counterpart displacement conflict`);
     assert.ok(Math.abs(metricPower(other.stockPowerHp, other.powerUnit) - metricPower(identity.stockPowerHp, identity.powerUnit)) <= 3, `${key}: counterpart stock power conflict`);
-    if (other.stockTorqueNm && identity.stockTorqueNm) assert.ok(Math.abs(other.stockTorqueNm - identity.stockTorqueNm) <= 10, `${key}: counterpart stock torque variant conflict`);
+    if (other.stockTorqueNm && identity.stockTorqueNm) assert.ok(Math.abs(metricTorque(other.stockTorqueNm,other.torqueUnit) - metricTorque(identity.stockTorqueNm,identity.torqueUnit)) <= 10, `${key}: counterpart stock torque variant conflict`);
     if (other.engineFamily && identity.engineFamily) assert.equal(normalize(other.engineFamily), normalize(identity.engineFamily), `${key}: counterpart engine-family conflict`);
   }
   const stage1 = stageConsensus(sources, "stage1")!;
   const stage2 = stageConsensus(sources, "stage2");
   const stage3 = stageConsensus(sources, "stage3");
-  const ownerReviewRequired = [stage1, stage2, stage3].some(stage => stage?.ownerReviewRequired);
+  const nonMonotonic=flagNonMonotonicStages([stage1,stage2,stage3]);
+  const ownerReviewRequired = adjusted || [stage1, stage2, stage3].some(stage => stage?.ownerReviewRequired);
   const sourceCount = (stage: "stage1" | "stage2" | "stage3") => new Set(sources.filter(item => item.stages?.[stage]).map(independentProvider)).size;
   const {powerUnit, torqueUnit, ...facts} = identity;
-  return {...facts, yearFrom, ...(yearTo !== undefined ? {yearTo} : {}), stockPowerHp: Math.round(metricPower(identity.stockPowerHp, powerUnit)),
+  return {...facts, yearFrom, ...(yearTo !== undefined ? {yearTo} : {}),
+    ...(boundary ? {generationScopeSource: {url: boundary.sourceUrl, retrievedAt: boundary.retrievedAt, method: "successor-generation-start" as const}} : {}),
+    stockPowerHp: Math.round(metricPower(identity.stockPowerHp, powerUnit)),
     ...(identity.stockTorqueNm !== undefined ? {stockTorqueNm: Math.round(metricTorque(identity.stockTorqueNm, torqueUnit))} : {}),
     aliases: [...new Set(sources.flatMap(item => item.identity?.aliases ?? []))],
     id: `sourced-${normalize(identity.brand)}-${normalize(identity.modelFamily)}-${createHash("sha256").update(key).digest("hex").slice(0, 12)}`,
     sourceIds: sources.map(item => item.id), sourceUrls: [...new Set(sources.map(item => item.url))],
     retrievedAt: sources.map(item => item.retrievedAt).sort().at(-1)!, lastReviewedAt: sources.map(item => item.retrievedAt).sort().at(-1)!,
     reviewStatus: ownerReviewRequired ? "owner-review-required" as const : "source-reviewed" as const,
-    ownerReviewRequired, stockSourceQuality: new Set(sources.map(independentProvider)).size >= 2 ? "multi-source" as const : "single-source" as const,
+    ownerReviewRequired, stockSourceQuality: sources.some(item => item.stockValidation?.fields.includes("stockPowerHp") && item.stockValidation.fields.includes("displacementCc")
+      && observations.some(manufacturer => manufacturer.id === item.stockValidation!.sourceId && manufacturer.provider === "manufacturer" && manufacturer.status === "retrieved" && manufacturer.retrievalMethod !== "search-index"))
+      ? "manufacturer" as const : new Set(sources.map(independentProvider)).size >= 2 ? "multi-source" as const : "single-source" as const,
     stage1, ...(stage2 ? {stage2} : {}), ...(stage3 ? {stage3} : {}), stage1SourceCount: sourceCount("stage1"), stage2SourceCount: sourceCount("stage2"), stage3SourceCount: sourceCount("stage3"),
-    conditions: [...new Set(sources.flatMap(item => item.conditions ?? []))], notes: [...new Set(sources.flatMap(item => item.notes ?? []))]};
+    conditions: [...new Set([...sources.flatMap(item => item.conditions ?? []),...(adjusted?["SOURCE_GENERATION_SCOPE_ADJUSTED"]:[]),...(nonMonotonic?["NON_MONOTONIC_SOURCED_STAGE"]:[])])],
+    notes: [...new Set([...sources.flatMap(item => item.notes ?? []),...(adjusted?[`Effective scope intersects the matching body generation: source overlap ${rawFrom}–${rawTo??"open"} becomes ${yearFrom}–${yearTo??"open"}. Raw provider year bands are preserved in source observations; applicability requires review.`]:[])]) ]};
 }).sort((a, b) => a.id.localeCompare(b.id));
 
 const datasetRoot = resolve("src/data/tuning-profiles");
@@ -83,5 +92,12 @@ write(join(datasetRoot, "profiles.json"), profiles);
 write(join(datasetRoot, "source-index.json"), observations.map(({id, provider, sourceName, url, retrievedAt, status, retrievalMethod, contentSha256}) => ({id, provider, sourceName, url, retrievedAt, status, retrievalMethod, contentSha256})));
 write(join(root, "source-pages.json"), observations);
 write(join(root, "profile-consensus.json"), profiles.map(({id, brand, modelFamily, generation, yearFrom, yearTo, stockPowerHp, stockSourceQuality, stage1, stage2, stage3, ownerReviewRequired, sourceIds}) => ({id, brand, modelFamily, generation, yearFrom, yearTo, stockPowerHp, stockSourceQuality, stage1, stage2, stage3, ownerReviewRequired, sourceIds})));
-write(join(root, "unresolved-conflicts.json"), {rejected, conflicts: profiles.filter(profile => [profile.stage1, profile.stage2, profile.stage3].some(stage => stage?.sourceAgreement === "conflict")).map(profile => ({id: profile.id, sourceIds: profile.sourceIds, stage1: profile.stage1, stage2: profile.stage2, stage3: profile.stage3}))});
-console.log(JSON.stringify({observations: observations.length, profiles: profiles.length, multiSource: profiles.filter(profile => profile.stage1.confidence === "multi-source").length, rejected: rejected.length}));
+const stockVariants=profiles.flatMap((profile,index)=>profiles.slice(index+1).filter(other=>normalize(profile.brand)===normalize(other.brand)
+  && normalize(profile.modelFamily)===normalize(other.modelFamily) && profile.fuel===other.fuel
+  && Math.abs(profile.displacementCc-other.displacementCc)<=49 && Math.abs(profile.stockPowerHp-other.stockPowerHp)<=3
+  && compatibleGeneration(profile.generation,other.generation,profile.yearFrom,other.yearFrom)
+  && profile.yearFrom<=(other.yearTo??9999) && other.yearFrom<=(profile.yearTo??9999)
+  && profile.stockTorqueNm!==undefined && other.stockTorqueNm!==undefined && profile.stockTorqueNm!==other.stockTorqueNm)
+  .map(other=>({reason:"UNMERGED_STOCK_TORQUE_VARIANTS",profileIds:[profile.id,other.id],sourceIds:[...profile.sourceIds,...other.sourceIds],stockTorqueNm:[profile.stockTorqueNm,other.stockTorqueNm]})));
+write(join(root, "unresolved-conflicts.json"), {rejected,stockVariants, conflicts: profiles.filter(profile => [profile.stage1, profile.stage2, profile.stage3].some(stage => stage?.sourceAgreement === "conflict")).map(profile => ({id: profile.id, sourceIds: profile.sourceIds, stage1: profile.stage1, stage2: profile.stage2, stage3: profile.stage3}))});
+console.log(JSON.stringify({observations: observations.length, profiles: profiles.length, multiSource: profiles.filter(profile => profile.stage1.confidence === "multi-source").length, rejected: rejected.length, supportingEvidence: supportingEvidence.length}));

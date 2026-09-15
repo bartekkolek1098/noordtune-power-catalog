@@ -1,0 +1,3550 @@
+[
+  {
+    "id": "shiftech-993",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/petrol/18i-1.5t-136",
+    "retrievedAt": "2026-09-15T22:37:59.703Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "acc23032dbbfde36cc15ae009434935967c924c72868178588b4ef882720782c"
+  },
+  {
+    "id": "mosselman-bmw-118i-f20-f21-lci-136hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118i-f20-f21-lci-136hp",
+    "retrievedAt": "2026-09-15T22:28:36.713Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a7567381eadb2ea7ec42b030a9c11bb382d37dd4260dc85c348ecd372f4d8f46"
+  },
+  {
+    "id": "shiftech-992",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/petrol/16i-1.5t-109",
+    "retrievedAt": "2026-09-15T22:37:57.870Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "33eea9ba307c08ebddec5bf818733f2a0880d0402ccd8d65fd24b0661a666f9a"
+  },
+  {
+    "id": "mosselman-bmw-116i-f20-f21-lci-109hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-116i-f20-f21-lci-109hp",
+    "retrievedAt": "2026-09-15T22:28:38.599Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ce67ef81439077d1b3ad03c9f6aea5dc18873b817cd03dba5fb1ad5feccb9c31"
+  },
+  {
+    "id": "shiftech-1169",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/petrol/18i-1.5t-136",
+    "retrievedAt": "2026-09-15T22:38:58.310Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "aeec37631d60952bc919b800156f18389ad05c63eb44b38c3de0e49a11898f51"
+  },
+  {
+    "id": "mosselman-bmw-318i-f30-f31-lci-136hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-318i-f30-f31-lci-136hp",
+    "retrievedAt": "2026-09-15T22:28:40.599Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b697c9b74598fb2a68fea6a7e02da9970c8883f72e1ce1a7e2759955dda0ac7e"
+  },
+  {
+    "id": "shiftech-1170",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/petrol/20i-2.0t-eu6d-184",
+    "retrievedAt": "2026-09-15T22:38:59.807Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "37e7b0417ec167a43302c04410de04fb9546869ed7e2c5839c109798ec75cf3c"
+  },
+  {
+    "id": "mosselman-bmw-320i-f30-f31-lci-184hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320i-f30-f31-lci-184hp",
+    "retrievedAt": "2026-09-15T22:28:42.621Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5442de670f4b5af7fcbecec4cf2a754c54eb6f8a8037475efc8c88e2f75f35ca"
+  },
+  {
+    "id": "shiftech-1167",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/petrol/30i-2.0t-eu6d-252",
+    "retrievedAt": "2026-09-15T22:38:53.615Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "26ea8bc127d88df9f370d33091ffe8e58d1722e147d01b8c861f036856653ebe"
+  },
+  {
+    "id": "mosselman-bmw-330i-f30-f31-lci-252hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-330i-f30-f31-lci-252hp",
+    "retrievedAt": "2026-09-15T22:28:44.646Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a808dbc7bb9f64fed0dd37f1c46ffdbe90652d5d68b4a31a4f564b20cffad908"
+  },
+  {
+    "id": "shiftech-1157",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/petrol/40i-326",
+    "retrievedAt": "2026-09-15T22:38:44.912Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "13fab5a3f4bbfc43a0c300718f83206af8f67997528432ba18d258a5a6f93caa"
+  },
+  {
+    "id": "mosselman-bmw-340i-f30-f31-lci-327hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-340i-f30-f31-lci-327hp",
+    "retrievedAt": "2026-09-15T22:28:46.825Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "324093ae6b22330f01e557eead16179a72e7bcf07947d334405510821c494f9d"
+  },
+  {
+    "id": "shiftech-1000",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/diesel/18d-150",
+    "retrievedAt": "2026-09-15T22:38:04.994Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f9dc8993d0720d35eb494b5df94d3ce7c1ed1f056670c2139838a92d0cb9a3c5"
+  },
+  {
+    "id": "mosselman-bmw-118d-f20-f21-lci-150hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118d-f20-f21-lci-150hp",
+    "retrievedAt": "2026-09-15T22:28:48.628Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3706bb8ddb2f0f7a9a6267958eefdf43d99f4b40a8005622558d61340393a079"
+  },
+  {
+    "id": "shiftech-996",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/diesel/20d-190",
+    "retrievedAt": "2026-09-15T22:38:01.687Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "66bc0a3b69711cb98e3835fb438a5ce20952d98d8f00a3d3d373aac8fa1fdb6d"
+  },
+  {
+    "id": "mosselman-bmw-120d-f20-f21-lci-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-120d-f20-f21-lci-190hp",
+    "retrievedAt": "2026-09-15T22:28:50.627Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9274ab415831df5d6b2a588fca4af2622f375562f0ed4d2ad490aa4312ddccc6"
+  },
+  {
+    "id": "shiftech-997",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/diesel/25d-224",
+    "retrievedAt": "2026-09-15T22:38:03.366Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed00ef3bc834a7ab3b8bd77e406bc26e935c3dc1381659e4071666b820608c6c"
+  },
+  {
+    "id": "mosselman-bmw-125d-f20-f21-lci-224hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-125d-f20-f21-lci-224hp",
+    "retrievedAt": "2026-09-15T22:28:52.689Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5f1c6b28b2309ae92c109f318b0e8151307018080185b701962e2c4a2b7610a7"
+  },
+  {
+    "id": "shiftech-1165",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/18d-150",
+    "retrievedAt": "2026-09-15T22:38:51.680Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c7ec68ec5a5b3db65ab89ff7d2e22d52a65f11aa82253fbfd134c6f8261138c9"
+  },
+  {
+    "id": "mosselman-bmw-318d-f30-f31-lci-150hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-318d-f30-f31-lci-150hp",
+    "retrievedAt": "2026-09-15T22:28:54.668Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "61171826ffbe1b3c65d1acc7498935f66c8df2ef68e463e4ad38b3c04f7a530a"
+  },
+  {
+    "id": "shiftech-1159",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/20d-190",
+    "retrievedAt": "2026-09-15T22:38:46.566Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7851f9356aa510b8cb48c69e9950c490f7e10ae910b566403ed9914ecb91381a"
+  },
+  {
+    "id": "mosselman-bmw-320d-f30-f31-lci-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320d-f30-f31-lci-190hp",
+    "retrievedAt": "2026-09-15T22:27:39.921Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5e9364c5387dc61c5ec227867a46c604ee12f00151fe0cb2938ecfc451155298"
+  },
+  {
+    "id": "shiftech-1164",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/16d-2.0-116",
+    "retrievedAt": "2026-09-15T22:38:50.103Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "326a7c7130f624f7bffb27a3b0cd9991b569a62165f71a715366e842c8846e1d"
+  },
+  {
+    "id": "mosselman-bmw-316d-f30-f31-lci-116hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-316d-f30-f31-lci-116hp",
+    "retrievedAt": "2026-09-15T22:28:56.687Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "89b27d35ba20c7f86f5e977bd16985cd062df1fd1192c95ea2f3caf3665f6e95"
+  },
+  {
+    "id": "shiftech-1161",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/30d-258",
+    "retrievedAt": "2026-09-15T22:38:48.162Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "67d5c3d6eba4f1136143013e8753d456b7699abd267709df9b01f94ba0fcb586"
+  },
+  {
+    "id": "mosselman-bmw-330d-f30-f31-lci-258hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-330d-f30-f31-lci-258hp",
+    "retrievedAt": "2026-09-15T22:29:00.735Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "64e5efc49a332f828d6ceb934477209fd6cf215cb9a4dd27fc826fb1e18cfba0"
+  },
+  {
+    "id": "shiftech-1168",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/35d-313",
+    "retrievedAt": "2026-09-15T22:38:55.596Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "85f4b089ab9f180b12231092aabcd7c73cc629785eeac403612be35bd6cbef06"
+  },
+  {
+    "id": "mosselman-bmw-335xd-f30-f31-lci-313hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-335xd-f30-f31-lci-313hp",
+    "retrievedAt": "2026-09-15T22:29:03.064Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0e338d0af8e79e7b18241fd976d9e64af65059c41929a57d5b175c6e28b90f26"
+  },
+  {
+    "id": "shiftech-981",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2011-f20/diesel/20d-184",
+    "retrievedAt": "2026-09-15T22:37:52.172Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ccc5b31d1060476694d100ce37a31b59e0898a60fa83d22fb44596da688698de"
+  },
+  {
+    "id": "mosselman-bmw-120d-f20-f21-184hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-120d-f20-f21-184hp",
+    "retrievedAt": "2026-09-15T22:29:04.896Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "85d3b71969cdd0abc69f149ac72d880a9ecca66da054a11d63d8ffe0c9bff88a"
+  },
+  {
+    "id": "shiftech-988",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2011-f20/diesel/18d-143",
+    "retrievedAt": "2026-09-15T22:37:56.005Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1fa02fe69d2a348f1f264af6425826591ba2c5508868b23156ae740bb6585a80"
+  },
+  {
+    "id": "mosselman-bmw-118d-f20-f21-143hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118d-f20-f21-143hp",
+    "retrievedAt": "2026-09-15T22:29:06.859Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "51325841abc5db43a7228fba22f3c08fe2edb8786bfe9ebe3a17eea0ea7d02b6"
+  },
+  {
+    "id": "shiftech-982",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2011-f20/diesel/25d-218",
+    "retrievedAt": "2026-09-15T22:37:54.268Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "92f1bab056760ebbfeec791232eb79934cf6b5203fca21acce110bdbb1995783"
+  },
+  {
+    "id": "mosselman-bmw-125d-f20-f21-218hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-125d-f20-f21-218hp",
+    "retrievedAt": "2026-09-15T22:29:08.867Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "93fb1022a4e73edc85aae9465852ad8215f487d6b1ab5ab44aadb903d970f7ac"
+  },
+  {
+    "id": "shiftech-133172",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2011-f20/diesel/16d-2.0-116",
+    "retrievedAt": "2026-09-15T22:38:15.379Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "77f022f15a7c8afbb2defc95c5e44de33a58b08bb41cba10cfbed348525f71f2"
+  },
+  {
+    "id": "mosselman-bmw-116d-f20-f21-116hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-116d-f20-f21-116hp",
+    "retrievedAt": "2026-09-15T22:29:10.887Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "4c8a85113da83f0699d19861cd5d87486bdddea41ab865cc20258fce1b7a28eb"
+  },
+  {
+    "id": "shiftech-1141",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2012-f30-f31-f35/diesel/20d-184",
+    "retrievedAt": "2026-09-15T22:38:40.122Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed64ea236b7163d25c56e935d3042185cbb11256ea9aa8e46b50c79b7ea6c49e"
+  },
+  {
+    "id": "mosselman-bmw-320d-f30-f31-184hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320d-f30-f31-184hp",
+    "retrievedAt": "2026-09-15T22:29:12.899Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1d982a464c9ee9be8445c94751f80da42a1403737932bb5fde2bc7c5c6a3a7d4"
+  },
+  {
+    "id": "shiftech-1144",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2012-f30-f31-f35/diesel/18d-143",
+    "retrievedAt": "2026-09-15T22:38:41.760Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9fc7f0b97d178a0cbe759ff4e7f6336c53eadba011aae0b64bc323c511ab1cee"
+  },
+  {
+    "id": "mosselman-bmw-318d-f30-f31-143hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-318d-f30-f31-143hp",
+    "retrievedAt": "2026-09-15T22:29:15.343Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e350a7d3d9df34a4ccf4419aae3cc5983589154700828d26de1132b441017883"
+  },
+  {
+    "id": "shiftech-1146",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2012-f30-f31-f35/diesel/25d-218",
+    "retrievedAt": "2026-09-15T22:38:43.385Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c73cc4a62ad7f3153cf3ee896eca337bd1a7a930f4522bdfc7edf0087e825574"
+  },
+  {
+    "id": "mosselman-bmw-325d-f30-f31-218hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-325d-f30-f31-218hp",
+    "retrievedAt": "2026-09-15T22:29:17.079Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "19c203702e169d2ae192229162b4b7c9e6fa6b2549ebc47d2d7f65d8e6f22ee4"
+  },
+  {
+    "id": "shiftech-1140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2012-f30-f31-f35/diesel/30d-258",
+    "retrievedAt": "2026-09-15T22:38:38.448Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d40fcf92062961ea5ccd55da0dafae2abc706d7a4e82956b28ea2b439313a180"
+  },
+  {
+    "id": "mosselman-bmw-330d-f30-f31-258hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-330d-f30-f31-258hp",
+    "retrievedAt": "2026-09-15T22:29:18.861Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2210523d4f192cd935202c9e8b2b27937589410bb81681ae179ccd54809f063c"
+  },
+  {
+    "id": "mosselman-bmw-520d-f10-f11-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-520d-f10-f11-190hp",
+    "retrievedAt": "2026-09-15T22:29:26.906Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d362c36cf14e03745673c4e3e285a9690cbeb564245297b0fd8e3b065cd23dcf"
+  },
+  {
+    "id": "shiftech-1302",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2016-g30-g31/diesel/20d-eu6d-190",
+    "retrievedAt": "2026-09-15T22:39:41.296Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8660b1a87c757a2d36c048d296dbd82b88188d3146a7c3180148ed654e75b18d"
+  },
+  {
+    "id": "mosselman-bmw-520d-g30-g31-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-520d-g30-g31-190hp",
+    "retrievedAt": "2026-09-15T22:29:28.902Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6d0ceea322e128e5c64f0cffb71d33e109ba96ffc64c0f9f411122829e8a9462"
+  },
+  {
+    "id": "shiftech-1301",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2016-g30-g31/petrol/30i-2.0t-eu6d-252",
+    "retrievedAt": "2026-09-15T22:39:39.540Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0e7c262ea3b2122ccac15010bc9219ade16d32520c5842455ea9da6da700d134"
+  },
+  {
+    "id": "mosselman-bmw-530i-g30-g31-252hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-530i-g30-g31-252hp",
+    "retrievedAt": "2026-09-15T22:29:30.842Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "330f8ef43a3bd1fe13531cfb779c980c219e0495ba95b011bd8d041ffae75974"
+  },
+  {
+    "id": "shiftech-1303",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2016-g30-g31/petrol/m40i-340",
+    "retrievedAt": "2026-09-15T22:39:43.268Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7fa47130d3dd4c1a27d240888214b2498ad0144257e9ac6f49dba8270039de64"
+  },
+  {
+    "id": "mosselman-bmw-540i-g30-340hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-540i-g30-340hp",
+    "retrievedAt": "2026-09-15T22:29:33.023Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b5b9ba8c8e14f947e5bf0c4018426ce04b070727cbfd8f1ff0672fd0be4f2116"
+  },
+  {
+    "id": "shiftech-433364",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/20i-2.0t-eu6d-184",
+    "retrievedAt": "2026-09-15T22:39:29.530Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "15dd7b872bea40c6841b9c654fb18561c1d0d44e8464aa039f95bd6c37eb9273"
+  },
+  {
+    "id": "mosselman-bmw-320i-g20-184hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320i-g20-184hp",
+    "retrievedAt": "2026-09-15T22:29:34.911Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8dbc63a6edd93ab9c4baa952fb6267c97baa2105cbf94b18614bb97803a9d20d"
+  },
+  {
+    "id": "shiftech-1177",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/30i-2.0t-eu6d-258",
+    "retrievedAt": "2026-09-15T22:39:27.201Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "575530eefc55d4d339fd685ebb9579f7c512786ee05950d818589156d8b94b1d"
+  },
+  {
+    "id": "mosselman-bmw-330i-g20-258hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-330i-g20-258hp",
+    "retrievedAt": "2026-09-15T22:29:36.940Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ffe53eeabbf740319b4413960324e0f9efaa7143e56076345dae5cd18b356b9d"
+  },
+  {
+    "id": "shiftech-1176",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/diesel/18d-eu6d-150",
+    "retrievedAt": "2026-09-15T22:39:06.575Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed0559bd42bd4247d826ecaa448b419080bb2b61440f33b0772d9c7bc7fbbb10"
+  },
+  {
+    "id": "mosselman-bmw-318d-g20-150hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-318d-g20-150hp",
+    "retrievedAt": "2026-09-15T22:29:38.957Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "38b3b0b2af10ef632f223e8433d09aa2175b12a34ce0a76b12665be04b7913b0"
+  },
+  {
+    "id": "shiftech-1175",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/diesel/20d-eu6d-190",
+    "retrievedAt": "2026-09-15T22:39:01.645Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c084bfcb6d2bc2b60661b1945903786adad64fd2dfee37d2bd3479dd43cc5c3a"
+  },
+  {
+    "id": "mosselman-bmw-320d-g20-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320d-g20-190hp",
+    "retrievedAt": "2026-09-15T22:29:40.932Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e8d416e684630f2b6021989695f4d92239120fc9e1965d6586e0c4a8b2a6da5c"
+  },
+  {
+    "id": "shiftech-1008",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/18i-1.5t-eu6d-140",
+    "retrievedAt": "2026-09-15T22:38:06.679Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "731369bfd7c1d4a3ac7a91e78fb6dc4fa333d5d4f391ad752c7a8bd55dda078f"
+  },
+  {
+    "id": "mosselman-bmw-118i-f40-140hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118i-f40-140hp",
+    "retrievedAt": "2026-09-15T22:29:42.891Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1bdc29d0e44425e8254f73fc73b16048d9342599b36efac374f823b72c92ebc6"
+  },
+  {
+    "id": "shiftech-1013",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/28ti-2.0t-265",
+    "retrievedAt": "2026-09-15T22:38:11.569Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fbd0c578f50e4d2d45556c34d4f804ac8a271ef347a162601fdb69d4881a56b2"
+  },
+  {
+    "id": "mosselman-bmw-128ti-f40-265hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-128ti-f40-265hp",
+    "retrievedAt": "2026-09-15T22:29:44.965Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "99723c55dc5f44abc58affefc22c86e5e64736a1cf51d69c900c4f6591187740"
+  },
+  {
+    "id": "shiftech-1010",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/diesel/18d-eu6d-150",
+    "retrievedAt": "2026-09-15T22:38:09.947Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ab7acb7e958691f47765163a9380c5a3439c238fa1fb481df31c3d306e72aa95"
+  },
+  {
+    "id": "mosselman-bmw-118d-f40-150hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118d-f40-150hp",
+    "retrievedAt": "2026-09-15T22:29:46.897Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c4eda98edc0aa808fddd19b1652c7c2283f4acc207e27e8539894ce68a38dc90"
+  },
+  {
+    "id": "shiftech-1009",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/diesel/20d-eu6d-190",
+    "retrievedAt": "2026-09-15T22:38:08.309Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d1bb6bccf49161abdbefb58eabfeb3a04292842a416b3d0067a543ca5aa4bb38"
+  },
+  {
+    "id": "mosselman-bmw-120d-f40-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-120d-f40-190hp",
+    "retrievedAt": "2026-09-15T22:29:48.922Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "21164ae5d72e0a71b8ba8d70f0ee27e8937d5ea9b04c87a76d35501168207e46"
+  },
+  {
+    "id": "shiftech-186327",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/16i-1.5t-109",
+    "retrievedAt": "2026-09-15T22:38:17.679Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9d2c4c5499384ee09987a6884d411f1859fffc64ef4144c471f1d36c95f51609"
+  },
+  {
+    "id": "mosselman-bmw-116i-f40-109hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-116i-f40-109hp",
+    "retrievedAt": "2026-09-15T22:29:50.921Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e3e6e69dcc3d0dfac97609946a576ef9aea214abde858cc30f9fff5118df0be9"
+  },
+  {
+    "id": "shiftech-1014",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/20i-2.0t-178",
+    "retrievedAt": "2026-09-15T22:38:13.490Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "51a9f9fdf9f814a6b8d0058b0e0808e19467d81674c59383e88771867cd22e99"
+  },
+  {
+    "id": "mosselman-bmw-120i-f40-178hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-120i-f40-178hp",
+    "retrievedAt": "2026-09-15T22:29:53.031Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f5608743ab9ff4af34d6c338dfe430182edacc715c6daff5be47bec7669503bb"
+  },
+  {
+    "id": "manufacturer-bmw-f20-2015",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757",
+    "retrievedAt": "2026-09-15T22:36:54.315Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "216cc48d1817814e13746afc684864f2bc8c32e16040e4eb0e4d718c213a1f04"
+  },
+  {
+    "id": "manufacturer-bmw-f30-2015",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813",
+    "retrievedAt": "2026-09-15T22:36:56.067Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7f1892eea8669b44521ff9e61f5bf08c4cffd6a427af804a9918e14136973d53"
+  },
+  {
+    "id": "manufacturer-bmw-f30-2015-details2",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813",
+    "retrievedAt": "2026-09-15T22:37:25.978Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9ab41c693623cda07c1635f19c33d635b7aa7fa93b432b315b61f07b148c3495"
+  },
+  {
+    "id": "manufacturer-bmw-f30-2015-details",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813",
+    "retrievedAt": "2026-09-15T22:37:11.790Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "76614d4626ba95a9bfa526b2f0a0ac6cd987ea7ce0f391becf34c5edaa20de00"
+  },
+  {
+    "id": "manufacturer-bmw-f20-2011",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series",
+    "retrievedAt": "2026-09-15T22:36:52.518Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e2713931c6317fc770bd36ec9ef2d7b634e8cec9295244ab65ddd2dc23fe09df"
+  },
+  {
+    "id": "manufacturer-bmw-125d-2012",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/detail/T0124299EN/bmw-model-year-update-measures-for-march-2012",
+    "retrievedAt": "2026-09-15T22:39:44.845Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b177735071e615685589cf732e0eb2414e04e77612d0b5c30887fa3501333997"
+  },
+  {
+    "id": "manufacturer-bmw-f30-article",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015",
+    "retrievedAt": "2026-09-15T22:43:11.140Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0b983db342e2f9105496db4c941271659f0730e1c3f1725e2d51e9262c1b88f1"
+  },
+  {
+    "id": "manufacturer-bmw-f10-2014",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/detail/T0193460EN/the-new-bmw-518d-520d",
+    "retrievedAt": "2026-09-15T22:39:46.579Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7ed5d77db8f7e4ded33477c4285b724865914053188a16eaafb4e51fe8e907e5"
+  },
+  {
+    "id": "manufacturer-bmw-g30-2016",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna",
+    "retrievedAt": "2026-09-15T22:36:57.595Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "16fac095500e9bcedfd5a4eaa411b5a4c89c5aad893d3e214b2c949cd9cbb8e3"
+  },
+  {
+    "id": "manufacturer-bmw-g20-2019",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon",
+    "retrievedAt": "2026-09-15T22:39:48.135Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c4b37d7fbcb280944223cfd757e64db4119a7676fee4f3edc359af916edf14ab"
+  },
+  {
+    "id": "manufacturer-bmw-f40-2019",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082",
+    "retrievedAt": "2026-09-15T22:36:59.348Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "473ff77a7b0023e2e258e243b13ff9d969dd2417194344f477587bbb79604022"
+  },
+  {
+    "id": "shiftech-113",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulia/2015/diesel/2.2-jtd-180",
+    "retrievedAt": "2026-09-15T22:37:36.559Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c93b727dffd48948a25386b6962eae584613450b65b2929c63909de4fe0afe85"
+  },
+  {
+    "id": "shiftech-114",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulia/2015/diesel/2.2-jtd-150",
+    "retrievedAt": "2026-09-15T22:37:40.082Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7a05c016547b6a4c4b9e56eedd148bf07874a34b4a5d2db32e8d70b62928b4bd"
+  },
+  {
+    "id": "shiftech-117",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulia/2015/petrol/2.0-tb-200",
+    "retrievedAt": "2026-09-15T22:37:43.649Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b5ff6f4c48b7900742ba957fc1a8acc36f78b2963c2e47ad872e1f4eec953e18"
+  },
+  {
+    "id": "shiftech-122",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulietta/2010/petrol/1.4-multi-air-170",
+    "retrievedAt": "2026-09-15T22:37:47.206Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "532b5c3ee79fce0ff6aa5d361e126984b992cfbc475b6180bf2cc7ad50f60cd7"
+  },
+  {
+    "id": "shiftech-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulietta/2010/diesel/2.0-jtdm-140",
+    "retrievedAt": "2026-09-15T22:37:51.069Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c50090cf27888c3954dc8d95c0caee606772329e6ffacde7addffaf49beafb15"
+  },
+  {
+    "id": "shiftech-130",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulietta/2010/diesel/1.6-jtdm-120",
+    "retrievedAt": "2026-09-15T22:38:12.545Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dfba1442a7d8ad3896219f5b75ba7a543db3c05adc0884961e94b3e3988e2ade"
+  },
+  {
+    "id": "shiftech-135",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulietta/2016/diesel/2.0-jtdm-eu6-150",
+    "retrievedAt": "2026-09-15T22:38:17.135Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3aa1715133ee94c7c6b703441bb4f998ffc98b826034a6ea25a1976fd8857082"
+  },
+  {
+    "id": "shiftech-3216",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/500x/2014/petrol/1.4-multi-air-140",
+    "retrievedAt": "2026-09-15T22:36:47.384Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "be4d013112f5875ec0696da94f4a8c892d0424fc233c0056a6c02084b4f23d21"
+  },
+  {
+    "id": "shiftech-3218",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/500x/2014/diesel/1.6-jtdm-eu5-120",
+    "retrievedAt": "2026-09-15T22:36:55.360Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3b406672cd5ccf1b26f31b166107351fe8e5f9e4ad5fda77eb3a614344d0740e"
+  },
+  {
+    "id": "shiftech-3220",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/500x/2014/diesel/1.3-mjet-eu6-95",
+    "retrievedAt": "2026-09-15T22:36:51.675Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0ea96a5d2368a9eb61a9ff9752cd1cb18527efef1198002d4985d9975c601c14"
+  },
+  {
+    "id": "shiftech-3303",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/grande-punto/2005/diesel/1.3-mjet-75",
+    "retrievedAt": "2026-09-15T22:37:29.230Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "89f87880bd43dcc12ab86cb6f778fe14a8eeecfbc89026c753c6ee54a8217fb1"
+  },
+  {
+    "id": "shiftech-3307",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/grande-punto/2005/petrol/1.4-t-jet-eu5-120",
+    "retrievedAt": "2026-09-15T22:37:32.788Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d1ade005d49c757f0ce89e066b6cd0cdbf1e804331aa4de808899669f7c3b0a9"
+  },
+  {
+    "id": "shiftech-3409",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/tipo-egea/2016/diesel/1.6-jtdm-120",
+    "retrievedAt": "2026-09-15T22:37:01.358Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f0323ee0c91f5bcd66c8d7a405132b3902ce9adaed5ccb516814555a77750d4a"
+  },
+  {
+    "id": "shiftech-3411",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/tipo-egea/2016/petrol/1.4-t-jet-eu6-120",
+    "retrievedAt": "2026-09-15T22:37:25.577Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "40b14f14382ef055ad145b7e9357ccfe438fc98eb810f43f70acb8eb8286f1cf"
+  },
+  {
+    "id": "shiftech-4724",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jeep/renegade/2014/diesel/2.0-jtdm-140",
+    "retrievedAt": "2026-09-15T22:38:20.756Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d4fce91a3fc87a3e184e10014b7d7a07c99980e602383e33bc5f8881b3ea2148"
+  },
+  {
+    "id": "shiftech-4725",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jeep/renegade/2014/diesel/2.0-jtdm-170",
+    "retrievedAt": "2026-09-15T22:38:24.455Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c67e28d8a5df884d1d12b942a44e05bb748ce37dacfa0e753272096241302956"
+  },
+  {
+    "id": "shiftech-4726",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jeep/renegade/2014/diesel/1.6-jtdm-120",
+    "retrievedAt": "2026-09-15T22:38:28.129Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b4f7a887bf47b3a0af544afc631fc463c7982d93918aa5e370bc865322bdf74e"
+  },
+  {
+    "id": "shiftech-4727",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jeep/renegade/2014/petrol/1.4-multi-air-140",
+    "retrievedAt": "2026-09-15T22:38:31.640Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "91a02ea1b174390824336c33cf6934f8ae571a745555926aff934b0e0b6e78b6"
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2017-diesel-20-ecoblue-105",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2017/diesel/2.0-ecoblue-105",
+    "retrievedAt": "2026-09-15T22:30:27.557Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "13c3251df7b6b85e3b2a399dfbcae0a6af3a8cda0d20e552e9f1bfae5c7b8a4d"
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2017-diesel-20-ecoblue-130",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2017/diesel/2.0-ecoblue-130",
+    "retrievedAt": "2026-09-15T22:31:18.672Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "05672a4757dd2b03c29b1462483a835a56b4e40b1006e9fd934f12c50d640276"
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2017-diesel-20-ecoblue-170",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2017/diesel/2.0-ecoblue-170",
+    "retrievedAt": "2026-09-15T22:31:22.675Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d00b1019fc2bbe8a73d23e316fe2d25cd241be7c81750423109232ba49f74ba3"
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2017-diesel-20-tdci-ecoblue-eu6-190",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2017/diesel/2.0-tdci-ecoblue-eu6-190",
+    "retrievedAt": "2026-09-15T22:31:26.534Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3e41916dfc2138712287a16bcddcb6635a6e74fa1f9c23eda30c6676fa2e3789"
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2025-diesel-20-ecoblue-110",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2025/diesel/2.0-ecoblue-110",
+    "retrievedAt": "2026-09-15T22:31:30.520Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a8fba2f2fc384d211f1ecf21430853fd5486aa96b8e6c08a45a2df10eecff60b"
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2025-diesel-20-ecoblue-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2025/diesel/2.0-ecoblue-136",
+    "retrievedAt": "2026-09-15T22:31:34.141Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ca65997d7938d88641d60ec29fae741dbfff6a8d0052aa2b6b7113d445262dd3"
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2025-diesel-20-ecoblue-170",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2025/diesel/20-ecoblue-170",
+    "retrievedAt": "2026-09-15T22:31:39.076Z",
+    "status": "unavailable",
+    "retrievalMethod": "page"
+  },
+  {
+    "id": "shiftech-ford-transit-2017-diesel-20-ecoblue-105",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2017/diesel/2.0-ecoblue-105",
+    "retrievedAt": "2026-09-15T22:31:42.697Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "31de9874f88db7a53ec0174a08ff783ed330c2f248770296772d251578223e8e"
+  },
+  {
+    "id": "shiftech-ford-transit-2017-diesel-20-ecoblue-130",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2017/diesel/2.0-ecoblue-130",
+    "retrievedAt": "2026-09-15T22:31:46.414Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0da59942e8346a404204db46226b67a5050cfb94a4c492aa63189c536f4fa522"
+  },
+  {
+    "id": "shiftech-ford-transit-2017-diesel-20-ecoblue-170",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2017/diesel/2.0-ecoblue-170",
+    "retrievedAt": "2026-09-15T22:31:50.475Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "17c6e2a9c506fe1bb5f11c07ee6b02e0f1ab62a4ebefe444bd9b2bb3810a4aa6"
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-75",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-75",
+    "retrievedAt": "2026-09-15T22:31:54.397Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c340b25c879bdb2c3728ebab1e378b8799da54e98af4052f82211a351579fca3"
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-100",
+    "retrievedAt": "2026-09-15T22:32:08.738Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "476a729058c5a10dd8ddc9458b964eae4a944f777035a64c04ae98b421778db3"
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-120",
+    "retrievedAt": "2026-09-15T22:32:12.708Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9159d6216c3b68c007c4afa07a4af91fd6e5a859c8aa6b3e1b2ff7a615827e6a"
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-75",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-ecoblue-75",
+    "retrievedAt": "2026-09-15T22:32:16.375Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed9b32a0d5eeb0fbdc5f1e54f7190dbac41854c58609b3a4e4b8575800586d2b"
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-ecoblue-100",
+    "retrievedAt": "2026-09-15T22:32:20.295Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2c4e90ae7c2e8a003766531309681c2dd475cb04a783b528147db6021dd91839"
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-ecoblue-120",
+    "retrievedAt": "2026-09-15T22:32:24.489Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f1ab1415bc04dfbc37cddf8cd83123237a4438e8ab9be86296bff0afd1b4583a"
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-10-t-ecoboost-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.0-t-ecoboost-100",
+    "retrievedAt": "2026-09-15T22:32:28.572Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "912bdc49590c76686ee049ced2f4b6a8523d7138cf28d38ea75c4f6e733ce44e"
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-10-t-ecoboost-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.0-t-ecoboost-125",
+    "retrievedAt": "2026-09-15T22:32:32.153Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a581ad60a9b55fbcc39457143a54e320a41134a64811e262bef9b582203ac484"
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-10-t-ecoboost-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.0-t-ecoboost-140",
+    "retrievedAt": "2026-09-15T22:32:36.198Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ffbd03881c189ae22451208188eea2312af263451d2759f8e030075c85ecee6e"
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-16-t-ecoboost-182",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.6-t-ecoboost-182",
+    "retrievedAt": "2026-09-15T22:32:40.114Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "071b8a667be12a36e75ee03f4412a9cca2c355a11736b2cb6c5c4919d478ba97"
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-16-t-ecoboost-st200-200",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.6-t-ecoboost-st200-200",
+    "retrievedAt": "2026-09-15T22:32:44.196Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c9c1a5f4db5ccdce9e75598697ff50bfb9f9912d6342331ad73bf729adef0612"
+  },
+  {
+    "id": "shiftech-ford-fiesta-2017-mkviii-petrol-10-t-ecoboost-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2017-mkviii/petrol/1.0-t-ecoboost-100",
+    "retrievedAt": "2026-09-15T22:32:48.458Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9d659abf4675c1ea5fe89527bcf8dcc9ffabb8c718b7d7f04c06e13c1fdb8990"
+  },
+  {
+    "id": "shiftech-ford-fiesta-2017-mkviii-petrol-10-t-ecoboost-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2017-mkviii/petrol/1.0-t-ecoboost-125",
+    "retrievedAt": "2026-09-15T22:32:52.170Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7a5427a8b2b75d26a910629aaa76b13d3292d7d4dcdd2d0ab5f9427890d7be12"
+  },
+  {
+    "id": "shiftech-ford-fiesta-2017-mkviii-petrol-10-t-ecoboost-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2017-mkviii/petrol/1.0-t-ecoboost-140",
+    "retrievedAt": "2026-09-15T22:32:55.765Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dbde302895aa6820fb6b03542739f44a25f94eda59dd27d76dc45d607cf61e1b"
+  },
+  {
+    "id": "shiftech-ford-fiesta-2017-mkviii-petrol-15-t-ecoboost-200",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2017-mkviii/petrol/1.5-t-ecoboost-200",
+    "retrievedAt": "2026-09-15T22:33:07.962Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "124bc7a1e81c498ff9b1a1b8e550726641597b521c820b4662c1b64474e6f939"
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-10-t-ecoboost-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/1.0-t-ecoboost-100",
+    "retrievedAt": "2026-09-15T22:33:11.777Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "37ea16c19de6ff641d4328dcef72cd5692b105a5072498a6912cd904be46d0f8"
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-10-t-ecoboost-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/1.0-t-ecoboost-125",
+    "retrievedAt": "2026-09-15T22:33:15.910Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bf8156d29b9ea481131c566290ee88afacb50d3a1775f1b915b856d205799d71"
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-15-t-ecoboost-150",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/1.5-t-ecoboost-150",
+    "retrievedAt": "2026-09-15T22:33:19.715Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "069dbbb465563813a1988e0023d7af990497ff2494dc444bfbc8489201634477"
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-15-t-ecoboost-182",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/1.5-t-ecoboost-182",
+    "retrievedAt": "2026-09-15T22:33:23.512Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bc51c0a7037febf188c8ccc4d8858ec72c29142ce43c8f16999207b29a60048b"
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-20-t-ecoboost-st-250",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/2.0-t-ecoboost-st-250",
+    "retrievedAt": "2026-09-15T22:33:27.490Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "945f7538f87c9b10145f9b3ff99be1157796157ca48a0daa640b284d4658d434"
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-23-t-ecoboost-rs-350",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/2.3-t-ecoboost-rs-350",
+    "retrievedAt": "2026-09-15T22:33:31.748Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "72d36eb32b1a9ad0ef25a756a3b9807c45e83983a6fdbd9d472b52f41aed51bd"
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-10-t-ecoboost-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/1.0-t-ecoboost-100",
+    "retrievedAt": "2026-09-15T22:33:35.678Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fa5484304d054296a881158885dc9b41dc62340f9de2c347e9d69fb74b4148ab"
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-10-t-ecoboost-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/1.0-t-ecoboost-125",
+    "retrievedAt": "2026-09-15T22:33:39.504Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "faa50a901eb1a4f58ac839922e879c7ce089bf2a0aa847a548f0dae0990a0b3b"
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-15t-ecoboost-150",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/1.5t-ecoboost-150",
+    "retrievedAt": "2026-09-15T22:33:43.729Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6477d6fb6a3ba651b5baa629b9558ab358535415bd0aabb39b911badbb76214b"
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-15t-ecoboost-182",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/1.5t-ecoboost-182",
+    "retrievedAt": "2026-09-15T22:33:47.490Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9a7fcd6f64bca61696341b7c08821e276fc5295719ebded41838ba50f9a0fa45"
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-23-t-ecoboost-st-280",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/2.3-t-ecoboost-st-280",
+    "retrievedAt": "2026-09-15T22:33:51.337Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "db16558b6c6f7d3e7cfa7c2a3434ee8bbdef3d1f304e745f94f27536ed2607f6"
+  },
+  {
+    "id": "unlimited-chiptuning-ford-transit-ecoblue-2-0-tdci-105-pk-euro-6",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-ford-transit-ecoblue-2-0-tdci-105-pk-euro-6.html",
+    "retrievedAt": "2026-09-15T22:41:44.858Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "973609f31ff2254ed8cd8f8cd4f2a168fd9b3f784ec133829fd68930cfa268bc"
+  },
+  {
+    "id": "unlimited-chiptuning-ford-transit-connect-1-5-tdci-100-pk",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-ford-transit-connect-1-5-tdci-100-pk.html",
+    "retrievedAt": "2026-09-15T22:39:28.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "787c7a370946f986f689e66bd367993740bbc93ccfd3c300e538c2a6bf86104b"
+  },
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-diesel-16-crdi-116-280",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/diesel/16-crdi-116-280",
+    "retrievedAt": "2026-09-15T22:30:27.557Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ddba3af2a0d851d6b148e21272a846da1a5b02533b94347104e912ecbee9f76d"
+  },
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-diesel-16-crdi-136-320",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/diesel/16-crdi-136-320",
+    "retrievedAt": "2026-09-15T22:34:40.268Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "10d15cb2fd92bc52388ae762fdb134859c8a96e0c5625ebc35b0e3f8f7cf0549"
+  },
+  {
+    "id": "shiftech-kia-sportage-2024-nq5-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2024-nq5/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:34:43.978Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "42dfe967616cf61850136df2e8318f7bce9b5ec7947ba0fb1d2dd0d1ee5cfd17"
+  },
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-petrol-16-t-gdi-48v-150",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/petrol/1.6-t-gdi-48v-150",
+    "retrievedAt": "2026-09-15T22:34:47.653Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "49703fc9e5c53db667e806b1731f4147c370e85832d1552074f23d7005d4c0d4"
+  },
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-petrol-16-t-gdi-160-265",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/petrol/16-t-gdi-160-265",
+    "retrievedAt": "2026-09-15T22:34:51.271Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "eb1263e831dcde1850c56ef15b024926f235d84ec02c9d331a1ec1f313841ead"
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-petrol-16-t-gdi-177",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/petrol/1.6-t-gdi-177",
+    "retrievedAt": "2026-09-15T22:34:55.477Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ebc310ec39b7bab98d4db6e5f6ec2e06b7a5de8541d8fc713c3facf0381a7609"
+  },
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-petrol-16-t-gdi-180",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/petrol/1.6-t-gdi-180",
+    "retrievedAt": "2026-09-15T22:34:59.624Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dbc36e2dbef61b43befeef858edff6bc6ed4dbde13090baa99bda22976792c5a"
+  },
+  {
+    "id": "shiftech-kia-sportage-2010-sl-diesel-17-crdi-eu5-115",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2010-sl/diesel/1.7-crdi-eu5-115",
+    "retrievedAt": "2026-09-15T22:35:03.600Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f1a665dcc681d9e6b71034de3c617cc8cb7292a725c34df86ed1989d7700f3ce"
+  },
+  {
+    "id": "shiftech-kia-sportage-2010-sl-diesel-20-crdi-eu5-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2010-sl/diesel/2.0-crdi-eu5-136",
+    "retrievedAt": "2026-09-15T22:35:07.579Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "81a64134c16b0f4a42d217829a966d459f88f4295ab77e8853a7d8d63aaeb57b"
+  },
+  {
+    "id": "shiftech-kia-sportage-2010-sl-diesel-20-crdi-eu5-184",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2010-sl/diesel/2.0-crdi-eu5-184",
+    "retrievedAt": "2026-09-15T22:35:11.302Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1ebbe02566dc80f39c3502b8a8725401ef5b97078a51924e0ea3f5385ab11dae"
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-115",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/1.7-crdi-eu6-115",
+    "retrievedAt": "2026-09-15T22:35:15.008Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9562fd4c5445a45fedf56865df3b02e82e8bd7df4e2441236ce8a87e962eaeb6"
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-141",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/1.7-crdi-eu6-141",
+    "retrievedAt": "2026-09-15T22:35:18.760Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "98c352f6c33ab9371953487e796331f39b0ef2592f3901d782a2031bbeb2b635"
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/2.0-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:35:22.422Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "84c583be452f4e49364851e2db562ada49ad22e0354d9c8ba75d58cbdf852a09"
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-184",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/2.0-crdi-eu6-184",
+    "retrievedAt": "2026-09-15T22:35:26.207Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0f1820d93e1b1ac5c7ef35159d989c77699b278071ac7399fb0beff8b2f4eddb"
+  },
+  {
+    "id": "shiftech-kia-ceed-2015-petrol-10-t-gdi-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2015/petrol/1.0-t-gdi-120",
+    "retrievedAt": "2026-09-15T22:35:30.020Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f60e19884f3cb8a564c6df75c8ba7e9d1e66679e28e4922473b2363833c8a48c"
+  },
+  {
+    "id": "shiftech-kia-ceed-2015-petrol-16-t-gdi-204",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2015/petrol/1.6-t-gdi-204",
+    "retrievedAt": "2026-09-15T22:35:43.419Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "00c84d461667f6e68cf679ea6bca21d9167ceaf00cfb0550e6cf6346d8fe0b10"
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-petrol-10-t-gdi-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.0-t-gdi-100",
+    "retrievedAt": "2026-09-15T22:35:48.208Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c3f6a14ac52c1448b843c5fd540a06968f2e310846450388672ac88c80f8cd30"
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-petrol-10-t-gdi-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.0-t-gdi-120",
+    "retrievedAt": "2026-09-15T22:35:52.546Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "42566c785f0d3894cc6f628723a2ea5c6547bc3bdcc57da6a2c39bb54a4415cb"
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-petrol-14-t-gdi-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.4-t-gdi-140",
+    "retrievedAt": "2026-09-15T22:35:56.635Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f402caf49e09d4e6d4e718088279cdeb55eda1fedfe3e2711273896f54eb2c8b"
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-petrol-16-t-gdi-204",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.6-t-gdi-204",
+    "retrievedAt": "2026-09-15T22:36:00.762Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9161a3a7e19fb448376aa06af72e3c58b0a0558ebab142558d33902f2069fb19"
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-diesel-16-crdi-eu6-110",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/diesel/1.6-crdi-eu6-110",
+    "retrievedAt": "2026-09-15T22:36:04.734Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f7a241ab2ec8a82c696a5db0c3706a8a0a71d112c79ed8997d327e8c2133a239"
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:36:08.771Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "428358ae32ad3a1bc01dd9fb82f41b0eec474d87d68ff3e7a8526562f0dbdfb5"
+  },
+  {
+    "id": "shiftech-kia-proceed-2019-petrol-10-t-gdi-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/proceed/2019/petrol/1.0-t-gdi-120",
+    "retrievedAt": "2026-09-15T22:36:14.030Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1e90709d04dd4c25d70bcd05961584dc2cb8f4e1c431d246417fdf9c734d6c3a"
+  },
+  {
+    "id": "shiftech-kia-proceed-2019-petrol-14-t-gdi-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/proceed/2019/petrol/1.4-t-gdi-140",
+    "retrievedAt": "2026-09-15T22:36:17.760Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "992ca55f5592d3d07a8cab699a8bab2109458bf2a3d50aef855ab5bdd02cc8ca"
+  },
+  {
+    "id": "shiftech-kia-proceed-2019-petrol-16-t-gdi-204",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/proceed/2019/petrol/1.6-t-gdi-204",
+    "retrievedAt": "2026-09-15T22:36:21.664Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b480d880932c820533ec39a4eeb296c70066e76cd319390104f025ef62ccabc9"
+  },
+  {
+    "id": "shiftech-kia-proceed-2019-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/proceed/2019/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:36:25.377Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7fe77d88270c1d85babe2131a71fb4e147cb7fc490d5c5baaff8d30297160d7e"
+  },
+  {
+    "id": "shiftech-kia-sorento-2009-xm-diesel-22-crdi-eu5-197",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2009-xm/diesel/2.2-crdi-eu5-197",
+    "retrievedAt": "2026-09-15T22:36:31.640Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0182cea89ea767531f0f5d3f0610edca8af76c4ac2413863562f194e4431da97"
+  },
+  {
+    "id": "shiftech-kia-sorento-2020-mq4-diesel-22-crdi-eu6-202",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2020-mq4/diesel/2.2-crdi-eu6-202",
+    "retrievedAt": "2026-09-15T22:36:35.398Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "255a17028e084ea27709e8d27d0f7cdcacd0570bf3e20e48830e2ec89d8ae4bf"
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-petrol-10-t-gdi-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/1.0-t-gdi-120",
+    "retrievedAt": "2026-09-15T22:36:45.993Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "58301ed60bcc997cf6b57fd2a6bc48bfa5de0f721520d885e192c367cbf97ae0"
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-petrol-14-t-gdi-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/1.4-t-gdi-140",
+    "retrievedAt": "2026-09-15T22:36:49.640Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1a021a9c16d705164555396b6cb526d5b12b25f268d763096f5ef92d3dc60fed"
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-petrol-20t-n-250",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/2.0t-n-250",
+    "retrievedAt": "2026-09-15T22:36:53.932Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1394b0df72141ed99a7cea8feb8f86a925c966d86afbc7aac82d094d3dbdcd9d"
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-petrol-20t-n-performance-275",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/2.0t-n-performance-275",
+    "retrievedAt": "2026-09-15T22:36:57.830Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "86c43604adc1b53bc3bda7d67e0b89027cc4162053307eb9b45a44e56fc3a7d1"
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-115",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/diesel/1.6-crdi-eu6-115",
+    "retrievedAt": "2026-09-15T22:37:01.584Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6d827b4f706e3d57157e0f9800ba6d77fe4cb5a4a6714ab25303b84c1c791329"
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:37:06.799Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "12ae488c214fe79476eabe948938e1d0bd18963d42b3ee2534834ea1a0f8154e"
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-115",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/1.7-crdi-eu6-115",
+    "retrievedAt": "2026-09-15T22:37:10.749Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "38a5e954e3bd03918b931c0d15f5e538fe34d002307a0e3afce3fa44221798b2"
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-141",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/1.7-crdi-eu6-141",
+    "retrievedAt": "2026-09-15T22:37:14.373Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fcfab592370a6a7f397320c9ef3b929460877feb74e38acb84b6b2e6f0038211"
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/2.0-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:37:18.130Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "64602fe4804e2f8d3686b9c15b6e35b2607e5e940131bd35dc3a9cab1089c839"
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-184",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/2.0-crdi-eu6-184",
+    "retrievedAt": "2026-09-15T22:37:22.113Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f74a7ebd885559ac2c283b54a6b39c14f727cb02fa81a439d3b9dc064aef3e93"
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-petrol-16-t-gdi-177",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/petrol/1.6-t-gdi-177",
+    "retrievedAt": "2026-09-15T22:37:26.174Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "466777bb577e8defad4f89a444251e5ea68fe74fa85612814150b3a8a13799f6"
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2020-nx4-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2020-nx4/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:37:30.235Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8011108b7173dad8f22f20a15184ec807a94ddc2571a4288a19b296d2d5332da"
+  },
+  {
+    "id": "unlimited-chiptuning-kia-ceed-1-4-t-gdi-140-pk",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-1-4-t-gdi-140-pk.html",
+    "retrievedAt": "2026-09-15T22:41:46.717Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b05b96f9c1c297bfbb7f6a57804a3a7056db5fdb055f7a27a4b950ec54bc6852"
+  },
+  {
+    "id": "unlimited-chiptuning-kia-sportage-1-6t-gdi-177-pk",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-1-6t-gdi-177-pk.html",
+    "retrievedAt": "2026-09-15T22:41:48.753Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "68d800632804e7f1102c9f707d36990f271f3cebe396456036dbb26c0b0fe43a"
+  },
+  {
+    "id": "manufacturer-kia-sportage-europe2021",
+    "provider": "manufacturer",
+    "sourceName": "Kia Europe",
+    "url": "https://press.kia.com/ie/en/home/media-resouces/press-releases/2021/The-all-new-Sportage.html",
+    "retrievedAt": "2026-09-15T22:40:49.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5567ca5f8eef657ceca91254203ae4bc8d7a20532242dbf44f292ed636b65dfe"
+  },
+  {
+    "id": "manufacturer-kia-sportage-blackedition2020",
+    "provider": "manufacturer",
+    "sourceName": "Kia Europe",
+    "url": "https://press.kia.com/pl/pl/home/press-kits/2020/debiut-kia-sportage-black-edition.html",
+    "retrievedAt": "2026-09-15T22:40:53.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b85851f7b298d99baa83d54665564bc9ec76efa98b6387741a9bedae2e39c7ff"
+  },
+  {
+    "id": "br-performance-access-block-sportage",
+    "provider": "br-performance",
+    "sourceName": "BR-Performance",
+    "url": "https://www.br-performance.be/en-be/chiptuning/1-cars/29-kia/1449-sportage/10408-2018-2024/10409-1-6-crdi/",
+    "retrievedAt": "2026-09-15T22:22:42.782Z",
+    "status": "blocked",
+    "retrievalMethod": "page",
+    "contentSha256": "96354c58c8fd7ff3828c578741a26b104ef35b26246210c6ac88d11b8921850f"
+  },
+  {
+    "id": "celtic-tuning-access-unavailable-sportage",
+    "provider": "celtic-tuning",
+    "sourceName": "Celtic Tuning",
+    "url": "https://www.celtictuning.co.uk/services/kia/sportage-2016/diesel/1-6-crdi-134-bhp-2019-ECU-remap-chiptuning/stage-1",
+    "retrievedAt": "2026-09-15T22:22:57.570Z",
+    "status": "blocked",
+    "retrievalMethod": "page"
+  },
+  {
+    "id": "shiftech-4580",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xe/2015/diesel/2.0d-180",
+    "retrievedAt": "2026-09-15T22:36:31.680Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9037008d2a403487b49be2a2c0e26d2640506a8aa7bb7417d7e81bb00b4e09ac"
+  },
+  {
+    "id": "shiftech-4583",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xe/2015/diesel/2.0d-163",
+    "retrievedAt": "2026-09-15T22:36:35.495Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c1519b360b5d12c31f7e67d52710923a5a2190851bed1ad68b71ffbe55092487"
+  },
+  {
+    "id": "shiftech-4603",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xf/2015-x260/diesel/3.0d-300",
+    "retrievedAt": "2026-09-15T22:36:39.488Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "27b8efac4d923ad1efb6b6882e8cc93d70f70ba13d282a669bded3bf4226baa3"
+  },
+  {
+    "id": "shiftech-4604",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xf/2015-x260/diesel/2.0d-180",
+    "retrievedAt": "2026-09-15T22:36:43.067Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "678c6d6a4306e8cfa8f50aeb1f8441d47e52825be0496a5b1fb2cd4e1a050f87"
+  },
+  {
+    "id": "shiftech-5452",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery/2017-v/diesel/2.0-sd4-240",
+    "retrievedAt": "2026-09-15T22:35:55.937Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9736bd5e584c9128a545a5b91c19aeb2715df77438ccfadae65bec5d90d1ce46"
+  },
+  {
+    "id": "shiftech-5453",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery/2017-v/diesel/3.0-tdv6-eu6-258",
+    "retrievedAt": "2026-09-15T22:35:59.768Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1b17e96a3691cdf5d7fdb1177ce2f88872b6e9ec784c638ebf8d25ce64feecbb"
+  },
+  {
+    "id": "shiftech-5464",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery-sport/2015/diesel/2.2-sd4-190",
+    "retrievedAt": "2026-09-15T22:36:03.752Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "85809af0ff692a35e17927b20b42ce8a64688acd10168dfdf7449786fc22fed6"
+  },
+  {
+    "id": "shiftech-5465",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery-sport/2015/diesel/2.0-td4-180",
+    "retrievedAt": "2026-09-15T22:36:07.633Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7f05ac00a760cc781978fe1f1f461b38d5fdfe5e9934324a44e4600195e6c2ce"
+  },
+  {
+    "id": "shiftech-5480",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/evoque/2015/diesel/2.0-td4-180",
+    "retrievedAt": "2026-09-15T22:36:11.369Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed3d8f5a729060b99c31d37c89a634c55e19abe4449cf58ad69f881a88e562ad"
+  },
+  {
+    "id": "shiftech-5483",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/evoque/2015/diesel/2.0-sd4-240",
+    "retrievedAt": "2026-09-15T22:36:15.018Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "59a093eb59aa7d034f6506189fe4d1cceba84cf97d5737206acd8ef527dd36a6"
+  },
+  {
+    "id": "shiftech-defender-d240-research-unresolved",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/defender/2020/diesel/d240-240",
+    "retrievedAt": "2026-09-15T22:53:41.806Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "447dbc40d6a31e189c853bada9d3045121b5afb4e9b81b93ca1b2f123c0b4bba"
+  },
+  {
+    "id": "unlimited-defender-d240-research-unresolved",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-landrover-defender-d240-240-pk.html",
+    "retrievedAt": "2026-09-15T22:53:39.497Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "4a0f3854d8c968d9bf9e470aad8f09f6adfe6f600f34259113f3b7ddf15e76e0"
+  },
+  {
+    "id": "shiftech-6045",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2012-w176/diesel/180-cdi-1.5-110",
+    "retrievedAt": "2026-09-15T22:30:13.962Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2d2e3fef9920b791879fdb28f3be7f28ded8b58a95db88a489dbf907fedac6ac"
+  },
+  {
+    "id": "shiftech-6047",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2012-w176/diesel/160-cdi-1.5-90",
+    "retrievedAt": "2026-09-15T22:30:17.837Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2f3247b01c83e40c3ba038cee98357ecd7966cdbbce39e7733130596f2dc89db"
+  },
+  {
+    "id": "shiftech-6051",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2012-w176/essence/45-amg-2.0t-360",
+    "retrievedAt": "2026-09-15T22:30:21.420Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2b9613fd78d402af05a48f71687ca2baf1bb1510c06a44535c83873e6ecb4bdd"
+  },
+  {
+    "id": "shiftech-6062",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2015-w176/essence/45-amg-2.0t-381",
+    "retrievedAt": "2026-09-15T22:30:24.757Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d02490308f2e9f930c5ac5a1b01747a5f6d60ba3692eebbb14ab64e174434071"
+  },
+  {
+    "id": "shiftech-6070",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2018-w177/diesel/180d-1.5-116",
+    "retrievedAt": "2026-09-15T22:30:28.172Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d019aa7939756c491ec609f2ce09bc20b38563370c61c1cd05dfdeec0ac6b43d"
+  },
+  {
+    "id": "shiftech-6074",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2018-w177/diesel/220d-2.0-190",
+    "retrievedAt": "2026-09-15T22:30:31.460Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e47bf78eb8d31b70a97c551ede463c1f00bcaa330a50802b4630f5d7c1eff2c6"
+  },
+  {
+    "id": "shiftech-6075",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2018-w177/diesel/200d-2.0-150",
+    "retrievedAt": "2026-09-15T22:30:34.844Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ccdfb2fd8e5e871aec12fb338d060b6ae999fdee432a802d5a978d650e8af26e"
+  },
+  {
+    "id": "shiftech-6079",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2018-w177/essence/45-amg-s-2.0t-421",
+    "retrievedAt": "2026-09-15T22:30:38.247Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5bd02807a0853c3c8f9bb96b22782b85e3e71c020a9a47604f7cb1b8a5923113"
+  },
+  {
+    "id": "shiftech-6157",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2007-w204/diesel/200-cdi-2.1-136",
+    "retrievedAt": "2026-09-15T22:30:41.526Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dce4294bacbca126ad2b0a2478f54f0b8638e620af4362dc034c333ffa72a1a1"
+  },
+  {
+    "id": "shiftech-6158",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2007-w204/diesel/220-cdi-2.1-170",
+    "retrievedAt": "2026-09-15T22:30:44.859Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fd5192c885511698a9ddf09d2a8a7ee046d85e8bb509ba0a8c52062b9492bf7b"
+  },
+  {
+    "id": "shiftech-6154",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2007-w204/diesel/250-cdi-2.1-204",
+    "retrievedAt": "2026-09-15T22:31:11.113Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0988e3a5c4f90dced0dacf8a9bfe52473f46815fa54b8dd7486924b4c11f31c8"
+  },
+  {
+    "id": "shiftech-6189",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2014-w205/diesel/180-bluetec-1.6-116",
+    "retrievedAt": "2026-09-15T22:31:14.518Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0d0ded03428a12b144cc0cb18a79261d71ad7bea667fde4de4af5c701b1325aa"
+  },
+  {
+    "id": "shiftech-6190",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2014-w205/diesel/200-bluetec-1.6-136",
+    "retrievedAt": "2026-09-15T22:31:17.968Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "75569e11b39250dc3a75f213a14c5b953803a974d7405c3a351f7338b77259e4"
+  },
+  {
+    "id": "shiftech-6191",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2014-w205/diesel/220-bluetec-2.1-170",
+    "retrievedAt": "2026-09-15T22:31:21.777Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a3194629945678fdfe139b82da68c25f24bb52d434f69524c9f7ebd3134edd42"
+  },
+  {
+    "id": "shiftech-6207",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2018-w205-fl/diesel/220d-2.0-194",
+    "retrievedAt": "2026-09-15T22:31:25.245Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1895e9784d8b35af537cf0944d9fb526f2441e00a8baf80af273cdf071ff47f8"
+  },
+  {
+    "id": "shiftech-6222",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2018-w205-fl/diesel/200d-1.6-160",
+    "retrievedAt": "2026-09-15T22:31:28.809Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b5001fa06c2aa786fb0ce34a9b872d6999f8ae3b68091c4cfc5992e152f5bc40"
+  },
+  {
+    "id": "shiftech-6439",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/e/2016-w213/diesel/220d-2.0-194",
+    "retrievedAt": "2026-09-15T22:31:32.541Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "69606320d46aebbb0d2814c0e0b16abafeed04f06d8c72f126b0cddc6fdbe03d"
+  },
+  {
+    "id": "shiftech-6844",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/vito/2015-w447/diesel/109-cdi-1.6-90",
+    "retrievedAt": "2026-09-15T22:31:36.421Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "77f78822621f07a85f6a7bae07d69786d51cabcacba012f7694a9b1d0c2e6108"
+  },
+  {
+    "id": "shiftech-6847",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/vito/2015-w447/diesel/116-cdi-2.1-163",
+    "retrievedAt": "2026-09-15T22:31:40.049Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dd3b2dff1c5e47389eb0eec54efa1d44f4143de15ccba07a871fc4a78b34c289"
+  },
+  {
+    "id": "shiftech-6848",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/vito/2015-w447/diesel/119-cdi-bluetec-2.1-190",
+    "retrievedAt": "2026-09-15T22:31:44.214Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "eb6d18a5910734bcdb0f08d60caf183120f3c3c389f1a8c93a28ccf529990a55"
+  },
+  {
+    "id": "unlimited-counterpart-6047",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mercedes-benz-w176-a160-cdi-90-pk.html",
+    "retrievedAt": "2026-09-15T22:40:28.508Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "527ca2bb10e9c4f35a5c7b1c9b18e4c3c5bddbbcd5ceebe77228b9ca1084e008"
+  },
+  {
+    "id": "unlimited-counterpart-6051",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mercedes-benz-w176-a45-amg-360-pk.html",
+    "retrievedAt": "2026-09-15T22:40:30.550Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ce39450284639bc8da94c5d4c6ee03a38674521df2fecbed81bb10a6f1358622"
+  },
+  {
+    "id": "unlimited-counterpart-6062",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mercedes-w176-45-amg-381-pk.html",
+    "retrievedAt": "2026-09-15T22:40:32.411Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9533f9c7d98bd62e9ff3a96892e984ef24daff7f5ae82dff2588147e94fa3bd1"
+  },
+  {
+    "id": "unlimited-counterpart-6079",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mercedes-w177-a45-amg-s-2-0t-421-pk.html",
+    "retrievedAt": "2026-09-15T22:40:34.477Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d75ed8336484ce1e755e7fa74a64319ef2036a30f50251f2e6c519aa9f21261c"
+  },
+  {
+    "id": "mercedes-stock-a45-360",
+    "provider": "manufacturer",
+    "sourceName": "Mercedes-Benz manufacturer media",
+    "url": "https://media.mercedes-benz.nl/a-45-amg-eerste-amg-model-met-viercilinder-motor-indrukwekkend-modeloffensief-van-mercedes-amg-in-geneve/",
+    "retrievedAt": "2026-09-15T22:53:22.024Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f0771454c6623aae25d3d8c5109ff3f65120acc85198e52ccacd9fcee9b77aff"
+  },
+  {
+    "id": "mercedes-stock-a45s-421",
+    "provider": "manufacturer",
+    "sourceName": "Mercedes-Benz manufacturer media",
+    "url": "https://media.mercedes-benz.com/article/19e630dc-5835-4576-9d36-06a4b2c8b9fc",
+    "retrievedAt": "2026-09-15T22:53:24.122Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d7f003c151c5467e3f88821a3255abade10e11f8f370f1ede0f95087ce628a01"
+  },
+  {
+    "id": "mercedes-stock-m139-m133",
+    "provider": "manufacturer",
+    "sourceName": "Mercedes-Benz manufacturer media",
+    "url": "https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/",
+    "retrievedAt": "2026-09-15T22:53:47.477Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8f0c83f6da2eca30dfa81dfa5754b7ec6af4b2b651a59a4687344948a8b19f48"
+  },
+  {
+    "id": "shiftech-8086",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2013-phase-i/diesel/1.6-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:32:24.059Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2117c3f566e6d8943eadeaacee831bea7eb4a402ad11c4c7001ec886356727b1"
+  },
+  {
+    "id": "shiftech-8087",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2013-phase-i/diesel/1.6-hdi-92",
+    "retrievedAt": "2026-09-15T22:32:27.506Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ead0f19f4bc84aca742123913f224dcade1842153f8c412e210706cdc8c01f40"
+  },
+  {
+    "id": "shiftech-8088",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2013-phase-i/diesel/1.6-hdi-115",
+    "retrievedAt": "2026-09-15T22:32:31.170Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dbe9ebf80c156ea97062423ea30a5b4e711dff5d233819cbe43112da74398c49"
+  },
+  {
+    "id": "shiftech-8090",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2013-phase-i/diesel/2.0-bluehdi-150",
+    "retrievedAt": "2026-09-15T22:32:34.584Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "aa1b965629146a40be1b1f68c1ab1921fde3bf2aade875514a357f733ed912d9"
+  },
+  {
+    "id": "shiftech-8106",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2017-phase-ii/diesel/1.5-bluehdi-100",
+    "retrievedAt": "2026-09-15T22:32:38.028Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c91dafbe4e362887f43c935828a29e56007e9342ca34eb78a8ac365d8fa635db"
+  },
+  {
+    "id": "shiftech-8112",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2017-phase-ii/diesel/1.5-bluehdi-130",
+    "retrievedAt": "2026-09-15T22:32:41.603Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b9ee2d394a6ce1d5c350e26c72aaa90e4857e71057b6f3071ea74d7a6234067e"
+  },
+  {
+    "id": "shiftech-8253",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/1.6-bluehdi-ss-95",
+    "retrievedAt": "2026-09-15T22:32:46.864Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "770ea1fd74bde844cd508210993e80b18be3e343560b5c977a0c2fbde49a77ab"
+  },
+  {
+    "id": "shiftech-8254",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/1.6-bluehdi-115",
+    "retrievedAt": "2026-09-15T22:32:50.280Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d0963369aaf5dc3bb066371964e0c1bd74788e4266b9b9648aac9ade0a1e0f77"
+  },
+  {
+    "id": "shiftech-8255",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/2.0-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:32:54.034Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e2b04d100f54b1b1cb017509fc2695ade2341a34b09f5b570387a1a238242fa0"
+  },
+  {
+    "id": "shiftech-8256",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/2.0-bluehdi-180",
+    "retrievedAt": "2026-09-15T22:32:57.944Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "db9b9e4483767e2ea8425d5f3aa427ac1529053fb8c89ac36ec3c6d8e45e32ee"
+  },
+  {
+    "id": "shiftech-8257",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/2.0-bluehdi-150",
+    "retrievedAt": "2026-09-15T22:34:28.221Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "030c3a7fca9d1ce3455f5a97d38710b109415d1894493478970fdb98f90ffb93"
+  },
+  {
+    "id": "shiftech-8231",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2014-ii-phase-ii/diesel/2.0-bluehdi-130",
+    "retrievedAt": "2026-09-15T22:34:31.579Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e253b0b8a376f32d28e55b7406d64b7df9aea10533f64f24c9f1a7d889dcf156"
+  },
+  {
+    "id": "shiftech-8232",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2014-ii-phase-ii/diesel/2.0-bluehdi-160",
+    "retrievedAt": "2026-09-15T22:34:35.875Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "621ed05748e0f7afeab53ad9e3ea5535f5a839b3e9b73603c252238072151534"
+  },
+  {
+    "id": "shiftech-8244",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-165",
+    "retrievedAt": "2026-09-15T22:34:39.204Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "599a0617667d7d2f7e672f7cad929cdfad3e56e8d5999a3d2c06109ed23fbf35"
+  },
+  {
+    "id": "shiftech-433439",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-140",
+    "retrievedAt": "2026-09-15T22:34:42.651Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "62854576caf1e885a4f57716222edbc31ee864b4722370f00b0744f8c91f7196"
+  },
+  {
+    "id": "shiftech-2574",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:34:45.951Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8422b8c572493c7878f068f39e9b574a7bf804a5c67dea29c473f9e2ba901f46"
+  },
+  {
+    "id": "shiftech-2575",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-150",
+    "retrievedAt": "2026-09-15T22:34:49.255Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bbfbc9558b7275944831443aede4db2464b3b25e3e3ba6e7c79ddbfa66708558"
+  },
+  {
+    "id": "shiftech-2576",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-180",
+    "retrievedAt": "2026-09-15T22:34:52.650Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9b925ab64b64626b249bf7e77bcbedcc2195fafb01d4fc3e42ff5e720adf3502"
+  },
+  {
+    "id": "shiftech-2577",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/1.6-bluehdi-115",
+    "retrievedAt": "2026-09-15T22:34:56.835Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bbfb9e9b21ff578255112cc5400009b97f285ef30a525fc2abc20c4350ae402a"
+  },
+  {
+    "id": "shiftech-2564",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumper/2019-iii/diesel/2.2-bluehdi-eu6b-140",
+    "retrievedAt": "2026-09-15T22:35:00.393Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "4c245d9081139dc82b35f5e2f2a3646986a715f9d79931db8a63bcb14d6c1df9"
+  },
+  {
+    "id": "shiftech-7901",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-122",
+    "retrievedAt": "2026-09-15T22:35:55.894Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "df6d9074c00a279720de4600ae597e93ab6c8906410b63e47faaaa5a3daf322b"
+  },
+  {
+    "id": "shiftech-7902",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-150",
+    "retrievedAt": "2026-09-15T22:35:59.485Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bd81ee4e551cc67110637bdd3dd710eefabcf660123dd228660cf225c3c33f56"
+  },
+  {
+    "id": "shiftech-7904",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/1.5-turbo-d-102",
+    "retrievedAt": "2026-09-15T22:36:03.063Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "355781cdd5c7a7126c327d5d3f5935e8175cafb7413cc883478c4b5e17da8c33"
+  },
+  {
+    "id": "shiftech-7905",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-177",
+    "retrievedAt": "2026-09-15T22:36:06.487Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "91df1157bce7828702acf1931e496610ff50eaff64ede349f4fd8ddb69825da3"
+  },
+  {
+    "id": "shiftech-10212",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/toyota/proace/2020/diesel/2.0-d-4d-122",
+    "retrievedAt": "2026-09-15T22:36:10.182Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "29e30cb5e1458f8838fb29fa9f236d6ffce0fdd1eba02eb68a3f88fba5401834"
+  },
+  {
+    "id": "shiftech-10213",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/toyota/proace/2020/diesel/2.0-d-4d-150",
+    "retrievedAt": "2026-09-15T22:36:13.657Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8c7914e23d6c87a2001f50cf8e46624f1cb33fc3e17d61c1425f867d27339ea6"
+  },
+  {
+    "id": "shiftech-10214",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/toyota/proace/2020/diesel/2.0-d-4d-177",
+    "retrievedAt": "2026-09-15T22:36:17.531Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fcf9048facc6668e8606ec2885afaff5241a5183e49cc1678d7e28065c943f31"
+  },
+  {
+    "id": "shiftech-13560",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/movano/2021/diesel/2.2-cdti-140",
+    "retrievedAt": "2026-09-15T22:37:55.348Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f0d92ea0c54c5dfe1dc15c28907a19939a24fc2b6baf13cc0e35914a43e9b132"
+  },
+  {
+    "id": "shiftech-13561",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/movano/2021/diesel/2.2-cdti-165",
+    "retrievedAt": "2026-09-15T22:37:58.918Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d503ec2e5d58aa1f92602518549c40b9b31f939ea8a0c14455d474b9dabd0934"
+  },
+  {
+    "id": "unlimited-counterpart-8253",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-1-6-bluehdi-95-pk.html",
+    "retrievedAt": "2026-09-15T22:40:36.497Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bf07d49eebb740151274b5b93c0928c37ae590999af8ab8e4470dc794888cbc3"
+  },
+  {
+    "id": "unlimited-counterpart-8254",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-1-6-bluehdi-115-pk.html",
+    "retrievedAt": "2026-09-15T22:40:38.476Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d98d2f189e689736f3491a09fe9d42c407457adc37b8825656356cd9fdbce23b"
+  },
+  {
+    "id": "unlimited-counterpart-8255",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-2-0-bluehdi-120-pk.html",
+    "retrievedAt": "2026-09-15T22:40:40.517Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2a53764efaa4b63d6c38bc5e1e3fcec99b346489cf0a484d6d958da4f1ca3e46"
+  },
+  {
+    "id": "unlimited-counterpart-8256",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-2-0-bluehdi-180-pk.html",
+    "retrievedAt": "2026-09-15T22:40:42.472Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9ae927ab801b140297769c1a3aec5196f5f85268437b8347483caf868d26ff38"
+  },
+  {
+    "id": "shiftech-8775",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/1.5-dci-eu5-110",
+    "retrievedAt": "2026-09-15T22:36:20.898Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "85eb97583d2dd8f098a6c62d3728283e7c92318c105566a3993d5c3b8fdef31d"
+  },
+  {
+    "id": "shiftech-8777",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/1.6-dci-130",
+    "retrievedAt": "2026-09-15T22:36:24.447Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "987e311bff75cffe847c00ef605675fa79f57718dd7411b99a321303df21981b"
+  },
+  {
+    "id": "shiftech-8779",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/2.0-dci-150",
+    "retrievedAt": "2026-09-15T22:36:29.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e69b053699ccbbac1c1240336d083bf272eea89937732e0df750486bff05c5e3"
+  },
+  {
+    "id": "shiftech-8797",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.6-dci-130",
+    "retrievedAt": "2026-09-15T22:36:47.879Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "31a42042b4b51eead9c038c16df7b5fc8c39860ab720680593abb3ded210bc4d"
+  },
+  {
+    "id": "shiftech-8798",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.6-dci-bi-turbo-165",
+    "retrievedAt": "2026-09-15T22:36:51.208Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "97f6b803248bf613ff4231d8e0059e966c12af5b5b2a79932f5a7a227dbb216b"
+  },
+  {
+    "id": "shiftech-8802",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.5-dci-eu6-110",
+    "retrievedAt": "2026-09-15T22:36:54.971Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "82b4811f38734bc37a45d2ef412312593953d89a9ca62c64ab48f6b5675ad6f7"
+  },
+  {
+    "id": "shiftech-8803",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.5-dci-eu6-90",
+    "retrievedAt": "2026-09-15T22:36:58.527Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e9003b4c44e18cbd7d79041660cb31493cedd64b183cfed86ad79855761d8fe4"
+  },
+  {
+    "id": "shiftech-8574",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/0.9-tce-90",
+    "retrievedAt": "2026-09-15T22:37:02.262Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0f297efb3a1ee42fb5c0697dade9dab362a0b914509697e9bb035b45845b221e"
+  },
+  {
+    "id": "shiftech-8576",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/1.2-tce-120",
+    "retrievedAt": "2026-09-15T22:37:06.005Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7634c79585c5c15eb1ddaa7c9f02c7891f47217659ac6683f60c476a98e3f824"
+  },
+  {
+    "id": "shiftech-8579",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/diesel/1.5-dci-eu5-90",
+    "retrievedAt": "2026-09-15T22:37:09.589Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2b640fb036bf2afac37f7f875330d5df21dbf40a8d4acab9400ca1aa7ba8342c"
+  },
+  {
+    "id": "shiftech-8581",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2016-iv-ii/diesel/1.5-dci-eu6-110",
+    "retrievedAt": "2026-09-15T22:37:13.080Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5f3b26b4fe79215d9b914c0dc4fe7ebc30dddd77d3e862851935cb352b6d49a7"
+  },
+  {
+    "id": "shiftech-8591",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2019-v/essence/1.3-tce-gpf-130",
+    "retrievedAt": "2026-09-15T22:37:16.748Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b5cc8adb2c41b59144f416d0130c6dedfa0e236fe2d52ffa6e1da5cd9bd48ded"
+  },
+  {
+    "id": "shiftech-8896",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2014/diesel/1.6-dci-bi-turbo-eu5-120",
+    "retrievedAt": "2026-09-15T22:37:20.371Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c141361f8a27c0ca8f4a797ba6f4392689747049c5777e778de74102ca71d356"
+  },
+  {
+    "id": "shiftech-8903",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2016/diesel/1.6-dci-130",
+    "retrievedAt": "2026-09-15T22:37:44.786Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e5c98c222ea80f1f829f8f7a77fcfa080791817992219a8c715de103ae38a717"
+  },
+  {
+    "id": "shiftech-8905",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2019/diesel/2.0-blue-dci-145",
+    "retrievedAt": "2026-09-15T22:37:48.374Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "352e0b05664c977ef8d74f58a97efc88306a97fdd58ebc1e85b029b6f4a6802e"
+  },
+  {
+    "id": "shiftech-8906",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2019/diesel/2.0-blue-dci-170",
+    "retrievedAt": "2026-09-15T22:37:51.949Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8a98556497d3545a1f0fcc210eede128ad69a869e5b1d486b23356d62b684594"
+  },
+  {
+    "id": "unlimited-counterpart-8802",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-5-dci-110-pk.html",
+    "retrievedAt": "2026-09-15T22:40:44.542Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5831ab2cb74aed855afde5921bf9fb58e05e6d8479892ce8b957b5bc84aade65"
+  },
+  {
+    "id": "unlimited-counterpart-8803",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-5-dci-90-pk.html",
+    "retrievedAt": "2026-09-15T22:40:46.569Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d913fce1b13afad71644b1fb156ae634f2365ccc85f385f63279a80bb91e7169"
+  },
+  {
+    "id": "unlimited-counterpart-8797",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-6-dci-130-pk.html",
+    "retrievedAt": "2026-09-15T22:40:48.530Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e8637483a557e63fca220fb1ad48fd9c0e4745962e31c063c79c39ddc28c6027"
+  },
+  {
+    "id": "unlimited-counterpart-8798",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-6-dci-165-pk.html",
+    "retrievedAt": "2026-09-15T22:40:50.529Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "46a62f61d955f76679413d953584906142adf925be4450b6516022ef917018e3"
+  },
+  {
+    "id": "shiftech-10511",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-vp-90",
+    "retrievedAt": "2026-09-15T22:31:24.891Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "881a49b28e60336800e8edec6d9b7190ca608e51255e32259d58f118bc18d999"
+  },
+  {
+    "id": "shiftech-10512",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-ip-100",
+    "retrievedAt": "2026-09-15T22:31:27.003Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "385ef0a7863807aa85288a97fe1922af476b83c721b589cff8673c04b291404f"
+  },
+  {
+    "id": "shiftech-10513",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-vp-110",
+    "retrievedAt": "2026-09-15T22:31:28.633Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b563b0dffc639ee3db598d6e49f0b0302ba23192e8b6205284825c2745408c79"
+  },
+  {
+    "id": "shiftech-10514",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-ip-115",
+    "retrievedAt": "2026-09-15T22:31:30.205Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0761a7fc50d1b4020689811a872a44e96d502f4484d28f424b5fdd95283b8cfa"
+  },
+  {
+    "id": "shiftech-10515",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-ip-130",
+    "retrievedAt": "2026-09-15T22:31:31.844Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "eaa0f68ebbe04db99b66f8c121158786f796ab5d872ec842d91e1ae5a23aa329"
+  },
+  {
+    "id": "shiftech-10516",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-ip-150",
+    "retrievedAt": "2026-09-15T22:31:35.220Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c4f177c8e517506119f455b3eb471c6c381acb8e126f0ee6c00272d6b7a34e30"
+  },
+  {
+    "id": "shiftech-10546",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/1.6-tdi-cr-90",
+    "retrievedAt": "2026-09-15T22:31:36.805Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9124c1dcd25c0efd23cd6f892a9069ccdc6fd4888dab29d73b1d1dd292b1b178"
+  },
+  {
+    "id": "shiftech-10547",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/1.6-tdi-cr-105",
+    "retrievedAt": "2026-09-15T22:31:38.528Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "72822dc344dca52b4d9d03c20f336b84851a525242da53169677f26da9fb50c1"
+  },
+  {
+    "id": "shiftech-10571",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/diesel/1.6-tdi-eu5-90",
+    "retrievedAt": "2026-09-15T22:31:59.888Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c34aa6376538d0a7e5ce1be189cf02b9a2df9512186f7166edb569293f04e260"
+  },
+  {
+    "id": "shiftech-10572",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/diesel/1.6-tdi-eu5-105",
+    "retrievedAt": "2026-09-15T22:32:01.436Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1d45a6262cb8329f426218ed69d76e88c8108fcc3ec00e98fc5ff959ec73b501"
+  },
+  {
+    "id": "shiftech-10573",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/diesel/1.6-tdi-eu5-110",
+    "retrievedAt": "2026-09-15T22:32:03.612Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "abecba9a99217ba19d4522ef44080bd8261a228142fb04f35d61b7003e4c88d7"
+  },
+  {
+    "id": "shiftech-10588",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/diesel/1.6-tdi-eu6-110",
+    "retrievedAt": "2026-09-15T22:32:05.351Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6013bb26b8e21355a8bc75652b7b5b27b0b36f7768def2484d0b4faed3a81919"
+  },
+  {
+    "id": "shiftech-10602",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/diesel/1.6-tdi-eu6-115",
+    "retrievedAt": "2026-09-15T22:32:06.885Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "41bd65c67ee8a6282038930af5bcc5c1821eb1fb999f7225a9327cf0164eb9c3"
+  },
+  {
+    "id": "shiftech-10597",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/petrol/1.5-tsi-130",
+    "retrievedAt": "2026-09-15T22:32:08.410Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "56155b84ca0448c284ef20853b0b232afa0f937e0de2850824e734bd016a8838"
+  },
+  {
+    "id": "shiftech-10598",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/petrol/1.5-tsi-150",
+    "retrievedAt": "2026-09-15T22:32:10.221Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bf40ac16be7a53283ff3c086083e6c6b8307505adc1d49b6e20c6a4d0499ff11"
+  },
+  {
+    "id": "shiftech-10567",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/1.4-tsi-tfsi-ss-140",
+    "retrievedAt": "2026-09-15T22:32:11.954Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "779b27fd72ae8633cbf76d12a35eb958df81496f871774f14f87950107bd0955"
+  },
+  {
+    "id": "shiftech-10570",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/1.4-tsi-tfsi-ss-150",
+    "retrievedAt": "2026-09-15T22:32:13.694Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "47deb28df561380641294e3dc8ba590700f7c0f3b34837f97dbb96af430d875b"
+  },
+  {
+    "id": "shiftech-10582",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/1.4-tsi-tfsi-ss-125",
+    "retrievedAt": "2026-09-15T22:32:15.343Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "650373ca49f0b8b80c7770698e75912db9eeb3219f689b5dfaec7c129dfc5173"
+  },
+  {
+    "id": "shiftech-10586",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/1.4-tsi-tfsi-ss-122",
+    "retrievedAt": "2026-09-15T22:32:16.866Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6b02eeb1a900ca75ecbce01a942038a0fddba8b31e51e5b344fd82f9becea468"
+  },
+  {
+    "id": "shiftech-10566",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/2.0-tsi-220",
+    "retrievedAt": "2026-09-15T22:32:18.434Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7cd20b52f7e18611dd141f52250551bd94b0ace4bd06419564d4ab8a54d2b233"
+  },
+  {
+    "id": "shiftech-10576",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/2.0-tsi-230",
+    "retrievedAt": "2026-09-15T22:32:20.104Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7679ea92f4a7c79a3c88afc00ddabec42f3a384b188e679f069fa069d78ff73f"
+  },
+  {
+    "id": "shiftech-10594",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/2.0-tsi-300",
+    "retrievedAt": "2026-09-15T22:32:22.137Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "99943e4bd091f91298da75c29a2a6e60ce687dbe02620f4cfcf42f116398b7b8"
+  },
+  {
+    "id": "shiftech-10600",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/petrol/2.0-tsi-performance-245",
+    "retrievedAt": "2026-09-15T22:32:23.830Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f01350ac4388492ff31b611862b3f497b53a79bd88531a63dd23e0cc750a7ea4"
+  },
+  {
+    "id": "shiftech-10601",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/petrol/2.0-tsi-310",
+    "retrievedAt": "2026-09-15T22:32:25.370Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ff3f52e259f62aac9c3ccd06e321340d65a3cd95126921ace3f662a7b414ca8a"
+  },
+  {
+    "id": "shiftech-10614",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2020-viii/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:32:35.844Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "db587776576e278cb2bb9ee94cedb8f0197caa89bbeccaabf82a2ea6becd2696"
+  },
+  {
+    "id": "shiftech-10615",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2020-viii/diesel/2.0-tdi-cr-eu6-115",
+    "retrievedAt": "2026-09-15T22:32:37.574Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7d64716cb28fc7f1c8617d57d058e0fbe348b5bc07802d92ad9422471c710bfc"
+  },
+  {
+    "id": "shiftech-10618",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2020-viii/diesel/2.0-tdi-gtd-200",
+    "retrievedAt": "2026-09-15T22:32:39.073Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e224645c83f5f1ef3dd9ffc421058f549f601a32e6b442dfbfcc29942a7a7a45"
+  },
+  {
+    "id": "shiftech-10747",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2010-b7/diesel/2.0-tdi-cr-140",
+    "retrievedAt": "2026-09-15T22:32:40.968Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3968cdd29486ccdf47807827ad10f417e31de395d28873486314762b1aed61a1"
+  },
+  {
+    "id": "shiftech-10754",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2010-b7/diesel/2.0-tdi-cr-170",
+    "retrievedAt": "2026-09-15T22:32:43.997Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c0fe3beb60cb960cbb3574af65473d8e35b6719bcd911087183a99e757d579b4"
+  },
+  {
+    "id": "shiftech-10763",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2010-b7/diesel/2.0-tdi-cr-177",
+    "retrievedAt": "2026-09-15T22:32:45.582Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dc4a3d10873f037aec16ef810d3ab1d9ba9150dd273bea3a9575967f0f96e95c"
+  },
+  {
+    "id": "shiftech-10767",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-190",
+    "retrievedAt": "2026-09-15T22:32:47.195Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5290821a29d1617a9e8b2ea7bc175aa9fc617d2c66585d3b1241dd62671e633c"
+  },
+  {
+    "id": "shiftech-10768",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-240",
+    "retrievedAt": "2026-09-15T22:32:48.904Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "34155bfd88056afc8d04063324d831db3f0a7363a7695ebf7c241338db8e3acf"
+  },
+  {
+    "id": "shiftech-10772",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:32:50.402Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8502ee202c58e3de82f2c149f4d224efa3830e9ab754db1d4d7359fe904b5af5"
+  },
+  {
+    "id": "shiftech-328",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2012-8v/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:32:52.013Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b5dec0e440a99faf3442ec3c69bc10228cbb5ceb1d3e3fd9d7be5d0fc9f95be5"
+  },
+  {
+    "id": "shiftech-329",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2012-8v/diesel/2.0-tdi-cr-eu6-184",
+    "retrievedAt": "2026-09-15T22:32:53.819Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "438c7da73aa6668b27444f4d44cffbeeff6aef2abc47a50d0a0e8dc59aeb6e1a"
+  },
+  {
+    "id": "shiftech-345",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2016-8v-fl/petrol/1.5-tsi-150",
+    "retrievedAt": "2026-09-15T22:32:55.410Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "4b29621dfd24eb4cb6f78e50c347db47b81e584a01c42878f808d19a8ce99d4e"
+  },
+  {
+    "id": "shiftech-416",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2015-b9/diesel/2.0-tdi-cr-eu6-190",
+    "retrievedAt": "2026-09-15T22:32:56.927Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3493f5d3ccb0722121459f7409e7267c6d95cd0ea74877cbc6d358b3b9410bd3"
+  },
+  {
+    "id": "shiftech-423",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2015-b9/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:32:58.675Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "32e01190ee43c035952e18114456eeb291251e2dec243f10c42966f46cbb7f2a"
+  },
+  {
+    "id": "shiftech-414",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2015-b9/petrol/2.0-tfsi-190",
+    "retrievedAt": "2026-09-15T22:33:00.384Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ecf23f53cc0fd078bf012b8f84a4d7d44d9bb34fd02e5c9ed2b39769330d9290"
+  },
+  {
+    "id": "shiftech-415",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2015-b9/petrol/2.0-tfsi-252",
+    "retrievedAt": "2026-09-15T22:33:01.881Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d39d68a55662ff8b8e7043a3363adffe019b0da5254bc08cc58329dd1f22202f"
+  },
+  {
+    "id": "shiftech-539",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2011-c7/diesel/3.0-tdi-313",
+    "retrievedAt": "2026-09-15T22:33:27.150Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "480868cb962f87bd9bafb1f99d7d96ced0b1afda701ea421ecf70e19144849f8"
+  },
+  {
+    "id": "shiftech-542",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2011-c7/diesel/3.0-tdi-245",
+    "retrievedAt": "2026-09-15T22:33:28.835Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2331c9ea530f04435882dd1311b9f6549a98802597f753f263fb19639160261a"
+  },
+  {
+    "id": "shiftech-548",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2011-c7/diesel/3.0-tdi-eu6-272",
+    "retrievedAt": "2026-09-15T22:33:30.402Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "01c7360adc6a9b52c11c3a8d5d3c6dc6d00414d7f7ced71a2402a74bf64ba899"
+  },
+  {
+    "id": "shiftech-549",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2011-c7/diesel/3.0-tdi-eu6-320",
+    "retrievedAt": "2026-09-15T22:33:31.889Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "66c55959e98847a9a830ccb05f73b82d65605c54847efd4192f17905168b32a2"
+  },
+  {
+    "id": "shiftech-9433",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/1.6-tdi-eu5-105",
+    "retrievedAt": "2026-09-15T22:33:33.628Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7de8d2cb764faa4e48c5a5f6c287683ee6d3670463ebf0f5126566eaaa729487"
+  },
+  {
+    "id": "shiftech-9434",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/1.6-tdi-eu5-110",
+    "retrievedAt": "2026-09-15T22:33:35.781Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "963612f6d1a1190fa1cc2457d65eba018482dfa38dbc9406a8e3ff995a5a9bbd"
+  },
+  {
+    "id": "shiftech-9435",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:33:37.420Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "743f9bef01c1d5e4fecd16b44854d9f365f1639fec1b95a0b7c2bd64cf1664b4"
+  },
+  {
+    "id": "shiftech-9436",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/2.0-tdi-cr-eu6-184",
+    "retrievedAt": "2026-09-15T22:33:39.094Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "842af1f1c28403693fd55be089f9644e072b5f7adbfab476885847dff1d6b248"
+  },
+  {
+    "id": "shiftech-9458",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2017-5f-mk2/petrol/1.5-tsi-130",
+    "retrievedAt": "2026-09-15T22:33:40.836Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a60ad7c3e89ab2cff89a861aa442f00e0c450fda46af917312b5f0606e474c3e"
+  },
+  {
+    "id": "shiftech-9461",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2017-5f-mk2/petrol/1.5-tsi-150",
+    "retrievedAt": "2026-09-15T22:33:42.652Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9c25d4ead1ab878fb284f2fa657fd740c358324b39ca25b393a3ff0fa2fe9a46"
+  },
+  {
+    "id": "shiftech-9625",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/1.6-tdi-eu5-105",
+    "retrievedAt": "2026-09-15T22:33:44.471Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3eaf64ebb6e6e13fb3661192d10ec6a714193019b320b13acad921d2fa90b195"
+  },
+  {
+    "id": "shiftech-9626",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/1.6-tdi-eu5-110",
+    "retrievedAt": "2026-09-15T22:33:46.223Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "cfb0e01373b18a4bbaaaa9d570b1e7113381cef32a74950579ed89e1fe543b13"
+  },
+  {
+    "id": "shiftech-9636",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/1.6-tdi-cr-105",
+    "retrievedAt": "2026-09-15T22:33:48.468Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "016472ed032d401d7ee0f0b7b411cb27f0f1ba224a910478c845561fb55c4138"
+  },
+  {
+    "id": "shiftech-9637",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/1.6-tdi-eu6-110",
+    "retrievedAt": "2026-09-15T22:33:50.311Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7c95be1b7df5aba0592fb772b57a63b0ebc4a2c710792a91442a66121d708dbf"
+  },
+  {
+    "id": "shiftech-9628",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:33:52.088Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dd6f8551757cc9c8b9c1bc68a3e1aa6a9e6ed987c02e3ea489880fd0031830bb"
+  },
+  {
+    "id": "shiftech-9629",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/2.0-tdi-cr-eu6-184",
+    "retrievedAt": "2026-09-15T22:33:53.803Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "949da44d8a50f7473e25078d7baf078865c65459d8668bd52314be1e40b77e43"
+  },
+  {
+    "id": "shiftech-9653",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2017/petrol/1.5-tsi-150",
+    "retrievedAt": "2026-09-15T22:33:55.448Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c03ddf40357cb40f7e612f795a658d45aed90f8c41e7b2efdad5967e7c70ea31"
+  },
+  {
+    "id": "shiftech-9649",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2017/petrol/2.0-tsi-245",
+    "retrievedAt": "2026-09-15T22:33:56.989Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7633067934dce783d1d8a12297cdd79340ceb2cc13ef6e5e4264ac182f71a5aa"
+  },
+  {
+    "id": "unlimited-golf-4-1-9-tdi-90",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-4-1-9-tdi-90-pk.html",
+    "retrievedAt": "2026-09-15T22:49:57.233Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8d7594d57a743e1d749f5d87baae21fd61cd309059e0af0961f14af1a7e588bb"
+  },
+  {
+    "id": "unlimited-golf-4-1-9-tdi-110",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-4-1-9-tdi-110-pk.html",
+    "retrievedAt": "2026-09-15T22:49:59.199Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "caaacac744e1c20edefd8e494f76185e878a62c74c18a3d05b2f40604c544116"
+  },
+  {
+    "id": "unlimited-golf-4-1-9-tdi-130",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-4-1-9-tdi-130-pk.html",
+    "retrievedAt": "2026-09-15T22:50:01.127Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2b427f95080efc00dfa11e4e3c2973d9beb431febd5c9fb2e479efe82e79973d"
+  },
+  {
+    "id": "unlimited-golf-4-1-9-tdi-150",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-4-1-9-tdi-150-pk.html",
+    "retrievedAt": "2026-09-15T22:50:03.268Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f6de0c4c849e41457f5562b91dd10dbcdc8a49be7e5cea936c2a4fb7c84e6cb3"
+  },
+  {
+    "id": "unlimited-golf-6-1-6-tdi-90",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-6-1-6-tdi-90-pk.html",
+    "retrievedAt": "2026-09-15T22:50:05.169Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f1c26937db2558abb69ce2c9baf0bc63f6d0e3214ab67c2529dfdf9381c71458"
+  },
+  {
+    "id": "unlimited-golf-6-1-6-tdi-105",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-6-1-6-tdi-105-pk.html",
+    "retrievedAt": "2026-09-15T22:50:07.176Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9a7fae744438e4b94d346715f4a896ee8f0eb0a02f3a52a57fac5c5497e7b832"
+  },
+  {
+    "id": "unlimited-golf-7-1-4-tsi-125",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-1-4-tsi-125-pk.html",
+    "retrievedAt": "2026-09-15T22:50:09.147Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8fcc072e4935045f4b48ea6ad8e9f58f2b5e0b8c2f361f74df934a1c70cd711f"
+  },
+  {
+    "id": "unlimited-golf-7-2-0-gti-performance-230",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-2-0-gti-performance-230-pk.html",
+    "retrievedAt": "2026-09-15T22:50:11.255Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0e301725120e00fc8244f1ced6191004c329424ed9576d87babc20fb0b46ed37"
+  },
+  {
+    "id": "unlimited-golf-7-mk2-1-5-tsi-150",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-mk2-1-5-tsi-150-pk.html",
+    "retrievedAt": "2026-09-15T22:44:42.102Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "53b338a0c17664f54004407ed53a68fd93e3f3676ad42142df93ab7fe6e5b40d"
+  },
+  {
+    "id": "unlimited-golf-7-mk2-1-5-tsi-130",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-mk2-1-5-tsi-130-pk.html",
+    "retrievedAt": "2026-09-15T22:50:13.197Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ad44b0c5e26b1729e502e07d57e98f2da7bbb251566ac055b16d674d1889a291"
+  },
+  {
+    "id": "unlimited-golf-7-mk2-2-0-tsi-gti-perfomance-245",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-mk2-2-0-tsi-gti-perfomance-245-pk.html",
+    "retrievedAt": "2026-09-15T22:50:15.291Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b91839cd4c89cd5d621f1f13df3e4b0f46845140675823c6aec5545a67867fc4"
+  },
+  {
+    "id": "shiftech-11216",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v40/2015/diesel/2.0-d4-eu6-190",
+    "retrievedAt": "2026-09-15T22:34:47.747Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "902efc533f0a0fe9f6d2816086ce0c9f1ec0616390d3c5943f89e9d35d611959"
+  },
+  {
+    "id": "shiftech-11221",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v40/2015/petrol/t4-2.0-190",
+    "retrievedAt": "2026-09-15T22:35:09.738Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dc5379860400fb6b106d4b6fd643db552f8d30643fe045f8c5cc3e5ddbb0b0a2"
+  },
+  {
+    "id": "shiftech-11222",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v40/2015/petrol/t5-2.0-245",
+    "retrievedAt": "2026-09-15T22:35:13.705Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c265d4ab10ae24d6bbd906c56553ee373c4537a96b5c645069dfbdf47cb7dcd8"
+  },
+  {
+    "id": "shiftech-11242",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2010/diesel/2.0-d3-163",
+    "retrievedAt": "2026-09-15T22:35:48.360Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3a965348f79c91508447d00377e0dcf0ad0ada5856d76cb6a55d7e77cdc9881a"
+  },
+  {
+    "id": "shiftech-11244",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2010/diesel/2.4-d5-205",
+    "retrievedAt": "2026-09-15T22:35:52.003Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c352190d677d9fe8ef1192cde4c7aa92c747c35feb539dc5ed026aaed83980b7"
+  },
+  {
+    "id": "shiftech-11245",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2010/diesel/2.4-d5-215",
+    "retrievedAt": "2026-09-15T22:34:55.188Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9801cc29f928d7a7dc7aa45389fdc4c9e3c4e63f916993f88a6a065fc22db440"
+  },
+  {
+    "id": "shiftech-11259",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2015/petrol/t4-2.0-190",
+    "retrievedAt": "2026-09-15T22:34:58.698Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "419c7e0c36b5e81f1e37dd5896b514250627ece1a7690c645ca08df053fc4065"
+  },
+  {
+    "id": "shiftech-11260",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2015/petrol/t5-2.0-245",
+    "retrievedAt": "2026-09-15T22:35:02.392Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e86913ab9b0b61f2f47eec6ee5c75c8a300c6919c7fcda6fd0534ec8dbef08e1"
+  },
+  {
+    "id": "shiftech-11262",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2015/diesel/2.0-d4-eu6-190",
+    "retrievedAt": "2026-09-15T22:35:05.986Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "965f590dcc14a13b5711431f4899466e1b4b5181fd6090bdd1bcb8a371c259ca"
+  },
+  {
+    "id": "shiftech-11265",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2015/diesel/2.0-d3-eu6-150",
+    "retrievedAt": "2026-09-15T22:34:51.629Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e3fa6efaef2d4115ec86b3de76cf0951bf07c005ba5914816724c4b7f4191a00"
+  }
+]

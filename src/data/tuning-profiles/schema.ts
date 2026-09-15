@@ -36,6 +36,8 @@ export type SourceObservation = {
   contentSha256?: string;
   /** Only retrieved page/public JSON observations can supply accepted tuning facts. */
   identity?: ResearchIdentity;
+  /** Facts retained when missing scope prevents accepting a complete profile. */
+  unresolvedIdentity?: Partial<ResearchIdentity>;
   stages?: {stage1?: ResearchStage; stage2?: ResearchStage; stage3?: ResearchStage};
   conditions?: string[];
   notes?: string[];
@@ -44,6 +46,7 @@ export type SourceObservation = {
   /** Manually reviewed counterpart relationship; raw identity remains unchanged. */
   consensusGroup?: string;
   supportingUrls?: string[];
+  stockValidation?: {sourceId: string; fields: string[]};
 };
 export type StageSourceValue = ResearchStage & {sourceId: string; provider: SourceProvider; powerUnit: "PS"; torqueUnit: "Nm"};
 export type ProfileStage = {
@@ -72,4 +75,5 @@ export type SourcedTuningProfile = Omit<ResearchIdentity, "powerUnit" | "torqueU
   stage3SourceCount: number;
   conditions: string[];
   notes: string[];
+  generationScopeSource?: {url: string; retrievedAt: string; method: "successor-generation-start"};
 };
