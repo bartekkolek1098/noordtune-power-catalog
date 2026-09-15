@@ -20,6 +20,8 @@ import {
   getVehicleById
 } from "@/data/catalog";
 import {addQuoteOptions, assessVehicleAccess, formatQuote, resolveStageQuote} from "@/data/pricing";
+import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
+import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {
   homeVisualCopy,
   homepageHeroImage,
@@ -366,16 +368,16 @@ export default async function HomePage({params}: PageProps) {
                   </div>
                   <div className="mt-1 text-xl text-slate-300">{bmwExample.stockTorqueNm} Nm</div>
                 </div>
-                {bmwExample.stages.map((stage) => (
+                {applyStageHardwarePolicy(bmwExample.stages).map((stage) => (
                   <div
                     className="rounded-lg border border-primary/70 bg-[linear-gradient(180deg,rgba(226,0,15,.12),rgba(0,0,0,.45))] p-4"
                     key={stage.name}
                   >
                     <div className="text-sm font-black uppercase text-primary">{stage.name}</div>
-                    <div className="mt-4 text-3xl text-white">
-                      {stage.powerHp} {copy.powerUnit}
+                    <div className="mt-4 break-words text-3xl text-white">
+                      {formatEstimatePower(stage, safeLocale)}
                     </div>
-                    <div className="mt-1 text-xl text-slate-300">{stage.torqueNm} Nm</div>
+                    {!stage.customHardware ? <div className="mt-1 text-xl text-slate-300">{formatEstimateTorque(stage, safeLocale)}</div> : null}
                     <div className="mt-4 flex items-center gap-2 text-xs text-slate-200">
                       <CircleCheck className="h-4 w-4 text-green-400" />
                       {resolveStageQuote(bmwExample, stage).kind === "on-request" ? copy.onRequest : copy.available}

@@ -107,7 +107,7 @@ for (const {fixture, result, quote, message} of quoteResults) test(`normalized R
   assert.ok(result.tuningEstimate.profile?.stages[0].torqueNm);
   assert.equal(quote.kind, "from", "An explicitly scoped compatible fixture keeps an indicative commercial quote");
   const stage = result.tuningEstimate.profile!.stages[0];
-  const displayedPower = stage.powerRangeHp ? stage.powerRangeHp.join("–") : stage.powerHp;
+  const displayedPower = stage.powerRangeHp ? stage.powerRangeHp.join("–") : `${stage.approximate ? "≈" : ""}${stage.powerHp}`;
   assert.ok(message.includes(`Indicatieve uitkomst: ${displayedPower} pk`));
   if (stage.torqueRangeNm) assert.ok(message.includes(`${stage.torqueRangeNm.join("–")} Nm (schatting)`));
   assert.doesNotMatch(message, /configuratieconflict/i);

@@ -14,7 +14,7 @@ export type RuntimeCommercialIdentity = {
   workScope?: "ordinary" | "custom";
 };
 
-export type RuntimePricingCategory = "classic-standard-diesel" | "contemporary-standard" | "higher-complexity";
+export type RuntimePricingCategory = "classic-standard-diesel" | "standard-2010s" | "modern-standard" | "higher-complexity";
 export type RuntimePricingClassification = {
   category: RuntimePricingCategory;
   ruleId: string;
@@ -95,6 +95,10 @@ export function classifyRuntimePricing(identity?: RuntimeCommercialIdentity): Ru
   if (classic) return {category: "classic-standard-diesel", ruleId: "listed-classic-mainstream-diesel",
     reason: "Listed mainstream car family, diesel, first admission through 2010, at most 135 registered pk, 2100 cc and four cylinders. Age is one commercial factor, never ECU evidence."};
 
-  return {category: "contemporary-standard", ruleId: "ordinary-resolved-ice-default",
-    reason: "Resolved ordinary petrol/diesel vehicle without a more specific reviewed assignment, listed complexity rule or complete classic-diesel scope. Source provenance and unknown ECU do not change this category."};
+  if (identity.firstAdmissionYear !== undefined && identity.firstAdmissionYear >= 2010 && identity.firstAdmissionYear <= 2019) {
+    return {category: "standard-2010s", ruleId: "ordinary-2010s-commercial-scope",
+      reason: "Resolved ordinary petrol/diesel vehicle first admitted in 2010–2019 without a more specific assignment or complexity rule. This commercial year band does not identify ECU access."};
+  }
+  return {category: "modern-standard", ruleId: "ordinary-resolved-ice-default",
+    reason: "Resolved ordinary petrol/diesel vehicle outside the fully identified classic/2010s scopes. The conservative modern-standard software schedule also covers missing year; source provenance and unknown ECU do not change the category."};
 }

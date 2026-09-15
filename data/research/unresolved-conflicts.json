@@ -1,0 +1,1043 @@
+{
+  "rejected": [
+    {
+      "sourceId": "shiftech-ford-transit-custom-2025-diesel-20-ecoblue-170",
+      "reasons": [
+        "ACTUAL_PUBLIC_FACT_RETRIEVAL_REQUIRED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "unlimited-chiptuning-ford-transit-connect-1-5-tdci-100-pk",
+      "reasons": [
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "shiftech-kia-sportage-2021-nq5-petrol-16-t-gdi-48v-150",
+      "reasons": [
+        "HYBRID_RUNTIME_SCOPE_UNSUPPORTED"
+      ]
+    },
+    {
+      "sourceId": "br-performance-access-block-sportage",
+      "reasons": [
+        "ACTUAL_PUBLIC_FACT_RETRIEVAL_REQUIRED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "celtic-tuning-access-unavailable-sportage",
+      "reasons": [
+        "ACTUAL_PUBLIC_FACT_RETRIEVAL_REQUIRED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "shiftech-defender-d240-research-unresolved",
+      "reasons": [
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "unlimited-defender-d240-research-unresolved",
+      "reasons": [
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "unlimited-counterpart-6047",
+      "reasons": [
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "unlimited-counterpart-8253",
+      "reasons": [
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "unlimited-counterpart-8255",
+      "reasons": [
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "unlimited-counterpart-8802",
+      "reasons": [
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "unlimited-counterpart-8803",
+      "reasons": [
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    }
+  ],
+  "stockVariants": [
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-bmw-1-series-33fe051cb8a9",
+        "sourced-bmw-1-series-8f9343b95c18"
+      ],
+      "sourceIds": [
+        "shiftech-133172",
+        "mosselman-bmw-116d-f20-f21-116hp"
+      ],
+      "stockTorqueNm": [
+        270,
+        260
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-bmw-3-series-0382723e3cb9",
+        "sourced-bmw-3-series-e97c88f76b26"
+      ],
+      "sourceIds": [
+        "mosselman-bmw-320i-f30-f31-lci-184hp",
+        "shiftech-1170"
+      ],
+      "stockTorqueNm": [
+        290,
+        270
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-bmw-3-series-824a07cb5037",
+        "sourced-bmw-3-series-83c77c9f1702"
+      ],
+      "sourceIds": [
+        "shiftech-433364",
+        "mosselman-bmw-320i-g20-184hp"
+      ],
+      "stockTorqueNm": [
+        270,
+        290
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-bmw-5-series-2801a9b43131",
+        "sourced-bmw-5-series-f081faeb3d5a"
+      ],
+      "sourceIds": [
+        "mosselman-bmw-540i-g30-340hp",
+        "shiftech-1303"
+      ],
+      "stockTorqueNm": [
+        450,
+        500
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-ford-transit-connect-694c712b8c33",
+        "sourced-ford-transit-connect-c1224c2aafe9"
+      ],
+      "sourceIds": [
+        "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
+        "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-120"
+      ],
+      "stockTorqueNm": [
+        270,
+        300
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-ford-transit-connect-db936c8558e6",
+        "sourced-ford-transit-connect-e259e56890dd"
+      ],
+      "sourceIds": [
+        "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100",
+        "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-100"
+      ],
+      "stockTorqueNm": [
+        250,
+        215
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-golf-4919eb1cb79b",
+        "sourced-volkswagen-golf-61a15e3bd13f"
+      ],
+      "sourceIds": [
+        "shiftech-10576",
+        "unlimited-golf-7-2-0-gti-performance-230"
+      ],
+      "stockTorqueNm": [
+        370,
+        350
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-golf-6cff268ab9f5",
+        "sourced-volkswagen-golf-9ba924a5d9d0"
+      ],
+      "sourceIds": [
+        "unlimited-golf-7-mk2-2-0-tsi-gti-perfomance-245",
+        "shiftech-10600"
+      ],
+      "stockTorqueNm": [
+        350,
+        370
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "sourced-bmw-1-series-5c08ae394d4b",
+      "sourceIds": [
+        "shiftech-1014",
+        "mosselman-bmw-120i-f40-178hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 230,
+        "selectedTorqueNm": 360,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1014",
+            "provider": "shiftech",
+            "powerHp": 230,
+            "torqueNm": 360,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-120i-f40-178hp",
+            "provider": "mosselman",
+            "powerHp": 250,
+            "torqueNm": 375,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Published petrol tuning figures require or recommend RON 98 premium fuel."
+        ]
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-693085b9b4e0",
+      "sourceIds": [
+        "shiftech-988",
+        "mosselman-bmw-118d-f20-f21-143hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 180,
+        "selectedTorqueNm": 400,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-988",
+            "provider": "shiftech",
+            "powerHp": 180,
+            "torqueNm": 420,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-118d-f20-f21-143hp",
+            "provider": "mosselman",
+            "powerHp": 190,
+            "torqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": []
+      },
+      "stage2": {
+        "selectedPowerHp": 190,
+        "selectedTorqueNm": 440,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-988",
+            "provider": "shiftech",
+            "powerHp": 190,
+            "torqueNm": 440,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-92a47d08658e",
+      "sourceIds": [
+        "shiftech-992",
+        "mosselman-bmw-116i-f20-f21-lci-109hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 165,
+        "selectedTorqueNm": 250,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-992",
+            "provider": "shiftech",
+            "powerHp": 175,
+            "torqueNm": 250,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-116i-f20-f21-lci-109hp",
+            "provider": "mosselman",
+            "powerHp": 165,
+            "torqueNm": 280,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Published petrol tuning figures require or recommend RON 98 premium fuel."
+        ]
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-d2f9ef15e2da",
+      "sourceIds": [
+        "shiftech-1008",
+        "mosselman-bmw-118i-f40-140hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 170,
+        "selectedTorqueNm": 260,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1008",
+            "provider": "shiftech",
+            "powerHp": 180,
+            "torqueNm": 260,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-118i-f40-140hp",
+            "provider": "mosselman",
+            "powerHp": 170,
+            "torqueNm": 300,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Provider notes only 165–170 PS on 95 RON; higher published output needs suitable higher-octane fuel.",
+          "Published petrol tuning figures require or recommend RON 98 premium fuel."
+        ]
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-d9f43220a9d9",
+      "sourceIds": [
+        "shiftech-186327",
+        "mosselman-bmw-116i-f40-109hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 165,
+        "selectedTorqueNm": 250,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-186327",
+            "provider": "shiftech",
+            "powerHp": 175,
+            "torqueNm": 250,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-116i-f40-109hp",
+            "provider": "mosselman",
+            "powerHp": 165,
+            "torqueNm": 280,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Published petrol tuning figures require or recommend RON 98 premium fuel."
+        ]
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-34feef13e04b",
+      "sourceIds": [
+        "shiftech-1177",
+        "mosselman-bmw-330i-g20-258hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 305,
+        "selectedTorqueNm": 450,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1177",
+            "provider": "shiftech",
+            "powerHp": 310,
+            "torqueNm": 500,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-330i-g20-258hp",
+            "provider": "mosselman",
+            "powerHp": 305,
+            "torqueNm": 455,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Published petrol tuning figures require or recommend RON 98 premium fuel."
+        ]
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-bb83a44eb2cc",
+      "sourceIds": [
+        "shiftech-1169",
+        "mosselman-bmw-318i-f30-f31-lci-136hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 170,
+        "selectedTorqueNm": 260,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1169",
+            "provider": "shiftech",
+            "powerHp": 175,
+            "torqueNm": 260,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-318i-f30-f31-lci-136hp",
+            "provider": "mosselman",
+            "powerHp": 170,
+            "torqueNm": 300,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Provider notes only 165–170 PS on 95 RON; higher published output needs suitable higher-octane fuel.",
+          "Published petrol tuning figures require or recommend RON 98 premium fuel."
+        ]
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-ea1d76cc48b8",
+      "sourceIds": [
+        "shiftech-1176",
+        "mosselman-bmw-318d-g20-150hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 190,
+        "selectedTorqueNm": 400,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1176",
+            "provider": "shiftech",
+            "powerHp": 190,
+            "torqueNm": 450,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-318d-g20-150hp",
+            "provider": "mosselman",
+            "powerHp": 190,
+            "torqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": []
+      },
+      "stage2": {
+        "selectedPowerHp": 200,
+        "selectedTorqueNm": 470,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1176",
+            "provider": "shiftech",
+            "powerHp": 200,
+            "torqueNm": 470,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-ee42368d4922",
+      "sourceIds": [
+        "shiftech-1144",
+        "mosselman-bmw-318d-f30-f31-143hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 180,
+        "selectedTorqueNm": 400,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1144",
+            "provider": "shiftech",
+            "powerHp": 180,
+            "torqueNm": 420,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-318d-f30-f31-143hp",
+            "provider": "mosselman",
+            "powerHp": 190,
+            "torqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": []
+      },
+      "stage2": {
+        "selectedPowerHp": 190,
+        "selectedTorqueNm": 440,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1144",
+            "provider": "shiftech",
+            "powerHp": 190,
+            "torqueNm": 440,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-fb5f2170f7e8",
+      "sourceIds": [
+        "shiftech-1164",
+        "mosselman-bmw-316d-f30-f31-lci-116hp"
+      ],
+      "stage1": {
+        "selectedPowerHp": 180,
+        "selectedTorqueNm": 400,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1164",
+            "provider": "shiftech",
+            "powerHp": 180,
+            "torqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "mosselman-bmw-316d-f30-f31-lci-116hp",
+            "provider": "mosselman",
+            "powerHp": 190,
+            "torqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": []
+      },
+      "stage2": {
+        "selectedPowerHp": 190,
+        "selectedTorqueNm": 420,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-1164",
+            "provider": "shiftech",
+            "powerHp": 190,
+            "torqueNm": 420,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    {
+      "id": "sourced-kia-ceed-acb48ab8cda1",
+      "sourceIds": [
+        "shiftech-kia-ceed-2018-petrol-14-t-gdi-140",
+        "unlimited-chiptuning-kia-ceed-1-4-t-gdi-140-pk"
+      ],
+      "stage1": {
+        "selectedPowerHp": 170,
+        "selectedTorqueNm": 290,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-kia-ceed-2018-petrol-14-t-gdi-140",
+            "provider": "shiftech",
+            "powerHp": 170,
+            "torqueNm": 290,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "unlimited-chiptuning-kia-ceed-1-4-t-gdi-140-pk",
+            "provider": "unlimited-tuning",
+            "powerHp": 170,
+            "torqueNm": 290,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Provider calls the ordinary software programme Normal."
+            ]
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "strong",
+        "ownerReviewRequired": false,
+        "conditions": [
+          "SOURCE_GENERATION_START_ONLY",
+          "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+          "Provider calls the ordinary software programme Normal."
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 175,
+        "selectedTorqueNm": 300,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-kia-ceed-2018-petrol-14-t-gdi-140",
+            "provider": "shiftech",
+            "powerHp": 175,
+            "torqueNm": 302,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+            ]
+          },
+          {
+            "sourceId": "unlimited-chiptuning-kia-ceed-1-4-t-gdi-140-pk",
+            "provider": "unlimited-tuning",
+            "powerHp": 190,
+            "torqueNm": 310,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Provider specifies a changed exhaust/downpipe with200-cell sports catalyst. Hardware and road-use emissions suitability require review."
+            ]
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "SOURCE_GENERATION_START_ONLY",
+          "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review.",
+          "Provider specifies a changed exhaust/downpipe with200-cell sports catalyst. Hardware and road-use emissions suitability require review."
+        ]
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-a5d48e2994f7",
+      "sourceIds": [
+        "shiftech-kia-sportage-2015-ql-petrol-16-t-gdi-177",
+        "unlimited-chiptuning-kia-sportage-1-6t-gdi-177-pk"
+      ],
+      "stage1": {
+        "selectedPowerHp": 220,
+        "selectedTorqueNm": 330,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-kia-sportage-2015-ql-petrol-16-t-gdi-177",
+            "provider": "shiftech",
+            "powerHp": 218,
+            "torqueNm": 330,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "unlimited-chiptuning-kia-sportage-1-6t-gdi-177-pk",
+            "provider": "unlimited-tuning",
+            "powerHp": 225,
+            "torqueNm": 360,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Provider calls the ordinary software programme Normal."
+            ]
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "SOURCE_GENERATION_START_ONLY",
+          "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+          "Provider calls the ordinary software programme Normal."
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 230,
+        "selectedTorqueNm": 350,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-kia-sportage-2015-ql-petrol-16-t-gdi-177",
+            "provider": "shiftech",
+            "powerHp": 229,
+            "torqueNm": 347,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "SOURCE_GENERATION_START_ONLY",
+          "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-a-class-6d7cc9910c2d",
+      "sourceIds": [
+        "shiftech-6079",
+        "unlimited-counterpart-6079"
+      ],
+      "stage1": {
+        "selectedPowerHp": 460,
+        "selectedTorqueNm": 560,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-6079",
+            "provider": "shiftech",
+            "powerHp": 460,
+            "torqueNm": 560,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "unlimited-counterpart-6079",
+            "provider": "unlimited-tuning",
+            "powerHp": 460,
+            "torqueNm": 620,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result."
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 490,
+        "selectedTorqueNm": 600,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-6079",
+            "provider": "shiftech",
+            "powerHp": 490,
+            "torqueNm": 600,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result.",
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    {
+      "id": "sourced-peugeot-expert-3f96ad8925ae",
+      "sourceIds": [
+        "shiftech-8253"
+      ],
+      "stage1": {
+        "selectedPowerHp": 130,
+        "selectedTorqueNm": 300,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-8253",
+            "provider": "shiftech",
+            "powerHp": 130,
+            "torqueNm": 300,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result."
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 130,
+        "selectedTorqueNm": 280,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-8253",
+            "provider": "shiftech",
+            "powerHp": 130,
+            "torqueNm": 280,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result.",
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed.",
+          "NON_MONOTONIC_SOURCED_STAGE",
+          "Published later-stage output is below the earlier-stage indication. Original source values are preserved; applicability and configuration require owner review."
+        ]
+      }
+    },
+    {
+      "id": "sourced-peugeot-expert-f3851bca32a2",
+      "sourceIds": [
+        "shiftech-8256",
+        "unlimited-counterpart-8256"
+      ],
+      "stage1": {
+        "selectedPowerHp": 200,
+        "selectedTorqueNm": 450,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-8256",
+            "provider": "shiftech",
+            "powerHp": 200,
+            "torqueNm": 450,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "unlimited-counterpart-8256",
+            "provider": "unlimited-tuning",
+            "powerHp": 215,
+            "torqueNm": 470,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result."
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 210,
+        "selectedTorqueNm": 470,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-8256",
+            "provider": "shiftech",
+            "powerHp": 210,
+            "torqueNm": 470,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result.",
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    {
+      "id": "sourced-renault-megane-2c5a96fc767f",
+      "sourceIds": [
+        "shiftech-8798",
+        "unlimited-counterpart-8798"
+      ],
+      "stage1": {
+        "selectedPowerHp": 180,
+        "selectedTorqueNm": 420,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-8798",
+            "provider": "shiftech",
+            "powerHp": 180,
+            "torqueNm": 420,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "unlimited-counterpart-8798",
+            "provider": "unlimited-tuning",
+            "powerHp": 190,
+            "torqueNm": 420,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result."
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 190,
+        "selectedTorqueNm": 440,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-8798",
+            "provider": "shiftech",
+            "powerHp": 190,
+            "torqueNm": 440,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result.",
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    }
+  ]
+}

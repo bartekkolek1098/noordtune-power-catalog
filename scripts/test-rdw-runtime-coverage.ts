@@ -1,3 +1,6 @@
+// Historical PR13 coverage runner. Dataset V1 uses test-tuning-profile-dataset.ts
+// and data/research/coverage-report.json; its Stage3 and pricing policy supersede
+// this checkpoint's assertions. Run this file only against the PR13 checkout.
 import assert from "node:assert/strict";
 import {mkdirSync, readFileSync, writeFileSync} from "node:fs";
 import {dirname, resolve} from "node:path";
