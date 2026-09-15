@@ -2,6 +2,8 @@
 
 Research date: 15 September 2026. This report separates registry facts, published tuning references, catalog estimates and proposed NoordTune targets. It does not establish installed ECU, transmission, unlock status or measured output.
 
+The later accuracy pass replaced the first implementation's compounded generic point estimates with rounded scenarios. The current generic values and method are recorded in [GENERIC_RANGE_POLICY.md](../GENERIC_RANGE_POLICY.md); source figures and live registry evidence below remain unchanged.
+
 ## Live official evidence
 
 The four cases were fetched directly from RDW on 15 September 2026 at approximately 19:10 UTC. [live-rdw-identities.json](./live-rdw-identities.json) retains only the requested technical fields, normalized matcher inputs, selected schema definitions, request URLs and retrieval times. The vehicle and fuel resources are [RDW registered vehicles](https://opendata.rdw.nl/resource/m9d7-ebf2.json) and [RDW registered vehicle fuel](https://opendata.rdw.nl/resource/8ys7-d773.json). No owner, address, keeper or unrelated raw fields were retained.
@@ -54,8 +56,8 @@ The following proposal is separate from every source figure above and from curre
 
 | Proposed package | Draft planning target | Basis and remaining decision |
 |---|---|---|
-| Stage 1 | Consider 140 pk / 340 Nm after engine identification; while uncertain, display the conditional 125–140 pk / 330–340 Nm comparison. | The upper point is a third-party published reference, not NoordTune approval. Retain the lower existing point as a conditional reference. |
-| Stage 2 | 147 pk, with a 355–385 Nm planning range, subject to engine/hardware review. Do not adopt 135 pk as a successor to a 140 pk Stage 1. | These proposed planning values follow the new explicit runtime heuristic, anchored after the upper Stage 1 comparison point. They are not published Stage 2 results. Shiftech's 135/350 belongs to a different, EU5-labelled application and package. Exact torque remains unconfirmed. |
-| Stage 3+ | 159 pk, with a 415–450 Nm planning range, subject to owner/hardware review. | These are proposed heuristic planning values. No applicable primary Stage 3 reference was established here. Neither exact torque nor achievable output is established; all numeric runtime output must retain its generic provenance. |
+| Stage 1 | No preferred NoordTune target selected; display the conditional 125–140 pk / 330–340 Nm source comparison. | Do not automatically select the highest third-party claim. The lower existing point remains a conditional reference; the engine generation is unresolved. |
+| Stage 2 | Current generic planning scenario: 125–140 pk, subject to engine/hardware review. An owner-approved target remains unset. | This stock-based scenario supersedes the first implementation's 147 pk point. It does not compound the Stage 1 upper endpoint. Shiftech's 135/350 remains a separate, EU5-labelled source application. |
+| Stage 3+ | Current generic planning scenario: 140–155 pk, subject to owner/hardware review. An owner-approved target remains unset. | This stock-based scenario supersedes the first implementation's 159 pk point. No applicable primary Stage 3 reference was established here. Numeric runtime output retains generic provenance. |
 
 No prices, service compatibility, source outputs, public SEO membership or existing route inventory were changed by this research.

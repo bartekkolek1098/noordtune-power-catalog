@@ -7,7 +7,7 @@ import {engineCatalog, vehicleDatabase, vehicleDatabaseCount} from "../src/data/
 import type {EngineVariant} from "../src/data/catalog-shared.ts";
 import {nominalEngineDisplacements, normalizeCatalogFuel, registeredPowerToMetricHp} from "../src/data/catalog-matching.ts";
 import {tuningReferenceProfiles, type EstimateMatchInput} from "../src/data/tuning-estimates.ts";
-import type {EstimateResolution, TuningEstimateProfile} from "../src/data/tuning-estimates-shared.ts";
+import type {EstimateResolution, EstimateStage, TuningEstimateProfile} from "../src/data/tuning-estimates-shared.ts";
 import {assessVehicleAccess, resolveStageQuote} from "../src/data/pricing.ts";
 import {resolveRdwTuningEstimate} from "../src/lib/rdw-tuning-estimate.ts";
 
@@ -15,6 +15,8 @@ type Fixture = {id: string; group: "live-owner" | "curated" | "non-public-canoni
 type LiveFixture = {caseId: string; normalizedIdentity: EstimateMatchInput; liveRetrievalSucceeded: boolean};
 const liveSource = JSON.parse(readFileSync(resolve("docs/tuning-qa/runtime/live-rdw-identities.json"), "utf8")) as {retrievedAt: string; identities: LiveFixture[]};
 const publicIds = new Set(engineCatalog.flatMap(vehicle => [vehicle.id, vehicle.sourceCanonicalId].filter(Boolean)));
+const publicProfileIds = new Set(engineCatalog.map(vehicle => vehicle.id));
+const referenceProfileIds = new Set(tuningReferenceProfiles.map(vehicle => vehicle.id));
 const sourceById = new Map<string, EngineVariant | TuningEstimateProfile>([...vehicleDatabase, ...engineCatalog, ...tuningReferenceProfiles].map(vehicle => [vehicle.id, vehicle]));
 const brands = ["BMW", "Volkswagen", "Audi", "Ford", "Mercedes-Benz", "Volvo", "Renault", "Peugeot", "Citroën", "Opel", "Land Rover", "Fiat", "Hyundai", "Kia"];
 const stages = ["Stage 1", "Stage 2", "Stage 3+"];
@@ -28,6 +30,18 @@ const originalSourceFingerprint = sourceFingerprint();
 let assertions = 0;
 function check(condition: unknown, message: string): asserts condition { assertions++; assert.ok(condition, message); }
 function same(actual: unknown, expected: unknown, message: string) { assertions++; assert.deepEqual(actual, expected, message); }
+function positive(value: unknown): value is number { return typeof value === "number" && Number.isFinite(value) && value > 0; }
+function positiveRange(value: unknown): value is [number, number] { return Array.isArray(value) && value.length === 2 && value.every(positive) && value[0] <= value[1]; }
+function hasPower(stage: {powerHp?: number | null; powerRangeHp?: [number, number] | null}) { return positive(stage.powerHp) || positiveRange(stage.powerRangeHp); }
+function powerInterval(stage: EstimateStage): [number, number] | undefined { return positiveRange(stage.powerRangeHp) ? stage.powerRangeHp : positive(stage.powerHp) ? [stage.powerHp, stage.powerHp] : undefined; }
+type EvidenceClass = "reference" | "public" | "canonical" | "generic" | "unavailable";
+function evidenceClass(stage?: EstimateStage): EvidenceClass {
+  if (!stage) return "unavailable";
+  if (stage.provenance === "generic-indicative") return "generic";
+  if (stage.provenance === "reference" || referenceProfileIds.has(stage.sourceProfileId ?? "")) return "reference";
+  if (publicProfileIds.has(stage.sourceProfileId ?? "")) return "public";
+  return stage.provenance === "canonical-estimated" || stage.provenance === "reviewed" ? "canonical" : "unavailable";
+}
 function technicalKey(vehicle: EngineVariant) {
   return JSON.stringify([vehicle.brand, vehicle.model, vehicle.engine, vehicle.fuel, vehicle.stockPowerHp, vehicle.stockTorqueNm, vehicle.stages.map(stage => [stage.name, stage.powerHp, stage.torqueNm])]);
 }
@@ -95,13 +109,15 @@ const failures: {fixture: string; message: string}[] = [];
 
 function record(fixture: Fixture, result: EstimateResolution, elapsedMs: number) {
   const profile = result.profile;
-  const quote = resolveStageQuote(profile ?? {make: fixture.input.make, model: fixture.input.model}, profile?.stages[0], {scope: "vehicle", estimateApplicable: Boolean(profile), access: assessVehicleAccess(profile ?? fixture.input)});
+  const access = assessVehicleAccess(profile ?? fixture.input);
+  const quoteFor = (stage?: EstimateStage) => resolveStageQuote(profile ?? {make: fixture.input.make, model: fixture.input.model}, stage, {scope: "vehicle", estimateApplicable: Boolean(profile), access});
+  const quote = quoteFor(profile?.stages[0]);
   return {id: fixture.id, group: fixture.group, inputIdentity: fixture.input, sourceFixtureId: fixture.sourceId, context: fixture.context, status: result.status,
     resolutionLevel: result.resolutionLevel ?? profile?.resolutionLevel ?? null,
-    selectedProfile: profile ? {id: profile.id, brand: profile.brand, model: profile.model, engine: profile.engine, provenance: profile.provenance, stockPowerHp: profile.stockPowerHp, stockTorqueNm: profile.stockTorqueNm, verificationRequired: profile.verificationRequired, conditionCodes: profile.conditionCodes, conditions: profile.conditions, sourceReferences: profile.sourceReferences} : null,
-    stages: stages.map(name => {const stage = profile?.stages.find(item => item.name === name); return {name, powerHp: stage?.powerHp ?? null, powerRangeHp: stage?.powerRangeHp ?? null, torqueNm: stage?.torqueNm ?? null, torqueRangeNm: stage?.torqueRangeNm ?? null, provenance: stage?.provenance ?? null, sourceProfileId: stage?.sourceProfileId ?? null, genericCategory: stage?.genericCategory ?? null, notes: stage?.notes ?? []};}),
+    selectedProfile: profile ? {id: profile.id, brand: profile.brand, model: profile.model, engine: profile.engine, provenance: profile.provenance, stockPowerHp: profile.stockPowerHp, stockTorqueNm: profile.stockTorqueNm, verificationRequired: profile.verificationRequired, conditionCodes: profile.conditionCodes, conditions: profile.conditions, sourceReferences: profile.sourceReferences, runtimeCommercialIdentity: profile.runtimeCommercialIdentity} : null,
+    stages: stages.map(name => {const stage = profile?.stages.find(item => item.name === name); return {name, powerHp: stage?.powerHp ?? null, powerRangeHp: stage?.powerRangeHp ?? null, torqueNm: stage?.torqueNm ?? null, torqueRangeNm: stage?.torqueRangeNm ?? null, provenance: stage?.provenance ?? null, evidenceClass: evidenceClass(stage), resolutionLevel: stage?.resolutionLevel ?? null, sourceProfileId: stage?.sourceProfileId ?? null, genericCategory: stage?.genericCategory ?? null, genericScenario: stage?.genericScenario ?? null, notes: stage?.notes ?? [], quote: quoteFor(stage)};}),
     diagnostics: result.diagnostics,
-    quoteMode: quote.kind, quote, reasonCodes: result.reasonCodes, rejectionReason: profile ? null : result.reasonCodes.join(", "), elapsedMs: Math.round(elapsedMs * 100) / 100, responseBytes: Buffer.byteLength(JSON.stringify(result))};
+    accessAssessment: access, quoteMode: quote.kind, quote, reasonCodes: result.reasonCodes, rejectionReason: profile ? null : result.reasonCodes.join(", "), elapsedMs: Math.round(elapsedMs * 100) / 100, responseBytes: Buffer.byteLength(JSON.stringify(result))};
 }
 
 function verifyProfile(fixture: Fixture, result: EstimateResolution, requireNumeric = true) {
@@ -115,17 +131,42 @@ function verifyProfile(fixture: Fixture, result: EstimateResolution, requireNume
   same(profile.stages.map(stage => stage.name), stages, `${fixture.id}: all three stage controls resolve`);
   check(!("candidates" in result) && !("rejections" in result) && !("vehicleDatabase" in result), `${fixture.id}: no candidate arrays or full database in browser resolution DTO`);
   check(Buffer.byteLength(JSON.stringify(result)) < 24000, `${fixture.id}: one compact estimate DTO`);
+  let previousPower: [number, number] | undefined;
   for (const stage of profile.stages) {
-    check(Number.isFinite(stage.powerHp) && stage.powerHp! > 0, `${fixture.id} ${stage.name}: numeric useful power`);
-    const torqueAvailable = Number.isFinite(stage.torqueNm) && stage.torqueNm! > 0 || Boolean(stage.torqueRangeNm?.length === 2 && stage.torqueRangeNm.every(value => Number.isFinite(value) && value > 0));
+    check(hasPower(stage), `${fixture.id} ${stage.name}: useful sourced peak or finite ordered power range`);
+    const torqueAvailable = positive(stage.torqueNm) || positiveRange(stage.torqueRangeNm);
     check(torqueAvailable || stage.provenance === "generic-indicative" && !profile.stockTorqueNm && stage.notes?.some(note => /no defensible stock torque source|torque.*unspecified/i.test(note)), `${fixture.id} ${stage.name}: sourced torque, labelled range, or explicit missing-torque explanation`);
     check(["reviewed", "reference", "canonical-estimated", "generic-indicative"].includes(stage.provenance ?? ""), `${fixture.id} ${stage.name}: explicit per-stage provenance`);
-    if (stage.provenance === "generic-indicative") continue;
+    same(stage.resolutionLevel, ({reference: 1, public: 2, canonical: 3, generic: 4, unavailable: undefined} as const)[evidenceClass(stage)], `${fixture.id} ${stage.name}: per-stage resolution level agrees with its actual source class`);
+    const interval = powerInterval(stage);
+    if (stage.provenance === "generic-indicative") {
+      check(stage.powerHp === undefined, `${fixture.id} ${stage.name}: generic power is not a pseudo-exact scalar`);
+      check(positiveRange(stage.powerRangeHp) && stage.powerRangeHp.every(value => value % 5 === 0), `${fixture.id} ${stage.name}: generic power bounds are rounded to 5 pk`);
+      check(!previousPower || interval && interval[0] >= previousPower[0] && interval[1] >= previousPower[1], `${fixture.id} ${stage.name}: later generic power bounds never move backward`);
+      previousPower = interval;
+      continue;
+    }
+    previousPower = interval;
     const source = stage.sourceProfileId ? sourceById.get(stage.sourceProfileId) : undefined;
     check(source, `${fixture.id} ${stage.name}: non-generic output names an existing source profile`);
     const sourceStage = source.stages.find(item => item.name === stage.name);
     same([stage.powerHp, stage.torqueNm], [sourceStage?.powerHp, sourceStage?.torqueNm], `${fixture.id} ${stage.name}: published/catalog peak values are not rewritten`);
   }
+  const beforeQuote = JSON.stringify(result);
+  const access = assessVehicleAccess(profile);
+  for (const stage of profile.stages) {
+    const quote = resolveStageQuote(profile, stage, {scope: "vehicle", estimateApplicable: true, access});
+    if (fixture.group !== "safety" && stage.name === "Stage 1") check(quote.kind === "from", `${fixture.id}: supported runtime Stage 1 has a scoped commercial starting budget without requiring a public ID`);
+    if (fixture.group !== "safety" && stage.name !== "Stage 1") check(quote.kind === "from" || quote.reasonCode === "advanced-unlock-higher-stage-scope-unassigned", `${fixture.id} ${stage.name}: ordinary resolved runtime work has a budget; advanced higher-Stage scope remains individual`);
+    if (quote.kind === "from") {
+      check(quote.indicative && quote.confirmationRequired && quote.status === "draft-local-owner-review", `${fixture.id} ${stage.name}: numeric quote remains a draft requiring confirmation`);
+      const budget: Record<string, number[]> = {"classic-standard-diesel": [29900, 44900, 69900], "contemporary-standard": [44900, 54900, 84900], "higher-complexity": [54900, 69900, 99900], "advanced-unlock": [70000]};
+      same(quote.amountCents, budget[quote.pricingCategory]?.[stages.indexOf(stage.name)], `${fixture.id} ${stage.name}: quote follows the requested category budget`);
+      check(quote.scope === "vehicle-software" || quote.scope === "advanced-unlock-package", `${fixture.id} ${stage.name}: lookup uses a vehicle or explicitly scoped unlock budget`);
+    }
+  }
+  same(JSON.stringify(result), beforeQuote, `${fixture.id}: commercial resolution does not mutate outputs, conditions or ECU evidence`);
+  same(assessVehicleAccess(profile), access, `${fixture.id}: pricing never upgrades ECU access evidence`);
 }
 
 for (const fixture of [...liveFixtures, ...curatedFixtures, ...nonPublicFixtures]) {
@@ -135,7 +176,7 @@ for (const fixture of [...liveFixtures, ...curatedFixtures, ...nonPublicFixtures
   try {
     verifyProfile(fixture, result);
     if (fixture.group === "live-owner" && ["V380ST", "V978ZF", "KKH27K"].includes(fixture.id)) {
-      check(result.profile?.stages.slice(1).every(stage => Number.isFinite(stage.powerHp)), `${fixture.id}: Stage-1-only reference cannot blank Stage 2/3`);
+      check(result.profile?.stages.slice(1).every(hasPower), `${fixture.id}: Stage-1-only reference cannot blank Stage 2/3`);
     }
   } catch (error) {
     failures.push({fixture: fixture.id, message: error instanceof Error ? error.message : String(error)});
@@ -215,16 +256,34 @@ same({public: engineCatalog.length, canonical: vehicleDatabase.length, stages: v
 same(beforeCounts, {public: 24, canonical: 58586, stages: 175758}, "Publication and canonical record counts remain unchanged");
 same(sourceFingerprint(), originalSourceFingerprint, "Resolution preserves every canonical identity, source peak and Stage requirement/package item");
 const normal = results.filter(result => result.group !== "safety" && ["Petrol", "Diesel"].includes(normalizeCatalogFuel(result.inputIdentity.fuel) ?? "") && registeredPowerToMetricHp(result.inputIdentity));
-const numeric = normal.filter(result => result.stages.every(stage => Number.isFinite(stage.powerHp) && stage.powerHp! > 0));
-const torqueAvailable = normal.filter(result => result.stages.every(stage => Number.isFinite(stage.torqueNm) || stage.torqueRangeNm?.length === 2));
+const numeric = normal.filter(result => result.stages.every(hasPower));
+const torqueAvailable = normal.filter(result => result.stages.every(stage => positive(stage.torqueNm) || positiveRange(stage.torqueRangeNm)));
 const canonicalResults = results.filter(result => result.group === "non-public-canonical");
 const levels = (rows: typeof results) => Object.fromEntries([1, 2, 3, 4].map(level => [level, rows.filter(row => row.resolutionLevel === level).length]));
+const percentage = (count: number) => Math.round(count / normal.length * 10000) / 100;
+const perStageEvidence = stages.map((name, index) => ({name, denominator: normal.length,
+  classes: Object.fromEntries((["reference", "public", "canonical", "generic", "unavailable"] as const).map(category => {
+    const count = normal.filter(row => row.stages[index].evidenceClass === category).length;
+    return [category, {count, percent: percentage(count)}];
+  }))}));
+const perStagePricing = stages.map((name, index) => {
+  const quotes = normal.map(row => row.stages[index].quote);
+  const numericCount = quotes.filter(quote => quote.kind === "from").length;
+  return {name, denominator: normal.length, numericCount, numericPercent: percentage(numericCount), onRequestCount: quotes.length - numericCount,
+    categories: Object.fromEntries(["classic-standard-diesel", "contemporary-standard", "higher-complexity", "advanced-unlock"].map(category => {
+      const count = quotes.filter(quote => quote.kind === "from" && quote.pricingCategory === category).length;
+      return [category, {count, percent: percentage(count)}];
+    })), requestReasons: Object.fromEntries([...new Set(quotes.flatMap(quote => quote.kind === "on-request" ? [quote.reasonCode] : []))].map(reason => [reason, quotes.filter(quote => quote.kind === "on-request" && quote.reasonCode === reason).length]))};
+});
+same(normal.length, 64, "The existing four live, four curated and 56 non-public normal-ICE fixture base is retained");
+for (const row of perStageEvidence) same(Object.values(row.classes).reduce((sum, value) => sum + value.count, 0), normal.length, `${row.name}: per-stage source coverage accounts for all 64 normal identities`);
 const timings = normal.map(result => result.elapsedMs).sort((a, b) => a - b);
 const summary = {fixtures: results.length, liveOwner: liveFixtures.length, curated: curatedFixtures.length, nonPublicTechnicalFixtures: nonPublicFixtures.length, nonPublicBrands: brands,
   normalIce: normal.length, allStagesNumeric: numeric.length, normalIceNumericPercent: Math.round(numeric.length / normal.length * 10000) / 100,
   allStagesTorqueNumberOrRange: torqueAvailable.length, torqueNumberOrRangePercent: Math.round(torqueAvailable.length / normal.length * 10000) / 100,
   resolverTimingMs: {median: timings[Math.floor(timings.length / 2)], p95: timings[Math.ceil(timings.length * .95) - 1], max: timings.at(-1)}, maxEstimateDtoBytes: Math.max(...normal.map(result => result.responseBytes)),
-  resolutionLevels: levels(normal), nonPublicResolutionLevels: levels(canonicalResults), unresolved: results.filter(result => !result.selectedProfile).map(result => ({id: result.id, reason: result.rejectionReason})), assertions, failures};
+  resolutionLevels: levels(normal), nonPublicResolutionLevels: levels(canonicalResults), perStageEvidence, perStagePricing,
+  unresolved: results.filter(result => !result.selectedProfile).map(result => ({id: result.id, reason: result.rejectionReason})), assertions, failures};
 const reportFlag = process.argv.indexOf("--report");
 if (reportFlag >= 0) {
   const destination = resolve(process.argv[reportFlag + 1] ?? "docs/tuning-qa/runtime/runtime-coverage.json");
@@ -232,13 +291,24 @@ if (reportFlag >= 0) {
   mkdirSync(dirname(destination), {recursive: true}); writeFileSync(destination, `${JSON.stringify(report, null, 2)}\n`);
   const lines = [
     "# Runtime RDW estimate coverage", "",
-    `Normal ICE fixtures with numeric Stage 1/2/3 power: **${numeric.length}/${normal.length} (${summary.normalIceNumericPercent}%)**.`, "",
+    `Normal ICE fixtures with a sourced peak or a finite ordered Stage 1/2/3 power range: **${numeric.length}/${normal.length} (${summary.normalIceNumericPercent}%)**. Generic bounds use 5 pk steps and are not measured or vehicle-specific tuning targets.`, "",
     `All three Stages also have sourced torque or an explicitly estimated range for **${torqueAvailable.length}/${normal.length} (${summary.torqueNumberOrRangePercent}%)**. The remaining generic profiles explicitly explain why torque is unspecified; no precise stock torque is fabricated.`, "",
     `Non-public canonical technical fixtures: **${nonPublicFixtures.length} across ${brands.length} brands**. Source-derived synthetic identities test runtime behavior; the four live owner cases are reported separately. This is not a real-world fleet coverage percentage.`, "",
     `Resolution levels (all normal ICE): ${JSON.stringify(summary.resolutionLevels)}. Non-public fixtures: ${JSON.stringify(summary.nonPublicResolutionLevels)}. Level 4 explicitly means generic indication, not an identified canonical tune.`, "",
-    "| Fixture | Level | Profile | Stage 1 hp / Nm | Stage 2 hp / Nm | Stage 3 hp / Nm | Provenance S1 / S2 / S3 | Quote |",
+    "## Per-Stage evidence coverage", "",
+    "The denominator is the same 64 normal-ICE fixtures for every Stage. Public and non-public canonical estimates are separated by each Stage's actual source profile ID; profile-level resolution cannot conceal generic later Stages. Publication is not independent technical verification.", "",
+    "| Stage | Specific reference | Public source | Non-public canonical | Generic range | Unavailable |",
+    "| --- | ---: | ---: | ---: | ---: | ---: |",
+    ...perStageEvidence.map(row => `| ${row.name} | ${["reference", "public", "canonical", "generic", "unavailable"].map(category => `${row.classes[category].count} (${row.classes[category].percent}%)`).join(" | ")} |`), "",
+    "## Runtime commercial coverage", "",
+    "All prices below are local draft starting budgets requiring owner/workshop confirmation. Software scope, selected options and any advanced unlock remain separate from output provenance and physical ECU evidence. Later Stages may retain an on-request commercial scope while keeping their output range available.", "",
+    "| Stage | Numeric draft budget | On request | Numeric category counts (classic / contemporary / complexity / advanced) |",
+    "| --- | ---: | ---: | --- |",
+    ...perStagePricing.map(row => `| ${row.name} | ${row.numericCount}/${row.denominator} (${row.numericPercent}%) | ${row.onRequestCount} | ${Object.values(row.categories).map(category => category.count).join(" / ")} |`), "",
+    "## Individual fixtures", "",
+    "| Fixture | Level | Profile | Stage 1 pk / Nm | Stage 2 pk / Nm | Stage 3 pk / Nm | Evidence S1 / S2 / S3 | Draft budgets S1 / S2 / S3 |",
     "| --- | --- | --- | --- | --- | --- | --- | --- |",
-    ...results.map(result => `| ${result.id} | ${result.resolutionLevel ?? "unavailable"} | ${result.selectedProfile?.id ?? result.rejectionReason} | ${result.stages.map(stage => `${stage.powerRangeHp?.join("–") ?? stage.powerHp ?? "—"} / ${stage.torqueRangeNm?.join("–") ?? stage.torqueNm ?? "—"}`).join(" | ")} | ${result.stages.map(stage => stage.provenance ?? "—").join(" / ")} | ${result.quoteMode} |`), "",
+    ...results.map(result => `| ${result.id} | ${result.resolutionLevel ?? "unavailable"} | ${result.selectedProfile?.id ?? result.rejectionReason} | ${result.stages.map(stage => `${stage.powerRangeHp?.join("–") ?? stage.powerHp ?? "—"} / ${stage.torqueRangeNm?.join("–") ?? stage.torqueNm ?? "—"}`).join(" | ")} | ${result.stages.map(stage => stage.evidenceClass).join(" / ")} | ${result.stages.map(stage => stage.quote.kind === "from" ? `€${stage.quote.amountCents / 100}` : `request (${stage.quote.reasonCode})`).join(" / ")} |`), "",
     "Complete input identities, source IDs/comparisons, rejection reasons, quote objects, DTO sizes and single-process resolution timing are in the adjacent JSON report. The resolver timing excludes initial module/catalog loading and the RDW network request."
   ];
   writeFileSync(destination.replace(/\.json$/, ".md"), `${lines.join("\n")}\n`);

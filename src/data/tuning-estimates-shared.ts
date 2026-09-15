@@ -1,13 +1,16 @@
 import type {EngineVariant, FuelType, StageDefinition, StageName} from "./catalog-shared.ts";
+import type {RuntimeCommercialIdentity} from "./runtime-pricing.ts";
 
 export type EstimateStage = Omit<StageDefinition, "powerHp" | "torqueNm" | "price" | "sourcePrice" | "quote"> & {
   powerHp?: number;
   torqueNm?: number;
   provenance?: "reviewed" | "reference" | "canonical-estimated" | "generic-indicative";
   sourceProfileId?: string;
+  resolutionLevel?: 1 | 2 | 3 | 4;
   powerRangeHp?: [number, number];
   torqueRangeNm?: [number, number];
   genericCategory?: "turbo-diesel" | "turbo-petrol" | "naturally-aspirated" | "unknown-aspiration";
+  genericScenario?: "standard-range" | "strong-stage1-conditional";
 };
 
 export type EstimateSourceReference = {
@@ -35,6 +38,7 @@ export type TuningEstimateProfile = Pick<EngineVariant,
   stages: EstimateStage[];
   provenance: "existing-catalog" | "tuner-reference" | "canonical-estimated" | "generic-indicative";
   resolutionLevel?: 1 | 2 | 3 | 4;
+  runtimeCommercialIdentity?: RuntimeCommercialIdentity;
   sourceReferences: EstimateSourceReference[];
   conditions: string[];
   conditionCodes?: string[];

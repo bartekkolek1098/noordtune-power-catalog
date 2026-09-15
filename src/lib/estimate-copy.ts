@@ -23,9 +23,22 @@ export function formatEstimateSource(stage: EstimateStage, locale: Locale) {
 }
 
 /** Individual source limitations are displayed without invalidating a whole profile group. */
+export function genericEstimateNote(locale: Locale) {
+  return {
+    nl: "Indicatieve bandbreedte op basis van RDW-vermogen; exacte waarde na controle van motor, ECU en hardware.",
+    en: "Indicative range based on RDW power; exact value after checking engine, ECU and hardware.",
+    pl: "Orientacyjny zakres na podstawie mocy RDW; dokładna wartość po sprawdzeniu silnika, ECU i osprzętu."
+  }[locale];
+}
+
 export function estimateLimitations(profile: TuningEstimateProfile, locale: Locale) {
   const codes = profile.conditionCodes ?? [];
   const messages: Record<string, Record<Locale, string>> = {
+    NOORDTUNE_TARGET_REVIEW_REQUIRED: {
+      nl: "190 pk / 440 Nm is een externe Stage 1-referentie. Goedkeuring door de eigenaar van NoordTune is vereist voordat dit als NoordTune-doel wordt gebruikt.",
+      en: "190 hp / 440 Nm is an external Stage 1 reference. Approval by the owner of NoordTune is required before using it as a NoordTune target.",
+      pl: "190 KM / 440 Nm to zewnętrzna referencja Stage 1. Przed przyjęciem jej jako celu NoordTune wymagana jest zgoda właściciela NoordTune."
+    },
     GENERIC_TORQUE_UNAVAILABLE: {
       nl: "Het stockvermogen komt uit RDW. Zonder betrouwbare bron voor het stockkoppel tonen we geen verzonnen Nm; het koppel vereist voertuigcontrole.",
       en: "Stock power comes from RDW. Without a reliable stock-torque source, we do not invent Nm figures; torque requires vehicle verification.",

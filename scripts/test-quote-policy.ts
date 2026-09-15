@@ -57,7 +57,7 @@ test("actual incompatible identity and unavailable profiles remain unquoted", ()
   assert.equal(pricing.resolveStageQuote(golfGti, stage1, {estimateApplicable: false}).kind, "on-request");
 });
 
-test("unassigned old diesel never receives a generic category based on age or fuel", () => {
+test("an unrecognized object never receives runtime pricing merely from age or fuel", () => {
   const vehicle = {id: "synthetic-old-diesel", make: "Ford", model: "Transit", firstAdmissionYear: 2001};
   assert.equal(pricing.resolveStageQuote(vehicle, stage1, {access: unknownAccess}).kind, "on-request");
   assert.equal(pricing.getPublicStagePrice(vehicle, {...stage1, price: 269}), undefined);
@@ -182,3 +182,5 @@ test("invalid first admission remains unavailable without replacing it with a su
   assert.doesNotMatch(message, /2023/);
 });
 }
+
+require("./test-runtime-pricing.ts");

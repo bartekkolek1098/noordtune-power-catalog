@@ -29,18 +29,23 @@ export function PowerChart({
 }) {
   const [mounted, setMounted] = useState(false);
   const hasRanges = stages.some(stage => stage.powerRangeHp || stage.torqueRangeNm);
-  const data = useMemo(() => [
+  const data = useMemo(() => {
+    const powerRanges = stages.some(stage => stage.powerRangeHp);
+    const torqueRanges = stages.some(stage => stage.torqueRangeNm);
+    const point = (value: number | undefined, rangeSeries: boolean) => value === undefined ? null : rangeSeries ? [value, value] : value;
+    return [
     {
       name: stockLabel,
-      pk: stockPower,
-      nm: stockTorque ?? null
+      pk: point(stockPower, powerRanges),
+      nm: point(stockTorque, torqueRanges)
     },
     ...stages.map((stage) => ({
       name: stage.name.replace("Stage ", "S"),
-      pk: stage.powerHp ?? null,
-      nm: stage.torqueNm ?? null
+      pk: stage.powerRangeHp ?? point(stage.powerHp, powerRanges),
+      nm: stage.torqueRangeNm ?? point(stage.torqueNm, torqueRanges)
     }))
-  ], [stages, stockLabel, stockPower, stockTorque]);
+    ];
+  }, [stages, stockLabel, stockPower, stockTorque]);
 
   useEffect(() => {
     setMounted(true);
@@ -51,7 +56,7 @@ export function PowerChart({
   }
 
   return (
-    <><div className="h-64 min-w-0 w-full" data-testid="catalog-power-chart">
+    <><div className="h-64 min-w-0 w-full" data-testid="catalog-power-chart" data-has-ranges={hasRanges}>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={data} margin={{left: -20, right: 12, top: 14, bottom: 0}}>
           <defs>
@@ -68,6 +73,7 @@ export function PowerChart({
           <XAxis dataKey="name" stroke="rgba(255,255,255,0.55)" tickLine={false} />
           <YAxis stroke="rgba(255,255,255,0.55)" tickLine={false} />
           <Tooltip
+            formatter={(value) => Array.isArray(value) ? value[0] === value[1] ? String(value[0]) : value.join("–") : value}
             contentStyle={{
               background: "#0d1117",
               border: "1px solid rgba(255,255,255,.14)",
@@ -102,8 +108,8 @@ function ChartCaption({locale, hasRanges}: {locale: Locale; hasRanges?: boolean}
     en: "Catalog illustration of peak values; not a dyno measurement or measured RPM curve.",
     pl: "Ilustracja katalogowych wartości szczytowych; nie jest pomiarem z hamowni ani zmierzoną krzywą obrotów."
   }[locale]}{hasRanges ? " " + {
-    nl: "Bereiken staan in de tabel; de grafiek toont alleen beschikbare puntschattingen.",
-    en: "Ranges are listed in the table; the chart plots only available point estimates.",
-    pl: "Przedziały są podane w tabeli; wykres pokazuje tylko dostępne szacunki punktowe."
+    nl: "De banden tonen de vermelde bereiken; exacte bronwaarden blijven punten.",
+    en: "Bands show the listed ranges; exact source values remain points.",
+    pl: "Pasma pokazują podane przedziały; dokładne wartości źródłowe pozostają punktami."
   }[locale] : ""}</p>;
 }

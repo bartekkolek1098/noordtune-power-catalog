@@ -9,7 +9,7 @@ import {assessCatalogMatch, nominalEngineDisplacements, nominalDisplacementMatch
 import {tuningReferenceProfiles, type EstimateMatchInput} from "../data/tuning-estimates.ts";
 import {getCatalogEstimateProfile, type EstimateResolution, type EstimateStage,
   type TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
-import {genericTuningHeuristics, type GenericEstimateCategory} from "../data/tuning-heuristics.ts";
+import {genericTuningHeuristics, strongStage1ScenarioStockWidths, type GenericEstimateCategory} from "../data/tuning-heuristics.ts";
 import {connectStage1Comparison} from "../data/tuning-reference-research.ts";
 
 export type RuntimeEstimateSources = {
@@ -36,6 +36,13 @@ const displacementScopes: Record<string, readonly number[]> = {
 function years(profile: TuningEstimateProfile) {
   const range = profile.yearRange.match(/\d{4}/g)?.map(Number) ?? [];
   return range.length > 1 ? Array.from({length: Math.max(0, range[1] - range[0] + 1)}, (_, index) => range[0] + index) : range;
+}
+function firstAdmissionYear(input: EstimateMatchInput) {
+  if (input.firstRegistrationYear && Number.isInteger(input.firstRegistrationYear)) return input.firstRegistrationYear;
+  const date = input.firstRegistrationDate;
+  if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return undefined;
+  const parsed = new Date(`${date}T00:00:00Z`);
+  return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date ? parsed.getUTCFullYear() : undefined;
 }
 function referenceVehicle(profile: TuningEstimateProfile): EngineVariant {
   return {...profile, years: years(profile), stockTorqueNm: profile.stockTorqueNm ?? 0, stages: [], image: "", tags: []};
@@ -121,18 +128,40 @@ function aspirationCategory(input: EstimateMatchInput, profiles: readonly Tuning
   if (fuel === "Petrol" && /turbo|\b(?:TSI|TFSI|EcoBoost|TCe|T-Jet|THP|T-GDI)\b/i.test(text)) return "turbo-petrol";
   return "unknown-aspiration";
 }
-function genericStage(name: StageName, stockPower: number, stockTorque: number | undefined, category: GenericEstimateCategory, prior?: EstimateStage): EstimateStage {
+function stagePowerRange(stage?: EstimateStage): [number, number] | undefined {
+  return stage?.powerRangeHp ?? (stage?.powerHp ? [stage.powerHp, stage.powerHp] : undefined);
+}
+function stageTorqueRange(stage?: EstimateStage): [number, number] | undefined {
+  return stage?.torqueRangeNm ?? (stage?.torqueNm ? [stage.torqueNm, stage.torqueNm] : undefined);
+}
+function roundedMonotonicRange(range: readonly [number, number], prior?: readonly [number, number]): [number, number] {
+  const lower = Math.max(5, Math.floor((range[0] + 1e-8) / 5) * 5, prior ? Math.ceil((prior[0] - 1e-8) / 5) * 5 : 0);
+  const upper = Math.max(lower, Math.ceil((range[1] - 1e-8) / 5) * 5, prior ? Math.ceil((prior[1] - 1e-8) / 5) * 5 : 0);
+  return [lower, upper];
+}
+function genericStage(name: StageName, stockPower: number, stockTorque: number | undefined, category: GenericEstimateCategory, prior?: EstimateStage, sourcedStage1?: EstimateStage): EstimateStage {
   const policy = genericTuningHeuristics[category][name];
-  const powerHp = Math.round(Math.max(stockPower * policy.powerFactor, (prior?.powerRangeHp?.[1] ?? prior?.powerHp ?? stockPower) * policy.priorStageFactor));
-  const priorTorque = prior?.torqueRangeNm?.[1] ?? prior?.torqueNm;
-  const torqueRangeNm: [number, number] | undefined = stockTorque && stockTorque > 0 ? [
-    Math.round(Math.max(stockTorque * policy.torqueFactorRange[0], (priorTorque ?? stockTorque) * policy.priorStageFactor) / 5) * 5,
-    Math.round(Math.max(stockTorque * policy.torqueFactorRange[1], (priorTorque ?? stockTorque) * policy.priorStageFactor * 1.08) / 5) * 5
-  ] : undefined;
-  return {name, powerHp, torqueRangeNm, provenance: "generic-indicative", sourceProfileId: `heuristic-v1:${category}`, genericCategory: category,
+  // RDW-to-pk conversion is displayed at whole pk; do not let sub-pk conversion
+  // noise shift an indicative five-pk endpoint or trigger a de-rating scenario.
+  const planningStockPower = Math.round(stockPower);
+  const sourceRange = stagePowerRange(sourcedStage1);
+  const scenarioWidth = strongStage1ScenarioStockWidths[name];
+  const normalStage2Upper = Math.ceil(planningStockPower * genericTuningHeuristics[category]["Stage 2"].powerFactorRange[1] / 5) * 5;
+  const strongSource = sourceRange && scenarioWidth !== undefined
+    && sourceRange[0] > normalStage2Upper + 3;
+  const rawPowerRange: [number, number] = strongSource ? [sourceRange[0], sourceRange[1] + planningStockPower * scenarioWidth]
+    : [planningStockPower * policy.powerFactorRange[0], planningStockPower * policy.powerFactorRange[1]];
+  const powerRangeHp = roundedMonotonicRange(rawPowerRange, stagePowerRange(prior));
+  const torqueRangeNm = stockTorque && stockTorque > 0
+    ? roundedMonotonicRange([stockTorque * policy.torqueFactorRange[0], stockTorque * policy.torqueFactorRange[1]], stageTorqueRange(prior)) : undefined;
+  return {name, powerRangeHp, torqueRangeNm, provenance: "generic-indicative", resolutionLevel: 4,
+    sourceProfileId: `heuristic-v2:${category}`, genericCategory: category,
+    genericScenario: strongSource ? "strong-stage1-conditional" : "standard-range",
     requirements: name === "Stage 1" ? "Generic indicative software scenario; confirm engine, aspiration, ECU access and condition before work." : "Generic indicative hardware and calibration scenario; compatible hardware and workshop validation required.",
     packageItems: [], confidenceLevel: "estimated", hardwareRequired: name !== "Stage 1", logCheckRecommended: true,
-    notes: ["Local heuristic illustration, not a model-specific tune or measured result. Power uses registered stock power and, where available, a compatible earlier Stage as its floor.", ...(torqueRangeNm ? ["Torque is a broad estimated range anchored to compatible source stock torque; it is not an exact torque measurement."] : ["No defensible stock torque source: torque is intentionally unspecified."])]};
+    notes: ["Rounded local planning range, not a model-specific tune or measured result. Each range starts from registered stock power; earlier bounds prevent regression without multiplying a previous Stage.",
+      ...(strongSource ? ["The sourced Stage 1 exceeds the normal generic Stage 2 band. This may reflect a factory-de-rated configuration, but hardware equivalence is unconfirmed. Later bands are broad conditional scenarios based on the same fixed source interval, not approved NoordTune targets."] : []),
+      ...(torqueRangeNm ? ["Torque is a broad estimated range based on compatible source stock torque, with nondecreasing bounds; it is not an exact torque measurement."] : ["No defensible stock torque source: torque is intentionally unspecified."])]};
 }
 
 /** Resolve one compact runtime profile. Publication, pricing and ECU confirmation do not gate power estimates. */
@@ -152,12 +181,18 @@ export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: Run
   const referenceEntries = (sources.references ?? tuningReferenceProfiles).flatMap((profile): Eligible[] => {
     const match = eligibleReasons(input, referenceVehicle(profile), 1);
     if (!match) return [];
-    const runtimeProfile = profile.id === "ref-ford-transit-connect-15-tdci-100" ? {...profile,
+    let runtimeProfile = profile.id === "ref-ford-transit-connect-15-tdci-100" ? {...profile,
       stages: profile.stages.map((stage) => stage.name === "Stage 1" ? {...stage,
         powerRangeHp: connectStage1Comparison.powerRangeHp, torqueRangeNm: connectStage1Comparison.torqueRangeNm} : stage),
       sourceReferences: connectStage1Comparison.sourceReferences,
       conditions: [...profile.conditions, ...connectStage1Comparison.conditions]
     } : profile;
+    if (profile.id === "ref-ford-transit-custom-20-ecoblue-105") {
+      match.push("NOORDTUNE_TARGET_REVIEW_REQUIRED");
+      runtimeProfile = {...runtimeProfile,
+        conditionCodes: [...(runtimeProfile.conditionCodes ?? []), "NOORDTUNE_TARGET_REVIEW_REQUIRED"],
+        conditions: [...runtimeProfile.conditions, "The external 190 pk / 440 Nm Stage 1 reference is not an approved or preferred NoordTune target. Owner review is required; workshop experience includes more conservative configurations for this family."]};
+    }
     return [{profile: runtimeProfile, reasons: match, level: 1}];
   });
   const referenceGroups = collapse(referenceEntries);
@@ -184,7 +219,7 @@ export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: Run
   if (canonicalGroups.length > 1) reasons.push("MULTIPLE_CANONICAL_TECHNICAL_PROFILES");
   if (compatibleCanonical.length > canonicalGroups.length) reasons.push("EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED");
   const selected = [primaryReference, primaryPublic, primaryCanonical].filter((item): item is Eligible => Boolean(item));
-  const primary = selected[0];
+  const primary = selected.at(0);
   const level = primary?.level ?? 4;
   const category = aspirationCategory(input, selected.map((entry) => entry.profile));
   const profileId = `rdw-generic-${createHash("sha256").update(JSON.stringify([makeKey(input.make), normalize(input.model), fuel, input.displacementCc, power])).digest("hex").slice(0, 12)}`;
@@ -202,23 +237,29 @@ export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: Run
     const source = selected.find((entry) => entry.profile.stages.some((stage) => stage.name === name && Number.isFinite(stage.powerHp) && stage.powerHp! > 0));
     if (source) {
       const stage = source.profile.stages.find((item) => item.name === name)!;
-      stages.push({...stage, provenance: source.level === 1 ? "reference" : source.level === 2 && stage.confidenceLevel === "verified" ? "reviewed" : "canonical-estimated", sourceProfileId: source.profile.id});
+      stages.push({...stage, provenance: source.level === 1 ? "reference" : source.level === 2 && stage.confidenceLevel === "verified" ? "reviewed" : "canonical-estimated", sourceProfileId: source.profile.id, resolutionLevel: source.level});
       used.add(source);
     } else {
-      stages.push(genericStage(name, power, base.stockTorqueNm, category, stages.at(-1)));
+      stages.push(genericStage(name, power, base.stockTorqueNm, category, stages.at(-1), stages.find((stage) => stage.name === "Stage 1" && stage.provenance !== "generic-indicative")));
     }
   }
   const generic = stages.some((stage) => stage.provenance === "generic-indicative");
   if (generic) reasons.push("GENERIC_INDICATIVE_STAGE_FALLBACK");
   if (generic && category === "unknown-aspiration") reasons.push("ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE");
+  const strongStageScenario = stages.some((stage) => stage.genericScenario === "strong-stage1-conditional");
+  if (strongStageScenario) reasons.push("STRONG_STAGE1_REFERENCE_SCENARIO");
   if (level === 3) reasons.push("CANONICAL_ESTIMATE_VERIFICATION_REQUIRED");
   for (const source of used) reasons.push(...source.reasons);
   const sourceReferences = [...new Map([...used].flatMap((entry) => entry.profile.sourceReferences).map((reference) => [JSON.stringify(reference), reference])).values()];
-  if (generic) sourceReferences.push({title: "NoordTune generic RDW indication policy v1", sourceType: "heuristic", scope: `${category}: documented local Stage power factors with compatible prior-Stage floor; illustrative scenarios only. Unknown stock torque is not invented.`});
+  if (generic) sourceReferences.push({title: "NoordTune generic RDW indication policy v2", sourceType: "heuristic", scope: `${category}: independently stock-based planning intervals, rounded to 5 pk. Bounds cannot regress; no recursive Stage multipliers. Unusually strong sourced Stage 1 uses broad conditional scenarios, not model-specific targets. Unknown stock torque is not invented.`});
   // RDW identity has no identified-transmission evidence. A matching catalog
   // gearbox label must not become an applicable TCU service on any runtime level.
   const gearboxOptionIds = new Set(serviceOptions.filter((option) => option.requiresGearbox).map((option) => option.id));
   const profile: TuningEstimateProfile = {...base, resolutionLevel: level,
+    runtimeCommercialIdentity: {status: level === 4 ? "resolved-generic" : "resolved-compatible",
+      make: input.make!.trim(), model: input.model!.trim(), fuel: fuel as "Petrol" | "Diesel",
+      registeredPowerHp: power, displacementCc: input.displacementCc,
+      firstAdmissionYear: firstAdmissionYear(input), cylinders: input.cylinders},
     stages: stages.map((stage) => ({...stage, tcuRecommended: false})), sourceReferences,
     gearbox: undefined, transmissionSupport: {status: "manual-review"}, tcuSupport: {status: "manual-review"},
     options: base.options.filter((id) => !gearboxOptionIds.has(id)),
@@ -227,6 +268,7 @@ export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: Run
       recommendedOptionIds: base.recommendedPackage.recommendedOptionIds?.filter((id) => !gearboxOptionIds.has(id))} : undefined,
     conditions: [...new Set([...used].flatMap((entry) => entry.profile.conditions).concat(generic ? ["Generic Stages are conservative indicative scenarios, not measured or model-specific promises. Hardware and exact engine/ECU access require confirmation."] : []))],
     conditionCodes: [...new Set([...(base.conditionCodes ?? []), ...(generic ? ["GENERIC_INDICATIVE_STAGE_FALLBACK"] : []),
+      ...(strongStageScenario ? ["STRONG_STAGE1_REFERENCE_SCENARIO"] : []),
       ...(generic && !base.stockTorqueNm ? ["GENERIC_TORQUE_UNAVAILABLE"] : [])])]};
   return {status: reasons.length || level >= 3 ? "conditional" : "applicable", resolutionLevel: level, profile,
     diagnostics: {referenceTechnicalProfiles: referenceGroups.length, publicTechnicalProfiles: publicGroups.length,

@@ -52,6 +52,7 @@ export type VehicleQuoteMessageInput = {
   engine?: string;
   estimateProfileLabel?: string;
   estimateSource?: string;
+  estimateNotes?: string[];
   indicativeOutput?: Pick<EstimateStage, "powerHp" | "torqueNm" | "powerRangeHp" | "torqueRangeNm">;
 };
 
@@ -150,6 +151,7 @@ function createQuoteMessage(input: VehicleQuoteMessageInput & {plate?: string}) 
     `${text.access}: ${formatAccessAssessment(access, input.locale)}`,
     `${text.stage}: ${input.stage}`,
     output ? `${text.output}: ${output}` : undefined,
+    ...(input.estimateNotes ?? []),
     input.recommendedPackage ? `${text.recommended}: ${input.recommendedPackage}` : undefined,
     `${text.options}: ${input.options.length ? input.options.join(", ") : "-"}`,
     input.quote.kind === "on-request" ? text.requestPrice : `${text.price}: ${formatQuote(input.quote, input.locale)}`,

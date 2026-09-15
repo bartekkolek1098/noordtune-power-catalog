@@ -1,3 +1,5 @@
+import {classifyRuntimePricing, type RuntimeCommercialIdentity, type RuntimePricingCategory} from "./runtime-pricing.ts";
+
 export type PricingV2StageTierId =
   | "stage1-standard"
   | "stage1-advanced"
@@ -290,6 +292,7 @@ export type QuoteVehicle = {
   ecuType?: string;
   ecuSupport?: {family?: string};
   publicationSource?: "existing-curated" | "canonical-publication";
+  runtimeCommercialIdentity?: RuntimeCommercialIdentity;
 };
 type PublicPricingVehicle = QuoteVehicle & {id: string};
 type PublicPricingStage = {
@@ -334,7 +337,7 @@ export type AccessAssessment =
   | {status: "confirmed-standard" | "confirmed-bench" | "confirmed-unlock-required"; evidence: AccessEvidence}
   | {status: "possible-unlock-review" | "unknown"; reasonCode: string; scenario?: "bmw-unlock-review"};
 
-export type DraftPricingCategory = "classic-standard-diesel" | "contemporary-standard" | "higher-complexity" | "advanced-unlock";
+export type DraftPricingCategory = RuntimePricingCategory | "advanced-unlock";
 export type QuoteScope = "family-software" | "vehicle-software" | "advanced-unlock-package";
 export type QuoteResolution =
   | {
@@ -437,14 +440,18 @@ export function resolveStageQuote(vehicle: QuoteVehicle | null | undefined, stag
   if (!stage) return request("stage-scope-unavailable");
   if (context.identityConflict) return request("incompatible-profile-identity");
   if (context.estimateApplicable === false) return request("applicable-commercial-profile-unavailable");
+  if (vehicle?.runtimeCommercialIdentity?.workScope === "custom") return request("custom-runtime-work-scope-unassigned");
   const id = vehicle?.vehicleId ?? vehicle?.id;
   const assignmentId = id && Object.hasOwn(draftVehiclePricingAssignments, id) ? id : id ? resolvePublicPricingVehicleId(id) : undefined;
-  const assignment = assignmentId ? draftVehiclePricingAssignments[assignmentId] : undefined;
+  const explicitAssignment = assignmentId ? draftVehiclePricingAssignments[assignmentId] : undefined;
+  const runtimeIdentity = classifyRuntimePricing(vehicle?.runtimeCommercialIdentity);
+  const runtime = !explicitAssignment ? runtimeIdentity : undefined;
+  const assignment = explicitAssignment ?? (runtime ? draftAssignment(runtime.category, runtime.reason) : undefined);
   if (!assignment) return request("commercial-scenario-unassigned");
   const access = context.access ?? assessVehicleAccess(vehicle);
   if (access.status.startsWith("confirmed-") && !applicableAccessEvidence(access)) return request("access-confirmation-evidence-missing");
   const reference = assignmentId?.startsWith("ref-") ?? false;
-  const scope = context.scope ?? (reference ? "vehicle" : "family");
+  const scope = context.scope ?? (reference || runtime ? "vehicle" : "family");
   const actualUnlock = access.status === "confirmed-unlock-required";
   const possibleVehicleUnlock = scope === "vehicle" && access.status === "possible-unlock-review";
   // The package proposal is scoped to the listed modern/mixed-family BMW review
@@ -454,11 +461,20 @@ export function resolveStageQuote(vehicle: QuoteVehicle | null | undefined, stag
   const advanced = assignment.category === "advanced-unlock" || ((actualUnlock || possibleVehicleUnlock) && bmwScenario);
   if ((actualUnlock || possibleVehicleUnlock) && !advanced) return request("unlock-package-scope-unassigned");
   if (advanced && stage.name !== "Stage 1") return request("advanced-unlock-higher-stage-scope-unassigned");
-  const amountCents = advanced ? 70000 : assignment.stageAmountsCents[stage.name];
+  // Runtime references keep their explicit commercial category. Missing software
+  // amounts can use that category's schedule, independently of technical provenance.
+  // Manual references have no runtime marker; advanced unlock was guarded above.
+  const runtimeReferenceFill = !advanced && reference && Boolean(runtimeIdentity)
+    && assignment.stageAmountsCents[stage.name] === undefined;
+  const amountCents = advanced ? 70000 : assignment.stageAmountsCents[stage.name]
+    ?? (runtimeReferenceFill ? draftCategoryAmounts[assignment.category][stage.name] : undefined);
   if (amountCents === undefined) return request("stage-scope-unavailable");
   return {
     kind: "from", indicative: true, status: "draft-local-owner-review", amountCents,
-    currency: "EUR", taxBasis: "inclusive", policyId: `draft-local-v1:${assignmentId}:${advanced ? "advanced-unlock" : assignment.category}:${stage.name}`,
+    currency: "EUR", taxBasis: "inclusive", policyId: runtime
+      ? `draft-runtime-v1:${runtime.ruleId}:${advanced ? "advanced-unlock" : assignment.category}:${stage.name}`
+      : runtimeReferenceFill ? `draft-runtime-v1:reference-category:${assignmentId}:${assignment.category}:${stage.name}`
+      : `draft-local-v1:${assignmentId}:${advanced ? "advanced-unlock" : assignment.category}:${stage.name}`,
     pricingCategory: advanced ? "advanced-unlock" : assignment.category,
     scope: advanced ? "advanced-unlock-package" : scope === "family" ? "family-software" : "vehicle-software",
     stageName: stage.name, confirmationRequired: true

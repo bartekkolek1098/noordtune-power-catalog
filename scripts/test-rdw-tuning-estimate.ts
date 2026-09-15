@@ -2,12 +2,14 @@ import assert from "node:assert/strict";
 import {engineCatalog, vehicleDatabase} from "../src/data/catalog.ts";
 import {serviceOptions, type EngineVariant} from "../src/data/catalog-shared.ts";
 import type {EstimateMatchInput} from "../src/data/tuning-estimates.ts";
-import {getCatalogEstimateProfile, type TuningEstimateProfile} from "../src/data/tuning-estimates-shared.ts";
+import {getCatalogEstimateProfile, type TuningEstimateProfile, type EstimateStage} from "../src/data/tuning-estimates-shared.ts";
 import {resolveRdwTuningEstimate, type RuntimeEstimateSources} from "../src/lib/rdw-tuning-estimate.ts";
 import {isVehicleServiceSelectable} from "../src/lib/vehicle-services.ts";
 
 let passed = 0;
 function test(name: string, run: () => void) { run(); passed++; console.log(`PASS ${name}`); }
+function hasPower(stage: EstimateStage) { return Boolean(stage.powerHp && stage.powerHp > 0) || Boolean(stage.powerRangeHp?.every((value) => Number.isFinite(value) && value > 0)); }
+function range(stage: EstimateStage): [number, number] { return stage.powerRangeHp ?? [stage.powerHp!, stage.powerHp!]; }
 const empty: RuntimeEstimateSources = {references: [], publicVehicles: [], canonicalVehicles: []};
 const identity: EstimateMatchInput = {make: "Ford", model: "Focus", fuel: "Petrol", displacementCc: 999, powerHp: 125, firstRegistrationYear: 2018};
 function candidate(overrides: Partial<EngineVariant> = {}): EngineVariant {
@@ -62,7 +64,7 @@ test("every runtime hierarchy level removes inherited gearbox services without t
     assert.equal(result.profile?.options.includes("gearbox"), false);
     assert.equal(result.profile?.tcuSupport?.status, "manual-review");
     assert.equal(result.profile?.transmissionSupport?.status, "manual-review");
-    assert.ok(result.profile?.stages.every((stage) => stage.powerHp! > 0));
+    assert.ok(result.profile?.stages.every(hasPower));
   }
 });
 test("technical year/template duplicates collapse without choosing conflicting output", () => {
@@ -79,7 +81,7 @@ test("materially different canonical outputs fall back instead of selecting firs
   const result = resolveRdwTuningEstimate(identity, {...empty, canonicalVehicles: [candidate(), alternative]});
   assert.equal(result.resolutionLevel, 4);
   assert.ok(result.reasonCodes.includes("MULTIPLE_CANONICAL_TECHNICAL_PROFILES"));
-  assert.ok(result.profile?.stages.every((stage) => stage.provenance === "generic-indicative" && stage.powerHp! > 0));
+  assert.ok(result.profile?.stages.every((stage) => stage.provenance === "generic-indicative" && hasPower(stage)));
   assert.equal(result.profile?.stockTorqueNm, undefined);
   assert.equal(result.profile?.model, identity.model);
 });
@@ -97,13 +99,17 @@ test("each missing canonical Stage uses generic fallback without hiding other St
   assert.equal(result.profile?.stages[1].provenance, "generic-indicative");
   assert.equal(result.profile?.stages[2].powerHp, 215);
 });
-test("generic later Stages use compatible previous output floor", () => {
+test("unusually strong Stage 1 gets broad independent scenarios without recursive compounding", () => {
   const profile = onlyStage1(candidate({id: "synthetic-reference"}));
   profile.stages[0].powerHp = 200;
   const result = resolveRdwTuningEstimate(identity, {...empty, references: [profile]});
   const stages = result.profile!.stages;
-  assert.ok(stages[1].powerHp! > 200);
-  assert.ok(stages[2].powerHp! > stages[1].powerHp!);
+  assert.deepEqual(stages[1].powerRangeHp, [200, 225]);
+  assert.deepEqual(stages[2].powerRangeHp, [200, 250]);
+  assert.equal(stages[1].powerHp, undefined);
+  assert.equal(stages[2].powerHp, undefined);
+  assert.equal(stages[1].genericScenario, "strong-stage1-conditional");
+  assert.ok(result.reasonCodes.includes("STRONG_STAGE1_REFERENCE_SCENARIO"));
   assert.equal(stages[1].torqueNm, undefined);
   assert.ok(stages[1].torqueRangeNm);
 });
@@ -138,7 +144,8 @@ test("unknown aspiration has conservative generic power and no invented stock/St
   assert.equal(result.resolutionLevel, 4);
   assert.equal(result.profile?.stockPowerHp, 125);
   assert.equal(result.profile?.stockTorqueNm, undefined);
-  assert.deepEqual(result.profile?.stages.map((stage) => stage.powerHp), [128, 130, 133]);
+  assert.deepEqual(result.profile?.stages.map((stage) => stage.powerRangeHp), [[125, 130], [125, 135], [130, 140]]);
+  assert.ok(result.profile?.stages.every((stage) => stage.powerHp === undefined));
   assert.ok(result.profile?.stages.every((stage) => stage.genericCategory === "unknown-aspiration" && stage.torqueNm === undefined && stage.torqueRangeNm === undefined));
 });
 test("explicit turbo diesel and naturally aspirated evidence choose distinct tables", () => {
@@ -146,7 +153,7 @@ test("explicit turbo diesel and naturally aspirated evidence choose distinct tab
   const natural = resolveRdwTuningEstimate({...identity, model: "Unlisted naturally aspirated"}, empty);
   assert.equal(diesel.profile?.stages[0].genericCategory, "turbo-diesel");
   assert.equal(natural.profile?.stages[0].genericCategory, "naturally-aspirated");
-  assert.ok(diesel.profile!.stages[0].powerHp! > natural.profile!.stages[0].powerHp!);
+  assert.ok(diesel.profile!.stages[0].powerRangeHp![0] > natural.profile!.stages[0].powerRangeHp![0]);
 });
 test("hybrid, EV, gas conversion and missing/invalid power remain explicitly unsupported", () => {
   for (const fuel of ["Benzine / Elektriciteit", "Hybrid", "Electric", "Benzine / LPG", "Benzine / Diesel"]) {
@@ -183,9 +190,11 @@ test("conditional Connect comparison and BMW/Custom references retain useful ind
     assert.equal(result.status, "conditional");
     const stages = result.profile!.stages;
     assert.equal(stages[0].provenance, "reference");
-    assert.ok(stages.slice(1).every((stage) => stage.provenance === "generic-indicative" && stage.powerHp! > 0 && stage.torqueNm === undefined && stage.torqueRangeNm));
-    assert.ok(stages[1].powerHp! > (stages[0].powerRangeHp?.[1] ?? stages[0].powerHp!));
-    assert.ok(stages[2].powerHp! > stages[1].powerHp!);
+    assert.ok(stages.slice(1).every((stage) => stage.provenance === "generic-indicative" && hasPower(stage) && stage.powerHp === undefined && stage.torqueNm === undefined && stage.torqueRangeNm));
+    for (const index of [1, 2]) {
+      assert.ok(range(stages[index])[0] >= range(stages[index - 1])[0]);
+      assert.ok(range(stages[index])[1] >= range(stages[index - 1])[1]);
+    }
     if (input.model === "Transit Connect") {
       assert.deepEqual(stages[0].powerRangeHp, [125, 140]);
       assert.deepEqual(stages[0].torqueRangeNm, [330, 340]);
@@ -194,7 +203,54 @@ test("conditional Connect comparison and BMW/Custom references retain useful ind
       assert.notEqual(stages[1].powerHp, 135, "EU5-only source is not silently applied to unidentified vehicle");
     }
     if (input.make === "BMW") assert.equal(stages[1].genericCategory, "turbo-petrol");
+    if (input.model === "Transit Custom") {
+      assert.equal(stages[0].powerHp, 190);
+      assert.equal(stages[0].torqueNm, 440);
+      assert.ok(result.profile?.conditionCodes?.includes("NOORDTUNE_TARGET_REVIEW_REQUIRED"));
+      assert.ok(result.reasonCodes.includes("NOORDTUNE_TARGET_REVIEW_REQUIRED"));
+      assert.ok(result.profile?.conditions.some((note) => note.includes("not an approved or preferred NoordTune target")));
+    }
   }
+});
+test("generic tables produce independent rounded ranges with nondecreasing bounds", () => {
+  const cases = [
+    {model: "Unlisted TDI", fuel: "Diesel"}, {model: "Unlisted TSI", fuel: "Petrol"},
+    {model: "Unlisted naturally aspirated", fuel: "Petrol"}, {model: "Unlisted", fuel: "Diesel"}
+  ];
+  for (const input of cases) {
+    for (const powerHp of [73.8, 100, 125, 171.3, 265]) {
+      const result = resolveRdwTuningEstimate({...identity, ...input, powerHp}, empty);
+      const stages = result.profile!.stages;
+      stages.forEach((stage, index) => {
+        assert.equal(stage.powerHp, undefined);
+        assert.equal(stage.resolutionLevel, 4);
+        assert.ok(stage.powerRangeHp?.every((value) => value > 0 && Number.isFinite(value) && value % 5 === 0));
+        assert.ok(stage.powerRangeHp![1] >= stage.powerRangeHp![0]);
+        if (index) {
+          assert.ok(stage.powerRangeHp![0] >= stages[index - 1].powerRangeHp![0]);
+          assert.ok(stage.powerRangeHp![1] >= stages[index - 1].powerRangeHp![1]);
+        }
+      });
+    }
+  }
+  const diesel = resolveRdwTuningEstimate({...identity, model: "Unlisted TDI", fuel: "Diesel", powerHp: 100}, empty);
+  assert.deepEqual(diesel.profile?.stages.map((stage) => stage.powerRangeHp), [[115, 125], [125, 140], [140, 155]]);
+});
+test("registered-unit rounding cannot turn Connect comparison into a strong-Stage-1 scenario", () => {
+  const result = resolveRdwTuningEstimate({make: "Ford", model: "Transit Connect", fuel: "Diesel", displacementCc: 1499, registeredPower: {value: 73.5, unit: "kW"}, firstRegistrationYear: 2018});
+  assert.deepEqual(result.profile?.stages.map((stage) => stage.powerRangeHp), [[125, 140], [125, 140], [140, 155]]);
+  assert.ok(!result.reasonCodes.includes("STRONG_STAGE1_REFERENCE_SCENARIO"));
+  assert.ok(result.profile?.stages.slice(1).every((stage) => stage.genericScenario === "standard-range"));
+});
+test("runtime commercial metadata preserves registered identity rather than source year", () => {
+  const result = resolveRdwTuningEstimate({...identity, firstRegistrationYear: undefined, firstRegistrationDate: "2020-06-12", cylinders: 3}, {...empty, canonicalVehicles: [candidate({years: [2016], yearRange: "2016"})]});
+  assert.equal(result.profile?.runtimeCommercialIdentity?.status, "resolved-compatible");
+  assert.equal(result.profile?.runtimeCommercialIdentity?.firstAdmissionYear, 2020);
+  assert.equal(result.profile?.runtimeCommercialIdentity?.cylinders, 3);
+  assert.equal(result.profile?.runtimeCommercialIdentity?.registeredPowerHp, 125);
+  assert.equal(result.profile?.runtimeCommercialIdentity?.model, "Focus");
+  assert.equal(result.profile?.runtimeCommercialIdentity?.displacementCc, 999);
+  assert.equal(result.profile?.yearRange, "2016");
 });
 test("live Defender technical facts expose non-public canonical coverage", () => {
   const result = resolveRdwTuningEstimate({make: "LAND ROVER", model: "DEFENDER", fuel: "Diesel", displacementCc: 1999, registeredPower: {value: 177, unit: "kW"}, firstRegistrationDate: "2020-06-12", type: "LE", variant: "HCBBC0", execution: "50AC010", cylinders: 4});
