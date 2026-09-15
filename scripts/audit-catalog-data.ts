@@ -457,8 +457,8 @@ for (const vehicle of catalog.engineCatalog) {
       );
     }
 
-    // RDW strong matches carry the public reviewed variant. Generated sources must
-    // remain quote-only; aliases alone cannot grant reviewed applicability.
+    // The same compatible public profile and commercial scope share one resolver.
+    // Physical ECU identification and generated provenance do not erase estimates.
     const rdwQuote = pricing.resolveStageQuote(vehicle, sourceStage);
     if (JSON.stringify(rdwQuote) !== JSON.stringify(expectedQuote)) {
       rdwPublicPricingMismatches.push(
@@ -1128,7 +1128,7 @@ addIssue(
   "WHATSAPP_STAGE_PRICE_MISMATCH",
   "Vehicle and RDW WhatsApp totals must use the same resolved Stage price as the calculator.",
   [
-    !/addQuoteOptions\(resolveStageQuote\(vehicle, selectedStage\), optionsTotalCents\)/.test(
+    !/addQuoteOptions\(resolveStageQuote\(estimateProfile, selectedStage, \{estimateApplicable: true, scope: "family"\}\), optionsTotalCents\)/.test(
       vehicleDetailSource
     )
       ? "Vehicle calculator does not use quote arithmetic"
@@ -1281,6 +1281,7 @@ const currentTechnicalHashes = {
   servicePricing: semanticHash(serviceOptions.map(servicePricingProjection)),
   rdwMatcher: semanticHash(String(catalog.findCatalogMatch)),
   matcherImplementation: semanticHash(readFileSync(resolve(process.cwd(), "src/data/catalog-matching.ts"), "utf8").replace(/\r\n/g, "\n")),
+  estimateImplementation: semanticHash(["src/data/tuning-estimates.ts", "src/data/tuning-estimates-shared.ts"].map((file) => readFileSync(resolve(process.cwd(), file), "utf8").replace(/\r\n/g, "\n"))),
   quoteImplementation: semanticHash(readFileSync(resolve(process.cwd(), "src/data/pricing.ts"), "utf8").replace(/\r\n/g, "\n"))
 } as const;
 
@@ -1540,7 +1541,7 @@ Protected counts: 24 public vehicles, 58,586 canonical vehicles, 175,758 canonic
 
 Matcher wrapper fingerprint deliberately changed from \`c9c9fda79732266e7bf65d3b4b025f71f8d06a66ac914ba2d1340768c1c12df8\` to \`${currentTechnicalHashes.rdwMatcher}\`. Behavioral regressions check rejection, ambiguity and generated applicability; unchanged-matcher equality is no longer a requirement for this identity fix.
 
-Normalized matcher implementation fingerprint: \`${currentTechnicalHashes.matcherImplementation}\`. Quote implementation fingerprint: \`${currentTechnicalHashes.quoteImplementation}\`. These cover the extracted implementation, including helper rules, rather than only its catalog wrapper.
+Normalized matcher implementation fingerprint: \`${currentTechnicalHashes.matcherImplementation}\`. Independent estimate implementation fingerprint: \`${currentTechnicalHashes.estimateImplementation}\`. Quote implementation fingerprint: \`${currentTechnicalHashes.quoteImplementation}\`. These cover the extracted implementations and helper rules, rather than only the catalog wrapper.
 `;
 
 function stageByName(
@@ -1600,7 +1601,7 @@ const unsafePricingRows = [
 
 const pricingV2Review = `# NoordTune Pricing V2 Review
 
-Pricing V2 nominal assignments remain unchanged. The shared quote policy now checks applicability and ECU/access review before exposing a numeric price. Canonical technical records retain their source prices. Numeric amounts are VAT-inclusive **from** prices; on-request states have no numeric total. The old columns show the pinned Pricing V2 baseline assignments.
+Historical Pricing V2 tier metadata and canonical source prices remain unchanged. The active resolver uses explicit **draft local owner-review** assignments: classic diesel EUR 299, contemporary EUR 449, higher-complexity EUR 549, or an applicable advanced-unlock Stage 1 package scenario EUR 700. These are commercial proposals, not final owner-approved production prices. Unknown physical ECU and estimated/generated provenance do not suppress a compatible profile or its indicative quote. Numeric amounts are VAT-inclusive **from** prices. Family prices below cover software; required hardware and advanced unlocking are assessed separately. Plate-specific advanced-unlock scenarios can have a different scope and budget. See TUNING_IDENTITY_PRICING_FIX_REVIEW.md for explicit assignment reasons and all 24 before/after states. The tier columns retain historical metadata and do not define the new draft amounts.
 
 ## 24-Vehicle Migration
 
@@ -1618,8 +1619,8 @@ ${pricingV2Rows
 | Public price | Stage 1 vehicles | Stage 2 vehicles | Stage 3+ vehicles |
 | ---: | ---: | ---: | ---: |
 | EUR 299 / 449 / 699 | ${stage1Distribution["299"] ?? 0} | ${stage2Distribution["449"] ?? 0} | ${stage3Distribution["699"] ?? 0} |
-| EUR 349 / 499 / 849 | ${stage1Distribution["349"] ?? 0} | ${stage2Distribution["499"] ?? 0} | ${stage3Distribution["849"] ?? 0} |
-| EUR 399 / 549 / 999 | ${stage1Distribution["399"] ?? 0} | ${stage2Distribution["549"] ?? 0} | ${stage3Distribution["999"] ?? 0} |
+| EUR 449 / 549 / 849 | ${stage1Distribution["449"] ?? 0} | ${stage2Distribution["549"] ?? 0} | ${stage3Distribution["849"] ?? 0} |
+| EUR 549 / 699 / 999 | ${stage1Distribution["549"] ?? 0} | ${stage2Distribution["699"] ?? 0} | ${stage3Distribution["999"] ?? 0} |
 | On request | ${stage1Distribution["missing"] ?? 0} | ${stage2Distribution["missing"] ?? 0} | ${stage3Distribution["missing"] ?? 0} |
 
 ## Transmission Pricing
@@ -1637,7 +1638,7 @@ ${otherServiceRows}
 
 ## Migration Safety
 
-${unsafePricingRows.length === 0 ? "All 72 public Stage definitions map safely from the approved legacy price groups." : unsafePricingRows.map((item) => `- ${item}`).join("\n")}
+${unsafePricingRows.length === 0 ? "All 72 public Stage definitions retain their historical tier/source metadata. New draft amounts are independently assigned by configuration; no source amount is used as a fallback." : unsafePricingRows.map((item) => `- ${item}`).join("\n")}
 
 Commercial tier names are internal grouping labels. They do not claim or infer OBD, bench, unlock, MG1/MD1 or another access method.
 `;

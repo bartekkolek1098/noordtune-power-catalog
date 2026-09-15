@@ -8,15 +8,15 @@ const {normalizeRdwVehicle} = require("../src/lib/rdw.ts");
 const {resolveStageQuote, formatQuote} = require("../src/data/pricing.ts");
 const baselineRoot = process.env.TUNING_BASELINE_ROOT || path.join(process.env.TEMP, "noordtune-tuning-baseline-4d12e510");
 const baseline = require(path.join(baselineRoot, "src/data/catalog.ts"));
-const output = path.resolve("docs/tuning-qa");
+const output = path.resolve("docs/tuning-qa/corrective");
 const smoke = process.argv.includes("--smoke");
 fs.mkdirSync(output, {recursive: true});
 const widths = [320, 360, 390, 430, 768, 1024, 1440];
 const fixtures = [
-  {id: "bmw128ti", make: "BMW", model: "128TI", fuel: "Benzine", cc: 1998, kw: 195, date: "2022-09-14", nlDate: "2026-05-29", widths},
+  {id: "bmw128ti", make: "BMW", model: "128TI", fuel: "Benzine", cc: 1998, kw: 195, date: "2022-09-14", nlDate: "2026-05-29", expectedStage1: [310, 480], widths},
   {id: "golf-gti", make: "VOLKSWAGEN", model: "GOLF GTI", fuel: "Benzine", cc: 1984, kw: 169, date: "2017-05-12", detailId: "vw-golf-20-tsi-ea888", widths},
-  {id: "transit-custom", make: "FORD", model: "TRANSIT CUSTOM", fuel: "Diesel", cc: 1995, kw: 77, date: "2019-04-29", widths: [320, 1440]},
-  {id: "transit-connect", make: "FORD", model: "TRANSIT CONNECT", fuel: "Diesel", cc: 1499, kw: 73.5, date: "2018-10-17", widths: [320, 1440]},
+  {id: "transit-custom", make: "FORD", model: "TRANSIT CUSTOM", fuel: "Diesel", cc: 1995, kw: 77, date: "2019-04-29", expectedStage1: [190, 440], widths},
+  {id: "transit-connect", make: "FORD", model: "TRANSIT CONNECT", fuel: "Diesel", cc: 1499, kw: 73.5, date: "2018-10-17", expectedStage1: [125, 330], widths},
   {id: "bmw320d", make: "BMW", model: "320D", fuel: "Diesel", cc: 1995, kw: 140, date: "2017-09-12", detailId: "bmw-320d-b47", widths: [320, 1440]},
   {id: "golf-r", make: "VOLKSWAGEN", model: "GOLF R", fuel: "Benzine", cc: 1984, kw: 221, date: "2017-09-12", detailId: "volkswagen-golf-7-r-20-tsi", widths: [320, 1440]},
   {id: "focus-st", make: "FORD", model: "FOCUS ST", fuel: "Benzine", cc: 1999, kw: 184, date: "2015-08-10", detailId: "ford-focus-st-20-ecoboost", widths: [320, 1440]}
@@ -30,11 +30,12 @@ const report = {
     "Both versions use the same installed Chrome executable, fonts, viewport and sanitized deterministic RDW vehicle facts; matching is evaluated by each version's actual catalog function.",
     "BMW128ti, Transit Custom and Transit Connect use sanitized official RDW make/model, displacement, power and first-admission facts retrieved for the task. Synthetic identifier ZZ1001 replaces all plates. Other curated examples use controlled synthetic registration dates.",
     "Only the Next.js development overlay is hidden equally in both versions; no vehicle, quote or layout pixels are masked.",
-    "Date, quote/access text, conservative matching, manual-review status and neutral output areas may legitimately alter result height.",
+    "Date, estimate profile/provenance, scoped draft prices, access text and chart caption may legitimately alter result height. Numeric profile output is independent of exact ECU/access confirmation and quote mode.",
     "WhatsApp hrefs are decoded and asserted without opening or sending any message."
   ],
   results: [],
   detailPages: [],
+  publicCoverage: [],
   errors: []
 };
 
@@ -101,6 +102,7 @@ async function lookupCase(browser, fixture, width, version) {
   await page.locator('form button[type="submit"]').first().click();
   const result = page.getByTestId("rdw-result");
   await result.waitFor({state: "visible"});
+  if (version === "final" && payload.tuningEstimate.profile) await page.getByTestId("catalog-power-chart").waitFor();
   await page.waitForTimeout(350);
   const metrics = await layoutMetrics(result);
   const card = page.locator(".carbon-panel").first();
@@ -124,12 +126,21 @@ async function lookupCase(browser, fixture, width, version) {
     const date = await page.getByTestId("rdw-first-registration").textContent();
     assert.ok(date.includes(fixture.date.slice(0, 4)), "First registration year is immediately shown");
     record.firstRegistration = date;
-    if (!payload.tuningMatch.variant) {
-      assert.ok(quotes.every((message) => message.includes({nl: "Prijs: op aanvraag na ECU- en voertuigcontrole", en: "Price: on request after ECU and vehicle verification", pl: "Cena: wycena indywidualna po weryfikacji ECU i pojazdu"}[locale])));
-      assert.equal(await page.getByTestId("rdw-pending-chart").count(), 1);
-    }
+    const profile = payload.tuningEstimate.profile;
+    assert.ok(profile, `${fixture.id}: compatible tuning estimate must not be empty`);
+    assert.equal(await page.getByTestId("rdw-pending-chart").count(), 0, "Usable profile has a catalog chart");
+    const stage1 = profile.stages.find((stage) => stage.name === "Stage 1");
+    if (fixture.expectedStage1) assert.deepEqual([stage1.powerHp, stage1.torqueNm], fixture.expectedStage1, "Sourced reference values are retained");
+    assert.ok((await result.locator("tbody tr").first().textContent()).includes(String(stage1.powerHp)));
+    assert.ok((await result.locator("tbody tr").first().textContent()).includes(String(stage1.torqueNm)));
+    assert.ok(quotes.every((message) => message.includes(String(stage1.powerHp)) && message.includes(String(stage1.torqueNm))), "WhatsApp includes indicative output");
+    const quote = resolveStageQuote(profile, stage1, {scope: "vehicle", estimateApplicable: true});
+    assert.equal(quote.kind, "from", "Explicit profile scenario has a numeric Stage 1 indication");
+    assert.ok((await result.textContent()).includes(formatQuote(quote, locale)));
+    record.profile = {id: profile.id, provenance: profile.provenance, status: payload.tuningEstimate.status, stockPowerHp: profile.stockPowerHp, stockTorqueNm: profile.stockTorqueNm, stages: profile.stages.map(({name, powerHp, torqueNm}) => ({name, powerHp, torqueNm}))};
+    record.quote = quote;
     if (fixture.id === "bmw128ti") assert.ok(quotes.every((message) => message.includes("700")));
-    if (fixture.id === "focus-st" || !payload.tuningMatch.variant) {
+    if (fixture.id === "focus-st" || !profile.gearbox) {
       const optionText = await result.locator("label").allTextContents();
       assert.ok(optionText.every((text) => !text.includes("DSG / TCU tuning")), "Unknown/manual transmission cannot select TCU");
     }
@@ -139,6 +150,11 @@ async function lookupCase(browser, fixture, width, version) {
       await option.check();
       await result.locator("tbody tr").nth(1).click();
       assert.equal(await option.isChecked(), true, "Stage change preserves options");
+      assert.equal(await page.getByTestId("catalog-power-chart").count(), 1, "A Stage 2 quotation request cannot hide the available Stage 1 chart");
+      if (profile.provenance === "tuner-reference") {
+        assert.equal(profile.stages[1].powerHp, undefined, "No invented reference Stage 2 power");
+        assert.equal(profile.stages[2].powerHp, undefined, "No invented reference Stage 3 power");
+      }
       const quoteLink = result.locator('a[href^="https://wa.me/"]').last();
       await quoteLink.scrollIntoViewIfNeeded();
       assert.ok(await quoteLink.isVisible(), "Final quote CTA is reachable");
@@ -149,6 +165,13 @@ async function lookupCase(browser, fixture, width, version) {
         const response = await page.request.get(`${report.finalUrl}${metrics.detailsLinks[0].href}`);
         assert.equal(response.status(), 200, "Full-details CTA resolves");
         record.detailsStatus = response.status();
+      } else {
+        await result.locator('a[href="#rdw-estimate-details"]').click();
+        assert.equal(await page.locator("#rdw-estimate-details").getAttribute("open"), "", "Reference inline details expand");
+        const expanded = await layoutMetrics(result);
+        assert.deepEqual(expanded.overflow, [], "Expanded reference details do not clip");
+        assert.deepEqual(expanded.internalScrollbars, [], "Expanded reference details use natural page scrolling");
+        record.inlineDetails = "expanded without clipping";
       }
     }
   }
@@ -164,6 +187,7 @@ async function detailCase(browser, fixture, width) {
   await page.goto(`${report.finalUrl}/nl/vehicles/${vehicle.id}`, {waitUntil: "networkidle"});
   await page.addStyleTag({content: "nextjs-portal { display: none !important; }"});
   const calculator = page.locator("#tuning-calculator");
+  await page.getByTestId("catalog-power-chart").waitFor();
   const metrics = await layoutMetrics(calculator);
   await calculator.screenshot({path: path.join(output, `final-detail-${fixture.id}-${width}.png`), animations: "disabled"});
   const quote = resolveStageQuote(vehicle, vehicle.stages[0]);
@@ -182,6 +206,30 @@ async function detailCase(browser, fixture, width) {
   console.log(`detail ${fixture.id} ${width}: ${quote.kind}; overflow=${metrics.overflow.length}`);
 }
 
+async function publicCoverageCase(browser, vehicle) {
+  const context = await browser.newContext({viewport: {width: 1440, height: 1000}, locale: "nl-NL", reducedMotion: "reduce"});
+  const page = await context.newPage();
+  await page.goto(`${report.finalUrl}/nl/vehicles/${vehicle.id}`, {waitUntil: "networkidle"});
+  await page.addStyleTag({content: "nextjs-portal { display: none !important; }"});
+  await page.getByTestId("catalog-power-chart").waitFor();
+  const calculator = page.locator("#tuning-calculator");
+  const text = await calculator.textContent();
+  for (const stage of vehicle.stages) {
+    assert.ok(text.includes(`${stage.powerHp} pk / ${stage.torqueNm} Nm`), `${vehicle.id} ${stage.name}: existing tuned values visible`);
+  }
+  assert.ok(text.includes(`${vehicle.stockPowerHp} → ${vehicle.stages[0].powerHp} pk`), "Stock and gain display retained");
+  const quote = resolveStageQuote(vehicle, vehicle.stages[0]);
+  assert.equal(quote.kind, "from");
+  assert.ok(text.includes(formatQuote(quote, "nl")));
+  const metrics = await layoutMetrics(calculator);
+  assert.deepEqual(metrics.overflow, []);
+  const screenshot = `public-${vehicle.id}-1440.png`;
+  await calculator.screenshot({path: path.join(output, screenshot), animations: "disabled"});
+  report.publicCoverage.push({id: vehicle.id, stockPowerHp: vehicle.stockPowerHp, stockTorqueNm: vehicle.stockTorqueNm, stages: vehicle.stages.map(({name,powerHp,torqueNm}) => ({name,powerHp,torqueNm})), quote, chart: true, screenshot});
+  await context.close();
+  console.log(`public coverage ${vehicle.id}: 3 numeric stages, chart and ${quote.amountCents / 100} family indication`);
+}
+
 (async () => {
   const browser = await chromium.launch({executablePath: process.env.CHROME_EXECUTABLE || "C:/Program Files/Google/Chrome/Application/chrome.exe", headless: true});
   report.browser = await browser.version();
@@ -197,9 +245,11 @@ async function detailCase(browser, fixture, width) {
     for (const locale of ["en", "pl"]) {
       await Promise.all(["baseline", "final"].map((version) => lookupCase(browser, {...fixtures[0], locale}, 320, version)));
     }
+    if (!smoke) for (const vehicle of catalog.engineCatalog) await publicCoverageCase(browser, vehicle);
     const finalResults = report.results.filter((result) => result.version === "final");
     report.summary = {
       lookupComparisons: finalResults.length,
+      positivePublicProfiles: report.publicCoverage.length,
       finalOverflowCases: finalResults.filter((result) => result.overflow.length || result.pageOverflow).map((result) => `${result.fixture}-${result.width}`),
       finalInternalScrollbarCases: finalResults.filter((result) => result.internalScrollbars.length).length,
       finalPageErrors: finalResults.flatMap((result) => result.errors),

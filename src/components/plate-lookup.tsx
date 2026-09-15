@@ -16,10 +16,12 @@ import {
 } from "lucide-react";
 import {useMemo, useState} from "react";
 import type {RdwLookupResult} from "@/lib/rdw";
-import {serviceOptions, type StageDefinition} from "@/data/catalog-shared";
-import {addQuoteOptions, assessVehicleAccess, conditionalBudgetNote, formatAccessAssessment, formatQuote, resolveStageQuote} from "@/data/pricing";
+import {serviceOptions} from "@/data/catalog-shared";
+import {unavailableEstimateStage} from "@/data/tuning-estimates-shared";
+import {addQuoteOptions, assessVehicleAccess, conditionalBudgetNote, formatAccessAssessment, formatQuote, formatQuoteScope, resolveStageQuote} from "@/data/pricing";
 import {formatRegistrationDate} from "@/lib/rdw-date";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
+import {estimateLimitations} from "@/lib/estimate-copy";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
@@ -103,23 +105,24 @@ export function PlateLookup({
   const [stageIndex, setStageIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [recommendedPackageUsed, setRecommendedPackageUsed] = useState(false);
+  const [detailsExpanded, setDetailsExpanded] = useState(false);
 
-  const match = result?.tuningMatch?.variant;
-  const stages = useMemo(() => match?.stages ?? createPendingStages(), [match]);
+  const profile = result?.tuningEstimate.profile;
+  const stages = useMemo(() => profile?.stages ?? createPendingStages(), [profile]);
 
   const availableOptions = useMemo(() => {
-    if (match) {
+    if (profile) {
       return serviceOptions
-        .filter((option) => isVehicleServiceSelectable(match, option))
+        .filter((option) => isVehicleServiceSelectable(profile, option))
         .map((option) => localizeServiceOption(option, locale));
     }
 
     return serviceOptions.filter((option) => !option.requiresGearbox).map((option) => localizeServiceOption(option, locale));
-  }, [locale, match]);
+  }, [locale, profile]);
 
   const selectedStage = stages[stageIndex] ?? stages[0];
   const stage1Index = stages.findIndex((stage) => stage.name === "Stage 1");
-  const gearboxOption = match
+  const gearboxOption = profile
     ? availableOptions.find((option) => option.id === "gearbox")
     : undefined;
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
@@ -130,10 +133,10 @@ export function PlateLookup({
       : undefined;
   const optionsCents = availableOptions.filter((option) => selectedOptions.includes(option.id))
     .reduce((total, option) => total + Math.round(option.price * 100), 0);
-  const quoteIdentity = match ?? {make: result?.vehicle.make, model: result?.vehicle.model};
+  const quoteIdentity = profile ?? {make: result?.vehicle.make, model: result?.vehicle.model};
   const access = assessVehicleAccess(quoteIdentity);
   const quote = addQuoteOptions(resolveStageQuote(quoteIdentity, selectedStage, {
-    matchStatus: result?.tuningMatch.status ?? "no-match", access
+    estimateApplicable: Boolean(profile), scope: "vehicle", access
   }), optionsCents);
   const budgetNote = conditionalBudgetNote(quote, locale);
   const selectedOptionLabels = availableOptions
@@ -148,6 +151,9 @@ export function PlateLookup({
       ? createLookupQuoteMessage({
           displacementCc: result.vehicle.engine.displacementCc,
           matchStatus: result.tuningMatch.status,
+          estimateProfileLabel: profile ? `${profile.brand} ${profile.model} ${profile.engine}` : undefined,
+          engine: profile?.engine,
+          indicativeOutput: {powerHp: selectedStage.powerHp, torqueNm: selectedStage.torqueNm},
           access,
           firstAdmission: result.vehicle.registration.firstAdmission,
           fuel: result.vehicle.fuel,
@@ -174,6 +180,7 @@ export function PlateLookup({
     setSelectedOptions([]);
     setStageIndex(0);
     setRecommendedPackageUsed(false);
+    setDetailsExpanded(false);
 
     try {
       const response = await fetch(sitePath("/api/rdw-lookup"), {
@@ -314,29 +321,48 @@ export function PlateLookup({
               </div>
 
               <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)]">
-                {match ? (
+                {profile ? (
                   <div className="rounded-[3px] border border-emerald-400/25 bg-[linear-gradient(145deg,rgba(16,185,129,.08),rgba(0,0,0,.34))] p-4">
                     <div className="mb-3 flex flex-wrap items-center gap-2">
                       <Badge className="rounded-[3px] border-emerald-400/35 bg-emerald-400/10 text-emerald-300">
                         <Check className="mr-1 h-3.5 w-3.5" />
-                        {text.verification.success}
+                        {localCopy.catalogIndication}
                       </Badge>
                       <span className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
-                        {text.catalogMatch}
+                        {localCopy.ecuBeforeTuning}
                       </span>
                     </div>
                     <div className="font-bold">
-                      {match.brand} {match.model}
+                      {profile.brand} {profile.model}
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      {match.engine} · {match.ecuType} ({localCopy.toConfirm})
+                      {profile.engine} · {localCopy.indicativeOutput}
                     </p>
+                    <p className="mt-1 text-sm text-muted-foreground" data-testid="rdw-estimate-output">
+                      {profile.stockPowerHp} → {selectedStage.powerHp ?? localCopy.toConfirm} {powerUnit}
+                      {selectedStage.torqueNm !== undefined ? ` · ${selectedStage.torqueNm} Nm` : ""}
+                    </p>
+                    {result.tuningEstimate.status === "conditional" ? (
+                      <p className="mt-2 text-xs leading-5 text-muted-foreground">{result.tuningEstimate.reasonCodes.includes("CONNECT_ENGINE_GENERATION_REVIEW") ? localCopy.connectConditional : localCopy.conditionalProfile}</p>
+                    ) : null}
+                    {estimateLimitations(profile, locale).map((note) => (
+                      <p className="mt-2 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>
+                    ))}
                     <Button asChild className="mt-4 h-auto min-h-11 max-w-full whitespace-normal rounded-[3px] text-center" variant="outline">
-                      <a href={sitePath(`/${locale}/vehicles/${match.id}`)}>
+                      <a href={profile.vehicleId ? sitePath(`/${locale}/vehicles/${profile.vehicleId}`) : "#rdw-estimate-details"} onClick={() => setDetailsExpanded(true)}>
                         {text.viewDetails}
                         <ChevronRight className="h-4 w-4" />
                       </a>
                     </Button>
+                    {!profile.vehicleId ? (
+                      <details className="mt-4 text-sm leading-6 text-muted-foreground" id="rdw-estimate-details" open={detailsExpanded} onToggle={(event) => setDetailsExpanded(event.currentTarget.open)}>
+                        <summary className="cursor-pointer font-semibold text-white">{localCopy.referenceDetails}</summary>
+                        <p className="mt-2">{selectedStage.requirements}</p>
+                        <ul className="mt-2 list-disc space-y-1 pl-4">{profile.conditions.map((condition) => <li key={condition}>{condition}</li>)}</ul>
+                        <ul className="mt-2 list-disc space-y-1 pl-4">{selectedStage.packageItems.map((item) => <li key={item}>{item}</li>)}</ul>
+                        <ul className="mt-2 space-y-2">{profile.sourceReferences.map((source) => <li key={source.title}>{source.url ? <a className="text-primary underline" href={source.url} rel="noreferrer" target="_blank">{source.title}</a> : source.title}<span className="block text-xs">{source.scope}</span></li>)}</ul>
+                      </details>
+                    ) : null}
                   </div>
                 ) : (
                   <div
@@ -381,21 +407,22 @@ export function PlateLookup({
 
                 <div className="rounded-[3px] border border-primary/30 bg-[linear-gradient(145deg,rgba(227,6,19,.16),rgba(0,0,0,.42))] p-4">
                   <div className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                    {match ? text.estimate : text.recommendation.indicativeEstimate}
+                    {profile ? text.estimate : text.recommendation.indicativeEstimate}
                   </div>
                   <div className="mt-2 break-words text-3xl font-black">
                     {formatQuote(quote, locale)}
                   </div>
                   <p className="mt-3 text-sm leading-6 text-slate-300">{formatAccessAssessment(access, locale)}</p>
+                  <p className="mt-2 text-xs leading-5 text-muted-foreground">{formatQuoteScope(quote, locale)}</p>
                   {budgetNote ? <p className="mt-3 text-sm leading-6 text-slate-300">{budgetNote}</p> : null}
-                  {!match ? (
+                  {!profile ? (
                     <p className="mt-3 text-sm leading-6 text-slate-300">
                       {text.recommendation.nextStepDescription}
                     </p>
                   ) : null}
                   <Button asChild className="mt-4 h-auto min-h-12 w-full whitespace-normal rounded-[3px] py-3 text-sm font-black uppercase leading-tight shadow-[0_0_32px_rgba(227,6,19,.38)]">
                     <a
-                      data-testid={match ? "rdw-exact-quote" : "rdw-manual-review-quote"}
+                      data-testid={profile ? "rdw-exact-quote" : "rdw-manual-review-quote"}
                       href={whatsappHref({
                         locale,
                         message: lookupQuoteMessage,
@@ -405,17 +432,17 @@ export function PlateLookup({
                       target="_blank"
                     >
                       <MessageCircle className="h-4 w-4" />
-                      {match ? text.quoteForCar : text.recommendation.manualCta}
+                      {profile ? text.quoteForCar : text.recommendation.manualCta}
                     </a>
                   </Button>
                 </div>
               </div>
 
-              {match ? (
-                <CatalogVerificationNotice compact text={text.verification} />
+              {profile ? (
+                <CatalogVerificationNotice compact text={{...text.verification, badge: localCopy.catalogIndication, title: localCopy.ecuBeforeTuning, text: localCopy.profileVerification}} />
               ) : null}
 
-              {match ? (
+              {profile ? (
                 <section
                   className="panel-edge overflow-hidden border-primary/35 p-5"
                   data-testid="rdw-recommended-package"
@@ -514,18 +541,19 @@ export function PlateLookup({
               ) : null}
 
               <div className="rounded-[3px] border border-white/10 bg-black/25 p-4">
-                {!match ? (
+                {!profile ? (
                   <div className="mb-4 flex items-center gap-2 text-xs font-black uppercase tracking-[0.16em] text-primary">
                     <AlertTriangle className="h-4 w-4" />
                     {text.recommendation.indicativeEstimate}
                   </div>
                 ) : null}
-                {match ? <PowerChart
+                {profile ? <PowerChart
+                  locale={locale}
                   powerUnit={powerUnit}
-                  stages={match.stages}
-                  stockPower={match.stockPowerHp}
+                  stages={profile.stages}
+                  stockPower={profile.stockPowerHp}
                   stockLabel={text.stock}
-                  stockTorque={match.stockTorqueNm}
+                  stockTorque={profile.stockTorqueNm}
                 /> : <div className="flex h-64 min-w-0 w-full items-center justify-center text-center text-sm text-muted-foreground" data-testid="rdw-pending-chart">{localCopy.pendingChart}</div>}
               </div>
 
@@ -622,6 +650,13 @@ const lookupRuntimeCopy: Record<
     cacheHit: string;
     firstRegistration: string;
     toConfirm: string;
+    catalogIndication: string;
+    ecuBeforeTuning: string;
+    indicativeOutput: string;
+    conditionalProfile: string;
+    connectConditional: string;
+    referenceDetails: string;
+    profileVerification: string;
     pendingChart: string;
     cacheMiss: string;
     exactMatch: string;
@@ -637,6 +672,13 @@ const lookupRuntimeCopy: Record<
   }
 > = {
   nl: {
+    catalogIndication: "Catalogusindicatie",
+    ecuBeforeTuning: "ECU-controle vóór uitvoering",
+    indicativeOutput: "Indicatieve tuningwaarden",
+    conditionalProfile: "Referentie onder voorbehoud: controleer de exacte motorgeneratie vóór toepassing.",
+    connectConditional: "Referentie voor de 1.5 TDCi vóór de facelift; de motorgeneratie moet worden bevestigd. Eerste toelating in 2018 bevestigt op zichzelf geen TDCi- of EcoBlue-uitvoering.",
+    referenceDetails: "Referentie en Stage-details",
+    profileVerification: "De getoonde waarden zijn indicatieve catalogus- of referentiewaarden. Exacte ECU, software, motoruitvoering en hardware worden vóór uitvoering gecontroleerd. Dit zijn geen metingen van jouw voertuig.",
     firstRegistration: "Eerste toelating",
     toConfirm: "Te bevestigen",
     pendingChart: "Vermogen en koppel te bevestigen na controle van de voertuigconfiguratie.",
@@ -666,6 +708,13 @@ const lookupRuntimeCopy: Record<
     ]
   },
   en: {
+    catalogIndication: "Catalog estimate",
+    ecuBeforeTuning: "ECU check before tuning",
+    indicativeOutput: "Indicative tuning figures",
+    conditionalProfile: "Conditional reference: confirm the exact engine generation before applying this profile.",
+    connectConditional: "Reference for the pre-facelift 1.5 TDCi; engine generation must be confirmed. First registration in 2018 alone does not confirm TDCi or EcoBlue specification.",
+    referenceDetails: "Reference and Stage details",
+    profileVerification: "Displayed figures are indicative catalog or reference values. Exact ECU, software, engine configuration and hardware are checked before tuning. These are not measurements of your vehicle.",
     firstRegistration: "First registration",
     toConfirm: "To be confirmed",
     pendingChart: "Power and torque to be confirmed after vehicle configuration verification.",
@@ -695,6 +744,13 @@ const lookupRuntimeCopy: Record<
     ]
   },
   pl: {
+    catalogIndication: "Szacunek katalogowy",
+    ecuBeforeTuning: "Kontrola ECU przed tuningiem",
+    indicativeOutput: "Orientacyjne wartości tuningu",
+    conditionalProfile: "Referencja warunkowa: przed zastosowaniem potwierdź dokładną generację silnika.",
+    connectConditional: "Referencja dla 1.5 TDCi sprzed liftingu; generacja silnika wymaga potwierdzenia. Pierwsza rejestracja w 2018 roku nie potwierdza sama w sobie wersji TDCi ani EcoBlue.",
+    referenceDetails: "Źródła i szczegóły Stage",
+    profileVerification: "Pokazane wartości są orientacyjnymi danymi katalogowymi lub referencyjnymi. ECU, oprogramowanie, wersja silnika i osprzęt są sprawdzane przed tuningiem. Nie są to pomiary Twojego pojazdu.",
     firstRegistration: "Pierwsza rejestracja",
     toConfirm: "Do potwierdzenia",
     pendingChart: "Moc i moment obrotowy do potwierdzenia po weryfikacji konfiguracji pojazdu.",
@@ -725,6 +781,6 @@ const lookupRuntimeCopy: Record<
   }
 };
 
-function createPendingStages(): Array<Pick<StageDefinition, "name"> & Partial<Pick<StageDefinition, "powerHp" | "torqueNm">>> {
-  return [{name: "Stage 1"}, {name: "Stage 2"}, {name: "Stage 3+"}];
+function createPendingStages() {
+  return [unavailableEstimateStage("Stage 1"), unavailableEstimateStage("Stage 2"), unavailableEstimateStage("Stage 3+")];
 }

@@ -3,6 +3,7 @@ import {
   conditionalBudgetNote,
   formatAccessAssessment,
   formatQuote,
+  formatQuoteScope,
   type AccessAssessment,
   type CatalogMatchStatus,
   type QuoteResolution
@@ -46,6 +47,9 @@ export type VehicleQuoteMessageInput = {
   fuel?: string;
   firstAdmission?: string | null;
   firstAdmissionYear?: number | null;
+  engine?: string;
+  estimateProfileLabel?: string;
+  indicativeOutput?: {powerHp?: number; torqueNm?: number};
 };
 
 export function createLookupQuoteMessage(input: VehicleQuoteMessageInput & {plate: string}) {
@@ -85,7 +89,8 @@ const copy = {
     requestPrice: "Prijs: op aanvraag na ECU- en voertuigcontrole",
     confirm: "Exacte motor-/ECU-variant en definitieve setup te bevestigen.",
     end: "Kunnen jullie dit controleren en advies geven?",
-    matches: {"catalog-match": "catalogusmatch; voertuigcontrole vereist", ambiguous: "meerdere mogelijke configuraties; handmatige controle", conflict: "configuratieconflict; handmatige controle", "no-match": "geen exacte match; handmatige controle"}
+    engine: "Motorprofiel", output: "Indicatieve uitkomst", profile: "Catalogusindicatie — ECU-controle vóór uitvoering",
+    matches: {"catalog-match": "Catalogusindicatie — ECU-controle vóór uitvoering", ambiguous: "Passend indicatief profiel te bevestigen", conflict: "Geen passend profiel geselecteerd; voertuiggegevens controleren", "no-match": "Nog geen toepasselijk tuningprofiel"}
   },
   en: {
     intro: "Hello NoordTune, I would like a quote for this car:",
@@ -97,7 +102,8 @@ const copy = {
     requestPrice: "Price: on request after ECU and vehicle verification",
     confirm: "Exact engine/ECU variant and final setup to be confirmed.",
     end: "Could you check this and advise?",
-    matches: {"catalog-match": "catalog match; vehicle verification required", ambiguous: "multiple possible configurations; manual review", conflict: "configuration conflict; manual review", "no-match": "no exact match; manual review"}
+    engine: "Engine profile", output: "Indicative output", profile: "Catalog estimate — ECU check before work",
+    matches: {"catalog-match": "Catalog estimate — ECU check before work", ambiguous: "Applicable indicative profile to be confirmed", conflict: "No applicable profile selected; check vehicle details", "no-match": "No applicable tuning profile yet"}
   },
   pl: {
     intro: "Cześć NoordTune, proszę o wycenę tego auta:",
@@ -109,7 +115,8 @@ const copy = {
     requestPrice: "Cena: wycena indywidualna po weryfikacji ECU i pojazdu",
     confirm: "Dokładny wariant silnika/ECU i końcowa konfiguracja do potwierdzenia.",
     end: "Proszę o sprawdzenie i poradę.",
-    matches: {"catalog-match": "dopasowanie katalogowe; wymagana weryfikacja pojazdu", ambiguous: "kilka możliwych konfiguracji; ręczna weryfikacja", conflict: "konflikt konfiguracji; ręczna weryfikacja", "no-match": "brak dokładnego dopasowania; ręczna weryfikacja"}
+    engine: "Profil silnika", output: "Orientacyjny wynik", profile: "Wartości katalogowe — kontrola ECU przed wykonaniem",
+    matches: {"catalog-match": "Wartości katalogowe — kontrola ECU przed wykonaniem", ambiguous: "Odpowiedni profil orientacyjny do potwierdzenia", conflict: "Brak wybranego odpowiedniego profilu; sprawdzenie danych pojazdu", "no-match": "Brak odpowiedniego profilu tuningowego"}
   }
 } as const;
 
@@ -120,6 +127,11 @@ function createQuoteMessage(input: VehicleQuoteMessageInput & {plate?: string}) 
     ? `${input.registeredPower.value} ${input.registeredPower.unit}`
     : input.vehiclePower;
   const budget = conditionalBudgetNote(input.quote, input.locale);
+  const scope = formatQuoteScope(input.quote, input.locale);
+  const output = [
+    input.indicativeOutput?.powerHp !== undefined ? `${input.indicativeOutput.powerHp} ${{nl: "pk", en: "hp", pl: "KM"}[input.locale]}` : undefined,
+    input.indicativeOutput?.torqueNm !== undefined ? `${input.indicativeOutput.torqueNm} Nm` : undefined
+  ].filter(Boolean).join(" / ");
   return [
     text.intro,
     text.language,
@@ -128,14 +140,17 @@ function createQuoteMessage(input: VehicleQuoteMessageInput & {plate?: string}) 
     `${text.registration}: ${formatFirstAdmission(input, text.unavailable)}`,
     input.fuel ? `${text.fuel}: ${input.fuel}` : undefined,
     input.displacementCc ? `${text.displacement}: ${input.displacementCc} cc` : undefined,
+    input.engine ? `${text.engine}: ${input.engine}` : undefined,
     power ? `${input.plate ? text.registeredPower : text.power}: ${power}` : undefined,
-    `${text.catalog}: ${text.matches[input.matchStatus ?? "catalog-match"]}`,
+    input.estimateProfileLabel ? `${text.profile}: ${input.estimateProfileLabel}` : `${text.catalog}: ${text.matches[input.matchStatus ?? "catalog-match"]}`,
     `${text.access}: ${formatAccessAssessment(access, input.locale)}`,
     `${text.stage}: ${input.stage}`,
+    output ? `${text.output}: ${output}` : undefined,
     input.recommendedPackage ? `${text.recommended}: ${input.recommendedPackage}` : undefined,
     `${text.options}: ${input.options.length ? input.options.join(", ") : "-"}`,
     input.quote.kind === "on-request" ? text.requestPrice : `${text.price}: ${formatQuote(input.quote, input.locale)}`,
     budget,
+    scope,
     text.confirm,
     text.end
   ].filter((line): line is string => line !== undefined).join("\n");

@@ -10,32 +10,34 @@ import {
   YAxis
 } from "recharts";
 import {useEffect, useState} from "react";
-import type {StageDefinition} from "@/data/catalog-shared";
+import type {Locale} from "@/i18n/routing";
 
 export function PowerChart({
+  locale = "nl",
   powerUnit = "pk",
   stages,
   stockPower,
   stockLabel = "Stock",
   stockTorque
 }: {
+  locale?: Locale;
   powerUnit?: string;
-  stages: StageDefinition[];
+  stages: {name: string; powerHp?: number; torqueNm?: number}[];
   stockPower: number;
   stockLabel?: string;
-  stockTorque: number;
+  stockTorque?: number;
 }) {
   const [mounted, setMounted] = useState(false);
   const data = [
     {
       name: stockLabel,
       pk: stockPower,
-      nm: stockTorque
+      nm: stockTorque ?? null
     },
     ...stages.map((stage) => ({
       name: stage.name.replace("Stage ", "S"),
-      pk: stage.powerHp,
-      nm: stage.torqueNm
+      pk: stage.powerHp ?? null,
+      nm: stage.torqueNm ?? null
     }))
   ];
 
@@ -44,11 +46,11 @@ export function PowerChart({
   }, []);
 
   if (!mounted) {
-    return <div className="h-64 w-full rounded-lg bg-white/[0.035]" />;
+    return <><div className="h-64 w-full rounded-lg bg-white/[0.035]" /><ChartCaption locale={locale} /></>;
   }
 
   return (
-    <div className="h-64 min-w-0 w-full">
+    <><div className="h-64 min-w-0 w-full" data-testid="catalog-power-chart">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={data} margin={{left: -20, right: 12, top: 14, bottom: 0}}>
           <defs>
@@ -89,6 +91,14 @@ export function PowerChart({
           />
         </AreaChart>
       </ResponsiveContainer>
-    </div>
+    </div><ChartCaption locale={locale} /></>
   );
+}
+
+function ChartCaption({locale}: {locale: Locale}) {
+  return <p className="mt-2 text-xs leading-5 text-muted-foreground" data-testid="catalog-chart-caption">{{
+    nl: "Catalogusillustratie van piekwaarden; geen rollenbankmeting of gemeten toerentalcurve.",
+    en: "Catalog illustration of peak values; not a dyno measurement or measured RPM curve.",
+    pl: "Ilustracja katalogowych wartości szczytowych; nie jest pomiarem z hamowni ani zmierzoną krzywą obrotów."
+  }[locale]}</p>;
 }

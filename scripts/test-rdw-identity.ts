@@ -77,15 +77,18 @@ const fixtures: {id: string; vehicle: RdwVehicleRow; fuel: RdwFuelRow[]; expecte
 const normalized = fixtures.map((fixture) => ({fixture, result: normalizeRdwVehicle(fixture.vehicle, fixture.fuel, fixture.id)}));
 const quoteResults = normalized.map(({fixture, result}) => {
   const vehicle = result.vehicle;
-  const identity = result.tuningMatch.variant ?? {make: vehicle.make, model: vehicle.model};
+  const profile = result.tuningEstimate.profile;
+  const identity = profile ?? {make: vehicle.make, model: vehicle.model};
   const access = assessVehicleAccess(identity);
-  const baseQuote = resolveStageQuote(identity, {name: "Stage 1"}, {matchStatus: result.tuningMatch.status, access});
+  const baseQuote = resolveStageQuote(identity, {name: "Stage 1"}, {estimateApplicable: Boolean(profile), scope: "vehicle", access});
   const quote = addQuoteOptions(baseQuote, 14900);
   const message = createLookupQuoteMessage({
     locale: "nl", plate: fixture.id, vehicle: `${vehicle.make} ${vehicle.model}`, fuel: vehicle.fuel,
     firstAdmission: vehicle.registration.firstAdmission, displacementCc: vehicle.engine.displacementCc,
     vehiclePower: vehicle.engine.powerKw == null ? undefined : `${vehicle.engine.powerKw} kW (${vehicle.engine.powerHp} pk)`,
-    matchStatus: result.tuningMatch.status, access, quote, stage: "Stage 1", options: ["EGR off"]
+    matchStatus: result.tuningMatch.status, access, quote, stage: "Stage 1", options: ["Selected service"],
+    engine: profile?.engine, estimateProfileLabel: profile ? `${profile.brand} ${profile.model}` : undefined,
+    indicativeOutput: profile?.stages[0]
   });
   return {fixture, result, baseQuote, quote, access, message};
 });
@@ -99,22 +102,24 @@ for (const {fixture, result, quote, message} of quoteResults) test(`normalized R
   assert.ok(message.includes(`Cilinderinhoud: ${fixture.vehicle.cilinderinhoud} cc`));
   assert.ok(message.includes(`${fixture.fuel[0].nettomaximumvermogen} kW`));
   assert.ok(message.includes(`(${result.vehicle.registration.firstAdmissionYear})`));
-  assert.ok(message.includes("Extra opties: EGR off"));
-  if (quote.kind === "on-request") {
-    assert.equal(formatQuote(quote, "nl"), "Prijs op aanvraag");
-    assert.ok(message.includes("Prijs: op aanvraag na ECU- en voertuigcontrole"));
-    assert.equal("amountCents" in quote, false);
-    assert.doesNotMatch(message, /€\s?(?:0|269|299)\b/);
-  } else assert.ok(message.includes(formatQuote(quote, "nl")));
+  assert.ok(message.includes("Extra opties: Selected service"));
+  assert.ok(result.tuningEstimate.profile?.stages[0].powerHp, "Compatible RDW fixture must retain a numeric Stage 1 estimate");
+  assert.ok(result.tuningEstimate.profile?.stages[0].torqueNm);
+  assert.equal(quote.kind, "from", "An explicitly scoped compatible fixture keeps an indicative commercial quote");
+  assert.ok(message.includes(`Indicatieve uitkomst: ${result.tuningEstimate.profile?.stages[0].powerHp} pk`));
+  assert.doesNotMatch(message, /configuratieconflict/i);
+  assert.ok(message.includes(formatQuote(quote, "nl")));
 });
-test("BMW conditional unlock budget stays conditional and never becomes base plus options", () => {
+test("BMW conditional unlock package is numeric and selected options are added exactly once", () => {
   const result = quoteResults[0];
   assert.equal(result.access.status, "possible-unlock-review");
-  assert.equal(result.quote.kind, "on-request");
-  assert.equal(result.quote.kind === "on-request" && result.quote.conditionalBudgetFromCents, 70000);
-  assert.match(result.message, /Als ECU-unlock nodig is, indicatief Stage 1-budget vanaf €\s?700/);
-  assert.ok(result.message.includes("Definitieve offerte na ECU-identificatie."));
-  assert.doesNotMatch(result.message, /€\s?849|ECU.*(?:is locked|is vergrendeld)/);
+  assert.equal(result.baseQuote.kind === "from" && result.baseQuote.amountCents, 70000);
+  assert.equal(result.quote.kind === "from" && result.quote.amountCents, 84900);
+  assert.equal(result.quote.kind === "from" && result.quote.scope, "advanced-unlock-package");
+  assert.match(result.message, /Prijs: Indicatief vanaf €\s?849/);
+  assert.ok(result.message.includes("scenario waarin ECU-unlock nodig is"));
+  assert.ok(result.message.includes("definitieve scope en prijs na identificatie"));
+  assert.doesNotMatch(result.message, /ECU.*(?:is locked|is vergrendeld)/);
 });
 test("Ford message retains official Custom identity and excludes rejected engines or owner-only ECU", () => {
   const message = quoteResults[1].message;
@@ -151,7 +156,7 @@ if (baselineIndex >= 0 && reportIndex >= 0) {
       return {
         syntheticId: fixture.id, facts: result.vehicle,
         baseline: old ? {status: "matched", id: old.variant.id, model: old.variant.model, engine: old.variant.engine, confidence: old.confidence, sourceStage1Price: old.variant.stages[0].price, publicStage1Price: baselinePricing.getPublicStagePrice(old.variant, old.variant.stages[0])} : {status: "no-match", uiHardcodedStage1Fallback: 269},
-        current: {status: result.tuningMatch.status, id: result.tuningMatch.variant?.id, reasonCodes: result.tuningMatch.reasonCodes, candidates: result.tuningMatch.candidates, access, baseQuote, selectedOptions: [{id: "egr", name: "EGR off", priceCents: 14900}], quote, dutchWhatsApp: message}
+        current: {status: result.tuningMatch.status, id: result.tuningMatch.variant?.id, reasonCodes: result.tuningMatch.reasonCodes, estimate: result.tuningEstimate, candidates: result.tuningMatch.candidates, access, baseQuote, selectedOptions: [{name: "Selected service", priceCents: 14900}], quote, dutchWhatsApp: message}
       };
     })
   };

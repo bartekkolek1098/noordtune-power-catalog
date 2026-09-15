@@ -1,4 +1,5 @@
-import {findCatalogMatch} from "../data/catalog.ts";
+import {engineCatalog, findCatalogMatch} from "../data/catalog.ts";
+import {resolveTuningEstimate} from "../data/tuning-estimates.ts";
 import {firstAdmissionYear, parseRdwDate} from "./rdw-date.ts";
 
 const VEHICLE_RESOURCE = "m9d7-ebf2";
@@ -89,6 +90,7 @@ export type RdwLookupResult = {
     };
   };
   tuningMatch: ReturnType<typeof findCatalogMatch>;
+  tuningEstimate: ReturnType<typeof resolveTuningEstimate>;
   raw?: {
     vehicle: RdwVehicleRow;
     fuels: RdwFuelRow[];
@@ -159,16 +161,18 @@ export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[],
     .map((fuel) => fuel.brandstof_omschrijving)
     .filter(Boolean) as string[];
   const firstAdmission = parseRdwDate(vehicle.datum_eerste_toelating_dt) ?? parseRdwDate(vehicle.datum_eerste_toelating);
-  const tuningMatch = findCatalogMatch({
+  const identityInput = {
     make: vehicle.merk, model: vehicle.handelsbenaming,
     fuel: fuelDescriptions.join(" / "),
-    registeredPower: powerKw === null ? undefined : {value: powerKw, unit: "kW"},
+    registeredPower: powerKw === null ? undefined : {value: powerKw, unit: "kW" as const},
     displacementCc: toNumber(vehicle.cilinderinhoud),
     firstRegistrationDate: firstAdmission,
     firstRegistrationYear: firstAdmissionYear(firstAdmission),
     type: vehicle.type, variant: vehicle.variant, execution: vehicle.uitvoering,
     cylinders: toNumber(vehicle.aantal_cilinders)
-  });
+  };
+  const tuningMatch = findCatalogMatch(identityInput);
+  const tuningEstimate = resolveTuningEstimate(identityInput, engineCatalog);
 
   const result: RdwLookupResult = {
     source: "RDW Open Data",
@@ -218,6 +222,7 @@ export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[],
       }
     },
     tuningMatch,
+    tuningEstimate,
     raw: {
       vehicle,
       fuels

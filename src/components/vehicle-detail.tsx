@@ -14,12 +14,15 @@ import {
   conditionalBudgetNote,
   formatAccessAssessment,
   formatQuote,
+  formatQuoteScope,
   resolveStageQuote
 } from "@/data/pricing";
+import {getCatalogEstimateProfile} from "@/data/tuning-estimates-shared";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
+import {estimateLimitations} from "@/lib/estimate-copy";
 import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
@@ -91,6 +94,7 @@ export function VehicleDetail({
   text: VehicleCopy;
   vehicle: EngineVariant;
 }) {
+  const estimateProfile = useMemo(() => getCatalogEstimateProfile(vehicle), [vehicle]);
   const [stageIndex, setStageIndex] = useState(() =>
     Math.max(
       0,
@@ -116,7 +120,7 @@ export function VehicleDetail({
     .filter((option) => selectedOptions.includes(option.id))
     .reduce((total, option) => total + Math.round(option.price * 100), 0);
   const access = assessVehicleAccess(vehicle);
-  const quote = addQuoteOptions(resolveStageQuote(vehicle, selectedStage), optionsTotalCents);
+  const quote = addQuoteOptions(resolveStageQuote(estimateProfile, selectedStage, {estimateApplicable: true, scope: "family"}), optionsTotalCents);
   const budgetNote = conditionalBudgetNote(quote, locale);
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
   const powerUnit = locale === "en" ? "hp" : locale === "pl" ? "KM" : "pk";
@@ -149,6 +153,9 @@ export function VehicleDetail({
       quote,
       access,
       matchStatus: vehicle.publicationSource === "existing-curated" ? "catalog-match" : "ambiguous",
+      estimateProfileLabel: `${estimateProfile.brand} ${estimateProfile.model} ${estimateProfile.engine}`,
+      engine: estimateProfile.engine,
+      indicativeOutput: {powerHp: selectedStage.powerHp, torqueNm: selectedStage.torqueNm},
       recommendedPackage: recommendedPackageLabel,
       stage: selectedStage.name,
       vehicle: `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${vehicle.version}`,
@@ -271,7 +278,7 @@ export function VehicleDetail({
                       {stage.powerHp} {powerUnit} / {stage.torqueNm} Nm
                     </span>
                     <span className="mt-1 block text-xs text-primary">
-                      {formatQuote(resolveStageQuote(vehicle, stage), locale)}
+                      {formatQuote(resolveStageQuote(estimateProfile, stage, {estimateApplicable: true, scope: "family"}), locale)}
                     </span>
                   </div>
                   <Button
@@ -322,11 +329,12 @@ export function VehicleDetail({
 
         <div className="rounded-[3px] border border-white/10 bg-black/45 p-4">
           <PowerChart
+            locale={locale}
             powerUnit={powerUnit}
-            stages={vehicle.stages}
-            stockPower={vehicle.stockPowerHp}
+            stages={estimateProfile.stages}
+            stockPower={estimateProfile.stockPowerHp}
             stockLabel={text.stock}
-            stockTorque={vehicle.stockTorqueNm}
+            stockTorque={estimateProfile.stockTorqueNm}
           />
         </div>
 
@@ -381,6 +389,9 @@ export function VehicleDetail({
                   {text.technical.identityNote}
                 </p>
               ) : null}
+              {estimateLimitations(estimateProfile, locale).map((note) => (
+                <p className="mt-3 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>
+              ))}
             </div>
           </div>
         </div>
@@ -394,11 +405,9 @@ export function VehicleDetail({
           <div className="mt-2 break-words text-4xl font-black">
             {formatQuote(quote, locale)}
           </div>
-          {quote.kind === "on-request" ? (
-            <p className="mt-2 text-xs leading-5 text-muted-foreground">
-              {formatAccessAssessment(access, locale)} {budgetNote}
-            </p>
-          ) : null}
+          <p className="mt-2 text-xs leading-5 text-muted-foreground">
+            {formatQuoteScope(quote, locale)} {formatAccessAssessment(access, locale)} {budgetNote}
+          </p>
           <Button asChild className="mt-4 h-14 w-full rounded-[3px] text-base font-black uppercase shadow-[0_0_30px_rgba(227,6,19,.38)]">
             <a href={quoteHref} rel="noreferrer" target="_blank">
               <MessageCircle className="h-5 w-5" />
@@ -426,7 +435,7 @@ export function VehicleDetail({
                 <span className="flex flex-wrap items-center justify-between gap-3">
                   <span className="font-bold">{stage.name}</span>
                   <span className="text-primary">
-                    {formatQuote(resolveStageQuote(vehicle, stage), locale)}
+                    {formatQuote(resolveStageQuote(estimateProfile, stage, {estimateApplicable: true, scope: "family"}), locale)}
                   </span>
                 </span>
                 <span className="mt-1 block text-sm text-muted-foreground">

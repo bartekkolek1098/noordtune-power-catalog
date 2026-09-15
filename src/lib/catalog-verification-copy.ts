@@ -10,22 +10,22 @@ export function catalogVerificationCopy(
 
   return {
     nl: {
-      badge: "Handmatige controle",
-      title: "Catalogusschatting — toepasbaarheid te bevestigen",
-      text: "Deze model-motorcombinatie komt uit gegenereerde catalogusgegevens en is niet afzonderlijk geverifieerd. De getoonde vermogens en koppels zijn catalogusschattingen, geen meting van jouw voertuig.",
-      footer: "Offerte na controle van voertuig, motor en ECU."
+      badge: "Catalogusindicatie",
+      title: "Catalogusindicatie — ECU-controle vóór uitvoering",
+      text: "Deze model-motorcombinatie bevat geschatte catalogusgegevens. De getoonde vermogens en koppels zijn bruikbare tuningindicaties, geen meting van jouw voertuig. De exacte ECU en uitvoering worden vóór tuning gecontroleerd.",
+      footer: "Indicatieve waarden; definitieve uitvoering na voertuig- en ECU-controle."
     },
     en: {
-      badge: "Manual review",
-      title: "Catalog estimate — applicability to be confirmed",
-      text: "This model-engine combination comes from generated catalog data and has not been independently verified. Displayed power and torque are catalog estimates, not measurements of your vehicle.",
-      footer: "Quotation after vehicle, engine and ECU verification."
+      badge: "Catalog estimate",
+      title: "Catalog estimate — ECU check before tuning",
+      text: "This model-engine combination includes estimated catalog data. Displayed power and torque are useful tuning estimates, not measurements of your vehicle. The exact ECU and configuration are checked before tuning.",
+      footer: "Indicative values; final work after vehicle and ECU verification."
     },
     pl: {
-      badge: "Ręczna weryfikacja",
-      title: "Szacunek katalogowy — zastosowanie do potwierdzenia",
-      text: "Ta kombinacja modelu i silnika pochodzi z wygenerowanych danych katalogowych i nie została niezależnie zweryfikowana. Moc i moment to szacunki katalogowe, a nie pomiary Twojego pojazdu.",
-      footer: "Wycena po weryfikacji pojazdu, silnika i ECU."
+      badge: "Szacunek katalogowy",
+      title: "Szacunek katalogowy — kontrola ECU przed tuningiem",
+      text: "Ta kombinacja modelu i silnika zawiera szacunkowe dane katalogowe. Moc i moment to orientacyjne możliwości tuningu, a nie pomiary Twojego pojazdu. Dokładne ECU i konfiguracja są sprawdzane przed tuningiem.",
+      footer: "Wartości orientacyjne; realizacja po kontroli pojazdu i ECU."
     }
   }[locale];
 }

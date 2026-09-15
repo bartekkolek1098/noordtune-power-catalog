@@ -17,6 +17,8 @@ import {
 } from "./pricing.ts";
 import {applyCuratedTechnicalProfile} from "./curated-technical.ts";
 import {assessCatalogMatch, normalizeCatalogFuel, type CatalogMatchInput} from "./catalog-matching.ts";
+import {tuningReferenceProfiles} from "./tuning-estimates.ts";
+import type {EstimateResolution, TuningEstimateProfile} from "./tuning-estimates-shared.ts";
 
 export type {
   ConfidenceLevel,
@@ -1548,21 +1550,23 @@ export function getBrands() {
 
 export function getModelsForBrand(brand: string) {
   return Array.from(
-    new Set(
-      vehicleDatabase
+    new Set([
+      ...vehicleDatabase
         .filter((vehicle) => vehicle.brand === brand)
-        .map((vehicle) => vehicle.model)
-    )
+        .map((vehicle) => vehicle.model),
+      ...tuningReferenceProfiles.filter((profile) => profile.brand === brand).map((profile) => profile.model)
+    ])
   ).sort();
 }
 
 export function getYearsForModel(brand: string, model: string) {
   return Array.from(
-    new Set(
-      vehicleDatabase
+    new Set([
+      ...vehicleDatabase
         .filter((vehicle) => vehicle.brand === brand && vehicle.model === model)
-        .flatMap((vehicle) => vehicle.years)
-    )
+        .flatMap((vehicle) => vehicle.years),
+      ...tuningReferenceProfiles.filter((profile) => profile.brand === brand && profile.model === model).flatMap(referenceProfileYears)
+    ])
   ).sort((a, b) => b - a);
 }
 
@@ -1609,6 +1613,10 @@ export function getPopularVehicleSelectorItems(limit = 4) {
 
 export function searchVehicleSelectorItems(query: string, limit = 4) {
   const tokens = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const referenceMatches = tuningReferenceProfiles.filter((profile) => {
+    const haystack = [profile.brand, profile.model, profile.engine, profile.version, profile.generation, profile.yearRange, String(profile.stockPowerHp)].join(" ").toLowerCase();
+    return tokens.length > 0 && tokens.every((token) => haystack.includes(token));
+  });
   const publicMatches = engineCatalog.filter((vehicle) => {
     const haystack = [
       vehicle.brand,
@@ -1625,8 +1633,9 @@ export function searchVehicleSelectorItems(query: string, limit = 4) {
     return tokens.length > 0 && tokens.every((token) => haystack.includes(token));
   });
   const selectorItems = [
+    ...referenceMatches.map(toReferenceSelectorItem),
     ...publicMatches.map(toVehicleSelectorItem),
-    ...searchVehicles(query).map(toVehicleSelectorItem)
+    ...(referenceMatches.length ? [] : searchVehicles(query).map(toVehicleSelectorItem))
   ];
 
   return uniqueVehicleSelectorItems(
@@ -1645,14 +1654,17 @@ export function getVehicleSelectorItems({
   year: number;
 }, limit = Number.POSITIVE_INFINITY) {
   return uniqueVehicleSelectorItems(
-    vehicleDatabase
+    [
+      ...tuningReferenceProfiles.filter((profile) => profile.brand === brand && profile.model === model && referenceProfileYears(profile).includes(year)).map(toReferenceSelectorItem),
+      ...vehicleDatabase
       .filter(
         (vehicle) =>
           vehicle.brand === brand &&
           vehicle.model === model &&
           vehicle.years.includes(year)
       )
-      .map(toVehicleSelectorItem),
+      .map(toVehicleSelectorItem)
+    ],
     limit
   );
 }
@@ -1714,6 +1726,33 @@ export function findCatalogMatch(input: CatalogMatchInput) {
     ...vehicleDatabase.filter((vehicle) => !publicSourceIds.has(vehicle.id))
       .map((variant) => ({variant, applicability: "generated" as const}))
   ]);
+}
+
+function referenceProfileYears(profile: TuningEstimateProfile) {
+  const [start, end] = profile.yearRange.split("–").map(Number);
+  return Number.isInteger(start) && Number.isInteger(end)
+    ? Array.from({length: end - start + 1}, (_, index) => start + index)
+    : [];
+}
+
+function toReferenceSelectorItem(profile: TuningEstimateProfile): VehicleSelectorItem {
+  return {
+    kind: "reference", id: profile.id, brand: profile.brand, model: profile.model,
+    engine: profile.engine, version: profile.version, yearRange: profile.yearRange,
+    ecuType: profile.ecuType, popular: false,
+    quote: resolveStageQuote(profile, profile.stages[0], {scope: "vehicle"})
+  };
+}
+
+/** Fetch one bounded reference DTO on explicit selection; no reference creates an SEO route. */
+export function getReferenceSelectorEstimate(id: string): EstimateResolution | undefined {
+  const profile = tuningReferenceProfiles.find((profile) => profile.id === id);
+  if (!profile) return undefined;
+  const conditional = id === "ref-ford-transit-connect-15-tdci-100";
+  return {
+    status: conditional ? "conditional" : "applicable", profile,
+    reasonCodes: conditional ? ["CONNECT_ENGINE_GENERATION_REVIEW"] : ["APPLICABLE_CATALOG_ESTIMATE"]
+  };
 }
 
 function createGeneratedVehicle(
