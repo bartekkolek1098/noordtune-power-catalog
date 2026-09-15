@@ -19,6 +19,7 @@ import {
   getPopularVehicleSelectorItems,
   getVehicleById
 } from "@/data/catalog";
+import {addQuoteOptions, assessVehicleAccess, formatQuote, resolveStageQuote} from "@/data/pricing";
 import {
   homeVisualCopy,
   homepageHeroImage,
@@ -38,7 +39,7 @@ import {stageSeoPath} from "@/lib/seo";
 import {assetPath, sitePath} from "@/lib/site-path";
 import {absoluteUrl} from "@/lib/site-url";
 import {formatCurrency} from "@/lib/utils";
-import {whatsappHref} from "@/lib/whatsapp";
+import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 
 type PageProps = {
   params: Promise<{locale: string}>;
@@ -89,6 +90,12 @@ export default async function HomePage({params}: PageProps) {
   const localeCode = safeLocale === "en" ? "en-US" : safeLocale === "pl" ? "pl-PL" : "nl-NL";
   const services = localizedServiceOptions(safeLocale);
   const bmwExample = getVehicleById("bmw-320d-b47");
+  const bmwExampleQuote = addQuoteOptions(
+    resolveStageQuote(bmwExample, bmwExample?.stages[0]),
+    services
+      .filter((option) => ["dpf", "egr", "adblue", "gearbox"].includes(option.id))
+      .reduce((total, option) => total + Math.round(option.price * 100), 0)
+  );
   const selectorBrands = getBrands();
   const selectorPopularVehicles = getPopularVehicleSelectorItems(4);
   const serviceName = (id: string) =>
@@ -371,12 +378,10 @@ export default async function HomePage({params}: PageProps) {
                     <div className="mt-1 text-xl text-slate-300">{stage.torqueNm} Nm</div>
                     <div className="mt-4 flex items-center gap-2 text-xs text-slate-200">
                       <CircleCheck className="h-4 w-4 text-green-400" />
-                      {stage.name === "Stage 3+" ? copy.onRequest : copy.available}
+                      {resolveStageQuote(bmwExample, stage).kind === "on-request" ? copy.onRequest : copy.available}
                     </div>
                     <div className="mt-3 text-sm font-black text-white">
-                      {stage.name === "Stage 3+"
-                        ? copy.onRequest
-                        : `${t("from")} ${formatCurrency(stage.price, localeCode)}`}
+                      {formatQuote(resolveStageQuote(bmwExample, stage), safeLocale)}
                     </div>
                   </div>
                 ))}
@@ -423,13 +428,25 @@ export default async function HomePage({params}: PageProps) {
               <div className="my-5 h-px bg-white/10" />
               <div className="text-xs text-muted-foreground">{copy.priceIndication}</div>
               <div className="mt-1 text-3xl font-black text-primary">
-                {t("from").toLowerCase()}{" "}
-                {formatCurrency(bmwExample.stages[0].price, localeCode)}
+                {formatQuote(bmwExampleQuote, safeLocale)}
               </div>
               <div className="mt-5 grid gap-3">
                 <Button asChild className="h-12 shadow-[0_0_30px_rgba(226,0,15,.35)]">
                   <a
-                    href={whatsappHref({locale: safeLocale, vehicleLabel: "BMW 320d"})}
+                    href={whatsappHref({
+                      locale: safeLocale,
+                      vehicleLabel: "BMW 320d",
+                      message: createVehicleQuoteMessage({
+                        locale: safeLocale,
+                        vehicle: `${bmwExample.brand} ${bmwExample.model} ${bmwExample.engine}`,
+                        stage: bmwExample.stages[0].name,
+                        options: ["dpf", "egr", "adblue", "gearbox"].map(serviceName),
+                        quote: bmwExampleQuote,
+                        access: assessVehicleAccess(bmwExample),
+                        matchStatus: "catalog-match",
+                        vehiclePower: `${bmwExample.stockPowerHp} ${copy.powerUnit} -> ${bmwExample.stages[0].powerHp} ${copy.powerUnit}`
+                      })
+                    })}
                     rel="noreferrer"
                     target="_blank"
                   >

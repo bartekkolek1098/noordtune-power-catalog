@@ -1,11 +1,13 @@
 import type {Metadata} from "next";
 import type {EngineVariant, StageDefinition} from "@/data/catalog-shared";
 import {getVehicleSeoSlugs, stageSlugMap} from "@/data/catalog";
+import {formatQuote, resolveStageQuote} from "@/data/pricing";
 import {routing, type Locale} from "@/i18n/routing";
 import {MAIN_SITE_URL} from "@/lib/noordtune-links";
 import {absoluteUrl} from "@/lib/site-url";
 
 export {absoluteUrl, POWER_SITE_URL} from "@/lib/site-url";
+export {quoteOfferFields} from "@/lib/quote-offer";
 
 const localeMeta: Record<
   Locale,
@@ -102,13 +104,15 @@ export function vehicleMetadata(
 ): Pick<Metadata, "title" | "description" | "openGraph" | "twitter"> {
   const meta = localeMeta[locale];
   const stage = vehicle.stages[0];
+  const quoteLabel = formatQuote(resolveStageQuote(vehicle, stage), locale);
+  const estimateLabel = catalogEstimateLabel(vehicle, locale);
   const title = `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${meta.vehicleTitleSuffix}`;
   const description =
     locale === "en"
-      ? `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${meta.from} ${vehicle.stockPowerHp} ${meta.powerUnit} ${meta.to} ${stage.powerHp} ${meta.powerUnit} ${meta.and} ${stage.torqueNm} Nm, from €${stage.price}. Vehicle-specific estimate in the ${meta.catalog} for ${meta.area}.`
+      ? `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${meta.from} ${vehicle.stockPowerHp} ${meta.powerUnit} ${meta.to} ${stage.powerHp} ${meta.powerUnit} ${meta.and} ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} in the ${meta.catalog} for ${meta.area}.`
       : locale === "pl"
-        ? `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${meta.from} ${vehicle.stockPowerHp} ${meta.powerUnit} ${meta.to} ${stage.powerHp} ${meta.powerUnit} ${meta.and} ${stage.torqueNm} Nm, od €${stage.price}. Wycena orientacyjna w ${meta.catalog} dla ${meta.area}.`
-        : `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${meta.from} ${vehicle.stockPowerHp} ${meta.powerUnit} ${meta.to} ${stage.powerHp} ${meta.powerUnit} ${meta.and} ${stage.torqueNm} Nm, vanaf €${stage.price}. Voertuigspecifieke indicatie in de ${meta.catalog} voor ${meta.area}.`;
+        ? `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${meta.from} ${vehicle.stockPowerHp} ${meta.powerUnit} ${meta.to} ${stage.powerHp} ${meta.powerUnit} ${meta.and} ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} w ${meta.catalog} dla ${meta.area}.`
+        : `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${meta.from} ${vehicle.stockPowerHp} ${meta.powerUnit} ${meta.to} ${stage.powerHp} ${meta.powerUnit} ${meta.and} ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} in de ${meta.catalog} voor ${meta.area}.`;
 
   return sharedMetadata(locale, title, description, vehicle, absoluteUrl(vehicleDetailPath(locale, vehicle)));
 }
@@ -119,16 +123,24 @@ export function stageMetadata(
   stage: StageDefinition
 ): Pick<Metadata, "title" | "description" | "openGraph" | "twitter"> {
   const meta = localeMeta[locale];
+  const quoteLabel = formatQuote(resolveStageQuote(vehicle, stage), locale);
+  const estimateLabel = catalogEstimateLabel(vehicle, locale);
   const title = `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${stage.name} | ${stage.powerHp} ${meta.powerUnit} ${meta.stageTitleSuffix}`;
   const description =
     locale === "en"
-      ? `${stage.name} for ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} to ${stage.powerHp} ${meta.powerUnit}, ${stage.torqueNm} Nm, from €${stage.price}. NoordTune Power Catalog estimate for ECU tuning around ${meta.area}.`
+      ? `${stage.name} for ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} to ${stage.powerHp} ${meta.powerUnit}, ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} for ECU tuning around ${meta.area}.`
       : locale === "pl"
-        ? `${stage.name} dla ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} do ${stage.powerHp} ${meta.powerUnit}, ${stage.torqueNm} Nm, od €${stage.price}. Orientacyjna wycena ECU tuning w NoordTune Power Catalog dla ${meta.area}.`
-        : `${stage.name} voor ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} naar ${stage.powerHp} ${meta.powerUnit}, ${stage.torqueNm} Nm, vanaf €${stage.price}. NoordTune Power Catalog indicatie voor ECU tuning rond ${meta.area}.`;
+        ? `${stage.name} dla ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} do ${stage.powerHp} ${meta.powerUnit}, ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} ECU tuning w NoordTune Power Catalog dla ${meta.area}.`
+        : `${stage.name} voor ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} naar ${stage.powerHp} ${meta.powerUnit}, ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} voor ECU tuning rond ${meta.area}.`;
   const url = absoluteUrl(stageSeoPath(locale, vehicle, stage.name));
 
   return sharedMetadata(locale, title, description, vehicle, url);
+}
+
+function catalogEstimateLabel(vehicle: EngineVariant, locale: Locale) {
+  return vehicle.publicationSource === "existing-curated"
+    ? {nl: "Voertuigspecifieke catalogusindicatie", en: "Vehicle-specific catalog estimate", pl: "Orientacyjny szacunek katalogowy"}[locale]
+    : {nl: "Ongeverifieerde catalogusschatting; toepasbaarheid te bevestigen", en: "Unreviewed catalog estimate; applicability to be confirmed", pl: "Niezweryfikowany szacunek katalogowy; zastosowanie do potwierdzenia"}[locale];
 }
 
 export function breadcrumbListJsonLd(items: Array<{name: string; url: string}>) {

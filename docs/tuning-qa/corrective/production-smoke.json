@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-09-15T10:59:19.832Z",
+  "build": "Next.js 15.5.19 production build",
+  "sitemapUrls": 291,
+  "homepageStatus": 200,
+  "referenceSeoPageStatus": 404,
+  "references": [
+    {
+      "id": "ref-bmw-128ti-f40-265",
+      "referenceStatus": 200,
+      "searchStatus": 200,
+      "amountCents": 70000,
+      "powerHp": 310,
+      "torqueNm": 480
+    },
+    {
+      "id": "ref-ford-transit-custom-20-ecoblue-105",
+      "referenceStatus": 200,
+      "searchStatus": 200,
+      "amountCents": 54900,
+      "powerHp": 190,
+      "torqueNm": 440
+    },
+    {
+      "id": "ref-ford-transit-connect-15-tdci-100",
+      "referenceStatus": 200,
+      "searchStatus": 200,
+      "amountCents": 44900,
+      "powerHp": 125,
+      "torqueNm": 330
+    }
+  ]
+}

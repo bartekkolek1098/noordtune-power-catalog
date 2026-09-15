@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-15T10:16:40.644Z",
+  "chunks": 25,
+  "generatedCanonicalIdsInChunks": [],
+  "publicVehicles": 24,
+  "canonicalRecords": 58586,
+  "localProductionSmoke": {
+    "homeStatus": 200,
+    "sitemapStatus": 200,
+    "sitemapUrls": 291,
+    "bmwDetailStatus": 200,
+    "bmwQuote": "on-request"
+  }
+}

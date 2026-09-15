@@ -9,46 +9,54 @@ import {
   XAxis,
   YAxis
 } from "recharts";
-import {useEffect, useState} from "react";
-import type {StageDefinition} from "@/data/catalog-shared";
+import {useEffect, useMemo, useState} from "react";
+import type {Locale} from "@/i18n/routing";
 
 export function PowerChart({
+  locale = "nl",
   powerUnit = "pk",
   stages,
   stockPower,
   stockLabel = "Stock",
   stockTorque
 }: {
+  locale?: Locale;
   powerUnit?: string;
-  stages: StageDefinition[];
+  stages: {name: string; powerHp?: number; torqueNm?: number; powerRangeHp?: [number, number]; torqueRangeNm?: [number, number]}[];
   stockPower: number;
   stockLabel?: string;
-  stockTorque: number;
+  stockTorque?: number;
 }) {
   const [mounted, setMounted] = useState(false);
-  const data = [
+  const hasRanges = stages.some(stage => stage.powerRangeHp || stage.torqueRangeNm);
+  const data = useMemo(() => {
+    const powerRanges = stages.some(stage => stage.powerRangeHp);
+    const torqueRanges = stages.some(stage => stage.torqueRangeNm);
+    const point = (value: number | undefined, rangeSeries: boolean) => value === undefined ? null : rangeSeries ? [value, value] : value;
+    return [
     {
       name: stockLabel,
-      pk: stockPower,
-      nm: stockTorque
+      pk: point(stockPower, powerRanges),
+      nm: point(stockTorque, torqueRanges)
     },
     ...stages.map((stage) => ({
       name: stage.name.replace("Stage ", "S"),
-      pk: stage.powerHp,
-      nm: stage.torqueNm
+      pk: stage.powerRangeHp ?? point(stage.powerHp, powerRanges),
+      nm: stage.torqueRangeNm ?? point(stage.torqueNm, torqueRanges)
     }))
-  ];
+    ];
+  }, [stages, stockLabel, stockPower, stockTorque]);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   if (!mounted) {
-    return <div className="h-64 w-full rounded-lg bg-white/[0.035]" />;
+    return <><div className="h-64 w-full rounded-lg bg-white/[0.035]" /><ChartCaption locale={locale} hasRanges={hasRanges} /></>;
   }
 
   return (
-    <div className="h-64 min-w-0 w-full">
+    <><div className="h-64 min-w-0 w-full" data-testid="catalog-power-chart" data-has-ranges={hasRanges}>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={data} margin={{left: -20, right: 12, top: 14, bottom: 0}}>
           <defs>
@@ -65,6 +73,7 @@ export function PowerChart({
           <XAxis dataKey="name" stroke="rgba(255,255,255,0.55)" tickLine={false} />
           <YAxis stroke="rgba(255,255,255,0.55)" tickLine={false} />
           <Tooltip
+            formatter={(value) => Array.isArray(value) ? value[0] === value[1] ? String(value[0]) : value.join("–") : value}
             contentStyle={{
               background: "#0d1117",
               border: "1px solid rgba(255,255,255,.14)",
@@ -89,6 +98,18 @@ export function PowerChart({
           />
         </AreaChart>
       </ResponsiveContainer>
-    </div>
+    </div><ChartCaption locale={locale} hasRanges={hasRanges} /></>
   );
+}
+
+function ChartCaption({locale, hasRanges}: {locale: Locale; hasRanges?: boolean}) {
+  return <p className="mt-2 text-xs leading-5 text-muted-foreground" data-testid="catalog-chart-caption">{{
+    nl: "Catalogusillustratie van piekwaarden; geen rollenbankmeting of gemeten toerentalcurve.",
+    en: "Catalog illustration of peak values; not a dyno measurement or measured RPM curve.",
+    pl: "Ilustracja katalogowych wartości szczytowych; nie jest pomiarem z hamowni ani zmierzoną krzywą obrotów."
+  }[locale]}{hasRanges ? " " + {
+    nl: "De banden tonen de vermelde bereiken; exacte bronwaarden blijven punten.",
+    en: "Bands show the listed ranges; exact source values remain points.",
+    pl: "Pasma pokazują podane przedziały; dokładne wartości źródłowe pozostają punktami."
+  }[locale] : ""}</p>;
 }

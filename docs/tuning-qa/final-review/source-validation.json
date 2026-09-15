@@ -1,0 +1,320 @@
+{
+  "checkedAt": "2026-09-15T20:18:34.584Z",
+  "sourceFilesCompared": 78,
+  "differences": [],
+  "method": "Build/typecheck/tests ran in an isolated copy with identical source files; final browser script and backward-compatible QA assertion were syntax/lint checked after their test-only updates.",
+  "files": [
+    {
+      "file": "scripts/qa-rdw-final-review.cjs",
+      "sha256NormalizedNewlines": "ded59bb6b11ae31c02f145f22cfc3170266f45d9c776c6e8af9826c9ad6863d5"
+    },
+    {
+      "file": "scripts/test-runtime-pricing.ts",
+      "sha256NormalizedNewlines": "bb3a8abd49fb9d73c0b9bd7ec65130619d142e1226c679f41795784e68fac0d7"
+    },
+    {
+      "file": "src/data/runtime-pricing.ts",
+      "sha256NormalizedNewlines": "1909289156e7cf0639312d2697c99f8ce36d11159a43621211107cc2df3ce1bb"
+    },
+    {
+      "file": "package.json",
+      "sha256NormalizedNewlines": "89b97c6e56fd5438ac3431d49aa5512c4cf1a4f257a83e47b3bd6b3aabcb1f7c"
+    },
+    {
+      "file": "pnpm-lock.yaml",
+      "sha256NormalizedNewlines": "226cfd9d437e3b1b595a26cf1982cfe02ba14cec5dc43d4553ea56242ab65bb4"
+    },
+    {
+      "file": "scripts/audit-catalog-data.ts",
+      "sha256NormalizedNewlines": "8b308643007e777f1b0fca80966b9f45dfbc9f11ed6e5abf7128bab376177c91"
+    },
+    {
+      "file": "scripts/check-rdw-runtime-boundary.ts",
+      "sha256NormalizedNewlines": "f1a69ee43f16de96479f9601198eef47a7eebe177e956ba8a9b2bded68821185"
+    },
+    {
+      "file": "scripts/check-tuning-build.ts",
+      "sha256NormalizedNewlines": "8ab4a921f6c99961e629e3890262551e9074c50a907c7e3a34b4077f249ccad8"
+    },
+    {
+      "file": "scripts/qa-manual-references.cjs",
+      "sha256NormalizedNewlines": "be9dded300b42260cdd72bf193955a910aae778b2cf1c936ff9f81a5432f956a"
+    },
+    {
+      "file": "scripts/qa-rdw-runtime.cjs",
+      "sha256NormalizedNewlines": "56f86cd5d760dc348290f55190f45b0560dfec84e8bb119dac1d8ace316a4774"
+    },
+    {
+      "file": "scripts/qa-tuning-contact.cjs",
+      "sha256NormalizedNewlines": "408fc2eb5e29f17895572d3e5721f32c3ce1c9af9aef8eef3ba932dc101e174a"
+    },
+    {
+      "file": "scripts/qa-tuning-visual.cjs",
+      "sha256NormalizedNewlines": "d6d33bb4918586d24fba00b5da5c747b81b8c4a89e1a5b8ae69269bc87fe9d15"
+    },
+    {
+      "file": "scripts/report-tuning-coverage.ts",
+      "sha256NormalizedNewlines": "8b56e9854faba4b6ea43c1c67693e2f01abcc7e05dfd2900d611566f2085c472"
+    },
+    {
+      "file": "scripts/test-catalog-matching.ts",
+      "sha256NormalizedNewlines": "a74299e3f0104aa2095759e5fe919822b7dc1af5e12864ea41703916d56e8fa6"
+    },
+    {
+      "file": "scripts/test-quote-policy.ts",
+      "sha256NormalizedNewlines": "f97b08135ac9a87c2dae21fdcf00a6bb3ae6726a9643298b50f5a028c7ca2d84"
+    },
+    {
+      "file": "scripts/test-quote-surfaces.ts",
+      "sha256NormalizedNewlines": "95f1cb3c67f05b555612cb7bb6c0a5372d04cc41ab119ec6d57eaba7ee146cd1"
+    },
+    {
+      "file": "scripts/test-rdw-identity.ts",
+      "sha256NormalizedNewlines": "5da790c3b76d349a21a49a05831852cdd35e7556e863a7910a319936911aaada"
+    },
+    {
+      "file": "scripts/test-rdw-runtime-coverage.ts",
+      "sha256NormalizedNewlines": "b0d85e0a9ddbf44a8140cc68aa7df753616c66b22e0d445a73ce30ae3b42086a"
+    },
+    {
+      "file": "scripts/test-rdw-tuning-estimate.ts",
+      "sha256NormalizedNewlines": "e8520f028818bd1e31074057942d29a7918b5d73fbd849f496780f2e7b8f2114"
+    },
+    {
+      "file": "scripts/test-tuning-estimates.ts",
+      "sha256NormalizedNewlines": "197ed6787c65ca5a2659e6469933eae6a9123645430dcca99d5e171f4468c0de"
+    },
+    {
+      "file": "src/app/[locale]/[brand]/[model]/[engine]/[stage]/page.tsx",
+      "sha256NormalizedNewlines": "47c683760e3e2df09ed4b6ae562143c0cbd4f8dd74b211e6cc60c9b140b68316"
+    },
+    {
+      "file": "src/app/[locale]/layout.tsx",
+      "sha256NormalizedNewlines": "012742f4fe6cbea5879784c05dcc8cb5af233c9010ac118df0671547fc70ab36"
+    },
+    {
+      "file": "src/app/[locale]/page.tsx",
+      "sha256NormalizedNewlines": "dfc3966e04ff5401a53723464e0dff067cfd990a08e54fb31f5dff3dd1ebe2c1"
+    },
+    {
+      "file": "src/app/[locale]/vehicles/[vehicleId]/page.tsx",
+      "sha256NormalizedNewlines": "37633cb5fede660f5a7e904245374a4b320c4a615b5b99be373da90d2bcf1a52"
+    },
+    {
+      "file": "src/app/api/catalog-selector/route.ts",
+      "sha256NormalizedNewlines": "5678bba81f070a33f3b0d871f3ecb12f0bf7a6099758f1f09f73e6fcac84d5c7"
+    },
+    {
+      "file": "src/app/api/rdw-lookup/route.ts",
+      "sha256NormalizedNewlines": "e6da3c8618546ffc4df0b25769c3bc527e51b28ea6ee7125bd5ea2d04e79833f"
+    },
+    {
+      "file": "src/app/globals.css",
+      "sha256NormalizedNewlines": "3fe5681ac666a913805a848a6ab27eeb5b5cc058a2ba517a6df2a96f6fc2f975"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "sha256NormalizedNewlines": "b1cd72271d80e421260c41592d80532bc9f596f06af2690a2843ddab0a3e0bde"
+    },
+    {
+      "file": "src/app/robots.ts",
+      "sha256NormalizedNewlines": "e711130c0812c9d5cb186a2e38f35f389da166a606aa180be6864805f4e51ab3"
+    },
+    {
+      "file": "src/app/sitemap.ts",
+      "sha256NormalizedNewlines": "439f09f4d2581aa02899fe5e2ca31932934887521b8ffb913e64c063486b5191"
+    },
+    {
+      "file": "src/components/catalog-footer.tsx",
+      "sha256NormalizedNewlines": "8c4fcbd16b9a46b3fc5bbdf08c3e45dcfda0d7883da09cd0916ff99fde3e16cd"
+    },
+    {
+      "file": "src/components/catalog-header.tsx",
+      "sha256NormalizedNewlines": "acec5d4e76a5a03f2d27f3ce7031e27672f81297dbae1a20102ea2e1c4ca00b6"
+    },
+    {
+      "file": "src/components/catalog-verification-notice.tsx",
+      "sha256NormalizedNewlines": "7ae6c232ae9399b30d3094a3cdf26f022cb7e28858fb75dd308a6fb29312da53"
+    },
+    {
+      "file": "src/components/floating-whatsapp.tsx",
+      "sha256NormalizedNewlines": "4e11f15406831957a5f116ba94912bf8e152d26980ed54354762c207aaf99aa9"
+    },
+    {
+      "file": "src/components/language-switcher.tsx",
+      "sha256NormalizedNewlines": "e70142e0c87935fef85227b814e1792f7210e7dc85b981d0fcd9654416597576"
+    },
+    {
+      "file": "src/components/manual-selector.tsx",
+      "sha256NormalizedNewlines": "b8a31746031c265ac5e6b6597132c311acc54495703f8c6247e1615e7fa14bc1"
+    },
+    {
+      "file": "src/components/noordtune-logo.tsx",
+      "sha256NormalizedNewlines": "a3bc6cb7dc6c661e955344c94c29d0fb364fdb730a21999d8a038c828e53ff36"
+    },
+    {
+      "file": "src/components/plate-lookup.tsx",
+      "sha256NormalizedNewlines": "270dbea6890864a3c624fd34dfa93e53e1f7e9e2bea0a19ada8e175c2bf0f123"
+    },
+    {
+      "file": "src/components/power-chart.tsx",
+      "sha256NormalizedNewlines": "58d9657044499e16a9c999e1098c05d88bd5b3a3868688f031b935190603385e"
+    },
+    {
+      "file": "src/components/reference-estimate-details.tsx",
+      "sha256NormalizedNewlines": "f8732c9f888925841e27de6038605efa31ac02f38d35ab12ca027636860de93c"
+    },
+    {
+      "file": "src/components/seo-info-sections.tsx",
+      "sha256NormalizedNewlines": "6f6cdc82617e2b8033195b3c8209b176f5686d5c6626a106242012d178a84fae"
+    },
+    {
+      "file": "src/components/ui/badge.tsx",
+      "sha256NormalizedNewlines": "854551f7bfa251d0cf1e885c6facf315a8265762f072c4c74b59bdd11c864c30"
+    },
+    {
+      "file": "src/components/ui/button.tsx",
+      "sha256NormalizedNewlines": "37cb0b34a92ba47279689fda483ad44780bfd10a7f18ea7736d91a63e86c381c"
+    },
+    {
+      "file": "src/components/ui/card.tsx",
+      "sha256NormalizedNewlines": "a72af7f69d0a57488fe4143678bf9ddcc89ee8d3bf33f3716ee3550314a24c0e"
+    },
+    {
+      "file": "src/components/ui/input.tsx",
+      "sha256NormalizedNewlines": "ce7a1845e84e4762b34830821c277c195d9603abe10dcfb8743091045073688a"
+    },
+    {
+      "file": "src/components/vehicle-contact-cta.tsx",
+      "sha256NormalizedNewlines": "479f9f659f713d0f39c755c01c12e5a41dcfc2acf5ca75058efcacf6d98d1de9"
+    },
+    {
+      "file": "src/components/vehicle-detail.tsx",
+      "sha256NormalizedNewlines": "5a0d69b2269610f159b6ccee66f5a721d0fce2a98384b3c033ea6dafb4828150"
+    },
+    {
+      "file": "src/data/catalog-matching.ts",
+      "sha256NormalizedNewlines": "645de0238e0ec07ce727bcd95de788c86a28bb94e2cdb969f81067be2bf420bd"
+    },
+    {
+      "file": "src/data/catalog-selector.ts",
+      "sha256NormalizedNewlines": "b15a5cfafa01386a9c32484feb37d3c0f8c4c1172bf56db117a249dc92b64f8e"
+    },
+    {
+      "file": "src/data/catalog-shared.ts",
+      "sha256NormalizedNewlines": "9d93f7e894eff66257aad26ef2b2471fe7b9f759a18c74c853d6d056513b08f0"
+    },
+    {
+      "file": "src/data/catalog.ts",
+      "sha256NormalizedNewlines": "f3b4d69c6dc25e6e6f0fc103a33b3eaaf73d460ab301581403821ee9d7f8ab06"
+    },
+    {
+      "file": "src/data/curated-catalog.ts",
+      "sha256NormalizedNewlines": "5c058c990ff01945a9976beab2791a8b82016239d15e622bedc3297d27b7f016"
+    },
+    {
+      "file": "src/data/curated-technical.ts",
+      "sha256NormalizedNewlines": "f9fa3ac97ee41e90e238111df5db1f7f25700e93c5d7dc7e443ac643b0199c38"
+    },
+    {
+      "file": "src/data/homepage.ts",
+      "sha256NormalizedNewlines": "6c48f973ff1234a3a8782013053f781cabc2b75a1b6a842b339b2a7a15208968"
+    },
+    {
+      "file": "src/data/pricing.ts",
+      "sha256NormalizedNewlines": "a871ce7300dec58b2d0be49f5f9ca25ff0c3fb1cc3c54361432af78a7104be85"
+    },
+    {
+      "file": "src/data/tuning-estimates-shared.ts",
+      "sha256NormalizedNewlines": "d0e831c18c2843ebe4c2443066d35e59bc2ba7447045389ffe21ce2f055db677"
+    },
+    {
+      "file": "src/data/tuning-estimates.ts",
+      "sha256NormalizedNewlines": "fef460ce94c77b0e43f7bc44005ffde678c8e7703237eba5255441322e75b63c"
+    },
+    {
+      "file": "src/data/tuning-heuristics.ts",
+      "sha256NormalizedNewlines": "6b9854df1d142db9f816978884e347314c8c0daf0274052fe231b33a52d4df74"
+    },
+    {
+      "file": "src/data/tuning-reference-research.ts",
+      "sha256NormalizedNewlines": "8bc5eb090b5ea8fa6f89108ad6237be1a49a3f19cc1319c2d6861971c8cf29d7"
+    },
+    {
+      "file": "src/i18n/request.ts",
+      "sha256NormalizedNewlines": "0f3ec8c61ab6f1aa3db5669125aa100eb900fe55c948e4b95e09fea0b54dd644"
+    },
+    {
+      "file": "src/i18n/routing.ts",
+      "sha256NormalizedNewlines": "e393b1d5177691be3164db6b1f4e686fbe4808906e1d0b22f78fe65ba4becfc4"
+    },
+    {
+      "file": "src/lib/catalog-verification-copy.ts",
+      "sha256NormalizedNewlines": "9c4a212e12d85ef3e8600d37a91044a41ae33f3f7776d5e2ea2f1b77558fb44f"
+    },
+    {
+      "file": "src/lib/estimate-copy.ts",
+      "sha256NormalizedNewlines": "8819d6f8e5a4270836b1ed54208ad10491175ed985bbb56f170ab0f27a5121d6"
+    },
+    {
+      "file": "src/lib/noordtune-links.ts",
+      "sha256NormalizedNewlines": "4a9f61642e7ab0f4c4c9906d36061e253a554088cefd58de491063f561eeef6d"
+    },
+    {
+      "file": "src/lib/quote-offer.ts",
+      "sha256NormalizedNewlines": "2ca216cec64e34166bdede3df164cfe105b7633826776efb3834bc7540904c6e"
+    },
+    {
+      "file": "src/lib/rate-limit.ts",
+      "sha256NormalizedNewlines": "0d219a76104dac5cc1c2e9b4a8157c6d6287f9fb460cd4627472b4e94d0f23e8"
+    },
+    {
+      "file": "src/lib/rdw-date.ts",
+      "sha256NormalizedNewlines": "417820878c6ea18cf8860388c2b27815fb9cda6e174e1d50e590c45c2b63df7e"
+    },
+    {
+      "file": "src/lib/rdw-tuning-estimate.ts",
+      "sha256NormalizedNewlines": "0a6fb56d30a26a3a91fd4ec495409f292bf0dbdc77e6da27963a9b8fea27a2d5"
+    },
+    {
+      "file": "src/lib/rdw.ts",
+      "sha256NormalizedNewlines": "bd79b7cad695318ef10385d14a855ff357589f6f9ec6047ee816670d30d666a2"
+    },
+    {
+      "file": "src/lib/seo.ts",
+      "sha256NormalizedNewlines": "88c3118e3bc70f6d31d00078f4dacf18067c1ef02965b4613653fbccf3ca6975"
+    },
+    {
+      "file": "src/lib/service-copy.ts",
+      "sha256NormalizedNewlines": "bb4cfc1d3cb99599431bee6e391d3a3d0df563a1c2179dfc12c90aa047619f7e"
+    },
+    {
+      "file": "src/lib/site-path.ts",
+      "sha256NormalizedNewlines": "9581cb36fff193dcf8239dafe3df0669db43010c5d3e66f3ed7e1586a8585b81"
+    },
+    {
+      "file": "src/lib/site-url.ts",
+      "sha256NormalizedNewlines": "f6ea7bc3f79ef83c34729e158ce7e6143ab294a8770eb50980b826604e5298bb"
+    },
+    {
+      "file": "src/lib/utils.ts",
+      "sha256NormalizedNewlines": "e6f24122c4b87633a6224b089776da22fbde928d161d1da9fcb81f9525059584"
+    },
+    {
+      "file": "src/lib/vehicle-services.ts",
+      "sha256NormalizedNewlines": "79c25817838e93eb177f75868731572a992aefdfc4eb8a18b579b93b72811be3"
+    },
+    {
+      "file": "src/lib/whatsapp.ts",
+      "sha256NormalizedNewlines": "befd489880bc9276a43914d5d7d3b03e02f679d2b506f528f7521d80bb0432d5"
+    },
+    {
+      "file": "src/middleware.ts",
+      "sha256NormalizedNewlines": "f8451fed1e1d91fa1cb339df40c14e89107ec4687e6e842f4839f46787e96291"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256NormalizedNewlines": "6e9365f80f3e5c16831c73a758aa6d5be9d17e3078679213175045defb06c290"
+    }
+  ]
+}

@@ -1,4 +1,7 @@
-import {findCatalogMatch} from "@/data/catalog";
+import {findCatalogMatch} from "../data/catalog.ts";
+import {assessVehicleAccess, resolveStageQuote, type QuoteResolution} from "../data/pricing.ts";
+import {resolveRdwTuningEstimate} from "./rdw-tuning-estimate.ts";
+import {firstAdmissionYear, parseRdwDate} from "./rdw-date.ts";
 
 const VEHICLE_RESOURCE = "m9d7-ebf2";
 const FUEL_RESOURCE = "8ys7-d773";
@@ -16,7 +19,9 @@ export type RdwVehicleRow = {
   massa_rijklaar?: string;
   toegestane_maximum_massa_voertuig?: string;
   datum_eerste_toelating_dt?: string;
+  datum_eerste_toelating?: string;
   datum_eerste_tenaamstelling_in_nederland_dt?: string;
+  datum_eerste_tenaamstelling_in_nederland?: string;
   vervaldatum_apk_dt?: string;
   eerste_kleur?: string;
   aantal_deuren?: string;
@@ -40,6 +45,7 @@ export type RdwFuelRow = {
 
 export type RdwLookupResult = {
   source: "RDW Open Data";
+  retrievedAt: string;
   cached: boolean;
   cacheTtlSeconds: number;
   vehicle: {
@@ -79,11 +85,16 @@ export type RdwLookupResult = {
     };
     registration: {
       firstAdmission?: string;
+      firstAdmissionYear?: number;
       firstRegistrationNl?: string;
       apkExpiry?: string;
     };
   };
-  tuningMatch: ReturnType<typeof findCatalogMatch>;
+  // Only the identity assessment summary crosses the API boundary. Candidate
+  // arrays and rejected canonical vehicles are never browser DTOs.
+  tuningMatch: Pick<ReturnType<typeof findCatalogMatch>, "status" | "reasonCodes">;
+  tuningEstimate: ReturnType<typeof resolveRdwTuningEstimate>;
+  tuningQuote: QuoteResolution;
   raw?: {
     vehicle: RdwVehicleRow;
     fuels: RdwFuelRow[];
@@ -135,19 +146,53 @@ export async function lookupRdwVehicle(
     return null;
   }
 
-  const powerKw = firstNumber(fuels.map((fuel) => fuel.nettomaximumvermogen));
+  const result = normalizeRdwVehicle(vehicle, fuels, plate, ttl);
+
+  memoryCache.set(plate, {
+    expiresAt: Date.now() + ttl * 1000,
+    result
+  });
+
+  return result;
+}
+
+/** Pure normalization also used by sanitized executable regression fixtures. */
+export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[], plate: string, ttl = 172800): RdwLookupResult {
+  // Multiple power rows do not establish a hybrid's combined system output.
+  const powers = fuels.map((row) => toNumber(row.nettomaximumvermogen)).filter((value): value is number => value !== null && value > 0);
+  const powerKw = powers.length === 1 ? powers[0] : null;
   const fuelDescriptions = fuels
     .map((fuel) => fuel.brandstof_omschrijving)
     .filter(Boolean) as string[];
+  const firstAdmission = parseRdwDate(vehicle.datum_eerste_toelating_dt) ?? parseRdwDate(vehicle.datum_eerste_toelating);
+  const identityInput = {
+    make: vehicle.merk, model: vehicle.handelsbenaming,
+    fuel: fuelDescriptions.join(" / "),
+    registeredPower: powerKw === null ? undefined : {value: powerKw, unit: "kW" as const},
+    displacementCc: toNumber(vehicle.cilinderinhoud),
+    firstRegistrationDate: firstAdmission,
+    firstRegistrationYear: firstAdmissionYear(firstAdmission),
+    type: vehicle.type, variant: vehicle.variant, execution: vehicle.uitvoering,
+    cylinders: toNumber(vehicle.aantal_cilinders)
+  };
+  const assessment = findCatalogMatch(identityInput);
+  const tuningMatch = {status: assessment.status, reasonCodes: assessment.reasonCodes};
+  const tuningEstimate = resolveRdwTuningEstimate(identityInput);
+  const quoteIdentity = tuningEstimate.profile ?? identityInput;
+  const tuningQuote = resolveStageQuote(quoteIdentity, {name: "Stage 1"}, {
+    estimateApplicable: Boolean(tuningEstimate.profile), scope: "vehicle",
+    access: assessVehicleAccess(quoteIdentity)
+  });
 
   const result: RdwLookupResult = {
     source: "RDW Open Data",
+    retrievedAt: new Date().toISOString(),
     cached: false,
     cacheTtlSeconds: ttl,
     vehicle: {
       plate,
-      make: titleCase(vehicle.merk) ?? "Onbekend",
-      model: titleCase(vehicle.handelsbenaming) ?? "Onbekend model",
+      make: vehicle.merk?.trim() || "Onbekend",
+      model: vehicle.handelsbenaming?.trim() || "Onbekend model",
       version: titleCase(vehicle.inrichting),
       type: vehicle.type,
       variant: vehicle.variant,
@@ -157,7 +202,7 @@ export async function lookupRdwVehicle(
       color: titleCase(vehicle.eerste_kleur),
       doors: toNumber(vehicle.aantal_deuren),
       seats: toNumber(vehicle.aantal_zitplaatsen),
-      fuel: fuelDescriptions[0],
+      fuel: fuelDescriptions.join(" / ") || undefined,
       fuels: fuelDescriptions,
       engine: {
         cylinders: toNumber(vehicle.aantal_cilinders),
@@ -180,31 +225,20 @@ export async function lookupRdwVehicle(
         exhaustLevel: fuels[0]?.uitlaatemissieniveau
       },
       registration: {
-        firstAdmission: toIsoDate(vehicle.datum_eerste_toelating_dt),
-        firstRegistrationNl: toIsoDate(
-          vehicle.datum_eerste_tenaamstelling_in_nederland_dt
-        ),
-        apkExpiry: toIsoDate(vehicle.vervaldatum_apk_dt)
+        firstAdmission,
+        firstAdmissionYear: firstAdmissionYear(firstAdmission),
+        firstRegistrationNl: parseRdwDate(vehicle.datum_eerste_tenaamstelling_in_nederland_dt) ?? parseRdwDate(vehicle.datum_eerste_tenaamstelling_in_nederland),
+        apkExpiry: parseRdwDate(vehicle.vervaldatum_apk_dt)
       }
     },
-    tuningMatch: null,
+    tuningMatch,
+    tuningEstimate,
+    tuningQuote,
     raw: {
       vehicle,
       fuels
     }
   };
-
-  result.tuningMatch = findCatalogMatch({
-    make: result.vehicle.make,
-    model: result.vehicle.model,
-    fuel: result.vehicle.fuel,
-    powerHp: result.vehicle.engine.powerHp
-  });
-
-  memoryCache.set(plate, {
-    expiresAt: Date.now() + ttl * 1000,
-    result
-  });
 
   return result;
 }
@@ -217,6 +251,9 @@ async function fetchRdwRows<T>(
   const url = new URL(`${RDW_BASE_URL}/${resource}.json`);
   url.searchParams.set("kenteken", plate);
   url.searchParams.set("$limit", String(limit));
+  url.searchParams.set("$select", resource === VEHICLE_RESOURCE
+    ? "merk,handelsbenaming,inrichting,voertuigsoort,aantal_cilinders,cilinderinhoud,massa_ledig_voertuig,massa_rijklaar,datum_eerste_toelating_dt,datum_eerste_toelating,datum_eerste_tenaamstelling_in_nederland_dt,datum_eerste_tenaamstelling_in_nederland,vervaldatum_apk_dt,eerste_kleur,aantal_deuren,aantal_zitplaatsen,maximale_constructiesnelheid,lengte,breedte,type,variant,uitvoering"
+    : "brandstof_omschrijving,nettomaximumvermogen,co2_uitstoot_gecombineerd,emissiecode_omschrijving,uitlaatemissieniveau");
 
   const headers: HeadersInit = {
     Accept: "application/json"
@@ -228,9 +265,7 @@ async function fetchRdwRows<T>(
 
   const response = await fetch(url, {
     headers,
-    next: {
-      revalidate: getCacheTtl()
-    }
+    cache: "no-store"
   });
 
   if (!response.ok) {
@@ -269,14 +304,6 @@ function firstNumber(values: Array<string | undefined>) {
   return null;
 }
 
-function toIsoDate(value: string | undefined) {
-  if (!value) {
-    return undefined;
-  }
-
-  return value.slice(0, 10);
-}
-
 function titleCase(value: string | undefined) {
   if (!value) {
     return undefined;
@@ -291,10 +318,12 @@ function titleCase(value: string | undefined) {
 }
 
 export class RdwLookupError extends Error {
+  public code: "INVALID_PLATE" | "RDW_UNAVAILABLE";
   constructor(
-    public code: "INVALID_PLATE" | "RDW_UNAVAILABLE",
+    code: "INVALID_PLATE" | "RDW_UNAVAILABLE",
     message: string
   ) {
     super(message);
+    this.code = code;
   }
 }

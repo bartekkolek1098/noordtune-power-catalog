@@ -1,4 +1,4 @@
-import {getPublicServicePrice, type PricingTierId} from "./pricing.ts";
+import {getPublicServicePrice, type PricingTierId, type QuoteResolution} from "./pricing.ts";
 
 export type FuelType = "Petrol" | "Diesel" | "Hybrid" | "Electric";
 export type ConfidenceLevel = "verified" | "estimated" | "manual-review";
@@ -78,6 +78,7 @@ export type StageDefinition = {
   torqueNm: number;
   price: number;
   sourcePrice?: number;
+  quote?: QuoteResolution;
   requirements: string;
   packageItems: string[];
   pricingTier?: PricingTierId;
