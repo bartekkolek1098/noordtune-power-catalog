@@ -1,10 +1,36 @@
-import type {TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
+import type {EstimateStage, TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
 import type {Locale} from "../i18n/routing.ts";
+
+export function formatEstimatePower(stage: Pick<EstimateStage, "powerHp" | "powerRangeHp">, locale: Locale) {
+  const unit = {nl: "pk", en: "hp", pl: "KM"}[locale];
+  if (stage.powerRangeHp) return `${stage.powerRangeHp[0]}–${stage.powerRangeHp[1]} ${unit}`;
+  return stage.powerHp === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.powerHp} ${unit}`;
+}
+
+export function formatEstimateTorque(stage: Pick<EstimateStage, "torqueNm" | "torqueRangeNm">, locale: Locale) {
+  if (stage.torqueRangeNm) return `${stage.torqueRangeNm[0]}–${stage.torqueRangeNm[1]} Nm (${{nl: "schatting", en: "estimate", pl: "szacunek"}[locale]})`;
+  return stage.torqueNm === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.torqueNm} Nm`;
+}
+
+export function formatEstimateSource(stage: EstimateStage, locale: Locale) {
+  const source = stage.provenance ?? "reviewed";
+  return {
+    reviewed: {nl: "Catalogusindicatie", en: "Catalog estimate", pl: "Szacunek katalogowy"},
+    reference: {nl: "Model-/motorreferentie", en: "Model/engine reference", pl: "Referencja modelu/silnika"},
+    "canonical-estimated": {nl: "Geschatte catalogusindicatie", en: "Estimated catalog indication", pl: "Orientacyjne dane katalogowe"},
+    "generic-indicative": {nl: "Generieke RDW-indicatie", en: "Generic RDW indication", pl: "Ogólna prognoza na podstawie RDW"}
+  }[source][locale];
+}
 
 /** Individual source limitations are displayed without invalidating a whole profile group. */
 export function estimateLimitations(profile: TuningEstimateProfile, locale: Locale) {
   const codes = profile.conditionCodes ?? [];
   const messages: Record<string, Record<Locale, string>> = {
+    GENERIC_TORQUE_UNAVAILABLE: {
+      nl: "Het stockvermogen komt uit RDW. Zonder betrouwbare bron voor het stockkoppel tonen we geen verzonnen Nm; het koppel vereist voertuigcontrole.",
+      en: "Stock power comes from RDW. Without a reliable stock-torque source, we do not invent Nm figures; torque requires vehicle verification.",
+      pl: "Moc seryjna pochodzi z RDW. Bez wiarygodnego źródła momentu seryjnego nie podajemy wymyślonych Nm; moment wymaga sprawdzenia pojazdu."
+    },
     SOURCE_STOCK_TORQUE_DISCREPANCY: {
       nl: "Bronverschil stockkoppel: de catalogus noemt 270 Nm, BMW noemt 300 Nm. Het brongetal blijft zichtbaar; controle van deze uitvoering is nodig.",
       en: "Stock-torque source difference: the catalog lists 270 Nm; BMW lists 300 Nm. The source value is retained; this configuration needs verification.",

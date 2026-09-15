@@ -1,0 +1,2631 @@
+{
+  "inventoriedAt": "2026-09-15T19:36:43.295Z",
+  "scope": "docs/tuning-qa",
+  "status": "Proposal only. No screenshots, reports or branch history have been deleted or rewritten.",
+  "summary": {
+    "screenshots": 313,
+    "bytes": 95274632,
+    "proposedRetainedExisting": 40,
+    "proposedRetainedBytes": 14686196,
+    "proposedRetainedWhenComplete": 40,
+    "missingPlannedEvidence": [],
+    "reviewRemovalCandidates": 273,
+    "exactDuplicateGroups": 51,
+    "exactDuplicateExtraCopies": 51
+  },
+  "byDirectory": {
+    ".": {
+      "files": 113,
+      "bytes": 32505352
+    },
+    "corrective": {
+      "files": 192,
+      "bytes": 59323645
+    },
+    "runtime": {
+      "files": 8,
+      "bytes": 3445635
+    }
+  },
+  "proposedRetention": [
+    {
+      "path": "corrective/baseline-bmw128ti-320.png",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-320-summary.png",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-1440.png",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-1440-summary.png",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/baseline-golf-gti-320.png",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/baseline-golf-gti-320-summary.png",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/baseline-golf-gti-1440.png",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/baseline-golf-gti-1440-summary.png",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-bmw128ti-320.png",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-bmw128ti-320-summary.png",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-bmw128ti-1440.png",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-bmw128ti-1440-summary.png",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-golf-gti-320.png",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-golf-gti-320-summary.png",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-golf-gti-1440.png",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-golf-gti-1440-summary.png",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-detail-bmw320d-320.png",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-detail-bmw320d-1440.png",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-detail-golf-gti-320.png",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-detail-golf-gti-1440.png",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-detail-golf-r-320.png",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-detail-golf-r-1440.png",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-detail-focus-st-320.png",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety",
+      "exists": true
+    },
+    {
+      "path": "corrective/final-detail-focus-st-1440.png",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety",
+      "exists": true
+    },
+    {
+      "path": "corrective/manual-ref-bmw-128ti-f40-265-nl-search-320.png",
+      "purpose": "Manual reference selection remains independent of public SEO",
+      "exists": true
+    },
+    {
+      "path": "corrective/manual-ref-bmw-128ti-f40-265-nl-search-1440.png",
+      "purpose": "Manual reference selection remains independent of public SEO",
+      "exists": true
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-search-320.png",
+      "purpose": "Manual reference selection remains independent of public SEO",
+      "exists": true
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-search-1440.png",
+      "purpose": "Manual reference selection remains independent of public SEO",
+      "exists": true
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-search-320.png",
+      "purpose": "Manual reference selection remains independent of public SEO",
+      "exists": true
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-search-1440.png",
+      "purpose": "Manual reference selection remains independent of public SEO",
+      "exists": true
+    },
+    {
+      "path": "corrective/visual-comparison.png",
+      "purpose": "Self-contained approved-baseline versus corrective visual overview",
+      "exists": true
+    },
+    {
+      "path": "corrective/corrective-results.png",
+      "purpose": "Self-contained earlier three-reference result overview",
+      "exists": true
+    },
+    {
+      "path": "runtime/live-h329xh-320.png",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop",
+      "exists": true
+    },
+    {
+      "path": "runtime/live-h329xh-1440.png",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop",
+      "exists": true
+    },
+    {
+      "path": "runtime/live-v380st-320.png",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop",
+      "exists": true
+    },
+    {
+      "path": "runtime/live-v380st-1440.png",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop",
+      "exists": true
+    },
+    {
+      "path": "runtime/live-v978zf-320.png",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop",
+      "exists": true
+    },
+    {
+      "path": "runtime/live-v978zf-1440.png",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop",
+      "exists": true
+    },
+    {
+      "path": "runtime/live-kkh27k-320.png",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop",
+      "exists": true
+    },
+    {
+      "path": "runtime/live-kkh27k-1440.png",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop",
+      "exists": true
+    }
+  ],
+  "exactDuplicateGroups": [
+    [
+      "baseline-bmw128ti-1024-summary.png",
+      "corrective/baseline-bmw128ti-1024-summary.png"
+    ],
+    [
+      "baseline-bmw128ti-1024.png",
+      "corrective/baseline-bmw128ti-1024.png"
+    ],
+    [
+      "baseline-bmw128ti-1440-summary.png",
+      "corrective/baseline-bmw128ti-1440-summary.png"
+    ],
+    [
+      "baseline-bmw128ti-1440.png",
+      "corrective/baseline-bmw128ti-1440.png"
+    ],
+    [
+      "baseline-bmw128ti-320-summary.png",
+      "corrective/baseline-bmw128ti-320-summary.png"
+    ],
+    [
+      "baseline-bmw128ti-320.png",
+      "corrective/baseline-bmw128ti-320.png"
+    ],
+    [
+      "baseline-bmw128ti-360-summary.png",
+      "corrective/baseline-bmw128ti-360-summary.png"
+    ],
+    [
+      "baseline-bmw128ti-360.png",
+      "corrective/baseline-bmw128ti-360.png"
+    ],
+    [
+      "baseline-bmw128ti-390-summary.png",
+      "corrective/baseline-bmw128ti-390-summary.png"
+    ],
+    [
+      "baseline-bmw128ti-390.png",
+      "corrective/baseline-bmw128ti-390.png"
+    ],
+    [
+      "baseline-bmw128ti-430-summary.png",
+      "corrective/baseline-bmw128ti-430-summary.png"
+    ],
+    [
+      "baseline-bmw128ti-430.png",
+      "corrective/baseline-bmw128ti-430.png"
+    ],
+    [
+      "baseline-bmw128ti-768.png",
+      "corrective/baseline-bmw128ti-768.png"
+    ],
+    [
+      "baseline-bmw128ti-en-320.png",
+      "corrective/baseline-bmw128ti-en-320.png"
+    ],
+    [
+      "baseline-bmw128ti-pl-320-summary.png",
+      "corrective/baseline-bmw128ti-pl-320-summary.png"
+    ],
+    [
+      "baseline-bmw128ti-pl-320.png",
+      "corrective/baseline-bmw128ti-pl-320.png"
+    ],
+    [
+      "baseline-bmw320d-1440-summary.png",
+      "corrective/baseline-bmw320d-1440-summary.png"
+    ],
+    [
+      "baseline-bmw320d-1440.png",
+      "corrective/baseline-bmw320d-1440.png"
+    ],
+    [
+      "baseline-bmw320d-320-summary.png",
+      "corrective/baseline-bmw320d-320-summary.png"
+    ],
+    [
+      "baseline-bmw320d-320.png",
+      "corrective/baseline-bmw320d-320.png"
+    ],
+    [
+      "baseline-focus-st-1440-summary.png",
+      "corrective/baseline-focus-st-1440-summary.png"
+    ],
+    [
+      "baseline-focus-st-1440.png",
+      "corrective/baseline-focus-st-1440.png"
+    ],
+    [
+      "baseline-focus-st-320-summary.png",
+      "corrective/baseline-focus-st-320-summary.png"
+    ],
+    [
+      "baseline-golf-gti-1024-summary.png",
+      "corrective/baseline-golf-gti-1024-summary.png"
+    ],
+    [
+      "baseline-golf-gti-1024.png",
+      "corrective/baseline-golf-gti-1024.png"
+    ],
+    [
+      "baseline-golf-gti-1440-summary.png",
+      "corrective/baseline-golf-gti-1440-summary.png"
+    ],
+    [
+      "baseline-golf-gti-1440.png",
+      "corrective/baseline-golf-gti-1440.png"
+    ],
+    [
+      "baseline-golf-gti-320-summary.png",
+      "corrective/baseline-golf-gti-320-summary.png"
+    ],
+    [
+      "baseline-golf-gti-320.png",
+      "corrective/baseline-golf-gti-320.png"
+    ],
+    [
+      "baseline-golf-gti-360-summary.png",
+      "corrective/baseline-golf-gti-360-summary.png"
+    ],
+    [
+      "baseline-golf-gti-360.png",
+      "corrective/baseline-golf-gti-360.png"
+    ],
+    [
+      "baseline-golf-gti-390-summary.png",
+      "corrective/baseline-golf-gti-390-summary.png"
+    ],
+    [
+      "baseline-golf-gti-390.png",
+      "corrective/baseline-golf-gti-390.png"
+    ],
+    [
+      "baseline-golf-gti-430-summary.png",
+      "corrective/baseline-golf-gti-430-summary.png"
+    ],
+    [
+      "baseline-golf-gti-430.png",
+      "corrective/baseline-golf-gti-430.png"
+    ],
+    [
+      "baseline-golf-r-1440-summary.png",
+      "corrective/baseline-golf-r-1440-summary.png"
+    ],
+    [
+      "baseline-golf-r-1440.png",
+      "corrective/baseline-golf-r-1440.png"
+    ],
+    [
+      "baseline-golf-r-320-summary.png",
+      "corrective/baseline-golf-r-320-summary.png"
+    ],
+    [
+      "baseline-golf-r-320.png",
+      "corrective/baseline-golf-r-320.png"
+    ],
+    [
+      "baseline-transit-connect-1440-summary.png",
+      "corrective/baseline-transit-connect-1440-summary.png"
+    ],
+    [
+      "baseline-transit-connect-1440.png",
+      "corrective/baseline-transit-connect-1440.png"
+    ],
+    [
+      "baseline-transit-connect-320-summary.png",
+      "corrective/baseline-transit-connect-320-summary.png"
+    ],
+    [
+      "baseline-transit-connect-320.png",
+      "corrective/baseline-transit-connect-320.png"
+    ],
+    [
+      "baseline-transit-custom-1440-summary.png",
+      "corrective/baseline-transit-custom-1440-summary.png"
+    ],
+    [
+      "baseline-transit-custom-1440.png",
+      "corrective/baseline-transit-custom-1440.png"
+    ],
+    [
+      "baseline-transit-custom-320-summary.png",
+      "corrective/baseline-transit-custom-320-summary.png"
+    ],
+    [
+      "baseline-transit-custom-320.png",
+      "corrective/baseline-transit-custom-320.png"
+    ],
+    [
+      "corrective/final-detail-bmw320d-1440.png",
+      "corrective/public-bmw-320d-b47-1440.png"
+    ],
+    [
+      "corrective/final-detail-focus-st-1440.png",
+      "corrective/public-ford-focus-st-20-ecoboost-1440.png"
+    ],
+    [
+      "corrective/final-detail-golf-gti-1440.png",
+      "corrective/public-vw-golf-20-tsi-ea888-1440.png"
+    ],
+    [
+      "corrective/final-detail-golf-r-1440.png",
+      "corrective/public-volkswagen-golf-7-r-20-tsi-1440.png"
+    ]
+  ],
+  "files": [
+    {
+      "path": "baseline-bmw128ti-1024-summary.png",
+      "bytes": 253510,
+      "sha256": "94eadd624d5382ca370748825938e06f2f80a81c67f9acd7f64142b1cd4dc8dc",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-1024.png",
+      "bytes": 457235,
+      "sha256": "4d889c1d8b14cf46ee77089cb10fc790aac2c61f7223128585bc00863a1a0c23",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-1440-summary.png",
+      "bytes": 254551,
+      "sha256": "29cba80b3829531dd765455ae323a63b888061a1a643646f426f6344f47b6079",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-1440.png",
+      "bytes": 458788,
+      "sha256": "2207db347045374a928254d5668f39ad410e0484433baa80db14a1b16e762412",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-320-summary.png",
+      "bytes": 62673,
+      "sha256": "fe835650460bcd9a739a3f2d0a6ae4f738cbf66512605dddf546677b1f3f9da6",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-320.png",
+      "bytes": 336197,
+      "sha256": "f6bc596a42ac8e8d7fb17bd16441e10b2e16d65d3b5bb76853a804abcb700cad",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-360-summary.png",
+      "bytes": 67189,
+      "sha256": "775b417ed539bcc2e22d0b79ed286cd8b1d71c204ce692b9651c73f6cc6ecfc8",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-360.png",
+      "bytes": 341375,
+      "sha256": "8d336e250e310a7c99a032e6eec0f7d6ea75170b60f42ed46277ce5e43c08240",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-390-summary.png",
+      "bytes": 65876,
+      "sha256": "f3ba25abe53998036d9c7b4d4487915f11d0ae30dee36ef339df9d98d411df42",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-390.png",
+      "bytes": 332883,
+      "sha256": "9ac0b9fd267e3e6471fcd8b6def1078932621608fad1766a66519add865eb44b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-430-summary.png",
+      "bytes": 74594,
+      "sha256": "44fdc653f818a92b63f41fb1c0d3576eb5217bdae63d50546afc5055a1da42a1",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-430.png",
+      "bytes": 343909,
+      "sha256": "9aab752851692429df642ea31a0b026c0c90d4e25a6b1bb556b9fef1336df66f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-768-summary.png",
+      "bytes": 234188,
+      "sha256": "f0080f95b5f0ebbbfe7a60633901524142fc12bc7418d3db494fb241527614e1",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-768.png",
+      "bytes": 493161,
+      "sha256": "600b408080cb1a1fdc6a1e6e48bab0ab08bfbf00eb9116d180aeae646c598891",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-en-320-summary.png",
+      "bytes": 55863,
+      "sha256": "0e0e1dd27a08cd1f17e0502d57de7322d5b33762b7f703c709e6bbfa2e3e38d8",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-en-320.png",
+      "bytes": 336749,
+      "sha256": "a6c8a6bf5cc0fd907ad8485cf2941adf09fb63e1533746a312f1fb4248079cd4",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-pl-320-summary.png",
+      "bytes": 59171,
+      "sha256": "955c0378b48c25b61597cd815bd1a8ffa6adfb1d5858c17aa4756b4dc2d9a7fb",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw128ti-pl-320.png",
+      "bytes": 352382,
+      "sha256": "c4154783cd23f212641f98d539456dff6d38b113d601176acbef5918ab584810",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw320d-1440-summary.png",
+      "bytes": 258360,
+      "sha256": "208f31fb430766604f4817ebf7942a2ff0fa992fc11e255fbecf1cb59fe37a67",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw320d-1440.png",
+      "bytes": 494820,
+      "sha256": "067a5363355d73b3ecb250cab575c5e95de61e2b10ba2a4b2b3be4a99159264a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw320d-320-summary.png",
+      "bytes": 86841,
+      "sha256": "4fbc1de15748e4c12df1e1094f74099f3c6a4554b72dc24194b8bc6f4742246d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-bmw320d-320.png",
+      "bytes": 360123,
+      "sha256": "3b27157ba2a0e92ea43d25244c6e43d1543fc5278a0aa50434b179de7b3c949d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-focus-st-1440-summary.png",
+      "bytes": 256255,
+      "sha256": "93d22e77e5790ce2a4a1761e4c5796ba50a4fa83afb9b69f4f4129cb3fe91f1e",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-focus-st-1440.png",
+      "bytes": 474986,
+      "sha256": "681c350578bc48e48e81e1d7349db4f8a081bc6b146a62a1de8880f495b0d5f9",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-focus-st-320-summary.png",
+      "bytes": 84229,
+      "sha256": "5d9e7647e689f673305fc01fc1b9c3e7a676aa64ae6c1b3609ec865dc991b5b6",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-focus-st-320.png",
+      "bytes": 313293,
+      "sha256": "7773c4b931e6a68de22dcfc4050f4a44caaad1475bccb831057544c907f59233",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-1024-summary.png",
+      "bytes": 247769,
+      "sha256": "476537569d1ad691b984a59db7f5b17d55b63783749e1f295795b224714de561",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-1024.png",
+      "bytes": 482727,
+      "sha256": "93b696d27b4ab5b31e5b9a4ee6bde4b5290ef2776570d56357a4b575aea02fc9",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-1440-summary.png",
+      "bytes": 261305,
+      "sha256": "e9b1ea61f6b3c66f0d29b476b60f18c6f22160e6249386defb72625544d4cbed",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-1440.png",
+      "bytes": 500038,
+      "sha256": "1ad4f0526111dfaab6c3e917ddda4e403d4f3b06e6074bad0af3eaca1d55c445",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-320-summary.png",
+      "bytes": 87557,
+      "sha256": "81f0d4929db5af558d87c4b8af6d81bb2a75e06f5200af6d61712568c7a4b1fe",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-320.png",
+      "bytes": 365809,
+      "sha256": "315a67f0ca22f3061befcdf623ccd137abf8eee7025a46cdf9e48fbb26842d48",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-360-summary.png",
+      "bytes": 99851,
+      "sha256": "74522459b43c50781de6d76f891dca552b1c9b41bc3d743665e37b2d5ca07c67",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-360.png",
+      "bytes": 381722,
+      "sha256": "5bcaa1f3fba417c1f5c64a502ee554f6bceff44ff7c553d3ffdd6b2bd8cc60aa",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-390-summary.png",
+      "bytes": 108625,
+      "sha256": "3588344b19987e0bf80b6efd7f3f0143cc9dcd43936c487ce5b8b852b297670a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-390.png",
+      "bytes": 386246,
+      "sha256": "a3ba0ee4e7efe7c6dfa5a8c5677706c1158f2aff32415e6e72eda2bdf14dc4be",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-430-summary.png",
+      "bytes": 113749,
+      "sha256": "9211be6ae7f22f87e295af47937c8958be837065a803cce9218f0e5c10057ab5",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-430.png",
+      "bytes": 402568,
+      "sha256": "f656af7572576c75756d5571ed5e9cdd2b3c21b2b07e2a71890f40dd5bf08942",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-768-summary.png",
+      "bytes": 192854,
+      "sha256": "c90a5bb4c2d85ee48c5e88e7f3b955ed10784d4c38cd7d38154d50bcebb4a654",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-gti-768.png",
+      "bytes": 464801,
+      "sha256": "a7a4dfad3584a02c4ba61ea3fc6e60c14493b82488931212c68991d4fd90b9a6",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-r-1440-summary.png",
+      "bytes": 261036,
+      "sha256": "cebb11806d90641b23436a92cde0388ec19d18322a0e3dda4595364f191e1e07",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-r-1440.png",
+      "bytes": 496234,
+      "sha256": "9f830edbd1e3eb37f62e62bbc262e48f87965f1be086125de6a82039b97d0201",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-r-320-summary.png",
+      "bytes": 87088,
+      "sha256": "596d37ce7cf0cc886284b8749629f662c1393f860f2eba96f37c6aa9b48ee5bf",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-golf-r-320.png",
+      "bytes": 362331,
+      "sha256": "ace3f39aa028e2a47a86391fd359779e33ec57085284c4c57aae87b283b0d91d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-transit-connect-1440-summary.png",
+      "bytes": 258077,
+      "sha256": "8e532937dd0609cb425433667d7e893dd0dd0c49fe27f7bea862ff0c13cf5947",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-transit-connect-1440.png",
+      "bytes": 476661,
+      "sha256": "da105373a76bf97ac10a462503e808f733b656a9a962cb697fe0c57a49dcd798",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-transit-connect-320-summary.png",
+      "bytes": 82414,
+      "sha256": "47f4fffe2c183c22aec7a4f0a951fe58fc824d5d37d3c6e6616f06f0c105188a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-transit-connect-320.png",
+      "bytes": 343876,
+      "sha256": "9dc40461e0615e099088b8c4f276a773b9ba1d9af036b62e716f2081c1c80c7b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-transit-custom-1440-summary.png",
+      "bytes": 258515,
+      "sha256": "e5511aa8d8571d022549f0ddcc99e47bc58cf81a6996b5e4a8ea46cc6778d65a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-transit-custom-1440.png",
+      "bytes": 477188,
+      "sha256": "227ac19149783ba2b53c86fdad4520e940170a0da47d94b55b2e481bdbe0934c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-transit-custom-320-summary.png",
+      "bytes": 83805,
+      "sha256": "26205412ec879cf8a30eb1eff6173274ba93c8e304738db7c08f9b68cedb6523",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "baseline-transit-custom-320.png",
+      "bytes": 349235,
+      "sha256": "df72e8da062e50829586fe061b591fe4047e66079cffc402e3513cb8b2f77bae",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-1024-summary.png",
+      "bytes": 253510,
+      "sha256": "94eadd624d5382ca370748825938e06f2f80a81c67f9acd7f64142b1cd4dc8dc",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-1024.png",
+      "bytes": 457235,
+      "sha256": "4d889c1d8b14cf46ee77089cb10fc790aac2c61f7223128585bc00863a1a0c23",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-1440-summary.png",
+      "bytes": 254551,
+      "sha256": "29cba80b3829531dd765455ae323a63b888061a1a643646f426f6344f47b6079",
+      "proposedRetention": "keep",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-1440.png",
+      "bytes": 458788,
+      "sha256": "2207db347045374a928254d5668f39ad410e0484433baa80db14a1b16e762412",
+      "proposedRetention": "keep",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-320-summary.png",
+      "bytes": 62673,
+      "sha256": "fe835650460bcd9a739a3f2d0a6ae4f738cbf66512605dddf546677b1f3f9da6",
+      "proposedRetention": "keep",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-320.png",
+      "bytes": 336197,
+      "sha256": "f6bc596a42ac8e8d7fb17bd16441e10b2e16d65d3b5bb76853a804abcb700cad",
+      "proposedRetention": "keep",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-360-summary.png",
+      "bytes": 67189,
+      "sha256": "775b417ed539bcc2e22d0b79ed286cd8b1d71c204ce692b9651c73f6cc6ecfc8",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-360.png",
+      "bytes": 341375,
+      "sha256": "8d336e250e310a7c99a032e6eec0f7d6ea75170b60f42ed46277ce5e43c08240",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-390-summary.png",
+      "bytes": 65876,
+      "sha256": "f3ba25abe53998036d9c7b4d4487915f11d0ae30dee36ef339df9d98d411df42",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-390.png",
+      "bytes": 332883,
+      "sha256": "9ac0b9fd267e3e6471fcd8b6def1078932621608fad1766a66519add865eb44b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-430-summary.png",
+      "bytes": 74594,
+      "sha256": "44fdc653f818a92b63f41fb1c0d3576eb5217bdae63d50546afc5055a1da42a1",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-430.png",
+      "bytes": 343909,
+      "sha256": "9aab752851692429df642ea31a0b026c0c90d4e25a6b1bb556b9fef1336df66f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-768-summary.png",
+      "bytes": 234174,
+      "sha256": "b05f105fca437a103000b92cba88a757801350b726205743aa82b44f99de2969",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-768.png",
+      "bytes": 493161,
+      "sha256": "600b408080cb1a1fdc6a1e6e48bab0ab08bfbf00eb9116d180aeae646c598891",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-en-320-summary.png",
+      "bytes": 55878,
+      "sha256": "4449a41853f38c4fe50ac73ec2c41731abdf6bf23d240d257a7c2df6de5d820c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-en-320.png",
+      "bytes": 336749,
+      "sha256": "a6c8a6bf5cc0fd907ad8485cf2941adf09fb63e1533746a312f1fb4248079cd4",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-pl-320-summary.png",
+      "bytes": 59171,
+      "sha256": "955c0378b48c25b61597cd815bd1a8ffa6adfb1d5858c17aa4756b4dc2d9a7fb",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw128ti-pl-320.png",
+      "bytes": 352382,
+      "sha256": "c4154783cd23f212641f98d539456dff6d38b113d601176acbef5918ab584810",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw320d-1440-summary.png",
+      "bytes": 258360,
+      "sha256": "208f31fb430766604f4817ebf7942a2ff0fa992fc11e255fbecf1cb59fe37a67",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw320d-1440.png",
+      "bytes": 494820,
+      "sha256": "067a5363355d73b3ecb250cab575c5e95de61e2b10ba2a4b2b3be4a99159264a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw320d-320-summary.png",
+      "bytes": 86841,
+      "sha256": "4fbc1de15748e4c12df1e1094f74099f3c6a4554b72dc24194b8bc6f4742246d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-bmw320d-320.png",
+      "bytes": 360123,
+      "sha256": "3b27157ba2a0e92ea43d25244c6e43d1543fc5278a0aa50434b179de7b3c949d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-focus-st-1440-summary.png",
+      "bytes": 256255,
+      "sha256": "93d22e77e5790ce2a4a1761e4c5796ba50a4fa83afb9b69f4f4129cb3fe91f1e",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-focus-st-1440.png",
+      "bytes": 474986,
+      "sha256": "681c350578bc48e48e81e1d7349db4f8a081bc6b146a62a1de8880f495b0d5f9",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-focus-st-320-summary.png",
+      "bytes": 84229,
+      "sha256": "5d9e7647e689f673305fc01fc1b9c3e7a676aa64ae6c1b3609ec865dc991b5b6",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-focus-st-320.png",
+      "bytes": 342610,
+      "sha256": "0074ecacdb5fc1894d09b76ed37a5b4120633bba447f48c26578ec595ccd24a2",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-1024-summary.png",
+      "bytes": 247769,
+      "sha256": "476537569d1ad691b984a59db7f5b17d55b63783749e1f295795b224714de561",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-1024.png",
+      "bytes": 482727,
+      "sha256": "93b696d27b4ab5b31e5b9a4ee6bde4b5290ef2776570d56357a4b575aea02fc9",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-1440-summary.png",
+      "bytes": 261305,
+      "sha256": "e9b1ea61f6b3c66f0d29b476b60f18c6f22160e6249386defb72625544d4cbed",
+      "proposedRetention": "keep",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/baseline-golf-gti-1440.png",
+      "bytes": 500038,
+      "sha256": "1ad4f0526111dfaab6c3e917ddda4e403d4f3b06e6074bad0af3eaca1d55c445",
+      "proposedRetention": "keep",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/baseline-golf-gti-320-summary.png",
+      "bytes": 87557,
+      "sha256": "81f0d4929db5af558d87c4b8af6d81bb2a75e06f5200af6d61712568c7a4b1fe",
+      "proposedRetention": "keep",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/baseline-golf-gti-320.png",
+      "bytes": 365809,
+      "sha256": "315a67f0ca22f3061befcdf623ccd137abf8eee7025a46cdf9e48fbb26842d48",
+      "proposedRetention": "keep",
+      "purpose": "Approved baseline: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/baseline-golf-gti-360-summary.png",
+      "bytes": 99851,
+      "sha256": "74522459b43c50781de6d76f891dca552b1c9b41bc3d743665e37b2d5ca07c67",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-360.png",
+      "bytes": 381722,
+      "sha256": "5bcaa1f3fba417c1f5c64a502ee554f6bceff44ff7c553d3ffdd6b2bd8cc60aa",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-390-summary.png",
+      "bytes": 108625,
+      "sha256": "3588344b19987e0bf80b6efd7f3f0143cc9dcd43936c487ce5b8b852b297670a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-390.png",
+      "bytes": 386246,
+      "sha256": "a3ba0ee4e7efe7c6dfa5a8c5677706c1158f2aff32415e6e72eda2bdf14dc4be",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-430-summary.png",
+      "bytes": 113749,
+      "sha256": "9211be6ae7f22f87e295af47937c8958be837065a803cce9218f0e5c10057ab5",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-430.png",
+      "bytes": 402568,
+      "sha256": "f656af7572576c75756d5571ed5e9cdd2b3c21b2b07e2a71890f40dd5bf08942",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-768-summary.png",
+      "bytes": 192845,
+      "sha256": "b1626821615f775bc3b668689b7b3e8fd2fa82c7a44e5a15d576f915403a0eb5",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-gti-768.png",
+      "bytes": 464806,
+      "sha256": "5432884876ebb89b43c97fab3305482047294d61559b67e51e9a5e531d84916c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-r-1440-summary.png",
+      "bytes": 261036,
+      "sha256": "cebb11806d90641b23436a92cde0388ec19d18322a0e3dda4595364f191e1e07",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-r-1440.png",
+      "bytes": 496234,
+      "sha256": "9f830edbd1e3eb37f62e62bbc262e48f87965f1be086125de6a82039b97d0201",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-r-320-summary.png",
+      "bytes": 87088,
+      "sha256": "596d37ce7cf0cc886284b8749629f662c1393f860f2eba96f37c6aa9b48ee5bf",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-golf-r-320.png",
+      "bytes": 362331,
+      "sha256": "ace3f39aa028e2a47a86391fd359779e33ec57085284c4c57aae87b283b0d91d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-1024-summary.png",
+      "bytes": 245005,
+      "sha256": "96448fe8b4cdf7d7b4468a524e36f8c96fe6a6a070400361ca25ebe209877543",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-1024.png",
+      "bytes": 462602,
+      "sha256": "a05a125fa676cf5e21f35874ba0cb337e01ee2b47c4f25eb2a51dc70c20fae3b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-1440-summary.png",
+      "bytes": 258077,
+      "sha256": "8e532937dd0609cb425433667d7e893dd0dd0c49fe27f7bea862ff0c13cf5947",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-1440.png",
+      "bytes": 476661,
+      "sha256": "da105373a76bf97ac10a462503e808f733b656a9a962cb697fe0c57a49dcd798",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-320-summary.png",
+      "bytes": 82414,
+      "sha256": "47f4fffe2c183c22aec7a4f0a951fe58fc824d5d37d3c6e6616f06f0c105188a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-320.png",
+      "bytes": 343876,
+      "sha256": "9dc40461e0615e099088b8c4f276a773b9ba1d9af036b62e716f2081c1c80c7b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-360-summary.png",
+      "bytes": 98788,
+      "sha256": "eefa7996e6ff30759a29accfa099474b0518341391a95fb966bec552ef2e3bcd",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-360.png",
+      "bytes": 363247,
+      "sha256": "7832c1608ea2d2776cf72e515f917957a7866f7da9039b2e742acd535aa8a8b2",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-390-summary.png",
+      "bytes": 106846,
+      "sha256": "733240d6724bf5c5fc60734007833bee58d1f6a573d931efbffbc3316ebe3b72",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-390.png",
+      "bytes": 371531,
+      "sha256": "633dff144bfec21cb4880524cce24c0b6215d837e5a00916336defe05f5358ad",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-430-summary.png",
+      "bytes": 112412,
+      "sha256": "6c2d4cbdb745a469f07234006e142ce28b5ac843922f5b5e93579c47ee38a21e",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-430.png",
+      "bytes": 384199,
+      "sha256": "d9e90733a2e2f9d0417efaf1bea6fdf9ce064366c9293c12a8bd5e078b1a5c1e",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-768-summary.png",
+      "bytes": 190515,
+      "sha256": "ea0f298ec5a3ef835dede050ddeb9a464a5901488cc770a18ecbba3cb5c12f96",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-connect-768.png",
+      "bytes": 441543,
+      "sha256": "a00ca1b33883634c13be80e0bbdfe6238b0dd931a4fa269c2521d6a83e5ca68a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-1024-summary.png",
+      "bytes": 245281,
+      "sha256": "0429712f475116513a875c540ee3d0e6dae9869a94abd5fc081b9bf09b4a4a63",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-1024.png",
+      "bytes": 462830,
+      "sha256": "ee15384d38bc5f051c958bf429c80484f5d2eec2308d8eabde1aa435b1fb0738",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-1440-summary.png",
+      "bytes": 258515,
+      "sha256": "e5511aa8d8571d022549f0ddcc99e47bc58cf81a6996b5e4a8ea46cc6778d65a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-1440.png",
+      "bytes": 477188,
+      "sha256": "227ac19149783ba2b53c86fdad4520e940170a0da47d94b55b2e481bdbe0934c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-320-summary.png",
+      "bytes": 83805,
+      "sha256": "26205412ec879cf8a30eb1eff6173274ba93c8e304738db7c08f9b68cedb6523",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-320.png",
+      "bytes": 349235,
+      "sha256": "df72e8da062e50829586fe061b591fe4047e66079cffc402e3513cb8b2f77bae",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-360-summary.png",
+      "bytes": 98296,
+      "sha256": "4b0bf2e5e8d09f323661fc6017403a6c51d37db1036ef1bc541055c654c9d26e",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-360.png",
+      "bytes": 365919,
+      "sha256": "31a163870468d595d634ff51eb705115a9a8f7bcc20629f9d22722b50eee7c98",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-390-summary.png",
+      "bytes": 107215,
+      "sha256": "db40dd19148d29ae3d68b465097dccf53ceb13e6376efa7b9c692ea8d3f0a84b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-390.png",
+      "bytes": 372027,
+      "sha256": "ace65d81157bdd863aae27fbf75602807ed8c468779bd4136e56fd44a2cdd483",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-430-summary.png",
+      "bytes": 112818,
+      "sha256": "7cd0434fe028794435ce467cd44e3f4718b643668c046aa197122ca226da40dc",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-430.png",
+      "bytes": 384846,
+      "sha256": "e57ce1d076572b1cc31e7e0c55c13ff99daf81896624c6129fdf50cb98ae6393",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-768-summary.png",
+      "bytes": 191122,
+      "sha256": "99ff539dbf8c98548e4c289546df8cb9b738630e42fbb472662dc3af6fad7f83",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/baseline-transit-custom-768.png",
+      "bytes": 442032,
+      "sha256": "cccebfa8076e9f696494333081c827f829f874683768c989d8f6d12b9ae4ad45",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/corrective-results.png",
+      "bytes": 1585452,
+      "sha256": "5f672845c45a95b32a0bead9caa99330cb4e714385235a38ce8dafdc55105d40",
+      "proposedRetention": "keep",
+      "purpose": "Self-contained earlier three-reference result overview"
+    },
+    {
+      "path": "corrective/final-bmw128ti-1024-summary.png",
+      "bytes": 308738,
+      "sha256": "53b523a77278acd7e58c7465149581ee7cd009103f376be0d6160896d42edeef",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-1024.png",
+      "bytes": 535009,
+      "sha256": "fb41ebe76cddf96c293598600a18f46e1aab287e56bb804cc5278d946aa04fdd",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-1440-summary.png",
+      "bytes": 328460,
+      "sha256": "1544dc284f6376440f0498f47a9e69ffe70d5d49ec860be297aad709e8ed2a2a",
+      "proposedRetention": "keep",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/final-bmw128ti-1440.png",
+      "bytes": 544794,
+      "sha256": "27a3717b75aded3ddc57aebeacd3d6da0fc77b2df900d7a8cf0adac3f81523cb",
+      "proposedRetention": "keep",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/final-bmw128ti-320-summary.png",
+      "bytes": 92531,
+      "sha256": "4749182e32db7155f7bbef8884740276b7e5863971d2716060d2cc17f9402cbf",
+      "proposedRetention": "keep",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/final-bmw128ti-320.png",
+      "bytes": 431883,
+      "sha256": "903c2474eac2194774cec4dec11ea4d5b0762c8a68daf4b2314b7ee5e7872d95",
+      "proposedRetention": "keep",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/final-bmw128ti-360-summary.png",
+      "bytes": 104991,
+      "sha256": "fe2964c6a1ed198fdf62023a095cc35dc42d1f489ae02bc519a719d5173e5120",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-360.png",
+      "bytes": 429570,
+      "sha256": "13b11c030a7022899eb8e22f006e27e948fe6d317c8801e25957f7d016762aef",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-390-summary.png",
+      "bytes": 119285,
+      "sha256": "9286a346dcaa3eb5f84ca5b7b33a63f4f6c3020ee610664ae4f78aa2734a68c8",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-390.png",
+      "bytes": 430860,
+      "sha256": "9f0199309999315dc7710858c8bea3bd4cc6a9f93d944c5194a0670de8cb04d6",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-430-summary.png",
+      "bytes": 130612,
+      "sha256": "48b22d36984e98e9fbeb5b60fa9500a9e25c6b331846d979eeb1fb5aeb537a07",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-430.png",
+      "bytes": 457539,
+      "sha256": "9774af6d2c046f337f4c40d6920e4fca4a4dc945728277cc8185054fbd100fda",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-768-summary.png",
+      "bytes": 280245,
+      "sha256": "f9ddd13e7252566f2bb31efb0f844da12216c17fe8954ad4eabbcadce430f1d8",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-768.png",
+      "bytes": 534351,
+      "sha256": "3acfb19a16a6ae6dd259b40942c4541b67a1bf9d6f1434bb2add3fbd0c28c61c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-en-320-summary.png",
+      "bytes": 85634,
+      "sha256": "3e9cd2817ea81f441c7eefa35b577d2cefe9193bf2943a17ef47bd02743855ed",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-en-320.png",
+      "bytes": 417262,
+      "sha256": "205fa46615cffc0dbbc2c40867eecabdfc5a42cf00ce15433a1f490c1cd893ff",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-pl-320-summary.png",
+      "bytes": 87530,
+      "sha256": "b29a62ea07d00aaaf9d49356191492864e6746897027978327c6fb346797cc38",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw128ti-pl-320.png",
+      "bytes": 448618,
+      "sha256": "f14d84c7e1393a21cc6980c3c833d165c4396a8322f177ee7efd57cfc8b0190f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw320d-1440-summary.png",
+      "bytes": 323155,
+      "sha256": "1a98fca35914b829553d528597e79ef54996dbf69eb209aee6311f262440360f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw320d-1440.png",
+      "bytes": 605010,
+      "sha256": "6b0a160956489a9fd1423299fdb7343fc8905667e4a2d5707a99deccd6e3bdf2",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw320d-320-summary.png",
+      "bytes": 91270,
+      "sha256": "04a93d3fd3a3bc9d9efc2a9ecda57f28bac3dfdbbb4cd9e92f18ef824bb5808d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-bmw320d-320.png",
+      "bytes": 466937,
+      "sha256": "3e0c5e6a38d17a1b1760266aa544838c5258fadb8eab36fb955c81fd5b79a429",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-detail-bmw320d-1440.png",
+      "bytes": 354617,
+      "sha256": "5dc722dd497c52604cfd34f36b8da14088816c5a6cfcecf0781b01ad307be488",
+      "proposedRetention": "keep",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety"
+    },
+    {
+      "path": "corrective/final-detail-bmw320d-320.png",
+      "bytes": 361851,
+      "sha256": "d059644422686fc5cf31359b7264f53b9a38f7a1fab04525c5d54a216701717a",
+      "proposedRetention": "keep",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety"
+    },
+    {
+      "path": "corrective/final-detail-focus-st-1440.png",
+      "bytes": 311183,
+      "sha256": "b92cede78b93c77900d82ba04f7e554e80171a66aa66a2e8cbfed32c2f14c928",
+      "proposedRetention": "keep",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety"
+    },
+    {
+      "path": "corrective/final-detail-focus-st-320.png",
+      "bytes": 295603,
+      "sha256": "7e5d44878748292b0b7119a46ee29967f88721192a3fb83a56666a3720dfc428",
+      "proposedRetention": "keep",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety"
+    },
+    {
+      "path": "corrective/final-detail-golf-gti-1440.png",
+      "bytes": 343314,
+      "sha256": "fc85e7ee9229032ecb363c1c9c15d324f67bea97e8c9e626ab35d515cd8cb4be",
+      "proposedRetention": "keep",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety"
+    },
+    {
+      "path": "corrective/final-detail-golf-gti-320.png",
+      "bytes": 322415,
+      "sha256": "44ba03a1dd004921d7b6e6d6cc2bda1a788e7cc70072c3fe9e8d459dad4b3c8b",
+      "proposedRetention": "keep",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety"
+    },
+    {
+      "path": "corrective/final-detail-golf-r-1440.png",
+      "bytes": 320376,
+      "sha256": "3b1c6108a3f98e49a75d0d091aaae4eecef0539493e20a6f9d5f45a06c175edd",
+      "proposedRetention": "keep",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety"
+    },
+    {
+      "path": "corrective/final-detail-golf-r-320.png",
+      "bytes": 329281,
+      "sha256": "3648e1494fb89291ecaee49e775fe0918b44a7b60fc2f335c001b8f502335953",
+      "proposedRetention": "keep",
+      "purpose": "Representative unchanged public detail workflow, including manual-transmission option safety"
+    },
+    {
+      "path": "corrective/final-focus-st-1440-summary.png",
+      "bytes": 300510,
+      "sha256": "21d1fe2ceb90fff68239a77e82af0511b283a63dad2a54ae8bfde0b069410be7",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-focus-st-1440.png",
+      "bytes": 500886,
+      "sha256": "ec1d21e69274e1776443774cd3838d6d3c3ab5706f12907173a8c5bae704ccdf",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-focus-st-320-summary.png",
+      "bytes": 85798,
+      "sha256": "13a7cf6878b12cae210172159f1fb9ddbeae6b846610614f861653d2c922ebac",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-focus-st-320.png",
+      "bytes": 398818,
+      "sha256": "9794fe99c157bb14fcee5336ab9795048d7a107371ce2a9d17bca7462cb3c76a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-1024-summary.png",
+      "bytes": 285003,
+      "sha256": "3da504fc4eea7606982440b5d88c3956f659f81b495715a207053282212e2c24",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-1024.png",
+      "bytes": 529256,
+      "sha256": "451412aedb734125d642353ce802e0fdfcc03e3a4bd80b515c55be26e696f563",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-1440-summary.png",
+      "bytes": 296790,
+      "sha256": "9539341b3236dbeb147cde5d8a755a07ea2055977509eefad355ada89706a52f",
+      "proposedRetention": "keep",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/final-golf-gti-1440.png",
+      "bytes": 539433,
+      "sha256": "5ecd7256650e2266063d66e4b4a06c81e77cf634eac6b4eb3199a1885f1f1fac",
+      "proposedRetention": "keep",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/final-golf-gti-320-summary.png",
+      "bytes": 87782,
+      "sha256": "6c1dec613204cb558b5f3236cfc7d3a3db2a3c5fdaa3fbf891f98caffca57e4b",
+      "proposedRetention": "keep",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/final-golf-gti-320.png",
+      "bytes": 429637,
+      "sha256": "749eaa3661f7cc30c46e8ad43766e01e77915165f292eae1075c5d6083deb0a6",
+      "proposedRetention": "keep",
+      "purpose": "First corrective checkpoint: representative matched/reference mobile and desktop result"
+    },
+    {
+      "path": "corrective/final-golf-gti-360-summary.png",
+      "bytes": 104191,
+      "sha256": "e898157a8cef91e1ed0d211c46ee2fc83f1824fa26dea8a6589c7c4deba66152",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-360.png",
+      "bytes": 426836,
+      "sha256": "7a2a132c76d7ce3d5ba3efd7b16b0aba3b0762f60e534171a4651098ef3cfb6f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-390-summary.png",
+      "bytes": 117273,
+      "sha256": "98f9f01aaeaf75ce14f066bd2520738af6faaa51e7a265e75ae355b2f91756aa",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-390.png",
+      "bytes": 425590,
+      "sha256": "23221abb06a510e65290ba1fea26a5bbcba505aeacb905e7238e85be1160074b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-430-summary.png",
+      "bytes": 128085,
+      "sha256": "90e21dd968c97691e856f0c75bc4b0d0425a8e86b1cebfbc9dc45717c0b6dbd0",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-430.png",
+      "bytes": 446320,
+      "sha256": "4ebbf9083910be661ce80db550543a4e4d432dafe4f58a224838ebed0ac0e92d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-768-summary.png",
+      "bytes": 243421,
+      "sha256": "160f5129e23c87465cd9a9d404d8283ff2298640dec6960673c4186645ae4417",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-gti-768.png",
+      "bytes": 516821,
+      "sha256": "290b01dc780b1c77e4d3810ea91f9063623e9e58484237114bec3f9f1cd9dddb",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-r-1440-summary.png",
+      "bytes": 306472,
+      "sha256": "5b271e0144236864b265809c7f6c408264c2100285a49b2e77240423c5ad7384",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-r-1440.png",
+      "bytes": 508398,
+      "sha256": "6c9a7d7a487b552c3a6d705fe0cfcfca5629ce82ade27adeb679a6bd62da0de1",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-r-320-summary.png",
+      "bytes": 89183,
+      "sha256": "6bdc15a507d071c512bcbac919b0b0d86b3d8452ba970b3d76f88265bf1ece22",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-golf-r-320.png",
+      "bytes": 416872,
+      "sha256": "d1f7d7a8fff279812a09effab90e6f418f236f3f41519ad918d6a803089b6301",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-1024-summary.png",
+      "bytes": 311854,
+      "sha256": "ead2c1c462ea19fc6a0794b8bb2474b1ac7bcf107733aa391a751b6ebbeee3f8",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-1024.png",
+      "bytes": 544754,
+      "sha256": "b6508813a885c2f6058d245b4f86791e65404d783de0f02b3a7eadf382cd899c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-1440-summary.png",
+      "bytes": 325834,
+      "sha256": "44cf36c1f1085023157dc0a924e149546848e7819e1624ed05107e1a55d6dcc5",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-1440.png",
+      "bytes": 553047,
+      "sha256": "73ea2dc50d26b4751630a2315e531493b7f1165a6b31b98652284163c46d5c20",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-320-summary.png",
+      "bytes": 89397,
+      "sha256": "d4a5dbe42927f1a487fa334d72c0b035f842e68a343dddbd83c0bbd5fadd5a37",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-320.png",
+      "bytes": 449562,
+      "sha256": "a39c13a63013ab8f74d474f5383aab1efa6c6295d3f95436fd4fd302f57dcdd3",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-360-summary.png",
+      "bytes": 109663,
+      "sha256": "1aa28c072a644974d98392d1eb8f66cd8556c32a6b2dc9e68405f67ed73acd18",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-360.png",
+      "bytes": 444160,
+      "sha256": "48447b2832f13d09bbc2c5b04ec7ae378b19540e65716360fb88894c25b36e14",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-390-summary.png",
+      "bytes": 119774,
+      "sha256": "9f6ec109e3a34063e71b7037f3ca62c21398c968496d16adcb32d0be1eac34ce",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-390.png",
+      "bytes": 442065,
+      "sha256": "0e4bba646874ef4bc6e3b7377cbfd663ecf79b21ba446c389a87e2ccea5b082f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-430-summary.png",
+      "bytes": 130932,
+      "sha256": "04ddad8a3513e0ecd68096f363c91a730becd76bec5e6d33c193a691b73a9e4b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-430.png",
+      "bytes": 467511,
+      "sha256": "f3129ac5ff5c06900ef92b7a9d4c8b8d81c07b914b440cbc9bcb2b89420dff0f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-768-summary.png",
+      "bytes": 268561,
+      "sha256": "66a8393e6005a00c75051dde1ce65d34197487e9cc02043eb4509907131e25bb",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-connect-768.png",
+      "bytes": 521424,
+      "sha256": "69ba60645eaa0a6128690536633154cff2be6d3c2239bdc3d2f9ff18990324db",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-1024-summary.png",
+      "bytes": 299324,
+      "sha256": "e364133637d314c16482f707f3e6aaa2f1fbd4a7fefd58e2d7ccee41b42fce5a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-1024.png",
+      "bytes": 525785,
+      "sha256": "96037e84c398295c13b46e8bb1f42178bd6c1d5c6b0ff828c19cf2213aa12ef1",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-1440-summary.png",
+      "bytes": 310343,
+      "sha256": "e9fe1ebe0558fea009414a7f99f2a1e0e4ae6dd149ae7cd5daf5728caeca09b5",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-1440.png",
+      "bytes": 532816,
+      "sha256": "c27763dbced3a89aaa3c3f10e252ed4222589f480a3f2954a24124e4aa47c4ad",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-320-summary.png",
+      "bytes": 85074,
+      "sha256": "593e4ad4025f41ca2842f46634004573051a44ba25e3f47574ed52a94a3e3a76",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-320.png",
+      "bytes": 436617,
+      "sha256": "89550d065df3063680fcdb1a47a6c61bd09453dd073203ee66a771d199910087",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-360-summary.png",
+      "bytes": 104073,
+      "sha256": "2408d91af9922625ca436dc846465f66261d0e8b8877c3b9a8a8db8c35735df4",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-360.png",
+      "bytes": 430388,
+      "sha256": "f2be62d0ada09a2d0f56c04566337defa0adc17867c07adaec55166d13f17c9c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-390-summary.png",
+      "bytes": 116849,
+      "sha256": "84af6724f6197c4f38b2a19ca1056b094a7039f0591338a698ea44b8c14f6d4a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-390.png",
+      "bytes": 430271,
+      "sha256": "eb7eb5587d8f307c7dc74ebf1ddd7dc9c9a8271fa517103441d553ef8b9ffc71",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-430-summary.png",
+      "bytes": 127401,
+      "sha256": "60e20605745ce3a4aac867d60086be8aa4e09a101bf2210e614fe58b3e6a1387",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-430.png",
+      "bytes": 454532,
+      "sha256": "cceb8d393c4360c2396dc91d7f56a7907cb03d126dcf04e6ede3aa4b403c30f4",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-768-summary.png",
+      "bytes": 251710,
+      "sha256": "a637e8e4d9ef6dc00ef1b91164048022d8610d6fe0cde8119324474eae8c8a29",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/final-transit-custom-768.png",
+      "bytes": 500648,
+      "sha256": "77a0b3fac3f4a7981cac98f53e3d2764b27470942d95af440b3e86473581895d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/manual-ref-bmw-128ti-f40-265-nl-cascade-1440.png",
+      "bytes": 165747,
+      "sha256": "b3eccdbd5a6f703f104b26422725dd27519e5d47e6d5d011fcd8052b50f3949c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/manual-ref-bmw-128ti-f40-265-nl-cascade-320.png",
+      "bytes": 146022,
+      "sha256": "6757c48cf897fb635a2545ba67144a50e5d34a8839c22b988f618d332a117cdd",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/manual-ref-bmw-128ti-f40-265-nl-search-1440.png",
+      "bytes": 166811,
+      "sha256": "e18f7357789fa9396e60911addd8685fd290cfc76789f6a358c4c2795596fe90",
+      "proposedRetention": "keep",
+      "purpose": "Manual reference selection remains independent of public SEO"
+    },
+    {
+      "path": "corrective/manual-ref-bmw-128ti-f40-265-nl-search-320.png",
+      "bytes": 152436,
+      "sha256": "d8f24fd8ec90d45c9d30a3a1ded88a52a1090a72f6d455c1e242e24f7c300880",
+      "proposedRetention": "keep",
+      "purpose": "Manual reference selection remains independent of public SEO"
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-connect-15-tdci-100-en-search-320.png",
+      "bytes": 156734,
+      "sha256": "937036bff9ef9568ebaf3e2e14ee53d035ebc9f6087817f6e8d644852bffac77",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-cascade-1440.png",
+      "bytes": 190697,
+      "sha256": "4319060f0759e2860814284c1b85c6e5eaaa27f38f6010d143e76641621bf7fb",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-cascade-320.png",
+      "bytes": 152334,
+      "sha256": "9285e622e67e92ed3d8f3f12bf9cc33b8621bff1051984489179b90268b3b90f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-search-1440.png",
+      "bytes": 192873,
+      "sha256": "9489611691fbdb53d6316e3a542bdafb043413e518d18eacb1b16db7237f7f6d",
+      "proposedRetention": "keep",
+      "purpose": "Manual reference selection remains independent of public SEO"
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-search-320.png",
+      "bytes": 161810,
+      "sha256": "29f4d6c6a8f7622cec340d5a946a3b3b99b12cf8af6fc66f315917d8e4df4f75",
+      "proposedRetention": "keep",
+      "purpose": "Manual reference selection remains independent of public SEO"
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-connect-15-tdci-100-pl-search-320.png",
+      "bytes": 169855,
+      "sha256": "0c53a5091bb746b37a120a191dea82ae734d41219afa333c4c216482c9434945",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-cascade-1440.png",
+      "bytes": 172466,
+      "sha256": "6dec64ebe204a5025f8af4b186b133856c9229051cc2ebe769335dc81c55fe5a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-cascade-320.png",
+      "bytes": 146799,
+      "sha256": "de103352f1c586f78a148dc318d0108d8cdcf816dd9415decfd80ced40a7b84b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-search-1440.png",
+      "bytes": 173846,
+      "sha256": "b5268dd00dc334d4f018d959e046ebee1742902da68648b1aa1f7edb40cb780b",
+      "proposedRetention": "keep",
+      "purpose": "Manual reference selection remains independent of public SEO"
+    },
+    {
+      "path": "corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-search-320.png",
+      "bytes": 154891,
+      "sha256": "776bf6cbc0dd5e05278ec3a3691e4b1356a9cf7190ae03b911feaf45a483dc99",
+      "proposedRetention": "keep",
+      "purpose": "Manual reference selection remains independent of public SEO"
+    },
+    {
+      "path": "corrective/public-audi-a3-20-tdi-1440.png",
+      "bytes": 350727,
+      "sha256": "879bac8175b2c308abfffe6622146652185f6dd0741ab0d228189d10e2d4356a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-audi-a3-8v-16-tdi-1440.png",
+      "bytes": 327482,
+      "sha256": "19a14b4f505e5e5a9d4f55edfcbcda99d4796c8c89c03d32301ebfc933cdf25c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-audi-a4-b9-20-tdi-190-1440.png",
+      "bytes": 327685,
+      "sha256": "d96b4bef25ede8353ef1039bc6b096f8c3300af60ddf23598acb87517e826369",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-audi-a4-b9-20-tfsi-1440.png",
+      "bytes": 318296,
+      "sha256": "3d208911b5c11ce99cb03840546107059f8cba9c8bc1385449184e3c63d3a94a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-audi-a6-c7-30-tdi-272-1440.png",
+      "bytes": 328406,
+      "sha256": "4fa56c85fe444625b358119897af03d884c8175229b0272f048b4fcdbd2c086f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-bmw-1-series-f20-f21-118d-1440.png",
+      "bytes": 330071,
+      "sha256": "fae76d32bba0a9513328b44210528dfc5aca3a57d55e76adcc9b711a77293036",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-bmw-1-series-f20-f21-118i-1440.png",
+      "bytes": 323894,
+      "sha256": "fe32ca2f169bb762ad9d67f52030d1e48e4b829bec50a117bebe53f95b7aef14",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-bmw-1-series-f20-f21-120d-1440.png",
+      "bytes": 329958,
+      "sha256": "ba0e8848405f8d4160333f2b007a6001297c88962bc14bcd007d5dfe5d3aa725",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-bmw-3-series-f30-f31-318d-1440.png",
+      "bytes": 329794,
+      "sha256": "8a4407f5f41be0fd1ffae94d4c652702c701e279592242077d494c944452df2a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-bmw-3-series-f30-f31-330d-1440.png",
+      "bytes": 330862,
+      "sha256": "7fcfd6a34aeb41535927e327c311713fa299188171adc7a4a630386314c86b8c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-bmw-3-series-g20-g21-320i-1440.png",
+      "bytes": 324748,
+      "sha256": "e1df791f2d67f7a766e8f3295a6f6b6649e61580cc3c770109fc517a0522c308",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-bmw-320d-b47-1440.png",
+      "bytes": 354617,
+      "sha256": "5dc722dd497c52604cfd34f36b8da14088816c5a6cfcecf0781b01ad307be488",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-bmw-5-series-f10-f11-520d-1440.png",
+      "bytes": 329784,
+      "sha256": "c07477c1fe926b63a889b7f9936e90417768c41efb61cb8c23ad87f94a315a10",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-bmw-x3-e83-20d-1440.png",
+      "bytes": 352685,
+      "sha256": "5c0a1b905bd5e133e9e162e7fb6e6bd58919d99a2eb55242fad83d024ac1659b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-ford-focus-st-20-ecoboost-1440.png",
+      "bytes": 311183,
+      "sha256": "b92cede78b93c77900d82ba04f7e554e80171a66aa66a2e8cbfed32c2f14c928",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-mercedes-a45-amg-m133-1440.png",
+      "bytes": 314868,
+      "sha256": "fd6a95ba7e0f901b294f08110631b24703c857044c7307504882f9224b97ae75",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-seat-leon-cupra-5f-20-tsi-300-1440.png",
+      "bytes": 316785,
+      "sha256": "3514135f499a025a425bc57ad9799d4ae86e5ea227fe824e64b3a8ba6defac32",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-skoda-octavia-5e-20-tdi-150-1440.png",
+      "bytes": 329698,
+      "sha256": "e6e5ddc5a319d62e9da03f1db906516677ef12afcd303ca04287e2fb659991d0",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-volkswagen-golf-7-16-tdi-1440.png",
+      "bytes": 329638,
+      "sha256": "ddc9c962512b238a9a38977dfdace0021762fec54ca95b7bb597ce78595345dc",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-volkswagen-golf-7-20-tdi-1440.png",
+      "bytes": 330242,
+      "sha256": "ca8f63b54a3018ec1c77c3fba5f20ae5e00c4d79398dead1cd8c790c817bf645",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-volkswagen-golf-7-r-20-tsi-1440.png",
+      "bytes": 320376,
+      "sha256": "3b1c6108a3f98e49a75d0d091aaae4eecef0539493e20a6f9d5f45a06c175edd",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-volkswagen-passat-b8-20-tdi-1440.png",
+      "bytes": 330270,
+      "sha256": "7764e0804d08cb12930247630568e3f2775c991d5a382f67c19872597f3b72c4",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-volvo-xc60-d5-1440.png",
+      "bytes": 323577,
+      "sha256": "6d85835b8711b907e57fe053e4074aad4773d811bb0461989f2256c1112aac92",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/public-vw-golf-20-tsi-ea888-1440.png",
+      "bytes": 343314,
+      "sha256": "fc85e7ee9229032ecb363c1c9c15d324f67bea97e8c9e626ab35d515cd8cb4be",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "corrective/visual-comparison.png",
+      "bytes": 935574,
+      "sha256": "b119594387bd75819521ac5e90c7857d0f9ff670029d40e57547db7bccaccd81",
+      "proposedRetention": "keep",
+      "purpose": "Self-contained approved-baseline versus corrective visual overview"
+    },
+    {
+      "path": "final-bmw128ti-1024-summary.png",
+      "bytes": 265760,
+      "sha256": "f044c2cc4823a7bc32af7315aef012b3b0b0e0a8e0995d427b9208d818813d4b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-1024.png",
+      "bytes": 449970,
+      "sha256": "f673218cb050f3641034060c35d2f84003cbb493b231c66feb1e461feba9ac2e",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-1440-summary.png",
+      "bytes": 265218,
+      "sha256": "2cead6a2e1da1a3c72b13727b00b71779d8e1568d9526a83f3261201cc637fdb",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-1440.png",
+      "bytes": 451489,
+      "sha256": "92a569e1b7c64b7312505fcb276974498c02b3e2f1d3f439384c48ef87e1b307",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-320-summary.png",
+      "bytes": 61777,
+      "sha256": "36e57e36c78fc32a8fc340ca06649b0cac015e9e83cfdf2af5545ffc8f8d2f9a",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-320.png",
+      "bytes": 366530,
+      "sha256": "8ab972419dcb5bcce8df91c697ed11db4fb6bf7bfa04dce77a85ef9e9f231929",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-360-summary.png",
+      "bytes": 64491,
+      "sha256": "854a7f6df05896bf138ae52f04db62126cdd126d405c47854cf0b132ef044be0",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-360.png",
+      "bytes": 365800,
+      "sha256": "b81896b3adef5c0a3538f1ba7695d49728e4a577ae40761086dbd31c25d35c74",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-390-summary.png",
+      "bytes": 68063,
+      "sha256": "daa19541efd4ed3760ac10d74ada60aefea49f2eaa2e795d809b5f0aea2c7500",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-390.png",
+      "bytes": 356760,
+      "sha256": "81b26de4761c5844efd4bdf89b2b545f901c65e54efe639ec6c177a8e9920158",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-430-summary.png",
+      "bytes": 72995,
+      "sha256": "67b204ca413dcff8de7f680d3f607713f284e750cfcae1432eda6c7f059dd97e",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-430.png",
+      "bytes": 372229,
+      "sha256": "829afbcf35b09eaa74c4cd86567f5966dc735677906fae7da4c5dabaa47ad4ad",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-768-summary.png",
+      "bytes": 246178,
+      "sha256": "609c44faf031f54186444bddcae302e50014ee3d429d03a4f3b0e68dc1f8a4ee",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-768.png",
+      "bytes": 488585,
+      "sha256": "550638ccdb4e4b8a6057353a2f94c3e690f607e9e9d38647b431ba4f146a3fbb",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-en-320-summary.png",
+      "bytes": 55856,
+      "sha256": "877e9d00a92cb3b757c25551b88e5e6dfbe8ec36604395848450ba84f7c33c26",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-en-320.png",
+      "bytes": 352628,
+      "sha256": "fbaa35b915ad443b2b199f77d7f759c62f9ec25c5ac9f7412bc8275f4dddbf04",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-pl-320-summary.png",
+      "bytes": 59056,
+      "sha256": "b7f81594118216085fee81d6ca80f72be06c310058e09de62f5ec3b3af06b775",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw128ti-pl-320.png",
+      "bytes": 394373,
+      "sha256": "b52ec51c259a9f5f564a5190abfb974f82027fbfdb6c4ff778740441fcb150c8",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw320d-1440-summary.png",
+      "bytes": 295792,
+      "sha256": "cf00f1f912cc989de7be1ca2aaa6ecb38721dc3beeb54a2190c0b0b575cfdfba",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw320d-1440.png",
+      "bytes": 557198,
+      "sha256": "eeadbc0b85d3319dbf1a10365a3565ba3317d24ca08ee361d5b60c0e926d45a0",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw320d-320-summary.png",
+      "bytes": 92415,
+      "sha256": "8bc00d0186ec7139abd2ec579e33eeade5300ae435c829b84ae48cb7c6c38392",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-bmw320d-320.png",
+      "bytes": 429172,
+      "sha256": "2eef31abb4c9035198819e01e5086a489c43b6ce932e3b3478965db3ca5a389c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-detail-bmw320d-1440.png",
+      "bytes": 346810,
+      "sha256": "a15f0e3d64622ce3a04e01f27722929c165475dafe2f782377b6612a6b041261",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-detail-bmw320d-320.png",
+      "bytes": 351044,
+      "sha256": "e0de70c78d1c4081864e1fded9fc6e463b0d2a89cb846a2f68c3c1c7cdeed0d5",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-detail-focus-st-1440.png",
+      "bytes": 297276,
+      "sha256": "c18cba84ec065f24a2e699635f8396b477bdfdf6edf771337aeb897928536f07",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-detail-focus-st-320.png",
+      "bytes": 281424,
+      "sha256": "64ee1e2fa4972a701bd377a12b7900a72ac5ecf92f436ea3e833265988d7eec9",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-detail-golf-gti-1440.png",
+      "bytes": 330589,
+      "sha256": "5c08c4a7fea73b58103f33d34ef2ce580307bcb9e3d27c3423d1e1f0e2ea5ab1",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-detail-golf-gti-320.png",
+      "bytes": 307684,
+      "sha256": "9bda0528fd5dfc3103fa98503aee68b65717f3c198035b513a0f6e8b2f339c62",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-detail-golf-r-1440.png",
+      "bytes": 309340,
+      "sha256": "f726604226d255fc3f855297515ca9cdaa36ab171aa3fc94a11a0dac794b12a3",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-detail-golf-r-320.png",
+      "bytes": 318948,
+      "sha256": "7a3d7cfd1d21f1c5dc524a1063b88970a1a47bc55f91ab638a818a3e1f689687",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-focus-st-1440-summary.png",
+      "bytes": 272209,
+      "sha256": "88e8d29e4701d008a5b1ec3ece905602806e8fce18be659384afa79f87e9331e",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-focus-st-1440.png",
+      "bytes": 452271,
+      "sha256": "26c86ee708fb92ba2480c1dcc3a953d712dfe9f5f81c58f73eba1d82f2065853",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-focus-st-320-summary.png",
+      "bytes": 85140,
+      "sha256": "5ba28c2830e9883718127dcd503c3445b7864c67a2005413c36ceb08d4d2e13f",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-focus-st-320.png",
+      "bytes": 351182,
+      "sha256": "cb40953ccff9077bfeddbeaf774c8ff4c88b3400647bceee7efd5bdab7154e58",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-1024-summary.png",
+      "bytes": 255250,
+      "sha256": "f1ebb4214d6381d8ca981b04ae90c5a6776afa90757e967013df8927c33cff7d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-1024.png",
+      "bytes": 469876,
+      "sha256": "f6c54246b52a2ed10d95c4955937b3dc3a847cd2d12a036e138d9c7395c443ff",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-1440-summary.png",
+      "bytes": 269111,
+      "sha256": "80c774f71c361173d3a0ec583419aa744b1a8aa018ae4773b73e9b752efbffd2",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-1440.png",
+      "bytes": 491503,
+      "sha256": "53ae0025f1d2e98c4b187039b34353af766aacfe125ed27fe18bf00c3f8ab21c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-320-summary.png",
+      "bytes": 87876,
+      "sha256": "4b9a6a1a07d6a8217d226a517b9fd9c183736ef79fcda62a31daa76493735768",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-320.png",
+      "bytes": 384073,
+      "sha256": "34e4fec11b26df5f7f345e6ae00d3ed53af08a9bb790b7f81758f4aadf6257d7",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-360-summary.png",
+      "bytes": 101353,
+      "sha256": "756756456118d0640d03c7d48c78aee2b897069d3562154dec650a27fa8372a4",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-360.png",
+      "bytes": 378662,
+      "sha256": "785c1f1fdc35b0c752c3ae696c53cfd9d7b443ab0034a3663d4d8e1e3d4e1c78",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-390-summary.png",
+      "bytes": 107749,
+      "sha256": "010fb71290e11668b01ac7372cac4054440436aa769eef2a3efc2a724a549f4d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-390.png",
+      "bytes": 375034,
+      "sha256": "f81b6b8209fbff10c7b02279e74e7d422379fff579a1e02e3bd640e45d06db01",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-430-summary.png",
+      "bytes": 115593,
+      "sha256": "ea0745264343a70d06d97586facac55108c59376ba0a286f0a1b374cd02e483d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-430.png",
+      "bytes": 390868,
+      "sha256": "e17834f6a5f7727ed63e2629761ab1aa208aa9d900c9eea801a4f9abc5ad48c2",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-768-summary.png",
+      "bytes": 196829,
+      "sha256": "b779c8c15cc67d2789dab66e942ab4297d0bf047929a916060b054467c45611d",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-gti-768.png",
+      "bytes": 441405,
+      "sha256": "8ac26d0d5d0c11df07114fc761b66d3b7bf8d8259d3e6f3aa8a57b55fb8847f4",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-r-1440-summary.png",
+      "bytes": 256027,
+      "sha256": "2468da9d9669df0c684ec4d2cc798dbc78415a7762c8e1a1c32bac81cca1e552",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-r-1440.png",
+      "bytes": 442631,
+      "sha256": "c9225b464e924fd6f30c72715be1c9b30fb511fdae4b20e7683d451c82b31f32",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-r-320-summary.png",
+      "bytes": 61391,
+      "sha256": "b53478c65eb69bdeec8faba438ed3b6820a8e77c0b2e6191b66f4e75b2815d19",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-golf-r-320.png",
+      "bytes": 344611,
+      "sha256": "1ba9559e38b106b413dc83cf78e27a6a0f78475b161840f2db1ab36a4e63288c",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-transit-connect-1440-summary.png",
+      "bytes": 255033,
+      "sha256": "2b394e20d1e70cf8e5f7fc49bd6c94e7f3985c5519fa08d0df234f147824fc83",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-transit-connect-1440.png",
+      "bytes": 441688,
+      "sha256": "189b8dc77fea4fbb7b51f2f4f9f80f0519733356c6b7e70021e2340507786d7b",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-transit-connect-320-summary.png",
+      "bytes": 58627,
+      "sha256": "2d0e97a787c1048d15f802ab5270ed090238dce07083231298c48cfa736d52bc",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-transit-connect-320.png",
+      "bytes": 344010,
+      "sha256": "157796df6ba678df03e0034dc3ee756953beebab3d21ca9635bbe18f66daf500",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-transit-custom-1440-summary.png",
+      "bytes": 254995,
+      "sha256": "2a411a8ede149ef19f3aab47d40d464cb2e42803eb38fe78cb1098c3dd9b6618",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-transit-custom-1440.png",
+      "bytes": 441582,
+      "sha256": "93b8e2d41fb6fa28629b793fe671f36954a6cf84faf03dc3c4b20027e0e44feb",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-transit-custom-320-summary.png",
+      "bytes": 58425,
+      "sha256": "d1cdf6ed02a972b6513ab6ed730d17679fa962d41ed806c50259a4823e52d3b7",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "final-transit-custom-320.png",
+      "bytes": 343865,
+      "sha256": "058bc2d1b54039f8b818588af848da3c8c7cddee11d3add35d5ba5238da125fe",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    },
+    {
+      "path": "runtime/live-h329xh-1440.png",
+      "bytes": 473361,
+      "sha256": "dacc9b62fe64b00dc22a8bbe84167e5c295fed654fd71e90952c97a7c8d2b967",
+      "proposedRetention": "keep",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop"
+    },
+    {
+      "path": "runtime/live-h329xh-320.png",
+      "bytes": 344130,
+      "sha256": "266dc13a161106a5453dd86b2ef4a3b6278efd0085feb748774a3c8ddac89821",
+      "proposedRetention": "keep",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop"
+    },
+    {
+      "path": "runtime/live-kkh27k-1440.png",
+      "bytes": 492689,
+      "sha256": "9927080fd42fdea4d864e08363d1df577989efc3bd2957447f5e18150318023b",
+      "proposedRetention": "keep",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop"
+    },
+    {
+      "path": "runtime/live-kkh27k-320.png",
+      "bytes": 385781,
+      "sha256": "33864006df134f5c2aad14b7b2167b181877e1c8082d42536e1f8d3ef7734b13",
+      "proposedRetention": "keep",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop"
+    },
+    {
+      "path": "runtime/live-v380st-1440.png",
+      "bytes": 494763,
+      "sha256": "2744396412ff7b37a3ea9f24e5d165f074851de84ffb6946bfb46570118c9a2a",
+      "proposedRetention": "keep",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop"
+    },
+    {
+      "path": "runtime/live-v380st-320.png",
+      "bytes": 392281,
+      "sha256": "18df7ccff4d8476c6f2de52f881d85b9ab5f7b80a11ea0e386f79bc493b7ede9",
+      "proposedRetention": "keep",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop"
+    },
+    {
+      "path": "runtime/live-v978zf-1440.png",
+      "bytes": 485617,
+      "sha256": "1ea58bc547fac7cc2ebbbcf34004723030354fbaa394d3a1e4617fccf0c4bf8a",
+      "proposedRetention": "keep",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop"
+    },
+    {
+      "path": "runtime/live-v978zf-320.png",
+      "bytes": 377013,
+      "sha256": "928a9307ae193e137e43387030fd63e9f87df6ef8e5497a28f19fcf6311691da",
+      "proposedRetention": "keep",
+      "purpose": "Latest mandatory live owner acceptance result, mobile and desktop"
+    },
+    {
+      "path": "visual-comparison.png",
+      "bytes": 759751,
+      "sha256": "d9ffbe999af5370ad6f4da1b8ac750d7cc0c67de298c0c5bd124ae0b9a0a5ad3",
+      "proposedRetention": "owner-review-removal-candidate",
+      "purpose": "Additional historical viewport, summary crop, repeated public profile or repeated interaction evidence; preserve until owner decides."
+    }
+  ]
+}

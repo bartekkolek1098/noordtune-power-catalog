@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import {mkdirSync, readdirSync, readFileSync, writeFileSync} from "node:fs";
-import {join, relative, resolve} from "node:path";
+import {dirname, join, relative, resolve} from "node:path";
 import {engineCatalog, vehicleDatabase} from "../src/data/catalog.ts";
 
 function files(directory: string): string[] {
@@ -29,7 +29,9 @@ const report = {
   nonPublicCanonicalIdsChecked: nonPublicSourceIds.size, nonPublicCanonicalIdsInBrowserChunks: leaks,
   scope: "Production browser JavaScript; selected profile DTOs in HTML/RSC/API are intentionally excluded."
 };
-mkdirSync(resolve("docs/tuning-qa/corrective"), {recursive: true});
-writeFileSync(resolve("docs/tuning-qa/corrective/browser-bundle-check.json"), `${JSON.stringify(report, null, 2)}\n`);
+const reportIndex = process.argv.indexOf("--report");
+const reportPath = resolve(reportIndex >= 0 ? process.argv[reportIndex + 1] : "docs/tuning-qa/corrective/browser-bundle-check.json");
+mkdirSync(dirname(reportPath), {recursive: true});
+writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`);
 assert.deepEqual(leaks, [], "The canonical dataset must not be shipped to browser JavaScript");
 console.log(JSON.stringify(report, null, 2));

@@ -1,4 +1,6 @@
 import type {Locale} from "@/i18n/routing";
+import type {EstimateStage} from "../data/tuning-estimates-shared.ts";
+import {formatEstimatePower, formatEstimateTorque} from "./estimate-copy.ts";
 import {
   conditionalBudgetNote,
   formatAccessAssessment,
@@ -49,7 +51,8 @@ export type VehicleQuoteMessageInput = {
   firstAdmissionYear?: number | null;
   engine?: string;
   estimateProfileLabel?: string;
-  indicativeOutput?: {powerHp?: number; torqueNm?: number};
+  estimateSource?: string;
+  indicativeOutput?: Pick<EstimateStage, "powerHp" | "torqueNm" | "powerRangeHp" | "torqueRangeNm">;
 };
 
 export function createLookupQuoteMessage(input: VehicleQuoteMessageInput & {plate: string}) {
@@ -129,8 +132,8 @@ function createQuoteMessage(input: VehicleQuoteMessageInput & {plate?: string}) 
   const budget = conditionalBudgetNote(input.quote, input.locale);
   const scope = formatQuoteScope(input.quote, input.locale);
   const output = [
-    input.indicativeOutput?.powerHp !== undefined ? `${input.indicativeOutput.powerHp} ${{nl: "pk", en: "hp", pl: "KM"}[input.locale]}` : undefined,
-    input.indicativeOutput?.torqueNm !== undefined ? `${input.indicativeOutput.torqueNm} Nm` : undefined
+    input.indicativeOutput?.powerHp !== undefined || input.indicativeOutput?.powerRangeHp ? formatEstimatePower(input.indicativeOutput, input.locale) : undefined,
+    input.indicativeOutput?.torqueNm !== undefined || input.indicativeOutput?.torqueRangeNm ? formatEstimateTorque(input.indicativeOutput, input.locale) : undefined
   ].filter(Boolean).join(" / ");
   return [
     text.intro,
@@ -143,6 +146,7 @@ function createQuoteMessage(input: VehicleQuoteMessageInput & {plate?: string}) 
     input.engine ? `${text.engine}: ${input.engine}` : undefined,
     power ? `${input.plate ? text.registeredPower : text.power}: ${power}` : undefined,
     input.estimateProfileLabel ? `${text.profile}: ${input.estimateProfileLabel}` : `${text.catalog}: ${text.matches[input.matchStatus ?? "catalog-match"]}`,
+    input.estimateSource ? `${text.catalog}: ${input.estimateSource}` : undefined,
     `${text.access}: ${formatAccessAssessment(access, input.locale)}`,
     `${text.stage}: ${input.stage}`,
     output ? `${text.output}: ${output}` : undefined,

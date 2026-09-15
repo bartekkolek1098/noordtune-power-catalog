@@ -3,6 +3,11 @@ import type {EngineVariant, FuelType, StageDefinition, StageName} from "./catalo
 export type EstimateStage = Omit<StageDefinition, "powerHp" | "torqueNm" | "price" | "sourcePrice" | "quote"> & {
   powerHp?: number;
   torqueNm?: number;
+  provenance?: "reviewed" | "reference" | "canonical-estimated" | "generic-indicative";
+  sourceProfileId?: string;
+  powerRangeHp?: [number, number];
+  torqueRangeNm?: [number, number];
+  genericCategory?: "turbo-diesel" | "turbo-petrol" | "naturally-aspirated" | "unknown-aspiration";
 };
 
 export type EstimateSourceReference = {
@@ -10,7 +15,7 @@ export type EstimateSourceReference = {
   url?: string;
   scope: string;
   retrievedAt?: string;
-  sourceType: "existing-catalog" | "manufacturer" | "tuner";
+  sourceType: "existing-catalog" | "manufacturer" | "tuner" | "heuristic";
   retrievalMethod?: "page" | "search-index";
 };
 
@@ -28,7 +33,8 @@ export type TuningEstimateProfile = Pick<EngineVariant,
   stockPowerHp: number;
   stockTorqueNm?: number;
   stages: EstimateStage[];
-  provenance: "existing-catalog" | "tuner-reference";
+  provenance: "existing-catalog" | "tuner-reference" | "canonical-estimated" | "generic-indicative";
+  resolutionLevel?: 1 | 2 | 3 | 4;
   sourceReferences: EstimateSourceReference[];
   conditions: string[];
   conditionCodes?: string[];
@@ -37,8 +43,16 @@ export type TuningEstimateProfile = Pick<EngineVariant,
 
 export type EstimateResolution = {
   status: "applicable" | "conditional" | "unavailable";
+  resolutionLevel?: 1 | 2 | 3 | 4;
   profile?: TuningEstimateProfile;
   reasonCodes: string[];
+  diagnostics?: {
+    referenceTechnicalProfiles: number;
+    publicTechnicalProfiles: number;
+    canonicalShortlisted: number;
+    canonicalCompatible: number;
+    canonicalTechnicalProfiles: number;
+  };
 };
 
 /** Client-safe adapter; receives one selected vehicle, never imports the catalog. */

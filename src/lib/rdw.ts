@@ -1,5 +1,6 @@
-import {engineCatalog, findCatalogMatch} from "../data/catalog.ts";
-import {resolveTuningEstimate} from "../data/tuning-estimates.ts";
+import {findCatalogMatch} from "../data/catalog.ts";
+import {assessVehicleAccess, resolveStageQuote, type QuoteResolution} from "../data/pricing.ts";
+import {resolveRdwTuningEstimate} from "./rdw-tuning-estimate.ts";
 import {firstAdmissionYear, parseRdwDate} from "./rdw-date.ts";
 
 const VEHICLE_RESOURCE = "m9d7-ebf2";
@@ -89,8 +90,11 @@ export type RdwLookupResult = {
       apkExpiry?: string;
     };
   };
-  tuningMatch: ReturnType<typeof findCatalogMatch>;
-  tuningEstimate: ReturnType<typeof resolveTuningEstimate>;
+  // Only the identity assessment summary crosses the API boundary. Candidate
+  // arrays and rejected canonical vehicles are never browser DTOs.
+  tuningMatch: Pick<ReturnType<typeof findCatalogMatch>, "status" | "reasonCodes">;
+  tuningEstimate: ReturnType<typeof resolveRdwTuningEstimate>;
+  tuningQuote: QuoteResolution;
   raw?: {
     vehicle: RdwVehicleRow;
     fuels: RdwFuelRow[];
@@ -171,8 +175,14 @@ export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[],
     type: vehicle.type, variant: vehicle.variant, execution: vehicle.uitvoering,
     cylinders: toNumber(vehicle.aantal_cilinders)
   };
-  const tuningMatch = findCatalogMatch(identityInput);
-  const tuningEstimate = resolveTuningEstimate(identityInput, engineCatalog);
+  const assessment = findCatalogMatch(identityInput);
+  const tuningMatch = {status: assessment.status, reasonCodes: assessment.reasonCodes};
+  const tuningEstimate = resolveRdwTuningEstimate(identityInput);
+  const quoteIdentity = tuningEstimate.profile ?? identityInput;
+  const tuningQuote = resolveStageQuote(quoteIdentity, {name: "Stage 1"}, {
+    estimateApplicable: Boolean(tuningEstimate.profile), scope: "vehicle",
+    access: assessVehicleAccess(quoteIdentity)
+  });
 
   const result: RdwLookupResult = {
     source: "RDW Open Data",
@@ -223,6 +233,7 @@ export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[],
     },
     tuningMatch,
     tuningEstimate,
+    tuningQuote,
     raw: {
       vehicle,
       fuels

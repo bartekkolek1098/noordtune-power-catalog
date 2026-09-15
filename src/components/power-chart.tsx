@@ -9,7 +9,7 @@ import {
   XAxis,
   YAxis
 } from "recharts";
-import {useEffect, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import type {Locale} from "@/i18n/routing";
 
 export function PowerChart({
@@ -22,13 +22,14 @@ export function PowerChart({
 }: {
   locale?: Locale;
   powerUnit?: string;
-  stages: {name: string; powerHp?: number; torqueNm?: number}[];
+  stages: {name: string; powerHp?: number; torqueNm?: number; powerRangeHp?: [number, number]; torqueRangeNm?: [number, number]}[];
   stockPower: number;
   stockLabel?: string;
   stockTorque?: number;
 }) {
   const [mounted, setMounted] = useState(false);
-  const data = [
+  const hasRanges = stages.some(stage => stage.powerRangeHp || stage.torqueRangeNm);
+  const data = useMemo(() => [
     {
       name: stockLabel,
       pk: stockPower,
@@ -39,14 +40,14 @@ export function PowerChart({
       pk: stage.powerHp ?? null,
       nm: stage.torqueNm ?? null
     }))
-  ];
+  ], [stages, stockLabel, stockPower, stockTorque]);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   if (!mounted) {
-    return <><div className="h-64 w-full rounded-lg bg-white/[0.035]" /><ChartCaption locale={locale} /></>;
+    return <><div className="h-64 w-full rounded-lg bg-white/[0.035]" /><ChartCaption locale={locale} hasRanges={hasRanges} /></>;
   }
 
   return (
@@ -91,14 +92,18 @@ export function PowerChart({
           />
         </AreaChart>
       </ResponsiveContainer>
-    </div><ChartCaption locale={locale} /></>
+    </div><ChartCaption locale={locale} hasRanges={hasRanges} /></>
   );
 }
 
-function ChartCaption({locale}: {locale: Locale}) {
+function ChartCaption({locale, hasRanges}: {locale: Locale; hasRanges?: boolean}) {
   return <p className="mt-2 text-xs leading-5 text-muted-foreground" data-testid="catalog-chart-caption">{{
     nl: "Catalogusillustratie van piekwaarden; geen rollenbankmeting of gemeten toerentalcurve.",
     en: "Catalog illustration of peak values; not a dyno measurement or measured RPM curve.",
     pl: "Ilustracja katalogowych wartości szczytowych; nie jest pomiarem z hamowni ani zmierzoną krzywą obrotów."
-  }[locale]}</p>;
+  }[locale]}{hasRanges ? " " + {
+    nl: "Bereiken staan in de tabel; de grafiek toont alleen beschikbare puntschattingen.",
+    en: "Ranges are listed in the table; the chart plots only available point estimates.",
+    pl: "Przedziały są podane w tabeli; wykres pokazuje tylko dostępne szacunki punktowe."
+  }[locale] : ""}</p>;
 }

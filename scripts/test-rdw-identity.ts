@@ -106,7 +106,10 @@ for (const {fixture, result, quote, message} of quoteResults) test(`normalized R
   assert.ok(result.tuningEstimate.profile?.stages[0].powerHp, "Compatible RDW fixture must retain a numeric Stage 1 estimate");
   assert.ok(result.tuningEstimate.profile?.stages[0].torqueNm);
   assert.equal(quote.kind, "from", "An explicitly scoped compatible fixture keeps an indicative commercial quote");
-  assert.ok(message.includes(`Indicatieve uitkomst: ${result.tuningEstimate.profile?.stages[0].powerHp} pk`));
+  const stage = result.tuningEstimate.profile!.stages[0];
+  const displayedPower = stage.powerRangeHp ? stage.powerRangeHp.join("–") : stage.powerHp;
+  assert.ok(message.includes(`Indicatieve uitkomst: ${displayedPower} pk`));
+  if (stage.torqueRangeNm) assert.ok(message.includes(`${stage.torqueRangeNm.join("–")} Nm (schatting)`));
   assert.doesNotMatch(message, /configuratieconflict/i);
   assert.ok(message.includes(formatQuote(quote, "nl")));
 });
@@ -156,7 +159,7 @@ if (baselineIndex >= 0 && reportIndex >= 0) {
       return {
         syntheticId: fixture.id, facts: result.vehicle,
         baseline: old ? {status: "matched", id: old.variant.id, model: old.variant.model, engine: old.variant.engine, confidence: old.confidence, sourceStage1Price: old.variant.stages[0].price, publicStage1Price: baselinePricing.getPublicStagePrice(old.variant, old.variant.stages[0])} : {status: "no-match", uiHardcodedStage1Fallback: 269},
-        current: {status: result.tuningMatch.status, id: result.tuningMatch.variant?.id, reasonCodes: result.tuningMatch.reasonCodes, estimate: result.tuningEstimate, candidates: result.tuningMatch.candidates, access, baseQuote, selectedOptions: [{name: "Selected service", priceCents: 14900}], quote, dutchWhatsApp: message}
+        current: {status: result.tuningMatch.status, reasonCodes: result.tuningMatch.reasonCodes, estimate: result.tuningEstimate, access, baseQuote, selectedOptions: [{name: "Selected service", priceCents: 14900}], quote, dutchWhatsApp: message}
       };
     })
   };

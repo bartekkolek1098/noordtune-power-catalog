@@ -21,7 +21,7 @@ import {unavailableEstimateStage} from "@/data/tuning-estimates-shared";
 import {addQuoteOptions, assessVehicleAccess, conditionalBudgetNote, formatAccessAssessment, formatQuote, formatQuoteScope, resolveStageQuote} from "@/data/pricing";
 import {formatRegistrationDate} from "@/lib/rdw-date";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
-import {estimateLimitations} from "@/lib/estimate-copy";
+import {estimateLimitations, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
@@ -153,7 +153,8 @@ export function PlateLookup({
           matchStatus: result.tuningMatch.status,
           estimateProfileLabel: profile ? `${profile.brand} ${profile.model} ${profile.engine}` : undefined,
           engine: profile?.engine,
-          indicativeOutput: {powerHp: selectedStage.powerHp, torqueNm: selectedStage.torqueNm},
+          indicativeOutput: selectedStage,
+          estimateSource: formatEstimateSource(selectedStage, locale),
           access,
           firstAdmission: result.vehicle.registration.firstAdmission,
           fuel: result.vehicle.fuel,
@@ -326,7 +327,7 @@ export function PlateLookup({
                     <div className="mb-3 flex flex-wrap items-center gap-2">
                       <Badge className="rounded-[3px] border-emerald-400/35 bg-emerald-400/10 text-emerald-300">
                         <Check className="mr-1 h-3.5 w-3.5" />
-                        {localCopy.catalogIndication}
+                        {formatEstimateSource(selectedStage, locale)}
                       </Badge>
                       <span className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
                         {localCopy.ecuBeforeTuning}
@@ -339,8 +340,8 @@ export function PlateLookup({
                       {profile.engine} · {localCopy.indicativeOutput}
                     </p>
                     <p className="mt-1 text-sm text-muted-foreground" data-testid="rdw-estimate-output">
-                      {profile.stockPowerHp} → {selectedStage.powerHp ?? localCopy.toConfirm} {powerUnit}
-                      {selectedStage.torqueNm !== undefined ? ` · ${selectedStage.torqueNm} Nm` : ""}
+                      {result.vehicle.engine.powerHp ?? profile.stockPowerHp} → {formatEstimatePower(selectedStage, locale)}
+                      {selectedStage.torqueNm !== undefined || selectedStage.torqueRangeNm ? ` · ${formatEstimateTorque(selectedStage, locale)}` : ""}
                     </p>
                     {result.tuningEstimate.status === "conditional" ? (
                       <p className="mt-2 text-xs leading-5 text-muted-foreground">{result.tuningEstimate.reasonCodes.includes("CONNECT_ENGINE_GENERATION_REVIEW") ? localCopy.connectConditional : localCopy.conditionalProfile}</p>
@@ -551,7 +552,7 @@ export function PlateLookup({
                   locale={locale}
                   powerUnit={powerUnit}
                   stages={profile.stages}
-                  stockPower={profile.stockPowerHp}
+                  stockPower={result.vehicle.engine.powerHp ?? profile.stockPowerHp}
                   stockLabel={text.stock}
                   stockTorque={profile.stockTorqueNm}
                 /> : <div className="flex h-64 min-w-0 w-full items-center justify-center text-center text-sm text-muted-foreground" data-testid="rdw-pending-chart">{localCopy.pendingChart}</div>}
@@ -572,6 +573,9 @@ export function PlateLookup({
                         <tr
                           className="cursor-pointer border-t border-white/10 hover:bg-white/[0.04]"
                           key={stage.name}
+                          data-stage-name={stage.name}
+                          data-stage-provenance={stage.provenance}
+                          title={formatEstimateSource(stage, locale)}
                           onClick={() => selectStage(index)}
                         >
                           <td className="px-3 py-3">
@@ -591,9 +595,9 @@ export function PlateLookup({
                             </span>
                           </td>
                           <td className="px-3 py-3">
-                            {stage.powerHp === undefined ? localCopy.toConfirm : `${stage.powerHp} ${powerUnit}`}
+                            {formatEstimatePower(stage, locale)}
                           </td>
-                          <td className="px-3 py-3">{stage.torqueNm === undefined ? localCopy.toConfirm : `${stage.torqueNm} Nm`}</td>
+                          <td className="px-3 py-3">{formatEstimateTorque(stage, locale)}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -675,10 +679,10 @@ const lookupRuntimeCopy: Record<
     catalogIndication: "Catalogusindicatie",
     ecuBeforeTuning: "ECU-controle vóór uitvoering",
     indicativeOutput: "Indicatieve tuningwaarden",
-    conditionalProfile: "Referentie onder voorbehoud: controleer de exacte motorgeneratie vóór toepassing.",
+    conditionalProfile: "Indicatie onder voorbehoud: controleer motoruitvoering, software, hardware en voertuigconditie vóór toepassing.",
     connectConditional: "Referentie voor de 1.5 TDCi vóór de facelift; de motorgeneratie moet worden bevestigd. Eerste toelating in 2018 bevestigt op zichzelf geen TDCi- of EcoBlue-uitvoering.",
     referenceDetails: "Referentie en Stage-details",
-    profileVerification: "De getoonde waarden zijn indicatieve catalogus- of referentiewaarden. Exacte ECU, software, motoruitvoering en hardware worden vóór uitvoering gecontroleerd. Dit zijn geen metingen van jouw voertuig.",
+    profileVerification: "De getoonde waarden zijn indicatieve catalogus-, referentie- of generieke schattingen. Exacte ECU, software, motoruitvoering en hardware worden vóór uitvoering gecontroleerd. Dit zijn geen metingen van jouw voertuig.",
     firstRegistration: "Eerste toelating",
     toConfirm: "Te bevestigen",
     pendingChart: "Vermogen en koppel te bevestigen na controle van de voertuigconfiguratie.",
@@ -711,10 +715,10 @@ const lookupRuntimeCopy: Record<
     catalogIndication: "Catalog estimate",
     ecuBeforeTuning: "ECU check before tuning",
     indicativeOutput: "Indicative tuning figures",
-    conditionalProfile: "Conditional reference: confirm the exact engine generation before applying this profile.",
+    conditionalProfile: "Conditional indication: confirm engine configuration, software, hardware and vehicle condition before applying these figures.",
     connectConditional: "Reference for the pre-facelift 1.5 TDCi; engine generation must be confirmed. First registration in 2018 alone does not confirm TDCi or EcoBlue specification.",
     referenceDetails: "Reference and Stage details",
-    profileVerification: "Displayed figures are indicative catalog or reference values. Exact ECU, software, engine configuration and hardware are checked before tuning. These are not measurements of your vehicle.",
+    profileVerification: "Displayed figures are indicative catalog, reference or generic estimates. Exact ECU, software, engine configuration and hardware are checked before tuning. These are not measurements of your vehicle.",
     firstRegistration: "First registration",
     toConfirm: "To be confirmed",
     pendingChart: "Power and torque to be confirmed after vehicle configuration verification.",
@@ -747,10 +751,10 @@ const lookupRuntimeCopy: Record<
     catalogIndication: "Szacunek katalogowy",
     ecuBeforeTuning: "Kontrola ECU przed tuningiem",
     indicativeOutput: "Orientacyjne wartości tuningu",
-    conditionalProfile: "Referencja warunkowa: przed zastosowaniem potwierdź dokładną generację silnika.",
+    conditionalProfile: "Wartości warunkowe: przed zastosowaniem potwierdź wersję silnika, oprogramowanie, osprzęt i stan pojazdu.",
     connectConditional: "Referencja dla 1.5 TDCi sprzed liftingu; generacja silnika wymaga potwierdzenia. Pierwsza rejestracja w 2018 roku nie potwierdza sama w sobie wersji TDCi ani EcoBlue.",
     referenceDetails: "Źródła i szczegóły Stage",
-    profileVerification: "Pokazane wartości są orientacyjnymi danymi katalogowymi lub referencyjnymi. ECU, oprogramowanie, wersja silnika i osprzęt są sprawdzane przed tuningiem. Nie są to pomiary Twojego pojazdu.",
+    profileVerification: "Pokazane wartości są orientacyjnymi danymi katalogowymi, referencyjnymi lub ogólnymi szacunkami. ECU, oprogramowanie, wersja silnika i osprzęt są sprawdzane przed tuningiem. Nie są to pomiary Twojego pojazdu.",
     firstRegistration: "Pierwsza rejestracja",
     toConfirm: "Do potwierdzenia",
     pendingChart: "Moc i moment obrotowy do potwierdzenia po weryfikacji konfiguracji pojazdu.",
