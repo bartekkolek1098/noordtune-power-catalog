@@ -4,7 +4,11 @@ import type {RuntimeCommercialIdentity} from "./runtime-pricing.ts";
 export type EstimateStage = Omit<StageDefinition, "powerHp" | "torqueNm" | "price" | "sourcePrice" | "quote"> & {
   powerHp?: number;
   torqueNm?: number;
-  provenance?: "reviewed" | "reference" | "canonical-estimated" | "generic-indicative";
+  provenance?: "reviewed" | "reference" | "canonical-estimated" | "generic-indicative" | "multi-source" | "single-source";
+  approximate?: boolean;
+  customHardware?: boolean;
+  hardwareScopeApproved?: boolean;
+  sourceConfidence?: "multi-source" | "single-source" | "canonical-existing" | "generic-fallback";
   sourceProfileId?: string;
   resolutionLevel?: 1 | 2 | 3 | 4;
   powerRangeHp?: [number, number];
@@ -29,6 +33,8 @@ export type TuningEstimateProfile = Pick<EngineVariant,
 > & {
   id: string;
   vehicleId?: string;
+  /** Reviewed commercial assignment only; never a source identity or public page link. */
+  pricingProfileId?: string;
   brand: string;
   model: string;
   engine: string;
@@ -36,7 +42,9 @@ export type TuningEstimateProfile = Pick<EngineVariant,
   stockPowerHp: number;
   stockTorqueNm?: number;
   stages: EstimateStage[];
-  provenance: "existing-catalog" | "tuner-reference" | "canonical-estimated" | "generic-indicative";
+  provenance: "existing-catalog" | "tuner-reference" | "canonical-estimated" | "generic-indicative" | "sourced-profile";
+  coverageClass?: "A" | "B" | "C" | "D" | "E";
+  sourceConfidence?: "multi-source" | "single-source" | "canonical-existing" | "generic-fallback";
   resolutionLevel?: 1 | 2 | 3 | 4;
   runtimeCommercialIdentity?: RuntimeCommercialIdentity;
   sourceReferences: EstimateSourceReference[];
@@ -46,6 +54,7 @@ export type TuningEstimateProfile = Pick<EngineVariant,
 };
 
 export type EstimateResolution = {
+  coverageClass?: "A" | "B" | "C" | "D" | "E";
   status: "applicable" | "conditional" | "unavailable";
   resolutionLevel?: 1 | 2 | 3 | 4;
   profile?: TuningEstimateProfile;

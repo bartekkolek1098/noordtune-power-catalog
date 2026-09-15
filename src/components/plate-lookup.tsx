@@ -21,7 +21,7 @@ import {unavailableEstimateStage} from "@/data/tuning-estimates-shared";
 import {addQuoteOptions, assessVehicleAccess, conditionalBudgetNote, formatAccessAssessment, formatQuote, formatQuoteScope, resolveStageQuote} from "@/data/pricing";
 import {formatRegistrationDate} from "@/lib/rdw-date";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
-import {estimateLimitations, formatEstimatePower, formatEstimateSource, formatEstimateTorque, genericEstimateNote} from "@/lib/estimate-copy";
+import {estimateLimitations, estimateStageTechnicalNotes, formatEstimatePower, formatEstimateSource, formatEstimateTorque, genericEstimateNote} from "@/lib/estimate-copy";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
@@ -157,6 +157,7 @@ export function PlateLookup({
           indicativeOutput: selectedStage,
           estimateSource: formatEstimateSource(selectedStage, locale),
           estimateNotes: [
+            ...estimateStageTechnicalNotes(selectedStage),
             ...(selectedStage.provenance === "generic-indicative" ? [genericEstimateNote(locale)] : []),
             ...(profile ? estimateLimitations(profile, locale) : []),
             ...(result.tuningEstimate.reasonCodes.includes("CONNECT_ENGINE_GENERATION_REVIEW") ? [localCopy.connectConditional] : [])
@@ -347,7 +348,7 @@ export function PlateLookup({
                     </p>
                     <p className="mt-1 text-sm text-muted-foreground" data-testid="rdw-estimate-output">
                       {result.vehicle.engine.powerHp ?? profile.stockPowerHp} → {formatEstimatePower(selectedStage, locale)}
-                      {selectedStage.torqueNm !== undefined || selectedStage.torqueRangeNm ? ` · ${formatEstimateTorque(selectedStage, locale)}` : ""}
+                      {!selectedStage.customHardware && (selectedStage.torqueNm !== undefined || selectedStage.torqueRangeNm) ? ` · ${formatEstimateTorque(selectedStage, locale)}` : ""}
                     </p>
                     {result.tuningEstimate.status === "conditional" ? (
                       <p className="mt-2 text-xs leading-5 text-muted-foreground">{selectedStage.provenance === "generic-indicative" ? `${genericEstimateNote(locale)}${result.tuningEstimate.reasonCodes.includes("CONNECT_ENGINE_GENERATION_REVIEW") ? ` ${localCopy.connectGenerationPending}` : ""}` : result.tuningEstimate.reasonCodes.includes("CONNECT_ENGINE_GENERATION_REVIEW") ? localCopy.connectConditional : localCopy.conditionalProfile}</p>
@@ -367,6 +368,7 @@ export function PlateLookup({
                         <p className="mt-2">{selectedStage.requirements}</p>
                         <ul className="mt-2 list-disc space-y-1 pl-4">{profile.conditions.map((condition) => <li key={condition}>{condition}</li>)}</ul>
                         <ul className="mt-2 list-disc space-y-1 pl-4">{selectedStage.packageItems.map((item) => <li key={item}>{item}</li>)}</ul>
+                        <ul className="mt-2 list-disc space-y-1 pl-4">{estimateStageTechnicalNotes(selectedStage).map((note) => <li key={note}>{note}</li>)}</ul>
                         <ul className="mt-2 space-y-2">{profile.sourceReferences.map((source) => <li key={source.title}>{source.url ? <a className="text-primary underline" href={source.url} rel="noreferrer" target="_blank">{source.title}</a> : source.title}<span className="block text-xs">{source.scope}</span></li>)}</ul>
                       </details>
                     ) : null}
@@ -600,10 +602,10 @@ export function PlateLookup({
                               {stage.name}
                             </span>
                           </td>
-                          <td className="px-3 py-3">
+                          <td className="px-3 py-3" colSpan={stage.customHardware ? 2 : undefined}>
                             {formatEstimatePower(stage, locale)}
                           </td>
-                          <td className="px-3 py-3">{formatEstimateTorque(stage, locale)}</td>
+                          {!stage.customHardware ? <td className="px-3 py-3">{formatEstimateTorque(stage, locale)}</td> : null}
                         </tr>
                       ))}
                     </tbody>

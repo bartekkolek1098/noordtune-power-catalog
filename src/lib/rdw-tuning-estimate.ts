@@ -11,11 +11,15 @@ import {getCatalogEstimateProfile, type EstimateResolution, type EstimateStage,
   type TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
 import {genericTuningHeuristics, strongStage1ScenarioStockWidths, type GenericEstimateCategory} from "../data/tuning-heuristics.ts";
 import {connectStage1Comparison} from "../data/tuning-reference-research.ts";
+import {sourcedTuningProfiles, tuningProfileSources} from "../data/tuning-profiles/index.ts";
+import type {SourcedTuningProfile} from "../data/tuning-profiles/schema.ts";
+import {matchSourcedProfile, sourceRegistrationYear} from "./sourced-tuning-match.ts";
 
 export type RuntimeEstimateSources = {
   references?: readonly TuningEstimateProfile[];
   publicVehicles?: readonly EngineVariant[];
   canonicalVehicles?: readonly EngineVariant[];
+  sourcedProfiles?: readonly SourcedTuningProfile[];
 };
 type Eligible = {profile: TuningEstimateProfile; reasons: string[]; level: 1 | 2 | 3};
 const stageNames: StageName[] = ["Stage 1", "Stage 2", "Stage 3+"];
@@ -23,6 +27,80 @@ const normalize = (value?: string) => (value ?? "").normalize("NFD").replace(/[\
 function makeKey(value?: string) {
   const key = normalize(value);
   return ({vw: "volkswagen", mercedes: "mercedes benz", alfa: "alfa romeo", "bmw mini": "mini"} as Record<string, string>)[key] ?? key;
+}
+
+export function customHardwareStage(): EstimateStage {
+  return {name: "Stage 3+", customHardware: true, hardwareRequired: true,
+    requirements: "Individual hardware and calibration scope required before quoting output.", packageItems: [], confidenceLevel: "estimated", logCheckRecommended: true,
+    notes: ["No applicable published or owner-approved hardware profile. No numerical output is assigned."]};
+}
+
+/** V1 precedence: approved profile, independent consensus, single source,
+ * compatible retained catalog, then emergency generic indication. */
+export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources = {}): EstimateResolution {
+  const match = matchSourcedProfile(input, sources.sourcedProfiles ?? sourcedTuningProfiles);
+  const source = match.profile;
+  if (!source) {
+    const fallback = resolveLegacyRdwTuningEstimate(input, sources);
+    if (!fallback.profile) return {...fallback, coverageClass: "E"};
+    const coverageClass = fallback.resolutionLevel === 4 ? "D" : "C";
+    const sourceConfidence: NonNullable<EstimateStage["sourceConfidence"]> = coverageClass === "D" ? "generic-fallback" : "canonical-existing";
+    // Older generated Stage 3 values do not establish an approved hardware setup.
+    const stages = fallback.profile.stages.map(stage => stage.name === "Stage 3+" ? customHardwareStage()
+      : stage.provenance === "reference" && stage.powerRangeHp ? {...stage, approximate: true,
+        powerHp: stage.powerRangeHp[0], torqueNm: stage.torqueRangeNm?.[0] ?? stage.torqueNm,
+        powerRangeHp: undefined, torqueRangeNm: undefined, sourceConfidence: "single-source" as const}
+      : {...stage, sourceConfidence});
+    return {...fallback, coverageClass, reasonCodes: [...new Set([...fallback.reasonCodes, ...match.reasonCodes])],
+      profile: {...fallback.profile, coverageClass, sourceConfidence, stages}};
+  }
+  const coverageClass = source.reviewStatus === "noordtune-approved" || source.stage1.confidence === "multi-source" ? "A" : "B";
+  const sourceConfidence = source.stage1.confidence;
+  const power = registeredPowerToMetricHp(input)!;
+  const stages: EstimateStage[] = [];
+  for (const [key, name] of [["stage1", "Stage 1"], ["stage2", "Stage 2"], ["stage3", "Stage 3+"]] as const) {
+    const facts = source[key];
+    if (facts) stages.push({name, powerHp: facts.selectedPowerHp, torqueNm: facts.selectedTorqueNm, approximate: true,
+      provenance: facts.confidence, sourceConfidence: facts.confidence, sourceProfileId: source.id,
+      resolutionLevel: facts.confidence === "multi-source" ? 1 : 2, confidenceLevel: "estimated",
+      requirements: name === "Stage 1" ? "Confirm engine configuration, fuel, condition and ECU access before calibration."
+        : "Published hardware-dependent reference; the applicable hardware and calibration must be confirmed.",
+      packageItems: [], hardwareRequired: name !== "Stage 1", tcuRecommended: false, logCheckRecommended: true,
+      notes: [...facts.conditions, "External source research; not a measured NoordTune result."]});
+    else if (name === "Stage 3+") stages.push(customHardwareStage());
+    else {
+      const legacy = resolveLegacyRdwTuningEstimate(input, sources).profile?.stages.find(stage => stage.name === "Stage 2");
+      stages.push(legacy && legacy.provenance === "canonical-estimated" ? {...legacy, sourceConfidence: "canonical-existing"}
+        : genericStage(name, power, source.stockTorqueNm,
+          source.aspiration === "naturally-aspirated" ? "naturally-aspirated" : source.fuel === "Diesel" ? "turbo-diesel" : source.aspiration === "turbo" ? "turbo-petrol" : "unknown-aspiration", stages[0], stages[0]));
+    }
+  }
+  const conditionCodes = [...new Set([
+    ...source.conditions.filter(condition => /^[A-Z][A-Z0-9_]+$/.test(condition)),
+    ...(source.ownerReviewRequired ? ["SOURCE_OWNER_REVIEW_REQUIRED"] : []),
+    ...([source.stage1, source.stage2, source.stage3].some(stage => stage?.sourceAgreement === "conflict") ? ["SOURCE_CONSENSUS_CONFLICT"] : []),
+    ...(stages.some(stage => stage.provenance === "generic-indicative") ? ["GENERIC_INDICATIVE_STAGE_FALLBACK"] : []),
+    ...(source.brand === "Ford" && source.modelFamily === "Transit Custom" && source.stockPowerHp === 105 ? ["NOORDTUNE_TARGET_REVIEW_REQUIRED"] : [])
+  ])];
+  const profile: TuningEstimateProfile = {
+    id: source.id, brand: source.brand, model: source.modelFamily, engine: source.engineMarketingName,
+    pricingProfileId: resolveSourcedPricingProfileId(input, source),
+    generation: source.generation, version: source.generation, yearRange: `${source.yearFrom}${source.yearTo ? `–${source.yearTo}` : "+"}`,
+    fuel: source.fuel, stockPowerHp: source.stockPowerHp, stockTorqueNm: source.stockTorqueNm, stages,
+    provenance: "sourced-profile", coverageClass, sourceConfidence, resolutionLevel: coverageClass === "A" ? 1 : 2,
+    runtimeCommercialIdentity: {status: "resolved-compatible", make: input.make!, model: input.model!, fuel: source.fuel,
+      registeredPowerHp: power, displacementCc: input.displacementCc, firstAdmissionYear: sourceRegistrationYear(input), cylinders: input.cylinders},
+    options: serviceOptions.filter(option => !option.requiresGearbox && (!option.fuels || option.fuels.includes(source.fuel))).map(option => option.id),
+    ecuType: source.ecuFamily ? `${source.ecuFamily} (source reference; installed ECU unconfirmed)` : "To be identified",
+    ecuSupport: {status: "manual-review"}, transmissionSupport: {status: "manual-review"}, tcuSupport: {status: "manual-review"},
+    sourceReferences: tuningProfileSources.filter(item => source.sourceIds.includes(item.id)).map(item => ({
+      title: item.sourceName, url: item.url, retrievedAt: item.retrievedAt, sourceType: "tuner" as const,
+      retrievalMethod: "page" as const, scope: `${source.brand} ${source.modelFamily}; ${source.engineMarketingName}; ${source.generation}. External published facts, not NoordTune measurements.`})),
+    conditions: [...source.conditions, "Published model/engine indication. Exact vehicle, fuel, hardware, transmission and ECU access require verification."],
+    conditionCodes, recommendedPackage: {stage: "Stage 1", recommendedOptionIds: [], verificationRequired: true}, verificationRequired: true
+  };
+  return {status: "conditional", coverageClass, resolutionLevel: profile.resolutionLevel, profile,
+    reasonCodes: [...new Set([...match.reasonCodes, ...conditionCodes])]};
 }
 
 // Existing public applicability restrictions, independent of estimated provenance.
@@ -77,6 +155,83 @@ function eligibleReasons(input: EstimateMatchInput, vehicle: EngineVariant, leve
   if (level === 3 && reasons.includes("CATALOG_DISPLACEMENT_UNRESOLVED")) return undefined;
   if (vehicle.id === "ref-ford-transit-connect-15-tdci-100" && identityEngineFamily(input) !== "tdci") reasons.push("CONNECT_ENGINE_GENERATION_REVIEW");
   return reasons;
+}
+
+/** Source pages sometimes name a generation by its release year. These aliases
+ * are restricted to the reviewed commercial configuration, never a global year
+ * decoder. Both source and public year scopes still have to cover admission. */
+const commercialGenerationAliases: Record<string, readonly string[]> = {
+  "ref-ford-transit-connect-15-tdci-100": ["2016"],
+  "ref-ford-transit-custom-20-ecoblue-105": ["2017"],
+  "skoda-octavia-5e-20-tdi-150": ["2013", "2017"]
+};
+// The newly researched source must name the applicable family for public BMW
+// entries whose older engine label is coarse. This scopes the commercial link;
+// it neither rewrites the public engine label nor identifies an installed ECU.
+const commercialSourceFamilies: Record<string, string> = {
+  "ref-bmw-128ti-f40-265": "b48",
+  "bmw-1-series-f20-f21-118i": "b38",
+  "bmw-1-series-f20-f21-118d": "b47",
+  "bmw-1-series-f20-f21-120d": "b47",
+  "bmw-3-series-f30-f31-318d": "b47",
+  "bmw-3-series-f30-f31-330d": "n57",
+  "bmw-5-series-f10-f11-520d": "b47",
+  "bmw-3-series-g20-g21-320i": "b48"
+};
+function commercialGenerationTokens(value: string, brand: string, model: string) {
+  const roman: Record<string, string> = {i: "1", ii: "2", iii: "3", iv: "4", v: "5", vi: "6", vii: "7", viii: "8"};
+  const text = normalize(value).replace(/\bmk\s*([ivx]+)\b/g, (_match, number: string) => "mk" + (roman[number] ?? number));
+  if (makeKey(brand) === "volkswagen" && /\bgolf\b/i.test(model)) {
+    const generation = text.match(/\bgolf\s*([5-8])\b/)?.[1] ?? roman[text.match(/^([ivx]+)\b/)?.[1] ?? ""];
+    if (generation) return ["golf" + generation];
+  }
+  return text.match(/\b(?:[efg]\d{2,3}|[wcra]\d{3}|mk\s?\d|8[plvy]|[bc][5-9]|5[ef])\b/g)?.map(token => token.replace(" ", "")) ?? [text];
+}
+function commercialModel(value: string, brand: string) {
+  // Public A45 and source A-Class 45 denote the same explicitly numbered model.
+  return makeKey(brand) === "mercedes benz"
+    ? value.replace(/^([abces])[-\s]*(?:class|klasse)\s+(\d{2,3})\b/i, "$1$2") : value;
+}
+function commercialEngineFamily(value: string) {
+  const text = normalize(value);
+  if (/\becoblue\b/.test(text)) return "ecoblue";
+  return text.match(/\b(?:tdci|ecoboost|[bmn][134567][0478]|m1\d{2}|ea\d{3})\b/)?.[0];
+}
+
+/** Preserve a reviewed price assignment when technical provenance improves.
+ * Only 24 trusted public identities and three references are considered. No
+ * canonical scan, source ID rewrite, ECU identification or SEO link is involved. */
+export function resolveSourcedPricingProfileId(input: EstimateMatchInput, source: SourcedTuningProfile): string | undefined {
+  if (!matchSourcedProfile(input, [source]).profile) return undefined;
+  const year = sourceRegistrationYear(input)!;
+  const sourceFamily = commercialEngineFamily([source.engineFamily, source.engineMarketingName].join(" "));
+  const sourceInput: EstimateMatchInput = {
+    make: source.brand, model: commercialModel(source.modelFamily + " " + source.engineMarketingName, source.brand),
+    fuel: source.fuel, powerHp: source.stockPowerHp, displacementCc: input.displacementCc,
+    firstRegistrationYear: year, type: source.generation, variant: source.engineFamily,
+    cylinders: source.cylinders, engineGenerationEvidence: input.engineGenerationEvidence
+  };
+  const registeredInput = {...input, model: commercialModel(input.model ?? "", input.make ?? "")};
+  const candidates = [...engineCatalog, ...tuningReferenceProfiles.map(referenceVehicle)].filter(vehicle => {
+    // Admission outside the retained configuration's period must not inherit its
+    // assignment even though the broader estimate matcher allows manual review.
+    if (!vehicle.years.includes(year) || Math.abs(source.stockPowerHp - vehicle.stockPowerHp) > .51) return false;
+    const registeredReasons = eligibleReasons(registeredInput, vehicle, 2);
+    const sourceReasons = eligibleReasons(sourceInput, vehicle, 2);
+    if (!registeredReasons || !sourceReasons) return false;
+    if ([...registeredReasons, ...sourceReasons].some(reason => ["CATALOG_DISPLACEMENT_UNRESOLVED", "REGISTRATION_OUTSIDE_CATALOG_PERIOD", "MISSING_REGISTRATION_YEAR"].includes(reason))) return false;
+    const expectedFamily = commercialEngineFamily(vehicle.engine);
+    if (expectedFamily && sourceFamily && expectedFamily !== sourceFamily) return false;
+    if (commercialSourceFamilies[vehicle.id] && commercialSourceFamilies[vehicle.id] !== sourceFamily) return false;
+    // Connect TDCi/EcoBlue are distinct engines at equal displacement and power.
+    if (vehicle.id.startsWith("ref-ford-transit-") && expectedFamily !== sourceFamily) return false;
+    const sourceGenerations = commercialGenerationTokens(source.generation, source.brand, source.modelFamily);
+    const expectedGenerations = commercialGenerationTokens(vehicle.generation ?? vehicle.version, vehicle.brand, vehicle.model);
+    return sourceGenerations.some(generation => expectedGenerations.includes(generation))
+      || (commercialGenerationAliases[vehicle.id]?.includes(normalize(source.generation)) ?? false);
+  });
+  const ids = [...new Set(candidates.map(vehicle => vehicle.id))];
+  return ids.length === 1 ? ids[0] : undefined;
 }
 function technicalKey(profile: TuningEstimateProfile) {
   return JSON.stringify([makeKey(profile.brand), normalize(profile.model), normalize(profile.engine), profile.fuel,
@@ -165,7 +320,7 @@ function genericStage(name: StageName, stockPower: number, stockTorque: number |
 }
 
 /** Resolve one compact runtime profile. Publication, pricing and ECU confirmation do not gate power estimates. */
-export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources = {}): EstimateResolution {
+export function resolveLegacyRdwTuningEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources = {}): EstimateResolution {
   if (typeof window !== "undefined") throw new Error("RDW tuning estimate resolution is server-only.");
   const power = registeredPowerToMetricHp(input);
   const fuel = normalizeCatalogFuel(input.fuel);

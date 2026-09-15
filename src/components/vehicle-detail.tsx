@@ -22,7 +22,8 @@ import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
-import {estimateLimitations} from "@/lib/estimate-copy";
+import {customHardwareLabel, estimateLimitations, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
+import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
@@ -94,7 +95,10 @@ export function VehicleDetail({
   text: VehicleCopy;
   vehicle: EngineVariant;
 }) {
-  const estimateProfile = useMemo(() => getCatalogEstimateProfile(vehicle), [vehicle]);
+  const estimateProfile = useMemo(() => {
+    const profile = getCatalogEstimateProfile(vehicle);
+    return {...profile, stages: applyStageHardwarePolicy(profile.stages)};
+  }, [vehicle]);
   const [stageIndex, setStageIndex] = useState(() =>
     Math.max(
       0,
@@ -105,7 +109,7 @@ export function VehicleDetail({
   );
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [recommendedPackage, setRecommendedPackage] = useState<StageDefinition["name"] | null>(null);
-  const selectedStage = vehicle.stages[stageIndex] ?? vehicle.stages[0];
+  const selectedStage = estimateProfile.stages[stageIndex] ?? estimateProfile.stages[0];
   const availableOptions = useMemo(
     () =>
       serviceOptions
@@ -155,15 +159,16 @@ export function VehicleDetail({
       matchStatus: vehicle.publicationSource === "existing-curated" ? "catalog-match" : "ambiguous",
       estimateProfileLabel: `${estimateProfile.brand} ${estimateProfile.model} ${estimateProfile.engine}`,
       engine: estimateProfile.engine,
-      indicativeOutput: {powerHp: selectedStage.powerHp, torqueNm: selectedStage.torqueNm},
+      indicativeOutput: selectedStage,
+      estimateSource: formatEstimateSource(selectedStage, locale),
       recommendedPackage: recommendedPackageLabel,
       stage: selectedStage.name,
       vehicle: `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${vehicle.version}`,
-      vehiclePower: `${vehicle.stockPowerHp} ${powerUnit} -> ${selectedStage.powerHp} ${powerUnit}`
+      vehiclePower: `${vehicle.stockPowerHp} ${powerUnit}`
     }),
     vehicleLabel
   });
-  const recommendationCards = vehicle.stages.map((stage, index) => ({
+  const recommendationCards = estimateProfile.stages.map((stage, index) => ({
     description:
       stage.name === "Stage 1"
         ? text.recommendation.bestDailyText
@@ -195,12 +200,12 @@ export function VehicleDetail({
           {[
             {
               label: text.power,
-              value: `${vehicle.stockPowerHp} → ${selectedStage.powerHp} ${powerUnit}`
+              value: `${vehicle.stockPowerHp} → ${formatEstimatePower(selectedStage, locale)}`
             },
-            {label: text.torque, value: `${vehicle.stockTorqueNm} → ${selectedStage.torqueNm} Nm`},
+            {label: text.torque, value: `${vehicle.stockTorqueNm} → ${formatEstimateTorque(selectedStage, locale)}`},
             {
               label: text.gain,
-              value: `+${selectedStage.powerHp - vehicle.stockPowerHp} ${powerUnit} / +${
+              value: selectedStage.customHardware ? customHardwareLabel(locale) : selectedStage.powerHp === undefined || selectedStage.torqueNm === undefined ? "—" : `+${selectedStage.powerHp - vehicle.stockPowerHp} ${powerUnit} / +${
                 selectedStage.torqueNm - vehicle.stockTorqueNm
               } Nm`
             }
@@ -209,7 +214,7 @@ export function VehicleDetail({
               <div className="text-xs font-bold uppercase tracking-[0.18em] text-primary">
                 {item.label}
               </div>
-              <div className="mt-2 text-2xl font-black">{item.value}</div>
+              <div className="mt-2 break-words text-2xl font-black">{item.value}</div>
             </div>
           ))}
         </div>
@@ -275,7 +280,7 @@ export function VehicleDetail({
                   </p>
                   <div className="mt-4 border-t border-white/10 pt-3 text-sm font-black text-white">
                     <span className="block">
-                      {stage.powerHp} {powerUnit} / {stage.torqueNm} Nm
+                      {formatEstimatePower(stage, locale)}{!stage.customHardware ? ` / ${formatEstimateTorque(stage, locale)}` : ""}
                     </span>
                     <span className="mt-1 block text-xs text-primary">
                       {formatQuote(resolveStageQuote(estimateProfile, stage, {estimateApplicable: true, scope: "family"}), locale)}
@@ -421,7 +426,7 @@ export function VehicleDetail({
             {text.selectStage}
           </div>
           <div className="grid gap-2">
-            {vehicle.stages.map((stage, index) => (
+            {estimateProfile.stages.map((stage, index) => (
               <button
                 className={`rounded-[3px] border p-3 text-left transition ${
                   stageIndex === index
@@ -439,7 +444,7 @@ export function VehicleDetail({
                   </span>
                 </span>
                 <span className="mt-1 block text-sm text-muted-foreground">
-                  {stage.powerHp} {powerUnit} / {stage.torqueNm} Nm
+                  {formatEstimatePower(stage, locale)}{!stage.customHardware ? ` / ${formatEstimateTorque(stage, locale)}` : ""}
                 </span>
               </button>
             ))}

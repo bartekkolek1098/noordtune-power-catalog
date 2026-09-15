@@ -1,6 +1,6 @@
 import type {Locale} from "@/i18n/routing";
 import type {EstimateStage} from "../data/tuning-estimates-shared.ts";
-import {formatEstimatePower, formatEstimateTorque} from "./estimate-copy.ts";
+import {customHardwareLabel, formatEstimatePower, formatEstimateTorque} from "./estimate-copy.ts";
 import {
   conditionalBudgetNote,
   formatAccessAssessment,
@@ -53,7 +53,7 @@ export type VehicleQuoteMessageInput = {
   estimateProfileLabel?: string;
   estimateSource?: string;
   estimateNotes?: string[];
-  indicativeOutput?: Pick<EstimateStage, "powerHp" | "torqueNm" | "powerRangeHp" | "torqueRangeNm">;
+  indicativeOutput?: Pick<EstimateStage, "powerHp" | "torqueNm" | "powerRangeHp" | "torqueRangeNm" | "approximate" | "customHardware">;
 };
 
 export function createLookupQuoteMessage(input: VehicleQuoteMessageInput & {plate: string}) {
@@ -132,7 +132,7 @@ function createQuoteMessage(input: VehicleQuoteMessageInput & {plate?: string}) 
     : input.vehiclePower;
   const budget = conditionalBudgetNote(input.quote, input.locale);
   const scope = formatQuoteScope(input.quote, input.locale);
-  const output = [
+  const output = input.indicativeOutput?.customHardware ? customHardwareLabel(input.locale) : [
     input.indicativeOutput?.powerHp !== undefined || input.indicativeOutput?.powerRangeHp ? formatEstimatePower(input.indicativeOutput, input.locale) : undefined,
     input.indicativeOutput?.torqueNm !== undefined || input.indicativeOutput?.torqueRangeNm ? formatEstimateTorque(input.indicativeOutput, input.locale) : undefined
   ].filter(Boolean).join(" / ");
