@@ -4,8 +4,9 @@ import {CarFront, ChevronRight, Search, Star} from "lucide-react";
 import {useEffect, useMemo, useState} from "react";
 import type {Locale} from "@/i18n/routing";
 import type {VehicleSelectorItem} from "@/data/catalog-selector";
+import {formatQuote} from "@/data/pricing";
 import {sitePath} from "@/lib/site-path";
-import {cn, formatCurrency} from "@/lib/utils";
+import {cn} from "@/lib/utils";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
@@ -244,11 +245,7 @@ export function ManualSelector({
                     {vehicle.version} · {vehicle.engine} · {vehicle.yearRange}
                   </span>
                   <span className="flex items-center justify-between gap-3 text-sm font-black text-primary">
-                    {text.from}{" "}
-                    {formatCurrency(
-                      vehicle.priceFrom,
-                      locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL"
-                    )}
+                    {formatQuote(vehicle.quote, locale)}
                     <ChevronRight className="h-4 w-4 transition group-hover:translate-x-1" />
                   </span>
                 </a>

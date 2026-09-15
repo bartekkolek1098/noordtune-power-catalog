@@ -11,11 +11,12 @@ import {
   type CuratedVehiclePublication
 } from "./curated-catalog.ts";
 import {
-  getPublicStagePrice,
   getPublicStagePricingTier,
+  resolveStageQuote,
   type PricingTierId
 } from "./pricing.ts";
 import {applyCuratedTechnicalProfile} from "./curated-technical.ts";
+import {assessCatalogMatch, normalizeCatalogFuel, type CatalogMatchInput} from "./catalog-matching.ts";
 
 export type {
   ConfidenceLevel,
@@ -1518,7 +1519,7 @@ function applyPublicPricing(vehicle: EngineVariant): EngineVariant {
     stages: vehicle.stages.map((stage) => ({
       ...stage,
       sourcePrice: stage.sourcePrice ?? stage.price,
-      price: getPublicStagePrice(vehicle, stage),
+      quote: resolveStageQuote(vehicle, stage),
       pricingTier: getPublicStagePricingTier(vehicle, stage) ?? stage.pricingTier
     }))
   };
@@ -1669,7 +1670,7 @@ function toVehicleSelectorItem(vehicle: EngineVariant): VehicleSelectorItem {
     yearRange: publicVehicle.yearRange,
     ecuType: publicVehicle.ecuType,
     popular: Boolean(publicVehicle.popular),
-    priceFrom: stage ? getPublicStagePrice(publicVehicle, stage) : 0
+    quote: resolveStageQuote(publicVehicle, stage)
   };
 }
 
@@ -1701,63 +1702,18 @@ function uniqueVehicleSelectorItems(
   return result;
 }
 
-export function findCatalogMatch(input: {
-  make?: string;
-  model?: string;
-  fuel?: string;
-  powerHp?: number | null;
-}) {
-  const make = normalizeSearch(input.make);
-  const model = normalizeSearch(input.model);
-  const fuel = normalizeFuel(input.fuel);
-
-  if (!make || !model) {
-    return null;
-  }
-
-  const candidates = vehicleDatabase
-    .map((variant) => {
-      if (!brandMatches(make, variant.brand)) {
-        return {variant, score: 0};
-      }
-
-      const modelScore = scoreModelIdentity(model, variant);
-      if (modelScore < 22) {
-        return {variant, score: 0};
-      }
-
-      if (fuel && variant.fuel !== fuel) {
-        return {variant, score: 0};
-      }
-
-      let score = 45 + modelScore + (fuel ? 18 : 0);
-
-      if (input.powerHp) {
-        const delta = Math.abs(input.powerHp - variant.stockPowerHp);
-        const tolerance = Math.max(35, Math.round(variant.stockPowerHp * 0.22));
-
-        if (delta > tolerance) {
-          return {variant, score: 0};
-        }
-
-        score += Math.max(0, 25 - Math.floor(delta / 4));
-      }
-
-      return {variant, score};
-    })
-    .filter((candidate) => candidate.score > 0)
-    .sort((a, b) => b.score - a.score);
-
-  const best = candidates[0];
-
-  if (!best || best.score < 78) {
-    return null;
-  }
-
-  return {
-    confidence: Math.min(100, best.score),
-    variant: best.variant
-  };
+// Only existing curated relationships supply applicability, never installed ECU evidence.
+// Publishing a generated source as an SEO page does not independently review applicability.
+export function findCatalogMatch(input: CatalogMatchInput) {
+  const publicSourceIds = new Set(engineCatalog.map((vehicle) => vehicle.sourceCanonicalId ?? vehicle.id));
+  return assessCatalogMatch(input, [
+    ...engineCatalog.map((variant) => ({
+      variant,
+      applicability: variant.publicationSource === "existing-curated" ? "reviewed" as const : "generated" as const
+    })),
+    ...vehicleDatabase.filter((vehicle) => !publicSourceIds.has(vehicle.id))
+      .map((variant) => ({variant, applicability: "generated" as const}))
+  ]);
 }
 
 function createGeneratedVehicle(
@@ -2312,71 +2268,6 @@ function normalizeSearch(value?: string) {
     .trim();
 }
 
-function brandMatches(make: string, brand: string) {
-  const normalizedBrand = normalizeSearch(brand);
-  const aliases: Record<string, string[]> = {
-    volkswagen: ["volkswagen", "vw"],
-    "mercedes benz": ["mercedes benz", "mercedes"],
-    "alfa romeo": ["alfa romeo", "alfa"],
-    mini: ["mini", "bmw mini"]
-  };
-  const candidates = aliases[normalizedBrand] ?? [normalizedBrand];
-
-  return candidates.some((candidate) => make === candidate || make.includes(candidate));
-}
-
-function scoreModelIdentity(inputModel: string, variant: EngineVariant) {
-  const identitySources = [
-    variant.model,
-    variant.version,
-    variant.engine,
-    ...variant.tags
-  ].map(normalizeSearch);
-  const stopWords = new Set([
-    "petrol",
-    "diesel",
-    "benzine",
-    "hybrid",
-    "turbo",
-    "serie",
-    "series",
-    "klasse",
-    "class",
-    "performance",
-    "edition",
-    "manual",
-    "dsg",
-    "zf",
-    "tcu"
-  ]);
-  const tokens = Array.from(
-    new Set(identitySources.flatMap((source) => source.split(/\s+/)))
-  ).filter((token) => isImportantModelToken(token, stopWords));
-  let score = 0;
-
-  for (const source of identitySources) {
-    if (source.length > 3 && inputModel.includes(source)) {
-      score += 24;
-    }
-  }
-
-  for (const token of tokens) {
-    if (inputModel.includes(token)) {
-      score += /\d/.test(token) ? 18 : 14;
-    }
-  }
-
-  return Math.min(score, 65);
-}
-
-function isImportantModelToken(token: string, stopWords: Set<string>) {
-  if (!token || stopWords.has(token)) {
-    return false;
-  }
-
-  return token.length >= 2 || /^\d$/.test(token);
-}
-
 function roundToFive(value: number) {
   return Math.round(value / 5) * 5;
 }
@@ -2467,27 +2358,5 @@ function escapeRegExp(value: string) {
 }
 
 export function normalizeFuel(fuel?: string): FuelType | undefined {
-  if (!fuel) {
-    return undefined;
-  }
-
-  const normalized = fuel.toLowerCase();
-
-  if (normalized.includes("diesel")) {
-    return "Diesel";
-  }
-
-  if (normalized.includes("benzine") || normalized.includes("petrol")) {
-    return "Petrol";
-  }
-
-  if (normalized.includes("hybride") || normalized.includes("hybrid")) {
-    return "Hybrid";
-  }
-
-  if (normalized.includes("elektr") || normalized.includes("electric")) {
-    return "Electric";
-  }
-
-  return undefined;
+  return normalizeCatalogFuel(fuel);
 }

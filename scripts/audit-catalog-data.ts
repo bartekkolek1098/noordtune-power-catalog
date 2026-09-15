@@ -415,7 +415,7 @@ for (const vehicle of catalog.engineCatalog) {
     }
 
     const expectedTier = pricing.getPublicStagePricingTier(vehicle, stage);
-    const expectedPrice = pricing.getPublicStagePrice(vehicle, stage);
+    const expectedQuote = pricing.resolveStageQuote(vehicle, stage);
 
     if (
       !stage.pricingTier ||
@@ -427,12 +427,11 @@ for (const vehicle of catalog.engineCatalog) {
     if (
       !expectedTier ||
       stage.pricingTier !== expectedTier ||
-      stage.price !== expectedPrice ||
-      !Number.isFinite(expectedPrice) ||
-      expectedPrice <= 0
+      JSON.stringify(stage.quote) !== JSON.stringify(expectedQuote) ||
+      (expectedQuote.kind === "from" && (!Number.isSafeInteger(expectedQuote.amountCents) || expectedQuote.amountCents <= 0))
     ) {
       publicPricingResolverMismatches.push(
-        `${vehicle.id}: ${stage.name} rendered=${stage.price}, resolver=${expectedPrice}, tier=${stage.pricingTier ?? "none"}, expectedTier=${expectedTier ?? "none"}`
+        `${vehicle.id}: ${stage.name} quote=${JSON.stringify(stage.quote)}, resolver=${JSON.stringify(expectedQuote)}`
       );
     }
 
@@ -458,10 +457,12 @@ for (const vehicle of catalog.engineCatalog) {
       );
     }
 
-    const rdwPrice = pricing.getPublicStagePrice(source, sourceStage);
-    if (rdwPrice !== stage.price) {
+    // RDW strong matches carry the public reviewed variant. Generated sources must
+    // remain quote-only; aliases alone cannot grant reviewed applicability.
+    const rdwQuote = pricing.resolveStageQuote(vehicle, sourceStage);
+    if (JSON.stringify(rdwQuote) !== JSON.stringify(expectedQuote)) {
       rdwPublicPricingMismatches.push(
-        `${vehicle.id}: ${stage.name} public=${stage.price}, RDW=${rdwPrice}`
+        `${vehicle.id}: ${stage.name} public=${JSON.stringify(expectedQuote)}, RDW=${JSON.stringify(rdwQuote)}`
       );
     }
   }
@@ -478,9 +479,9 @@ for (const vehicle of catalog.engineCatalog) {
       })
       .find((item) => item.id === vehicle.id);
 
-    if (!selectorItem || selectorItem.priceFrom !== publicStage1.price) {
+    if (!selectorItem || JSON.stringify(selectorItem.quote) !== JSON.stringify(publicStage1.quote)) {
       manualSelectorPricingMismatches.push(
-        `${vehicle.id}: engine selector=${selectorItem?.priceFrom ?? "missing"}, public=${publicStage1.price}`
+        `${vehicle.id}: engine selector=${JSON.stringify(selectorItem?.quote)}, public=${JSON.stringify(publicStage1.quote)}`
       );
     }
 
@@ -488,9 +489,9 @@ for (const vehicle of catalog.engineCatalog) {
       .searchVehicleSelectorItems(`${vehicle.brand} ${vehicle.model}`, 4)
       .find((item) => item.id === vehicle.id);
 
-    if (!quickSearchItem || quickSearchItem.priceFrom !== publicStage1.price) {
+    if (!quickSearchItem || JSON.stringify(quickSearchItem.quote) !== JSON.stringify(publicStage1.quote)) {
       manualSelectorPricingMismatches.push(
-        `${vehicle.id}: quick search=${quickSearchItem?.priceFrom ?? "missing"}, public=${publicStage1.price}`
+        `${vehicle.id}: quick search=${JSON.stringify(quickSearchItem?.quote)}, public=${JSON.stringify(publicStage1.quote)}`
       );
     }
   }
@@ -1118,22 +1119,22 @@ addIssue(
   "critical",
   "STRUCTURED_DATA_PUBLIC_PRICE_MISMATCH",
   "Stage Offer JSON-LD must use the same resolved public Stage price rendered by the page.",
-  /price:\s*selectedStage\.price/.test(stagePageSource)
+  /quoteOfferFields\(selectedQuote, safeLocale\)/.test(stagePageSource)
     ? []
-    : ["Stage SEO Offer does not use selectedStage.price"]
+    : ["Stage SEO Offer does not use the resolved quote"]
 );
 addIssue(
   "critical",
   "WHATSAPP_STAGE_PRICE_MISMATCH",
   "Vehicle and RDW WhatsApp totals must use the same resolved Stage price as the calculator.",
   [
-    !/const total = selectedStage\.price \+ optionsTotal/.test(
+    !/addQuoteOptions\(resolveStageQuote\(vehicle, selectedStage\), optionsTotalCents\)/.test(
       vehicleDetailSource
     )
-      ? "Vehicle calculator total does not use selectedStage.price"
+      ? "Vehicle calculator does not use quote arithmetic"
       : null,
-    !/getPublicStagePrice\(match, stage\)/.test(plateLookupSource)
-      ? "RDW exact-match stages do not use getPublicStagePrice"
+    !/addQuoteOptions\(resolveStageQuote\(/.test(plateLookupSource)
+      ? "RDW stages do not use quote arithmetic"
       : null
   ].filter((item): item is string => Boolean(item))
 );
@@ -1222,7 +1223,7 @@ function technicalVehicleProjection(
     stages: vehicle.stages.map((stage) =>
       Object.fromEntries(
         Object.entries(stage).filter(
-          ([key]) => !["price", "pricingTier", "sourcePrice"].includes(key)
+          ([key]) => !["price", "pricingTier", "sourcePrice", "quote"].includes(key)
         )
       )
     )
@@ -1256,8 +1257,8 @@ const productionTechnicalBaseline = {
     "dff24cf3c6ff6425ed2c121fb97f5da1959c7dad8ff5f974911a88cb63167775",
   serviceTechnical:
     "32145c26a8c81c430edde2acf1467c849a0b89fcf06709d1e0ea5a85983a90eb",
-  rdwMatcher:
-    "c9c9fda79732266e7bf65d3b4b025f71f8d06a66ac914ba2d1340768c1c12df8"
+  servicePricing:
+    "0c03f32a586fc5e279643870a60b01d27a01ec6fd8a1442158e0ea9854fb2a6b"
 } as const;
 
 const previousPublicCommercialHashes = {
@@ -1277,12 +1278,15 @@ const currentTechnicalHashes = {
   ),
   publicRoutes: semanticHash(sitemapRouteKeys),
   serviceTechnical: semanticHash(serviceOptions.map(technicalServiceProjection)),
-  rdwMatcher: semanticHash(String(catalog.findCatalogMatch))
+  servicePricing: semanticHash(serviceOptions.map(servicePricingProjection)),
+  rdwMatcher: semanticHash(String(catalog.findCatalogMatch)),
+  matcherImplementation: semanticHash(readFileSync(resolve(process.cwd(), "src/data/catalog-matching.ts"), "utf8").replace(/\r\n/g, "\n")),
+  quoteImplementation: semanticHash(readFileSync(resolve(process.cwd(), "src/data/pricing.ts"), "utf8").replace(/\r\n/g, "\n"))
 } as const;
 
 const currentPublicCommercialHashes = {
   publicCommercial: semanticHash(
-    catalog.engineCatalog.map(commercialVehicleProjection)
+    catalog.engineCatalog.map((vehicle) => ({...commercialVehicleProjection(vehicle), quotes: vehicle.stages.map((stage) => pricing.resolveStageQuote(vehicle, stage))}))
   ),
   servicePricing: semanticHash(serviceOptions.map(servicePricingProjection))
 } as const;
@@ -1313,7 +1317,7 @@ if (
 addIssue(
   "critical",
   "PRODUCTION_SEMANTIC_INTEGRITY",
-  "Protected technical data, canonical prices, routes, service definitions and RDW matching must remain identical to production.",
+  "Protected technical data, canonical prices, routes and service definitions must remain identical to production. Matching and quote policy changes are checked by executable regressions.",
   semanticIntegrityFailures
 );
 
@@ -1384,9 +1388,8 @@ function pricingMapping(
 ) {
   return vehicle.stages
     .map((stage) => {
-      const tier = pricing.getPricingTier(stage.pricingTier);
-      const exact = Boolean(tier && tier.priceFrom === stage.price);
-      return `${stage.name}: ${stage.pricingTier ?? "none"} (${exact ? "EXACT" : "REVIEW"})`;
+      const quote = pricing.resolveStageQuote(vehicle, stage);
+      return `${stage.name}: ${pricing.formatQuote(quote, "en")} (${stage.pricingTier ?? "none"}; ${quote.kind === "on-request" ? quote.reasonCode : "assigned policy"})`;
     })
     .join("; ");
 }
@@ -1437,7 +1440,7 @@ const technicalVehicleDetails = catalog.engineCatalog
     const stageRows = vehicle.stages
       .map(
         (stage) =>
-          `| ${stage.name} | ${stage.powerHp} hp | ${stage.torqueNm} Nm | EUR ${stage.price} | ${stage.pricingTier ?? "none"} |`
+          `| ${stage.name} | ${stage.powerHp} hp | ${stage.torqueNm} Nm | ${pricing.formatQuote(pricing.resolveStageQuote(vehicle, stage), "en")} | ${stage.pricingTier ?? "none"} |`
       )
       .join("\n");
     const compatibility = vehicle.options
@@ -1534,6 +1537,10 @@ ${Object.entries(previousPublicCommercialHashes)
   .join("\n")}
 
 Protected counts: 24 public vehicles, 58,586 canonical vehicles, 175,758 canonical stage definitions and 291 sitemap URLs.
+
+Matcher wrapper fingerprint deliberately changed from \`c9c9fda79732266e7bf65d3b4b025f71f8d06a66ac914ba2d1340768c1c12df8\` to \`${currentTechnicalHashes.rdwMatcher}\`. Behavioral regressions check rejection, ambiguity and generated applicability; unchanged-matcher equality is no longer a requirement for this identity fix.
+
+Normalized matcher implementation fingerprint: \`${currentTechnicalHashes.matcherImplementation}\`. Quote implementation fingerprint: \`${currentTechnicalHashes.quoteImplementation}\`. These cover the extracted implementation, including helper rules, rather than only its catalog wrapper.
 `;
 
 function stageByName(
@@ -1545,13 +1552,9 @@ function stageByName(
 
 const tcuOption = serviceOptionById.get("gearbox");
 const pricingV2Rows = catalog.engineCatalog.map((vehicle) => {
-  const source = canonicalVehicleById.get(vehicle.sourceCanonicalId ?? vehicle.id);
   const stage1 = stageByName(vehicle, "Stage 1");
   const stage2 = stageByName(vehicle, "Stage 2");
   const stage3 = stageByName(vehicle, "Stage 3+");
-  const oldStage1 = source?.stages.find((stage) => stage.name === "Stage 1");
-  const oldStage2 = source?.stages.find((stage) => stage.name === "Stage 2");
-  const oldStage3 = source?.stages.find((stage) => stage.name === "Stage 3+");
   const tcuStatus = vehicle.serviceCompatibility?.gearbox?.status ?? "missing";
   const tcuPrice =
     vehicle.options.includes("gearbox") && tcuStatus !== "not-applicable"
@@ -1560,14 +1563,14 @@ const pricingV2Rows = catalog.engineCatalog.map((vehicle) => {
 
   return {
     vehicle: `${vehicle.brand} ${vehicle.model}`,
-    oldStage1: oldStage1?.price,
-    newStage1: stage1?.price,
+    oldStage1: pricing.getPricingTier(pricing.getPublicStagePricingTier(vehicle, {name: "Stage 1", price: 0}))?.priceFrom,
+    newStage1: pricing.getPublicStagePrice(vehicle, stage1!),
     tierStage1: stage1?.pricingTier,
-    oldStage2: oldStage2?.price,
-    newStage2: stage2?.price,
+    oldStage2: pricing.getPricingTier(pricing.getPublicStagePricingTier(vehicle, {name: "Stage 2", price: 0}))?.priceFrom,
+    newStage2: pricing.getPublicStagePrice(vehicle, stage2!),
     tierStage2: stage2?.pricingTier,
-    oldStage3: oldStage3?.price,
-    newStage3: stage3?.price,
+    oldStage3: pricing.getPricingTier(pricing.getPublicStagePricingTier(vehicle, {name: "Stage 3+", price: 0}))?.priceFrom,
+    newStage3: pricing.getPublicStagePrice(vehicle, stage3!),
     tierStage3: stage3?.pricingTier,
     tcuStatus,
     tcuPrice
@@ -1597,7 +1600,7 @@ const unsafePricingRows = [
 
 const pricingV2Review = `# NoordTune Pricing V2 Review
 
-Pricing V2 is a public commercial overlay for the 24 intentionally curated vehicles. Canonical technical records retain their source prices. All displayed amounts below are VAT-inclusive public **from** prices; final availability and price remain subject to the existing vehicle/ECU verification flow.
+Pricing V2 nominal assignments remain unchanged. The shared quote policy now checks applicability and ECU/access review before exposing a numeric price. Canonical technical records retain their source prices. Numeric amounts are VAT-inclusive **from** prices; on-request states have no numeric total. The old columns show the pinned Pricing V2 baseline assignments.
 
 ## 24-Vehicle Migration
 
@@ -1606,7 +1609,7 @@ Pricing V2 is a public commercial overlay for the 24 intentionally curated vehic
 ${pricingV2Rows
   .map(
     (row) =>
-      `| ${row.vehicle} | EUR ${row.oldStage1 ?? "-"} | EUR ${row.newStage1 ?? "-"} | ${row.tierStage1 ?? "none"} | EUR ${row.oldStage2 ?? "-"} | EUR ${row.newStage2 ?? "-"} | ${row.tierStage2 ?? "none"} | EUR ${row.oldStage3 ?? "-"} | EUR ${row.newStage3 ?? "-"} | ${row.tierStage3 ?? "none"} | ${statusLabel(row.tcuStatus)} | ${row.tcuPrice ? `EUR ${row.tcuPrice}` : "-"} |`
+      `| ${row.vehicle} | EUR ${row.oldStage1 ?? "-"} | ${row.newStage1 === undefined ? "On request" : `EUR ${row.newStage1}`} | ${row.tierStage1 ?? "none"} | EUR ${row.oldStage2 ?? "-"} | ${row.newStage2 === undefined ? "On request" : `EUR ${row.newStage2}`} | ${row.tierStage2 ?? "none"} | EUR ${row.oldStage3 ?? "-"} | ${row.newStage3 === undefined ? "On request" : `EUR ${row.newStage3}`} | ${row.tierStage3 ?? "none"} | ${statusLabel(row.tcuStatus)} | ${row.tcuPrice ? `EUR ${row.tcuPrice}` : "-"} |`
   )
   .join("\n")}
 
@@ -1617,12 +1620,13 @@ ${pricingV2Rows
 | EUR 299 / 449 / 699 | ${stage1Distribution["299"] ?? 0} | ${stage2Distribution["449"] ?? 0} | ${stage3Distribution["699"] ?? 0} |
 | EUR 349 / 499 / 849 | ${stage1Distribution["349"] ?? 0} | ${stage2Distribution["499"] ?? 0} | ${stage3Distribution["849"] ?? 0} |
 | EUR 399 / 549 / 999 | ${stage1Distribution["399"] ?? 0} | ${stage2Distribution["549"] ?? 0} | ${stage3Distribution["999"] ?? 0} |
+| On request | ${stage1Distribution["missing"] ?? 0} | ${stage2Distribution["missing"] ?? 0} | ${stage3Distribution["missing"] ?? 0} |
 
 ## Transmission Pricing
 
 - Standalone DSG / ZF / TCU tuning: **from EUR ${tcuOption?.price ?? "missing"}**.
 - It is shown only where the existing service compatibility layer allows it.
-- Compatibility, transmission evidence and confirmation requirements are unchanged.
+- Service definitions/prices are unchanged. Selectable TCU work requires an explicit automatic gearbox and supported/conditional compatibility; an unknown transmission does not enable it.
 - No Stage + TCU bundle discount is implemented.
 
 ## Other Service Prices

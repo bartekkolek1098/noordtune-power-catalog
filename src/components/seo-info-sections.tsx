@@ -23,13 +23,13 @@ export function SeoInfoSections({
   title: string;
 }) {
   return (
-    <section className="mt-10 rounded-[3px] border border-white/10 bg-black/55 p-5 shadow-[0_0_70px_rgba(0,0,0,.28)] md:p-6">
+    <section className="mt-10 min-w-0 rounded-[3px] border border-white/10 bg-black/55 p-5 shadow-[0_0_70px_rgba(0,0,0,.28)] md:p-6">
       <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-        <div>
+        <div className="min-w-0">
           <div className="text-xs font-black uppercase tracking-[0.18em] text-primary">
             {eyebrow}
           </div>
-          <h2 className="racing-title mt-2 text-3xl leading-none text-white md:text-4xl">
+          <h2 className="racing-title mt-2 break-words text-3xl leading-none text-white md:text-4xl">
             {title}
           </h2>
         </div>

@@ -17,10 +17,9 @@ import {
 import {useMemo, useState} from "react";
 import type {RdwLookupResult} from "@/lib/rdw";
 import {serviceOptions, type StageDefinition} from "@/data/catalog-shared";
-import {
-  getPublicStagePrice,
-  getPublicStagePricingTier
-} from "@/data/pricing";
+import {addQuoteOptions, assessVehicleAccess, conditionalBudgetNote, formatAccessAssessment, formatQuote, resolveStageQuote} from "@/data/pricing";
+import {formatRegistrationDate} from "@/lib/rdw-date";
+import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
@@ -106,48 +105,37 @@ export function PlateLookup({
   const [recommendedPackageUsed, setRecommendedPackageUsed] = useState(false);
 
   const match = result?.tuningMatch?.variant;
-  const stages = useMemo(() => {
-    if (match) {
-      return match.stages.map((stage) => ({
-        ...stage,
-        sourcePrice: stage.sourcePrice ?? stage.price,
-        price: getPublicStagePrice(match, stage),
-        pricingTier: getPublicStagePricingTier(match, stage) ?? stage.pricingTier
-      }));
-    }
-
-    const detectedPower = result?.vehicle.engine.powerHp ?? 150;
-    return createIndicativeStages(detectedPower, locale);
-  }, [locale, match, result]);
+  const stages = useMemo(() => match?.stages ?? createPendingStages(), [match]);
 
   const availableOptions = useMemo(() => {
     if (match) {
       return serviceOptions
-        .filter((option) => match.options.includes(option.id))
+        .filter((option) => isVehicleServiceSelectable(match, option))
         .map((option) => localizeServiceOption(option, locale));
     }
 
-    return serviceOptions.map((option) => localizeServiceOption(option, locale));
+    return serviceOptions.filter((option) => !option.requiresGearbox).map((option) => localizeServiceOption(option, locale));
   }, [locale, match]);
 
   const selectedStage = stages[stageIndex] ?? stages[0];
   const stage1Index = stages.findIndex((stage) => stage.name === "Stage 1");
-  const gearboxOption = match && match.gearbox !== "Manual"
+  const gearboxOption = match
     ? availableOptions.find((option) => option.id === "gearbox")
     : undefined;
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
   const powerUnit = locale === "en" ? "hp" : locale === "pl" ? "KM" : "pk";
   const localCopy = lookupRuntimeCopy[locale];
-  const quoteVehicleLabel = match
-    ? `${match.brand} ${match.model} ${match.engine}`
-    : result
+  const quoteVehicleLabel = result
       ? `${result.vehicle.make} ${result.vehicle.model}`.trim()
       : undefined;
-  const optionsTotal = selectedOptions.reduce((total, id) => {
-    const option = serviceOptions.find((item) => item.id === id);
-    return total + (option?.price ?? 0);
-  }, 0);
-  const total = (selectedStage?.price ?? 0) + optionsTotal;
+  const optionsCents = availableOptions.filter((option) => selectedOptions.includes(option.id))
+    .reduce((total, option) => total + Math.round(option.price * 100), 0);
+  const quoteIdentity = match ?? {make: result?.vehicle.make, model: result?.vehicle.model};
+  const access = assessVehicleAccess(quoteIdentity);
+  const quote = addQuoteOptions(resolveStageQuote(quoteIdentity, selectedStage, {
+    matchStatus: result?.tuningMatch.status ?? "no-match", access
+  }), optionsCents);
+  const budgetNote = conditionalBudgetNote(quote, locale);
   const selectedOptionLabels = availableOptions
     .filter((option) => selectedOptions.includes(option.id))
     .map((option) => option.name);
@@ -159,19 +147,21 @@ export function PlateLookup({
     result && selectedStage
       ? createLookupQuoteMessage({
           displacementCc: result.vehicle.engine.displacementCc,
-          exactMatch: Boolean(match),
+          matchStatus: result.tuningMatch.status,
+          access,
+          firstAdmission: result.vehicle.registration.firstAdmission,
           fuel: result.vehicle.fuel,
           locale,
           options: selectedOptionLabels,
           plate: result.vehicle.plate,
-          price: formatCurrency(total, localeCode),
+          quote,
           recommendedPackage,
           stage: selectedStage.name,
           vehicle: quoteVehicleLabel ?? `${result.vehicle.make} ${result.vehicle.model}`.trim(),
           vehiclePower:
-            result.vehicle.engine.powerHp !== null &&
-            result.vehicle.engine.powerHp !== undefined
-              ? `${result.vehicle.engine.powerHp} ${powerUnit}`
+            result.vehicle.engine.powerKw !== null &&
+            result.vehicle.engine.powerKw !== undefined
+              ? `${result.vehicle.engine.powerKw} kW (${result.vehicle.engine.powerHp} ${powerUnit})`
               : undefined
         })
       : undefined;
@@ -296,7 +286,7 @@ export function PlateLookup({
               initial={{opacity: 0, y: 8}}
             >
               <div className="rounded-[3px] border border-white/10 bg-black/35 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,.04)]">
-                <div className="mb-3 flex items-center justify-between gap-3">
+                <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
                   <div className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
                     {text.detected}
                   </div>
@@ -317,10 +307,13 @@ export function PlateLookup({
                     APK {result.vehicle.registration.apkExpiry ?? "-"}
                   </span>
                   <span>Type {result.vehicle.variant ?? result.vehicle.type ?? "-"}</span>
+                  <span className="sm:col-span-2" data-testid="rdw-first-registration">
+                    {localCopy.firstRegistration}: {formatRegistrationDate(result.vehicle.registration.firstAdmission, locale)}
+                  </span>
                 </div>
               </div>
 
-              <div className="grid gap-4 md:grid-cols-[1fr_0.9fr]">
+              <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)]">
                 {match ? (
                   <div className="rounded-[3px] border border-emerald-400/25 bg-[linear-gradient(145deg,rgba(16,185,129,.08),rgba(0,0,0,.34))] p-4">
                     <div className="mb-3 flex flex-wrap items-center gap-2">
@@ -336,9 +329,9 @@ export function PlateLookup({
                       {match.brand} {match.model}
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      {match.engine} · {match.ecuType}
+                      {match.engine} · {match.ecuType} ({localCopy.toConfirm})
                     </p>
-                    <Button asChild className="mt-4 rounded-[3px]" variant="outline">
+                    <Button asChild className="mt-4 h-auto min-h-11 max-w-full whitespace-normal rounded-[3px] text-center" variant="outline">
                       <a href={sitePath(`/${locale}/vehicles/${match.id}`)}>
                         {text.viewDetails}
                         <ChevronRight className="h-4 w-4" />
@@ -358,7 +351,7 @@ export function PlateLookup({
                         {text.recommendation.nextStep}
                       </span>
                     </div>
-                    <h3 className="racing-title mt-4 text-2xl leading-tight text-white">
+                    <h3 className="racing-title mt-4 break-words text-2xl leading-tight text-white">
                       {text.recommendation.manualTitle}
                     </h3>
                     <p className="mt-3 text-sm leading-6 text-muted-foreground">
@@ -390,9 +383,11 @@ export function PlateLookup({
                   <div className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
                     {match ? text.estimate : text.recommendation.indicativeEstimate}
                   </div>
-                  <div className="mt-2 text-3xl font-black">
-                    {text.fromPrice} {formatCurrency(total, localeCode)}
+                  <div className="mt-2 break-words text-3xl font-black">
+                    {formatQuote(quote, locale)}
                   </div>
+                  <p className="mt-3 text-sm leading-6 text-slate-300">{formatAccessAssessment(access, locale)}</p>
+                  {budgetNote ? <p className="mt-3 text-sm leading-6 text-slate-300">{budgetNote}</p> : null}
                   {!match ? (
                     <p className="mt-3 text-sm leading-6 text-slate-300">
                       {text.recommendation.nextStepDescription}
@@ -425,8 +420,8 @@ export function PlateLookup({
                   className="panel-edge overflow-hidden border-primary/35 p-5"
                   data-testid="rdw-recommended-package"
                 >
-                  <div className="grid gap-5 lg:grid-cols-[1fr_0.8fr] lg:items-center">
-                    <div>
+                  <div className="grid min-w-0 grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] lg:items-center">
+                    <div className="min-w-0 break-words">
                       <div className="flex flex-wrap items-center gap-3">
                         <span className="grid h-10 w-10 place-items-center rounded-[3px] border border-primary/35 bg-primary/15 text-primary">
                           <Sparkles className="h-5 w-5" />
@@ -463,7 +458,7 @@ export function PlateLookup({
 
                     <div className="rounded-[3px] border border-white/10 bg-black/40 p-4">
                       <Button
-                        className="h-12 w-full rounded-[3px] font-black uppercase"
+                        className="h-auto min-h-12 w-full whitespace-normal rounded-[3px] font-black uppercase"
                         disabled={stage1Index < 0}
                         onClick={() => selectStage(stage1Index, true)}
                         type="button"
@@ -480,7 +475,7 @@ export function PlateLookup({
                             {text.recommendation.recommendedAddOn}
                           </div>
                           <Button
-                            className="h-auto min-h-11 w-full justify-between gap-3 rounded-[3px] px-3 py-2 text-left text-xs font-bold"
+                            className="h-auto min-h-11 w-full flex-wrap justify-between gap-3 whitespace-normal rounded-[3px] px-3 py-2 text-left text-xs font-bold"
                             onClick={() => toggleOption(gearboxOption.id)}
                             type="button"
                             variant="outline"
@@ -525,18 +520,18 @@ export function PlateLookup({
                     {text.recommendation.indicativeEstimate}
                   </div>
                 ) : null}
-                <PowerChart
+                {match ? <PowerChart
                   powerUnit={powerUnit}
-                  stages={stages}
-                  stockPower={match?.stockPowerHp ?? result.vehicle.engine.powerHp ?? 150}
+                  stages={match.stages}
+                  stockPower={match.stockPowerHp}
                   stockLabel={text.stock}
-                  stockTorque={match?.stockTorqueNm ?? estimateStockTorque(result)}
-                />
+                  stockTorque={match.stockTorqueNm}
+                /> : <div className="flex h-64 min-w-0 w-full items-center justify-center text-center text-sm text-muted-foreground" data-testid="rdw-pending-chart">{localCopy.pendingChart}</div>}
               </div>
 
-              <div className="grid gap-4 md:grid-cols-[1fr_0.85fr]">
-                <div className="overflow-hidden rounded-[3px] border border-white/10">
-                  <table className="w-full text-sm">
+              <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)]">
+                <div className="min-w-0 overflow-hidden rounded-[3px] border border-white/10">
+                  <table className="w-full table-fixed break-words text-sm">
                     <thead className="bg-white/[0.04] text-left text-muted-foreground">
                       <tr>
                         <th className="px-3 py-3">{text.stage}</th>
@@ -552,7 +547,7 @@ export function PlateLookup({
                           onClick={() => selectStage(index)}
                         >
                           <td className="px-3 py-3">
-                            <span className="inline-flex items-center gap-2">
+                            <span className="inline-flex flex-wrap items-center gap-2">
                               <span
                                 className={`flex h-5 w-5 items-center justify-center rounded-full border ${
                                   stageIndex === index
@@ -568,9 +563,9 @@ export function PlateLookup({
                             </span>
                           </td>
                           <td className="px-3 py-3">
-                            {stage.powerHp} {powerUnit}
+                            {stage.powerHp === undefined ? localCopy.toConfirm : `${stage.powerHp} ${powerUnit}`}
                           </td>
-                          <td className="px-3 py-3">{stage.torqueNm} Nm</td>
+                          <td className="px-3 py-3">{stage.torqueNm === undefined ? localCopy.toConfirm : `${stage.torqueNm} Nm`}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -584,10 +579,10 @@ export function PlateLookup({
                   <div className="space-y-2">
                     {availableOptions.map((option) => (
                       <label
-                        className="flex cursor-pointer items-start justify-between gap-3 rounded-md bg-white/[0.04] p-3 text-sm"
+                        className="flex min-w-0 flex-wrap cursor-pointer items-start justify-between gap-3 rounded-md bg-white/[0.04] p-3 text-sm"
                         key={option.id}
                       >
-                        <span>
+                        <span className="min-w-0 flex-1 basis-40 break-words">
                           <span className="block font-semibold">{option.name}</span>
                           <span className="mt-1 block text-xs leading-5 text-muted-foreground">
                             {option.description}
@@ -625,6 +620,9 @@ const lookupRuntimeCopy: Record<
   Locale,
   {
     cacheHit: string;
+    firstRegistration: string;
+    toConfirm: string;
+    pendingChart: string;
     cacheMiss: string;
     exactMatch: string;
     networkError: string;
@@ -639,6 +637,9 @@ const lookupRuntimeCopy: Record<
   }
 > = {
   nl: {
+    firstRegistration: "Eerste toelating",
+    toConfirm: "Te bevestigen",
+    pendingChart: "Vermogen en koppel te bevestigen na controle van de voertuigconfiguratie.",
     cacheHit: "cache hit",
     cacheMiss: "nieuwe RDW check",
     exactMatch: "NoordTune bevestigt de exacte ECU en motorvariant in de offerte.",
@@ -665,6 +666,9 @@ const lookupRuntimeCopy: Record<
     ]
   },
   en: {
+    firstRegistration: "First registration",
+    toConfirm: "To be confirmed",
+    pendingChart: "Power and torque to be confirmed after vehicle configuration verification.",
     cacheHit: "cache hit",
     cacheMiss: "fresh RDW check",
     exactMatch: "NoordTune confirms the exact ECU and engine variant in the quote.",
@@ -691,6 +695,9 @@ const lookupRuntimeCopy: Record<
     ]
   },
   pl: {
+    firstRegistration: "Pierwsza rejestracja",
+    toConfirm: "Do potwierdzenia",
+    pendingChart: "Moc i moment obrotowy do potwierdzenia po weryfikacji konfiguracji pojazdu.",
     cacheHit: "z cache",
     cacheMiss: "nowe sprawdzenie RDW",
     exactMatch: "NoordTune potwierdzi dokładny ECU i wariant silnika w wycenie.",
@@ -718,44 +725,6 @@ const lookupRuntimeCopy: Record<
   }
 };
 
-function createIndicativeStages(powerHp: number, locale: Locale): StageDefinition[] {
-  const copy = lookupRuntimeCopy[locale];
-
-  return [
-    {
-      name: "Stage 1",
-      powerHp: Math.round(powerHp * 1.18),
-      torqueNm: Math.round(powerHp * 2.7),
-      price: 269,
-      requirements: copy.indicativeRequirement,
-      packageItems: copy.stage1Items
-    },
-    {
-      name: "Stage 2",
-      powerHp: Math.round(powerHp * 1.32),
-      torqueNm: Math.round(powerHp * 3.05),
-      price: 399,
-      requirements: copy.hardwareRequirement,
-      packageItems: copy.stage2Items
-    },
-    {
-      name: "Stage 3+",
-      powerHp: Math.round(powerHp * 1.58),
-      torqueNm: Math.round(powerHp * 3.45),
-      price: 749,
-      requirements: copy.customRequirement,
-      packageItems: copy.stage3Items
-    }
-  ];
-}
-
-function estimateStockTorque(result: RdwLookupResult) {
-  const power = result.vehicle.engine.powerHp ?? 150;
-  const fuel = result.vehicle.fuel?.toLowerCase() ?? "";
-
-  if (fuel.includes("diesel")) {
-    return Math.round(power * 2.15);
-  }
-
-  return Math.round(power * 1.55);
+function createPendingStages(): Array<Pick<StageDefinition, "name"> & Partial<Pick<StageDefinition, "powerHp" | "torqueNm">>> {
+  return [{name: "Stage 1"}, {name: "Stage 2"}, {name: "Stage 3+"}];
 }

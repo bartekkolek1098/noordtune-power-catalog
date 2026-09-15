@@ -7,6 +7,7 @@ import {
   getVehicleSeoSlugs,
   stageSlugMap
 } from "@/data/catalog";
+import {formatQuote, resolveStageQuote} from "@/data/pricing";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
 import {CatalogVerificationNotice} from "@/components/catalog-verification-notice";
@@ -17,12 +18,14 @@ import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
 import {catalogHref, chiptuningHref, mainLocaleHref} from "@/lib/noordtune-links";
+import {catalogVerificationCopy} from "@/lib/catalog-verification-copy";
 import {
   absoluteUrl,
   alternateLanguageUrls,
   areaServedJsonLd,
   breadcrumbListJsonLd,
   noordTuneProviderJsonLd,
+  quoteOfferFields,
   stageMetadata,
   stageSeoPath,
   stageSeoPathWithoutLocale,
@@ -106,6 +109,7 @@ export default async function VehicleStagePage({params}: PageProps) {
   const currentStageUrl = absoluteUrl(stageSeoPath(safeLocale, vehicle, selectedStage.name));
   const vehicleUrl = absoluteUrl(vehicleDetailPath(safeLocale, vehicle));
   const provider = noordTuneProviderJsonLd();
+  const selectedQuote = resolveStageQuote(vehicle, selectedStage);
   const catalogLabel = safeLocale === "en" ? "Power Catalog" : safeLocale === "pl" ? "Katalog mocy" : "Catalogus";
   const chiptuningLabel =
     safeLocale === "en"
@@ -133,8 +137,7 @@ export default async function VehicleStagePage({params}: PageProps) {
     url: currentStageUrl,
     offers: {
       "@type": "Offer",
-      price: selectedStage.price,
-      priceCurrency: "EUR",
+      ...quoteOfferFields(selectedQuote, safeLocale),
       url: currentStageUrl,
       seller: provider,
       itemOffered: {
@@ -226,7 +229,7 @@ export default async function VehicleStagePage({params}: PageProps) {
           </div>
           <div className="max-w-4xl">
             <Badge className="mb-4 border-primary/30 bg-primary/15 text-primary">
-              {stageName} {t("fromPrice")} €{selectedStage.price}
+              {stageName} {formatQuote(selectedQuote, safeLocale)}
             </Badge>
             <h1 className="racing-title text-5xl leading-none md:text-7xl">
               {vehicle.brand} {vehicle.model} {stageName}
@@ -241,12 +244,12 @@ export default async function VehicleStagePage({params}: PageProps) {
 
       {vehicle.verificationRequired ? (
         <CatalogVerificationNotice
-          text={{
+          text={catalogVerificationCopy(vehicle, safeLocale, {
             badge: t("verification.badge"),
             title: t("verification.title"),
             text: t("verification.text"),
             footer: t("verification.footer")
-          }}
+          })}
         />
       ) : null}
 

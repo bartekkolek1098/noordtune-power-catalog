@@ -8,9 +8,18 @@ import {
   type ServiceCompatibilityStatus,
   type StageDefinition
 } from "@/data/catalog-shared";
+import {
+  addQuoteOptions,
+  assessVehicleAccess,
+  conditionalBudgetNote,
+  formatAccessAssessment,
+  formatQuote,
+  resolveStageQuote
+} from "@/data/pricing";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
+import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
 import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
@@ -96,36 +105,25 @@ export function VehicleDetail({
   const availableOptions = useMemo(
     () =>
       serviceOptions
-        .filter((option) => {
-          const status = vehicle.serviceCompatibility?.[option.id]?.status;
-
-          return vehicle.options.includes(option.id) && status !== "not-applicable";
-        })
+        .filter((option) => isVehicleServiceSelectable(vehicle, option))
         .map((option) => ({
           ...localizeServiceOption(option, locale),
           compatibilityStatus: vehicle.serviceCompatibility?.[option.id]?.status
         })),
-    [locale, vehicle.options, vehicle.serviceCompatibility]
+    [locale, vehicle]
   );
-  const optionsTotal = selectedOptions.reduce((total, id) => {
-    const option = serviceOptions.find((item) => item.id === id);
-    return total + (option?.price ?? 0);
-  }, 0);
-  const total = selectedStage.price + optionsTotal;
+  const optionsTotalCents = availableOptions
+    .filter((option) => selectedOptions.includes(option.id))
+    .reduce((total, option) => total + Math.round(option.price * 100), 0);
+  const access = assessVehicleAccess(vehicle);
+  const quote = addQuoteOptions(resolveStageQuote(vehicle, selectedStage), optionsTotalCents);
+  const budgetNote = conditionalBudgetNote(quote, locale);
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
   const powerUnit = locale === "en" ? "hp" : locale === "pl" ? "KM" : "pk";
   const selectedOptionLabels = availableOptions
     .filter((option) => selectedOptions.includes(option.id))
     .map((option) => option.name);
-  const gearboxCompatibility = vehicle.serviceCompatibility?.gearbox?.status;
-  const gearboxOption =
-    vehicle.gearbox &&
-    vehicle.gearbox !== "Manual" &&
-    (!gearboxCompatibility ||
-      gearboxCompatibility === "supported" ||
-      gearboxCompatibility === "conditional")
-      ? availableOptions.find((option) => option.id === "gearbox")
-      : undefined;
+  const gearboxOption = availableOptions.find((option) => option.id === "gearbox");
   const localizedPackage =
     selectedStage.name === "Stage 1"
       ? text.stage1Package
@@ -148,7 +146,9 @@ export function VehicleDetail({
     message: createVehicleQuoteMessage({
       locale,
       options: selectedOptionLabels,
-      price: formatCurrency(total, localeCode),
+      quote,
+      access,
+      matchStatus: vehicle.publicationSource === "existing-curated" ? "catalog-match" : "ambiguous",
       recommendedPackage: recommendedPackageLabel,
       stage: selectedStage.name,
       vehicle: `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${vehicle.version}`,
@@ -271,7 +271,7 @@ export function VehicleDetail({
                       {stage.powerHp} {powerUnit} / {stage.torqueNm} Nm
                     </span>
                     <span className="mt-1 block text-xs text-primary">
-                      {text.fromPrice} {formatCurrency(stage.price, localeCode)}
+                      {formatQuote(resolveStageQuote(vehicle, stage), locale)}
                     </span>
                   </div>
                   <Button
@@ -391,9 +391,14 @@ export function VehicleDetail({
           <div className="text-sm font-bold uppercase tracking-[0.18em] text-primary">
             {text.calculator}
           </div>
-          <div className="mt-2 text-4xl font-black">
-            {text.fromPrice} {formatCurrency(total, localeCode)}
+          <div className="mt-2 break-words text-4xl font-black">
+            {formatQuote(quote, locale)}
           </div>
+          {quote.kind === "on-request" ? (
+            <p className="mt-2 text-xs leading-5 text-muted-foreground">
+              {formatAccessAssessment(access, locale)} {budgetNote}
+            </p>
+          ) : null}
           <Button asChild className="mt-4 h-14 w-full rounded-[3px] text-base font-black uppercase shadow-[0_0_30px_rgba(227,6,19,.38)]">
             <a href={quoteHref} rel="noreferrer" target="_blank">
               <MessageCircle className="h-5 w-5" />
@@ -418,10 +423,10 @@ export function VehicleDetail({
                 onClick={() => selectStage(index)}
                 type="button"
               >
-                <span className="flex items-center justify-between gap-3">
+                <span className="flex flex-wrap items-center justify-between gap-3">
                   <span className="font-bold">{stage.name}</span>
                   <span className="text-primary">
-                    {text.fromPrice} {formatCurrency(stage.price, localeCode)}
+                    {formatQuote(resolveStageQuote(vehicle, stage), locale)}
                   </span>
                 </span>
                 <span className="mt-1 block text-sm text-muted-foreground">
@@ -439,10 +444,10 @@ export function VehicleDetail({
           <div className="space-y-2">
             {availableOptions.map((option) => (
               <label
-                className="flex cursor-pointer items-start justify-between gap-3 rounded-[3px] border border-white/10 bg-white/[0.035] p-3 text-sm"
+                className="flex min-w-0 flex-wrap cursor-pointer items-start justify-between gap-3 rounded-[3px] border border-white/10 bg-white/[0.035] p-3 text-sm"
                 key={option.id}
               >
-                <span>
+                <span className="min-w-0 flex-1 basis-40 break-words">
                   <span className="flex flex-wrap items-center gap-2">
                     <span className="font-semibold">{option.name}</span>
                     {option.compatibilityStatus === "conditional" ||

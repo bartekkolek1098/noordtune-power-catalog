@@ -1,3 +1,5 @@
+import type {QuoteResolution} from "./pricing.ts";
+
 export type VehicleSelectorItem = {
   id: string;
   brand: string;
@@ -7,5 +9,5 @@ export type VehicleSelectorItem = {
   yearRange: string;
   ecuType: string;
   popular: boolean;
-  priceFrom: number;
+  quote: QuoteResolution;
 };

@@ -1,0 +1,599 @@
+{
+  "source": "Sanitized deterministic RDW fixtures and representative synthetic curated fixtures",
+  "officialFixtureRetrievedAt": "2026-09-15T09:52:43Z",
+  "provenance": [
+    "https://opendata.rdw.nl/resource/m9d7-ebf2.json",
+    "https://opendata.rdw.nl/resource/8ys7-d773.json"
+  ],
+  "baselineSha": "4d12e510953fb57c3f8f84a737880ff860a617e7",
+  "generatedAt": "2026-09-15T10:04:03.995Z",
+  "fixtures": [
+    {
+      "syntheticId": "SYN101",
+      "facts": {
+        "plate": "SYN101",
+        "make": "BMW",
+        "model": "128TI",
+        "type": "F1H",
+        "variant": "7L51",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "powerKw": 195,
+          "powerHp": 265
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2022-09-14",
+          "firstAdmissionYear": 2022
+        }
+      },
+      "baseline": {
+        "status": "no-match",
+        "uiHardcodedStage1Fallback": 269
+      },
+      "current": {
+        "status": "conflict",
+        "reasonCodes": [
+          "MODEL_VARIANT_CONFLICT",
+          "POWER_CONFLICT",
+          "FUEL_CONFLICT",
+          "REGISTRATION_PREDATES_CONFIGURATION"
+        ],
+        "candidates": [],
+        "access": {
+          "status": "possible-unlock-review",
+          "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+          "scenario": "bmw-unlock-review"
+        },
+        "baseQuote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "catalog-conflict",
+          "conditionalBudgetFromCents": 70000
+        },
+        "selectedOptions": [
+          {
+            "id": "egr",
+            "name": "EGR off",
+            "priceCents": 14900
+          }
+        ],
+        "quote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "catalog-conflict",
+          "conditionalBudgetFromCents": 70000
+        },
+        "dutchWhatsApp": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nKenteken: SYN101\nAuto: BMW 128TI\nEerste toelating: 14-09-2022 (2022)\nBrandstof: Benzine\nCilinderinhoud: 1998 cc\nRDW geregistreerd vermogen: 195 kW (265 pk)\nCatalogus: configuratieconflict; handmatige controle\nECU/toegang: ECU/toegang controleren; mogelijke unlock is niet bevestigd\nStage: Stage 1\nExtra opties: EGR off\nPrijs: op aanvraag na ECU- en voertuigcontrole\nAls ECU-unlock nodig is, indicatief Stage 1-budget vanaf € 700. Definitieve offerte na ECU-identificatie.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?"
+      }
+    },
+    {
+      "syntheticId": "SYN102",
+      "facts": {
+        "plate": "SYN102",
+        "make": "FORD",
+        "model": "TRANSIT CUSTOM",
+        "type": "FCC",
+        "variant": "YLF61ABX",
+        "doors": null,
+        "seats": null,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": null,
+          "displacementCc": 1995,
+          "powerKw": 77,
+          "powerHp": 105
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2019-04-29",
+          "firstAdmissionYear": 2019
+        }
+      },
+      "baseline": {
+        "status": "matched",
+        "id": "ford-transit-custom-1-6-tdci-2012",
+        "model": "Transit Custom 1.6 TDCi",
+        "engine": "1.6 TDCi",
+        "confidence": 100,
+        "sourceStage1Price": 269,
+        "publicStage1Price": 269
+      },
+      "current": {
+        "status": "conflict",
+        "reasonCodes": [
+          "FUEL_CONFLICT",
+          "DISPLACEMENT_CONFLICT",
+          "POWER_CONFLICT",
+          "REGISTRATION_PREDATES_CONFIGURATION"
+        ],
+        "candidates": [],
+        "access": {
+          "status": "unknown",
+          "reasonCode": "installed-ecu-not-identified"
+        },
+        "baseQuote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "catalog-conflict"
+        },
+        "selectedOptions": [
+          {
+            "id": "egr",
+            "name": "EGR off",
+            "priceCents": 14900
+          }
+        ],
+        "quote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "catalog-conflict"
+        },
+        "dutchWhatsApp": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nKenteken: SYN102\nAuto: FORD TRANSIT CUSTOM\nEerste toelating: 29-04-2019 (2019)\nBrandstof: Diesel\nCilinderinhoud: 1995 cc\nRDW geregistreerd vermogen: 77 kW (105 pk)\nCatalogus: configuratieconflict; handmatige controle\nECU/toegang: ECU/toegang te bevestigen\nStage: Stage 1\nExtra opties: EGR off\nPrijs: op aanvraag na ECU- en voertuigcontrole\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?"
+      }
+    },
+    {
+      "syntheticId": "SYN103",
+      "facts": {
+        "plate": "SYN103",
+        "make": "FORD",
+        "model": "TRANSIT CONNECT",
+        "type": "PU2",
+        "variant": "Z2GA1BFX",
+        "doors": null,
+        "seats": null,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": null,
+          "displacementCc": 1499,
+          "powerKw": 73.5,
+          "powerHp": 100
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2018-10-17",
+          "firstAdmissionYear": 2018
+        }
+      },
+      "baseline": {
+        "status": "matched",
+        "id": "ford-transit-1-6-tdci-2000",
+        "model": "Transit 1.6 TDCi",
+        "engine": "1.6 TDCi",
+        "confidence": 100,
+        "sourceStage1Price": 269,
+        "publicStage1Price": 269
+      },
+      "current": {
+        "status": "no-match",
+        "reasonCodes": [
+          "NO_MODEL_FAMILY"
+        ],
+        "candidates": [],
+        "access": {
+          "status": "unknown",
+          "reasonCode": "installed-ecu-not-identified"
+        },
+        "baseQuote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "catalog-no-match"
+        },
+        "selectedOptions": [
+          {
+            "id": "egr",
+            "name": "EGR off",
+            "priceCents": 14900
+          }
+        ],
+        "quote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "catalog-no-match"
+        },
+        "dutchWhatsApp": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nKenteken: SYN103\nAuto: FORD TRANSIT CONNECT\nEerste toelating: 17-10-2018 (2018)\nBrandstof: Diesel\nCilinderinhoud: 1499 cc\nRDW geregistreerd vermogen: 73.5 kW (100 pk)\nCatalogus: geen exacte match; handmatige controle\nECU/toegang: ECU/toegang te bevestigen\nStage: Stage 1\nExtra opties: EGR off\nPrijs: op aanvraag na ECU- en voertuigcontrole\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?"
+      }
+    },
+    {
+      "syntheticId": "SYN104",
+      "facts": {
+        "plate": "SYN104",
+        "make": "BMW",
+        "model": "320D",
+        "doors": null,
+        "seats": null,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": null,
+          "displacementCc": 1995,
+          "powerKw": 140,
+          "powerHp": 190
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2017-06-15",
+          "firstAdmissionYear": 2017
+        }
+      },
+      "baseline": {
+        "status": "matched",
+        "id": "bmw-320d-b47",
+        "model": "3 Serie 320d",
+        "engine": "2.0d B47",
+        "confidence": 100,
+        "sourceStage1Price": 269,
+        "publicStage1Price": 299
+      },
+      "current": {
+        "status": "catalog-match",
+        "id": "bmw-320d-b47",
+        "reasonCodes": [
+          "REVIEWED_CATALOG_APPLICABILITY"
+        ],
+        "candidates": [
+          {
+            "id": "bmw-320d-b47",
+            "reasonCodes": []
+          }
+        ],
+        "access": {
+          "status": "possible-unlock-review",
+          "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+          "scenario": "bmw-unlock-review"
+        },
+        "baseQuote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "ecu-access-review",
+          "conditionalBudgetFromCents": 70000
+        },
+        "selectedOptions": [
+          {
+            "id": "egr",
+            "name": "EGR off",
+            "priceCents": 14900
+          }
+        ],
+        "quote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "ecu-access-review",
+          "conditionalBudgetFromCents": 70000
+        },
+        "dutchWhatsApp": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nKenteken: SYN104\nAuto: BMW 320D\nEerste toelating: 15-06-2017 (2017)\nBrandstof: Diesel\nCilinderinhoud: 1995 cc\nRDW geregistreerd vermogen: 140 kW (190 pk)\nCatalogus: catalogusmatch; voertuigcontrole vereist\nECU/toegang: ECU/toegang controleren; mogelijke unlock is niet bevestigd\nStage: Stage 1\nExtra opties: EGR off\nPrijs: op aanvraag na ECU- en voertuigcontrole\nAls ECU-unlock nodig is, indicatief Stage 1-budget vanaf € 700. Definitieve offerte na ECU-identificatie.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?"
+      }
+    },
+    {
+      "syntheticId": "SYN105",
+      "facts": {
+        "plate": "SYN105",
+        "make": "VOLKSWAGEN",
+        "model": "GOLF GTI",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": null,
+          "displacementCc": 1984,
+          "powerKw": 169,
+          "powerHp": 230
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2017-06-15",
+          "firstAdmissionYear": 2017
+        }
+      },
+      "baseline": {
+        "status": "matched",
+        "id": "vw-golf-20-tsi-ea888",
+        "model": "Golf GTI",
+        "engine": "2.0 TSI EA888",
+        "confidence": 100,
+        "sourceStage1Price": 305,
+        "publicStage1Price": 349
+      },
+      "current": {
+        "status": "catalog-match",
+        "id": "vw-golf-20-tsi-ea888",
+        "reasonCodes": [
+          "REVIEWED_CATALOG_APPLICABILITY"
+        ],
+        "candidates": [
+          {
+            "id": "vw-golf-20-tsi-ea888",
+            "reasonCodes": []
+          }
+        ],
+        "access": {
+          "status": "unknown",
+          "reasonCode": "installed-ecu-not-identified"
+        },
+        "baseQuote": {
+          "kind": "from",
+          "amountCents": 34900,
+          "currency": "EUR",
+          "taxBasis": "inclusive",
+          "policyId": "pricing-v2:vw-golf-20-tsi-ea888:stage1-advanced",
+          "confirmationRequired": true
+        },
+        "selectedOptions": [
+          {
+            "id": "egr",
+            "name": "EGR off",
+            "priceCents": 14900
+          }
+        ],
+        "quote": {
+          "kind": "from",
+          "amountCents": 49800,
+          "currency": "EUR",
+          "taxBasis": "inclusive",
+          "policyId": "pricing-v2:vw-golf-20-tsi-ea888:stage1-advanced",
+          "confirmationRequired": true
+        },
+        "dutchWhatsApp": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nKenteken: SYN105\nAuto: VOLKSWAGEN GOLF GTI\nEerste toelating: 15-06-2017 (2017)\nBrandstof: Benzine\nCilinderinhoud: 1984 cc\nRDW geregistreerd vermogen: 169 kW (230 pk)\nCatalogus: catalogusmatch; voertuigcontrole vereist\nECU/toegang: ECU/toegang te bevestigen\nStage: Stage 1\nExtra opties: EGR off\nPrijs: Vanaf € 498\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?"
+      }
+    },
+    {
+      "syntheticId": "SYN106",
+      "facts": {
+        "plate": "SYN106",
+        "make": "VOLKSWAGEN",
+        "model": "GOLF R",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": null,
+          "displacementCc": 1984,
+          "powerKw": 221,
+          "powerHp": 300
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2017-06-15",
+          "firstAdmissionYear": 2017
+        }
+      },
+      "baseline": {
+        "status": "matched",
+        "id": "volkswagen-golf-2-0-tsi-r-2012",
+        "model": "Golf 2.0 TSI R",
+        "engine": "2.0 TSI R",
+        "confidence": 100,
+        "sourceStage1Price": 339,
+        "publicStage1Price": 339
+      },
+      "current": {
+        "status": "ambiguous",
+        "reasonCodes": [
+          "GENERATION_BOUNDARY_REVIEW",
+          "GENERATED_APPLICABILITY_UNREVIEWED",
+          "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+          "MULTIPLE_CONFIGURATIONS",
+          "EQUIVALENT_DUPLICATES_COLLAPSED"
+        ],
+        "candidates": [
+          {
+            "id": "volkswagen-golf-7-r-20-tsi",
+            "reasonCodes": [
+              "GENERATION_BOUNDARY_REVIEW",
+              "GENERATED_APPLICABILITY_UNREVIEWED"
+            ]
+          },
+          {
+            "id": "volkswagen-golf-2-0-tsi-r-2000",
+            "reasonCodes": [
+              "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+              "GENERATED_APPLICABILITY_UNREVIEWED"
+            ]
+          },
+          {
+            "id": "volkswagen-golf-r-2-0-tsi-r-2010",
+            "reasonCodes": [
+              "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+              "GENERATED_APPLICABILITY_UNREVIEWED"
+            ]
+          }
+        ],
+        "access": {
+          "status": "unknown",
+          "reasonCode": "installed-ecu-not-identified"
+        },
+        "baseQuote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "catalog-ambiguous"
+        },
+        "selectedOptions": [
+          {
+            "id": "egr",
+            "name": "EGR off",
+            "priceCents": 14900
+          }
+        ],
+        "quote": {
+          "kind": "on-request",
+          "currency": "EUR",
+          "reasonCode": "catalog-ambiguous"
+        },
+        "dutchWhatsApp": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nKenteken: SYN106\nAuto: VOLKSWAGEN GOLF R\nEerste toelating: 15-06-2017 (2017)\nBrandstof: Benzine\nCilinderinhoud: 1984 cc\nRDW geregistreerd vermogen: 221 kW (300 pk)\nCatalogus: meerdere mogelijke configuraties; handmatige controle\nECU/toegang: ECU/toegang te bevestigen\nStage: Stage 1\nExtra opties: EGR off\nPrijs: op aanvraag na ECU- en voertuigcontrole\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?"
+      }
+    },
+    {
+      "syntheticId": "SYN107",
+      "facts": {
+        "plate": "SYN107",
+        "make": "FORD",
+        "model": "FOCUS ST",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": null,
+          "displacementCc": 1999,
+          "powerKw": 184,
+          "powerHp": 250
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2015-06-15",
+          "firstAdmissionYear": 2015
+        }
+      },
+      "baseline": {
+        "status": "matched",
+        "id": "ford-focus-st-20-ecoboost",
+        "model": "Focus ST",
+        "engine": "2.0 EcoBoost",
+        "confidence": 100,
+        "sourceStage1Price": 305,
+        "publicStage1Price": 349
+      },
+      "current": {
+        "status": "catalog-match",
+        "id": "ford-focus-st-20-ecoboost",
+        "reasonCodes": [
+          "REVIEWED_CATALOG_APPLICABILITY"
+        ],
+        "candidates": [
+          {
+            "id": "ford-focus-st-20-ecoboost",
+            "reasonCodes": []
+          }
+        ],
+        "access": {
+          "status": "unknown",
+          "reasonCode": "installed-ecu-not-identified"
+        },
+        "baseQuote": {
+          "kind": "from",
+          "amountCents": 34900,
+          "currency": "EUR",
+          "taxBasis": "inclusive",
+          "policyId": "pricing-v2:ford-focus-st-20-ecoboost:stage1-advanced",
+          "confirmationRequired": true
+        },
+        "selectedOptions": [
+          {
+            "id": "egr",
+            "name": "EGR off",
+            "priceCents": 14900
+          }
+        ],
+        "quote": {
+          "kind": "from",
+          "amountCents": 49800,
+          "currency": "EUR",
+          "taxBasis": "inclusive",
+          "policyId": "pricing-v2:ford-focus-st-20-ecoboost:stage1-advanced",
+          "confirmationRequired": true
+        },
+        "dutchWhatsApp": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nKenteken: SYN107\nAuto: FORD FOCUS ST\nEerste toelating: 15-06-2015 (2015)\nBrandstof: Benzine\nCilinderinhoud: 1999 cc\nRDW geregistreerd vermogen: 184 kW (250 pk)\nCatalogus: catalogusmatch; voertuigcontrole vereist\nECU/toegang: ECU/toegang te bevestigen\nStage: Stage 1\nExtra opties: EGR off\nPrijs: Vanaf € 498\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?"
+      }
+    }
+  ]
+}

@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "catalog:audit": "node --no-warnings scripts/audit-catalog-data.ts"
+    "catalog:audit": "node --no-warnings scripts/audit-catalog-data.ts",
+    "test:tuning": "node --no-warnings scripts/test-catalog-matching.ts && node --no-warnings scripts/test-quote-policy.ts && node --no-warnings scripts/test-rdw-identity.ts && node --no-warnings scripts/test-quote-surfaces.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
