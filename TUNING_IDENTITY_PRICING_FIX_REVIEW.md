@@ -1,5 +1,7 @@
 # Tuning output, identity and draft pricing — corrective local review
 
+Historical screenshot links in this report preserve the exact checkpoint bytes at [commit 0c096a0](https://github.com/bartekkolek1098/noordtune-power-catalog/commit/0c096a051b277ee2e37a1f4f69fb83d3b05418e6). Local images remain representative checkpoint evidence. See the [latest final accuracy review](docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md) for current results.
+
 ## Local delivery and preserved scope
 
 This corrective change supersedes the blanket restrictions in commit `b19a1c21ab53f505476723519d6feeaca9b74916`. The approved visual and source-data baseline remains `4d12e510953fb57c3f8f84a737880ff860a617e7`.
@@ -154,9 +156,9 @@ WhatsApp preserves detected RDW identity, displacement, registered power, first 
 
 The visual comparison uses the same installed Chrome 152.0.7977.83 and deterministic sanitized RDW facts on both versions. Only the Next development overlay is hidden equally. The existing layout, grid, chart area and controls remain; additional labels and wrapping account for expected height changes. Baseline clipping is recorded rather than masked. Manual testing found an unwrapped choose button at 320 px; it now wraps without changing its action. Search testing found missing stock-power/generation tokens in reference discovery; explicit qualifiers are now tested positively and incompatible qualifiers are rejected. Preliminary manual failures were rerun after the fixes; the complete passing reports below describe the corrected behavior. The manual layout checker excludes the pre-existing absolute decorative background from its root scroll-width measurement while still checking content and document overflow. The pointer is moved off cards before measuring the intentional hover-arrow transform.
 
-- [Baseline/current screenshot comparison](docs/tuning-qa/corrective/visual-comparison.html) and [comparison PNG](docs/tuning-qa/corrective/visual-comparison.png).
-- [Visible reference figures, charts and prices](docs/tuning-qa/corrective/corrective-results.html) and [results PNG](docs/tuning-qa/corrective/corrective-results.png).
-- Full screenshots: [BMW 128ti](docs/tuning-qa/corrective/final-bmw128ti-1440.png), [Transit Custom](docs/tuning-qa/corrective/final-transit-custom-1440.png), [Transit Connect](docs/tuning-qa/corrective/final-transit-connect-1440.png), [manual BMW at 320 px](docs/tuning-qa/corrective/manual-ref-bmw-128ti-f40-265-nl-search-320.png).
+- [Baseline/current screenshot comparison](docs/tuning-qa/corrective/visual-comparison.html) and [comparison PNG](https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/visual-comparison.png).
+- [Visible reference figures, charts and prices](docs/tuning-qa/corrective/corrective-results.html) and [results PNG](https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/corrective-results.png).
+- Full screenshots: [BMW 128ti](docs/tuning-qa/corrective/final-bmw128ti-1440.png), [Transit Custom](https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-custom-1440.png), [Transit Connect](https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-connect-1440.png), [manual BMW at 320 px](docs/tuning-qa/corrective/manual-ref-bmw-128ti-f40-265-nl-search-320.png).
 - [Production smoke results](docs/tuning-qa/corrective/production-smoke.json) and [browser-bundle check](docs/tuning-qa/corrective/browser-bundle-check.json). The built local preview is available at http://localhost:3100/nl.
 - Machine-readable [responsive/public visual report](docs/tuning-qa/corrective/visual-report.json), [manual reference report](docs/tuning-qa/corrective/manual-reference-report.json), [live local API results](docs/tuning-qa/corrective/live-api-results.json) and [source research](docs/tuning-qa/TUNING_REFERENCE_RESEARCH.md).
 

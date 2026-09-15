@@ -1,43 +1,24 @@
-# Screenshot retention proposal
+# Applied screenshot retention
 
-**Proposal only — owner review required before any deletion.** No files were deleted. No history rewrite or force-push is proposed.
+The owner-authorized cleanup is applied after functional commit `920ae2e31f1610cc157307d75ae972264786a494`. It uses normal branch file changes; no history rewrite or force-push is involved.
 
-Inventory: **313 PNG files (95.27 MB)** under docs/tuning-qa. The full path/size/SHA-256 manifest is [screenshot-inventory.json](screenshot-inventory.json).
+**40 of 331 PNGs remain local (14.74 MB). 291 redundant PNGs were removed (88.03 MB).** This reduces the current screenshot set by 87.92% of files and 85.66% of bytes. The full [path, size, SHA-256 and archive manifest](screenshot-inventory.json) retains records for every original and final image.
 
-| Directory | PNG files | Size |
-| --- | ---: | ---: |
-| . | 113 | 32.51 MB |
-| corrective | 192 | 59.32 MB |
-| runtime | 8 | 3.45 MB |
+## Retained set
 
-Exact byte duplicates: **51 groups / 51 extra copies**. Similar screenshots are not treated as exact duplicates unless their SHA-256 hashes agree.
+| Evidence | PNGs |
+| --- | ---: |
+| Latest final review: four actual owner RDW cases, public GTI, non-public canonical Dacia, generic petrol, generic diesel, unsupported EV; 320/1440 px | 18 |
+| Approved baseline and corrective full BMW/GTI results at 320/1440 px | 8 |
+| Public BMW 320d, GTI, Golf R and manual Focus ST detail pages at 320/1440 px | 8 |
+| Three manual reference results at 320/1440 px | 6 |
 
-## Proposed retained set
+The latest images and all other tested widths/locales are documented in the [final accuracy review](../final-review/FINAL_ACCURACY_REVIEW.md). Historical retained images keep their original meaning and do not replace current acceptance evidence.
 
-Retain **40 PNGs (14.69 MB)**: 32 existing checkpoint/interface examples plus all 8 latest runtime acceptance images. All proposed files now exist. This would reduce the visible screenshot set by 273 files and 80.59 MB, while the original evidence remains accessible through history or an owner-approved archive.
+## Preserved archive and reports
 
+Every removed PNG exactly matches its Git blob at [immutable commit 0c096a0](https://github.com/bartekkolek1098/noordtune-power-catalog/commit/0c096a051b277ee2e37a1f4f69fb83d3b05418e6). Forty historical Markdown/HTML image references were redirected to that checkpoint: image sources use the immutable raw URL; clickable links use its GitHub blob page. Historical pages are marked as archived checkpoint evidence.
 
-| Evidence category | Files | Why keep it |
-| --- | ---: | --- |
-| Approved baseline and first corrective BMW / GTI comparisons, 320 and 1440, full and summary | 16 | Preserves review history and representative appearance |
-| BMW 320d, GTI, Golf R and manual Focus ST public details, 320 and 1440 | 8 | Public numeric output, options and quote regressions |
-| Three manual reference results, 320 and 1440 | 6 | Manual workflow has no invented SEO route |
-| Two complete comparison/contact sheets | 2 | Quick review without opening every original image |
-| Latest four live owner results, 320 and 1440 | 8 | Direct acceptance evidence for this runtime fix |
+All research, source comparisons, Markdown/HTML reports, browser JSON metrics, source/bundle boundary checks, coverage results and QA scripts remain. Historical JSON screenshot filenames retain their original checkpoint meaning; the complete manifest maps each removed filename to its exact archived bytes.
 
-The exact proposed keep paths and reasons are in the JSON manifest. Intermediate widths and EN/PL interactions remain covered by the complete machine-readable QA reports and reproducible QA scripts. The retained screenshots are representative visual evidence, not a replacement for those checks.
-
-## Preserve all non-image evidence
-
-Keep the research documents, live RDW facts, source comparisons, all24 before/after reports, runtime coverage JSON/Markdown, browser measurements, build/boundary checks, and QA scripts. Keep historical HTML and JSON reports as checkpoint evidence. They currently reference screenshots outside this proposed reduced set.
-
-Before an approved cleanup commit, archive the original image set with an immutable reference or update historical report/index links to their existing Git commit paths. Verify every remaining Markdown/HTML/image reference after that change. Do not leave dangling image links or silently rewrite the meaning of an earlier QA report.
-
-## Owner decision requested for a later cleanup
-
-1. Approve or adjust the 40-image keep manifest.
-2. Choose where the complete earlier screenshot archive should remain accessible.
-3. Only then remove the explicitly approved redundant/superseded images in an ordinary follow-up commit on this same Draft PR.
-4. Do not use history rewriting or force-push. The current implementation commit includes this proposal and retains all evidence.
-
-Build output, node_modules, temporary browser profiles and local caches are outside this evidence inventory and must not be committed.
+See the [cleanup report](../ARTIFACT_CLEANUP.md) and [complete local/archived artifact link audit](../artifact-link-audit.json). Build output, dependencies, browser profiles and caches are outside this evidence set and were not added.
