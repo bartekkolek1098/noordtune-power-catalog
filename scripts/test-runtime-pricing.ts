@@ -7,7 +7,7 @@ const {resolveStageQuote, assessVehicleAccess, addQuoteOptions, formatQuote} = r
 const {createLookupQuoteMessage} = require("../src/lib/whatsapp.ts") as typeof import("../src/lib/whatsapp.ts");
 type Identity = import("../src/data/runtime-pricing.ts").RuntimeCommercialIdentity;
 type Quote = import("../src/data/pricing.ts").QuoteResolution;
-const stages = [{name: "Stage 1"}, {name: "Stage 2"}, {name: "Stage 3+"}] as const;
+const stages = [{name: "Stage 1"}, {name: "Stage 2"}, {name: "Stage 3+", hardwareScopeApproved: true}] as const;
 const ordinary: Identity = {status: "resolved-generic", make: "Ford", model: "Focus", fuel: "Petrol", registeredPowerHp: 125, displacementCc: 999, firstAdmissionYear: 2018, cylinders: 3};
 function profile(overrides: Partial<Identity> = {}) {
   const identity = {...ordinary, ...overrides};
@@ -26,14 +26,14 @@ function amounts(vehicle: import("../src/data/pricing.ts").QuoteVehicle) {
   return stages.map(stage => amount(resolveStageQuote(vehicle, stage, {scope: "vehicle"})));
 }
 
-test("ordinary runtime petrol/diesel profiles receive all three numeric software prices without IDs", () => {
+test("ordinary 2010s runtime profiles receive software prices without IDs, with Stage 3 scope explicitly approved", () => {
   for (const fuel of ["Petrol", "Diesel"] as const) {
     const vehicle = profile({fuel});
-    assert.deepEqual(amounts(vehicle), [44900, 54900, 84900]);
+    assert.deepEqual(amounts(vehicle), [39900, 54900, 79900]);
     assert.equal(assessVehicleAccess(vehicle).status, "unknown");
     const quote = resolveStageQuote(vehicle, stages[0]);
     assert.equal(quote.kind === "from" && quote.scope, "vehicle-software");
-    assert.match(quote.kind === "from" ? quote.policyId : "", /^draft-runtime-v1:ordinary-resolved-ice-default/);
+    assert.match(quote.kind === "from" ? quote.policyId : "", /^draft-runtime-v1:ordinary-2010s-commercial-scope/);
   }
 });
 
@@ -41,7 +41,7 @@ test("classic diesel requires a listed family, year, modest output, displacement
   const classic: Identity = {status: "resolved-compatible", make: "Volkswagen", model: "Golf 1.9 TDI", fuel: "Diesel", registeredPowerHp: 105, displacementCc: 1896, firstAdmissionYear: 2007, cylinders: 4};
   assert.deepEqual(amounts(profile(classic)), [29900, 44900, 69900]);
   for (const exception of [{firstAdmissionYear: 2011}, {registeredPowerHp: 150}, {displacementCc: 2198}, {fuel: "Petrol" as const}, {cylinders: undefined}, {firstAdmissionYear: undefined}, {model: "Unspecified"}]) {
-    assert.equal(amount(resolveStageQuote(profile({...classic, ...exception}), stages[0])), 44900);
+    assert.equal(amount(resolveStageQuote(profile({...classic, ...exception}), stages[0])), 'firstAdmissionYear' in exception && exception.firstAdmissionYear === 2011 ? 39900 : 44900);
   }
   assert.equal(assessVehicleAccess(profile(classic)).status, "unknown");
 });
@@ -56,8 +56,29 @@ test("high output, larger engines, performance and listed premium/van families u
     {make: "Opel", model: "Vivaro", fuel: "Diesel"}
   ];
   for (const value of cases) assert.deepEqual(amounts(profile(value)), [54900, 69900, 99900], JSON.stringify(value));
-  assert.deepEqual(amounts(profile({make: "Ford", model: "Transit Connect", fuel: "Diesel", registeredPowerHp: 100, displacementCc: 1499, cylinders: 4})), [44900, 54900, 84900]);
-  assert.deepEqual(amounts(profile({make: "Audi", model: "A3", fuel: "Diesel", registeredPowerHp: 110, displacementCc: 1598, cylinders: 4})), [44900, 54900, 84900]);
+  assert.deepEqual(amounts(profile({make: "Ford", model: "Transit Connect", fuel: "Diesel", registeredPowerHp: 100, displacementCc: 1499, cylinders: 4})), [39900, 54900, 79900]);
+  assert.deepEqual(amounts(profile({make: "Audi", model: "A3", fuel: "Diesel", registeredPowerHp: 110, displacementCc: 1598, cylinders: 4})), [39900, 54900, 79900]);
+});
+
+test("modern and missing-year runtime scopes use the revised modern matrix without inferring ECU access", () => {
+  for (const firstAdmissionYear of [2020,2026,undefined]) {
+    const vehicle=profile({firstAdmissionYear});
+    assert.deepEqual(amounts(vehicle),[44900,59900,89900]);
+    assert.equal(assessVehicleAccess(vehicle).status,"unknown");
+  }
+  assert.deepEqual(amounts(profile({firstAdmissionYear:2010})),[39900,54900,79900]);
+  assert.deepEqual(amounts(profile({firstAdmissionYear:2019})),[39900,54900,79900]);
+});
+
+test("runtime Stage 3 requires approved hardware scope; a technical source alone never scopes its price", () => {
+  for(const vehicle of [profile(), {...profile(), id:"vw-golf-20-tsi-ea888"}, {...profile(), id:"ref-ford-transit-connect-15-tdci-100"}]) {
+    const technicalStage={name:"Stage 3+" as const,powerHp:450,torqueNm:600,provenance:"published-source"};
+    const quote=resolveStageQuote(vehicle,technicalStage);
+    assert.equal(quote.kind,"on-request");
+    assert.equal(quote.kind === "on-request" && quote.reasonCode,"stage3-hardware-scope-unapproved");
+    assert.deepEqual(addQuoteOptions(quote,14900),quote);
+    assert.equal(resolveStageQuote(vehicle,{...technicalStage,hardwareScopeApproved:true}).kind,"from");
+  }
 });
 
 test("reviewed public and reference assignments retain precedence over runtime category rules", () => {

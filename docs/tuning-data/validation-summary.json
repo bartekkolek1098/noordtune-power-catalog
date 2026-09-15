@@ -1,0 +1,119 @@
+{
+  "checkedAt": "2026-09-15T23:23:22.583Z",
+  "implementationCommit": "2a6135b",
+  "datasetFingerprint": "682061ad79e195338c38edac55f9c00688d06cf0767d5496b500c70ad271e718",
+  "checks": {
+    "fullTestTuning": {
+      "passed": true,
+      "datasetAssertions": 7277,
+      "sourceFixtures": 280,
+      "nonPublicFixtures": 264,
+      "matcherRegressions": 18,
+      "tuningEstimateRegressions": 19,
+      "quoteTests": 33,
+      "rdwIdentityRegressions": 17,
+      "surfaceAssertions": 672,
+      "legacyRuntimeTests": 23,
+      "consensusAssertions": 17,
+      "commercialBridgeAssertions": 421,
+      "vagGenerationChecks": 123,
+      "failures": []
+    },
+    "lint": "passed",
+    "typecheck": "passed nonincremental",
+    "build": {
+      "passed": true,
+      "staticRoutes": 298
+    },
+    "audit": {
+      "passed": true,
+      "criticalGroups": 0,
+      "warningGroups": 18,
+      "publicVehicles": 24,
+      "canonicalRows": 58586,
+      "retainedStages": 175758,
+      "sitemapEntries": 291
+    },
+    "serverBoundary": {
+      "clientImportsServerCatalog": 0,
+      "clientRoots": 5,
+      "reachableModules": 63
+    },
+    "browserBundle": {
+      "checkedAt": "2026-09-15T23:19:17.573Z",
+      "browserJavaScriptChunks": 25,
+      "browserJavaScriptBytes": 1422708,
+      "canonicalRecords": 58586,
+      "publicVehicles": 24,
+      "nonPublicCanonicalIdsChecked": 58562,
+      "nonPublicCanonicalIdsInBrowserChunks": [],
+      "sourcedProfileIdsChecked": 280,
+      "scope": "Production browser JavaScript; selected profile DTOs in HTML/RSC/API are intentionally excluded."
+    },
+    "browser": {
+      "passed": true,
+      "rdwCases": 28,
+      "publicAndManualStage3Cases": 9,
+      "errors": 0,
+      "locales": [
+        "nl",
+        "en",
+        "pl"
+      ],
+      "viewports": [
+        320,
+        1440
+      ],
+      "liveOwnerPlateCases": 4,
+      "syntheticLookupIdentities": 7,
+      "visualReview": "Retained mobile screenshots inspected; no clipped result content or horizontal page overflow.",
+      "hardwareScope": "Actual BMW 340i Stage3 hardware/fuel conditions verified in expanded details and decoded WhatsApp; no message sent."
+    }
+  },
+  "coverage": {
+    "researched": {
+      "before": {
+        "A": 0,
+        "B": 0,
+        "C": 69,
+        "D": 211,
+        "E": 0
+      },
+      "after": {
+        "A": 50,
+        "B": 218,
+        "C": 2,
+        "D": 10,
+        "E": 0
+      }
+    },
+    "canonical": {
+      "identities": 3197,
+      "supportedIce": 2962,
+      "before": {
+        "A": 0,
+        "B": 0,
+        "C": 1687,
+        "D": 1275,
+        "E": 0
+      },
+      "after": {
+        "A": 2,
+        "B": 53,
+        "C": 1656,
+        "D": 1251,
+        "E": 0
+      }
+    }
+  },
+  "browserReports": [
+    "browser/browser-acceptance.json",
+    "browser/public-stage3-acceptance.json"
+  ],
+  "notes": [
+    "Validation build source and configuration were compared to the workspace, ignoring line-ending conversion; no mismatches.",
+    "Catalog audit ran in a disposable copy to preserve baseline review artifacts.",
+    "Canonical year rows are collapsed, with invalid generated identities reported separately.",
+    "Preview status belongs to the final GitHub head checks; production was not deployed."
+  ]
+}

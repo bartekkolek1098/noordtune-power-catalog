@@ -10,8 +10,9 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "catalog:audit": "node --no-warnings scripts/audit-catalog-data.ts",
-    "test:tuning": "node --no-warnings scripts/test-catalog-matching.ts && node --no-warnings scripts/test-tuning-estimates.ts && node --no-warnings scripts/test-quote-policy.ts && node --no-warnings scripts/test-rdw-identity.ts && node --no-warnings scripts/test-quote-surfaces.ts && node --no-warnings scripts/test-rdw-tuning-estimate.ts && node --no-warnings scripts/test-rdw-runtime-coverage.ts && node --no-warnings scripts/check-rdw-runtime-boundary.ts",
-    "test:rdw-coverage": "node --no-warnings scripts/test-rdw-runtime-coverage.ts"
+    "test:tuning": "node --no-warnings scripts/test-catalog-matching.ts && node --no-warnings scripts/test-tuning-estimates.ts && node --no-warnings scripts/test-quote-policy.ts && node --no-warnings scripts/test-rdw-identity.ts && node --no-warnings scripts/test-quote-surfaces.ts && node --no-warnings scripts/test-rdw-tuning-estimate.ts && node --no-warnings scripts/test-tuning-consensus.ts && node --no-warnings scripts/test-tuning-profile-scope.ts && node --no-warnings scripts/test-sourced-generation.ts && node --no-warnings scripts/test-sourced-pricing-bridge.ts && node --no-warnings scripts/test-tuning-profile-dataset.ts && node --no-warnings scripts/check-rdw-runtime-boundary.ts",
+    "test:rdw-coverage": "node --no-warnings scripts/test-tuning-profile-dataset.ts",
+    "tuning:build-data": "node --no-warnings scripts/build-tuning-profiles.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
