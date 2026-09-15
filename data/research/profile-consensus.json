@@ -524,6 +524,41 @@
     ]
   },
   {
+    "id": "sourced-audi-a3-c59e4e21b063",
+    "brand": "Audi",
+    "modelFamily": "A3",
+    "generation": "8V",
+    "yearFrom": 2012,
+    "yearTo": 2015,
+    "stockPowerHp": 180,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 220,
+      "selectedTorqueNm": 320,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-318",
+          "provider": "shiftech",
+          "powerHp": 220,
+          "torqueNm": 320,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Provider specifically limits torque to 320 Nm for DSG7. This published limit does not identify the transmission installed on a particular vehicle."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-318"
+    ]
+  },
+  {
     "id": "sourced-audi-a3-f1e4b71c85eb",
     "brand": "Audi",
     "modelFamily": "A3",
@@ -12142,6 +12177,62 @@
     ]
   },
   {
+    "id": "sourced-seat-leon-1462d25d1149",
+    "brand": "Seat",
+    "modelFamily": "Leon",
+    "generation": "5F MK2",
+    "yearFrom": 2017,
+    "yearTo": 2019,
+    "stockPowerHp": 300,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 350,
+      "selectedTorqueNm": 460,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-9457",
+          "provider": "shiftech",
+          "powerHp": 350,
+          "torqueNm": 460,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": []
+    },
+    "stage2": {
+      "selectedPowerHp": 370,
+      "selectedTorqueNm": 480,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-9457",
+          "provider": "shiftech",
+          "powerHp": 368,
+          "torqueNm": 483,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-9457"
+    ]
+  },
+  {
     "id": "sourced-seat-leon-17e3d1a6ce4d",
     "brand": "Seat",
     "modelFamily": "Leon",
@@ -12518,6 +12609,62 @@
     "ownerReviewRequired": true,
     "sourceIds": [
       "shiftech-9629"
+    ]
+  },
+  {
+    "id": "sourced-skoda-octavia-4e8091a3105c",
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "2005",
+    "yearFrom": 2005,
+    "yearTo": 2012,
+    "stockPowerHp": 160,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 210,
+      "selectedTorqueNm": 320,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-9612",
+          "provider": "shiftech",
+          "powerHp": 210,
+          "torqueNm": 320,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": []
+    },
+    "stage2": {
+      "selectedPowerHp": 220,
+      "selectedTorqueNm": 330,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-9612",
+          "provider": "shiftech",
+          "powerHp": 220,
+          "torqueNm": 330,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-9612"
     ]
   },
   {
@@ -13287,6 +13434,65 @@
     "ownerReviewRequired": true,
     "sourceIds": [
       "shiftech-10576"
+    ]
+  },
+  {
+    "id": "sourced-volkswagen-golf-4b2b00a63103",
+    "brand": "Volkswagen",
+    "modelFamily": "Golf",
+    "generation": "VI",
+    "yearFrom": 2008,
+    "yearTo": 2011,
+    "stockPowerHp": 110,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 185,
+      "selectedTorqueNm": 370,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-10548",
+          "provider": "shiftech",
+          "powerHp": 185,
+          "torqueNm": 370,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Provider describes this 110 PS variant as electronically restricted relative to the 140 PS engine. This is an external source claim; hardware equivalence is not independently confirmed."
+      ]
+    },
+    "stage2": {
+      "selectedPowerHp": 195,
+      "selectedTorqueNm": 390,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-10548",
+          "provider": "shiftech",
+          "powerHp": 195,
+          "torqueNm": 390,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Provider describes this 110 PS variant as electronically restricted relative to the 140 PS engine. This is an external source claim; hardware equivalence is not independently confirmed.",
+        "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-10548"
     ]
   },
   {
@@ -14853,6 +15059,117 @@
     "ownerReviewRequired": true,
     "sourceIds": [
       "shiftech-10772"
+    ]
+  },
+  {
+    "id": "sourced-volkswagen-passat-ddb7daba8e0d",
+    "brand": "Volkswagen",
+    "modelFamily": "Passat",
+    "generation": "B8",
+    "yearFrom": 2015,
+    "yearTo": 2018,
+    "stockPowerHp": 120,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 145,
+      "selectedTorqueNm": 310,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-10769",
+          "provider": "shiftech",
+          "powerHp": 145,
+          "torqueNm": 310,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": []
+    },
+    "stage2": {
+      "selectedPowerHp": 155,
+      "selectedTorqueNm": 330,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-10769",
+          "provider": "shiftech",
+          "powerHp": 155,
+          "torqueNm": 330,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-10769"
+    ]
+  },
+  {
+    "id": "sourced-volkswagen-transporter-multivan-caravelle-b10a7676454e",
+    "brand": "Volkswagen",
+    "modelFamily": "Transporter / Multivan / Caravelle",
+    "generation": "T6",
+    "yearFrom": 2015,
+    "stockPowerHp": 204,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 230,
+      "selectedTorqueNm": 500,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-11075",
+          "provider": "shiftech",
+          "powerHp": 230,
+          "torqueNm": 500,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": []
+    },
+    "stage2": {
+      "selectedPowerHp": 240,
+      "selectedTorqueNm": 520,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-11075",
+          "provider": "shiftech",
+          "powerHp": 240,
+          "torqueNm": 520,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-11075"
     ]
   },
   {

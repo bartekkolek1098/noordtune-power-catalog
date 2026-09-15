@@ -2758,6 +2758,66 @@
     "contentSha256": "46a62f61d955f76679413d953584906142adf925be4450b6516022ef917018e3"
   },
   {
+    "id": "shiftech-10769",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/1.6-tdi-eu6-120",
+    "retrievedAt": "2026-09-15T23:14:54.446Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "27cd51efcd570a54e57530fedab7a3dfc05881a32dc9f0a5708d8bd72da0a01d"
+  },
+  {
+    "id": "shiftech-10548",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/2.0-tdi-cr-110",
+    "retrievedAt": "2026-09-15T23:14:58.064Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "820cc9c954b800714bb44aea1ade1e15e22b857d916e46a9e4a87b1dee09e2a2"
+  },
+  {
+    "id": "shiftech-11075",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/transporter-multivan-caravelle/2015-t6/diesel/2.0-tdi-cr-eu6-204",
+    "retrievedAt": "2026-09-15T23:15:01.715Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c1ad16c95b9a07bbc23fe50e2fe46b27327d0dd8eb235a25b876047b5c6f32ef"
+  },
+  {
+    "id": "shiftech-318",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2012-8v/petrol/1.8-tsi-tfsi-180",
+    "retrievedAt": "2026-09-15T23:15:05.401Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3eca4038fb623fa3042ce3e3c5743c2e1eedbea42f000cc95dd6d1e40af357c1"
+  },
+  {
+    "id": "shiftech-9612",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.8-tsi-tfsi-160",
+    "retrievedAt": "2026-09-15T23:15:09.097Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8d417317c69af93db89a22914bc601b78be019d80e71b3d05e383346de49ef84"
+  },
+  {
+    "id": "shiftech-9457",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2017-5f-mk2/petrol/2.0-tsi-300",
+    "retrievedAt": "2026-09-15T23:14:18.820Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "288fc870ba307d695846f728239316f4a22dec680b4321219f963e69a12a97a1"
+  },
+  {
     "id": "shiftech-10511",
     "provider": "shiftech",
     "sourceName": "Shiftech public application table",

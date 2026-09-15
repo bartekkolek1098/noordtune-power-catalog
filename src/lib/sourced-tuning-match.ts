@@ -25,27 +25,71 @@ function badge(text: string, make: string) {
     : make === "mercedes benz" ? value.match(/\b(?:[abces]\s*)?(\d{2,3})\s*(?:cdi|d|amg)?\b/)?.[1]
     : value.match(/\b(gti|gtd|cupra|st|rs|type r)\b/)?.[1];
 }
-function generations(text: string, make: string, model: string): string[] {
-  const normalized=normalizeSourceIdentity(text);
+type GenerationIdentity = {body: string[]; phase: string[]};
+function generations(text: string, make: string, model: string): GenerationIdentity {
+  // Decimal engine sizes ("Golf 1.4 TSI") are not numeric generations.
+  const normalized=normalizeSourceIdentity(text.replace(/\b\d+[.,]\d+\b/g, " "));
   const family=normalizeSourceIdentity(model);
+  const roman:Record<string,string>={i:"1",ii:"2",iii:"3",iv:"4",v:"5",vi:"6",vii:"7",viii:"8",ix:"9",x:"10"};
+  const bodyOnly = (body: string[]): GenerationIdentity => ({body, phase: []});
   // Only explicit, separate body-generation tokens are compared. Substrings of
   // opaque RDW type/variant/execution identifiers are never decoded.
   if(make==="ford") {
-    const roman:Record<string,string>={i:"1",ii:"2",iii:"3",iv:"4",v:"5",vi:"6",vii:"7",viii:"8",ix:"9",x:"10"};
-    return [...normalized.matchAll(/\bmk\s*(\d{1,2}|[ivx]+)\b/g)].map(match=>"mk"+(roman[match[1]]??match[1]));
+    return bodyOnly([...normalized.matchAll(/\bmk\s*(\d{1,2}|[ivx]+)\b/g)].map(match=>"mk"+(roman[match[1]]??match[1])));
   }
   if(make==="kia") {
     const expression=/\bsportage\b/.test(family)?/\b(?:je|km|sl|ql|nq5)\b/g
       : /\bsorento\b/.test(family)?/\b(?:bl|xm|um|mq4)\b/g
       : /\bceed\b/.test(family)?/\b(?:ed|jd|cd)\b/g:undefined;
-    return expression?normalized.match(expression)??[]:[];
+    return bodyOnly(expression?normalized.match(expression)??[]:[]);
   }
   if(make==="hyundai") {
     const expression=/\btucson\b/.test(family)?/\b(?:jm|lm|tl|nx4)\b/g
       : /\bi30\b/.test(family)?/\b(?:fd|gd|pd)\b/g:undefined;
-    return expression?normalized.match(expression)??[]:[];
+    return bodyOnly(expression?normalized.match(expression)??[]:[]);
   }
-  return normalized.match(/\b(?:[efg]\d{2,3}|[wcra]\d{3}|mk\s?\d|8[plvy]|b[5-9])\b/g) ?? [];
+  // VAG source labels distinguish the body (Golf VII, Leon 5F) from a
+  // within-body phase (MKI/MKII). A shared body cannot erase a phase conflict,
+  // and a shared phase cannot make different bodies compatible.
+  const phase = (withMk: boolean) => {
+    const values = [...normalized.matchAll(/\bphase\s*([12]|i{1,2})\b/g)]
+      .map(match => roman[match[1]] ?? match[1]);
+    if (withMk) values.push(...[...normalized.matchAll(/\bmk\s*([12]|i{1,2})\b/g)]
+      .map(match => roman[match[1]] ?? match[1]));
+    if (/\bpre\s*(?:facelift|fl)\b/.test(normalized)) values.push("1");
+    else if (/\b(?:facelift|fl)\b/.test(normalized)) values.push("2");
+    return [...new Set(values)];
+  };
+  if (make === "volkswagen" && /\bgolf\b/.test(family)) {
+    const withoutMk = normalized.replace(/\bmk\s*(\d{1,2}|[ivx]+)\b/g, " ");
+    const body = [...withoutMk.matchAll(/\b(?:golf\s+([1-8])|([ivx]+))\b/g)]
+      .flatMap(match => { const number = match[1] ?? roman[match[2]]; return number ? ["golf" + number] : []; });
+    const explicitBody = body.length > 0;
+    if (!explicitBody) body.push(...[...normalized.matchAll(/\bmk\s*([1-8]|[ivx]+)\b/g)]
+      .flatMap(match => { const number = roman[match[1]] ?? match[1]; return number ? ["golf" + number] : []; }));
+    return {body: [...new Set(body)], phase: phase(explicitBody)};
+  }
+  if (make === "seat" && /\bleon\b/.test(family)) {
+    const body = normalized.match(/\b(?:1m|1p|5f|kl)\b/g) ?? [];
+    return {body, phase: phase(body.length > 0)};
+  }
+  if (make === "skoda" && /\boctavia\b/.test(family)) {
+    const body = normalized.match(/\b(?:1u|1z|5e|nx)\b/g) ?? [];
+    return {body, phase: phase(body.length > 0)};
+  }
+  if (make === "volkswagen" && /\bpassat\b/.test(family)) {
+    return {body: normalized.match(/\bb[5-9]\b/g) ?? [], phase: phase(false)};
+  }
+  if (make === "volkswagen" && /\b(?:transporter|multivan|caravelle)\b/.test(family)) {
+    return {body: normalized.match(/\bt[4-7]\b/g) ?? [], phase: phase(false)};
+  }
+  if (make === "audi") {
+    const expression = /\ba3\b/.test(family) ? /\b8[lpvy]\b/g
+      : /\ba4\b/.test(family) ? /\bb[5-9]\b/g
+      : /\ba6\b/.test(family) ? /\bc[4-8]\b/g : undefined;
+    return {body: expression ? normalized.match(expression) ?? [] : [], phase: phase(false)};
+  }
+  return bodyOnly(normalized.match(/\b(?:[efg]\d{2,3}|[wcra]\d{3}|mk\s?\d|8[plvy]|b[5-9])\b/g) ?? []);
 }
 function explicitFamily(input: EstimateMatchInput) {
   if (input.engineGenerationEvidence?.sourceReference.trim()) return input.engineGenerationEvidence.family === "ecoblue" ? "ecoblue" : "tdci";
@@ -97,7 +141,10 @@ export function matchSourcedProfile(input: EstimateMatchInput, profiles: readonl
     const knownFamily = normalizeSourceIdentity(profile.engineFamily ?? profile.engineMarketingName).match(/\b(?:ecoblue|tdci|[bmn][134567][0478])\b/)?.[0];
     if (family && knownFamily && family !== knownFamily) return false;
     const profileGenerations = generations(profile.generation,make,profile.modelFamily);
-    if (inputGenerations.length && profileGenerations.length && !inputGenerations.some(value => profileGenerations.includes(value))) return false;
+    for (const dimension of ["body", "phase"] as const) {
+      if (inputGenerations[dimension].length && profileGenerations[dimension].length
+        && !inputGenerations[dimension].some(value => profileGenerations[dimension].includes(value))) return false;
+    }
     return true;
   });
   // An exact whole-PS factory output distinguishes e.g. Golf 122 from 125.

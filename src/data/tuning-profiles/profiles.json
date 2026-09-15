@@ -798,6 +798,75 @@
   {
     "brand": "Audi",
     "modelFamily": "A3",
+    "generation": "8V",
+    "yearFrom": 2012,
+    "fuel": "Petrol",
+    "aspiration": "turbo",
+    "engineMarketingName": "1.8 TSI / TFSI",
+    "displacementCc": 1800,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 180,
+    "stockTorqueNm": 250,
+    "electrification": "unknown",
+    "yearTo": 2015,
+    "generationScopeSource": {
+      "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2016-8v-fl/petrol/1.0-tsi-tfsi-115",
+      "retrievedAt": "2026-09-15T22:29:10.932Z",
+      "method": "successor-generation-start"
+    },
+    "aliases": [],
+    "id": "sourced-audi-a3-c59e4e21b063",
+    "sourceIds": [
+      "shiftech-318"
+    ],
+    "sourceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2012-8v/petrol/1.8-tsi-tfsi-180"
+    ],
+    "retrievedAt": "2026-09-15T23:15:05.401Z",
+    "lastReviewedAt": "2026-09-15T23:15:05.401Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 220,
+      "selectedTorqueNm": 320,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-318",
+          "provider": "shiftech",
+          "powerHp": 220,
+          "torqueNm": 320,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Provider specifically limits torque to 320 Nm for DSG7. This published limit does not identify the transmission installed on a particular vehicle."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 0,
+    "stage3SourceCount": 0,
+    "conditions": [
+      "Provider specifically limits torque to 320 Nm for DSG7. This published limit does not identify the transmission installed on a particular vehicle.",
+      "SOURCE_GENERATION_SCOPE_ADJUSTED"
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded.",
+      "The page identifies a 1.8 TSI/TFSI application but does not explicitly identify the EA888 family code. Family code remains unspecified pending source confirmation.",
+      "Effective scope intersects the matching body generation: source overlap 2012–open becomes 2012–2015. Raw provider year bands are preserved in source observations; applicability requires review."
+    ]
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A3",
     "generation": "8V-FL",
     "yearFrom": 2016,
     "fuel": "Petrol",
@@ -19123,6 +19192,95 @@
     "yearFrom": 2017,
     "fuel": "Petrol",
     "aspiration": "turbo",
+    "engineMarketingName": "2.0 TSI",
+    "displacementCc": 2000,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 300,
+    "stockTorqueNm": 380,
+    "electrification": "unknown",
+    "yearTo": 2019,
+    "generationScopeSource": {
+      "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2020/petrol/1.5-tsi-150",
+      "retrievedAt": "2026-09-15T22:29:16.979Z",
+      "method": "successor-generation-start"
+    },
+    "aliases": [],
+    "id": "sourced-seat-leon-1462d25d1149",
+    "sourceIds": [
+      "shiftech-9457"
+    ],
+    "sourceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2017-5f-mk2/petrol/2.0-tsi-300"
+    ],
+    "retrievedAt": "2026-09-15T23:14:18.820Z",
+    "lastReviewedAt": "2026-09-15T23:14:18.820Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 350,
+      "selectedTorqueNm": 460,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-9457",
+          "provider": "shiftech",
+          "powerHp": 350,
+          "torqueNm": 460,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": []
+    },
+    "stage2": {
+      "selectedPowerHp": 370,
+      "selectedTorqueNm": 480,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-9457",
+          "provider": "shiftech",
+          "powerHp": 368,
+          "torqueNm": 483,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 1,
+    "stage3SourceCount": 0,
+    "conditions": [
+      "SOURCE_GENERATION_SCOPE_ADJUSTED"
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded.",
+      "The provider labels this application Leon 2.0 TSI 300 PS and does not explicitly state Cupra branding. The original model/engine label is retained.",
+      "Effective scope intersects the matching body generation: source overlap 2017–open becomes 2017–2019. Raw provider year bands are preserved in source observations; applicability requires review."
+    ]
+  },
+  {
+    "brand": "Seat",
+    "modelFamily": "Leon",
+    "generation": "5F MK2",
+    "yearFrom": 2017,
+    "fuel": "Petrol",
+    "aspiration": "turbo",
     "engineMarketingName": "1.5 TSI",
     "displacementCc": 1500,
     "displacementPrecision": "nominal",
@@ -19741,6 +19899,95 @@
       "The provider uses metric European hp/ch figures; original numbers are retained.",
       "Only the published generation start is known; no end year or exact displacement is inferred.",
       "Effective scope intersects the matching body generation: source overlap 2013–open becomes 2013–2016. Raw provider year bands are preserved in source observations; applicability requires review."
+    ]
+  },
+  {
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "2005",
+    "yearFrom": 2005,
+    "fuel": "Petrol",
+    "aspiration": "turbo",
+    "engineMarketingName": "1.8 TSI TFSI",
+    "displacementCc": 1800,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 160,
+    "stockTorqueNm": 250,
+    "electrification": "unknown",
+    "yearTo": 2012,
+    "generationScopeSource": {
+      "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/petrol/1.4-tsi-tfsi-ss-140",
+      "retrievedAt": "2026-09-15T22:29:18.977Z",
+      "method": "successor-generation-start"
+    },
+    "aliases": [],
+    "id": "sourced-skoda-octavia-4e8091a3105c",
+    "sourceIds": [
+      "shiftech-9612"
+    ],
+    "sourceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.8-tsi-tfsi-160"
+    ],
+    "retrievedAt": "2026-09-15T23:15:09.097Z",
+    "lastReviewedAt": "2026-09-15T23:15:09.097Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 210,
+      "selectedTorqueNm": 320,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-9612",
+          "provider": "shiftech",
+          "powerHp": 210,
+          "torqueNm": 320,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": []
+    },
+    "stage2": {
+      "selectedPowerHp": 220,
+      "selectedTorqueNm": 330,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-9612",
+          "provider": "shiftech",
+          "powerHp": 220,
+          "torqueNm": 330,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 1,
+    "stage3SourceCount": 0,
+    "conditions": [
+      "SOURCE_GENERATION_SCOPE_ADJUSTED"
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded.",
+      "The page identifies a 1.8 TSI/TFSI application but does not explicitly identify the EA888 family code. Family code remains unspecified pending source confirmation.",
+      "Effective scope intersects the matching body generation: source overlap 2005–open becomes 2005–2012. Raw provider year bands are preserved in source observations; applicability requires review."
     ]
   },
   {
@@ -20932,6 +21179,98 @@
       "The provider uses metric European hp/ch figures; original numbers are retained.",
       "Only the published generation start is known; no end year or exact displacement is inferred.",
       "Effective scope intersects the matching body generation: source overlap 2012–open becomes 2012–2016. Raw provider year bands are preserved in source observations; applicability requires review."
+    ]
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Golf",
+    "generation": "VI",
+    "yearFrom": 2008,
+    "fuel": "Diesel",
+    "aspiration": "turbo",
+    "engineMarketingName": "2.0 TDI CR",
+    "displacementCc": 2000,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 110,
+    "stockTorqueNm": 250,
+    "electrification": "unknown",
+    "yearTo": 2011,
+    "generationScopeSource": {
+      "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/2.0-tsi-220",
+      "retrievedAt": "2026-09-15T22:29:07.017Z",
+      "method": "successor-generation-start"
+    },
+    "aliases": [],
+    "id": "sourced-volkswagen-golf-4b2b00a63103",
+    "sourceIds": [
+      "shiftech-10548"
+    ],
+    "sourceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/2.0-tdi-cr-110"
+    ],
+    "retrievedAt": "2026-09-15T23:14:58.064Z",
+    "lastReviewedAt": "2026-09-15T23:14:58.064Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 185,
+      "selectedTorqueNm": 370,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-10548",
+          "provider": "shiftech",
+          "powerHp": 185,
+          "torqueNm": 370,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Provider describes this 110 PS variant as electronically restricted relative to the 140 PS engine. This is an external source claim; hardware equivalence is not independently confirmed."
+      ]
+    },
+    "stage2": {
+      "selectedPowerHp": 195,
+      "selectedTorqueNm": 390,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-10548",
+          "provider": "shiftech",
+          "powerHp": 195,
+          "torqueNm": 390,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Provider describes this 110 PS variant as electronically restricted relative to the 140 PS engine. This is an external source claim; hardware equivalence is not independently confirmed.",
+        "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 1,
+    "stage3SourceCount": 0,
+    "conditions": [
+      "Provider describes this 110 PS variant as electronically restricted relative to the 140 PS engine. This is an external source claim; hardware equivalence is not independently confirmed.",
+      "SOURCE_GENERATION_SCOPE_ADJUSTED"
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded.",
+      "Effective scope intersects the matching body generation: source overlap 2008–open becomes 2008–2011. Raw provider year bands are preserved in source observations; applicability requires review."
     ]
   },
   {
@@ -23402,6 +23741,177 @@
       "The provider uses metric European hp/ch figures; original numbers are retained.",
       "Only the published generation start is known; no end year or exact displacement is inferred.",
       "Effective scope intersects the matching body generation: source overlap 2015–open becomes 2015–2018. Raw provider year bands are preserved in source observations; applicability requires review."
+    ]
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Passat",
+    "generation": "B8",
+    "yearFrom": 2015,
+    "fuel": "Diesel",
+    "aspiration": "turbo",
+    "engineMarketingName": "1.6 TDI EU6",
+    "displacementCc": 1600,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 120,
+    "stockTorqueNm": 260,
+    "electrification": "unknown",
+    "yearTo": 2018,
+    "generationScopeSource": {
+      "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2019/petrol/2.0-tsi-opf-190",
+      "retrievedAt": "2026-09-15T22:29:08.942Z",
+      "method": "successor-generation-start"
+    },
+    "aliases": [],
+    "id": "sourced-volkswagen-passat-ddb7daba8e0d",
+    "sourceIds": [
+      "shiftech-10769"
+    ],
+    "sourceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/1.6-tdi-eu6-120"
+    ],
+    "retrievedAt": "2026-09-15T23:14:54.446Z",
+    "lastReviewedAt": "2026-09-15T23:14:54.446Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 145,
+      "selectedTorqueNm": 310,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-10769",
+          "provider": "shiftech",
+          "powerHp": 145,
+          "torqueNm": 310,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": []
+    },
+    "stage2": {
+      "selectedPowerHp": 155,
+      "selectedTorqueNm": 330,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-10769",
+          "provider": "shiftech",
+          "powerHp": 155,
+          "torqueNm": 330,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 1,
+    "stage3SourceCount": 0,
+    "conditions": [
+      "SOURCE_GENERATION_SCOPE_ADJUSTED"
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded.",
+      "Effective scope intersects the matching body generation: source overlap 2015–open becomes 2015–2018. Raw provider year bands are preserved in source observations; applicability requires review."
+    ]
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Transporter / Multivan / Caravelle",
+    "generation": "T6",
+    "aliases": [
+      "Transporter",
+      "Multivan",
+      "Caravelle"
+    ],
+    "yearFrom": 2015,
+    "fuel": "Diesel",
+    "aspiration": "turbo",
+    "engineMarketingName": "2.0 TDI CR EU6",
+    "displacementCc": 2000,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 204,
+    "stockTorqueNm": 450,
+    "electrification": "unknown",
+    "id": "sourced-volkswagen-transporter-multivan-caravelle-b10a7676454e",
+    "sourceIds": [
+      "shiftech-11075"
+    ],
+    "sourceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/transporter-multivan-caravelle/2015-t6/diesel/2.0-tdi-cr-eu6-204"
+    ],
+    "retrievedAt": "2026-09-15T23:15:01.715Z",
+    "lastReviewedAt": "2026-09-15T23:15:01.715Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 230,
+      "selectedTorqueNm": 500,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-11075",
+          "provider": "shiftech",
+          "powerHp": 230,
+          "torqueNm": 500,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": []
+    },
+    "stage2": {
+      "selectedPowerHp": 240,
+      "selectedTorqueNm": 520,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-11075",
+          "provider": "shiftech",
+          "powerHp": 240,
+          "torqueNm": 520,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 1,
+    "stage3SourceCount": 0,
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded."
     ]
   },
   {
