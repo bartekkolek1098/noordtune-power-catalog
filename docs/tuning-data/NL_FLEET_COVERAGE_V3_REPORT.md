@@ -10,8 +10,8 @@ The research pass retrieved 700 ATM application pages, added 258 profile IDs, co
 
 - Branch: `feature/nl-fleet-coverage-v3`.
 - Stacked base: `feature/nl-fleet-coverage-v2`, V2 SHA `515fb4fa765cefc8f1c8d59a46c6daa7536dc727`.
-- Draft PR and post-push verification: to be recorded after normal push.
-- Validated dataset/runtime commit: `9093573e3bb07ff82b2bbb10c805a3ec5f347df9`; the subsequent QA/report commit includes the final scripts and artifacts.
+- Draft PR: [#16 — Close high-priority Dutch tuning coverage gaps](https://github.com/bartekkolek1098/noordtune-power-catalog/pull/16), open and Draft after a normal push.
+- Application and QA head: `1b43b88a93eb198f11bb0ed0c774d1275b892d88`. This includes validated dataset/runtime commit `9093573e3bb07ff82b2bbb10c805a3ec5f347df9` and the final QA/report scripts and artifacts. The follow-up commit records review metadata; the PR exposes the latest branch head.
 - Dataset fingerprint: `cd53d92eab366f636915cd882fafc8332e0bcb8762b371056ca1df85f7f4b0f5`.
 - Research and local verification date: 16 September 2026. All output values retain the original factual source record, retrieval date, URL and content hash.
 
@@ -172,9 +172,9 @@ The local server was bound to `localhost:3120`. An initial IPv4-only binding con
 
 ## Review deployment and protected work (items 41–42)
 
-Post-push Vercel Preview status will be recorded here. Local browser checks do not imply access to an authenticated hosted preview.
+Vercel Preview **passed** for application/QA head `1b43b88a93eb198f11bb0ed0c774d1275b892d88`: deployment **6487661485**, completed 16 September 2026 at 18:24:59 UTC. The [Preview URL](https://noordtune-power-catalog-9qhvv7al0-bartekkolek1098s-projects.vercel.app) returns HTTP 302 to Vercel SSO for public access. Deployment success is verified; a hosted browser session was not verified. Local production browser evidence remains separate. The Vercel and Vercel Preview Comments checks both passed.
 
-Read-only verification before push confirms:
+Read-only verification after the Draft PR was created confirms:
 
 | Protected target | Unchanged SHA / state |
 |---|---|
@@ -184,7 +184,7 @@ Read-only verification before push confirms:
 | PR #15 | Draft, open; `515fb4fa765cefc8f1c8d59a46c6daa7536dc727` |
 | main | `4d12e510953fb57c3f8f84a737880ff860a617e7` |
 
-No work was performed in noordtune-www. No merge, Ready transition, force push or production deployment is part of this phase. Public SEO scope remains **24 vehicles and 291 sitemap URLs**; the 58,586-record canonical catalog remains separate from the sourced dataset. Production deployment and final protected-ref verification will be attached after the Draft PR is created.
+Production remains deployment **5965036463**, created 18 August 2026 at 14:39:18 UTC, on the unchanged main SHA above. No work was performed in noordtune-www. No merge, Ready transition, force push or production deployment is part of this phase. Public SEO scope remains **24 vehicles and 291 sitemap URLs**; the 58,586-record canonical catalog remains separate from the sourced dataset. Full post-push proof is in [v3-review-verification.json](../../data/research/v3-review-verification.json).
 
 ## Top-50 unresolved review ledger (item 17)
 
