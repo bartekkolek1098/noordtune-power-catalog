@@ -10,7 +10,7 @@ function fixture(options={}){
   const crumb=[['Home','/'],['Chiptuning','/chiptuning/'],[o.brand,'/make/'],[o.model,'/model/'],[o.generation,'/generation/'],[o.engine,'/engine/']].map(([name,url],i)=>({'@id':'#crumbs',itemListElement:{'@type':'ListItem',position:i+1,item:{name,'@id':'https://www.atm-chiptuning.com'+url}}}));
   const table=Object.entries({Brandstof:o.fuel,Methode:o.method,Cilinderinhoud:o.cc+' CC','Type ecu':o.ecu,...(o.code?{Motornummer:o.code}:{})}).map(([key,v])=>'<tr><td>'+key+'</td><td></td><td><strong>'+v+'</strong></td></tr>').join('');
   const cmp=(name,value,unit,nest=false)=>`<div class="Chiptuning-comparison__number ${name}">${nest?'<div>':''}${value}<span>${unit}</span>${nest?'</div>':''}</div>`;
-  const stage=(name,p,n)=>`<a class="Chiptuning-stages__stage" data-stage="${name}" data-up="${p}" data-ut="${n}" data-p-type="pk" data-t-type="Nm">Stage ${name}</a>`;
+  const stage=(name,p,n)=>`<a class="Chiptuning-stages__stage" title="${o.engine} Stage ${name}" data-stage="${name}" data-up="${p}" data-ut="${n}" data-p-type="pk" data-t-type="Nm">Stage ${name}</a>`;
   const body=`<script type="application/ld+json">${JSON.stringify({'@graph':crumb})}</script><h1>${o.engine}</h1><table>${table}</table>${cmp('tuning-p-pre',o.hp,'pk')}${cmp('tuning-t-pre',o.nm,'Nm')}${cmp('tuning-p-post',o.tunedHp,'pk',true)}${cmp('tuning-t-post',o.tunedNm,'Nm',true)}${stage('1',o.tunedHp,o.tunedNm)}${stage('1+',999,999)}<div class="Chiptuning-stages__stage-info" data-stage="2">Stage 2 software</div>${o.stage2?stage('2',o.stage2[0],o.stage2[1]):''}${o.extra??''}`;
   return {url:'https://www.atm-chiptuning.com/chiptuning/synthetic-'+o.hp+'/',retrievedAt:'2026-09-16T00:00:00Z',status:'retrieved',httpStatus:200,contentSha256:'a'.repeat(64),body};
 }
@@ -49,6 +49,7 @@ equal(extract(fixture({method:'Chiptuning , Externe module'})).conditions.includ
 ok(extract(fixture({method:'Externe module'})).conditions.includes('ATM_ORDINARY_REMAP_METHOD_UNCONFIRMED'),'Module-only never remap');
 ok(extract(fixture({hp:101})).conditions.includes('ATM_STOCK_TABLE_HEADING_MISMATCH'),'Heading/table disagreement rejected');
 ok(extract(fixture({fuel:'Onbekend'})).conditions.includes('ATM_INCOMPLETE_APPLICATION_IDENTITY'),'Missing fuel not guessed');
+ok(extract(fixture({fuel:'Benzine',engine:'110 CDI 100pk'})).conditions.includes('ATM_FUEL_ENGINE_LABEL_CONFLICT'),'Fuel/engine-label conflict retained for review');
 ok(extract(fixture({cc:''})).conditions.includes('ATM_INCOMPLETE_APPLICATION_IDENTITY'),'Missing cc not inferred from label');
 ok(extract(fixture({tunedHp:95})).conditions.includes('STAGE1_BELOW_STOCK_REVIEW'),'Below-stock PS rejected');
 ok(extract(fixture({tunedNm:240})).conditions.includes('STAGE1_BELOW_STOCK_REVIEW'),'Below-stock torque rejected');
@@ -64,5 +65,12 @@ for(const engine of ['1.5 eTSI 100pk','1.5 MHEV 100pk','1.5 Hybrid 100pk','1.5 G
 for(const status of ['blocked','unavailable']){const o=extract({...fixture(),status});equal(o.status,status,'Access state');equal(o.identity,undefined,'Blocked facts not extracted');equal(o.stages,undefined,'Blocked stages not extracted');}
 equal(yearScope('11/2021 -> ...'),{yearFrom:2021},'Month prefix');equal(yearScope('T6.1 - 2021 - 2024'),{yearFrom:2021,yearTo:2024},'Generation digits are not years');equal(yearScope('Mk5'),{},'No fabricated generation years');
 equal(attributes("<a data-stage='1+' data-up='999'>")['data-stage'],'1+','Exact stage attributes');
+equal(extract(fixture({brand:'MAN LCV',model:'TGE'})).identity.brand,'MAN','Provider light-commercial brand category');
+equal(extract(fixture({brand:'MAN Trucks',model:'TGE'})).identity.brand,'MAN','Same provider truck-category mirror');
+equal(extract(fixture({brand:'Citro&euml;n'})).identity.brand,'Citroën','Named accent in application brand');
+equal(extract(fixture({generation:'2020 ->',engine:'110 CDI (Euro 6 - 2021 ->) 100pk'})).identity.yearFrom,2021,'Output-specific ECU generation begins after body generation');
+const arrow=extract(fixture({generation:'2020 ->',engine:'110 CDI (Euro 6 - 2021 ->) 100pk'}));
+equal(arrow.stages.stage1.powerHp,145,'Quoted arrow does not truncate Stage 1 attributes');
+ok(!arrow.conditions.includes('ATM_STAGE1_TABLE_MISMATCH'),'Application title arrow retains table agreement');
 ok(assertions>=100,'At least 100 meaningful source parsing assertions');
 console.log(JSON.stringify({suite:'ATM parsing',assertions,networkRequests:0,failures:0}));

@@ -43,6 +43,8 @@ export type SourceObservation = {
   availability?: {status: "available" | "not-available" | "development-pending" | "hybrid-only" | "different-ecu-generation"; scope: "source-application-only"; evidence: string; supersedesSourceId?: string};
   /** Explicit technical corroboration of unusually large factory de-rating gains. */
   factoryDeratingEvidence?: {sourceId: string; fields: string[]; reason: string};
+  /** Reviewed manufacturer mapping for an ambiguous provider engine label. */
+  engineFamilyEvidence?: {sourceId: string; engineFamily: "EcoBlue"; reason: string};
   /** Different hardware/package classes never become ordinary remap consensus votes. */
   packages?: {name: string; kind: "external-module"; powerGainHp?: number; torqueGainNm?: number; tunedPowerHp?: number; tunedTorqueNm?: number}[];
   conditions?: string[];
