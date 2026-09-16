@@ -48,6 +48,9 @@ export type SourceObservation = {
   /** Manually reviewed counterpart relationship; raw identity remains unchanged. */
   consensusGroup?: string;
   supportingUrls?: string[];
+  identityEvidence?: {field: "fuel"; value: "Petrol" | "Diesel"; method: "unique-provider-application-route"; sourceUrl: string; applicationUrls: string[]; retrievedAt: string; contentSha256: string}[];
+  /** Reviewed applicability interpretation. The original provider identity above is retained. */
+  reviewedScope?: {yearFrom: number; yearTo: number; generation?: string; sourceUrl: string; retrievedAt: string; contentSha256: string; reason: string};
   stockValidation?: {sourceId: string; fields: string[]};
 };
 export type StageSourceValue = ResearchStage & {sourceId: string; provider: SourceProvider; powerUnit: "PS"; torqueUnit: "Nm"};
