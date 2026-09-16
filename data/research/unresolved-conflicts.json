@@ -8838,6 +8838,2459 @@
         "IDENTITY_UNAVAILABLE",
         "SOURCED_STAGE1_REQUIRED"
       ]
+    },
+    {
+      "sourceId": "shiftech-v3-md1cs104-availability",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8774095ddef4ab22",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b669b94e7893fb9d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-941aef880138f441",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e3bac51703a75f2b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0a975bc8b60a10fa",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bf045829753f66c6",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c153a5dbc2136bb5",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2dbcb980957f45ad",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-447a6600f30da84c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0dc37c76967808bc",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-228afaf0c6164ac7",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a4228ee88cf34b76",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4b37487c4329b4f4",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-13f5c37d4b73aaaf",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2ae6dc31af374d74",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-838bd3ea95c5ee72",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-632a328705da07b1",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6ff96ede5b9ce133",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-11d564922ce6f73a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a0a4208eb221f90b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-64f35360de6a2229",
+      "reasons": [
+        "SOURCE_NEGATIVE_APPLICABILITY_OVERLAP"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0943a48379532135",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2abc43e6f2ee0d8f",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0e39c056d295a806",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b690c8fbc30c2678",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-438f1602ba235c1a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-eba4e04c18aed3a8",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bd3e7909f2e23c7d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8316ca5ad31250be",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cea4b8517f6e846b",
+      "reasons": [
+        "SOURCE_NEGATIVE_APPLICABILITY_OVERLAP",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5c916280d2e1dddc",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-571bb9e79d55e926",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9bd941b04ec4a605",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-653455822efc9c59",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0fe012c20ba8c271",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-52eb81a6637adef8",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-235cc0f779e22712",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-77807dd7a5863ae1",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1706d37e19fa98f1",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f7aa748d7e543eac",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3e28ca30d49479de",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2a0502a23155890a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e8a7195f0325d657",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2b13a934a7f7fc71",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8dc978b96200b9a2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f2182a3759172790",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8216fcf2f0a0b61f",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4f1cddb96d1a9ac6",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-99e00797cfeb7633",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-50e7e558f370f838",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-57f9a15554a97cd4",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-325c163bd64c8ec2",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6ecbdcba462fa95c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-040f3d3e90fe65cf",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-044698d9280983e9",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4fc4ed1914917221",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2ae799f9e470b530",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1137353d5b89ab8b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d9e249d129f028c0",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-24b17a32433c6de4",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-be7ba84fd410619c",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-47717c12e86c8373",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-31a32d8e9296bcc9",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8657e85a8409044d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1fea0120f9ab5818",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-59b2aa9d95b89088",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d54d68deec6a0c16",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-20c8e8090f97e5c8",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d8b10d355afd1c14",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ee5dc7ec8148c324",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7159acb35241c763",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bf6d59a5100c3989",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-db193dc2e2879775",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e91bbde133be6f5e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5a51181cbe9ebfc3",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d1d656e04080b534",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-581e510825a2d47b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-91a2ee292d176713",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7326fa3a6b573a03",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4d55faf7b4e3d923",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2457777135233163",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cab12ec70b42dc2c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6a8b6ffb888b91cb",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8bf0f5686dcb390c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b781f939a165f01c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-709378d9bee626a0",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8089dfd9e1bd588e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c615bf27cebdb5c0",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-756ebd060d65c700",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ddd0ac5d3ccee68c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-85289f74c9428215",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4d27c5d5df9dd7dd",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6c0d8ac03f3d64e9",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-51ce330f70f52820",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-31537af4bdf31074",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-17bab1c03f5b888d",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3842944181c0d2ca",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-79bb48ec9e201b2f",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b3527df0ec3a2e0c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4d4c46570b74143e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-568865a65c1491f9",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-94184eb619f06a7e",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c0f711aed3af07ce",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-07db39f2a0fbf633",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0beb2f4a38a2adb3",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b7019076e5006d4f",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a10f7eba4771e947",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b93d1a058822105b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b06e8c7d9b9580a5",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9b6eb32600b8eefb",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3643998d8d6f0bf8",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1d85f7b048e53e4a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-32c67bc13da79b45",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-68b5f6ad4ff2f722",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5c9383f832b0425e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b9a652c09a933007",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0ca4c43a1881e727",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-778f71240b911e80",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3442d8bd73dc75bf",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1ab8762d914d098c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-45bacfc3fc79b845",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c1a156b7ba3d098c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-12261870fca0dba4",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c28648bbf42b2598",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d0a4aae8dcafd2d2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-944f7c2d5afd0244",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-96e2ed14760f5c3c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-086cea0ed40a2e10",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dcde18bf7be0849d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f93445aaf9592b11",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e6ecc7e00c8b12de",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-35eb7a491950e05e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b240cd23534db722",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ddcbb1285ea6eb26",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d20ad146a4f33ede",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e5c90801f4b0453f",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b6d9b32bf5543de4",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1fb7ca34bd64f4aa",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2372c9306f9e8a0d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-965a223bba4f912f",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-06b5e963f893fd36",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-683c78e8209bad71",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f6ca5723ff6fe0c9",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ceab4a8810d55ce1",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5c9f0d7885890329",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d12aa398429c4547",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-52d9e291c83e4bfb",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4b994dc0722fed7d",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9616f4884427f682",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1131da30c302661c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e257df53d18824f5",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bc57959cc30276de",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-04a56ddca5b31a89",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-373e2c040ddaeebf",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c555e5824c5e93cd",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4032770f2c21de25",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7d833b8caf4e379e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5ac655a88c802f4c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-af180eece3aa70ad",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5edb5daec998e9f3",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3e6125df8dbec476",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0d4c36d9472b5bd0",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a51b4838f14d2413",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-67bb1c1cbc268947",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-55b042e66115d67b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d1e5c6303f990ce3",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b32b1212e572c565",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "ENGINE_FAMILY_LABEL_CONFLICT"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4ca1ed8d03887bee",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-417707a86481e90d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-888055274f6963b2",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "ENGINE_FAMILY_LABEL_CONFLICT"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9289334577d9af16",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "ENGINE_FAMILY_LABEL_CONFLICT"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-51c04125813cc9cc",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-54620049504e320a",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "ENGINE_FAMILY_LABEL_CONFLICT"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-879e2c3f67530987",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-39b71789107ffbff",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ebed574848ded006",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a08a9b7be4a4b91b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e42643d39c9ada9b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6d6c5ffd4b716573",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b1712159bcec1d58",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-358489b97636998a",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c028302dfb3179d2",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3fa39f55edc72c7b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3eeef39ad629338b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a2c6cdeca80d6459",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d7b5f749ff100d40",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-772139186de51206",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2e1f6ea5895207be",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-45f150f499e0cdb4",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bcd5e823bcbd38ac",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-18ba7111bf863958",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cc29182470bbb6d9",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-580a040047bb05e6",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-fe48672106855a49",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e7d585bd83f9191f",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b6aacd01713969d2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8398d8ea98316ff2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-840f077275b2e0a3",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-97bf9961a5f22448",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-71594546a4d0c9d6",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e229e20192f925cf",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-67344f152c35e9a1",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e1a181dce21891dc",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bf653c350dfa376e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cd29bfae8f59c44d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-43b93c85685a46bd",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-235c4a4ebc038b07",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8860fb9967c81211",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e41db1f8d61d6672",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4ae39da43ffe4229",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9cdeb6464db5fb6c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6a5e611c217b596a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0c916396a7dc0211",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5fb3e816f573f0ea",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8c5b86ae8b646aaf",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c2ce3488e5d785e2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2b5e406480533f84",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bc1ded1eee284926",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8f93edf6953d42a6",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8f25bc831c4bcb25",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f91d356e86ee699c",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ffbeb2a199fb6203",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-740bdcb3c125482d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5d1d533f45e30c09",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-77db667bf0a6255b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-994ede62ed4739b8",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-866fc81c9d3f411e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-74f6df282bb17923",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d983000bf7f71386",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f94ab49e0ce6fdc7",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-30d5b335bdb2e242",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cacdd71450d2afe9",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-50d5c80dbf23b984",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6e665bfd97b7eb7f",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0795487266f0bd04",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7fce407c07e26ed2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6b6fe49e2c5d39c5",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9bdde3978a13f920",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a8f8f659ec582ca6",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b17d307dc2557b0a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-11d4b22f7d8cfd9a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-89855f1e1fc40a7e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e540a4b4614ca237",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5a92ae28ac676d3e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d5d28f88bc000ca3",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7bb28b9e80fa8f86",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c79a979b58db82c7",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5dcbcc101a0e3a08",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1cbc120b34076ac0",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0a64ba57d7bcb2ef",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-77d1f1f52af0d2f5",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ee456b1540686f74",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9457a04ca2fd2813",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-75a907bdb7e61463",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cca22d163dfe345d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-376a95ed4a8739af",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c5e77104e00a6436",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bd9ee1999da48bca",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-35d0816245f34faa",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-34dbbab41fca48c2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-028d62d9c3dbf4ce",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-43c0bf436906a308",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7383ddaae51e16f8",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5cdf709241bfb202",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-025c1bc45b4b2ada",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f5caeac3a9c705bb",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-857b30e915312596",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1bddf62fab673fec",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ff4c89628a6db505",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-fe420404c4ef1280",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-115be17327e45e99",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-929ef44bc4d623b0",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bb74111e7e5a2bee",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-18c28889de36b8d5",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f8d581b316e6029a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9321c0fba4a63d88",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-16c73a9c7685d19d",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2a33e5df276a13af",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dc207cc9a89ae66c",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f7c4fbc2fa9a3215",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-19ddf24892c8cc22",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1a61c1a094b3d10b",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9e838e195a8da6dc",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-52c4adb99ca424b1",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b8da953e445b2a08",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f6569bc9085acdcd",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-10879a9345e63152",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bb92a18beebb3ee0",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-30f07f37eab76d36",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c0e4a9747b635363",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8b0fa60ec401b686",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-fa825bcc74bc6734",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-00760b6e665fd6b4",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c2f150fbec9a0be5",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f794070d0c04f98e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-14a25324fef21e6d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-480c1736e544005f",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0a0e8e25c9932ff2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ea281f17be6e00f2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6a43ca87543c40f8",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5ddbcb7900eea639",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c14d2f3c2251d11b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a259ffce5b2c964d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-280c61dd50300348",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e1ab7c3d6b250ae4",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c4ca3b26f0fcee6c",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8b2035c5445143ac",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c6d70955c6fb94fa",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f91529c3557827dc",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c6c97977741edb83",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7ac5f3460487f572",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a0645f9d84263d51",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2ee9230a63330520",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-69e9f8a2e1830f51",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a8ea5cc105379f6a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-98bff8076af33476",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1c2f15463ebb4030",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7ed7f73cbb5b054e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c9de4583d90053a2",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dfdf6b9448a57ad3",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d97dfdae8bb4ac7b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-850f6bbdd38ae33e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c12a8a26491a0196",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4565cb5d953502b1",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-98977b9dc1cd7d6e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-124404f72c69eaff",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7a2b63eaf2972a04",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-029fea9ca07b8350",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4382f735a74e1043",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b01770a27cb52609",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-546d7db3c133f7a2",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9a275daffe3f3c63",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0d05a0fa382367fb",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0be05d4d4a967ad6",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-acc2c7b2f84b776f",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-15a215d3e366b505",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2d0fb848a33b04ad",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3750d9931397fd6a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1e7164d094cd7729",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-adfbe92fb92bc2f9",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-db6d52301803120d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-44314b47a43f18e0",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8e0080ab94501e32",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e9b7e8a5c6758a8d",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-80fc629fa4390cd0",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bc3c2d9c200a3dfa",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-64711e6476baf471",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6a299bbfc08b5771",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-da52dc7ddc1cf631",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e09c52d4903ce510",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5f643f1fa1e69bbf",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-863e6d244367ac35",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f7cf69bda499a625",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ae5d77376bb64949",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dd231f09eb14b121",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8546a79261175d1e",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-24468112ec34cfe3",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-01849e8b2cb0b15b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bdf98bb8c6d16052",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e93f2bb7181b82dd",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f11bf7c7fc189cb3",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3f39fd960bb85e2f",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4562f2b698d4e5bc",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-21c0e4f15b23d9e2",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4ee78bb33b7a6bf8",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1f128977696debe5",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-62b632e0ff5756d1",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7e61646e39eedb11",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d2893d16472b4f41",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0bfaf1939373c595",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-213dc88970d2a04a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0de3a1668b2066a5",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-284d6d8f466adb75",
+      "reasons": [
+        "SOURCE_APPLICATION_NOT_AVAILABLE",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f7e043fbf3b21c83",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-17e9464a209f1420",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dd2e7ff92fcc3086",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-61a1176d409b0837",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-fa617d1939e3041b",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b5d67e7752f5c48a",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d7dc6f589278d668",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dbee79d91b080489",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ef5e253d77d614e6",
+      "reasons": [
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
+    },
+    {
+      "sourceId": "shiftech-v2-f77ccecdee8ad1ca",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+      ]
     }
   ],
   "stockVariants": [
@@ -8949,12 +11402,28 @@
     {
       "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
       "profileIds": [
+        "sourced-ford-transit-connect-3c81402ba654",
+        "sourced-ford-transit-connect-3de5d9ab6299"
+      ],
+      "sourceIds": [
+        "atm-v3-1ae04be0863f1442",
+        "atm-v3-671adfbc1c7e9624"
+      ],
+      "stockTorqueNm": [
+        220,
+        170
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
         "sourced-ford-transit-connect-694c712b8c33",
         "sourced-ford-transit-connect-c1224c2aafe9"
       ],
       "sourceIds": [
         "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
         "unlimited-v2-82b4a79e0fc8cd10",
+        "atm-v3-71a68ae9f207107e",
         "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-120"
       ],
       "stockTorqueNm": [
@@ -8970,6 +11439,7 @@
       ],
       "sourceIds": [
         "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100",
+        "atm-v3-6fb7aa622e723032",
         "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-100"
       ],
       "stockTorqueNm": [
@@ -8995,6 +11465,22 @@
     {
       "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
       "profileIds": [
+        "sourced-mini-cooper-s-147a8f3878e3",
+        "sourced-mini-cooper-s-b54d727ee314"
+      ],
+      "sourceIds": [
+        "atm-v3-485f9d600d15f03c",
+        "unlimited-v2-2b47c75da0b47034",
+        "unlimited-v2-dcc5ff46c6147e16"
+      ],
+      "stockTorqueNm": [
+        320,
+        350
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
         "sourced-opel-corsa-9a5db4c636dd",
         "sourced-opel-corsa-bc9950b536aa"
       ],
@@ -9005,6 +11491,157 @@
       "stockTorqueNm": [
         125,
         115
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-peugeot-partner-05885586757b",
+        "sourced-peugeot-partner-2dfe1520f3e6"
+      ],
+      "sourceIds": [
+        "atm-v3-4f72e8ae76a96d70",
+        "atm-v3-a4dc495b545de06d"
+      ],
+      "stockTorqueNm": [
+        270,
+        240
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-peugeot-partner-30cb51d8a514",
+        "sourced-peugeot-partner-373ff5598538"
+      ],
+      "sourceIds": [
+        "atm-v3-355a17e211db34d2",
+        "atm-v3-c0643019193c8c6a"
+      ],
+      "stockTorqueNm": [
+        230,
+        215
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-renault-master-44908d7e39e3",
+        "sourced-renault-master-64a77f5dc6e5"
+      ],
+      "sourceIds": [
+        "atm-v3-e76f7b2b01453a0a",
+        "unlimited-v2-7e79b527e023c33b"
+      ],
+      "stockTorqueNm": [
+        380,
+        360
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-renault-master-44908d7e39e3",
+        "sourced-renault-master-66cd75100643"
+      ],
+      "sourceIds": [
+        "atm-v3-e76f7b2b01453a0a",
+        "unlimited-v2-f3c82599ca8a858f"
+      ],
+      "stockTorqueNm": [
+        380,
+        360
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-renault-master-6a9e7d3d355c",
+        "sourced-renault-master-b4e03fd5e16f"
+      ],
+      "sourceIds": [
+        "unlimited-v2-f0de598dfaa5cec1",
+        "unlimited-v2-06bbf29601b021cd",
+        "atm-v3-e49f50552c36b042"
+      ],
+      "stockTorqueNm": [
+        360,
+        350
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-renault-master-ae882afbe075",
+        "sourced-renault-master-b4e03fd5e16f"
+      ],
+      "sourceIds": [
+        "atm-v3-0a4eec5a0234c67e",
+        "atm-v3-e49f50552c36b042"
+      ],
+      "stockTorqueNm": [
+        360,
+        350
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-caddy-0c39d7444d8f",
+        "sourced-volkswagen-caddy-5c1339f03a27"
+      ],
+      "sourceIds": [
+        "unlimited-v2-b397b83f0a678434",
+        "atm-v3-c3e0614ea741fa03"
+      ],
+      "stockTorqueNm": [
+        250,
+        280
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-caddy-2302519726a8",
+        "sourced-volkswagen-caddy-a8a84e1a5f36"
+      ],
+      "sourceIds": [
+        "unlimited-v2-5190e28c7a144576",
+        "atm-v3-ad4c68cde2d7bc74"
+      ],
+      "stockTorqueNm": [
+        250,
+        280
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-caddy-247ddb1cd8a7",
+        "sourced-volkswagen-caddy-e2dd799aa8ba"
+      ],
+      "sourceIds": [
+        "atm-v3-6c73926ca8fa821d",
+        "unlimited-v2-790c161f385dd05b"
+      ],
+      "stockTorqueNm": [
+        320,
+        250
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-caddy-57addf8dc68e",
+        "sourced-volkswagen-caddy-63947bc14819"
+      ],
+      "sourceIds": [
+        "atm-v3-6f822351ed63ddbd",
+        "unlimited-v2-5eb44ba9f05417b5"
+      ],
+      "stockTorqueNm": [
+        140,
+        133
       ]
     },
     {
@@ -9060,11 +11697,73 @@
       ],
       "sourceIds": [
         "unlimited-v2-b0fa057439203965",
+        "atm-v3-f7f998ab4bda75e9",
         "unlimited-v2-1a4b8c7776114b0c"
       ],
       "stockTorqueNm": [
         320,
         280
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-transporter-1e500ae037ff",
+        "sourced-volkswagen-transporter-cd10f488062c"
+      ],
+      "sourceIds": [
+        "unlimited-v2-29586eec6bfd1424",
+        "atm-v3-e32811cfdb145535",
+        "atm-v3-0d9086fa47284386"
+      ],
+      "stockTorqueNm": [
+        280,
+        250
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-transporter-56f7f95e8650",
+        "sourced-volkswagen-transporter-9fbc3f5cda45"
+      ],
+      "sourceIds": [
+        "unlimited-v2-45fcb60c866a2e10",
+        "atm-v3-83d3df3078754fd3"
+      ],
+      "stockTorqueNm": [
+        320,
+        340
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-transporter-665354ce8217",
+        "sourced-volkswagen-transporter-91b34bdf5b36"
+      ],
+      "sourceIds": [
+        "atm-v3-5c8f75175a94cc34",
+        "atm-v3-b156d4d5f3a0b4d8"
+      ],
+      "stockTorqueNm": [
+        360,
+        340
+      ]
+    },
+    {
+      "reason": "UNMERGED_STOCK_TORQUE_VARIANTS",
+      "profileIds": [
+        "sourced-volkswagen-transporter-91b34bdf5b36",
+        "sourced-volkswagen-transporter-c7db9e6c632a"
+      ],
+      "sourceIds": [
+        "atm-v3-b156d4d5f3a0b4d8",
+        "unlimited-v2-9990d139f8fa481c"
+      ],
+      "stockTorqueNm": [
+        340,
+        320
       ]
     }
   ],
@@ -9197,7 +11896,8 @@
         "sourceAgreement": "conflict",
         "ownerReviewRequired": true,
         "conditions": [
-          "Published petrol tuning figures require or recommend RON 98 premium fuel."
+          "Published petrol tuning figures require or recommend RON 98 premium fuel.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
         ]
       }
     },
@@ -9272,7 +11972,8 @@
         "sourceAgreement": "conflict",
         "ownerReviewRequired": true,
         "conditions": [
-          "Published petrol tuning figures require or recommend RON 98 premium fuel."
+          "Published petrol tuning figures require or recommend RON 98 premium fuel.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
         ]
       }
     },
@@ -9499,7 +12200,9 @@
         "confidence": "multi-source",
         "sourceAgreement": "conflict",
         "ownerReviewRequired": true,
-        "conditions": []
+        "conditions": [
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+        ]
       },
       "stage2": {
         "selectedPowerHp": 190,
@@ -9621,7 +12324,8 @@
         "ownerReviewRequired": true,
         "conditions": [
           "External provider reference, not a measured or owner-approved NoordTune result.",
-          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
         ]
       },
       "stage2": {
@@ -9873,11 +12577,12 @@
       "id": "sourced-ford-transit-connect-694c712b8c33",
       "sourceIds": [
         "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
-        "unlimited-v2-82b4a79e0fc8cd10"
+        "unlimited-v2-82b4a79e0fc8cd10",
+        "atm-v3-71a68ae9f207107e"
       ],
       "stage1": {
         "selectedPowerHp": 140,
-        "selectedTorqueNm": 330,
+        "selectedTorqueNm": 320,
         "sourceValues": [
           {
             "sourceId": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
@@ -9896,6 +12601,15 @@
             "powerUnit": "PS",
             "torqueUnit": "Nm",
             "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-71a68ae9f207107e",
+            "provider": "atm-chiptuning",
+            "powerHp": 145,
+            "torqueNm": 320,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
           }
         ],
         "confidence": "multi-source",
@@ -9906,7 +12620,8 @@
           "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
           "CONNECT_ENGINE_GENERATION_CONFIRMATION_REQUIRED",
           "SOURCE_EMISSIONS_SCOPE_CONFIRMATION_REQUIRED",
-          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
         ]
       },
       "stage2": {
@@ -9917,6 +12632,74 @@
             "sourceId": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
             "provider": "shiftech",
             "powerHp": 150,
+            "torqueNm": 350,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "SOURCE_GENERATION_START_ONLY",
+          "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+          "CONNECT_ENGINE_GENERATION_CONFIRMATION_REQUIRED",
+          "SOURCE_EMISSIONS_SCOPE_CONFIRMATION_REQUIRED",
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    {
+      "id": "sourced-ford-transit-connect-db936c8558e6",
+      "sourceIds": [
+        "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100",
+        "atm-v3-6fb7aa622e723032"
+      ],
+      "stage1": {
+        "selectedPowerHp": 125,
+        "selectedTorqueNm": 320,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100",
+            "provider": "shiftech",
+            "powerHp": 125,
+            "torqueNm": 330,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-6fb7aa622e723032",
+            "provider": "atm-chiptuning",
+            "powerHp": 145,
+            "torqueNm": 320,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "SOURCE_GENERATION_START_ONLY",
+          "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+          "CONNECT_ENGINE_GENERATION_CONFIRMATION_REQUIRED",
+          "SOURCE_EMISSIONS_SCOPE_CONFIRMATION_REQUIRED",
+          "Exact engine, generation and installed ECU require workshop verification."
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 135,
+        "selectedTorqueNm": 350,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100",
+            "provider": "shiftech",
+            "powerHp": 135,
             "torqueNm": 350,
             "powerUnit": "PS",
             "torqueUnit": "Nm",
@@ -10241,6 +13024,53 @@
       }
     },
     {
+      "id": "sourced-mini-cooper-9ca47eb0b270",
+      "sourceIds": [
+        "atm-v3-4b42f7cb99d2698a",
+        "atm-v3-2d6ce9f494689da5",
+        "atm-v3-3394f35220259665"
+      ],
+      "stage1": {
+        "selectedPowerHp": 165,
+        "selectedTorqueNm": 270,
+        "sourceValues": [
+          {
+            "sourceId": "atm-v3-4b42f7cb99d2698a",
+            "provider": "atm-chiptuning",
+            "powerHp": 165,
+            "torqueNm": 270,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-2d6ce9f494689da5",
+            "provider": "atm-chiptuning",
+            "powerHp": 170,
+            "torqueNm": 270,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-3394f35220259665",
+            "provider": "atm-chiptuning",
+            "powerHp": 165,
+            "torqueNm": 300,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation and installed ECU require workshop verification."
+        ]
+      }
+    },
+    {
       "id": "sourced-nissan-juke-c037af3bd525",
       "sourceIds": [
         "shiftech-v2-b7a1ae44b50c5b64",
@@ -10315,6 +13145,118 @@
       }
     },
     {
+      "id": "sourced-opel-vivaro-8ef1f5a406d4",
+      "sourceIds": [
+        "shiftech-7901",
+        "unlimited-v2-1e24682979013db0",
+        "atm-v3-3eb9a96dff2c11d5"
+      ],
+      "stage1": {
+        "selectedPowerHp": 190,
+        "selectedTorqueNm": 400,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-7901",
+            "provider": "shiftech",
+            "powerHp": 210,
+            "torqueNm": 450,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "unlimited-v2-1e24682979013db0",
+            "provider": "unlimited-tuning",
+            "powerHp": 205,
+            "torqueNm": 460,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-3eb9a96dff2c11d5",
+            "provider": "atm-chiptuning",
+            "powerHp": 190,
+            "torqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result.",
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 220,
+        "selectedTorqueNm": 470,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-7901",
+            "provider": "shiftech",
+            "powerHp": 220,
+            "torqueNm": 470,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "External provider reference, not a measured or owner-approved NoordTune result.",
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    {
+      "id": "sourced-peugeot-208-ff4aa33a224e",
+      "sourceIds": [
+        "unlimited-v2-dd9abf3301e49b09",
+        "atm-v3-5e2569fc209116c0"
+      ],
+      "stage1": {
+        "selectedPowerHp": 135,
+        "selectedTorqueNm": 240,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-dd9abf3301e49b09",
+            "provider": "unlimited-tuning",
+            "powerHp": 135,
+            "torqueNm": 240,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-5e2569fc209116c0",
+            "provider": "atm-chiptuning",
+            "powerHp": 150,
+            "torqueNm": 270,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
+        ]
+      }
+    },
+    {
       "id": "sourced-peugeot-boxer-2293ccf7d0ef",
       "sourceIds": [
         "shiftech-8231",
@@ -10348,7 +13290,8 @@
         "ownerReviewRequired": true,
         "conditions": [
           "External provider reference, not a measured or owner-approved NoordTune result.",
-          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
         ]
       },
       "stage2": {
@@ -10679,7 +13622,8 @@
       "id": "sourced-renault-clio-87212ceb6741",
       "sourceIds": [
         "unlimited-v2-d2c781631e8b5b31",
-        "unlimited-v2-6452b31bbfbda29b"
+        "unlimited-v2-6452b31bbfbda29b",
+        "atm-v3-4e243b21f273b561"
       ],
       "stage1": {
         "selectedPowerHp": 105,
@@ -10702,13 +13646,23 @@
             "powerUnit": "PS",
             "torqueUnit": "Nm",
             "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-4e243b21f273b561",
+            "provider": "atm-chiptuning",
+            "powerHp": 125,
+            "torqueNm": 200,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
           }
         ],
-        "confidence": "single-source",
+        "confidence": "multi-source",
         "sourceAgreement": "conflict",
         "ownerReviewRequired": true,
         "conditions": [
-          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
         ]
       }
     },
@@ -10784,6 +13738,44 @@
         "ownerReviewRequired": true,
         "conditions": [
           "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+        ]
+      }
+    },
+    {
+      "id": "sourced-renault-master-d6b3a0086a29",
+      "sourceIds": [
+        "unlimited-v2-ceb9b8f2f70144ed",
+        "atm-v3-c49ec4adcded09b2"
+      ],
+      "stage1": {
+        "selectedPowerHp": 180,
+        "selectedTorqueNm": 450,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-ceb9b8f2f70144ed",
+            "provider": "unlimited-tuning",
+            "powerHp": 180,
+            "torqueNm": 450,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-c49ec4adcded09b2",
+            "provider": "atm-chiptuning",
+            "powerHp": 210,
+            "torqueNm": 480,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
         ]
       }
     },
@@ -11071,6 +14063,117 @@
       }
     },
     {
+      "id": "sourced-volkswagen-caddy-350a182f5891",
+      "sourceIds": [
+        "unlimited-v2-91563d844ce1ba7e",
+        "atm-v3-71df9b036c125619",
+        "shiftech-v2-8861ff51ae751f7e"
+      ],
+      "stage1": {
+        "selectedPowerHp": 175,
+        "selectedTorqueNm": 350,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-91563d844ce1ba7e",
+            "provider": "unlimited-tuning",
+            "powerHp": 190,
+            "torqueNm": 385,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-71df9b036c125619",
+            "provider": "atm-chiptuning",
+            "powerHp": 180,
+            "torqueNm": 350,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "shiftech-v2-8861ff51ae751f7e",
+            "provider": "shiftech",
+            "powerHp": 175,
+            "torqueNm": 380,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 185,
+        "selectedTorqueNm": 400,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-v2-8861ff51ae751f7e",
+            "provider": "shiftech",
+            "powerHp": 185,
+            "torqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    {
+      "id": "sourced-volkswagen-caddy-e6595fd7f7d7",
+      "sourceIds": [
+        "unlimited-v2-74756ee433f26580",
+        "atm-v3-2f9ba638db0dc8af"
+      ],
+      "stage1": {
+        "selectedPowerHp": 175,
+        "selectedTorqueNm": 390,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-74756ee433f26580",
+            "provider": "unlimited-tuning",
+            "powerHp": 185,
+            "torqueNm": 410,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-2f9ba638db0dc8af",
+            "provider": "atm-chiptuning",
+            "powerHp": 175,
+            "torqueNm": 395,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
+        ]
+      }
+    },
+    {
       "id": "sourced-volkswagen-passat-8e4e5519548a",
       "sourceIds": [
         "shiftech-10768",
@@ -11191,10 +14294,380 @@
       }
     },
     {
+      "id": "sourced-volkswagen-polo-8cf1b1cc56bf",
+      "sourceIds": [
+        "unlimited-v2-54862e2a4144059d",
+        "atm-v3-6d0e9f31dd38f10d"
+      ],
+      "stage1": {
+        "selectedPowerHp": 70,
+        "selectedTorqueNm": 100,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-54862e2a4144059d",
+            "provider": "unlimited-tuning",
+            "powerHp": 70,
+            "torqueNm": 109,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-6d0e9f31dd38f10d",
+            "provider": "atm-chiptuning",
+            "powerHp": 80,
+            "torqueNm": 100,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
+        ]
+      }
+    },
+    {
+      "id": "sourced-volkswagen-tiguan-71cb691e11b6",
+      "sourceIds": [
+        "unlimited-v2-351b4de279cac14a",
+        "atm-v3-18121f82a45ae263"
+      ],
+      "stage1": {
+        "selectedPowerHp": 275,
+        "selectedTorqueNm": 450,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-351b4de279cac14a",
+            "provider": "unlimited-tuning",
+            "powerHp": 305,
+            "torqueNm": 460,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-18121f82a45ae263",
+            "provider": "atm-chiptuning",
+            "powerHp": 275,
+            "torqueNm": 450,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
+        ]
+      }
+    },
+    {
+      "id": "sourced-volkswagen-tiguan-95376e439530",
+      "sourceIds": [
+        "unlimited-v2-838923a03f5f60fd",
+        "atm-v3-db7f2a30e978a493"
+      ],
+      "stage1": {
+        "selectedPowerHp": 190,
+        "selectedTorqueNm": 420,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-838923a03f5f60fd",
+            "provider": "unlimited-tuning",
+            "powerHp": 200,
+            "torqueNm": 440,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-db7f2a30e978a493",
+            "provider": "atm-chiptuning",
+            "powerHp": 190,
+            "torqueNm": 420,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
+        ]
+      }
+    },
+    {
+      "id": "sourced-volkswagen-tiguan-c7fbfea892f8",
+      "sourceIds": [
+        "unlimited-v2-df9e73ab4dea3816",
+        "atm-v3-e60f97c42aa3c1e5"
+      ],
+      "stage1": {
+        "selectedPowerHp": 240,
+        "selectedTorqueNm": 380,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-df9e73ab4dea3816",
+            "provider": "unlimited-tuning",
+            "powerHp": 240,
+            "torqueNm": 390,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-e60f97c42aa3c1e5",
+            "provider": "atm-chiptuning",
+            "powerHp": 260,
+            "torqueNm": 380,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
+        ]
+      }
+    },
+    {
+      "id": "sourced-volkswagen-transporter-0e6632096562",
+      "sourceIds": [
+        "unlimited-v2-9e7375f72a06e377",
+        "atm-v3-c356f92de61589a9"
+      ],
+      "stage1": {
+        "selectedPowerHp": 175,
+        "selectedTorqueNm": 350,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-9e7375f72a06e377",
+            "provider": "unlimited-tuning",
+            "powerHp": 175,
+            "torqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-c356f92de61589a9",
+            "provider": "atm-chiptuning",
+            "powerHp": 175,
+            "torqueNm": 350,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+        ]
+      }
+    },
+    {
+      "id": "sourced-volkswagen-transporter-358beda94250",
+      "sourceIds": [
+        "atm-v3-89d20da360670b01",
+        "atm-v3-8390b705855d5fab"
+      ],
+      "stage1": {
+        "selectedPowerHp": 150,
+        "selectedTorqueNm": 330,
+        "sourceValues": [
+          {
+            "sourceId": "atm-v3-89d20da360670b01",
+            "provider": "atm-chiptuning",
+            "powerHp": 175,
+            "torqueNm": 350,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-8390b705855d5fab",
+            "provider": "atm-chiptuning",
+            "powerHp": 150,
+            "torqueNm": 330,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation and installed ECU require workshop verification.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+        ]
+      }
+    },
+    {
+      "id": "sourced-volkswagen-transporter-38c507560c86",
+      "sourceIds": [
+        "unlimited-v2-dcc79a745742468b",
+        "atm-v3-d0cd07c6aca9910d"
+      ],
+      "stage1": {
+        "selectedPowerHp": 175,
+        "selectedTorqueNm": 350,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-dcc79a745742468b",
+            "provider": "unlimited-tuning",
+            "powerHp": 180,
+            "torqueNm": 410,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-d0cd07c6aca9910d",
+            "provider": "atm-chiptuning",
+            "powerHp": 175,
+            "torqueNm": 350,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+        ]
+      }
+    },
+    {
+      "id": "sourced-volkswagen-transporter-ee435d2ff945",
+      "sourceIds": [
+        "unlimited-v2-9eb01d61631c5831",
+        "atm-v3-7fdd90ab8d6707d6"
+      ],
+      "stage1": {
+        "selectedPowerHp": 175,
+        "selectedTorqueNm": 350,
+        "sourceValues": [
+          {
+            "sourceId": "unlimited-v2-9eb01d61631c5831",
+            "provider": "unlimited-tuning",
+            "powerHp": 185,
+            "torqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-7fdd90ab8d6707d6",
+            "provider": "atm-chiptuning",
+            "powerHp": 175,
+            "torqueNm": 350,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification.",
+          "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+        ]
+      }
+    },
+    {
+      "id": "sourced-volkswagen-up-03af60fdc923",
+      "sourceIds": [
+        "shiftech-v2-b6b637f71e866bd0",
+        "atm-v3-43b2e71d380aba59"
+      ],
+      "stage1": {
+        "selectedPowerHp": 120,
+        "selectedTorqueNm": 220,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-v2-b6b637f71e866bd0",
+            "provider": "shiftech",
+            "powerHp": 120,
+            "torqueNm": 220,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-43b2e71d380aba59",
+            "provider": "atm-chiptuning",
+            "powerHp": 135,
+            "torqueNm": 230,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
+        ]
+      },
+      "stage2": {
+        "selectedPowerHp": 125,
+        "selectedTorqueNm": 230,
+        "sourceValues": [
+          {
+            "sourceId": "shiftech-v2-b6b637f71e866bd0",
+            "provider": "shiftech",
+            "powerHp": 126,
+            "torqueNm": 231,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": [
+              "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+            ]
+          }
+        ],
+        "confidence": "single-source",
+        "sourceAgreement": "acceptable",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    {
       "id": "sourced-volkswagen-up-38e69ff22b9b",
       "sourceIds": [
         "shiftech-v2-38f5ec4d86908fac",
-        "unlimited-v2-9dfa3b5a45c84395"
+        "unlimited-v2-9dfa3b5a45c84395",
+        "atm-v3-99b4c9508793dcc2"
       ],
       "stage1": {
         "selectedPowerHp": 80,
@@ -11217,13 +14690,23 @@
             "powerUnit": "PS",
             "torqueUnit": "Nm",
             "conditions": []
+          },
+          {
+            "sourceId": "atm-v3-99b4c9508793dcc2",
+            "provider": "atm-chiptuning",
+            "powerHp": 85,
+            "torqueNm": 105,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
           }
         ],
         "confidence": "multi-source",
         "sourceAgreement": "conflict",
         "ownerReviewRequired": true,
         "conditions": [
-          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+          "Exact engine, generation and installed ECU require workshop verification."
         ]
       }
     }

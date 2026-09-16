@@ -1,0 +1,195 @@
+[
+  {
+    "id": "shiftech-v2-a52a3185587dccde",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/renault/trafic/2019/diesel/20-blue-dci-110-300",
+    "retrievedAt": "2026-09-16T17:26:18.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "56d9b14bf4364848f01a836c21d172eda920d0975713ee0032c3aba2c82e8017",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 Blue dCi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 440
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "shiftech-v2-e2977b01608ecc85",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/renault/trafic/2019/diesel/2.0-blue-dci-150",
+    "retrievedAt": "2026-09-16T17:26:18.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "722d7eb760464d656614c53c46d3a637866927f988e9443facc3f54df933fee8",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 Blue dCi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 440
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "shiftech-v2-f7a8d6c164f8df3b",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/renault/trafic/2019/diesel/20-blue-dci-130-320",
+    "retrievedAt": "2026-09-16T17:27:11.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "cfb34b3ae305806bc91178ec5bedc68b704d3ed96a6b82540e6b08dcd901f04a",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 Blue dCi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 440
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "shiftech-v2-4a92c825f60d3a8f",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/renault/master/2019-iii-iii/diesel/2.3-bluedci-eu6-145",
+    "retrievedAt": "2026-09-16T17:27:11.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e1af781755f8c5a87979d58340f4b42948baca2b443862755033ba001ed650a5",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Master",
+      "generation": "2019 - III III",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.3 BlueDCI EU6",
+      "displacementCc": 2300,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 145,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 440
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "shiftech-v2-f77ccecdee8ad1ca",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/mercedes/vito/2019-w447-ii/diesel/110-cdi-20-102-280",
+    "retrievedAt": "2026-09-16T17:41:41.897Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a64b135e293ec2afa8f4ca6e66c0754ad22af78748725f52cbcf48d4899e1727",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Vito",
+      "generation": "2019 - W447 II",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 102,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 440
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained.",
+      "Research-only: nominal 2000 cc is not exact 1950 cc. The manufacturer 2024 110 CDI sheet supports 1950/102 PS but does not establish the same stock 280 Nm, ECU or pre-2024 period. Do not patch missing/conflicting ATM 102 application fields from another vehicle."
+    ]
+  }
+]
