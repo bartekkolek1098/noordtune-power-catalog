@@ -15,8 +15,8 @@ async function run(provider,adapter={}){
       try {candidate=adapter.extract(response,{...scope,years:scope?.yearFrom?Array.from({length:(scope.yearTo??new Date().getUTCFullYear())-scope.yearFrom+1},(_,i)=>scope.yearFrom+i):[],supportingUrls:source.supportingUrls});}
       catch(error){reason=error.message;}
     }
-    const facts=value=>({identity:value?.identity??value?.unresolvedIdentity,stages:value?.stages,packages:value?.packages});
-    const usable=Boolean(candidate?.identity||candidate?.packages?.length);
+    const facts=value=>({identity:value?.identity??value?.unresolvedIdentity,stages:value?.stages,packages:value?.packages,availability:value?.availability});
+    const usable=Boolean(candidate?.identity||candidate?.packages?.length||candidate?.availability);
     rows.push({sourceId:source.id,url:source.url,provider,retrievedAt:response.retrievedAt,cached:response.cached??false,status:response.status,
       previousHash:source.contentSha256,candidateHash:response.contentSha256,hashChanged:source.contentSha256!==response.contentSha256,
       factComparison:usable?(JSON.stringify(facts(source))===JSON.stringify(facts(candidate))?'unchanged':'review-required'):'not-comparable',
