@@ -41,3 +41,7 @@ The 90/85/75/60 percent goals remain aspirations; unsupported powertrains and un
 `research-rdw-sample.cjs` selects three plate-sorted records per chosen group: two common passenger models per priority make and twenty different van models. The resulting **222 real published non-exported registrations across 28 makes and 74 groups** are a purposive QA sample, not a random fleet estimator. The sample uses an exact plate join to the fuel dataset and retains all **253 fuel rows**; electric/hybrid rows are not dropped to manufacture an ICE identity.
 
 Tracked fixtures contain a hashed identifier and sanitized RDW facts. Raw plates and fuel query URLs containing plates stay in private `.git` cache. The final QA report records model, registered stock output, selected layer/profile, stages, quote category and fallback/ambiguity reasons. Sample proportions are never extrapolated to fleet power/fuel shares.
+
+`node scripts/research-rdw-sample.cjs --verify-registration` separately rechecks the bounded sample against the live primary dataset. All **222** records were present with `export_indicator=Nee`, a nonempty `datum_tenaamstelling` and `tenaamstellen_mogelijk=Ja`. This verifies the published current registration indicators, without asserting insurance or actual road use. The six verification queries, timestamps and hashes are recorded without plate-bearing query URLs.
+
+See [the V2 report](NL_FLEET_COVERAGE_V2_REPORT.md) for final coverage, the paired V1 comparison, browser checks, and the highest-priority remaining gaps.

@@ -8,23 +8,23 @@
     "stage3": 4,
     "observations": 361
   },
-  "cumulativeProfiles": 986,
-  "newProfiles": 706,
-  "distinctTechnicalProfiles": 986,
-  "newDistinctTechnicalProfiles": 706,
-  "distinctWithoutGeneration": 887,
-  "newDistinctWithoutGeneration": 630,
+  "cumulativeProfiles": 985,
+  "newProfiles": 705,
+  "distinctTechnicalProfiles": 985,
+  "newDistinctTechnicalProfiles": 705,
+  "distinctWithoutGeneration": 885,
+  "newDistinctWithoutGeneration": 629,
   "identityCountNote": "A technical key includes the published generation but excludes year endpoints; there are no generated annual copies. The broader count deliberately collapses genuinely different generations with the same model/fuel/displacement/output/torque/family and is shown separately.",
-  "multiSource": 126,
-  "singleSource": 860,
+  "multiSource": 127,
+  "singleSource": 858,
   "newlyCorroboratedV1": 48,
   "v1NumericChanges": 12,
   "v1ScopeChanges": 16,
   "v1ProfilesWithAnyChangedFact": 25,
-  "stage1": 986,
+  "stage1": 985,
   "stage2": 269,
   "stage3": 4,
-  "stage3Custom": 982,
+  "stage3Custom": 981,
   "providerCounts": [
     {
       "provider": "br-performance",
@@ -130,7 +130,7 @@
     "Mazda": 14,
     "Mercedes-Benz": 36,
     "Mitsubishi": 7,
-    "Nissan": 22,
+    "Nissan": 21,
     "Opel": 54,
     "Peugeot": 79,
     "Renault": 99,
@@ -155,7 +155,7 @@
     "Mazda": 14,
     "Mercedes-Benz": 16,
     "Mitsubishi": 7,
-    "Nissan": 22,
+    "Nissan": 21,
     "Opel": 48,
     "Peugeot": 64,
     "Renault": 83,
@@ -167,7 +167,7 @@
     "Volvo": 22
   },
   "fuel": {
-    "Diesel": 540,
+    "Diesel": 539,
     "Petrol": 446
   },
   "vanProfiles": 254,
@@ -233,7 +233,7 @@
     "N57": 3,
     "T-GDI": 15,
     "TDCi": 29,
-    "not-published": 842
+    "not-published": 841
   },
   "acceptedObservationIds": 1141,
   "rejectedObservations": 1452

@@ -105,5 +105,6 @@ const result={schemaVersion:1,kind:"derived-technical-research-priority",dataset
   priorityPolicy:"Baseline scores remain frozen for before/after comparison. --rerank explicitly starts a new priority snapshot.",
   coverageMethod:"A/B/C/D/E is the least-covered evaluated distinct fuel/stock-output/year-scope scenario for each exact RDW group. Published and live variants are used where available. Unvalidated canonical hypotheses are retained as hints and only evaluated when no published/live variant exists; their scenarioBasis is explicit. Use actual RDW model/cc/cylinders and a representative overlapping year; never inject provider generation or engine code into RDW model text. Live sample type/variant/execution are kept. Scenarios and counts are distinct, and unobserved variants prevent claiming exact technical fleet coverage.",
   exactFleetVehicles:fleet.population.vehicles,aggregateGroups:rows.length,canonicalHypotheses:canon.length,coverage,groups:rows};
-writeFileSync(file,JSON.stringify(result,null,2)+"\n");
+const {groups:groupRows,...metadata}=result;
+writeFileSync(file,JSON.stringify(metadata,null,2).slice(0,-2)+',\n  "groups": [\n'+groupRows.map(row=>'    '+JSON.stringify(row)).join(',\n')+'\n  ]\n}\n');
 console.log(JSON.stringify({groups:rows.length,coverage:coverage.map(row=>({top:row.top,identities:row.identities,sourcedPercent:row.identitySourcedPercent,conditionalWeightedPercent:row.conditionalWeightedSourcedPercent}))},null,2));

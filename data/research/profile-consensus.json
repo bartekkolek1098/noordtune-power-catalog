@@ -19871,41 +19871,6 @@
     ]
   },
   {
-    "id": "sourced-nissan-x-trail-1563fd00e26e",
-    "brand": "Nissan",
-    "modelFamily": "X-trail",
-    "generation": "T32",
-    "yearFrom": 2014,
-    "yearTo": 2017,
-    "stockPowerHp": 130,
-    "stockSourceQuality": "single-source",
-    "stage1": {
-      "selectedPowerHp": 155,
-      "selectedTorqueNm": 370,
-      "sourceValues": [
-        {
-          "sourceId": "unlimited-v2-a345b056f5ec38aa",
-          "provider": "unlimited-tuning",
-          "powerHp": 155,
-          "torqueNm": 370,
-          "powerUnit": "PS",
-          "torqueUnit": "Nm",
-          "conditions": []
-        }
-      ],
-      "confidence": "single-source",
-      "sourceAgreement": "acceptable",
-      "ownerReviewRequired": true,
-      "conditions": [
-        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
-      ]
-    },
-    "ownerReviewRequired": true,
-    "sourceIds": [
-      "unlimited-v2-a345b056f5ec38aa"
-    ]
-  },
-  {
     "id": "sourced-nissan-x-trail-c11993f7b06a",
     "brand": "Nissan",
     "modelFamily": "X-Trail",
@@ -19981,7 +19946,7 @@
     "yearFrom": 2014,
     "yearTo": 2017,
     "stockPowerHp": 130,
-    "stockSourceQuality": "single-source",
+    "stockSourceQuality": "multi-source",
     "stage1": {
       "selectedPowerHp": 150,
       "selectedTorqueNm": 360,
@@ -19994,11 +19959,20 @@
           "powerUnit": "PS",
           "torqueUnit": "Nm",
           "conditions": []
+        },
+        {
+          "sourceId": "unlimited-v2-a345b056f5ec38aa",
+          "provider": "unlimited-tuning",
+          "powerHp": 155,
+          "torqueNm": 370,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
         }
       ],
-      "confidence": "single-source",
-      "sourceAgreement": "acceptable",
-      "ownerReviewRequired": true,
+      "confidence": "multi-source",
+      "sourceAgreement": "strong",
+      "ownerReviewRequired": false,
       "conditions": [
         "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
       ]
@@ -20029,7 +20003,8 @@
     },
     "ownerReviewRequired": true,
     "sourceIds": [
-      "shiftech-v2-899062c92cdfce12"
+      "shiftech-v2-899062c92cdfce12",
+      "unlimited-v2-a345b056f5ec38aa"
     ]
   },
   {

@@ -31731,64 +31731,6 @@
   },
   {
     "brand": "Nissan",
-    "modelFamily": "X-trail",
-    "generation": "T32",
-    "yearFrom": 2014,
-    "yearTo": 2017,
-    "fuel": "Diesel",
-    "engineMarketingName": "1.6 DCI",
-    "displacementCc": 1600,
-    "displacementPrecision": "nominal",
-    "stockPowerHp": 130,
-    "stockTorqueNm": 320,
-    "electrification": "unknown",
-    "aliases": [],
-    "id": "sourced-nissan-x-trail-1563fd00e26e",
-    "sourceIds": [
-      "unlimited-v2-a345b056f5ec38aa"
-    ],
-    "sourceUrls": [
-      "https://www.unlimitedtuning.nl/chiptuning-nissan-x-trail-2014-1-6-dci-130-pk.html"
-    ],
-    "retrievedAt": "2026-09-16T13:22:08.535Z",
-    "lastReviewedAt": "2026-09-16T13:22:08.535Z",
-    "reviewStatus": "owner-review-required",
-    "ownerReviewRequired": true,
-    "stockSourceQuality": "single-source",
-    "stage1": {
-      "selectedPowerHp": 155,
-      "selectedTorqueNm": 370,
-      "sourceValues": [
-        {
-          "sourceId": "unlimited-v2-a345b056f5ec38aa",
-          "provider": "unlimited-tuning",
-          "powerHp": 155,
-          "torqueNm": 370,
-          "powerUnit": "PS",
-          "torqueUnit": "Nm",
-          "conditions": []
-        }
-      ],
-      "confidence": "single-source",
-      "sourceAgreement": "acceptable",
-      "ownerReviewRequired": true,
-      "conditions": [
-        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
-      ]
-    },
-    "stage1SourceCount": 1,
-    "stage2SourceCount": 0,
-    "stage3SourceCount": 0,
-    "conditions": [
-      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
-    ],
-    "notes": [
-      "Normal or explicitly labelled Stage 1 is the ordinary remap observation. Stage 1+ and Xtreme are not substituted for Stage 1 or Stage 2.",
-      "Engine displacement is nominal from the published engine label. Provider year bands are preserved, not interpreted as build dates. No competitor prices are retained."
-    ]
-  },
-  {
-    "brand": "Nissan",
     "modelFamily": "X-Trail",
     "generation": "2017 - III II",
     "yearFrom": 2019,
@@ -31898,16 +31840,18 @@
     "aliases": [],
     "id": "sourced-nissan-x-trail-c88e09bdc775",
     "sourceIds": [
-      "shiftech-v2-899062c92cdfce12"
+      "shiftech-v2-899062c92cdfce12",
+      "unlimited-v2-a345b056f5ec38aa"
     ],
     "sourceUrls": [
-      "https://www.shiftech.eu/en/chiptuning/car/nissan/x-trail/2014-iii/diesel/1.6-dci-130"
+      "https://www.shiftech.eu/en/chiptuning/car/nissan/x-trail/2014-iii/diesel/1.6-dci-130",
+      "https://www.unlimitedtuning.nl/chiptuning-nissan-x-trail-2014-1-6-dci-130-pk.html"
     ],
     "retrievedAt": "2026-09-16T13:36:56.383Z",
     "lastReviewedAt": "2026-09-16T13:36:56.383Z",
     "reviewStatus": "owner-review-required",
     "ownerReviewRequired": true,
-    "stockSourceQuality": "single-source",
+    "stockSourceQuality": "multi-source",
     "stage1": {
       "selectedPowerHp": 150,
       "selectedTorqueNm": 360,
@@ -31920,11 +31864,20 @@
           "powerUnit": "PS",
           "torqueUnit": "Nm",
           "conditions": []
+        },
+        {
+          "sourceId": "unlimited-v2-a345b056f5ec38aa",
+          "provider": "unlimited-tuning",
+          "powerHp": 155,
+          "torqueNm": 370,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
         }
       ],
-      "confidence": "single-source",
-      "sourceAgreement": "acceptable",
-      "ownerReviewRequired": true,
+      "confidence": "multi-source",
+      "sourceAgreement": "strong",
+      "ownerReviewRequired": false,
       "conditions": [
         "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
       ]
@@ -31953,7 +31906,7 @@
         "Published hardware-dependent Stage; verify applicable parts and calibration before work."
       ]
     },
-    "stage1SourceCount": 1,
+    "stage1SourceCount": 2,
     "stage2SourceCount": 1,
     "stage3SourceCount": 0,
     "conditions": [
@@ -31961,7 +31914,9 @@
     ],
     "notes": [
       "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
-      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained.",
+      "Normal or explicitly labelled Stage 1 is the ordinary remap observation. Stage 1+ and Xtreme are not substituted for Stage 1 or Stage 2.",
+      "Engine displacement is nominal from the published engine label. Provider year bands are preserved, not interpreted as build dates. No competitor prices are retained."
     ]
   },
   {

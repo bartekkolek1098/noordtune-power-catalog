@@ -585,7 +585,9 @@
         "variant": "ABCHYB",
         "uitvoering": "FM5FM5CF008N2VR27MM00",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1540"
+        "toegestane_maximum_massa_voertuig": "1540",
+        "datum_tenaamstelling": "20250311",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -600,7 +602,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-c1b3f4a586f43114aaab",
@@ -618,7 +621,9 @@
         "variant": "ABCHYB",
         "uitvoering": "FM5FM5CF008N2VR27MM00",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1540"
+        "toegestane_maximum_massa_voertuig": "1540",
+        "datum_tenaamstelling": "20190712",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -633,7 +638,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-a7f943676578158d90b4",
@@ -651,7 +657,9 @@
         "variant": "ABCHYB",
         "uitvoering": "FM5FM5CF008N2VR27MM00",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1540"
+        "toegestane_maximum_massa_voertuig": "1540",
+        "datum_tenaamstelling": "20240810",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -669,7 +677,8 @@
           "actieradius_extern_oplaadbaar": "0",
           "actieradius": "0"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-97e74cc86d076059f0d7",
@@ -687,7 +696,9 @@
         "variant": "ABCHYA",
         "uitvoering": "FM5FM5CF0037MGVR0N1FA1VW",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1290"
+        "toegestane_maximum_massa_voertuig": "1290",
+        "datum_tenaamstelling": "20240928",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -702,7 +713,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-38403fcb9c3b53e13236",
@@ -720,7 +732,9 @@
         "variant": "ABCHYA",
         "uitvoering": "FM5FM5CF0037MGVR0N1FA1VW",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1290"
+        "toegestane_maximum_massa_voertuig": "1290",
+        "datum_tenaamstelling": "20120420",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -735,7 +749,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-fe473dad55c0056b1f75",
@@ -753,7 +768,9 @@
         "variant": "ABCHYA",
         "uitvoering": "FM5FM5CF0037MGVR0N1FA1VW",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1290"
+        "toegestane_maximum_massa_voertuig": "1290",
+        "datum_tenaamstelling": "20171202",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -768,7 +785,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-8d9ebb968c5d014a2c9d",
@@ -786,7 +804,9 @@
         "variant": "MCFA",
         "uitvoering": "C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1180"
+        "toegestane_maximum_massa_voertuig": "1180",
+        "datum_tenaamstelling": "20250915",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -801,7 +821,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-c528c946b96228d7af98",
@@ -819,7 +840,9 @@
         "variant": "NCFA",
         "uitvoering": "C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1190"
+        "toegestane_maximum_massa_voertuig": "1190",
+        "datum_tenaamstelling": "20250202",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -835,7 +858,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-3c1d93479c31e18a9da6",
@@ -853,7 +877,9 @@
         "variant": "MCFA",
         "uitvoering": "C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1180"
+        "toegestane_maximum_massa_voertuig": "1180",
+        "datum_tenaamstelling": "20160927",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -869,7 +895,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ac2f19eff92cd2316e43",
@@ -887,7 +914,9 @@
         "variant": "S",
         "uitvoering": "CFB5-H1B000",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1240"
+        "toegestane_maximum_massa_voertuig": "1240",
+        "datum_tenaamstelling": "20191206",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -905,7 +934,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "4.900",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ee18f07a30527151274f",
@@ -923,7 +953,9 @@
         "variant": "S",
         "uitvoering": "CFBE-H1C000",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1240"
+        "toegestane_maximum_massa_voertuig": "1240",
+        "datum_tenaamstelling": "20190927",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -941,7 +973,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.200",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-37248c18eaf228d2a2a0",
@@ -959,7 +992,9 @@
         "variant": "S",
         "uitvoering": "CFB5-H1B000",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1240"
+        "toegestane_maximum_massa_voertuig": "1240",
+        "datum_tenaamstelling": "20241007",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -977,7 +1012,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "4.900",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-972c8831cbe8ff5d5e6c",
@@ -995,7 +1031,9 @@
         "variant": "CNBA",
         "uitvoering": "CNBA05",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1370"
+        "toegestane_maximum_massa_voertuig": "1370",
+        "datum_tenaamstelling": "20100323",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1010,7 +1048,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-c93872a1bbc87fb3d8df",
@@ -1028,7 +1067,9 @@
         "variant": "CNBA",
         "uitvoering": "CNBA05",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1370"
+        "toegestane_maximum_massa_voertuig": "1370",
+        "datum_tenaamstelling": "20260609",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1043,7 +1084,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-191ce6cc6aaa0315c199",
@@ -1061,7 +1103,9 @@
         "variant": "CNBA",
         "uitvoering": "CNBA05",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1370"
+        "toegestane_maximum_massa_voertuig": "1370",
+        "datum_tenaamstelling": "20100326",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1076,7 +1120,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-89a8ce8c475fcb8a60e2",
@@ -1094,7 +1139,9 @@
         "variant": "7R5A",
         "uitvoering": "7R5A0H",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1640"
+        "toegestane_maximum_massa_voertuig": "1640",
+        "datum_tenaamstelling": "20180906",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1112,7 +1159,8 @@
           "actieradius_extern_oplaadbaar": "0",
           "actieradius": "0"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-507d485d4f143f8535ba",
@@ -1130,7 +1178,9 @@
         "variant": "7R5A",
         "uitvoering": "7R5A0H",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1640"
+        "toegestane_maximum_massa_voertuig": "1640",
+        "datum_tenaamstelling": "20241116",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1147,7 +1197,8 @@
           "actieradius_extern_oplaadbaar": "0",
           "actieradius": "0"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-52ced0b30a5b6270afdd",
@@ -1165,7 +1216,9 @@
         "variant": "7R5A",
         "uitvoering": "7R5A0H",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1640"
+        "toegestane_maximum_massa_voertuig": "1640",
+        "datum_tenaamstelling": "20240416",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1183,7 +1236,8 @@
           "actieradius_extern_oplaadbaar": "0",
           "actieradius": "0"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4cc460512ad199fea355",
@@ -1201,7 +1255,9 @@
         "variant": "XMJA1D",
         "uitvoering": "5AMAAF",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1530"
+        "toegestane_maximum_massa_voertuig": "1530",
+        "datum_tenaamstelling": "20260618",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1217,7 +1273,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-3b2dfbfda1e10f10b1ec",
@@ -1235,7 +1292,9 @@
         "variant": "XMJA1D",
         "uitvoering": "5AMAAF",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1530"
+        "toegestane_maximum_massa_voertuig": "1530",
+        "datum_tenaamstelling": "20240219",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1251,7 +1310,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-abc217d5452465d254fb",
@@ -1269,7 +1329,9 @@
         "variant": "SFJA1D",
         "uitvoering": "5DHABL",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1555"
+        "toegestane_maximum_massa_voertuig": "1555",
+        "datum_tenaamstelling": "20220622",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1285,7 +1347,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-bf424924393e399160ee",
@@ -1303,7 +1366,9 @@
         "variant": "AAAA1U",
         "uitvoering": "4AAAHA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1320"
+        "toegestane_maximum_massa_voertuig": "1320",
+        "datum_tenaamstelling": "20241128",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1319,7 +1384,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-14821f4c34cf27f17a08",
@@ -1337,7 +1403,9 @@
         "variant": "AAAA1U",
         "uitvoering": "4AAAHA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1320"
+        "toegestane_maximum_massa_voertuig": "1320",
+        "datum_tenaamstelling": "20230404",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1353,7 +1421,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-017de0b1bd7e437fe9e9",
@@ -1371,7 +1440,9 @@
         "variant": "AAAA1U",
         "uitvoering": "4AAAHA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1320"
+        "toegestane_maximum_massa_voertuig": "1320",
+        "datum_tenaamstelling": "20260814",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1387,7 +1458,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-fa023f754f96391aad4a",
@@ -1405,7 +1477,9 @@
         "variant": "F5P21",
         "uitvoering": "M51AZ1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1340"
+        "toegestane_maximum_massa_voertuig": "1340",
+        "datum_tenaamstelling": "20241022",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1421,7 +1495,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-437f99f4b7f34af13ff4",
@@ -1439,7 +1514,9 @@
         "variant": "F5P21",
         "uitvoering": "M51AZ1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1340"
+        "toegestane_maximum_massa_voertuig": "1340",
+        "datum_tenaamstelling": "20150312",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1455,7 +1532,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-73914e0045d95a1e24d2",
@@ -1473,7 +1551,9 @@
         "variant": "F5P21",
         "uitvoering": "M51AZ1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1340"
+        "toegestane_maximum_massa_voertuig": "1340",
+        "datum_tenaamstelling": "20260227",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1489,7 +1569,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-0bfeda53da6910e3e343",
@@ -1507,7 +1588,9 @@
         "variant": "C5P11",
         "uitvoering": "D61CY1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1930"
+        "toegestane_maximum_massa_voertuig": "1930",
+        "datum_tenaamstelling": "20250108",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1535,7 +1618,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-5b12a33693f77ae2d152",
@@ -1553,7 +1637,9 @@
         "variant": "C5P11",
         "uitvoering": "D61CY1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1930"
+        "toegestane_maximum_massa_voertuig": "1930",
+        "datum_tenaamstelling": "20240405",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1581,7 +1667,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-cfd5a6b2a6eb8678f03c",
@@ -1599,7 +1686,9 @@
         "variant": "C5P11",
         "uitvoering": "D61CY1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1930"
+        "toegestane_maximum_massa_voertuig": "1930",
+        "datum_tenaamstelling": "20200107",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1627,7 +1716,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-a651695945b701f6b503",
@@ -1645,7 +1735,9 @@
         "variant": "B4P11",
         "uitvoering": "M51AZ1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1310"
+        "toegestane_maximum_massa_voertuig": "1310",
+        "datum_tenaamstelling": "20180625",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1661,7 +1753,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-97cbe3eac01aaffd4d99",
@@ -1679,7 +1772,9 @@
         "variant": "B4P11",
         "uitvoering": "M51AZ1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1310"
+        "toegestane_maximum_massa_voertuig": "1310",
+        "datum_tenaamstelling": "20240524",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1695,7 +1790,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-a269ecae6d478ee4a686",
@@ -1713,7 +1809,9 @@
         "variant": "B4P11",
         "uitvoering": "M51AZ1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1310"
+        "toegestane_maximum_massa_voertuig": "1310",
+        "datum_tenaamstelling": "20260821",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1729,7 +1827,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-7db8d17c5e4328e8a9c4",
@@ -1747,7 +1846,9 @@
         "variant": "F5P74",
         "uitvoering": "A63E11",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2415"
+        "toegestane_maximum_massa_voertuig": "2415",
+        "datum_tenaamstelling": "20240607",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1773,7 +1874,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-8c2026ba0ae1d46f947e",
@@ -1791,7 +1893,9 @@
         "variant": "F5P41",
         "uitvoering": "A61B14",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2175"
+        "toegestane_maximum_massa_voertuig": "2175",
+        "datum_tenaamstelling": "20240629",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1816,7 +1920,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-5e064a7eb087d94751e8",
@@ -1834,7 +1939,9 @@
         "variant": "F5P41",
         "uitvoering": "A61B14",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2175"
+        "toegestane_maximum_massa_voertuig": "2175",
+        "datum_tenaamstelling": "20240725",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1860,7 +1967,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-23cf4d361913c864f8df",
@@ -1878,7 +1986,9 @@
         "variant": "KGB10(H)",
         "uitvoering": "KGB10L-AHMGKW(1G)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1190"
+        "toegestane_maximum_massa_voertuig": "1190",
+        "datum_tenaamstelling": "20210625",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1893,7 +2003,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-88650054d1d2780d1c33",
@@ -1911,7 +2022,9 @@
         "variant": "KGB10(H)",
         "uitvoering": "KGB10L-AHMGKW(1H)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1190"
+        "toegestane_maximum_massa_voertuig": "1190",
+        "datum_tenaamstelling": "20200716",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1927,7 +2040,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-c2f35a81ed1083fe9df5",
@@ -1945,7 +2059,9 @@
         "variant": "KGB10(H)",
         "uitvoering": "KGB10L-AHMGKW(1H)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1190"
+        "toegestane_maximum_massa_voertuig": "1190",
+        "datum_tenaamstelling": "20251026",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -1961,7 +2077,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-e2d3e16e6c077f5415c5",
@@ -1979,7 +2096,9 @@
         "variant": "MXPH11(H)",
         "uitvoering": "MXPH11L-CHXNBW(1G)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1615"
+        "toegestane_maximum_massa_voertuig": "1615",
+        "datum_tenaamstelling": "20240610",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2006,7 +2125,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-5b2e90f6ffed93d097f9",
@@ -2024,7 +2144,9 @@
         "variant": "MXPH11(H)",
         "uitvoering": "MXPH11L-CHXNBW(2G)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1615"
+        "toegestane_maximum_massa_voertuig": "1615",
+        "datum_tenaamstelling": "20240608",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2051,7 +2173,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-1dcc9a0f17ef818abe2e",
@@ -2069,7 +2192,9 @@
         "variant": "MXPH11(H)",
         "uitvoering": "MXPH11L-CHXNBW(1G)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1615"
+        "toegestane_maximum_massa_voertuig": "1615",
+        "datum_tenaamstelling": "20240610",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2096,7 +2221,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-b12d255519f7dff7c062",
@@ -2114,7 +2240,9 @@
         "variant": "D",
         "uitvoering": "D01",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1860"
+        "toegestane_maximum_massa_voertuig": "1860",
+        "datum_tenaamstelling": "20150106",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2130,7 +2258,8 @@
           "toerental_geluidsniveau": "3375",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-d906deaaa61f894a0235",
@@ -2148,7 +2277,9 @@
         "variant": "D",
         "uitvoering": "D02",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1880"
+        "toegestane_maximum_massa_voertuig": "1880",
+        "datum_tenaamstelling": "20191107",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2164,7 +2295,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-83218e307850d5ce7ac4",
@@ -2182,7 +2314,9 @@
         "variant": "D",
         "uitvoering": "D02",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1880"
+        "toegestane_maximum_massa_voertuig": "1880",
+        "datum_tenaamstelling": "20240719",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2198,7 +2332,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-471f91febb760672f319",
@@ -2216,7 +2351,9 @@
         "variant": "D31S",
         "uitvoering": "AT",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1250"
+        "toegestane_maximum_massa_voertuig": "1250",
+        "datum_tenaamstelling": "20250423",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2232,7 +2369,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-2508cb5f1464f87d04b3",
@@ -2250,7 +2388,9 @@
         "variant": "D31S",
         "uitvoering": "MT",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1250"
+        "toegestane_maximum_massa_voertuig": "1250",
+        "datum_tenaamstelling": "20100115",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2266,7 +2406,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-61d27166fcd3bba3a199",
@@ -2284,7 +2425,9 @@
         "variant": "D31S",
         "uitvoering": "MT",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1250"
+        "toegestane_maximum_massa_voertuig": "1250",
+        "datum_tenaamstelling": "20251203",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2300,7 +2443,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4ab2f41b87413a61d724",
@@ -2318,7 +2462,9 @@
         "variant": "P",
         "uitvoering": "HMHD-X1B100",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1550"
+        "toegestane_maximum_massa_voertuig": "1550",
+        "datum_tenaamstelling": "20260708",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2336,7 +2482,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.400",
           "uitlaatemissieniveau": "EURO 6 AM"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-255cd8ac7b2c2de97e42",
@@ -2354,7 +2501,9 @@
         "variant": "P",
         "uitvoering": "HNKK-X1B300",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1620"
+        "toegestane_maximum_massa_voertuig": "1620",
+        "datum_tenaamstelling": "20200107",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2373,7 +2522,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.500",
           "uitlaatemissieniveau": "EURO 6 AM"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-e5a8ef12d3fb779ef5a0",
@@ -2391,7 +2541,9 @@
         "variant": "P",
         "uitvoering": "HNKS-X1B300",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1645"
+        "toegestane_maximum_massa_voertuig": "1645",
+        "datum_tenaamstelling": "20200103",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2410,7 +2562,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.900",
           "uitlaatemissieniveau": "EURO 6 AM"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-8e431fb4dfbf31b0c7a5",
@@ -2428,7 +2581,9 @@
         "variant": "GHXXFXX",
         "uitvoering": "B11PA5ATB3AA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1353"
+        "toegestane_maximum_massa_voertuig": "1353",
+        "datum_tenaamstelling": "20240130",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2446,7 +2601,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.000",
           "uitlaatemissieniveau": "EURO 6 AG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-678e4adfef28cda94773",
@@ -2464,7 +2620,9 @@
         "variant": "GHXXFXX",
         "uitvoering": "B11PA5ATA3AA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1353"
+        "toegestane_maximum_massa_voertuig": "1353",
+        "datum_tenaamstelling": "20191018",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2482,7 +2640,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.000",
           "uitlaatemissieniveau": "EURO 6 AG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-06d087b720f30f017497",
@@ -2500,7 +2659,9 @@
         "variant": "GHXXFXX",
         "uitvoering": "B11PA5ATA3AA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1353"
+        "toegestane_maximum_massa_voertuig": "1353",
+        "datum_tenaamstelling": "20260119",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2518,7 +2679,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.000",
           "uitlaatemissieniveau": "EURO 6 AG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-a31269dce02846a7a065",
@@ -2536,7 +2698,9 @@
         "variant": "WA71",
         "uitvoering": "AA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1810"
+        "toegestane_maximum_massa_voertuig": "1810",
+        "datum_tenaamstelling": "20250814",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2552,7 +2716,8 @@
           "toerental_geluidsniveau": "5025",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-2313973786c4924f89fc",
@@ -2570,7 +2735,9 @@
         "variant": "VF51",
         "uitvoering": "AA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1880"
+        "toegestane_maximum_massa_voertuig": "1880",
+        "datum_tenaamstelling": "20241109",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2586,7 +2753,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-7230c97ccd658dce076e",
@@ -2604,7 +2772,9 @@
         "variant": "VF91",
         "uitvoering": "AB",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1920"
+        "toegestane_maximum_massa_voertuig": "1920",
+        "datum_tenaamstelling": "20260105",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2620,7 +2790,8 @@
           "toerental_geluidsniveau": "5025",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-372eb6969e55203427e9",
@@ -2638,7 +2809,9 @@
         "variant": "7K31",
         "uitvoering": "DAW508ZS",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1870"
+        "toegestane_maximum_massa_voertuig": "1870",
+        "datum_tenaamstelling": "20251025",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2657,7 +2830,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.800",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-87d98ee2191a8796a8ce",
@@ -2675,7 +2849,9 @@
         "variant": "7K31",
         "uitvoering": "DAW500LG",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1870"
+        "toegestane_maximum_massa_voertuig": "1870",
+        "datum_tenaamstelling": "20201224",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2694,7 +2870,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.400",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-90452cc871bf2d8f456b",
@@ -2712,7 +2889,9 @@
         "variant": "1R51",
         "uitvoering": "DAW50000",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1900"
+        "toegestane_maximum_massa_voertuig": "1900",
+        "datum_tenaamstelling": "20240422",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2731,7 +2910,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.400",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-def544a330924ae8d803",
@@ -2749,7 +2929,9 @@
         "variant": "XS51",
         "uitvoering": "6H1500C0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1670"
+        "toegestane_maximum_massa_voertuig": "1670",
+        "datum_tenaamstelling": "20260523",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2765,7 +2947,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-81adf8cd878046d2493f",
@@ -2783,7 +2966,9 @@
         "variant": "XS51",
         "uitvoering": "6H2500C0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1670"
+        "toegestane_maximum_massa_voertuig": "1670",
+        "datum_tenaamstelling": "20250412",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2799,7 +2984,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-857896cae8d22dd3ec22",
@@ -2817,7 +3003,9 @@
         "variant": "XS51",
         "uitvoering": "6H1500C0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1670"
+        "toegestane_maximum_massa_voertuig": "1670",
+        "datum_tenaamstelling": "20250110",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2833,7 +3021,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-7be321a25d23e170151d",
@@ -2851,7 +3040,9 @@
         "variant": "SR81",
         "uitvoering": "5H0C0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1520"
+        "toegestane_maximum_massa_voertuig": "1520",
+        "datum_tenaamstelling": "20111207",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2866,7 +3057,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-68ee33c5a97d127b503d",
@@ -2884,7 +3076,9 @@
         "variant": "SU31",
         "uitvoering": "5A0C0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1565"
+        "toegestane_maximum_massa_voertuig": "1565",
+        "datum_tenaamstelling": "20260225",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2899,7 +3093,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-1ed10527a487b15b8945",
@@ -2917,7 +3112,9 @@
         "variant": "ZA31",
         "uitvoering": "5H05C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1735"
+        "toegestane_maximum_massa_voertuig": "1735",
+        "datum_tenaamstelling": "20160220",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2932,7 +3129,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-983fa5ca6488ec557c6d",
@@ -2950,7 +3148,9 @@
         "variant": "SCHZBF1",
         "uitvoering": "FM5DF002P8X01LLS57MMEM2",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1580"
+        "toegestane_maximum_massa_voertuig": "1580",
+        "datum_tenaamstelling": "20260613",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -2966,7 +3166,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-0697f548db94e813e63b",
@@ -2984,7 +3185,9 @@
         "variant": "SCHZBF1",
         "uitvoering": "FD7AM006P8X02LLS57MMEM2",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1610"
+        "toegestane_maximum_massa_voertuig": "1610",
+        "datum_tenaamstelling": "20240806",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3000,7 +3203,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4d222b590fc667e5f0ed",
@@ -3018,7 +3222,9 @@
         "variant": "SCHZBF1",
         "uitvoering": "FM5DF002P8X01LLS57MMEM2",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1580"
+        "toegestane_maximum_massa_voertuig": "1580",
+        "datum_tenaamstelling": "20250924",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3034,7 +3240,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-d4e2139b26a586e057c2",
@@ -3052,7 +3259,9 @@
         "variant": "XDPCAF1",
         "uitvoering": "FD7FD7CW002RT11B174BFAEM1HA0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1880"
+        "toegestane_maximum_massa_voertuig": "1880",
+        "datum_tenaamstelling": "20251230",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3071,7 +3280,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.500",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-faffca0b47c657215847",
@@ -3089,7 +3299,9 @@
         "variant": "XDPCAF1",
         "uitvoering": "FD7FD7CW002RT11B174BFAEM1HA0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1880"
+        "toegestane_maximum_massa_voertuig": "1880",
+        "datum_tenaamstelling": "20250919",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3108,7 +3320,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.500",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-aa2d42a9735d34867a54",
@@ -3126,7 +3339,9 @@
         "variant": "XDPCAF1",
         "uitvoering": "FD7FD7CW002RT11B174BFAEM1HA0A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1880"
+        "toegestane_maximum_massa_voertuig": "1880",
+        "datum_tenaamstelling": "20241005",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3145,7 +3360,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.500",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-8c6e9b1cbeb4e27b2afb",
@@ -3163,7 +3379,9 @@
         "variant": "ACDPCAX0",
         "uitvoering": "NFD7FD7GC0084BF0NS5N1C7A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2120"
+        "toegestane_maximum_massa_voertuig": "2120",
+        "datum_tenaamstelling": "20260304",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3182,7 +3400,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.600",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-9f6a19b0fe8f36238d2a",
@@ -3200,7 +3419,9 @@
         "variant": "ACDPCAX0",
         "uitvoering": "NFM6FM62Q0364BF0NS5N1C7A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2157"
+        "toegestane_maximum_massa_voertuig": "2157",
+        "datum_tenaamstelling": "20240314",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3219,7 +3440,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.500",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-b4b509d70e3aee4e316b",
@@ -3237,7 +3459,9 @@
         "variant": "ACDPCAX0",
         "uitvoering": "NFD7FD7GC0084BF4NS7N1C7A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2363"
+        "toegestane_maximum_massa_voertuig": "2363",
+        "datum_tenaamstelling": "20250416",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3256,7 +3480,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.800",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-adf5165321d8f2a173ab",
@@ -3274,7 +3499,9 @@
         "variant": "ACDKRFX0",
         "uitvoering": "NFM6FM6AJ0194BFSTVLN1C7B",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1838"
+        "toegestane_maximum_massa_voertuig": "1838",
+        "datum_tenaamstelling": "20250411",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3293,7 +3520,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.800",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-5c9b73ae810432b4140b",
@@ -3311,7 +3539,9 @@
         "variant": "ACDKRFX0",
         "uitvoering": "NFM6FM6AJ0194BFSTVLN1B7A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1838"
+        "toegestane_maximum_massa_voertuig": "1838",
+        "datum_tenaamstelling": "20251212",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3330,7 +3560,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.600",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f180c7271a3dc9bd4e02",
@@ -3348,7 +3579,9 @@
         "variant": "ACDKRFX0",
         "uitvoering": "NFM6FM6AJ0194BFSTVLN1B7A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1838"
+        "toegestane_maximum_massa_voertuig": "1838",
+        "datum_tenaamstelling": "20250725",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3367,7 +3600,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.600",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-7a028bb1a4c00a2074cf",
@@ -3385,7 +3619,9 @@
         "variant": "BDKRF",
         "uitvoering": "FD7SFD7CW0014BF2B1CA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1615"
+        "toegestane_maximum_massa_voertuig": "1615",
+        "datum_tenaamstelling": "20221012",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3404,7 +3640,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.200",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-1e5e2f2fbd4603405cbe",
@@ -3422,7 +3659,9 @@
         "variant": "BDFNA",
         "uitvoering": "FM5SFM5DF0107CP1A1CA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1520"
+        "toegestane_maximum_massa_voertuig": "1520",
+        "datum_tenaamstelling": "20220415",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3440,7 +3679,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.800",
           "uitlaatemissieniveau": "EURO 6 AG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-fb8a346829a8d7855628",
@@ -3458,7 +3698,9 @@
         "variant": "BDKLA",
         "uitvoering": "FM5SFM5DF0024BF2A1CA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1560"
+        "toegestane_maximum_massa_voertuig": "1560",
+        "datum_tenaamstelling": "20231110",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3477,7 +3719,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.400",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-36e8ea903d6fd89f6c96",
@@ -3495,7 +3738,9 @@
         "variant": "ABCHYA",
         "uitvoering": "FM5FM5CF0037MGVR2N1FA1SE",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1290"
+        "toegestane_maximum_massa_voertuig": "1290",
+        "datum_tenaamstelling": "20180306",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3510,7 +3755,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-99c05b86319a937a3ef0",
@@ -3528,7 +3774,9 @@
         "variant": "ABCHYB",
         "uitvoering": "FM5FM5CF0047MGVR2N1FA1SE",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1290"
+        "toegestane_maximum_massa_voertuig": "1290",
+        "datum_tenaamstelling": "20150328",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3543,7 +3791,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-8ca5cb79bb88136c592f",
@@ -3561,7 +3810,9 @@
         "variant": "ABCHYB",
         "uitvoering": "FM5FM5CF0047MGVR2N1FA1SE",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1290"
+        "toegestane_maximum_massa_voertuig": "1290",
+        "datum_tenaamstelling": "20210611",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3576,7 +3827,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 F"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-80e5419ee84810ba3f11",
@@ -3594,7 +3846,9 @@
         "variant": "R231Q0",
         "uitvoering": "BZAAB521",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2045"
+        "toegestane_maximum_massa_voertuig": "2045",
+        "datum_tenaamstelling": "20260523",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3610,7 +3864,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-e8b2ffa25090715c609f",
@@ -3628,7 +3883,9 @@
         "variant": "R231Q0",
         "uitvoering": "NZAAB574",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2070"
+        "toegestane_maximum_massa_voertuig": "2070",
+        "datum_tenaamstelling": "20260319",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3644,7 +3901,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-0a8d33301b15f0cabfa3",
@@ -3662,7 +3920,9 @@
         "variant": "R231Q0",
         "uitvoering": "NZAAB521",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2075"
+        "toegestane_maximum_massa_voertuig": "2075",
+        "datum_tenaamstelling": "20250217",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3678,7 +3938,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-e01ba588846c6ae50155",
@@ -3696,7 +3957,9 @@
         "variant": "M24GM2",
         "uitvoering": "OZAAB500",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1950"
+        "toegestane_maximum_massa_voertuig": "1950",
+        "datum_tenaamstelling": "20210820",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3712,7 +3975,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-954e1f4fa6d63ab222f3",
@@ -3730,7 +3994,9 @@
         "variant": "M24GM2",
         "uitvoering": "HZAAB500",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1960"
+        "toegestane_maximum_massa_voertuig": "1960",
+        "datum_tenaamstelling": "20170504",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3746,7 +4012,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-45f387c08c5b012a88d7",
@@ -3764,7 +4031,9 @@
         "variant": "M24GM2",
         "uitvoering": "HZAAB523",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1960"
+        "toegestane_maximum_massa_voertuig": "1960",
+        "datum_tenaamstelling": "20211007",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3780,7 +4049,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f4b8a478b6e001dc3c26",
@@ -3798,7 +4068,9 @@
         "variant": "NCFA",
         "uitvoering": "C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1190"
+        "toegestane_maximum_massa_voertuig": "1190",
+        "datum_tenaamstelling": "20251224",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3814,7 +4086,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f6f6f448b5fb41091215",
@@ -3832,7 +4105,9 @@
         "variant": "NCFA",
         "uitvoering": "C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1190"
+        "toegestane_maximum_massa_voertuig": "1190",
+        "datum_tenaamstelling": "20200416",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3848,7 +4123,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-88375f0d8c236a79a4c8",
@@ -3866,7 +4142,9 @@
         "variant": "NCFA",
         "uitvoering": "C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1190"
+        "toegestane_maximum_massa_voertuig": "1190",
+        "datum_tenaamstelling": "20170506",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3882,7 +4160,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-7076f2e4efa51b1111d9",
@@ -3900,7 +4179,9 @@
         "variant": "CHMZ",
         "uitvoering": "6/1PS",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1541"
+        "toegestane_maximum_massa_voertuig": "1541",
+        "datum_tenaamstelling": "20200118",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3915,7 +4196,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-d819626ff10993513409",
@@ -3933,7 +4215,9 @@
         "variant": "CHMZ",
         "uitvoering": "0/2",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1511"
+        "toegestane_maximum_massa_voertuig": "1511",
+        "datum_tenaamstelling": "20200129",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3948,7 +4232,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-bae5448336af0953ae01",
@@ -3966,7 +4251,9 @@
         "variant": "CHMZ",
         "uitvoering": "6",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1525"
+        "toegestane_maximum_massa_voertuig": "1525",
+        "datum_tenaamstelling": "20200520",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -3981,7 +4268,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-dec195c76cb2ff0854a3",
@@ -3999,7 +4287,9 @@
         "variant": "XZ11",
         "uitvoering": "XZ11V10?",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2060"
+        "toegestane_maximum_massa_voertuig": "2060",
+        "datum_tenaamstelling": "20250124",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4018,7 +4308,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.000",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-d0dee88c2f3134d5f657",
@@ -4036,7 +4327,9 @@
         "variant": "XZ15",
         "uitvoering": "XZ15VD0?",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2120"
+        "toegestane_maximum_massa_voertuig": "2120",
+        "datum_tenaamstelling": "20250311",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4055,7 +4348,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.400",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-9528064941dc8d0ff3dd",
@@ -4073,7 +4367,9 @@
         "variant": "XZ15",
         "uitvoering": "XZ15VD0?",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2120"
+        "toegestane_maximum_massa_voertuig": "2120",
+        "datum_tenaamstelling": "20240613",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4092,7 +4388,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.400",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-eafebd7cdb2020ac0eda",
@@ -4110,7 +4407,9 @@
         "variant": "UZL1",
         "uitvoering": "UZL1VD0?",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2400"
+        "toegestane_maximum_massa_voertuig": "2400",
+        "datum_tenaamstelling": "20200110",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4138,7 +4437,8 @@
           "netto_max_vermogen_elektrisch": "10.00",
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-afce9c7e3f6c2167c152",
@@ -4156,7 +4456,9 @@
         "variant": "UZL1",
         "uitvoering": "UZL1VC0?",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2450"
+        "toegestane_maximum_massa_voertuig": "2450",
+        "datum_tenaamstelling": "20200125",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4184,7 +4486,8 @@
           "netto_max_vermogen_elektrisch": "10.00",
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-35d3fb6eb4368fbd8caf",
@@ -4202,7 +4505,9 @@
         "variant": "UZL1",
         "uitvoering": "UZL1VC0?",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2450"
+        "toegestane_maximum_massa_voertuig": "2450",
+        "datum_tenaamstelling": "20230313",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4231,7 +4536,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AM"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-8d114757377e4e2deefe",
@@ -4249,7 +4555,9 @@
         "variant": "05ES",
         "uitvoering": "JD5DA180M500",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1495"
+        "toegestane_maximum_massa_voertuig": "1495",
+        "datum_tenaamstelling": "20250924",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4267,7 +4575,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.100",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-e6db8757ca97e442e070",
@@ -4285,7 +4594,9 @@
         "variant": "BES",
         "uitvoering": "M65WA4KM520B",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1565"
+        "toegestane_maximum_massa_voertuig": "1565",
+        "datum_tenaamstelling": "20240614",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4301,7 +4612,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.300",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4164f1f70034d5e4ad11",
@@ -4319,7 +4631,9 @@
         "variant": "BEV",
         "uitvoering": "MT6WA45M5D0B",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1620"
+        "toegestane_maximum_massa_voertuig": "1620",
+        "datum_tenaamstelling": "20240614",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4345,7 +4659,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.100",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-477a375a092112dfb437",
@@ -4363,7 +4678,9 @@
         "variant": "7SDAA",
         "uitvoering": "7SDAA5",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1620"
+        "toegestane_maximum_massa_voertuig": "1620",
+        "datum_tenaamstelling": "20150124",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4378,7 +4695,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-7de1fb751abc5b73e33c",
@@ -4396,7 +4714,9 @@
         "variant": "7SDAA",
         "uitvoering": "7SDAA5",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1620"
+        "toegestane_maximum_massa_voertuig": "1620",
+        "datum_tenaamstelling": "20180524",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4411,7 +4731,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-a76c922eb678fa82ffd5",
@@ -4429,7 +4750,9 @@
         "variant": "7SDAA",
         "uitvoering": "7SDAA5",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1620"
+        "toegestane_maximum_massa_voertuig": "1620",
+        "datum_tenaamstelling": "20181228",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4444,7 +4767,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-757d9a8da599f92d0c56",
@@ -4462,7 +4786,9 @@
         "variant": "C31S",
         "uitvoering": "MT",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1250"
+        "toegestane_maximum_massa_voertuig": "1250",
+        "datum_tenaamstelling": "20170601",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4478,7 +4804,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-94ed193a47f078521cae",
@@ -4496,7 +4823,9 @@
         "variant": "C31S",
         "uitvoering": "AT",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1250"
+        "toegestane_maximum_massa_voertuig": "1250",
+        "datum_tenaamstelling": "20240628",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4512,7 +4841,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-6ce798e225daba6d6f1c",
@@ -4530,7 +4860,9 @@
         "variant": "C31S",
         "uitvoering": "MT",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1250"
+        "toegestane_maximum_massa_voertuig": "1250",
+        "datum_tenaamstelling": "20260119",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4546,7 +4878,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-8570013c59317f908860",
@@ -4563,7 +4896,9 @@
         "variant": "C11S",
         "uitvoering": "MT",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1485"
+        "toegestane_maximum_massa_voertuig": "1485",
+        "datum_tenaamstelling": "20080602",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4579,7 +4914,8 @@
           "toerental_geluidsniveau": "4350",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-2cbf7c8a9837144d5ad9",
@@ -4596,7 +4932,9 @@
         "variant": "C11S",
         "uitvoering": "MT",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1485"
+        "toegestane_maximum_massa_voertuig": "1485",
+        "datum_tenaamstelling": "20080602",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4612,7 +4950,8 @@
           "toerental_geluidsniveau": "4350",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-5ada1305030006d80d68",
@@ -4630,7 +4969,9 @@
         "variant": "A11S",
         "uitvoering": "MTA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1485"
+        "toegestane_maximum_massa_voertuig": "1485",
+        "datum_tenaamstelling": "20250401",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4645,7 +4986,8 @@
           "toerental_geluidsniveau": "4350",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4758073c9a6868625830",
@@ -4663,7 +5005,9 @@
         "variant": "C97",
         "uitvoering": "60E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1930"
+        "toegestane_maximum_massa_voertuig": "1930",
+        "datum_tenaamstelling": "20260826",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4679,7 +5023,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-fb6ffdec7c3c20ed5510",
@@ -4697,7 +5042,9 @@
         "variant": "C97",
         "uitvoering": "60E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1930"
+        "toegestane_maximum_massa_voertuig": "1930",
+        "datum_tenaamstelling": "20200422",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4713,7 +5060,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-7a116e93d47eff5c9e5a",
@@ -4731,7 +5079,9 @@
         "variant": "K97",
         "uitvoering": "80E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2035"
+        "toegestane_maximum_massa_voertuig": "2035",
+        "datum_tenaamstelling": "20200725",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4747,7 +5097,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 J"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ef075cadc621787d4d55",
@@ -4765,7 +5116,9 @@
         "variant": "6W7",
         "uitvoering": "6AW01",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1692"
+        "toegestane_maximum_massa_voertuig": "1692",
+        "datum_tenaamstelling": "20240426",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4784,7 +5137,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.600",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-afb47d88aee81ce0cb6b",
@@ -4802,7 +5156,9 @@
         "variant": "6W7",
         "uitvoering": "AAW00",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1727"
+        "toegestane_maximum_massa_voertuig": "1727",
+        "datum_tenaamstelling": "20190925",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4821,7 +5177,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.200",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-85ab68dd0c35041c7cf9",
@@ -4839,7 +5196,9 @@
         "variant": "6W7",
         "uitvoering": "6AW01",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1692"
+        "toegestane_maximum_massa_voertuig": "1692",
+        "datum_tenaamstelling": "20191005",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4858,7 +5217,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.600",
           "uitlaatemissieniveau": "EURO 6 DG"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-90132208a09016ba7333",
@@ -4875,7 +5235,9 @@
         "variant": "1",
         "uitvoering": "1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1490"
+        "toegestane_maximum_massa_voertuig": "1490",
+        "datum_tenaamstelling": "20080715",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4891,7 +5253,8 @@
           "toerental_geluidsniveau": "4275",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-8e0c8bf039d45fc6c1d1",
@@ -4908,7 +5271,9 @@
         "variant": "1",
         "uitvoering": "1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1490"
+        "toegestane_maximum_massa_voertuig": "1490",
+        "datum_tenaamstelling": "20080818",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4924,7 +5289,8 @@
           "toerental_geluidsniveau": "4275",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-286d069c49457f2c66a9",
@@ -4942,7 +5308,9 @@
         "variant": "2",
         "uitvoering": "2",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1555"
+        "toegestane_maximum_massa_voertuig": "1555",
+        "datum_tenaamstelling": "20221106",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4955,7 +5323,8 @@
           "nettomaximumvermogen": "73.00",
           "toerental_geluidsniveau": "4500"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-a4224301ccdf5e794a73",
@@ -4972,7 +5341,9 @@
         "variant": "1",
         "uitvoering": "2",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1720"
+        "toegestane_maximum_massa_voertuig": "1720",
+        "datum_tenaamstelling": "20200905",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -4992,7 +5363,8 @@
           "emissiecode_omschrijving": "Z",
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-c86380d940898a8aa45f",
@@ -5009,7 +5381,9 @@
         "variant": "1",
         "uitvoering": "2",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1720"
+        "toegestane_maximum_massa_voertuig": "1720",
+        "datum_tenaamstelling": "20251120",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5029,7 +5403,8 @@
           "emissiecode_omschrijving": "Z",
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-c34527bb33c0e352ff55",
@@ -5046,7 +5421,9 @@
         "variant": "1",
         "uitvoering": "2",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1720"
+        "toegestane_maximum_massa_voertuig": "1720",
+        "datum_tenaamstelling": "20250506",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5066,7 +5443,8 @@
           "emissiecode_omschrijving": "Z",
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-deaaf291e81b45d3568c",
@@ -5084,7 +5462,9 @@
         "variant": "Z3411",
         "uitvoering": "ABBBA5A5A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1460"
+        "toegestane_maximum_massa_voertuig": "1460",
+        "datum_tenaamstelling": "20260703",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5100,7 +5480,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-0b19c9a4065fb61d2423",
@@ -5118,7 +5499,9 @@
         "variant": "Z2413",
         "uitvoering": "AIFFA5A5A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1435"
+        "toegestane_maximum_massa_voertuig": "1435",
+        "datum_tenaamstelling": "20260704",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5134,7 +5517,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-9f13ce2cc499c567390a",
@@ -5152,7 +5536,9 @@
         "variant": "Z3411",
         "uitvoering": "ABBBA5A5A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1460"
+        "toegestane_maximum_massa_voertuig": "1460",
+        "datum_tenaamstelling": "20260911",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5168,7 +5554,8 @@
           "toerental_geluidsniveau": "4500",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4a977f8899a8ef4d72fe",
@@ -5186,7 +5573,9 @@
         "variant": "CB411",
         "uitvoering": "AVBEBCA5A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2070"
+        "toegestane_maximum_massa_voertuig": "2070",
+        "datum_tenaamstelling": "20140111",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5201,7 +5590,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-d00b23b6287c83e25ddc",
@@ -5219,7 +5609,9 @@
         "variant": "CB411",
         "uitvoering": "AVBEBCA5A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2070"
+        "toegestane_maximum_massa_voertuig": "2070",
+        "datum_tenaamstelling": "20180501",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5234,7 +5626,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-96f9be5034e75c3f8599",
@@ -5252,7 +5645,9 @@
         "variant": "CB411",
         "uitvoering": "AUBEA5A5A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2070"
+        "toegestane_maximum_massa_voertuig": "2070",
+        "datum_tenaamstelling": "20190706",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5267,7 +5662,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4a0cdfb32faf1b1d8dce",
@@ -5285,7 +5681,9 @@
         "variant": "ZWA10(H)",
         "uitvoering": "ZWA10L-AHXBBW(3A)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1845"
+        "toegestane_maximum_massa_voertuig": "1845",
+        "datum_tenaamstelling": "20260905",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5311,7 +5709,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 5 F"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-00b0652cee216f491623",
@@ -5329,7 +5728,9 @@
         "variant": "ZWA10(H)",
         "uitvoering": "ZWA10L-AHXBBW(3A)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1845"
+        "toegestane_maximum_massa_voertuig": "1845",
+        "datum_tenaamstelling": "20250328",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5355,7 +5756,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 5 F"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-9c14f3dd0212bb7fb677",
@@ -5373,7 +5775,9 @@
         "variant": "ZWA10(H)",
         "uitvoering": "ZWA10L-AHXBBW(3A)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1845"
+        "toegestane_maximum_massa_voertuig": "1845",
+        "datum_tenaamstelling": "20241113",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5399,7 +5803,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 5 F"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f225a3fee08f2000f754",
@@ -5417,7 +5822,9 @@
         "variant": "AYZ15(W)",
         "uitvoering": "AYZ15L-AWXLBW(2A)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2395"
+        "toegestane_maximum_massa_voertuig": "2395",
+        "datum_tenaamstelling": "20250319",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5442,7 +5849,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-507a2a7731a98641d2d5",
@@ -5460,7 +5868,9 @@
         "variant": "AYZ15(W)",
         "uitvoering": "AYZ15L-AWXLBW(2A)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2395"
+        "toegestane_maximum_massa_voertuig": "2395",
+        "datum_tenaamstelling": "20260213",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5485,7 +5895,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-5370c4b09cab00db3f98",
@@ -5503,7 +5914,9 @@
         "variant": "AYZ15(W)",
         "uitvoering": "AYZ15L-AWXLBW(2B)",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2395"
+        "toegestane_maximum_massa_voertuig": "2395",
+        "datum_tenaamstelling": "20260805",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5528,7 +5941,8 @@
           "klasse_hybride_elektrisch_voertuig": "NOVC-HEV",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-22550d014e4d45324292",
@@ -5546,7 +5960,9 @@
         "variant": "AXB1A",
         "uitvoering": "0BM",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1305"
+        "toegestane_maximum_massa_voertuig": "1305",
+        "datum_tenaamstelling": "20100114",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5562,7 +5978,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-733b3a6d0971e6ac9351",
@@ -5580,7 +5997,9 @@
         "variant": "AXB1A",
         "uitvoering": "0BM",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1305"
+        "toegestane_maximum_massa_voertuig": "1305",
+        "datum_tenaamstelling": "20200704",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5596,7 +6015,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-aa63497322099e50b382",
@@ -5614,7 +6034,9 @@
         "variant": "AXB1A",
         "uitvoering": "0BM",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1305"
+        "toegestane_maximum_massa_voertuig": "1305",
+        "datum_tenaamstelling": "20260104",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5630,7 +6052,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 4"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ff152bdcea96b352236e",
@@ -5648,7 +6071,9 @@
         "variant": "AXA11",
         "uitvoering": "03C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1340"
+        "toegestane_maximum_massa_voertuig": "1340",
+        "datum_tenaamstelling": "20250621",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5664,7 +6089,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-c6ac911330c3c7514593",
@@ -5682,7 +6108,9 @@
         "variant": "AXA11",
         "uitvoering": "03C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1340"
+        "toegestane_maximum_massa_voertuig": "1340",
+        "datum_tenaamstelling": "20160120",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5698,7 +6126,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ac6db08d4335351877f3",
@@ -5716,7 +6145,9 @@
         "variant": "AXA1A",
         "uitvoering": "00E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1305"
+        "toegestane_maximum_massa_voertuig": "1305",
+        "datum_tenaamstelling": "20240125",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5732,7 +6163,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-313ba8485f5db02dd8cb",
@@ -5750,7 +6182,9 @@
         "variant": "FXA1A",
         "uitvoering": "00",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1785"
+        "toegestane_maximum_massa_voertuig": "1785",
+        "datum_tenaamstelling": "20250415",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5765,7 +6199,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-3dea08368f3f876bae58",
@@ -5783,7 +6218,9 @@
         "variant": "FXB1A",
         "uitvoering": "01",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1795"
+        "toegestane_maximum_massa_voertuig": "1795",
+        "datum_tenaamstelling": "20150214",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5798,7 +6235,8 @@
           "toerental_geluidsniveau": "4125",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-b66ae5b1d8e596fdf17f",
@@ -5816,7 +6254,9 @@
         "variant": "FXA1A",
         "uitvoering": "00",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1785"
+        "toegestane_maximum_massa_voertuig": "1785",
+        "datum_tenaamstelling": "20221029",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5831,7 +6271,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-587ff479d0a23a7cc716",
@@ -5849,7 +6290,9 @@
         "variant": "AXM1A",
         "uitvoering": "09C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1615"
+        "toegestane_maximum_massa_voertuig": "1615",
+        "datum_tenaamstelling": "20150226",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5865,7 +6308,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-929ae2fc64affb181c3c",
@@ -5883,7 +6327,9 @@
         "variant": "AXM1A",
         "uitvoering": "09C",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1615"
+        "toegestane_maximum_massa_voertuig": "1615",
+        "datum_tenaamstelling": "20200303",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5899,7 +6345,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-1db934a57cf643c24587",
@@ -5917,7 +6364,9 @@
         "variant": "AXL1B",
         "uitvoering": "08",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1570"
+        "toegestane_maximum_massa_voertuig": "1570",
+        "datum_tenaamstelling": "20260914",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5933,7 +6382,8 @@
           "toerental_geluidsniveau": "4875",
           "uitlaatemissieniveau": "EURO 5 A"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-feed5ec4d15ecd70d63c",
@@ -5951,7 +6401,9 @@
         "variant": "HODDC0",
         "uitvoering": "50CA003",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2660"
+        "toegestane_maximum_massa_voertuig": "2660",
+        "datum_tenaamstelling": "20240607",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -5979,7 +6431,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-0ca5ec1b58f041495b55",
@@ -5997,7 +6450,9 @@
         "variant": "HODDC0",
         "uitvoering": "50CA003",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2660"
+        "toegestane_maximum_massa_voertuig": "2660",
+        "datum_tenaamstelling": "20250331",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6025,7 +6480,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f16e825cb4b9c8833ba9",
@@ -6043,7 +6499,9 @@
         "variant": "HODDC0",
         "uitvoering": "50CA000",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2660"
+        "toegestane_maximum_massa_voertuig": "2660",
+        "datum_tenaamstelling": "20240812",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6069,7 +6527,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ea183de8be0e0555471a",
@@ -6087,7 +6546,9 @@
         "variant": "HYEDC0",
         "uitvoering": "5CAA000",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3450"
+        "toegestane_maximum_massa_voertuig": "3450",
+        "datum_tenaamstelling": "20250409",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6117,7 +6578,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-0b0b39a3c2f1f8ad504a",
@@ -6135,7 +6597,9 @@
         "variant": "HYEEC0",
         "uitvoering": "5DAA000",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3450"
+        "toegestane_maximum_massa_voertuig": "3450",
+        "datum_tenaamstelling": "20250120",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6163,7 +6627,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-106c05efdcb9113e0e49",
@@ -6181,7 +6646,9 @@
         "variant": "HYEEC0",
         "uitvoering": "5CAA000",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3450"
+        "toegestane_maximum_massa_voertuig": "3450",
+        "datum_tenaamstelling": "20250103",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6209,7 +6676,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ea349e9b1e2e95192a42",
@@ -6227,7 +6695,9 @@
         "variant": "JHPFP",
         "uitvoering": "NN1BAH1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2400"
+        "toegestane_maximum_massa_voertuig": "2400",
+        "datum_tenaamstelling": "20250417",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6252,7 +6722,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-1d0f8dba59438e877ef8",
@@ -6270,7 +6741,9 @@
         "variant": "JHPFP",
         "uitvoering": "NL1BAH1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2400"
+        "toegestane_maximum_massa_voertuig": "2400",
+        "datum_tenaamstelling": "20240727",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6296,7 +6769,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f03853091f03548dd608",
@@ -6314,7 +6788,9 @@
         "variant": "JHPFP",
         "uitvoering": "MN1BBH1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2400"
+        "toegestane_maximum_massa_voertuig": "2400",
+        "datum_tenaamstelling": "20240722",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6339,7 +6815,8 @@
           "klasse_hybride_elektrisch_voertuig": "OVC-HEV",
           "uitlaatemissieniveau": "EURO 6 AP"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-7a302fa2034cced5d56e",
@@ -6357,7 +6834,9 @@
         "variant": "AXC1B",
         "uitvoering": "02A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1865"
+        "toegestane_maximum_massa_voertuig": "1865",
+        "datum_tenaamstelling": "20210611",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6372,7 +6851,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-9c52a8721b4e8e335891",
@@ -6390,7 +6870,9 @@
         "variant": "AXC1B",
         "uitvoering": "02A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1865"
+        "toegestane_maximum_massa_voertuig": "1865",
+        "datum_tenaamstelling": "20190111",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6405,7 +6887,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4d391160725165254280",
@@ -6423,7 +6906,9 @@
         "variant": "AXC1B",
         "uitvoering": "02A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1865"
+        "toegestane_maximum_massa_voertuig": "1865",
+        "datum_tenaamstelling": "20160806",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6438,7 +6923,8 @@
           "toerental_geluidsniveau": "3750",
           "uitlaatemissieniveau": "EURO 6 W"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-87d0048b2e6f11ad4aea",
@@ -6456,7 +6942,9 @@
         "variant": "L2U31350BXX",
         "uitvoering": "QG2A63D3BECX",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240201",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6473,7 +6961,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.400",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-3e6d46f84e179c99dc32",
@@ -6491,7 +6980,9 @@
         "variant": "FFU51350BXX/NK",
         "uitvoering": "RG2AB3A3XXHX",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20241218",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6505,7 +6996,8 @@
           "emissie_co2_gecombineerd_wltp": "352",
           "uitlaatemissieniveau": "EURO VI E"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-2e5fc6eda65358bcbeff",
@@ -6521,7 +7013,9 @@
         "datum_eerste_toelating_dt": "2024-09-24T00:00:00.000",
         "type": "906BB35",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240924",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6538,7 +7032,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.500",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-0751bf3732ec6cc34c68",
@@ -6556,7 +7051,9 @@
         "variant": "FAM9R",
         "uitvoering": "MW6UC4A82A02",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3070"
+        "toegestane_maximum_massa_voertuig": "3070",
+        "datum_tenaamstelling": "20260112",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6573,7 +7070,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.100",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-0dfd83a6dc08bdc8da89",
@@ -6591,7 +7089,9 @@
         "variant": "FAM9R",
         "uitvoering": "MUAUC4G82B02",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3010"
+        "toegestane_maximum_massa_voertuig": "3010",
+        "datum_tenaamstelling": "20240131",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6608,7 +7108,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.100",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-5a2579f5b7ac9ae9697a",
@@ -6626,7 +7127,9 @@
         "variant": "FAM9R",
         "uitvoering": "MY6UC4C00A02",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2800"
+        "toegestane_maximum_massa_voertuig": "2800",
+        "datum_tenaamstelling": "20240120",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6643,7 +7146,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "6.900",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-b121b05a1b8b3c626aeb",
@@ -6661,7 +7165,9 @@
         "variant": "BBDTRCX0V",
         "uitvoering": "N225FD7FD7GC004H1N24BJG21AA20NCZ",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2250"
+        "toegestane_maximum_massa_voertuig": "2250",
+        "datum_tenaamstelling": "20240313",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6677,7 +7183,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.128",
           "uitlaatemissieniveau": "EURO 6 AQ"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ffe4923548fdf583f128",
@@ -6695,7 +7202,9 @@
         "variant": "BBDTRFX0V",
         "uitvoering": "L222FM6FM6C9008H2N24BJG21AA20NCZ",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2220"
+        "toegestane_maximum_massa_voertuig": "2220",
+        "datum_tenaamstelling": "20240517",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6711,7 +7220,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "4.912",
           "uitlaatemissieniveau": "EURO 6 AQ"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ef08bccdfdd10787b7fd",
@@ -6729,7 +7239,9 @@
         "variant": "BBDTRFX0V",
         "uitvoering": "N222FM6FM6C9008H1N24BJG21AA20NCZ",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2220"
+        "toegestane_maximum_massa_voertuig": "2220",
+        "datum_tenaamstelling": "20240212",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6745,7 +7257,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "4.919",
           "uitlaatemissieniveau": "EURO 6 AQ"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-b20983df3215c17a822c",
@@ -6763,7 +7276,9 @@
         "variant": "SYBB8BDMZBV3",
         "uitvoering": "NM350NSFA89Q0012B4BKMC2EOOVW",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240514",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6780,7 +7295,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.800",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f84b4caca38143b9624c",
@@ -6798,7 +7314,9 @@
         "variant": "SYBB8BDMZBV3",
         "uitvoering": "NM350NSFA89Q0012A4BKMC3DOOVW",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240228",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6815,7 +7333,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.700",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-6cfba67413e1b7fd5e26",
@@ -6833,7 +7352,9 @@
         "variant": "SZHB6FDRECV4",
         "uitvoering": "PN350NSHA8DR0012B7GTMD6EOOVW",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240222",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6850,7 +7371,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "12.600",
           "uitlaatemissieniveau": "EURO VI"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-224dcad87643d516f06f",
@@ -6868,7 +7390,9 @@
         "variant": "GCXGB280X0",
         "uitvoering": "LNFM52Z1116NVR217MMG3RL6323",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2800"
+        "toegestane_maximum_massa_voertuig": "2800",
+        "datum_tenaamstelling": "20200104",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6884,7 +7408,8 @@
           "toerental_geluidsniveau": "2375",
           "uitlaatemissieniveau": "EURO 6 Y"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-fcd9effd6c373fc1f3d2",
@@ -6902,7 +7427,9 @@
         "variant": "VGDNAB280X0",
         "uitvoering": "LNFM5FM52Z01116NVR24BKX2B30A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2800"
+        "toegestane_maximum_massa_voertuig": "2800",
+        "datum_tenaamstelling": "20240318",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6919,7 +7446,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.200",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-319eda15af2b4b141c0c",
@@ -6937,7 +7465,9 @@
         "variant": "VGDNAA280X0",
         "uitvoering": "LNFD7FD7DV00116NVR24BKX2A30A",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2800"
+        "toegestane_maximum_massa_voertuig": "2800",
+        "datum_tenaamstelling": "20240326",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6954,7 +7484,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.500",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f791fa5de3dabc21fd80",
@@ -6972,7 +7503,9 @@
         "variant": "BBDFSFX0",
         "uitvoering": "N0J2FM5FM5A4057N1SN2VR27MMG2NLL161",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2127"
+        "toegestane_maximum_massa_voertuig": "2127",
+        "datum_tenaamstelling": "20260903",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -6988,7 +7521,8 @@
           "toerental_geluidsniveau": "2375",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-d2d7c0dfd4854bf4857a",
@@ -7006,7 +7540,9 @@
         "variant": "BBDFSFX0",
         "uitvoering": "N0J2FM5FM5A4057N1SN2VR27MMG2NLL161",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2127"
+        "toegestane_maximum_massa_voertuig": "2127",
+        "datum_tenaamstelling": "20170113",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7022,7 +7558,8 @@
           "toerental_geluidsniveau": "2375",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-45d2243650adf8ff2486",
@@ -7040,7 +7577,9 @@
         "variant": "BBDFSDX0",
         "uitvoering": "L0J2FM5FM5A4057N1SN2VR27MMG2OLL269",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2299"
+        "toegestane_maximum_massa_voertuig": "2299",
+        "datum_tenaamstelling": "20170310",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7057,7 +7596,8 @@
           "toerental_geluidsniveau": "2375",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-16e568ac56a23f9275cd",
@@ -7075,7 +7615,9 @@
         "variant": "BLFB1ABX",
         "uitvoering": "D3AGASABCAIAA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3000"
+        "toegestane_maximum_massa_voertuig": "3000",
+        "datum_tenaamstelling": "20260730",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7092,7 +7634,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "8.680",
           "uitlaatemissieniveau": "EURO 6 CI"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-538a32c3e61bf48486e7",
@@ -7110,7 +7653,9 @@
         "variant": "BJFB1ABX",
         "uitvoering": "I3WRASAACA2RBA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3000"
+        "toegestane_maximum_massa_voertuig": "3000",
+        "datum_tenaamstelling": "20240213",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7127,7 +7672,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.700",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-6769ea331a7fce9799fb",
@@ -7145,7 +7691,9 @@
         "variant": "BLFB1ABX",
         "uitvoering": "D3AGCSABCAIBA",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3000"
+        "toegestane_maximum_massa_voertuig": "3000",
+        "datum_tenaamstelling": "20250213",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7163,7 +7711,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "8.700",
           "uitlaatemissieniveau": "EURO 6 CI"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-7aa4c428dac24ad0cb9a",
@@ -7181,7 +7730,9 @@
         "variant": "FM",
         "uitvoering": "00M06W3123D3T0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240319",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7197,7 +7748,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.300",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-124ed3f87dcef2cf7f55",
@@ -7215,7 +7767,9 @@
         "variant": "FM",
         "uitvoering": "00M06W3123D3T0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240416",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7231,7 +7785,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.300",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f2eb82be65d2ee1bba2c",
@@ -7249,7 +7804,9 @@
         "variant": "FM",
         "uitvoering": "00M06W3113D3T0",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240216",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7266,7 +7823,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.400",
           "uitlaatemissieniveau": "EURO 6 EA"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-75935b5d0e7772fe9fe2",
@@ -7282,7 +7840,9 @@
         "datum_eerste_toelating_dt": "2024-02-07T00:00:00.000",
         "type": "639/4",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2800"
+        "toegestane_maximum_massa_voertuig": "2800",
+        "datum_tenaamstelling": "20250813",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7299,7 +7859,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.700",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-dbb58c7d08c5d1d963b7",
@@ -7317,7 +7878,9 @@
         "variant": "KWU0L280TXX",
         "uitvoering": "2SLPEX23XXXX",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2800"
+        "toegestane_maximum_massa_voertuig": "2800",
+        "datum_tenaamstelling": "20240124",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7334,7 +7897,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.500",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-b21923810e8239741b13",
@@ -7352,7 +7916,9 @@
         "variant": "KWU4L280VXX",
         "uitvoering": "2GJP5X23BEXX",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2800"
+        "toegestane_maximum_massa_voertuig": "2800",
+        "datum_tenaamstelling": "20240417",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7370,7 +7936,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.200",
           "uitlaatemissieniveau": "EURO 6 CI"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-defbb63c53f0b3f6e091",
@@ -7388,7 +7955,9 @@
         "variant": "D102",
         "uitvoering": "SFCGB3",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2820"
+        "toegestane_maximum_massa_voertuig": "2820",
+        "datum_tenaamstelling": "20230328",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7405,7 +7974,8 @@
           "toerental_geluidsniveau": "2625",
           "uitlaatemissieniveau": "EURO 6 Y"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-757cc038bc2fe9624092",
@@ -7423,7 +7993,9 @@
         "variant": "D102",
         "uitvoering": "SFCDB3",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2820"
+        "toegestane_maximum_massa_voertuig": "2820",
+        "datum_tenaamstelling": "20170513",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7440,7 +8012,8 @@
           "toerental_geluidsniveau": "2625",
           "uitlaatemissieniveau": "EURO 6 Y"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4c1d1b9ca8d7458fa5e5",
@@ -7458,7 +8031,9 @@
         "variant": "D118",
         "uitvoering": "SFCGB3",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3040"
+        "toegestane_maximum_massa_voertuig": "3040",
+        "datum_tenaamstelling": "20170720",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7475,7 +8050,8 @@
           "toerental_geluidsniveau": "2625",
           "uitlaatemissieniveau": "EURO 6 Y"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-58195cab1782629aa172",
@@ -7493,7 +8069,9 @@
         "variant": "BBHW",
         "uitvoering": "6/1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1960"
+        "toegestane_maximum_massa_voertuig": "1960",
+        "datum_tenaamstelling": "20250206",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7510,7 +8088,8 @@
           "toerental_geluidsniveau": "2625",
           "uitlaatemissieniveau": "EURO 6"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-90645eb619e26b629ca0",
@@ -7528,7 +8107,9 @@
         "variant": "BBHY",
         "uitvoering": "6/1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1960"
+        "toegestane_maximum_massa_voertuig": "1960",
+        "datum_tenaamstelling": "20260129",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7545,7 +8126,8 @@
           "toerental_geluidsniveau": "2813",
           "uitlaatemissieniveau": "EURO 6"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-4de88a9a1e8554892e45",
@@ -7563,7 +8145,9 @@
         "variant": "EBHY",
         "uitvoering": "6/1S",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2135"
+        "toegestane_maximum_massa_voertuig": "2135",
+        "datum_tenaamstelling": "20241214",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7580,7 +8164,8 @@
           "toerental_geluidsniveau": "2813",
           "uitlaatemissieniveau": "EURO 6"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-255fde0c5618d1b9f8b7",
@@ -7598,7 +8183,9 @@
         "variant": "BKFB1ACX",
         "uitvoering": "W3WTASAABA3BAB",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240424",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7614,7 +8201,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.000",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-9b4a003bb34533df3f2d",
@@ -7632,7 +8220,9 @@
         "variant": "BLFB1ACX",
         "uitvoering": "W3WTASAABA3AAB",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240429",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7649,7 +8239,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "8.500",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-bd5af964d72a36403049",
@@ -7667,7 +8258,9 @@
         "variant": "BKFB1ACX",
         "uitvoering": "T3FGASAABA27AB",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240131",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7684,7 +8277,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.800",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-b8022e9ed0502e32d810",
@@ -7702,7 +8296,9 @@
         "variant": "F",
         "uitvoering": "EHS7-B2F21E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3100"
+        "toegestane_maximum_massa_voertuig": "3100",
+        "datum_tenaamstelling": "20240214",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7719,7 +8315,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.600",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-dbbfc0724037683dc47d",
@@ -7737,7 +8334,9 @@
         "variant": "F",
         "uitvoering": "EHTM-C2E11U",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3030"
+        "toegestane_maximum_massa_voertuig": "3030",
+        "datum_tenaamstelling": "20240227",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7754,7 +8353,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "8.000",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-37ae43628d41e4c618e2",
@@ -7772,7 +8372,9 @@
         "variant": "F",
         "uitvoering": "EHTM-B2E11E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3100"
+        "toegestane_maximum_massa_voertuig": "3100",
+        "datum_tenaamstelling": "20240229",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7789,7 +8391,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.900",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-88c27860ebd6dcac1533",
@@ -7807,7 +8410,9 @@
         "variant": "XUGA1ABX",
         "uitvoering": "A2CDAZCASA1E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2005"
+        "toegestane_maximum_massa_voertuig": "2005",
+        "datum_tenaamstelling": "20190831",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7824,7 +8429,8 @@
           "toerental_geluidsniveau": "2812",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-ae5955001a7bc15eb539",
@@ -7842,7 +8448,9 @@
         "variant": "XUGA1ABX",
         "uitvoering": "A2CDAZCASA1E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2005"
+        "toegestane_maximum_massa_voertuig": "2005",
+        "datum_tenaamstelling": "20170509",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7859,7 +8467,8 @@
           "toerental_geluidsniveau": "2812",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-56fc3ba874d5e7b1f17b",
@@ -7877,7 +8486,9 @@
         "variant": "XUGA1AEX",
         "uitvoering": "A3CDAZCASA1H",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2030"
+        "toegestane_maximum_massa_voertuig": "2030",
+        "datum_tenaamstelling": "20220520",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7894,7 +8505,8 @@
           "toerental_geluidsniveau": "2812",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-8c81526ff4bc89882512",
@@ -7912,7 +8524,9 @@
         "variant": "SYBB4BDNAEV3",
         "uitvoering": "NM350NSFA89Q0012B4BKMC3DOOMAN",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240112",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7929,7 +8543,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.500",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-edea6f8927248a0b9534",
@@ -7947,7 +8562,9 @@
         "variant": "SYBB4BDNAEV3",
         "uitvoering": "NM350NSFA89Q0012B4BKMC3DOOMAN",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20250429",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7964,7 +8581,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.500",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-e4ea84ba0448bcdb2ffa",
@@ -7982,7 +8600,9 @@
         "variant": "SYBB8BDMZBV3",
         "uitvoering": "NN350NSFA89Q0012B4BKMC3DOOMAN",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3500"
+        "toegestane_maximum_massa_voertuig": "3500",
+        "datum_tenaamstelling": "20240122",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -7999,7 +8619,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "9.500",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-38596e1e09496f3c0975",
@@ -8017,7 +8638,9 @@
         "variant": "F",
         "uitvoering": "EHTM-B2E11E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2167"
+        "toegestane_maximum_massa_voertuig": "2167",
+        "datum_tenaamstelling": "20260713",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8034,7 +8657,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.900",
           "uitlaatemissieniveau": "EURO 6 AR"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-2b7bd20ba94f36a2d7c4",
@@ -8052,7 +8676,9 @@
         "variant": "F",
         "uitvoering": "EHTM-A2E11E",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3100"
+        "toegestane_maximum_massa_voertuig": "3100",
+        "datum_tenaamstelling": "20240328",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8069,7 +8695,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.800",
           "uitlaatemissieniveau": "EURO 6 AQ"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-022607743ab73eb9958a",
@@ -8087,7 +8714,9 @@
         "variant": "F",
         "uitvoering": "EHTM-B2E11D",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "3100"
+        "toegestane_maximum_massa_voertuig": "3100",
+        "datum_tenaamstelling": "20240404",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8104,7 +8733,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "7.700",
           "uitlaatemissieniveau": "EURO 6 AQ"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-3423b5ea8945f19051ad",
@@ -8122,7 +8752,9 @@
         "variant": "F",
         "uitvoering": "YHT2-J2F022",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2380"
+        "toegestane_maximum_massa_voertuig": "2380",
+        "datum_tenaamstelling": "20240129",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8139,7 +8771,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.700",
           "uitlaatemissieniveau": "EURO 6 AQ"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-02e4d0dd132e80cdfe6b",
@@ -8157,7 +8790,9 @@
         "variant": "F",
         "uitvoering": "YHT2-J2F022",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2380"
+        "toegestane_maximum_massa_voertuig": "2380",
+        "datum_tenaamstelling": "20240129",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8174,7 +8809,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.700",
           "uitlaatemissieniveau": "EURO 6 AQ"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-93cad9a8688f6c6c3578",
@@ -8192,7 +8828,9 @@
         "variant": "F",
         "uitvoering": "YHT2-G2F021",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2020"
+        "toegestane_maximum_massa_voertuig": "2020",
+        "datum_tenaamstelling": "20260709",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8209,7 +8847,8 @@
           "brandstof_verbruik_gecombineerd_wltp": "5.500",
           "uitlaatemissieniveau": "EURO 6 AQ"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-03d71882ea7024a62637",
@@ -8227,7 +8866,9 @@
         "variant": "FX50",
         "uitvoering": "FX50J1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1950"
+        "toegestane_maximum_massa_voertuig": "1950",
+        "datum_tenaamstelling": "20170623",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8244,7 +8885,8 @@
           "toerental_geluidsniveau": "3000",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-1a645c167fa0e57d57ae",
@@ -8262,7 +8904,9 @@
         "variant": "FX50",
         "uitvoering": "FX50J1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1817"
+        "toegestane_maximum_massa_voertuig": "1817",
+        "datum_tenaamstelling": "20230113",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8279,7 +8923,8 @@
           "toerental_geluidsniveau": "3000",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f5493689c31dd644801a",
@@ -8297,7 +8942,9 @@
         "variant": "FX52",
         "uitvoering": "FX52H2",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2200"
+        "toegestane_maximum_massa_voertuig": "2200",
+        "datum_tenaamstelling": "20251201",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8314,7 +8961,8 @@
           "toerental_geluidsniveau": "3000",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-f3ff86745f3853277f90",
@@ -8332,7 +8980,9 @@
         "variant": "FW51",
         "uitvoering": "FW51J1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1950"
+        "toegestane_maximum_massa_voertuig": "1950",
+        "datum_tenaamstelling": "20170110",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8349,7 +8999,8 @@
           "toerental_geluidsniveau": "3000",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-c30e31c4a681e9125ce7",
@@ -8367,7 +9018,9 @@
         "variant": "FW51",
         "uitvoering": "FW51H1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1832"
+        "toegestane_maximum_massa_voertuig": "1832",
+        "datum_tenaamstelling": "20250111",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8384,7 +9037,8 @@
           "toerental_geluidsniveau": "3000",
           "uitlaatemissieniveau": "EURO 6 X"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-174fc238b2924fe58fb6",
@@ -8402,7 +9056,9 @@
         "variant": "FW51",
         "uitvoering": "FW51J1",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1950"
+        "toegestane_maximum_massa_voertuig": "1950",
+        "datum_tenaamstelling": "20180608",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8421,7 +9077,8 @@
           "actieradius_extern_oplaadbaar": "0",
           "actieradius": "0"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-c39b9b27df758057c5bf",
@@ -8439,7 +9096,9 @@
         "variant": "ABHW",
         "uitvoering": "6/3",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1940"
+        "toegestane_maximum_massa_voertuig": "1940",
+        "datum_tenaamstelling": "20230525",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8456,7 +9115,8 @@
           "toerental_geluidsniveau": "2625",
           "uitlaatemissieniveau": "EURO 6"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-9620a38223e7b3209ae0",
@@ -8474,7 +9134,9 @@
         "variant": "ABHW",
         "uitvoering": "6/3",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "1940"
+        "toegestane_maximum_massa_voertuig": "1940",
+        "datum_tenaamstelling": "20250626",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8491,7 +9153,8 @@
           "toerental_geluidsniveau": "2625",
           "uitlaatemissieniveau": "EURO 6"
         }
-      ]
+      ],
+      "registrationVerified": true
     },
     {
       "sampleId": "rdw-cf6b0aa8a6a1529e35d5",
@@ -8509,7 +9172,9 @@
         "variant": "FBHY",
         "uitvoering": "6/1S",
         "export_indicator": "Nee",
-        "toegestane_maximum_massa_voertuig": "2150"
+        "toegestane_maximum_massa_voertuig": "2150",
+        "datum_tenaamstelling": "20230718",
+        "tenaamstellen_mogelijk": "Ja"
       },
       "fuels": [
         {
@@ -8526,7 +9191,57 @@
           "toerental_geluidsniveau": "2813",
           "uitlaatemissieniveau": "EURO 6"
         }
-      ]
+      ],
+      "registrationVerified": true
     }
-  ]
+  ],
+  "registrationVerification": {
+    "method": "Bounded exact registration join: present in current RDW register, export_indicator=Nee, nonempty datum_tenaamstelling and tenaamstellen_mogelijk=Ja. This verifies the published registration state, not insurance, road use or mechanical condition.",
+    "queries": [
+      {
+        "dataset": "m9d7-ebf2",
+        "selectedPlates": 40,
+        "rows": 40,
+        "retrievedAt": "2026-09-16T14:12:54.086Z",
+        "contentSha256": "621632758c0bbf89b9ddc52b4164eb4ab8f52e5bc2ea6f02be706ab2f3a0eedb"
+      },
+      {
+        "dataset": "m9d7-ebf2",
+        "selectedPlates": 40,
+        "rows": 40,
+        "retrievedAt": "2026-09-16T14:12:55.929Z",
+        "contentSha256": "cb090e9ef44d80d679077990bd7c297586b921c6f789432543549132524e61b2"
+      },
+      {
+        "dataset": "m9d7-ebf2",
+        "selectedPlates": 40,
+        "rows": 40,
+        "retrievedAt": "2026-09-16T14:12:57.928Z",
+        "contentSha256": "7487f866203959c6724c1ae91b1e809780307d71674ccd2142c4c1d1b933fab6"
+      },
+      {
+        "dataset": "m9d7-ebf2",
+        "selectedPlates": 40,
+        "rows": 40,
+        "retrievedAt": "2026-09-16T14:12:59.955Z",
+        "contentSha256": "b83164f644844e7a129172c2d78b7f97ce6fc28ce659c544239355738234e6e8"
+      },
+      {
+        "dataset": "m9d7-ebf2",
+        "selectedPlates": 40,
+        "rows": 40,
+        "retrievedAt": "2026-09-16T14:13:01.953Z",
+        "contentSha256": "fcaf6f66f429dbc2a4b6507ab8236033c41af8c89234428b5620ff704c3fb5f0"
+      },
+      {
+        "dataset": "m9d7-ebf2",
+        "selectedPlates": 22,
+        "rows": 22,
+        "retrievedAt": "2026-09-16T14:13:03.987Z",
+        "contentSha256": "d0a137fa4a2d0175974b14da03a3930e303138da8c249fce8d75d866e826eb91"
+      }
+    ],
+    "verified": 222,
+    "unverified": 0
+  }
 }

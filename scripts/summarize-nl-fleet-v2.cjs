@@ -10,8 +10,9 @@ const sourceById=new Map(sources.map(s=>[s.id,s]));
 const isNew=s=>s.id.includes('-v2-');
 const countBy=(items,key)=>Object.fromEntries([...new Set(items.map(key))].sort().map(value=>[value,items.filter(item=>key(item)===value).length]));
 const multi=p=>p.stage1SourceCount>=2;
-const technicalKey=p=>JSON.stringify([p.brand,p.modelFamily,p.generation,p.fuel,p.displacementCc,p.stockPowerHp,p.stockTorqueNm??null,p.engineFamily??null]);
-const broadKey=p=>JSON.stringify([p.brand,p.modelFamily,p.fuel,p.displacementCc,p.stockPowerHp,p.stockTorqueNm??null,p.engineFamily??null]);
+const normalize=value=>value.normalize('NFD').toLowerCase().replace(/[^a-z0-9]/g,'');
+const technicalKey=p=>JSON.stringify([normalize(p.brand),normalize(p.modelFamily),normalize(p.generation),p.fuel,p.displacementCc,p.stockPowerHp,p.stockTorqueNm??null,p.engineFamily??null]);
+const broadKey=p=>JSON.stringify([normalize(p.brand),normalize(p.modelFamily),p.fuel,p.displacementCc,p.stockPowerHp,p.stockTorqueNm??null,p.engineFamily??null]);
 const van=p=>/transit|courier|caddy|crafter|transporter|vito|sprinter|citan|trafic|master|kangoo|vivaro|movano|combo|expert|boxer|partner|jumpy|jumper|berlingo|proace|ducato|talento|scudo|daily/i.test(p.modelFamily);
 const acceptedIds=new Set(profiles.flatMap(p=>p.sourceIds));
 const providerCounts=[...new Set(sources.map(s=>s.provider))].sort().map(provider=>{

@@ -57,7 +57,8 @@ async function main() {
       'Two sequential live queries are not a transactional snapshot; retrieval times and hashes are retained.'],
     queries: {counts: provenance(counts.response, countQuery), groups: provenance(groups.response, groupQuery)}, groups: rows};
   const output = path.resolve('data/research/nl-fleet-model-priority.json');
-  fs.writeFileSync(output, JSON.stringify(result, null, 2) + '\n');
+  const {groups:groupRows,...metadata}=result;
+  fs.writeFileSync(output, JSON.stringify(metadata,null,2).slice(0,-2)+',\n  "groups": [\n'+groupRows.map(row=>'    '+JSON.stringify(row)).join(',\n')+'\n  ]\n}\n');
   console.log(JSON.stringify({output, population: result.population.vehicles, groups: rows.length, countedVehicles: result.selection.vehiclesInSelectedGroups,
     aggregateResponseBytes: result.queries.counts.responseBytes + result.queries.groups.responseBytes}));
 }

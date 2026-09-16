@@ -798,5 +798,17 @@
       "https://www.shiftech.eu/en/chiptuning/car/volkswagen/up/2012/petrol/1.0i-75"
     ],
     "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-a345b056f5ec38aa",
+    "targetSourceId": "shiftech-v2-899062c92cdfce12",
+    "generation": "2014 - III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-nissan-x-trail-2014-1-6-dci-130-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/nissan/x-trail/2014-iii/diesel/1.6-dci-130",
+      "https://sklep.vtech.pl/konfigurator-powerchip/",
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "reason": "Identical independently reviewed generation and period, same make/model/fuel/nominal cc/exact stock PS and stock Nm. Model-label capitalization is not a technical difference. The separately published facelift has a different period and is not merged. Preserve both providers and select the conservative consensus."
   }
 ]

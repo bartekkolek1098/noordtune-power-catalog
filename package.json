@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit --incremental false",
     "catalog:audit": "node --no-warnings scripts/audit-catalog-data.ts",
     "test:tuning": "node --no-warnings scripts/test-catalog-matching.ts && node --no-warnings scripts/test-tuning-estimates.ts && node --no-warnings scripts/test-quote-policy.ts && node --no-warnings scripts/test-rdw-identity.ts && node --no-warnings scripts/test-quote-surfaces.ts && node --no-warnings scripts/test-rdw-tuning-estimate.ts && node --no-warnings scripts/test-tuning-consensus.ts && node --no-warnings scripts/test-tuning-profile-scope.ts && node --no-warnings scripts/test-sourced-generation.ts && node --no-warnings scripts/test-sourced-pricing-bridge.ts && node --no-warnings scripts/test-tuning-profile-dataset.ts && node --no-warnings scripts/check-rdw-runtime-boundary.ts",
     "test:rdw-coverage": "node --no-warnings scripts/test-tuning-profile-dataset.ts",
@@ -18,7 +18,10 @@
     "research:nl-priority": "node --no-warnings scripts/build-nl-technical-priority.ts",
     "research:vtech": "node scripts/research-vtech.cjs",
     "research:shiftech": "node scripts/research-shiftech.cjs",
-    "research:unlimited": "node scripts/research-unlimited.cjs"
+    "research:unlimited": "node scripts/research-unlimited.cjs",
+    "test:nl-fleet-v2": "node scripts/test-research-providers.cjs && node --no-warnings scripts/test-nl-fleet-v2.ts",
+    "qa:nl-fleet-v2": "node --no-warnings scripts/qa-nl-fleet-v2.ts",
+    "benchmark:tuning": "node --expose-gc --no-warnings scripts/benchmark-tuning-resolver.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",

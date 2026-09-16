@@ -26,7 +26,7 @@ async function main() {
     if (vanModels.size >= 20) break;
   }
   const raw = [], queries = [];
-  const vehicleFields = 'kenteken,merk,handelsbenaming,voertuigsoort,aantal_cilinders,cilinderinhoud,datum_eerste_toelating,datum_eerste_toelating_dt,type,variant,uitvoering,export_indicator,toegestane_maximum_massa_voertuig';
+  const vehicleFields = 'kenteken,merk,handelsbenaming,voertuigsoort,aantal_cilinders,cilinderinhoud,datum_eerste_toelating,datum_eerste_toelating_dt,type,variant,uitvoering,export_indicator,toegestane_maximum_massa_voertuig,datum_tenaamstelling,tenaamstellen_mogelijk';
   for (const group of groups.values()) {
     const where = `${POPULATION} AND merk = ${quote(group.make)} AND handelsbenaming = ${quote(group.model)} AND cilinderinhoud = ${group.displacementCc} AND aantal_cilinders = ${group.cylinders} AND voertuigsoort = ${quote(group.vehicleClass)} AND date_extract_y(datum_eerste_toelating_dt) BETWEEN ${group.yearBandFrom} AND ${group.yearBandTo}`;
     const query = {select: vehicleFields, where, order:'kenteken', limit:3};
@@ -54,4 +54,30 @@ async function main() {
   fs.writeFileSync('data/research/nl-rdw-live-sample.json',JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify({sample:rows.length,groups:groups.size,brands:[...new Set(rows.map(row=>row.vehicle.merk))].length,fuelRows:fuels.length}));
 }
-if(require.main===module)main().catch(error=>{console.error(error.message);process.exitCode=1;});
+async function verifyRegistration() {
+  const privatePath='.git/nl-fleet-v2/rdw-live-private.json';
+  const publicPath='data/research/nl-rdw-live-sample.json';
+  const privateRows=JSON.parse(fs.readFileSync(privatePath,'utf8'));
+  const report=JSON.parse(fs.readFileSync(publicPath,'utf8'));
+  const statusRows=[],queries=[];
+  for(let offset=0;offset<privateRows.length;offset+=40){
+    const plates=privateRows.slice(offset,offset+40).map(row=>row.vehicle.kenteken);
+    const result=await getJson(queryUrl(VEHICLE_DATASET,{select:'kenteken,datum_tenaamstelling,tenaamstellen_mogelijk,export_indicator',where:`kenteken in (${plates.map(quote).join(',')})`,limit:40}));
+    statusRows.push(...result.rows);
+    queries.push({dataset:VEHICLE_DATASET,selectedPlates:plates.length,rows:result.rows.length,retrievedAt:result.response.retrievedAt,contentSha256:result.response.contentSha256});
+  }
+  const statuses=new Map(statusRows.map(row=>[row.kenteken,row]));
+  for(const row of privateRows){
+    const status=statuses.get(row.vehicle.kenteken);
+    if(status)Object.assign(row.vehicle,status);
+    const sampleId='rdw-'+crypto.createHash('sha256').update(row.vehicle.kenteken).digest('hex').slice(0,20);
+    const published=report.rows.find(item=>item.sampleId===sampleId);
+    if(published&&status)Object.assign(published.vehicle,Object.fromEntries(Object.entries(status).filter(([key])=>key!=='kenteken')));
+    if(published)published.registrationVerified=Boolean(status?.export_indicator==='Nee'&&status?.datum_tenaamstelling&&status?.tenaamstellen_mogelijk==='Ja');
+  }
+  report.registrationVerification={method:'Bounded exact registration join: present in current RDW register, export_indicator=Nee, nonempty datum_tenaamstelling and tenaamstellen_mogelijk=Ja. This verifies the published registration state, not insurance, road use or mechanical condition.',queries,verified:report.rows.filter(row=>row.registrationVerified).length,unverified:report.rows.filter(row=>!row.registrationVerified).length};
+  fs.writeFileSync(privatePath,JSON.stringify(privateRows));
+  fs.writeFileSync(publicPath,JSON.stringify(report,null,2)+'\n');
+  console.log(JSON.stringify(report.registrationVerification));
+}
+if(require.main===module)(process.argv.includes('--verify-registration')?verifyRegistration():main()).catch(error=>{console.error(error.message);process.exitCode=1;});
