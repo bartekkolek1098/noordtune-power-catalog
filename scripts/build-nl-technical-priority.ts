@@ -9,11 +9,14 @@ import type {EstimateMatchInput} from "../src/data/tuning-estimates.ts";
 type Layer = "A"|"B"|"C"|"D"|"E";
 type Group = {id:string; make:string; model:string; displacementCc:number|null; cylinders:number|null; vehicleClass:string; yearBandFrom:number|null; yearBandTo:number|null; vehicles:number; frequencyRank:number};
 type Variant = {origin:"source-profile"|"canonical-hypothesis"|"live-rdw"; fuel:string; stockPowerHp:number; yearFrom:number; yearTo:number; profileId?:string; engine?:string; registeredPowerKw?:number; type?:string; variant?:string; execution?:string};
-const file="data/research/nl-technical-priority.json";
+const argument=(name:string)=>{const at=process.argv.indexOf(name);return at<0?undefined:process.argv[at+1];};
+const baselineFile=argument("--baseline")??"data/research/nl-technical-priority.json";
+const file=argument("--output")??baselineFile;
 const fleet=JSON.parse(readFileSync("data/research/nl-fleet-model-priority.json","utf8")) as {groups:Group[];queries:unknown;population:{vehicles:number}};
-const previous=existsSync(file)&&!process.argv.includes("--rerank")?JSON.parse(readFileSync(file,"utf8")):undefined;
+const previous=existsSync(baselineFile)&&!process.argv.includes("--rerank")?JSON.parse(readFileSync(baselineFile,"utf8")):undefined;
 const oldRows=new Map<string,{priorityRank:number;score:number;scoreFactors:unknown;baselineLayer:Layer}>(previous?.groups.map((row:{groupId:string})=>[row.groupId,row])??[]);
-const live: {groupId:string;vehicle:Record<string,string>;fuels:Record<string,string>[]}[]=existsSync("data/research/nl-rdw-live-sample.json")?JSON.parse(readFileSync("data/research/nl-rdw-live-sample.json","utf8")).rows:[];
+const samples=["data/research/nl-rdw-live-sample.json",argument("--sample")].filter((p):p is string=>Boolean(p&&existsSync(p)));
+const live: {groupId:string;vehicle:Record<string,string>;fuels:Record<string,string>[]}[]=[...new Map(samples.flatMap(path=>JSON.parse(readFileSync(path,"utf8")).rows).map(row=>[row.sampleId,row])).values()];
 const family=(make:string,model:string)=>sourceModelFamily(sourceMake(make),model);
 const overlap=(a:number,b:number,c:number,d:number)=>Math.max(a,c)<=Math.min(b,d);
 const modelFits=(make:string,left:string,right:string)=>{
@@ -61,7 +64,8 @@ const rows=fleet.groups.map(group=>{
   if(!candidates.length)candidates.push(...hints.map(row=>row.variant));
   // Generated year copies never affect the number of stock-output hypotheses or score.
   const distinct=new Map<string,Variant>();
-  for(const candidate of candidates){const key=JSON.stringify([candidate.fuel,candidate.stockPowerHp,candidate.yearFrom,candidate.yearTo]);
+  for(const candidate of candidates){const key=JSON.stringify([candidate.fuel,candidate.stockPowerHp,candidate.yearFrom,candidate.yearTo,
+      ...(candidate.origin==="live-rdw"?[candidate.registeredPowerKw,candidate.type,candidate.variant,candidate.execution]:[])]);
     if(!distinct.has(key)||candidate.origin==="live-rdw")distinct.set(key,candidate);}
   const variants=[...distinct.values()].map(variant=>{
     const year=Math.floor((Math.max(variant.yearFrom,from??variant.yearFrom)+Math.min(variant.yearTo,to??variant.yearTo))/2);
