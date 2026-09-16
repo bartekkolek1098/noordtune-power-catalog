@@ -14,6 +14,7 @@ import {connectStage1Comparison} from "../data/tuning-reference-research.ts";
 import {sourcedTuningProfiles, tuningProfileSources} from "../data/tuning-profiles/index.ts";
 import type {SourcedTuningProfile} from "../data/tuning-profiles/schema.ts";
 import {matchSourcedProfile, sourceRegistrationYear} from "./sourced-tuning-match.ts";
+import {hasUnsupportedSourcedPowertrain} from "./sourced-powertrain.ts";
 
 export type RuntimeEstimateSources = {
   references?: readonly TuningEstimateProfile[];
@@ -38,6 +39,7 @@ export function customHardwareStage(): EstimateStage {
 /** V1 precedence: approved profile, independent consensus, single source,
  * compatible retained catalog, then emergency generic indication. */
 export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources = {}): EstimateResolution {
+  if(hasUnsupportedSourcedPowertrain(input))return {status:"unavailable",coverageClass:"E",reasonCodes:["UNSUPPORTED_POWERTRAIN_ESTIMATE","MANUFACTURER_ELECTRIFIED_APPLICATION"]};
   const match = matchSourcedProfile(input, sources.sourcedProfiles ?? sourcedTuningProfiles);
   const source = match.profile;
   if (!source) {
@@ -263,11 +265,18 @@ function canonicalProfile(vehicle: EngineVariant): TuningEstimateProfile {
 }
 
 /** Cheap identity shortlist before profiles are constructed. The full dataset never leaves this module. */
+const canonicalIndexes=new WeakMap<readonly EngineVariant[],{length:number;byMakeFuel:Map<string,EngineVariant[]>}>();
 function shortlist(input: EstimateMatchInput, catalog: readonly EngineVariant[]) {
   const make = makeKey(input.make);
   const fuel = normalizeCatalogFuel(input.fuel);
   const power = registeredPowerToMetricHp(input)!;
-  return catalog.filter((vehicle) => {
+  let index=canonicalIndexes.get(catalog);
+  if(!index||index.length!==catalog.length){
+    index={length:catalog.length,byMakeFuel:new Map()};
+    for(const vehicle of catalog){const key=makeKey(vehicle.brand)+"|"+vehicle.fuel,list=index.byMakeFuel.get(key)??[];list.push(vehicle);index.byMakeFuel.set(key,list);}
+    canonicalIndexes.set(catalog,index);
+  }
+  return (index.byMakeFuel.get(make+"|"+fuel)??[]).filter((vehicle) => {
     if (makeKey(vehicle.brand) !== make || vehicle.fuel !== fuel || Math.abs(vehicle.stockPowerHp - power) > 3) return false;
     const nominal = nominalEngineDisplacements(vehicle.engine);
     return nominal.length === 1 && (!input.displacementCc || nominalDisplacementMatches(input.displacementCc, nominal[0]));
