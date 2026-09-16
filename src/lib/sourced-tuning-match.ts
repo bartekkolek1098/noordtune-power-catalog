@@ -9,8 +9,12 @@ export function sourceMake(text?: string) {
   const value = normalizeSourceIdentity(text);
   return ({vw: "volkswagen", mercedes: "mercedes benz", alfa: "alfa romeo"} as Record<string, string>)[value] ?? value;
 }
-function modelFamily(make: string, text: string) {
-  const value = normalizeSourceIdentity(text);
+export function sourceModelFamily(make: string, text: string) {
+  let value = normalizeSourceIdentity(text);
+  // RDW sometimes repeats the registered make in handelsbenaming (TOYOTA AYGO,
+  // PEUGEOT 308). Only an exact, separate make prefix is removed.
+  const prefixes = [...new Set([make, make === "mercedes benz" ? "mercedes" : make])];
+  for (const prefix of prefixes) if (value.startsWith(`${prefix} `)) { value = value.slice(prefix.length + 1); break; }
   if (make === "bmw") {
     const suv = value.match(/\b(x[1-7]|z[1-4])\b/)?.[1];
     const series = value.match(/\b([1-8])\s*(?:series|serie|er)\b/)?.[1] ?? value.match(/\b(?:m)?([1-8])\d{2}(?:ti|[ide])\b/)?.[1];
@@ -19,6 +23,7 @@ function modelFamily(make: string, text: string) {
   if (make === "mercedes benz") return value.replace(/^([abces])\s*(?:class|klasse)\b/, "$1").replace(/^([abces])\s*\d{2,3}\b.*$/, "$1");
   return value;
 }
+const modelFamily = sourceModelFamily;
 function badge(text: string, make: string) {
   const value = normalizeSourceIdentity(text);
   return make === "bmw" ? value.match(/\b(m?\d{3}(?:ti|[ide]))\b/)?.[1]
