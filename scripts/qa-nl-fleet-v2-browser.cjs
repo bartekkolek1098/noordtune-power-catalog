@@ -10,7 +10,7 @@ const base = process.env.RDW_QA_URL || 'http://localhost:3118';
 const output = path.resolve(process.env.RDW_QA_OUTPUT || 'docs/tuning-data/browser-v2');
 const privateFile = process.env.RDW_QA_PRIVATE_SAMPLE || '.git/nl-fleet-v2/rdw-live-private.json';
 const privateRows = JSON.parse(fs.readFileSync(privateFile,'utf8'));
-const validation = JSON.parse(fs.readFileSync('data/research/v2-rdw-validation.json','utf8'));
+const validation = JSON.parse(fs.readFileSync(process.env.RDW_QA_VALIDATION || 'data/research/v2-rdw-validation.json','utf8'));
 const selected = new Map();
 const add = row => {if(row)selected.set(row.sampleId,row);};
 // A purposive browser subset covers all resolution layers and diverse actual

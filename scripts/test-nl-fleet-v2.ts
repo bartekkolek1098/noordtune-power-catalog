@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import {readFileSync,writeFileSync} from "node:fs";
+import {existsSync,readFileSync,writeFileSync} from "node:fs";
 import {sourcedTuningProfiles,tuningDatasetFingerprint} from "../src/data/tuning-profiles/index.ts";
 import type {SourceObservation,SourcedTuningProfile} from "../src/data/tuning-profiles/schema.ts";
 import type {EstimateMatchInput} from "../src/data/tuning-estimates.ts";
@@ -10,7 +10,7 @@ import {assessVehicleAccess,resolveStageQuote} from "../src/data/pricing.ts";
 
 const read=(file:string)=>JSON.parse(readFileSync("data/research/"+file,"utf8"));
 const baseline=read("v1-consensus-checkpoint.json");
-const changes=read("v2-source-changes.json");
+const changes=read(existsSync("data/research/v3-v1-source-changes.json")?"v3-v1-source-changes.json":"v2-source-changes.json");
 const sources=read("source-pages.json") as SourceObservation[];
 const sourceById=new Map(sources.map(source=>[source.id,source]));
 const newProfiles=sourcedTuningProfiles.filter(p=>!baseline.profiles.some((b:{id:string})=>b.id===p.id));
@@ -32,7 +32,7 @@ for(const before of baseline.profiles){
 }
 for(const p of sourcedTuningProfiles){
   assert.ok(!["hybrid","mild-hybrid"].includes(p.electrification??""));
-  if(!baseline.profiles.some((b:{id:string})=>b.id===p.id))assert.ok(!(p.brand==="Ford"&&/\bTDCi\b/i.test(p.engineMarketingName)&&/\bEcoBlue\b/i.test(p.engineMarketingName)),"Unreviewed conflicting Ford engine-family labels require review");
+  if(!baseline.profiles.some((b:{id:string})=>b.id===p.id)&&p.brand==="Ford"&&/\bTDCi\b/i.test(p.engineMarketingName)&&/\bEcoBlue\b/i.test(p.engineMarketingName))assert.ok(p.sourceIds.some(id=>sources.find(s=>s.id===id)?.engineFamilyEvidence),"Conflicting Ford labels require explicit manufacturer mapping; Connect remains separate");
   for(const id of p.sourceIds){const source=sourceById.get(id);assert.ok(source?.identity&&source.status==="retrieved"&&source.retrievalMethod!=="search-index");assert.match(source.contentSha256??"",/^[a-f0-9]{64}$/);assert.ok(!source.packages?.length,"External module is not a remap vote");
     if(source.identityEvidence)for(const evidence of source.identityEvidence){assert.equal(evidence.value,source.identity.fuel);assert.match(evidence.sourceUrl,/^https:\/\//);assert.ok(evidence.applicationUrls.length);assert.equal(evidence.contentSha256.length,64);}
   }
@@ -79,5 +79,6 @@ assert.ok(resolveRdwTuningEstimate(plainSuzuki).profile,"Conventional BoosterJet
 const proace=sourcedTuningProfiles.find(p=>p.brand==="Toyota"&&p.modelFamily.toLowerCase()==="proace")!;
 assert.ok(proace);assert.ok(!matchSourcedProfile({...fixture(proace),model:"Proace City"},[proace]).profile,"Proace City never borrows Proace when sibling is absent");
 const report={datasetFingerprint:tuningDatasetFingerprint,sourceBackedFixtures:distinct.size,newProfiles:newProfiles.length,distinctNewTechnicalProfiles,changedV1,indexComparisons,catalogIndexComparisons:catalogInputs.length,hybridControls:controls.length,failures:0,fixtures:acceptance};
-writeFileSync("data/research/v2-kia-hyundai-acceptance.json",JSON.stringify(report,null,2)+"\n");
+const outputIndex=process.argv.indexOf("--output");
+writeFileSync(outputIndex>=0?process.argv[outputIndex+1]:existsSync("data/research/v2-consensus-checkpoint.json")?"data/research/v3-kia-hyundai-acceptance.json":"data/research/v2-kia-hyundai-acceptance.json",JSON.stringify(report,null,2)+"\n");
 console.log(JSON.stringify({...report,fixtures:undefined}));

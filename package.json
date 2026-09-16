@@ -17,9 +17,13 @@
     "research:rdw-sample": "node scripts/research-rdw-sample.cjs",
     "research:nl-priority": "node --no-warnings scripts/build-nl-technical-priority.ts",
     "research:vtech": "node scripts/research-vtech.cjs",
+    "research:atm": "node scripts/research-atm.cjs",
+    "research:rdw-outputs": "node scripts/research-rdw-output-sample.cjs",
     "research:shiftech": "node scripts/research-shiftech.cjs",
     "research:unlimited": "node scripts/research-unlimited.cjs",
     "test:nl-fleet-v2": "node scripts/test-research-providers.cjs && node --no-warnings scripts/test-nl-fleet-v2.ts",
+    "test:nl-fleet-v3": "node scripts/test-atm-provider.cjs && node --no-warnings scripts/test-tuning-source-evidence.ts && node --no-warnings scripts/test-nl-fleet-v3.ts",
+    "research:nl-closure": "node --no-warnings scripts/build-nl-coverage-v3.cjs",
     "qa:nl-fleet-v2": "node --no-warnings scripts/qa-nl-fleet-v2.ts",
     "benchmark:tuning": "node --expose-gc --no-warnings scripts/benchmark-tuning-resolver.ts"
   },

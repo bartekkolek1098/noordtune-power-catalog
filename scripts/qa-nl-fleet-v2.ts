@@ -7,7 +7,7 @@ import type {RdwVehicleRow, RdwFuelRow} from "../src/lib/rdw.ts";
 const argument=(name:string,fallback:string)=>{const index=process.argv.indexOf(name);return index<0?fallback:process.argv[index+1];};
 const runtimeRoot=resolve(argument("--runtime-root","."));
 const output=argument("--output","data/research/v2-rdw-validation.json");
-const sample=JSON.parse(readFileSync("data/research/nl-rdw-live-sample.json","utf8")) as {rows:{sampleId:string;groupId:string;registrationVerified:boolean;retrievedAt:string;vehicle:RdwVehicleRow;fuels:RdwFuelRow[]}[];registrationVerification:unknown};
+const sample=JSON.parse(readFileSync(argument("--sample","data/research/nl-rdw-live-sample.json"),"utf8")) as {rows:{sampleId:string;groupId:string;registrationVerified:boolean;retrievedAt:string;vehicle:RdwVehicleRow;fuels:RdwFuelRow[]}[];registrationVerification:unknown};
 const memoryBefore=process.memoryUsage();
 const {normalizeRdwVehicle}=await import(pathToFileURL(resolve(runtimeRoot,"src/lib/rdw.ts")).href) as typeof import("../src/lib/rdw.ts");
 const {tuningDatasetFingerprint}=await import(pathToFileURL(resolve(runtimeRoot,"src/data/tuning-profiles/index.ts")).href) as typeof import("../src/data/tuning-profiles/index.ts");
