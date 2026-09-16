@@ -13366,6 +13366,3210 @@
     "consensusGroup": "verified-shiftech-8798-unlimited"
   },
   {
+    "id": "vtech-v2-07b32647e23f8da4",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/iv/1.9-tdi-ajm-85kw-116km-85/",
+    "retrievedAt": "2026-09-16T13:22:24.037Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "2d47f098b8e36949d96ed954915beb2b5ab2ed284956dccb9a6b0d6f71e194a7",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2003,
+      "engineMarketingName": "1.9 TDI AJM 85kW 116KM",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 20,
+        "torqueGainNm": 40,
+        "tunedPowerHp": 136
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 1997, 1998, 1999, 2000, 2001, 2002, 2003"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-1f997c42da6359b3",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/iv/1.9-tdi-74kw-101km-74/",
+    "retrievedAt": "2026-09-16T13:22:26.198Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "f51e6f11e58451cf1621fdf3626f0c1514f13e5688c65dac83d535c3efddbce8",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2003,
+      "engineMarketingName": "1.9 TDI 74kW 101KM",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 101,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 32,
+        "torqueGainNm": 70,
+        "tunedPowerHp": 133
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 1997, 1998, 1999, 2000, 2001, 2002, 2003"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-c1df30a2b99f6f6e",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii/gti-2.0-tsi-169kw-230km-169/",
+    "retrievedAt": "2026-09-16T13:22:28.767Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "94287e6e2e4bdb2af38f85055aa5a1140cef967b8431eec763c79c9cc1fd2fa0",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "GTI  2.0 TSI 169kW 230KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 230,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 20,
+        "torqueGainNm": 33,
+        "tunedPowerHp": 250
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 26,
+        "torqueGainNm": 42,
+        "tunedPowerHp": 256
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 34,
+        "torqueGainNm": 55,
+        "tunedPowerHp": 264
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 45,
+        "torqueGainNm": 83,
+        "tunedPowerHp": 275
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-34b29731c6f16c54",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vi/2.0-tdi-cr-81kw-110km-81/",
+    "retrievedAt": "2026-09-16T13:22:31.211Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "88cce29a6e41ba46ef51b57c3cb328dfc3fbe5d488caa4e9f4093e39c526ca8b",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "yearTo": 2012,
+      "engineMarketingName": "2.0 TDI CR 81kW 110KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 33,
+        "tunedPowerHp": 122
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 16,
+        "torqueGainNm": 42,
+        "tunedPowerHp": 126
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 20,
+        "torqueGainNm": 55,
+        "tunedPowerHp": 130
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 50,
+        "torqueGainNm": 102,
+        "tunedPowerHp": 160
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2008, 2009, 2010, 2011, 2012"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-77d4c245453ecad4",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii/1.6-tdi-81kw-110km-81/",
+    "retrievedAt": "2026-09-16T13:22:33.702Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "f405ad09a71e68789ddfccd21e446fe1f15378605dac3413c8a5345fb999d6e8",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "1.6 TDI 81kW 110KM",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 11,
+        "tunedPowerHp": 118
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 13,
+        "tunedPowerHp": 120
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 17,
+        "tunedPowerHp": 122
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 40,
+        "torqueGainNm": 63,
+        "tunedPowerHp": 150
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-f0142edebdd595ea",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii/1.4-tsi-110kw-150km-110/",
+    "retrievedAt": "2026-09-16T13:22:36.162Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "823af1f8969f28ccf21eecc2b95093889b659a0073b0ce8b9deb5576792c39e2",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "1.4 TSI 110kW 150KM",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 9,
+        "torqueGainNm": 18,
+        "tunedPowerHp": 159
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 23,
+        "tunedPowerHp": 162
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 30,
+        "tunedPowerHp": 165
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 19,
+        "torqueGainNm": 41,
+        "tunedPowerHp": 169
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-59225233c7c9a303",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vi/1.4-tsi-90kw-122km-90/",
+    "retrievedAt": "2026-09-16T13:22:38.736Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "65d4912e1177d0eab8b946869f6ac2dd1b9fd5a9ee33985cd4a902a542113aba",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "yearTo": 2012,
+      "engineMarketingName": "1.4 TSI 90kW 122KM",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 122,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 8,
+        "tunedPowerHp": 132
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 13,
+        "torqueGainNm": 9,
+        "tunedPowerHp": 135
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 12,
+        "tunedPowerHp": 137
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 13,
+        "torqueGainNm": 40,
+        "tunedPowerHp": 135
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2008, 2009, 2010, 2011, 2012"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-39e284cdc388dd3b",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii-fl/2.0-tsi-180kw-245km-180/",
+    "retrievedAt": "2026-09-16T13:22:41.207Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "08c4d29cc6d35866a9811b76ee52d9312afdf9c959d76776837fcb877b950ec9",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII (FL)",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "engineMarketingName": "2.0 TSI 180kW 245KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 245,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 19,
+        "torqueGainNm": 33,
+        "tunedPowerHp": 264
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 23,
+        "torqueGainNm": 42,
+        "tunedPowerHp": 268
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 30,
+        "torqueGainNm": 55,
+        "tunedPowerHp": 275
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 61,
+        "torqueGainNm": 92,
+        "tunedPowerHp": 306
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2017, 2018, 2019, 2020"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-0a6b143bc69e8786",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii-fl/1.6-tdi-85kw-116km-85/",
+    "retrievedAt": "2026-09-16T13:22:43.701Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "6f71a09aefa16641eaf803c40a5234c25b76b5df98fd9aae69050c1cde9e3ce3",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII (FL)",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "engineMarketingName": "1.6 TDI 85kW 116KM",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 6,
+        "torqueGainNm": 5,
+        "tunedPowerHp": 122
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 6,
+        "tunedPowerHp": 124
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 9,
+        "torqueGainNm": 8,
+        "tunedPowerHp": 125
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 20,
+        "torqueGainNm": 44,
+        "tunedPowerHp": 136
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2017, 2018, 2019, 2020"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-8d2fddffc63dde9d",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii/1.4-tsi-103kw-140km-103/",
+    "retrievedAt": "2026-09-16T13:22:46.548Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "f4628d3202f0f1d5a7f73abd50fc7d8b26da8c778924f77fa85a382e77fe7ef6",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "1.4 TSI 103kW 140KM",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 18,
+        "tunedPowerHp": 150
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 23,
+        "tunedPowerHp": 152
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 30,
+        "tunedPowerHp": 155
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 29,
+        "torqueGainNm": 26,
+        "tunedPowerHp": 169
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-57f98ad635efb388",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/viii/2.0-tdi-147kw-200km-147/",
+    "retrievedAt": "2026-09-16T13:22:48.891Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "9f90c751e66a8e2b01cfd3b8a3646607253c352d5f8e3638aa70ba28107e680d",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VIII",
+      "yearFrom": 2020,
+      "yearTo": 2024,
+      "engineMarketingName": "2.0 TDI 147kW 200KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 200,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 25,
+        "tunedPowerHp": 215
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 19,
+        "torqueGainNm": 31,
+        "tunedPowerHp": 219
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 24,
+        "torqueGainNm": 41,
+        "tunedPowerHp": 224
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2020, 2021, 2022, 2023, 2024"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-5a7e77df64b3324a",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii/r-2.0-tsi-228kw-310km-228/",
+    "retrievedAt": "2026-09-16T13:22:51.290Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "d2e11af9a343581ad5dec453bd5cfd92255f18dedcd27502eb430db72b558d54",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "R 2.0 TSI 228kW 310KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 310,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 30,
+        "tunedPowerHp": 325
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 19,
+        "torqueGainNm": 37,
+        "tunedPowerHp": 329
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 24,
+        "torqueGainNm": 49,
+        "tunedPowerHp": 334
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 30,
+        "torqueGainNm": 80,
+        "tunedPowerHp": 340
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-7f30f41fb14dc655",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii-fl/2.0-tdi-110kw-150km-110/",
+    "retrievedAt": "2026-09-16T13:22:53.685Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "ffe76c5f4b690052d781b78be7daa22c311e3eac6d482e9f19f1832eee5b905b",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII (FL)",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "engineMarketingName": "2.0 TDI 110kW 150KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 30,
+        "tunedPowerHp": 162
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 16,
+        "torqueGainNm": 38,
+        "tunedPowerHp": 166
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 20,
+        "torqueGainNm": 50,
+        "tunedPowerHp": 170
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 34,
+        "torqueGainNm": 62,
+        "tunedPowerHp": 184
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2017, 2018, 2019, 2020"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-ad53f28a68a59867",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/viii/2.0-tdi-85kw-116km-85/",
+    "retrievedAt": "2026-09-16T13:22:56.079Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "0ad5961019a3d149b50405cd65025a6ee835a9a7ac4ada9bbff2d97fe45ca4da",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VIII",
+      "yearFrom": 2020,
+      "yearTo": 2024,
+      "engineMarketingName": "2.0 TDI 85kW 116KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 9,
+        "torqueGainNm": 24,
+        "tunedPowerHp": 125
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 30,
+        "tunedPowerHp": 128
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 14,
+        "torqueGainNm": 40,
+        "tunedPowerHp": 130
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2020, 2021, 2022, 2023, 2024"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-1dbdc15f69d1e96c",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vi/1.6-75kw-102km-75/",
+    "retrievedAt": "2026-09-16T13:22:58.455Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "30c019d01af00a0fa6981ece71fca6329860c00de681bc431a376409ea5864e5",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "yearTo": 2012,
+      "engineMarketingName": "1.6 75kW 102KM",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 102,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 4,
+        "torqueGainNm": 4,
+        "tunedPowerHp": 106
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2008, 2009, 2010, 2011, 2012"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-33963823f731613a",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii/gti-2.0-tsi-162kw-220km-162/",
+    "retrievedAt": "2026-09-16T13:23:01.259Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "a6150b7a36d941ba22b26088d697610a23b4f1870a297aff7e4eca8ea1d7704d",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "GTI 2.0 TSI 162kW 220KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 220,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 40,
+        "torqueGainNm": 30,
+        "tunedPowerHp": 260
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-76b710e3c4506501",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vii/r-2.0-tsi-221kw-300km-221/",
+    "retrievedAt": "2026-09-16T13:23:04.094Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "aa2d1c17dc74d4380d1e3830912bc26dfb5b6f18d2249cedafee5a71bd145b79",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "R 2.0 TSI 221kW 300KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 300,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 21,
+        "torqueGainNm": 30,
+        "tunedPowerHp": 321
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 26,
+        "torqueGainNm": 37,
+        "tunedPowerHp": 326
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 34,
+        "torqueGainNm": 49,
+        "tunedPowerHp": 334
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 30,
+        "torqueGainNm": 73,
+        "tunedPowerHp": 330
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-d013115fd3ae2c79",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/volkswagen/golf/vi/1.6-tdi-66kw-90km-66/",
+    "retrievedAt": "2026-09-16T13:23:06.522Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "0068d22e1bfa996ab9f683b188024c1a611f7989297f83e8c28a4b68a503e418",
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "yearTo": 2012,
+      "engineMarketingName": "1.6 TDI 66kW 90KM",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 7,
+        "torqueGainNm": 20,
+        "tunedPowerHp": 97
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 25,
+        "tunedPowerHp": 98
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 11,
+        "torqueGainNm": 33,
+        "tunedPowerHp": 101
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 45,
+        "torqueGainNm": 47,
+        "tunedPowerHp": 135
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2008, 2009, 2010, 2011, 2012"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-57dc42b3cb6b2391",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/fiesta/vii-fl/1.0t-ecoboost-74kw-101km-74/",
+    "retrievedAt": "2026-09-16T13:23:09.005Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "ab495fbd402b1ed801b9fbd957a0d09167e2f47b081f7de6b9fa52bd86a4b845",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "VII FL",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "1.0T EcoBoost 74kW 101KM",
+      "stockPowerHp": 101,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 47,
+        "torqueGainNm": 67,
+        "tunedPowerHp": 148
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-ff38f6e954935800",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/fiesta/viii/st-1.5-ecoboost-147kw-200km-147/",
+    "retrievedAt": "2026-09-16T13:23:11.361Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "5e2fd79dedee6c11745432606f84449a9d16d13d5c05f50b14faaba08f18009d",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "VIII",
+      "yearFrom": 2017,
+      "yearTo": 2021,
+      "engineMarketingName": "ST 1.5 EcoBoost 147kW 200KM",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 200,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 24,
+        "tunedPowerHp": 215
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 18,
+        "torqueGainNm": 30,
+        "tunedPowerHp": 218
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 23,
+        "torqueGainNm": 39,
+        "tunedPowerHp": 223
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2017, 2018, 2019, 2020, 2021"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-ac3ca59537e0c0de",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/fiesta/vii-fl/1.6-st-ecoboost-134kw-182km-134/",
+    "retrievedAt": "2026-09-16T13:23:13.681Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "eb3afaf29c0800191aa975b01e221d6fe494a29f2e6f8df0b1d4fed13b901f9f",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "VII FL",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "1.6 ST EcoBoost 134kW 182KM",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 182,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 50,
+        "tunedPowerHp": 194
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-bff1d7f6bbd9c9c5",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/fiesta/vii-fl/1.0t-ecoboost-92kw-125km-92/",
+    "retrievedAt": "2026-09-16T13:23:16.902Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "0835643510d2a7766a8ccfb65ff9fa184673d8cec93f33a7f8c6d2aa948f747f",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "VII FL",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "engineMarketingName": "1.0T EcoBoost 92kW 125KM",
+      "stockPowerHp": 125,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 15,
+        "tunedPowerHp": 140
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 19,
+        "torqueGainNm": 19,
+        "tunedPowerHp": 144
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 24,
+        "torqueGainNm": 25,
+        "tunedPowerHp": 149
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 20,
+        "torqueGainNm": 38,
+        "tunedPowerHp": 145
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-97101f3a3d08eb62",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/renault/clio/iv/0.9-tce-66kw-90km-66/",
+    "retrievedAt": "2026-09-16T13:23:19.327Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "ac91ecb7996827eb6dfbae367c9f5f2f663ae2c3989f1822fa10674d1a77dc2a",
+    "unresolvedIdentity": {
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "engineMarketingName": "0.9 TCE 66kW 90KM",
+      "displacementCc": 900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 8,
+        "tunedPowerHp": 98
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 11,
+        "torqueGainNm": 10,
+        "tunedPowerHp": 101
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 13,
+        "torqueGainNm": 13,
+        "tunedPowerHp": 103
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 7,
+        "torqueGainNm": 20,
+        "tunedPowerHp": 97
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-2f55e6ed3b1a32b2",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/renault/clio/iv/1.5-dci-66kw-90km-66/",
+    "retrievedAt": "2026-09-16T13:23:21.774Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "8a3947aca7768e6bba77fa28a35da6d7b7cb2f29d19cb964f9f3ab924ed5d79d",
+    "unresolvedIdentity": {
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "engineMarketingName": "1.5 dCi 66kW 90KM",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 4,
+        "torqueGainNm": 9,
+        "tunedPowerHp": 94
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 4,
+        "torqueGainNm": 11,
+        "tunedPowerHp": 94
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 5,
+        "torqueGainNm": 14,
+        "tunedPowerHp": 95
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 17,
+        "torqueGainNm": 24,
+        "tunedPowerHp": 107
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-38c46618ecf9b12f",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/focus/iii/1.0-ecoboost-74kw-101km-74/",
+    "retrievedAt": "2026-09-16T13:23:24.095Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "34f9abe6f39e85a2a5e11f42d0d4061d15721c8c6b45c04626e413ac153e31b8",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "III",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "engineMarketingName": "1.0 EcoBoost 74kW 101KM",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 101,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 39,
+        "torqueGainNm": 46,
+        "tunedPowerHp": 140
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2010, 2011, 2012, 2013, 2014"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-b8479703b082821e",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/focus/iii-fl/1.5-ecoboost-134kw-182km-134/",
+    "retrievedAt": "2026-09-16T13:23:26.546Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "1a83a50460b23e3d15a5dfbeac17f4eab8dbf8a729c2827921ac6cb616361abd",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "III (FL)",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "engineMarketingName": "1.5 EcoBoost 134kW 182KM",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 182,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 7,
+        "torqueGainNm": 33,
+        "tunedPowerHp": 189
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 41,
+        "tunedPowerHp": 190
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 11,
+        "torqueGainNm": 54,
+        "tunedPowerHp": 193
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 60,
+        "tunedPowerHp": 197
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-598f615348ceb0dc",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/focus/iii/1.0-ecoboost-92kw-125km-92/",
+    "retrievedAt": "2026-09-16T13:23:29.161Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "32c843d5a3cb8a9190cb818aeaddf3115fd34f128e09d20add5b474b1db2a5d5",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "III",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "engineMarketingName": "1.0 EcoBoost 92kW 125KM",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 125,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 19,
+        "tunedPowerHp": 133
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 24,
+        "tunedPowerHp": 135
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 31,
+        "tunedPowerHp": 137
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 43,
+        "tunedPowerHp": 137
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2010, 2011, 2012, 2013, 2014"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-c513341ecfa69a97",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/focus/iii-fl/1.0t-ecoboost-74kw-101km-74/",
+    "retrievedAt": "2026-09-16T13:23:31.566Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "fcba49fd2f59b5858fbf2f08b44c5e073ae00350b8911a7eba68635f5e26218c",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "III (FL)",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "engineMarketingName": "1.0T EcoBoost 74kW 101KM",
+      "stockPowerHp": 101,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 39,
+        "torqueGainNm": 55,
+        "tunedPowerHp": 140
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-5ade81bed78f7c58",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/focus/iii-fl/1.5-ecoboost-110kw-150km-110/",
+    "retrievedAt": "2026-09-16T13:23:33.962Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "fec2108db90ea0e8ad8696816ab0652aee11315a0f3b5821d069a4d4fb477998",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "III (FL)",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "engineMarketingName": "1.5 EcoBoost 110kW 150KM",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 18,
+        "tunedPowerHp": 165
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 17,
+        "torqueGainNm": 23,
+        "tunedPowerHp": 167
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 23,
+        "torqueGainNm": 30,
+        "tunedPowerHp": 173
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 41,
+        "tunedPowerHp": 160
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-e4aa6644e1868ada",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/focus/iii/2.0-ecoboost-184kw-250km-184/",
+    "retrievedAt": "2026-09-16T13:23:36.226Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "7538164c1e46368b7495f9e42fc47abb343cb1f9d9645f2f467d245b2fadfd68",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "III",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "engineMarketingName": "2.0 EcoBoost 184kW 250KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 250,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 27,
+        "torqueGainNm": 58,
+        "tunedPowerHp": 277
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2010, 2011, 2012, 2013, 2014"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-fc722d3662827e03",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/focus/iii-fl/1.0t-ecoboost-92kw-125km-92/",
+    "retrievedAt": "2026-09-16T13:23:38.544Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "e410a5c9025b24c181318f7baf724759a805885f91cbe7fad59c3cb236f023e8",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "III (FL)",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "engineMarketingName": "1.0T EcoBoost 92kW 125KM",
+      "stockPowerHp": 125,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 19,
+        "tunedPowerHp": 133
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 24,
+        "tunedPowerHp": 135
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 31,
+        "tunedPowerHp": 137
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 16,
+        "torqueGainNm": 45,
+        "tunedPowerHp": 141
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-f87ad8051edd0f8a",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/focus/iii-fl/2.3-rs-ecoboost-257kw-349km-257/",
+    "retrievedAt": "2026-09-16T13:23:40.958Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "d1a2076dabc205c61b3fcf41675d0874ebb8c86d5c1ca1fc6b8e5cfcfeee6c63",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "III (FL)",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "engineMarketingName": "2.3 RS EcoBoost 257kW 349KM",
+      "displacementCc": 2300,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 349,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 64,
+        "torqueGainNm": 117,
+        "tunedPowerHp": 413
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-f97e31be4bdf5c38",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/transit/vii/2.0-tdci-125kw-170km-125/",
+    "retrievedAt": "2026-09-16T13:23:43.618Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "8fd7e9789904bbb4bc17da63457209d9d7d7668a37056068dffe92c7dc2fb76f",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Transit",
+      "generation": "VII",
+      "yearFrom": 2012,
+      "yearTo": 2018,
+      "engineMarketingName": "2.0 TDCi 125kW 170KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 20,
+        "torqueGainNm": 42,
+        "tunedPowerHp": 190
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 24,
+        "torqueGainNm": 53,
+        "tunedPowerHp": 194
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 33,
+        "torqueGainNm": 70,
+        "tunedPowerHp": 203
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 38,
+        "torqueGainNm": 76,
+        "tunedPowerHp": 208
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-b6c87d1767b36193",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/ford/transit/vii/2.0-tdci-96kw-131km-96/",
+    "retrievedAt": "2026-09-16T13:23:46.169Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "50101821eeeff3c5d34959ae1ac260f902b57ff8e3eb6c56dc935779ace8db8a",
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Transit",
+      "generation": "VII",
+      "yearFrom": 2012,
+      "yearTo": 2018,
+      "engineMarketingName": "2.0 TDCi 96kW 131KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 131,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 51,
+        "tunedPowerHp": 141
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 13,
+        "torqueGainNm": 63,
+        "tunedPowerHp": 144
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 17,
+        "torqueGainNm": 84,
+        "tunedPowerHp": 148
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 44,
+        "torqueGainNm": 71,
+        "tunedPowerHp": 175
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2012, 2013, 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-18e0276dc0d718c7",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/renault/megane/iii/1.5-dci-81kw-110km-81/",
+    "retrievedAt": "2026-09-16T13:23:48.622Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "70ce26e2e5fd9b3d364c58c3725ab8aa848fab9d4f6ae03d03926cacf102a005",
+    "unresolvedIdentity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "III",
+      "yearFrom": 2008,
+      "yearTo": 2015,
+      "engineMarketingName": "1.5 dCi 81kW 110KM",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 7,
+        "torqueGainNm": 12,
+        "tunedPowerHp": 117
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 15,
+        "tunedPowerHp": 118
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 20,
+        "tunedPowerHp": 120
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 37,
+        "tunedPowerHp": 122
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-e3eaac34188d1437",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/nissan/qashqai/ii-fl/1.2-dig-t-85kw-116km-85/",
+    "retrievedAt": "2026-09-16T13:23:50.939Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "37e090cfbca8551f9c39d7c2789221e574fb2313a05c2c99777ea0eefe37afea",
+    "unresolvedIdentity": {
+      "brand": "Nissan",
+      "modelFamily": "Qashqai",
+      "generation": "II (FL)",
+      "yearFrom": 2017,
+      "yearTo": 2021,
+      "engineMarketingName": "1.2 DIG-T 85kW 116KM",
+      "displacementCc": 1200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 24,
+        "torqueGainNm": 27,
+        "tunedPowerHp": 140
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 24,
+        "torqueGainNm": 27,
+        "tunedPowerHp": 140
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2017, 2018, 2019, 2020, 2021"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-304ff5b12c65a02f",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/nissan/qashqai/ii-fl/1.3i-118kw-160km-118/",
+    "retrievedAt": "2026-09-16T13:23:53.661Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "142550288872cf8137887a3f7509b4e9af5d8b668176d7e05344993be81b12c1",
+    "unresolvedIdentity": {
+      "brand": "Nissan",
+      "modelFamily": "Qashqai",
+      "generation": "II (FL)",
+      "yearFrom": 2017,
+      "yearTo": 2021,
+      "engineMarketingName": "1.3i 118kW 160KM",
+      "stockPowerHp": 160,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 7,
+        "torqueGainNm": 21,
+        "tunedPowerHp": 167
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 9,
+        "torqueGainNm": 27,
+        "tunedPowerHp": 169
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 35,
+        "tunedPowerHp": 170
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2017, 2018, 2019, 2020, 2021"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-0c7bf995d29dd632",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/dacia/duster/ii/1.0-tce-74kw-101km-74/",
+    "retrievedAt": "2026-09-16T13:23:56.101Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "a4002426f7ce01e1e4eb1071ddae69dc954947215704b6935bd3fd5ac3ceed2b",
+    "unresolvedIdentity": {
+      "brand": "Dacia",
+      "modelFamily": "Duster",
+      "generation": "II",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "engineMarketingName": "1.0 TCe 74kW 101KM",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 101,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 6,
+        "torqueGainNm": 12,
+        "tunedPowerHp": 107
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 15,
+        "tunedPowerHp": 109
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 20,
+        "tunedPowerHp": 111
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2018, 2019, 2020, 2021"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-9e5973e3abec04a0",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/dacia/duster/ii/1.3-tce-96kw-131km-96/",
+    "retrievedAt": "2026-09-16T13:23:58.686Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "9f0b26be1d64d2ec4b549af9a93843934179f811f198aa807c2b1738a3c81975",
+    "unresolvedIdentity": {
+      "brand": "Dacia",
+      "modelFamily": "Duster",
+      "generation": "II",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "engineMarketingName": "1.3 TCe 96kW 131KM",
+      "displacementCc": 1300,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 131,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 9,
+        "torqueGainNm": 21,
+        "tunedPowerHp": 140
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 27,
+        "tunedPowerHp": 143
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 14,
+        "torqueGainNm": 35,
+        "tunedPowerHp": 145
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2018, 2019, 2020, 2021"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-6f20afadf7ddcc9e",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/suzuki/swift/v/1.0-boosterjet-82kw-111km-82/",
+    "retrievedAt": "2026-09-16T13:24:01.115Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "026228e587ecd1e326e8aba03ce758f2ccf909e0e1e03e5f4a35dc3dfbfef6ed",
+    "unresolvedIdentity": {
+      "brand": "Suzuki",
+      "modelFamily": "Swift",
+      "generation": "V",
+      "yearFrom": 2010,
+      "yearTo": 2026,
+      "engineMarketingName": "1.0 BoosterJet 82kW 111KM",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 111,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 15,
+        "torqueGainNm": 17,
+        "tunedPowerHp": 126
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-71f1256c70181395",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/suzuki/swift/v/1.3-ddis-55kw-75km-55/",
+    "retrievedAt": "2026-09-16T13:24:03.674Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "fa2e3f7748fdcac476b65c7c29214039b25d384f7dd680d8832301d5707d0168",
+    "unresolvedIdentity": {
+      "brand": "Suzuki",
+      "modelFamily": "Swift",
+      "generation": "V",
+      "yearFrom": 2010,
+      "yearTo": 2026,
+      "engineMarketingName": "1.3 DDiS 55kW 75KM",
+      "displacementCc": 1300,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 75,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 9,
+        "torqueGainNm": 19,
+        "tunedPowerHp": 84
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 24,
+        "tunedPowerHp": 87
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 14,
+        "torqueGainNm": 31,
+        "tunedPowerHp": 89
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 16,
+        "torqueGainNm": 35,
+        "tunedPowerHp": 91
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-3449f887e3e3c3b2",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/mazda/3/bm/2.0-sky-g-88kw-120km-88/",
+    "retrievedAt": "2026-09-16T13:24:06.351Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "23ce3e7047df3416f5a7f25f4f928d3a4be5ef3bb22c8280fab1d933c54a82b7",
+    "unresolvedIdentity": {
+      "brand": "Mazda",
+      "modelFamily": "3",
+      "generation": "BM",
+      "yearFrom": 2013,
+      "yearTo": 2018,
+      "engineMarketingName": "2.0 SKY-G 88kW 120KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 45,
+        "torqueGainNm": 4,
+        "tunedPowerHp": 165
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2013, 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-141e961bc7d6cecd",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/mazda/3/bm/2.2-skyactiv-d-110kw-150km-110/",
+    "retrievedAt": "2026-09-16T13:24:09.180Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "25c4531fa64cfca9e2a134cd8414a63cd4f16003b5ab9d9f9269753e3baaee8c",
+    "unresolvedIdentity": {
+      "brand": "Mazda",
+      "modelFamily": "3",
+      "generation": "BM",
+      "yearFrom": 2013,
+      "yearTo": 2018,
+      "engineMarketingName": "2.2 SKYACTIV-D 110kW 150KM",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 27,
+        "tunedPowerHp": 160
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 13,
+        "torqueGainNm": 34,
+        "tunedPowerHp": 163
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 17,
+        "torqueGainNm": 45,
+        "tunedPowerHp": 167
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 42,
+        "torqueGainNm": 63,
+        "tunedPowerHp": 192
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2013, 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-98ed8c55c547b1ea",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/toyota/yaris/iii/1.0-vvt-i-50kw-68km-50/",
+    "retrievedAt": "2026-09-16T13:24:11.694Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "b6657e37766fea17cae132786aa898492eba85f0cdc5d3ab4e6de24f0490aed0",
+    "unresolvedIdentity": {
+      "brand": "Toyota",
+      "modelFamily": "Yaris",
+      "generation": "III",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "engineMarketingName": "1.0 VVT-i 50kW 68KM",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 68,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 4,
+        "torqueGainNm": 4,
+        "tunedPowerHp": 72
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-e4d9ecbe56b81048",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/toyota/yaris/iii/1.4-d-4d-66kw-90km-66/",
+    "retrievedAt": "2026-09-16T13:24:14.247Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "91d0afd5f43ef106b75ee9a6b47947d73412c7d8b37161505adaf71a89317162",
+    "unresolvedIdentity": {
+      "brand": "Toyota",
+      "modelFamily": "Yaris",
+      "generation": "III",
+      "yearFrom": 2011,
+      "yearTo": 2018,
+      "engineMarketingName": "1.4 D-4D 66kW 90KM",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 7,
+        "torqueGainNm": 15,
+        "tunedPowerHp": 97
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 19,
+        "tunedPowerHp": 98
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 11,
+        "torqueGainNm": 25,
+        "tunedPowerHp": 101
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 17,
+        "torqueGainNm": 26,
+        "tunedPowerHp": 107
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-973ec1d63e9fcb55",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/honda/civic/x/1.0-vtec-turbo-93kw-126km-93/",
+    "retrievedAt": "2026-09-16T13:24:16.703Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "f19e13f797048608ac46979d2b2e65b2ffa7dbca0e51342de57d6bbcae1ca123",
+    "unresolvedIdentity": {
+      "brand": "Honda",
+      "modelFamily": "Civic",
+      "generation": "X",
+      "yearFrom": 2017,
+      "yearTo": 2021,
+      "engineMarketingName": "1.0 VTEC Turbo 93kW 126KM",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 126,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 7,
+        "torqueGainNm": 14,
+        "tunedPowerHp": 133
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 9,
+        "torqueGainNm": 17,
+        "tunedPowerHp": 135
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 22,
+        "tunedPowerHp": 136
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 10,
+        "torqueGainNm": 40,
+        "tunedPowerHp": 136
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2017, 2018, 2019, 2020, 2021"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-487b6a8623f305e4",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/honda/civic/x/1.0-vtec-turbo-95kw-129km-95/",
+    "retrievedAt": "2026-09-16T13:24:19.020Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "ac7b1d35fd804dc61860ba133c7bb12bbd71ff9598d748c37174229591dd9912",
+    "unresolvedIdentity": {
+      "brand": "Honda",
+      "modelFamily": "Civic",
+      "generation": "X",
+      "yearFrom": 2017,
+      "yearTo": 2021,
+      "engineMarketingName": "1.0 VTEC Turbo 95kW 129KM",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 129,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 12,
+        "torqueGainNm": 32,
+        "tunedPowerHp": 141
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2017, 2018, 2019, 2020, 2021"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-67c287103e3e9a16",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/mini/cooper/iii/1.5-t-100kw-136km-100/",
+    "retrievedAt": "2026-09-16T13:24:21.332Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "07a7451174cd290b46cf550f46df4a1f12078fd9ea926397ee0453c1b8d3b3b8",
+    "unresolvedIdentity": {
+      "brand": "Mini",
+      "modelFamily": "Cooper",
+      "generation": "III",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "engineMarketingName": "1.5 T 100kW 136KM",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 34,
+        "torqueGainNm": 64,
+        "tunedPowerHp": 170
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 34,
+        "torqueGainNm": 64,
+        "tunedPowerHp": 170
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-bd67de294337d83a",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/mini/cooper/iii/d-1.5-85kw-116km-85/",
+    "retrievedAt": "2026-09-16T13:24:23.622Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "910a3370eea54a088b9e96dc06b5cddccc1b41b57f2d5e5fa907eff11114dae1",
+    "unresolvedIdentity": {
+      "brand": "Mini",
+      "modelFamily": "Cooper",
+      "generation": "III",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "engineMarketingName": "D 1.5 85kW 116KM",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 26,
+        "torqueGainNm": 57,
+        "tunedPowerHp": 142
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2014, 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-c820d4d6adb3aa59",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/mitsubishi/l200/v/2.4d-133kw-181km-133/",
+    "retrievedAt": "2026-09-16T13:24:26.051Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "7d233a42d9bc7e3f9bf96459fded223dd5e382705a9b52efd978cbaa1c7f115c",
+    "unresolvedIdentity": {
+      "brand": "Mitsubishi",
+      "modelFamily": "L200",
+      "generation": "V",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "engineMarketingName": "2.4d 133kW 181KM",
+      "stockPowerHp": 181,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 18,
+        "torqueGainNm": 49,
+        "tunedPowerHp": 199
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-40da5c69aab97329",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/mitsubishi/pajero/iv/3.2-di-dc-140kw-190km-140/",
+    "retrievedAt": "2026-09-16T13:24:28.554Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "408410bd8dd2025ec5c2dfbfabb172fd8022d871192e184af9330220d7e9f7de",
+    "unresolvedIdentity": {
+      "brand": "Mitsubishi",
+      "modelFamily": "Pajero",
+      "generation": "IV",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "engineMarketingName": "3.2 DI-DC 140kW 190KM",
+      "displacementCc": 3200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip Premium + AI V6/R6",
+        "kind": "external-module",
+        "powerGainHp": 19,
+        "torqueGainNm": 43,
+        "tunedPowerHp": 209
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 37,
+        "torqueGainNm": 54,
+        "tunedPowerHp": 227
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2015, 2016, 2017, 2018"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-4c168df4837485c8",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/lexus/rx/iv/300t-2.0-175kw-238km-175/",
+    "retrievedAt": "2026-09-16T13:24:31.143Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "a174563f66212448cbaf3e7e3c88decf69a0d1d2474fc3c16c345ea90c607f6c",
+    "unresolvedIdentity": {
+      "brand": "Lexus",
+      "modelFamily": "RX",
+      "generation": "IV",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "engineMarketingName": "300t 2.0 175kW 238KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 238,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 8,
+        "torqueGainNm": 33,
+        "tunedPowerHp": 246
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 11,
+        "torqueGainNm": 41,
+        "tunedPowerHp": 249
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 14,
+        "torqueGainNm": 54,
+        "tunedPowerHp": 252
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2015, 2016, 2017, 2018, 2019"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-78f02a3b774ad74c",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/lexus/nx/i-fl/300t-2.0-175kw-238km-175/",
+    "retrievedAt": "2026-09-16T13:24:34.049Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "d4eef81eb7d171c69ccedf364d50d59085f593ccc96dd2598cd8aa3e6bfc90d4",
+    "unresolvedIdentity": {
+      "brand": "Lexus",
+      "modelFamily": "NX",
+      "generation": "I (FL)",
+      "yearFrom": 2017,
+      "yearTo": 2021,
+      "engineMarketingName": "300t 2.0 175kW 238KM",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 238,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip One",
+        "kind": "external-module",
+        "powerGainHp": 4,
+        "torqueGainNm": 11,
+        "tunedPowerHp": 242
+      },
+      {
+        "name": "PowerChip Premium",
+        "kind": "external-module",
+        "powerGainHp": 5,
+        "torqueGainNm": 14,
+        "tunedPowerHp": 243
+      },
+      {
+        "name": "PowerChip Premium + AI",
+        "kind": "external-module",
+        "powerGainHp": 7,
+        "torqueGainNm": 18,
+        "tunedPowerHp": 245
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2017, 2018, 2019, 2020, 2021"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-5d4d8c5e24df8cba",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/iveco/daily/vi/3.0-hpi-110kw-150km-110/",
+    "retrievedAt": "2026-09-16T13:24:36.476Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "79eb16f5fa19a8b25c87be90b1c484ebf12b040189284ec47c50d760da573838",
+    "unresolvedIdentity": {
+      "brand": "Iveco",
+      "modelFamily": "Daily",
+      "generation": "VI",
+      "yearFrom": 2014,
+      "yearTo": 2019,
+      "engineMarketingName": "3.0 HPI 110kW 150KM",
+      "displacementCc": 3000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "PowerChip Premium + AI V6/R6",
+        "kind": "external-module",
+        "powerGainHp": 16,
+        "torqueGainNm": 53,
+        "tunedPowerHp": 166
+      },
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 44,
+        "torqueGainNm": 123,
+        "tunedPowerHp": 194
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2014, 2015, 2016, 2017, 2018, 2019"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
+    "id": "vtech-v2-eca5d8b9c3a0101e",
+    "provider": "vtech",
+    "sourceName": "V-Tech public PowerChip configurator",
+    "url": "https://sklep.vtech.pl/powerchip/iveco/daily/vi/3.0-hpt-120kw-170km-125/",
+    "retrievedAt": "2026-09-16T13:24:38.860Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "2c9818f2bef4dbdc4040b65bde822c1b1dbcf47da1d31e97269d4365e7321264",
+    "unresolvedIdentity": {
+      "brand": "Iveco",
+      "modelFamily": "Daily",
+      "generation": "VI",
+      "yearFrom": 2014,
+      "yearTo": 2019,
+      "engineMarketingName": "3.0 HPT 120kW 170KM",
+      "displacementCc": 3000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "powerUnit": "PS"
+    },
+    "packages": [
+      {
+        "name": "Chip Tuning",
+        "kind": "external-module",
+        "powerGainHp": 20,
+        "torqueGainNm": 57,
+        "tunedPowerHp": 190
+      }
+    ],
+    "supportingUrls": [
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "applicability": [
+      "",
+      "Public configurator year selections: 2014, 2015, 2016, 2017, 2018, 2019"
+    ],
+    "conditions": [
+      "External PowerChip module required. These packages are not an ordinary ECU-remap Stage 1, Stage 2 or Stage 3."
+    ],
+    "notes": [
+      "Only factual package gains retained. Tuned power is stock PS plus the explicitly published package gain; stock torque/fuel are not inferred.",
+      "The previous /chip-tuning/ catalog URLs returned HTTP 404 during V2. Current public pages expose PowerChip packages. No package vote is promoted into remap consensus."
+    ]
+  },
+  {
     "id": "shiftech-10769",
     "provider": "shiftech",
     "sourceName": "Shiftech public application table",

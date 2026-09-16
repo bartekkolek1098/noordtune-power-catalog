@@ -9,7 +9,7 @@ const hash = text => crypto.createHash("sha256").update(text).digest("hex");
 const userAgent = "NoordTuneResearch/1.0 (public tuning facts; paced cached requests)";
 function read(file) { return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : undefined; }
 function save(file, value) { fs.writeFileSync(file, JSON.stringify(value)); }
-function group(host) { return host.includes("br-performance.") ? "br-performance" : host.endsWith("shiftech.eu") ? "shiftech.eu" : host.replace(/^www\./, ""); }
+function group(host) { return host.includes("br-performance.") ? "br-performance" : host.endsWith("shiftech.eu") ? "shiftech.eu" : host.endsWith("vtech.pl") ? "vtech.pl" : host.replace(/^www\./, ""); }
 
 function robotsAllowed(robots, url) {
   const groups = [];
@@ -60,8 +60,9 @@ async function fetchPage(url, options = {}) {
   if (method === "POST" && options.publicSearch !== true) throw new Error("POST requires an explicitly public read-only search endpoint");
   const body = options.body === undefined ? undefined : JSON.stringify(options.body);
   const cacheFile = path.join(cacheRoot, `${hash(url + (method === "GET" ? "" : `\n${method}\n${body}`))}.json`);
+  const fresh = value => value && !options.refresh && (options.maxAgeMs === undefined || Date.now() - Date.parse(value.retrievedAt) <= options.maxAgeMs);
   const cached = read(cacheFile);
-  if (cached) return {...cached, cached: true, cacheFile};
+  if (cached?.status === "blocked" || fresh(cached)) return {...cached, cached: true, cacheFile};
   const hostGroup = group(parsed.hostname);
   const blockedFile = path.join(cacheRoot, `${hostGroup}.blocked.json`);
   const priorBlock = read(blockedFile);
@@ -70,7 +71,7 @@ async function fetchPage(url, options = {}) {
   await acquire(lock);
   try {
     const laterCache = read(cacheFile);
-    if (laterCache) return {...laterCache, cached: true, cacheFile};
+    if (laterCache?.status === "blocked" || fresh(laterCache)) return {...laterCache, cached: true, cacheFile};
     if (read(blockedFile)) return {url, status: "blocked", reason: "Provider blocked while request queued", retrievedAt: new Date().toISOString()};
     const lastFile = path.join(cacheRoot, `${hostGroup}.last.json`);
     async function request(target, requestOptions = {}) {
@@ -88,7 +89,7 @@ async function fetchPage(url, options = {}) {
     }
     const robotsFile = path.join(cacheRoot, `${parsed.hostname}.robots.json`);
     let robots = read(robotsFile);
-    if (!robots) { robots = await request(`${parsed.origin}/robots.txt`); save(robotsFile, robots); }
+    if (!robots || (robots.status !== "blocked" && Date.now() - Date.parse(robots.retrievedAt) > 7 * 86400000)) { robots = await request(`${parsed.origin}/robots.txt`); save(robotsFile, robots); }
     if (robots.status === "blocked" || (robots.httpStatus !== 404 && robots.httpStatus !== 200)) {
       const result = {url, status: "unavailable", reason: "Robots policy unavailable or access restricted", retrievedAt: new Date().toISOString()};
       save(cacheFile, result); return {...result, cacheFile};
@@ -98,6 +99,12 @@ async function fetchPage(url, options = {}) {
       save(cacheFile, result); return {...result, cacheFile};
     }
     const result = await request(url, {method, body, headers: {...(body ? {"Content-Type": "application/json"} : {}), ...(options.headers ?? {})}});
+    if (cached?.contentSha256 && cached.contentSha256 !== result.contentSha256) {
+      // Historical raw evidence stays private, including when a refresh fails.
+      const history = path.join(cacheRoot, "history");
+      fs.mkdirSync(history, {recursive: true});
+      save(path.join(history, `${path.basename(cacheFile, ".json")}-${cached.contentSha256}.json`), cached);
+    }
     save(cacheFile, result);
     return {...result, cacheFile};
   } catch (error) {

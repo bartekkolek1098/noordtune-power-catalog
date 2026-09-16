@@ -1,5 +1,5 @@
 /** Server dataset facts. UI imports of these definitions must be type-only. */
-export type SourceProvider = "shiftech" | "br-performance" | "celtic-tuning" | "unlimited-tuning" | "mosselman" | "manufacturer" | "other";
+export type SourceProvider = "vtech" | "shiftech" | "br-performance" | "celtic-tuning" | "unlimited-tuning" | "mosselman" | "manufacturer" | "other";
 export type ResearchStage = {powerHp: number; torqueNm?: number; conditions?: string[]};
 export type ResearchIdentity = {
   brand: string;
@@ -39,6 +39,8 @@ export type SourceObservation = {
   /** Facts retained when missing scope prevents accepting a complete profile. */
   unresolvedIdentity?: Partial<ResearchIdentity>;
   stages?: {stage1?: ResearchStage; stage2?: ResearchStage; stage3?: ResearchStage};
+  /** Different hardware/package classes never become ordinary remap consensus votes. */
+  packages?: {name: string; kind: "external-module"; powerGainHp?: number; torqueGainNm?: number; tunedPowerHp?: number; tunedTorqueNm?: number}[];
   conditions?: string[];
   notes?: string[];
   /** Factual applicability notes only; never copy provider marketing prose. */

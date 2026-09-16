@@ -78,6 +78,446 @@
       "reasons": [
         "SOURCED_STAGE1_REQUIRED"
       ]
+    },
+    {
+      "sourceId": "vtech-v2-07b32647e23f8da4",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-1f997c42da6359b3",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-c1df30a2b99f6f6e",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-34b29731c6f16c54",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-77d4c245453ecad4",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-f0142edebdd595ea",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-59225233c7c9a303",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-39e284cdc388dd3b",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-0a6b143bc69e8786",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-8d2fddffc63dde9d",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-57f98ad635efb388",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-5a7e77df64b3324a",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-7f30f41fb14dc655",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-ad53f28a68a59867",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-1dbdc15f69d1e96c",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-33963823f731613a",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-76b710e3c4506501",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-d013115fd3ae2c79",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-57dc42b3cb6b2391",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-ff38f6e954935800",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-ac3ca59537e0c0de",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-bff1d7f6bbd9c9c5",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-97101f3a3d08eb62",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-2f55e6ed3b1a32b2",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-38c46618ecf9b12f",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-b8479703b082821e",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-598f615348ceb0dc",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-c513341ecfa69a97",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-5ade81bed78f7c58",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-e4aa6644e1868ada",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-fc722d3662827e03",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-f87ad8051edd0f8a",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-f97e31be4bdf5c38",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-b6c87d1767b36193",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-18e0276dc0d718c7",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-e3eaac34188d1437",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-304ff5b12c65a02f",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-0c7bf995d29dd632",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-9e5973e3abec04a0",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-6f20afadf7ddcc9e",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-71f1256c70181395",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-3449f887e3e3c3b2",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-141e961bc7d6cecd",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-98ed8c55c547b1ea",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-e4d9ecbe56b81048",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-973ec1d63e9fcb55",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-487b6a8623f305e4",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-67c287103e3e9a16",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-bd67de294337d83a",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-c820d4d6adb3aa59",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-40da5c69aab97329",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-4c168df4837485c8",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-78f02a3b774ad74c",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-5d4d8c5e24df8cba",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "vtech-v2-eca5d8b9c3a0101e",
+      "reasons": [
+        "EXTERNAL_MODULE_NOT_ORDINARY_REMAP",
+        "IDENTITY_UNAVAILABLE",
+        "SOURCED_STAGE1_REQUIRED"
+      ]
     }
   ],
   "stockVariants": [

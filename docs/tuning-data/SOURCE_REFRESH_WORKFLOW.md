@@ -1,0 +1,40 @@
+# Source refresh and review
+
+## Commands
+
+```sh
+pnpm research:vtech --discover
+pnpm research:vtech --limit 5
+pnpm research:shiftech --limit 5
+pnpm research:unlimited --limit 5
+pnpm research:unlimited --refresh --limit 5
+pnpm research:rdw-fleet
+pnpm research:rdw-sample
+pnpm research:nl-priority
+```
+
+The provider commands inspect that provider independently. Cache expiry defaults to 30 days (`--max-age-days N`); `--refresh` explicitly re-fetches. A cached response is otherwise reused. RDW aggregates have a seven-day expiry. V-Tech discovery follows the ordinary published brand → model → year/generation → engine route tree; discovered years are deduplicated, never expanded into tuning profiles.
+
+`research-fetch.cjs` maintains a private `.git/tuning-dataset-v1/http-cache` shared across V1/V2 so recorded access stops survive. Requests are HTTPS, read-only and paced at two seconds per provider host group. Robots policies are checked and expire after seven days. 401/403/429/CAPTCHA stops are retained; neither refresh nor cache expiry overrides them. BR-Performance and Celtic blocks recorded in V1 remain in force. Public search keys used by the ordinary Shiftech configurator are transient and never enter tracked manifests.
+
+## Provider limitations recorded in V2
+
+- **V-Tech:** the current [public configurator](https://sklep.vtech.pl/konfigurator-powerchip/) serves PowerChip One, Premium and Premium + AI hardware-package gains. The previous public `/chip-tuning/` routes returned 404; an indexed legacy development-host page was unavailable. Current external-module facts are preserved under `packages`, including stock PS, published gains and derived stock-plus-gain PS. Unknown stock torque and fuel stay unknown. These packages supply **zero ordinary ECU-remap consensus votes**. An adapter must not rename them Stage 1/2/3 to manufacture corroboration.
+- **Shiftech:** the direct HTTP response may be a JavaScript shell. Public search data is discovery only. V2 tuning facts are extracted from retrieved rendered public application pages with explicit stock and Stage tables. Their hash covers that rendered extraction. A shell refresh is `not-comparable`; it cannot replace accepted values. The disallowed `/_nuxt/` path is not fetched to work around this limitation. Retrieve an allowed rendered page and retain its timestamp/hash before reviewing a change.
+- **Unlimited Tuning:** category breadcrumbs establish make/model/year/fuel scope. The actual product table supplies stock, **Normal** remap and explicitly labelled Stage 2 values. Ecotuning and Xtreme are not silently substituted. Missing category fuel, ambiguous generation or incomplete stock fields remain unresolved unless separately corroborated. Explicit hybrids, Niro, HSD, PHEV/MHEV/HEV and hybrid model suffixes stay outside ordinary ICE scope.
+
+## Review-only output
+
+Refresh writes `.git/nl-fleet-v2/refresh/<provider>.json`: previous/candidate hash, retrieval status, cached state, comparable factual observations and a review disposition. Historical raw responses stay in private cache. HTML, marketing prose, images, dyno graphs, pricing and keys are not copied into tracked research facts. Dynamic page tokens can change a hash without changing technical values, so reviewers compare extracted facts as well as hashes.
+
+**No refresh command runs the dataset builder, modifies accepted batches or promotes customer values.** Candidate facts require a reviewed batch edit. Review make, model, generation, fuel, displacement, stock output/torque, package class and independent provider identity. Preserve every original observation. A corroborating page must apply to the same engine/generation; one provider receives one vote even across mirrors.
+
+After a reviewed edit:
+
+1. Run `pnpm tuning:build-data` and inspect `source-pages.json`, `profile-consensus.json`, `unresolved-conflicts.json` and `v2-source-changes.json`.
+2. Compare all 280 V1 checkpoints. Any changed selected value needs a concrete new independent source and an explicit before/after record. Identity or year changes require an applicability explanation too.
+3. Rebuild the frozen NL priority queue's current classifications; do not re-rank it to improve the before/after result.
+4. Run the tuning, live-sample and bundle-boundary checks; validate API payloads, browser/UI/WhatsApp agreement, pricing, lint, typecheck and production build.
+5. Commit the reviewable facts and report. Owner review remains required where sources disagree or applicability/hardware is incomplete.
+
+To revise the priority order for a later research round, explicitly run `node --no-warnings scripts/build-nl-technical-priority.ts --rerank` and document the new baseline. Never equate a new priority ordering with improved coverage.

@@ -23,6 +23,7 @@ for (const source of observations) {
   const identity = source.identity;
   const reasons = [];
   if (source.status !== "retrieved" || source.retrievalMethod === "search-index") reasons.push("ACTUAL_PUBLIC_FACT_RETRIEVAL_REQUIRED");
+  if (source.packages?.some(item => item.kind === "external-module")) reasons.push("EXTERNAL_MODULE_NOT_ORDINARY_REMAP");
   if (!identity) reasons.push("IDENTITY_UNAVAILABLE");
   else {
     if (!identity.brand || !identity.modelFamily || !identity.generation || !identity.engineMarketingName) reasons.push("MODEL_ENGINE_GENERATION_REQUIRED");
