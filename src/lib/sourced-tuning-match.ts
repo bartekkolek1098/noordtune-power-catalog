@@ -15,6 +15,8 @@ export function sourceModelFamily(make: string, text: string) {
   // PEUGEOT 308). Only an exact, separate make prefix is removed.
   const prefixes = [...new Set([make, make === "mercedes benz" ? "mercedes" : make])];
   for (const prefix of prefixes) if (value.startsWith(`${prefix} `)) { value = value.slice(prefix.length + 1); break; }
+  if (make === "mazda") value = value.replace(/^mazda(?=[236](?:\s|$))/, "");
+  if (make === "honda") value = value.replace(/^cr\s*v\b/, "cr v");
   if (make === "bmw") {
     const suv = value.match(/\b(x[1-7]|z[1-4])\b/)?.[1];
     const series = value.match(/\b([1-8])\s*(?:series|serie|er)\b/)?.[1] ?? value.match(/\b(?:m)?([1-8])\d{2}(?:ti|[ide])\b/)?.[1];
@@ -109,17 +111,37 @@ export function sourceRegistrationYear(input: EstimateMatchInput) {
   const parsed = new Date(`${date}T00:00:00Z`);
   return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date ? parsed.getUTCFullYear() : undefined;
 }
-export function matchSourcedProfile(input: EstimateMatchInput, profiles: readonly SourcedTuningProfile[]) {
+type SourceIndex={length:number;byMake:Map<string,SourcedTuningProfile[]>;byPower:Map<string,{profile:SourcedTuningProfile;position:number}[]>};
+const sourceIndexes=new WeakMap<readonly SourcedTuningProfile[],SourceIndex>();
+function sourceIndex(profiles:readonly SourcedTuningProfile[]){
+  const existing=sourceIndexes.get(profiles);
+  if(existing?.length===profiles.length)return existing;
+  const index:SourceIndex={length:profiles.length,byMake:new Map(),byPower:new Map()};
+  profiles.forEach((profile,position)=>{
+    const make=sourceMake(profile.brand),key=[make,profile.fuel,Math.floor(profile.stockPowerHp)].join("|");
+    const family=index.byMake.get(make)??[];family.push(profile);index.byMake.set(make,family);
+    const bucket=index.byPower.get(key)??[];bucket.push({profile,position});index.byPower.set(key,bucket);
+  });
+  sourceIndexes.set(profiles,index);return index;
+}
+/** Profiles are immutable snapshots. indexed:false is the exhaustive QA control. */
+export function matchSourcedProfile(input: EstimateMatchInput, profiles: readonly SourcedTuningProfile[], options:{indexed?:boolean}={}) {
   const make = sourceMake(input.make);
   const fuel = normalizeCatalogFuel(input.fuel);
   const power = registeredPowerToMetricHp(input);
   const year = sourceRegistrationYear(input);
   if (!make || !input.model?.trim() || !power || !year || !input.displacementCc || !["Petrol", "Diesel"].includes(fuel ?? "")) return {reasonCodes: ["SOURCED_IDENTITY_INCOMPLETE"], candidates: []};
+  const index=options.indexed===false?undefined:sourceIndex(profiles);
+  const buckets=index?Array.from({length:Math.floor(power+3)-Math.floor(power-3)+1},(_,i)=>Math.floor(power-3)+i)
+    .flatMap(value=>index.byPower.get([make,fuel,value].join("|"))??[]).sort((a,b)=>a.position-b.position).map(item=>item.profile):profiles;
+  // Keep all same-make model siblings, even if their power/fuel/year differs.
+  // Narrowing this guard to the power bucket would let Transit borrow Custom.
+  const siblings=index?.byMake.get(make)??profiles;
   const model = modelFamily(make, input.model);
   const inputBadge = badge(input.model, make);
   const inputGenerations = generations([input.model, input.type, input.variant, input.execution].join(" "),make,input.model);
   const family = explicitFamily(input);
-  const compatible = profiles.filter(profile => {
+  const compatible = buckets.filter(profile => {
     if (sourceMake(profile.brand) !== make || profile.fuel !== fuel || Math.abs(profile.stockPowerHp - power) > 3) return false;
     if (profile.electrification === "hybrid" || profile.electrification === "mild-hybrid") return false;
     if (profile.displacementPrecision === "exact" ? Math.abs(profile.displacementCc - input.displacementCc!) > 2 : !nominalDisplacementMatches(input.displacementCc!, profile.displacementCc)) return false;
@@ -132,7 +154,7 @@ export function matchSourcedProfile(input: EstimateMatchInput, profiles: readonl
     // permits engine/badge suffixes, never a sibling model such as Connect/Custom.
     const matches = models.some(value => model === value || model.startsWith(`${value} `));
     if (!matches) return false;
-    const moreSpecificSibling = profiles.some(other => sourceMake(other.brand) === make && other.modelFamily !== profile.modelFamily
+    const moreSpecificSibling = siblings.some(other => sourceMake(other.brand) === make && other.modelFamily !== profile.modelFamily
       && modelFamily(make, other.modelFamily).length > modelFamily(make, profile.modelFamily).length
       && (model === modelFamily(make, other.modelFamily) || model.startsWith(`${modelFamily(make, other.modelFamily)} `)));
     if (moreSpecificSibling) return false;
@@ -140,6 +162,10 @@ export function matchSourcedProfile(input: EstimateMatchInput, profiles: readonl
     if (make === "ford" && /^(transit|tourneo)\b/.test(model)) {
       const van = model.match(/^(transit|tourneo)(?: (connect|custom|courier))?/)?.[0];
       if (!models.includes(van ?? "")) return false;
+    }
+    if(make==="toyota"&&/^pro\s?ace\b/.test(model)){
+      const van=model.match(/^pro\s?ace(?: city)?/)?.[0]?.replace(/^pro ace/,"proace");
+      if(!models.some(value=>value.replace(/^pro ace/,"proace")===van))return false;
     }
     const profileBadge = badge(`${profile.modelFamily} ${profile.engineMarketingName}`, make);
     if (inputBadge && profileBadge && inputBadge !== profileBadge) return false;
