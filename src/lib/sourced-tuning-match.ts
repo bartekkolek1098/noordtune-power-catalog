@@ -15,6 +15,8 @@ export function sourceModelFamily(make: string, text: string) {
   // PEUGEOT 308). Only an exact, separate make prefix is removed.
   const prefixes = [...new Set([make, make === "mercedes benz" ? "mercedes" : make])];
   for (const prefix of prefixes) if (value.startsWith(`${prefix} `)) { value = value.slice(prefix.length + 1); break; }
+  // RDW shortens Alfa Romeo to a separate "ALFA" prefix in some model names.
+  if (make === "alfa romeo" && value.startsWith("alfa ")) value = value.slice(5);
   if (make === "mazda") value = value.replace(/^mazda(?=[236](?:\s|$))/, "");
   if (make === "honda") value = value.replace(/^cr\s*v\b/, "cr v");
   if (make === "bmw") {

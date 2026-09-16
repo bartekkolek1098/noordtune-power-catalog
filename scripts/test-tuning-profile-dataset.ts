@@ -216,6 +216,6 @@ const report = {schemaVersion: 1, fixtureNature: "Synthetic source-derived techn
  unresolved, safety, failures, exhaustiveCanonicalCohort, fixtures: rows};
 mkdirSync("data/research", {recursive: true});
 const outputIndex=process.argv.indexOf("--output");
-writeFileSync(outputIndex>=0?process.argv[outputIndex+1]:existsSync("data/research/v2-consensus-checkpoint.json")?"data/research/v3-coverage-report.json":"data/research/coverage-report.json", JSON.stringify(report, null, 2) + "\n");
+writeFileSync(outputIndex>=0?process.argv[outputIndex+1]:existsSync("data/research/v3-1-reviewed-promotions.json")?"data/research/v3-1-coverage-report.json":existsSync("data/research/v2-consensus-checkpoint.json")?"data/research/v3-coverage-report.json":"data/research/coverage-report.json", JSON.stringify(report, null, 2) + "\n");
 console.log(JSON.stringify({assertions, fixtures: rows.length, nonPublic: nonPublicCount, before, after, unresolved: unresolved.length, safety: safety.length, canonical: {identities: canonicalGroups.size, before: inventoryBefore, after: inventoryAfter, completeTechnicalAfter: completeAfter, knownCrossProducts: crossProducts, incompleteDisplacement}, failures: failures.slice(0, 15)}, null, 2));
 assert.equal(failures.length, 0, failures.slice(0, 30).join("\n"));

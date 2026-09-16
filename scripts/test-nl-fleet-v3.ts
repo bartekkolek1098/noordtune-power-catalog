@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import {readFileSync,writeFileSync} from "node:fs";
+import {existsSync,readFileSync,writeFileSync} from "node:fs";
 import {sourcedTuningProfiles,tuningDatasetFingerprint} from "../src/data/tuning-profiles/index.ts";
 import type {SourceObservation,SourcedTuningProfile} from "../src/data/tuning-profiles/schema.ts";
 import {matchSourcedProfile} from "../src/lib/sourced-tuning-match.ts";
@@ -14,7 +14,8 @@ for(const group of outputs.groups){assert.equal(group.sampleSize,12);assert.equa
 for(const row of sample.rows)assert.equal(row.registrationVerified,true,'All 400 QA records meet the stronger current registration check');
 for(const row of outputs.rows){assert.equal(row.vehicle.export_indicator,'Nee');assert.equal(typeof row.registrationVerified,'boolean');assert.ok(!Object.hasOwn(row.vehicle,'kenteken'));for(const fuel of row.fuels)assert.ok(!Object.hasOwn(fuel,'kenteken'));}
 const queue=read('nl-output-variant-priority.json');
-assert.equal(queue.groups.length,250);assert.equal(queue.datasetFingerprint,tuningDatasetFingerprint);
+assert.equal(queue.groups.length,250);
+assert.equal(queue.datasetFingerprint,read('v3-acceptance.json').datasetFingerprint,'Frozen V3 queue retains its original dataset fingerprint');
 for(const group of queue.groups){
   const original=outputs.groups.find((g:{groupId:string})=>g.groupId===group.groupId);
   assert.equal(group.observedOutputVariants.length,original.observedOutputVariants.length,'Retain distinct RDW type/variant/execution scenarios');
@@ -64,4 +65,4 @@ for(const before of read('v2-consensus-checkpoint.json').profiles){const record=
 const qa=read('v3-rdw-outcomes.json');assert.equal(qa.sampleSize,400);assert.equal(qa.pricingChanges.length,0);assert.equal(qa.identityChanges.length,0);
 for(const row of qa.transitions.filter((r:{before:string;after:string})=>['A','B'].includes(r.before)&&!['A','B'].includes(r.after)))assert.ok(row.reasons.some((r:string)=>/MULTIPLE|CONFLICT|GENERATION/.test(r)),'Demotion must expose identity uncertainty, never silently lose data');
 const report={datasetFingerprint:tuningDatasetFingerprint,sampleSize:400,priorFixedSubset:222,outputSampleSize:3000,outputGroups:250,top50ClosureRecords:closure.records.length,explicitGenerationAndOutputGuards:generationChecks,largeGainChecks:true,connectSeparation:true,pricingChanges:0,identityChanges:0,failures:0};
-writeFileSync('data/research/v3-acceptance.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
+writeFileSync(existsSync('data/research/v3-1-reviewed-promotions.json')?'data/research/v3-1-acceptance.json':'data/research/v3-acceptance.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

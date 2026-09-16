@@ -10,6 +10,22 @@ import {applyLargeGainScrutiny, hasReviewedEngineFamily, negativeSourceConflicts
 const root = resolve("data/research");
 const batchRoot = join(root, "batches");
 const observations = readdirSync(batchRoot).filter(file => file.endsWith(".json")).sort().flatMap(file => JSON.parse(readFileSync(join(batchRoot, file), "utf8")) as SourceObservation[]);
+type ReviewedPromotion={sourceId:string;url:string;contentSha256:string;stock:{brand:string;modelFamily:string;fuel:string;yearFrom:number;yearTo:number;displacementCc:number;stockPowerHp:number;stockTorqueNm:number};stage1:{powerHp:number;torqueNm:number};frozenCaseIds:string[];reason:string};
+const promotionPath=join(root,"v3-1-reviewed-promotions.json");
+const promotions:ReviewedPromotion[]=existsSync(promotionPath)?JSON.parse(readFileSync(promotionPath,"utf8")).reviews:[];
+const promotionById=new Map(promotions.map(review=>[review.sourceId,review]));
+assert.equal(promotionById.size,promotions.length,"Reviewed promotions must have unique source IDs");
+for(const review of promotions){
+  const source=observations.find(item=>item.id===review.sourceId);
+  assert.ok(source?.identity&&source.stages?.stage1&&source.status==="retrieved"&&source.retrievalMethod!=="search-index"
+    &&source.url===review.url&&source.contentSha256===review.contentSha256,`${review.sourceId}: retrieved source and pinned page hash required`);
+  assert.ok(source.conditions?.includes("V2_RESEARCH_QUEUE_NOT_PROMOTED")&&review.reason&&review.frozenCaseIds.length,
+    `${review.sourceId}: explicit bounded queue review required`);
+  for(const [field,value] of Object.entries(review.stock))assert.equal(source.identity[field as keyof typeof source.identity],value,
+    `${review.sourceId}: reviewed stock ${field} drifted`);
+  assert.equal(source.stages.stage1.powerHp,review.stage1.powerHp);
+  assert.equal(source.stages.stage1.torqueNm,review.stage1.torqueNm);
+}
 const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const ids = new Set<string>();
 const rejected: {sourceId: string; reasons: string[]}[] = [];
@@ -34,7 +50,7 @@ for (const source of observations) {
   if(source.conditions?.includes("V3_APPLICABILITY_UNRESOLVED"))reasons.push("V3_APPLICABILITY_UNRESOLVED");
   if(source.conditions?.includes("V3_RESEARCH_QUEUE_NOT_PROMOTED"))reasons.push("V3_RESEARCH_QUEUE_NOT_PROMOTED");
   if (source.conditions?.includes("V2_APPLICABILITY_UNRESOLVED")) reasons.push("V2_APPLICABILITY_UNRESOLVED");
-  if (source.conditions?.includes("V2_RESEARCH_QUEUE_NOT_PROMOTED")) reasons.push("V2_RESEARCH_QUEUE_NOT_PROMOTED");
+  if (source.conditions?.includes("V2_RESEARCH_QUEUE_NOT_PROMOTED")&&!promotionById.has(source.id)) reasons.push("V2_RESEARCH_QUEUE_NOT_PROMOTED");
   if(source.conditions?.includes("ENGINE_FAMILY_LABEL_CONFLICT")&&!hasReviewedEngineFamily(source,observations))reasons.push("ENGINE_FAMILY_LABEL_CONFLICT");
   if (!identity) reasons.push("IDENTITY_UNAVAILABLE");
   else {
@@ -57,12 +73,15 @@ for (const source of observations) {
     assert.ok(value.torqueNm === undefined || (Number.isFinite(value.torqueNm) && value.torqueNm > 0), `${source.id}: invalid Stage torque`);
   }
   if (reasons.length || !identity) { rejected.push({sourceId: source.id, reasons}); continue; }
+  const acceptedSource=promotionById.has(source.id)
+    ? {...source,conditions:source.conditions?.filter(condition=>condition!=="V2_RESEARCH_QUEUE_NOT_PROMOTED")}
+    : source;
   // Deliberately strict grouping: generation and published year band stay distinct.
   // Wider cross-model/year relationships require explicit evidence, never Cartesian expansion.
   const key = [identity.brand, identity.modelFamily, identity.generation, identity.fuel, identity.displacementCc,
     Math.round(metricPower(identity.stockPowerHp, identity.powerUnit)), identity.stockTorqueNm===undefined?"unknown":Math.round(metricTorque(identity.stockTorqueNm,identity.torqueUnit)), identity.yearFrom, identity.yearTo ?? "open", identity.engineFamily ?? ""].map(value => normalize(String(value))).join("|");
   const groupKey = source.consensusGroup ? `reviewed:${source.consensusGroup}` : key;
-  groups.set(groupKey, [...(groups.get(groupKey) ?? []), source]);
+  groups.set(groupKey, [...(groups.get(groupKey) ?? []), acceptedSource]);
 }
 
 // Reviewed cross-provider links preserve the original target group key / ID.
@@ -140,6 +159,8 @@ const profiles: SourcedTuningProfile[] = [...groups.entries()].map(([key, source
     conditions: [...new Set([...sources.flatMap(item => item.conditions ?? []),...(adjusted?["SOURCE_GENERATION_SCOPE_ADJUSTED"]:[]),...(nonMonotonic?["NON_MONOTONIC_SOURCED_STAGE"]:[])])],
     notes: [...new Set([...sources.flatMap(item => item.notes ?? []),...(adjusted?[`Effective scope intersects the matching body generation: source overlap ${rawFrom}–${rawTo??"open"} becomes ${yearFrom}–${yearTo??"open"}. Raw provider year bands are preserved in source observations; applicability requires review.`]:[])]) ]};
 }).sort((a, b) => a.id.localeCompare(b.id));
+for(const review of promotions)assert.ok(profiles.some(profile=>profile.sourceIds.includes(review.sourceId)),
+  `${review.sourceId}: reviewed observation must enter a sourced profile`);
 
 const datasetRoot = resolve("src/data/tuning-profiles");
 mkdirSync(datasetRoot, {recursive: true});

@@ -13270,6 +13270,64 @@
   {
     "brand": "Ford",
     "modelFamily": "Focus",
+    "generation": "MK2 2005 t/m 2010",
+    "yearFrom": 2005,
+    "yearTo": 2010,
+    "fuel": "Petrol",
+    "engineMarketingName": "MK2 2.0 16v",
+    "displacementCc": 2000,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 145,
+    "stockTorqueNm": 185,
+    "electrification": "unknown",
+    "aliases": [],
+    "id": "sourced-ford-focus-43ebf7f149ae",
+    "sourceIds": [
+      "unlimited-v2-d165a625068a240d"
+    ],
+    "sourceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-ford-focus-ii-2-0-16v-145-pk.html"
+    ],
+    "retrievedAt": "2026-09-16T14:15:11.928Z",
+    "lastReviewedAt": "2026-09-16T14:15:11.928Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 160,
+      "selectedTorqueNm": 210,
+      "sourceValues": [
+        {
+          "sourceId": "unlimited-v2-d165a625068a240d",
+          "provider": "unlimited-tuning",
+          "powerHp": 160,
+          "torqueNm": 206,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 0,
+    "stage3SourceCount": 0,
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Normal or explicitly labelled Stage 1 is the ordinary remap observation. Stage 1+ and Xtreme are not substituted for Stage 1 or Stage 2.",
+      "Engine displacement is nominal from the published engine label. Provider year bands are preserved, not interpreted as build dates. No competitor prices are retained."
+    ]
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Focus",
     "generation": "MK1 1998 - 2005",
     "yearFrom": 1998,
     "yearTo": 2005,
@@ -43682,6 +43740,64 @@
   {
     "brand": "Peugeot",
     "modelFamily": "2008",
+    "generation": "2013 t/m 2016",
+    "yearFrom": 2013,
+    "yearTo": 2016,
+    "fuel": "Petrol",
+    "engineMarketingName": "1.6 VTI",
+    "displacementCc": 1600,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 120,
+    "stockTorqueNm": 160,
+    "electrification": "unknown",
+    "aliases": [],
+    "id": "sourced-peugeot-2008-2ec1cb9604af",
+    "sourceIds": [
+      "unlimited-v2-2226cb9b6e05c9dc"
+    ],
+    "sourceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-peugeot-2008-1-6-vti-120-pk.html"
+    ],
+    "retrievedAt": "2026-09-16T14:26:26.692Z",
+    "lastReviewedAt": "2026-09-16T14:26:26.692Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 135,
+      "selectedTorqueNm": 180,
+      "sourceValues": [
+        {
+          "sourceId": "unlimited-v2-2226cb9b6e05c9dc",
+          "provider": "unlimited-tuning",
+          "powerHp": 135,
+          "torqueNm": 180,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 0,
+    "stage3SourceCount": 0,
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Normal or explicitly labelled Stage 1 is the ordinary remap observation. Stage 1+ and Xtreme are not substituted for Stage 1 or Stage 2.",
+      "Engine displacement is nominal from the published engine label. Provider year bands are preserved, not interpreted as build dates. No competitor prices are retained."
+    ]
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "2008",
     "generation": "2016 t/m 2020",
     "yearFrom": 2016,
     "yearTo": 2020,
@@ -45024,6 +45140,64 @@
       "Normal or explicitly labelled Stage 1 is the ordinary remap observation. Stage 1+ and Xtreme are not substituted for Stage 1 or Stage 2.",
       "Engine displacement is nominal from the published engine label. Provider year bands are preserved, not interpreted as build dates. No competitor prices are retained.",
       "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "208",
+    "generation": "2012 t/m 2019",
+    "yearFrom": 2012,
+    "yearTo": 2019,
+    "fuel": "Petrol",
+    "engineMarketingName": "1.6 THP",
+    "displacementCc": 1600,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 155,
+    "stockTorqueNm": 260,
+    "electrification": "unknown",
+    "aliases": [],
+    "id": "sourced-peugeot-208-f7ec05372241",
+    "sourceIds": [
+      "unlimited-v2-4e5dc33a1025ea18"
+    ],
+    "sourceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-peugeot-208-1-6-thp-155-pk.html"
+    ],
+    "retrievedAt": "2026-09-16T14:28:09.072Z",
+    "lastReviewedAt": "2026-09-16T14:28:09.072Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 200,
+      "selectedTorqueNm": 340,
+      "sourceValues": [
+        {
+          "sourceId": "unlimited-v2-4e5dc33a1025ea18",
+          "provider": "unlimited-tuning",
+          "powerHp": 200,
+          "torqueNm": 345,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 0,
+    "stage3SourceCount": 0,
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Normal or explicitly labelled Stage 1 is the ordinary remap observation. Stage 1+ and Xtreme are not substituted for Stage 1 or Stage 2.",
+      "Engine displacement is nominal from the published engine label. Provider year bands are preserved, not interpreted as build dates. No competitor prices are retained."
     ]
   },
   {
@@ -75897,6 +76071,64 @@
           "provider": "unlimited-tuning",
           "powerHp": 113,
           "torqueNm": 142,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "stage1SourceCount": 1,
+    "stage2SourceCount": 0,
+    "stage3SourceCount": 0,
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Normal or explicitly labelled Stage 1 is the ordinary remap observation. Stage 1+ and Xtreme are not substituted for Stage 1 or Stage 2.",
+      "Engine displacement is nominal from the published engine label. Provider year bands are preserved, not interpreted as build dates. No competitor prices are retained."
+    ]
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Polo",
+    "generation": "2017 t/m 2021 A0 ph1",
+    "yearFrom": 2017,
+    "yearTo": 2021,
+    "fuel": "Petrol",
+    "engineMarketingName": "2.0 TSI",
+    "displacementCc": 2000,
+    "displacementPrecision": "nominal",
+    "stockPowerHp": 200,
+    "stockTorqueNm": 320,
+    "electrification": "unknown",
+    "aliases": [],
+    "id": "sourced-volkswagen-polo-3e98b5136a13",
+    "sourceIds": [
+      "unlimited-v2-7e3222da8a7f2aa0"
+    ],
+    "sourceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-polo-2-0-tsi-200-pk.html"
+    ],
+    "retrievedAt": "2026-09-16T13:57:10.941Z",
+    "lastReviewedAt": "2026-09-16T13:57:10.941Z",
+    "reviewStatus": "owner-review-required",
+    "ownerReviewRequired": true,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 235,
+      "selectedTorqueNm": 420,
+      "sourceValues": [
+        {
+          "sourceId": "unlimited-v2-7e3222da8a7f2aa0",
+          "provider": "unlimited-tuning",
+          "powerHp": 235,
+          "torqueNm": 420,
           "powerUnit": "PS",
           "torqueUnit": "Nm",
           "conditions": []

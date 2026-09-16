@@ -3835,12 +3835,6 @@
       ]
     },
     {
-      "sourceId": "unlimited-v2-7e3222da8a7f2aa0",
-      "reasons": [
-        "V2_RESEARCH_QUEUE_NOT_PROMOTED"
-      ]
-    },
-    {
       "sourceId": "unlimited-v2-5332c06e02ba09d8",
       "reasons": [
         "V2_RESEARCH_QUEUE_NOT_PROMOTED"
@@ -4270,12 +4264,6 @@
       "sourceId": "unlimited-v2-60a8bb3a6f03fc7e",
       "reasons": [
         "IDENTITY_UNAVAILABLE"
-      ]
-    },
-    {
-      "sourceId": "unlimited-v2-d165a625068a240d",
-      "reasons": [
-        "V2_RESEARCH_QUEUE_NOT_PROMOTED"
       ]
     },
     {
@@ -4922,12 +4910,6 @@
     },
     {
       "sourceId": "unlimited-v2-2d03c0ec2c31c222",
-      "reasons": [
-        "V2_RESEARCH_QUEUE_NOT_PROMOTED"
-      ]
-    },
-    {
-      "sourceId": "unlimited-v2-4e5dc33a1025ea18",
       "reasons": [
         "V2_RESEARCH_QUEUE_NOT_PROMOTED"
       ]
@@ -8227,12 +8209,6 @@
     },
     {
       "sourceId": "unlimited-v2-08e0ff35f9c0af11",
-      "reasons": [
-        "V2_RESEARCH_QUEUE_NOT_PROMOTED"
-      ]
-    },
-    {
-      "sourceId": "unlimited-v2-2226cb9b6e05c9dc",
       "reasons": [
         "V2_RESEARCH_QUEUE_NOT_PROMOTED"
       ]
