@@ -1,0 +1,584 @@
+{
+  "status": "BLOCKED",
+  "auditComplete": true,
+  "baselineSha": "4d12e510953fb57c3f8f84a737880ff860a617e7",
+  "candidateSha": "b3e6f9225cb90948a8d1d60b21967984cc9e6a14",
+  "candidateAhead": 23,
+  "candidateBehind": 0,
+  "stack": [
+    13,
+    14,
+    15,
+    16
+  ],
+  "completeDiff": {
+    "commitCount": 23,
+    "fileCount": 337,
+    "sourceCodeFiles": 95,
+    "added": 1714180,
+    "deleted": 833,
+    "categories": {
+      "runtime": 38,
+      "generatedData": 98,
+      "documentationQa": 122,
+      "binaryScreenshots": 79,
+      "other": 0
+    },
+    "runtimeAndConfigFiles": [
+      "package.json",
+      "src/app/[locale]/[brand]/[model]/[engine]/[stage]/page.tsx",
+      "src/app/[locale]/page.tsx",
+      "src/app/[locale]/vehicles/[vehicleId]/page.tsx",
+      "src/app/api/catalog-selector/route.ts",
+      "src/app/api/rdw-lookup/route.ts",
+      "src/components/manual-selector.tsx",
+      "src/components/plate-lookup.tsx",
+      "src/components/power-chart.tsx",
+      "src/components/reference-estimate-details.tsx",
+      "src/components/seo-info-sections.tsx",
+      "src/components/vehicle-detail.tsx",
+      "src/data/catalog-matching.ts",
+      "src/data/catalog-selector.ts",
+      "src/data/catalog-shared.ts",
+      "src/data/catalog.ts",
+      "src/data/pricing.ts",
+      "src/data/runtime-pricing.ts",
+      "src/data/tuning-estimates-shared.ts",
+      "src/data/tuning-estimates.ts",
+      "src/data/tuning-heuristics.ts",
+      "src/data/tuning-profiles/consensus.ts",
+      "src/data/tuning-profiles/index.ts",
+      "src/data/tuning-profiles/schema.ts",
+      "src/data/tuning-reference-research.ts",
+      "src/lib/catalog-verification-copy.ts",
+      "src/lib/estimate-chart.ts",
+      "src/lib/estimate-copy.ts",
+      "src/lib/quote-offer.ts",
+      "src/lib/rdw-date.ts",
+      "src/lib/rdw-tuning-estimate.ts",
+      "src/lib/rdw.ts",
+      "src/lib/seo.ts",
+      "src/lib/sourced-powertrain.ts",
+      "src/lib/sourced-tuning-match.ts",
+      "src/lib/stage-hardware-policy.ts",
+      "src/lib/vehicle-services.ts",
+      "src/lib/whatsapp.ts",
+      "src/data/tuning-profiles/profiles.json",
+      "src/data/tuning-profiles/source-index.json"
+    ],
+    "unrelatedChangesFound": 0
+  },
+  "blockers": [
+    {
+      "id": "RC-01",
+      "title": "Owner identifiers persisted in existing tracked QA artifacts",
+      "evidence": {
+        "textFiles": 18,
+        "identifierBearingFileNames": 12,
+        "examples": [
+          "docs/tuning-qa/runtime/live-rdw-identities.json",
+          "docs/tuning-qa/runtime/browser-acceptance.json",
+          "docs/tuning-data/browser-v3-2/browser-acceptance.json"
+        ]
+      },
+      "fixApplied": false
+    },
+    {
+      "id": "RC-02",
+      "title": "Required reference-first precedence conflicts with frozen production resolver",
+      "evidence": "Production wrapper checks sourced dataset before retained references. BMW 128ti 1998 cc / 265 PS / 2020 resolves 305 PS / 490 Nm instead of retained reference 310 PS / 480 Nm; Transit Custom 1995 cc / 105 PS / 2019 resolves 190 PS / 460 Nm instead of reference 190 PS / 440 Nm. Existing V3.2 outputs are preserved; owner policy decision required.",
+      "fixApplied": false
+    },
+    {
+      "id": "RC-03",
+      "title": "Absolute no-plate-in-URLs requirement conflicts with existing handoff/API",
+      "evidence": "WhatsApp quote href deliberately encodes the plate in text. Legacy GET lookup accepts kenteken in its query. Homepage lookup uses POST, with no plate in page navigation or SEO; no analytics integration found in src. No WhatsApp message was sent.",
+      "fixApplied": false
+    }
+  ],
+  "visual": {
+    "widths": [
+      {
+        "width": 320,
+        "homeStylesEqual": true,
+        "baselineWidth": 320,
+        "candidateWidth": 320,
+        "resultFits": true,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "homeStylesEqual": true,
+        "baselineWidth": 390,
+        "candidateWidth": 390,
+        "resultFits": true,
+        "errors": []
+      },
+      {
+        "width": 768,
+        "homeStylesEqual": true,
+        "baselineWidth": 768,
+        "candidateWidth": 768,
+        "resultFits": true,
+        "errors": []
+      },
+      {
+        "width": 1024,
+        "homeStylesEqual": true,
+        "baselineWidth": 1024,
+        "candidateWidth": 1024,
+        "resultFits": true,
+        "errors": []
+      },
+      {
+        "width": 1440,
+        "homeStylesEqual": true,
+        "baselineWidth": 1440,
+        "candidateWidth": 1440,
+        "resultFits": true,
+        "errors": []
+      }
+    ],
+    "assessment": "No unexpected design drift found. Intended technical/quote content and narrow-screen wrapping differ. Existing 320px hero/navigation clipping is shared with main.",
+    "screenshots": [
+      "docs/tuning-data/release-v3-2/baseline-home-320.png",
+      "docs/tuning-data/release-v3-2/candidate-home-320.png",
+      "docs/tuning-data/release-v3-2/baseline-home-1440.png",
+      "docs/tuning-data/release-v3-2/candidate-home-1440.png",
+      "docs/tuning-data/release-v3-2/baseline-result-390.png",
+      "docs/tuning-data/release-v3-2/candidate-result-390.png"
+    ]
+  },
+  "ownerCases": [
+    {
+      "case": "A",
+      "make": "LAND ROVER",
+      "model": "DEFENDER",
+      "fuel": "Diesel",
+      "displacementCc": 1999,
+      "registeredPowerKw": 177,
+      "registeredPowerHp": 241,
+      "firstAdmission": "2020-06-12",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 290,
+          "torqueNm": 590,
+          "provenance": "canonical-estimated",
+          "quote": {
+            "kind": "from",
+            "amountCents": 54900,
+            "taxBasis": "inclusive"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 320,
+          "torqueNm": 660,
+          "provenance": "canonical-estimated",
+          "quote": {
+            "kind": "from",
+            "amountCents": 69900,
+            "taxBasis": "inclusive"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "quote": {
+            "kind": "on-request"
+          }
+        }
+      ],
+      "genuineHttp": true,
+      "identityMatchesRecordedRdw": true,
+      "priorStageAndQuotePreserved": true,
+      "chart": true,
+      "options": true,
+      "selectedStageWhatsapp": true,
+      "visibleInternalIds": false
+    },
+    {
+      "case": "B",
+      "make": "FORD",
+      "model": "TRANSIT CONNECT",
+      "fuel": "Diesel",
+      "displacementCc": 1499,
+      "registeredPowerKw": 73.5,
+      "registeredPowerHp": 100,
+      "firstAdmission": "2018-10-17",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 125,
+          "torqueNm": 330,
+          "provenance": "reference",
+          "quote": {
+            "kind": "from",
+            "amountCents": 44900,
+            "taxBasis": "inclusive"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            125,
+            140
+          ],
+          "torqueRangeNm": [
+            330,
+            340
+          ],
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "amountCents": 54900,
+            "taxBasis": "inclusive"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "quote": {
+            "kind": "on-request"
+          }
+        }
+      ],
+      "genuineHttp": true,
+      "identityMatchesRecordedRdw": true,
+      "priorStageAndQuotePreserved": true,
+      "chart": true,
+      "options": true,
+      "selectedStageWhatsapp": true,
+      "visibleInternalIds": false
+    },
+    {
+      "case": "C",
+      "make": "FORD",
+      "model": "TRANSIT CUSTOM",
+      "fuel": "Diesel",
+      "displacementCc": 1995,
+      "registeredPowerKw": 77,
+      "registeredPowerHp": 105,
+      "firstAdmission": "2019-04-29",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 190,
+          "torqueNm": 460,
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "amountCents": 54900,
+            "taxBasis": "inclusive"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            190,
+            215
+          ],
+          "torqueRangeNm": [
+            460,
+            470
+          ],
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "amountCents": 69900,
+            "taxBasis": "inclusive"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "quote": {
+            "kind": "on-request"
+          }
+        }
+      ],
+      "genuineHttp": true,
+      "identityMatchesRecordedRdw": true,
+      "priorStageAndQuotePreserved": true,
+      "chart": true,
+      "options": true,
+      "selectedStageWhatsapp": true,
+      "visibleInternalIds": false
+    },
+    {
+      "case": "D",
+      "make": "BMW",
+      "model": "128TI",
+      "fuel": "Benzine",
+      "displacementCc": 1998,
+      "registeredPowerKw": 195,
+      "registeredPowerHp": 265,
+      "firstAdmission": "2022-09-14",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 305,
+          "torqueNm": 490,
+          "provenance": "multi-source",
+          "quote": {
+            "kind": "from",
+            "amountCents": 70000,
+            "taxBasis": "inclusive"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 320,
+          "provenance": "single-source",
+          "quote": {
+            "kind": "on-request"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "quote": {
+            "kind": "on-request"
+          }
+        }
+      ],
+      "genuineHttp": true,
+      "identityMatchesRecordedRdw": true,
+      "priorStageAndQuotePreserved": true,
+      "chart": true,
+      "options": true,
+      "selectedStageWhatsapp": true,
+      "visibleInternalIds": false
+    }
+  ],
+  "ownerLabelConvention": "Anonymous A–D follow the order of the four owner cases in the audit request; no plate identifiers are copied into these artifacts.",
+  "pricing": {
+    "pass": true,
+    "legacy269CustomerPath": false,
+    "vatInclusive": true,
+    "optionsOnce": true,
+    "unknownAccessPreservesEstimates": true,
+    "stage3WithoutApprovedHardware": "on-request",
+    "stage1Stage2FromEuros": {
+      "classic": [
+        299,
+        449
+      ],
+      "ordinary2010s": [
+        399,
+        549
+      ],
+      "modern": [
+        449,
+        599
+      ],
+      "higherComplexity": [
+        549,
+        699
+      ],
+      "explicitBmwUnlock": [
+        700,
+        "on-request"
+      ]
+    },
+    "unresolvedIdentityConflict": "on-request"
+  },
+  "stages": {
+    "requiredPrecedencePass": false,
+    "laterSourceStagesPreserved": true,
+    "stage1PlusExcludedFromStage2": true,
+    "modulesExcludedFromRemapVotes": true,
+    "genericClearlyLabeled": true,
+    "numericStage3DoesNotApproveHardware": true,
+    "publicationIndependentCoverage": true
+  },
+  "frozenMetrics": {
+    "profiles": 1269,
+    "multiSourceProfiles": 187,
+    "datasetNumericStages": {
+      "stage1": 1269,
+      "stage2": 271,
+      "stage3": 4
+    },
+    "layers": {
+      "A": 38,
+      "B": 146,
+      "C": 15,
+      "D": 145,
+      "E": 56
+    },
+    "sourced400": 184,
+    "ordinaryIce": {
+      "size": 344,
+      "sourced": 184
+    },
+    "original222": 95,
+    "observedSampleRows": 3000,
+    "observedScenarioCount": 1862,
+    "sourcedScenarios": 863,
+    "strictTop50": 7,
+    "fieldScope": {
+      "stage1": 184,
+      "stage2": 23,
+      "stage3": 0
+    },
+    "quoteChanges": 0,
+    "identityChanges": 0,
+    "gains": 16,
+    "demotions": 0,
+    "newlyUnresolved": 0
+  },
+  "boundary": {
+    "checkedAt": "2026-09-18T22:06:00.024Z",
+    "browserJavaScriptChunks": 25,
+    "browserJavaScriptBytes": 1422757,
+    "canonicalRecords": 58586,
+    "publicVehicles": 24,
+    "nonPublicCanonicalIdsChecked": 58562,
+    "nonPublicCanonicalIdsInBrowserChunks": [],
+    "sourcedProfileIdsChecked": 1269,
+    "scope": "Production browser JavaScript; selected profile DTOs in HTML/RSC/API are intentionally excluded.",
+    "chunkDelta": 0,
+    "byteDelta": 0,
+    "clientCatalogImports": 0,
+    "clientDatasetImports": 0,
+    "rawRdwResponseOmitted": true,
+    "rawMatchCandidatesOmitted": true,
+    "selectedCustomerProvenanceUrlsIntentional": true,
+    "privacyPass": false
+  },
+  "performance": {
+    "unit": "milliseconds",
+    "method": "Same-process alternating indexed/exhaustive source matcher, three passes over all source-derived fixtures plus 400 actual normalized registrations. Warm full resolver over the live sample. Network, HTTP and browser costs excluded. Source index keeps all same-make siblings for identity guards.",
+    "firstRun": {
+      "indexed": {
+        "calls": 5007,
+        "median": 0.15270000000009532,
+        "p95": 0.6746999999995751,
+        "max": 2.0168000000003303
+      },
+      "resolver": {
+        "calls": 1200,
+        "median": 1.0666000000001077,
+        "p95": 5.381900000000314,
+        "max": 19.84519999999975
+      }
+    },
+    "historicalV3": {
+      "indexed": {
+        "calls": 4926,
+        "median": 0.14940000000024156,
+        "p95": 0.6457000000000335,
+        "max": 2.1345000000001164
+      },
+      "resolver": {
+        "calls": 1200,
+        "median": 0.7759000000005472,
+        "p95": 3.8356000000003405,
+        "max": 11.765999999999622
+      }
+    },
+    "sameHostV3": {
+      "sha": "f32ad5a",
+      "indexed": {
+        "calls": 4926,
+        "median": 0.18069999999897846,
+        "p95": 0.8123000000014144,
+        "max": 3.607399999998961
+      },
+      "resolver": {
+        "calls": 1200,
+        "median": 1.1792000000004919,
+        "p95": 5.545500000000175,
+        "max": 28.546000000000276
+      }
+    },
+    "candidate": {
+      "indexed": {
+        "calls": 5007,
+        "median": 0.16010000000005675,
+        "p95": 0.6959999999999127,
+        "max": 1.7721999999998843
+      },
+      "resolver": {
+        "calls": 1200,
+        "median": 0.9518000000007305,
+        "p95": 4.732100000001083,
+        "max": 9.034299999999348
+      }
+    },
+    "assessment": "See report: historical variation investigated with same-host V3 replay; no arbitrary gate introduced."
+  },
+  "validation": [
+    {
+      "command": "pnpm catalog:audit",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:tuning",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:nl-fleet-v2",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:nl-fleet-v3",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:nl-fleet-v3-2",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm lint",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm build",
+      "exitCode": 0
+    }
+  ],
+  "browser": {
+    "cases": 145,
+    "genuineOwnerHttpCases": 22,
+    "deterministicProfileCases": 123,
+    "errors": 0,
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "additionalLocales": [
+      "en",
+      "pl"
+    ],
+    "method": "Existing V3.2 browser acceptance assertions replayed from a private copy, adding 1024px and suppressing its screenshot writes. Four independent browser contexts; owner routes never intercepted. Synthetic profile routes explicitly intercepted."
+  },
+  "baselineEnvironment": {
+    "exactShaBuilt": true,
+    "independentPorts": [
+      3119,
+      3120
+    ],
+    "serverStopped": true,
+    "worktreeRegistrationRemoved": true,
+    "allFilesRemoved": false,
+    "limitation": "Git removal hit Windows Filename too long; automatic approval review rejected remaining-directory deletion as blocked by policy. Leftover directory: C:/Users/barto/.codex/tmp/noordtune-release-baseline-b3e6f92."
+  },
+  "productFilesChangedInAudit": 0,
+  "newFiles": [
+    "docs/tuning-data/RELEASE_CANDIDATE_V3_2.md",
+    "data/research/release-candidate-v3-2.json",
+    "docs/tuning-data/release-v3-2/baseline-home-320.png",
+    "docs/tuning-data/release-v3-2/candidate-home-320.png",
+    "docs/tuning-data/release-v3-2/baseline-home-1440.png",
+    "docs/tuning-data/release-v3-2/candidate-home-1440.png",
+    "docs/tuning-data/release-v3-2/baseline-result-390.png",
+    "docs/tuning-data/release-v3-2/candidate-result-390.png"
+  ],
+  "releaseDecision": "Do not merge or mark Ready. Neutral QA artifacts only; blockers documented without fixes."
+}
