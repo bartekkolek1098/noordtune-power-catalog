@@ -15,6 +15,8 @@ export function sourceModelFamily(make: string, text: string) {
   // PEUGEOT 308). Only an exact, separate make prefix is removed.
   const prefixes = [...new Set([make, make === "mercedes benz" ? "mercedes" : make])];
   for (const prefix of prefixes) if (value.startsWith(`${prefix} `)) { value = value.slice(prefix.length + 1); break; }
+  // RDW shortens Alfa Romeo to a separate "ALFA" prefix in some model names.
+  if (make === "alfa romeo" && value.startsWith("alfa ")) value = value.slice(5);
   if (make === "mazda") value = value.replace(/^mazda(?=[236](?:\s|$))/, "");
   if (make === "honda") value = value.replace(/^cr\s*v\b/, "cr v");
   if (make === "bmw") {
@@ -88,7 +90,12 @@ function generations(text: string, make: string, model: string): GenerationIdent
     return {body: normalized.match(/\bb[5-9]\b/g) ?? [], phase: phase(false)};
   }
   if (make === "volkswagen" && /\b(?:transporter|multivan|caravelle)\b/.test(family)) {
-    return {body: normalized.match(/\bt[4-7]\b/g) ?? [], phase: phase(false)};
+    // T6.1 is a distinct explicit source generation; punctuation normalization
+    // must not reduce it to T6 or confuse the suffix with an engine displacement.
+    return {body: [...text.toLowerCase().matchAll(/\bt([4-7])(?:[.,]([1-9]))?\b/g)].map(m=>`t${m[1]}${m[2]?"."+m[2]:""}`), phase: phase(false)};
+  }
+  if (make === "volkswagen" && /\bcrafter\b/.test(family)) {
+    return bodyOnly([...normalized.matchAll(/\b(?:mk\s*)?([iv]{1,3})\b/g)].map(m=>"crafter"+(roman[m[1]]??m[1])));
   }
   if (make === "audi") {
     const expression = /\ba3\b/.test(family) ? /\b8[lpvy]\b/g

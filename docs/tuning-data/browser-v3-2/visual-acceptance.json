@@ -1,0 +1,29 @@
+{
+  "method": "Supplementary deterministic Doblò DTO views; full localized first-admission date checked against the formatter, with viewport screenshots for visual inspection.",
+  "results": [
+    {
+      "locale": "en",
+      "width": 320,
+      "firstAdmission": "2016-01-14",
+      "displayedDate": "First registration: 14 January 2016",
+      "intercepted": true,
+      "errors": []
+    },
+    {
+      "locale": "pl",
+      "width": 320,
+      "firstAdmission": "2016-01-14",
+      "displayedDate": "Pierwsza rejestracja: 14 stycznia 2016",
+      "intercepted": true,
+      "errors": []
+    },
+    {
+      "locale": "nl",
+      "width": 1440,
+      "firstAdmission": "2016-01-14",
+      "displayedDate": "Eerste toelating: 14 januari 2016",
+      "intercepted": true,
+      "errors": []
+    }
+  ]
+}

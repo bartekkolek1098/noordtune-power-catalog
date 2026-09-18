@@ -3,21 +3,17 @@
   "base": "http://localhost:3117",
   "method": "Four owner plates use the actual HTTP RDW route; seven additional cases use deterministic real-resolver DTOs intercepted only for those synthetic cases.",
   "screenshots": [
-    "v380st-320.png",
-    "kkh27k-320.png",
     "kia-sportage-136-320.png",
     "bmw-340i-hardware-320.png",
     "unsupported-ev-320.png"
   ],
   "results": [
     {
-      "id": "h329xh",
-      "plate": "H329XH",
+      "id": "OWNER-A",
       "width": 320,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -149,13 +145,11 @@
       }
     },
     {
-      "id": "v380st",
-      "plate": "V380ST",
+      "id": "OWNER-B",
       "width": 320,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -293,13 +287,11 @@
       }
     },
     {
-      "id": "v978zf",
-      "plate": "V978ZF",
+      "id": "OWNER-C",
       "width": 320,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -437,13 +429,11 @@
       }
     },
     {
-      "id": "kkh27k",
-      "plate": "KKH27K",
+      "id": "OWNER-D",
       "width": 320,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -567,12 +557,10 @@
     },
     {
       "id": "kia-sportage-136",
-      "plate": "QA0001",
       "width": 320,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0001",
         "make": "Kia",
         "model": "Sportage",
         "doors": null,
@@ -692,12 +680,10 @@
     },
     {
       "id": "kia-ceed-140",
-      "plate": "QA0002",
       "width": 320,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0002",
         "make": "Kia",
         "model": "Ceed",
         "doors": null,
@@ -817,12 +803,10 @@
     },
     {
       "id": "bmw-340i-hardware",
-      "plate": "QA0003",
       "width": 320,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0003",
         "make": "BMW",
         "model": "340i F30",
         "doors": null,
@@ -945,12 +929,10 @@
     },
     {
       "id": "vag-golf-diesel",
-      "plate": "QA0004",
       "width": 320,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0004",
         "make": "Volkswagen",
         "model": "Golf",
         "doors": null,
@@ -1070,12 +1052,10 @@
     },
     {
       "id": "generic-petrol",
-      "plate": "QA0005",
       "width": 320,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0005",
         "make": "Toyota",
         "model": "Yaris",
         "doors": null,
@@ -1199,12 +1179,10 @@
     },
     {
       "id": "unsupported-ev",
-      "plate": "QA0006",
       "width": 320,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0006",
         "make": "Tesla",
         "model": "Model 3",
         "doors": null,
@@ -1251,12 +1229,10 @@
     },
     {
       "id": "ford-focus-125",
-      "plate": "QA0007",
       "width": 320,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0007",
         "make": "Ford",
         "model": "Focus EcoBoost",
         "doors": null,
@@ -1375,13 +1351,11 @@
       }
     },
     {
-      "id": "h329xh",
-      "plate": "H329XH",
+      "id": "OWNER-A",
       "width": 1440,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -1513,13 +1487,11 @@
       }
     },
     {
-      "id": "v380st",
-      "plate": "V380ST",
+      "id": "OWNER-B",
       "width": 1440,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -1657,13 +1629,11 @@
       }
     },
     {
-      "id": "v978zf",
-      "plate": "V978ZF",
+      "id": "OWNER-C",
       "width": 1440,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -1801,13 +1771,11 @@
       }
     },
     {
-      "id": "kkh27k",
-      "plate": "KKH27K",
+      "id": "OWNER-D",
       "width": 1440,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -1931,12 +1899,10 @@
     },
     {
       "id": "kia-sportage-136",
-      "plate": "QA0001",
       "width": 1440,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0001",
         "make": "Kia",
         "model": "Sportage",
         "doors": null,
@@ -2056,12 +2022,10 @@
     },
     {
       "id": "kia-ceed-140",
-      "plate": "QA0002",
       "width": 1440,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0002",
         "make": "Kia",
         "model": "Ceed",
         "doors": null,
@@ -2181,12 +2145,10 @@
     },
     {
       "id": "bmw-340i-hardware",
-      "plate": "QA0003",
       "width": 1440,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0003",
         "make": "BMW",
         "model": "340i F30",
         "doors": null,
@@ -2309,12 +2271,10 @@
     },
     {
       "id": "vag-golf-diesel",
-      "plate": "QA0004",
       "width": 1440,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0004",
         "make": "Volkswagen",
         "model": "Golf",
         "doors": null,
@@ -2434,12 +2394,10 @@
     },
     {
       "id": "generic-petrol",
-      "plate": "QA0005",
       "width": 1440,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0005",
         "make": "Toyota",
         "model": "Yaris",
         "doors": null,
@@ -2563,12 +2521,10 @@
     },
     {
       "id": "unsupported-ev",
-      "plate": "QA0006",
       "width": 1440,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0006",
         "make": "Tesla",
         "model": "Model 3",
         "doors": null,
@@ -2615,12 +2571,10 @@
     },
     {
       "id": "ford-focus-125",
-      "plate": "QA0007",
       "width": 1440,
       "locale": "nl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0007",
         "make": "Ford",
         "model": "Focus EcoBoost",
         "doors": null,
@@ -2739,13 +2693,11 @@
       }
     },
     {
-      "id": "v380st",
-      "plate": "V380ST",
+      "id": "OWNER-B",
       "width": 320,
       "locale": "en",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -2883,13 +2835,11 @@
       }
     },
     {
-      "id": "kkh27k",
-      "plate": "KKH27K",
+      "id": "OWNER-D",
       "width": 320,
       "locale": "en",
       "liveApi": true,
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -3013,12 +2963,10 @@
     },
     {
       "id": "kia-sportage-136",
-      "plate": "QA0001",
       "width": 320,
       "locale": "en",
       "liveApi": false,
       "identity": {
-        "plate": "QA0001",
         "make": "Kia",
         "model": "Sportage",
         "doors": null,
@@ -3137,13 +3085,11 @@
       }
     },
     {
-      "id": "v380st",
-      "plate": "V380ST",
+      "id": "OWNER-B",
       "width": 320,
       "locale": "pl",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -3281,13 +3227,11 @@
       }
     },
     {
-      "id": "kkh27k",
-      "plate": "KKH27K",
+      "id": "OWNER-D",
       "width": 320,
       "locale": "pl",
       "liveApi": true,
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -3411,12 +3355,10 @@
     },
     {
       "id": "kia-sportage-136",
-      "plate": "QA0001",
       "width": 320,
       "locale": "pl",
       "liveApi": false,
       "identity": {
-        "plate": "QA0001",
         "make": "Kia",
         "model": "Sportage",
         "doors": null,

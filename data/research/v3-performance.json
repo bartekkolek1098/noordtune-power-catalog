@@ -1,0 +1,52 @@
+{
+  "datasetFingerprint": "cd53d92eab366f636915cd882fafc8332e0bcb8762b371056ca1df85f7f4b0f5",
+  "node": "v24.19.0",
+  "platform": "win32",
+  "checkedAt": "2026-09-16T18:09:09.003Z",
+  "profiles": 1242,
+  "method": "Same-process alternating indexed/exhaustive source matcher, three passes over all source-derived fixtures plus 400 actual normalized registrations. Warm full resolver over the live sample. Network, HTTP and browser costs excluded. Source index keeps all same-make siblings for identity guards.",
+  "coldSourceIndexMs": 5.99879999999996,
+  "sourceExhaustiveMs": {
+    "calls": 4926,
+    "median": 1.1512000000002445,
+    "p95": 2.2786999999998443,
+    "max": 4.870100000000093
+  },
+  "sourceIndexedMs": {
+    "calls": 4926,
+    "median": 0.14940000000024156,
+    "p95": 0.6457000000000335,
+    "max": 2.1345000000001164
+  },
+  "fullResolverMs": {
+    "calls": 1200,
+    "median": 0.7759000000005472,
+    "p95": 3.8356000000003405,
+    "max": 11.765999999999622
+  },
+  "memory": {
+    "gcAvailable": true,
+    "beforeIndex": {
+      "rss": 313667584,
+      "heapTotal": 259424256,
+      "heapUsed": 117197744,
+      "external": 10192308,
+      "arrayBuffers": 143615
+    },
+    "afterIndex": {
+      "rss": 314363904,
+      "heapTotal": 259424256,
+      "heapUsed": 117581936,
+      "external": 10255479,
+      "arrayBuffers": 143615
+    },
+    "heapIndexDeltaBytes": 384192,
+    "afterBenchmark": {
+      "rss": 339767296,
+      "heapTotal": 264404992,
+      "heapUsed": 121092744,
+      "external": 10255479,
+      "arrayBuffers": 143615
+    }
+  }
+}

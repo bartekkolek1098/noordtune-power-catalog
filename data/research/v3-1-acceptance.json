@@ -1,0 +1,14 @@
+{
+  "datasetFingerprint": "b99b7fca3051f8326d8e96eb32f83577c367193f08dadbc3117a47dd1fddae81",
+  "sampleSize": 400,
+  "priorFixedSubset": 222,
+  "outputSampleSize": 3000,
+  "outputGroups": 250,
+  "top50ClosureRecords": 44,
+  "explicitGenerationAndOutputGuards": 30,
+  "largeGainChecks": true,
+  "connectSeparation": true,
+  "pricingChanges": 0,
+  "identityChanges": 0,
+  "failures": 0
+}

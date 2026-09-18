@@ -26,7 +26,7 @@ import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {sitePath} from "@/lib/site-path";
-import {createLookupQuoteMessage, whatsappHref} from "@/lib/whatsapp";
+import {openLookupContact} from "@/lib/lookup-contact";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
@@ -147,9 +147,9 @@ export function PlateLookup({
     recommendedPackageUsed && selectedStage?.name === "Stage 1"
       ? `${text.recommendation.bestDaily} · Stage 1`
       : undefined;
-  const lookupQuoteMessage =
-    result && selectedStage
-      ? createLookupQuoteMessage({
+  function onLookupContact() {
+    if (!result || !selectedStage) return;
+    openLookupContact({
           displacementCc: result.vehicle.engine.displacementCc,
           matchStatus: result.tuningMatch.status,
           estimateProfileLabel: profile ? `${profile.brand} ${profile.model} ${profile.engine}` : undefined,
@@ -177,8 +177,8 @@ export function PlateLookup({
             result.vehicle.engine.powerKw !== undefined
               ? `${result.vehicle.engine.powerKw} kW (${result.vehicle.engine.powerHp} ${powerUnit})`
               : undefined
-        })
-      : undefined;
+        });
+  }
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -430,19 +430,13 @@ export function PlateLookup({
                     </p>
                   ) : null}
                   <Button asChild className="mt-4 h-auto min-h-12 w-full whitespace-normal rounded-[3px] py-3 text-sm font-black uppercase leading-tight shadow-[0_0_32px_rgba(227,6,19,.38)]">
-                    <a
+                    <button type="button"
                       data-testid={profile ? "rdw-exact-quote" : "rdw-manual-review-quote"}
-                      href={whatsappHref({
-                        locale,
-                        message: lookupQuoteMessage,
-                        vehicleLabel: quoteVehicleLabel
-                      })}
-                      rel="noreferrer"
-                      target="_blank"
+                      onClick={onLookupContact}
                     >
                       <MessageCircle className="h-4 w-4" />
                       {profile ? text.quoteForCar : text.recommendation.manualCta}
-                    </a>
+                    </button>
                   </Button>
                 </div>
               </div>
@@ -530,19 +524,13 @@ export function PlateLookup({
                       ) : null}
 
                       <Button asChild className="mt-4 h-auto min-h-11 w-full whitespace-normal rounded-[3px] py-3 text-xs font-black uppercase leading-tight">
-                        <a
+                        <button type="button"
                           data-testid="rdw-recommendation-quote"
-                          href={whatsappHref({
-                            locale,
-                            message: lookupQuoteMessage,
-                            vehicleLabel: quoteVehicleLabel
-                          })}
-                          rel="noreferrer"
-                          target="_blank"
+                          onClick={onLookupContact}
                         >
                           <MessageCircle className="h-4 w-4" />
                           {text.quoteForCar}
-                        </a>
+                        </button>
                       </Button>
                     </div>
                   </div>

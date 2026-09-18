@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const assert = require('node:assert/strict');
+const {lookupContactMessage} = require('./lookup-contact-qa.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
@@ -10,7 +11,7 @@ const base = process.env.RDW_QA_URL || 'http://localhost:3118';
 const output = path.resolve(process.env.RDW_QA_OUTPUT || 'docs/tuning-data/browser-v2');
 const privateFile = process.env.RDW_QA_PRIVATE_SAMPLE || '.git/nl-fleet-v2/rdw-live-private.json';
 const privateRows = JSON.parse(fs.readFileSync(privateFile,'utf8'));
-const validation = JSON.parse(fs.readFileSync('data/research/v2-rdw-validation.json','utf8'));
+const validation = JSON.parse(fs.readFileSync(process.env.RDW_QA_VALIDATION || 'data/research/v2-rdw-validation.json','utf8'));
 const selected = new Map();
 const add = row => {if(row)selected.set(row.sampleId,row);};
 // A purposive browser subset covers all resolution layers and diverse actual
@@ -72,7 +73,7 @@ const summarize=values=>{const sorted=[...values].sort((a,b)=>a-b);return{median
             const power=formatEstimatePower(stage,locale),torque=formatEstimateTorque(stage,locale);
             assert.ok((await row.innerText()).includes(power));await row.click();
             assert.ok((await root.getByTestId('rdw-estimate-output').innerText()).includes(power));
-            const message=new URL(await root.getByTestId('rdw-exact-quote').getAttribute('href')).searchParams.get('text');
+            const message=await lookupContactMessage(page,root.getByTestId('rdw-exact-quote'));
             assert.ok(message.includes(plate)&&message.includes(`${payload.vehicle.make} ${payload.vehicle.model}`));
             assert.ok(message.includes(`${payload.vehicle.engine.powerKw} kW`)&&message.includes(power));
             assert.ok(message.includes(formatEstimateSource(stage,locale)));
@@ -91,7 +92,7 @@ const summarize=values=>{const sorted=[...values].sort((a,b)=>a-b);return{median
           assert.equal(fixture.layer,'E');assert.equal(payload.tuningQuote.kind,'on-request');
           assert.equal(await root.getByTestId('catalog-power-chart').count(),0);
           assert.equal(await root.locator('input[type="checkbox"]').count(),0);
-          const message=new URL(await root.getByTestId('rdw-manual-review-quote').getAttribute('href')).searchParams.get('text');
+          const message=await lookupContactMessage(page,root.getByTestId('rdw-manual-review-quote'));
           assert.ok(message.includes(plate));
         }
         const layout=await root.evaluate(element=>({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth,

@@ -1,0 +1,12 @@
+[
+  {
+    "profileId": "sourced-volkswagen-caddy-b32d654b8ae6",
+    "retainedProfileId": "sourced-volkswagen-caddy-350a182f5891",
+    "reason": "Duplicate overlapping application consolidated after independent ATM stock/output/generation corroboration. Original observations remain in the retained profile.",
+    "evidenceSourceIds": [
+      "atm-v3-71df9b036c125619",
+      "unlimited-v2-91563d844ce1ba7e",
+      "shiftech-v2-8861ff51ae751f7e"
+    ]
+  }
+]

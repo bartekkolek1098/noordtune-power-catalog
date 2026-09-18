@@ -32,10 +32,10 @@ All prices below are local draft starting budgets requiring owner/workshop confi
 
 | Fixture | Level | Profile | Stage 1 pk / Nm | Stage 2 pk / Nm | Stage 3 pk / Nm | Evidence S1 / S2 / S3 | Draft budgets S1 / S2 / S3 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| H329XH | 3 | land-rover-defender-2-0-sd4-2020 | 290 / 590 | 320 / 660 | 365 / 740 | canonical / canonical / canonical | €549 / €699 / €999 |
-| V380ST | 1 | ref-ford-transit-connect-15-tdci-100 | 125–140 / 330–340 | 125–140 / 330–340 | 140–155 / 330–350 | reference / generic / generic | €449 / €549 / €849 |
-| V978ZF | 1 | ref-ford-transit-custom-20-ecoblue-105 | 190 / 440 | 190–215 / 440–470 | 190–235 / 440–505 | reference / generic / generic | €549 / €699 / €999 |
-| KKH27K | 1 | ref-bmw-128ti-f40-265 | 310 / 480 | 330–375 / 480–540 | 370–425 / 480–580 | reference / generic / generic | €700 / request (advanced-unlock-higher-stage-scope-unassigned) / request (advanced-unlock-higher-stage-scope-unassigned) |
+| OWNER-A | 3 | land-rover-defender-2-0-sd4-2020 | 290 / 590 | 320 / 660 | 365 / 740 | canonical / canonical / canonical | €549 / €699 / €999 |
+| OWNER-B | 1 | ref-ford-transit-connect-15-tdci-100 | 125–140 / 330–340 | 125–140 / 330–340 | 140–155 / 330–350 | reference / generic / generic | €449 / €549 / €849 |
+| OWNER-C | 1 | ref-ford-transit-custom-20-ecoblue-105 | 190 / 440 | 190–215 / 440–470 | 190–235 / 440–505 | reference / generic / generic | €549 / €699 / €999 |
+| OWNER-D | 1 | ref-bmw-128ti-f40-265 | 310 / 480 | 330–375 / 480–540 | 370–425 / 480–580 | reference / generic / generic | €700 / request (advanced-unlock-higher-stage-scope-unassigned) / request (advanced-unlock-higher-stage-scope-unassigned) |
 | curated:bmw-320d-b47 | 2 | bmw-320d-b47 | 225 / 470 | 245 / 520 | 280 / 600 | public / public / public | €700 / request (advanced-unlock-higher-stage-scope-unassigned) / request (advanced-unlock-higher-stage-scope-unassigned) |
 | curated:vw-golf-20-tsi-ea888 | 2 | vw-golf-20-tsi-ea888 | 300 / 450 | 335 / 500 | 430 / 560 | public / public / public | €449 / €549 / €849 |
 | curated:volkswagen-golf-7-r-20-tsi | 2 | volkswagen-golf-7-r-20-tsi | 365 / 480 | 425 / 540 | 510 / 620 | public / public / public | €549 / €699 / €999 |

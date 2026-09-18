@@ -8,6 +8,8 @@ pnpm research:vtech --limit 5
 pnpm research:shiftech --limit 5
 pnpm research:unlimited --limit 5
 pnpm research:unlimited --refresh --limit 5
+pnpm research:atm --limit 5
+pnpm research:atm --url https://www.atm-chiptuning.com/chiptuning/ford-transit-connect-15-ecoblue-100pk/
 pnpm research:rdw-fleet
 pnpm research:rdw-sample
 pnpm research:nl-priority
@@ -22,6 +24,14 @@ The provider commands inspect that provider independently. Cache expiry defaults
 - **V-Tech:** the current [public configurator](https://sklep.vtech.pl/konfigurator-powerchip/) serves PowerChip One, Premium and Premium + AI hardware-package gains. The previous public `/chip-tuning/` routes returned 404; an indexed legacy development-host page was unavailable. Current external-module facts are preserved under `packages`, including stock PS, published gains and derived stock-plus-gain PS. Unknown stock torque and fuel stay unknown. These packages supply **zero ordinary ECU-remap consensus votes**. An adapter must not rename them Stage 1/2/3 to manufacture corroboration.
 - **Shiftech:** the direct HTTP response may be a JavaScript shell. Public search data is discovery only. V2 tuning facts are extracted from retrieved rendered public application pages with explicit stock and Stage tables. Their hash covers that rendered extraction. A shell refresh is `not-comparable`; it cannot replace accepted values. The disallowed `/_nuxt/` path is not fetched to work around this limitation. Retrieve an allowed rendered page and retain its timestamp/hash before reviewing a change.
 - **Unlimited Tuning:** category breadcrumbs establish make/model/year/fuel scope. The actual product table supplies stock, **Normal** or explicitly labelled **Stage 1** remap and explicitly labelled Stage 2 values. Ecotuning, Stage 1+ and Xtreme are not silently substituted. Missing category fuel, ambiguous generation or incomplete stock fields remain unresolved unless separately corroborated. Explicit hybrids, Niro, HSD, PHEV/MHEV/HEV and hybrid model suffixes stay outside ordinary ICE scope. A tuned value below the published stock output/torque is retained as a rejected observation for review.
+
+## ATM provider added in V3
+
+`research:atm` uses the shared robots-aware, paced private cache and refresh comparison. Its `--url` mode saves a review candidate in `.git/nl-fleet-v3/atm-review`; neither mode promotes facts. ATM's public breadcrumb establishes make, model and generation. Only the actual stock comparison, specification table and explicitly numbered numeric Stage controls supply facts. A generic Stage 2 information panel and Stage 1+ control do not supply Stage 2 output. ECU alternatives and engine codes are retained only when explicitly published and never identify an installed ECU from a registration.
+
+`availability` records provider-specific available, unavailable, development-pending, hybrid-only or different-ECU applicability. Negative applications contribute no remap vote, even if stale numeric markup remains. They do not imply that NoordTune cannot tune the vehicle. A source with both remap and module methods contributes at most one vote from an explicit ordinary remap table; a module-only method is deferred. Search-index availability can be stale: record any discrepancy with a freshly retrieved page, and use the actual current page for accepted evidence.
+
+V3 checks all 985 V2 selected-value checkpoints as well as the V1 set. `v3-source-changes.json` compares V2 to V3; `v3-v1-source-changes.json` gives the cumulative V1 comparison. The historical V2 report stays frozen. Gains above 45% in Stage 1 power or torque require compatible independent corroboration or explicitly validated factory de-rating evidence; otherwise owner review remains required.
 
 ## Applicability and stock evidence
 
