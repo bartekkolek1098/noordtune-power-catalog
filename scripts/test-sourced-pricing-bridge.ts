@@ -89,12 +89,13 @@ const concrete: [SourcedTuningProfile, EstimateMatchInput, string, number, numbe
 ];
 for (const [source, input, pricingId, familyCents, vehicleCents] of concrete) {
   const result = resolveRdwTuningEstimate(input);
-  equal(result.profile?.id, source.id, pricingId + " keeps selected sourced identity");
+  const reference = tuningReferenceProfiles.find(profile => profile.id === pricingId);
+  equal(result.profile?.id, reference?.id ?? source.id, pricingId + " technical identity follows per-stage precedence");
   equal(result.profile?.pricingProfileId, pricingId, pricingId + " runtime bridge");
-  equal(result.profile?.provenance, "sourced-profile", pricingId + " keeps sourced provenance");
+  equal(result.profile?.provenance, reference ? "tuner-reference" : "sourced-profile", pricingId + " provenance follows selected technical layer");
   equal(result.profile?.vehicleId, undefined, pricingId + " does not invent a public page");
   equal([result.profile?.stages[0].powerHp, result.profile?.stages[0].torqueNm],
-    [source.stage1.selectedPowerHp, source.stage1.selectedTorqueNm], pricingId + " keeps source output");
+    reference ? [reference.stages[0].powerHp, reference.stages[0].torqueNm] : [source.stage1.selectedPowerHp, source.stage1.selectedTorqueNm], pricingId + " applicable retained reference takes precedence");
   equal(result.profile?.ecuSupport?.status, "manual-review", pricingId + " ECU stays unconfirmed");
   equal(result.profile?.gearbox, undefined, pricingId + " transmission stays unidentified");
   for (const [scope, amountCents] of [["family", familyCents], ["vehicle", vehicleCents]] as const) {

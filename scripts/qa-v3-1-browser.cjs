@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const assert=require('node:assert/strict');
+const {lookupContactMessage} = require('./lookup-contact-qa.cjs');
 const fs=require('node:fs');
 const path=require('node:path');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'C:/Users/barto/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
@@ -7,7 +8,7 @@ const {normalizeRdwVehicle}=require('../src/lib/rdw.ts');
 const {formatEstimatePower,formatEstimateTorque,formatEstimateSource}=require('../src/lib/estimate-copy.ts');
 const {resolveStageQuote,assessVehicleAccess,formatQuote}=require('../src/data/pricing.ts');
 const base=process.env.RDW_QA_URL||'http://localhost:3120';
-const output=path.resolve('docs/tuning-data/browser-v3-1');
+const output=path.resolve(process.env.RDW_QA_OUTPUT || 'docs/tuning-data/browser-v3-1');
 const sample=JSON.parse(fs.readFileSync('data/research/nl-rdw-v3-qa-sample.json','utf8'));
 const diagnostics=JSON.parse(fs.readFileSync('data/research/v3-1-match-diagnostics.json','utf8'));
 const definitions=[
@@ -51,7 +52,7 @@ const report={checkedAt:new Date().toISOString(),base,method:'Local production U
           assert.equal(profile,undefined);assert.equal(payload.tuningQuote.kind,'on-request');
           assert.equal(await root.getByTestId('catalog-power-chart').count(),0);
           assert.equal(await root.locator('input[type="checkbox"]').count(),0);
-          const message=new URL(await root.getByTestId('rdw-manual-review-quote').getAttribute('href')).searchParams.get('text');
+          const message=await lookupContactMessage(page,root.getByTestId('rdw-manual-review-quote'));
           assert.ok(message.includes(fixture.plate));
         }else{
           assert.equal(await root.locator('tbody tr').count(),3);
@@ -60,7 +61,7 @@ const report={checkedAt:new Date().toISOString(),base,method:'Local production U
             const power=formatEstimatePower(stage,fixture.locale),torque=formatEstimateTorque(stage,fixture.locale);
             assert.ok((await row.innerText()).includes(power));await row.click();
             assert.ok((await root.getByTestId('rdw-estimate-output').innerText()).includes(power));
-            const message=new URL(await root.getByTestId('rdw-exact-quote').getAttribute('href')).searchParams.get('text');
+            const message=await lookupContactMessage(page,root.getByTestId('rdw-exact-quote'));
             assert.ok(message.includes(fixture.plate)&&message.includes(power)&&message.includes(formatEstimateSource(stage,fixture.locale)));
             if(stage.torqueNm!==undefined||stage.torqueRangeNm)assert.ok(message.includes(torque));
             const quote=resolveStageQuote(profile,stage,{scope:'vehicle',estimateApplicable:true,access:assessVehicleAccess(profile)});

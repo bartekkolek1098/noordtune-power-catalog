@@ -1,395 +1,431 @@
 {
-  "status": "BLOCKED",
-  "auditComplete": true,
+  "status": "RELEASE-CANDIDATE-CLEAN",
   "baselineSha": "4d12e510953fb57c3f8f84a737880ff860a617e7",
-  "candidateSha": "b3e6f9225cb90948a8d1d60b21967984cc9e6a14",
-  "candidateAhead": 23,
-  "candidateBehind": 0,
-  "stack": [
-    13,
-    14,
-    15,
-    16
-  ],
-  "completeDiff": {
-    "commitCount": 23,
-    "fileCount": 337,
-    "sourceCodeFiles": 95,
-    "added": 1714180,
-    "deleted": 833,
-    "categories": {
-      "runtime": 38,
-      "generatedData": 98,
-      "documentationQa": 122,
-      "binaryScreenshots": 79,
-      "other": 0
-    },
-    "runtimeAndConfigFiles": [
-      "package.json",
-      "src/app/[locale]/[brand]/[model]/[engine]/[stage]/page.tsx",
-      "src/app/[locale]/page.tsx",
-      "src/app/[locale]/vehicles/[vehicleId]/page.tsx",
-      "src/app/api/catalog-selector/route.ts",
-      "src/app/api/rdw-lookup/route.ts",
-      "src/components/manual-selector.tsx",
-      "src/components/plate-lookup.tsx",
-      "src/components/power-chart.tsx",
-      "src/components/reference-estimate-details.tsx",
-      "src/components/seo-info-sections.tsx",
-      "src/components/vehicle-detail.tsx",
-      "src/data/catalog-matching.ts",
-      "src/data/catalog-selector.ts",
-      "src/data/catalog-shared.ts",
-      "src/data/catalog.ts",
-      "src/data/pricing.ts",
-      "src/data/runtime-pricing.ts",
-      "src/data/tuning-estimates-shared.ts",
-      "src/data/tuning-estimates.ts",
-      "src/data/tuning-heuristics.ts",
-      "src/data/tuning-profiles/consensus.ts",
-      "src/data/tuning-profiles/index.ts",
-      "src/data/tuning-profiles/schema.ts",
-      "src/data/tuning-reference-research.ts",
-      "src/lib/catalog-verification-copy.ts",
-      "src/lib/estimate-chart.ts",
-      "src/lib/estimate-copy.ts",
-      "src/lib/quote-offer.ts",
-      "src/lib/rdw-date.ts",
-      "src/lib/rdw-tuning-estimate.ts",
-      "src/lib/rdw.ts",
-      "src/lib/seo.ts",
-      "src/lib/sourced-powertrain.ts",
-      "src/lib/sourced-tuning-match.ts",
-      "src/lib/stage-hardware-policy.ts",
-      "src/lib/vehicle-services.ts",
-      "src/lib/whatsapp.ts",
-      "src/data/tuning-profiles/profiles.json",
-      "src/data/tuning-profiles/source-index.json"
-    ],
-    "unrelatedChangesFound": 0
-  },
-  "blockers": [
-    {
-      "id": "RC-01",
-      "title": "Owner identifiers persisted in existing tracked QA artifacts",
-      "evidence": {
-        "textFiles": 18,
-        "identifierBearingFileNames": 12,
-        "examples": [
-          "docs/tuning-qa/runtime/live-rdw-identities.json",
-          "docs/tuning-qa/runtime/browser-acceptance.json",
-          "docs/tuning-data/browser-v3-2/browser-acceptance.json"
-        ]
+  "startingSha": "d0533b2d2abe1c021136025843f300a768896987",
+  "candidateCommit": "Final commit SHA and exact-head Preview are recorded in Draft PR #16 after the normal push.",
+  "blockers": {
+    "RC-01": {
+      "status": "RESOLVED",
+      "before": {
+        "textFiles": 24,
+        "occurrences": 401,
+        "ownerFilenames": 12
       },
-      "fixApplied": false
-    },
-    {
-      "id": "RC-02",
-      "title": "Required reference-first precedence conflicts with frozen production resolver",
-      "evidence": "Production wrapper checks sourced dataset before retained references. BMW 128ti 1998 cc / 265 PS / 2020 resolves 305 PS / 490 Nm instead of retained reference 310 PS / 480 Nm; Transit Custom 1995 cc / 105 PS / 2019 resolves 190 PS / 460 Nm instead of reference 190 PS / 440 Nm. Existing V3.2 outputs are preserved; owner policy decision required.",
-      "fixApplied": false
-    },
-    {
-      "id": "RC-03",
-      "title": "Absolute no-plate-in-URLs requirement conflicts with existing handoff/API",
-      "evidence": "WhatsApp quote href deliberately encodes the plate in text. Legacy GET lookup accepts kenteken in its query. Homepage lookup uses POST, with no plate in page navigation or SEO; no analytics integration found in src. No WhatsApp message was sent.",
-      "fixApplied": false
-    }
-  ],
-  "visual": {
-    "widths": [
-      {
-        "width": 320,
-        "homeStylesEqual": true,
-        "baselineWidth": 320,
-        "candidateWidth": 320,
-        "resultFits": true,
-        "errors": []
+      "after": {
+        "scope": "Current tracked tree plus new commit candidates; earlier feature commits intentionally excluded. Known local inputs checked in compact, lowercase, hyphenated, spaced and URL-encoded forms.",
+        "aliases": [
+          "OWNER-A",
+          "OWNER-B",
+          "OWNER-C",
+          "OWNER-D"
+        ],
+        "filesScanned": 405,
+        "trackedTextMatches": 0,
+        "ownerFilenameMatches": 0,
+        "browserJsFiles": 27,
+        "browserJsMatches": 0,
+        "staticHtmlFiles": 3,
+        "staticHtmlMatches": 0,
+        "runtimeTransportOrStorageViolations": 0
       },
-      {
-        "width": 390,
-        "homeStylesEqual": true,
-        "baselineWidth": 390,
-        "candidateWidth": 390,
-        "resultFits": true,
-        "errors": []
-      },
-      {
-        "width": 768,
-        "homeStylesEqual": true,
-        "baselineWidth": 768,
-        "candidateWidth": 768,
-        "resultFits": true,
-        "errors": []
-      },
-      {
-        "width": 1024,
-        "homeStylesEqual": true,
-        "baselineWidth": 1024,
-        "candidateWidth": 1024,
-        "resultFits": true,
-        "errors": []
-      },
-      {
-        "width": 1440,
-        "homeStylesEqual": true,
-        "baselineWidth": 1440,
-        "candidateWidth": 1440,
-        "resultFits": true,
-        "errors": []
+      "screenshots": {
+        "inspected": 12,
+        "removedRedundant": 12,
+        "retainedOwnerNamed": 0,
+        "newSynthetic": 2
       }
-    ],
-    "assessment": "No unexpected design drift found. Intended technical/quote content and narrow-screen wrapping differ. Existing 320px hero/navigation clipping is shared with main.",
-    "screenshots": [
-      "docs/tuning-data/release-v3-2/baseline-home-320.png",
-      "docs/tuning-data/release-v3-2/candidate-home-320.png",
-      "docs/tuning-data/release-v3-2/baseline-home-1440.png",
-      "docs/tuning-data/release-v3-2/candidate-home-1440.png",
-      "docs/tuning-data/release-v3-2/baseline-result-390.png",
-      "docs/tuning-data/release-v3-2/candidate-result-390.png"
-    ]
+    },
+    "RC-02": {
+      "status": "RESOLVED",
+      "hierarchy": "Per stage: applicable retained reference, compatible sourced stage, compatible reviewed/public/canonical stage, existing generic conditional indication. Placeholders skipped; Stage 3 hardware approval stays separate.",
+      "datasetChanged": false,
+      "pricingChanged": false
+    },
+    "RC-03": {
+      "status": "RESOLVED",
+      "contract": "Registration may be included only in the outbound WhatsApp message created after an explicit user contact action. It is not persisted or used in NoordTune-owned URLs, analytics or browser storage.",
+      "get": {
+        "status": 405,
+        "allow": "POST",
+        "cacheControl": "no-store",
+        "queryRead": false,
+        "rdwInvocations": 0
+      },
+      "post": "PASS",
+      "beforeClickPlateHref": false,
+      "afterClickMessageContainsPlate": true,
+      "actualMessagesSent": 0
+    }
+  },
+  "ownerInput": {
+    "mechanism": "NOORDTUNE_OWNER_QA_PLATES optional process environment; no real defaults, mapping or .env committed.",
+    "absent": "Owner-live SKIPPED; 161 deterministic browser cases pass."
   },
   "ownerCases": [
     {
-      "case": "A",
-      "make": "LAND ROVER",
-      "model": "DEFENDER",
-      "fuel": "Diesel",
-      "displacementCc": 1999,
-      "registeredPowerKw": 177,
-      "registeredPowerHp": 241,
-      "firstAdmission": "2020-06-12",
-      "stages": [
-        {
-          "stage": "Stage 1",
-          "powerHp": 290,
-          "torqueNm": 590,
-          "provenance": "canonical-estimated",
-          "quote": {
-            "kind": "from",
-            "amountCents": 54900,
-            "taxBasis": "inclusive"
+      "id": "OWNER-A",
+      "identity": {
+        "make": "LAND ROVER",
+        "model": "DEFENDER",
+        "fuel": "Diesel",
+        "displacementCc": 1999,
+        "powerKw": 177,
+        "powerHp": 241,
+        "firstAdmission": "2020-06-12"
+      },
+      "before": {
+        "profile": "land-rover-defender-2-0-sd4-2020",
+        "stages": [
+          {
+            "stage": "Stage 1",
+            "powerHp": 290,
+            "torqueNm": 590,
+            "provenance": "canonical-estimated"
+          },
+          {
+            "stage": "Stage 2",
+            "powerHp": 320,
+            "torqueNm": 660,
+            "provenance": "canonical-estimated"
+          },
+          {
+            "stage": "Stage 3+"
           }
-        },
-        {
-          "stage": "Stage 2",
-          "powerHp": 320,
-          "torqueNm": 660,
-          "provenance": "canonical-estimated",
-          "quote": {
-            "kind": "from",
-            "amountCents": 69900,
-            "taxBasis": "inclusive"
+        ]
+      },
+      "after": {
+        "profile": "land-rover-defender-2-0-sd4-2020",
+        "stages": [
+          {
+            "stage": "Stage 1",
+            "powerHp": 290,
+            "torqueNm": 590,
+            "provenance": "canonical-estimated",
+            "quote": {
+              "kind": "from",
+              "indicative": true,
+              "status": "draft-local-owner-review",
+              "amountCents": 54900,
+              "currency": "EUR",
+              "taxBasis": "inclusive",
+              "policyId": "draft-runtime-v1:listed-premium-complexity-family:higher-complexity:Stage 1",
+              "pricingCategory": "higher-complexity",
+              "scope": "vehicle-software",
+              "stageName": "Stage 1",
+              "confirmationRequired": true
+            }
+          },
+          {
+            "stage": "Stage 2",
+            "powerHp": 320,
+            "torqueNm": 660,
+            "provenance": "canonical-estimated",
+            "quote": {
+              "kind": "from",
+              "indicative": true,
+              "status": "draft-local-owner-review",
+              "amountCents": 69900,
+              "currency": "EUR",
+              "taxBasis": "inclusive",
+              "policyId": "draft-runtime-v1:listed-premium-complexity-family:higher-complexity:Stage 2",
+              "pricingCategory": "higher-complexity",
+              "scope": "vehicle-software",
+              "stageName": "Stage 2",
+              "confirmationRequired": true
+            }
+          },
+          {
+            "stage": "Stage 3+",
+            "quote": {
+              "kind": "on-request",
+              "currency": "EUR",
+              "reasonCode": "custom-hardware-scope-unassigned"
+            }
           }
-        },
-        {
-          "stage": "Stage 3+",
-          "quote": {
-            "kind": "on-request"
-          }
-        }
-      ],
+        ]
+      },
       "genuineHttp": true,
-      "identityMatchesRecordedRdw": true,
-      "priorStageAndQuotePreserved": true,
-      "chart": true,
-      "options": true,
-      "selectedStageWhatsapp": true,
-      "visibleInternalIds": false
+      "registeredIdentityPreserved": true,
+      "selectedStageContactVerified": true,
+      "installedEcuClaim": false
     },
     {
-      "case": "B",
-      "make": "FORD",
-      "model": "TRANSIT CONNECT",
-      "fuel": "Diesel",
-      "displacementCc": 1499,
-      "registeredPowerKw": 73.5,
-      "registeredPowerHp": 100,
-      "firstAdmission": "2018-10-17",
-      "stages": [
-        {
-          "stage": "Stage 1",
-          "powerHp": 125,
-          "torqueNm": 330,
-          "provenance": "reference",
-          "quote": {
-            "kind": "from",
-            "amountCents": 44900,
-            "taxBasis": "inclusive"
+      "id": "OWNER-B",
+      "identity": {
+        "make": "FORD",
+        "model": "TRANSIT CONNECT",
+        "fuel": "Diesel",
+        "displacementCc": 1499,
+        "powerKw": 73.5,
+        "powerHp": 100,
+        "firstAdmission": "2018-10-17"
+      },
+      "before": {
+        "profile": "ref-ford-transit-connect-15-tdci-100",
+        "stages": [
+          {
+            "stage": "Stage 1",
+            "powerHp": 125,
+            "torqueNm": 330,
+            "provenance": "reference"
+          },
+          {
+            "stage": "Stage 2",
+            "powerRangeHp": [
+              125,
+              140
+            ],
+            "torqueRangeNm": [
+              330,
+              340
+            ],
+            "provenance": "generic-indicative"
+          },
+          {
+            "stage": "Stage 3+"
           }
-        },
-        {
-          "stage": "Stage 2",
-          "powerRangeHp": [
-            125,
-            140
-          ],
-          "torqueRangeNm": [
-            330,
-            340
-          ],
-          "provenance": "generic-indicative",
-          "quote": {
-            "kind": "from",
-            "amountCents": 54900,
-            "taxBasis": "inclusive"
+        ]
+      },
+      "after": {
+        "profile": "ref-ford-transit-connect-15-tdci-100",
+        "stages": [
+          {
+            "stage": "Stage 1",
+            "powerHp": 125,
+            "torqueNm": 330,
+            "provenance": "reference",
+            "quote": {
+              "kind": "from",
+              "indicative": true,
+              "status": "draft-local-owner-review",
+              "amountCents": 44900,
+              "currency": "EUR",
+              "taxBasis": "inclusive",
+              "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+              "pricingCategory": "contemporary-standard",
+              "scope": "vehicle-software",
+              "stageName": "Stage 1",
+              "confirmationRequired": true
+            }
+          },
+          {
+            "stage": "Stage 2",
+            "powerRangeHp": [
+              125,
+              140
+            ],
+            "torqueRangeNm": [
+              330,
+              340
+            ],
+            "provenance": "generic-indicative",
+            "quote": {
+              "kind": "from",
+              "indicative": true,
+              "status": "draft-local-owner-review",
+              "amountCents": 54900,
+              "currency": "EUR",
+              "taxBasis": "inclusive",
+              "policyId": "draft-runtime-v1:reference-category:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 2",
+              "pricingCategory": "contemporary-standard",
+              "scope": "vehicle-software",
+              "stageName": "Stage 2",
+              "confirmationRequired": true
+            }
+          },
+          {
+            "stage": "Stage 3+",
+            "quote": {
+              "kind": "on-request",
+              "currency": "EUR",
+              "reasonCode": "custom-hardware-scope-unassigned"
+            }
           }
-        },
-        {
-          "stage": "Stage 3+",
-          "quote": {
-            "kind": "on-request"
-          }
-        }
-      ],
+        ]
+      },
       "genuineHttp": true,
-      "identityMatchesRecordedRdw": true,
-      "priorStageAndQuotePreserved": true,
-      "chart": true,
-      "options": true,
-      "selectedStageWhatsapp": true,
-      "visibleInternalIds": false
+      "registeredIdentityPreserved": true,
+      "selectedStageContactVerified": true,
+      "installedEcuClaim": false
     },
     {
-      "case": "C",
-      "make": "FORD",
-      "model": "TRANSIT CUSTOM",
-      "fuel": "Diesel",
-      "displacementCc": 1995,
-      "registeredPowerKw": 77,
-      "registeredPowerHp": 105,
-      "firstAdmission": "2019-04-29",
-      "stages": [
-        {
-          "stage": "Stage 1",
-          "powerHp": 190,
-          "torqueNm": 460,
-          "provenance": "single-source",
-          "quote": {
-            "kind": "from",
-            "amountCents": 54900,
-            "taxBasis": "inclusive"
+      "id": "OWNER-C",
+      "identity": {
+        "make": "FORD",
+        "model": "TRANSIT CUSTOM",
+        "fuel": "Diesel",
+        "displacementCc": 1995,
+        "powerKw": 77,
+        "powerHp": 105,
+        "firstAdmission": "2019-04-29"
+      },
+      "before": {
+        "profile": "sourced-ford-transit-custom-d463142a0598",
+        "stages": [
+          {
+            "stage": "Stage 1",
+            "powerHp": 190,
+            "torqueNm": 460,
+            "provenance": "single-source"
+          },
+          {
+            "stage": "Stage 2",
+            "powerRangeHp": [
+              190,
+              215
+            ],
+            "torqueRangeNm": [
+              460,
+              470
+            ],
+            "provenance": "generic-indicative"
+          },
+          {
+            "stage": "Stage 3+"
           }
-        },
-        {
-          "stage": "Stage 2",
-          "powerRangeHp": [
-            190,
-            215
-          ],
-          "torqueRangeNm": [
-            460,
-            470
-          ],
-          "provenance": "generic-indicative",
-          "quote": {
-            "kind": "from",
-            "amountCents": 69900,
-            "taxBasis": "inclusive"
+        ]
+      },
+      "after": {
+        "profile": "ref-ford-transit-custom-20-ecoblue-105",
+        "stages": [
+          {
+            "stage": "Stage 1",
+            "powerHp": 190,
+            "torqueNm": 440,
+            "provenance": "reference",
+            "quote": {
+              "kind": "from",
+              "indicative": true,
+              "status": "draft-local-owner-review",
+              "amountCents": 54900,
+              "currency": "EUR",
+              "taxBasis": "inclusive",
+              "policyId": "draft-local-v1:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 1",
+              "pricingCategory": "higher-complexity",
+              "scope": "vehicle-software",
+              "stageName": "Stage 1",
+              "confirmationRequired": true
+            }
+          },
+          {
+            "stage": "Stage 2",
+            "powerRangeHp": [
+              190,
+              215
+            ],
+            "torqueRangeNm": [
+              440,
+              470
+            ],
+            "provenance": "generic-indicative",
+            "quote": {
+              "kind": "from",
+              "indicative": true,
+              "status": "draft-local-owner-review",
+              "amountCents": 69900,
+              "currency": "EUR",
+              "taxBasis": "inclusive",
+              "policyId": "draft-runtime-v1:reference-category:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 2",
+              "pricingCategory": "higher-complexity",
+              "scope": "vehicle-software",
+              "stageName": "Stage 2",
+              "confirmationRequired": true
+            }
+          },
+          {
+            "stage": "Stage 3+",
+            "quote": {
+              "kind": "on-request",
+              "currency": "EUR",
+              "reasonCode": "custom-hardware-scope-unassigned"
+            }
           }
-        },
-        {
-          "stage": "Stage 3+",
-          "quote": {
-            "kind": "on-request"
-          }
-        }
-      ],
+        ]
+      },
       "genuineHttp": true,
-      "identityMatchesRecordedRdw": true,
-      "priorStageAndQuotePreserved": true,
-      "chart": true,
-      "options": true,
-      "selectedStageWhatsapp": true,
-      "visibleInternalIds": false
+      "registeredIdentityPreserved": true,
+      "selectedStageContactVerified": true,
+      "installedEcuClaim": false
     },
     {
-      "case": "D",
-      "make": "BMW",
-      "model": "128TI",
-      "fuel": "Benzine",
-      "displacementCc": 1998,
-      "registeredPowerKw": 195,
-      "registeredPowerHp": 265,
-      "firstAdmission": "2022-09-14",
-      "stages": [
-        {
-          "stage": "Stage 1",
-          "powerHp": 305,
-          "torqueNm": 490,
-          "provenance": "multi-source",
-          "quote": {
-            "kind": "from",
-            "amountCents": 70000,
-            "taxBasis": "inclusive"
+      "id": "OWNER-D",
+      "identity": {
+        "make": "BMW",
+        "model": "128TI",
+        "fuel": "Benzine",
+        "displacementCc": 1998,
+        "powerKw": 195,
+        "powerHp": 265,
+        "firstAdmission": "2022-09-14"
+      },
+      "before": {
+        "profile": "sourced-bmw-1-series-ae8b9b336dc6",
+        "stages": [
+          {
+            "stage": "Stage 1",
+            "powerHp": 305,
+            "torqueNm": 490,
+            "provenance": "multi-source"
+          },
+          {
+            "stage": "Stage 2",
+            "powerHp": 320,
+            "provenance": "single-source"
+          },
+          {
+            "stage": "Stage 3+"
           }
-        },
-        {
-          "stage": "Stage 2",
-          "powerHp": 320,
-          "provenance": "single-source",
-          "quote": {
-            "kind": "on-request"
+        ]
+      },
+      "after": {
+        "profile": "ref-bmw-128ti-f40-265",
+        "stages": [
+          {
+            "stage": "Stage 1",
+            "powerHp": 310,
+            "torqueNm": 480,
+            "provenance": "reference",
+            "quote": {
+              "kind": "from",
+              "indicative": true,
+              "status": "draft-local-owner-review",
+              "amountCents": 70000,
+              "currency": "EUR",
+              "taxBasis": "inclusive",
+              "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+              "pricingCategory": "advanced-unlock",
+              "scope": "advanced-unlock-package",
+              "stageName": "Stage 1",
+              "confirmationRequired": true
+            }
+          },
+          {
+            "stage": "Stage 2",
+            "powerHp": 320,
+            "provenance": "single-source",
+            "quote": {
+              "kind": "on-request",
+              "currency": "EUR",
+              "reasonCode": "advanced-unlock-higher-stage-scope-unassigned"
+            }
+          },
+          {
+            "stage": "Stage 3+",
+            "quote": {
+              "kind": "on-request",
+              "currency": "EUR",
+              "reasonCode": "custom-hardware-scope-unassigned"
+            }
           }
-        },
-        {
-          "stage": "Stage 3+",
-          "quote": {
-            "kind": "on-request"
-          }
-        }
-      ],
+        ]
+      },
       "genuineHttp": true,
-      "identityMatchesRecordedRdw": true,
-      "priorStageAndQuotePreserved": true,
-      "chart": true,
-      "options": true,
-      "selectedStageWhatsapp": true,
-      "visibleInternalIds": false
+      "registeredIdentityPreserved": true,
+      "selectedStageContactVerified": true,
+      "installedEcuClaim": false
     }
   ],
-  "ownerLabelConvention": "Anonymous A–D follow the order of the four owner cases in the audit request; no plate identifiers are copied into these artifacts.",
-  "pricing": {
-    "pass": true,
-    "legacy269CustomerPath": false,
-    "vatInclusive": true,
-    "optionsOnce": true,
-    "unknownAccessPreservesEstimates": true,
-    "stage3WithoutApprovedHardware": "on-request",
-    "stage1Stage2FromEuros": {
-      "classic": [
-        299,
-        449
-      ],
-      "ordinary2010s": [
-        399,
-        549
-      ],
-      "modern": [
-        449,
-        599
-      ],
-      "higherComplexity": [
-        549,
-        699
-      ],
-      "explicitBmwUnlock": [
-        700,
-        "on-request"
-      ]
-    },
-    "unresolvedIdentityConflict": "on-request"
-  },
-  "stages": {
-    "requiredPrecedencePass": false,
-    "laterSourceStagesPreserved": true,
-    "stage1PlusExcludedFromStage2": true,
-    "modulesExcludedFromRemapVotes": true,
-    "genericClearlyLabeled": true,
-    "numericStage3DoesNotApproveHardware": true,
-    "publicationIndependentCoverage": true
-  },
-  "frozenMetrics": {
+  "metrics": {
     "profiles": 1269,
     "multiSourceProfiles": 187,
     "datasetNumericStages": {
@@ -400,8 +436,8 @@
     "layers": {
       "A": 38,
       "B": 146,
-      "C": 15,
-      "D": 145,
+      "C": 14,
+      "D": 146,
       "E": 56
     },
     "sourced400": 184,
@@ -412,23 +448,246 @@
     "original222": 95,
     "observedSampleRows": 3000,
     "observedScenarioCount": 1862,
-    "sourcedScenarios": 863,
+    "sourcedScenarios": 861,
     "strictTop50": 7,
     "fieldScope": {
       "stage1": 184,
       "stage2": 23,
       "stage3": 0
     },
+    "sourcedOrReferenceStages": {
+      "stage1": 184,
+      "stage2": 14,
+      "stage3": 0
+    },
     "quoteChanges": 0,
     "identityChanges": 0,
-    "gains": 16,
+    "gains": 0,
     "demotions": 0,
-    "newlyUnresolved": 0
+    "referencePromotions": 0,
+    "stageValueChanges": 1,
+    "newlyUnresolved": 0,
+    "interpretation": "C includes retained references. One frozen-400 late Connect moves C to D under the strict reference period; two observed scenarios move external sourced to retained reference. No dataset changes. The old 23 later-stage fieldScope count includes 9 canonical estimates; strictly source/reference-backed power AND torque are 14.",
+    "observedTransitions": [
+      {
+        "sampleId": "rdw-caa2513315144afe066d",
+        "before": {
+          "sampleId": "rdw-caa2513315144afe066d",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-caa2513315144afe066d",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-fb35cf3b8bb7"
+        }
+      },
+      {
+        "sampleId": "rdw-442427b098cff548a41a",
+        "before": {
+          "sampleId": "rdw-442427b098cff548a41a",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-442427b098cff548a41a",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-fb35cf3b8bb7"
+        }
+      },
+      {
+        "sampleId": "rdw-4749ea46c20e68fc20f2",
+        "before": {
+          "sampleId": "rdw-4749ea46c20e68fc20f2",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-4749ea46c20e68fc20f2",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-fb35cf3b8bb7"
+        }
+      },
+      {
+        "sampleId": "rdw-eec0acb8e87ede741e33",
+        "before": {
+          "sampleId": "rdw-eec0acb8e87ede741e33",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-eec0acb8e87ede741e33",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-fb35cf3b8bb7"
+        }
+      },
+      {
+        "sampleId": "rdw-ed7654fe0678d4842e59",
+        "before": {
+          "sampleId": "rdw-ed7654fe0678d4842e59",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-ed7654fe0678d4842e59",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-fb35cf3b8bb7"
+        }
+      },
+      {
+        "sampleId": "rdw-72e25a9ce166a70129d8",
+        "before": {
+          "sampleId": "rdw-72e25a9ce166a70129d8",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-72e25a9ce166a70129d8",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-43fd5360be62"
+        }
+      },
+      {
+        "sampleId": "rdw-54e8683ee3e1462835c6",
+        "before": {
+          "sampleId": "rdw-54e8683ee3e1462835c6",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-54e8683ee3e1462835c6",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-43fd5360be62"
+        }
+      },
+      {
+        "sampleId": "rdw-f7efa8b21cab7032009e",
+        "before": {
+          "sampleId": "rdw-f7efa8b21cab7032009e",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-f7efa8b21cab7032009e",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-43fd5360be62"
+        }
+      },
+      {
+        "sampleId": "rdw-f4fc500d3cb51f8119af",
+        "before": {
+          "sampleId": "rdw-f4fc500d3cb51f8119af",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-f4fc500d3cb51f8119af",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-43fd5360be62"
+        }
+      },
+      {
+        "sampleId": "rdw-7a980887471d8518a92d",
+        "before": {
+          "sampleId": "rdw-7a980887471d8518a92d",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-7a980887471d8518a92d",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-43fd5360be62"
+        }
+      },
+      {
+        "sampleId": "rdw-90dfa302cb91959416de",
+        "before": {
+          "sampleId": "rdw-90dfa302cb91959416de",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-90dfa302cb91959416de",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-43fd5360be62"
+        }
+      },
+      {
+        "sampleId": "rdw-843799a2f56c3eff8d8a",
+        "before": {
+          "sampleId": "rdw-843799a2f56c3eff8d8a",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-843799a2f56c3eff8d8a",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-43fd5360be62"
+        }
+      },
+      {
+        "sampleId": "rdw-7b14b4acfb18ae198b66",
+        "before": {
+          "sampleId": "rdw-7b14b4acfb18ae198b66",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-connect-15-tdci-100"
+        },
+        "after": {
+          "sampleId": "rdw-7b14b4acfb18ae198b66",
+          "layer": "D",
+          "selectedProfile": "rdw-generic-43fd5360be62"
+        }
+      },
+      {
+        "sampleId": "rdw-0acfbe5c3b23ca7f6d32",
+        "before": {
+          "sampleId": "rdw-0acfbe5c3b23ca7f6d32",
+          "layer": "B",
+          "selectedProfile": "sourced-ford-transit-custom-d463142a0598"
+        },
+        "after": {
+          "sampleId": "rdw-0acfbe5c3b23ca7f6d32",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-custom-20-ecoblue-105"
+        }
+      },
+      {
+        "sampleId": "rdw-0b3c72238e7b007d0c76",
+        "before": {
+          "sampleId": "rdw-0b3c72238e7b007d0c76",
+          "layer": "B",
+          "selectedProfile": "sourced-ford-transit-custom-d463142a0598"
+        },
+        "after": {
+          "sampleId": "rdw-0b3c72238e7b007d0c76",
+          "layer": "C",
+          "selectedProfile": "ref-ford-transit-custom-20-ecoblue-105"
+        }
+      }
+    ],
+    "selectedValuePreservationClaim": false
   },
-  "boundary": {
-    "checkedAt": "2026-09-18T22:06:00.024Z",
+  "pricing": {
+    "matrixUnchanged": true,
+    "servicePricesUnchanged": true,
+    "legacy269CustomerPath": false,
+    "optionsAddedOnce": true,
+    "automaticInstalledUnlockCharge": false,
+    "hardwarePolicyPreserved": true,
+    "frozen400StageQuotes": {
+      "count": 1200,
+      "changes": 0
+    },
+    "observedStageQuotes": {
+      "count": 9000,
+      "changes": 0
+    },
+    "commercialIndependence": "Existing software assignment retained independently when a reference becomes technically inapplicable; prevents pricing changes from strict period correction."
+  },
+  "bundle": {
+    "checkedAt": "2026-09-18T22:37:50.200Z",
     "browserJavaScriptChunks": 25,
-    "browserJavaScriptBytes": 1422757,
+    "browserJavaScriptBytes": 1422932,
     "canonicalRecords": 58586,
     "publicVehicles": 24,
     "nonPublicCanonicalIdsChecked": 58562,
@@ -436,75 +695,10 @@
     "sourcedProfileIdsChecked": 1269,
     "scope": "Production browser JavaScript; selected profile DTOs in HTML/RSC/API are intentionally excluded.",
     "chunkDelta": 0,
-    "byteDelta": 0,
+    "byteDelta": 175,
     "clientCatalogImports": 0,
     "clientDatasetImports": 0,
-    "rawRdwResponseOmitted": true,
-    "rawMatchCandidatesOmitted": true,
-    "selectedCustomerProvenanceUrlsIntentional": true,
-    "privacyPass": false
-  },
-  "performance": {
-    "unit": "milliseconds",
-    "method": "Same-process alternating indexed/exhaustive source matcher, three passes over all source-derived fixtures plus 400 actual normalized registrations. Warm full resolver over the live sample. Network, HTTP and browser costs excluded. Source index keeps all same-make siblings for identity guards.",
-    "firstRun": {
-      "indexed": {
-        "calls": 5007,
-        "median": 0.15270000000009532,
-        "p95": 0.6746999999995751,
-        "max": 2.0168000000003303
-      },
-      "resolver": {
-        "calls": 1200,
-        "median": 1.0666000000001077,
-        "p95": 5.381900000000314,
-        "max": 19.84519999999975
-      }
-    },
-    "historicalV3": {
-      "indexed": {
-        "calls": 4926,
-        "median": 0.14940000000024156,
-        "p95": 0.6457000000000335,
-        "max": 2.1345000000001164
-      },
-      "resolver": {
-        "calls": 1200,
-        "median": 0.7759000000005472,
-        "p95": 3.8356000000003405,
-        "max": 11.765999999999622
-      }
-    },
-    "sameHostV3": {
-      "sha": "f32ad5a",
-      "indexed": {
-        "calls": 4926,
-        "median": 0.18069999999897846,
-        "p95": 0.8123000000014144,
-        "max": 3.607399999998961
-      },
-      "resolver": {
-        "calls": 1200,
-        "median": 1.1792000000004919,
-        "p95": 5.545500000000175,
-        "max": 28.546000000000276
-      }
-    },
-    "candidate": {
-      "indexed": {
-        "calls": 5007,
-        "median": 0.16010000000005675,
-        "p95": 0.6959999999999127,
-        "max": 1.7721999999998843
-      },
-      "resolver": {
-        "calls": 1200,
-        "median": 0.9518000000007305,
-        "p95": 4.732100000001083,
-        "max": 9.034299999999348
-      }
-    },
-    "assessment": "See report: historical variation investigated with same-host V3 replay; no arbitrary gate introduced."
+    "growth": "Explicit-click contact helper; no dataset added to client."
   },
   "validation": [
     {
@@ -541,10 +735,21 @@
     }
   ],
   "browser": {
-    "cases": 145,
-    "genuineOwnerHttpCases": 22,
-    "deterministicProfileCases": 123,
-    "errors": 0,
+    "liveRun": {
+      "cases": 183,
+      "genuineOwnerHttp": 22,
+      "deterministic": 161,
+      "errors": 0
+    },
+    "noSecretRun": {
+      "cases": 161,
+      "ownerLive": "SKIPPED",
+      "errors": 0
+    },
+    "v31": {
+      "cases": 14,
+      "errors": 0
+    },
     "widths": [
       320,
       390,
@@ -552,33 +757,275 @@
       1024,
       1440
     ],
-    "additionalLocales": [
+    "locales": [
+      "nl",
       "en",
       "pl"
     ],
-    "method": "Existing V3.2 browser acceptance assertions replayed from a private copy, adding 1024px and suppressing its screenshot writes. Four independent browser contexts; owner routes never intercepted. Synthetic profile routes explicitly intercepted."
+    "outboundOpenerStubbed": true,
+    "pageUrlPlate": false,
+    "plateAnalyticsRequests": 0,
+    "plateStorageValues": 0,
+    "domPlateHrefBeforeClick": false
   },
-  "baselineEnvironment": {
-    "exactShaBuilt": true,
-    "independentPorts": [
-      3119,
-      3120
+  "files": {
+    "product": [
+      {
+        "status": "M",
+        "path": "src/app/api/rdw-lookup/route.ts"
+      },
+      {
+        "status": "M",
+        "path": "src/components/plate-lookup.tsx"
+      },
+      {
+        "status": "A",
+        "path": "src/lib/lookup-contact.ts"
+      },
+      {
+        "status": "M",
+        "path": "src/lib/rdw-tuning-estimate.ts"
+      },
+      {
+        "status": "M",
+        "path": "src/lib/stage-hardware-policy.ts"
+      }
     ],
-    "serverStopped": true,
-    "worktreeRegistrationRemoved": true,
-    "allFilesRemoved": false,
-    "limitation": "Git removal hit Windows Filename too long; automatic approval review rejected remaining-directory deletion as blocked by policy. Leftover directory: C:/Users/barto/.codex/tmp/noordtune-release-baseline-b3e6f92."
+    "qa": [
+      {
+        "status": "M",
+        "path": "data/research/release-candidate-v3-2.json"
+      },
+      {
+        "status": "A",
+        "path": "data/research/release-privacy-inventory.json"
+      },
+      {
+        "status": "A",
+        "path": "data/research/release-privacy-scan.json"
+      },
+      {
+        "status": "M",
+        "path": "data/research/v3-1-browser-results.json"
+      },
+      {
+        "status": "M",
+        "path": "data/research/v3-2-coverage-report.json"
+      },
+      {
+        "status": "M",
+        "path": "data/research/v3-2-verification.json"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-data/browser-v3-2/browser-acceptance.json"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-data/browser-v3-2/OWNER-D-320.png"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-data/browser-v3-2/OWNER-B-320.png"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-data/browser/browser-acceptance.json"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-data/browser/OWNER-D-320.png"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-data/browser/OWNER-B-320.png"
+      },
+      {
+        "status": "A",
+        "path": "docs/tuning-data/OWNER_QA.md"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-data/RELEASE_CANDIDATE_V3_2.md"
+      },
+      {
+        "status": "A",
+        "path": "docs/tuning-data/release-v3-2/reference-bmw-1440.png"
+      },
+      {
+        "status": "A",
+        "path": "docs/tuning-data/release-v3-2/reference-custom-1440.png"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-data/V3_1_MATCH_RECOVERY.md"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-data/V3_2_TARGETED_RECOVERY.md"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/artifact-link-audit.json"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/final-review/browser-acceptance.json"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-qa/final-review/OWNER-A-1440.png"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-qa/final-review/OWNER-A-320.png"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-qa/final-review/OWNER-D-1440.png"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-qa/final-review/OWNER-D-320.png"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-qa/final-review/OWNER-B-1440.png"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-qa/final-review/OWNER-B-320.png"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-qa/final-review/OWNER-C-1440.png"
+      },
+      {
+        "status": "D",
+        "path": "docs/tuning-qa/final-review/OWNER-C-320.png"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/runtime/browser-acceptance.json"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/runtime/LIVE_RDW_AND_REFERENCE_RESEARCH.md"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/runtime/live-rdw-identities.json"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/runtime/RUNTIME_PRICING_POLICY.md"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/runtime/runtime-coverage.json"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/runtime/runtime-coverage.md"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/runtime/screenshot-inventory.json"
+      },
+      {
+        "status": "M",
+        "path": "docs/tuning-qa/TUNING_PROFILE_BACKLOG.md"
+      },
+      {
+        "status": "M",
+        "path": "package.json"
+      },
+      {
+        "status": "M",
+        "path": "scripts/build-v3-2-review.cjs"
+      },
+      {
+        "status": "A",
+        "path": "scripts/check-owner-privacy.cjs"
+      },
+      {
+        "status": "A",
+        "path": "scripts/lookup-contact-qa.cjs"
+      },
+      {
+        "status": "A",
+        "path": "scripts/owner-qa-inputs.cjs"
+      },
+      {
+        "status": "M",
+        "path": "scripts/qa-nl-fleet-v2-browser.cjs"
+      },
+      {
+        "status": "M",
+        "path": "scripts/qa-rdw-final-review.cjs"
+      },
+      {
+        "status": "M",
+        "path": "scripts/qa-rdw-runtime.cjs"
+      },
+      {
+        "status": "M",
+        "path": "scripts/qa-tuning-dataset-v1.cjs"
+      },
+      {
+        "status": "M",
+        "path": "scripts/qa-tuning-visual.cjs"
+      },
+      {
+        "status": "M",
+        "path": "scripts/qa-v3-1-browser.cjs"
+      },
+      {
+        "status": "M",
+        "path": "scripts/qa-v3-2-browser.cjs"
+      },
+      {
+        "status": "M",
+        "path": "scripts/qa-v3-2-cohorts.cjs"
+      },
+      {
+        "status": "A",
+        "path": "scripts/test-lookup-privacy.ts"
+      },
+      {
+        "status": "A",
+        "path": "scripts/test-owner-qa-inputs.cjs"
+      },
+      {
+        "status": "A",
+        "path": "scripts/test-production-precedence.ts"
+      },
+      {
+        "status": "M",
+        "path": "scripts/test-rdw-runtime-coverage.ts"
+      },
+      {
+        "status": "M",
+        "path": "scripts/test-sourced-pricing-bridge.ts"
+      }
+    ],
+    "deletionPathNote": "Only deleted owner-bearing screenshot paths are anonymized here; exact original deletion paths remain available in the Git commit diff. No alias-to-registration mapping is committed."
   },
-  "productFilesChangedInAudit": 0,
-  "newFiles": [
-    "docs/tuning-data/RELEASE_CANDIDATE_V3_2.md",
-    "data/research/release-candidate-v3-2.json",
-    "docs/tuning-data/release-v3-2/baseline-home-320.png",
-    "docs/tuning-data/release-v3-2/candidate-home-320.png",
-    "docs/tuning-data/release-v3-2/baseline-home-1440.png",
-    "docs/tuning-data/release-v3-2/candidate-home-1440.png",
-    "docs/tuning-data/release-v3-2/baseline-result-390.png",
-    "docs/tuning-data/release-v3-2/candidate-result-390.png"
+  "screenshots": [
+    "docs/tuning-data/release-v3-2/reference-bmw-1440.png",
+    "docs/tuning-data/release-v3-2/reference-custom-1440.png"
   ],
-  "releaseDecision": "Do not merge or mark Ready. Neutral QA artifacts only; blockers documented without fixes."
+  "limits": [
+    "Historical feature commits retain earlier artifacts; the approved later release process uses squash merges. No history rewrite or merge was performed.",
+    "Browser QA used local production build. Hosted Preview may require Vercel authentication.",
+    "Published reference values remain conditional estimates; installed ECU and hardware are not identified."
+  ]
 }

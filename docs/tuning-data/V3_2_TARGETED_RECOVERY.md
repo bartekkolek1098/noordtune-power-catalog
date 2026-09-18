@@ -33,7 +33,7 @@ Only explicit ECU Stage 2 tables enter Stage 2 consensus (Audi A4 and Golf V). S
 
 Provider application years remain raw in observations. Reviewed scopes are narrower review limits, not invented production dates. Distinct 5008 applications retain their inclusive 2020 overlap; Fiat 500 TwinAir applications retain their inclusive 2015 overlap. The existing resolver keeps these overlaps conditional. The existing Golf generation boundary further limits the new Golf V profile to 2005–2007; neither 2008 nor 2009 is silently promoted.
 
-BMW 520i uses the official 184 PS / 290 Nm identity and the matching ATM application. The Shiftech 300 Nm stock/EU6d application is unresolved and has no tuning vote. BMW 318i pre-LCI 2020–2021 and LCI 2022–2023 remain separate; the 2024 application is not promoted. The LCI single-source large-gain review flag remains. Provider ECU lists are possible application hardware, never a confirmed vehicle ECU or an age-based unlock finding. C5 Aircross data is ordinary petrol only; hybrid fuel guards remain. V380ST stays conditional between TDCi/EcoBlue.
+BMW 520i uses the official 184 PS / 290 Nm identity and the matching ATM application. The Shiftech 300 Nm stock/EU6d application is unresolved and has no tuning vote. BMW 318i pre-LCI 2020–2021 and LCI 2022–2023 remain separate; the 2024 application is not promoted. The LCI single-source large-gain review flag remains. Provider ECU lists are possible application hardware, never a confirmed vehicle ECU or an age-based unlock finding. C5 Aircross data is ordinary petrol only; hybrid fuel guards remain. OWNER-B stays conditional between TDCi/EcoBlue.
 
 ## All 20 decisions
 
@@ -219,12 +219,12 @@ Main, production and PRs #12–15 match the recorded protected baseline. No acti
 - `docs/tuning-data/browser-v3-2/doblo-en-320-viewport.png`
 - `docs/tuning-data/browser-v3-2/doblo-nl-1440-viewport.png`
 - `docs/tuning-data/browser-v3-2/doblo-pl-320-viewport.png`
-- `docs/tuning-data/browser-v3-2/kkh27k-320.png`
+Owner-specific screenshots were removed during release privacy cleanup; the release report retains anonymous review evidence.
 - `docs/tuning-data/browser-v3-2/rank-2-2016-320.png`
 - `docs/tuning-data/browser-v3-2/rank-20-2020-320.png`
 - `docs/tuning-data/browser-v3-2/rank-20-2022-320.png`
 - `docs/tuning-data/browser-v3-2/rank-7-2008-320.png`
-- `docs/tuning-data/browser-v3-2/v380st-320.png`
+Owner-specific screenshots were removed during release privacy cleanup; the release report retains anonymous review evidence.
 - `docs/tuning-data/browser-v3-2/visual-acceptance.json`
 - `package.json`
 - `scripts/build-tuning-profiles.ts`

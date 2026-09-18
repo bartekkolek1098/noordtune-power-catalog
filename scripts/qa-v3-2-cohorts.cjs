@@ -5,6 +5,7 @@ const sourced=layer=>['A','B'].includes(layer);
 const counts=rows=>rows.reduce((out,row)=>(out[row.layer]++,out),{A:0,B:0,C:0,D:0,E:0});
 async function main(){
  const baselineMode=process.argv.includes('--baseline');
+ const argument=(name,fallback)=>{const index=process.argv.indexOf(name);return index<0?fallback:process.argv[index+1]};
  const {normalizeRdwVehicle}=await import('../src/lib/rdw.ts');
  const {resolveRdwTuningEstimate}=await import('../src/lib/rdw-tuning-estimate.ts');
  const {matchSourcedProfile}=await import('../src/lib/sourced-tuning-match.ts');
@@ -36,23 +37,26 @@ async function main(){
  const inputFiles=['nl-rdw-v3-qa-sample.json','nl-rdw-live-sample.json','nl-top-groups-output-sample.json','nl-technical-priority-v3.json','nl-output-variant-priority.json','v3-1-next20.json'];
  const inputSha256=Object.fromEntries(inputFiles.map(file=>[file,crypto.createHash('sha256').update(fs.readFileSync('data/research/'+file)).digest('hex')]));
  const summary={profiles:profiles.length,multiSourceProfiles:profiles.filter(p=>p.stage1SourceCount>1).length,datasetNumericStages:{stage1:profiles.length,stage2:profiles.filter(p=>p.stage2).length,stage3:profiles.filter(p=>p.stage3).length},layers:counts(rows),sourced400:rows.filter(r=>sourced(r.layer)).length,ordinaryIce:{size:fixed344.size,sourced:rows.filter(r=>fixed344.has(r.sampleId)&&sourced(r.layer)).length},original222:rows.filter(r=>original222.has(r.sampleId)&&sourced(r.layer)).length,observedSampleRows:observedRows.length,observedScenarioCount:observedScenarios.length,sourcedScenarios:observedScenarios.filter(s=>s.sourced).length,strictTop50:top50.filter(g=>sourced(g.layer)).length,fieldScope};
+ summary.sourcedOrReferenceStages=Object.fromEntries(['stage1','stage2','stage3'].map(key=>[key,rows.filter(r=>['reference','multi-source','single-source'].includes(r[key]?.provenance)&&((r[key].powerHp>0&&r[key].torqueNm>0)||(r[key].powerRangeHp&&r[key].torqueRangeNm))).length]));
  assert.equal(rows.length,400);assert.equal(observedRows.length,3000);assert.equal(observedScenarios.length,1862);assert.equal(fixed344.size,344);assert.equal(original222.size,222);assert.equal(top50.length,50);
  let transitions=[];
  if(baselineMode){assert.equal(summary.profiles,1246);assert.deepEqual(summary.layers,{A:35,B:133,C:15,D:161,E:56});assert.equal(summary.sourcedScenarios,737);assert.equal(summary.strictTop50,7);assert.equal(summary.original222,89);
   assert.equal(rows.filter((r,i)=>JSON.stringify(r.quote)!==JSON.stringify(v3.rows[i].quote)).length,0);assert.equal(rows.filter((r,i)=>JSON.stringify(r.identity)!==JSON.stringify(v3.rows[i].identity)).length,0);
  }else{
-  const before=read('data/research/v3-2-baseline.json');assert.deepEqual(inputSha256,before.inputSha256,'Frozen cohort files changed');
+  const before=read(argument('--compare','data/research/v3-2-baseline.json'));assert.deepEqual(inputSha256,before.inputSha256,'Frozen cohort files changed');
   const beforeMap=new Map(before.rows.map(r=>[r.sampleId,r]));
   transitions=rows.flatMap(r=>JSON.stringify(r)===JSON.stringify(beforeMap.get(r.sampleId))?[]:[{sampleId:r.sampleId,before:beforeMap.get(r.sampleId),after:r}]);
   summary.quoteChanges=transitions.filter(t=>JSON.stringify(t.before.quote)!==JSON.stringify(t.after.quote)).length;
   summary.identityChanges=transitions.filter(t=>JSON.stringify(t.before.identity)!==JSON.stringify(t.after.identity)).length;
   summary.gains=transitions.filter(t=>!sourced(t.before.layer)&&sourced(t.after.layer)).length;
   summary.demotions=transitions.filter(t=>sourced(t.before.layer)&&!sourced(t.after.layer)).length;
+  summary.referencePromotions=transitions.filter(t=>sourced(t.before.layer)&&t.after.stage1?.provenance==='reference').length;
+  summary.stageValueChanges=transitions.filter(t=>['stage1','stage2','stage3'].some(key=>JSON.stringify(t.before[key])!==JSON.stringify(t.after[key]))).length;
   summary.newlyUnresolved=transitions.filter(t=>!t.before.reasons.includes('MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS')&&t.after.reasons.includes('MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS')).length;
   assert.equal(summary.quoteChanges,0,'STOP: inspect every quote difference individually');assert.equal(summary.identityChanges,0);
  }
  const result={baselineHead:'14ca5b91044fb29f2747c2079df5aca9781fba9f',datasetFingerprint:tuningDatasetFingerprint,method:'Offline production resolver over unchanged sanitized inputs. Frozen Top-50 published/live scenario membership is reevaluated without rebuilding or reranking it. These purposive samples do not estimate fleet prevalence.',inputSha256,summary,top50,rows,observedRows,observedScenarios,...(!baselineMode?{transitions}:{})};
- const file=`data/research/v3-2-${baselineMode?'baseline':'results'}.json`;
+ const file=argument('--output',`data/research/v3-2-${baselineMode?'baseline':'results'}.json`);
  if(baselineMode&&fs.existsSync(file))throw Error('Baseline already frozen; do not overwrite');
  fs.writeFileSync(file,JSON.stringify(result)+'\n');console.log(JSON.stringify(summary,null,2));
 }

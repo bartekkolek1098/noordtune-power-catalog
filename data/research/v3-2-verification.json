@@ -61,8 +61,6 @@
       "pl"
     ],
     "screenshots": [
-      "v380st-320.png",
-      "kkh27k-320.png",
       "rank-2-2016-320.png",
       "rank-7-2008-320.png",
       "rank-20-2022-320.png",
@@ -152,12 +150,10 @@
     "docs/tuning-data/browser-v3-2/doblo-en-320-viewport.png",
     "docs/tuning-data/browser-v3-2/doblo-nl-1440-viewport.png",
     "docs/tuning-data/browser-v3-2/doblo-pl-320-viewport.png",
-    "docs/tuning-data/browser-v3-2/kkh27k-320.png",
     "docs/tuning-data/browser-v3-2/rank-2-2016-320.png",
     "docs/tuning-data/browser-v3-2/rank-20-2020-320.png",
     "docs/tuning-data/browser-v3-2/rank-20-2022-320.png",
     "docs/tuning-data/browser-v3-2/rank-7-2008-320.png",
-    "docs/tuning-data/browser-v3-2/v380st-320.png",
     "docs/tuning-data/browser-v3-2/visual-acceptance.json",
     "package.json",
     "scripts/build-tuning-profiles.ts",

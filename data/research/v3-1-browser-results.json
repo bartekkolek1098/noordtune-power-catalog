@@ -2,7 +2,7 @@
   "checkedAt": "2026-09-16T19:32:22.428Z",
   "localProductionServer": "http://localhost:3120",
   "ownerRoute": {
-    "method": "Genuine local HTTP RDW requests; no interception for H329XH, V380ST, V978ZF, KKH27K.",
+    "method": "Genuine local HTTP RDW requests; no interception for OWNER-A, OWNER-B, OWNER-C, OWNER-D.",
     "cases": 28,
     "liveCases": 12,
     "syntheticInterceptedCases": 16,

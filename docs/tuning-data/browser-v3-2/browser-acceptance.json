@@ -4,8 +4,6 @@
   "datasetFingerprint": "63e005fe8658c3b9510a89eacaf37f72f3eaef187dd63eaf4984a9df3de0dc75",
   "method": "Four owner plates use the genuine local HTTP RDW route without interception. Each of the 23 new profiles uses a separate deterministic DTO through the production normalizer. A sampleId identifies an unchanged sanitized frozen RDW row; absent sampleId means a synthetic technical identity in a sourced year not represented by that cohort. QA32xx inputs are synthetic and intercepted, not live plate lookups.",
   "screenshots": [
-    "v380st-320.png",
-    "kkh27k-320.png",
     "rank-2-2016-320.png",
     "rank-7-2008-320.png",
     "rank-20-2022-320.png",
@@ -13,12 +11,11 @@
   ],
   "results": [
     {
-      "id": "h329xh",
+      "id": "OWNER-A",
       "width": 320,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -150,12 +147,11 @@
       }
     },
     {
-      "id": "v380st",
+      "id": "OWNER-B",
       "width": 320,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -293,12 +289,11 @@
       }
     },
     {
-      "id": "v978zf",
+      "id": "OWNER-C",
       "width": 320,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -436,12 +431,11 @@
       }
     },
     {
-      "id": "kkh27k",
+      "id": "OWNER-D",
       "width": 320,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -571,7 +565,6 @@
       "sampleId": "rdw-78c85758f16dfc63718f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3201",
         "make": "FIAT",
         "model": "FIAT DOBLO'",
         "type": "263",
@@ -709,7 +702,6 @@
       "sampleId": "rdw-e46c4afee90f1cde133a",
       "liveApi": false,
       "identity": {
-        "plate": "QA3202",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "M",
@@ -847,7 +839,6 @@
       "sampleId": "rdw-ce3a7460f026b7dae60a",
       "liveApi": false,
       "identity": {
-        "plate": "QA3203",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "0",
@@ -985,7 +976,6 @@
       "sampleId": "rdw-0694679c96b4b3b3c055",
       "liveApi": false,
       "identity": {
-        "plate": "QA3204",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "M",
@@ -1123,7 +1113,6 @@
       "sampleId": "rdw-2c4b80340a5628368c78",
       "liveApi": false,
       "identity": {
-        "plate": "QA3205",
         "make": "NISSAN",
         "model": "NISSAN MICRA",
         "variant": "F",
@@ -1260,7 +1249,6 @@
       "sampleId": "rdw-8890db3bb4d215e7469f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3206",
         "make": "CITROEN",
         "model": "C5 AIRCROSS",
         "type": "A",
@@ -1398,7 +1386,6 @@
       "sampleId": "rdw-4c367b5a08a91504667f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3207",
         "make": "SKODA",
         "model": "OCTAVIA",
         "type": "5E",
@@ -1536,7 +1523,6 @@
       "sampleId": "rdw-08b82c93299d301ef3ae",
       "liveApi": false,
       "identity": {
-        "plate": "QA3208",
         "make": "AUDI",
         "model": "AUDI A4",
         "type": "B8",
@@ -1668,7 +1654,6 @@
       "sampleId": "rdw-e37ae5c8892bffa37d7d",
       "liveApi": false,
       "identity": {
-        "plate": "QA3209",
         "make": "RENAULT",
         "model": "CLIO",
         "variant": "CB1D",
@@ -1805,7 +1790,6 @@
       "sampleId": "rdw-8d63bcd6c5302527cb26",
       "liveApi": false,
       "identity": {
-        "plate": "QA3210",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -1943,7 +1927,6 @@
       "sampleId": "rdw-ab2799e2e729cdbdbea1",
       "liveApi": false,
       "identity": {
-        "plate": "QA3211",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -2081,7 +2064,6 @@
       "sampleId": "rdw-88ca08aa2c1c2f338889",
       "liveApi": false,
       "identity": {
-        "plate": "QA3212",
         "make": "NISSAN",
         "model": "NISSAN MICRA",
         "type": "K13",
@@ -2219,7 +2201,6 @@
       "sampleId": "rdw-fe344fc219fd4dac3d93",
       "liveApi": false,
       "identity": {
-        "plate": "QA3213",
         "make": "VOLKSWAGEN",
         "model": "T-ROC",
         "type": "A1",
@@ -2357,7 +2338,6 @@
       "sampleId": "rdw-c2f61e226ec4adc9f847",
       "liveApi": false,
       "identity": {
-        "plate": "QA3214",
         "make": "VOLKSWAGEN",
         "model": "T-ROC",
         "type": "A1",
@@ -2495,7 +2475,6 @@
       "sampleId": "rdw-6e5fcf7a45d11cee5c8b",
       "liveApi": false,
       "identity": {
-        "plate": "QA3215",
         "make": "VOLKSWAGEN",
         "model": "GOLF",
         "variant": "ABBKCX01",
@@ -2626,7 +2605,6 @@
       "sampleId": "rdw-91f01d1cef8207506880",
       "liveApi": false,
       "identity": {
-        "plate": "QA3216",
         "make": "BMW",
         "model": "520I",
         "type": "G5K",
@@ -2754,7 +2732,6 @@
       "sampleId": "rdw-01bf3258b5d11924c0de",
       "liveApi": false,
       "identity": {
-        "plate": "QA3217",
         "make": "SKODA",
         "model": "OCTAVIA",
         "variant": "AABGUX01",
@@ -2891,7 +2868,6 @@
       "sampleId": "rdw-40eee0b704505ebee8a6",
       "liveApi": false,
       "identity": {
-        "plate": "QA3218",
         "make": "MAZDA",
         "model": "MAZDA 6",
         "variant": "198",
@@ -3028,7 +3004,6 @@
       "sampleId": "rdw-708eb68b8bb62e044966",
       "liveApi": false,
       "identity": {
-        "plate": "QA3219",
         "make": "MERCEDES-BENZ",
         "model": "B 180",
         "type": "246",
@@ -3166,7 +3141,6 @@
       "sampleId": "rdw-fe3dea7f7f936bc0d417",
       "liveApi": false,
       "identity": {
-        "plate": "QA3220",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -3304,7 +3278,6 @@
       "sampleId": "rdw-485ebd321e5a70b5864b",
       "liveApi": false,
       "identity": {
-        "plate": "QA3221",
         "make": "SKODA",
         "model": "OCTAVIA",
         "type": "1Z",
@@ -3441,7 +3414,6 @@
       "rank": 20,
       "liveApi": false,
       "identity": {
-        "plate": "QA3222",
         "make": "BMW",
         "model": "318I",
         "doors": null,
@@ -3565,7 +3537,6 @@
       "sampleId": "rdw-10ad5010f9e79abbdfaf",
       "liveApi": false,
       "identity": {
-        "plate": "QA3223",
         "make": "BMW",
         "model": "318I",
         "type": "G3K",
@@ -3688,12 +3659,11 @@
       }
     },
     {
-      "id": "h329xh",
+      "id": "OWNER-A",
       "width": 390,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -3825,12 +3795,11 @@
       }
     },
     {
-      "id": "v380st",
+      "id": "OWNER-B",
       "width": 390,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -3968,12 +3937,11 @@
       }
     },
     {
-      "id": "v978zf",
+      "id": "OWNER-C",
       "width": 390,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -4111,12 +4079,11 @@
       }
     },
     {
-      "id": "kkh27k",
+      "id": "OWNER-D",
       "width": 390,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -4246,7 +4213,6 @@
       "sampleId": "rdw-78c85758f16dfc63718f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3201",
         "make": "FIAT",
         "model": "FIAT DOBLO'",
         "type": "263",
@@ -4384,7 +4350,6 @@
       "sampleId": "rdw-e46c4afee90f1cde133a",
       "liveApi": false,
       "identity": {
-        "plate": "QA3202",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "M",
@@ -4522,7 +4487,6 @@
       "sampleId": "rdw-ce3a7460f026b7dae60a",
       "liveApi": false,
       "identity": {
-        "plate": "QA3203",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "0",
@@ -4660,7 +4624,6 @@
       "sampleId": "rdw-0694679c96b4b3b3c055",
       "liveApi": false,
       "identity": {
-        "plate": "QA3204",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "M",
@@ -4798,7 +4761,6 @@
       "sampleId": "rdw-2c4b80340a5628368c78",
       "liveApi": false,
       "identity": {
-        "plate": "QA3205",
         "make": "NISSAN",
         "model": "NISSAN MICRA",
         "variant": "F",
@@ -4935,7 +4897,6 @@
       "sampleId": "rdw-8890db3bb4d215e7469f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3206",
         "make": "CITROEN",
         "model": "C5 AIRCROSS",
         "type": "A",
@@ -5073,7 +5034,6 @@
       "sampleId": "rdw-4c367b5a08a91504667f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3207",
         "make": "SKODA",
         "model": "OCTAVIA",
         "type": "5E",
@@ -5211,7 +5171,6 @@
       "sampleId": "rdw-08b82c93299d301ef3ae",
       "liveApi": false,
       "identity": {
-        "plate": "QA3208",
         "make": "AUDI",
         "model": "AUDI A4",
         "type": "B8",
@@ -5343,7 +5302,6 @@
       "sampleId": "rdw-e37ae5c8892bffa37d7d",
       "liveApi": false,
       "identity": {
-        "plate": "QA3209",
         "make": "RENAULT",
         "model": "CLIO",
         "variant": "CB1D",
@@ -5480,7 +5438,6 @@
       "sampleId": "rdw-8d63bcd6c5302527cb26",
       "liveApi": false,
       "identity": {
-        "plate": "QA3210",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -5618,7 +5575,6 @@
       "sampleId": "rdw-ab2799e2e729cdbdbea1",
       "liveApi": false,
       "identity": {
-        "plate": "QA3211",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -5756,7 +5712,6 @@
       "sampleId": "rdw-88ca08aa2c1c2f338889",
       "liveApi": false,
       "identity": {
-        "plate": "QA3212",
         "make": "NISSAN",
         "model": "NISSAN MICRA",
         "type": "K13",
@@ -5894,7 +5849,6 @@
       "sampleId": "rdw-fe344fc219fd4dac3d93",
       "liveApi": false,
       "identity": {
-        "plate": "QA3213",
         "make": "VOLKSWAGEN",
         "model": "T-ROC",
         "type": "A1",
@@ -6032,7 +5986,6 @@
       "sampleId": "rdw-c2f61e226ec4adc9f847",
       "liveApi": false,
       "identity": {
-        "plate": "QA3214",
         "make": "VOLKSWAGEN",
         "model": "T-ROC",
         "type": "A1",
@@ -6170,7 +6123,6 @@
       "sampleId": "rdw-6e5fcf7a45d11cee5c8b",
       "liveApi": false,
       "identity": {
-        "plate": "QA3215",
         "make": "VOLKSWAGEN",
         "model": "GOLF",
         "variant": "ABBKCX01",
@@ -6301,7 +6253,6 @@
       "sampleId": "rdw-91f01d1cef8207506880",
       "liveApi": false,
       "identity": {
-        "plate": "QA3216",
         "make": "BMW",
         "model": "520I",
         "type": "G5K",
@@ -6429,7 +6380,6 @@
       "sampleId": "rdw-01bf3258b5d11924c0de",
       "liveApi": false,
       "identity": {
-        "plate": "QA3217",
         "make": "SKODA",
         "model": "OCTAVIA",
         "variant": "AABGUX01",
@@ -6566,7 +6516,6 @@
       "sampleId": "rdw-40eee0b704505ebee8a6",
       "liveApi": false,
       "identity": {
-        "plate": "QA3218",
         "make": "MAZDA",
         "model": "MAZDA 6",
         "variant": "198",
@@ -6703,7 +6652,6 @@
       "sampleId": "rdw-708eb68b8bb62e044966",
       "liveApi": false,
       "identity": {
-        "plate": "QA3219",
         "make": "MERCEDES-BENZ",
         "model": "B 180",
         "type": "246",
@@ -6841,7 +6789,6 @@
       "sampleId": "rdw-fe3dea7f7f936bc0d417",
       "liveApi": false,
       "identity": {
-        "plate": "QA3220",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -6979,7 +6926,6 @@
       "sampleId": "rdw-485ebd321e5a70b5864b",
       "liveApi": false,
       "identity": {
-        "plate": "QA3221",
         "make": "SKODA",
         "model": "OCTAVIA",
         "type": "1Z",
@@ -7116,7 +7062,6 @@
       "rank": 20,
       "liveApi": false,
       "identity": {
-        "plate": "QA3222",
         "make": "BMW",
         "model": "318I",
         "doors": null,
@@ -7240,7 +7185,6 @@
       "sampleId": "rdw-10ad5010f9e79abbdfaf",
       "liveApi": false,
       "identity": {
-        "plate": "QA3223",
         "make": "BMW",
         "model": "318I",
         "type": "G3K",
@@ -7363,12 +7307,11 @@
       }
     },
     {
-      "id": "h329xh",
+      "id": "OWNER-A",
       "width": 768,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -7500,12 +7443,11 @@
       }
     },
     {
-      "id": "v380st",
+      "id": "OWNER-B",
       "width": 768,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -7643,12 +7585,11 @@
       }
     },
     {
-      "id": "v978zf",
+      "id": "OWNER-C",
       "width": 768,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -7786,12 +7727,11 @@
       }
     },
     {
-      "id": "kkh27k",
+      "id": "OWNER-D",
       "width": 768,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -7921,7 +7861,6 @@
       "sampleId": "rdw-78c85758f16dfc63718f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3201",
         "make": "FIAT",
         "model": "FIAT DOBLO'",
         "type": "263",
@@ -8059,7 +7998,6 @@
       "sampleId": "rdw-e46c4afee90f1cde133a",
       "liveApi": false,
       "identity": {
-        "plate": "QA3202",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "M",
@@ -8197,7 +8135,6 @@
       "sampleId": "rdw-ce3a7460f026b7dae60a",
       "liveApi": false,
       "identity": {
-        "plate": "QA3203",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "0",
@@ -8335,7 +8272,6 @@
       "sampleId": "rdw-0694679c96b4b3b3c055",
       "liveApi": false,
       "identity": {
-        "plate": "QA3204",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "M",
@@ -8473,7 +8409,6 @@
       "sampleId": "rdw-2c4b80340a5628368c78",
       "liveApi": false,
       "identity": {
-        "plate": "QA3205",
         "make": "NISSAN",
         "model": "NISSAN MICRA",
         "variant": "F",
@@ -8610,7 +8545,6 @@
       "sampleId": "rdw-8890db3bb4d215e7469f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3206",
         "make": "CITROEN",
         "model": "C5 AIRCROSS",
         "type": "A",
@@ -8748,7 +8682,6 @@
       "sampleId": "rdw-4c367b5a08a91504667f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3207",
         "make": "SKODA",
         "model": "OCTAVIA",
         "type": "5E",
@@ -8886,7 +8819,6 @@
       "sampleId": "rdw-08b82c93299d301ef3ae",
       "liveApi": false,
       "identity": {
-        "plate": "QA3208",
         "make": "AUDI",
         "model": "AUDI A4",
         "type": "B8",
@@ -9018,7 +8950,6 @@
       "sampleId": "rdw-e37ae5c8892bffa37d7d",
       "liveApi": false,
       "identity": {
-        "plate": "QA3209",
         "make": "RENAULT",
         "model": "CLIO",
         "variant": "CB1D",
@@ -9155,7 +9086,6 @@
       "sampleId": "rdw-8d63bcd6c5302527cb26",
       "liveApi": false,
       "identity": {
-        "plate": "QA3210",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -9293,7 +9223,6 @@
       "sampleId": "rdw-ab2799e2e729cdbdbea1",
       "liveApi": false,
       "identity": {
-        "plate": "QA3211",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -9431,7 +9360,6 @@
       "sampleId": "rdw-88ca08aa2c1c2f338889",
       "liveApi": false,
       "identity": {
-        "plate": "QA3212",
         "make": "NISSAN",
         "model": "NISSAN MICRA",
         "type": "K13",
@@ -9569,7 +9497,6 @@
       "sampleId": "rdw-fe344fc219fd4dac3d93",
       "liveApi": false,
       "identity": {
-        "plate": "QA3213",
         "make": "VOLKSWAGEN",
         "model": "T-ROC",
         "type": "A1",
@@ -9707,7 +9634,6 @@
       "sampleId": "rdw-c2f61e226ec4adc9f847",
       "liveApi": false,
       "identity": {
-        "plate": "QA3214",
         "make": "VOLKSWAGEN",
         "model": "T-ROC",
         "type": "A1",
@@ -9845,7 +9771,6 @@
       "sampleId": "rdw-6e5fcf7a45d11cee5c8b",
       "liveApi": false,
       "identity": {
-        "plate": "QA3215",
         "make": "VOLKSWAGEN",
         "model": "GOLF",
         "variant": "ABBKCX01",
@@ -9976,7 +9901,6 @@
       "sampleId": "rdw-91f01d1cef8207506880",
       "liveApi": false,
       "identity": {
-        "plate": "QA3216",
         "make": "BMW",
         "model": "520I",
         "type": "G5K",
@@ -10104,7 +10028,6 @@
       "sampleId": "rdw-01bf3258b5d11924c0de",
       "liveApi": false,
       "identity": {
-        "plate": "QA3217",
         "make": "SKODA",
         "model": "OCTAVIA",
         "variant": "AABGUX01",
@@ -10241,7 +10164,6 @@
       "sampleId": "rdw-40eee0b704505ebee8a6",
       "liveApi": false,
       "identity": {
-        "plate": "QA3218",
         "make": "MAZDA",
         "model": "MAZDA 6",
         "variant": "198",
@@ -10378,7 +10300,6 @@
       "sampleId": "rdw-708eb68b8bb62e044966",
       "liveApi": false,
       "identity": {
-        "plate": "QA3219",
         "make": "MERCEDES-BENZ",
         "model": "B 180",
         "type": "246",
@@ -10516,7 +10437,6 @@
       "sampleId": "rdw-fe3dea7f7f936bc0d417",
       "liveApi": false,
       "identity": {
-        "plate": "QA3220",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -10654,7 +10574,6 @@
       "sampleId": "rdw-485ebd321e5a70b5864b",
       "liveApi": false,
       "identity": {
-        "plate": "QA3221",
         "make": "SKODA",
         "model": "OCTAVIA",
         "type": "1Z",
@@ -10791,7 +10710,6 @@
       "rank": 20,
       "liveApi": false,
       "identity": {
-        "plate": "QA3222",
         "make": "BMW",
         "model": "318I",
         "doors": null,
@@ -10915,7 +10833,6 @@
       "sampleId": "rdw-10ad5010f9e79abbdfaf",
       "liveApi": false,
       "identity": {
-        "plate": "QA3223",
         "make": "BMW",
         "model": "318I",
         "type": "G3K",
@@ -11038,12 +10955,11 @@
       }
     },
     {
-      "id": "h329xh",
+      "id": "OWNER-A",
       "width": 1440,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -11175,12 +11091,11 @@
       }
     },
     {
-      "id": "v380st",
+      "id": "OWNER-B",
       "width": 1440,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -11318,12 +11233,11 @@
       }
     },
     {
-      "id": "v978zf",
+      "id": "OWNER-C",
       "width": 1440,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -11461,12 +11375,11 @@
       }
     },
     {
-      "id": "kkh27k",
+      "id": "OWNER-D",
       "width": 1440,
       "locale": "nl",
       "liveApi": true,
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -11596,7 +11509,6 @@
       "sampleId": "rdw-78c85758f16dfc63718f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3201",
         "make": "FIAT",
         "model": "FIAT DOBLO'",
         "type": "263",
@@ -11734,7 +11646,6 @@
       "sampleId": "rdw-e46c4afee90f1cde133a",
       "liveApi": false,
       "identity": {
-        "plate": "QA3202",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "M",
@@ -11872,7 +11783,6 @@
       "sampleId": "rdw-ce3a7460f026b7dae60a",
       "liveApi": false,
       "identity": {
-        "plate": "QA3203",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "0",
@@ -12010,7 +11920,6 @@
       "sampleId": "rdw-0694679c96b4b3b3c055",
       "liveApi": false,
       "identity": {
-        "plate": "QA3204",
         "make": "PEUGEOT",
         "model": "5008",
         "type": "M",
@@ -12148,7 +12057,6 @@
       "sampleId": "rdw-2c4b80340a5628368c78",
       "liveApi": false,
       "identity": {
-        "plate": "QA3205",
         "make": "NISSAN",
         "model": "NISSAN MICRA",
         "variant": "F",
@@ -12285,7 +12193,6 @@
       "sampleId": "rdw-8890db3bb4d215e7469f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3206",
         "make": "CITROEN",
         "model": "C5 AIRCROSS",
         "type": "A",
@@ -12423,7 +12330,6 @@
       "sampleId": "rdw-4c367b5a08a91504667f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3207",
         "make": "SKODA",
         "model": "OCTAVIA",
         "type": "5E",
@@ -12561,7 +12467,6 @@
       "sampleId": "rdw-08b82c93299d301ef3ae",
       "liveApi": false,
       "identity": {
-        "plate": "QA3208",
         "make": "AUDI",
         "model": "AUDI A4",
         "type": "B8",
@@ -12693,7 +12598,6 @@
       "sampleId": "rdw-e37ae5c8892bffa37d7d",
       "liveApi": false,
       "identity": {
-        "plate": "QA3209",
         "make": "RENAULT",
         "model": "CLIO",
         "variant": "CB1D",
@@ -12830,7 +12734,6 @@
       "sampleId": "rdw-8d63bcd6c5302527cb26",
       "liveApi": false,
       "identity": {
-        "plate": "QA3210",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -12968,7 +12871,6 @@
       "sampleId": "rdw-ab2799e2e729cdbdbea1",
       "liveApi": false,
       "identity": {
-        "plate": "QA3211",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -13106,7 +13008,6 @@
       "sampleId": "rdw-88ca08aa2c1c2f338889",
       "liveApi": false,
       "identity": {
-        "plate": "QA3212",
         "make": "NISSAN",
         "model": "NISSAN MICRA",
         "type": "K13",
@@ -13244,7 +13145,6 @@
       "sampleId": "rdw-fe344fc219fd4dac3d93",
       "liveApi": false,
       "identity": {
-        "plate": "QA3213",
         "make": "VOLKSWAGEN",
         "model": "T-ROC",
         "type": "A1",
@@ -13382,7 +13282,6 @@
       "sampleId": "rdw-c2f61e226ec4adc9f847",
       "liveApi": false,
       "identity": {
-        "plate": "QA3214",
         "make": "VOLKSWAGEN",
         "model": "T-ROC",
         "type": "A1",
@@ -13520,7 +13419,6 @@
       "sampleId": "rdw-6e5fcf7a45d11cee5c8b",
       "liveApi": false,
       "identity": {
-        "plate": "QA3215",
         "make": "VOLKSWAGEN",
         "model": "GOLF",
         "variant": "ABBKCX01",
@@ -13651,7 +13549,6 @@
       "sampleId": "rdw-91f01d1cef8207506880",
       "liveApi": false,
       "identity": {
-        "plate": "QA3216",
         "make": "BMW",
         "model": "520I",
         "type": "G5K",
@@ -13779,7 +13676,6 @@
       "sampleId": "rdw-01bf3258b5d11924c0de",
       "liveApi": false,
       "identity": {
-        "plate": "QA3217",
         "make": "SKODA",
         "model": "OCTAVIA",
         "variant": "AABGUX01",
@@ -13916,7 +13812,6 @@
       "sampleId": "rdw-40eee0b704505ebee8a6",
       "liveApi": false,
       "identity": {
-        "plate": "QA3218",
         "make": "MAZDA",
         "model": "MAZDA 6",
         "variant": "198",
@@ -14053,7 +13948,6 @@
       "sampleId": "rdw-708eb68b8bb62e044966",
       "liveApi": false,
       "identity": {
-        "plate": "QA3219",
         "make": "MERCEDES-BENZ",
         "model": "B 180",
         "type": "246",
@@ -14191,7 +14085,6 @@
       "sampleId": "rdw-fe3dea7f7f936bc0d417",
       "liveApi": false,
       "identity": {
-        "plate": "QA3220",
         "make": "FIAT",
         "model": "FIAT 500",
         "type": "312",
@@ -14329,7 +14222,6 @@
       "sampleId": "rdw-485ebd321e5a70b5864b",
       "liveApi": false,
       "identity": {
-        "plate": "QA3221",
         "make": "SKODA",
         "model": "OCTAVIA",
         "type": "1Z",
@@ -14466,7 +14358,6 @@
       "rank": 20,
       "liveApi": false,
       "identity": {
-        "plate": "QA3222",
         "make": "BMW",
         "model": "318I",
         "doors": null,
@@ -14590,7 +14481,6 @@
       "sampleId": "rdw-10ad5010f9e79abbdfaf",
       "liveApi": false,
       "identity": {
-        "plate": "QA3223",
         "make": "BMW",
         "model": "318I",
         "type": "G3K",
@@ -14713,12 +14603,11 @@
       }
     },
     {
-      "id": "v380st",
+      "id": "OWNER-B",
       "width": 320,
       "locale": "en",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -14863,7 +14752,6 @@
       "sampleId": "rdw-78c85758f16dfc63718f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3201",
         "make": "FIAT",
         "model": "FIAT DOBLO'",
         "type": "263",
@@ -15001,7 +14889,6 @@
       "sampleId": "rdw-08b82c93299d301ef3ae",
       "liveApi": false,
       "identity": {
-        "plate": "QA3208",
         "make": "AUDI",
         "model": "AUDI A4",
         "type": "B8",
@@ -15132,7 +15019,6 @@
       "rank": 20,
       "liveApi": false,
       "identity": {
-        "plate": "QA3222",
         "make": "BMW",
         "model": "318I",
         "doors": null,
@@ -15256,7 +15142,6 @@
       "sampleId": "rdw-10ad5010f9e79abbdfaf",
       "liveApi": false,
       "identity": {
-        "plate": "QA3223",
         "make": "BMW",
         "model": "318I",
         "type": "G3K",
@@ -15379,12 +15264,11 @@
       }
     },
     {
-      "id": "v380st",
+      "id": "OWNER-B",
       "width": 320,
       "locale": "pl",
       "liveApi": true,
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -15529,7 +15413,6 @@
       "sampleId": "rdw-78c85758f16dfc63718f",
       "liveApi": false,
       "identity": {
-        "plate": "QA3201",
         "make": "FIAT",
         "model": "FIAT DOBLO'",
         "type": "263",
@@ -15667,7 +15550,6 @@
       "sampleId": "rdw-08b82c93299d301ef3ae",
       "liveApi": false,
       "identity": {
-        "plate": "QA3208",
         "make": "AUDI",
         "model": "AUDI A4",
         "type": "B8",
@@ -15798,7 +15680,6 @@
       "rank": 20,
       "liveApi": false,
       "identity": {
-        "plate": "QA3222",
         "make": "BMW",
         "model": "318I",
         "doors": null,
@@ -15922,7 +15803,6 @@
       "sampleId": "rdw-10ad5010f9e79abbdfaf",
       "liveApi": false,
       "identity": {
-        "plate": "QA3223",
         "make": "BMW",
         "model": "318I",
         "type": "G3K",
