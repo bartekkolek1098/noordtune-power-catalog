@@ -25308,6 +25308,486 @@
     "contentSha256": "2c9818f2bef4dbdc4040b65bde822c1b1dbcf47da1d31e97269d4365e7321264"
   },
   {
+    "id": "atm-v3-8e4e6f6e3887ae8c",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/fiat-doblo-16-m-jtd-105pk/",
+    "retrievedAt": "2026-09-18T12:37:28.567Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d21d486dcbaa85ea39140ccdb0661e4f88adfbbe04dc0473d54d00c59301382d"
+  },
+  {
+    "id": "atm-v3-8994a87d9608c67c",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/fiat-doblo-16-multijet-105pk/",
+    "retrievedAt": "2026-09-18T12:37:30.426Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3cfe71f2251cccc6d4a55e6b347b0d248448d18c3fa6c6ac359a5b2384631a98"
+  },
+  {
+    "id": "atm-v3-d389de9e8edec0cd",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk/",
+    "retrievedAt": "2026-09-18T12:37:32.365Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "52b7668afed6b2e901794a5a4dc02ccd4d8e138d144d574f5f3be197b634c534"
+  },
+  {
+    "id": "atm-v3-ab5320260e7d91ff",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk-7854/",
+    "retrievedAt": "2026-09-18T12:37:34.464Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9cfbbb3e79d1ef79c8ad2471139ae48c1b3bb8f96d75ff4b9a591671c83bf384"
+  },
+  {
+    "id": "atm-v3-689b5845933d6ae0",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk-12383/",
+    "retrievedAt": "2026-09-18T12:37:36.447Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "195d41df8ee350dd777e0f62d8a448fb4262b6013baf59f9e431009f214b9339"
+  },
+  {
+    "id": "atm-v3-d65b8200a0c31a06",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/citroen-c5-aircross-16-puretech-180pk/",
+    "retrievedAt": "2026-09-18T12:37:38.498Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a752ecbb1a5318e0fec61a3f4a3137c82b07d00f98d3a8dba266cc1cb693d5d7"
+  },
+  {
+    "id": "atm-v3-31f8310a5319405e",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-140pk-chpa/",
+    "retrievedAt": "2026-09-18T12:37:40.475Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5ba9ab864618c556e9a995eb02a7ed3e3140acade1ef31be26f75159629e20cd"
+  },
+  {
+    "id": "atm-v3-7f6e72f7dee79607",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-140pk-chpa-7004/",
+    "retrievedAt": "2026-09-18T12:37:42.490Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a29800741ddf9fa90cb77e03dc9fae40c0111a31de0ff92ed1c6132d2165302d"
+  },
+  {
+    "id": "atm-v3-eeb249c42eb58d78",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc-20-tsi-190pk/",
+    "retrievedAt": "2026-09-18T12:37:44.550Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7cd91b5e2c5e03e81f4b5a9124ee6d82cdad609d9b477de9b83e080a9e9c8454"
+  },
+  {
+    "id": "atm-v3-338dffcf6cbd6e92",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc-20-tsi-190pk-12304/",
+    "retrievedAt": "2026-09-18T12:37:46.489Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2fe84ca7f411828ae26dc01d291b18daa85f6171f1495f6c381edc89f302e914"
+  },
+  {
+    "id": "atm-v3-3e247e3e7e5306b2",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-19-tdi-105pk/",
+    "retrievedAt": "2026-09-18T12:37:48.535Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fb16e9bcd29e9023910ee31e152ae09dec244ba3af30a984dacbe668bb06ba65"
+  },
+  {
+    "id": "atm-v3-6793e72537eed755",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-520i-184pk/",
+    "retrievedAt": "2026-09-18T12:37:50.543Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6db03df73c4d3caa48e1bd77b96922861c1ec61a86172ecef8789f307d226ce9"
+  },
+  {
+    "id": "atm-v3-b92f3d7d57449e16",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-520i-184pk-8569/",
+    "retrievedAt": "2026-09-18T12:37:52.524Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "aa157acac137e37500778293437f47e0ab8143fc873b3bf31dffbd1cd2023590"
+  },
+  {
+    "id": "atm-v3-2727507f7535c236",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-520i-184pk-11298/",
+    "retrievedAt": "2026-09-18T12:37:54.602Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e40fc040ce47cef2925e2784b1cdc10528d1591f592e2647e9f490c78089c97a"
+  },
+  {
+    "id": "atm-v3-46df01faaa17f8c4",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie-318i-156pk/",
+    "retrievedAt": "2026-09-18T12:37:56.594Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "4cae10fb0734f70910c64fcf7fb792d2d385c56317cdce17e2f62b5fa1f67578"
+  },
+  {
+    "id": "atm-v3-bf23d490c8d1b889",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie-318i-156pk-13115/",
+    "retrievedAt": "2026-09-18T12:37:58.698Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "cdd91cc42e1622c9308f68a97f4fe2696a2024558abbbb61a90fb0c9ef459215"
+  },
+  {
+    "id": "atm-v3-a98ab0ab8f180bb9",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mazda-mx-5-18i-16v-126pk/",
+    "retrievedAt": "2026-09-18T12:38:00.646Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f81d494942b8670c0fb033badb65995c94ddc2a681d5443bbe99183fe8924dea"
+  },
+  {
+    "id": "atm-v3-2f5194f080d1abcf",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/audi-a4-18-tfsi-120pk/",
+    "retrievedAt": "2026-09-18T12:38:02.616Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c654ab9e19127a83ede0c45fdd28b9bf9843b9c2babf37ed317a858a57d58335"
+  },
+  {
+    "id": "atm-v3-a2ec754f803fda02",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/audi-a4-18-tfsi-120pk-3729/",
+    "retrievedAt": "2026-09-18T12:38:04.735Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8a14a209c352dcfa1d6f90522c543146b8a97ba39274fbb3d3842294a1d9e666"
+  },
+  {
+    "id": "atm-v3-5e56cb83ee43dfe8",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/renault-clio-16i-16v-110pk-4825/",
+    "retrievedAt": "2026-09-18T12:38:06.676Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "965b44b2827a2aed4414add9a3ecfebd150c64408308ca804904a8fede13a978"
+  },
+  {
+    "id": "atm-v3-54bcd07cac65c8ee",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695-09-twinair-85pk/",
+    "retrievedAt": "2026-09-18T12:38:08.692Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "23ad84e960a39effcdab8930245a83035d6dc8e0136d074e093c126fb674e8be"
+  },
+  {
+    "id": "atm-v3-48d2bc1d8f40e7e8",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mazda-6-18i-16v-120pk/",
+    "retrievedAt": "2026-09-18T12:38:10.640Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b25652fb011055bca2395effab1d9ef4531c4d53d8e6527ad51f3e8d558fc3a0"
+  },
+  {
+    "id": "atm-v3-ccdbe137e9c76ada",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-b-180-cgi-122pk/",
+    "retrievedAt": "2026-09-18T12:38:12.855Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8f92d210ca9f9e488386b0be7154f5963aadfc4fd18b5bd4fd86ba7029ae8b94"
+  },
+  {
+    "id": "atm-v3-d02765dbe10162db",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-b-180-cgi-122pk-6559/",
+    "retrievedAt": "2026-09-18T12:38:14.748Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "145fc5ee1db488c57376ddb1556b3cb4d14dccd3761f25cceed182180cb9d8b6"
+  },
+  {
+    "id": "atm-v3-d40c7cbf5f166a1e",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695-12i-8v-69pk/",
+    "retrievedAt": "2026-09-18T12:38:16.670Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "36689eda5db6566e33c4377a5794b6c96cffffbcd82a96c623ad67e43cb64b8b"
+  },
+  {
+    "id": "atm-v3-eeb2a2f96c297e9f",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-122pk/",
+    "retrievedAt": "2026-09-18T12:38:18.660Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c2c1cf8618a999c5fd2345f60408a56b5c7345ff55c67aacf21cc76cebe85bb8"
+  },
+  {
+    "id": "shiftech-v2-9fa3af9ee7124d92",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/peugeot/5008/2017/petrol/1.2-thp-puretech-130",
+    "retrievedAt": "2026-09-18T12:40:31.142Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7d20d449f22f12d8157168c79d19bc62d67148e810f773ef73585a40d24e9715"
+  },
+  {
+    "id": "shiftech-v2-701c99bcc4788a4f",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/peugeot/5008/2020/petrol/1.2-thp-puretech-gpf-130",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "cc40e1e43204b4c4051daa4b832f5351abb268ad7719e670ba054ec3f56abf53"
+  },
+  {
+    "id": "shiftech-v2-c05a1d77cebc45bb",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/citroen/c5-aircross/2018/petrol/1.6-thp-puretech-gpf-180",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ba76df202809a3b86bd5394891b9e488ad261358a9e2c56d00b0b11bc60f0315"
+  },
+  {
+    "id": "shiftech-v2-774a6496a70132e4",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/petrol/1.4-tsi-tfsi-ss-140",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fa4b104fad0dfb378709645f15c01fce4850f5ecd412cead3443eefd11066df2"
+  },
+  {
+    "id": "shiftech-v2-8e539131491d0e96",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/t-roc/2017/petrol/2.0-tsi-opf-190",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "78ea76d7321b59c8a0a3fa139f47528d83be9498c08c498983dbf9114bc3b8c7"
+  },
+  {
+    "id": "shiftech-v2-a4a6a952ec30fe15",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2003-v/diesel/1.9-tdi-ip-105",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9d6962a8521df3a77311f046d164c7166ca33ef7a5cf7e960ff42df62076aa85"
+  },
+  {
+    "id": "shiftech-v2-a4e3f908713afb79",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/nissan/micra/2003/petrol/1.2i-80",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1b02fc0954e0d6ee56a0ec26ae4e6f943b9ed2b29ff4b94d5c28540f263ca06e"
+  },
+  {
+    "id": "shiftech-v2-00de5725a83ff1ad",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/nissan/micra/2010/petrol/1.2-12v-80",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dddcf41621dc60c61401452b5259135db6c4de3d45df2dd672b132b805fcbfb0"
+  },
+  {
+    "id": "shiftech-v2-62c1e042f01c33e0",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/renault/clio/2001-ii/petrol/1.6i-16v-107",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0c1c97ce8f5563c41a3313b78fd076c4e48b93b8e558ea77a278be3dedaa63b2"
+  },
+  {
+    "id": "shiftech-v2-65fa7d80495bb895",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.6i-8v-102",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5b12b8adeb4c6e341646b19f9d4b1572918b9b6437eeebc161b3a025bffa0971"
+  },
+  {
+    "id": "shiftech-v2-efc584da161ee503",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.4-tsi-tfsi-122",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7c6eab139977a904b0533ed8b5d32a7281bdb78cfc8d9eb89bde89726e7ce967"
+  },
+  {
+    "id": "shiftech-v2-b1a950cea4f6e6f9",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/mercedes/b/2013-w246/petrol/180-eu6-1.6t-122",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b004137e289980ca89f70401563bbd46fbb679167fce22e970275a3459fb5e8d"
+  },
+  {
+    "id": "shiftech-v2-947e3c87f6ed3203",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2008-b8/petrol/1.8-tsi-tfsi-120",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8c96726559375adf36c2076f267161ba54951eec2f9229e15e754d509a5f73c0"
+  },
+  {
+    "id": "shiftech-v2-5cc3dfcd393df5e1",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2016-g30-g31/petrol/20i-2.0t-eu6d-184",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d377f7c11aab882a57319e1aa8a18876138682ac0965966e9d765b1ab6a412b2"
+  },
+  {
+    "id": "shiftech-v2-d6fc4520e5152921",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2022-g20-g21-lci/petrol/18i-2.0t-eu6d-156",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c9926443b9d4f82357d4118c8682f2ca7da7f9c9da66534e8a073f1db6e07da3"
+  },
+  {
+    "id": "shiftech-v2-ec1a3e45a04c329d",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/mazda/mx5/2005/petrol/1.8i-mzr-126",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b1b11b64feb4de0964dea43ab9ea02fb767ea60e56c64fb007efbcc36a725928"
+  },
+  {
+    "id": "shiftech-v2-db1e809928c83527",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/mazda/mazda-6/2003/petrol/1.8i-mzr-122",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3c2aa0724bcf193692dd4145a8d4266bc885ec135d51a1d7f41227184ccb1579"
+  },
+  {
+    "id": "shiftech-v2-52d39d2ea645d63c",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/500/2015/petrol/0.9-twin-air-85",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a886bb6880f88f52731207e5035c06f955a369ea3848a2f96ac7ecb9e4a99afa"
+  },
+  {
+    "id": "shiftech-v2-139ccbe44e452003",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/18i-2.0t-eu6d-156",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8a72850370578e721ea6931e25728fb71d1954778903c8b6bc66a95107cd0d9e"
+  },
+  {
+    "id": "unlimited-v2-159b2c7256791ef9",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL public Normal/Stage 1/Stage 2 table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mitsubishi-colt-1-5i-109-pk.html",
+    "retrievedAt": "2026-09-18T12:49:20.295Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5b5db7aefcc7a8531361dd6576365505b2d19dd3ff99dbe58c620da830387671"
+  },
+  {
+    "id": "manufacturer-v3-2-bmw-520i-2017",
+    "provider": "manufacturer",
+    "sourceName": "BMW Group official model update release",
+    "url": "https://www.press.bmwgroup.com/belux/article/attachment/T0270802FR/385610",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9c7de0764395c5a65cf3e06ef365de725e4f881faac7f7abb397d9ec23635b74"
+  },
+  {
+    "id": "manufacturer-v3-2-bmw-318i-2020",
+    "provider": "manufacturer",
+    "sourceName": "BMW Group official model update release",
+    "url": "https://www.press.bmwgroup.com/portugal/article/detail/T0304601PT/bmw-model-upgrade-measures-taking-effect-in-the-spring-of-2020",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "189b6cefdba3231d07d60d9821b51c8f2424d8b68692ab900eefa19547c40337"
+  },
+  {
     "id": "manufacturer-v3-vito-2024-110",
     "provider": "manufacturer",
     "sourceName": "Mercedes-Benz Croatian Vito technical price list, identity fields only",

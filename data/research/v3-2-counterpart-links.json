@@ -1,0 +1,82 @@
+[
+  {
+    "sourceId": "shiftech-v2-9fa3af9ee7124d92",
+    "targetSourceId": "atm-v3-ab5320260e7d91ff",
+    "generation": "2017 - 2020",
+    "evidenceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/peugeot/5008/2017/petrol/1.2-thp-puretech-130",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk-7854/"
+    ],
+    "reason": "Same 2017 body/application, petrol 1.2 130 PS/230 Nm; nominal 1200 versus exact 1199 cc. Original year bands retained; no link to the 2020 successor."
+  },
+  {
+    "sourceId": "shiftech-v2-701c99bcc4788a4f",
+    "targetSourceId": "atm-v3-689b5845933d6ae0",
+    "generation": "2020 -> ...",
+    "evidenceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/peugeot/5008/2020/petrol/1.2-thp-puretech-gpf-130",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk-12383/"
+    ],
+    "reason": "Same 2020 successor application, petrol 1.2 130 PS/230 Nm; nominal 1200 versus exact 1199 cc. GPF-era application remains separate from the 2017 profile."
+  },
+  {
+    "sourceId": "shiftech-v2-c05a1d77cebc45bb",
+    "targetSourceId": "atm-v3-d65b8200a0c31a06",
+    "generation": "2018 - 2021",
+    "evidenceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/citroen/c5-aircross/2018/petrol/1.6-thp-puretech-gpf-180",
+      "https://www.atm-chiptuning.com/chiptuning/citroen-c5-aircross-16-puretech-180pk/"
+    ],
+    "reason": "Same C5 Aircross 2018 ordinary petrol 1.6 180 PS/250 Nm application, 1600 nominal versus 1598 exact cc. Both publish 215 PS/300 Nm. No PHEV/electrified application included."
+  },
+  {
+    "sourceId": "shiftech-v2-774a6496a70132e4",
+    "targetSourceId": "atm-v3-31f8310a5319405e",
+    "generation": "2013 - 2016",
+    "evidenceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/petrol/1.4-tsi-tfsi-ss-140",
+      "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-140pk-chpa/"
+    ],
+    "reason": "Same Octavia 2013 1.4 turbo petrol 140 PS/250 Nm, nominal 1400 versus exact 1395 cc. CHPA-era application; do not include the 2017 facelift application."
+  },
+  {
+    "sourceId": "shiftech-v2-a4a6a952ec30fe15",
+    "targetSourceId": "atm-v3-3e247e3e7e5306b2",
+    "generation": "Golf 5 - 2003 - 2008",
+    "evidenceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2003-v/diesel/1.9-tdi-ip-105",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-19-tdi-105pk/"
+    ],
+    "reason": "Golf V 2003 generation, 1.9 diesel 105 PS/250 Nm; 1900 nominal versus 1896 exact cc. Intersect with ATM end 2008. Shiftech separately publishes ECU Stage 2, retained independently of ATM Stage 1."
+  },
+  {
+    "sourceId": "shiftech-v2-139ccbe44e452003",
+    "targetSourceId": "atm-v3-46df01faaa17f8c4",
+    "generation": "G2x - 2019 ->",
+    "evidenceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/18i-2.0t-eu6d-156",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie-318i-156pk/"
+    ],
+    "reason": "G20/G21 are the sedan/touring codes under the ATM pre-LCI G2x application. Same ordinary petrol 2.0 156 PS/250 Nm, overlapping reviewed 2020–2021 period and identical Stage 1 260 PS/420 Nm. Manufacturer corroborates factory output only."
+  },
+  {
+    "sourceId": "shiftech-v2-947e3c87f6ed3203",
+    "targetSourceId": "atm-v3-2f5194f080d1abcf",
+    "generation": "B8 - 2008 - 2011",
+    "evidenceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2008-b8/petrol/1.8-tsi-tfsi-120",
+      "https://www.atm-chiptuning.com/chiptuning/audi-a4-18-tfsi-120pk/"
+    ],
+    "reason": "Same pre-facelift B8 A4 1.8 turbo petrol 120 PS/230 Nm, 1800 nominal versus 1798 exact cc. Intersect with explicit ATM 2008–2011 period. Independently published Shiftech Stage 2 retained."
+  },
+  {
+    "sourceId": "shiftech-v2-efc584da161ee503",
+    "targetSourceId": "atm-v3-eeb2a2f96c297e9f",
+    "generation": "2004 - 2012",
+    "evidenceUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.4-tsi-tfsi-122",
+      "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-122pk/"
+    ],
+    "reason": "Same second-generation Octavia 1.4 turbo petrol 122 PS/200 Nm, 1400 nominal versus 1390 exact cc; reviewed years intersect through 2012. Different tuned outputs enter existing conservative consensus with conflict retained. No extension to 2013."
+  }
+]

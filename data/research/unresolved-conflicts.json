@@ -8816,6 +8816,97 @@
       ]
     },
     {
+      "sourceId": "atm-v3-8e4e6f6e3887ae8c",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7f6e72f7dee79607",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6793e72537eed755",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2727507f7535c236",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bf23d490c8d1b889",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a98ab0ab8f180bb9",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a2ec754f803fda02",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5e56cb83ee43dfe8",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d02765dbe10162db",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "shiftech-v2-8e539131491d0e96",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "shiftech-v2-b1a950cea4f6e6f9",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "shiftech-v2-5cc3dfcd393df5e1",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "shiftech-v2-ec1a3e45a04c329d",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "shiftech-v2-db1e809928c83527",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED"
+      ]
+    },
+    {
+      "sourceId": "unlimited-v2-159b2c7256791ef9",
+      "reasons": [
+        "V3_APPLICABILITY_UNRESOLVED",
+        "IDENTITY_UNAVAILABLE"
+      ]
+    },
+    {
       "sourceId": "shiftech-v3-md1cs104-availability",
       "reasons": [
         "V3_APPLICABILITY_UNRESOLVED",
@@ -13974,6 +14065,82 @@
         "conditions": [
           "External provider reference, not a measured or owner-approved NoordTune result.",
           "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    {
+      "id": "sourced-skoda-octavia-0f3444ff5254",
+      "sourceIds": [
+        "atm-v3-31f8310a5319405e",
+        "shiftech-v2-774a6496a70132e4"
+      ],
+      "stage1": {
+        "selectedPowerHp": 170,
+        "selectedTorqueNm": 300,
+        "sourceValues": [
+          {
+            "sourceId": "atm-v3-31f8310a5319405e",
+            "provider": "atm-chiptuning",
+            "powerHp": 170,
+            "torqueNm": 300,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "shiftech-v2-774a6496a70132e4",
+            "provider": "shiftech",
+            "powerHp": 180,
+            "torqueNm": 300,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation and installed ECU require workshop verification.",
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+        ]
+      }
+    },
+    {
+      "id": "sourced-skoda-octavia-fce9fc1ea191",
+      "sourceIds": [
+        "atm-v3-eeb2a2f96c297e9f",
+        "shiftech-v2-efc584da161ee503"
+      ],
+      "stage1": {
+        "selectedPowerHp": 140,
+        "selectedTorqueNm": 240,
+        "sourceValues": [
+          {
+            "sourceId": "atm-v3-eeb2a2f96c297e9f",
+            "provider": "atm-chiptuning",
+            "powerHp": 155,
+            "torqueNm": 270,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          },
+          {
+            "sourceId": "shiftech-v2-efc584da161ee503",
+            "provider": "shiftech",
+            "powerHp": 140,
+            "torqueNm": 240,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "conditions": []
+          }
+        ],
+        "confidence": "multi-source",
+        "sourceAgreement": "conflict",
+        "ownerReviewRequired": true,
+        "conditions": [
+          "Exact engine, generation and installed ECU require workshop verification.",
+          "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
         ]
       }
     },

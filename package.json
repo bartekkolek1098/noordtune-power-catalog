@@ -23,6 +23,7 @@
     "research:unlimited": "node scripts/research-unlimited.cjs",
     "test:nl-fleet-v2": "node scripts/test-research-providers.cjs && node --no-warnings scripts/test-nl-fleet-v2.ts",
     "test:nl-fleet-v3": "node scripts/test-atm-provider.cjs && node --no-warnings scripts/test-tuning-source-evidence.ts && node --no-warnings scripts/test-nl-fleet-v3.ts && node --no-warnings scripts/test-v3-1-match-recovery.ts",
+    "test:nl-fleet-v3-2": "node --no-warnings scripts/test-v3-2-targeted-recovery.cjs",
     "research:nl-closure": "node --no-warnings scripts/build-nl-coverage-v3.cjs",
     "qa:nl-fleet-v2": "node --no-warnings scripts/qa-nl-fleet-v2.ts",
     "benchmark:tuning": "node --expose-gc --no-warnings scripts/benchmark-tuning-resolver.ts"

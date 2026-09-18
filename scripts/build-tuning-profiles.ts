@@ -33,7 +33,7 @@ const supportingEvidence: string[] = [];
 const groups = new Map<string, SourceObservation[]>();
 const boundaries: GenerationBoundary[] = existsSync(join(root, "generation-boundaries.json")) ? JSON.parse(readFileSync(join(root, "generation-boundaries.json"), "utf8")) : [];
 type CounterpartLink = {sourceId:string;targetSourceId:string;generation:string;evidenceUrls:string[];reason:string;relationship?:"same-provider-application-mirror";independentBridgeSourceId?:string};
-const counterparts:CounterpartLink[]=["v2-counterpart-links.json","v3-counterpart-links.json"].flatMap(file=>existsSync(join(root,file))?JSON.parse(readFileSync(join(root,file),"utf8")):[]);
+const counterparts:CounterpartLink[]=["v2-counterpart-links.json","v3-counterpart-links.json","v3-2-counterpart-links.json"].flatMap(file=>existsSync(join(root,file))?JSON.parse(readFileSync(join(root,file),"utf8")):[]);
 const v2Checkpoint=existsSync(join(root,"v2-consensus-checkpoint.json"))?JSON.parse(readFileSync(join(root,"v2-consensus-checkpoint.json"),"utf8")):undefined;
 const retainedSourceIds=new Set<string>(v2Checkpoint?.profiles.flatMap((p:{sourceIds:string[]})=>p.sourceIds)??[]);
 for (const source of observations) {

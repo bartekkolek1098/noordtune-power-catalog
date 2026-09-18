@@ -704,6 +704,77 @@
     ]
   },
   {
+    "id": "sourced-audi-a4-895c4ffc7082",
+    "brand": "Audi",
+    "modelFamily": "A4",
+    "generation": "B8 - 2008 - 2011",
+    "yearFrom": 2008,
+    "yearTo": 2011,
+    "stockPowerHp": 120,
+    "stockSourceQuality": "multi-source",
+    "stage1": {
+      "selectedPowerHp": 210,
+      "selectedTorqueNm": 310,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-2f5194f080d1abcf",
+          "provider": "atm-chiptuning",
+          "powerHp": 210,
+          "torqueNm": 310,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        },
+        {
+          "sourceId": "shiftech-v2-947e3c87f6ed3203",
+          "provider": "shiftech",
+          "powerHp": 210,
+          "torqueNm": 320,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "multi-source",
+      "sourceAgreement": "strong",
+      "ownerReviewRequired": false,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+        "LARGE_GAIN_CORROBORATED"
+      ]
+    },
+    "stage2": {
+      "selectedPowerHp": 220,
+      "selectedTorqueNm": 340,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-v2-947e3c87f6ed3203",
+          "provider": "shiftech",
+          "powerHp": 221,
+          "torqueNm": 336,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+        "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-2f5194f080d1abcf",
+      "shiftech-v2-947e3c87f6ed3203"
+    ]
+  },
+  {
     "id": "sourced-audi-a4-d432453180c8",
     "brand": "Audi",
     "modelFamily": "A4",
@@ -2308,6 +2379,89 @@
     ]
   },
   {
+    "id": "sourced-bmw-3-serie-a3506efbd365",
+    "brand": "BMW",
+    "modelFamily": "3-serie",
+    "generation": "2022 - G20 G21 LCI",
+    "yearFrom": 2022,
+    "yearTo": 2023,
+    "stockPowerHp": 156,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 260,
+      "selectedTorqueNm": 420,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-v2-d6fc4520e5152921",
+          "provider": "shiftech",
+          "powerHp": 260,
+          "torqueNm": 420,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+        "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-v2-d6fc4520e5152921"
+    ]
+  },
+  {
+    "id": "sourced-bmw-3-serie-efb28f66a8e6",
+    "brand": "BMW",
+    "modelFamily": "3 serie",
+    "generation": "G2x - 2019 ->",
+    "yearFrom": 2020,
+    "yearTo": 2021,
+    "stockPowerHp": 156,
+    "stockSourceQuality": "multi-source",
+    "stage1": {
+      "selectedPowerHp": 260,
+      "selectedTorqueNm": 420,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-46df01faaa17f8c4",
+          "provider": "atm-chiptuning",
+          "powerHp": 260,
+          "torqueNm": 420,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        },
+        {
+          "sourceId": "shiftech-v2-139ccbe44e452003",
+          "provider": "shiftech",
+          "powerHp": 260,
+          "torqueNm": 420,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "multi-source",
+      "sourceAgreement": "strong",
+      "ownerReviewRequired": false,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+        "LARGE_GAIN_CORROBORATED"
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-46df01faaa17f8c4",
+      "shiftech-v2-139ccbe44e452003"
+    ]
+  },
+  {
     "id": "sourced-bmw-3-series-0382723e3cb9",
     "brand": "BMW",
     "modelFamily": "3 Series",
@@ -3418,6 +3572,42 @@
     "sourceIds": [
       "shiftech-1159",
       "mosselman-bmw-320d-f30-f31-lci-190hp"
+    ]
+  },
+  {
+    "id": "sourced-bmw-5-serie-a413f219bffe",
+    "brand": "BMW",
+    "modelFamily": "5 serie",
+    "generation": "G30/31 - 2016 - 2019",
+    "yearFrom": 2017,
+    "yearTo": 2019,
+    "stockPowerHp": 184,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 250,
+      "selectedTorqueNm": 440,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-b92f3d7d57449e16",
+          "provider": "atm-chiptuning",
+          "powerHp": 250,
+          "torqueNm": 440,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-b92f3d7d57449e16"
     ]
   },
   {
@@ -4571,6 +4761,52 @@
     ]
   },
   {
+    "id": "sourced-citroen-c5-aircross-625b6b6798ef",
+    "brand": "Citroën",
+    "modelFamily": "C5 Aircross",
+    "generation": "2018 - 2021",
+    "yearFrom": 2018,
+    "yearTo": 2020,
+    "stockPowerHp": 180,
+    "stockSourceQuality": "multi-source",
+    "stage1": {
+      "selectedPowerHp": 215,
+      "selectedTorqueNm": 300,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-d65b8200a0c31a06",
+          "provider": "atm-chiptuning",
+          "powerHp": 215,
+          "torqueNm": 300,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        },
+        {
+          "sourceId": "shiftech-v2-c05a1d77cebc45bb",
+          "provider": "shiftech",
+          "powerHp": 215,
+          "torqueNm": 300,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "multi-source",
+      "sourceAgreement": "strong",
+      "ownerReviewRequired": false,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-d65b8200a0c31a06",
+      "shiftech-v2-c05a1d77cebc45bb"
+    ]
+  },
+  {
     "id": "sourced-citroen-jumper-14e9534acafb",
     "brand": "Citroën",
     "modelFamily": "Jumper",
@@ -5702,6 +5938,111 @@
     ]
   },
   {
+    "id": "sourced-fiat-500-6878bc54d1cb",
+    "brand": "Fiat",
+    "modelFamily": "500",
+    "generation": "500 - 2007 - 2015",
+    "yearFrom": 2010,
+    "yearTo": 2014,
+    "stockPowerHp": 69,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 75,
+      "selectedTorqueNm": 110,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-d40c7cbf5f166a1e",
+          "provider": "atm-chiptuning",
+          "powerHp": 75,
+          "torqueNm": 112,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-d40c7cbf5f166a1e"
+    ]
+  },
+  {
+    "id": "sourced-fiat-500-c72b67b7704f",
+    "brand": "Fiat",
+    "modelFamily": "500",
+    "generation": "500 - 2007 - 2015",
+    "yearFrom": 2010,
+    "yearTo": 2015,
+    "stockPowerHp": 85,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 100,
+      "selectedTorqueNm": 180,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-54bcd07cac65c8ee",
+          "provider": "atm-chiptuning",
+          "powerHp": 100,
+          "torqueNm": 185,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-54bcd07cac65c8ee"
+    ]
+  },
+  {
+    "id": "sourced-fiat-500-ee5112c087f7",
+    "brand": "Fiat",
+    "modelFamily": "500",
+    "generation": "2015",
+    "yearFrom": 2015,
+    "yearTo": 2017,
+    "stockPowerHp": 85,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 95,
+      "selectedTorqueNm": 190,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-v2-52d39d2ea645d63c",
+          "provider": "shiftech",
+          "powerHp": 95,
+          "torqueNm": 190,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-v2-52d39d2ea645d63c"
+    ]
+  },
+  {
     "id": "sourced-fiat-500x-af8f77a12df3",
     "brand": "Fiat",
     "modelFamily": "500X",
@@ -5876,6 +6217,41 @@
     "ownerReviewRequired": true,
     "sourceIds": [
       "shiftech-3216"
+    ]
+  },
+  {
+    "id": "sourced-fiat-doblo-1c99b4003a1f",
+    "brand": "Fiat",
+    "modelFamily": "Doblo",
+    "generation": "2015 - 2021",
+    "yearFrom": 2016,
+    "yearTo": 2021,
+    "stockPowerHp": 105,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 140,
+      "selectedTorqueNm": 360,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-8994a87d9608c67c",
+          "provider": "atm-chiptuning",
+          "powerHp": 140,
+          "torqueNm": 360,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-8994a87d9608c67c"
     ]
   },
   {
@@ -17974,6 +18350,41 @@
     ]
   },
   {
+    "id": "sourced-mazda-6-546680abed59",
+    "brand": "Mazda",
+    "modelFamily": "6",
+    "generation": "2003 - 2008",
+    "yearFrom": 2005,
+    "yearTo": 2008,
+    "stockPowerHp": 120,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 130,
+      "selectedTorqueNm": 180,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-48d2bc1d8f40e7e8",
+          "provider": "atm-chiptuning",
+          "powerHp": 130,
+          "torqueNm": 180,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-48d2bc1d8f40e7e8"
+    ]
+  },
+  {
     "id": "sourced-mazda-6-5dc3bd5f21ca",
     "brand": "Mazda",
     "modelFamily": "6",
@@ -19053,6 +19464,42 @@
     "ownerReviewRequired": true,
     "sourceIds": [
       "unlimited-v2-c01d06524c4bb041"
+    ]
+  },
+  {
+    "id": "sourced-mercedes-benz-b-f3745a5f3995",
+    "brand": "Mercedes-Benz",
+    "modelFamily": "B",
+    "generation": "W246 - 2012 - 2014",
+    "yearFrom": 2012,
+    "yearTo": 2013,
+    "stockPowerHp": 122,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 175,
+      "selectedTorqueNm": 300,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-ccdbe137e9c76ada",
+          "provider": "atm-chiptuning",
+          "powerHp": 175,
+          "torqueNm": 300,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "LARGE_GAIN_REQUIRES_EXTRA_EVIDENCE"
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-ccdbe137e9c76ada"
     ]
   },
   {
@@ -23559,6 +24006,76 @@
     "ownerReviewRequired": true,
     "sourceIds": [
       "unlimited-v2-a3df387fdd896e31"
+    ]
+  },
+  {
+    "id": "sourced-nissan-micra-57f92755cf02",
+    "brand": "Nissan",
+    "modelFamily": "Micra",
+    "generation": "2003",
+    "yearFrom": 2003,
+    "yearTo": 2009,
+    "stockPowerHp": 80,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 85,
+      "selectedTorqueNm": 120,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-v2-a4e3f908713afb79",
+          "provider": "shiftech",
+          "powerHp": 85,
+          "torqueNm": 125,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-v2-a4e3f908713afb79"
+    ]
+  },
+  {
+    "id": "sourced-nissan-micra-f19ff7b95339",
+    "brand": "Nissan",
+    "modelFamily": "Micra",
+    "generation": "2010",
+    "yearFrom": 2010,
+    "yearTo": 2017,
+    "stockPowerHp": 80,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 95,
+      "selectedTorqueNm": 130,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-v2-00de5725a83ff1ad",
+          "provider": "shiftech",
+          "powerHp": 95,
+          "torqueNm": 130,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-v2-00de5725a83ff1ad"
     ]
   },
   {
@@ -29735,6 +30252,133 @@
     ]
   },
   {
+    "id": "sourced-peugeot-5008-2a7382fd0032",
+    "brand": "Peugeot",
+    "modelFamily": "5008",
+    "generation": "2020 -> ...",
+    "yearFrom": 2020,
+    "yearTo": 2021,
+    "stockPowerHp": 130,
+    "stockSourceQuality": "multi-source",
+    "stage1": {
+      "selectedPowerHp": 145,
+      "selectedTorqueNm": 270,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-689b5845933d6ae0",
+          "provider": "atm-chiptuning",
+          "powerHp": 150,
+          "torqueNm": 270,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        },
+        {
+          "sourceId": "shiftech-v2-701c99bcc4788a4f",
+          "provider": "shiftech",
+          "powerHp": 145,
+          "torqueNm": 275,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "multi-source",
+      "sourceAgreement": "strong",
+      "ownerReviewRequired": false,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-689b5845933d6ae0",
+      "shiftech-v2-701c99bcc4788a4f"
+    ]
+  },
+  {
+    "id": "sourced-peugeot-5008-aa18936f7384",
+    "brand": "Peugeot",
+    "modelFamily": "5008",
+    "generation": "2013 - 2016",
+    "yearFrom": 2015,
+    "yearTo": 2016,
+    "stockPowerHp": 130,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 150,
+      "selectedTorqueNm": 270,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-d389de9e8edec0cd",
+          "provider": "atm-chiptuning",
+          "powerHp": 150,
+          "torqueNm": 270,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-d389de9e8edec0cd"
+    ]
+  },
+  {
+    "id": "sourced-peugeot-5008-fad1920bf249",
+    "brand": "Peugeot",
+    "modelFamily": "5008",
+    "generation": "2017 - 2020",
+    "yearFrom": 2017,
+    "yearTo": 2020,
+    "stockPowerHp": 130,
+    "stockSourceQuality": "multi-source",
+    "stage1": {
+      "selectedPowerHp": 145,
+      "selectedTorqueNm": 270,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-ab5320260e7d91ff",
+          "provider": "atm-chiptuning",
+          "powerHp": 150,
+          "torqueNm": 270,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        },
+        {
+          "sourceId": "shiftech-v2-9fa3af9ee7124d92",
+          "provider": "shiftech",
+          "powerHp": 145,
+          "torqueNm": 275,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "multi-source",
+      "sourceAgreement": "strong",
+      "ownerReviewRequired": false,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-ab5320260e7d91ff",
+      "shiftech-v2-9fa3af9ee7124d92"
+    ]
+  },
+  {
     "id": "sourced-peugeot-boxer-2293ccf7d0ef",
     "brand": "Peugeot",
     "modelFamily": "Boxer",
@@ -31511,6 +32155,41 @@
     "ownerReviewRequired": true,
     "sourceIds": [
       "atm-v3-dcaad6b6db67ced0"
+    ]
+  },
+  {
+    "id": "sourced-renault-clio-36012c8d2e56",
+    "brand": "Renault",
+    "modelFamily": "Clio",
+    "generation": "2001 - II",
+    "yearFrom": 2001,
+    "yearTo": 2004,
+    "stockPowerHp": 107,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 110,
+      "selectedTorqueNm": 150,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-v2-62c1e042f01c33e0",
+          "provider": "shiftech",
+          "powerHp": 110,
+          "torqueNm": 150,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-v2-62c1e042f01c33e0"
     ]
   },
   {
@@ -37984,6 +38663,52 @@
     ]
   },
   {
+    "id": "sourced-skoda-octavia-0f3444ff5254",
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "2013 - 2016",
+    "yearFrom": 2013,
+    "yearTo": 2015,
+    "stockPowerHp": 140,
+    "stockSourceQuality": "multi-source",
+    "stage1": {
+      "selectedPowerHp": 170,
+      "selectedTorqueNm": 300,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-31f8310a5319405e",
+          "provider": "atm-chiptuning",
+          "powerHp": 170,
+          "torqueNm": 300,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        },
+        {
+          "sourceId": "shiftech-v2-774a6496a70132e4",
+          "provider": "shiftech",
+          "powerHp": 180,
+          "torqueNm": 300,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "multi-source",
+      "sourceAgreement": "conflict",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-31f8310a5319405e",
+      "shiftech-v2-774a6496a70132e4"
+    ]
+  },
+  {
     "id": "sourced-skoda-octavia-1e1818a96408",
     "brand": "Skoda",
     "modelFamily": "Octavia",
@@ -38511,6 +39236,41 @@
     ]
   },
   {
+    "id": "sourced-skoda-octavia-a9b4161d18bc",
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "2005",
+    "yearFrom": 2005,
+    "yearTo": 2009,
+    "stockPowerHp": 102,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 110,
+      "selectedTorqueNm": 160,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-v2-65fa7d80495bb895",
+          "provider": "shiftech",
+          "powerHp": 110,
+          "torqueNm": 160,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "shiftech-v2-65fa7d80495bb895"
+    ]
+  },
+  {
     "id": "sourced-skoda-octavia-afe33c05937f",
     "brand": "Skoda",
     "modelFamily": "Octavia",
@@ -38876,6 +39636,52 @@
     "ownerReviewRequired": true,
     "sourceIds": [
       "shiftech-9649"
+    ]
+  },
+  {
+    "id": "sourced-skoda-octavia-fce9fc1ea191",
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "2004 - 2012",
+    "yearFrom": 2010,
+    "yearTo": 2012,
+    "stockPowerHp": 122,
+    "stockSourceQuality": "multi-source",
+    "stage1": {
+      "selectedPowerHp": 140,
+      "selectedTorqueNm": 240,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-eeb2a2f96c297e9f",
+          "provider": "atm-chiptuning",
+          "powerHp": 155,
+          "torqueNm": 270,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        },
+        {
+          "sourceId": "shiftech-v2-efc584da161ee503",
+          "provider": "shiftech",
+          "powerHp": 140,
+          "torqueNm": 240,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "multi-source",
+      "sourceAgreement": "conflict",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-eeb2a2f96c297e9f",
+      "shiftech-v2-efc584da161ee503"
     ]
   },
   {
@@ -43507,6 +44313,76 @@
     ]
   },
   {
+    "id": "sourced-volkswagen-golf-611c5245d290",
+    "brand": "Volkswagen",
+    "modelFamily": "Golf",
+    "generation": "Golf 5 - 2003 - 2008",
+    "yearFrom": 2005,
+    "yearTo": 2007,
+    "stockPowerHp": 105,
+    "stockSourceQuality": "multi-source",
+    "stage1": {
+      "selectedPowerHp": 140,
+      "selectedTorqueNm": 320,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-3e247e3e7e5306b2",
+          "provider": "atm-chiptuning",
+          "powerHp": 140,
+          "torqueNm": 320,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        },
+        {
+          "sourceId": "shiftech-v2-a4a6a952ec30fe15",
+          "provider": "shiftech",
+          "powerHp": 140,
+          "torqueNm": 320,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "multi-source",
+      "sourceAgreement": "strong",
+      "ownerReviewRequired": false,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification.",
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+      ]
+    },
+    "stage2": {
+      "selectedPowerHp": 150,
+      "selectedTorqueNm": 340,
+      "sourceValues": [
+        {
+          "sourceId": "shiftech-v2-a4a6a952ec30fe15",
+          "provider": "shiftech",
+          "powerHp": 150,
+          "torqueNm": 340,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": [
+            "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+          ]
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+        "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-3e247e3e7e5306b2",
+      "shiftech-v2-a4a6a952ec30fe15"
+    ]
+  },
+  {
     "id": "sourced-volkswagen-golf-61a15e3bd13f",
     "brand": "Volkswagen",
     "modelFamily": "Golf",
@@ -47869,6 +48745,76 @@
     "ownerReviewRequired": true,
     "sourceIds": [
       "unlimited-v2-cc012488c88d2d47"
+    ]
+  },
+  {
+    "id": "sourced-volkswagen-t-roc-7ee13400bea1",
+    "brand": "Volkswagen",
+    "modelFamily": "T-Roc",
+    "generation": "2017 - 2021",
+    "yearFrom": 2017,
+    "yearTo": 2021,
+    "stockPowerHp": 190,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 245,
+      "selectedTorqueNm": 430,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-eeb249c42eb58d78",
+          "provider": "atm-chiptuning",
+          "powerHp": 245,
+          "torqueNm": 430,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-eeb249c42eb58d78"
+    ]
+  },
+  {
+    "id": "sourced-volkswagen-t-roc-99dfdf7728c4",
+    "brand": "Volkswagen",
+    "modelFamily": "T-Roc",
+    "generation": "2022 -> ...",
+    "yearFrom": 2022,
+    "yearTo": 2024,
+    "stockPowerHp": 190,
+    "stockSourceQuality": "single-source",
+    "stage1": {
+      "selectedPowerHp": 245,
+      "selectedTorqueNm": 430,
+      "sourceValues": [
+        {
+          "sourceId": "atm-v3-338dffcf6cbd6e92",
+          "provider": "atm-chiptuning",
+          "powerHp": 245,
+          "torqueNm": 430,
+          "powerUnit": "PS",
+          "torqueUnit": "Nm",
+          "conditions": []
+        }
+      ],
+      "confidence": "single-source",
+      "sourceAgreement": "acceptable",
+      "ownerReviewRequired": true,
+      "conditions": [
+        "Exact engine, generation and installed ECU require workshop verification."
+      ]
+    },
+    "ownerReviewRequired": true,
+    "sourceIds": [
+      "atm-v3-338dffcf6cbd6e92"
     ]
   },
   {

@@ -1,0 +1,174 @@
+{
+  "checkedAt": "2026-09-18T13:11:15.113Z",
+  "baselineHead": "14ca5b91044fb29f2747c2079df5aca9781fba9f",
+  "datasetFingerprint": "63e005fe8658c3b9510a89eacaf37f72f3eaef187dd63eaf4984a9df3de0dc75",
+  "commands": [
+    {
+      "command": "pnpm catalog:audit",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:tuning",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:nl-fleet-v2",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:nl-fleet-v3",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm lint",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm build",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:nl-fleet-v3-2",
+      "exitCode": 0
+    },
+    {
+      "command": "node --no-warnings scripts/qa-v3-2-cohorts.cjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node --no-warnings scripts/qa-v3-2-browser.cjs",
+      "exitCode": 0
+    }
+  ],
+  "browser": {
+    "cases": 118,
+    "liveHttpCases": 18,
+    "interceptedCases": 100,
+    "supplementaryDateCases": 3,
+    "errors": 0,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "compactLocales": [
+      "en",
+      "pl"
+    ],
+    "screenshots": [
+      "v380st-320.png",
+      "kkh27k-320.png",
+      "rank-2-2016-320.png",
+      "rank-7-2008-320.png",
+      "rank-20-2022-320.png",
+      "rank-20-2020-320.png"
+    ],
+    "report": "docs/tuning-data/browser-v3-2/browser-acceptance.json",
+    "note": "Missing sampleId means a synthetic technical identity; all fixture calls are explicitly intercepted. Owner calls use genuine HTTP and compare prior identity/quotes/stage outputs."
+  },
+  "client": {
+    "files": 25,
+    "bytes": 1422757,
+    "sourcedProfileIdLeaks": 0,
+    "before": {
+      "files": 25,
+      "bytes": 1422757
+    },
+    "byteGrowth": 0,
+    "clientServerCatalogImports": 0,
+    "clientSourcedDatasetImports": 0
+  },
+  "publicVehicles": 24,
+  "sitemapUrls": 291,
+  "indexedExhaustiveAgreement": 400,
+  "preservedProfiles": 1246,
+  "preservedSourceObservations": 3329,
+  "protectedBaseline": {
+    "main": "4d12e510953fb57c3f8f84a737880ff860a617e7",
+    "production": {
+      "created_at": "2026-08-18T14:39:18Z",
+      "environment": "Production",
+      "id": 5965036463,
+      "sha": "4d12e510953fb57c3f8f84a737880ff860a617e7"
+    },
+    "prs": [
+      {
+        "baseRefName": "main",
+        "headRefOid": "15d67ae15c3db7e90195b99e167ec4614ec884dd",
+        "isDraft": true,
+        "number": 12,
+        "state": "OPEN",
+        "updatedAt": "2026-08-18T19:18:10Z"
+      },
+      {
+        "baseRefName": "main",
+        "headRefOid": "3484b24c06491c4305add40067b0ba0e66aba7e5",
+        "isDraft": true,
+        "number": 13,
+        "state": "OPEN",
+        "updatedAt": "2026-09-15T20:28:57Z"
+      },
+      {
+        "baseRefName": "fix/tuning-identity-year-quote-policy",
+        "headRefOid": "d92bcd179813d1587e82e7f3a12ee5f1914648df",
+        "isDraft": true,
+        "number": 14,
+        "state": "OPEN",
+        "updatedAt": "2026-09-15T23:29:16Z"
+      },
+      {
+        "baseRefName": "feature/tuning-profile-dataset-v1",
+        "headRefOid": "515fb4fa765cefc8f1c8d59a46c6daa7536dc727",
+        "isDraft": true,
+        "number": 15,
+        "state": "OPEN",
+        "updatedAt": "2026-09-16T15:38:11Z"
+      }
+    ],
+    "noordtuneWww": "No filesystem, Git or remote operation was performed in this separate project."
+  },
+  "remoteVerification": "The final commit, normal push, exact-head Preview status and unchanged protected refs are recorded in Draft PR #16. No production deployment or merge is authorized/performed.",
+  "changedFiles": [
+    "data/research/batches/v3-2-targeted.json",
+    "data/research/profile-consensus.json",
+    "data/research/source-pages.json",
+    "data/research/unresolved-conflicts.json",
+    "data/research/v3-2-acceptance.json",
+    "data/research/v3-2-baseline.json",
+    "data/research/v3-2-counterpart-links.json",
+    "data/research/v3-2-coverage-report.json",
+    "data/research/v3-2-kia-hyundai-acceptance.json",
+    "data/research/v3-2-next20-decisions.json",
+    "data/research/v3-2-preservation-checkpoint.json",
+    "data/research/v3-2-results.json",
+    "data/research/v3-2-verification.json",
+    "docs/tuning-data/V3_2_TARGETED_RECOVERY.md",
+    "docs/tuning-data/browser-v3-2/browser-acceptance.json",
+    "docs/tuning-data/browser-v3-2/doblo-en-320-viewport.png",
+    "docs/tuning-data/browser-v3-2/doblo-nl-1440-viewport.png",
+    "docs/tuning-data/browser-v3-2/doblo-pl-320-viewport.png",
+    "docs/tuning-data/browser-v3-2/kkh27k-320.png",
+    "docs/tuning-data/browser-v3-2/rank-2-2016-320.png",
+    "docs/tuning-data/browser-v3-2/rank-20-2020-320.png",
+    "docs/tuning-data/browser-v3-2/rank-20-2022-320.png",
+    "docs/tuning-data/browser-v3-2/rank-7-2008-320.png",
+    "docs/tuning-data/browser-v3-2/v380st-320.png",
+    "docs/tuning-data/browser-v3-2/visual-acceptance.json",
+    "package.json",
+    "scripts/build-tuning-profiles.ts",
+    "scripts/build-v3-2-review.cjs",
+    "scripts/qa-v3-2-browser.cjs",
+    "scripts/qa-v3-2-cohorts.cjs",
+    "scripts/test-nl-fleet-v2.ts",
+    "scripts/test-nl-fleet-v3.ts",
+    "scripts/test-tuning-profile-dataset.ts",
+    "scripts/test-v3-2-targeted-recovery.cjs",
+    "src/data/tuning-profiles/profiles.json",
+    "src/data/tuning-profiles/source-index.json"
+  ]
+}
