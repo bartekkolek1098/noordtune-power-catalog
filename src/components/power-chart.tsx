@@ -30,6 +30,7 @@ export function PowerChart({
 }) {
   const [mounted, setMounted] = useState(false);
   const hasRanges = stages.some(stage => !stage.customHardware && (stage.powerRangeHp || stage.torqueRangeNm));
+  const separateScenarios = stages.some(stage => stage.provenance === "generic-indicative" || (stage.comparison && stage.comparison.comparability !== "same-reference"));
   const hasApproximate = stages.some(stage => !stage.customHardware && stage.approximate);
   const data = useMemo(() => estimateChartData(stages, stockPower, stockTorque, stockLabel), [stages, stockLabel, stockPower, stockTorque]);
 
@@ -38,7 +39,7 @@ export function PowerChart({
   }, []);
 
   if (!mounted) {
-    return <><div className="h-64 w-full rounded-lg bg-white/[0.035]" /><ChartCaption locale={locale} hasRanges={hasRanges} hasApproximate={hasApproximate} /></>;
+    return <><div className="h-64 w-full rounded-lg bg-white/[0.035]" /><ChartCaption locale={locale} hasRanges={hasRanges} hasApproximate={hasApproximate} separateScenarios={separateScenarios} /></>;
   }
 
   return (
@@ -84,16 +85,16 @@ export function PowerChart({
           />
         </AreaChart>
       </ResponsiveContainer>
-    </div><ChartCaption locale={locale} hasRanges={hasRanges} hasApproximate={hasApproximate} /></>
+    </div><ChartCaption locale={locale} hasRanges={hasRanges} hasApproximate={hasApproximate} separateScenarios={separateScenarios} /></>
   );
 }
 
-function ChartCaption({locale, hasRanges, hasApproximate}: {locale: Locale; hasRanges?: boolean; hasApproximate?: boolean}) {
+function ChartCaption({locale, hasRanges, hasApproximate, separateScenarios}: {locale: Locale; hasRanges?: boolean; hasApproximate?: boolean; separateScenarios?: boolean}) {
   return <p className="mt-2 text-xs leading-5 text-muted-foreground" data-testid="catalog-chart-caption">{{
     nl: "Catalogusillustratie van piekwaarden; geen rollenbankmeting of gemeten toerentalcurve.",
     en: "Catalog illustration of peak values; not a dyno measurement or measured RPM curve.",
     pl: "Ilustracja katalogowych wartości szczytowych; nie jest pomiarem z hamowni ani zmierzoną krzywą obrotów."
-  }[locale]}{hasRanges ? " " + {
+  }[locale]}{separateScenarios ? " " + {nl: "Afzonderlijke scenario’s; geen gegarandeerde opbouw in vermogen of koppel.", en: "Separate scenarios; no guaranteed progression in power or torque.", pl: "Oddzielne warianty; bez gwarancji wzrostu mocy lub momentu."}[locale] : ""}{hasRanges ? " " + {
     nl: "De banden tonen de vermelde bereiken; bronwaarden blijven punten.",
     en: "Bands show the listed ranges; source figures remain points.",
     pl: "Pasma pokazują podane przedziały; wartości źródłowe pozostają punktami."

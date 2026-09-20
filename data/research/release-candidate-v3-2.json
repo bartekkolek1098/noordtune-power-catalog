@@ -1,5 +1,5 @@
 {
-  "status": "RELEASE-CANDIDATE-CLEAN",
+  "status": "SUPERSEDED",
   "baselineSha": "4d12e510953fb57c3f8f84a737880ff860a617e7",
   "startingSha": "d0533b2d2abe1c021136025843f300a768896987",
   "candidateCommit": "Final commit SHA and exact-head Preview are recorded in Draft PR #16 after the normal push.",
@@ -1027,5 +1027,8 @@
     "Historical feature commits retain earlier artifacts; the approved later release process uses squash merges. No history rewrite or merge was performed.",
     "Browser QA used local production build. Hosted Preview may require Vercel authentication.",
     "Published reference values remain conditional estimates; installed ECU and hardware are not identified."
-  ]
+  ],
+  "historicalStatus": "RELEASE-CANDIDATE-CLEAN",
+  "currentStatus": "READY FOR OWNER REVIEW",
+  "supersededBy": "CUSTOMER_FLOW_FIX_REVIEW.md"
 }

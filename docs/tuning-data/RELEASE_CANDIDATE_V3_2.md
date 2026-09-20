@@ -1,6 +1,10 @@
 # V3.2 release-candidate blocker resolution
 
-**RELEASE-CANDIDATE-CLEAN** — RC-01, RC-02 and RC-03 resolved; all required checks pass. No merge, Ready action, production change, new research or profile addition.
+**SUPERSEDED — current status: READY FOR OWNER REVIEW.** See [Customer flow correction](../../CUSTOMER_FLOW_FIX_REVIEW.md). The owner-reported navigation, Stage presentation and customer-copy defects superseded this earlier audit.
+
+## Historical blocker-resolution result
+
+**RELEASE-CANDIDATE-CLEAN (historical)** — RC-01, RC-02 and RC-03 resolved; all required checks pass. No merge, Ready action, production change, new research or profile addition.
 
 - Starting commit: `d0533b2d2abe1c021136025843f300a768896987`; branch `feature/nl-fleet-coverage-v3`.
 - Approved main: `4d12e510953fb57c3f8f84a737880ff860a617e7`. Draft #16 retains base `feature/nl-fleet-coverage-v2`.

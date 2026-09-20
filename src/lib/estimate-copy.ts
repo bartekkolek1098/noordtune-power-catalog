@@ -1,3 +1,4 @@
+import {customerStagePresentation} from "./stage-presentation.ts";
 import type {EstimateStage, TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
 import type {Locale} from "../i18n/routing.ts";
 
@@ -34,17 +35,15 @@ export function formatEstimateSource(stage: EstimateStage, locale: Locale) {
 /** Individual source limitations are displayed without invalidating a whole profile group. */
 export function genericEstimateNote(locale: Locale) {
   return {
-    nl: "Indicatieve bandbreedte op basis van RDW-vermogen; exacte waarde na controle van motor, ECU en hardware.",
-    en: "Indicative range based on RDW power; exact value after checking engine, ECU and hardware.",
-    pl: "Orientacyjny zakres na podstawie mocy RDW; dokładna wartość po sprawdzeniu silnika, ECU i osprzętu."
+    nl: "Algemene schatting, geen meting of bevestigde modelvariant. De exacte configuratie wordt vóór uitvoering gecontroleerd.",
+    en: "General estimate, not a measurement or a confirmed model variant. The exact configuration is checked before work.",
+    pl: "Ogólna estymacja, nie pomiar ani wynik dla potwierdzonej wersji silnika. Dokładną konfigurację sprawdzimy przed realizacją."
   }[locale];
 }
 
 /** Stage notes carry source-specific fuel/hardware scope; machine status codes stay internal. */
-export function estimateStageTechnicalNotes(stage: Pick<EstimateStage, "notes">) {
-  return [...new Set((stage.notes ?? []).map(note => note.trim()).filter(note =>
-    note.length > 0 && !/^[A-Z][A-Z0-9]*_[A-Z0-9_]+(?:$|:|\s)/.test(note)
-  ))];
+export function estimateStageTechnicalNotes(stage: Pick<EstimateStage, "notes"> & Partial<EstimateStage>, locale: Locale = "en") {
+  return customerStagePresentation({name: "Stage 1", requirements: "", packageItems: [], ...stage}, locale).requirements;
 }
 
 export function estimateLimitations(profile: TuningEstimateProfile, locale: Locale) {
@@ -56,9 +55,9 @@ export function estimateLimitations(profile: TuningEstimateProfile, locale: Loca
       pl: "Źródła różnią się lub wartości poszczególnych Stage są niespójne. Przed realizacją trzeba zweryfikować wybrane parametry i osprzęt."
     },
     NOORDTUNE_TARGET_REVIEW_REQUIRED: {
-      nl: "De getoonde Stage 1-waarde is een externe referentie. Goedkeuring door de eigenaar van NoordTune is vereist voordat dit als NoordTune-doel wordt gebruikt.",
-      en: "The displayed Stage 1 figure is an external reference. Approval by the owner of NoordTune is required before using it as a NoordTune target.",
-      pl: "Wyświetlona wartość Stage 1 jest zewnętrzną referencją. Przed przyjęciem jej jako celu NoordTune wymagana jest zgoda właściciela NoordTune."
+      nl: "De getoonde waarde is indicatief. De exacte configuratie wordt vóór uitvoering bevestigd.",
+      en: "The displayed value is indicative. The exact configuration is confirmed before work.",
+      pl: "Wartość jest orientacyjna. Dokładną konfigurację potwierdzimy przed realizacją."
     },
     GENERIC_TORQUE_UNAVAILABLE: {
       nl: "Het stockvermogen komt uit RDW. Zonder betrouwbare bron voor het stockkoppel tonen we geen verzonnen Nm; het koppel vereist voertuigcontrole.",

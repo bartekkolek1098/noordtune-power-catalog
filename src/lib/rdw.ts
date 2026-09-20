@@ -1,6 +1,9 @@
+import {customerProfile} from "./customer-profile.ts";
 import {findCatalogMatch} from "../data/catalog.ts";
 import {assessVehicleAccess, resolveStageQuote, type QuoteResolution} from "../data/pricing.ts";
 import {resolveRdwTuningEstimate} from "./rdw-tuning-estimate.ts";
+import {resolveDetailsAction} from "./details-action.ts";
+import {engineCatalog} from "../data/catalog.ts";
 import {firstAdmissionYear, parseRdwDate} from "./rdw-date.ts";
 
 const VEHICLE_RESOURCE = "m9d7-ebf2";
@@ -178,6 +181,8 @@ export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[],
   const assessment = findCatalogMatch(identityInput);
   const tuningMatch = {status: assessment.status, reasonCodes: assessment.reasonCodes};
   const tuningEstimate = resolveRdwTuningEstimate(identityInput);
+  tuningEstimate.detailsAction = resolveDetailsAction(tuningEstimate.profile, engineCatalog);
+  if (tuningEstimate.profile) tuningEstimate.profile = customerProfile({...tuningEstimate.profile, conditionCodes: [...new Set([...(tuningEstimate.profile.conditionCodes ?? []), ...tuningEstimate.reasonCodes])]});
   const quoteIdentity = tuningEstimate.profile ?? identityInput;
   const tuningQuote = resolveStageQuote(quoteIdentity, {name: "Stage 1"}, {
     estimateApplicable: Boolean(tuningEstimate.profile), scope: "vehicle",

@@ -15,6 +15,7 @@ import {sourcedTuningProfiles, tuningProfileSources} from "../data/tuning-profil
 import type {SourcedTuningProfile} from "../data/tuning-profiles/schema.ts";
 import {matchSourcedProfile, sourceRegistrationYear} from "./sourced-tuning-match.ts";
 import {hasUnsupportedSourcedPowertrain} from "./sourced-powertrain.ts";
+import {compareStages, stageScope} from "./stage-presentation.ts";
 
 export type RuntimeEstimateSources = {
   references?: readonly TuningEstimateProfile[];
@@ -59,6 +60,16 @@ function referenceStage(stage: EstimateStage): EstimateStage {
 /** Resolve each stage independently: retained reference, compatible source,
  * reviewed/public or canonical estimate, then the existing conditional policy. */
 export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources = {}): EstimateResolution {
+  const result = resolveProductionEstimate(input, sources);
+  if (result.profile) {
+    const first = result.profile.stages.find(stage => stage.name === "Stage 1");
+    result.profile.stages = result.profile.stages.map(stage => ({...stage,
+      customerScope: stageScope(stage), comparison: compareStages(first, stage)}));
+  }
+  return result;
+}
+
+function resolveProductionEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources): EstimateResolution {
   if(hasUnsupportedSourcedPowertrain(input))return {status:"unavailable",coverageClass:"E",reasonCodes:["UNSUPPORTED_POWERTRAIN_ESTIMATE","MANUFACTURER_ELECTRIFIED_APPLICATION"]};
   const references = applicableReferences(input, sources.references ?? tuningReferenceProfiles);
   const retained = references.length ? resolveLegacyRdwTuningEstimate(input, {...sources, references, publicVehicles: [], canonicalVehicles: []}) : undefined;
@@ -102,7 +113,9 @@ export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: Run
       requirements: name === "Stage 1" ? "Confirm engine configuration, fuel, condition and ECU access before calibration."
         : "Published hardware-dependent reference; the applicable hardware and calibration must be confirmed.",
       packageItems: [], hardwareRequired: name !== "Stage 1", tcuRecommended: false, logCheckRecommended: true,
-      notes: [...facts.conditions, "External source research; not a measured NoordTune result."]});
+      evidenceSourceIds: facts.sourceValues.map(value => value.sourceId),
+      notes: [...facts.conditions, ...facts.sourceValues.flatMap(value => value.conditions ?? []), ...source.conditions,
+        "External source research; not a measured NoordTune result."]});
     else if (name === "Stage 3+") stages.push(customHardwareStage());
     else {
       const legacy = resolveLegacyRdwTuningEstimate(input, {...sources, references: []}).profile?.stages.find(stage => stage.name === "Stage 2");
@@ -366,7 +379,13 @@ function genericStage(name: StageName, stockPower: number, stockTorque: number |
   const powerRangeHp = roundedMonotonicRange(rawPowerRange, stagePowerRange(prior));
   const torqueRangeNm = stockTorque && stockTorque > 0
     ? roundedMonotonicRange([stockTorque * policy.torqueFactorRange[0], stockTorque * policy.torqueFactorRange[1]], stageTorqueRange(prior)) : undefined;
+  const rawTorque: [number, number] | undefined = stockTorque && stockTorque > 0
+    ? [stockTorque * policy.torqueFactorRange[0], stockTorque * policy.torqueFactorRange[1]] : undefined;
+  const roundedPower = roundedMonotonicRange(rawPowerRange);
+  const roundedTorque = rawTorque && roundedMonotonicRange(rawTorque);
   return {name, powerRangeHp, torqueRangeNm, provenance: "generic-indicative", resolutionLevel: 4,
+    planningBasis: {power: {raw: rawPowerRange, rounded: roundedPower, clamped: powerRangeHp.some((n, i) => n !== roundedPower[i])},
+      ...(rawTorque && roundedTorque && torqueRangeNm ? {torque: {raw: rawTorque, rounded: roundedTorque, clamped: torqueRangeNm.some((n, i) => n !== roundedTorque[i])}} : {})},
     sourceProfileId: `heuristic-v2:${category}`, genericCategory: category,
     genericScenario: strongSource ? "strong-stage1-conditional" : "standard-range",
     requirements: name === "Stage 1" ? "Generic indicative software scenario; confirm engine, aspiration, ECU access and condition before work." : "Generic indicative hardware and calibration scenario; compatible hardware and workshop validation required.",
