@@ -1,0 +1,145 @@
+{
+  "checkedAt": "2026-09-16T18:07:42.423Z",
+  "base": "http://localhost:3120",
+  "results": [
+    {
+      "surface": "public-stage-page",
+      "locale": "nl",
+      "width": 320,
+      "url": "http://localhost:3120/nl/volkswagen/golf-gti/2-0-tsi/stage-3-plus",
+      "stageCards": 3,
+      "customLabel": "Maatwerk / hardware-afhankelijk",
+      "metadata": true,
+      "structuredOffer": true,
+      "chart": true,
+      "whatsapp": true,
+      "layout": {
+        "width": 320,
+        "documentWidth": 320
+      }
+    },
+    {
+      "surface": "public-stage-page",
+      "locale": "nl",
+      "width": 1440,
+      "url": "http://localhost:3120/nl/volkswagen/golf-gti/2-0-tsi/stage-3-plus",
+      "stageCards": 3,
+      "customLabel": "Maatwerk / hardware-afhankelijk",
+      "metadata": true,
+      "structuredOffer": true,
+      "chart": true,
+      "whatsapp": true,
+      "layout": {
+        "width": 1440,
+        "documentWidth": 1440
+      }
+    },
+    {
+      "surface": "public-stage-page",
+      "locale": "en",
+      "width": 320,
+      "url": "http://localhost:3120/en/volkswagen/golf-gti/2-0-tsi/stage-3-plus",
+      "stageCards": 3,
+      "customLabel": "Custom / hardware-dependent",
+      "metadata": true,
+      "structuredOffer": true,
+      "chart": true,
+      "whatsapp": true,
+      "layout": {
+        "width": 320,
+        "documentWidth": 320
+      }
+    },
+    {
+      "surface": "public-stage-page",
+      "locale": "en",
+      "width": 1440,
+      "url": "http://localhost:3120/en/volkswagen/golf-gti/2-0-tsi/stage-3-plus",
+      "stageCards": 3,
+      "customLabel": "Custom / hardware-dependent",
+      "metadata": true,
+      "structuredOffer": true,
+      "chart": true,
+      "whatsapp": true,
+      "layout": {
+        "width": 1440,
+        "documentWidth": 1440
+      }
+    },
+    {
+      "surface": "public-stage-page",
+      "locale": "pl",
+      "width": 320,
+      "url": "http://localhost:3120/pl/volkswagen/golf-gti/2-0-tsi/stage-3-plus",
+      "stageCards": 3,
+      "customLabel": "Indywidualnie / zależnie od osprzętu",
+      "metadata": true,
+      "structuredOffer": true,
+      "chart": true,
+      "whatsapp": true,
+      "layout": {
+        "width": 320,
+        "documentWidth": 320
+      }
+    },
+    {
+      "surface": "public-stage-page",
+      "locale": "pl",
+      "width": 1440,
+      "url": "http://localhost:3120/pl/volkswagen/golf-gti/2-0-tsi/stage-3-plus",
+      "stageCards": 3,
+      "customLabel": "Indywidualnie / zależnie od osprzętu",
+      "metadata": true,
+      "structuredOffer": true,
+      "chart": true,
+      "whatsapp": true,
+      "layout": {
+        "width": 1440,
+        "documentWidth": 1440
+      }
+    },
+    {
+      "surface": "manual-reference",
+      "locale": "nl",
+      "width": 320,
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "stageCards": 3,
+      "customLabel": "Maatwerk / hardware-afhankelijk",
+      "chart": true,
+      "whatsapp": true,
+      "layout": {
+        "width": 320,
+        "documentWidth": 320
+      }
+    },
+    {
+      "surface": "manual-reference",
+      "locale": "en",
+      "width": 320,
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "stageCards": 3,
+      "customLabel": "Custom / hardware-dependent",
+      "chart": true,
+      "whatsapp": true,
+      "layout": {
+        "width": 320,
+        "documentWidth": 320
+      }
+    },
+    {
+      "surface": "manual-reference",
+      "locale": "pl",
+      "width": 320,
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "stageCards": 3,
+      "customLabel": "Indywidualnie / zależnie od osprzętu",
+      "chart": true,
+      "whatsapp": true,
+      "layout": {
+        "width": 320,
+        "documentWidth": 320
+      }
+    }
+  ],
+  "errors": []
+}

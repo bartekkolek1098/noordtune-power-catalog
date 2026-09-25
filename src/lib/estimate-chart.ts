@@ -1,6 +1,6 @@
 import type {EstimateStage} from "../data/tuning-estimates-shared.ts";
 
-export type ChartEstimateStage = Pick<EstimateStage, "name" | "powerHp" | "torqueNm" | "powerRangeHp" | "torqueRangeNm" | "approximate" | "customHardware">;
+export type ChartEstimateStage = Pick<EstimateStage, "name" | "powerHp" | "torqueNm" | "powerRangeHp" | "torqueRangeNm" | "approximate" | "customHardware" | "provenance" | "comparison">;
 
 /** Missing/custom outputs stay gaps; a visual curve must never supply an invented Stage value. */
 export function estimateChartData(stages: ChartEstimateStage[], stockPower: number, stockTorque?: number, stockLabel = "Stock") {

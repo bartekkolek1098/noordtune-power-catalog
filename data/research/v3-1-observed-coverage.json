@@ -1,0 +1,316 @@
+{
+  "datasetFingerprint": "b99b7fca3051f8326d8e96eb32f83577c367193f08dadbc3117a47dd1fddae81",
+  "sampleSha256": "6966fcfa1597f7be1322849b164896b9c5c7fb16849d3da0e6457fa6aa092ed8",
+  "groups": 250,
+  "sampledRegistrations": 3000,
+  "distinctObservedScenarios": 1862,
+  "beforeSourcedScenarios": 714,
+  "afterSourcedScenarios": 737,
+  "mixedScenarios": 0,
+  "changedScenarioCount": 23,
+  "changedScenarios": [
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2005,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-602134fc809f85f65f2f",
+        "rdw-1a2a396f7e1cce935ff4"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2005,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-0cf466d9642c53a4f0ea"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2005,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-b0f1917af11ebbd8cf8b"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2007,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-752a71303519e8377dcf",
+        "rdw-ad633be527160a76635c"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2007,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-e1329ceb89c4fea3140b"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2007,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-4c2ff535e1654fe1add0"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2009,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-46f39c258d419cb40610"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2009,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-5163dc4fca061b36f8c4"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2009,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-f952413a58ca3ecfaf0f"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "priorityRank": 114,
+      "fuel": "Benzine",
+      "registeredPowerKw": 107,
+      "year": 2009,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-07ce129e56a835f28e27"
+      ]
+    },
+    {
+      "groupId": "rdw-group-e5819c2750068468",
+      "priorityRank": 122,
+      "fuel": "Benzine",
+      "registeredPowerKw": 88,
+      "year": 2013,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-cbf4c021f85a89c52030",
+        "rdw-554157c4a76a76c7ee31",
+        "rdw-2bc7f037337f7420defe",
+        "rdw-8d276c1fc419637b1237",
+        "rdw-200538a9716dc40b0825",
+        "rdw-c9a8633b2f2a42fa2fd8",
+        "rdw-c30339d1c863c8864b3c",
+        "rdw-3a19bad399ee71833ea5"
+      ]
+    },
+    {
+      "groupId": "rdw-group-e5819c2750068468",
+      "priorityRank": 122,
+      "fuel": "Benzine",
+      "registeredPowerKw": 88,
+      "year": 2014,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-e57c7bdd136bc9d64dc8",
+        "rdw-61ba595ee0e4de654552",
+        "rdw-5bdbe81752028befd1b5"
+      ]
+    },
+    {
+      "groupId": "rdw-group-e5819c2750068468",
+      "priorityRank": 122,
+      "fuel": "Benzine",
+      "registeredPowerKw": 88,
+      "year": 2014,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-2336c80ba4413fdaf693"
+      ]
+    },
+    {
+      "groupId": "rdw-group-2ac6700ac62b2111",
+      "priorityRank": 126,
+      "fuel": "Benzine",
+      "registeredPowerKw": 115,
+      "year": 2013,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-70c1c16131f87826b971"
+      ]
+    },
+    {
+      "groupId": "rdw-group-405e1a14e7c669c6",
+      "priorityRank": 139,
+      "fuel": "Benzine",
+      "registeredPowerKw": 147,
+      "year": 2018,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-77afcba94cd103886cc0",
+        "rdw-a88e467a8e20e0b5019c"
+      ]
+    },
+    {
+      "groupId": "rdw-group-405e1a14e7c669c6",
+      "priorityRank": 139,
+      "fuel": "Benzine",
+      "registeredPowerKw": 147,
+      "year": 2019,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-3f8cdb0b400e8b135413",
+        "rdw-bb19d775a7aecbe28c3d"
+      ]
+    },
+    {
+      "groupId": "rdw-group-405e1a14e7c669c6",
+      "priorityRank": 139,
+      "fuel": "Benzine",
+      "registeredPowerKw": 147,
+      "year": 2019,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-9c041059b817e009e552"
+      ]
+    },
+    {
+      "groupId": "rdw-group-405e1a14e7c669c6",
+      "priorityRank": 139,
+      "fuel": "Benzine",
+      "registeredPowerKw": 147,
+      "year": 2019,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-1ed6aa40a7685b6cb38f"
+      ]
+    },
+    {
+      "groupId": "rdw-group-405e1a14e7c669c6",
+      "priorityRank": 139,
+      "fuel": "Benzine",
+      "registeredPowerKw": 147,
+      "year": 2019,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-8886796a8e0f86bb25a6",
+        "rdw-8d72b531deaeff0cce98",
+        "rdw-75ccbd98a06f350399bb"
+      ]
+    },
+    {
+      "groupId": "rdw-group-405e1a14e7c669c6",
+      "priorityRank": 139,
+      "fuel": "Benzine",
+      "registeredPowerKw": 147,
+      "year": 2019,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-126339fb8d4779c5329d"
+      ]
+    },
+    {
+      "groupId": "rdw-group-ba51f4c8a5d1e5cb",
+      "priorityRank": 149,
+      "fuel": "Benzine",
+      "registeredPowerKw": 147,
+      "year": 2020,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-0d1491d20dd95e171b9e",
+        "rdw-8ffe24f77ad4a291f958",
+        "rdw-6987272f1a9ca1c7e8c1"
+      ]
+    },
+    {
+      "groupId": "rdw-group-ba51f4c8a5d1e5cb",
+      "priorityRank": 149,
+      "fuel": "Benzine",
+      "registeredPowerKw": 147,
+      "year": 2020,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-cbe0f9dec27f9b608736"
+      ]
+    },
+    {
+      "groupId": "rdw-group-ba51f4c8a5d1e5cb",
+      "priorityRank": 149,
+      "fuel": "Benzine",
+      "registeredPowerKw": 147,
+      "year": 2020,
+      "before": "D",
+      "after": "sourced",
+      "sampleIds": [
+        "rdw-c939a7aed96a449acc71",
+        "rdw-d203a9c13836e8ee0b99",
+        "rdw-71bd354d42556846d3a5",
+        "rdw-340c78b8e2ee288a2894"
+      ]
+    }
+  ],
+  "top50": {
+    "fully": 7,
+    "partially": 41,
+    "notSourceCovered": 2,
+    "method": "Full means frozen strict whole-group layer A/B. Partial means at least one frozen observed or published scenario is sourced while the whole group remains C/D/E. Counts use unchanged Top-50 membership and do not assign fleet vehicles to output variants."
+  },
+  "method": "Exact original 3,000 normalized RDW rows and 1,862 observed scenario memberships replayed offline. Before layers come from frozen V3 queue. After layers use the production normalization/resolver. No live RDW requests or new scenarios."
+}

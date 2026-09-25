@@ -75,7 +75,7 @@
   ],
   "identities": [
     {
-      "caseId": "H329XH",
+      "caseId": "OWNER-A",
       "officialVehicle": {
         "merk": "LAND ROVER",
         "handelsbenaming": "DEFENDER",
@@ -117,15 +117,17 @@
       "provenance": [
         {
           "resource": "m9d7-ebf2",
-          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken=H329XH&%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
+          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
           "retrievedAt": "2026-09-15T19:10:15.377Z",
-          "elapsedMs": 366
+          "elapsedMs": 366,
+          "registrationFilter": "Omitted from the tracked record for privacy"
         },
         {
           "resource": "8ys7-d773",
-          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?kenteken=H329XH&%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
+          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
           "retrievedAt": "2026-09-15T19:10:15.385Z",
-          "elapsedMs": 326
+          "elapsedMs": 326,
+          "registrationFilter": "Omitted from the tracked record for privacy"
         }
       ],
       "liveRetrievalSucceeded": true,
@@ -154,7 +156,7 @@
       }
     },
     {
-      "caseId": "V380ST",
+      "caseId": "OWNER-B",
       "officialVehicle": {
         "merk": "FORD",
         "handelsbenaming": "TRANSIT CONNECT",
@@ -196,15 +198,17 @@
       "provenance": [
         {
           "resource": "m9d7-ebf2",
-          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken=V380ST&%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
+          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
           "retrievedAt": "2026-09-15T19:10:15.582Z",
-          "elapsedMs": 521
+          "elapsedMs": 521,
+          "registrationFilter": "Omitted from the tracked record for privacy"
         },
         {
           "resource": "8ys7-d773",
-          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?kenteken=V380ST&%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
+          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
           "retrievedAt": "2026-09-15T19:10:15.370Z",
-          "elapsedMs": 309
+          "elapsedMs": 309,
+          "registrationFilter": "Omitted from the tracked record for privacy"
         }
       ],
       "liveRetrievalSucceeded": true,
@@ -215,7 +219,7 @@
       }
     },
     {
-      "caseId": "V978ZF",
+      "caseId": "OWNER-C",
       "officialVehicle": {
         "merk": "FORD",
         "handelsbenaming": "TRANSIT CUSTOM",
@@ -257,15 +261,17 @@
       "provenance": [
         {
           "resource": "m9d7-ebf2",
-          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken=V978ZF&%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
+          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
           "retrievedAt": "2026-09-15T19:10:15.373Z",
-          "elapsedMs": 311
+          "elapsedMs": 311,
+          "registrationFilter": "Omitted from the tracked record for privacy"
         },
         {
           "resource": "8ys7-d773",
-          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?kenteken=V978ZF&%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
+          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
           "retrievedAt": "2026-09-15T19:10:15.612Z",
-          "elapsedMs": 549
+          "elapsedMs": 549,
+          "registrationFilter": "Omitted from the tracked record for privacy"
         }
       ],
       "liveRetrievalSucceeded": true,
@@ -277,7 +283,7 @@
       }
     },
     {
-      "caseId": "KKH27K",
+      "caseId": "OWNER-D",
       "officialVehicle": {
         "merk": "BMW",
         "handelsbenaming": "128TI",
@@ -319,15 +325,17 @@
       "provenance": [
         {
           "resource": "m9d7-ebf2",
-          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?kenteken=KKH27K&%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
+          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
           "retrievedAt": "2026-09-15T19:10:15.926Z",
-          "elapsedMs": 863
+          "elapsedMs": 863,
+          "registrationFilter": "Omitted from the tracked record for privacy"
         },
         {
           "resource": "8ys7-d773",
-          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?kenteken=KKH27K&%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
+          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
           "retrievedAt": "2026-09-15T19:10:15.609Z",
-          "elapsedMs": 544
+          "elapsedMs": 544,
+          "registrationFilter": "Omitted from the tracked record for privacy"
         }
       ],
       "liveRetrievalSucceeded": true,

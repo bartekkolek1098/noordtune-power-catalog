@@ -12,7 +12,9 @@ export const independentProvider = (source: SourceObservation) => source.provide
 
 /** Preserve every fact, but one provider gets one vote even across mirrored pages. */
 export function stageConsensus(observations: SourceObservation[], stage: "stage1" | "stage2" | "stage3"): ProfileStage | undefined {
-  const available = observations.filter(source => source.status === "retrieved" && source.retrievalMethod !== "search-index" && source.identity && source.stages?.[stage]);
+  const available = observations.filter(source => source.status === "retrieved" && source.retrievalMethod !== "search-index"
+    && (!source.availability || source.availability.status === "available")
+    && !source.packages?.some(item => item.kind === "external-module") && source.identity && source.stages?.[stage]);
   if (!available.length) return undefined;
   const sourceValues: StageSourceValue[] = available.map(source => {
     const value = source.stages![stage]!;

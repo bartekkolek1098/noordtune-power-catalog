@@ -18,7 +18,7 @@ import {
 import {applyCuratedTechnicalProfile} from "./curated-technical.ts";
 import {assessCatalogMatch, normalizeCatalogFuel, normalizeCatalogMake, type CatalogCandidate, type CatalogMatchInput} from "./catalog-matching.ts";
 import {tuningReferenceProfiles} from "./tuning-estimates.ts";
-import type {EstimateResolution, TuningEstimateProfile} from "./tuning-estimates-shared.ts";
+import {getCatalogEstimateProfile, type EstimateResolution, type TuningEstimateProfile} from "./tuning-estimates-shared.ts";
 
 export type {
   ConfidenceLevel,
@@ -1675,6 +1675,7 @@ function toVehicleSelectorItem(vehicle: EngineVariant): VehicleSelectorItem {
 
   return {
     id: publicVehicle.id,
+    ...(engineCatalog.some(item => item.id === publicVehicle.id) ? {pagePath: `/vehicles/${publicVehicle.id}` as const} : {kind: "estimate" as const}),
     brand: publicVehicle.brand,
     model: publicVehicle.model,
     engine: publicVehicle.engine,
@@ -1763,7 +1764,10 @@ function toReferenceSelectorItem(profile: TuningEstimateProfile): VehicleSelecto
 
 /** Fetch one bounded reference DTO on explicit selection; no reference creates an SEO route. */
 export function getReferenceSelectorEstimate(id: string): EstimateResolution | undefined {
-  const profile = tuningReferenceProfiles.find((profile) => profile.id === id);
+  const reference = tuningReferenceProfiles.find((profile) => profile.id === id);
+  const canonical = !reference ? vehicleDatabase.find(vehicle => vehicle.id === id) : undefined;
+  const profile = reference ?? (canonical ? {...getCatalogEstimateProfile(canonical), vehicleId: undefined,
+    provenance: "canonical-estimated" as const} : undefined);
   if (!profile) return undefined;
   const conditional = id === "ref-ford-transit-connect-15-tdci-100";
   return {

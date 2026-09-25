@@ -1,0 +1,5650 @@
+{
+  "datasetFingerprint": "cd53d92eab366f636915cd882fafc8332e0bcb8762b371056ca1df85f7f4b0f5",
+  "sampleSize": 400,
+  "before": {
+    "A": 17,
+    "B": 107,
+    "C": 12,
+    "D": 208,
+    "E": 56
+  },
+  "after": {
+    "A": 35,
+    "B": 127,
+    "C": 15,
+    "D": 167,
+    "E": 56
+  },
+  "supportedOrdinaryIceDenominator": 344,
+  "supportedOrdinaryIceSourced": 162,
+  "supportedOrdinaryIceSourcedPercent": 47.093023255813954,
+  "eligibility": "Production resolver can support an ordinary ICE estimate (A/B/C/D). E includes electrified/non-supported powertrains, missing power and unresolvable identity. All 400 remain in the overall denominator.",
+  "prior222": {
+    "before": {
+      "A": 12,
+      "B": 54,
+      "C": 5,
+      "D": 120,
+      "E": 31
+    },
+    "after": {
+      "A": 19,
+      "B": 69,
+      "C": 5,
+      "D": 98,
+      "E": 31
+    }
+  },
+  "sourcedGains": 66,
+  "sourcedDemotions": 28,
+  "pricingChanges": [],
+  "identityChanges": [],
+  "transitions": [
+    {
+      "sampleId": "rdw-73fc55204b5a92181d65",
+      "groupId": "rdw-group-7b487a1054299def",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-c1b3f4a586f43114aaab",
+      "groupId": "rdw-group-7b487a1054299def",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-a7f943676578158d90b4",
+      "groupId": "rdw-group-7b487a1054299def",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-97e74cc86d076059f0d7",
+      "groupId": "rdw-group-f6752f2db400aa4b",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-38403fcb9c3b53e13236",
+      "groupId": "rdw-group-f6752f2db400aa4b",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-fe473dad55c0056b1f75",
+      "groupId": "rdw-group-f6752f2db400aa4b",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-8d9ebb968c5d014a2c9d",
+      "groupId": "rdw-group-23bbdf2b64a9857a",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-c528c946b96228d7af98",
+      "groupId": "rdw-group-23bbdf2b64a9857a",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-3c1d93479c31e18a9da6",
+      "groupId": "rdw-group-23bbdf2b64a9857a",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-ac2f19eff92cd2316e43",
+      "groupId": "rdw-group-445598acaebcd73c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ee18f07a30527151274f",
+      "groupId": "rdw-group-445598acaebcd73c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-37248c18eaf228d2a2a0",
+      "groupId": "rdw-group-445598acaebcd73c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-972c8831cbe8ff5d5e6c",
+      "groupId": "rdw-group-2760385b7f6cd7bf",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-c93872a1bbc87fb3d8df",
+      "groupId": "rdw-group-2760385b7f6cd7bf",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-191ce6cc6aaa0315c199",
+      "groupId": "rdw-group-2760385b7f6cd7bf",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-89a8ce8c475fcb8a60e2",
+      "groupId": "rdw-group-fc7e709975868e90",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-507d485d4f143f8535ba",
+      "groupId": "rdw-group-fc7e709975868e90",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-52ced0b30a5b6270afdd",
+      "groupId": "rdw-group-fc7e709975868e90",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-4cc460512ad199fea355",
+      "groupId": "rdw-group-3683943bf4b344d5",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-3b2dfbfda1e10f10b1ec",
+      "groupId": "rdw-group-3683943bf4b344d5",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-abc217d5452465d254fb",
+      "groupId": "rdw-group-3683943bf4b344d5",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_START_ONLY",
+        "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-bf424924393e399160ee",
+      "groupId": "rdw-group-e329d5e8f32b7da5",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-14821f4c34cf27f17a08",
+      "groupId": "rdw-group-e329d5e8f32b7da5",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-017de0b1bd7e437fe9e9",
+      "groupId": "rdw-group-e329d5e8f32b7da5",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-fa023f754f96391aad4a",
+      "groupId": "rdw-group-4d87cda2ddb2caa5",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-437f99f4b7f34af13ff4",
+      "groupId": "rdw-group-4d87cda2ddb2caa5",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-73914e0045d95a1e24d2",
+      "groupId": "rdw-group-4d87cda2ddb2caa5",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-0bfeda53da6910e3e343",
+      "groupId": "rdw-group-21d6d6b6664cc008",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE",
+        "MANUFACTURER_ELECTRIFIED_APPLICATION"
+      ]
+    },
+    {
+      "sampleId": "rdw-5b12a33693f77ae2d152",
+      "groupId": "rdw-group-21d6d6b6664cc008",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE",
+        "MANUFACTURER_ELECTRIFIED_APPLICATION"
+      ]
+    },
+    {
+      "sampleId": "rdw-cfd5a6b2a6eb8678f03c",
+      "groupId": "rdw-group-21d6d6b6664cc008",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE",
+        "MANUFACTURER_ELECTRIFIED_APPLICATION"
+      ]
+    },
+    {
+      "sampleId": "rdw-a651695945b701f6b503",
+      "groupId": "rdw-group-30b68ee640dbb389",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-97cbe3eac01aaffd4d99",
+      "groupId": "rdw-group-30b68ee640dbb389",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-a269ecae6d478ee4a686",
+      "groupId": "rdw-group-30b68ee640dbb389",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-7db8d17c5e4328e8a9c4",
+      "groupId": "rdw-group-b655ed2fb829ea8e",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-8c2026ba0ae1d46f947e",
+      "groupId": "rdw-group-b655ed2fb829ea8e",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-5e064a7eb087d94751e8",
+      "groupId": "rdw-group-b655ed2fb829ea8e",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-23cf4d361913c864f8df",
+      "groupId": "rdw-group-19f7d3be8837a620",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-88650054d1d2780d1c33",
+      "groupId": "rdw-group-19f7d3be8837a620",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-c2f35a81ed1083fe9df5",
+      "groupId": "rdw-group-19f7d3be8837a620",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-e2d3e16e6c077f5415c5",
+      "groupId": "rdw-group-ccd7f35f603647c5",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-5b2e90f6ffed93d097f9",
+      "groupId": "rdw-group-ccd7f35f603647c5",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1dcc9a0f17ef818abe2e",
+      "groupId": "rdw-group-ccd7f35f603647c5",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-b12d255519f7dff7c062",
+      "groupId": "rdw-group-3e510ca64987b1d3",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-d906deaaa61f894a0235",
+      "groupId": "rdw-group-3e510ca64987b1d3",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-83218e307850d5ce7ac4",
+      "groupId": "rdw-group-3e510ca64987b1d3",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-471f91febb760672f319",
+      "groupId": "rdw-group-d41395f5920c4d65",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-2508cb5f1464f87d04b3",
+      "groupId": "rdw-group-d41395f5920c4d65",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-61d27166fcd3bba3a199",
+      "groupId": "rdw-group-d41395f5920c4d65",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-4ab2f41b87413a61d724",
+      "groupId": "rdw-group-8a4d5f9881ca1511",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-255cd8ac7b2c2de97e42",
+      "groupId": "rdw-group-8a4d5f9881ca1511",
+      "inPrior222": true,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-e5a8ef12d3fb779ef5a0",
+      "groupId": "rdw-group-8a4d5f9881ca1511",
+      "inPrior222": true,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-8e431fb4dfbf31b0c7a5",
+      "groupId": "rdw-group-071b70c4423cd598",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-678e4adfef28cda94773",
+      "groupId": "rdw-group-071b70c4423cd598",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-06d087b720f30f017497",
+      "groupId": "rdw-group-071b70c4423cd598",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-a31269dce02846a7a065",
+      "groupId": "rdw-group-dd0fc5c19961af2c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-2313973786c4924f89fc",
+      "groupId": "rdw-group-dd0fc5c19961af2c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-7230c97ccd658dce076e",
+      "groupId": "rdw-group-dd0fc5c19961af2c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-372eb6969e55203427e9",
+      "groupId": "rdw-group-6eef0166e0cacf82",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-87d98ee2191a8796a8ce",
+      "groupId": "rdw-group-6eef0166e0cacf82",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-90452cc871bf2d8f456b",
+      "groupId": "rdw-group-6eef0166e0cacf82",
+      "inPrior222": true,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-def544a330924ae8d803",
+      "groupId": "rdw-group-b537de34cdc0dfdf",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-81adf8cd878046d2493f",
+      "groupId": "rdw-group-b537de34cdc0dfdf",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-857896cae8d22dd3ec22",
+      "groupId": "rdw-group-b537de34cdc0dfdf",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-7be321a25d23e170151d",
+      "groupId": "rdw-group-fe7a144822b6a0f1",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-68ee33c5a97d127b503d",
+      "groupId": "rdw-group-fe7a144822b6a0f1",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1ed10527a487b15b8945",
+      "groupId": "rdw-group-fe7a144822b6a0f1",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-983fa5ca6488ec557c6d",
+      "groupId": "rdw-group-9b5a7d93aa2cb0a4",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-0697f548db94e813e63b",
+      "groupId": "rdw-group-9b5a7d93aa2cb0a4",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-4d222b590fc667e5f0ed",
+      "groupId": "rdw-group-9b5a7d93aa2cb0a4",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-d4e2139b26a586e057c2",
+      "groupId": "rdw-group-f460f517e9c5f43e",
+      "inPrior222": true,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-faffca0b47c657215847",
+      "groupId": "rdw-group-f460f517e9c5f43e",
+      "inPrior222": true,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-aa2d42a9735d34867a54",
+      "groupId": "rdw-group-f460f517e9c5f43e",
+      "inPrior222": true,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-8c6e9b1cbeb4e27b2afb",
+      "groupId": "rdw-group-70aecaab106fe821",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-9f6a19b0fe8f36238d2a",
+      "groupId": "rdw-group-70aecaab106fe821",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-b4b509d70e3aee4e316b",
+      "groupId": "rdw-group-70aecaab106fe821",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-adf5165321d8f2a173ab",
+      "groupId": "rdw-group-e5bf6ca4f1422190",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-5c9b73ae810432b4140b",
+      "groupId": "rdw-group-e5bf6ca4f1422190",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-f180c7271a3dc9bd4e02",
+      "groupId": "rdw-group-e5bf6ca4f1422190",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-7a028bb1a4c00a2074cf",
+      "groupId": "rdw-group-e2c5fab2bec39469",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1e5e2f2fbd4603405cbe",
+      "groupId": "rdw-group-e2c5fab2bec39469",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-fb8a346829a8d7855628",
+      "groupId": "rdw-group-e2c5fab2bec39469",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-36e8ea903d6fd89f6c96",
+      "groupId": "rdw-group-1155ca2aab056758",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-99c05b86319a937a3ef0",
+      "groupId": "rdw-group-1155ca2aab056758",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-8ca5cb79bb88136c592f",
+      "groupId": "rdw-group-1155ca2aab056758",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-80e5419ee84810ba3f11",
+      "groupId": "rdw-group-e7fd90567ad7ea77",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-e8b2ffa25090715c609f",
+      "groupId": "rdw-group-e7fd90567ad7ea77",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-0a8d33301b15f0cabfa3",
+      "groupId": "rdw-group-e7fd90567ad7ea77",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-e01ba588846c6ae50155",
+      "groupId": "rdw-group-d00d2e2698b3980b",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-954e1f4fa6d63ab222f3",
+      "groupId": "rdw-group-d00d2e2698b3980b",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-45f387c08c5b012a88d7",
+      "groupId": "rdw-group-d00d2e2698b3980b",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-f4b8a478b6e001dc3c26",
+      "groupId": "rdw-group-937320f3120841fe",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-f6f6f448b5fb41091215",
+      "groupId": "rdw-group-937320f3120841fe",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-88375f0d8c236a79a4c8",
+      "groupId": "rdw-group-937320f3120841fe",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-7076f2e4efa51b1111d9",
+      "groupId": "rdw-group-a594ca31602f5c64",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-d819626ff10993513409",
+      "groupId": "rdw-group-a594ca31602f5c64",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-bae5448336af0953ae01",
+      "groupId": "rdw-group-a594ca31602f5c64",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-dec195c76cb2ff0854a3",
+      "groupId": "rdw-group-5088cc5ddfa360ad",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-d0dee88c2f3134d5f657",
+      "groupId": "rdw-group-5088cc5ddfa360ad",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-9528064941dc8d0ff3dd",
+      "groupId": "rdw-group-5088cc5ddfa360ad",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-eafebd7cdb2020ac0eda",
+      "groupId": "rdw-group-4a20f27e41ee6138",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-afce9c7e3f6c2167c152",
+      "groupId": "rdw-group-4a20f27e41ee6138",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-35d3fb6eb4368fbd8caf",
+      "groupId": "rdw-group-4a20f27e41ee6138",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-8d114757377e4e2deefe",
+      "groupId": "rdw-group-2072f05416e0b210",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-e6db8757ca97e442e070",
+      "groupId": "rdw-group-2072f05416e0b210",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-4164f1f70034d5e4ad11",
+      "groupId": "rdw-group-2072f05416e0b210",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MISSING_OR_INVALID_REGISTERED_POWER",
+        "UNKNOWN_OR_CONFLICTING_POWERTRAIN"
+      ]
+    },
+    {
+      "sampleId": "rdw-477a375a092112dfb437",
+      "groupId": "rdw-group-180b5a8ce69a2dee",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT"
+      ]
+    },
+    {
+      "sampleId": "rdw-7de1fb751abc5b73e33c",
+      "groupId": "rdw-group-180b5a8ce69a2dee",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT"
+      ]
+    },
+    {
+      "sampleId": "rdw-a76c922eb678fa82ffd5",
+      "groupId": "rdw-group-180b5a8ce69a2dee",
+      "inPrior222": true,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT"
+      ]
+    },
+    {
+      "sampleId": "rdw-757d9a8da599f92d0c56",
+      "groupId": "rdw-group-585e1b72dc07d86b",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-94ed193a47f078521cae",
+      "groupId": "rdw-group-585e1b72dc07d86b",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-6ce798e225daba6d6f1c",
+      "groupId": "rdw-group-585e1b72dc07d86b",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-8570013c59317f908860",
+      "groupId": "rdw-group-a4e2d44e3eef9eff",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-2cbf7c8a9837144d5ad9",
+      "groupId": "rdw-group-a4e2d44e3eef9eff",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-5ada1305030006d80d68",
+      "groupId": "rdw-group-a4e2d44e3eef9eff",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-4758073c9a6868625830",
+      "groupId": "rdw-group-9a48d6916e702002",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-fb6ffdec7c3c20ed5510",
+      "groupId": "rdw-group-9a48d6916e702002",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-7a116e93d47eff5c9e5a",
+      "groupId": "rdw-group-9a48d6916e702002",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ef075cadc621787d4d55",
+      "groupId": "rdw-group-7e3f744773827369",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-afb47d88aee81ce0cb6b",
+      "groupId": "rdw-group-7e3f744773827369",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-85ab68dd0c35041c7cf9",
+      "groupId": "rdw-group-7e3f744773827369",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-90132208a09016ba7333",
+      "groupId": "rdw-group-34548a281ea7b314",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-8e0c8bf039d45fc6c1d1",
+      "groupId": "rdw-group-34548a281ea7b314",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-286d069c49457f2c66a9",
+      "groupId": "rdw-group-34548a281ea7b314",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-a4224301ccdf5e794a73",
+      "groupId": "rdw-group-93a2488699911a30",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE",
+        "MANUFACTURER_ELECTRIFIED_APPLICATION"
+      ]
+    },
+    {
+      "sampleId": "rdw-c86380d940898a8aa45f",
+      "groupId": "rdw-group-93a2488699911a30",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE",
+        "MANUFACTURER_ELECTRIFIED_APPLICATION"
+      ]
+    },
+    {
+      "sampleId": "rdw-c34527bb33c0e352ff55",
+      "groupId": "rdw-group-93a2488699911a30",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE",
+        "MANUFACTURER_ELECTRIFIED_APPLICATION"
+      ]
+    },
+    {
+      "sampleId": "rdw-deaaf291e81b45d3568c",
+      "groupId": "rdw-group-3094c16c3ab0a0b4",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-0b19c9a4065fb61d2423",
+      "groupId": "rdw-group-3094c16c3ab0a0b4",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-9f13ce2cc499c567390a",
+      "groupId": "rdw-group-3094c16c3ab0a0b4",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-4a977f8899a8ef4d72fe",
+      "groupId": "rdw-group-39a4ba10b333f41f",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-d00b23b6287c83e25ddc",
+      "groupId": "rdw-group-39a4ba10b333f41f",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-96f9be5034e75c3f8599",
+      "groupId": "rdw-group-39a4ba10b333f41f",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-4a0cdfb32faf1b1d8dce",
+      "groupId": "rdw-group-81d0e33f01d828a7",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-00b0652cee216f491623",
+      "groupId": "rdw-group-81d0e33f01d828a7",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-9c14f3dd0212bb7fb677",
+      "groupId": "rdw-group-81d0e33f01d828a7",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-f225a3fee08f2000f754",
+      "groupId": "rdw-group-232132857c893c5a",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-507a2a7731a98641d2d5",
+      "groupId": "rdw-group-232132857c893c5a",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-5370c4b09cab00db3f98",
+      "groupId": "rdw-group-232132857c893c5a",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-22550d014e4d45324292",
+      "groupId": "rdw-group-3b80fd6e024f1bc4",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-733b3a6d0971e6ac9351",
+      "groupId": "rdw-group-3b80fd6e024f1bc4",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-aa63497322099e50b382",
+      "groupId": "rdw-group-3b80fd6e024f1bc4",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ff152bdcea96b352236e",
+      "groupId": "rdw-group-b67f1960ca11f285",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-c6ac911330c3c7514593",
+      "groupId": "rdw-group-b67f1960ca11f285",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ac6db08d4335351877f3",
+      "groupId": "rdw-group-b67f1960ca11f285",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-313ba8485f5db02dd8cb",
+      "groupId": "rdw-group-8589092491e4c34c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-3dea08368f3f876bae58",
+      "groupId": "rdw-group-8589092491e4c34c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-b66ae5b1d8e596fdf17f",
+      "groupId": "rdw-group-8589092491e4c34c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-587ff479d0a23a7cc716",
+      "groupId": "rdw-group-d4ab6369d1739f66",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-929ae2fc64affb181c3c",
+      "groupId": "rdw-group-d4ab6369d1739f66",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1db934a57cf643c24587",
+      "groupId": "rdw-group-d4ab6369d1739f66",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-feed5ec4d15ecd70d63c",
+      "groupId": "rdw-group-65d4b72d69b87147",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-0ca5ec1b58f041495b55",
+      "groupId": "rdw-group-65d4b72d69b87147",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-f16e825cb4b9c8833ba9",
+      "groupId": "rdw-group-65d4b72d69b87147",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ea183de8be0e0555471a",
+      "groupId": "rdw-group-59a55756f0b1edc2",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-0b0b39a3c2f1f8ad504a",
+      "groupId": "rdw-group-59a55756f0b1edc2",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-106c05efdcb9113e0e49",
+      "groupId": "rdw-group-59a55756f0b1edc2",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ea349e9b1e2e95192a42",
+      "groupId": "rdw-group-2a53366130b9fa79",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1d0f8dba59438e877ef8",
+      "groupId": "rdw-group-2a53366130b9fa79",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-f03853091f03548dd608",
+      "groupId": "rdw-group-2a53366130b9fa79",
+      "inPrior222": true,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-7a302fa2034cced5d56e",
+      "groupId": "rdw-group-d3a8243c1f9613db",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-9c52a8721b4e8e335891",
+      "groupId": "rdw-group-d3a8243c1f9613db",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-4d391160725165254280",
+      "groupId": "rdw-group-d3a8243c1f9613db",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-87d0048b2e6f11ad4aea",
+      "groupId": "rdw-group-5be285a5e27a9c82",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-3e6d46f84e179c99dc32",
+      "groupId": "rdw-group-5be285a5e27a9c82",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-2e5fc6eda65358bcbeff",
+      "groupId": "rdw-group-5be285a5e27a9c82",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-0751bf3732ec6cc34c68",
+      "groupId": "rdw-group-43252fa5a630237b",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-0dfd83a6dc08bdc8da89",
+      "groupId": "rdw-group-43252fa5a630237b",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-5a2579f5b7ac9ae9697a",
+      "groupId": "rdw-group-43252fa5a630237b",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-b121b05a1b8b3c626aeb",
+      "groupId": "rdw-group-f57003b03567c51c",
+      "inPrior222": true,
+      "before": "B",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-ffe4923548fdf583f128",
+      "groupId": "rdw-group-f57003b03567c51c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT"
+      ]
+    },
+    {
+      "sampleId": "rdw-ef08bccdfdd10787b7fd",
+      "groupId": "rdw-group-f57003b03567c51c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT"
+      ]
+    },
+    {
+      "sampleId": "rdw-b20983df3215c17a822c",
+      "groupId": "rdw-group-a39db165ad899984",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-f84b4caca38143b9624c",
+      "groupId": "rdw-group-a39db165ad899984",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-6cfba67413e1b7fd5e26",
+      "groupId": "rdw-group-a39db165ad899984",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-224dcad87643d516f06f",
+      "groupId": "rdw-group-f7cb79afea7b2503",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-fcd9effd6c373fc1f3d2",
+      "groupId": "rdw-group-f7cb79afea7b2503",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-319eda15af2b4b141c0c",
+      "groupId": "rdw-group-f7cb79afea7b2503",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-f791fa5de3dabc21fd80",
+      "groupId": "rdw-group-a57f2f6384a596ec",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-d2d7c0dfd4854bf4857a",
+      "groupId": "rdw-group-a57f2f6384a596ec",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-45d2243650adf8ff2486",
+      "groupId": "rdw-group-a57f2f6384a596ec",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-16e568ac56a23f9275cd",
+      "groupId": "rdw-group-06d8061baf7622bc",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_START_ONLY",
+        "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED"
+      ]
+    },
+    {
+      "sampleId": "rdw-538a32c3e61bf48486e7",
+      "groupId": "rdw-group-06d8061baf7622bc",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_START_ONLY",
+        "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+        "NOORDTUNE_TARGET_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-6769ea331a7fce9799fb",
+      "groupId": "rdw-group-06d8061baf7622bc",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_START_ONLY",
+        "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED"
+      ]
+    },
+    {
+      "sampleId": "rdw-7aa4c428dac24ad0cb9a",
+      "groupId": "rdw-group-f6c3f2697db369f9",
+      "inPrior222": true,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-124ed3f87dcef2cf7f55",
+      "groupId": "rdw-group-f6c3f2697db369f9",
+      "inPrior222": true,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-f2eb82be65d2ee1bba2c",
+      "groupId": "rdw-group-f6c3f2697db369f9",
+      "inPrior222": true,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-75935b5d0e7772fe9fe2",
+      "groupId": "rdw-group-d1857d043d5f69fb",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-dbb58c7d08c5d1d963b7",
+      "groupId": "rdw-group-d1857d043d5f69fb",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-b21923810e8239741b13",
+      "groupId": "rdw-group-d1857d043d5f69fb",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-defbb63c53f0b3f6e091",
+      "groupId": "rdw-group-75f61229206476f5",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-757cc038bc2fe9624092",
+      "groupId": "rdw-group-75f61229206476f5",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-4c1d1b9ca8d7458fa5e5",
+      "groupId": "rdw-group-75f61229206476f5",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-58195cab1782629aa172",
+      "groupId": "rdw-group-a40242895671f2ad",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-90645eb619e26b629ca0",
+      "groupId": "rdw-group-a40242895671f2ad",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-4de88a9a1e8554892e45",
+      "groupId": "rdw-group-a40242895671f2ad",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-255fde0c5618d1b9f8b7",
+      "groupId": "rdw-group-444bd385f0e91f1f",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-9b4a003bb34533df3f2d",
+      "groupId": "rdw-group-444bd385f0e91f1f",
+      "inPrior222": true,
+      "before": "C",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "ENGINE_FAMILY_LABEL_CONFLICT"
+      ]
+    },
+    {
+      "sampleId": "rdw-bd5af964d72a36403049",
+      "groupId": "rdw-group-444bd385f0e91f1f",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "ENGINE_FAMILY_LABEL_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-b8022e9ed0502e32d810",
+      "groupId": "rdw-group-70665971905ce2f9",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-dbbfc0724037683dc47d",
+      "groupId": "rdw-group-70665971905ce2f9",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-37ae43628d41e4c618e2",
+      "groupId": "rdw-group-70665971905ce2f9",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-88c27860ebd6dcac1533",
+      "groupId": "rdw-group-99da9c70ab649d0c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ae5955001a7bc15eb539",
+      "groupId": "rdw-group-99da9c70ab649d0c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-56fc3ba874d5e7b1f17b",
+      "groupId": "rdw-group-99da9c70ab649d0c",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-8c81526ff4bc89882512",
+      "groupId": "rdw-group-f29c5c435d72bc37",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-edea6f8927248a0b9534",
+      "groupId": "rdw-group-f29c5c435d72bc37",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-e4ea84ba0448bcdb2ffa",
+      "groupId": "rdw-group-f29c5c435d72bc37",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-38596e1e09496f3c0975",
+      "groupId": "rdw-group-bc1a2277d62475c3",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-2b7bd20ba94f36a2d7c4",
+      "groupId": "rdw-group-bc1a2277d62475c3",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-022607743ab73eb9958a",
+      "groupId": "rdw-group-bc1a2277d62475c3",
+      "inPrior222": true,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-3423b5ea8945f19051ad",
+      "groupId": "rdw-group-f99b4b8d552e7b03",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-02e4d0dd132e80cdfe6b",
+      "groupId": "rdw-group-f99b4b8d552e7b03",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-93cad9a8688f6c6c3578",
+      "groupId": "rdw-group-f99b4b8d552e7b03",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-03d71882ea7024a62637",
+      "groupId": "rdw-group-fcb81a0b88bdf846",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-1a645c167fa0e57d57ae",
+      "groupId": "rdw-group-fcb81a0b88bdf846",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-f5493689c31dd644801a",
+      "groupId": "rdw-group-fcb81a0b88bdf846",
+      "inPrior222": true,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-f3ff86745f3853277f90",
+      "groupId": "rdw-group-5b05ded8fe444aed",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-c30e31c4a681e9125ce7",
+      "groupId": "rdw-group-5b05ded8fe444aed",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-174fc238b2924fe58fb6",
+      "groupId": "rdw-group-5b05ded8fe444aed",
+      "inPrior222": true,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-c39b9b27df758057c5bf",
+      "groupId": "rdw-group-87f7b72d200d4813",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-9620a38223e7b3209ae0",
+      "groupId": "rdw-group-87f7b72d200d4813",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-cf6b0aa8a6a1529e35d5",
+      "groupId": "rdw-group-87f7b72d200d4813",
+      "inPrior222": true,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-ff4a1d7fae0ba40259b2",
+      "groupId": "rdw-group-5be285a5e27a9c82",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-92b16f7e9d82cacdc635",
+      "groupId": "rdw-group-17f3b2f61226479e",
+      "inPrior222": false,
+      "before": "B",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-ddcd97a073824eb774b2",
+      "groupId": "rdw-group-f57003b03567c51c",
+      "inPrior222": false,
+      "before": "B",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-2ddca192d3e44289b19f",
+      "groupId": "rdw-group-a39db165ad899984",
+      "inPrior222": false,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-bb5322edb7059f6ba20d",
+      "groupId": "rdw-group-94426727a9f36d13",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-270de0b5beb51ba10a09",
+      "groupId": "rdw-group-a57f2f6384a596ec",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-25da253c2bc271fb1366",
+      "groupId": "rdw-group-f6c3f2697db369f9",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-18d204d31778d2c10afd",
+      "groupId": "rdw-group-f7cb79afea7b2503",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-3a2e3ed82a8720d9154d",
+      "groupId": "rdw-group-d1857d043d5f69fb",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-8b4bfae2e5a81368e7a1",
+      "groupId": "rdw-group-75f61229206476f5",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-85272bbfe2f49e99b204",
+      "groupId": "rdw-group-154faa7a5809da5e",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-67ad9e71ec895f68995f",
+      "groupId": "rdw-group-258c8eca67d14df6",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-71d7c050a4b2e9481ef7",
+      "groupId": "rdw-group-2d385fb18ad55ac8",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-1f1c2cdfae79b4397306",
+      "groupId": "rdw-group-a40242895671f2ad",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-3a1dbccfd4552b6a6366",
+      "groupId": "rdw-group-444bd385f0e91f1f",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-65698d214b01210ea857",
+      "groupId": "rdw-group-71cafa63298aab0a",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-2ce903ed349338308a46",
+      "groupId": "rdw-group-b2a7a2a8748fc32d",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-911b2d983bf58720f05b",
+      "groupId": "rdw-group-913fe63224a78d99",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-885fea71166dff515902",
+      "groupId": "rdw-group-99da9c70ab649d0c",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-72e25a9ce166a70129d8",
+      "groupId": "rdw-group-2895cfad57fe4f47",
+      "inPrior222": false,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "CONNECT_ENGINE_GENERATION_REVIEW",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-84ea3485439b332679a1",
+      "groupId": "rdw-group-f29c5c435d72bc37",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-224ac06e8d6bba827e54",
+      "groupId": "rdw-group-43252fa5a630237b",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-ddca2340192ddff94ead",
+      "groupId": "rdw-group-7f4ebf4f97546f87",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-436d862d0e931f3318fe",
+      "groupId": "rdw-group-c28de69bc2e3615f",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-9296d1a48971282b3a4a",
+      "groupId": "rdw-group-f99b4b8d552e7b03",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-371938972106e2a208b4",
+      "groupId": "rdw-group-fcb81a0b88bdf846",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-9e106ac25144e3b132c9",
+      "groupId": "rdw-group-23bbdf2b64a9857a",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-5e74aba5932e5e819bef",
+      "groupId": "rdw-group-934c9df8b219f130",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-76ae3abf96a9a4fc98e2",
+      "groupId": "rdw-group-5b05ded8fe444aed",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-1d07f697fadecd55e307",
+      "groupId": "rdw-group-18f6ea8d443463ab",
+      "inPrior222": false,
+      "before": "D",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT"
+      ]
+    },
+    {
+      "sampleId": "rdw-d475eed0cf720970f687",
+      "groupId": "rdw-group-9a44a7aafa1eca84",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-06f8ad06699f8d5b113d",
+      "groupId": "rdw-group-b52aa9b2c22950dc",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-48765251b0c795dac9e5",
+      "groupId": "rdw-group-19f7d3be8837a620",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-7c70ee302ec417c4c4db",
+      "groupId": "rdw-group-87f7b72d200d4813",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-b199405932f46f179b90",
+      "groupId": "rdw-group-7b487a1054299def",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-453f72c24304bc68d36c",
+      "groupId": "rdw-group-185a74e670b67a06",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-bd45e591967a4178f62a",
+      "groupId": "rdw-group-9a48d6916e702002",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-d07f3d234d4d0e64a90b",
+      "groupId": "rdw-group-03822a9f210cd28b",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-6b1f979b191b2b3b05f7",
+      "groupId": "rdw-group-c080f28502abfbfb",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1fdde2cb8a9b8f5b65aa",
+      "groupId": "rdw-group-4a4fbbd889126b9a",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-4d19abc2f704634f0e33",
+      "groupId": "rdw-group-36b86a1a0b6d4e64",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-15cbfdebb012f9f07cd3",
+      "groupId": "rdw-group-f6752f2db400aa4b",
+      "inPrior222": false,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-f716fc35f84301944f12",
+      "groupId": "rdw-group-937320f3120841fe",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-b77619e65301607ad157",
+      "groupId": "rdw-group-f657bb9d4fe33ea9",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE",
+        "MANUFACTURER_ELECTRIFIED_APPLICATION"
+      ]
+    },
+    {
+      "sampleId": "rdw-d726d300eaa3a588c17f",
+      "groupId": "rdw-group-ded801fe483cccdb",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-a15e27e89721e7c62e5d",
+      "groupId": "rdw-group-93f2c28f743a7014",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-0fd6f02e37a414b7bc6a",
+      "groupId": "rdw-group-afa3126824f22eb7",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-88af9142f5d1f8c57789",
+      "groupId": "rdw-group-2760385b7f6cd7bf",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-41c69e4c7bab74bce6cf",
+      "groupId": "rdw-group-4d87cda2ddb2caa5",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-d11541efeca23184381f",
+      "groupId": "rdw-group-14829e3e7d7ba575",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-776f1f6ff942fdf5c96c",
+      "groupId": "rdw-group-3ad2e75e16a58043",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-6f53250ae2ec261fd87c",
+      "groupId": "rdw-group-fa5ada256ad7d0d1",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-c9961d0702919bafa38a",
+      "groupId": "rdw-group-b4802d93bbb3dbaa",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-bd23e72057bbe482fcbb",
+      "groupId": "rdw-group-d13cf2b85cc7e258",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-e1fc5267c8a6e61b90c1",
+      "groupId": "rdw-group-b537de34cdc0dfdf",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-b1195d1d9f0fa5f5a3f0",
+      "groupId": "rdw-group-b7778422abe52188",
+      "inPrior222": false,
+      "before": "C",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sampleId": "rdw-03a8182241cb0e4df7ed",
+      "groupId": "rdw-group-2e3ecfc3def0696f",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-94e4e726953850b4fd66",
+      "groupId": "rdw-group-a5e64a43efdd884c",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-b74d73a2a9ff323d5e31",
+      "groupId": "rdw-group-1bd1bde42f717bce",
+      "inPrior222": false,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-56cf67a7e36e5ce064e1",
+      "groupId": "rdw-group-60d4ea3006a0c0e6",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH"
+      ]
+    },
+    {
+      "sampleId": "rdw-1d0ef85ca27282e43b68",
+      "groupId": "rdw-group-e329d5e8f32b7da5",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-db624af747c3f8ba44e7",
+      "groupId": "rdw-group-445598acaebcd73c",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-b7353d6bc99241e494df",
+      "groupId": "rdw-group-8d38113adf315fd0",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-3f5cefe9d60b918621a0",
+      "groupId": "rdw-group-23e02d53368f48b7",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-3a28543562d796a64f4d",
+      "groupId": "rdw-group-50d97f384138ff29",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-3fe81c9f3ee836a0c840",
+      "groupId": "rdw-group-70665971905ce2f9",
+      "inPrior222": false,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED"
+      ]
+    },
+    {
+      "sampleId": "rdw-13f6fb3789b6c6d8fde3",
+      "groupId": "rdw-group-585e1b72dc07d86b",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-b94a645471226d62eaa3",
+      "groupId": "rdw-group-ad66e794e87e74de",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-51c0630337a7d3db0af7",
+      "groupId": "rdw-group-dcc35660551b5b76",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-67fce2d124be8190ffc4",
+      "groupId": "rdw-group-8a4d5f9881ca1511",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-135066590edcaad5b6b1",
+      "groupId": "rdw-group-071b70c4423cd598",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-660d04470db1c7ca5f1b",
+      "groupId": "rdw-group-5088cc5ddfa360ad",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ffe98fe23907b05cf6aa",
+      "groupId": "rdw-group-3683943bf4b344d5",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_START_ONLY",
+        "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-d6585c3ed39a27fba790",
+      "groupId": "rdw-group-3e510ca64987b1d3",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-6ceb88540218e6b3ae5d",
+      "groupId": "rdw-group-ea371a17713b675f",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-da6ed8dbc8d06be972b9",
+      "groupId": "rdw-group-7f074ee37413ed56",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1c9844e3fb25ddc8d7dd",
+      "groupId": "rdw-group-30b68ee640dbb389",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-5605fb438bb4b279668a",
+      "groupId": "rdw-group-f030dc3b23429b4f",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-f28ac328d1cd0e736d43",
+      "groupId": "rdw-group-2072f05416e0b210",
+      "inPrior222": false,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-419985c1a8d2c5e0718f",
+      "groupId": "rdw-group-74bc602a17b18f57",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-b264b05c9cc6dbb0fd40",
+      "groupId": "rdw-group-7a68f64a6bcb57c0",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-ad35fe112143a4f07dd0",
+      "groupId": "rdw-group-d8722fb5ab7865f5",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "ENGINE_FAMILY_LABEL_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-b17b810f0360930f52bc",
+      "groupId": "rdw-group-540dd1ed1793c0c5",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-891d94c1f7a60a02df65",
+      "groupId": "rdw-group-601ad30915f982f6",
+      "inPrior222": false,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1bbbb5cb54ffc9ff02d8",
+      "groupId": "rdw-group-a4e2d44e3eef9eff",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-b6af18ff6c832c343e29",
+      "groupId": "rdw-group-bc1a2277d62475c3",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ab11d59837275465b0ea",
+      "groupId": "rdw-group-eb3fe9caba6e937c",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-e8a50057e753933140a7",
+      "groupId": "rdw-group-4e1e69c928ae43dc",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-8fda94deb6292a162472",
+      "groupId": "rdw-group-af712ebcef4d6077",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-9773258db784a478c3fc",
+      "groupId": "rdw-group-3b80fd6e024f1bc4",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-e4860437f042a28c3dea",
+      "groupId": "rdw-group-7c3fcf2fa5b431de",
+      "inPrior222": false,
+      "before": "B",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-b7edaa7872684f448b1c",
+      "groupId": "rdw-group-29b55876e44df041",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-cc9e025b2a00855c778d",
+      "groupId": "rdw-group-1340702b5b308f10",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-53298f8444aad8638002",
+      "groupId": "rdw-group-639032c6a1ef4e07",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-aada3b9d7ee6e85ccd32",
+      "groupId": "rdw-group-a594ca31602f5c64",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-61aa512ed4cb3d15a10a",
+      "groupId": "rdw-group-749a39f547b99d28",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_START_ONLY",
+        "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+        "ENGINE_FAMILY_LABEL_CONFLICT"
+      ]
+    },
+    {
+      "sampleId": "rdw-bc0443cc6a4bd7d1808a",
+      "groupId": "rdw-group-e7406f07bbb7333e",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-4286c2b4d00b41edbae5",
+      "groupId": "rdw-group-b67f1960ca11f285",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ab2799e2e729cdbdbea1",
+      "groupId": "rdw-group-468b69573893b922",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-8aaa5258cea50007fba4",
+      "groupId": "rdw-group-9afb94e8fad9bfb9",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-6ac50afdac0a8f0e1d29",
+      "groupId": "rdw-group-1878976f06bdcbc2",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-df591b43d3b775021dd1",
+      "groupId": "rdw-group-f79166738ff1a5c4",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-9c6229a17d97481037dc",
+      "groupId": "rdw-group-6c105180070a2731",
+      "inPrior222": false,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-aadd5d609cfbd589444c",
+      "groupId": "rdw-group-f52134bd3debf70a",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-6da7fedd26b06f9c2a9f",
+      "groupId": "rdw-group-48dac4d823c69d8e",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-849c5d873f902e741a4b",
+      "groupId": "rdw-group-17aa251e54028bc8",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-f815ca2db942f25df506",
+      "groupId": "rdw-group-1cf6305b4e3bc9dc",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-d7057aadf77044c3093d",
+      "groupId": "rdw-group-127121ef85715c50",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-a2c2a26deb3df1e0a832",
+      "groupId": "rdw-group-f9e943aad54386bf",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-c020bfbdfd6ff13e3768",
+      "groupId": "rdw-group-fc7bf5890193c4df",
+      "inPrior222": false,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "APPLICABLE_RUNTIME_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-f67212f5bc832712ce06",
+      "groupId": "rdw-group-ab24a1dd1f34a143",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-c9e884d5cd865721af8f",
+      "groupId": "rdw-group-9b451a0d098bcff9",
+      "inPrior222": false,
+      "before": "A",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-48987a6adf54c797bc3e",
+      "groupId": "rdw-group-aa833658437c4aaa",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-752a71303519e8377dcf",
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-3900d8f2fc7e718dfee8",
+      "groupId": "rdw-group-b2f5e390bd5b7bf7",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-b0413db8822423cc217e",
+      "groupId": "rdw-group-7e3f744773827369",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-ce19e8ee18e040dc53dc",
+      "groupId": "rdw-group-56b2a6796050c62b",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-f2e34fffd1ab0352100d",
+      "groupId": "rdw-group-e2c5fab2bec39469",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-973d71d50a3a386e2073",
+      "groupId": "rdw-group-e5891447f12658a1",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-2714a553b1d719748fd1",
+      "groupId": "rdw-group-a4f58429e3086f4c",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-ae6d67a0bcff24dd1ebf",
+      "groupId": "rdw-group-873378b47baa0e1b",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-200538a9716dc40b0825",
+      "groupId": "rdw-group-e5819c2750068468",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-2b4979ba5c4e01adbef5",
+      "groupId": "rdw-group-edce371be5f5c9c5",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-e46c4afee90f1cde133a",
+      "groupId": "rdw-group-19d7f0a1272b1d8a",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1bdacaeeec8c90808690",
+      "groupId": "rdw-group-a4d61739d7635466",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-70c1c16131f87826b971",
+      "groupId": "rdw-group-2ac6700ac62b2111",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-75167da58e50237bf4e3",
+      "groupId": "rdw-group-e495123654c911b8",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-3a870b6655850441dcbc",
+      "groupId": "rdw-group-060b2baf053cd2d6",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-62c6b36742dea43320de",
+      "groupId": "rdw-group-dc833f13ed021053",
+      "inPrior222": false,
+      "before": "C",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-c87c973b13273a724a53",
+      "groupId": "rdw-group-75fc80529082550d",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MISSING_OR_INVALID_REGISTERED_POWER",
+        "UNKNOWN_OR_CONFLICTING_POWERTRAIN"
+      ]
+    },
+    {
+      "sampleId": "rdw-707206363c80af3c08c4",
+      "groupId": "rdw-group-da14724504a8ae6d",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-0694679c96b4b3b3c055",
+      "groupId": "rdw-group-324d9980291016c1",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-edd45ac05a7af4aa0d7b",
+      "groupId": "rdw-group-1137dd8094b51205",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1162a718ac856d74d514",
+      "groupId": "rdw-group-cccf3040b42acd0c",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-b1ef92a83aa29ac556bf",
+      "groupId": "rdw-group-afca21e0ea9c02aa",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-fdbfbe159f17576738ba",
+      "groupId": "rdw-group-d4167dd9f3c9f912",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MISSING_OR_INVALID_REGISTERED_POWER",
+        "UNKNOWN_OR_CONFLICTING_POWERTRAIN"
+      ]
+    },
+    {
+      "sampleId": "rdw-d2448e3cb4e32ffba1d9",
+      "groupId": "rdw-group-a9e0cb8b1825e7be",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-1883df69e71c180209a6",
+      "groupId": "rdw-group-deb08ce99f14814a",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-3f8cdb0b400e8b135413",
+      "groupId": "rdw-group-405e1a14e7c669c6",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-7506d72db58f0490f204",
+      "groupId": "rdw-group-2a05a136a47787df",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-d2909fbe755548f9795a",
+      "groupId": "rdw-group-a9e585a9522658e7",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-734ee15976712f196328",
+      "groupId": "rdw-group-f60424f333fdcb46",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-f6fec9fee6fe7660a11e",
+      "groupId": "rdw-group-0ca5d6047d604626",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-2dacabaa1011f2e42968",
+      "groupId": "rdw-group-1cf32e76de2b81d6",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-aefd9339683d05da646a",
+      "groupId": "rdw-group-dd0fc5c19961af2c",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-25dd0399fe9310ec6d9a",
+      "groupId": "rdw-group-9b5a7d93aa2cb0a4",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-a74cf57b6bca95af5e14",
+      "groupId": "rdw-group-fe5bc636367d0d79",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-97956e7ce33f28a373c9",
+      "groupId": "rdw-group-d82e820f89f28d34",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-c939a7aed96a449acc71",
+      "groupId": "rdw-group-ba51f4c8a5d1e5cb",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-cbc0b9a4a84c62567fc1",
+      "groupId": "rdw-group-e5bf6ca4f1422190",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-be2c85b00cb5270ae672",
+      "groupId": "rdw-group-d3836efc5d66a2d5",
+      "inPrior222": false,
+      "before": "B",
+      "after": "C",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-df29e64c0b08c1bf0f0e",
+      "groupId": "rdw-group-d16a4f38d7de08dd",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-2032c8a206bf93e04b6d",
+      "groupId": "rdw-group-3094c16c3ab0a0b4",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-c40c9bff991b7086cfcd",
+      "groupId": "rdw-group-dfd5ad596b7645cf",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-cc227c7337c6ed9cbd35",
+      "groupId": "rdw-group-39a4ba10b333f41f",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MISSING_OR_INVALID_REGISTERED_POWER",
+        "UNKNOWN_OR_CONFLICTING_POWERTRAIN"
+      ]
+    },
+    {
+      "sampleId": "rdw-562f0b0870f50902cc46",
+      "groupId": "rdw-group-2e0eaf1e5d09d83a",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_GENERATION_END_UNCONFIRMED",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-9347c2a744914502c317",
+      "groupId": "rdw-group-4e931fdb6f2a3c70",
+      "inPrior222": false,
+      "before": "B",
+      "after": "A",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "SOURCE_CONSENSUS_CONFLICT",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-a1906713c1fd7964e29b",
+      "groupId": "rdw-group-767f6d7d74c58c14",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1d653185d7a3d82d83be",
+      "groupId": "rdw-group-1ed1a8aa88a696f7",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-ba455862f9ff8217ed0e",
+      "groupId": "rdw-group-57334ace698c2434",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-1ffdb3f55b273bfafe21",
+      "groupId": "rdw-group-dcf60a3a42a7868f",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-5dd3d2332d96d3764508",
+      "groupId": "rdw-group-f16e82ee1f9413de",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-011e12b58ca9ba546321",
+      "groupId": "rdw-group-097ea174a1553c3b",
+      "inPrior222": false,
+      "before": "B",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-99853b3c37e62d13d1b2",
+      "groupId": "rdw-group-2929523edb087ca7",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-94963567f70918277efe",
+      "groupId": "rdw-group-72becee98a12d6f4",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-998de47424e93b7558c5",
+      "groupId": "rdw-group-9bddc66c2bd827a1",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-327db4caab220c0c1804",
+      "groupId": "rdw-group-8c2b475e5aebcd73",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-86b006059c5747e5d757",
+      "groupId": "rdw-group-fe7a144822b6a0f1",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-e5e506fb7e32ceffd881",
+      "groupId": "rdw-group-00ff50d823106d8e",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-8c171dd0bccf4649f3d7",
+      "groupId": "rdw-group-1155ca2aab056758",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-642e78d5c53a67d4d4ea",
+      "groupId": "rdw-group-16d99b96a68db66d",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-c6e6725d8ed90dd57ffe",
+      "groupId": "rdw-group-e9a6c9f56723a508",
+      "inPrior222": false,
+      "before": "D",
+      "after": "B",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ]
+    },
+    {
+      "sampleId": "rdw-2f8e0e8071cdbee8f007",
+      "groupId": "rdw-group-1772f8ecb9bb588f",
+      "inPrior222": false,
+      "before": "E",
+      "after": "E",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "UNSUPPORTED_POWERTRAIN_ESTIMATE"
+      ]
+    },
+    {
+      "sampleId": "rdw-fb28c729aa9cc2d96c99",
+      "groupId": "rdw-group-1082c1d3355c9f5e",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-5587c3859defdb4593ac",
+      "groupId": "rdw-group-f0c4783d8ca0b134",
+      "inPrior222": false,
+      "before": "B",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sampleId": "rdw-760fb24283b03b5b02ac",
+      "groupId": "rdw-group-8fd3504569720630",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-764c599a335f1148a18e",
+      "groupId": "rdw-group-1f11b24a81f549fd",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    },
+    {
+      "sampleId": "rdw-894544e323496db9acd1",
+      "groupId": "rdw-group-eccba51154fb0368",
+      "inPrior222": false,
+      "before": "D",
+      "after": "D",
+      "pricingUnchanged": true,
+      "identityUnchanged": true,
+      "reasons": [
+        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+        "NO_COMPATIBLE_SOURCED_PROFILE"
+      ]
+    }
+  ]
+}

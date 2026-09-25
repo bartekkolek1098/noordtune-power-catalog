@@ -8,10 +8,10 @@ Power is metric pk. Prices below are indicative starting budgets in EUR for Stag
 
 | Plate / RDW identity | Stage 1 pk / Nm | Stage 2 pk / Nm | Stage 3+ pk / Nm | Draft prices |
 | --- | --- | --- | --- | --- |
-| H329XH — Defender, 1999 cc, 241 pk, 2020-06-12 | 290 / 590 | 320 / 660 | 365 / 740 | 549 / 699 / 999 |
-| V380ST — Transit Connect, 1499 cc, 100 pk, 2018-10-17 | 125–140 / 330–340 | 125–140 / 330–340 | 140–155 / 330–350 | 449 / 549 / 849 |
-| V978ZF — Transit Custom, 1995 cc, 105 pk, 2019-04-29 | 190 / 440 | 190–215 / 440–470 | 190–235 / 440–505 | 549 / 699 / 999 |
-| KKH27K — BMW 128ti, 1998 cc, 265 pk, 2022-09-14 | 310 / 480 | 330–375 / 480–540 | 370–425 / 480–580 | 700 / individual / individual |
+| OWNER-A — Defender, 1999 cc, 241 pk, 2020-06-12 | 290 / 590 | 320 / 660 | 365 / 740 | 549 / 699 / 999 |
+| OWNER-B — Transit Connect, 1499 cc, 100 pk, 2018-10-17 | 125–140 / 330–340 | 125–140 / 330–340 | 140–155 / 330–350 | 449 / 549 / 849 |
+| OWNER-C — Transit Custom, 1995 cc, 105 pk, 2019-04-29 | 190 / 440 | 190–215 / 440–470 | 190–235 / 440–505 | 549 / 699 / 999 |
+| OWNER-D — BMW 128ti, 1998 cc, 265 pk, 2022-09-14 | 310 / 480 | 330–375 / 480–540 | 370–425 / 480–580 | 700 / individual / individual |
 
 Defender's three peaks are unchanged figures from the existing canonical `land-rover-defender-2-0-sd4-2020` technical profile and equivalent year copies; they are not new generic calculations or measured NoordTune outputs. Registered 241 pk is kept separate from source stock 240 pk.
 
@@ -55,10 +55,10 @@ These show the selected Stage 1 plus all Stage rows; the executable browser repo
 
 | Case | 320 px | 1440 px |
 | --- | --- | --- |
-| Live Defender | [image](h329xh-320.png) | [image](h329xh-1440.png) |
-| Live Connect | [image](v380st-320.png) | [image](v380st-1440.png) |
-| Live Custom | [image](v978zf-320.png) | [image](v978zf-1440.png) |
-| Live BMW 128ti | [image](kkh27k-320.png) | [image](kkh27k-1440.png) |
+Redundant owner screenshot removed during release privacy cleanup.
+Redundant owner screenshot removed during release privacy cleanup.
+Redundant owner screenshot removed during release privacy cleanup.
+Redundant owner screenshot removed during release privacy cleanup.
 | Synthetic public GTI | [image](public-exact-320.png) | [image](public-exact-1440.png) |
 | Synthetic canonical Dacia | [image](canonical-nonpublic-320.png) | [image](canonical-nonpublic-1440.png) |
 | Synthetic generic petrol | [image](generic-petrol-320.png) | [image](generic-petrol-1440.png) |

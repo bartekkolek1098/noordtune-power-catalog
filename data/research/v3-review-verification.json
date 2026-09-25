@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-09-16T18:26:13.312Z",
+  "applicationAndQaHead": "1b43b88a93eb198f11bb0ed0c774d1275b892d88",
+  "datasetFingerprint": "cd53d92eab366f636915cd882fafc8332e0bcb8762b371056ca1df85f7f4b0f5",
+  "pr": {
+    "baseRefName": "feature/nl-fleet-coverage-v2",
+    "headRefName": "feature/nl-fleet-coverage-v3",
+    "headRefOid": "1b43b88a93eb198f11bb0ed0c774d1275b892d88",
+    "isDraft": true,
+    "number": 16,
+    "state": "OPEN",
+    "statusCheckRollup": [
+      {
+        "__typename": "StatusContext",
+        "context": "Vercel",
+        "startedAt": "2026-09-16T18:24:58Z",
+        "state": "SUCCESS",
+        "targetUrl": "https://vercel.com/bartekkolek1098s-projects/noordtune-power-catalog/GJCDQnu3HK7iSTguyRWC8CipqRQc"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-16T18:24:59Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://vercel.com/github",
+        "name": "Vercel Preview Comments",
+        "startedAt": "2026-09-16T18:24:59Z",
+        "status": "COMPLETED",
+        "workflowName": ""
+      }
+    ],
+    "title": "Close high-priority Dutch tuning coverage gaps",
+    "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/pull/16"
+  },
+  "preview": {
+    "deploymentId": 6487661485,
+    "head": "1b43b88a93eb198f11bb0ed0c774d1275b892d88",
+    "state": "success",
+    "url": "https://noordtune-power-catalog-9qhvv7al0-bartekkolek1098s-projects.vercel.app",
+    "completedAt": "2026-09-16T18:24:59Z",
+    "httpStatus": 302,
+    "redirectOrigin": "https://vercel.com",
+    "redirectPath": "/sso-api",
+    "hostedBrowserVerified": false,
+    "note": "Deployment status is verified through GitHub/Vercel. Public route access redirects to Vercel authentication; local production browser evidence is recorded separately."
+  },
+  "protectedPrs": [
+    {
+      "number": 12,
+      "headRefOid": "15d67ae15c3db7e90195b99e167ec4614ec884dd",
+      "isDraft": true,
+      "state": "OPEN",
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/pull/12"
+    },
+    {
+      "number": 13,
+      "headRefOid": "3484b24c06491c4305add40067b0ba0e66aba7e5",
+      "isDraft": true,
+      "state": "OPEN",
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/pull/13"
+    },
+    {
+      "number": 14,
+      "headRefOid": "d92bcd179813d1587e82e7f3a12ee5f1914648df",
+      "isDraft": true,
+      "state": "OPEN",
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/pull/14"
+    },
+    {
+      "number": 15,
+      "headRefOid": "515fb4fa765cefc8f1c8d59a46c6daa7536dc727",
+      "isDraft": true,
+      "state": "OPEN",
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/pull/15"
+    }
+  ],
+  "main": "4d12e510953fb57c3f8f84a737880ff860a617e7",
+  "production": {
+    "deploymentId": 5965036463,
+    "sha": "4d12e510953fb57c3f8f84a737880ff860a617e7",
+    "createdAt": "2026-08-18T14:39:18Z",
+    "environment": "Production"
+  },
+  "noordtuneWww": "No file or remote mutation was performed in this separate project.",
+  "protectedChecksPassed": true
+}

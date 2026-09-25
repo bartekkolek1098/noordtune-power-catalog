@@ -104,7 +104,7 @@ const curatedFixtures: Fixture[] = curatedSpec.map(([id, displacementCc, year]) 
   check(vehicle, `${id}: curated fixture exists`);
   return {id: `curated:${id}`, group: "curated", sourceId: id, input: {make: vehicle.brand, model: `${vehicle.model} ${vehicle.generation ?? ""}`, fuel: vehicle.fuel, powerHp: vehicle.stockPowerHp, displacementCc, firstRegistrationYear: year}};
 });
-same(liveSource.identities.map(fixture => fixture.caseId).sort(), ["H329XH", "KKH27K", "V380ST", "V978ZF"], "All four mandatory identities came from the live RDW evidence");
+same(liveSource.identities.map(fixture => fixture.caseId).sort(), ["OWNER-A", "OWNER-D", "OWNER-B", "OWNER-C"], "All four mandatory identities came from the live RDW evidence");
 check(liveSource.identities.every(fixture => fixture.liveRetrievalSucceeded), "Live RDW retrieval succeeded for each mandatory identity");
 const liveFixtures: Fixture[] = liveSource.identities.map(fixture => ({id: fixture.caseId, group: "live-owner", input: fixture.normalizedIdentity, context: `Official RDW facts retrieved ${liveSource.retrievedAt}; owner-requested acceptance case.`}));
 const results: ReturnType<typeof record>[] = [];
@@ -178,7 +178,7 @@ for (const fixture of [...liveFixtures, ...curatedFixtures, ...nonPublicFixtures
   results.push(record(fixture, result, performance.now() - started));
   try {
     verifyProfile(fixture, result);
-    if (fixture.group === "live-owner" && ["V380ST", "V978ZF", "KKH27K"].includes(fixture.id)) {
+    if (fixture.group === "live-owner" && ["OWNER-B", "OWNER-C", "OWNER-D"].includes(fixture.id)) {
       check(result.profile?.stages.slice(1).every(hasPower), `${fixture.id}: Stage-1-only reference cannot blank Stage 2/3`);
     }
   } catch (error) {
@@ -203,7 +203,7 @@ for (const badSource of [
     check(result.profile?.stages.every(stage => stage.provenance === "generic-indicative"), `${badSource.model}: incompatible generated cross-product never supplies the plausible input's source peaks`);
   });
 }
-const connectInput = liveFixtures.find(fixture => fixture.id === "V380ST")!.input;
+const connectInput = liveFixtures.find(fixture => fixture.id === "OWNER-B")!.input;
 const fordTransit = vehicleDatabase.find(vehicle => vehicle.brand === "Ford" && /^Transit 1.5 TDCi$/.test(vehicle.model) && vehicle.fuel === "Diesel")!;
 check(fordTransit, "A non-public generic Ford Transit 1.5 safety source exists");
 safety("wrong-displacement", {...canonicalInput(fordTransit).input, displacementCc: 2198}, {...emptySources, canonicalVehicles: [fordTransit]}, result => {

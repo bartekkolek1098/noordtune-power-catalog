@@ -104,11 +104,11 @@ Invalid/nonpositive power or optional technical facts, malformed year, missing m
 | Same ordinary profile without cylinder evidence | €449 / €599; Stage 3 on-request (€899 schedule) |
 | Ordinary Focus petrol or unassigned A3 diesel, first admission 2018 | €399 / €549; Stage 3 on-request (€799 schedule) |
 | Same ordinary model, first admission 2020 | €449 / €599; Stage 3 on-request (€899 schedule) |
-| H329XH Defender, 241 registered pk, 1999 cc | €549 / €699 from listed Land Rover complexity; Stage 3 on-request |
+| OWNER-A Defender, 241 registered pk, 1999 cc | €549 / €699 from listed Land Rover complexity; Stage 3 on-request |
 | Unassigned Transit Custom 2.0 | €549 / €699 from larger-commercial family; Stage 3 on-request |
-| V978ZF exact reference | Preserved €549 Stage 1 and runtime €699 Stage 2; Stage 3 on-request (€999 if scoped) |
-| V380ST exact conditional reference | Preserved €449 Stage 1 and runtime €549 Stage 2; Stage 3 on-request (€849 if scoped) |
-| KKH27K exact BMW 128ti reference | Existing conditional €700 Stage 1 package; higher Stages on-request |
+| OWNER-C exact reference | Preserved €549 Stage 1 and runtime €699 Stage 2; Stage 3 on-request (€999 if scoped) |
+| OWNER-B exact conditional reference | Preserved €449 Stage 1 and runtime €549 Stage 2; Stage 3 on-request (€849 if scoped) |
+| OWNER-D exact BMW 128ti reference | Existing conditional €700 Stage 1 package; higher Stages on-request |
 | Unassigned BMW 318i with a recent year alone | Ordinary €449 Stage 1; unknown ECU/access |
 | Same resolved BMW with explicit applicable G20 identity review scenario | Conditional €700 Stage 1 package; higher Stages on-request |
 | Existing reviewed Golf GTI public profile | Existing €449 / €549 assignment wins over generic GTI rule; custom/unscoped runtime Stage 3 remains on-request |

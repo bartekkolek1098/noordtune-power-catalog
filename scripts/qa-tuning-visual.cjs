@@ -2,6 +2,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const assert = require("node:assert/strict");
+const {lookupContactMessage} = require("./lookup-contact-qa.cjs");
 const {chromium} = require(process.env.PLAYWRIGHT_MODULE || "C:/Users/barto/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright");
 const catalog = require("../src/data/catalog.ts");
 const {normalizeRdwVehicle} = require("../src/lib/rdw.ts");
@@ -31,7 +32,7 @@ const report = {
     "BMW128ti, Transit Custom and Transit Connect use sanitized official RDW make/model, displacement, power and first-admission facts retrieved for the task. Synthetic identifier ZZ1001 replaces all plates. Other curated examples use controlled synthetic registration dates.",
     "Only the Next.js development overlay is hidden equally in both versions; no vehicle, quote or layout pixels are masked.",
     "Date, estimate profile/provenance, scoped draft prices, access text and chart caption may legitimately alter result height. Numeric profile output is independent of exact ECU/access confirmation and quote mode.",
-    "WhatsApp hrefs are decoded and asserted without opening or sending any message."
+    "Lookup contact is captured after a simulated click; no WhatsApp page or message is sent."
   ],
   results: [],
   detailPages: [],
@@ -84,7 +85,7 @@ async function layoutMetrics(locator) {
       checkboxes: root.querySelectorAll('input[type="checkbox"]').length,
       charts: root.querySelectorAll('.recharts-responsive-container,[data-testid="rdw-pending-chart"]').length,
       detailsLinks: [...root.querySelectorAll('a[href*="/vehicles/"]')].map((a) => ({href: a.getAttribute("href"), text: a.textContent})),
-      whatsappLinks: root.querySelectorAll('a[href^="https://wa.me/"]').length};
+      whatsappLinks: root.querySelectorAll('a[href^="https://wa.me/"],button[data-testid$="quote"]').length};
   });
 }
 
@@ -115,7 +116,8 @@ async function lookupCase(browser, fixture, width, version) {
     const manual = document.querySelector("#manual-selector");
     return Boolean(plate && manual && (plate.compareDocumentPosition(manual) & Node.DOCUMENT_POSITION_FOLLOWING));
   });
-  const quotes = await result.locator('a[href^="https://wa.me/"]').evaluateAll((links) => links.map((link) => new URL(link.href).searchParams.get("text")));
+  const quotes = version === "baseline" ? await result.locator('a[href^="https://wa.me/"]').evaluateAll((links) => links.map((link) => new URL(link.href).searchParams.get("text")))
+    : [await lookupContactMessage(page, result.getByTestId("rdw-exact-quote"))];
   const record = {version, fixture: fixture.id, locale, width, matchStatus: payload.tuningMatch?.status ?? (payload.tuningMatch?.variant ? "legacy-match" : "legacy-no-match"), matchId: payload.tuningMatch?.variant?.id, ...metrics, plateBeforeManual: order, screenshot: `${name}.png`, summary: `${name}-summary.png`, errors};
   if (version === "final") {
     assert.equal(order, true, "PlateLookup must remain before ManualSelector");
@@ -155,10 +157,10 @@ async function lookupCase(browser, fixture, width, version) {
         assert.equal(profile.stages[1].powerHp, undefined, "No invented reference Stage 2 power");
         assert.equal(profile.stages[2].powerHp, undefined, "No invented reference Stage 3 power");
       }
-      const quoteLink = result.locator('a[href^="https://wa.me/"]').last();
+      const quoteLink = result.getByTestId("rdw-exact-quote");
       await quoteLink.scrollIntoViewIfNeeded();
       assert.ok(await quoteLink.isVisible(), "Final quote CTA is reachable");
-      const updated = new URL(await quoteLink.getAttribute("href")).searchParams.get("text");
+      const updated = await lookupContactMessage(page, quoteLink);
       assert.ok(updated.includes("Stage 2") && updated.includes(optionLabel), "WhatsApp preserves Stage and paid option");
       record.interaction = {stage: "Stage 2", option: optionLabel, quoteReachable: true, preserved: true};
       if (metrics.detailsLinks.length) {

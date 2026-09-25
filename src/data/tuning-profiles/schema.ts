@@ -1,5 +1,5 @@
 /** Server dataset facts. UI imports of these definitions must be type-only. */
-export type SourceProvider = "vtech" | "shiftech" | "br-performance" | "celtic-tuning" | "unlimited-tuning" | "mosselman" | "manufacturer" | "other";
+export type SourceProvider = "atm-chiptuning" | "vtech" | "shiftech" | "br-performance" | "celtic-tuning" | "unlimited-tuning" | "mosselman" | "manufacturer" | "other";
 export type ResearchStage = {powerHp: number; torqueNm?: number; conditions?: string[]};
 export type ResearchIdentity = {
   brand: string;
@@ -39,6 +39,12 @@ export type SourceObservation = {
   /** Facts retained when missing scope prevents accepting a complete profile. */
   unresolvedIdentity?: Partial<ResearchIdentity>;
   stages?: {stage1?: ResearchStage; stage2?: ResearchStage; stage3?: ResearchStage};
+  /** Provider-scoped availability. Never a global NoordTune support decision. */
+  availability?: {status: "available" | "not-available" | "development-pending" | "hybrid-only" | "different-ecu-generation"; scope: "source-application-only"; evidence: string; supersedesSourceId?: string};
+  /** Explicit technical corroboration of unusually large factory de-rating gains. */
+  factoryDeratingEvidence?: {sourceId: string; fields: string[]; reason: string};
+  /** Reviewed manufacturer mapping for an ambiguous provider engine label. */
+  engineFamilyEvidence?: {sourceId: string; engineFamily: "EcoBlue"; reason: string};
   /** Different hardware/package classes never become ordinary remap consensus votes. */
   packages?: {name: string; kind: "external-module"; powerGainHp?: number; torqueGainNm?: number; tunedPowerHp?: number; tunedTorqueNm?: number}[];
   conditions?: string[];

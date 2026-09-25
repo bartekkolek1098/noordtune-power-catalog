@@ -22,6 +22,7 @@ import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
+import {customerStageNotes, customerStagePresentation} from "@/lib/stage-presentation";
 import {customHardwareLabel, estimateLimitations, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
 import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
@@ -110,6 +111,7 @@ export function VehicleDetail({
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [recommendedPackage, setRecommendedPackage] = useState<StageDefinition["name"] | null>(null);
   const selectedStage = estimateProfile.stages[stageIndex] ?? estimateProfile.stages[0];
+  const presentation = customerStagePresentation(selectedStage, locale, estimateProfile);
   const availableOptions = useMemo(
     () =>
       serviceOptions
@@ -138,12 +140,6 @@ export function VehicleDetail({
       : selectedStage.name === "Stage 2"
         ? text.stage2Package
         : text.stage3Package;
-  const localizedRequirements =
-    selectedStage.name === "Stage 1"
-      ? text.stage1Requirements
-      : selectedStage.name === "Stage 2"
-        ? text.stage2Requirements
-        : text.stage3Requirements;
   const vehicleLabel = `${vehicle.brand} ${vehicle.model} ${vehicle.engine}`;
   const recommendedPackageLabel =
     recommendedPackage === selectedStage.name
@@ -160,6 +156,7 @@ export function VehicleDetail({
       estimateProfileLabel: `${estimateProfile.brand} ${estimateProfile.model} ${estimateProfile.engine}`,
       engine: estimateProfile.engine,
       indicativeOutput: selectedStage,
+      estimateNotes: customerStageNotes(selectedStage, locale, estimateProfile),
       estimateSource: formatEstimateSource(selectedStage, locale),
       recommendedPackage: recommendedPackageLabel,
       stage: selectedStage.name,
@@ -367,8 +364,9 @@ export function VehicleDetail({
                 {text.requirements}
               </div>
               <p className="mt-2 text-sm leading-6 text-slate-200">
-                {localizedRequirements}
+                {presentation.summary}
               </p>
+              <ul className="mt-2 space-y-1 text-xs leading-5 text-muted-foreground">{[...presentation.requirements, ...presentation.limitations].map(note => <li key={note}>{note}</li>)}</ul>
               <div className="mt-4 grid grid-cols-2 gap-2 text-sm text-muted-foreground">
                 <span>
                   {text.ecu}: {vehicle.ecuSupport?.family ?? vehicle.ecuType}
