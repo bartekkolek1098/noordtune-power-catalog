@@ -1,0 +1,3079 @@
+[
+  {
+    "id": "shiftech-10511",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-vp-90",
+    "retrievedAt": "2026-09-15T22:31:24.891Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "881a49b28e60336800e8edec6d9b7190ca608e51255e32259d58f118bc18d999",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI VP",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 210,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 120,
+        "torqueNm": 265
+      },
+      "stage2": {
+        "powerHp": 130,
+        "torqueNm": 285,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [
+      "Provider recommends renewing the air-flow meter and N75 boost-control valve before tuning."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred.",
+      "Independently matched with Unlimited by Golf body generation, fuel, nominal displacement, stock power and stock torque."
+    ],
+    "consensusGroup": "vag-golf-iv-1900-diesel-90"
+  },
+  {
+    "id": "shiftech-10512",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-ip-100",
+    "retrievedAt": "2026-09-15T22:31:27.003Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "385ef0a7863807aa85288a97fe1922af476b83c721b589cff8673c04b291404f",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI IP",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 100,
+      "stockTorqueNm": 210,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 320,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10513",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-vp-110",
+    "retrievedAt": "2026-09-15T22:31:28.633Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b563b0dffc639ee3db598d6e49f0b0302ba23192e8b6205284825c2745408c79",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI VP",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 235,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 290
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 310,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [
+      "Provider recommends renewing the air-flow meter and N75 boost-control valve before tuning."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred.",
+      "Independently matched with Unlimited by Golf body generation, fuel, nominal displacement, stock power and stock torque."
+    ],
+    "consensusGroup": "vag-golf-iv-1900-diesel-110"
+  },
+  {
+    "id": "shiftech-10514",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-ip-115",
+    "retrievedAt": "2026-09-15T22:31:30.205Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0761a7fc50d1b4020689811a872a44e96d502f4484d28f424b5fdd95283b8cfa",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI IP",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 285,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 146,
+        "torqueNm": 350
+      },
+      "stage2": {
+        "powerHp": 156,
+        "torqueNm": 370,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10515",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-ip-130",
+    "retrievedAt": "2026-09-15T22:31:31.844Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "eaa0f68ebbe04db99b66f8c121158786f796ab5d872ec842d91e1ae5a23aa329",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI IP",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 310,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 160,
+        "torqueNm": 365
+      },
+      "stage2": {
+        "powerHp": 170,
+        "torqueNm": 385,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred.",
+      "Independently matched with Unlimited by Golf body generation, fuel, nominal displacement, stock power and stock torque."
+    ],
+    "consensusGroup": "vag-golf-iv-1900-diesel-130"
+  },
+  {
+    "id": "shiftech-10516",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/1997-iv/diesel/1.9-tdi-ip-150",
+    "retrievedAt": "2026-09-15T22:31:35.220Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c4f177c8e517506119f455b3eb471c6c381acb8e126f0ee6c00272d6b7a34e30",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI IP",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 420,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred.",
+      "Independently matched with Unlimited by Golf body generation, fuel, nominal displacement, stock power and stock torque."
+    ],
+    "consensusGroup": "vag-golf-iv-1900-diesel-150"
+  },
+  {
+    "id": "shiftech-10546",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/1.6-tdi-cr-90",
+    "retrievedAt": "2026-09-15T22:31:36.805Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9124c1dcd25c0efd23cd6f892a9069ccdc6fd4888dab29d73b1d1dd292b1b178",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI CR",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 320,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [
+      "These figures must not be transferred to smaller Polo/Fabia/Ibiza/A1 applications; provider notes different intake/intercooler limits."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred.",
+      "Independently matched with Unlimited by Golf body generation, fuel, nominal displacement, stock power and stock torque."
+    ],
+    "consensusGroup": "vag-golf-vi-1600-diesel-90"
+  },
+  {
+    "id": "shiftech-10547",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/1.6-tdi-cr-105",
+    "retrievedAt": "2026-09-15T22:31:38.528Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "72822dc344dca52b4d9d03c20f336b84851a525242da53169677f26da9fb50c1",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI CR",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 320,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [
+      "These figures must not be transferred to smaller Polo/Fabia/Ibiza/A1 applications; provider notes different intake/intercooler limits."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred.",
+      "Independently matched with Unlimited by Golf body generation, fuel, nominal displacement, stock power and stock torque."
+    ],
+    "consensusGroup": "vag-golf-vi-1600-diesel-105"
+  },
+  {
+    "id": "shiftech-10571",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/diesel/1.6-tdi-eu5-90",
+    "retrievedAt": "2026-09-15T22:31:59.888Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c34aa6376538d0a7e5ce1be189cf02b9a2df9512186f7166edb569293f04e260",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU5",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10572",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/diesel/1.6-tdi-eu5-105",
+    "retrievedAt": "2026-09-15T22:32:01.436Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1d45a6262cb8329f426218ed69d76e88c8108fcc3ec00e98fc5ff959ec73b501",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU5",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10573",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/diesel/1.6-tdi-eu5-110",
+    "retrievedAt": "2026-09-15T22:32:03.612Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "abecba9a99217ba19d4522ef44080bd8261a228142fb04f35d61b7003e4c88d7",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU5",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10588",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/diesel/1.6-tdi-eu6-110",
+    "retrievedAt": "2026-09-15T22:32:05.351Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6013bb26b8e21355a8bc75652b7b5b27b0b36f7768def2484d0b4faed3a81919",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU6",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10602",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/diesel/1.6-tdi-eu6-115",
+    "retrievedAt": "2026-09-15T22:32:06.885Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "41bd65c67ee8a6282038930af5bcc5c1821eb1fb999f7225a9327cf0164eb9c3",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU6",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10597",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/petrol/1.5-tsi-130",
+    "retrievedAt": "2026-09-15T22:32:08.410Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "56155b84ca0448c284ef20853b0b232afa0f937e0de2850824e734bd016a8838",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TSI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred.",
+      "Independently matched with Unlimited by Golf body generation, fuel, nominal displacement, stock power and stock torque."
+    ],
+    "consensusGroup": "vag-golf-vii-mkii-1500-petrol-130"
+  },
+  {
+    "id": "shiftech-10598",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/petrol/1.5-tsi-150",
+    "retrievedAt": "2026-09-15T22:32:10.221Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bf40ac16be7a53283ff3c086083e6c6b8307505adc1d49b6e20c6a4d0499ff11",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TSI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred.",
+      "Independently matched with Unlimited by Golf body generation, fuel, nominal displacement, stock power and stock torque."
+    ],
+    "consensusGroup": "vag-golf-vii-mkii-1500-petrol-150"
+  },
+  {
+    "id": "shiftech-10567",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/1.4-tsi-tfsi-ss-140",
+    "retrievedAt": "2026-09-15T22:32:11.954Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "779b27fd72ae8633cbf76d12a35eb958df81496f871774f14f87950107bd0955",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.4 TSI/TFSI S&S",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10570",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/1.4-tsi-tfsi-ss-150",
+    "retrievedAt": "2026-09-15T22:32:13.694Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "47deb28df561380641294e3dc8ba590700f7c0f3b34837f97dbb96af430d875b",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.4 TSI/TFSI S&S",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10582",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/1.4-tsi-tfsi-ss-125",
+    "retrievedAt": "2026-09-15T22:32:15.343Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "650373ca49f0b8b80c7770698e75912db9eeb3219f689b5dfaec7c129dfc5173",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.4 TSI/TFSI S&S",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 125,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 250
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred.",
+      "Independently matched with Unlimited by Golf body generation, fuel, nominal displacement, stock power and stock torque."
+    ],
+    "consensusGroup": "vag-golf-vii-mki-1400-petrol-125"
+  },
+  {
+    "id": "shiftech-10586",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/1.4-tsi-tfsi-ss-122",
+    "retrievedAt": "2026-09-15T22:32:16.866Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6b02eeb1a900ca75ecbce01a942038a0fddba8b31e51e5b344fd82f9becea468",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.4 TSI/TFSI S&S",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 122,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 240
+      },
+      "stage2": {
+        "powerHp": 163,
+        "torqueNm": 252,
+        "conditions": [
+          "Published Stage 2 assumes an exhaust/downpipe with sport catalyst; intercooler or intake changes may also be required."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10566",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/2.0-tsi-220",
+    "retrievedAt": "2026-09-15T22:32:18.434Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7cd20b52f7e18611dd141f52250551bd94b0ace4bd06419564d4ab8a54d2b233",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TSI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 220,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 270,
+        "torqueNm": 430,
+        "conditions": [
+          "Published Stage 2 assumes an exhaust/downpipe with sport catalyst; intercooler or intake changes may also be required."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10576",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/2.0-tsi-230",
+    "retrievedAt": "2026-09-15T22:32:20.104Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7679ea92f4a7c79a3c88afc00ddabec42f3a384b188e679f069fa069d78ff73f",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TSI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 230,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 440
+      },
+      "stage2": {
+        "powerHp": 315,
+        "torqueNm": 462,
+        "conditions": [
+          "Published Stage 2 assumes an exhaust/downpipe with sport catalyst; intercooler or intake changes may also be required."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10594",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/2.0-tsi-300",
+    "retrievedAt": "2026-09-15T22:32:22.137Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "99943e4bd091f91298da75c29a2a6e60ce687dbe02620f4cfcf42f116398b7b8",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TSI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 300,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 350,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 368,
+        "torqueNm": 483,
+        "conditions": [
+          "Published Stage 2 assumes an exhaust/downpipe with sport catalyst; intercooler or intake changes may also be required."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10600",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/petrol/2.0-tsi-performance-245",
+    "retrievedAt": "2026-09-15T22:32:23.830Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f01350ac4388492ff31b611862b3f497b53a79bd88531a63dd23e0cc750a7ea4",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TSI Performance",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 245,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 315,
+        "torqueNm": 440
+      },
+      "stage2": {
+        "powerHp": 330,
+        "torqueNm": 460,
+        "conditions": [
+          "Published Stage 2 assumes an exhaust/downpipe with sport catalyst; intercooler or intake changes may also be required."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10601",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/petrol/2.0-tsi-310",
+    "retrievedAt": "2026-09-15T22:32:25.370Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ff3f52e259f62aac9c3ccd06e321340d65a3cd95126921ace3f662a7b414ca8a",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TSI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 310,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 360,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 378,
+        "torqueNm": 483,
+        "conditions": [
+          "Published Stage 2 assumes an exhaust/downpipe with sport catalyst; intercooler or intake changes may also be required."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10614",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2020-viii/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:32:35.844Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "db587776576e278cb2bb9ee94cedb8f0197caa89bbeccaabf82a2ea6becd2696",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VIII",
+      "yearFrom": 2020,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 440
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 460,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10615",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2020-viii/diesel/2.0-tdi-cr-eu6-115",
+    "retrievedAt": "2026-09-15T22:32:37.574Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7d64716cb28fc7f1c8617d57d058e0fbe348b5bc07802d92ad9422471c710bfc",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VIII",
+      "yearFrom": 2020,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 420,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10618",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2020-viii/diesel/2.0-tdi-gtd-200",
+    "retrievedAt": "2026-09-15T22:32:39.073Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e224645c83f5f1ef3dd9ffc421058f549f601a32e6b442dfbfcc29942a7a7a45",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VIII",
+      "yearFrom": 2020,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI GTD",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 200,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 230,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 240,
+        "torqueNm": 480,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10747",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2010-b7/diesel/2.0-tdi-cr-140",
+    "retrievedAt": "2026-09-15T22:32:40.968Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3968cdd29486ccdf47807827ad10f417e31de395d28873486314762b1aed61a1",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B7",
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 410
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 430,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10754",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2010-b7/diesel/2.0-tdi-cr-170",
+    "retrievedAt": "2026-09-15T22:32:43.997Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c0fe3beb60cb960cbb3574af65473d8e35b6719bcd911087183a99e757d579b4",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B7",
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 205,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 215,
+        "torqueNm": 440,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10763",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2010-b7/diesel/2.0-tdi-cr-177",
+    "retrievedAt": "2026-09-15T22:32:45.582Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dc4a3d10873f037aec16ef810d3ab1d9ba9150dd273bea3a9575967f0f96e95c",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B7",
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 177,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 470,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10767",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-190",
+    "retrievedAt": "2026-09-15T22:32:47.195Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5290821a29d1617a9e8b2ea7bc175aa9fc617d2c66585d3b1241dd62671e633c",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B8",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 230,
+        "torqueNm": 470,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10768",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-240",
+    "retrievedAt": "2026-09-15T22:32:48.904Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "34155bfd88056afc8d04063324d831db3f0a7363a7695ebf7c241338db8e3acf",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B8",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 240,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 290,
+        "torqueNm": 580
+      },
+      "stage2": {
+        "powerHp": 300,
+        "torqueNm": 600,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-10772",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:32:50.402Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8502ee202c58e3de82f2c149f4d224efa3830e9ab754db1d4d7359fe904b5af5",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B8",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 440,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-328",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2012-8v/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:32:52.013Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b5dec0e440a99faf3442ec3c69bc10228cbb5ceb1d3e3fd9d7be5d0fc9f95be5",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A3",
+      "generation": "8V",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 440,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-329",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2012-8v/diesel/2.0-tdi-cr-eu6-184",
+    "retrievedAt": "2026-09-15T22:32:53.819Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "438c7da73aa6668b27444f4d44cffbeeff6aef2abc47a50d0a0e8dc59aeb6e1a",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A3",
+      "generation": "8V",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 225,
+        "torqueNm": 480,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-345",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2016-8v-fl/petrol/1.5-tsi-150",
+    "retrievedAt": "2026-09-15T22:32:55.410Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "4b29621dfd24eb4cb6f78e50c347db47b81e584a01c42878f808d19a8ce99d4e",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A3",
+      "generation": "8V-FL",
+      "yearFrom": 2016,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TSI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-416",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2015-b9/diesel/2.0-tdi-cr-eu6-190",
+    "retrievedAt": "2026-09-15T22:32:56.927Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3493f5d3ccb0722121459f7409e7267c6d95cd0ea74877cbc6d358b3b9410bd3",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B9",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 230,
+        "torqueNm": 470,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-423",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2015-b9/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:32:58.675Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "32e01190ee43c035952e18114456eeb291251e2dec243f10c42966f46cbb7f2a",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B9",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 440,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-414",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2015-b9/petrol/2.0-tfsi-190",
+    "retrievedAt": "2026-09-15T22:33:00.384Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ecf23f53cc0fd078bf012b8f84a4d7d44d9bb34fd02e5c9ed2b39769330d9290",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B9",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TFSI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 273,
+        "torqueNm": 420,
+        "conditions": [
+          "Published Stage 2 assumes an exhaust/downpipe with sport catalyst; intercooler or intake changes may also be required."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-415",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2015-b9/petrol/2.0-tfsi-252",
+    "retrievedAt": "2026-09-15T22:33:01.881Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d39d68a55662ff8b8e7043a3363adffe019b0da5254bc08cc58329dd1f22202f",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B9",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TFSI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 252,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 440
+      },
+      "stage2": {
+        "powerHp": 315,
+        "torqueNm": 462,
+        "conditions": [
+          "Published Stage 2 assumes an exhaust/downpipe with sport catalyst; intercooler or intake changes may also be required."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-539",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2011-c7/diesel/3.0-tdi-313",
+    "retrievedAt": "2026-09-15T22:33:27.150Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "480868cb962f87bd9bafb1f99d7d96ced0b1afda701ea421ecf70e19144849f8",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A6",
+      "generation": "C7",
+      "yearFrom": 2011,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "3.0 TDI",
+      "displacementCc": 3000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 313,
+      "stockTorqueNm": 650,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 350,
+        "torqueNm": 720
+      },
+      "stage2": {
+        "powerHp": 360,
+        "torqueNm": 740,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-542",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2011-c7/diesel/3.0-tdi-245",
+    "retrievedAt": "2026-09-15T22:33:28.835Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2331c9ea530f04435882dd1311b9f6549a98802597f753f263fb19639160261a",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A6",
+      "generation": "C7",
+      "yearFrom": 2011,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "3.0 TDI",
+      "displacementCc": 3000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 245,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 620
+      },
+      "stage2": {
+        "powerHp": 310,
+        "torqueNm": 640,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-548",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2011-c7/diesel/3.0-tdi-eu6-272",
+    "retrievedAt": "2026-09-15T22:33:30.402Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "01c7360adc6a9b52c11c3a8d5d3c6dc6d00414d7f7ced71a2402a74bf64ba899",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A6",
+      "generation": "C7",
+      "yearFrom": 2011,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "3.0 TDI EU6",
+      "displacementCc": 3000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 272,
+      "stockTorqueNm": 580,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 320,
+        "torqueNm": 660
+      },
+      "stage2": {
+        "powerHp": 330,
+        "torqueNm": 680,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-549",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2011-c7/diesel/3.0-tdi-eu6-320",
+    "retrievedAt": "2026-09-15T22:33:31.889Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "66c55959e98847a9a830ccb05f73b82d65605c54847efd4192f17905168b32a2",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A6",
+      "generation": "C7",
+      "yearFrom": 2011,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "3.0 TDI EU6",
+      "displacementCc": 3000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 320,
+      "stockTorqueNm": 650,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 380,
+        "torqueNm": 750
+      },
+      "stage2": {
+        "powerHp": 390,
+        "torqueNm": 770,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9433",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/1.6-tdi-eu5-105",
+    "retrievedAt": "2026-09-15T22:33:33.628Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7de8d2cb764faa4e48c5a5f6c287683ee6d3670463ebf0f5126566eaaa729487",
+    "identity": {
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK1",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU5",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9434",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/1.6-tdi-eu5-110",
+    "retrievedAt": "2026-09-15T22:33:35.781Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "963612f6d1a1190fa1cc2457d65eba018482dfa38dbc9406a8e3ff995a5a9bbd",
+    "identity": {
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK1",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU5",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9435",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:33:37.420Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "743f9bef01c1d5e4fecd16b44854d9f365f1639fec1b95a0b7c2bd64cf1664b4",
+    "identity": {
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK1",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 440,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9436",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/2.0-tdi-cr-eu6-184",
+    "retrievedAt": "2026-09-15T22:33:39.094Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "842af1f1c28403693fd55be089f9644e072b5f7adbfab476885847dff1d6b248",
+    "identity": {
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK1",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 225,
+        "torqueNm": 480,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9458",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2017-5f-mk2/petrol/1.5-tsi-130",
+    "retrievedAt": "2026-09-15T22:33:40.836Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a60ad7c3e89ab2cff89a861aa442f00e0c450fda46af917312b5f0606e474c3e",
+    "identity": {
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK2",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TSI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9461",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2017-5f-mk2/petrol/1.5-tsi-150",
+    "retrievedAt": "2026-09-15T22:33:42.652Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9c25d4ead1ab878fb284f2fa657fd740c358324b39ca25b393a3ff0fa2fe9a46",
+    "identity": {
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK2",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TSI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9625",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/1.6-tdi-eu5-105",
+    "retrievedAt": "2026-09-15T22:33:44.471Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3eaf64ebb6e6e13fb3661192d10ec6a714193019b320b13acad921d2fa90b195",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU5",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9626",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/1.6-tdi-eu5-110",
+    "retrievedAt": "2026-09-15T22:33:46.223Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "cfb0e01373b18a4bbaaaa9d570b1e7113381cef32a74950579ed89e1fe543b13",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU5",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9636",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/1.6-tdi-cr-105",
+    "retrievedAt": "2026-09-15T22:33:48.468Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "016472ed032d401d7ee0f0b7b411cb27f0f1ba224a910478c845561fb55c4138",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI CR",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 320,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [
+      "These figures must not be transferred to smaller Polo/Fabia/Ibiza/A1 applications; provider notes different intake/intercooler limits."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9637",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/1.6-tdi-eu6-110",
+    "retrievedAt": "2026-09-15T22:33:50.311Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7c95be1b7df5aba0592fb772b57a63b0ebc4a2c710792a91442a66121d708dbf",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU6",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9628",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/2.0-tdi-cr-eu6-150",
+    "retrievedAt": "2026-09-15T22:33:52.088Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dd6f8551757cc9c8b9c1bc68a3e1aa6a9e6ed987c02e3ea489880fd0031830bb",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 440,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9629",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/diesel/2.0-tdi-cr-eu6-184",
+    "retrievedAt": "2026-09-15T22:33:53.803Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "949da44d8a50f7473e25078d7baf078865c65459d8668bd52314be1e40b77e43",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 225,
+        "torqueNm": 480,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; the page does not specify a diesel hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9653",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2017/petrol/1.5-tsi-150",
+    "retrievedAt": "2026-09-15T22:33:55.448Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c03ddf40357cb40f7e612f795a658d45aed90f8c41e7b2efdad5967e7c70ea31",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TSI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "shiftech-9649",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2017/petrol/2.0-tsi-245",
+    "retrievedAt": "2026-09-15T22:33:56.989Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7633067934dce783d1d8a12297cdd79340ceb2cc13ef6e5e4264ac182f71a5aa",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TSI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 245,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 305,
+        "torqueNm": 430
+      },
+      "stage2": {
+        "powerHp": 320,
+        "torqueNm": 452,
+        "conditions": [
+          "Published Stage 2 assumes an exhaust/downpipe with sport catalyst; intercooler or intake changes may also be required."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The provider uses metric European hp/ch figures; original numbers are retained.",
+      "Only the published generation start is known; no end year or exact displacement is inferred."
+    ]
+  },
+  {
+    "id": "unlimited-golf-4-1-9-tdi-90",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-4-1-9-tdi-90-pk.html",
+    "retrievedAt": "2026-09-15T22:49:57.233Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "8d7594d57a743e1d749f5d87baae21fd61cd309059e0af0961f14af1a7e588bb",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-4-1997-t-m-2003.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2003,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 210,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 120,
+        "torqueNm": 280
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred."
+    ],
+    "consensusGroup": "vag-golf-iv-1900-diesel-90"
+  },
+  {
+    "id": "unlimited-golf-4-1-9-tdi-110",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-4-1-9-tdi-110-pk.html",
+    "retrievedAt": "2026-09-15T22:49:59.199Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "caaacac744e1c20edefd8e494f76185e878a62c74c18a3d05b2f40604c544116",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-4-1997-t-m-2003.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2003,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 235,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred."
+    ],
+    "consensusGroup": "vag-golf-iv-1900-diesel-110"
+  },
+  {
+    "id": "unlimited-golf-4-1-9-tdi-130",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-4-1-9-tdi-130-pk.html",
+    "retrievedAt": "2026-09-15T22:50:01.127Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "2b427f95080efc00dfa11e4e3c2973d9beb431febd5c9fb2e479efe82e79973d",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-4-1997-t-m-2003.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2003,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 310,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 165,
+        "torqueNm": 395
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred."
+    ],
+    "consensusGroup": "vag-golf-iv-1900-diesel-130"
+  },
+  {
+    "id": "unlimited-golf-4-1-9-tdi-150",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-4-1-9-tdi-150-pk.html",
+    "retrievedAt": "2026-09-15T22:50:03.268Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "f6de0c4c849e41457f5562b91dd10dbcdc8a49be7e5cea936c2a4fb7c84e6cb3",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-4-1997-t-m-2003.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2003,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.9 TDI",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 400
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred."
+    ],
+    "consensusGroup": "vag-golf-iv-1900-diesel-150"
+  },
+  {
+    "id": "unlimited-golf-6-1-6-tdi-90",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-6-1-6-tdi-90-pk.html",
+    "retrievedAt": "2026-09-15T22:50:05.169Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "f1c26937db2558abb69ce2c9baf0bc63f6d0e3214ab67c2529dfdf9381c71458",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-6-2008-t-m-2012.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "yearTo": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 300
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred."
+    ],
+    "consensusGroup": "vag-golf-vi-1600-diesel-90"
+  },
+  {
+    "id": "unlimited-golf-6-1-6-tdi-105",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-6-1-6-tdi-105-pk.html",
+    "retrievedAt": "2026-09-15T22:50:07.176Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "9a7fae744438e4b94d346715f4a896ee8f0eb0a02f3a52a57fac5c5497e7b832",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-6-2008-t-m-2012.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "yearTo": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 325
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred."
+    ],
+    "consensusGroup": "vag-golf-vi-1600-diesel-105"
+  },
+  {
+    "id": "unlimited-golf-7-1-4-tsi-125",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-1-4-tsi-125-pk.html",
+    "retrievedAt": "2026-09-15T22:50:09.147Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "8fcc072e4935045f4b48ea6ad8e9f58f2b5e0b8c2f361f74df934a1c70cd711f",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-7-2012-t-m-nu.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.4 TSI",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 125,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 270
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred."
+    ],
+    "consensusGroup": "vag-golf-vii-mki-1400-petrol-125"
+  },
+  {
+    "id": "unlimited-golf-7-2-0-gti-performance-230",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-2-0-gti-performance-230-pk.html",
+    "retrievedAt": "2026-09-15T22:50:11.255Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "0e301725120e00fc8244f1ced6191004c329424ed9576d87babc20fb0b46ed37",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-7-2012-t-m-nu.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 GTI Performance",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 230,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 305,
+        "torqueNm": 460
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred.",
+      "Stock torque differs from Shiftech (370 Nm). Kept separate pending applicable engine/gearbox verification."
+    ]
+  },
+  {
+    "id": "unlimited-golf-7-mk2-1-5-tsi-150",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-mk2-1-5-tsi-150-pk.html",
+    "retrievedAt": "2026-09-15T22:44:42.102Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "53b338a0c17664f54004407ed53a68fd93e3f3676ad42142df93ab7fe6e5b40d",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-7-mk2-2016-heden.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TSI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred."
+    ],
+    "consensusGroup": "vag-golf-vii-mkii-1500-petrol-150"
+  },
+  {
+    "id": "unlimited-golf-7-mk2-1-5-tsi-130",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-mk2-1-5-tsi-130-pk.html",
+    "retrievedAt": "2026-09-15T22:50:13.197Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "ad44b0c5e26b1729e502e07d57e98f2da7bbb251566ac055b16d674d1889a291",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-7-mk2-2016-heden.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TSI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred."
+    ],
+    "consensusGroup": "vag-golf-vii-mkii-1500-petrol-130"
+  },
+  {
+    "id": "unlimited-golf-7-mk2-2-0-tsi-gti-perfomance-245",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning public application table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-7-mk2-2-0-tsi-gti-perfomance-245-pk.html",
+    "retrievedAt": "2026-09-15T22:50:15.291Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "b91839cd4c89cd5d621f1f13df3e4b0f46845140675823c6aec5545a67867fc4",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/golf-7-mk2-2016-heden.html",
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TSI GTI Perfomance",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 245,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 310,
+        "torqueNm": 440
+      },
+      "stage3": {
+        "powerHp": 450,
+        "torqueNm": 600,
+        "conditions": [
+          "Provider labels this output Stage 3 but publishes no applicable hardware bill of materials. Configuration and hardware require individual review; this is not an approved NoordTune package."
+        ]
+      }
+    },
+    "notes": [
+      "Normal maps to Stage 1 on the provider tuning-packages page. Xtreme maps to Stage 1.5 and is not relabelled Stage 2.",
+      "Year band comes from the visible provider Golf generation navigation, not the possibly stale URL.",
+      "Original Dutch pk values are metric PS. No exact displacement or engine code is inferred.",
+      "Stock torque differs from Shiftech (370 Nm). Kept separate pending applicable engine/gearbox verification."
+    ]
+  }
+]

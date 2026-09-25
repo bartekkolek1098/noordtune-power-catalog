@@ -1,0 +1,67 @@
+{
+  "validatedCodeCommit": "9093573",
+  "datasetFingerprint": "cd53d92eab366f636915cd882fafc8332e0bcb8762b371056ca1df85f7f4b0f5",
+  "steps": [
+    {
+      "exitCode": 0,
+      "name": "audit",
+      "seconds": 5.0167641
+    },
+    {
+      "exitCode": 0,
+      "name": "tuning",
+      "seconds": 39.4914546
+    },
+    {
+      "exitCode": 0,
+      "name": "v2",
+      "seconds": 21.9016329
+    },
+    {
+      "exitCode": 0,
+      "name": "v3",
+      "seconds": 1.1550756
+    },
+    {
+      "exitCode": 0,
+      "name": "lint",
+      "seconds": 4.836656
+    },
+    {
+      "exitCode": 0,
+      "name": "typecheck",
+      "seconds": 6.2246233
+    },
+    {
+      "exitCode": 0,
+      "name": "build",
+      "seconds": 28.1777406
+    }
+  ],
+  "publicVehicles": 24,
+  "sitemapUrls": 291,
+  "criticalAuditGroups": 0,
+  "existingWarningGroups": 18,
+  "clientImportsServerCatalog": 0,
+  "clientImportsSourcedDataset": 0,
+  "browser": {
+    "realRegistrations": 23,
+    "realIdentities": 17,
+    "ownerAndSynthetic": 28,
+    "publicAndManualStage3": 9,
+    "errors": 0,
+    "localServer": "http://localhost:3120",
+    "setup": "Production server bound to localhost. The initial IPv4-only binding was incompatible with the local intl middleware proxy; no application change was required."
+  },
+  "finalQaReportChecks": {
+    "checkedAt": "2026-09-16T18:22:52.354Z",
+    "top50ClosureRecords": 44,
+    "commands": [
+      "pnpm test:nl-fleet-v3",
+      "pnpm lint",
+      "pnpm typecheck"
+    ],
+    "exitCode": 0,
+    "runtimeDatasetUnchanged": true
+  }
+}

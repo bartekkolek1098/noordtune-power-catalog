@@ -1,3 +1,4 @@
+import {customerVehicle} from "@/lib/customer-profile";
 import {notFound} from "next/navigation";
 import {ArrowLeft} from "lucide-react";
 import {engineCatalog, getVehicleById} from "@/data/catalog";
@@ -11,6 +12,7 @@ import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
 import {catalogHref, chiptuningHref, mainLocaleHref} from "@/lib/noordtune-links";
+import {catalogVerificationCopy} from "@/lib/catalog-verification-copy";
 import {
   absoluteUrl,
   alternateLanguageUrls,
@@ -191,12 +193,12 @@ export default async function VehiclePage({params}: PageProps) {
 
       {vehicle.verificationRequired ? (
         <CatalogVerificationNotice
-          text={{
+          text={catalogVerificationCopy(vehicle, safeLocale, {
             badge: t("verification.badge"),
             title: t("verification.title"),
             text: t("verification.text"),
             footer: t("verification.footer")
-          }}
+          })}
         />
       ) : null}
 
@@ -257,7 +259,7 @@ export default async function VehiclePage({params}: PageProps) {
               quoteSelected: t("recommendation.quoteSelected")
             }
           }}
-          vehicle={vehicle}
+          vehicle={customerVehicle(vehicle)}
         />
         <SeoInfoSections
           cards={seoCards}

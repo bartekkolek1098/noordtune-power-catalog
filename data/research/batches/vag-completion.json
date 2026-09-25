@@ -1,0 +1,283 @@
+[
+  {
+    "id": "shiftech-10769",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/1.6-tdi-eu6-120",
+    "retrievedAt": "2026-09-15T23:14:54.446Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "27cd51efcd570a54e57530fedab7a3dfc05881a32dc9f0a5708d8bd72da0a01d",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B8",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 TDI EU6",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 260,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded."
+    ]
+  },
+  {
+    "id": "shiftech-10548",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/2.0-tdi-cr-110",
+    "retrievedAt": "2026-09-15T23:14:58.064Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "820cc9c954b800714bb44aea1ade1e15e22b857d916e46a9e4a87b1dee09e2a2",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 370
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 390,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [
+      "Provider describes this 110 PS variant as electronically restricted relative to the 140 PS engine. This is an external source claim; hardware equivalence is not independently confirmed."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded."
+    ]
+  },
+  {
+    "id": "shiftech-11075",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/transporter-multivan-caravelle/2015-t6/diesel/2.0-tdi-cr-eu6-204",
+    "retrievedAt": "2026-09-15T23:15:01.715Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c1ad16c95b9a07bbc23fe50e2fe46b27327d0dd8eb235a25b876047b5c6f32ef",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Transporter / Multivan / Caravelle",
+      "generation": "T6",
+      "aliases": [
+        "Transporter",
+        "Multivan",
+        "Caravelle"
+      ],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDI CR EU6",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 230,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 240,
+        "torqueNm": 520,
+        "conditions": [
+          "Published Stage 2 is hardware-dependent; this page provides no diesel-specific hardware bill of materials."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded."
+    ]
+  },
+  {
+    "id": "shiftech-318",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2012-8v/petrol/1.8-tsi-tfsi-180",
+    "retrievedAt": "2026-09-15T23:15:05.401Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3eca4038fb623fa3042ce3e3c5743c2e1eedbea42f000cc95dd6d1e40af357c1",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A3",
+      "generation": "8V",
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.8 TSI / TFSI",
+      "displacementCc": 1800,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 320
+      }
+    },
+    "conditions": [
+      "Provider specifically limits torque to 320 Nm for DSG7. This published limit does not identify the transmission installed on a particular vehicle."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded.",
+      "The page identifies a 1.8 TSI/TFSI application but does not explicitly identify the EA888 family code. Family code remains unspecified pending source confirmation."
+    ]
+  },
+  {
+    "id": "shiftech-9612",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.8-tsi-tfsi-160",
+    "retrievedAt": "2026-09-15T23:15:09.097Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8d417317c69af93db89a22914bc601b78be019d80e71b3d05e383346de49ef84",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2005",
+      "yearFrom": 2005,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.8 TSI TFSI",
+      "displacementCc": 1800,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 160,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 320
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 330,
+        "conditions": [
+          "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded.",
+      "The page identifies a 1.8 TSI/TFSI application but does not explicitly identify the EA888 family code. Family code remains unspecified pending source confirmation."
+    ]
+  },
+  {
+    "id": "shiftech-9457",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2017-5f-mk2/petrol/2.0-tsi-300",
+    "retrievedAt": "2026-09-15T23:14:18.820Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "288fc870ba307d695846f728239316f4a22dec680b4321219f963e69a12a97a1",
+    "identity": {
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK2",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TSI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 300,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 350,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 368,
+        "torqueNm": 483,
+        "conditions": [
+          "Published Stage 2 requires appropriate exhaust/downpipe with sport catalyst; intake and cooling may also be required. Exact hardware configuration requires review."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered public application-page text, not a raw HTTP response.",
+      "Original European hp/ch figures are retained as metric PS; original Nm values are unchanged.",
+      "Only the published generation start is known. No end year, exact displacement, engine code, cylinder count, installed gearbox or ECU is inferred.",
+      "E85/Flex and gearbox sections are excluded; only explicitly labelled Stage 1/2/3 tuning tables are recorded.",
+      "The provider labels this application Leon 2.0 TSI 300 PS and does not explicitly state Cupra branding. The original model/engine label is retained."
+    ]
+  }
+]

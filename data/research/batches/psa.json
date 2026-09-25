@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "shiftech-8086",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2013-phase-i/diesel/1.6-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:32:24.059Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2117c3f566e6d8943eadeaacee831bea7eb4a402ad11c4c7001ec886356727b1",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE I",
+      "aliases": [],
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 BlueHDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 355
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 375,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot 308; generation label: 2013 - II- PHASE I; engine: 1.6 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-8087",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2013-phase-i/diesel/1.6-hdi-92",
+    "retrievedAt": "2026-09-15T22:32:27.506Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ead0f19f4bc84aca742123913f224dcade1842153f8c412e210706cdc8c01f40",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE I",
+      "aliases": [],
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 HDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 92,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 115,
+        "torqueNm": 270
+      },
+      "stage2": {
+        "powerHp": 125,
+        "torqueNm": 290,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot 308; generation label: 2013 - II- PHASE I; engine: 1.6 HDI."
+    ]
+  },
+  {
+    "id": "shiftech-8088",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2013-phase-i/diesel/1.6-hdi-115",
+    "retrievedAt": "2026-09-15T22:32:31.170Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dbe9ebf80c156ea97062423ea30a5b4e711dff5d233819cbe43112da74398c49",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE I",
+      "aliases": [],
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 HDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 270,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 330
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 350,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot 308; generation label: 2013 - II- PHASE I; engine: 1.6 HDI."
+    ]
+  },
+  {
+    "id": "shiftech-8090",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2013-phase-i/diesel/2.0-bluehdi-150",
+    "retrievedAt": "2026-09-15T22:32:34.584Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "aa1b965629146a40be1b1f68c1ab1921fde3bf2aade875514a357f733ed912d9",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE I",
+      "aliases": [],
+      "yearFrom": 2013,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot 308; generation label: 2013 - II- PHASE I; engine: 2.0 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-8106",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2017-phase-ii/diesel/1.5-bluehdi-100",
+    "retrievedAt": "2026-09-15T22:32:38.028Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c91dafbe4e362887f43c935828a29e56007e9342ca34eb78a8ac365d8fa635db",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE II",
+      "aliases": [],
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 BlueHDI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 100,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 130,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 140,
+        "torqueNm": 320,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot 308; generation label: 2017 - II- PHASE II; engine: 1.5 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-8112",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/308/2017-phase-ii/diesel/1.5-bluehdi-130",
+    "retrievedAt": "2026-09-15T22:32:41.603Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b9ee2d394a6ce1d5c350e26c72aaa90e4857e71057b6f3071ea74d7a6234067e",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE II",
+      "aliases": [],
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 BlueHDI",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 160,
+        "torqueNm": 360,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot 308; generation label: 2017 - II- PHASE II; engine: 1.5 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-8253",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/1.6-bluehdi-ss-95",
+    "retrievedAt": "2026-09-15T22:32:46.864Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "770ea1fd74bde844cd508210993e80b18be3e343560b5c977a0c2fbde49a77ab",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "aliases": [
+        "Traveller"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 BlueHDI S&S",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 95,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 130,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 130,
+        "torqueNm": 280,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed.",
+      "NON_MONOTONIC_SOURCE_STAGE_TORQUE: source Stage 2 output is below Stage 1 in at least one metric. Source values are preserved for owner review, not silently corrected."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot Expert / Traveller; generation label: 2016 - III; engine: 1.6 BlueHDI S&S."
+    ]
+  },
+  {
+    "id": "shiftech-8254",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/1.6-bluehdi-115",
+    "retrievedAt": "2026-09-15T22:32:50.280Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d0963369aaf5dc3bb066371964e0c1bd74788e4266b9b9648aac9ade0a1e0f77",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "aliases": [
+        "Traveller"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 BlueHDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 360,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot Expert / Traveller; generation label: 2016 - III; engine: 1.6 BlueHDI.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "consensusGroup": "verified-shiftech-8254-unlimited",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-1-6-bluehdi-115-pk.html",
+      "https://www.unlimitedtuning.nl/peugeot/chiptuning-peugeot-expert/2016-t-m-nu.html"
+    ]
+  },
+  {
+    "id": "shiftech-8255",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/2.0-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:32:54.034Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e2b04d100f54b1b1cb017509fc2695ade2341a34b09f5b570387a1a238242fa0",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "aliases": [
+        "Traveller"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot Expert / Traveller; generation label: 2016 - III; engine: 2.0 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-8256",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/2.0-bluehdi-180",
+    "retrievedAt": "2026-09-15T22:32:57.944Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "db9b9e4483767e2ea8425d5f3aa427ac1529053fb8c89ac36ec3c6d8e45e32ee",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "aliases": [
+        "Traveller"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot Expert / Traveller; generation label: 2016 - III; engine: 2.0 BlueHDI.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "consensusGroup": "verified-shiftech-8256-unlimited",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-2-0-bluehdi-180-pk.html",
+      "https://www.unlimitedtuning.nl/peugeot/chiptuning-peugeot-expert/2016-t-m-nu.html"
+    ]
+  },
+  {
+    "id": "shiftech-8257",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/2.0-bluehdi-150",
+    "retrievedAt": "2026-09-15T22:34:28.221Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "030c3a7fca9d1ce3455f5a97d38710b109415d1894493478970fdb98f90ffb93",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "aliases": [
+        "Traveller"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot Expert / Traveller; generation label: 2016 - III; engine: 2.0 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-8231",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2014-ii-phase-ii/diesel/2.0-bluehdi-130",
+    "retrievedAt": "2026-09-15T22:34:31.579Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e253b0b8a376f32d28e55b7406d64b7df9aea10533f64f24c9f1a7d889dcf156",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Boxer",
+      "generation": "II - Phase II",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 420,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot Boxer; generation label: 2014 - II - Phase II; engine: 2.0 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-8232",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2014-ii-phase-ii/diesel/2.0-bluehdi-160",
+    "retrievedAt": "2026-09-15T22:34:35.875Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "621ed05748e0f7afeab53ad9e3ea5535f5a839b3e9b73603c252238072151534",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Boxer",
+      "generation": "II - Phase II",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 160,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot Boxer; generation label: 2014 - II - Phase II; engine: 2.0 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-8244",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-165",
+    "retrievedAt": "2026-09-15T22:34:39.204Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "599a0617667d7d2f7e672f7cad929cdfad3e56e8d5999a3d2c06109ed23fbf35",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Boxer",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.2 BlueHDI EU6b",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 165,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 195,
+        "torqueNm": 430
+      },
+      "stage2": {
+        "powerHp": 205,
+        "torqueNm": 450,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot Boxer; generation label: 2019 - III; engine: 2.2 BlueHDI EU6b."
+    ]
+  },
+  {
+    "id": "shiftech-433439",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-140",
+    "retrievedAt": "2026-09-15T22:34:42.651Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "62854576caf1e885a4f57716222edbc31ee864b4722370f00b0744f8c91f7196",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Boxer",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.2 BlueHDI EU6b",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 195,
+        "torqueNm": 430
+      },
+      "stage2": {
+        "powerHp": 205,
+        "torqueNm": 450,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Peugeot Boxer; generation label: 2019 - III; engine: 2.2 BlueHDI EU6b."
+    ]
+  },
+  {
+    "id": "shiftech-2574",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:34:45.951Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8422b8c572493c7878f068f39e9b574a7bf804a5c67dea29c473f9e2ba901f46",
+    "identity": {
+      "brand": "Citroën",
+      "modelFamily": "Jumpy",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Citroen Jumpy; generation label: 2016 - III; engine: 2.0 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-2575",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-150",
+    "retrievedAt": "2026-09-15T22:34:49.255Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bbfbc9558b7275944831443aede4db2464b3b25e3e3ba6e7c79ddbfa66708558",
+    "identity": {
+      "brand": "Citroën",
+      "modelFamily": "Jumpy",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Citroen Jumpy; generation label: 2016 - III; engine: 2.0 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-2576",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-180",
+    "retrievedAt": "2026-09-15T22:34:52.650Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9b925ab64b64626b249bf7e77bcbedcc2195fafb01d4fc3e42ff5e720adf3502",
+    "identity": {
+      "brand": "Citroën",
+      "modelFamily": "Jumpy",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Citroen Jumpy; generation label: 2016 - III; engine: 2.0 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-2577",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/1.6-bluehdi-115",
+    "retrievedAt": "2026-09-15T22:34:56.835Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bbfb9e9b21ff578255112cc5400009b97f285ef30a525fc2abc20c4350ae402a",
+    "identity": {
+      "brand": "Citroën",
+      "modelFamily": "Jumpy",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 BlueHDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 360,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Citroen Jumpy; generation label: 2016 - III; engine: 1.6 BlueHDI."
+    ]
+  },
+  {
+    "id": "shiftech-2564",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumper/2019-iii/diesel/2.2-bluehdi-eu6b-140",
+    "retrievedAt": "2026-09-15T22:35:00.393Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "4c245d9081139dc82b35f5e2f2a3646986a715f9d79931db8a63bcb14d6c1df9",
+    "identity": {
+      "brand": "Citroën",
+      "modelFamily": "Jumper",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.2 BlueHDI EU6b",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 195,
+        "torqueNm": 430
+      },
+      "stage2": {
+        "powerHp": 205,
+        "torqueNm": 450,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Citroen Jumper; generation label: 2019 - III; engine: 2.2 BlueHDI EU6b."
+    ]
+  },
+  {
+    "id": "shiftech-7901",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-122",
+    "retrievedAt": "2026-09-15T22:35:55.894Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "df6d9074c00a279720de4600ae597e93ab6c8906410b63e47faaaa5a3daf322b",
+    "identity": {
+      "brand": "Opel",
+      "modelFamily": "Vivaro",
+      "generation": "2019",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 Turbo D EU6d",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 122,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "aspiration": "turbo"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Opel Vivaro; generation label: 2019; engine: 2.0 Turbo D EU6d."
+    ]
+  },
+  {
+    "id": "shiftech-7902",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-150",
+    "retrievedAt": "2026-09-15T22:35:59.485Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bd81ee4e551cc67110637bdd3dd710eefabcf660123dd228660cf225c3c33f56",
+    "identity": {
+      "brand": "Opel",
+      "modelFamily": "Vivaro",
+      "generation": "2019",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 Turbo D EU6d",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "aspiration": "turbo"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Opel Vivaro; generation label: 2019; engine: 2.0 Turbo D EU6d."
+    ]
+  },
+  {
+    "id": "shiftech-7904",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/1.5-turbo-d-102",
+    "retrievedAt": "2026-09-15T22:36:03.063Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "355781cdd5c7a7126c327d5d3f5935e8175cafb7413cc883478c4b5e17da8c33",
+    "identity": {
+      "brand": "Opel",
+      "modelFamily": "Vivaro",
+      "generation": "2019",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 Turbo D",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 102,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "aspiration": "turbo"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 130,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 140,
+        "torqueNm": 320,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Opel Vivaro; generation label: 2019; engine: 1.5 Turbo D."
+    ]
+  },
+  {
+    "id": "shiftech-7905",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-177",
+    "retrievedAt": "2026-09-15T22:36:06.487Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "91df1157bce7828702acf1931e496610ff50eaff64ede349f4fd8ddb69825da3",
+    "identity": {
+      "brand": "Opel",
+      "modelFamily": "Vivaro",
+      "generation": "2019",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 Turbo D",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 177,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "aspiration": "turbo"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Opel Vivaro; generation label: 2019; engine: 2.0 Turbo D."
+    ]
+  },
+  {
+    "id": "shiftech-10212",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/toyota/proace/2020/diesel/2.0-d-4d-122",
+    "retrievedAt": "2026-09-15T22:36:10.182Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "29e30cb5e1458f8838fb29fa9f236d6ffce0fdd1eba02eb68a3f88fba5401834",
+    "identity": {
+      "brand": "Toyota",
+      "modelFamily": "ProAce",
+      "generation": "2020",
+      "aliases": [],
+      "yearFrom": 2020,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 D-4D",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 122,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Toyota ProAce; generation label: 2020; engine: 2.0 D-4D."
+    ]
+  },
+  {
+    "id": "shiftech-10213",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/toyota/proace/2020/diesel/2.0-d-4d-150",
+    "retrievedAt": "2026-09-15T22:36:13.657Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8c7914e23d6c87a2001f50cf8e46624f1cb33fc3e17d61c1425f867d27339ea6",
+    "identity": {
+      "brand": "Toyota",
+      "modelFamily": "ProAce",
+      "generation": "2020",
+      "aliases": [],
+      "yearFrom": 2020,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 D-4D",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Toyota ProAce; generation label: 2020; engine: 2.0 D-4D."
+    ]
+  },
+  {
+    "id": "shiftech-10214",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/toyota/proace/2020/diesel/2.0-d-4d-177",
+    "retrievedAt": "2026-09-15T22:36:17.531Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fcf9048facc6668e8606ec2885afaff5241a5183e49cc1678d7e28065c943f31",
+    "identity": {
+      "brand": "Toyota",
+      "modelFamily": "ProAce",
+      "generation": "2020",
+      "aliases": [],
+      "yearFrom": 2020,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 D-4D",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 177,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Toyota ProAce; generation label: 2020; engine: 2.0 D-4D."
+    ]
+  },
+  {
+    "id": "shiftech-13560",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/movano/2021/diesel/2.2-cdti-140",
+    "retrievedAt": "2026-09-15T22:37:55.348Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f0d92ea0c54c5dfe1dc15c28907a19939a24fc2b6baf13cc0e35914a43e9b132",
+    "identity": {
+      "brand": "Opel",
+      "modelFamily": "Movano",
+      "generation": "2021",
+      "aliases": [],
+      "yearFrom": 2021,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.2 CDTI",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 195,
+        "torqueNm": 430
+      },
+      "stage2": {
+        "powerHp": 205,
+        "torqueNm": 450,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Opel Movano; generation label: 2021; engine: 2.2 CDTI."
+    ]
+  },
+  {
+    "id": "shiftech-13561",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/movano/2021/diesel/2.2-cdti-165",
+    "retrievedAt": "2026-09-15T22:37:58.918Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d503ec2e5d58aa1f92602518549c40b9b31f939ea8a0c14455d474b9dabd0934",
+    "identity": {
+      "brand": "Opel",
+      "modelFamily": "Movano",
+      "generation": "2021",
+      "aliases": [],
+      "yearFrom": 2021,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.2 CDTI",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 165,
+      "stockTorqueNm": 370,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 195,
+        "torqueNm": 430
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Opel Movano; generation label: 2021; engine: 2.2 CDTI."
+    ]
+  },
+  {
+    "id": "unlimited-counterpart-8253",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-1-6-bluehdi-95-pk.html",
+    "retrievedAt": "2026-09-15T22:40:36.497Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "bf07d49eebb740151274b5b93c0928c37ae590999af8ab8e4470dc794888cbc3",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "aliases": [
+        "Traveller"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 BlueHDI S&S",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 95,
+      "stockTorqueNm": 210,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2019
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from 2016 t/m 2019 - Expert - Peugeot - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:35:29.468Z, SHA256 70d0c7c31685dd87cb5c4fa35ebb65c57a65bd57b0068bd9fdaa4f3d83535d51.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":95,\"torqueNm\":210},{\"label\":\"Ecotuning\",\"powerHp\":105,\"torqueNm\":230},{\"label\":\"Normal\",\"powerHp\":130,\"torqueNm\":320},{\"label\":\"Xtreme\",\"powerHp\":140,\"torqueNm\":340}].",
+      "Category title says 2016–2019 while heading says 2016–present; the narrower title band is retained for applicability.",
+      "STOCK_TORQUE_SOURCE_CONFLICT: Shiftech counterpart records 240 Nm, this source records 210 Nm. Facts are retained for research; no accepted stages or consensus pairing until exact configuration is reviewed. Candidate Stage 1: 130 PS / 320 Nm."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/peugeot/chiptuning-peugeot-expert/2016-t-m-nu.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/1.6-bluehdi-ss-95"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Peugeot Expert 1.6 BlueHDI 95 pk."
+    ]
+  },
+  {
+    "id": "unlimited-counterpart-8254",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-1-6-bluehdi-115-pk.html",
+    "retrievedAt": "2026-09-15T22:40:38.476Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "d98d2f189e689736f3491a09fe9d42c407457adc37b8825656356cd9fdbce23b",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "aliases": [
+        "Traveller"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 BlueHDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2019
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from 2016 t/m 2019 - Expert - Peugeot - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:35:29.468Z, SHA256 70d0c7c31685dd87cb5c4fa35ebb65c57a65bd57b0068bd9fdaa4f3d83535d51.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":115,\"torqueNm\":300},{\"label\":\"Ecotuning\",\"powerHp\":125,\"torqueNm\":320},{\"label\":\"Normal\",\"powerHp\":145,\"torqueNm\":350},{\"label\":\"Xtreme\",\"powerHp\":155,\"torqueNm\":370}].",
+      "Category title says 2016–2019 while heading says 2016–present; the narrower title band is retained for applicability."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/peugeot/chiptuning-peugeot-expert/2016-t-m-nu.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/1.6-bluehdi-115"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Peugeot Expert 1.6 BlueHDI 115 pk.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 350
+      }
+    },
+    "consensusGroup": "verified-shiftech-8254-unlimited"
+  },
+  {
+    "id": "unlimited-counterpart-8255",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-2-0-bluehdi-120-pk.html",
+    "retrievedAt": "2026-09-15T22:40:40.517Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "2a53764efaa4b63d6c38bc5e1e3fcec99b346489cf0a484d6d958da4f1ca3e46",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "aliases": [
+        "Traveller"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 310,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2019
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from 2016 t/m 2019 - Expert - Peugeot - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:35:29.468Z, SHA256 70d0c7c31685dd87cb5c4fa35ebb65c57a65bd57b0068bd9fdaa4f3d83535d51.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":120,\"torqueNm\":310},{\"label\":\"Ecotuning\",\"powerHp\":130,\"torqueNm\":330},{\"label\":\"Normal\",\"powerHp\":215,\"torqueNm\":470},{\"label\":\"Xtreme\",\"powerHp\":225,\"torqueNm\":490}].",
+      "Category title says 2016–2019 while heading says 2016–present; the narrower title band is retained for applicability.",
+      "STOCK_TORQUE_SOURCE_CONFLICT: Shiftech counterpart records 320 Nm, this source records 310 Nm. Facts are retained for research; no accepted stages or consensus pairing until exact configuration is reviewed. Candidate Stage 1: 215 PS / 470 Nm."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/peugeot/chiptuning-peugeot-expert/2016-t-m-nu.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/2.0-bluehdi-120"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Peugeot Expert 2.0 BlueHDI 120 pk."
+    ]
+  },
+  {
+    "id": "unlimited-counterpart-8256",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-expert-2-0-bluehdi-180-pk.html",
+    "retrievedAt": "2026-09-15T22:40:42.472Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "9ae927ab801b140297769c1a3aec5196f5f85268437b8347483caf868d26ff38",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "aliases": [
+        "Traveller"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 BlueHDI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2019
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from 2016 t/m 2019 - Expert - Peugeot - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:35:29.468Z, SHA256 70d0c7c31685dd87cb5c4fa35ebb65c57a65bd57b0068bd9fdaa4f3d83535d51.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":180,\"torqueNm\":400},{\"label\":\"Ecotuning\",\"powerHp\":190,\"torqueNm\":420},{\"label\":\"Normal\",\"powerHp\":215,\"torqueNm\":470},{\"label\":\"Xtreme\",\"powerHp\":225,\"torqueNm\":490}].",
+      "Category title says 2016–2019 while heading says 2016–present; the narrower title band is retained for applicability."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/peugeot/chiptuning-peugeot-expert/2016-t-m-nu.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/expert-traveller/2016-iii/diesel/2.0-bluehdi-180"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Peugeot Expert 2.0 BlueHDI 180 pk.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 470
+      }
+    },
+    "consensusGroup": "verified-shiftech-8256-unlimited"
+  }
+]

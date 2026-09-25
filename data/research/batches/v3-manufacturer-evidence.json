@@ -1,0 +1,82 @@
+[
+  {
+    "id": "manufacturer-v3-connect-ecoblue-2018",
+    "provider": "manufacturer",
+    "sourceName": "Official manufacturer technical/model release",
+    "url": "https://ford-no.mynewsdesk.com/pressreleases/nye-ford-transit-connect-med-kraftig-redusert-drivstofforbruk-2580110",
+    "retrievedAt": "2026-09-16T17:22:04.601Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "550957ae43002e9c2bd4dfc8dede5e7f0eb8cd119c8e086659f9ead9b3820a20",
+    "applicability": [
+      "Ford Motor Norge release dated 13 July 2018 introduces the new 1.5-litre EcoBlue diesel for Transit Connect, with 75, 100 and 120 PS outputs. Norwegian availability is August 2018. This supports excluding pre-2018 EcoBlue application years, not identifying an engine from a registration."
+    ],
+    "notes": [
+      "Factual identity/scope reference only; no tuning values or competitor prices."
+    ]
+  },
+  {
+    "id": "manufacturer-v3-sprinter-om654-transition",
+    "provider": "manufacturer",
+    "sourceName": "Official manufacturer technical/model release",
+    "url": "https://media.mercedes-benz.com/article/2b85f050-d753-46fa-8882-98fc066adf32",
+    "retrievedAt": "2026-09-16T17:17:27.335Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "05a28f3d00e995ea6ab08bf774d975f94c0085130434988a5108ee5976ef024b",
+    "applicability": [
+      "Mercedes-Benz release dated 19 July 2021 says OM654 was introduced in rear-drive Sprinter panel vans/chassis at the end of 2020, followed by other variants in autumn 2021. Four output variants: 84 kW/114 PS, 110 kW/150 PS, 125 kW/170 PS, 140 kW/190 PS. No tuning gain or factory hardware equivalence is established."
+    ],
+    "notes": [
+      "Factual identity/scope reference only; no tuning values or competitor prices."
+    ]
+  },
+  {
+    "id": "manufacturer-v3-caddy-fifth-generation",
+    "provider": "manufacturer",
+    "sourceName": "Official manufacturer technical/model release",
+    "url": "https://www.volkswagen-comerciales.es/comunicacion/2020/11/25/quinta-generacion-del-volkswagen-caddy-arranca-su-comercializacion-en-espana/",
+    "retrievedAt": "2026-09-16T17:15:04.636Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "acc53b44cca0ef0d39526bb7e8a836f7f08a34319a6b6d03a7cc4c033c90fda6",
+    "applicability": [
+      "Volkswagen Commercial Vehicles Spanish release dated 25 November 2020 identifies the fifth Caddy generation and diesel variants 55 kW/75 PS, 75 kW/102 PS and 90 kW/122 PS. It distinguishes the discontinued fourth generation from the fifth. This is model/output scope, not installed ECU identification or tuning evidence."
+    ],
+    "notes": [
+      "Factual identity/scope reference only; no tuning values or competitor prices."
+    ]
+  },
+  {
+    "id": "manufacturer-v3-transit-ecoblue-2016",
+    "provider": "manufacturer",
+    "sourceName": "Official manufacturer technical/model release",
+    "url": "https://ford-no.mynewsdesk.com/pressreleases/ny-ford-transit-og-transit-custom-faar-mer-ytelser-og-lavere-kostnader-med-avansert-ny-ford-ecoblue-motor-1384636",
+    "retrievedAt": "2026-09-16T17:35:02.310Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7d27b3708e74a5c577366854e232794953e8f3dbd76ad31401391abac31d11ed",
+    "applicability": [
+      "Ford Motor Norge 26 April 2016 release introduces 2.0 EcoBlue for Transit and Transit Custom in the first half of 2016, replacing the separate 2.2 TDCi. Factory table: 105 PS/360 Nm, 130 PS/385 Nm and 170 PS/405 Nm. These application facts resolve ATM combined 2.0 TDCi EcoBlue wording only; no 1.5 Connect identification or factory de-rating hardware claim."
+    ],
+    "notes": [
+      "Factual identity/scope reference only; no tuning values or competitor prices."
+    ]
+  },
+  {
+    "id": "manufacturer-v3-transit-ecoblue-185",
+    "provider": "manufacturer",
+    "sourceName": "Official manufacturer technical/model release",
+    "url": "https://ford-no.mynewsdesk.com/pressreleases/naa-er-nye-2-tonns-ford-transit-klar-for-bestilling-2923908",
+    "retrievedAt": "2026-09-16T17:35:04.224Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "472b2fa46d4d19ca63877adf273561ca8b3da9d57bab5083824afaf7debb9a23",
+    "applicability": [
+      "Ford Motor Norge 2019 Transit release identifies the revised 2.0 EcoBlue range and new 185 PS/415 Nm diesel. Mild hybrid is an optional separate application; no automatic electrification inference from admission year."
+    ],
+    "notes": [
+      "Factual identity/scope reference only; no tuning values or competitor prices."
+    ]
+  }
+]

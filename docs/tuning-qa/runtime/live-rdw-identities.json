@@ -1,0 +1,355 @@
+{
+  "retrievedAt": "2026-09-15T19:10:16.026Z",
+  "source": "Official RDW Open Data",
+  "dataMinimization": "Only requested make/model, engine capacity/cylinders, first-admission date, type/variant/execution, fuel and registered power. No keeper/owner/address or unrelated raw fields.",
+  "schemas": [
+    {
+      "resource": "m9d7-ebf2",
+      "url": "https://opendata.rdw.nl/api/views/m9d7-ebf2.json",
+      "retrievedAt": "2026-09-15T19:10:16.025Z",
+      "fields": [
+        {
+          "fieldName": "merk",
+          "name": "Merk",
+          "dataTypeName": "text"
+        },
+        {
+          "fieldName": "handelsbenaming",
+          "name": "Handelsbenaming",
+          "dataTypeName": "text"
+        },
+        {
+          "fieldName": "aantal_cilinders",
+          "name": "Aantal cilinders",
+          "dataTypeName": "number"
+        },
+        {
+          "fieldName": "cilinderinhoud",
+          "name": "Cilinderinhoud",
+          "dataTypeName": "number"
+        },
+        {
+          "fieldName": "datum_eerste_toelating",
+          "name": "Datum eerste toelating",
+          "dataTypeName": "number"
+        },
+        {
+          "fieldName": "type",
+          "name": "Type",
+          "dataTypeName": "text"
+        },
+        {
+          "fieldName": "variant",
+          "name": "Variant",
+          "dataTypeName": "text"
+        },
+        {
+          "fieldName": "uitvoering",
+          "name": "Uitvoering",
+          "dataTypeName": "text"
+        },
+        {
+          "fieldName": "datum_eerste_toelating_dt",
+          "name": "Datum eerste toelating DT",
+          "dataTypeName": "calendar_date"
+        }
+      ]
+    },
+    {
+      "resource": "8ys7-d773",
+      "url": "https://opendata.rdw.nl/api/views/8ys7-d773.json",
+      "retrievedAt": "2026-09-15T19:10:16.017Z",
+      "fields": [
+        {
+          "fieldName": "brandstof_omschrijving",
+          "name": "Brandstof omschrijving",
+          "dataTypeName": "text"
+        },
+        {
+          "fieldName": "nettomaximumvermogen",
+          "name": "Nettomaximumvermogen",
+          "dataTypeName": "text"
+        }
+      ]
+    }
+  ],
+  "identities": [
+    {
+      "caseId": "OWNER-A",
+      "officialVehicle": {
+        "merk": "LAND ROVER",
+        "handelsbenaming": "DEFENDER",
+        "cilinderinhoud": "1999",
+        "aantal_cilinders": "4",
+        "datum_eerste_toelating_dt": "2020-06-12T00:00:00.000",
+        "datum_eerste_toelating": "20200612",
+        "type": "LE",
+        "variant": "HCBBC0",
+        "uitvoering": "50AC010"
+      },
+      "officialFuelRows": [
+        {
+          "brandstof_omschrijving": "Diesel",
+          "nettomaximumvermogen": "177.00"
+        }
+      ],
+      "registeredPowerKw": 177,
+      "metricPowerPk": 241,
+      "normalizedIdentity": {
+        "make": "LAND ROVER",
+        "model": "DEFENDER",
+        "fuel": "Diesel",
+        "registeredPower": {
+          "value": 177,
+          "unit": "kW"
+        },
+        "powerKw": 177,
+        "powerHp": 241,
+        "displacementCc": 1999,
+        "firstRegistrationDate": "2020-06-12",
+        "firstRegistrationYear": 2020,
+        "firstAdmissionYear": 2020,
+        "type": "LE",
+        "variant": "HCBBC0",
+        "execution": "50AC010",
+        "cylinders": 4
+      },
+      "provenance": [
+        {
+          "resource": "m9d7-ebf2",
+          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
+          "retrievedAt": "2026-09-15T19:10:15.377Z",
+          "elapsedMs": 366,
+          "registrationFilter": "Omitted from the tracked record for privacy"
+        },
+        {
+          "resource": "8ys7-d773",
+          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
+          "retrievedAt": "2026-09-15T19:10:15.385Z",
+          "elapsedMs": 326,
+          "registrationFilter": "Omitted from the tracked record for privacy"
+        }
+      ],
+      "liveRetrievalSucceeded": true,
+      "canonicalCompatibility": {
+        "compatibleCanonicalId": "land-rover-defender-2-0-sd4-2020",
+        "stockPowerHp": 240,
+        "stockTorqueNm": 500,
+        "stages": [
+          {
+            "name": "Stage 1",
+            "powerHp": 290,
+            "torqueNm": 590
+          },
+          {
+            "name": "Stage 2",
+            "powerHp": 320,
+            "torqueNm": 660
+          },
+          {
+            "name": "Stage 3+",
+            "powerHp": 365,
+            "torqueNm": 740
+          }
+        ],
+        "note": "RDW 177 kW converts to 241 metric pk; the compatible 240 pk diesel template is within rounding tolerance. Same-model 2.0 petrol and larger-displacement templates are incompatible. Seven annual copies for 2020–2026 are equivalent source templates, not independent corroboration. Canonical estimates do not establish ECU/access or guaranteed output."
+      }
+    },
+    {
+      "caseId": "OWNER-B",
+      "officialVehicle": {
+        "merk": "FORD",
+        "handelsbenaming": "TRANSIT CONNECT",
+        "cilinderinhoud": "1499",
+        "aantal_cilinders": "4",
+        "datum_eerste_toelating_dt": "2018-10-17T00:00:00.000",
+        "datum_eerste_toelating": "20181017",
+        "type": "PU2",
+        "variant": "Z2GA1BFX",
+        "uitvoering": "F2BBBSABDADBK"
+      },
+      "officialFuelRows": [
+        {
+          "brandstof_omschrijving": "Diesel",
+          "nettomaximumvermogen": "73.50"
+        }
+      ],
+      "registeredPowerKw": 73.5,
+      "metricPowerPk": 100,
+      "normalizedIdentity": {
+        "make": "FORD",
+        "model": "TRANSIT CONNECT",
+        "fuel": "Diesel",
+        "registeredPower": {
+          "value": 73.5,
+          "unit": "kW"
+        },
+        "powerKw": 73.5,
+        "powerHp": 100,
+        "displacementCc": 1499,
+        "firstRegistrationDate": "2018-10-17",
+        "firstRegistrationYear": 2018,
+        "firstAdmissionYear": 2018,
+        "type": "PU2",
+        "variant": "Z2GA1BFX",
+        "execution": "F2BBBSABDADBK",
+        "cylinders": 4
+      },
+      "provenance": [
+        {
+          "resource": "m9d7-ebf2",
+          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
+          "retrievedAt": "2026-09-15T19:10:15.582Z",
+          "elapsedMs": 521,
+          "registrationFilter": "Omitted from the tracked record for privacy"
+        },
+        {
+          "resource": "8ys7-d773",
+          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
+          "retrievedAt": "2026-09-15T19:10:15.370Z",
+          "elapsedMs": 309,
+          "registrationFilter": "Omitted from the tracked record for privacy"
+        }
+      ],
+      "liveRetrievalSucceeded": true,
+      "canonicalCompatibility": {
+        "preferredReferenceId": "ref-ford-transit-connect-15-tdci-100",
+        "compatibleCanonicalId": null,
+        "note": "No Transit Connect records occur in vehicleDatabase. Preserve the conditional 1499 cc / 100 pk reference and independent later-stage fallback; never substitute generic Transit, Custom, Courier, 1.6 or 2.0. The PU2 / Z2GA1BFX / F2BBBSABDADBK codes remain opaque; the owner confirmed no engine-generation evidence."
+      }
+    },
+    {
+      "caseId": "OWNER-C",
+      "officialVehicle": {
+        "merk": "FORD",
+        "handelsbenaming": "TRANSIT CUSTOM",
+        "cilinderinhoud": "1995",
+        "aantal_cilinders": "4",
+        "datum_eerste_toelating_dt": "2019-04-29T00:00:00.000",
+        "datum_eerste_toelating": "20190429",
+        "type": "FCC",
+        "variant": "YLF61ABX",
+        "uitvoering": "R5WGASABC00UA"
+      },
+      "officialFuelRows": [
+        {
+          "brandstof_omschrijving": "Diesel",
+          "nettomaximumvermogen": "77.00"
+        }
+      ],
+      "registeredPowerKw": 77,
+      "metricPowerPk": 105,
+      "normalizedIdentity": {
+        "make": "FORD",
+        "model": "TRANSIT CUSTOM",
+        "fuel": "Diesel",
+        "registeredPower": {
+          "value": 77,
+          "unit": "kW"
+        },
+        "powerKw": 77,
+        "powerHp": 105,
+        "displacementCc": 1995,
+        "firstRegistrationDate": "2019-04-29",
+        "firstRegistrationYear": 2019,
+        "firstAdmissionYear": 2019,
+        "type": "FCC",
+        "variant": "YLF61ABX",
+        "execution": "R5WGASABC00UA",
+        "cylinders": 4
+      },
+      "provenance": [
+        {
+          "resource": "m9d7-ebf2",
+          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
+          "retrievedAt": "2026-09-15T19:10:15.373Z",
+          "elapsedMs": 311,
+          "registrationFilter": "Omitted from the tracked record for privacy"
+        },
+        {
+          "resource": "8ys7-d773",
+          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
+          "retrievedAt": "2026-09-15T19:10:15.612Z",
+          "elapsedMs": 549,
+          "registrationFilter": "Omitted from the tracked record for privacy"
+        }
+      ],
+      "liveRetrievalSucceeded": true,
+      "canonicalCompatibility": {
+        "preferredReferenceId": "ref-ford-transit-custom-20-ecoblue-105",
+        "compatibleCanonicalId": null,
+        "rejectedNearestCanonicalId": "ford-transit-custom-2-0-ecoblue-2019",
+        "note": "The canonical 2.0 EcoBlue template is 170 pk / 420 Nm, materially different from the RDW 105 pk; prefer the 105 pk reference. Custom 150 pk 2.0 TDCi and differing displacement templates also fail stock identity. A shared family name is not enough."
+      }
+    },
+    {
+      "caseId": "OWNER-D",
+      "officialVehicle": {
+        "merk": "BMW",
+        "handelsbenaming": "128TI",
+        "cilinderinhoud": "1998",
+        "aantal_cilinders": "4",
+        "datum_eerste_toelating_dt": "2022-09-14T00:00:00.000",
+        "datum_eerste_toelating": "20220914",
+        "type": "F1H",
+        "variant": "7L51",
+        "uitvoering": "IAW500MG"
+      },
+      "officialFuelRows": [
+        {
+          "brandstof_omschrijving": "Benzine",
+          "nettomaximumvermogen": "195.00"
+        }
+      ],
+      "registeredPowerKw": 195,
+      "metricPowerPk": 265,
+      "normalizedIdentity": {
+        "make": "BMW",
+        "model": "128TI",
+        "fuel": "Benzine",
+        "registeredPower": {
+          "value": 195,
+          "unit": "kW"
+        },
+        "powerKw": 195,
+        "powerHp": 265,
+        "displacementCc": 1998,
+        "firstRegistrationDate": "2022-09-14",
+        "firstRegistrationYear": 2022,
+        "firstAdmissionYear": 2022,
+        "type": "F1H",
+        "variant": "7L51",
+        "execution": "IAW500MG",
+        "cylinders": 4
+      },
+      "provenance": [
+        {
+          "resource": "m9d7-ebf2",
+          "url": "https://opendata.rdw.nl/resource/m9d7-ebf2.json?%24select=merk%2Chandelsbenaming%2Ccilinderinhoud%2Caantal_cilinders%2Cdatum_eerste_toelating_dt%2Cdatum_eerste_toelating%2Ctype%2Cvariant%2Cuitvoering&%24limit=5",
+          "retrievedAt": "2026-09-15T19:10:15.926Z",
+          "elapsedMs": 863,
+          "registrationFilter": "Omitted from the tracked record for privacy"
+        },
+        {
+          "resource": "8ys7-d773",
+          "url": "https://opendata.rdw.nl/resource/8ys7-d773.json?%24select=brandstof_omschrijving%2Cnettomaximumvermogen&%24limit=5",
+          "retrievedAt": "2026-09-15T19:10:15.609Z",
+          "elapsedMs": 544,
+          "registrationFilter": "Omitted from the tracked record for privacy"
+        }
+      ],
+      "liveRetrievalSucceeded": true,
+      "canonicalCompatibility": {
+        "preferredReferenceId": "ref-bmw-128ti-f40-265",
+        "compatibleCanonicalId": null,
+        "note": "No 128ti record occurs in vehicleDatabase. Preserve the exact 265 pk / 1998 cc F40 reference. Other BMW 1 Series badges are not substitutes. The manufacturer confirms TwinPower Turbo; registration date alone is not ECU-lock evidence."
+      }
+    }
+  ],
+  "canonicalInspection": {
+    "inspectedAt": "2026-09-15T19:16:56.653Z",
+    "vehicleDatabaseCount": 58586,
+    "dataSource": "src/data/catalog.ts vehicleDatabase",
+    "purpose": "Read-only compatibility notes, not source validation or a replacement for resolver regression tests"
+  }
+}

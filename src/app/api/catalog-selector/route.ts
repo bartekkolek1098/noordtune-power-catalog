@@ -1,10 +1,13 @@
+import {customerProfile} from "@/lib/customer-profile";
 import {NextRequest, NextResponse} from "next/server";
 import {
   getModelsForBrand,
+  getReferenceSelectorEstimate,
   getVehicleSelectorItems,
   getYearsForModel,
   searchVehicleSelectorItems
 } from "@/data/catalog";
+import {resolveStageQuote} from "@/data/pricing";
 
 export const runtime = "nodejs";
 
@@ -19,6 +22,13 @@ export function GET(request: NextRequest) {
   const mode = params.get("mode");
   const brand = readParam(params, "brand");
   const model = readParam(params, "model");
+
+  if (mode === "reference") {
+    const id = readParam(params, "id");
+    const estimate = id ? getReferenceSelectorEstimate(id) : undefined;
+    if (!estimate?.profile) return invalidRequest();
+    return json({estimate: {...estimate, profile: customerProfile({...estimate.profile, conditionCodes: [...(estimate.profile.conditionCodes ?? []), ...estimate.reasonCodes]})}, quote: resolveStageQuote(estimate.profile, estimate.profile.stages[0], {scope: "vehicle"})});
+  }
 
   if (mode === "search") {
     const query = readParam(params, "q");

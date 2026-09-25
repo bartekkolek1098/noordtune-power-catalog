@@ -4,11 +4,15 @@ import {CarFront, ChevronRight, Search, Star} from "lucide-react";
 import {useEffect, useMemo, useState} from "react";
 import type {Locale} from "@/i18n/routing";
 import type {VehicleSelectorItem} from "@/data/catalog-selector";
+import type {EstimateResolution} from "@/data/tuning-estimates-shared";
+import {formatQuote, formatQuoteScope} from "@/data/pricing";
+import {detailsActionLabel, focusConfigurator} from "@/lib/details-action";
 import {sitePath} from "@/lib/site-path";
-import {cn, formatCurrency} from "@/lib/utils";
+import {cn} from "@/lib/utils";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
+import {ReferenceEstimateDetails} from "@/components/reference-estimate-details";
 
 type ManualSelectorCopy = {
   title: string;
@@ -55,12 +59,56 @@ export function ManualSelector({
   const [years, setYears] = useState<number[]>([]);
   const [engines, setEngines] = useState<VehicleSelectorItem[]>([]);
   const [searchResults, setSearchResults] = useState<VehicleSelectorItem[]>([]);
+  const [referenceId, setReferenceId] = useState("");
+  const [referenceRequest, setReferenceRequest] = useState(0);
+  const [referenceEstimate, setReferenceEstimate] = useState<EstimateResolution>();
+  const [referenceLoading, setReferenceLoading] = useState(false);
+  const [referenceError, setReferenceError] = useState(false);
+  const referenceCopy = locale === "en"
+    ? {loading: "Loading the catalog estimate…", error: "The estimate could not be loaded. Select the vehicle to try again.", conditional: "Conditional reference: confirm the engine generation before applying these estimated figures.", connect: "Pre-facelift 1.5 TDCi reference only. Confirm the engine generation; a 2018 registration alone does not establish TDCi or EcoBlue."}
+    : locale === "pl"
+      ? {loading: "Wczytywanie szacunków katalogowych…", error: "Nie udało się wczytać szacunków. Wybierz pojazd, aby spróbować ponownie.", conditional: "Warunkowy profil referencyjny: przed zastosowaniem szacunków potwierdź generację silnika.", connect: "Profil dotyczy wyłącznie 1.5 TDCi sprzed liftingu. Potwierdź generację silnika; rejestracja w 2018 r. nie rozstrzyga między TDCi a EcoBlue."}
+      : {loading: "Catalogusindicatie laden…", error: "De indicatie kon niet worden geladen. Kies het voertuig om opnieuw te proberen.", conditional: "Voorwaardelijke referentie: bevestig de motorgeneratie voordat deze indicatieve waarden worden toegepast.", connect: "Alleen een referentie voor de 1.5 TDCi vóór de facelift. Bevestig de motorgeneratie; registratie in 2018 bepaalt niet of dit TDCi of EcoBlue is."};
 
   const filteredBrands = useMemo(() => {
     const normalized = brandFilter.toLowerCase();
     return initialBrands.filter((item) => item.toLowerCase().includes(normalized));
   }, [brandFilter, initialBrands]);
   const selectedVehicle = engines.find((vehicle) => vehicle.id === vehicleId);
+  const versionLabel = (vehicle: VehicleSelectorItem) => vehicle.kind === "reference" && vehicle.version === "Published Stage 1 reference"
+    ? {nl: "Referentie voor Stage 1", en: "Stage 1 reference", pl: "Profil referencyjny Stage 1"}[locale]
+    : vehicle.version;
+
+  useEffect(() => {
+    if (!referenceId) {
+      setReferenceEstimate(undefined);
+      setReferenceLoading(false);
+      setReferenceError(false);
+      return;
+    }
+
+    const controller = new AbortController();
+    setReferenceLoading(true);
+    setReferenceError(false);
+    setReferenceEstimate(undefined);
+    fetchSelector<{estimate: EstimateResolution}>(
+      {mode: "reference", id: referenceId}, controller.signal
+    )
+      .then((data) => {
+        setReferenceEstimate(data.estimate);
+        setReferenceLoading(false);
+        window.requestAnimationFrame(() => {
+          focusConfigurator("manual-reference-result");
+        });
+      })
+      .catch((error: unknown) => {
+        if (!(error instanceof DOMException && error.name === "AbortError")) {
+          setReferenceLoading(false);
+          setReferenceError(true);
+        }
+      });
+    return () => controller.abort();
+  }, [referenceId, referenceRequest]);
 
   useEffect(() => {
     const normalized = query.trim();
@@ -162,10 +210,20 @@ export function ManualSelector({
     setModels([]);
     setYears([]);
     setEngines([]);
+    setReferenceId("");
   }
 
-  function detailHref(id: string) {
-    return sitePath(`/${locale}/vehicles/${id}`);
+  function detailHref(vehicle: VehicleSelectorItem) {
+    return vehicle.pagePath ? sitePath("/" + locale + vehicle.pagePath) : undefined;
+  }
+
+  function selectReference(vehicle: VehicleSelectorItem) {
+    if (referenceId === vehicle.id && referenceEstimate?.profile) {
+      focusConfigurator("manual-reference-result");
+      return;
+    }
+    setReferenceId(vehicle.id);
+    setReferenceRequest((request) => request + 1);
   }
 
   const hasSearchQuery = query.trim().length >= 2;
@@ -219,18 +277,24 @@ export function ManualSelector({
           </div>
         </div>
 
-        <div className="grid gap-4">
+        <div className="grid min-w-0 grid-cols-1 gap-4">
           <div className="rounded-lg border border-white/10 bg-black/45 p-3 sm:p-4">
             <div className="mb-3 flex items-center gap-2 text-xs font-black uppercase tracking-normal text-primary">
               <Star className="h-4 w-4 fill-primary" />
               {text.popular}
             </div>
             <div className="grid gap-2">
-              {visibleVehicles.map((vehicle) => (
-                <a
-                className="group grid gap-2 rounded-[3px] border border-white/10 bg-white/[0.035] p-3 transition hover:border-primary/50 hover:bg-primary/10"
-                  href={detailHref(vehicle.id)}
+              {visibleVehicles.map((vehicle) => { const ResultAction = vehicle.pagePath ? "a" : "button"; return (
+                <ResultAction
+                className="group grid w-full gap-2 rounded-[3px] text-left border border-white/10 bg-white/[0.035] p-3 transition hover:border-primary/50 hover:bg-primary/10"
+                  href={detailHref(vehicle)}
+                  type={vehicle.pagePath ? undefined : "button"}
+                  data-testid="manual-result-action"
                   key={vehicle.id}
+                  onClick={!vehicle.pagePath ? (event) => {
+                    event.preventDefault();
+                    selectReference(vehicle);
+                  } : undefined}
                 >
                   <span className="flex items-center gap-2 font-bold leading-tight text-white">
                     {vehicle.popular ? (
@@ -241,18 +305,17 @@ export function ManualSelector({
                     {vehicle.brand} {vehicle.model}
                   </span>
                   <span className="text-xs leading-5 text-muted-foreground">
-                    {vehicle.version} · {vehicle.engine} · {vehicle.yearRange}
+                    {versionLabel(vehicle)} · {vehicle.engine} · {vehicle.yearRange}
                   </span>
                   <span className="flex items-center justify-between gap-3 text-sm font-black text-primary">
-                    {text.from}{" "}
-                    {formatCurrency(
-                      vehicle.priceFrom,
-                      locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL"
-                    )}
-                    <ChevronRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                    <span className="min-w-0 break-words">{formatQuote(vehicle.quote, locale)}</span>
+                    <ChevronRight className="h-4 w-4 shrink-0 transition group-hover:translate-x-1" />
                   </span>
-                </a>
-              ))}
+                  {formatQuoteScope(vehicle.quote, locale) ? (
+                    <span className="text-xs leading-5 text-muted-foreground">{formatQuoteScope(vehicle.quote, locale)}</span>
+                  ) : null}
+                </ResultAction>
+              ); })}
               {visibleVehicles.length === 0 && hasSearchQuery ? (
                 <p className="rounded-lg border border-white/10 bg-black/45 p-3 text-sm text-muted-foreground">
                   {text.noResults}
@@ -288,6 +351,7 @@ export function ManualSelector({
                   setVehicleId("");
                   setYears([]);
                   setEngines([]);
+                  setReferenceId("");
                 }}
                 options={models}
                 placeholder={brand ? text.selectModel : text.selectBrand}
@@ -300,6 +364,7 @@ export function ManualSelector({
                   setYear(value);
                   setVehicleId("");
                   setEngines([]);
+                  setReferenceId("");
                 }}
                 options={years.map(String)}
                 placeholder={model ? text.selectYear : text.selectModel}
@@ -312,11 +377,18 @@ export function ManualSelector({
                   setVehicleId(value);
 
                   if (value) {
-                    window.location.href = detailHref(value);
+                    const vehicle = engines.find((item) => item.id === value);
+                    if (vehicle && !vehicle.pagePath) {
+                      selectReference(vehicle);
+                    } else if (vehicle?.pagePath) {
+                      window.location.href = detailHref(vehicle)!;
+                    }
+                  } else {
+                    setReferenceId("");
                   }
                 }}
                 options={engines.map((vehicle) => ({
-                  label: `${vehicle.engine} · ${vehicle.version}`,
+                  label: `${vehicle.engine} · ${versionLabel(vehicle)}`,
                   value: vehicle.id
                 }))}
                 placeholder={year ? text.selectEngine : model ? text.selectYear : text.selectModel}
@@ -338,15 +410,14 @@ export function ManualSelector({
                       {selectedVehicle.brand} {selectedVehicle.model}
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      {selectedVehicle.version} · {selectedVehicle.engine} ·{" "}
-                      {selectedVehicle.ecuType}
+                      {versionLabel(selectedVehicle)} · {selectedVehicle.engine} ·{" "}
+                      {{nl: "ECU-controle vóór uitvoering", en: "ECU check before work", pl: "Kontrola ECU przed realizacją"}[locale]}
                     </p>
                   </div>
-                  <Button asChild className="rounded-[3px] font-black uppercase shadow-[0_0_28px_rgba(227,6,19,.32)]">
-                    <a href={detailHref(selectedVehicle.id)}>
-                      {text.choose}
-                      <ChevronRight className="h-4 w-4" />
-                    </a>
+                  <Button asChild className="h-auto min-h-10 max-w-full whitespace-normal rounded-[3px] py-2 text-center font-black uppercase shadow-[0_0_28px_rgba(227,6,19,.32)]">
+                    {selectedVehicle.pagePath ? <a href={detailHref(selectedVehicle)}>{detailsActionLabel({kind: "vehicle-page", path: selectedVehicle.pagePath}, locale)}<ChevronRight className="h-4 w-4" /></a>
+                      : <button type="button" onClick={() => selectReference(selectedVehicle)}>{detailsActionLabel({kind: "inline-configurator", target: "rdw-configurator"}, locale)}<ChevronRight className="h-4 w-4" /></button>}
+
                   </Button>
                 </div>
               ) : (
@@ -358,6 +429,20 @@ export function ManualSelector({
             </div>
           </div>
         </div>
+        {referenceId ? (
+          <div className="min-w-0 scroll-mt-32 space-y-3 outline-none focus-visible:ring-2 focus-visible:ring-primary" id="manual-reference-result" tabIndex={-1} aria-label={detailsActionLabel({kind: "inline-configurator", target: "rdw-configurator"}, locale)} aria-live="polite">
+            {referenceLoading ? <p className="text-sm text-muted-foreground">{referenceCopy.loading}</p> : null}
+            {referenceError ? <p className="text-sm text-muted-foreground">{referenceCopy.error}</p> : null}
+            {referenceEstimate?.status === "conditional" && !referenceEstimate.reasonCodes.includes("CONNECT_ENGINE_GENERATION_REVIEW") ? (
+              <p className="rounded-[3px] border border-primary/20 bg-primary/5 p-3 text-sm leading-6 text-muted-foreground">
+                {referenceCopy.conditional}
+              </p>
+            ) : null}
+            {referenceEstimate?.profile ? (
+              <ReferenceEstimateDetails key={referenceEstimate.profile.id} profile={referenceEstimate.profile} locale={locale} />
+            ) : null}
+          </div>
+        ) : null}
       </div>
     </section>
   );
@@ -395,7 +480,7 @@ function SelectBox({
   value: string;
 }) {
   return (
-    <label className="block">
+    <label className="block min-w-0">
       <span className="mb-2 block text-sm font-semibold uppercase text-muted-foreground">
         {label}
       </span>

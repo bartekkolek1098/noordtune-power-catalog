@@ -1,0 +1,1281 @@
+{
+  "baselineSha": "4d12e510953fb57c3f8f84a737880ff860a617e7",
+  "publicVehicles": 24,
+  "changedConfigurations": 18,
+  "unchangedPublicFromConfigurations": 6,
+  "nominalTierAmountsChanged": false,
+  "servicePricesOrDescriptionsChanged": false,
+  "explanation": "All 17 promoted configurations retain generated applicability and therefore require individual review. Eight BMW mixed MD1/MG1 family labels independently trigger access review, including one original curated 320d; these are review signals, never evidence of the installed ECU or a confirmed lock. Only conditional Stage 1 budget guidance is provided for those BMW review scenarios. Approved source tier amounts remain unchanged.",
+  "configurations": [
+    {
+      "id": "vw-golf-20-tsi-ea888",
+      "label": "Volkswagen Golf GTI 2.0 TSI EA888 GTI Performance",
+      "publicationSource": "existing-curated",
+      "applicability": "existing curated relationship",
+      "ecuFamilyLabel": "Bosch MED17 / MG1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Existing curated catalog record: vw-golf-20-tsi-ea888",
+        "notes": [
+          "The existing curated record contains broad family labels only; exact variants still require workshop confirmation."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-advanced",
+          "oldFromCents": 34900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 34900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:vw-golf-20-tsi-ea888:stage1-advanced",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-advanced",
+          "oldFromCents": 49900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 49900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:vw-golf-20-tsi-ea888:stage2-advanced",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-advanced",
+          "oldFromCents": 84900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 84900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:vw-golf-20-tsi-ea888:stage3-advanced",
+            "confirmationRequired": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmw-320d-b47",
+      "label": "BMW 3 Serie 320d 2.0d B47 F30/F31 320d",
+      "publicationSource": "existing-curated",
+      "applicability": "existing curated relationship",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Existing curated catalog record: bmw-320d-b47",
+        "notes": [
+          "The existing curated record contains broad family labels only; exact variants still require workshop confirmation."
+        ]
+      },
+      "access": {
+        "status": "possible-unlock-review",
+        "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+        "scenario": "bmw-unlock-review"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review",
+            "conditionalBudgetFromCents": 70000
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audi-a3-20-tdi",
+      "label": "Audi A3 2.0 TDI 2.0 TDI CR 8V 150pk",
+      "publicationSource": "existing-curated",
+      "applicability": "existing curated relationship",
+      "ecuFamilyLabel": "Bosch EDC17",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Existing curated catalog record: audi-a3-20-tdi",
+        "notes": [
+          "The existing curated record contains broad family labels only; exact variants still require workshop confirmation."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 29900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:audi-a3-20-tdi:stage1-standard",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:audi-a3-20-tdi:stage2-standard",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 69900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:audi-a3-20-tdi:stage3-standard",
+            "confirmationRequired": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "mercedes-a45-amg-m133",
+      "label": "Mercedes-Benz A 45 AMG 2.0 Turbo M133 W176 AMG",
+      "publicationSource": "existing-curated",
+      "applicability": "existing curated relationship",
+      "ecuFamilyLabel": "Bosch MED17",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Existing curated catalog record: mercedes-a45-amg-m133",
+        "notes": [
+          "The existing curated record contains broad family labels only; exact variants still require workshop confirmation."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-modern",
+          "oldFromCents": 39900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:mercedes-a45-amg-m133:stage1-modern",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-performance",
+          "oldFromCents": 54900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:mercedes-a45-amg-m133:stage2-performance",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-performance",
+          "oldFromCents": 99900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 99900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:mercedes-a45-amg-m133:stage3-performance",
+            "confirmationRequired": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmw-x3-e83-20d",
+      "label": "BMW X3 2.0d 2.0d M47 E83 177pk",
+      "publicationSource": "existing-curated",
+      "applicability": "existing curated relationship",
+      "ecuFamilyLabel": "Bosch EDC16",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Existing curated catalog record: bmw-x3-e83-20d",
+        "notes": [
+          "The existing curated record contains broad family labels only; exact variants still require workshop confirmation."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 29900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:bmw-x3-e83-20d:stage1-standard",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:bmw-x3-e83-20d:stage2-standard",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 69900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:bmw-x3-e83-20d:stage3-standard",
+            "confirmationRequired": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "volvo-xc60-d5",
+      "label": "Volvo XC60 D5 2.4 D5 D5 AWD",
+      "publicationSource": "existing-curated",
+      "applicability": "existing curated relationship",
+      "ecuFamilyLabel": "Bosch EDC17",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Existing curated catalog record: volvo-xc60-d5",
+        "notes": [
+          "The existing curated record contains broad family labels only; exact variants still require workshop confirmation."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-advanced",
+          "oldFromCents": 34900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 34900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:volvo-xc60-d5:stage1-advanced",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-advanced",
+          "oldFromCents": 49900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 49900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:volvo-xc60-d5:stage2-advanced",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-advanced",
+          "oldFromCents": 84900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 84900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:volvo-xc60-d5:stage3-advanced",
+            "confirmationRequired": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "ford-focus-st-20-ecoboost",
+      "label": "Ford Focus ST 2.0 EcoBoost ST Mk3",
+      "publicationSource": "existing-curated",
+      "applicability": "existing curated relationship",
+      "ecuFamilyLabel": "Bosch MED17",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Existing curated catalog record: ford-focus-st-20-ecoboost",
+        "notes": [
+          "The existing curated record contains broad family labels only; exact variants still require workshop confirmation."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-advanced",
+          "oldFromCents": 34900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 34900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:ford-focus-st-20-ecoboost:stage1-advanced",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-advanced",
+          "oldFromCents": 49900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 49900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:ford-focus-st-20-ecoboost:stage2-advanced",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-advanced",
+          "oldFromCents": 84900,
+          "newQuote": {
+            "kind": "from",
+            "amountCents": 84900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "pricing-v2:ford-focus-st-20-ecoboost:stage3-advanced",
+            "confirmationRequired": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118i",
+      "label": "BMW 1 Serie F20/F21 118i BMW turbo petrol F20/F21 118i catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch MG1 / MEVD",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: bmw-1-serie-118i-2016",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "possible-unlock-review",
+        "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+        "scenario": "bmw-unlock-review"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review",
+            "conditionalBudgetFromCents": 70000
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118d",
+      "label": "BMW 1 Serie F20/F21 118d 2.0d / 3.0d BMW diesel F20/F21 118d catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: bmw-1-serie-118d-2015",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "possible-unlock-review",
+        "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+        "scenario": "bmw-unlock-review"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review",
+            "conditionalBudgetFromCents": 70000
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmw-1-series-f20-f21-120d",
+      "label": "BMW 1 Serie F20/F21 120d 2.0d / 3.0d BMW diesel F20/F21 120d catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: bmw-1-serie-120d-2015",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "possible-unlock-review",
+        "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+        "scenario": "bmw-unlock-review"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review",
+            "conditionalBudgetFromCents": 70000
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-f30-f31-318d",
+      "label": "BMW 3 Serie F30/F31 318d 2.0d / 3.0d BMW diesel F30/F31 318d catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: bmw-3-serie-318d-2015",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "possible-unlock-review",
+        "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+        "scenario": "bmw-unlock-review"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review",
+            "conditionalBudgetFromCents": 70000
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-f30-f31-330d",
+      "label": "BMW 3 Serie F30/F31 330d 2.0d / 3.0d BMW diesel F30/F31 330d catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: bmw-3-serie-330d-2015",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "possible-unlock-review",
+        "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+        "scenario": "bmw-unlock-review"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review",
+            "conditionalBudgetFromCents": 70000
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-f10-f11-520d",
+      "label": "BMW 5 Serie F10/F11 520d 2.0d / 3.0d BMW diesel F10/F11 520d catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: bmw-5-serie-520d-2015",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "possible-unlock-review",
+        "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+        "scenario": "bmw-unlock-review"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review",
+            "conditionalBudgetFromCents": 70000
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-g20-g21-320i",
+      "label": "BMW 3 Serie G20/G21 320i BMW turbo petrol G20/G21 320i catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch MG1 / MEVD",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: bmw-3-serie-320i-2019",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "possible-unlock-review",
+        "reasonCode": "bmw-identity-or-mixed-ecu-family-review",
+        "scenario": "bmw-unlock-review"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review",
+            "conditionalBudgetFromCents": 70000
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "ecu-access-review"
+          }
+        }
+      ]
+    },
+    {
+      "id": "volkswagen-golf-7-16-tdi",
+      "label": "Volkswagen Golf 7 1.6 TDI 1.6 TDI Golf 7 1.6 TDI catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: volkswagen-golf-1-6-tdi-2017",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "volkswagen-golf-7-20-tdi",
+      "label": "Volkswagen Golf 7 2.0 TDI 2.0 TDI Golf 7 2.0 TDI catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: volkswagen-golf-2-0-tdi-2015",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "volkswagen-golf-7-r-20-tsi",
+      "label": "Volkswagen Golf 7 R 2.0 TSI R Golf 7 R 2.0 TSI catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch MED17 / MG1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: volkswagen-golf-r-2-0-tsi-r-2017",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-modern",
+          "oldFromCents": 39900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-performance",
+          "oldFromCents": 54900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-performance",
+          "oldFromCents": 99900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "volkswagen-passat-b8-20-tdi",
+      "label": "Volkswagen Passat B8 2.0 TDI 2.0 TDI Passat B8 2.0 TDI catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: volkswagen-passat-2-0-tdi-2017",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audi-a3-8v-16-tdi",
+      "label": "Audi A3 8V 1.6 TDI 1.6 TDI A3 8V 1.6 TDI catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: audi-a3-1-6-tdi-2017",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audi-a4-b9-20-tdi-190",
+      "label": "Audi A4 B9 2.0 TDI 2.0 TDI 190 A4 B9 2.0 TDI 190 catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: audi-a4-2-0-tdi-190-2017",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audi-a4-b9-20-tfsi",
+      "label": "Audi A4 B9 2.0 TFSI 2.0 TFSI A4 B9 2.0 TFSI catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch MED17 / MG1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: audi-a4-2-0-tfsi-2017",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audi-a6-c7-30-tdi-272",
+      "label": "Audi A6 C7 3.0 TDI 3.0 TDI 272 A6 C7 3.0 TDI 272 catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: audi-a6-3-0-tdi-272-2016",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "skoda-octavia-5e-20-tdi-150",
+      "label": "Skoda Octavia 5E 2.0 TDI 2.0 TDI 150 Octavia 5E 2.0 TDI 150 catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch EDC17 / MD1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: skoda-octavia-2-0-tdi-150-2017",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-standard",
+          "oldFromCents": 29900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-standard",
+          "oldFromCents": 44900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-standard",
+          "oldFromCents": 69900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "seat-leon-cupra-5f-20-tsi-300",
+      "label": "SEAT Leon Cupra 5F 2.0 TSI Cupra Leon Cupra 5F 2.0 TSI 300 catalog estimate",
+      "publicationSource": "canonical-publication",
+      "applicability": "generated relationship; independent review absent",
+      "ecuFamilyLabel": "Bosch MED17 / MG1",
+      "technicalEvidence": {
+        "sourceType": "internal",
+        "sourceReference": "Canonical source record: seat-leon-cupra-2-0-tsi-cupra-2017",
+        "notes": [
+          "The canonical generated record is provenance for the published estimate, not proof of exact engine, ECU or TCU support."
+        ]
+      },
+      "access": {
+        "status": "unknown",
+        "reasonCode": "installed-ecu-not-identified"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "oldAssignedTier": "stage1-modern",
+          "oldFromCents": 39900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "oldAssignedTier": "stage2-performance",
+          "oldFromCents": 54900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "oldAssignedTier": "stage3-performance",
+          "oldFromCents": 99900,
+          "newQuote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "generated-configuration-unreviewed"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "manufacturer-v2-suzuki-129-hybrid",
+    "provider": "manufacturer",
+    "sourceName": "Suzuki Netherlands official 2020 powertrain announcement",
+    "url": "https://www.suzuki.nl/auto/nieuws/suzuki-vitara-en-s-cross-smart-hybrid/",
+    "retrievedAt": "2026-09-16T14:32:09.667Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ad3b925efd47b0781b585fbaf716c429d5c157023e978a4ead2fc9433566d61f",
+    "applicability": [
+      "Vitara, S-Cross and Swift Sport: 1.4 BoosterJet, 95 kW / 129 PS, 48V mild hybrid."
+    ],
+    "notes": [
+      "Manufacturer powertrain classification only; no tuning vote or competitor prices."
+    ]
+  },
+  {
+    "id": "manufacturer-v2-niro-2022",
+    "provider": "manufacturer",
+    "sourceName": "Kia official 2022 Niro heritage specification",
+    "url": "https://worldwide.kia.com/en/brand/our-brand/heritage/vehicles/the-all-new-niro",
+    "retrievedAt": "2026-09-16T14:32:09.488Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "4822447800355d769b06f042d7579c758b104bfb37df7d878cbbff9fbb915001",
+    "applicability": [
+      "2022 Niro powertrain range consists of HEV, PHEV and EV. No ordinary ICE application."
+    ],
+    "notes": [
+      "Manufacturer powertrain classification only; no tuning vote or competitor prices."
+    ]
+  },
+  {
+    "id": "manufacturer-v2-qashqai-mild-hybrid",
+    "provider": "manufacturer",
+    "sourceName": "Nissan official European Qashqai specification",
+    "url": "https://www-europe.nissan-cdn.net/content/dam/Nissan/serbia/vehicles/Cenovnici/Nissan_Qashqai.pdf",
+    "retrievedAt": "2026-09-16T14:32:47.757Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ef1bcb7e9948a5fe4fbdb073424ab93a061a38c694030dd41abd0ec0d2f8853f",
+    "applicability": [
+      "Published 1.3 DIG-T 140 and 158 PS applications are mild hybrids. 158 PS is not the older 160 PS conventional output variant."
+    ],
+    "notes": [
+      "Hash covers rendered PDF text. Only engine/powertrain facts retained; no prices or marketing."
+    ]
+  },
+  {
+    "id": "manufacturer-v2-niro-2016",
+    "provider": "manufacturer",
+    "sourceName": "Kia official 2016 Niro technical press kit",
+    "url": "https://press.kia.com/content/dam/kiapress/EU/download-files/Niro-063F786C8A80445DB76A108ACF5E8685/Kia-Niro-PETD-press-kit-25-May-2016-3484AAB3E0AB4602804167E12A6F4E43.pdf",
+    "retrievedAt": "2026-09-16T14:34:08.853Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "84cb6976ca6088d64380a508f60dbb1b21b58ee914897be40722d2f4d60f3224",
+    "applicability": [
+      "The original Niro uses a hybrid powertrain, not a conventional petrol-only application."
+    ],
+    "notes": [
+      "Hash covers rendered PDF text; no hybrid system power is substituted for RDW engine output."
+    ]
+  },
+  {
+    "id": "manufacturer-v2-aygo-first-generation",
+    "provider": "manufacturer",
+    "sourceName": "Toyota official model archive",
+    "url": "https://media.toyota.co.uk/vehicles/aygo-archive-2005/",
+    "retrievedAt": "2026-09-16T14:52:22.468Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "90b81e1794e6a5d5053bf574ec79a464f6c1c40aeaf708222e9436155ab11429",
+    "applicability": [
+      "Toyota identifies the first Aygo generation as 2005–2014. This bounds the tuner application; it does not establish an individual engine introduction date."
+    ],
+    "notes": [
+      "Model period only. No remap vote, shared-platform inference or competitor pricing."
+    ]
+  },
+  {
+    "id": "manufacturer-v2-peugeot-107",
+    "provider": "manufacturer",
+    "sourceName": "Peugeot official model archive",
+    "url": "https://www.peugeot.nl/het-merk/de-wereld-van-peugeot/historische-peugeot-modellen.html",
+    "retrievedAt": "2026-09-16T14:52:58.218Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5c6ea91fad66540803df663e2f5319748a5fd68ab8d796107d3214fe589f43f5",
+    "applicability": [
+      "Peugeot lists the 107 model period as 2005–2014. This bounds the tuner application; it does not establish an individual engine introduction date."
+    ],
+    "notes": [
+      "Model period only. No remap vote, shared-platform inference or competitor pricing."
+    ]
+  },
+  {
+    "id": "manufacturer-v2-volkswagen-up",
+    "provider": "manufacturer",
+    "sourceName": "Volkswagen official model archive",
+    "url": "https://www.volkswagen.at/service-zubehoer/ueber-dein-auto/vorgaengermodelle/up",
+    "retrievedAt": "2026-09-16T14:52:25.520Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "312024af87266b00a866664b1f236ce76a64c3c808bc5820d965ffbe97cffe1b",
+    "applicability": [
+      "Volkswagen lists the up! model period as 2011–2023. The tuner starts its application at 2012, so the retained intersection is 2012–2023. The distinct e-up! and GTI periods do not supply tuning evidence."
+    ],
+    "notes": [
+      "Model period only. No remap vote, shared-platform inference or competitor pricing."
+    ]
+  }
+]

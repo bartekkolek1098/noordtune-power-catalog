@@ -1,0 +1,7137 @@
+{
+  "head": "d92bcd179813d1587e82e7f3a12ee5f1914648df",
+  "profiles": [
+    {
+      "id": "sourced-alfa-romeo-giulia-76e9411b0065",
+      "sourceIds": [
+        "shiftech-113"
+      ],
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulia",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 180,
+      "stockTorqueNm": 450,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-alfa-romeo-giulia-d8bd2957ff26",
+      "sourceIds": [
+        "shiftech-114"
+      ],
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulia",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 450,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-alfa-romeo-giulia-f8592380df9b",
+      "sourceIds": [
+        "shiftech-117"
+      ],
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulia",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 200,
+      "stockTorqueNm": 330,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 280,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 295,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-alfa-romeo-giulietta-0851d5529e26",
+      "sourceIds": [
+        "shiftech-122"
+      ],
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulietta",
+      "generation": "2010",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "stockPowerHp": 170,
+      "stockTorqueNm": 250,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 195,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 205,
+          "torqueNm": 310
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-alfa-romeo-giulietta-1909323d18ec",
+      "sourceIds": [
+        "shiftech-130"
+      ],
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulietta",
+      "generation": "2010",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 380
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 400
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-alfa-romeo-giulietta-68ffb24d1e6d",
+      "sourceIds": [
+        "shiftech-125"
+      ],
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulietta",
+      "generation": "2010",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 390
+        },
+        "stage2": {
+          "powerHp": 190,
+          "torqueNm": 410
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-alfa-romeo-giulietta-d5e37757131f",
+      "sourceIds": [
+        "shiftech-135"
+      ],
+      "brand": "Alfa Romeo",
+      "modelFamily": "Giulietta",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 190,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a3-01ba8bded15d",
+      "sourceIds": [
+        "shiftech-328"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A3",
+      "generation": "8V",
+      "yearFrom": 2012,
+      "yearTo": 2015,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a3-b25858760ac8",
+      "sourceIds": [
+        "shiftech-329"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A3",
+      "generation": "8V",
+      "yearFrom": 2012,
+      "yearTo": 2015,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 215,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 225,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a3-c59e4e21b063",
+      "sourceIds": [
+        "shiftech-318"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A3",
+      "generation": "8V",
+      "yearFrom": 2012,
+      "yearTo": 2015,
+      "stockPowerHp": 180,
+      "stockTorqueNm": 250,
+      "displacementCc": 1800,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 320
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a3-f1e4b71c85eb",
+      "sourceIds": [
+        "shiftech-345"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A3",
+      "generation": "8V-FL",
+      "yearFrom": 2016,
+      "yearTo": 2018,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a4-4959cacd7fc9",
+      "sourceIds": [
+        "shiftech-416"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B9",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a4-8036acfc6302",
+      "sourceIds": [
+        "shiftech-423"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B9",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a4-d432453180c8",
+      "sourceIds": [
+        "shiftech-415"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B9",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 252,
+      "stockTorqueNm": 370,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 300,
+          "torqueNm": 440
+        },
+        "stage2": {
+          "powerHp": 315,
+          "torqueNm": 460
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a4-d866033c4e02",
+      "sourceIds": [
+        "shiftech-414"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B9",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 260,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 275,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a6-36cb5aaa0d1e",
+      "sourceIds": [
+        "shiftech-539"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A6",
+      "generation": "C7",
+      "yearFrom": 2011,
+      "yearTo": 2017,
+      "stockPowerHp": 313,
+      "stockTorqueNm": 650,
+      "displacementCc": 3000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 350,
+          "torqueNm": 720
+        },
+        "stage2": {
+          "powerHp": 360,
+          "torqueNm": 740
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a6-4251f2805536",
+      "sourceIds": [
+        "shiftech-549"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A6",
+      "generation": "C7",
+      "yearFrom": 2011,
+      "yearTo": 2017,
+      "stockPowerHp": 320,
+      "stockTorqueNm": 650,
+      "displacementCc": 3000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 380,
+          "torqueNm": 750
+        },
+        "stage2": {
+          "powerHp": 390,
+          "torqueNm": 770
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a6-9328d5b5f97d",
+      "sourceIds": [
+        "shiftech-548"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A6",
+      "generation": "C7",
+      "yearFrom": 2011,
+      "yearTo": 2017,
+      "stockPowerHp": 272,
+      "stockTorqueNm": 580,
+      "displacementCc": 3000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 320,
+          "torqueNm": 660
+        },
+        "stage2": {
+          "powerHp": 330,
+          "torqueNm": 680
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-audi-a6-b2a0e0f6c703",
+      "sourceIds": [
+        "shiftech-542"
+      ],
+      "brand": "Audi",
+      "modelFamily": "A6",
+      "generation": "C7",
+      "yearFrom": 2011,
+      "yearTo": 2017,
+      "stockPowerHp": 245,
+      "stockTorqueNm": 500,
+      "displacementCc": 3000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 300,
+          "torqueNm": 620
+        },
+        "stage2": {
+          "powerHp": 310,
+          "torqueNm": 640
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-151de150bca8",
+      "sourceIds": [
+        "shiftech-997",
+        "mosselman-bmw-125d-f20-f21-lci-224hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 224,
+      "stockTorqueNm": 450,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 270,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 280,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-1afd01ee6d24",
+      "sourceIds": [
+        "shiftech-1010",
+        "mosselman-bmw-118d-f40-150hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 350,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 200,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-1d1d4eaccb1d",
+      "sourceIds": [
+        "shiftech-982",
+        "mosselman-bmw-125d-f20-f21-218hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20",
+      "yearFrom": 2011,
+      "yearTo": 2014,
+      "stockPowerHp": 218,
+      "stockTorqueNm": 450,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 260,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 270,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-33fe051cb8a9",
+      "sourceIds": [
+        "shiftech-133172"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20",
+      "yearFrom": 2011,
+      "yearTo": 2014,
+      "stockPowerHp": 116,
+      "stockTorqueNm": 270,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 190,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-5c08ae394d4b",
+      "sourceIds": [
+        "shiftech-1014",
+        "mosselman-bmw-120i-f40-178hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 178,
+      "stockTorqueNm": 280,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 230,
+          "torqueNm": 360
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-653181b1e2ad",
+      "sourceIds": [
+        "shiftech-993",
+        "mosselman-bmw-118i-f20-f21-lci-136hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 220,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 170,
+          "torqueNm": 260
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-693085b9b4e0",
+      "sourceIds": [
+        "shiftech-988",
+        "mosselman-bmw-118d-f20-f21-143hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20",
+      "yearFrom": 2011,
+      "yearTo": 2014,
+      "stockPowerHp": 143,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 190,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-6ebc2eb9a634",
+      "sourceIds": [
+        "shiftech-1000",
+        "mosselman-bmw-118d-f20-f21-lci-150hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 200,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-8f9343b95c18",
+      "sourceIds": [
+        "mosselman-bmw-116d-f20-f21-116hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21",
+      "yearFrom": 2011,
+      "yearTo": 2014,
+      "stockPowerHp": 116,
+      "stockTorqueNm": 260,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 400
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-92a47d08658e",
+      "sourceIds": [
+        "shiftech-992",
+        "mosselman-bmw-116i-f20-f21-lci-109hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 109,
+      "stockTorqueNm": 180,
+      "displacementCc": 1499,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 165,
+          "torqueNm": 250
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-ae8b9b336dc6",
+      "sourceIds": [
+        "shiftech-1013",
+        "mosselman-bmw-128ti-f40-265hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 265,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 305,
+          "torqueNm": 490
+        },
+        "stage2": {
+          "powerHp": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-d2f9ef15e2da",
+      "sourceIds": [
+        "shiftech-1008",
+        "mosselman-bmw-118i-f40-140hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 220,
+      "displacementCc": 1499,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 170,
+          "torqueNm": 260
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-d9f43220a9d9",
+      "sourceIds": [
+        "shiftech-186327",
+        "mosselman-bmw-116i-f40-109hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 109,
+      "stockTorqueNm": 180,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 165,
+          "torqueNm": 250
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-f27222e2117d",
+      "sourceIds": [
+        "shiftech-1009",
+        "mosselman-bmw-120d-f40-190hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 235,
+          "torqueNm": 490
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-fb7e51dc3be8",
+      "sourceIds": [
+        "shiftech-996",
+        "mosselman-bmw-120d-f20-f21-lci-190hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 235,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-1-series-fdb4fbeea9fe",
+      "sourceIds": [
+        "shiftech-981",
+        "mosselman-bmw-120d-f20-f21-184hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20",
+      "yearFrom": 2011,
+      "yearTo": 2014,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-0382723e3cb9",
+      "sourceIds": [
+        "mosselman-bmw-320i-f30-f31-lci-184hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 290,
+      "displacementCc": 1998,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 260,
+          "torqueNm": 410
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-220f6101e290",
+      "sourceIds": [
+        "shiftech-1165",
+        "mosselman-bmw-318d-f30-f31-lci-150hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 200,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-34feef13e04b",
+      "sourceIds": [
+        "shiftech-1177",
+        "mosselman-bmw-330i-g20-258hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20-G21",
+      "yearFrom": 2019,
+      "yearTo": 2021,
+      "stockPowerHp": 258,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 305,
+          "torqueNm": 450
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-35ac5b16fe72",
+      "sourceIds": [
+        "shiftech-1161",
+        "mosselman-bmw-330d-f30-f31-lci-258hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 258,
+      "stockTorqueNm": 560,
+      "displacementCc": 2993,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 310,
+          "torqueNm": 620
+        },
+        "stage2": {
+          "powerHp": 320,
+          "torqueNm": 640
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-5fda88ac9f86",
+      "sourceIds": [
+        "shiftech-1140",
+        "mosselman-bmw-330d-f30-f31-258hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35",
+      "yearFrom": 2012,
+      "yearTo": 2014,
+      "stockPowerHp": 258,
+      "stockTorqueNm": 560,
+      "displacementCc": 2993,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 305,
+          "torqueNm": 620
+        },
+        "stage2": {
+          "powerHp": 320,
+          "torqueNm": 640
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-60568e3c08b3",
+      "sourceIds": [
+        "shiftech-1167",
+        "mosselman-bmw-330i-f30-f31-lci-252hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 252,
+      "stockTorqueNm": 350,
+      "displacementCc": 1998,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 305,
+          "torqueNm": 450
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-824a07cb5037",
+      "sourceIds": [
+        "shiftech-433364"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20-G21",
+      "yearFrom": 2019,
+      "yearTo": 2021,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 270,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 300,
+          "torqueNm": 420
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-83c77c9f1702",
+      "sourceIds": [
+        "mosselman-bmw-320i-g20-184hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20/G21",
+      "yearFrom": 2019,
+      "yearTo": 2021,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 290,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 260,
+          "torqueNm": 420
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-99e8776f249a",
+      "sourceIds": [
+        "shiftech-1175",
+        "mosselman-bmw-320d-g20-190hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20-G21",
+      "yearFrom": 2019,
+      "yearTo": 2021,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 470
+        },
+        "stage2": {
+          "powerHp": 235,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-ae746e4efa0f",
+      "sourceIds": [
+        "shiftech-1141",
+        "mosselman-bmw-320d-f30-f31-184hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35",
+      "yearFrom": 2012,
+      "yearTo": 2014,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-bb83a44eb2cc",
+      "sourceIds": [
+        "shiftech-1169",
+        "mosselman-bmw-318i-f30-f31-lci-136hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 220,
+      "displacementCc": 1499,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 170,
+          "torqueNm": 260
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-ca9486a015fe",
+      "sourceIds": [
+        "shiftech-1168",
+        "mosselman-bmw-335xd-f30-f31-lci-313hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 313,
+      "stockTorqueNm": 630,
+      "displacementCc": 2993,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 360,
+          "torqueNm": 720
+        },
+        "stage2": {
+          "powerHp": 370,
+          "torqueNm": 730
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-d4c7b1f002a1",
+      "sourceIds": [
+        "shiftech-1146",
+        "mosselman-bmw-325d-f30-f31-218hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35",
+      "yearFrom": 2012,
+      "yearTo": 2014,
+      "stockPowerHp": 218,
+      "stockTorqueNm": 450,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 260,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 270,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-e97c88f76b26",
+      "sourceIds": [
+        "shiftech-1170"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 270,
+      "displacementCc": 1998,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 300,
+          "torqueNm": 420
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-ea1d76cc48b8",
+      "sourceIds": [
+        "shiftech-1176",
+        "mosselman-bmw-318d-g20-150hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20-G21",
+      "yearFrom": 2019,
+      "yearTo": 2021,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 200,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-ee42368d4922",
+      "sourceIds": [
+        "shiftech-1144",
+        "mosselman-bmw-318d-f30-f31-143hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35",
+      "yearFrom": 2012,
+      "yearTo": 2014,
+      "stockPowerHp": 143,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 190,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-f20a064c3462",
+      "sourceIds": [
+        "shiftech-1157",
+        "mosselman-bmw-340i-f30-f31-lci-327hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 326,
+      "stockTorqueNm": 450,
+      "displacementCc": 2998,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 415,
+          "torqueNm": 580
+        },
+        "stage2": {
+          "powerHp": 440,
+          "torqueNm": 610
+        },
+        "stage3": {
+          "powerHp": 550,
+          "torqueNm": 650
+        }
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-fb5f2170f7e8",
+      "sourceIds": [
+        "shiftech-1164",
+        "mosselman-bmw-316d-f30-f31-lci-116hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 116,
+      "stockTorqueNm": 270,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 190,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-3-series-fd3ee8694aa2",
+      "sourceIds": [
+        "shiftech-1159",
+        "mosselman-bmw-320d-f30-f31-lci-190hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 235,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-5-series-0745134fb83e",
+      "sourceIds": [
+        "mosselman-bmw-520d-f10-f11-190hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "F10/F11",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 215,
+          "torqueNm": 430
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-5-series-2801a9b43131",
+      "sourceIds": [
+        "mosselman-bmw-540i-g30-340hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30/G31",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 340,
+      "stockTorqueNm": 450,
+      "displacementCc": 2998,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 410,
+          "torqueNm": 580
+        },
+        "stage2": {
+          "powerHp": 440,
+          "torqueNm": 600
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-5-series-655c6bd4885f",
+      "sourceIds": [
+        "shiftech-1301",
+        "mosselman-bmw-530i-g30-g31-252hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30-G31",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 252,
+      "stockTorqueNm": 350,
+      "displacementCc": 1998,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 305,
+          "torqueNm": 450
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-5-series-70d80823e471",
+      "sourceIds": [
+        "shiftech-1302",
+        "mosselman-bmw-520d-g30-g31-190hp"
+      ],
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30-G31",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 1995,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 235,
+          "torqueNm": 490
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-bmw-5-series-f081faeb3d5a",
+      "sourceIds": [
+        "shiftech-1303"
+      ],
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30-G31",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 340,
+      "stockTorqueNm": 500,
+      "displacementCc": 2998,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 420,
+          "torqueNm": 580
+        },
+        "stage2": {
+          "powerHp": 440,
+          "torqueNm": 620
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-citroen-jumper-7fc46f9a8cc5",
+      "sourceIds": [
+        "shiftech-2564"
+      ],
+      "brand": "Citroën",
+      "modelFamily": "Jumper",
+      "generation": "III",
+      "yearFrom": 2019,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 340,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 195,
+          "torqueNm": 430
+        },
+        "stage2": {
+          "powerHp": 205,
+          "torqueNm": 450
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-citroen-jumpy-4638d7bffac2",
+      "sourceIds": [
+        "shiftech-2576"
+      ],
+      "brand": "Citroën",
+      "modelFamily": "Jumpy",
+      "generation": "III",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "stockPowerHp": 180,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-citroen-jumpy-474a2afbab05",
+      "sourceIds": [
+        "shiftech-2574"
+      ],
+      "brand": "Citroën",
+      "modelFamily": "Jumpy",
+      "generation": "III",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-citroen-jumpy-66bf5955fa20",
+      "sourceIds": [
+        "shiftech-2575"
+      ],
+      "brand": "Citroën",
+      "modelFamily": "Jumpy",
+      "generation": "III",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-citroen-jumpy-db30d074ee8a",
+      "sourceIds": [
+        "shiftech-2577"
+      ],
+      "brand": "Citroën",
+      "modelFamily": "Jumpy",
+      "generation": "III",
+      "yearFrom": 2016,
+      "yearTo": 2023,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 300,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-fiat-500x-af8f77a12df3",
+      "sourceIds": [
+        "shiftech-3220"
+      ],
+      "brand": "Fiat",
+      "modelFamily": "500X",
+      "generation": "2014",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "stockPowerHp": 95,
+      "stockTorqueNm": 200,
+      "displacementCc": 1300,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 120,
+          "torqueNm": 250
+        },
+        "stage2": {
+          "powerHp": 130,
+          "torqueNm": 270
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-fiat-500x-b61001c7ad74",
+      "sourceIds": [
+        "shiftech-3218"
+      ],
+      "brand": "Fiat",
+      "modelFamily": "500X",
+      "generation": "2014",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 380
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 400
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-fiat-500x-c81e273186cb",
+      "sourceIds": [
+        "shiftech-3216"
+      ],
+      "brand": "Fiat",
+      "modelFamily": "500X",
+      "generation": "2014",
+      "yearFrom": 2014,
+      "yearTo": 2021,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 230,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 160,
+          "torqueNm": 290
+        },
+        "stage2": {
+          "powerHp": 170,
+          "torqueNm": 300
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-fiat-grande-punto-7ff3640df606",
+      "sourceIds": [
+        "shiftech-3307"
+      ],
+      "brand": "Fiat",
+      "modelFamily": "Grande Punto",
+      "generation": "2005",
+      "yearFrom": 2005,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 201,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 250
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 260
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-fiat-grande-punto-8c2103c447f1",
+      "sourceIds": [
+        "shiftech-3303"
+      ],
+      "brand": "Fiat",
+      "modelFamily": "Grande Punto",
+      "generation": "2005",
+      "yearFrom": 2005,
+      "stockPowerHp": 75,
+      "stockTorqueNm": 190,
+      "displacementCc": 1300,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 95,
+          "torqueNm": 240
+        },
+        "stage2": {
+          "powerHp": 105,
+          "torqueNm": 260
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-fiat-tipo-43d04837ecf8",
+      "sourceIds": [
+        "shiftech-3411"
+      ],
+      "brand": "Fiat",
+      "modelFamily": "Tipo",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 215,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 250
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 270
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-fiat-tipo-f64c2b411ce0",
+      "sourceIds": [
+        "shiftech-3409"
+      ],
+      "brand": "Fiat",
+      "modelFamily": "Tipo",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 380
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 400
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-fiesta-004e2fcbac57",
+      "sourceIds": [
+        "shiftech-ford-fiesta-2017-mkviii-petrol-10-t-ecoboost-100"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2017 - MKVIII",
+      "yearFrom": 2017,
+      "stockPowerHp": 100,
+      "stockTorqueNm": 170,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 250
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-fiesta-15acdbd658ee",
+      "sourceIds": [
+        "shiftech-ford-fiesta-2013-mkvii-petrol-10-t-ecoboost-100"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 100,
+      "stockTorqueNm": 170,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 250
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-fiesta-42be06435341",
+      "sourceIds": [
+        "shiftech-ford-fiesta-2017-mkviii-petrol-15-t-ecoboost-200"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2017 - MKVIII",
+      "yearFrom": 2017,
+      "stockPowerHp": 200,
+      "stockTorqueNm": 320,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 370
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 390
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-fiesta-673b40e0b417",
+      "sourceIds": [
+        "shiftech-ford-fiesta-2013-mkvii-petrol-10-t-ecoboost-140"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 180,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 155,
+          "torqueNm": 260
+        },
+        "stage2": {
+          "powerHp": 165,
+          "torqueNm": 270
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-fiesta-87fb41e8bfe4",
+      "sourceIds": [
+        "shiftech-ford-fiesta-2013-mkvii-petrol-16-t-ecoboost-182"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 182,
+      "stockTorqueNm": 240,
+      "displacementCc": 1600,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 310
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-fiesta-b64cbf11fe4b",
+      "sourceIds": [
+        "shiftech-ford-fiesta-2017-mkviii-petrol-10-t-ecoboost-140"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2017 - MKVIII",
+      "yearFrom": 2017,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 180,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 155,
+          "torqueNm": 260
+        },
+        "stage2": {
+          "powerHp": 165,
+          "torqueNm": 270
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-fiesta-e703b3a3f9dd",
+      "sourceIds": [
+        "shiftech-ford-fiesta-2017-mkviii-petrol-10-t-ecoboost-125"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2017 - MKVIII",
+      "yearFrom": 2017,
+      "stockPowerHp": 125,
+      "stockTorqueNm": 170,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 250
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 260
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-fiesta-f73777e6d7f4",
+      "sourceIds": [
+        "shiftech-ford-fiesta-2013-mkvii-petrol-16-t-ecoboost-st200-200"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 200,
+      "stockTorqueNm": 290,
+      "displacementCc": 1600,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 330
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 350
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-fiesta-fd60da77ddaf",
+      "sourceIds": [
+        "shiftech-ford-fiesta-2013-mkvii-petrol-10-t-ecoboost-125"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 125,
+      "stockTorqueNm": 170,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 250
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 260
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-0481f9b0dbba",
+      "sourceIds": [
+        "shiftech-ford-focus-2014-mkiii-petrol-10-t-ecoboost-100"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "stockPowerHp": 100,
+      "stockTorqueNm": 170,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 250
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-5bc35d8a3ee0",
+      "sourceIds": [
+        "shiftech-ford-focus-2018-mkiv-petrol-15t-ecoboost-182"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "MkIV",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "stockPowerHp": 182,
+      "stockTorqueNm": 240,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 340
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-7ceb2689aadc",
+      "sourceIds": [
+        "shiftech-ford-focus-2014-mkiii-petrol-10-t-ecoboost-125"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "stockPowerHp": 125,
+      "stockTorqueNm": 170,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 250
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 260
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-90e03c9188ae",
+      "sourceIds": [
+        "shiftech-ford-focus-2018-mkiv-petrol-23-t-ecoboost-st-280"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2018 - MkIV",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "stockPowerHp": 280,
+      "stockTorqueNm": 420,
+      "displacementCc": 2300,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 320,
+          "torqueNm": 500
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-991e43e09718",
+      "sourceIds": [
+        "shiftech-ford-focus-2018-mkiv-petrol-10-t-ecoboost-100"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2018 - MkIV",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "stockPowerHp": 100,
+      "stockTorqueNm": 170,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 135,
+          "torqueNm": 250
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-a5374ee3c862",
+      "sourceIds": [
+        "shiftech-ford-focus-2018-mkiv-petrol-15t-ecoboost-150"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2018 - MkIV",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 240,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 340
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-aad797fd0812",
+      "sourceIds": [
+        "shiftech-ford-focus-2014-mkiii-petrol-20-t-ecoboost-st-250"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "stockPowerHp": 250,
+      "stockTorqueNm": 360,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 265,
+          "torqueNm": 440
+        },
+        "stage2": {
+          "powerHp": 280,
+          "torqueNm": 460
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-bb98e8783c9a",
+      "sourceIds": [
+        "shiftech-ford-focus-2014-mkiii-petrol-15-t-ecoboost-182"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "stockPowerHp": 182,
+      "stockTorqueNm": 240,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 205,
+          "torqueNm": 290
+        },
+        "stage2": {
+          "powerHp": 215,
+          "torqueNm": 300
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-c1ee2e98805a",
+      "sourceIds": [
+        "shiftech-ford-focus-2018-mkiv-petrol-10-t-ecoboost-125"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2018 - MkIV",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "stockPowerHp": 125,
+      "stockTorqueNm": 170,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 250
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 260
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-da01c9792bdb",
+      "sourceIds": [
+        "shiftech-ford-focus-2014-mkiii-petrol-15-t-ecoboost-150"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 240,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 310
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-focus-e39aca363df9",
+      "sourceIds": [
+        "shiftech-ford-focus-2014-mkiii-petrol-23-t-ecoboost-rs-350"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "stockPowerHp": 350,
+      "stockTorqueNm": 440,
+      "displacementCc": 2300,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 375,
+          "torqueNm": 520
+        },
+        "stage2": {
+          "powerHp": 395,
+          "torqueNm": 550
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-37012b8f5610",
+      "sourceIds": [
+        "shiftech-ford-transit-2017-diesel-20-ecoblue-170"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2018,
+      "stockPowerHp": 170,
+      "stockTorqueNm": 405,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 200,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-3a6adc6be1ca",
+      "sourceIds": [
+        "shiftech-ford-transit-2017-diesel-20-ecoblue-105",
+        "unlimited-chiptuning-ford-transit-ecoblue-2-0-tdci-105-pk-euro-6"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2018,
+      "stockPowerHp": 105,
+      "stockTorqueNm": 360,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 450
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-b8f7f80510ff",
+      "sourceIds": [
+        "shiftech-ford-transit-2017-diesel-20-ecoblue-130"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2018,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 340,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-connect-694c712b8c33",
+      "sourceIds": [
+        "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "yearTo": 2022,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 270,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 330
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 350
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-connect-9a55c8700b19",
+      "sourceIds": [
+        "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-75"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "yearTo": 2022,
+      "stockPowerHp": 75,
+      "stockTorqueNm": 220,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 95,
+          "torqueNm": 290
+        },
+        "stage2": {
+          "powerHp": 105,
+          "torqueNm": 310
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-connect-c1224c2aafe9",
+      "sourceIds": [
+        "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-120"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "yearTo": 2022,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 300,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 155,
+          "torqueNm": 360
+        },
+        "stage2": {
+          "powerHp": 165,
+          "torqueNm": 380
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-connect-d8a83148c970",
+      "sourceIds": [
+        "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-75"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "yearTo": 2022,
+      "stockPowerHp": 75,
+      "stockTorqueNm": 220,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 120,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-connect-db936c8558e6",
+      "sourceIds": [
+        "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "yearTo": 2022,
+      "stockPowerHp": 100,
+      "stockTorqueNm": 250,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 125,
+          "torqueNm": 330
+        },
+        "stage2": {
+          "powerHp": 135,
+          "torqueNm": 350
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-connect-e259e56890dd",
+      "sourceIds": [
+        "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-100"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "yearTo": 2022,
+      "stockPowerHp": 100,
+      "stockTorqueNm": 215,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 120,
+          "torqueNm": 270
+        },
+        "stage2": {
+          "powerHp": 130,
+          "torqueNm": 290
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-custom-15ffbc99909e",
+      "sourceIds": [
+        "shiftech-ford-transit-custom-2017-diesel-20-ecoblue-130"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2024,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 385,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 200,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-custom-7c3e4d4b3429",
+      "sourceIds": [
+        "shiftech-ford-transit-custom-2017-diesel-20-tdci-ecoblue-eu6-190"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2024,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 230,
+          "torqueNm": 460
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-custom-c9bd8dc7f3e0",
+      "sourceIds": [
+        "shiftech-ford-transit-custom-2025-diesel-20-ecoblue-110"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2025",
+      "yearFrom": 2025,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 375,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-custom-d463142a0598",
+      "sourceIds": [
+        "shiftech-ford-transit-custom-2017-diesel-20-ecoblue-105"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2024,
+      "stockPowerHp": 105,
+      "stockTorqueNm": 360,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 460
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-custom-d55c276828d8",
+      "sourceIds": [
+        "shiftech-ford-transit-custom-2017-diesel-20-ecoblue-170"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2024,
+      "stockPowerHp": 170,
+      "stockTorqueNm": 405,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 200,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-ford-transit-custom-f11dd014260d",
+      "sourceIds": [
+        "shiftech-ford-transit-custom-2025-diesel-20-ecoblue-136"
+      ],
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2025",
+      "yearFrom": 2025,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 410,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 205,
+          "torqueNm": 470
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-i30-044258a3a6bf",
+      "sourceIds": [
+        "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-136"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 160,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 170,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-i30-1b4d6c77e2ad",
+      "sourceIds": [
+        "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-115"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 280,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 320
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 340
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-i30-2f748c558a5e",
+      "sourceIds": [
+        "shiftech-hyundai-i30-2016-pd-petrol-20t-n-performance-275"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 275,
+      "stockTorqueNm": 353,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 300,
+          "torqueNm": 430
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-i30-62975a767077",
+      "sourceIds": [
+        "shiftech-hyundai-i30-2016-pd-petrol-20t-n-250"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "PD",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 250,
+      "stockTorqueNm": 353,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 300,
+          "torqueNm": 440
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-i30-bfaa7466e2b6",
+      "sourceIds": [
+        "shiftech-hyundai-i30-2016-pd-petrol-14-t-gdi-140"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 240,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 170,
+          "torqueNm": 290
+        },
+        "stage2": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-i30-e5eb161e1b17",
+      "sourceIds": [
+        "shiftech-hyundai-i30-2016-pd-petrol-10-t-gdi-120"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 172,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 230
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-tucson-5effc6f4a040",
+      "sourceIds": [
+        "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-115"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 280,
+      "displacementCc": 1700,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-tucson-7a47bbfca514",
+      "sourceIds": [
+        "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-184"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 392,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-tucson-91a0d411fa59",
+      "sourceIds": [
+        "shiftech-hyundai-tucson-2020-nx4-diesel-16-crdi-eu6-136"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2020 - NX4",
+      "yearFrom": 2020,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 160,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 170,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-tucson-cb0f697df918",
+      "sourceIds": [
+        "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-141"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "stockPowerHp": 141,
+      "stockTorqueNm": 340,
+      "displacementCc": 1700,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 170,
+          "torqueNm": 390
+        },
+        "stage2": {
+          "powerHp": 180,
+          "torqueNm": 410
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-tucson-ed1ffc8d103b",
+      "sourceIds": [
+        "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-136"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 373,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 185,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-hyundai-tucson-f460c431e592",
+      "sourceIds": [
+        "shiftech-hyundai-tucson-2015-tl-petrol-16-t-gdi-177"
+      ],
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "stockPowerHp": 177,
+      "stockTorqueNm": 265,
+      "displacementCc": 1600,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 330
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 350
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-jaguar-xe-806b9f138ff9",
+      "sourceIds": [
+        "shiftech-4580"
+      ],
+      "brand": "Jaguar",
+      "modelFamily": "XE",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "stockPowerHp": 180,
+      "stockTorqueNm": 430,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 195,
+          "torqueNm": 490
+        },
+        "stage2": {
+          "powerHp": 205,
+          "torqueNm": 510
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-jaguar-xe-f5a9cd10345e",
+      "sourceIds": [
+        "shiftech-4583"
+      ],
+      "brand": "Jaguar",
+      "modelFamily": "XE",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "stockPowerHp": 163,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 195,
+          "torqueNm": 490
+        },
+        "stage2": {
+          "powerHp": 205,
+          "torqueNm": 510
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-jaguar-xf-93110136ce9c",
+      "sourceIds": [
+        "shiftech-4603"
+      ],
+      "brand": "Jaguar",
+      "modelFamily": "XF",
+      "generation": "2015 - X260",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "stockPowerHp": 300,
+      "stockTorqueNm": 700,
+      "displacementCc": 3000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 330,
+          "torqueNm": 750
+        },
+        "stage2": {
+          "powerHp": 340,
+          "torqueNm": 770
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-jaguar-xf-bd9e9d9911e3",
+      "sourceIds": [
+        "shiftech-4604"
+      ],
+      "brand": "Jaguar",
+      "modelFamily": "XF",
+      "generation": "2015 - X260",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "stockPowerHp": 180,
+      "stockTorqueNm": 430,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 195,
+          "torqueNm": 490
+        },
+        "stage2": {
+          "powerHp": 205,
+          "torqueNm": 510
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-jeep-renegade-0ce5769c479d",
+      "sourceIds": [
+        "shiftech-4724"
+      ],
+      "brand": "Jeep",
+      "modelFamily": "Renegade",
+      "generation": "2014",
+      "yearFrom": 2014,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 350,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 170,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 180,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-jeep-renegade-140b91e759ff",
+      "sourceIds": [
+        "shiftech-4727"
+      ],
+      "brand": "Jeep",
+      "modelFamily": "Renegade",
+      "generation": "2014",
+      "yearFrom": 2014,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 230,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 160,
+          "torqueNm": 290
+        },
+        "stage2": {
+          "powerHp": 170,
+          "torqueNm": 300
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-jeep-renegade-1983fca931de",
+      "sourceIds": [
+        "shiftech-4726"
+      ],
+      "brand": "Jeep",
+      "modelFamily": "Renegade",
+      "generation": "2014",
+      "yearFrom": 2014,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 380
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 400
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-jeep-renegade-9a65e544500a",
+      "sourceIds": [
+        "shiftech-4725"
+      ],
+      "brand": "Jeep",
+      "modelFamily": "Renegade",
+      "generation": "2014",
+      "yearFrom": 2014,
+      "stockPowerHp": 170,
+      "stockTorqueNm": 360,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-ceed-18713fd1c600",
+      "sourceIds": [
+        "shiftech-kia-ceed-2015-petrol-16-t-gdi-204"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 204,
+      "stockTorqueNm": 265,
+      "displacementCc": 1600,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 235,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 245,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-ceed-2e382da4dcf8",
+      "sourceIds": [
+        "shiftech-kia-ceed-2018-petrol-10-t-gdi-100"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "stockPowerHp": 100,
+      "stockTorqueNm": 172,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 230
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-ceed-463b23ff864e",
+      "sourceIds": [
+        "shiftech-kia-ceed-2018-diesel-16-crdi-eu6-110"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 260,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 320
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 340
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-ceed-4d0e06bb6378",
+      "sourceIds": [
+        "shiftech-kia-ceed-2015-petrol-10-t-gdi-120"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 172,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 230
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-ceed-7149155f19ef",
+      "sourceIds": [
+        "shiftech-kia-ceed-2018-petrol-16-t-gdi-204"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "stockPowerHp": 204,
+      "stockTorqueNm": 265,
+      "displacementCc": 1600,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 235,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 245,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-ceed-acb48ab8cda1",
+      "sourceIds": [
+        "shiftech-kia-ceed-2018-petrol-14-t-gdi-140",
+        "unlimited-chiptuning-kia-ceed-1-4-t-gdi-140-pk"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 240,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 170,
+          "torqueNm": 290
+        },
+        "stage2": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-ceed-d678765bbb1b",
+      "sourceIds": [
+        "shiftech-kia-ceed-2018-diesel-16-crdi-eu6-136"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 160,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 170,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-ceed-ff93ac5fd329",
+      "sourceIds": [
+        "shiftech-kia-ceed-2018-petrol-10-t-gdi-120"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 172,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 230
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-proceed-19d0a2713b9c",
+      "sourceIds": [
+        "shiftech-kia-proceed-2019-diesel-16-crdi-eu6-136"
+      ],
+      "brand": "Kia",
+      "modelFamily": "ProCeed",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 160,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 170,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-proceed-24e9064063e4",
+      "sourceIds": [
+        "shiftech-kia-proceed-2019-petrol-16-t-gdi-204"
+      ],
+      "brand": "Kia",
+      "modelFamily": "ProCeed",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "stockPowerHp": 204,
+      "stockTorqueNm": 265,
+      "displacementCc": 1600,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 235,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 245,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-proceed-26ecda360c13",
+      "sourceIds": [
+        "shiftech-kia-proceed-2019-petrol-14-t-gdi-140"
+      ],
+      "brand": "Kia",
+      "modelFamily": "ProCeed",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 240,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 170,
+          "torqueNm": 290
+        },
+        "stage2": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-proceed-2816d74f3d7f",
+      "sourceIds": [
+        "shiftech-kia-proceed-2019-petrol-10-t-gdi-120"
+      ],
+      "brand": "Kia",
+      "modelFamily": "ProCeed",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 172,
+      "displacementCc": 1000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 230
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sorento-0afcf96f24a9",
+      "sourceIds": [
+        "shiftech-kia-sorento-2009-xm-diesel-22-crdi-eu5-197"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sorento",
+      "generation": "2009 - XM",
+      "yearFrom": 2009,
+      "yearTo": 2013,
+      "stockPowerHp": 197,
+      "stockTorqueNm": 422,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 230,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 240,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sorento-efe023c9fa82",
+      "sourceIds": [
+        "shiftech-kia-sorento-2020-mq4-diesel-22-crdi-eu6-202"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sorento",
+      "generation": "2020 - MQ4",
+      "yearFrom": 2020,
+      "stockPowerHp": 202,
+      "stockTorqueNm": 440,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 230,
+          "torqueNm": 520
+        },
+        "stage2": {
+          "powerHp": 240,
+          "torqueNm": 540
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-664009e1114a",
+      "sourceIds": [
+        "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-115"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2015 - QL",
+      "yearFrom": 2015,
+      "yearTo": 2020,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 280,
+      "displacementCc": 1700,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-72586e5f5df4",
+      "sourceIds": [
+        "shiftech-kia-sportage-2021-nq5-diesel-16-crdi-116-280"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2021 - NQ5",
+      "yearFrom": 2021,
+      "yearTo": 2023,
+      "stockPowerHp": 116,
+      "stockTorqueNm": 280,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 360
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-7fcb46c33a4f",
+      "sourceIds": [
+        "shiftech-kia-sportage-2021-nq5-diesel-16-crdi-136-320"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2021 - NQ5",
+      "yearFrom": 2021,
+      "yearTo": 2023,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 320,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 360
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-8c1a2b7ae062",
+      "sourceIds": [
+        "shiftech-kia-sportage-2021-nq5-petrol-16-t-gdi-180"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2021 - NQ5",
+      "yearFrom": 2021,
+      "yearTo": 2023,
+      "stockPowerHp": 180,
+      "stockTorqueNm": 265,
+      "displacementCc": 1600,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 310
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-93b8abb48ecb",
+      "sourceIds": [
+        "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-141"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2015 - QL",
+      "yearFrom": 2015,
+      "yearTo": 2020,
+      "stockPowerHp": 141,
+      "stockTorqueNm": 340,
+      "displacementCc": 1700,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 170,
+          "torqueNm": 390
+        },
+        "stage2": {
+          "powerHp": 180,
+          "torqueNm": 410
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-999dc9771f9a",
+      "sourceIds": [
+        "shiftech-kia-sportage-2021-nq5-petrol-16-t-gdi-160-265"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2021 - NQ5",
+      "yearFrom": 2021,
+      "yearTo": 2023,
+      "stockPowerHp": 160,
+      "stockTorqueNm": 265,
+      "displacementCc": 1600,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 320
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-a5d48e2994f7",
+      "sourceIds": [
+        "shiftech-kia-sportage-2015-ql-petrol-16-t-gdi-177",
+        "unlimited-chiptuning-kia-sportage-1-6t-gdi-177-pk"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2015 - QL",
+      "yearFrom": 2016,
+      "yearTo": 2018,
+      "stockPowerHp": 177,
+      "stockTorqueNm": 265,
+      "displacementCc": 1600,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 330
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 350
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-c39453bc018d",
+      "sourceIds": [
+        "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-184"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "QL",
+      "yearFrom": 2015,
+      "yearTo": 2020,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 392,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-c7dbca8955bc",
+      "sourceIds": [
+        "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-136"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "QL",
+      "yearFrom": 2015,
+      "yearTo": 2020,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 373,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 185,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-cc9ca42aa8f5",
+      "sourceIds": [
+        "shiftech-kia-sportage-2010-sl-diesel-20-crdi-eu5-136"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2010 - SL",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 314,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 410
+        },
+        "stage2": {
+          "powerHp": 185,
+          "torqueNm": 430
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-cf81934b1b24",
+      "sourceIds": [
+        "shiftech-kia-sportage-2024-nq5-diesel-16-crdi-eu6-136"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2024 - NQ5",
+      "yearFrom": 2024,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 160,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 170,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-e9419b3478e2",
+      "sourceIds": [
+        "shiftech-kia-sportage-2010-sl-diesel-17-crdi-eu5-115"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2010 - SL",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 260,
+      "displacementCc": 1700,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-kia-sportage-f9bcb662cd9e",
+      "sourceIds": [
+        "shiftech-kia-sportage-2010-sl-diesel-20-crdi-eu5-184"
+      ],
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2010 - SL",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 392,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-land-rover-discovery-0bf9aa7b30a3",
+      "sourceIds": [
+        "shiftech-5453"
+      ],
+      "brand": "Land Rover",
+      "modelFamily": "Discovery",
+      "generation": "2017 - V",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 258,
+      "stockTorqueNm": 600,
+      "displacementCc": 3000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 300,
+          "torqueNm": 670
+        },
+        "stage2": {
+          "powerHp": 310,
+          "torqueNm": 690
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-land-rover-discovery-4ac16a4d19b4",
+      "sourceIds": [
+        "shiftech-5452"
+      ],
+      "brand": "Land Rover",
+      "modelFamily": "Discovery",
+      "generation": "2017 - V",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 240,
+      "stockTorqueNm": 500,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 265,
+          "torqueNm": 550
+        },
+        "stage2": {
+          "powerHp": 275,
+          "torqueNm": 570
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-land-rover-discovery-sport-26e107cc7723",
+      "sourceIds": [
+        "shiftech-5464"
+      ],
+      "brand": "Land Rover",
+      "modelFamily": "Discovery Sport",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 420,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 490
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-land-rover-discovery-sport-4c087798bad6",
+      "sourceIds": [
+        "shiftech-5465"
+      ],
+      "brand": "Land Rover",
+      "modelFamily": "Discovery Sport",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "stockPowerHp": 180,
+      "stockTorqueNm": 430,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 470
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 490
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-land-rover-evoque-1d88437b4b3a",
+      "sourceIds": [
+        "shiftech-5480"
+      ],
+      "brand": "Land Rover",
+      "modelFamily": "Evoque",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 180,
+      "stockTorqueNm": 430,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 470
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 490
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-land-rover-evoque-30c675bf633d",
+      "sourceIds": [
+        "shiftech-5483"
+      ],
+      "brand": "Land Rover",
+      "modelFamily": "Evoque",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 240,
+      "stockTorqueNm": 500,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 265,
+          "torqueNm": 550
+        },
+        "stage2": {
+          "powerHp": 275,
+          "torqueNm": 570
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-a-class-2ae520f8a92c",
+      "sourceIds": [
+        "shiftech-6051",
+        "unlimited-counterpart-6051"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "yearFrom": 2012,
+      "yearTo": 2014,
+      "stockPowerHp": 360,
+      "stockTorqueNm": 450,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 405,
+          "torqueNm": 530
+        },
+        "stage2": {
+          "powerHp": 420,
+          "torqueNm": 560
+        },
+        "stage3": {
+          "powerHp": 480,
+          "torqueNm": 620
+        }
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-a-class-3da0ddd438c4",
+      "sourceIds": [
+        "shiftech-6045"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "yearFrom": 2012,
+      "yearTo": 2014,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 130,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 140,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-a-class-4cd6addafda1",
+      "sourceIds": [
+        "shiftech-6062",
+        "unlimited-counterpart-6062"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 381,
+      "stockTorqueNm": 475,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 415,
+          "torqueNm": 540
+        },
+        "stage2": {
+          "powerHp": 430,
+          "torqueNm": 570
+        },
+        "stage3": {
+          "powerHp": 480,
+          "torqueNm": 620
+        }
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-a-class-61b6e0b01916",
+      "sourceIds": [
+        "shiftech-6075"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W177",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 440
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 460
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-a-class-6d7cc9910c2d",
+      "sourceIds": [
+        "shiftech-6079",
+        "unlimited-counterpart-6079"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W177",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "stockPowerHp": 421,
+      "stockTorqueNm": 500,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 460,
+          "torqueNm": 560
+        },
+        "stage2": {
+          "powerHp": 490,
+          "torqueNm": 600
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-a-class-9d09cfe6194f",
+      "sourceIds": [
+        "shiftech-6070"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W177",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "stockPowerHp": 116,
+      "stockTorqueNm": 260,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-a-class-9fe661fcae1f",
+      "sourceIds": [
+        "shiftech-6047"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "yearFrom": 2012,
+      "yearTo": 2014,
+      "stockPowerHp": 90,
+      "stockTorqueNm": 200,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 130,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 140,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-a-class-e8b3ab98f758",
+      "sourceIds": [
+        "shiftech-6074"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W177",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 215,
+          "torqueNm": 480
+        },
+        "stage2": {
+          "powerHp": 225,
+          "torqueNm": 500
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-c-class-0b087907eb5f",
+      "sourceIds": [
+        "shiftech-6154"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W204",
+      "yearFrom": 2007,
+      "yearTo": 2009,
+      "stockPowerHp": 204,
+      "stockTorqueNm": 500,
+      "displacementCc": 2100,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 235,
+          "torqueNm": 550
+        },
+        "stage2": {
+          "powerHp": 245,
+          "torqueNm": 570
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-c-class-0c9768e7ede3",
+      "sourceIds": [
+        "shiftech-6157"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W204",
+      "yearFrom": 2007,
+      "yearTo": 2009,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 270,
+      "displacementCc": 2100,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 200,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-c-class-0ff2ee49123d",
+      "sourceIds": [
+        "shiftech-6222"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205-FL",
+      "yearFrom": 2018,
+      "yearTo": 2020,
+      "stockPowerHp": 160,
+      "stockTorqueNm": 360,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 190,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 200,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-c-class-13e6c7416964",
+      "sourceIds": [
+        "shiftech-6189"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "stockPowerHp": 116,
+      "stockTorqueNm": 280,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 155,
+          "torqueNm": 350
+        },
+        "stage2": {
+          "powerHp": 165,
+          "torqueNm": 370
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-c-class-1ea6fe853875",
+      "sourceIds": [
+        "shiftech-6191"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "stockPowerHp": 170,
+      "stockTorqueNm": 400,
+      "displacementCc": 2100,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 225,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 235,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-c-class-95b8c6b125eb",
+      "sourceIds": [
+        "shiftech-6190"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205",
+      "yearFrom": 2014,
+      "yearTo": 2017,
+      "stockPowerHp": 136,
+      "stockTorqueNm": 320,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 155,
+          "torqueNm": 350
+        },
+        "stage2": {
+          "powerHp": 165,
+          "torqueNm": 370
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-c-class-b36002c5e6c2",
+      "sourceIds": [
+        "shiftech-6207"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205-FL",
+      "yearFrom": 2018,
+      "yearTo": 2020,
+      "stockPowerHp": 194,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 215,
+          "torqueNm": 480
+        },
+        "stage2": {
+          "powerHp": 225,
+          "torqueNm": 500
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-c-class-e503a084345f",
+      "sourceIds": [
+        "shiftech-6158"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W204",
+      "yearFrom": 2007,
+      "yearTo": 2009,
+      "stockPowerHp": 170,
+      "stockTorqueNm": 400,
+      "displacementCc": 2100,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-e-class-9704e64a97a1",
+      "sourceIds": [
+        "shiftech-6439"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "E-Class",
+      "generation": "W213",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 194,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 215,
+          "torqueNm": 480
+        },
+        "stage2": {
+          "powerHp": 225,
+          "torqueNm": 500
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-vito-260c0a376643",
+      "sourceIds": [
+        "shiftech-6844"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Vito",
+      "generation": "W447",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 90,
+      "stockTorqueNm": 200,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-vito-2dd60ae881ed",
+      "sourceIds": [
+        "shiftech-6848"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Vito",
+      "generation": "W447",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 440,
+      "displacementCc": 2100,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 520
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 540
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-mercedes-benz-vito-70faca7dd45f",
+      "sourceIds": [
+        "shiftech-6847"
+      ],
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Vito",
+      "generation": "W447",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 163,
+      "stockTorqueNm": 380,
+      "displacementCc": 2100,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 520
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 540
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-opel-movano-5a6cb5e57f32",
+      "sourceIds": [
+        "shiftech-13560"
+      ],
+      "brand": "Opel",
+      "modelFamily": "Movano",
+      "generation": "2021",
+      "yearFrom": 2021,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 340,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 195,
+          "torqueNm": 430
+        },
+        "stage2": {
+          "powerHp": 205,
+          "torqueNm": 450
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-opel-movano-c4e5c897447d",
+      "sourceIds": [
+        "shiftech-13561"
+      ],
+      "brand": "Opel",
+      "modelFamily": "Movano",
+      "generation": "2021",
+      "yearFrom": 2021,
+      "stockPowerHp": 165,
+      "stockTorqueNm": 370,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 195,
+          "torqueNm": 430
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-opel-vivaro-231fc46608ce",
+      "sourceIds": [
+        "shiftech-7905"
+      ],
+      "brand": "Opel",
+      "modelFamily": "Vivaro",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 177,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-opel-vivaro-7ec3f09de7d9",
+      "sourceIds": [
+        "shiftech-7902"
+      ],
+      "brand": "Opel",
+      "modelFamily": "Vivaro",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-opel-vivaro-8ef1f5a406d4",
+      "sourceIds": [
+        "shiftech-7901"
+      ],
+      "brand": "Opel",
+      "modelFamily": "Vivaro",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 122,
+      "stockTorqueNm": 340,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-opel-vivaro-f4de20f4cd46",
+      "sourceIds": [
+        "shiftech-7904"
+      ],
+      "brand": "Opel",
+      "modelFamily": "Vivaro",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "stockPowerHp": 102,
+      "stockTorqueNm": 250,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 130,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 140,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-308-21332cb6ecd6",
+      "sourceIds": [
+        "shiftech-8106"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE II",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "stockPowerHp": 100,
+      "stockTorqueNm": 250,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 130,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 140,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-308-64b12e6b1591",
+      "sourceIds": [
+        "shiftech-8090"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE I",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-308-6b7c20b2ab6c",
+      "sourceIds": [
+        "shiftech-8088"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE I",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 270,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 330
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 350
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-308-9a4380ad7266",
+      "sourceIds": [
+        "shiftech-8112"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE II",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 300,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-308-b64405a55567",
+      "sourceIds": [
+        "shiftech-8086"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE I",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 300,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 350
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 370
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-308-f78678cbd348",
+      "sourceIds": [
+        "shiftech-8087"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "II- PHASE I",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 92,
+      "stockTorqueNm": 230,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 115,
+          "torqueNm": 270
+        },
+        "stage2": {
+          "powerHp": 125,
+          "torqueNm": 290
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-boxer-2293ccf7d0ef",
+      "sourceIds": [
+        "shiftech-8231"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "Boxer",
+      "generation": "II - Phase II",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 340,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-boxer-81536821a661",
+      "sourceIds": [
+        "shiftech-433439"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "Boxer",
+      "generation": "III",
+      "yearFrom": 2019,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 340,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 195,
+          "torqueNm": 430
+        },
+        "stage2": {
+          "powerHp": 205,
+          "torqueNm": 450
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-boxer-8db6ddce71f2",
+      "sourceIds": [
+        "shiftech-8244"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "Boxer",
+      "generation": "III",
+      "yearFrom": 2019,
+      "stockPowerHp": 165,
+      "stockTorqueNm": 370,
+      "displacementCc": 2200,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 195,
+          "torqueNm": 430
+        },
+        "stage2": {
+          "powerHp": 205,
+          "torqueNm": 450
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-boxer-ed7e27653ba4",
+      "sourceIds": [
+        "shiftech-8232"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "Boxer",
+      "generation": "II - Phase II",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "stockPowerHp": 160,
+      "stockTorqueNm": 350,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-expert-2bd2c05d917d",
+      "sourceIds": [
+        "shiftech-8257"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "yearFrom": 2016,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-expert-3f96ad8925ae",
+      "sourceIds": [
+        "shiftech-8253"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "yearFrom": 2016,
+      "stockPowerHp": 95,
+      "stockTorqueNm": 240,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 130,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 130,
+          "torqueNm": 280
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-expert-7aa89654e4a1",
+      "sourceIds": [
+        "shiftech-8255"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "yearFrom": 2016,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-expert-8b0e39717174",
+      "sourceIds": [
+        "shiftech-8254",
+        "unlimited-counterpart-8254"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 300,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 340
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 360
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-peugeot-expert-f3851bca32a2",
+      "sourceIds": [
+        "shiftech-8256",
+        "unlimited-counterpart-8256"
+      ],
+      "brand": "Peugeot",
+      "modelFamily": "Expert",
+      "generation": "III",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 180,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-clio-6253cf25fcc7",
+      "sourceIds": [
+        "shiftech-8574"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV",
+      "yearFrom": 2012,
+      "yearTo": 2015,
+      "stockPowerHp": 90,
+      "stockTorqueNm": 135,
+      "displacementCc": 900,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 105,
+          "torqueNm": 160
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-clio-850848ddff5e",
+      "sourceIds": [
+        "shiftech-8576"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV",
+      "yearFrom": 2012,
+      "yearTo": 2015,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 190,
+      "displacementCc": 1200,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 135,
+          "torqueNm": 230
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-clio-894df6872fcb",
+      "sourceIds": [
+        "shiftech-8581"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV (II)",
+      "yearFrom": 2016,
+      "yearTo": 2018,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 260,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 135,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 145,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-clio-f033416ef469",
+      "sourceIds": [
+        "shiftech-8591"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "V",
+      "yearFrom": 2019,
+      "yearTo": 2022,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 240,
+      "displacementCc": 1300,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-clio-fab1803d232b",
+      "sourceIds": [
+        "shiftech-8579"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV",
+      "yearFrom": 2012,
+      "yearTo": 2015,
+      "stockPowerHp": 90,
+      "stockTorqueNm": 220,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 110,
+          "torqueNm": 250
+        },
+        "stage2": {
+          "powerHp": 120,
+          "torqueNm": 270
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-megane-0d85b09ffbb6",
+      "sourceIds": [
+        "shiftech-8775"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "III",
+      "yearFrom": 2008,
+      "yearTo": 2013,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 240,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 130,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 140,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-megane-2c5a96fc767f",
+      "sourceIds": [
+        "shiftech-8798",
+        "unlimited-counterpart-8798"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 165,
+      "stockTorqueNm": 380,
+      "displacementCc": 1598,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 190,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-megane-38c9f4035e22",
+      "sourceIds": [
+        "shiftech-8779"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "III",
+      "yearFrom": 2008,
+      "yearTo": 2013,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 340,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-megane-3c6ce49187d2",
+      "sourceIds": [
+        "shiftech-8777"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "III",
+      "yearFrom": 2008,
+      "yearTo": 2013,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 320,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 360
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 380
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-megane-99c485ce1f32",
+      "sourceIds": [
+        "shiftech-8803"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 90,
+      "stockTorqueNm": 220,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 110,
+          "torqueNm": 250
+        },
+        "stage2": {
+          "powerHp": 120,
+          "torqueNm": 270
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-megane-bf0d5181a10f",
+      "sourceIds": [
+        "shiftech-8802"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 260,
+      "displacementCc": 1500,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 135,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 145,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-megane-c842036f44a1",
+      "sourceIds": [
+        "shiftech-8797",
+        "unlimited-counterpart-8797"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 320,
+      "displacementCc": 1598,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 360
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 380
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-trafic-0ad0c1d80ad9",
+      "sourceIds": [
+        "shiftech-8905"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "stockPowerHp": 145,
+      "stockTorqueNm": 350,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 440
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 460
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-trafic-7795970cbb61",
+      "sourceIds": [
+        "shiftech-8896"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2014",
+      "yearFrom": 2014,
+      "yearTo": 2015,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 165,
+          "torqueNm": 390
+        },
+        "stage2": {
+          "powerHp": 175,
+          "torqueNm": 410
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-trafic-c258872a51f1",
+      "sourceIds": [
+        "shiftech-8903"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "yearTo": 2018,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 320,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 150,
+          "torqueNm": 360
+        },
+        "stage2": {
+          "powerHp": 160,
+          "torqueNm": 380
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-renault-trafic-e9b224974c31",
+      "sourceIds": [
+        "shiftech-8906"
+      ],
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "stockPowerHp": 170,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 440
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 460
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-seat-leon-1462d25d1149",
+      "sourceIds": [
+        "shiftech-9457"
+      ],
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK2",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 300,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 350,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 370,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-seat-leon-17e3d1a6ce4d",
+      "sourceIds": [
+        "shiftech-9461"
+      ],
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK2",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-seat-leon-2021719b683f",
+      "sourceIds": [
+        "shiftech-9436"
+      ],
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK1",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 215,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 225,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-seat-leon-3c747a3b9ffb",
+      "sourceIds": [
+        "shiftech-9435"
+      ],
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK1",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-seat-leon-62ffd70d0206",
+      "sourceIds": [
+        "shiftech-9433"
+      ],
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK1",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-seat-leon-c2cdba7f1cf0",
+      "sourceIds": [
+        "shiftech-9434"
+      ],
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK1",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-seat-leon-e6a264004da3",
+      "sourceIds": [
+        "shiftech-9458"
+      ],
+      "brand": "Seat",
+      "modelFamily": "Leon",
+      "generation": "5F MK2",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 200,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-skoda-octavia-1f22baa7a281",
+      "sourceIds": [
+        "shiftech-9653"
+      ],
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-skoda-octavia-3d0841520d39",
+      "sourceIds": [
+        "shiftech-9629"
+      ],
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 215,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 225,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-skoda-octavia-4e8091a3105c",
+      "sourceIds": [
+        "shiftech-9612"
+      ],
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2005",
+      "yearFrom": 2005,
+      "yearTo": 2012,
+      "stockPowerHp": 160,
+      "stockTorqueNm": 250,
+      "displacementCc": 1800,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 320
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-skoda-octavia-8f52c6d7d5d4",
+      "sourceIds": [
+        "shiftech-9626",
+        "shiftech-9637"
+      ],
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-skoda-octavia-afe33c05937f",
+      "sourceIds": [
+        "shiftech-9628"
+      ],
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-skoda-octavia-c1b9d44f6d44",
+      "sourceIds": [
+        "shiftech-9625",
+        "shiftech-9636"
+      ],
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-skoda-octavia-fc8f46eb93a8",
+      "sourceIds": [
+        "shiftech-9649"
+      ],
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 245,
+      "stockTorqueNm": 370,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 305,
+          "torqueNm": 430
+        },
+        "stage2": {
+          "powerHp": 320,
+          "torqueNm": 450
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-toyota-proace-31dc97aad377",
+      "sourceIds": [
+        "shiftech-10212"
+      ],
+      "brand": "Toyota",
+      "modelFamily": "ProAce",
+      "generation": "2020",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "stockPowerHp": 122,
+      "stockTorqueNm": 340,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-toyota-proace-536d16cf16aa",
+      "sourceIds": [
+        "shiftech-10213"
+      ],
+      "brand": "Toyota",
+      "modelFamily": "ProAce",
+      "generation": "2020",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 370,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-toyota-proace-dab85493057e",
+      "sourceIds": [
+        "shiftech-10214"
+      ],
+      "brand": "Toyota",
+      "modelFamily": "ProAce",
+      "generation": "2020",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "stockPowerHp": 177,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-0782629309c8",
+      "sourceIds": [
+        "shiftech-10598",
+        "unlimited-golf-7-mk2-1-5-tsi-150"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-09a4119ad476",
+      "sourceIds": [
+        "shiftech-10547",
+        "unlimited-golf-6-1-6-tdi-105"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "yearTo": 2011,
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-2388baadff94",
+      "sourceIds": [
+        "shiftech-10582",
+        "unlimited-golf-7-1-4-tsi-125"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 125,
+      "stockTorqueNm": 200,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 155,
+          "torqueNm": 260
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-29e4181f1b7f",
+      "sourceIds": [
+        "shiftech-10514"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2002,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 285,
+      "displacementCc": 1900,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 350
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 370
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-376402e0a401",
+      "sourceIds": [
+        "shiftech-10512"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2002,
+      "stockPowerHp": 100,
+      "stockTorqueNm": 210,
+      "displacementCc": 1900,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-4919eb1cb79b",
+      "sourceIds": [
+        "shiftech-10576"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 230,
+      "stockTorqueNm": 370,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 300,
+          "torqueNm": 440
+        },
+        "stage2": {
+          "powerHp": 315,
+          "torqueNm": 460
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-4b2b00a63103",
+      "sourceIds": [
+        "shiftech-10548"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "yearTo": 2011,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 370
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 390
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-4dc79825e3b5",
+      "sourceIds": [
+        "shiftech-10573",
+        "shiftech-10588"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-510c10c2da6c",
+      "sourceIds": [
+        "shiftech-10516",
+        "unlimited-golf-4-1-9-tdi-150"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2002,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 1900,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-5f55c8f1dd1a",
+      "sourceIds": [
+        "shiftech-10570"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-61a15e3bd13f",
+      "sourceIds": [
+        "unlimited-golf-7-2-0-gti-performance-230"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 230,
+      "stockTorqueNm": 350,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 305,
+          "torqueNm": 460
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-6ba4bfeb56bd",
+      "sourceIds": [
+        "shiftech-10586"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 122,
+      "stockTorqueNm": 200,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 155,
+          "torqueNm": 240
+        },
+        "stage2": {
+          "powerHp": 165,
+          "torqueNm": 250
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-6cff268ab9f5",
+      "sourceIds": [
+        "unlimited-golf-7-mk2-2-0-tsi-gti-perfomance-245"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 245,
+      "stockTorqueNm": 350,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 310,
+          "torqueNm": 440
+        },
+        "stage2": null,
+        "stage3": {
+          "powerHp": 450,
+          "torqueNm": 600
+        }
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-802277ee0ad1",
+      "sourceIds": [
+        "shiftech-10602"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 250,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-8468b948cb79",
+      "sourceIds": [
+        "shiftech-10567"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 250,
+      "displacementCc": 1400,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-8d31ec61fd6c",
+      "sourceIds": [
+        "shiftech-10511",
+        "unlimited-golf-4-1-9-tdi-90"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2002,
+      "stockPowerHp": 90,
+      "stockTorqueNm": 210,
+      "displacementCc": 1900,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 120,
+          "torqueNm": 270
+        },
+        "stage2": {
+          "powerHp": 130,
+          "torqueNm": 280
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-8e2dcfd7dedd",
+      "sourceIds": [
+        "shiftech-10597",
+        "unlimited-golf-7-mk2-1-5-tsi-130"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 200,
+      "displacementCc": 1500,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 175,
+          "torqueNm": 300
+        },
+        "stage2": null,
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-902819635085",
+      "sourceIds": [
+        "shiftech-10618"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VIII",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "stockPowerHp": 200,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 230,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 240,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-9769dd6cef15",
+      "sourceIds": [
+        "shiftech-10601"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 310,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 360,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 380,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-9ba924a5d9d0",
+      "sourceIds": [
+        "shiftech-10600"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKII",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "stockPowerHp": 245,
+      "stockTorqueNm": 370,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 315,
+          "torqueNm": 440
+        },
+        "stage2": {
+          "powerHp": 330,
+          "torqueNm": 460
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-a6691c2bfcfc",
+      "sourceIds": [
+        "shiftech-10614"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VIII",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 360,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 200,
+          "torqueNm": 440
+        },
+        "stage2": {
+          "powerHp": 210,
+          "torqueNm": 460
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-add10e4b0929",
+      "sourceIds": [
+        "shiftech-10615"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VIII",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "stockPowerHp": 115,
+      "stockTorqueNm": 300,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-b390c90de8d5",
+      "sourceIds": [
+        "shiftech-10572"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-b784179e86cc",
+      "sourceIds": [
+        "shiftech-10546",
+        "unlimited-golf-6-1-6-tdi-90"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VI",
+      "yearFrom": 2008,
+      "yearTo": 2011,
+      "stockPowerHp": 90,
+      "stockTorqueNm": 230,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 320
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-bc1e3b8404eb",
+      "sourceIds": [
+        "shiftech-10515",
+        "unlimited-golf-4-1-9-tdi-130"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2002,
+      "stockPowerHp": 130,
+      "stockTorqueNm": 310,
+      "displacementCc": 1900,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 160,
+          "torqueNm": 380
+        },
+        "stage2": {
+          "powerHp": 170,
+          "torqueNm": 380
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-be7fa7fd0b8a",
+      "sourceIds": [
+        "shiftech-10566"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 220,
+      "stockTorqueNm": 350,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 260,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 270,
+          "torqueNm": 430
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-f3bf8740278a",
+      "sourceIds": [
+        "shiftech-10513",
+        "unlimited-golf-4-1-9-tdi-110"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "IV",
+      "yearFrom": 1997,
+      "yearTo": 2002,
+      "stockPowerHp": 110,
+      "stockTorqueNm": 235,
+      "displacementCc": 1900,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 140,
+          "torqueNm": 300
+        },
+        "stage2": {
+          "powerHp": 150,
+          "torqueNm": 310
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-f5fdb06851ed",
+      "sourceIds": [
+        "shiftech-10594"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 300,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 350,
+          "torqueNm": 460
+        },
+        "stage2": {
+          "powerHp": 370,
+          "torqueNm": 480
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-golf-f96fe55b2e63",
+      "sourceIds": [
+        "shiftech-10571"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "VII MKI",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "stockPowerHp": 90,
+      "stockTorqueNm": 230,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-passat-06005fee77ee",
+      "sourceIds": [
+        "shiftech-10754"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B7",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "stockPowerHp": 170,
+      "stockTorqueNm": 350,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 205,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 215,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-passat-501fa412095c",
+      "sourceIds": [
+        "shiftech-10767"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B8",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 220,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 230,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-passat-8e4e5519548a",
+      "sourceIds": [
+        "shiftech-10768"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B8",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 240,
+      "stockTorqueNm": 500,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 290,
+          "torqueNm": 580
+        },
+        "stage2": {
+          "powerHp": 300,
+          "torqueNm": 600
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-passat-913c97379c64",
+      "sourceIds": [
+        "shiftech-10747"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B7",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 410
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 430
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-passat-ad7d91f3b032",
+      "sourceIds": [
+        "shiftech-10763"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B7",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "stockPowerHp": 177,
+      "stockTorqueNm": 380,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 210,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 220,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-passat-c0b98ad9212c",
+      "sourceIds": [
+        "shiftech-10772"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B8",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 185,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-passat-ddb7daba8e0d",
+      "sourceIds": [
+        "shiftech-10769"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Passat",
+      "generation": "B8",
+      "yearFrom": 2015,
+      "yearTo": 2018,
+      "stockPowerHp": 120,
+      "stockTorqueNm": 260,
+      "displacementCc": 1600,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 145,
+          "torqueNm": 310
+        },
+        "stage2": {
+          "powerHp": 155,
+          "torqueNm": 330
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volkswagen-transporter-multivan-caravelle-b10a7676454e",
+      "sourceIds": [
+        "shiftech-11075"
+      ],
+      "brand": "Volkswagen",
+      "modelFamily": "Transporter / Multivan / Caravelle",
+      "generation": "T6",
+      "yearFrom": 2015,
+      "stockPowerHp": 204,
+      "stockTorqueNm": 450,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 230,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 240,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v40-08c61e837303",
+      "sourceIds": [
+        "shiftech-11222"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V40",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "stockPowerHp": 245,
+      "stockTorqueNm": 350,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 275,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 290,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v40-23e4afecbe2e",
+      "sourceIds": [
+        "shiftech-11216"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V40",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 235,
+          "torqueNm": 470
+        },
+        "stage2": {
+          "powerHp": 245,
+          "torqueNm": 490
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v40-82d3da02fa2f",
+      "sourceIds": [
+        "shiftech-11221"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V40",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 300,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 225,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 235,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v60-3fe3e1a005fc",
+      "sourceIds": [
+        "shiftech-11242"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2010",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "stockPowerHp": 163,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 450
+        },
+        "stage2": {
+          "powerHp": 190,
+          "torqueNm": 470
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v60-42566c14e03d",
+      "sourceIds": [
+        "shiftech-11244"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2010",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "stockPowerHp": 205,
+      "stockTorqueNm": 420,
+      "displacementCc": 2400,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 230,
+          "torqueNm": 480
+        },
+        "stage2": {
+          "powerHp": 240,
+          "torqueNm": 500
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v60-64f23f5d74d3",
+      "sourceIds": [
+        "shiftech-11259"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 300,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 225,
+          "torqueNm": 400
+        },
+        "stage2": {
+          "powerHp": 235,
+          "torqueNm": 420
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v60-a50c7d725cd0",
+      "sourceIds": [
+        "shiftech-11265"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 180,
+          "torqueNm": 380
+        },
+        "stage2": {
+          "powerHp": 195,
+          "torqueNm": 400
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v60-c9b0aeb32c5a",
+      "sourceIds": [
+        "shiftech-11260"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 245,
+      "stockTorqueNm": 350,
+      "displacementCc": 2000,
+      "fuel": "Petrol",
+      "stages": {
+        "stage1": {
+          "powerHp": 275,
+          "torqueNm": 420
+        },
+        "stage2": {
+          "powerHp": 290,
+          "torqueNm": 440
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v60-ce88e3c2d051",
+      "sourceIds": [
+        "shiftech-11245"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2010",
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "stockPowerHp": 215,
+      "stockTorqueNm": 440,
+      "displacementCc": 2400,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 245,
+          "torqueNm": 500
+        },
+        "stage2": {
+          "powerHp": 255,
+          "torqueNm": 520
+        },
+        "stage3": null
+      }
+    },
+    {
+      "id": "sourced-volvo-v60-d97248ec8d7a",
+      "sourceIds": [
+        "shiftech-11262"
+      ],
+      "brand": "Volvo",
+      "modelFamily": "V60",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "displacementCc": 2000,
+      "fuel": "Diesel",
+      "stages": {
+        "stage1": {
+          "powerHp": 235,
+          "torqueNm": 470
+        },
+        "stage2": {
+          "powerHp": 245,
+          "torqueNm": 490
+        },
+        "stage3": null
+      }
+    }
+  ]
+}

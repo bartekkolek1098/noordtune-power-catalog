@@ -1,0 +1,21 @@
+{
+  "schemaRetrievedAt": "2026-09-15T09:52:24Z",
+  "factsRetrievedAt": "2026-09-15T09:52:43Z",
+  "provider": "RDW Open Data",
+  "resources": ["https://opendata.rdw.nl/api/views/m9d7-ebf2.json", "https://opendata.rdw.nl/api/views/8ys7-d773.json"],
+  "factEndpoints": ["https://opendata.rdw.nl/resource/m9d7-ebf2.json", "https://opendata.rdw.nl/resource/8ys7-d773.json"],
+  "method": "Official JSON API, minimal selected fields; no third-party plate sources. Identifiers below are synthetic; plate query values are omitted.",
+  "dateFields": {
+    "datum_eerste_toelating_dt": "calendar_date",
+    "datum_eerste_toelating": "number (YYYYMMDD)",
+    "datum_eerste_tenaamstelling_in_nederland_dt": "calendar_date",
+    "datum_eerste_tenaamstelling_in_nederland": "number (YYYYMMDD)"
+  },
+  "powerField": {"name": "nettomaximumvermogen", "schemaType": "text", "unit": "kW", "schemaDescriptionVerified": "The official field description specifies combustion-engine maximum power in kW; it is not combined hybrid system power."},
+  "examples": [
+    {"id": "synthetic-bmw-performance", "make": "BMW", "model": "128TI", "fuel": "Benzine", "displacementCc": 1998, "cylinders": 4, "registeredPowerKw": 195, "firstAdmission": "2022-09-14", "firstRegistrationNl": "2026-05-29", "type": "F1H", "variant": "7L51", "execution": "IAW500MG", "liveApplicationVerifiedAt": "2026-09-15T10:02:38.887Z", "matchStatus": "conflict"},
+    {"id": "synthetic-commercial-custom", "make": "FORD", "model": "TRANSIT CUSTOM", "fuel": "Diesel", "displacementCc": 1995, "cylinders": 4, "registeredPowerKw": 77, "firstAdmission": "2019-04-29", "firstRegistrationNl": "2019-04-29", "type": "FCC", "variant": "YLF61ABX", "execution": "R5WGASABC00UA", "liveApplicationVerifiedAt": "2026-09-15T10:03:13.117Z", "matchStatus": "conflict", "ownerReportedOnly": {"ecu": "SID211"}},
+    {"id": "synthetic-commercial-connect", "make": "FORD", "model": "TRANSIT CONNECT", "fuel": "Diesel", "displacementCc": 1499, "cylinders": 4, "registeredPowerKw": 73.5, "firstAdmission": "2018-10-17", "firstRegistrationNl": "2018-10-17", "type": "PU2", "variant": "Z2GA1BFX", "execution": "F2BBBSABDADBK", "liveApplicationVerifiedAt": "2026-09-15T10:03:13.987Z", "matchStatus": "no-match"}
+  ],
+  "limits": "RDW registration facts do not establish manufacturing date, original/replacement engine, installed ECU software, access method, or lock status. Browser regression screenshots use synthetic identifiers."
+}

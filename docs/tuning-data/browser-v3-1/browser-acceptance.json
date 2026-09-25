@@ -1,0 +1,988 @@
+{
+  "checkedAt": "2026-09-16T19:28:03.199Z",
+  "base": "http://localhost:3120",
+  "method": "Local production UI with intercepted deterministic DTOs produced by the real server normalizer from the committed sanitized RDW cohort. QA31xx inputs are synthetic, not live registrations. The four owner plates are tested separately using genuine HTTP requests.",
+  "cases": [
+    {
+      "name": "alfa",
+      "sampleId": "rdw-3dea08368f3f876bae58",
+      "layer": "B",
+      "width": 320,
+      "locale": "nl",
+      "profile": "sourced-alfa-romeo-giulietta-0851d5529e26",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "≈195 pk",
+          "torque": "≈300 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "≈205 pk",
+          "torque": "≈310 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Maatwerk / hardware-afhankelijk",
+          "torque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "alfa",
+      "sampleId": "rdw-3dea08368f3f876bae58",
+      "layer": "B",
+      "width": 1440,
+      "locale": "nl",
+      "profile": "sourced-alfa-romeo-giulietta-0851d5529e26",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "≈195 pk",
+          "torque": "≈300 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "≈205 pk",
+          "torque": "≈310 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Maatwerk / hardware-afhankelijk",
+          "torque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "focus",
+      "sampleId": "rdw-752a71303519e8377dcf",
+      "layer": "B",
+      "width": 320,
+      "locale": "nl",
+      "profile": "sourced-ford-focus-43ebf7f149ae",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "≈160 pk",
+          "torque": "≈210 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "160–160 pk",
+          "torque": "210–210 Nm (schatting)",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 59900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 2",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Maatwerk / hardware-afhankelijk",
+          "torque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+        "pricingCategory": "modern-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "focus",
+      "sampleId": "rdw-752a71303519e8377dcf",
+      "layer": "B",
+      "width": 1440,
+      "locale": "nl",
+      "profile": "sourced-ford-focus-43ebf7f149ae",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "≈160 pk",
+          "torque": "≈210 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "160–160 pk",
+          "torque": "210–210 Nm (schatting)",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 59900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 2",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Maatwerk / hardware-afhankelijk",
+          "torque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+        "pricingCategory": "modern-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "polo",
+      "sampleId": "rdw-3f8cdb0b400e8b135413",
+      "layer": "B",
+      "width": 320,
+      "locale": "nl",
+      "profile": "sourced-volkswagen-polo-3e98b5136a13",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "≈235 pk",
+          "torque": "≈420 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "235–275 pk",
+          "torque": "420–420 Nm (schatting)",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Maatwerk / hardware-afhankelijk",
+          "torque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "polo",
+      "sampleId": "rdw-3f8cdb0b400e8b135413",
+      "layer": "B",
+      "width": 1440,
+      "locale": "nl",
+      "profile": "sourced-volkswagen-polo-3e98b5136a13",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "≈235 pk",
+          "torque": "≈420 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "235–275 pk",
+          "torque": "420–420 Nm (schatting)",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Maatwerk / hardware-afhankelijk",
+          "torque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "mini-conflict",
+      "sampleId": "rdw-def544a330924ae8d803",
+      "layer": "D",
+      "width": 320,
+      "locale": "nl",
+      "profile": "rdw-generic-ac6c948ef6ad",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "135–145 pk",
+          "torque": "Te bevestigen",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "135–150 pk",
+          "torque": "Te bevestigen",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Maatwerk / hardware-afhankelijk",
+          "torque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "mini-conflict",
+      "sampleId": "rdw-def544a330924ae8d803",
+      "layer": "D",
+      "width": 1440,
+      "locale": "nl",
+      "profile": "rdw-generic-ac6c948ef6ad",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "135–145 pk",
+          "torque": "Te bevestigen",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "135–150 pk",
+          "torque": "Te bevestigen",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Maatwerk / hardware-afhankelijk",
+          "torque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "hybrid-unsupported",
+      "sampleId": "rdw-0bfeda53da6910e3e343",
+      "layer": "E",
+      "width": 320,
+      "locale": "nl",
+      "stages": [],
+      "quote": {
+        "kind": "on-request",
+        "currency": "EUR",
+        "reasonCode": "applicable-commercial-profile-unavailable"
+      },
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "hybrid-unsupported",
+      "sampleId": "rdw-0bfeda53da6910e3e343",
+      "layer": "E",
+      "width": 1440,
+      "locale": "nl",
+      "stages": [],
+      "quote": {
+        "kind": "on-request",
+        "currency": "EUR",
+        "reasonCode": "applicable-commercial-profile-unavailable"
+      },
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "alfa",
+      "sampleId": "rdw-3dea08368f3f876bae58",
+      "layer": "B",
+      "width": 320,
+      "locale": "en",
+      "profile": "sourced-alfa-romeo-giulietta-0851d5529e26",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "≈195 hp",
+          "torque": "≈300 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "≈205 hp",
+          "torque": "≈310 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Custom / hardware-dependent",
+          "torque": "Custom / hardware-dependent",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "mini-conflict",
+      "sampleId": "rdw-def544a330924ae8d803",
+      "layer": "D",
+      "width": 320,
+      "locale": "en",
+      "profile": "rdw-generic-ac6c948ef6ad",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "135–145 hp",
+          "torque": "To be confirmed",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "135–150 hp",
+          "torque": "To be confirmed",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Custom / hardware-dependent",
+          "torque": "Custom / hardware-dependent",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "alfa",
+      "sampleId": "rdw-3dea08368f3f876bae58",
+      "layer": "B",
+      "width": 320,
+      "locale": "pl",
+      "profile": "sourced-alfa-romeo-giulietta-0851d5529e26",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "≈195 KM",
+          "torque": "≈300 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "≈205 KM",
+          "torque": "≈310 Nm",
+          "provenance": "single-source",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Indywidualnie / zależnie od osprzętu",
+          "torque": "Indywidualnie / zależnie od osprzętu",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    },
+    {
+      "name": "mini-conflict",
+      "sampleId": "rdw-def544a330924ae8d803",
+      "layer": "D",
+      "width": 320,
+      "locale": "pl",
+      "profile": "rdw-generic-ac6c948ef6ad",
+      "stages": [
+        {
+          "name": "Stage 1",
+          "power": "135–145 KM",
+          "torque": "Do potwierdzenia",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 2",
+          "power": "135–150 KM",
+          "torque": "Do potwierdzenia",
+          "provenance": "generic-indicative",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "name": "Stage 3+",
+          "power": "Indywidualnie / zależnie od osprzętu",
+          "torque": "Indywidualnie / zależnie od osprzętu",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true,
+      "intercepted": true
+    }
+  ],
+  "screenshots": [
+    "alfa-320.png",
+    "mini-conflict-320.png"
+  ],
+  "errors": []
+}

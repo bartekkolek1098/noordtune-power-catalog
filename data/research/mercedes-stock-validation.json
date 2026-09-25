@@ -1,0 +1,77 @@
+[
+  {
+    "url": "https://media.mercedes-benz.nl/a-45-amg-eerste-amg-model-met-viercilinder-motor-indrukwekkend-modeloffensief-van-mercedes-amg-in-geneve/",
+    "profileSourceIds": [
+      "shiftech-6051",
+      "unlimited-counterpart-6051"
+    ],
+    "facts": {
+      "brand": "Mercedes-Benz",
+      "model": "A 45 AMG",
+      "stockPowerKw": 265,
+      "stockPowerHp": 360,
+      "powerUnit": "PS",
+      "stockTorqueNm": 450,
+      "cylinders": 4,
+      "aspiration": "turbo"
+    },
+    "sourceName": "Mercedes-Benz manufacturer media",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievedAt": "2026-09-15T22:53:22.024Z",
+    "contentSha256": "f0771454c6623aae25d3d8c5109ff3f65120acc85198e52ccacd9fcee9b77aff",
+    "retrievalMethod": "page"
+  },
+  {
+    "url": "https://media.mercedes-benz.com/article/19e630dc-5835-4576-9d36-06a4b2c8b9fc",
+    "profileSourceIds": [
+      "shiftech-6079",
+      "unlimited-counterpart-6079"
+    ],
+    "facts": {
+      "brand": "Mercedes-Benz",
+      "model": "A 45 S 4MATIC+",
+      "stockPowerKw": 310,
+      "stockPowerHp": 421,
+      "powerUnit": "PS",
+      "stockTorqueNm": 500,
+      "displacementCc": 1991,
+      "cylinders": 4,
+      "aspiration": "turbo"
+    },
+    "sourceName": "Mercedes-Benz manufacturer media",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievedAt": "2026-09-15T22:53:24.122Z",
+    "contentSha256": "d7f003c151c5467e3f88821a3255abade10e11f8f370f1ede0f95087ce628a01",
+    "retrievalMethod": "page"
+  },
+  {
+    "url": "https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/",
+    "profileSourceIds": [
+      "shiftech-6079",
+      "unlimited-counterpart-6079",
+      "shiftech-6062",
+      "unlimited-counterpart-6062"
+    ],
+    "facts": {
+      "engineFamily": "M139",
+      "stockPowerKw": 310,
+      "stockPowerHp": 421,
+      "powerUnit": "PS",
+      "stockTorqueNm": 500,
+      "displacementCc": 1991,
+      "cylinders": 4,
+      "aspiration": "turbo"
+    },
+    "notes": [
+      "Manufacturer identifies M139 at421PS/500Nm and explicitly names predecessor M133 with475Nm. The381PS predecessor is40PS below421PS in the same statement; model-specific grouping remains anchored by the matching A45 tuning pages. This supporting evidence does not overwrite provider raw identities or create a tuning Stage value."
+    ],
+    "sourceName": "Mercedes-Benz manufacturer media",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievedAt": "2026-09-15T22:53:47.477Z",
+    "contentSha256": "8f0c83f6da2eca30dfa81dfa5754b7ec6af4b2b651a59a4687344948a8b19f48",
+    "retrievalMethod": "page"
+  }
+]
