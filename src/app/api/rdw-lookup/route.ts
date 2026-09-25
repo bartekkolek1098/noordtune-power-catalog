@@ -11,8 +11,8 @@ const lookupSchema = z.object({
   kenteken: z.string().min(1).max(16)
 });
 
-export async function GET(request: NextRequest) {
-  return handleLookup(request, request.nextUrl.searchParams.get("kenteken"));
+export async function GET() {
+  return errorResponse("METHOD_NOT_ALLOWED", "Use POST for vehicle lookup.", 405, {Allow: "POST"});
 }
 
 export async function POST(request: NextRequest) {

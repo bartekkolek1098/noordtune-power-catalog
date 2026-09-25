@@ -1,0 +1,38 @@
+[
+  {
+    "seconds": 4.4,
+    "name": "catalog:audit",
+    "exitCode": 0
+  },
+  {
+    "seconds": 35.1,
+    "name": "test:tuning",
+    "exitCode": 0
+  },
+  {
+    "seconds": 21.4,
+    "name": "test:nl-fleet-v2",
+    "exitCode": 0
+  },
+  {
+    "seconds": 2.6,
+    "name": "test:nl-fleet-v3",
+    "exitCode": 0
+  },
+  {
+    "seconds": 5.3,
+    "name": "lint",
+    "exitCode": 0,
+    "cleanRerunAfterDiagnosticCleanup": true
+  },
+  {
+    "seconds": 7.7,
+    "name": "typecheck",
+    "exitCode": 0
+  },
+  {
+    "seconds": 38.1,
+    "name": "build",
+    "exitCode": 0
+  }
+]

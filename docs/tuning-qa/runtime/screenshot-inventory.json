@@ -171,26 +171,6 @@
       "exists": true
     },
     {
-      "path": "final-review/h329xh-1440.png",
-      "purpose": "Latest actual RDW Defender canonical estimate, all Stages and scoped runtime price at 1440 px",
-      "exists": true
-    },
-    {
-      "path": "final-review/h329xh-320.png",
-      "purpose": "Latest actual RDW Defender canonical estimate, all Stages and scoped runtime price at 320 px",
-      "exists": true
-    },
-    {
-      "path": "final-review/kkh27k-1440.png",
-      "purpose": "Latest actual RDW BMW 128ti reference, generic later ranges and conditional unlock price at 1440 px",
-      "exists": true
-    },
-    {
-      "path": "final-review/kkh27k-320.png",
-      "purpose": "Latest actual RDW BMW 128ti reference, generic later ranges and conditional unlock price at 320 px",
-      "exists": true
-    },
-    {
       "path": "final-review/public-exact-1440.png",
       "purpose": "Latest public GTI source resolution and ordinary runtime budget at 1440 px",
       "exists": true
@@ -208,26 +188,6 @@
     {
       "path": "final-review/unsupported-ev-320.png",
       "purpose": "Latest unsupported EV state with no invented ICE estimate or price at 320 px",
-      "exists": true
-    },
-    {
-      "path": "final-review/v380st-1440.png",
-      "purpose": "Latest actual RDW Connect conditional source comparison and later generic ranges at 1440 px",
-      "exists": true
-    },
-    {
-      "path": "final-review/v380st-320.png",
-      "purpose": "Latest actual RDW Connect conditional source comparison and later generic ranges at 320 px",
-      "exists": true
-    },
-    {
-      "path": "final-review/v978zf-1440.png",
-      "purpose": "Latest actual RDW Custom strong reference and owner target review warning at 1440 px",
-      "exists": true
-    },
-    {
-      "path": "final-review/v978zf-320.png",
-      "purpose": "Latest actual RDW Custom strong reference and owner target review warning at 320 px",
       "exists": true
     }
   ],
@@ -3991,34 +3951,6 @@
       "purpose": "Latest synthetic ordinary petrol generic ranges and runtime price at 320 px"
     },
     {
-      "path": "final-review/h329xh-1440.png",
-      "bytes": 484609,
-      "sha256": "cd3f9a07df1ca3bfea7458a6d27a351052bcd037bb6cf3b8eeee43c5359b8b86",
-      "status": "retained-local",
-      "purpose": "Latest actual RDW Defender canonical estimate, all Stages and scoped runtime price at 1440 px"
-    },
-    {
-      "path": "final-review/h329xh-320.png",
-      "bytes": 374880,
-      "sha256": "d8cfcac709573253b2c26a964e9e1316a5bc9dee03b304c6d107aee97d09a285",
-      "status": "retained-local",
-      "purpose": "Latest actual RDW Defender canonical estimate, all Stages and scoped runtime price at 320 px"
-    },
-    {
-      "path": "final-review/kkh27k-1440.png",
-      "bytes": 492144,
-      "sha256": "cbee442aea08435d8390124ba5d26884573d300d73ee04f277868bbe9267d0e4",
-      "status": "retained-local",
-      "purpose": "Latest actual RDW BMW 128ti reference, generic later ranges and conditional unlock price at 1440 px"
-    },
-    {
-      "path": "final-review/kkh27k-320.png",
-      "bytes": 382858,
-      "sha256": "91bd212cac01249d6a272438f234e8d87760a041980ccaac598f20597011f63f",
-      "status": "retained-local",
-      "purpose": "Latest actual RDW BMW 128ti reference, generic later ranges and conditional unlock price at 320 px"
-    },
-    {
       "path": "final-review/public-exact-1440.png",
       "bytes": 449843,
       "sha256": "20f94eb06d848849b1a2eb7c8ee9e256f5a50cb0c83b624eff56822eb8be43dc",
@@ -4045,34 +3977,6 @@
       "sha256": "8ae4c40d79b30cb885634a88b4294d4cb087a2412061d2155faac313120397d9",
       "status": "retained-local",
       "purpose": "Latest unsupported EV state with no invented ICE estimate or price at 320 px"
-    },
-    {
-      "path": "final-review/v380st-1440.png",
-      "bytes": 506542,
-      "sha256": "c2ac189b2c60db8fb2e9db052892235702fb11ac143bc79b64cf7ba24775d2e4",
-      "status": "retained-local",
-      "purpose": "Latest actual RDW Connect conditional source comparison and later generic ranges at 1440 px"
-    },
-    {
-      "path": "final-review/v380st-320.png",
-      "bytes": 397725,
-      "sha256": "97d3a4947d4707a70da4c55c8824f93e76ce306be9c25adb3cbdfb8bedab6814",
-      "status": "retained-local",
-      "purpose": "Latest actual RDW Connect conditional source comparison and later generic ranges at 320 px"
-    },
-    {
-      "path": "final-review/v978zf-1440.png",
-      "bytes": 523486,
-      "sha256": "fc5e96e3304aad16227cca31fa2a47cdae055d6b1785ee9e1d2b6bfb3c4428db",
-      "status": "retained-local",
-      "purpose": "Latest actual RDW Custom strong reference and owner target review warning at 1440 px"
-    },
-    {
-      "path": "final-review/v978zf-320.png",
-      "bytes": 394593,
-      "sha256": "f6e9f444832105238f268936ae94a5bf9bcbbe3e9f82fae9b8f0d788de2efe88",
-      "status": "retained-local",
-      "purpose": "Latest actual RDW Custom strong reference and owner target review warning at 320 px"
     },
     {
       "path": "final-transit-connect-1440-summary.png",
@@ -4179,110 +4083,6 @@
       }
     },
     {
-      "path": "runtime/live-h329xh-1440.png",
-      "bytes": 473361,
-      "sha256": "dacc9b62fe64b00dc22a8bbe84167e5c295fed654fd71e90952c97a7c8d2b967",
-      "status": "archived-removed-from-branch",
-      "purpose": "Redundant historical width/checkpoint; exact bytes retained at immutable archive commit",
-      "archive": {
-        "commit": "0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
-        "gitBlob": "9b8bd1da009de4a5741857141e6a89b8a7db94fe",
-        "blobUrl": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-h329xh-1440.png",
-        "rawUrl": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-h329xh-1440.png"
-      }
-    },
-    {
-      "path": "runtime/live-h329xh-320.png",
-      "bytes": 344130,
-      "sha256": "266dc13a161106a5453dd86b2ef4a3b6278efd0085feb748774a3c8ddac89821",
-      "status": "archived-removed-from-branch",
-      "purpose": "Redundant historical width/checkpoint; exact bytes retained at immutable archive commit",
-      "archive": {
-        "commit": "0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
-        "gitBlob": "aee6fa9c2eaa9a87e856a91cf7c438887d8227b6",
-        "blobUrl": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-h329xh-320.png",
-        "rawUrl": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-h329xh-320.png"
-      }
-    },
-    {
-      "path": "runtime/live-kkh27k-1440.png",
-      "bytes": 492689,
-      "sha256": "9927080fd42fdea4d864e08363d1df577989efc3bd2957447f5e18150318023b",
-      "status": "archived-removed-from-branch",
-      "purpose": "Redundant historical width/checkpoint; exact bytes retained at immutable archive commit",
-      "archive": {
-        "commit": "0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
-        "gitBlob": "32f439fd1e0346aac3a684bdbce4262b23dccbd2",
-        "blobUrl": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-kkh27k-1440.png",
-        "rawUrl": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-kkh27k-1440.png"
-      }
-    },
-    {
-      "path": "runtime/live-kkh27k-320.png",
-      "bytes": 385781,
-      "sha256": "33864006df134f5c2aad14b7b2167b181877e1c8082d42536e1f8d3ef7734b13",
-      "status": "archived-removed-from-branch",
-      "purpose": "Redundant historical width/checkpoint; exact bytes retained at immutable archive commit",
-      "archive": {
-        "commit": "0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
-        "gitBlob": "f60240ee80805c4db9fbcf88d2a16aa925a95bdc",
-        "blobUrl": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-kkh27k-320.png",
-        "rawUrl": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-kkh27k-320.png"
-      }
-    },
-    {
-      "path": "runtime/live-v380st-1440.png",
-      "bytes": 494763,
-      "sha256": "2744396412ff7b37a3ea9f24e5d165f074851de84ffb6946bfb46570118c9a2a",
-      "status": "archived-removed-from-branch",
-      "purpose": "Redundant historical width/checkpoint; exact bytes retained at immutable archive commit",
-      "archive": {
-        "commit": "0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
-        "gitBlob": "0ed7da3c266e8637219218322ccd559c4980223b",
-        "blobUrl": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-v380st-1440.png",
-        "rawUrl": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-v380st-1440.png"
-      }
-    },
-    {
-      "path": "runtime/live-v380st-320.png",
-      "bytes": 392281,
-      "sha256": "18df7ccff4d8476c6f2de52f881d85b9ab5f7b80a11ea0e386f79bc493b7ede9",
-      "status": "archived-removed-from-branch",
-      "purpose": "Redundant historical width/checkpoint; exact bytes retained at immutable archive commit",
-      "archive": {
-        "commit": "0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
-        "gitBlob": "e0c3e36ea4607643045e5c66841b39f1ccfdd147",
-        "blobUrl": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-v380st-320.png",
-        "rawUrl": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-v380st-320.png"
-      }
-    },
-    {
-      "path": "runtime/live-v978zf-1440.png",
-      "bytes": 485617,
-      "sha256": "1ea58bc547fac7cc2ebbbcf34004723030354fbaa394d3a1e4617fccf0c4bf8a",
-      "status": "archived-removed-from-branch",
-      "purpose": "Redundant historical width/checkpoint; exact bytes retained at immutable archive commit",
-      "archive": {
-        "commit": "0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
-        "gitBlob": "71560ca29985610a9752819b783ff4127d7ee96d",
-        "blobUrl": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-v978zf-1440.png",
-        "rawUrl": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-v978zf-1440.png"
-      }
-    },
-    {
-      "path": "runtime/live-v978zf-320.png",
-      "bytes": 377013,
-      "sha256": "928a9307ae193e137e43387030fd63e9f87df6ef8e5497a28f19fcf6311691da",
-      "status": "archived-removed-from-branch",
-      "purpose": "Redundant historical width/checkpoint; exact bytes retained at immutable archive commit",
-      "archive": {
-        "commit": "0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
-        "gitBlob": "ab5a0814db02d3bd7bf989354615834a31a2c3c4",
-        "blobUrl": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-v978zf-320.png",
-        "rawUrl": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/runtime/live-v978zf-320.png"
-      }
-    },
-    {
       "path": "visual-comparison.png",
       "bytes": 759751,
       "sha256": "d9ffbe999af5370ad6f4da1b8ac750d7cc0c67de298c0c5bd124ae0b9a0a5ad3",
@@ -4295,5 +4095,6 @@
         "rawUrl": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/visual-comparison.png"
       }
     }
-  ]
+  ],
+  "releasePrivacyCleanup": "Historical owner-image references omitted; archived URLs are not rewritten to fictitious anonymous filenames."
 }

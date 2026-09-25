@@ -1,7 +1,7 @@
 "use client";
 
 import {Check, MessageCircle, Sparkles} from "lucide-react";
-import {useState} from "react";
+import {useMemo, useState} from "react";
 import {serviceOptions} from "@/data/catalog-shared";
 import type {TuningEstimateProfile} from "@/data/tuning-estimates-shared";
 import {
@@ -12,6 +12,9 @@ import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
+import {customerStageNotes, customerStagePresentation, customerSources} from "@/lib/stage-presentation";
+import {formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
+import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {PowerChart} from "@/components/power-chart";
 import {Badge} from "@/components/ui/badge";
@@ -28,13 +31,15 @@ function ReferenceSetup({profile, locale}: ReferenceDetailsProps) {
   const [stageIndex, setStageIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const text = copy[locale];
-  const stage = profile.stages[stageIndex] ?? profile.stages[0];
+  const stages = useMemo(() => applyStageHardwarePolicy(profile.stages), [profile.stages]);
+  const stage = stages[stageIndex] ?? stages[0];
+  const presentation = customerStagePresentation(stage, locale, profile);
   const access = assessVehicleAccess(profile);
   const availableOptions = serviceOptions.filter(option => isVehicleServiceSelectable(profile, option))
     .map(option => localizeServiceOption(option, locale));
   const selected = availableOptions.filter(option => selectedOptions.includes(option.id));
   const optionsCents = selected.reduce((sum, option) => sum + Math.round(option.price * 100), 0);
-  const quote = addQuoteOptions(resolveStageQuote(profile, stage, {scope: "vehicle", estimateApplicable: true, access}), optionsCents);
+  const quote = addQuoteOptions(resolveStageQuote(profile, stage, {scope: profile.provenance === "canonical-estimated" ? "family" : "vehicle", estimateApplicable: true, access}), optionsCents);
   const budget = conditionalBudgetNote(quote, locale);
   const powerUnit = locale === "nl" ? "pk" : locale === "pl" ? "KM" : "hp";
   const localeCode = locale === "nl" ? "nl-NL" : locale === "pl" ? "pl-PL" : "en-US";
@@ -42,7 +47,8 @@ function ReferenceSetup({profile, locale}: ReferenceDetailsProps) {
   const quoteHref = whatsappHref({locale, message: createVehicleQuoteMessage({
     locale, vehicle: `${profile.brand} ${profile.model}`, fuel: profile.fuel, vehiclePower: `${profile.stockPowerHp} ${powerUnit}`,
     engine: profile.engine, estimateProfileLabel: label,
-    indicativeOutput: {powerHp: stage?.powerHp, torqueNm: stage?.torqueNm},
+    indicativeOutput: stage, estimateNotes: customerStageNotes(stage, locale, profile),
+    estimateSource: stage ? formatEstimateSource(stage, locale) : undefined,
     quote, access, stage: stage?.name ?? "Stage 1", options: selected.map(option => option.name)
   })});
   const isConnect = profile.id === "ref-ford-transit-connect-15-tdci-100";
@@ -55,12 +61,12 @@ function ReferenceSetup({profile, locale}: ReferenceDetailsProps) {
           <h3 className="racing-title break-words text-2xl leading-tight text-white">{profile.brand} {profile.model}</h3>
           <p className="mt-2 break-words text-sm text-muted-foreground">{profile.engine} · {profile.generation}</p>
           <p className="mt-3 text-xl font-black" data-testid="manual-reference-output">
-            {profile.stockPowerHp} → {stage?.powerHp ?? text.pending} {powerUnit}
-            {stage?.torqueNm !== undefined ? ` · ${stage.torqueNm} Nm` : ""}
+            {profile.stockPowerHp} → {formatEstimatePower(stage, locale)}
+            {!stage.customHardware && stage.torqueNm !== undefined ? ` · ${formatEstimateTorque(stage, locale)}` : ""}
           </p>
-          <p className="mt-2 text-xs leading-5 text-muted-foreground">{text.verification}</p>
+          <p className="mt-2 text-xs leading-5 text-muted-foreground">{presentation.summary}</p>
           {isConnect ? <p className="mt-2 text-xs leading-5 text-muted-foreground" data-testid="manual-connect-condition">{text.connectCondition}</p> : null}
-          <p className="mt-2 text-xs leading-5 text-muted-foreground">{stage?.requirements}</p>
+          {presentation.limitations.map(note => <p className="mt-2 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>)}
           <Button className="mt-4 h-auto min-h-11 max-w-full whitespace-normal rounded-[3px] text-center" onClick={() => setStageIndex(0)} type="button" variant="outline">
             <Sparkles className="h-4 w-4 shrink-0" />{text.recommendation}
           </Button>
@@ -78,17 +84,17 @@ function ReferenceSetup({profile, locale}: ReferenceDetailsProps) {
       </div>
 
       <div className="min-w-0 rounded-[3px] border border-white/10 bg-black/25 p-4">
-        <PowerChart locale={locale} powerUnit={powerUnit} stages={profile.stages} stockPower={profile.stockPowerHp} stockTorque={profile.stockTorqueNm} stockLabel={text.stock} />
+        <PowerChart locale={locale} powerUnit={powerUnit} stages={stages} stockPower={profile.stockPowerHp} stockTorque={profile.stockTorqueNm} stockLabel={text.stock} />
       </div>
 
       <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,.9fr)]">
         <div className="min-w-0 rounded-[3px] border border-white/10 p-4">
           <div className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-primary">{text.selectStage}</div>
           <div className="space-y-2">
-            {profile.stages.map((candidate, index) => (
+            {stages.map((candidate, index) => (
               <button className={`w-full rounded-[3px] border p-3 text-left transition ${stageIndex === index ? "border-primary bg-primary/15" : "border-white/10 bg-white/[0.035] hover:border-primary/50"}`} key={candidate.name} onClick={() => setStageIndex(index)} type="button" aria-pressed={stageIndex === index} data-testid="manual-reference-stage" data-stage={candidate.name}>
-                <span className="flex flex-wrap items-center justify-between gap-2"><span className="inline-flex items-center gap-2 font-bold">{stageIndex === index ? <Check className="h-4 w-4" /> : null}{candidate.name}</span><span className="text-xs text-primary">{formatQuote(resolveStageQuote(profile, candidate, {scope: "vehicle", estimateApplicable: true, access}), locale)}</span></span>
-                <span className="mt-2 block text-sm text-muted-foreground">{candidate.powerHp !== undefined ? `${candidate.powerHp} ${powerUnit}` : text.pending} / {candidate.torqueNm !== undefined ? `${candidate.torqueNm} Nm` : text.pending}</span>
+                <span className="flex flex-wrap items-center justify-between gap-2"><span className="inline-flex items-center gap-2 font-bold">{stageIndex === index ? <Check className="h-4 w-4" /> : null}{candidate.name}</span><span className="text-xs text-primary">{formatQuote(resolveStageQuote(profile, candidate, {scope: profile.provenance === "canonical-estimated" ? "family" : "vehicle", estimateApplicable: true, access}), locale)}</span></span>
+                <span className="mt-2 block text-sm text-muted-foreground">{formatEstimatePower(candidate, locale)}{!candidate.customHardware ? ` / ${formatEstimateTorque(candidate, locale)}` : ""}</span>
               </button>
             ))}
           </div>
@@ -108,13 +114,9 @@ function ReferenceSetup({profile, locale}: ReferenceDetailsProps) {
       </div>
 
       <details className="min-w-0 rounded-[3px] border border-white/10 bg-black/25 p-4 text-sm leading-6 text-muted-foreground" data-testid="manual-reference-sources">
-        <summary className="cursor-pointer font-semibold text-white">{text.details}</summary>
-        <p className="mt-3">{stage?.requirements}</p>
-        <ul className="mt-2 list-disc space-y-1 pl-4">{stage?.packageItems.map(item => <li key={item}>{item}</li>)}</ul>
-        <ul className="mt-2 list-disc space-y-1 pl-4">{profile.conditions.map(condition => <li key={condition}>{condition}</li>)}</ul>
-        <ul className="mt-3 space-y-3">{profile.sourceReferences.map(source => (
-          <li className="break-words" key={source.title}>{source.url ? <a className="text-primary underline" href={source.url} rel="noreferrer" target="_blank">{source.title}</a> : source.title}<span className="mt-1 block text-xs">{source.scope}</span>{source.retrievedAt ? <span className="block text-xs">{text.retrieved}: {source.retrievedAt}</span> : null}</li>
-        ))}</ul>
+        <summary className="cursor-pointer font-semibold text-white">{presentation.heading}</summary>
+        {presentation.requirements.length ? <ul className="mt-2 list-disc space-y-1 pl-4">{presentation.requirements.map(item => <li key={item}>{item}</li>)}</ul> : null}
+        {customerSources(profile, stage).length ? <ul className="mt-3 space-y-3">{customerSources(profile, stage).map(source => <li key={source.url}><a className="text-primary underline" href={source.url} rel="noreferrer" target="_blank">{source.label}</a></li>)}</ul> : null}
       </details>
       <Button asChild className="h-auto min-h-12 w-full whitespace-normal rounded-[3px] py-3 text-center text-sm font-black uppercase leading-tight" variant="outline">
         <a href={quoteHref} rel="noreferrer" target="_blank"><MessageCircle className="h-4 w-4 shrink-0" />{text.quote}</a>

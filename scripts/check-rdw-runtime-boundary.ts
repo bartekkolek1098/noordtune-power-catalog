@@ -6,6 +6,7 @@ import ts from "typescript";
 const sourceRoot = resolve("src");
 const canonical = resolve("src/data/catalog.ts");
 const runtime = resolve("src/lib/rdw-tuning-estimate.ts");
+const sourceDataset = resolve("src/data/tuning-profiles");
 function sourceFiles(directory: string): string[] {
   return readdirSync(directory,{withFileTypes:true}).flatMap(entry => entry.isDirectory()
     ? sourceFiles(join(directory,entry.name)) : /\.tsx?$/.test(entry.name) ? [join(directory,entry.name)] : []);
@@ -13,7 +14,7 @@ function sourceFiles(directory: string): string[] {
 function resolveModule(file: string, specifier: string) {
   const target = specifier.startsWith("@/") ? resolve(sourceRoot,specifier.slice(2))
     : specifier.startsWith(".") ? resolve(dirname(file),specifier) : undefined;
-  return target && [target,`${target}.ts`,`${target}.tsx`,join(target,"index.ts"),join(target,"index.tsx")].find(candidate => existsSync(candidate) && /\.tsx?$/.test(candidate));
+  return target && [target,`${target}.ts`,`${target}.tsx`,`${target}.json`,join(target,"index.ts"),join(target,"index.tsx")].find(candidate => existsSync(candidate) && /\.(?:tsx?|json)$/.test(candidate));
 }
 function valueImports(file: string) {
   const ast = ts.createSourceFile(file,readFileSync(file,"utf8"),ts.ScriptTarget.Latest,true);
@@ -43,10 +44,12 @@ for (const client of clients) {
   function follow(file: string, chain: string[]) {
     if (visited.has(file)) return;
     visited.add(file);
-    if (file === canonical || file === runtime) {leaks.push([...chain,file].map(path=>relative(process.cwd(),path)));return;}
+    if (file === canonical || file === runtime || file.startsWith(sourceDataset)) {leaks.push([...chain,file].map(path=>relative(process.cwd(),path)));return;}
     for (const dependency of graph.get(file) ?? []) follow(dependency,[...chain,file]);
   }
   follow(client,[]);
 }
+const sourcedLeaks=leaks.filter(chain=>chain.some(file=>file.replace(/\\/g,"/").startsWith("src/data/tuning-profiles/")));
 assert.deepEqual(leaks,[],"Value imports from any client component must never reach the canonical catalog/runtime resolver");
 console.log(`CLIENT_IMPORTS_SERVER_CATALOG: ${leaks.length}; ${clients.length} client roots checked transitively through ${graph.size} source modules (type-only imports excluded).`);
+console.log(`CLIENT_IMPORTS_SOURCED_PROFILE_DATASET: ${sourcedLeaks.length}`);

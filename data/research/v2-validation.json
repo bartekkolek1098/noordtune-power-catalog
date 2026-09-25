@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-09-16T15:34:20.005Z",
+  "datasetFingerprint": "fbcfda2b8bb162cb26e0ad28bfe40ef1b5e03acbe680b4ee965fb277b33d4d40",
+  "platform": "win32",
+  "node": "v24.19.0",
+  "method": "All required suites, lint, typecheck and production build run on a disposable copy of the actual working tree. Application and script contents compared back to the workspace after testing. Historical V1 audit files remain intact.",
+  "steps": [
+    {
+      "seconds": 3.7618544,
+      "name": "audit",
+      "exitCode": 0
+    },
+    {
+      "seconds": 27.3273847,
+      "name": "tuning",
+      "exitCode": 0
+    },
+    {
+      "seconds": 16.4128695,
+      "name": "v2",
+      "exitCode": 0
+    },
+    {
+      "seconds": 4.1580819,
+      "name": "lint",
+      "exitCode": 0
+    },
+    {
+      "seconds": 5.5800958,
+      "name": "typecheck",
+      "exitCode": 0
+    },
+    {
+      "seconds": 23.5047423,
+      "name": "build",
+      "exitCode": 0
+    }
+  ],
+  "audit": {
+    "criticalIssueGroups": 0,
+    "warningGroups": 18,
+    "publicVehicles": 24,
+    "sitemapUrls": 291
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "boundaries": {
+    "CLIENT_IMPORTS_SERVER_CATALOG": 0,
+    "CLIENT_IMPORTS_SOURCED_PROFILE_DATASET": 0
+  },
+  "browser": {
+    "actualRegistrations": 17,
+    "actualCases": 23,
+    "ownerAndSyntheticCases": 28,
+    "publicAndManualStage3Cases": 9,
+    "errors": 0,
+    "localProductionPort": 3119
+  },
+  "previewPublicAccess": {
+    "checkedAt": "2026-09-16T15:21:19.066Z",
+    "url": "https://noordtune-power-catalog-git-fe-fe6e40-bartekkolek1098s-projects.vercel.app/nl",
+    "httpStatus": 302,
+    "redirect": "https://vercel.com/sso-api",
+    "bodyBytes": 15,
+    "note": "Public preview check; no authentication bypass or credentials supplied."
+  },
+  "validatedWorkspaceCodeChanges": []
+}

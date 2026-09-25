@@ -69,6 +69,15 @@ test("public estimate DTO vehicleId and known canonical alias resolve the same e
   assert.deepEqual(pricing.resolveStageQuote({id: "volkswagen-golf-r-2-0-tsi-r-2017"}, stage1), direct);
 });
 
+test("reviewed commercial bridge preserves assignment and access scope across a new technical source ID", () => {
+  const technical={id:"sourced-bmw-synthetic",pricingProfileId:"bmw-320d-b47",brand:"BMW",model:"320d"};
+  assert.equal(amount(pricing.resolveStageQuote(technical,stage1,{scope:"family"})),44900);
+  assert.equal(amount(pricing.resolveStageQuote(technical,stage1,{scope:"vehicle"})),70000);
+  assert.equal(pricing.assessVehicleAccess(technical).status,"possible-unlock-review");
+  assert.equal(amount(pricing.resolveStageQuote({id:"sourced-ford-synthetic",pricingProfileId:"ref-ford-transit-connect-15-tdci-100"},stage1)),44900);
+  assert.equal(pricing.resolveStageQuote(technical,{...stage3,customHardware:true}).kind,"on-request");
+});
+
 test("BMW 320d family starting estimate and plate-specific unlock scenario preserve separate scope", () => {
   const vehicle = {id: "bmw-320d-b47"};
   const family = pricing.resolveStageQuote(vehicle, stage1);
@@ -144,6 +153,18 @@ test("selected paid options add once to the 700 package and preserve scope", () 
   assert.equal(total.kind === "from" && total.scope, "advanced-unlock-package");
   const request = pricing.resolveStageQuote(bmw128ti, stage2);
   assert.deepEqual(pricing.addQuoteOptions(request, 14900), request);
+});
+
+test("custom hardware remains on request before any public, reference or approved hardware override", () => {
+  for (const vehicle of [golfGti, bmw128ti, {id:"bmw-x3-e83-20d"}]) {
+    for (const scope of ["family","vehicle"] as const) {
+      for (const stage of [stage1,stage2,stage3]) {
+        const quote=pricing.resolveStageQuote(vehicle,{...stage,customHardware:true,hardwareScopeApproved:true},{scope});
+        assert.equal(quote.kind,"on-request");
+        assert.equal(quote.kind === "on-request" && quote.reasonCode,"custom-hardware-scope-unassigned");
+      }
+    }
+  }
 });
 
 test("integer-cent arithmetic preserves fractional values and rejects invalid totals", () => {

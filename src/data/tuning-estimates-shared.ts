@@ -1,14 +1,24 @@
 import type {EngineVariant, FuelType, StageDefinition, StageName} from "./catalog-shared.ts";
 import type {RuntimeCommercialIdentity} from "./runtime-pricing.ts";
+import type {StageScope, StageComparison} from "../lib/stage-presentation.ts";
+import type {DetailsAction} from "../lib/details-action.ts";
 
 export type EstimateStage = Omit<StageDefinition, "powerHp" | "torqueNm" | "price" | "sourcePrice" | "quote"> & {
   powerHp?: number;
   torqueNm?: number;
-  provenance?: "reviewed" | "reference" | "canonical-estimated" | "generic-indicative";
+  provenance?: "reviewed" | "reference" | "canonical-estimated" | "generic-indicative" | "multi-source" | "single-source";
+  approximate?: boolean;
+  customHardware?: boolean;
+  hardwareScopeApproved?: boolean;
+  sourceConfidence?: "multi-source" | "single-source" | "canonical-existing" | "generic-fallback";
   sourceProfileId?: string;
   resolutionLevel?: 1 | 2 | 3 | 4;
   powerRangeHp?: [number, number];
   torqueRangeNm?: [number, number];
+  customerScope?: StageScope;
+  comparison?: StageComparison;
+  evidenceSourceIds?: string[];
+  planningBasis?: {power: {raw: [number, number]; rounded: [number, number]; clamped: boolean}; torque?: {raw: [number, number]; rounded: [number, number]; clamped: boolean}};
   genericCategory?: "turbo-diesel" | "turbo-petrol" | "naturally-aspirated" | "unknown-aspiration";
   genericScenario?: "standard-range" | "strong-stage1-conditional";
 };
@@ -29,6 +39,8 @@ export type TuningEstimateProfile = Pick<EngineVariant,
 > & {
   id: string;
   vehicleId?: string;
+  /** Reviewed commercial assignment only; never a source identity or public page link. */
+  pricingProfileId?: string;
   brand: string;
   model: string;
   engine: string;
@@ -36,7 +48,9 @@ export type TuningEstimateProfile = Pick<EngineVariant,
   stockPowerHp: number;
   stockTorqueNm?: number;
   stages: EstimateStage[];
-  provenance: "existing-catalog" | "tuner-reference" | "canonical-estimated" | "generic-indicative";
+  provenance: "existing-catalog" | "tuner-reference" | "canonical-estimated" | "generic-indicative" | "sourced-profile";
+  coverageClass?: "A" | "B" | "C" | "D" | "E";
+  sourceConfidence?: "multi-source" | "single-source" | "canonical-existing" | "generic-fallback";
   resolutionLevel?: 1 | 2 | 3 | 4;
   runtimeCommercialIdentity?: RuntimeCommercialIdentity;
   sourceReferences: EstimateSourceReference[];
@@ -46,10 +60,12 @@ export type TuningEstimateProfile = Pick<EngineVariant,
 };
 
 export type EstimateResolution = {
+  coverageClass?: "A" | "B" | "C" | "D" | "E";
   status: "applicable" | "conditional" | "unavailable";
   resolutionLevel?: 1 | 2 | 3 | 4;
   profile?: TuningEstimateProfile;
   reasonCodes: string[];
+  detailsAction?: DetailsAction;
   diagnostics?: {
     referenceTechnicalProfiles: number;
     publicTechnicalProfiles: number;
@@ -76,8 +92,8 @@ export function getCatalogEstimateProfile(vehicle: EngineVariant): TuningEstimat
     stockPowerHp: vehicle.stockPowerHp,
     stockTorqueNm: vehicle.stockTorqueNm,
     stages: vehicle.stages.map(({name, powerHp, torqueNm, requirements, packageItems,
-      confidenceLevel, recommendedUse, hardwareRequired, tcuRecommended, logCheckRecommended, notes}) => ({
-      name, powerHp, torqueNm, requirements, packageItems: [...packageItems],
+      confidenceLevel, recommendedUse, hardwareRequired, tcuRecommended, logCheckRecommended, notes, customerScope, comparison}) => ({
+      name, powerHp, torqueNm, requirements, customerScope, comparison, packageItems: [...packageItems],
       confidenceLevel: confidenceLevel ?? "estimated", recommendedUse, hardwareRequired,
       tcuRecommended, logCheckRecommended, notes: notes ? [...notes] : undefined
     })),

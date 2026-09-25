@@ -3,23 +3,12 @@
   "base": "http://localhost:3113",
   "liveApi": true,
   "mockedResponses": false,
-  "screenshots": [
-    "live-h329xh-320.png",
-    "live-v380st-320.png",
-    "live-v978zf-320.png",
-    "live-kkh27k-320.png",
-    "live-h329xh-1440.png",
-    "live-v380st-1440.png",
-    "live-v978zf-1440.png",
-    "live-kkh27k-1440.png"
-  ],
+  "screenshots": [],
   "results": [
     {
-      "plate": "H329XH",
       "width": 320,
       "locale": "nl",
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -114,11 +103,9 @@
       }
     },
     {
-      "plate": "V380ST",
       "width": 320,
       "locale": "nl",
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -235,11 +222,9 @@
       }
     },
     {
-      "plate": "V978ZF",
       "width": 320,
       "locale": "nl",
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -348,11 +333,9 @@
       }
     },
     {
-      "plate": "KKH27K",
       "width": 320,
       "locale": "nl",
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -461,11 +444,9 @@
       }
     },
     {
-      "plate": "H329XH",
       "width": 390,
       "locale": "nl",
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -560,11 +541,9 @@
       }
     },
     {
-      "plate": "V380ST",
       "width": 390,
       "locale": "nl",
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -681,11 +660,9 @@
       }
     },
     {
-      "plate": "V978ZF",
       "width": 390,
       "locale": "nl",
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -794,11 +771,9 @@
       }
     },
     {
-      "plate": "KKH27K",
       "width": 390,
       "locale": "nl",
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -907,11 +882,9 @@
       }
     },
     {
-      "plate": "H329XH",
       "width": 768,
       "locale": "nl",
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -1006,11 +979,9 @@
       }
     },
     {
-      "plate": "V380ST",
       "width": 768,
       "locale": "nl",
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -1127,11 +1098,9 @@
       }
     },
     {
-      "plate": "V978ZF",
       "width": 768,
       "locale": "nl",
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -1240,11 +1209,9 @@
       }
     },
     {
-      "plate": "KKH27K",
       "width": 768,
       "locale": "nl",
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -1353,11 +1320,9 @@
       }
     },
     {
-      "plate": "H329XH",
       "width": 1440,
       "locale": "nl",
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -1452,11 +1417,9 @@
       }
     },
     {
-      "plate": "V380ST",
       "width": 1440,
       "locale": "nl",
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -1573,11 +1536,9 @@
       }
     },
     {
-      "plate": "V978ZF",
       "width": 1440,
       "locale": "nl",
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -1686,11 +1647,9 @@
       }
     },
     {
-      "plate": "KKH27K",
       "width": 1440,
       "locale": "nl",
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -1799,11 +1758,9 @@
       }
     },
     {
-      "plate": "H329XH",
       "width": 320,
       "locale": "en",
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -1898,11 +1855,9 @@
       }
     },
     {
-      "plate": "V380ST",
       "width": 320,
       "locale": "en",
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -2019,11 +1974,9 @@
       }
     },
     {
-      "plate": "V978ZF",
       "width": 320,
       "locale": "en",
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -2132,11 +2085,9 @@
       }
     },
     {
-      "plate": "KKH27K",
       "width": 320,
       "locale": "en",
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -2245,11 +2196,9 @@
       }
     },
     {
-      "plate": "H329XH",
       "width": 320,
       "locale": "pl",
       "identity": {
-        "plate": "H329XH",
         "make": "LAND ROVER",
         "model": "DEFENDER",
         "version": "Stationwagen",
@@ -2344,11 +2293,9 @@
       }
     },
     {
-      "plate": "V380ST",
       "width": 320,
       "locale": "pl",
       "identity": {
-        "plate": "V380ST",
         "make": "FORD",
         "model": "TRANSIT CONNECT",
         "version": "Gesloten Opbouw",
@@ -2465,11 +2412,9 @@
       }
     },
     {
-      "plate": "V978ZF",
       "width": 320,
       "locale": "pl",
       "identity": {
-        "plate": "V978ZF",
         "make": "FORD",
         "model": "TRANSIT CUSTOM",
         "version": "Gesloten Opbouw",
@@ -2578,11 +2523,9 @@
       }
     },
     {
-      "plate": "KKH27K",
       "width": 320,
       "locale": "pl",
       "identity": {
-        "plate": "KKH27K",
         "make": "BMW",
         "model": "128TI",
         "version": "Hatchback",
@@ -2691,5 +2634,6 @@
       }
     }
   ],
-  "errors": []
+  "errors": [],
+  "releasePrivacyCleanup": "Historical owner-image references omitted; archived URLs are not rewritten to fictitious anonymous filenames."
 }

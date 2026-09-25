@@ -1,3 +1,4 @@
+import {customerVehicle} from "@/lib/customer-profile";
 import {notFound} from "next/navigation";
 import {ArrowLeft} from "lucide-react";
 import {engineCatalog, getVehicleById} from "@/data/catalog";
@@ -258,7 +259,7 @@ export default async function VehiclePage({params}: PageProps) {
               quoteSelected: t("recommendation.quoteSelected")
             }
           }}
-          vehicle={vehicle}
+          vehicle={customerVehicle(vehicle)}
         />
         <SeoInfoSections
           cards={seoCards}

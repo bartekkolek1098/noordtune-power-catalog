@@ -3,7 +3,9 @@ import {engineCatalog, vehicleDatabase} from "../src/data/catalog.ts";
 import {serviceOptions, type EngineVariant} from "../src/data/catalog-shared.ts";
 import type {EstimateMatchInput} from "../src/data/tuning-estimates.ts";
 import {getCatalogEstimateProfile, type TuningEstimateProfile, type EstimateStage} from "../src/data/tuning-estimates-shared.ts";
-import {resolveRdwTuningEstimate, type RuntimeEstimateSources} from "../src/lib/rdw-tuning-estimate.ts";
+// Retained PR13 fallback algorithm checks. The production V1 wrapper and its
+// sourced/Stage3 policy are exercised by test-tuning-profile-dataset.ts.
+import {resolveLegacyRdwTuningEstimate as resolveRdwTuningEstimate, type RuntimeEstimateSources} from "../src/lib/rdw-tuning-estimate.ts";
 import {isVehicleServiceSelectable} from "../src/lib/vehicle-services.ts";
 
 let passed = 0;

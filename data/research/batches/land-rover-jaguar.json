@@ -1,0 +1,472 @@
+[
+  {
+    "id": "shiftech-4580",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xe/2015/diesel/2.0d-180",
+    "retrievedAt": "2026-09-15T22:36:31.680Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9037008d2a403487b49be2a2c0e26d2640506a8aa7bb7417d7e81bb00b4e09ac",
+    "identity": {
+      "brand": "Jaguar",
+      "modelFamily": "XE",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0d",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 430,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 195,
+        "torqueNm": 490
+      },
+      "stage2": {
+        "powerHp": 205,
+        "torqueNm": 510,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-4583",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xe/2015/diesel/2.0d-163",
+    "retrievedAt": "2026-09-15T22:36:35.495Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c1519b360b5d12c31f7e67d52710923a5a2190851bed1ad68b71ffbe55092487",
+    "identity": {
+      "brand": "Jaguar",
+      "modelFamily": "XE",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0d",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 163,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 195,
+        "torqueNm": 490
+      },
+      "stage2": {
+        "powerHp": 205,
+        "torqueNm": 510,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-4603",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xf/2015-x260/diesel/3.0d-300",
+    "retrievedAt": "2026-09-15T22:36:39.488Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "27b8efac4d923ad1efb6b6882e8cc93d70f70ba13d282a669bded3bf4226baa3",
+    "identity": {
+      "brand": "Jaguar",
+      "modelFamily": "XF",
+      "generation": "2015 - X260",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "3.0d",
+      "displacementCc": 3000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 300,
+      "stockTorqueNm": 700,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 330,
+        "torqueNm": 750
+      },
+      "stage2": {
+        "powerHp": 340,
+        "torqueNm": 770,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-4604",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xf/2015-x260/diesel/2.0d-180",
+    "retrievedAt": "2026-09-15T22:36:43.067Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "678c6d6a4306e8cfa8f50aeb1f8441d47e52825be0496a5b1fb2cd4e1a050f87",
+    "identity": {
+      "brand": "Jaguar",
+      "modelFamily": "XF",
+      "generation": "2015 - X260",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0d",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 430,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 195,
+        "torqueNm": 490
+      },
+      "stage2": {
+        "powerHp": 205,
+        "torqueNm": 510,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-5452",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery/2017-v/diesel/2.0-sd4-240",
+    "retrievedAt": "2026-09-15T22:35:55.937Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9736bd5e584c9128a545a5b91c19aeb2715df77438ccfadae65bec5d90d1ce46",
+    "identity": {
+      "brand": "Land Rover",
+      "modelFamily": "Discovery",
+      "generation": "2017 - V",
+      "aliases": [],
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 SD4",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 240,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 265,
+        "torqueNm": 550
+      },
+      "stage2": {
+        "powerHp": 275,
+        "torqueNm": 570,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-5453",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery/2017-v/diesel/3.0-tdv6-eu6-258",
+    "retrievedAt": "2026-09-15T22:35:59.768Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1b17e96a3691cdf5d7fdb1177ce2f88872b6e9ec784c638ebf8d25ce64feecbb",
+    "identity": {
+      "brand": "Land Rover",
+      "modelFamily": "Discovery",
+      "generation": "2017 - V",
+      "aliases": [],
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "engineMarketingName": "3.0 TDV6 EU6",
+      "displacementCc": 3000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 258,
+      "stockTorqueNm": 600,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 670
+      },
+      "stage2": {
+        "powerHp": 310,
+        "torqueNm": 690,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-5464",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery-sport/2015/diesel/2.2-sd4-190",
+    "retrievedAt": "2026-09-15T22:36:03.752Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "85809af0ff692a35e17927b20b42ce8a64688acd10168dfdf7449786fc22fed6",
+    "identity": {
+      "brand": "Land Rover",
+      "modelFamily": "Discovery Sport",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.2 SD4",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 420,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 470
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 490,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-5465",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery-sport/2015/diesel/2.0-td4-180",
+    "retrievedAt": "2026-09-15T22:36:07.633Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7f05ac00a760cc781978fe1f1f461b38d5fdfe5e9934324a44e4600195e6c2ce",
+    "identity": {
+      "brand": "Land Rover",
+      "modelFamily": "Discovery Sport",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 TD4",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 430,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 470
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 490,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-5480",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/evoque/2015/diesel/2.0-td4-180",
+    "retrievedAt": "2026-09-15T22:36:11.369Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed3d8f5a729060b99c31d37c89a634c55e19abe4449cf58ad69f881a88e562ad",
+    "identity": {
+      "brand": "Land Rover",
+      "modelFamily": "Evoque",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 TD4",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 430,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 470
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 490,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  },
+  {
+    "id": "shiftech-5483",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/land-rover/evoque/2015/diesel/2.0-sd4-240",
+    "retrievedAt": "2026-09-15T22:36:15.018Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "59a093eb59aa7d034f6506189fe4d1cceba84cf97d5737206acd8ef527dd36a6",
+    "identity": {
+      "brand": "Land Rover",
+      "modelFamily": "Evoque",
+      "generation": "2015",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 SD4",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 240,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 265,
+        "torqueNm": 550
+      },
+      "stage2": {
+        "powerHp": 275,
+        "torqueNm": 570,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Source hash covers retrieved rendered page extraction, not raw HTTP.",
+      "Published European hp/ch values retained as metric horsepower.",
+      "Displacement is the nominal size printed in the engine label; yearFrom is the source generation start, not proof of engine introduction or first registration."
+    ]
+  }
+]

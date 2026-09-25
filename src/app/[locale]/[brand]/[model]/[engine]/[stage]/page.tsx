@@ -1,3 +1,4 @@
+import {customerVehicle} from "@/lib/customer-profile";
 import {notFound} from "next/navigation";
 import {getTranslations} from "next-intl/server";
 import {
@@ -8,6 +9,8 @@ import {
   stageSlugMap
 } from "@/data/catalog";
 import {formatQuote, resolveStageQuote} from "@/data/pricing";
+import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
+import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
 import {CatalogVerificationNotice} from "@/components/catalog-verification-notice";
@@ -95,7 +98,7 @@ export default async function VehicleStagePage({params}: PageProps) {
     notFound();
   }
 
-  const selectedStage = vehicle.stages.find((item) => item.name === stageName);
+  const selectedStage = applyStageHardwarePolicy(vehicle.stages).find((item) => item.name === stageName);
 
   if (!selectedStage) {
     notFound();
@@ -235,8 +238,8 @@ export default async function VehicleStagePage({params}: PageProps) {
               {vehicle.brand} {vehicle.model} {stageName}
             </h1>
             <p className="mt-4 text-2xl font-bold text-slate-100 md:text-3xl">
-              {vehicle.stockPowerHp} {powerUnit} → {selectedStage.powerHp} {powerUnit} ·{" "}
-              {selectedStage.torqueNm} Nm
+              {vehicle.stockPowerHp} {powerUnit} → {formatEstimatePower(selectedStage, safeLocale)}
+              {!selectedStage.customHardware ? ` · ${formatEstimateTorque(selectedStage, safeLocale)}` : ""}
             </p>
           </div>
         </div>
@@ -311,7 +314,7 @@ export default async function VehicleStagePage({params}: PageProps) {
               quoteSelected: t("recommendation.quoteSelected")
             }
           }}
-          vehicle={vehicle}
+          vehicle={customerVehicle(vehicle)}
         />
         <SeoInfoSections
           cards={seoCards}

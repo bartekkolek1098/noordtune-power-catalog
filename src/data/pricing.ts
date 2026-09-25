@@ -283,6 +283,7 @@ export const pricingV2LegacyMigration: Record<
 export type QuoteVehicle = {
   id?: string;
   vehicleId?: string;
+  pricingProfileId?: string;
   brand?: string;
   make?: string;
   model?: string;
@@ -297,6 +298,8 @@ export type QuoteVehicle = {
 type PublicPricingVehicle = QuoteVehicle & {id: string};
 type PublicPricingStage = {
   name: PublicStageName;
+  customHardware?: boolean;
+  hardwareScopeApproved?: boolean;
   price?: number;
   pricingTier?: PricingTierId;
   sourcePrice?: number;
@@ -337,7 +340,7 @@ export type AccessAssessment =
   | {status: "confirmed-standard" | "confirmed-bench" | "confirmed-unlock-required"; evidence: AccessEvidence}
   | {status: "possible-unlock-review" | "unknown"; reasonCode: string; scenario?: "bmw-unlock-review"};
 
-export type DraftPricingCategory = RuntimePricingCategory | "advanced-unlock";
+export type DraftPricingCategory = RuntimePricingCategory | "contemporary-standard" | "advanced-unlock";
 export type QuoteScope = "family-software" | "vehicle-software" | "advanced-unlock-package";
 export type QuoteResolution =
   | {
@@ -372,7 +375,10 @@ export type DraftPricingAssignment = {
 };
 const draftCategoryAmounts: Record<DraftPricingCategory, Partial<Record<PublicStageName, number>>> = {
   "classic-standard-diesel": {"Stage 1": 29900, "Stage 2": 44900, "Stage 3+": 69900},
+  // Preserved individual public/reference proposals; never a generic runtime fallback.
   "contemporary-standard": {"Stage 1": 44900, "Stage 2": 54900, "Stage 3+": 84900},
+  "standard-2010s": {"Stage 1": 39900, "Stage 2": 54900, "Stage 3+": 79900},
+  "modern-standard": {"Stage 1": 44900, "Stage 2": 59900, "Stage 3+": 89900},
   "higher-complexity": {"Stage 1": 54900, "Stage 2": 69900, "Stage 3+": 99900},
   "advanced-unlock": {"Stage 1": 70000}
 };
@@ -419,7 +425,7 @@ export const draftVehiclePricingAssignments: Record<string, DraftPricingAssignme
 
 /** Family labels may trigger a check; they never establish the installed ECU or a lock. */
 export function assessVehicleAccess(vehicle?: QuoteVehicle | null): AccessAssessment {
-  const publicId = vehicle?.vehicleId ?? (vehicle?.id ? resolvePublicPricingVehicleId(vehicle.id) : undefined);
+  const publicId = vehicle?.pricingProfileId ?? vehicle?.vehicleId ?? (vehicle?.id ? resolvePublicPricingVehicleId(vehicle.id) : undefined);
   const make = (vehicle?.brand ?? vehicle?.make ?? "").trim().toUpperCase();
   const identity = [vehicle?.model, vehicle?.engine, vehicle?.version, vehicle?.generation].filter(Boolean).join(" ");
   const family = [vehicle?.ecuType, vehicle?.ecuSupport?.family].filter(Boolean).join(" ");
@@ -435,13 +441,15 @@ function applicableAccessEvidence(access: AccessAssessment) {
 }
 
 /** Independent commercial estimate. Callers pass a compatible profile, never a rejected candidate. */
-export function resolveStageQuote(vehicle: QuoteVehicle | null | undefined, stage: {name: PublicStageName} | undefined, context: QuoteContext = {}): QuoteResolution {
+export function resolveStageQuote(vehicle: QuoteVehicle | null | undefined, stage: {name: PublicStageName; customHardware?: boolean; hardwareScopeApproved?: boolean} | undefined, context: QuoteContext = {}): QuoteResolution {
   const request = (reasonCode: string): QuoteResolution => ({kind: "on-request", currency: "EUR", reasonCode});
   if (!stage) return request("stage-scope-unavailable");
+  if (stage.customHardware) return request("custom-hardware-scope-unassigned");
   if (context.identityConflict) return request("incompatible-profile-identity");
   if (context.estimateApplicable === false) return request("applicable-commercial-profile-unavailable");
   if (vehicle?.runtimeCommercialIdentity?.workScope === "custom") return request("custom-runtime-work-scope-unassigned");
-  const id = vehicle?.vehicleId ?? vehicle?.id;
+  if (stage.name === "Stage 3+" && vehicle?.runtimeCommercialIdentity && stage.hardwareScopeApproved !== true) return request("stage3-hardware-scope-unapproved");
+  const id = vehicle?.pricingProfileId ?? vehicle?.vehicleId ?? vehicle?.id;
   const assignmentId = id && Object.hasOwn(draftVehiclePricingAssignments, id) ? id : id ? resolvePublicPricingVehicleId(id) : undefined;
   const explicitAssignment = assignmentId ? draftVehiclePricingAssignments[assignmentId] : undefined;
   const runtimeIdentity = classifyRuntimePricing(vehicle?.runtimeCommercialIdentity);

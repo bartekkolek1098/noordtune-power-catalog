@@ -1,0 +1,3879 @@
+[
+  {
+    "id": "shiftech-993",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/petrol/18i-1.5t-136",
+    "retrievedAt": "2026-09-15T22:37:59.703Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "acc23032dbbfde36cc15ae009434935967c924c72868178588b4ef882720782c",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-118i-f20-f21-lci-136hp",
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/petrol/18i-1.5t-136"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "118i",
+      "engineFamily": "B38",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 260
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-118i-f20-f21-lci-136hp.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/petrol/18i-1.5t-136."
+    ],
+    "consensusGroup": "bmw-f20-f21-lci-118i-136-b38"
+  },
+  {
+    "id": "mosselman-bmw-118i-f20-f21-lci-136hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118i-f20-f21-lci-136hp",
+    "retrievedAt": "2026-09-15T22:28:36.713Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "a7567381eadb2ea7ec42b030a9c11bb382d37dd4260dc85c348ecd372f4d8f46",
+    "supportingUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/petrol/18i-1.5t-136"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21 LCI",
+      "yearFrom": 2014,
+      "yearTo": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "118i",
+      "engineFamily": "B38",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 270
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel.",
+      "Applies to the B38 1.5-litre engine only. Early 118i 136 PS LCI cars may use the different N13 1.6-litre engine; verify engine identity."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/petrol/18i-1.5t-136; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-f20-f21-lci-118i-136-b38"
+  },
+  {
+    "id": "shiftech-992",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/petrol/16i-1.5t-109",
+    "retrievedAt": "2026-09-15T22:37:57.870Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "33eea9ba307c08ebddec5bf818733f2a0880d0402ccd8d65fd24b0661a666f9a",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-116i-f20-f21-lci-109hp",
+      "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "116i",
+      "engineFamily": "B38",
+      "displacementCc": 1499,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 109,
+      "stockTorqueNm": 180,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 250
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-116i-f20-f21-lci-109hp.",
+      "Displacement support: https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f20-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f20-f21-lci-116i-109-b38"
+  },
+  {
+    "id": "mosselman-bmw-116i-f20-f21-lci-109hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-116i-f20-f21-lci-109hp",
+    "retrievedAt": "2026-09-15T22:28:38.599Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "ce67ef81439077d1b3ad03c9f6aea5dc18873b817cd03dba5fb1ad5feccb9c31",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21 LCI",
+      "yearFrom": 2014,
+      "yearTo": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "116i",
+      "engineFamily": "B38",
+      "displacementCc": 1499,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 109,
+      "stockTorqueNm": 180,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 165,
+        "torqueNm": 280
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f20-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f20-f21-lci-116i-109-b38"
+  },
+  {
+    "id": "shiftech-1169",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/petrol/18i-1.5t-136",
+    "retrievedAt": "2026-09-15T22:38:58.310Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "aeec37631d60952bc919b800156f18389ad05c63eb44b38c3de0e49a11898f51",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-318i-f30-f31-lci-136hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "318i",
+      "engineFamily": "B38",
+      "displacementCc": 1499,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 260
+      }
+    },
+    "conditions": [
+      "Provider notes only 165–170 PS on 95 RON; higher published output needs suitable higher-octane fuel."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-318i-f30-f31-lci-136hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-318i-136-b38"
+  },
+  {
+    "id": "mosselman-bmw-318i-f30-f31-lci-136hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-318i-f30-f31-lci-136hp",
+    "retrievedAt": "2026-09-15T22:28:40.599Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "b697c9b74598fb2a68fea6a7e02da9970c8883f72e1ce1a7e2759955dda0ac7e",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "318i",
+      "engineFamily": "B38",
+      "displacementCc": 1499,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-318i-136-b38"
+  },
+  {
+    "id": "shiftech-1170",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/petrol/20i-2.0t-eu6d-184",
+    "retrievedAt": "2026-09-15T22:38:59.807Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "37e7b0417ec167a43302c04410de04fb9546869ed7e2c5839c109798ec75cf3c",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-320i-f30-f31-lci-184hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "320i",
+      "engineFamily": "B48",
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 270,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 420
+      }
+    },
+    "conditions": [
+      "Stock-torque disagreement with Mosselman (290 Nm); owner review required before merging."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-320i-f30-f31-lci-184hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    }
+  },
+  {
+    "id": "mosselman-bmw-320i-f30-f31-lci-184hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320i-f30-f31-lci-184hp",
+    "retrievedAt": "2026-09-15T22:28:42.621Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "5442de670f4b5af7fcbecec4cf2a754c54eb6f8a8037475efc8c88e2f75f35ca",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "320i",
+      "engineFamily": "B48",
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 290,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 410
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity.",
+      "Stock-torque disagreement with Shiftech (270 Nm); observations are not merged automatically."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    }
+  },
+  {
+    "id": "shiftech-1167",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/petrol/30i-2.0t-eu6d-252",
+    "retrievedAt": "2026-09-15T22:38:53.615Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "26ea8bc127d88df9f370d33091ffe8e58d1722e147d01b8c861f036856653ebe",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-330i-f30-f31-lci-252hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "330i",
+      "engineFamily": "B48",
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 252,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 310,
+        "torqueNm": 450
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-330i-f30-f31-lci-252hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-330i-252-b48"
+  },
+  {
+    "id": "mosselman-bmw-330i-f30-f31-lci-252hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-330i-f30-f31-lci-252hp",
+    "retrievedAt": "2026-09-15T22:28:44.646Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "a808dbc7bb9f64fed0dd37f1c46ffdbe90652d5d68b4a31a4f564b20cffad908",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "330i",
+      "engineFamily": "B48",
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 252,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 305,
+        "torqueNm": 455
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-330i-252-b48"
+  },
+  {
+    "id": "shiftech-1157",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/petrol/40i-326",
+    "retrievedAt": "2026-09-15T22:38:44.912Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "13fab5a3f4bbfc43a0c300718f83206af8f67997528432ba18d258a5a6f93caa",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-340i-f30-f31-lci-327hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "340i",
+      "engineFamily": "B58",
+      "displacementCc": 2998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 326,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 420,
+        "torqueNm": 580
+      },
+      "stage2": {
+        "powerHp": 440,
+        "torqueNm": 620,
+        "conditions": [
+          "Published Stage 2 assumes exhaust/downpipe hardware with sport catalyst; additional cooling/intake requirements need checking."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-340i-f30-f31-lci-327hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-340i-326-b58"
+  },
+  {
+    "id": "mosselman-bmw-340i-f30-f31-lci-327hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-340i-f30-f31-lci-327hp",
+    "retrievedAt": "2026-09-15T22:28:46.825Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "324093ae6b22330f01e557eead16179a72e7bcf07947d334405510821c494f9d",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "340i",
+      "engineFamily": "B58",
+      "displacementCc": 2998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 326,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 410,
+        "torqueNm": 580
+      },
+      "stage2": {
+        "powerHp": 440,
+        "torqueNm": 600,
+        "conditions": [
+          "Stage 2 requires a sport-catalyst/downpipe and RON 98; gearbox software is recommended for automatic cars."
+        ]
+      },
+      "stage3": {
+        "powerHp": 550,
+        "torqueNm": 650,
+        "conditions": [
+          "Published Stage 3 package requires a downpipe, B58TU high-pressure fuel pump, upgraded B58 turbo and RON 98.",
+          "Hardware applicability and emissions compliance require individual review."
+        ]
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "URL says 327hp, but source stock table and manufacturer specification state 326 PS; 326 is retained. Stage 2+ is a separate package and is not relabelled Stage 3.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-340i-326-b58"
+  },
+  {
+    "id": "shiftech-1000",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/diesel/18d-150",
+    "retrievedAt": "2026-09-15T22:38:04.994Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f9dc8993d0720d35eb494b5df94d3ce7c1ed1f056670c2139838a92d0cb9a3c5",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-118d-f20-f21-lci-150hp",
+      "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "118d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 200,
+        "torqueNm": 420,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-118d-f20-f21-lci-150hp.",
+      "Displacement support: https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f20-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f20-f21-lci-118d-150-b47"
+  },
+  {
+    "id": "mosselman-bmw-118d-f20-f21-lci-150hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118d-f20-f21-lci-150hp",
+    "retrievedAt": "2026-09-15T22:28:48.628Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "3706bb8ddb2f0f7a9a6267958eefdf43d99f4b40a8005622558d61340393a079",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21 LCI",
+      "yearFrom": 2014,
+      "yearTo": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "118d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f20-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f20-f21-lci-118d-150-b47"
+  },
+  {
+    "id": "shiftech-996",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/diesel/20d-190",
+    "retrievedAt": "2026-09-15T22:38:01.687Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "66bc0a3b69711cb98e3835fb438a5ce20952d98d8f00a3d3d373aac8fa1fdb6d",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-120d-f20-f21-lci-190hp",
+      "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "120d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 225,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 235,
+        "torqueNm": 480,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-120d-f20-f21-lci-190hp.",
+      "Displacement support: https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f20-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f20-f21-lci-120d-190-b47"
+  },
+  {
+    "id": "mosselman-bmw-120d-f20-f21-lci-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-120d-f20-f21-lci-190hp",
+    "retrievedAt": "2026-09-15T22:28:50.627Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "9274ab415831df5d6b2a588fca4af2622f375562f0ed4d2ad490aa4312ddccc6",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21 LCI",
+      "yearFrom": 2014,
+      "yearTo": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "120d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 450
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f20-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f20-f21-lci-120d-190-b47"
+  },
+  {
+    "id": "shiftech-997",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/diesel/25d-224",
+    "retrievedAt": "2026-09-15T22:38:03.366Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed00ef3bc834a7ab3b8bd77e406bc26e935c3dc1381659e4071666b820608c6c",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-125d-f20-f21-lci-224hp",
+      "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20-LCI - F52",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "125d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 224,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 270,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 280,
+        "torqueNm": 520,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-125d-f20-f21-lci-224hp.",
+      "Displacement support: https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f20-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f20-f21-lci-125d-224-b47"
+  },
+  {
+    "id": "mosselman-bmw-125d-f20-f21-lci-224hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-125d-f20-f21-lci-224hp",
+    "retrievedAt": "2026-09-15T22:28:52.689Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "5f1c6b28b2309ae92c109f318b0e8151307018080185b701962e2c4a2b7610a7",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21 LCI",
+      "yearFrom": 2014,
+      "yearTo": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "125d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 224,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 270,
+        "torqueNm": 500
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f20-2015",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f20-f21-lci-125d-224-b47"
+  },
+  {
+    "id": "shiftech-1165",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/18d-150",
+    "retrievedAt": "2026-09-15T22:38:51.680Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c7ec68ec5a5b3db65ab89ff7d2e22d52a65f11aa82253fbfd134c6f8261138c9",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-318d-f30-f31-lci-150hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "318d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 200,
+        "torqueNm": 420,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-318d-f30-f31-lci-150hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-318d-150-b47"
+  },
+  {
+    "id": "mosselman-bmw-318d-f30-f31-lci-150hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-318d-f30-f31-lci-150hp",
+    "retrievedAt": "2026-09-15T22:28:54.668Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "61171826ffbe1b3c65d1acc7498935f66c8df2ef68e463e4ad38b3c04f7a530a",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "318d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-318d-150-b47"
+  },
+  {
+    "id": "shiftech-1159",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/20d-190",
+    "retrievedAt": "2026-09-15T22:38:46.566Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7851f9356aa510b8cb48c69e9950c490f7e10ae910b566403ed9914ecb91381a",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-320d-f30-f31-lci-190hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "320d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 225,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 235,
+        "torqueNm": 480,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-320d-f30-f31-lci-190hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-320d-190-b47"
+  },
+  {
+    "id": "mosselman-bmw-320d-f30-f31-lci-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320d-f30-f31-lci-190hp",
+    "retrievedAt": "2026-09-15T22:27:39.921Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "5e9364c5387dc61c5ec227867a46c604ee12f00151fe0cb2938ecfc451155298",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "320d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 450
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-320d-190-b47"
+  },
+  {
+    "id": "shiftech-1164",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/16d-2.0-116",
+    "retrievedAt": "2026-09-15T22:38:50.103Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "326a7c7130f624f7bffb27a3b0cd9991b569a62165f71a715366e842c8846e1d",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-316d-f30-f31-lci-116hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "316d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 116,
+      "stockTorqueNm": 270,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 190,
+        "torqueNm": 420,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-316d-f30-f31-lci-116hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-316d-116-b47"
+  },
+  {
+    "id": "mosselman-bmw-316d-f30-f31-lci-116hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-316d-f30-f31-lci-116hp",
+    "retrievedAt": "2026-09-15T22:28:56.687Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "89b27d35ba20c7f86f5e977bd16985cd062df1fd1192c95ea2f3caf3665f6e95",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "316d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 116,
+      "stockTorqueNm": 270,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-316d-116-b47"
+  },
+  {
+    "id": "shiftech-1161",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/30d-258",
+    "retrievedAt": "2026-09-15T22:38:48.162Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "67d5c3d6eba4f1136143013e8753d456b7699abd267709df9b01f94ba0fcb586",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-330d-f30-f31-lci-258hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "330d",
+      "engineFamily": "N57",
+      "displacementCc": 2993,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 258,
+      "stockTorqueNm": 560,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 310,
+        "torqueNm": 620
+      },
+      "stage2": {
+        "powerHp": 320,
+        "torqueNm": 640,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-330d-f30-f31-lci-258hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-330d-258-n57"
+  },
+  {
+    "id": "mosselman-bmw-330d-f30-f31-lci-258hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-330d-f30-f31-lci-258hp",
+    "retrievedAt": "2026-09-15T22:29:00.735Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "64e5efc49a332f828d6ceb934477209fd6cf215cb9a4dd27fc826fb1e18cfba0",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "330d",
+      "engineFamily": "N57",
+      "displacementCc": 2993,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 258,
+      "stockTorqueNm": 560,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 310,
+        "torqueNm": 630
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-330d-258-n57"
+  },
+  {
+    "id": "shiftech-1168",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/diesel/35d-313",
+    "retrievedAt": "2026-09-15T22:38:55.596Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "85f4b089ab9f180b12231092aabcd7c73cc629785eeac403612be35bd6cbef06",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-335xd-f30-f31-lci-313hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35-LCI",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "335xd",
+      "engineFamily": "N57",
+      "displacementCc": 2993,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 313,
+      "stockTorqueNm": 630,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 360,
+        "torqueNm": 710
+      },
+      "stage2": {
+        "powerHp": 370,
+        "torqueNm": 730,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-335xd-f30-f31-lci-313hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-335xd-313-n57"
+  },
+  {
+    "id": "mosselman-bmw-335xd-f30-f31-lci-313hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-335xd-f30-f31-lci-313hp",
+    "retrievedAt": "2026-09-15T22:29:03.064Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "0e338d0af8e79e7b18241fd976d9e64af65059c41929a57d5b175c6e28b90f26",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31 LCI",
+      "yearFrom": 2015,
+      "yearTo": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "335xd",
+      "engineFamily": "N57",
+      "displacementCc": 2993,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 313,
+      "stockTorqueNm": 630,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 356,
+        "torqueNm": 725
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details2",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-lci-335xd-313-n57"
+  },
+  {
+    "id": "shiftech-981",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2011-f20/diesel/20d-184",
+    "retrievedAt": "2026-09-15T22:37:52.172Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ccc5b31d1060476694d100ce37a31b59e0898a60fa83d22fb44596da688698de",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-120d-f20-f21-184hp",
+      "https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20",
+      "yearFrom": 2011,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "120d",
+      "engineFamily": "N47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 230,
+        "torqueNm": 470,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-120d-f20-f21-184hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series."
+    ],
+    "consensusGroup": "bmw-f20-f21-120d-184-n47"
+  },
+  {
+    "id": "mosselman-bmw-120d-f20-f21-184hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-120d-f20-f21-184hp",
+    "retrievedAt": "2026-09-15T22:29:04.896Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "85d3b71969cdd0abc69f149ac72d880a9ecca66da054a11d63d8ffe0c9bff88a",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "120d",
+      "engineFamily": "N47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 460
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-f20-f21-120d-184-n47"
+  },
+  {
+    "id": "shiftech-988",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2011-f20/diesel/18d-143",
+    "retrievedAt": "2026-09-15T22:37:56.005Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1fa02fe69d2a348f1f264af6425826591ba2c5508868b23156ae740bb6585a80",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-118d-f20-f21-143hp",
+      "https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20",
+      "yearFrom": 2011,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "118d",
+      "engineFamily": "N47",
+      "engineCodes": [
+        "N47D20"
+      ],
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 143,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 190,
+        "torqueNm": 440,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-118d-f20-f21-143hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series."
+    ],
+    "consensusGroup": "bmw-f20-f21-118d-143-n47"
+  },
+  {
+    "id": "mosselman-bmw-118d-f20-f21-143hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118d-f20-f21-143hp",
+    "retrievedAt": "2026-09-15T22:29:06.859Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "51325841abc5db43a7228fba22f3c08fe2edb8786bfe9ebe3a17eea0ea7d02b6",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "118d",
+      "engineFamily": "N47",
+      "engineCodes": [
+        "N47D20"
+      ],
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 143,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-f20-f21-118d-143-n47"
+  },
+  {
+    "id": "shiftech-982",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2011-f20/diesel/25d-218",
+    "retrievedAt": "2026-09-15T22:37:54.268Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "92f1bab056760ebbfeec791232eb79934cf6b5203fca21acce110bdbb1995783",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-125d-f20-f21-218hp",
+      "https://www.press.bmwgroup.com/global/article/detail/T0124299EN/bmw-model-year-update-measures-for-march-2012"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20",
+      "yearFrom": 2011,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "125d",
+      "engineFamily": "N47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 218,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 270,
+        "torqueNm": 520,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-125d-f20-f21-218hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/detail/T0124299EN/bmw-model-year-update-measures-for-march-2012."
+    ],
+    "consensusGroup": "bmw-f20-f21-125d-218-n47"
+  },
+  {
+    "id": "mosselman-bmw-125d-f20-f21-218hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-125d-f20-f21-218hp",
+    "retrievedAt": "2026-09-15T22:29:08.867Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "93fb1022a4e73edc85aae9465852ad8215f487d6b1ab5ab44aadb903d970f7ac",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/detail/T0124299EN/bmw-model-year-update-measures-for-march-2012"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "125d",
+      "engineFamily": "N47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 218,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 265,
+        "torqueNm": 500
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/detail/T0124299EN/bmw-model-year-update-measures-for-march-2012; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-f20-f21-125d-218-n47"
+  },
+  {
+    "id": "shiftech-133172",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2011-f20/diesel/16d-2.0-116",
+    "retrievedAt": "2026-09-15T22:38:15.379Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "77f022f15a7c8afbb2defc95c5e44de33a58b08bb41cba10cfbed348525f71f2",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-116d-f20-f21-116hp",
+      "https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20",
+      "yearFrom": 2011,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "116d",
+      "engineFamily": "N47",
+      "engineCodes": [
+        "N47D20"
+      ],
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "stockTorqueNm": 270,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 190,
+        "torqueNm": 420,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [
+      "Stock-torque disagreement with Mosselman (260 Nm); owner review required before merging."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-116d-f20-f21-116hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series."
+    ]
+  },
+  {
+    "id": "mosselman-bmw-116d-f20-f21-116hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-116d-f20-f21-116hp",
+    "retrievedAt": "2026-09-15T22:29:10.887Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "4c8a85113da83f0699d19861cd5d87486bdddea41ab865cc20258fce1b7a28eb",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F20/F21",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "116d",
+      "engineFamily": "N47",
+      "engineCodes": [
+        "N47D20"
+      ],
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "stockTorqueNm": 260,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series; nominal litre class only.",
+      "Stock-torque disagreement with Shiftech (270 Nm); observations are not merged automatically."
+    ]
+  },
+  {
+    "id": "shiftech-1141",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2012-f30-f31-f35/diesel/20d-184",
+    "retrievedAt": "2026-09-15T22:38:40.122Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed64ea236b7163d25c56e935d3042185cbb11256ea9aa8e46b50c79b7ea6c49e",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-320d-f30-f31-184hp",
+      "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "320d",
+      "engineFamily": "N47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 230,
+        "torqueNm": 470,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-320d-f30-f31-184hp.",
+      "Displacement support: https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015."
+    ],
+    "consensusGroup": "bmw-f30-f31-320d-184-n47"
+  },
+  {
+    "id": "mosselman-bmw-320d-f30-f31-184hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320d-f30-f31-184hp",
+    "retrievedAt": "2026-09-15T22:29:12.899Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "1d982a464c9ee9be8445c94751f80da42a1403737932bb5fde2bc7c5c6a3a7d4",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "320d",
+      "engineFamily": "N47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 450
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-f30-f31-320d-184-n47"
+  },
+  {
+    "id": "shiftech-1144",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2012-f30-f31-f35/diesel/18d-143",
+    "retrievedAt": "2026-09-15T22:38:41.760Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9fc7f0b97d178a0cbe759ff4e7f6336c53eadba011aae0b64bc323c511ab1cee",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-318d-f30-f31-143hp",
+      "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "318d",
+      "engineFamily": "N47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 143,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 190,
+        "torqueNm": 440,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-318d-f30-f31-143hp.",
+      "Displacement support: https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015."
+    ],
+    "consensusGroup": "bmw-f30-f31-318d-143-n47"
+  },
+  {
+    "id": "mosselman-bmw-318d-f30-f31-143hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-318d-f30-f31-143hp",
+    "retrievedAt": "2026-09-15T22:29:15.343Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "e350a7d3d9df34a4ccf4419aae3cc5983589154700828d26de1132b441017883",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "318d",
+      "engineFamily": "N47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 143,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-f30-f31-318d-143-n47"
+  },
+  {
+    "id": "shiftech-1146",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2012-f30-f31-f35/diesel/25d-218",
+    "retrievedAt": "2026-09-15T22:38:43.385Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c73cc4a62ad7f3153cf3ee896eca337bd1a7a930f4522bdfc7edf0087e825574",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-325d-f30-f31-218hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "325d",
+      "engineFamily": "N47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 218,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 270,
+        "torqueNm": 520,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-325d-f30-f31-218hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-325d-218-n47"
+  },
+  {
+    "id": "mosselman-bmw-325d-f30-f31-218hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-325d-f30-f31-218hp",
+    "retrievedAt": "2026-09-15T22:29:17.079Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "19c203702e169d2ae192229162b4b7c9e6fa6b2549ebc47d2d7f65d8e6f22ee4",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "325d",
+      "engineFamily": "N47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 218,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 265,
+        "torqueNm": 500
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-325d-218-n47"
+  },
+  {
+    "id": "shiftech-1140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2012-f30-f31-f35/diesel/30d-258",
+    "retrievedAt": "2026-09-15T22:38:38.448Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d40fcf92062961ea5ccd55da0dafae2abc706d7a4e82956b28ea2b439313a180",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-330d-f30-f31-258hp",
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30-F31-F35",
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "330d",
+      "engineFamily": "N57",
+      "displacementCc": 2993,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 258,
+      "stockTorqueNm": 560,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 310,
+        "torqueNm": 620
+      },
+      "stage2": {
+        "powerHp": 320,
+        "torqueNm": 640,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-330d-f30-f31-258hp.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-330d-258-n57"
+  },
+  {
+    "id": "mosselman-bmw-330d-f30-f31-258hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-330d-f30-f31-258hp",
+    "retrievedAt": "2026-09-15T22:29:18.861Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "2210523d4f192cd935202c9e8b2b27937589410bb81681ae179ccd54809f063c",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "F30/F31",
+      "yearFrom": 2011,
+      "yearTo": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "330d",
+      "engineFamily": "N57",
+      "displacementCc": 2993,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 258,
+      "stockTorqueNm": 560,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 630
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f30-2015-details",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f30-f31-330d-258-n57"
+  },
+  {
+    "id": "mosselman-bmw-520d-f10-f11-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-520d-f10-f11-190hp",
+    "retrievedAt": "2026-09-15T22:29:26.906Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "d362c36cf14e03745673c4e3e285a9690cbeb564245297b0fd8e3b065cd23dcf",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/global/article/detail/T0193460EN/the-new-bmw-518d-520d"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "F10/F11",
+      "yearFrom": 2009,
+      "yearTo": 2017,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "520d",
+      "engineFamily": "B47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 435
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/global/article/detail/T0193460EN/the-new-bmw-518d-520d; nominal litre class only.",
+      "Shiftech counterpart has no published Stage 1 output; not used as a second tuning source."
+    ]
+  },
+  {
+    "id": "shiftech-1302",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2016-g30-g31/diesel/20d-eu6d-190",
+    "retrievedAt": "2026-09-15T22:39:41.296Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8660b1a87c757a2d36c048d296dbd82b88188d3146a7c3180148ed654e75b18d",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-520d-g30-g31-190hp",
+      "https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30-G31",
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "520d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 225,
+        "torqueNm": 480
+      },
+      "stage2": {
+        "powerHp": 235,
+        "torqueNm": 490,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-520d-g30-g31-190hp.",
+      "Displacement support: https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-g30-2016",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-g30-g31-520d-190-b47"
+  },
+  {
+    "id": "mosselman-bmw-520d-g30-g31-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-520d-g30-g31-190hp",
+    "retrievedAt": "2026-09-15T22:29:28.902Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "6d0ceea322e128e5c64f0cffb71d33e109ba96ffc64c0f9f411122829e8a9462",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30/G31",
+      "yearFrom": 2015,
+      "yearTo": 2020,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "520d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 450
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-g30-2016",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-g30-g31-520d-190-b47"
+  },
+  {
+    "id": "shiftech-1301",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2016-g30-g31/petrol/30i-2.0t-eu6d-252",
+    "retrievedAt": "2026-09-15T22:39:39.540Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0e7c262ea3b2122ccac15010bc9219ade16d32520c5842455ea9da6da700d134",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-530i-g30-g31-252hp",
+      "https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30-G31",
+      "yearFrom": 2016,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "530i",
+      "engineFamily": "B48",
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 252,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 310,
+        "torqueNm": 450
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-530i-g30-g31-252hp.",
+      "Displacement support: https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-g30-2016",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-g30-g31-530i-252-b48"
+  },
+  {
+    "id": "mosselman-bmw-530i-g30-g31-252hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-530i-g30-g31-252hp",
+    "retrievedAt": "2026-09-15T22:29:30.842Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "330f8ef43a3bd1fe13531cfb779c980c219e0495ba95b011bd8d041ffae75974",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30/G31",
+      "yearFrom": 2015,
+      "yearTo": 2020,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "530i",
+      "engineFamily": "B48",
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 252,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 305,
+        "torqueNm": 455
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-g30-2016",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-g30-g31-530i-252-b48"
+  },
+  {
+    "id": "shiftech-1303",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2016-g30-g31/petrol/m40i-340",
+    "retrievedAt": "2026-09-15T22:39:43.268Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7fa47130d3dd4c1a27d240888214b2498ad0144257e9ac6f49dba8270039de64",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-540i-g30-340hp",
+      "https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30-G31",
+      "yearFrom": 2016,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "540i",
+      "engineFamily": "B58",
+      "displacementCc": 2998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 340,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 420,
+        "torqueNm": 580
+      },
+      "stage2": {
+        "powerHp": 440,
+        "torqueNm": 620,
+        "conditions": [
+          "Published Stage 2 assumes exhaust/downpipe hardware with sport catalyst; additional cooling/intake requirements need checking."
+        ]
+      }
+    },
+    "conditions": [
+      "Stock-torque disagreement with Mosselman (450 Nm); owner review required before merging."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-540i-g30-340hp.",
+      "Displacement support: https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-g30-2016",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    }
+  },
+  {
+    "id": "mosselman-bmw-540i-g30-340hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-540i-g30-340hp",
+    "retrievedAt": "2026-09-15T22:29:33.023Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "b5b9ba8c8e14f947e5bf0c4018426ce04b070727cbfd8f1ff0672fd0be4f2116",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 Series",
+      "generation": "G30/G31",
+      "yearFrom": 2015,
+      "yearTo": 2020,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "540i",
+      "engineFamily": "B58",
+      "displacementCc": 2998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 340,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 410,
+        "torqueNm": 580
+      },
+      "stage2": {
+        "powerHp": 440,
+        "torqueNm": 600,
+        "conditions": [
+          "Stage 2 requires a sport-catalyst/downpipe and RON 98."
+        ]
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Sequential HTML headings labelled Stage 3/4 actually describe Stage 1+/2+ OPF packages; they are excluded.",
+      "Displacement support: https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna; manufacturer effective capacity.",
+      "Stock-torque disagreement with Shiftech (500 Nm); observations are not merged automatically."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-g30-2016",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    }
+  },
+  {
+    "id": "shiftech-433364",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/20i-2.0t-eu6d-184",
+    "retrievedAt": "2026-09-15T22:39:29.530Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "15dd7b872bea40c6841b9c654fb18561c1d0d44e8464aa039f95bd6c37eb9273",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-320i-g20-184hp",
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/20i-2.0t-eu6d-184"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20-G21",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "320i",
+      "engineFamily": "B48",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 270,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 420
+      }
+    },
+    "conditions": [
+      "Stock-torque disagreement with Mosselman (290 Nm); owner review required before merging."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-320i-g20-184hp.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/20i-2.0t-eu6d-184."
+    ]
+  },
+  {
+    "id": "mosselman-bmw-320i-g20-184hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320i-g20-184hp",
+    "retrievedAt": "2026-09-15T22:29:34.911Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "8dbc63a6edd93ab9c4baa952fb6267c97baa2105cbf94b18614bb97803a9d20d",
+    "supportingUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/20i-2.0t-eu6d-184"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20/G21",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "320i",
+      "engineFamily": "B48",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 290,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 420
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/20i-2.0t-eu6d-184; nominal litre class only.",
+      "Stock-torque disagreement with Shiftech (270 Nm); observations are not merged automatically."
+    ]
+  },
+  {
+    "id": "shiftech-1177",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/30i-2.0t-eu6d-258",
+    "retrievedAt": "2026-09-15T22:39:27.201Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "575530eefc55d4d339fd685ebb9579f7c512786ee05950d818589156d8b94b1d",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-330i-g20-258hp",
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/30i-2.0t-eu6d-258"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20-G21",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "330i",
+      "engineFamily": "B48",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 258,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 310,
+        "torqueNm": 500
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-330i-g20-258hp.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/30i-2.0t-eu6d-258."
+    ],
+    "consensusGroup": "bmw-g20-g21-330i-258-b48"
+  },
+  {
+    "id": "mosselman-bmw-330i-g20-258hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-330i-g20-258hp",
+    "retrievedAt": "2026-09-15T22:29:36.940Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "ffe53eeabbf740319b4413960324e0f9efaa7143e56076345dae5cd18b356b9d",
+    "supportingUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/30i-2.0t-eu6d-258"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20/G21",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "330i",
+      "engineFamily": "B48",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 258,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 305,
+        "torqueNm": 455
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/30i-2.0t-eu6d-258; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-g20-g21-330i-258-b48"
+  },
+  {
+    "id": "shiftech-1176",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/diesel/18d-eu6d-150",
+    "retrievedAt": "2026-09-15T22:39:06.575Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed0559bd42bd4247d826ecaa448b419080bb2b61440f33b0772d9c7bc7fbbb10",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-318d-g20-150hp",
+      "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20-G21",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "318d",
+      "engineFamily": "B47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 200,
+        "torqueNm": 470,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-318d-g20-150hp.",
+      "Displacement support: https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon."
+    ],
+    "consensusGroup": "bmw-g20-g21-318d-150-b47"
+  },
+  {
+    "id": "mosselman-bmw-318d-g20-150hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-318d-g20-150hp",
+    "retrievedAt": "2026-09-15T22:29:38.957Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "38b3b0b2af10ef632f223e8433d09aa2175b12a34ce0a76b12665be04b7913b0",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20/G21",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "318d",
+      "engineFamily": "B47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-g20-g21-318d-150-b47"
+  },
+  {
+    "id": "shiftech-1175",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/diesel/20d-eu6d-190",
+    "retrievedAt": "2026-09-15T22:39:01.645Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c084bfcb6d2bc2b60661b1945903786adad64fd2dfee37d2bd3479dd43cc5c3a",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-320d-g20-190hp",
+      "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20-G21",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "320d",
+      "engineFamily": "B47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 225,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 235,
+        "torqueNm": 480,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-320d-g20-190hp.",
+      "Displacement support: https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon."
+    ],
+    "consensusGroup": "bmw-g20-g21-320d-190-b47"
+  },
+  {
+    "id": "mosselman-bmw-320d-g20-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-320d-g20-190hp",
+    "retrievedAt": "2026-09-15T22:29:40.932Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "e8d416e684630f2b6021989695f4d92239120fc9e1965d6586e0c4a8b2a6da5c",
+    "supportingUrls": [
+      "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 Series",
+      "generation": "G20/G21",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "320d",
+      "engineFamily": "B47",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 480
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-g20-g21-320d-190-b47"
+  },
+  {
+    "id": "shiftech-1008",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/18i-1.5t-eu6d-140",
+    "retrievedAt": "2026-09-15T22:38:06.679Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "731369bfd7c1d4a3ac7a91e78fb6dc4fa333d5d4f391ad752c7a8bd55dda078f",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-118i-f40-140hp",
+      "https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "118i",
+      "engineFamily": "B38",
+      "displacementCc": 1499,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 260
+      }
+    },
+    "conditions": [
+      "Provider notes only 165–170 PS on 95 RON; higher published output needs suitable higher-octane fuel."
+    ],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-118i-f40-140hp.",
+      "Displacement support: https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f40-2019",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f40-118i-140-b38"
+  },
+  {
+    "id": "mosselman-bmw-118i-f40-140hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118i-f40-140hp",
+    "retrievedAt": "2026-09-15T22:29:42.891Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "1bdc29d0e44425e8254f73fc73b16048d9342599b36efac374f823b72c92ebc6",
+    "supportingUrls": [
+      "https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "118i",
+      "engineFamily": "B38",
+      "displacementCc": 1499,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "This redesigned Mosselman page omits its generation year band. The 2019 start is supported by the linked BMW launch specification and the matching Shiftech generation; it is not presented as a Mosselman model-year statement.",
+      "Displacement support: https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f40-2019",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f40-118i-140-b38"
+  },
+  {
+    "id": "shiftech-1013",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/28ti-2.0t-265",
+    "retrievedAt": "2026-09-15T22:38:11.569Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fbd0c578f50e4d2d45556c34d4f804ac8a271ef347a162601fdb69d4881a56b2",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-128ti-f40-265hp",
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/28ti-2.0t-265"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "128ti",
+      "engineFamily": "B48",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 265,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 500
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-128ti-f40-265hp.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/28ti-2.0t-265."
+    ],
+    "consensusGroup": "bmw-f40-128ti-265-b48"
+  },
+  {
+    "id": "mosselman-bmw-128ti-f40-265hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-128ti-f40-265hp",
+    "retrievedAt": "2026-09-15T22:29:44.965Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "99723c55dc5f44abc58affefc22c86e5e64736a1cf51d69c900c4f6591187740",
+    "supportingUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/28ti-2.0t-265"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "128ti",
+      "engineFamily": "B48",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 265,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 310,
+        "torqueNm": 480
+      },
+      "stage2": {
+        "powerHp": 320,
+        "conditions": [
+          "Intercooler hardware and RON 98 fuel required.",
+          "Source conflict: Stage 2 table shows 480 Nm while the package description states 500 Nm; torque is withheld pending review."
+        ]
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/28ti-2.0t-265; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-f40-128ti-265-b48"
+  },
+  {
+    "id": "shiftech-1010",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/diesel/18d-eu6d-150",
+    "retrievedAt": "2026-09-15T22:38:09.947Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ab7acb7e958691f47765163a9380c5a3439c238fa1fb481df31c3d306e72aa95",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-118d-f40-150hp",
+      "https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "118d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 200,
+        "torqueNm": 420,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-118d-f40-150hp.",
+      "Displacement support: https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f40-2019",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f40-118d-150-b47"
+  },
+  {
+    "id": "mosselman-bmw-118d-f40-150hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-118d-f40-150hp",
+    "retrievedAt": "2026-09-15T22:29:46.897Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "c4eda98edc0aa808fddd19b1652c7c2283f4acc207e27e8539894ce68a38dc90",
+    "supportingUrls": [
+      "https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "118d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 400
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f40-2019",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f40-118d-150-b47"
+  },
+  {
+    "id": "shiftech-1009",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/diesel/20d-eu6d-190",
+    "retrievedAt": "2026-09-15T22:38:08.309Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d1bb6bccf49161abdbefb58eabfeb3a04292842a416b3d0067a543ca5aa4bb38",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-120d-f40-190hp",
+      "https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "120d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 225,
+        "torqueNm": 480
+      },
+      "stage2": {
+        "powerHp": 235,
+        "torqueNm": 490,
+        "conditions": [
+          "Published Stage 2 requires matching installed hardware; no diesel-specific parts list is published on this page."
+        ]
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-120d-f40-190hp.",
+      "Displacement support: https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f40-2019",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f40-120d-190-b47"
+  },
+  {
+    "id": "mosselman-bmw-120d-f40-190hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-120d-f40-190hp",
+    "retrievedAt": "2026-09-15T22:29:48.922Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "21164ae5d72e0a71b8ba8d70f0ee27e8937d5ea9b04c87a76d35501168207e46",
+    "supportingUrls": [
+      "https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "120d",
+      "engineFamily": "B47",
+      "displacementCc": 1995,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 450
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082; manufacturer effective capacity."
+    ],
+    "stockValidation": {
+      "sourceId": "manufacturer-bmw-f40-2019",
+      "fields": [
+        "stockPowerHp",
+        "displacementCc"
+      ]
+    },
+    "consensusGroup": "bmw-f40-120d-190-b47"
+  },
+  {
+    "id": "shiftech-186327",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/16i-1.5t-109",
+    "retrievedAt": "2026-09-15T22:38:17.679Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9d2c4c5499384ee09987a6884d411f1859fffc64ef4144c471f1d36c95f51609",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-116i-f40-109hp",
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/16i-1.5t-109"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "116i",
+      "engineFamily": "B38",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 109,
+      "stockTorqueNm": 180,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 250
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-116i-f40-109hp.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/16i-1.5t-109."
+    ],
+    "consensusGroup": "bmw-f40-116i-109-b38"
+  },
+  {
+    "id": "mosselman-bmw-116i-f40-109hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-116i-f40-109hp",
+    "retrievedAt": "2026-09-15T22:29:50.921Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "e3e6e69dcc3d0dfac97609946a576ef9aea214abde858cc30f9fff5118df0be9",
+    "supportingUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/16i-1.5t-109"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "116i",
+      "engineFamily": "B38",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 109,
+      "stockTorqueNm": 180,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 165,
+        "torqueNm": 280
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/16i-1.5t-109; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-f40-116i-109-b38"
+  },
+  {
+    "id": "shiftech-1014",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/20i-2.0t-178",
+    "retrievedAt": "2026-09-15T22:38:13.490Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "51a9f9fdf9f814a6b8d0058b0e0808e19467d81674c59383e88771867cd22e99",
+    "supportingUrls": [
+      "https://www.mosselmanturbo.com/nl/bmw-120i-f40-178hp",
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/20i-2.0t-178"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "120i",
+      "engineFamily": "B48",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 178,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 230,
+        "torqueNm": 360
+      }
+    },
+    "conditions": [],
+    "notes": [
+      "Hash covers the actually retrieved rendered page text, not a raw HTTP response.",
+      "The source generation label and start year are preserved; overlap with Mosselman is limited to the named shared body and engine.",
+      "Engine family is corroborated by the applicable Mosselman profile: https://www.mosselmanturbo.com/nl/bmw-120i-f40-178hp.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/20i-2.0t-178."
+    ],
+    "consensusGroup": "bmw-f40-120i-178-b48"
+  },
+  {
+    "id": "mosselman-bmw-120i-f40-178hp",
+    "provider": "mosselman",
+    "sourceName": "Mosselman BMW application table",
+    "url": "https://www.mosselmanturbo.com/nl/bmw-120i-f40-178hp",
+    "retrievedAt": "2026-09-15T22:29:53.031Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "f5608743ab9ff4af34d6c338dfe430182edacc715c6daff5be47bec7669503bb",
+    "supportingUrls": [
+      "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/20i-2.0t-178"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "1 Series",
+      "generation": "F40",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "120i",
+      "engineFamily": "B48",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 178,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "none"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 250,
+        "torqueNm": 375
+      }
+    },
+    "conditions": [
+      "Published petrol tuning figures require or recommend RON 98 premium fuel."
+    ],
+    "notes": [
+      "Source year range describes the listed generation; engine applicability still requires the matching engine family and stock output.",
+      "Provider European hp/pk figures are retained as metric PS.",
+      "Displacement support: https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/20i-2.0t-178; nominal litre class only."
+    ],
+    "consensusGroup": "bmw-f40-120i-178-b48"
+  },
+  {
+    "id": "manufacturer-bmw-f20-2015",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0202465EN/293757",
+    "retrievedAt": "2026-09-15T22:36:54.315Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "216cc48d1817814e13746afc684864f2bc8c32e16040e4eb0e4d718c213a1f04",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-f30-2015",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813",
+    "retrievedAt": "2026-09-15T22:36:56.067Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7f1892eea8669b44521ff9e61f5bf08c4cffd6a427af804a9918e14136973d53",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-f30-2015-details2",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813",
+    "retrievedAt": "2026-09-15T22:37:25.978Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9ab41c693623cda07c1635f19c33d635b7aa7fa93b432b315b61f07b148c3495",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-f30-2015-details",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/attachment/T0234765EN/349813",
+    "retrievedAt": "2026-09-15T22:37:11.790Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "76614d4626ba95a9bfa526b2f0a0ac6cd987ea7ce0f391becf34c5edaa20de00",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-f20-2011",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/detail/T0110674EN/the-new-bmw-1-series",
+    "retrievedAt": "2026-09-15T22:36:52.518Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e2713931c6317fc770bd36ec9ef2d7b634e8cec9295244ab65ddd2dc23fe09df",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-125d-2012",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/detail/T0124299EN/bmw-model-year-update-measures-for-march-2012",
+    "retrievedAt": "2026-09-15T22:39:44.845Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b177735071e615685589cf732e0eb2414e04e77612d0b5c30887fa3501333997",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-f30-article",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0232443EN_GB/the-new-bmw-3-series-2015",
+    "retrievedAt": "2026-09-15T22:43:11.140Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0b983db342e2f9105496db4c941271659f0730e1c3f1725e2d51e9262c1b88f1",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-f10-2014",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/global/article/detail/T0193460EN/the-new-bmw-518d-520d",
+    "retrievedAt": "2026-09-15T22:39:46.579Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7ed5d77db8f7e4ded33477c4285b724865914053188a16eaafb4e51fe8e907e5",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-g30-2016",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/poland/article/detail/T0264844PL/nowe-bmw-serii-5-limuzyna",
+    "retrievedAt": "2026-09-15T22:36:57.595Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "16fac095500e9bcedfd5a4eaa411b5a4c89c5aad893d3e214b2c949cd9cbb8e3",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-g20-2019",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0285581EN_GB/the-all-new-bmw-3-series-saloon",
+    "retrievedAt": "2026-09-15T22:39:48.135Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c4b37d7fbcb280944223cfd757e64db4119a7676fee4f3edc359af916edf14ab",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  },
+  {
+    "id": "manufacturer-bmw-f40-2019",
+    "provider": "manufacturer",
+    "sourceName": "BMW manufacturer identity support",
+    "url": "https://www.mynewsdesk.com/se/bmw_group_sverige/pressreleases/nu-aer-den-haer-helt-nya-bmw-1-serien-2879082",
+    "retrievedAt": "2026-09-15T22:36:59.348Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "473ff77a7b0023e2e258e243b13ff9d969dd2417194344f477587bbb79604022",
+    "notes": [
+      "Supporting engine capacity / cylinder / stock identity reference only; no tuning estimate is attributed to the manufacturer.",
+      "Hash covers actually retrieved rendered page or PDF text."
+    ]
+  }
+]

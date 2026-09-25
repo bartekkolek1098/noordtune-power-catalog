@@ -58,13 +58,14 @@ function normalize(value?: string) {
     .toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
-function manufacturer(value?: string) {
+export function normalizeCatalogMake(value?: string) {
   const key = normalize(value);
   const aliases: Record<string, string> = {
     vw: "volkswagen", mercedes: "mercedes benz", alfa: "alfa romeo", "bmw mini": "mini"
   };
   return aliases[key] ?? key;
 }
+const manufacturer=normalizeCatalogMake;
 
 export function normalizeCatalogFuel(value?: string): FuelType | undefined {
   const fuel = normalize(value);

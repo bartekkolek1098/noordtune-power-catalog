@@ -1,43 +1,63 @@
+import {customerStagePresentation} from "./stage-presentation.ts";
 import type {EstimateStage, TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
 import type {Locale} from "../i18n/routing.ts";
 
-export function formatEstimatePower(stage: Pick<EstimateStage, "powerHp" | "powerRangeHp">, locale: Locale) {
-  const unit = {nl: "pk", en: "hp", pl: "KM"}[locale];
-  if (stage.powerRangeHp) return `${stage.powerRangeHp[0]}–${stage.powerRangeHp[1]} ${unit}`;
-  return stage.powerHp === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.powerHp} ${unit}`;
+export function customHardwareLabel(locale: Locale) {
+  return {nl: "Maatwerk / hardware-afhankelijk", en: "Custom / hardware-dependent", pl: "Indywidualnie / zależnie od osprzętu"}[locale];
 }
 
-export function formatEstimateTorque(stage: Pick<EstimateStage, "torqueNm" | "torqueRangeNm">, locale: Locale) {
+export function formatEstimatePower(stage: Pick<EstimateStage, "powerHp" | "powerRangeHp" | "approximate" | "customHardware">, locale: Locale) {
+  if (stage.customHardware) return customHardwareLabel(locale);
+  const unit = {nl: "pk", en: "hp", pl: "KM"}[locale];
+  if (stage.powerRangeHp) return `${stage.powerRangeHp[0]}–${stage.powerRangeHp[1]} ${unit}`;
+  return stage.powerHp === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.approximate ? "≈" : ""}${stage.powerHp} ${unit}`;
+}
+
+export function formatEstimateTorque(stage: Pick<EstimateStage, "torqueNm" | "torqueRangeNm" | "approximate" | "customHardware">, locale: Locale) {
+  if (stage.customHardware) return customHardwareLabel(locale);
   if (stage.torqueRangeNm) return `${stage.torqueRangeNm[0]}–${stage.torqueRangeNm[1]} Nm (${{nl: "schatting", en: "estimate", pl: "szacunek"}[locale]})`;
-  return stage.torqueNm === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.torqueNm} Nm`;
+  return stage.torqueNm === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.approximate ? "≈" : ""}${stage.torqueNm} Nm`;
 }
 
 export function formatEstimateSource(stage: EstimateStage, locale: Locale) {
+  if (stage.customHardware) return {nl: "Maatwerk", en: "Custom setup", pl: "Indywidualny tuning"}[locale];
   const source = stage.provenance ?? "reviewed";
   return {
     reviewed: {nl: "Catalogusindicatie", en: "Catalog estimate", pl: "Szacunek katalogowy"},
     reference: {nl: "Model-/motorreferentie", en: "Model/engine reference", pl: "Referencja modelu/silnika"},
+    "multi-source": {nl: "Catalogusindicatie", en: "Catalog estimate", pl: "Szacunek katalogowy"},
+    "single-source": {nl: "Indicatieve tuningwaarde", en: "Indicative tuning figure", pl: "Orientacyjna wartość tuningu"},
     "canonical-estimated": {nl: "Geschatte catalogusindicatie", en: "Estimated catalog indication", pl: "Orientacyjne dane katalogowe"},
-    "generic-indicative": {nl: "Generieke RDW-indicatie", en: "Generic RDW indication", pl: "Ogólna prognoza na podstawie RDW"}
+    "generic-indicative": {nl: "Algemene indicatie", en: "General estimate", pl: "Ogólna prognoza"}
   }[source][locale];
 }
 
 /** Individual source limitations are displayed without invalidating a whole profile group. */
 export function genericEstimateNote(locale: Locale) {
   return {
-    nl: "Indicatieve bandbreedte op basis van RDW-vermogen; exacte waarde na controle van motor, ECU en hardware.",
-    en: "Indicative range based on RDW power; exact value after checking engine, ECU and hardware.",
-    pl: "Orientacyjny zakres na podstawie mocy RDW; dokładna wartość po sprawdzeniu silnika, ECU i osprzętu."
+    nl: "Algemene schatting, geen meting of bevestigde modelvariant. De exacte configuratie wordt vóór uitvoering gecontroleerd.",
+    en: "General estimate, not a measurement or a confirmed model variant. The exact configuration is checked before work.",
+    pl: "Ogólna estymacja, nie pomiar ani wynik dla potwierdzonej wersji silnika. Dokładną konfigurację sprawdzimy przed realizacją."
   }[locale];
+}
+
+/** Stage notes carry source-specific fuel/hardware scope; machine status codes stay internal. */
+export function estimateStageTechnicalNotes(stage: Pick<EstimateStage, "notes"> & Partial<EstimateStage>, locale: Locale = "en") {
+  return customerStagePresentation({name: "Stage 1", requirements: "", packageItems: [], ...stage}, locale).requirements;
 }
 
 export function estimateLimitations(profile: TuningEstimateProfile, locale: Locale) {
   const codes = profile.conditionCodes ?? [];
   const messages: Record<string, Record<Locale, string>> = {
+    SOURCE_CONSENSUS_CONFLICT: {
+      nl: "Bronnen verschillen of Stage-waarden sluiten niet op elkaar aan. Controle van de gekozen tuningwaarde en hardware is nodig vóór uitvoering.",
+      en: "Sources disagree or Stage figures are inconsistent. The selected tuning figure and hardware need review before work.",
+      pl: "Źródła różnią się lub wartości poszczególnych Stage są niespójne. Przed realizacją trzeba zweryfikować wybrane parametry i osprzęt."
+    },
     NOORDTUNE_TARGET_REVIEW_REQUIRED: {
-      nl: "190 pk / 440 Nm is een externe Stage 1-referentie. Goedkeuring door de eigenaar van NoordTune is vereist voordat dit als NoordTune-doel wordt gebruikt.",
-      en: "190 hp / 440 Nm is an external Stage 1 reference. Approval by the owner of NoordTune is required before using it as a NoordTune target.",
-      pl: "190 KM / 440 Nm to zewnętrzna referencja Stage 1. Przed przyjęciem jej jako celu NoordTune wymagana jest zgoda właściciela NoordTune."
+      nl: "De getoonde waarde is indicatief. De exacte configuratie wordt vóór uitvoering bevestigd.",
+      en: "The displayed value is indicative. The exact configuration is confirmed before work.",
+      pl: "Wartość jest orientacyjna. Dokładną konfigurację potwierdzimy przed realizacją."
     },
     GENERIC_TORQUE_UNAVAILABLE: {
       nl: "Het stockvermogen komt uit RDW. Zonder betrouwbare bron voor het stockkoppel tonen we geen verzonnen Nm; het koppel vereist voertuigcontrole.",

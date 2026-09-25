@@ -1,0 +1,1879 @@
+{
+  "method": "Synthetic registrations intercepted with production-normalized DTOs; published and invalid-route fixtures explicitly exercise the verified action contract. Public route content and manual selection use genuine local server responses. Contact opener is stubbed; no WhatsApp navigation/message.",
+  "cases": [
+    {
+      "id": "source",
+      "locale": "nl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "source",
+      "locale": "nl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "source",
+      "locale": "nl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "nl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "nl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 129.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "nl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "reference-custom",
+      "locale": "nl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "reference-custom",
+      "locale": "nl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "canonical",
+      "locale": "nl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "canonical",
+      "locale": "nl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 129.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "reference-custom",
+      "locale": "nl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "generic",
+      "locale": "nl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "generic",
+      "locale": "nl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "canonical",
+      "locale": "nl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "published",
+      "locale": "nl",
+      "width": 768,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "published",
+      "locale": "nl",
+      "width": 390,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "generic",
+      "locale": "nl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "invalid",
+      "locale": "nl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "invalid",
+      "locale": "nl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "published",
+      "locale": "nl",
+      "width": 320,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "equal-source",
+      "locale": "nl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "invalid",
+      "locale": "nl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "source",
+      "locale": "nl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "equal-source",
+      "locale": "nl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "equal-source",
+      "locale": "nl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "nl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "source",
+      "locale": "en",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "source",
+      "locale": "nl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "reference-custom",
+      "locale": "nl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "nl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "en",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "reference-custom",
+      "locale": "en",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "canonical",
+      "locale": "nl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "generic",
+      "locale": "nl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "canonical",
+      "locale": "en",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "reference-custom",
+      "locale": "nl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "generic",
+      "locale": "en",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "published",
+      "locale": "nl",
+      "width": 1024,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "canonical",
+      "locale": "nl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "published",
+      "locale": "en",
+      "width": 320,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "invalid",
+      "locale": "nl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "invalid",
+      "locale": "en",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "equal-source",
+      "locale": "en",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "generic",
+      "locale": "nl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "source",
+      "locale": "en",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.71875,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "equal-source",
+      "locale": "nl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "en",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.71875,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "published",
+      "locale": "nl",
+      "width": 1440,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "source",
+      "locale": "en",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "reference-custom",
+      "locale": "en",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.71875,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "en",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "invalid",
+      "locale": "nl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "canonical",
+      "locale": "en",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.71875,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "equal-source",
+      "locale": "nl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "source",
+      "locale": "en",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "reference-custom",
+      "locale": "en",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "generic",
+      "locale": "en",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.71875,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "published",
+      "locale": "en",
+      "width": 390,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "invalid",
+      "locale": "en",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.71875,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "en",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "canonical",
+      "locale": "en",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "reference-custom",
+      "locale": "en",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "equal-source",
+      "locale": "en",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.71875,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "generic",
+      "locale": "en",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "canonical",
+      "locale": "en",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "source",
+      "locale": "en",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "published",
+      "locale": "en",
+      "width": 768,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "generic",
+      "locale": "en",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "invalid",
+      "locale": "en",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "en",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "published",
+      "locale": "en",
+      "width": 1024,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "equal-source",
+      "locale": "en",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "reference-custom",
+      "locale": "en",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "invalid",
+      "locale": "en",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "source",
+      "locale": "pl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "canonical",
+      "locale": "en",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "equal-source",
+      "locale": "en",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "pl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "generic",
+      "locale": "en",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "source",
+      "locale": "pl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "reference-custom",
+      "locale": "pl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "published",
+      "locale": "en",
+      "width": 1440,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "pl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "canonical",
+      "locale": "pl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "invalid",
+      "locale": "en",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "generic",
+      "locale": "pl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "reference-custom",
+      "locale": "pl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "equal-source",
+      "locale": "en",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "published",
+      "locale": "pl",
+      "width": 320,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "canonical",
+      "locale": "pl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "invalid",
+      "locale": "pl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "generic",
+      "locale": "pl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "source",
+      "locale": "pl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "equal-source",
+      "locale": "pl",
+      "width": 320,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 127.625,
+      "overflow": false,
+      "targetWidth": 204
+    },
+    {
+      "id": "published",
+      "locale": "pl",
+      "width": 390,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "pl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "invalid",
+      "locale": "pl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "source",
+      "locale": "pl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "equal-source",
+      "locale": "pl",
+      "width": 390,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.125,
+      "overflow": false,
+      "targetWidth": 274
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "pl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "reference-custom",
+      "locale": "pl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "source",
+      "locale": "pl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "reference-custom",
+      "locale": "pl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "reference-bmw",
+      "locale": "pl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "canonical",
+      "locale": "pl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "canonical",
+      "locale": "pl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "reference-custom",
+      "locale": "pl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "generic",
+      "locale": "pl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "generic",
+      "locale": "pl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "canonical",
+      "locale": "pl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "published",
+      "locale": "pl",
+      "width": 768,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "published",
+      "locale": "pl",
+      "width": 1024,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "invalid",
+      "locale": "pl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "generic",
+      "locale": "pl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "invalid",
+      "locale": "pl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "equal-source",
+      "locale": "pl",
+      "width": 768,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 652
+    },
+    {
+      "id": "published",
+      "locale": "pl",
+      "width": 1440,
+      "action": "vehicle-page",
+      "correctModel": true,
+      "back": true
+    },
+    {
+      "id": "equal-source",
+      "locale": "pl",
+      "width": 1024,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128.3125,
+      "overflow": false,
+      "targetWidth": 908
+    },
+    {
+      "id": "invalid",
+      "locale": "pl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    },
+    {
+      "id": "equal-source",
+      "locale": "pl",
+      "width": 1440,
+      "action": "inline-configurator",
+      "repeatedKeyboardClick": true,
+      "selectionRetained": true,
+      "copy": true,
+      "top": 128,
+      "overflow": false,
+      "targetWidth": 1064
+    }
+  ],
+  "routes": [
+    {
+      "id": "vw-golf-20-tsi-ea888",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "vw-golf-20-tsi-ea888",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "vw-golf-20-tsi-ea888",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-320d-b47",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-320d-b47",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-320d-b47",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a3-20-tdi",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a3-20-tdi",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a3-20-tdi",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "mercedes-a45-amg-m133",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "mercedes-a45-amg-m133",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "mercedes-a45-amg-m133",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-x3-e83-20d",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-x3-e83-20d",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-x3-e83-20d",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volvo-xc60-d5",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volvo-xc60-d5",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volvo-xc60-d5",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "ford-focus-st-20-ecoboost",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "ford-focus-st-20-ecoboost",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "ford-focus-st-20-ecoboost",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118i",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118i",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118i",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118d",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118d",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118d",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-1-series-f20-f21-120d",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-1-series-f20-f21-120d",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-1-series-f20-f21-120d",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-3-series-f30-f31-318d",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-3-series-f30-f31-318d",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-3-series-f30-f31-318d",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-3-series-f30-f31-330d",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-3-series-f30-f31-330d",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-3-series-f30-f31-330d",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-5-series-f10-f11-520d",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-5-series-f10-f11-520d",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-5-series-f10-f11-520d",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-3-series-g20-g21-320i",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-3-series-g20-g21-320i",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "bmw-3-series-g20-g21-320i",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-golf-7-16-tdi",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-golf-7-16-tdi",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-golf-7-16-tdi",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-golf-7-20-tdi",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-golf-7-20-tdi",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-golf-7-20-tdi",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-golf-7-r-20-tsi",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-golf-7-r-20-tsi",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-golf-7-r-20-tsi",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-passat-b8-20-tdi",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-passat-b8-20-tdi",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "volkswagen-passat-b8-20-tdi",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a3-8v-16-tdi",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a3-8v-16-tdi",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a3-8v-16-tdi",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a4-b9-20-tdi-190",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a4-b9-20-tdi-190",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a4-b9-20-tdi-190",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a4-b9-20-tfsi",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a4-b9-20-tfsi",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a4-b9-20-tfsi",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a6-c7-30-tdi-272",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a6-c7-30-tdi-272",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "audi-a6-c7-30-tdi-272",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "skoda-octavia-5e-20-tdi-150",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "skoda-octavia-5e-20-tdi-150",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "skoda-octavia-5e-20-tdi-150",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "seat-leon-cupra-5f-20-tsi-300",
+      "locale": "nl",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "seat-leon-cupra-5f-20-tsi-300",
+      "locale": "en",
+      "content": true,
+      "status": 200
+    },
+    {
+      "id": "seat-leon-cupra-5f-20-tsi-300",
+      "locale": "pl",
+      "content": true,
+      "status": 200
+    }
+  ],
+  "manual": [
+    {
+      "locale": "nl",
+      "query": "BMW 128ti",
+      "inline": true,
+      "repeatedSelectionRetained": true
+    },
+    {
+      "locale": "nl",
+      "query": "Giulietta",
+      "inline": true,
+      "repeatedSelectionRetained": true
+    },
+    {
+      "locale": "nl",
+      "publishedClick": true,
+      "back": true
+    },
+    {
+      "locale": "en",
+      "query": "BMW 128ti",
+      "inline": true,
+      "repeatedSelectionRetained": true
+    },
+    {
+      "locale": "en",
+      "query": "Giulietta",
+      "inline": true,
+      "repeatedSelectionRetained": true
+    },
+    {
+      "locale": "en",
+      "publishedClick": true,
+      "back": true
+    },
+    {
+      "locale": "pl",
+      "query": "BMW 128ti",
+      "inline": true,
+      "repeatedSelectionRetained": true
+    },
+    {
+      "locale": "pl",
+      "query": "Giulietta",
+      "inline": true,
+      "repeatedSelectionRetained": true
+    },
+    {
+      "locale": "pl",
+      "publishedClick": true,
+      "back": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "docs/tuning-data/customer-flow/reference-bmw-320.png",
+    "docs/tuning-data/customer-flow/reference-custom-320.png",
+    "docs/tuning-data/customer-flow/reference-bmw-1440.png",
+    "docs/tuning-data/customer-flow/reference-custom-1440.png"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "status": "READY FOR OWNER REVIEW",
+  "startingHead": "a105e8229b582df8c6852f403e0a618a9fcad828",
+  "commands": [
+    {
+      "command": "pnpm catalog:audit",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:tuning",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:nl-fleet-v2",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:nl-fleet-v3",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test:nl-fleet-v3-2",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm lint",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm typecheck",
+      "exitCode": 0,
+      "initialExitCode": 2,
+      "resolved": "Audit-script type annotation corrected; final rerun passed"
+    },
+    {
+      "command": "pnpm build",
+      "exitCode": 0,
+      "initialExitCode": 1,
+      "resolved": "Audit-script type annotation corrected; final rerun passed"
+    }
+  ],
+  "focused": {
+    "quoteSurfaceAssertions": 672,
+    "customerFlow": "PASS",
+    "productionPrecedence": "PASS",
+    "lookupPrivacy": "PASS"
+  },
+  "localBrowser": {
+    "regression": 161,
+    "ownerLive": 22,
+    "lookupClick": 120,
+    "vehicleRoutes": 72,
+    "manualFlows": 9,
+    "stagePages": 9,
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "locales": [
+      "nl",
+      "en",
+      "pl"
+    ],
+    "errors": 0
+  },
+  "hosted": {
+    "status": "Pending exact-head push; final authenticated Preview outcome recorded in PR #16"
+  },
+  "preservation": "customer-flow-preservation.json",
+  "stageAudit": "customer-flow-stage-audit.json",
+  "boundary": "customer-flow-boundary.json",
+  "privacy": "customer-flow-privacy.json"
+}

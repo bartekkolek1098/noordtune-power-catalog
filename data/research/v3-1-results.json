@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "baselineHead": "f32ad5a64e1cee7e91a375126670935de7c30757",
+  "baselineFingerprint": "cd53d92eab366f636915cd882fafc8332e0bcb8762b371056ca1df85f7f4b0f5",
+  "currentFingerprint": "b99b7fca3051f8326d8e96eb32f83577c367193f08dadbc3117a47dd1fddae81",
+  "method": "Fixed 400 and original 222 replayed from committed sanitized RDW rows. No live RDW calls. Existing source observations and V3 strict group/scenario membership remain frozen; only explicitly reviewed promotions and model normalization can change resolution.",
+  "baseline400": {
+    "A": 35,
+    "B": 127,
+    "C": 15,
+    "D": 167,
+    "E": 56
+  },
+  "current400": {
+    "A": 35,
+    "B": 133,
+    "C": 15,
+    "D": 161,
+    "E": 56
+  },
+  "baselineSourced400": 162,
+  "currentSourced400": 168,
+  "fixed344": {
+    "size": 344,
+    "baselineSourced": 162,
+    "currentSourced": 168
+  },
+  "prior222": {
+    "size": 222,
+    "baselineSourced": 88,
+    "currentSourced": 89
+  },
+  "rootCounts": {
+    "no-applicable-technical-source": 95,
+    "outside-ordinary-ice-scope": 52,
+    "source-generation-unresolved": 21,
+    "source-period-incompatible": 14,
+    "conflicting-stock-observations": 24,
+    "no-applicable-model-source": 15,
+    "missing-registered-facts": 4,
+    "administrative-model-normalization": 1,
+    "source-rejection-or-review-queue": 6,
+    "engine-family-unconfirmed": 1,
+    "reviewed-research-queue-promotion": 5
+  },
+  "demotionDecisions": {
+    "correctly-demoted-and-retained": 22,
+    "still-unresolved": 6
+  },
+  "fieldScope": {
+    "baseline": {
+      "sourcedStage1PowerAndTorque": 162,
+      "sourcedStage1PowerOnly": 0,
+      "sourcedStage2PowerAndTorque": 22,
+      "genericStage2": 140,
+      "numericStage3": 0
+    },
+    "current": {
+      "sourcedStage1PowerAndTorque": 168,
+      "sourcedStage1PowerOnly": 0,
+      "sourcedStage2PowerAndTorque": 23,
+      "genericStage2": 145,
+      "numericStage3": 0
+    }
+  },
+  "partialCandidateFields": {
+    "ambiguousCases": 45,
+    "stage1PowerConcordant": 15,
+    "stage1TorqueConcordant": 16,
+    "bothConcordant": 5,
+    "note": "Concordance among candidates is partial field evidence only. These cases remain C/D and are not counted as resolved sourced profiles."
+  },
+  "profileChanges": {
+    "newProfiles": [
+      {
+        "id": "sourced-ford-focus-43ebf7f149ae",
+        "sourceIds": [
+          "unlimited-v2-d165a625068a240d"
+        ],
+        "modelFamily": "Focus",
+        "stockPowerHp": 145
+      },
+      {
+        "id": "sourced-peugeot-2008-2ec1cb9604af",
+        "sourceIds": [
+          "unlimited-v2-2226cb9b6e05c9dc"
+        ],
+        "modelFamily": "2008",
+        "stockPowerHp": 120
+      },
+      {
+        "id": "sourced-peugeot-208-f7ec05372241",
+        "sourceIds": [
+          "unlimited-v2-4e5dc33a1025ea18"
+        ],
+        "modelFamily": "208",
+        "stockPowerHp": 155
+      },
+      {
+        "id": "sourced-volkswagen-polo-3e98b5136a13",
+        "sourceIds": [
+          "unlimited-v2-7e3222da8a7f2aa0"
+        ],
+        "modelFamily": "Polo",
+        "stockPowerHp": 200
+      }
+    ],
+    "existingProfileValueOrScopeChanges": [],
+    "missingPreviousProfiles": []
+  },
+  "changedRegistrations": [
+    {
+      "sampleId": "rdw-3dea08368f3f876bae58",
+      "groupId": "rdw-group-8589092491e4c34c",
+      "before": "D",
+      "after": "B",
+      "stage1Before": {
+        "powerRangeHp": [
+          170,
+          180
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage1After": {
+        "powerHp": 195,
+        "torqueNm": 300,
+        "provenance": "single-source",
+        "customHardware": false
+      },
+      "stage2Before": {
+        "powerRangeHp": [
+          170,
+          185
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage2After": {
+        "powerHp": 205,
+        "torqueNm": 310,
+        "provenance": "single-source",
+        "customHardware": false
+      }
+    },
+    {
+      "sampleId": "rdw-752a71303519e8377dcf",
+      "groupId": "rdw-group-2c6acadcce61051a",
+      "before": "D",
+      "after": "B",
+      "stage1Before": {
+        "powerRangeHp": [
+          145,
+          155
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage1After": {
+        "powerHp": 160,
+        "torqueNm": 210,
+        "provenance": "single-source",
+        "customHardware": false
+      },
+      "stage2Before": {
+        "powerRangeHp": [
+          145,
+          160
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage2After": {
+        "powerRangeHp": [
+          160,
+          160
+        ],
+        "torqueRangeNm": [
+          210,
+          210
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      }
+    },
+    {
+      "sampleId": "rdw-200538a9716dc40b0825",
+      "groupId": "rdw-group-e5819c2750068468",
+      "before": "D",
+      "after": "B",
+      "stage1Before": {
+        "powerRangeHp": [
+          120,
+          125
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage1After": {
+        "powerHp": 135,
+        "torqueNm": 180,
+        "provenance": "single-source",
+        "customHardware": false
+      },
+      "stage2Before": {
+        "powerRangeHp": [
+          120,
+          130
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage2After": {
+        "powerRangeHp": [
+          135,
+          160
+        ],
+        "torqueRangeNm": [
+          180,
+          180
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      }
+    },
+    {
+      "sampleId": "rdw-70c1c16131f87826b971",
+      "groupId": "rdw-group-2ac6700ac62b2111",
+      "before": "D",
+      "after": "B",
+      "stage1Before": {
+        "powerRangeHp": [
+          155,
+          165
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage1After": {
+        "powerHp": 200,
+        "torqueNm": 340,
+        "provenance": "single-source",
+        "customHardware": false
+      },
+      "stage2Before": {
+        "powerRangeHp": [
+          155,
+          170
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage2After": {
+        "powerRangeHp": [
+          200,
+          235
+        ],
+        "torqueRangeNm": [
+          340,
+          340
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      }
+    },
+    {
+      "sampleId": "rdw-3f8cdb0b400e8b135413",
+      "groupId": "rdw-group-405e1a14e7c669c6",
+      "before": "D",
+      "after": "B",
+      "stage1Before": {
+        "powerRangeHp": [
+          200,
+          210
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage1After": {
+        "powerHp": 235,
+        "torqueNm": 420,
+        "provenance": "single-source",
+        "customHardware": false
+      },
+      "stage2Before": {
+        "powerRangeHp": [
+          200,
+          215
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage2After": {
+        "powerRangeHp": [
+          235,
+          275
+        ],
+        "torqueRangeNm": [
+          420,
+          420
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      }
+    },
+    {
+      "sampleId": "rdw-c939a7aed96a449acc71",
+      "groupId": "rdw-group-ba51f4c8a5d1e5cb",
+      "before": "D",
+      "after": "B",
+      "stage1Before": {
+        "powerRangeHp": [
+          200,
+          210
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage1After": {
+        "powerHp": 235,
+        "torqueNm": 420,
+        "provenance": "single-source",
+        "customHardware": false
+      },
+      "stage2Before": {
+        "powerRangeHp": [
+          200,
+          215
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      },
+      "stage2After": {
+        "powerRangeHp": [
+          235,
+          275
+        ],
+        "torqueRangeNm": [
+          420,
+          420
+        ],
+        "provenance": "generic-indicative",
+        "customHardware": false
+      }
+    }
+  ],
+  "quoteChanges": 0,
+  "identityChanges": 0
+}

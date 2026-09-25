@@ -2,6 +2,8 @@ import type {Metadata} from "next";
 import type {EngineVariant, StageDefinition} from "@/data/catalog-shared";
 import {getVehicleSeoSlugs, stageSlugMap} from "@/data/catalog";
 import {formatQuote, resolveStageQuote} from "@/data/pricing";
+import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
+import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {routing, type Locale} from "@/i18n/routing";
 import {MAIN_SITE_URL} from "@/lib/noordtune-links";
 import {absoluteUrl} from "@/lib/site-url";
@@ -123,15 +125,18 @@ export function stageMetadata(
   stage: StageDefinition
 ): Pick<Metadata, "title" | "description" | "openGraph" | "twitter"> {
   const meta = localeMeta[locale];
-  const quoteLabel = formatQuote(resolveStageQuote(vehicle, stage), locale);
+  const displayStage = applyStageHardwarePolicy([stage])[0];
+  const quoteLabel = formatQuote(resolveStageQuote(vehicle, displayStage), locale);
   const estimateLabel = catalogEstimateLabel(vehicle, locale);
-  const title = `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${stage.name} | ${stage.powerHp} ${meta.powerUnit} ${meta.stageTitleSuffix}`;
+  const output = formatEstimatePower(displayStage, locale);
+  const torque = displayStage.customHardware ? "" : `, ${formatEstimateTorque(displayStage, locale)}`;
+  const title = `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${stage.name} | ${output} ${meta.stageTitleSuffix}`;
   const description =
     locale === "en"
-      ? `${stage.name} for ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} to ${stage.powerHp} ${meta.powerUnit}, ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} for ECU tuning around ${meta.area}.`
+      ? `${stage.name} for ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} to ${output}${torque}, ${quoteLabel}. ${estimateLabel} for ECU tuning around ${meta.area}.`
       : locale === "pl"
-        ? `${stage.name} dla ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} do ${stage.powerHp} ${meta.powerUnit}, ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} ECU tuning w NoordTune Power Catalog dla ${meta.area}.`
-        : `${stage.name} voor ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} naar ${stage.powerHp} ${meta.powerUnit}, ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} voor ECU tuning rond ${meta.area}.`;
+        ? `${stage.name} dla ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} do ${output}${torque}, ${quoteLabel}. ${estimateLabel} ECU tuning w NoordTune Power Catalog dla ${meta.area}.`
+        : `${stage.name} voor ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} naar ${output}${torque}, ${quoteLabel}. ${estimateLabel} voor ECU tuning rond ${meta.area}.`;
   const url = absoluteUrl(stageSeoPath(locale, vehicle, stage.name));
 
   return sharedMetadata(locale, title, description, vehicle, url);
