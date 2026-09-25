@@ -1,0 +1,87 @@
+{
+  "startingHead": "f77e3529c9f588d3f47bf62f1150c486f3445940",
+  "scope": "Finishing presentation-only diff; earlier extensive results remain checkpoint evidence.",
+  "newlyRun": {
+    "commands": [
+      {
+        "command": "node --no-warnings scripts/test-customer-flow.ts",
+        "exitCode": 0
+      },
+      {
+        "command": "node --no-warnings scripts/test-lookup-privacy.ts",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/test-owner-qa-inputs.cjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node --no-warnings scripts/check-rdw-runtime-boundary.ts",
+        "exitCode": 0
+      },
+      {
+        "command": "pnpm catalog:audit",
+        "exitCode": 0
+      },
+      {
+        "command": "pnpm lint",
+        "exitCode": 0
+      },
+      {
+        "command": "pnpm typecheck",
+        "exitCode": 0
+      },
+      {
+        "command": "pnpm build",
+        "exitCode": 0
+      }
+    ],
+    "browser": {
+      "command": "FLOW_QA_PHASE=finishing FLOW_QA_OUTPUT=docs/tuning-data/customer-flow/finishing-acceptance.json node --no-warnings scripts/qa-customer-flow.cjs",
+      "localeWidthContexts": 6,
+      "locales": [
+        "nl",
+        "en",
+        "pl"
+      ],
+      "widths": [
+        320,
+        1440
+      ],
+      "status": "PASS",
+      "ownerLive": "SKIPPED"
+    },
+    "privacy": {
+      "scope": "Current tracked tree plus new commit candidates; earlier feature commits intentionally excluded. Known local inputs checked in compact, lowercase, hyphenated, spaced and URL-encoded forms.",
+      "aliases": [
+        "OWNER-A",
+        "OWNER-B",
+        "OWNER-C",
+        "OWNER-D"
+      ],
+      "filesScanned": 429,
+      "trackedTextMatches": 0,
+      "ownerFilenameMatches": 0,
+      "browserJsFiles": 27,
+      "browserJsMatches": 0,
+      "staticHtmlFiles": 3,
+      "staticHtmlMatches": 0,
+      "runtimeTransportOrStorageViolations": 0
+    },
+    "runtime": {
+      "publicVehicles": 24,
+      "sitemapUrls": 291,
+      "chunks": 25,
+      "bytes": 1435623,
+      "unchangedSourceFiles": true
+    }
+  },
+  "reusedCheckpointEvidence": {
+    "head": "f77e3529c9f588d3f47bf62f1150c486f3445940",
+    "validation": "customer-flow-validation.json",
+    "browser": "../../docs/tuning-data/customer-flow/browser-acceptance.json",
+    "ownerLive": "Historical 22 checks only; not rerun in this continuation"
+  },
+  "hosted": "Pending final commit Preview; exact SHA and authenticated outcome recorded in PR #16 after push.",
+  "technicalOrPricingChanges": false
+}

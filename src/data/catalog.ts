@@ -16,9 +16,9 @@ import {
   type PricingTierId
 } from "./pricing.ts";
 import {applyCuratedTechnicalProfile} from "./curated-technical.ts";
-import {assessCatalogMatch, normalizeCatalogFuel, type CatalogMatchInput} from "./catalog-matching.ts";
+import {assessCatalogMatch, normalizeCatalogFuel, normalizeCatalogMake, type CatalogCandidate, type CatalogMatchInput} from "./catalog-matching.ts";
 import {tuningReferenceProfiles} from "./tuning-estimates.ts";
-import type {EstimateResolution, TuningEstimateProfile} from "./tuning-estimates-shared.ts";
+import {getCatalogEstimateProfile, type EstimateResolution, type TuningEstimateProfile} from "./tuning-estimates-shared.ts";
 
 export type {
   ConfidenceLevel,
@@ -1675,6 +1675,7 @@ function toVehicleSelectorItem(vehicle: EngineVariant): VehicleSelectorItem {
 
   return {
     id: publicVehicle.id,
+    ...(engineCatalog.some(item => item.id === publicVehicle.id) ? {pagePath: `/vehicles/${publicVehicle.id}` as const} : {kind: "estimate" as const}),
     brand: publicVehicle.brand,
     model: publicVehicle.model,
     engine: publicVehicle.engine,
@@ -1716,16 +1717,33 @@ function uniqueVehicleSelectorItems(
 
 // Only existing curated relationships supply applicability, never installed ECU evidence.
 // Publishing a generated source as an SEO page does not independently review applicability.
-export function findCatalogMatch(input: CatalogMatchInput) {
+let lookupCandidates:CatalogCandidate[]|undefined;
+const lookupCandidatesByMake=new Map<string,CatalogCandidate[]>();
+function catalogLookupIndex(){
+  if(lookupCandidates)return lookupCandidates;
   const publicSourceIds = new Set(engineCatalog.map((vehicle) => vehicle.sourceCanonicalId ?? vehicle.id));
-  return assessCatalogMatch(input, [
+  lookupCandidates=[
     ...engineCatalog.map((variant) => ({
       variant,
       applicability: variant.publicationSource === "existing-curated" ? "reviewed" as const : "generated" as const
     })),
     ...vehicleDatabase.filter((vehicle) => !publicSourceIds.has(vehicle.id))
       .map((variant) => ({variant, applicability: "generated" as const}))
-  ]);
+  ];
+  for(const candidate of lookupCandidates){const make=normalizeCatalogMake(candidate.variant.brand),list=lookupCandidatesByMake.get(make)??[];list.push(candidate);lookupCandidatesByMake.set(make,list);}
+  return lookupCandidates;
+}
+/** Make-only shortlist; all identity checks and diagnostic counts are preserved. */
+export function findCatalogMatch(input: CatalogMatchInput, options:{indexed?:boolean}={}) {
+  const make=normalizeCatalogMake(input.make);
+  if(!make||!input.model?.trim())return assessCatalogMatch(input,[]);
+  const all=catalogLookupIndex();
+  if(options.indexed===false)return assessCatalogMatch(input,all);
+  const candidates=lookupCandidatesByMake.get(make)??[];
+  const result=assessCatalogMatch(input,candidates);
+  // Other makes always failed MANUFACTURER_CONFLICT and were never returned in
+  // bounded diagnostics. Retain their contribution to the full rejection count.
+  return {...result,rejectionCount:result.rejectionCount+all.length-candidates.length};
 }
 
 function referenceProfileYears(profile: TuningEstimateProfile) {
@@ -1746,7 +1764,10 @@ function toReferenceSelectorItem(profile: TuningEstimateProfile): VehicleSelecto
 
 /** Fetch one bounded reference DTO on explicit selection; no reference creates an SEO route. */
 export function getReferenceSelectorEstimate(id: string): EstimateResolution | undefined {
-  const profile = tuningReferenceProfiles.find((profile) => profile.id === id);
+  const reference = tuningReferenceProfiles.find((profile) => profile.id === id);
+  const canonical = !reference ? vehicleDatabase.find(vehicle => vehicle.id === id) : undefined;
+  const profile = reference ?? (canonical ? {...getCatalogEstimateProfile(canonical), vehicleId: undefined,
+    provenance: "canonical-estimated" as const} : undefined);
   if (!profile) return undefined;
   const conditional = id === "ref-ford-transit-connect-15-tdci-100";
   return {

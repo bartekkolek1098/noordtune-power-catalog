@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ecusoft-v3-crafter-eu6d-163",
+    "provider": "other",
+    "sourceName": "ECU-Soft public application table",
+    "url": "https://www.ecu-soft.be/chiptuning/volkswagen/crafter/13543/2-0-tdi-eu6d-163-16703",
+    "retrievedAt": "2026-09-16T17:41:44.294Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "07b142479f2fb0373fd2bd44545f2bcc111fd548647ad0279e401043fe4010ab",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Crafter",
+      "generation": "2021 - 2026 EU6D",
+      "yearFrom": 2021,
+      "yearTo": 2026,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 TDI (EU6D)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 163,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 440
+      }
+    },
+    "conditions": [
+      "Published Stage 1 software application; exact engine and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Nominal 2.0 displacement and diesel TDI identity from the exact application heading; 2021–2026 scope and actual factory/tuned table retained. No marketing, price, reviews or dyno graphics copied."
+    ]
+  }
+]

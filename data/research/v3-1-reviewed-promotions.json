@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "baselineHead": "f32ad5a64e1cee7e91a375126670935de7c30757",
+  "policy": "Only these already retrieved, hash-pinned V2 research-queue observations are promoted. Each has a bounded published year scope, specific make/model, fuel, stock output and displacement, and an ordinary numeric Stage 1. Original observations and queue flags remain intact in source-pages. No source-to-source inference, period extension or new page retrieval is authorized by this ledger.",
+  "reviews": [
+    {
+      "sourceId": "unlimited-v2-d165a625068a240d",
+      "url": "https://www.unlimitedtuning.nl/chiptuning-ford-focus-ii-2-0-16v-145-pk.html",
+      "contentSha256": "1a949bfc0c4e22bcef6932fbdbe06c6d9ac03237ea4791ce51c4ff64bfc6a9a7",
+      "stock": {"brand":"Ford","modelFamily":"Focus","fuel":"Petrol","yearFrom":2005,"yearTo":2010,"displacementCc":2000,"stockPowerHp":145,"stockTorqueNm":185},
+      "stage1": {"powerHp":160,"torqueNm":206},
+      "frozenCaseIds": ["rdw-752a71303519e8377dcf"],
+      "reason": "Retained Focus Mk2 petrol category and application agree on 2005–2010, 2.0 16v 145 PS and 185 Nm. The sampled Focus is a 2007 petrol 1,999 cc car at about 145 PS. The queue flag was the only builder rejection."
+    },
+    {
+      "sourceId": "unlimited-v2-7e3222da8a7f2aa0",
+      "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-polo-2-0-tsi-200-pk.html",
+      "contentSha256": "b7d666cde7493f96c03a8cff8373e231f7bd347ff9590215333dbd5c39340a67",
+      "stock": {"brand":"Volkswagen","modelFamily":"Polo","fuel":"Petrol","yearFrom":2017,"yearTo":2021,"displacementCc":2000,"stockPowerHp":200,"stockTorqueNm":320},
+      "stage1": {"powerHp":235,"torqueNm":420},
+      "frozenCaseIds": ["rdw-3f8cdb0b400e8b135413","rdw-c939a7aed96a449acc71"],
+      "reason": "Retained Polo A0 phase 1 petrol category and application agree on 2017–2021, 2.0 TSI 200 PS and 320 Nm. The sampled 2019/2020 Polos are petrol, 1,984 cc, about 200 PS. No transmission or installed ECU is inferred."
+    },
+    {
+      "sourceId": "unlimited-v2-2226cb9b6e05c9dc",
+      "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-2008-1-6-vti-120-pk.html",
+      "contentSha256": "9deddca2813c7103ada5150f6d9bf0201f46f1646856df82295c7264ecbed163",
+      "stock": {"brand":"Peugeot","modelFamily":"2008","fuel":"Petrol","yearFrom":2013,"yearTo":2016,"displacementCc":1600,"stockPowerHp":120,"stockTorqueNm":160},
+      "stage1": {"powerHp":135,"torqueNm":180},
+      "frozenCaseIds": ["rdw-200538a9716dc40b0825"],
+      "reason": "Retained 2008 petrol category and 1.6 VTi application agree on 2013–2016, 120 PS and 160 Nm. The sampled 2013 2008 has the same fuel and about 120 PS at 1,598 cc. Peugeot 3008/308 siblings remain excluded."
+    },
+    {
+      "sourceId": "unlimited-v2-4e5dc33a1025ea18",
+      "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-208-1-6-thp-155-pk.html",
+      "contentSha256": "396dd3bb59b33744ddde920eb801338a442ca400974a15739c9ac1fb22e883c1",
+      "stock": {"brand":"Peugeot","modelFamily":"208","fuel":"Petrol","yearFrom":2012,"yearTo":2019,"displacementCc":1600,"stockPowerHp":155,"stockTorqueNm":260},
+      "stage1": {"powerHp":200,"torqueNm":345},
+      "frozenCaseIds": ["rdw-70c1c16131f87826b971"],
+      "reason": "Retained 208 petrol category and 1.6 THP application agree on 2012–2019, 155 PS and 260 Nm. The sampled 2013 208 is 1,598 cc petrol; registered kW converts to about 156 PS within the existing conversion tolerance. Peugeot 308/3008 profiles are not substituted."
+    }
+  ]
+}

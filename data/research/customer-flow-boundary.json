@@ -1,0 +1,11 @@
+{
+  "chunks": 25,
+  "bytes": 1435463,
+  "deltaBytes": 12531,
+  "privateCatalogIdsScanned": 58562,
+  "sourceIdsScanned": 1269,
+  "privateIdLeaks": 0,
+  "sourceIdLeaks": 0,
+  "publicVehicles": 24,
+  "sitemapUrls": 291
+}

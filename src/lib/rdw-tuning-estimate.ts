@@ -14,6 +14,8 @@ import {connectStage1Comparison} from "../data/tuning-reference-research.ts";
 import {sourcedTuningProfiles, tuningProfileSources} from "../data/tuning-profiles/index.ts";
 import type {SourcedTuningProfile} from "../data/tuning-profiles/schema.ts";
 import {matchSourcedProfile, sourceRegistrationYear} from "./sourced-tuning-match.ts";
+import {hasUnsupportedSourcedPowertrain} from "./sourced-powertrain.ts";
+import {compareStages, stageScope} from "./stage-presentation.ts";
 
 export type RuntimeEstimateSources = {
   references?: readonly TuningEstimateProfile[];
@@ -35,42 +37,89 @@ export function customHardwareStage(): EstimateStage {
     notes: ["No applicable published or owner-approved hardware profile. No numerical output is assigned."]};
 }
 
-/** V1 precedence: approved profile, independent consensus, single source,
- * compatible retained catalog, then emergency generic indication. */
+function supportedStage(stage?: EstimateStage): stage is EstimateStage {
+  return Boolean(stage && !stage.customHardware && ((Number.isFinite(stage.powerHp) && stage.powerHp! > 0)
+    || (stage.powerRangeHp?.length === 2 && stage.powerRangeHp.every(value => Number.isFinite(value) && value > 0))));
+}
+
+function applicableReferences(input: EstimateMatchInput, references: readonly TuningEstimateProfile[]) {
+  const year = firstAdmissionYear(input);
+  return references.filter(profile => year !== undefined && years(profile).includes(year)
+    && generationCompatible(profile, {generation: [input.model, input.type, input.variant, input.execution].filter(Boolean).join(" "), version: ""}));
+}
+
+function referenceStage(stage: EstimateStage): EstimateStage {
+  // Preserve the existing conditional Connect indication; its comparison interval
+  // is not proof that an unidentified transition-year vehicle has either engine.
+  return stage.sourceProfileId === "ref-ford-transit-connect-15-tdci-100" && stage.powerRangeHp
+    ? {...stage, approximate: true, powerHp: stage.powerRangeHp[0], torqueNm: stage.torqueRangeNm?.[0] ?? stage.torqueNm,
+      powerRangeHp: undefined, torqueRangeNm: undefined, sourceConfidence: "single-source"}
+    : {...stage, sourceConfidence: "single-source", ...(stage.name === "Stage 3+" ? {hardwareRequired: true} : {})};
+}
+
+/** Resolve each stage independently: retained reference, compatible source,
+ * reviewed/public or canonical estimate, then the existing conditional policy. */
 export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources = {}): EstimateResolution {
+  const result = resolveProductionEstimate(input, sources);
+  if (result.profile) {
+    const first = result.profile.stages.find(stage => stage.name === "Stage 1");
+    result.profile.stages = result.profile.stages.map(stage => ({...stage,
+      customerScope: stageScope(stage), comparison: compareStages(first, stage)}));
+  }
+  return result;
+}
+
+function resolveProductionEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources): EstimateResolution {
+  if(hasUnsupportedSourcedPowertrain(input))return {status:"unavailable",coverageClass:"E",reasonCodes:["UNSUPPORTED_POWERTRAIN_ESTIMATE","MANUFACTURER_ELECTRIFIED_APPLICATION"]};
+  const references = applicableReferences(input, sources.references ?? tuningReferenceProfiles);
+  const retained = references.length ? resolveLegacyRdwTuningEstimate(input, {...sources, references, publicVehicles: [], canonicalVehicles: []}) : undefined;
+  const retainedStages = retained?.profile?.stages.filter(stage => stage.provenance === "reference" && supportedStage(stage)) ?? [];
   const match = matchSourcedProfile(input, sources.sourcedProfiles ?? sourcedTuningProfiles);
   const source = match.profile;
   if (!source) {
-    const fallback = resolveLegacyRdwTuningEstimate(input, sources);
+    const fallback = resolveLegacyRdwTuningEstimate(input, {...sources, references});
     if (!fallback.profile) return {...fallback, coverageClass: "E"};
+    // The release correction narrows technical reference eligibility, not the
+    // existing commercial software schedule. Preserve that assignment separately
+    // when a previously priced reference is now outside its technical period.
+    const commercialReferences = collapse((sources.references ?? tuningReferenceProfiles).flatMap((profile): Eligible[] => {
+      const reasons = eligibleReasons(input, referenceVehicle(profile), 1);
+      return reasons ? [{profile, reasons, level: 1}] : [];
+    }));
+    const pricingProfileId = commercialReferences.length === 1 ? commercialReferences[0].profile.id : fallback.profile.pricingProfileId;
     const coverageClass = fallback.resolutionLevel === 4 ? "D" : "C";
     const sourceConfidence: NonNullable<EstimateStage["sourceConfidence"]> = coverageClass === "D" ? "generic-fallback" : "canonical-existing";
     // Older generated Stage 3 values do not establish an approved hardware setup.
-    const stages = fallback.profile.stages.map(stage => stage.name === "Stage 3+" ? customHardwareStage()
-      : stage.provenance === "reference" && stage.powerRangeHp ? {...stage, approximate: true,
-        powerHp: stage.powerRangeHp[0], torqueNm: stage.torqueRangeNm?.[0] ?? stage.torqueNm,
-        powerRangeHp: undefined, torqueRangeNm: undefined, sourceConfidence: "single-source" as const}
+    const stages = fallback.profile.stages.map(stage => stage.provenance === "reference" && supportedStage(stage) ? referenceStage(stage)
+      : stage.name === "Stage 3+" ? customHardwareStage()
       : {...stage, sourceConfidence});
     return {...fallback, coverageClass, reasonCodes: [...new Set([...fallback.reasonCodes, ...match.reasonCodes])],
-      profile: {...fallback.profile, coverageClass, sourceConfidence, stages}};
+      profile: {...fallback.profile, pricingProfileId, coverageClass, sourceConfidence, stages}};
   }
-  const coverageClass = source.reviewStatus === "noordtune-approved" || source.stage1.confidence === "multi-source" ? "A" : "B";
-  const sourceConfidence = source.stage1.confidence;
+  // C consistently denotes the retained layer, including when a lower-priority
+  // dataset profile also matches. Coverage is reported from the winning Stage 1.
+  const referenceWinsStage1 = retainedStages.some(stage => stage.name === "Stage 1");
+  const coverageClass = referenceWinsStage1 ? "C" : source.reviewStatus === "noordtune-approved" || source.stage1.confidence === "multi-source" ? "A" : "B";
+  const sourceConfidence = referenceWinsStage1 ? "single-source" : source.stage1.confidence;
   const power = registeredPowerToMetricHp(input)!;
   const stages: EstimateStage[] = [];
   for (const [key, name] of [["stage1", "Stage 1"], ["stage2", "Stage 2"], ["stage3", "Stage 3+"]] as const) {
+    const reference = retainedStages.find(stage => stage.name === name);
     const facts = source[key];
-    if (facts) stages.push({name, powerHp: facts.selectedPowerHp, torqueNm: facts.selectedTorqueNm, approximate: true,
+    if (reference) stages.push(referenceStage(reference));
+    else if (facts) stages.push({name, powerHp: facts.selectedPowerHp, torqueNm: facts.selectedTorqueNm, approximate: true,
       provenance: facts.confidence, sourceConfidence: facts.confidence, sourceProfileId: source.id,
       resolutionLevel: facts.confidence === "multi-source" ? 1 : 2, confidenceLevel: "estimated",
       requirements: name === "Stage 1" ? "Confirm engine configuration, fuel, condition and ECU access before calibration."
         : "Published hardware-dependent reference; the applicable hardware and calibration must be confirmed.",
       packageItems: [], hardwareRequired: name !== "Stage 1", tcuRecommended: false, logCheckRecommended: true,
-      notes: [...facts.conditions, "External source research; not a measured NoordTune result."]});
+      evidenceSourceIds: facts.sourceValues.map(value => value.sourceId),
+      notes: [...facts.conditions, ...facts.sourceValues.flatMap(value => value.conditions ?? []), ...source.conditions,
+        "External source research; not a measured NoordTune result."]});
     else if (name === "Stage 3+") stages.push(customHardwareStage());
     else {
-      const legacy = resolveLegacyRdwTuningEstimate(input, sources).profile?.stages.find(stage => stage.name === "Stage 2");
-      stages.push(legacy && legacy.provenance === "canonical-estimated" ? {...legacy, sourceConfidence: "canonical-existing"}
+      const legacy = resolveLegacyRdwTuningEstimate(input, {...sources, references: []}).profile?.stages.find(stage => stage.name === "Stage 2");
+      stages.push(legacy && ["reviewed", "canonical-estimated"].includes(legacy.provenance ?? "") && supportedStage(legacy) ? {...legacy, sourceConfidence: "canonical-existing"}
         : genericStage(name, power, source.stockTorqueNm,
           source.aspiration === "naturally-aspirated" ? "naturally-aspirated" : source.fuel === "Diesel" ? "turbo-diesel" : source.aspiration === "turbo" ? "turbo-petrol" : "unknown-aspiration", stages[0], stages[0]));
     }
@@ -99,8 +148,22 @@ export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: Run
     conditions: [...source.conditions, "Published model/engine indication. Exact vehicle, fuel, hardware, transmission and ECU access require verification."],
     conditionCodes, recommendedPackage: {stage: "Stage 1", recommendedOptionIds: [], verificationRequired: true}, verificationRequired: true
   };
+  if (retainedStages.length && retained?.profile) {
+    const reference = retained.profile;
+    if (referenceWinsStage1) {
+      // Commercial assignment remains independent of which technical stage wins.
+      Object.assign(profile, {id: reference.id, brand: reference.brand, model: reference.model,
+        engine: reference.engine, generation: reference.generation, version: reference.version,
+        yearRange: reference.yearRange, stockTorqueNm: reference.stockTorqueNm,
+        provenance: reference.provenance, resolutionLevel: 1});
+    }
+    profile.sourceReferences = [...new Map([...reference.sourceReferences.filter(item => item.sourceType !== "heuristic"), ...profile.sourceReferences]
+      .map(item => [JSON.stringify(item), item])).values()];
+    profile.conditions = [...new Set([...reference.conditions.filter(text => !text.startsWith("Generic Stages")), ...profile.conditions])];
+    profile.conditionCodes = [...new Set([...(reference.conditionCodes ?? []).filter(code => !code.startsWith("GENERIC_") && code !== "STRONG_STAGE1_REFERENCE_SCENARIO"), ...conditionCodes])];
+  }
   return {status: "conditional", coverageClass, resolutionLevel: profile.resolutionLevel, profile,
-    reasonCodes: [...new Set([...match.reasonCodes, ...conditionCodes])]};
+    reasonCodes: [...new Set([...match.reasonCodes, ...(retainedStages.length ? (retained?.reasonCodes ?? []).filter(code => !code.startsWith("GENERIC_") && !["STRONG_STAGE1_REFERENCE_SCENARIO", "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE"].includes(code)) : []), ...conditionCodes])]};
 }
 
 // Existing public applicability restrictions, independent of estimated provenance.
@@ -139,7 +202,7 @@ function familyCompatible(input: EstimateMatchInput, vehicle: Pick<EngineVariant
   const candidate = engineFamily(`${vehicle.model} ${vehicle.engine}`);
   return !expected || !candidate || expected === candidate;
 }
-function generationCompatible(vehicle: Pick<EngineVariant, "generation" | "version">, primary?: TuningEstimateProfile) {
+function generationCompatible(vehicle: Pick<EngineVariant, "generation" | "version">, primary?: Pick<TuningEstimateProfile, "generation" | "version">) {
   const tokens = (text: string): string[] => normalize(text).match(/\b(?:[efg]\d{2,3}|[wcra]\d{3}|mk\s?\d|8[plvy]|b[5-9])\b/g) ?? [];
   const expected = primary ? tokens(`${primary.generation ?? ""} ${primary.version}`) : [];
   const actual = tokens(`${vehicle.generation ?? ""} ${vehicle.version}`);
@@ -263,11 +326,18 @@ function canonicalProfile(vehicle: EngineVariant): TuningEstimateProfile {
 }
 
 /** Cheap identity shortlist before profiles are constructed. The full dataset never leaves this module. */
+const canonicalIndexes=new WeakMap<readonly EngineVariant[],{length:number;byMakeFuel:Map<string,EngineVariant[]>}>();
 function shortlist(input: EstimateMatchInput, catalog: readonly EngineVariant[]) {
   const make = makeKey(input.make);
   const fuel = normalizeCatalogFuel(input.fuel);
   const power = registeredPowerToMetricHp(input)!;
-  return catalog.filter((vehicle) => {
+  let index=canonicalIndexes.get(catalog);
+  if(!index||index.length!==catalog.length){
+    index={length:catalog.length,byMakeFuel:new Map()};
+    for(const vehicle of catalog){const key=makeKey(vehicle.brand)+"|"+vehicle.fuel,list=index.byMakeFuel.get(key)??[];list.push(vehicle);index.byMakeFuel.set(key,list);}
+    canonicalIndexes.set(catalog,index);
+  }
+  return (index.byMakeFuel.get(make+"|"+fuel)??[]).filter((vehicle) => {
     if (makeKey(vehicle.brand) !== make || vehicle.fuel !== fuel || Math.abs(vehicle.stockPowerHp - power) > 3) return false;
     const nominal = nominalEngineDisplacements(vehicle.engine);
     return nominal.length === 1 && (!input.displacementCc || nominalDisplacementMatches(input.displacementCc, nominal[0]));
@@ -309,7 +379,13 @@ function genericStage(name: StageName, stockPower: number, stockTorque: number |
   const powerRangeHp = roundedMonotonicRange(rawPowerRange, stagePowerRange(prior));
   const torqueRangeNm = stockTorque && stockTorque > 0
     ? roundedMonotonicRange([stockTorque * policy.torqueFactorRange[0], stockTorque * policy.torqueFactorRange[1]], stageTorqueRange(prior)) : undefined;
+  const rawTorque: [number, number] | undefined = stockTorque && stockTorque > 0
+    ? [stockTorque * policy.torqueFactorRange[0], stockTorque * policy.torqueFactorRange[1]] : undefined;
+  const roundedPower = roundedMonotonicRange(rawPowerRange);
+  const roundedTorque = rawTorque && roundedMonotonicRange(rawTorque);
   return {name, powerRangeHp, torqueRangeNm, provenance: "generic-indicative", resolutionLevel: 4,
+    planningBasis: {power: {raw: rawPowerRange, rounded: roundedPower, clamped: powerRangeHp.some((n, i) => n !== roundedPower[i])},
+      ...(rawTorque && roundedTorque && torqueRangeNm ? {torque: {raw: rawTorque, rounded: roundedTorque, clamped: torqueRangeNm.some((n, i) => n !== roundedTorque[i])}} : {})},
     sourceProfileId: `heuristic-v2:${category}`, genericCategory: category,
     genericScenario: strongSource ? "strong-stage1-conditional" : "standard-range",
     requirements: name === "Stage 1" ? "Generic indicative software scenario; confirm engine, aspiration, ECU access and condition before work." : "Generic indicative hardware and calibration scenario; compatible hardware and workshop validation required.",
@@ -389,7 +465,7 @@ export function resolveLegacyRdwTuningEstimate(input: EstimateMatchInput, source
   const stages: EstimateStage[] = [];
   const used = new Set<Eligible>();
   for (const name of stageNames) {
-    const source = selected.find((entry) => entry.profile.stages.some((stage) => stage.name === name && Number.isFinite(stage.powerHp) && stage.powerHp! > 0));
+    const source = selected.find((entry) => entry.profile.stages.some((stage) => stage.name === name && supportedStage(stage)));
     if (source) {
       const stage = source.profile.stages.find((item) => item.name === name)!;
       stages.push({...stage, provenance: source.level === 1 ? "reference" : source.level === 2 && stage.confidenceLevel === "verified" ? "reviewed" : "canonical-estimated", sourceProfileId: source.profile.id, resolutionLevel: source.level});

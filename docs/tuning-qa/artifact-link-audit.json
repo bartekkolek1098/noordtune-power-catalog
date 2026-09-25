@@ -378,70 +378,6 @@
     },
     {
       "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
-      "line": 58,
-      "syntax": "markdown-link",
-      "target": "h329xh-320.png",
-      "resolvedTarget": "docs/tuning-qa/final-review/h329xh-320.png",
-      "exists": true
-    },
-    {
-      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
-      "line": 58,
-      "syntax": "markdown-link",
-      "target": "h329xh-1440.png",
-      "resolvedTarget": "docs/tuning-qa/final-review/h329xh-1440.png",
-      "exists": true
-    },
-    {
-      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
-      "line": 59,
-      "syntax": "markdown-link",
-      "target": "v380st-320.png",
-      "resolvedTarget": "docs/tuning-qa/final-review/v380st-320.png",
-      "exists": true
-    },
-    {
-      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
-      "line": 59,
-      "syntax": "markdown-link",
-      "target": "v380st-1440.png",
-      "resolvedTarget": "docs/tuning-qa/final-review/v380st-1440.png",
-      "exists": true
-    },
-    {
-      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
-      "line": 60,
-      "syntax": "markdown-link",
-      "target": "v978zf-320.png",
-      "resolvedTarget": "docs/tuning-qa/final-review/v978zf-320.png",
-      "exists": true
-    },
-    {
-      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
-      "line": 60,
-      "syntax": "markdown-link",
-      "target": "v978zf-1440.png",
-      "resolvedTarget": "docs/tuning-qa/final-review/v978zf-1440.png",
-      "exists": true
-    },
-    {
-      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
-      "line": 61,
-      "syntax": "markdown-link",
-      "target": "kkh27k-320.png",
-      "resolvedTarget": "docs/tuning-qa/final-review/kkh27k-320.png",
-      "exists": true
-    },
-    {
-      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
-      "line": 61,
-      "syntax": "markdown-link",
-      "target": "kkh27k-1440.png",
-      "resolvedTarget": "docs/tuning-qa/final-review/kkh27k-1440.png",
-      "exists": true
-    },
-    {
-      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
       "line": 62,
       "syntax": "markdown-link",
       "target": "public-exact-320.png",
@@ -2780,26 +2716,6 @@
       "valid": true
     },
     {
-      "path": "docs/tuning-qa/final-review/h329xh-1440.png",
-      "status": "retained-local",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/final-review/h329xh-320.png",
-      "status": "retained-local",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/final-review/kkh27k-1440.png",
-      "status": "retained-local",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/final-review/kkh27k-320.png",
-      "status": "retained-local",
-      "valid": true
-    },
-    {
       "path": "docs/tuning-qa/final-review/public-exact-1440.png",
       "status": "retained-local",
       "valid": true
@@ -2816,26 +2732,6 @@
     },
     {
       "path": "docs/tuning-qa/final-review/unsupported-ev-320.png",
-      "status": "retained-local",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/final-review/v380st-1440.png",
-      "status": "retained-local",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/final-review/v380st-320.png",
-      "status": "retained-local",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/final-review/v978zf-1440.png",
-      "status": "retained-local",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/final-review/v978zf-320.png",
       "status": "retained-local",
       "valid": true
     },
@@ -2880,46 +2776,6 @@
       "valid": true
     },
     {
-      "path": "docs/tuning-qa/runtime/live-h329xh-1440.png",
-      "status": "archived-removed-from-branch",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/runtime/live-h329xh-320.png",
-      "status": "archived-removed-from-branch",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/runtime/live-kkh27k-1440.png",
-      "status": "archived-removed-from-branch",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/runtime/live-kkh27k-320.png",
-      "status": "archived-removed-from-branch",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/runtime/live-v380st-1440.png",
-      "status": "archived-removed-from-branch",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/runtime/live-v380st-320.png",
-      "status": "archived-removed-from-branch",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/runtime/live-v978zf-1440.png",
-      "status": "archived-removed-from-branch",
-      "valid": true
-    },
-    {
-      "path": "docs/tuning-qa/runtime/live-v978zf-320.png",
-      "status": "archived-removed-from-branch",
-      "valid": true
-    },
-    {
       "path": "docs/tuning-qa/visual-comparison.png",
       "status": "archived-removed-from-branch",
       "valid": true
@@ -2938,5 +2794,6 @@
       "note": "Literal code-path mention outside Markdown/HTML links; brand-logo examples reviewed separately."
     }
   ],
-  "failures": []
+  "failures": [],
+  "releasePrivacyCleanup": "Historical owner-image references omitted; archived URLs are not rewritten to fictitious anonymous filenames."
 }

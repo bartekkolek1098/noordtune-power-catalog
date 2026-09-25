@@ -1,3 +1,4 @@
+import {customerStageNotes, stageScope} from "../src/lib/stage-presentation.ts";
 // Executable integration checks against the real catalog DTOs and quote consumers.
 import assert from "node:assert/strict";
 import * as catalog from "../src/data/catalog.ts";
@@ -191,19 +192,20 @@ const bmw340iResult = resolveRdwTuningEstimate({make: "BMW", model: "340i F30", 
 assert.ok(bmw340iResult.profile, "Actual resolver selects a BMW 340i estimate");
 equal(bmw340iResult.profile.id, bmw340iSource.id, "Production resolver selects the sourced hardware profile");
 const bmw340iStage3 = bmw340iResult.profile.stages.find(stage => stage.name === "Stage 3+")!;
-const hardwareNotes = estimateStageTechnicalNotes(bmw340iStage3);
-for (const required of ["downpipe", "B58TU high-pressure fuel pump", "upgraded B58 turbo", "RON 98"]) {
-  equal(hardwareNotes.some(note => note.includes(required)), true, `BMW 340i Stage 3 technical details retain ${required}`);
-}
+const hardwareScope = stageScope(bmw340iStage3);
+equal(hardwareScope.fuelRon, [98], "BMW Stage 3 retains RON 98");
+for (const part of ["downpipe", "fuel-pump", "b58-turbo"]) equal(hardwareScope.hardware.some(item => item.part === part), true, "Retain documented hardware: " + part);
 const hardwareQuote = pricing.resolveStageQuote(bmw340iResult.profile, bmw340iStage3, {scope: "vehicle", estimateApplicable: true});
 equal(hardwareQuote.kind, "on-request", "Published BMW hardware facts do not approve a NoordTune commercial scope");
 for (const locale of ["nl", "en", "pl"] as const) {
   const hardwareMessage = createVehicleQuoteMessage({locale, vehicle: "BMW 340i", stage: bmw340iStage3.name,
-    quote: hardwareQuote, options: [], indicativeOutput: bmw340iStage3, estimateNotes: hardwareNotes});
-  for (const required of ["downpipe", "B58TU high-pressure fuel pump", "upgraded B58 turbo", "RON 98"]) {
-    equal(hardwareMessage.includes(required), true, `${locale}: WhatsApp preserves the actual BMW Stage 3 ${required} requirement`);
+    quote: hardwareQuote, options: [], indicativeOutput: bmw340iStage3, estimateNotes: customerStageNotes(bmw340iStage3, locale, bmw340iResult.profile)});
+  for (const required of ["downpipe", "B58TU", "B58", "RON 98"]) {
+    equal(hardwareMessage.toLowerCase().includes(required.toLowerCase()), true, locale + ": WhatsApp preserves localized hardware fact " + required);
   }
 }
-equal(estimateStageTechnicalNotes({notes: ["SOURCE_CONSENSUS_CONFLICT", "HARDWARE_SCOPE_REVIEW: machine status", "  Requires RON 98.  ", "Requires RON 98.", ""]}), ["Requires RON 98."], "Technical details omit machine codes and deduplicate factual notes");
+const mappedNotes = estimateStageTechnicalNotes({notes: ["SOURCE_CONSENSUS_CONFLICT", "HARDWARE_SCOPE_REVIEW: machine status", "Requires RON 98.", "Requires RON 98.", ""]}, "pl");
+equal(mappedNotes.filter(note => note.includes("RON 98")).length, 1, "Typed fuel requirement deduplicates");
+assert.doesNotMatch(mappedNotes.join(" "), /SOURCE_|HARDWARE_|Requires/);
 
 console.log(`Quote surface integration: ${checks} assertions passed across ${catalog.engineCatalog.length} curated vehicles, selectors, Offers, WhatsApp, options and TCU eligibility.`);

@@ -1,3 +1,4 @@
+import {customerVehicle} from "@/lib/customer-profile";
 import {notFound} from "next/navigation";
 import {getTranslations} from "next-intl/server";
 import {
@@ -313,7 +314,7 @@ export default async function VehicleStagePage({params}: PageProps) {
               quoteSelected: t("recommendation.quoteSelected")
             }
           }}
-          vehicle={vehicle}
+          vehicle={customerVehicle(vehicle)}
         />
         <SeoInfoSections
           cards={seoCards}

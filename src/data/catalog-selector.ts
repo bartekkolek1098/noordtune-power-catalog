@@ -1,7 +1,8 @@
 import type {QuoteResolution} from "./pricing.ts";
 
 export type VehicleSelectorItem = {
-  kind?: "reference";
+  kind?: "reference" | "estimate";
+  pagePath?: `/vehicles/${string}`;
   id: string;
   brand: string;
   model: string;

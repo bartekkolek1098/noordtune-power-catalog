@@ -4,9 +4,9 @@ This follow-up updates Draft PR #13 on `fix/tuning-identity-year-quote-policy` a
 
 ## Root causes and architecture
 
-Previously, RDW normalization called `resolveTuningEstimate(identity, engineCatalog)`. Its eligible set comprised only the three reference profiles and the intentionally small public catalog. H329XH had no eligible public/reference profile even though the canonical database contained compatible Defender 2.0 SD4 estimates. `PlateLookup` then created pending Stages without power or torque.
+Previously, RDW normalization called `resolveTuningEstimate(identity, engineCatalog)`. Its eligible set comprised only the three reference profiles and the intentionally small public catalog. OWNER-A had no eligible public/reference profile even though the canonical database contained compatible Defender 2.0 SD4 estimates. `PlateLookup` then created pending Stages without power or torque.
 
-V380ST selected the conditional Transit Connect reference. That stored reference supplied Stage 1 and explicitly unavailable Stage 2/3 entries. The old path treated the selected profile as a complete answer, so the missing later Stages could not fall through to another source.
+OWNER-B selected the conditional Transit Connect reference. That stored reference supplied Stage 1 and explicitly unavailable Stage 2/3 entries. The old path treated the selected profile as a complete answer, so the missing later Stages could not fall through to another source.
 
 The server now calls `resolveRdwTuningEstimate(identity)`:
 
@@ -27,16 +27,16 @@ Values below are metric pk / Nm. **C** = conditional canonical estimate, **R** =
 
 | Case | RDW identity and first admission | Stage 1 | Stage 2 | Stage 3+ |
 |---|---|---|---|---|
-| H329XH | Land Rover Defender, diesel, 1999 cc, 177 kW / 241 pk; 2020-06-12 | 290 / 590 (C) | 320 / 660 (C) | 365 / 740 (C) |
-| V380ST | Ford Transit Connect, diesel, 1499 cc, 73.5 kW / 100 pk; 2018-10-17 | 125–140 / 330–340 (R comparison) | 147 / 355–385 (G) | 159 / 415–450 (G) |
-| V978ZF | Ford Transit Custom, diesel, 1995 cc, 77 kW / 105 pk; 2019-04-29 | 190 / 440 (R) | 200 / 460–500 (G) | 216 / 540–585 (G) |
-| KKH27K | BMW 128ti, petrol, 1998 cc, 195 kW / 265 pk; 2022-09-14 | 310 / 480 (R, RON98) | 345 / 505–545 (G) | 373 / 590–635 (G) |
+| OWNER-A | Land Rover Defender, diesel, 1999 cc, 177 kW / 241 pk; 2020-06-12 | 290 / 590 (C) | 320 / 660 (C) | 365 / 740 (C) |
+| OWNER-B | Ford Transit Connect, diesel, 1499 cc, 73.5 kW / 100 pk; 2018-10-17 | 125–140 / 330–340 (R comparison) | 147 / 355–385 (G) | 159 / 415–450 (G) |
+| OWNER-C | Ford Transit Custom, diesel, 1995 cc, 77 kW / 105 pk; 2019-04-29 | 190 / 440 (R) | 200 / 460–500 (G) | 216 / 540–585 (G) |
+| OWNER-D | BMW 128ti, petrol, 1998 cc, 195 kW / 265 pk; 2022-09-14 | 310 / 480 (R, RON98) | 345 / 505–545 (G) | 373 / 590–635 (G) |
 
-H329XH follows registered identity → 134 make/fuel/power/displacement prefilter rows → 2 fully compatible year rows → 1 equivalent technical profile (`land-rover-defender-2-0-sd4-2020`) → three canonical Stages → an on-request quote → numeric browser result. The original source stock value is 240 pk / 500 Nm; the detected stock display and chart use factual RDW conversion, 241 pk. The difference is conversion/source rounding, not a replacement of registered power.
+OWNER-A follows registered identity → 134 make/fuel/power/displacement prefilter rows → 2 fully compatible year rows → 1 equivalent technical profile (`land-rover-defender-2-0-sd4-2020`) → three canonical Stages → an on-request quote → numeric browser result. The original source stock value is 240 pk / 500 Nm; the detected stock display and chart use factual RDW conversion, 241 pk. The difference is conversion/source rounding, not a replacement of registered power.
 
-V380ST has no canonical Transit Connect profile. The owner confirmed no engine-generation evidence and requested a conditional estimate. The published Stage 1 endpoints remain a comparison; 125/330 is not presented as a universal mechanical limit, and 140/340 is not silently adopted as a measured NoordTune result. Shiftech's EU5-labelled Stage 2 and another tuner's Stage 1+ are not relabelled as interchangeable stages. Proposed workshop targets are separately marked for owner review in the research report.
+OWNER-B has no canonical Transit Connect profile. The owner confirmed no engine-generation evidence and requested a conditional estimate. The published Stage 1 endpoints remain a comparison; 125/330 is not presented as a universal mechanical limit, and 140/340 is not silently adopted as a measured NoordTune result. Shiftech's EU5-labelled Stage 2 and another tuner's Stage 1+ are not relabelled as interchangeable stages. Proposed workshop targets are separately marked for owner review in the research report.
 
-V978ZF rejects the canonical 170-pk Custom template because registered stock power is approximately 105 pk. SID211 remains an owner report, not an RDW fact. BMW 128ti rejects other 1 Series badges and retains conditional access/pricing without suppressing power.
+OWNER-C rejects the canonical 170-pk Custom template because registered stock power is approximately 105 pk. SID211 remains an owner report, not an RDW fact. BMW 128ti rejects other 1 Series badges and retains conditional access/pricing without suppressing power.
 
 ## Interpretation of generic estimates
 

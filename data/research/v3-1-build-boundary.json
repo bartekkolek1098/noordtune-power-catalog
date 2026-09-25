@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-16T19:28:58.472Z",
+  "browserJavaScriptChunks": 25,
+  "browserJavaScriptBytes": 1422757,
+  "v3BrowserJavaScriptBytes": 1422757,
+  "sourcedProfiles": 1246,
+  "profileIdsInBrowserChunks": [],
+  "canonicalRecords": 58586,
+  "publicVehicles": 24,
+  "sitemapUrls": 291,
+  "clientServerCatalogImports": 0,
+  "clientSourcedProfileDatasetImports": 0,
+  "method": "Production Next build chunk scan plus passing transitive client import boundary and catalog audit. Full source dataset excluded from browser JavaScript."
+}

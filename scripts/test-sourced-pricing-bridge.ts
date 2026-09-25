@@ -79,9 +79,9 @@ for (const profile of trusted) {
   ] as const) equal(resolveSourcedPricingProfileId(changed, source), undefined, profile.id + " rejects wrong " + label);
 }
 
-const connect = sourcedTuningProfiles.find(p => p.brand === "Ford" && p.modelFamily === "Transit Connect" && p.engineFamily === "TDCi" && p.stockPowerHp === 100)!;
+const connect = sourcedTuningProfiles.find(p => p.brand === "Ford" && p.modelFamily === "Transit Connect" && p.engineFamily === "TDCi" && p.stockPowerHp === 100 && p.yearFrom<=2017 && (p.yearTo??2026)>=2017)!;
 const bmw = sourcedTuningProfiles.find(p => p.brand === "BMW" && p.modelFamily === "3 Series" && p.engineFamily === "B47" && p.stockPowerHp === 190 && p.generation.startsWith("F30"))!;
-const custom = sourcedTuningProfiles.find(p => p.brand === "Ford" && p.modelFamily === "Transit Custom" && p.stockPowerHp === 105)!;
+const custom = sourcedTuningProfiles.find(p => p.brand === "Ford" && p.modelFamily === "Transit Custom" && p.stockPowerHp === 105 && p.yearFrom<=2019 && (p.yearTo??2026)>=2019)!;
 const concrete: [SourcedTuningProfile, EstimateMatchInput, string, number, number][] = [
   [connect, {make: "Ford", model: "Transit Connect 1.5 TDCi", fuel: "Diesel", powerHp: 100, displacementCc: 1499, firstRegistrationYear: 2017}, "ref-ford-transit-connect-15-tdci-100", 44900, 44900],
   [bmw, {make: "BMW", model: "320d", fuel: "Diesel", powerHp: 190, displacementCc: 1995, firstRegistrationYear: 2017}, "bmw-320d-b47", 44900, 70000],
@@ -89,12 +89,13 @@ const concrete: [SourcedTuningProfile, EstimateMatchInput, string, number, numbe
 ];
 for (const [source, input, pricingId, familyCents, vehicleCents] of concrete) {
   const result = resolveRdwTuningEstimate(input);
-  equal(result.profile?.id, source.id, pricingId + " keeps selected sourced identity");
+  const reference = tuningReferenceProfiles.find(profile => profile.id === pricingId);
+  equal(result.profile?.id, reference?.id ?? source.id, pricingId + " technical identity follows per-stage precedence");
   equal(result.profile?.pricingProfileId, pricingId, pricingId + " runtime bridge");
-  equal(result.profile?.provenance, "sourced-profile", pricingId + " keeps sourced provenance");
+  equal(result.profile?.provenance, reference ? "tuner-reference" : "sourced-profile", pricingId + " provenance follows selected technical layer");
   equal(result.profile?.vehicleId, undefined, pricingId + " does not invent a public page");
   equal([result.profile?.stages[0].powerHp, result.profile?.stages[0].torqueNm],
-    [source.stage1.selectedPowerHp, source.stage1.selectedTorqueNm], pricingId + " keeps source output");
+    reference ? [reference.stages[0].powerHp, reference.stages[0].torqueNm] : [source.stage1.selectedPowerHp, source.stage1.selectedTorqueNm], pricingId + " applicable retained reference takes precedence");
   equal(result.profile?.ecuSupport?.status, "manual-review", pricingId + " ECU stays unconfirmed");
   equal(result.profile?.gearbox, undefined, pricingId + " transmission stays unidentified");
   for (const [scope, amountCents] of [["family", familyCents], ["vehicle", vehicleCents]] as const) {

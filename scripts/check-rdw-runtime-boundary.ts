@@ -49,5 +49,7 @@ for (const client of clients) {
   }
   follow(client,[]);
 }
+const sourcedLeaks=leaks.filter(chain=>chain.some(file=>file.replace(/\\/g,"/").startsWith("src/data/tuning-profiles/")));
 assert.deepEqual(leaks,[],"Value imports from any client component must never reach the canonical catalog/runtime resolver");
 console.log(`CLIENT_IMPORTS_SERVER_CATALOG: ${leaks.length}; ${clients.length} client roots checked transitively through ${graph.size} source modules (type-only imports excluded).`);
+console.log(`CLIENT_IMPORTS_SOURCED_PROFILE_DATASET: ${sourcedLeaks.length}`);
