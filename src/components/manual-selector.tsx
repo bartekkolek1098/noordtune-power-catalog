@@ -75,6 +75,9 @@ export function ManualSelector({
     return initialBrands.filter((item) => item.toLowerCase().includes(normalized));
   }, [brandFilter, initialBrands]);
   const selectedVehicle = engines.find((vehicle) => vehicle.id === vehicleId);
+  const versionLabel = (vehicle: VehicleSelectorItem) => vehicle.kind === "reference" && vehicle.version === "Published Stage 1 reference"
+    ? {nl: "Referentie voor Stage 1", en: "Stage 1 reference", pl: "Profil referencyjny Stage 1"}[locale]
+    : vehicle.version;
 
   useEffect(() => {
     if (!referenceId) {
@@ -302,7 +305,7 @@ export function ManualSelector({
                     {vehicle.brand} {vehicle.model}
                   </span>
                   <span className="text-xs leading-5 text-muted-foreground">
-                    {vehicle.version} · {vehicle.engine} · {vehicle.yearRange}
+                    {versionLabel(vehicle)} · {vehicle.engine} · {vehicle.yearRange}
                   </span>
                   <span className="flex items-center justify-between gap-3 text-sm font-black text-primary">
                     <span className="min-w-0 break-words">{formatQuote(vehicle.quote, locale)}</span>
@@ -385,7 +388,7 @@ export function ManualSelector({
                   }
                 }}
                 options={engines.map((vehicle) => ({
-                  label: `${vehicle.engine} · ${vehicle.version}`,
+                  label: `${vehicle.engine} · ${versionLabel(vehicle)}`,
                   value: vehicle.id
                 }))}
                 placeholder={year ? text.selectEngine : model ? text.selectYear : text.selectModel}
@@ -407,7 +410,7 @@ export function ManualSelector({
                       {selectedVehicle.brand} {selectedVehicle.model}
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      {selectedVehicle.version} · {selectedVehicle.engine} ·{" "}
+                      {versionLabel(selectedVehicle)} · {selectedVehicle.engine} ·{" "}
                       {{nl: "ECU-controle vóór uitvoering", en: "ECU check before work", pl: "Kontrola ECU przed realizacją"}[locale]}
                     </p>
                   </div>

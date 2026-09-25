@@ -4,6 +4,32 @@
 
 Starting head: `a105e8229b582df8c6852f403e0a618a9fcad828`; existing branch `feature/nl-fleet-coverage-v3`, Draft [PR #16](https://github.com/bartekkolek1098/noordtune-power-catalog/pull/16), base `feature/nl-fleet-coverage-v2`. This report covers the committed product tree; the resulting commit SHA and exact-head authenticated Preview results are recorded in that PR after the normal push.
 
+## Resumed finishing work
+
+Recovered local HEAD: `f77e3529c9f588d3f47bf62f1150c486f3445940`, identical to the remote. Three saved, uncommitted files contained the interrupted label mapping, forbidden-copy assertion and report edit; these were preserved and completed. No later local commit, staged change, AGENTS.md instruction or stack movement was found.
+
+**Presentation-only correction:** retained reference DTOs carry `version: "Published Stage 1 reference"`. The manual selector now maps only that exact status on `kind: "reference"` to **NL “Referentie voor Stage 1” / EN “Stage 1 reference” / PL “Profil referencyjny Stage 1”**. The same mapping covers quick search, engine options and the selected summary. Actual trim/generation/engine values remain unchanged; F40 and GTI Performance / 2.0 TSI EA888 were checked. This does not claim a measurement or NoordTune approval. Adjacent identity text was inspected without rewriting it.
+
+### Newly run verification
+
+- PASS: focused `test-customer-flow.ts`, `test-lookup-privacy.ts`, `test-owner-qa-inputs.cjs`, `check-rdw-runtime-boundary.ts`, `pnpm catalog:audit`, lint, typecheck and production build. Catalog warnings remain unchanged.
+- PASS: compact mode added to existing `qa-customer-flow.cjs`: **six contexts (NL/EN/PL × 320/1440)**. Each checks reference quick search, BMW → 128ti → 2022 → engine, unpublished Giulietta inline selection, ordinary published Golf with unchanged trim/engine, actual page click/back, inline focus/header clearance, repeated keyboard action, Stage/options/contact-quote retention, and two synthetic lookups with source-detail reset. No raw status/research label or page errors. No outgoing messages.
+- The initial layout assertion counted an intentionally clipped decorative background. It now checks actual visible controls against viewport bounds; no product layout change was needed. Mobile/desktop screenshots were inspected. The native select abbreviates long collapsed option text at 320 px; its full localized label remains available in the selected summary and option text.
+- PASS: final privacy scan finds zero owner identifiers in commit candidates, filenames, browser JS and static HTML; zero transport/storage violations. Private scan inputs were used only for local matching. **Owner-live HTTP tests were SKIPPED** in this continuation.
+- Runtime remains **24 public vehicles / 291 sitemap URLs**, zero client full-dataset imports. Browser JS: **25 chunks / 1,435,623 bytes (+160 versus f77e352)**. No resolver, DTO semantics, navigation logic, tuning values, dataset, price, service or dependency changes.
+
+[New validation](data/research/customer-flow-finishing-validation.json) · [New compact browser evidence](docs/tuning-data/customer-flow/finishing-acceptance.json) · [Mobile screenshot](docs/tuning-data/customer-flow/finishing-manual-320.png) · [Desktop screenshot](docs/tuning-data/customer-flow/finishing-manual-1440.png)
+
+### Reused evidence and hosted boundary
+
+The earlier eight-command acceptance, 400-case/1,200-quote preservation, six-cause audit, 161 deterministic cases, 22 owner-live checks, 120 click cases, 72 public routes, nine manual flows and nine Stage pages remain **f77e352 checkpoint evidence**. They were not rerun or relabelled as finishing-diff tests. The remaining BMW Stage 2 torque, Connect engine-family and hardware confirmation gaps are unchanged.
+
+**Local finishing checks pass. Exact new Preview verification is pending the normal push.** Final SHA, deployment-to-commit association, authenticated checks and READY FOR OWNER REVIEW or a specific blocker are recorded in PR #16 after push. No documentation-only commit loop is required. The PR stays Draft on the same base; no merge, fold, retarget, production promotion or alias change is authorized.
+
+## Checkpoint implementation and evidence — f77e352
+
+Sections 1–8 below describe the original correction and its checkpoint tests. They are retained as historical evidence, not newly run results for the finishing diff.
+
 ## 1. Navigation: reproduced cause and correction
 
 The previous page-labelled fallback reached `#rdw-estimate-details` and opened sources for unpublished source, reference, canonical and generic results. Those were misleading labels and the wrong destination, with no route or hydration error. A genuine published page worked; a fabricated vehicle ID produced an actual 404. An unpublished canonical manual result could construct an unpublished route.
@@ -25,7 +51,7 @@ Widths: **320, 390, 768, 1024, 1440**. Four inspected synthetic screenshots: [BM
 
 ## 3. Customer copy before / after
 
-Previously, NL/EN/PL could expose the same English algorithm/source-scope prose, such as “Rounded local planning range”, “unknown-aspiration” and owner-review instructions. Raw research notes are now removed from customer DTOs and replaced by a typed presentation shared by UI and explicit-click contact messages. Internal evidence and original source records remain intact; unknown codes have no raw-text fallback.
+Previously, NL/EN/PL could expose the same English algorithm/source-scope prose, such as “Rounded local planning range”, “unknown-aspiration” and owner-review instructions. Hosted inspection additionally caught the manual result label “Published Stage 1 reference”; it now reads “Referentie voor Stage 1” / “Stage 1 reference” / “Profil referencyjny Stage 1” in search results, selected results and engine options. Raw research notes are now removed from customer DTOs and replaced by a typed presentation shared by UI and explicit-click contact messages. Internal evidence and original source records remain intact; unknown codes have no raw-text fallback.
 
 | Locale | Stage details heading | Generic estimate copy |
 |---|---|---|
