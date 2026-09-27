@@ -1,0 +1,2507 @@
+[
+  {
+    "id": "atm-v3-8e4e6f6e3887ae8c",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/fiat-doblo-16-m-jtd-105pk/",
+    "retrievedAt": "2026-09-18T12:37:28.567Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "d21d486dcbaa85ea39140ccdb0661e4f88adfbbe04dc0473d54d00c59301382d",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/fiat/",
+      "https://www.atm-chiptuning.com/chiptuning/fiat-doblo/",
+      "https://www.atm-chiptuning.com/chiptuning/fiat-doblo-2010-2015/"
+    ],
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "Doblo",
+      "generation": "2010 - 2015",
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 M-JTD 105pk",
+      "engineCodes": [
+        "198A3000"
+      ],
+      "displacementCc": 1598,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 290,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch EDC16C39 & Bosch EDC17C49",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 130,
+        "torqueNm": 360
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "id": "atm-v3-8994a87d9608c67c",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/fiat-doblo-16-multijet-105pk/",
+    "retrievedAt": "2026-09-18T12:37:30.426Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "3cfe71f2251cccc6d4a55e6b347b0d248448d18c3fa6c6ac359a5b2384631a98",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/fiat/",
+      "https://www.atm-chiptuning.com/chiptuning/fiat-doblo/",
+      "https://www.atm-chiptuning.com/chiptuning/fiat-doblo-2015-2021/"
+    ],
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "Doblo",
+      "generation": "2015 - 2021",
+      "yearFrom": 2015,
+      "yearTo": 2021,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 Multijet 105pk",
+      "engineCodes": [
+        "198A3000"
+      ],
+      "displacementCc": 1598,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 290,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch EDC17C49 & Bosch EDC17C69 & Bosch EDC16C39",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 360
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2016,
+      "yearTo": 2021,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/fiat-doblo-16-multijet-105pk/",
+      "retrievedAt": "2026-09-18T12:37:30.426Z",
+      "contentSha256": "3cfe71f2251cccc6d4a55e6b347b0d248448d18c3fa6c6ac359a5b2384631a98",
+      "reason": "Doblò 2015–2021 1.6 Multijet 105 PS/290 Nm exact 1598 cc. No extension to 2022–2023 or the older 2010–2015 application. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-d389de9e8edec0cd",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk/",
+    "retrievedAt": "2026-09-18T12:37:32.365Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "52b7668afed6b2e901794a5a4dc02ccd4d8e138d144d574f5f3be197b634c534",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/peugeot/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-5008/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-2013-2016/"
+    ],
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "5008",
+      "generation": "2013 - 2016",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.2T Puretech 130pk",
+      "engineCodes": [
+        "EB2"
+      ],
+      "displacementCc": 1199,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Valeo VD46.1",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 270
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2015,
+      "yearTo": 2016,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk/",
+      "retrievedAt": "2026-09-18T12:37:32.365Z",
+      "contentSha256": "52b7668afed6b2e901794a5a4dc02ccd4d8e138d144d574f5f3be197b634c534",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-ab5320260e7d91ff",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk-7854/",
+    "retrievedAt": "2026-09-18T12:37:34.464Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "9cfbbb3e79d1ef79c8ad2471139ae48c1b3bb8f96d75ff4b9a591671c83bf384",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/peugeot/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-5008/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-2017-2020/"
+    ],
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "5008",
+      "generation": "2017 - 2020",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.2T Puretech 130pk",
+      "engineCodes": [
+        "HNY"
+      ],
+      "displacementCc": 1199,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Valeo VD46.1 & Valeo VD56.1",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 270
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk-7854/",
+      "retrievedAt": "2026-09-18T12:37:34.464Z",
+      "contentSha256": "9cfbbb3e79d1ef79c8ad2471139ae48c1b3bb8f96d75ff4b9a591671c83bf384",
+      "reason": "Retain the inclusive published 2020 overlap with the successor; admission year alone does not resolve it. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-689b5845933d6ae0",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk-12383/",
+    "retrievedAt": "2026-09-18T12:37:36.447Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "195d41df8ee350dd777e0f62d8a448fb4262b6013baf59f9e431009f214b9339",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/peugeot/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-5008/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-2020-g/"
+    ],
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "5008",
+      "generation": "2020 -> ...",
+      "yearFrom": 2020,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.2T Puretech 130pk",
+      "engineCodes": [
+        "HNY"
+      ],
+      "displacementCc": 1199,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Valeo VD56.1",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 270
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/peugeot-5008-12t-puretech-130pk-12383/",
+      "retrievedAt": "2026-09-18T12:37:36.447Z",
+      "contentSha256": "195d41df8ee350dd777e0f62d8a448fb4262b6013baf59f9e431009f214b9339",
+      "reason": "Keep the 2020 PureTech successor separate with its published VD56.1 scope. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-d65b8200a0c31a06",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/citroen-c5-aircross-16-puretech-180pk/",
+    "retrievedAt": "2026-09-18T12:37:38.498Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "a752ecbb1a5318e0fec61a3f4a3137c82b07d00f98d3a8dba266cc1cb693d5d7",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/citroen/",
+      "https://www.atm-chiptuning.com/chiptuning/citroen-c5-aircross/",
+      "https://www.atm-chiptuning.com/chiptuning/citroen-c5-aircross-2018-2021/"
+    ],
+    "identity": {
+      "brand": "Citroën",
+      "modelFamily": "C5 Aircross",
+      "generation": "2018 - 2021",
+      "yearFrom": 2018,
+      "yearTo": 2021,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.6 Puretech 180pk",
+      "engineCodes": [
+        "5GF EP6FADTXD"
+      ],
+      "displacementCc": 1598,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MG1CS042",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 300
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2018,
+      "yearTo": 2020,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/citroen-c5-aircross-16-puretech-180pk/",
+      "retrievedAt": "2026-09-18T12:37:38.498Z",
+      "contentSha256": "a752ecbb1a5318e0fec61a3f4a3137c82b07d00f98d3a8dba266cc1cb693d5d7",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-31f8310a5319405e",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-140pk-chpa/",
+    "retrievedAt": "2026-09-18T12:37:40.475Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "5ba9ab864618c556e9a995eb02a7ed3e3140acade1ef31be26f75159629e20cd",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/skoda/",
+      "https://www.atm-chiptuning.com/chiptuning/skoda-octavia/",
+      "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-2013-2016/"
+    ],
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013 - 2016",
+      "yearFrom": 2013,
+      "yearTo": 2016,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 TSI 140pk (CHPA)",
+      "engineCodes": [
+        "CHPA"
+      ],
+      "displacementCc": 1395,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.5.21 & Temic DQ200-MQB",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 300
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2013,
+      "yearTo": 2015,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-140pk-chpa/",
+      "retrievedAt": "2026-09-18T12:37:40.475Z",
+      "contentSha256": "5ba9ab864618c556e9a995eb02a7ed3e3140acade1ef31be26f75159629e20cd",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-7f6e72f7dee79607",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-140pk-chpa-7004/",
+    "retrievedAt": "2026-09-18T12:37:42.490Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "a29800741ddf9fa90cb77e03dc9fae40c0111a31de0ff92ed1c6132d2165302d",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/skoda/",
+      "https://www.atm-chiptuning.com/chiptuning/skoda-octavia/",
+      "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-2017-2019/"
+    ],
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2017 - 2019",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 TSI 140pk (CHPA)",
+      "engineCodes": [
+        "CHPA"
+      ],
+      "displacementCc": 1395,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.5.21",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 320
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "id": "atm-v3-eeb249c42eb58d78",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc-20-tsi-190pk/",
+    "retrievedAt": "2026-09-18T12:37:44.550Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "7cd91b5e2c5e03e81f4b5a9124ee6d82cdad609d9b477de9b83e080a9e9c8454",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc-2017-2021/"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "T-Roc",
+      "generation": "2017 - 2021",
+      "yearFrom": 2017,
+      "yearTo": 2021,
+      "fuel": "Petrol",
+      "engineMarketingName": "2.0 TSI 190pk",
+      "engineCodes": [
+        "CZPB"
+      ],
+      "displacementCc": 1984,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MG1CS001 & Temic DQ381 & Bosch MG1CS111",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 245,
+        "torqueNm": 430
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2017,
+      "yearTo": 2021,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc-20-tsi-190pk/",
+      "retrievedAt": "2026-09-18T12:37:44.550Z",
+      "contentSha256": "7cd91b5e2c5e03e81f4b5a9124ee6d82cdad609d9b477de9b83e080a9e9c8454",
+      "reason": "Provider separates 2017–2021 from 2022 successor and publishes possible MG1CS001/MG1CS111 plus DQ381 hardware. Exact installed ECU/gearbox remains a workshop check. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-338dffcf6cbd6e92",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc-20-tsi-190pk-12304/",
+    "retrievedAt": "2026-09-18T12:37:46.489Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "2fe84ca7f411828ae26dc01d291b18daa85f6171f1495f6c381edc89f302e914",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc-2022-g/"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "T-Roc",
+      "generation": "2022 -> ...",
+      "yearFrom": 2022,
+      "fuel": "Petrol",
+      "engineMarketingName": "2.0 TSI 190pk",
+      "engineCodes": [
+        "CZPB"
+      ],
+      "displacementCc": 1984,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 245,
+        "torqueNm": 430
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2022,
+      "yearTo": 2024,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/volkswagen-t-roc-20-tsi-190pk-12304/",
+      "retrievedAt": "2026-09-18T12:37:46.489Z",
+      "contentSha256": "2fe84ca7f411828ae26dc01d291b18daa85f6171f1495f6c381edc89f302e914",
+      "reason": "Separate provider 2022 application. No ECU family is published for this page; do not inherit the pre-facelift ECU list or infer access/unlock from year. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-3e247e3e7e5306b2",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-19-tdi-105pk/",
+    "retrievedAt": "2026-09-18T12:37:48.535Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "fb16e9bcd29e9023910ee31e152ae09dec244ba3af30a984dacbe668bb06ba65",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-golf-5-2003-2008/"
+    ],
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "Golf 5 - 2003 - 2008",
+      "yearFrom": 2003,
+      "yearTo": 2008,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.9 TDI 105pk",
+      "engineCodes": [
+        "BKC"
+      ],
+      "displacementCc": 1896,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch EDC16U1 & Bosch EDC16U31 & Bosch EDC16U34",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 320
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2005,
+      "yearTo": 2008,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-19-tdi-105pk/",
+      "retrievedAt": "2026-09-18T12:37:48.535Z",
+      "contentSha256": "fb16e9bcd29e9023910ee31e152ae09dec244ba3af30a984dacbe668bb06ba65",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-6793e72537eed755",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-520i-184pk/",
+    "retrievedAt": "2026-09-18T12:37:50.543Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "6db03df73c4d3caa48e1bd77b96922861c1ec61a86172ecef8789f307d226ce9",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/bmw/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-f1011-2010-2016/"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 serie",
+      "generation": "F10/11 - 2010 - 2016",
+      "yearFrom": 2010,
+      "yearTo": 2016,
+      "fuel": "Petrol",
+      "engineMarketingName": "520i 184pk",
+      "engineCodes": [
+        "N20B20B"
+      ],
+      "displacementCc": 1997,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 270,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MEVD17.2.4 & Bosch MEVD17.2.9 & ZF 8HP45",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 240,
+        "torqueNm": 420
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "id": "atm-v3-b92f3d7d57449e16",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-520i-184pk-8569/",
+    "retrievedAt": "2026-09-18T12:37:52.524Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "aa157acac137e37500778293437f47e0ab8143fc873b3bf31dffbd1cd2023590",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/bmw/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-g3031-2016-2019/"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 serie",
+      "generation": "G30/31 - 2016 - 2019",
+      "yearFrom": 2016,
+      "yearTo": 2019,
+      "fuel": "Petrol",
+      "engineMarketingName": "520i 184pk",
+      "engineCodes": [
+        "B48B20B"
+      ],
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 290,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MG1CS003 & Bosch MG1CS201 & ZF 8HP",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 250,
+        "torqueNm": 440
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-520i-184pk-8569/",
+      "retrievedAt": "2026-09-18T12:37:52.524Z",
+      "contentSha256": "aa157acac137e37500778293437f47e0ab8143fc873b3bf31dffbd1cd2023590",
+      "reason": "BMW official 2017 release confirms the new 520i 2.0 petrol 135 kW/184 PS, 290 Nm and 8-speed transmission from July 2017. ATM exact 1998 cc G30/31 application ends 2019. Shiftech 300 Nm stock variant not merged."
+    },
+    "stockValidation": {
+      "sourceId": "manufacturer-v3-2-bmw-520i-2017",
+      "fields": [
+        "stockPowerHp",
+        "stockTorqueNm",
+        "generation"
+      ]
+    }
+  },
+  {
+    "id": "atm-v3-2727507f7535c236",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-520i-184pk-11298/",
+    "retrievedAt": "2026-09-18T12:37:54.602Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "e40fc040ce47cef2925e2784b1cdc10528d1591f592e2647e9f490c78089c97a",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/bmw/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-5-serie-g3031-lci-2020-g/"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5 serie",
+      "generation": "G30/31 LCI - 2020 ->",
+      "yearFrom": 2020,
+      "fuel": "Petrol",
+      "engineMarketingName": "520i 184pk",
+      "engineCodes": [
+        "B48B20B"
+      ],
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 290,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MG1CS201 & Bosch MG1CS003 & ZF 8HP",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 250,
+        "torqueNm": 440
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "id": "atm-v3-46df01faaa17f8c4",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie-318i-156pk/",
+    "retrievedAt": "2026-09-18T12:37:56.594Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "4cae10fb0734f70910c64fcf7fb792d2d385c56317cdce17e2f62b5fa1f67578",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/bmw/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie-g2x-2019-g/"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 serie",
+      "generation": "G2x - 2019 ->",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "engineMarketingName": "318i 156pk",
+      "engineCodes": [
+        "B48B20"
+      ],
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 156,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MG1CS201 & Bosch MG1CS003 & ZF 8HP",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 420
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie-318i-156pk/",
+      "retrievedAt": "2026-09-18T12:37:56.594Z",
+      "contentSha256": "4cae10fb0734f70910c64fcf7fb792d2d385c56317cdce17e2f62b5fa1f67578",
+      "reason": "Official 318i launch confirms 156 PS/250 Nm in 2020; Shiftech separates G20/G21 and 2022 LCI. Narrow the ATM open G2x application to reviewed pre-LCI years 2020–2021. ECU options are not a vehicle-specific access finding."
+    },
+    "stockValidation": {
+      "sourceId": "manufacturer-v3-2-bmw-318i-2020",
+      "fields": [
+        "stockPowerHp",
+        "stockTorqueNm",
+        "generation"
+      ]
+    }
+  },
+  {
+    "id": "atm-v3-bf23d490c8d1b889",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie-318i-156pk-13115/",
+    "retrievedAt": "2026-09-18T12:37:58.698Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "cdd91cc42e1622c9308f68a97f4fe2696a2024558abbbb61a90fb0c9ef459215",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/bmw/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie/",
+      "https://www.atm-chiptuning.com/chiptuning/bmw-3-serie-g2x-lci-2024-g/"
+    ],
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3 serie",
+      "generation": "G2x LCI - 2024 ->",
+      "yearFrom": 2024,
+      "fuel": "Petrol",
+      "engineMarketingName": "318i 156pk",
+      "engineCodes": [
+        "B48B20A"
+      ],
+      "displacementCc": 1998,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 156,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MG1CS201 & ZF 8HP",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 420
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "id": "atm-v3-a98ab0ab8f180bb9",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mazda-mx-5-18i-16v-126pk/",
+    "retrievedAt": "2026-09-18T12:38:00.646Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "f81d494942b8670c0fb033badb65995c94ddc2a681d5443bbe99183fe8924dea",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mazda/",
+      "https://www.atm-chiptuning.com/chiptuning/mazda-mx-5/",
+      "https://www.atm-chiptuning.com/chiptuning/mazda-mx-5-2005-2015/"
+    ],
+    "identity": {
+      "brand": "Mazda",
+      "modelFamily": "MX-5",
+      "generation": "2005 - 2015",
+      "yearFrom": 2005,
+      "yearTo": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.8i 16v 126pk",
+      "engineCodes": [
+        "BP-ZE"
+      ],
+      "displacementCc": 1798,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 126,
+      "stockTorqueNm": 167,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Denso SH7058",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 136,
+        "torqueNm": 182
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "id": "atm-v3-2f5194f080d1abcf",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/audi-a4-18-tfsi-120pk/",
+    "retrievedAt": "2026-09-18T12:38:02.616Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "c654ab9e19127a83ede0c45fdd28b9bf9843b9c2babf37ed317a858a57d58335",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/audi/",
+      "https://www.atm-chiptuning.com/chiptuning/audi-a4/",
+      "https://www.atm-chiptuning.com/chiptuning/audi-a4-b8-2008-2011/"
+    ],
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B8 - 2008 - 2011",
+      "yearFrom": 2008,
+      "yearTo": 2011,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.8 TFSI 120pk",
+      "engineCodes": [
+        "CDHA"
+      ],
+      "displacementCc": 1798,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.5 & Temic VL381",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 310
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2008,
+      "yearTo": 2011,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/audi-a4-18-tfsi-120pk/",
+      "retrievedAt": "2026-09-18T12:38:02.616Z",
+      "contentSha256": "c654ab9e19127a83ede0c45fdd28b9bf9843b9c2babf37ed317a858a57d58335",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-a2ec754f803fda02",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/audi-a4-18-tfsi-120pk-3729/",
+    "retrievedAt": "2026-09-18T12:38:04.735Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "8a14a209c352dcfa1d6f90522c543146b8a97ba39274fbb3d3842294a1d9e666",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/audi/",
+      "https://www.atm-chiptuning.com/chiptuning/audi-a4/",
+      "https://www.atm-chiptuning.com/chiptuning/audi-a4-b8-2012-2015/"
+    ],
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "B8 - 2012 - 2015",
+      "yearFrom": 2012,
+      "yearTo": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.8 TFSI 120pk",
+      "engineCodes": [
+        "CABB"
+      ],
+      "displacementCc": 1798,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.5.2 & Siemens/Continental Simos 12",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 340
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "id": "atm-v3-5e56cb83ee43dfe8",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/renault-clio-16i-16v-110pk-4825/",
+    "retrievedAt": "2026-09-18T12:38:06.676Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "965b44b2827a2aed4414add9a3ecfebd150c64408308ca804904a8fede13a978",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/renault/",
+      "https://www.atm-chiptuning.com/chiptuning/renault-clio/",
+      "https://www.atm-chiptuning.com/chiptuning/renault-clio-3-2005-2012/"
+    ],
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "3 - 2005 - 2012",
+      "yearFrom": 2005,
+      "yearTo": 2012,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.6i 16v 110pk",
+      "engineCodes": [
+        "K4M"
+      ],
+      "displacementCc": 1598,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 148,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Sagem 3000",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 120,
+        "torqueNm": 165
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "id": "atm-v3-54bcd07cac65c8ee",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695-09-twinair-85pk/",
+    "retrievedAt": "2026-09-18T12:38:08.692Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "23ad84e960a39effcdab8930245a83035d6dc8e0136d074e093c126fb674e8be",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/fiat/",
+      "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695/",
+      "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695-500-2007-2015/"
+    ],
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "500",
+      "aliases": [
+        "595",
+        "695"
+      ],
+      "generation": "500 - 2007 - 2015",
+      "yearFrom": 2007,
+      "yearTo": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "0.9 Twinair 85pk",
+      "engineCodes": [
+        "312A2000"
+      ],
+      "displacementCc": 875,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 85,
+      "stockTorqueNm": 145,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Marelli 8GSF & Marelli 8GSW",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 100,
+        "torqueNm": 185
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2010,
+      "yearTo": 2015,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695-09-twinair-85pk/",
+      "retrievedAt": "2026-09-18T12:38:08.692Z",
+      "contentSha256": "23ad84e960a39effcdab8930245a83035d6dc8e0136d074e093c126fb674e8be",
+      "reason": "Retain published inclusive 2015 overlap with the separately retrieved facelift application. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-48d2bc1d8f40e7e8",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mazda-6-18i-16v-120pk/",
+    "retrievedAt": "2026-09-18T12:38:10.640Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "b25652fb011055bca2395effab1d9ef4531c4d53d8e6527ad51f3e8d558fc3a0",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mazda/",
+      "https://www.atm-chiptuning.com/chiptuning/mazda-6/",
+      "https://www.atm-chiptuning.com/chiptuning/mazda-6-2003-2008/"
+    ],
+    "identity": {
+      "brand": "Mazda",
+      "modelFamily": "6",
+      "generation": "2003 - 2008",
+      "yearFrom": 2003,
+      "yearTo": 2008,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.8i 16v 120pk",
+      "engineCodes": [
+        "L8-DE"
+      ],
+      "displacementCc": 1798,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 165,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Mitsubishi E6T5x",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 130,
+        "torqueNm": 180
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2005,
+      "yearTo": 2008,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/mazda-6-18i-16v-120pk/",
+      "retrievedAt": "2026-09-18T12:38:10.640Z",
+      "contentSha256": "b25652fb011055bca2395effab1d9ef4531c4d53d8e6527ad51f3e8d558fc3a0",
+      "reason": "Exact Mazda 6 1798 cc/120 PS/165 Nm L8-DE application, provider period 2003–2008. No extension to observed 2009. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-ccdbe137e9c76ada",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-b-180-cgi-122pk/",
+    "retrievedAt": "2026-09-18T12:38:12.855Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "8f92d210ca9f9e488386b0be7154f5963aadfc4fd18b5bd4fd86ba7029ae8b94",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-b/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-b-w246-2012-2014/"
+    ],
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "B",
+      "generation": "W246 - 2012 - 2014",
+      "yearFrom": 2012,
+      "yearTo": 2014,
+      "fuel": "Petrol",
+      "engineMarketingName": "180 CGi 122pk",
+      "engineCodes": [
+        "M270.910"
+      ],
+      "displacementCc": 1595,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 122,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.7.2",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2012,
+      "yearTo": 2013,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-b-180-cgi-122pk/",
+      "retrievedAt": "2026-09-18T12:38:12.855Z",
+      "contentSha256": "8f92d210ca9f9e488386b0be7154f5963aadfc4fd18b5bd4fd86ba7029ae8b94",
+      "reason": "W246 M270.910 1595 cc/122 PS/200 Nm. Review stops before the unresolved overlapping 2014 application; 2011 is before the provider period."
+    }
+  },
+  {
+    "id": "atm-v3-d02765dbe10162db",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-b-180-cgi-122pk-6559/",
+    "retrievedAt": "2026-09-18T12:38:14.748Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "145fc5ee1db488c57376ddb1556b3cb4d14dccd3761f25cceed182180cb9d8b6",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-b/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-b-w246-2014-2018/"
+    ],
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "B",
+      "generation": "W246 - 2014 - 2018",
+      "yearFrom": 2014,
+      "yearTo": 2018,
+      "fuel": "Petrol",
+      "engineMarketingName": "180 CGi 122pk",
+      "engineCodes": [
+        "OM270 DE 16 AL red."
+      ],
+      "displacementCc": 1595,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 122,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.7.2",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 310
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ]
+  },
+  {
+    "id": "atm-v3-d40c7cbf5f166a1e",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695-12i-8v-69pk/",
+    "retrievedAt": "2026-09-18T12:38:16.670Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "36689eda5db6566e33c4377a5794b6c96cffffbcd82a96c623ad67e43cb64b8b",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/fiat/",
+      "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695/",
+      "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695-500-2007-2015/"
+    ],
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "500",
+      "aliases": [
+        "595",
+        "695"
+      ],
+      "generation": "500 - 2007 - 2015",
+      "yearFrom": 2007,
+      "yearTo": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.2i 8v 69pk",
+      "engineCodes": [
+        "169A4000"
+      ],
+      "displacementCc": 1242,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 69,
+      "stockTorqueNm": 102,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Marelli IAW5SF & Marelli 8GSF",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 75,
+        "torqueNm": 112
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2010,
+      "yearTo": 2014,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/fiat-500-595-695-12i-8v-69pk/",
+      "retrievedAt": "2026-09-18T12:38:16.670Z",
+      "contentSha256": "36689eda5db6566e33c4377a5794b6c96cffffbcd82a96c623ad67e43cb64b8b",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "atm-v3-eeb2a2f96c297e9f",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-122pk/",
+    "retrievedAt": "2026-09-18T12:38:18.660Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "c2c1cf8618a999c5fd2345f60408a56b5c7345ff55c67aacf21cc76cebe85bb8",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/skoda/",
+      "https://www.atm-chiptuning.com/chiptuning/skoda-octavia/",
+      "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-2004-2012/"
+    ],
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2004 - 2012",
+      "yearFrom": 2004,
+      "yearTo": 2012,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 TSI 122pk",
+      "engineCodes": [
+        "CAXA"
+      ],
+      "displacementCc": 1390,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 122,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.5.20 & Bosch MED17.5.5 & Temic DQ200",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 270
+      }
+    },
+    "availability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "conditions": [
+      "Exact engine, generation and installed ECU require workshop verification."
+    ],
+    "notes": [
+      "Only factual application fields retained; no prices, reviews, marketing, images or dyno graphics. Stage 1+ is not Stage 2. ECU/code facts describe the provider application, not the installed ECU of an RDW registration."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2010,
+      "yearTo": 2012,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/skoda-octavia-14-tsi-122pk/",
+      "retrievedAt": "2026-09-18T12:38:18.660Z",
+      "contentSha256": "c2c1cf8618a999c5fd2345f60408a56b5c7345ff55c67aacf21cc76cebe85bb8",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-9fa3af9ee7124d92",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/peugeot/5008/2017/petrol/1.2-thp-puretech-130",
+    "retrievedAt": "2026-09-18T12:40:31.142Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7d20d449f22f12d8157168c79d19bc62d67148e810f773ef73585a40d24e9715",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "5008",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.2 THP Puretech",
+      "displacementCc": 1200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 275
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/5008/2017/petrol/1.2-thp-puretech-130",
+      "retrievedAt": "2026-09-18T12:40:31.142Z",
+      "contentSha256": "7d20d449f22f12d8157168c79d19bc62d67148e810f773ef73585a40d24e9715",
+      "reason": "Same 2017 5008 1.2 PureTech 130 PS/230 Nm application as ATM. Retain the 2020 overlap. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-701c99bcc4788a4f",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/peugeot/5008/2020/petrol/1.2-thp-puretech-gpf-130",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "cc40e1e43204b4c4051daa4b832f5351abb268ad7719e670ba054ec3f56abf53",
+    "identity": {
+      "brand": "Peugeot",
+      "modelFamily": "5008",
+      "generation": "2020",
+      "yearFrom": 2020,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.2 THP Puretech GPF",
+      "displacementCc": 1200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 275
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/5008/2020/petrol/1.2-thp-puretech-gpf-130",
+      "retrievedAt": "2026-09-18T12:40:31.144Z",
+      "contentSha256": "cc40e1e43204b4c4051daa4b832f5351abb268ad7719e670ba054ec3f56abf53",
+      "reason": "Separate 2020 GPF application, same 130 PS/230 Nm successor as ATM. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-c05a1d77cebc45bb",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/citroen/c5-aircross/2018/petrol/1.6-thp-puretech-gpf-180",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ba76df202809a3b86bd5394891b9e488ad261358a9e2c56d00b0b11bc60f0315",
+    "identity": {
+      "brand": "Citroën",
+      "modelFamily": "C5 Aircross",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.6 THP PureTech GPF",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2018,
+      "yearTo": 2020,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/citroen/c5-aircross/2018/petrol/1.6-thp-puretech-gpf-180",
+      "retrievedAt": "2026-09-18T12:40:31.144Z",
+      "contentSha256": "ba76df202809a3b86bd5394891b9e488ad261358a9e2c56d00b0b11bc60f0315",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-774a6496a70132e4",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/petrol/1.4-tsi-tfsi-ss-140",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fa4b104fad0dfb378709645f15c01fce4850f5ecd412cead3443eefd11066df2",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2013",
+      "yearFrom": 2013,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 TSI/TFSI S&S",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2013,
+      "yearTo": 2015,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/petrol/1.4-tsi-tfsi-ss-140",
+      "retrievedAt": "2026-09-18T12:40:31.144Z",
+      "contentSha256": "fa4b104fad0dfb378709645f15c01fce4850f5ecd412cead3443eefd11066df2",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-8e539131491d0e96",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/t-roc/2017/petrol/2.0-tsi-opf-190",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "78ea76d7321b59c8a0a3fa139f47528d83be9498c08c498983dbf9114bc3b8c7",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "T-Roc",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "engineMarketingName": "2.0 TSI OPF",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 240,
+        "torqueNm": 420
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "shiftech-v2-a4a6a952ec30fe15",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2003-v/diesel/1.9-tdi-ip-105",
+    "retrievedAt": "2026-09-18T12:40:31.144Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9d6962a8521df3a77311f046d164c7166ca33ef7a5cf7e960ff42df62076aa85",
+    "identity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "2003 - V",
+      "yearFrom": 2003,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.9 TDI IP",
+      "displacementCc": 1900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 320
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 340,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2005,
+      "yearTo": 2008,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2003-v/diesel/1.9-tdi-ip-105",
+      "retrievedAt": "2026-09-18T12:40:31.144Z",
+      "contentSha256": "9d6962a8521df3a77311f046d164c7166ca33ef7a5cf7e960ff42df62076aa85",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-a4e3f908713afb79",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/nissan/micra/2003/petrol/1.2i-80",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1b02fc0954e0d6ee56a0ec26ae4e6f943b9ed2b29ff4b94d5c28540f263ca06e",
+    "identity": {
+      "brand": "Nissan",
+      "modelFamily": "Micra",
+      "generation": "2003",
+      "yearFrom": 2003,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.2i",
+      "displacementCc": 1200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 80,
+      "stockTorqueNm": 120,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 85,
+        "torqueNm": 125
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2003,
+      "yearTo": 2009,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/nissan/micra/2003/petrol/1.2i-80",
+      "retrievedAt": "2026-09-18T12:42:20.841Z",
+      "contentSha256": "1b02fc0954e0d6ee56a0ec26ae4e6f943b9ed2b29ff4b94d5c28540f263ca06e",
+      "reason": "2003 Micra 1.2i 80 PS/120 Nm application, nominal 1200 cc within the existing tolerance for 1240 cc. Separate from 2010 Micra 1.2 80 PS/110 Nm. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-00de5725a83ff1ad",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/nissan/micra/2010/petrol/1.2-12v-80",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dddcf41621dc60c61401452b5259135db6c4de3d45df2dd672b132b805fcbfb0",
+    "identity": {
+      "brand": "Nissan",
+      "modelFamily": "Micra",
+      "generation": "2010",
+      "yearFrom": 2010,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.2 12v",
+      "displacementCc": 1200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 80,
+      "stockTorqueNm": 110,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 95,
+        "torqueNm": 130
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2010,
+      "yearTo": 2017,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/nissan/micra/2010/petrol/1.2-12v-80",
+      "retrievedAt": "2026-09-18T12:42:20.841Z",
+      "contentSha256": "dddcf41621dc60c61401452b5259135db6c4de3d45df2dd672b132b805fcbfb0",
+      "reason": "2010 Micra 1.2 12v 80 PS/110 Nm, nominal 1200 cc consistent with 1198 cc. Separate from the 2003 1240 cc/120 Nm generation. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-62c1e042f01c33e0",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/renault/clio/2001-ii/petrol/1.6i-16v-107",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0c1c97ce8f5563c41a3313b78fd076c4e48b93b8e558ea77a278be3dedaa63b2",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "2001 - II",
+      "yearFrom": 2001,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.6i 16v",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 107,
+      "stockTorqueNm": 148,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 110,
+        "torqueNm": 150
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2001,
+      "yearTo": 2004,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/clio/2001-ii/petrol/1.6i-16v-107",
+      "retrievedAt": "2026-09-18T12:42:20.841Z",
+      "contentSha256": "0c1c97ce8f5563c41a3313b78fd076c4e48b93b8e558ea77a278be3dedaa63b2",
+      "reason": "Clio II 2001 1.6 107 PS/148 Nm. Stop before separately published Clio III 2005 110 PS; 2000 predates source and 2005 transition remains unresolved."
+    }
+  },
+  {
+    "id": "shiftech-v2-65fa7d80495bb895",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.6i-8v-102",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5b12b8adeb4c6e341646b19f9d4b1572918b9b6437eeebc161b3a025bffa0971",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2005",
+      "yearFrom": 2005,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.6i 8v",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 102,
+      "stockTorqueNm": 148,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 110,
+        "torqueNm": 160
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2005,
+      "yearTo": 2009,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.6i-8v-102",
+      "retrievedAt": "2026-09-18T12:42:20.841Z",
+      "contentSha256": "5b12b8adeb4c6e341646b19f9d4b1572918b9b6437eeebc161b3a025bffa0971",
+      "reason": "Published Octavia 2005 1.6i 8v 102 PS/148 Nm, nominal 1600 cc consistent with 1595 cc. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-efc584da161ee503",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.4-tsi-tfsi-122",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7c6eab139977a904b0533ed8b5d32a7281bdb78cfc8d9eb89bde89726e7ce967",
+    "identity": {
+      "brand": "Skoda",
+      "modelFamily": "Octavia",
+      "generation": "2005",
+      "yearFrom": 2005,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 TSI/TFSI",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 122,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 240
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2010,
+      "yearTo": 2012,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.4-tsi-tfsi-122",
+      "retrievedAt": "2026-09-18T12:42:20.841Z",
+      "contentSha256": "7c6eab139977a904b0533ed8b5d32a7281bdb78cfc8d9eb89bde89726e7ce967",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-b1a950cea4f6e6f9",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/mercedes/b/2013-w246/petrol/180-eu6-1.6t-122",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b004137e289980ca89f70401563bbd46fbb679167fce22e970275a3459fb5e8d",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "B",
+      "generation": "2013 - W246",
+      "yearFrom": 2013,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.6T)",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 122,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 260
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "shiftech-v2-947e3c87f6ed3203",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2008-b8/petrol/1.8-tsi-tfsi-120",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8c96726559375adf36c2076f267161ba54951eec2f9229e15e754d509a5f73c0",
+    "identity": {
+      "brand": "Audi",
+      "modelFamily": "A4",
+      "generation": "2008 - B8",
+      "yearFrom": 2008,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.8 TSI / TFSI",
+      "displacementCc": 1800,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 230,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 320
+      },
+      "stage2": {
+        "powerHp": 221,
+        "torqueNm": 336,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2008,
+      "yearTo": 2011,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2008-b8/petrol/1.8-tsi-tfsi-120",
+      "retrievedAt": "2026-09-18T12:42:20.841Z",
+      "contentSha256": "8c96726559375adf36c2076f267161ba54951eec2f9229e15e754d509a5f73c0",
+      "reason": "Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-5cc3dfcd393df5e1",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2016-g30-g31/petrol/20i-2.0t-eu6d-184",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d377f7c11aab882a57319e1aa8a18876138682ac0965966e9d765b1ab6a412b2",
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "5-serie",
+      "generation": "2016 - G30 G31",
+      "yearFrom": 2016,
+      "fuel": "Petrol",
+      "engineMarketingName": "2.0T) EU6d",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 420
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "shiftech-v2-d6fc4520e5152921",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2022-g20-g21-lci/petrol/18i-2.0t-eu6d-156",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c9926443b9d4f82357d4118c8682f2ca7da7f9c9da66534e8a073f1db6e07da3",
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3-serie",
+      "generation": "2022 - G20 G21 LCI",
+      "yearFrom": 2022,
+      "fuel": "Petrol",
+      "engineMarketingName": "2.0T) EU6d",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 156,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 420
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2022,
+      "yearTo": 2023,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2022-g20-g21-lci/petrol/18i-2.0t-eu6d-156",
+      "retrievedAt": "2026-09-18T12:42:20.841Z",
+      "contentSha256": "c9926443b9d4f82357d4118c8682f2ca7da7f9c9da66534e8a073f1db6e07da3",
+      "reason": "Separate G20/G21 LCI application. Limit review to 2022–2023 because ATM lists a further 2024 LCI application with a different engine-code label. Do not assume identical ECU access or merge 2024 on nominal power alone. Large-gain single-source review flag retained."
+    }
+  },
+  {
+    "id": "shiftech-v2-ec1a3e45a04c329d",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/mazda/mx5/2005/petrol/1.8i-mzr-126",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b1b11b64feb4de0964dea43ab9ea02fb767ea60e56c64fb007efbcc36a725928",
+    "identity": {
+      "brand": "Mazda",
+      "modelFamily": "MX5",
+      "generation": "2005",
+      "yearFrom": 2005,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.8i MZR",
+      "displacementCc": 1800,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 126,
+      "stockTorqueNm": 155,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 139,
+        "torqueNm": 170
+      },
+      "stage2": {
+        "powerHp": 146,
+        "torqueNm": 179,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "shiftech-v2-db1e809928c83527",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/mazda/mazda-6/2003/petrol/1.8i-mzr-122",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3c2aa0724bcf193692dd4145a8d4266bc885ec135d51a1d7f41227184ccb1579",
+    "identity": {
+      "brand": "Mazda",
+      "modelFamily": "Mazda 6",
+      "generation": "2003",
+      "yearFrom": 2003,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.8i MZR",
+      "displacementCc": 1800,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 122,
+      "stockTorqueNm": 165,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 135,
+        "torqueNm": 175
+      },
+      "stage2": {
+        "powerHp": 140,
+        "torqueNm": 185,
+        "conditions": [
+          "Published hardware-dependent Stage; verify applicable parts and calibration before work."
+        ]
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "shiftech-v2-52d39d2ea645d63c",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/fiat/500/2015/petrol/0.9-twin-air-85",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a886bb6880f88f52731207e5035c06f955a369ea3848a2f96ac7ecb9e4a99afa",
+    "identity": {
+      "brand": "Fiat",
+      "modelFamily": "500",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "0.9 Twin-Air",
+      "displacementCc": 900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 85,
+      "stockTorqueNm": 145,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 95,
+        "torqueNm": 190
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Hash covers the retrieved rendered public page extraction. Search snippets/index values are not tuning evidence.",
+      "Displacement is nominal from the published engine label. The published generation start is not a build date. No competitor prices are retained."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2015,
+      "yearTo": 2017,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/500/2015/petrol/0.9-twin-air-85",
+      "retrievedAt": "2026-09-18T12:48:11.185Z",
+      "contentSha256": "a886bb6880f88f52731207e5035c06f955a369ea3848a2f96ac7ecb9e4a99afa",
+      "reason": "Separate 2015 Fiat 500 Twin-Air 85 PS/145 Nm facelift application. Inclusive 2015 overlap remains ambiguous; no forced output selection. Reviewed only for the requested observed years within the published application period; this review limit is not a claimed production end. Workshop must verify actual engine, ECU and hardware."
+    }
+  },
+  {
+    "id": "shiftech-v2-139ccbe44e452003",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public application table",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/18i-2.0t-eu6d-156",
+    "retrievedAt": "2026-09-18T12:42:20.841Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8a72850370578e721ea6931e25728fb71d1954778903c8b6bc66a95107cd0d9e",
+    "identity": {
+      "brand": "BMW",
+      "modelFamily": "3-serie",
+      "generation": "2019 - G20 G21",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "engineMarketingName": "18i (2.0T) EU6d",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 156,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 260,
+        "torqueNm": 420
+      }
+    },
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification."
+    ],
+    "notes": [
+      "Manual factual extraction: the retrieved page title and application URL identify 2019 G20/G21; the body heading identifies G20/G21 but omits the start year. Stage 1 table only; E85 packages excluded. Hash covers the retrieved rendered page."
+    ],
+    "reviewedScope": {
+      "yearFrom": 2020,
+      "yearTo": 2021,
+      "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/18i-2.0t-eu6d-156",
+      "retrievedAt": "2026-09-18T12:42:20.841Z",
+      "contentSha256": "8a72850370578e721ea6931e25728fb71d1954778903c8b6bc66a95107cd0d9e",
+      "reason": "Official 2020 launch and distinct Shiftech 2022 LCI page bound this reviewed pre-LCI application to 2020–2021. Two providers independently publish 260 PS/420 Nm; no inferred factory de-rating or unlock."
+    }
+  },
+  {
+    "id": "unlimited-v2-159b2c7256791ef9",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL public Normal/Stage 1/Stage 2 table",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mitsubishi-colt-1-5i-109-pk.html",
+    "retrievedAt": "2026-09-18T12:49:20.295Z",
+    "status": "retrieved",
+    "httpStatus": 200,
+    "retrievalMethod": "page",
+    "contentSha256": "5b5db7aefcc7a8531361dd6576365505b2d19dd3ff99dbe58c620da830387671",
+    "unresolvedIdentity": {
+      "brand": "Mitsubishi",
+      "modelFamily": "Colt",
+      "generation": "Unpublished application period",
+      "fuel": "Petrol",
+      "engineMarketingName": "1.5i",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 109,
+      "stockTorqueNm": 145,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 121,
+        "torqueNm": 163
+      }
+    },
+    "applicability": [
+      "Exact 1.5i 109 PS application table retrieved; no year/generation scope was published in the checked application. No category-year inference made."
+    ],
+    "conditions": [
+      "Exact engine, generation, fuel, installed hardware and ECU access require workshop verification.",
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Normal or explicitly labelled Stage 1 is the ordinary remap observation. Stage 1+ and Xtreme are not substituted for Stage 1 or Stage 2.",
+      "Engine displacement is nominal from the published engine label. Provider year bands are preserved, not interpreted as build dates. No competitor prices are retained."
+    ]
+  },
+  {
+    "id": "manufacturer-v3-2-bmw-520i-2017",
+    "provider": "manufacturer",
+    "sourceName": "BMW Group official model update release",
+    "url": "https://www.press.bmwgroup.com/belux/article/attachment/T0270802FR/385610",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9c7de0764395c5a65cf3e06ef365de725e4f881faac7f7abb397d9ec23635b74",
+    "unresolvedIdentity": {
+      "brand": "BMW",
+      "modelFamily": "5 serie",
+      "generation": "G30/G31",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "engineMarketingName": "520i",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 290,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "gearbox": "8-speed Steptronic"
+    },
+    "notes": [
+      "Factory identity evidence only; no tuned-output vote and no ECU unlock or factory de-rating claim. Hash covers retrieved rendered official content."
+    ]
+  },
+  {
+    "id": "manufacturer-v3-2-bmw-318i-2020",
+    "provider": "manufacturer",
+    "sourceName": "BMW Group official model update release",
+    "url": "https://www.press.bmwgroup.com/portugal/article/detail/T0304601PT/bmw-model-upgrade-measures-taking-effect-in-the-spring-of-2020",
+    "retrievedAt": "2026-09-18T12:48:11.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "189b6cefdba3231d07d60d9821b51c8f2424d8b68692ab900eefa19547c40337",
+    "unresolvedIdentity": {
+      "brand": "BMW",
+      "modelFamily": "3 serie",
+      "generation": "G20/G21",
+      "yearFrom": 2020,
+      "fuel": "Petrol",
+      "engineMarketingName": "318i",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 156,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "gearbox": "8-speed Steptronic"
+    },
+    "notes": [
+      "Factory identity evidence only; no tuned-output vote and no ECU unlock or factory de-rating claim. Hash covers retrieved rendered official content."
+    ]
+  }
+]

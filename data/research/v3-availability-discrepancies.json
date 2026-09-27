@@ -1,0 +1,39 @@
+[
+  {
+    "sourceId": "atm-v3-5c8f75175a94cc34",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-transporter-multivan-20-tdi-150pk-12060/",
+    "retrievedAt": "2026-09-16T17:05:23.672Z",
+    "contentSha256": "6793f0f285e51cb387116c4fe2c5e505252a6517176fb33d3a8db9909b2b23af",
+    "currentAvailability": {
+      "status": "available",
+      "scope": "source-application-only",
+      "evidence": "Actual application table and exact numeric Stage controls; method checked separately."
+    },
+    "currentIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Transporter",
+      "aliases": [
+        "Multivan"
+      ],
+      "generation": "T6.1 - 2021 - 2024",
+      "yearFrom": 2021,
+      "yearTo": 2024,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 TDI 150pk",
+      "displacementCc": 1968,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Delphi DCM6.2V & Bosch MD1CS104",
+      "electrification": "unknown"
+    },
+    "currentStage1": {
+      "powerHp": 195,
+      "torqueNm": 430
+    },
+    "previousStatement": "The task example/search index described this page as unavailable.",
+    "disposition": "Fresh actual public application currently has an available Stage 1 table. Retain the actual retrieved state; the stale statement is not an accepted negative observation. T6.1 remains distinct from T6. Current source-specific negative pages remain in v3-negative-applicability.json."
+  }
+]

@@ -11,7 +11,8 @@ Methods:
 
 Debug:
 
-- Add `includeRaw=1` to include raw RDW vehicle and fuel rows.
+- Responses include the detected identity, one resolved tuning estimate with Stage provenance, a compact identity assessment, and the initial Stage 1 quote. Canonical candidates and raw RDW rows are excluded; `includeRaw` no longer expands the public response.
+- `Server-Timing` measures the RDW lookup and server-side resolution; `X-RDW-Cache` distinguishes cached and fresh lookups.
 
 ## RDW Datasets
 

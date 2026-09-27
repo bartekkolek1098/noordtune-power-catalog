@@ -1,0 +1,883 @@
+[
+  {
+    "id": "atm-v3-8316ca5ad31250be",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-transporter-multivan-20-tsi-204pk-12059/",
+    "retrievedAt": "2026-09-16T17:10:48.941Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "abb146a7da66caa5346d413f7b981f35b8ee9e38bff2cff084922841904704d8",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-transporter-multivan/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-transporter-multivan-t61-2021-2024/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Transporter",
+      "aliases": [
+        "Multivan"
+      ],
+      "generation": "T6.1 - 2021 - 2024",
+      "yearFrom": 2021,
+      "yearTo": 2024,
+      "engineMarketingName": "2.0 TSI 204pk",
+      "stockPowerHp": 204,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-d20ad146a4f33ede",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-14-tsi-gte-204pk-10881/",
+    "retrievedAt": "2026-09-16T17:15:13.885Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "648f78c9a7ed5984ec6ab374ce3273230fc59cffcd48d15548cc60832a914875",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-golf-8-2020-2024/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "Golf 8 - 2020 - 2024",
+      "yearFrom": 2020,
+      "yearTo": 2024,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 TSI GTE 204pk",
+      "engineCodes": [
+        "DGEA"
+      ],
+      "displacementCc": 1395,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.1.21 & Bosch MED17.1.27",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "hybrid-only",
+      "scope": "source-application-only",
+      "evidence": "Published application is explicitly hybrid."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-e5c90801f4b0453f",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-14-tsi-gte-204pk-11550/",
+    "retrievedAt": "2026-09-16T17:15:15.911Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "30c52a65252d813bf093f7cbdc49b9534131609f61a7ead8a52b35d61bb6863b",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-golf-75-2017-2019/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "Golf 7.5 - 2017 - 2019",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 TSI GTE 204pk",
+      "engineCodes": [
+        "CUK"
+      ],
+      "displacementCc": 1395,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.1.21 & Temic DQ400E & Bosch MED17.1.27",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "hybrid-only",
+      "scope": "source-application-only",
+      "evidence": "Published application is explicitly hybrid."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-b6d9b32bf5543de4",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-14-tsi-gte-204pk/",
+    "retrievedAt": "2026-09-16T17:15:17.872Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "c0a9662712593941e94dded9f8978da3f395f37ab963ad1c0b9308885cd490d9",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-golf-7-2012-2016/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "Golf 7 - 2012 - 2016",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 TSI GTE 204pk",
+      "engineCodes": [
+        "CUK"
+      ],
+      "displacementCc": 1395,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Bosch MED17.1.21 & Temic DQ400E",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "hybrid-only",
+      "scope": "source-application-only",
+      "evidence": "Published application is explicitly hybrid."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-1fb7ca34bd64f4aa",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-14-tsi-gte-242pk/",
+    "retrievedAt": "2026-09-16T17:15:19.920Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "61a2c33fed84fa1240ebaf34f16d08d9f1d0970b3646d6f3f5a5a7b14c40e6ad",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-golf-golf-8-2020-2024/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Golf",
+      "generation": "Golf 8 - 2020 - 2024",
+      "yearFrom": 2020,
+      "yearTo": 2024,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 TSI GTE 242pk",
+      "engineCodes": [
+        "DGEA"
+      ],
+      "displacementCc": 1395,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 242,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "ecuFamily": "Temic DQ400E & Bosch MG1CS211",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "hybrid-only",
+      "scope": "source-application-only",
+      "evidence": "Published application is explicitly hybrid."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-ebed574848ded006",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/ford-transit-custom-20-tdci-ecoblue-hybrid-130pk/",
+    "retrievedAt": "2026-09-16T17:17:42.430Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "b2f811d1b8b59503105aa83af9fe1f209ad9febbe1be31c29199c7c793a624ed",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/ford/",
+      "https://www.atm-chiptuning.com/chiptuning/ford-transit-custom/",
+      "https://www.atm-chiptuning.com/chiptuning/ford-transit-custom-2019-2023/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2019 - 2023",
+      "yearFrom": 2019,
+      "yearTo": 2023,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 TDCi Ecoblue Hybrid 130pk",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 1996,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 385,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "hybrid-only",
+      "scope": "source-application-only",
+      "evidence": "Published application is explicitly hybrid."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-235c4a4ebc038b07",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-citan-108-cdi-75pk-12147/",
+    "retrievedAt": "2026-09-16T17:23:01.360Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "79fbb66ddb8ed14200f05c350e28b864656018d87725077b26cc1fe5277caca0",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-citan/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-citan-2021-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Citan",
+      "generation": "2021 -> ...",
+      "yearFrom": 2021,
+      "engineMarketingName": "108 CDI 75pk",
+      "stockPowerHp": 75,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-8860fb9967c81211",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-citan-110-13t-102pk/",
+    "retrievedAt": "2026-09-16T17:23:11.421Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "b52af9aece9f1a2c315b9baf30f7243c693cd786868978df30bfbc855a71afbb",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-citan/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-citan-2021-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Citan",
+      "generation": "2021 -> ...",
+      "yearFrom": 2021,
+      "engineMarketingName": "110 (1.3T) 102pk",
+      "stockPowerHp": 102,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-e41db1f8d61d6672",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-citan-113-13t-131pk/",
+    "retrievedAt": "2026-09-16T17:23:23.471Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "4e49f43383c2eba8aa7811d0f6a92ecf343d1382394028d10c74d5b08114a148",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-citan/",
+      "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-citan-2021-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Citan",
+      "generation": "2021 -> ...",
+      "yearFrom": 2021,
+      "engineMarketingName": "113 (1.3T) 131pk",
+      "stockPowerHp": 131,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-5dcbcc101a0e3a08",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/volkswagen-polo-10-tgi-90pk/",
+    "retrievedAt": "2026-09-16T17:24:03.785Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "ac60a07ecb0423dfa61b796e60e950695d84c8f5330cadef0939b153c3fd1072",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-polo/",
+      "https://www.atm-chiptuning.com/chiptuning/volkswagen-polo-2021-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Volkswagen",
+      "modelFamily": "Polo",
+      "generation": "2021 -> ...",
+      "yearFrom": 2021,
+      "engineMarketingName": "1.0 TGI 90pk",
+      "stockPowerHp": 90,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-5cdf709241bfb202",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mazda-cx-5-20-skyactiv-g-165pk-12220/",
+    "retrievedAt": "2026-09-16T17:25:06.023Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "895583f8a5ed6d25c814355b6f78a556133a941a2afe510792cc6286fa8cc258",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mazda/",
+      "https://www.atm-chiptuning.com/chiptuning/mazda-cx-5/",
+      "https://www.atm-chiptuning.com/chiptuning/mazda-cx-5-2021-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Mazda",
+      "modelFamily": "CX-5",
+      "generation": "2021 -> ...",
+      "yearFrom": 2021,
+      "engineMarketingName": "2.0 SkyActiv-G 165pk",
+      "stockPowerHp": 165,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-9e838e195a8da6dc",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/hyundai-i20-10-t-gdi-100pk-13248/",
+    "retrievedAt": "2026-09-16T17:26:02.304Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "96b6d507b3eac02aae6f47f92d7de6189070e216714f82e9386fb8c62ccdb8ba",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/hyundai/",
+      "https://www.atm-chiptuning.com/chiptuning/hyundai-i20/",
+      "https://www.atm-chiptuning.com/chiptuning/hyundai-i20-2023-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Hyundai",
+      "modelFamily": "i20",
+      "generation": "2023 -> ...",
+      "yearFrom": 2023,
+      "engineMarketingName": "1.0 T-GDi 100pk",
+      "stockPowerHp": 100,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-10879a9345e63152",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/hyundai-i20-10-t-gdi-120pk-13249/",
+    "retrievedAt": "2026-09-16T17:26:10.372Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "9b1457bed6bc0cd6495af09b41897341f0948f2e001f26e984aad8f5db3af672",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/hyundai/",
+      "https://www.atm-chiptuning.com/chiptuning/hyundai-i20/",
+      "https://www.atm-chiptuning.com/chiptuning/hyundai-i20-2023-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Hyundai",
+      "modelFamily": "i20",
+      "generation": "2023 -> ...",
+      "yearFrom": 2023,
+      "engineMarketingName": "1.0 T-GDi 120pk",
+      "stockPowerHp": 120,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-e1ab7c3d6b250ae4",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-3008-16-puretech-225pk/",
+    "retrievedAt": "2026-09-16T17:27:28.659Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "4eb057e8364ee0e607c62f7ec7401016928094687405ac26842908c4db52ccc2",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/peugeot/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-3008/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-3008-2016-2020/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Peugeot",
+      "modelFamily": "3008",
+      "generation": "2016 - 2020",
+      "yearFrom": 2016,
+      "yearTo": 2020,
+      "engineMarketingName": "1.6 Puretech 225pk",
+      "stockPowerHp": 225,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-c4ca3b26f0fcee6c",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-3008-16-puretech-hybrid-225pk-13584/",
+    "retrievedAt": "2026-09-16T17:27:30.699Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "8e51ceb506eacbe15d3b8c7136b7a9e08dfcd88a66b0f8e036686cb66673a979",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/peugeot/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-3008/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-3008-2020-2023/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Peugeot",
+      "modelFamily": "3008",
+      "generation": "2020 - 2023",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "engineMarketingName": "1.6 Puretech Hybrid 225pk",
+      "engineCodes": [
+        "EP6 FADTXHPD"
+      ],
+      "displacementCc": 1598,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 225,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "hybrid-only",
+      "scope": "source-application-only",
+      "evidence": "Published application is explicitly hybrid."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-8b2035c5445143ac",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-3008-16-puretech-hybrid-225pk/",
+    "retrievedAt": "2026-09-16T17:27:32.689Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "0d940d224617dc2a6a5018b26ccd0f56f9b3cd070a286764bc106030214d2306",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/peugeot/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-3008/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-3008-2016-2020/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Peugeot",
+      "modelFamily": "3008",
+      "generation": "2016 - 2020",
+      "yearFrom": 2016,
+      "yearTo": 2020,
+      "engineMarketingName": "1.6 Puretech Hybrid 225pk",
+      "engineCodes": [
+        "EP6 FADTXHPD"
+      ],
+      "displacementCc": 1598,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 225,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "hybrid-only",
+      "scope": "source-application-only",
+      "evidence": "Published application is explicitly hybrid."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-2ee9230a63330520",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-308-gti-16-e-thp-263pk-11444/",
+    "retrievedAt": "2026-09-16T17:28:00.835Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "8616a7ca6b513890e33526e31100a2ff62b465027efa9bbb4b4560ec5f71cac2",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/peugeot/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-308/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-308-2021-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Peugeot",
+      "modelFamily": "308",
+      "generation": "2021 ->",
+      "yearFrom": 2021,
+      "engineMarketingName": "GTI 1.6 e-THP 263pk",
+      "stockPowerHp": 263,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-c9de4583d90053a2",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mini-cooper-15t-156pk/",
+    "retrievedAt": "2026-09-16T17:28:37.010Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "b57aa33a72f340d7da2535cf1c00657aa790ac43465f4c81481cc6696a611403",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mini/",
+      "https://www.atm-chiptuning.com/chiptuning/mini-cooper/",
+      "https://www.atm-chiptuning.com/chiptuning/mini-cooper-f66-2024-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Mini",
+      "modelFamily": "Cooper",
+      "generation": "F66 - 2024 ->",
+      "yearFrom": 2024,
+      "engineMarketingName": "1.5T 156pk",
+      "stockPowerHp": 156,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-4382f735a74e1043",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mini-cooper-s-20t-204pk/",
+    "retrievedAt": "2026-09-16T17:29:11.197Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "49dbde65f8c2134014387afa5e9aec7303afe1f7c9520f86c5be836f211f23f9",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mini/",
+      "https://www.atm-chiptuning.com/chiptuning/mini-cooper/",
+      "https://www.atm-chiptuning.com/chiptuning/mini-cooper-f66-2024-g/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Mini",
+      "modelFamily": "Cooper",
+      "generation": "F66 - 2024 ->",
+      "yearFrom": 2024,
+      "engineMarketingName": "S 2.0T 204pk",
+      "stockPowerHp": 204,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-acc2c7b2f84b776f",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/mini-cooper-s-s-20t-204pk/",
+    "retrievedAt": "2026-09-16T17:29:33.317Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "6215db14a85fcb7b710a29c0539f4d49b2e3fa4d6733f214577d7209f507148c",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/mini/",
+      "https://www.atm-chiptuning.com/chiptuning/mini-cooper-s/",
+      "https://www.atm-chiptuning.com/chiptuning/mini-cooper-s-f65-2024/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Mini",
+      "modelFamily": "Cooper S",
+      "generation": "F65 - 2024",
+      "yearFrom": 2024,
+      "engineMarketingName": "S 2.0T 204pk",
+      "stockPowerHp": 204,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  },
+  {
+    "id": "atm-v3-284d6d8f466adb75",
+    "provider": "atm-chiptuning",
+    "sourceName": "ATM-Chiptuning public application table",
+    "url": "https://www.atm-chiptuning.com/chiptuning/peugeot-3008-12t-hybrid-e-dcs6-145pk/",
+    "retrievedAt": "2026-09-16T17:32:24.165Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "ae527dc5f2516353bc65ca135ebb03ad01d5a506c3caf5deb5f58a883a54324e",
+    "supportingUrls": [
+      "https://www.atm-chiptuning.com/chiptuning/peugeot/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-3008/",
+      "https://www.atm-chiptuning.com/chiptuning/peugeot-3008-2020-2023/"
+    ],
+    "unresolvedIdentity": {
+      "brand": "Peugeot",
+      "modelFamily": "3008",
+      "generation": "2020 - 2023",
+      "yearFrom": 2020,
+      "yearTo": 2023,
+      "engineMarketingName": "1.2T Hybrid e-DCS6 145pk",
+      "stockPowerHp": 145,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "availability": {
+      "status": "development-pending",
+      "scope": "source-application-only",
+      "evidence": "Current application explicitly says tuning is unavailable or in development."
+    },
+    "conditions": [
+      "SOURCE_APPLICATION_NOT_ORDINARY_AVAILABLE",
+      "V3_RESEARCH_QUEUE_NOT_PROMOTED"
+    ],
+    "notes": [
+      "Availability applies only to this provider application and retrieved date; it is not a NoordTune support verdict."
+    ]
+  }
+]

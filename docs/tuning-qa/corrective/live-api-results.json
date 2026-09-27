@@ -1,0 +1,374 @@
+[
+  {
+    "id": "bmw128ti",
+    "httpStatus": 200,
+    "source": "RDW Open Data",
+    "retrievedAt": "2026-09-15T10:48:14.853Z",
+    "make": "BMW",
+    "model": "128TI",
+    "engine": {
+      "cylinders": 4,
+      "displacementCc": 1998,
+      "powerKw": 195,
+      "powerHp": 265
+    },
+    "registration": {
+      "firstAdmission": "2022-09-14",
+      "firstAdmissionYear": 2022,
+      "firstRegistrationNl": "2026-05-29",
+      "apkExpiry": "2027-12-31"
+    },
+    "estimate": {
+      "status": "applicable",
+      "profile": {
+        "id": "ref-bmw-128ti-f40-265",
+        "brand": "BMW",
+        "model": "128ti",
+        "engine": "2.0 petrol (1998 cc)",
+        "generation": "F40",
+        "version": "Published Stage 1 reference",
+        "yearRange": "2020–2024",
+        "fuel": "Petrol",
+        "stockPowerHp": 265,
+        "stockTorqueNm": 400,
+        "stages": [
+          {
+            "name": "Stage 1",
+            "powerHp": 310,
+            "torqueNm": 480,
+            "requirements": "RON98 petrol; confirm vehicle condition and ECU access before work.",
+            "packageItems": [
+              "Vehicle-specific software scope and diagnostic checks before work"
+            ],
+            "confidenceLevel": "estimated",
+            "recommendedUse": "daily",
+            "hardwareRequired": false,
+            "tcuRecommended": false,
+            "logCheckRecommended": true,
+            "notes": [
+              "Independent tuner-published peak estimate; actual outcome depends on the vehicle and fuel. Not a NoordTune dyno result."
+            ]
+          },
+          {
+            "name": "Stage 2",
+            "requirements": "No applicable published output reference; scope to be confirmed.",
+            "packageItems": [],
+            "confidenceLevel": "estimated",
+            "hardwareRequired": true,
+            "notes": [
+              "No power or torque values have been invented for this Stage."
+            ]
+          },
+          {
+            "name": "Stage 3+",
+            "requirements": "No applicable published output reference; scope to be confirmed.",
+            "packageItems": [],
+            "confidenceLevel": "estimated",
+            "hardwareRequired": true,
+            "notes": [
+              "No power or torque values have been invented for this Stage."
+            ]
+          }
+        ],
+        "options": [
+          "egr",
+          "immo",
+          "speed-limiter",
+          "launch",
+          "pops"
+        ],
+        "ecuType": "To be identified",
+        "ecuSupport": {
+          "status": "manual-review"
+        },
+        "transmissionSupport": {
+          "status": "manual-review"
+        },
+        "recommendedPackage": {
+          "stage": "Stage 1",
+          "recommendedOptionIds": [],
+          "verificationRequired": true
+        },
+        "provenance": "tuner-reference",
+        "sourceReferences": [
+          {
+            "title": "BMW: The new BMW 128ti",
+            "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0318330EN_GB/the-new-bmw-128ti",
+            "scope": "Manufacturer stock specification: 128ti, four-cylinder 2.0 petrol, 265 hp and 400 Nm; November 2020 launch.",
+            "sourceType": "manufacturer",
+            "retrievedAt": "2026-09-15",
+            "retrievalMethod": "page"
+          },
+          {
+            "title": "Mosselman: BMW 128ti F40 265hp",
+            "url": "https://www.mosselmanturbo.com/nl/bmw-128ti-f40-265hp",
+            "scope": "Tuner-published Stage 1 peak estimate: 310 pk / 480 Nm on RON98. Stock 265 hp / 400 Nm / 195 kW. Not a NoordTune measurement. Stage 2 is intentionally omitted: source headline and body disagree about torque.",
+            "sourceType": "tuner",
+            "retrievedAt": "2026-09-15",
+            "retrievalMethod": "page"
+          }
+        ],
+        "conditions": [
+          "RON98 petrol; confirm vehicle condition and ECU access before work.",
+          "ECU/access and vehicle condition must be checked before execution; published peak values are indicative."
+        ],
+        "verificationRequired": true
+      },
+      "reasonCodes": [
+        "APPLICABLE_CATALOG_ESTIMATE"
+      ]
+    }
+  },
+  {
+    "id": "transit-custom",
+    "httpStatus": 200,
+    "source": "RDW Open Data",
+    "retrievedAt": "2026-09-15T10:48:15.388Z",
+    "make": "FORD",
+    "model": "TRANSIT CUSTOM",
+    "engine": {
+      "cylinders": 4,
+      "displacementCc": 1995,
+      "powerKw": 77,
+      "powerHp": 105
+    },
+    "registration": {
+      "firstAdmission": "2019-04-29",
+      "firstAdmissionYear": 2019,
+      "firstRegistrationNl": "2019-04-29",
+      "apkExpiry": "2027-07-07"
+    },
+    "estimate": {
+      "status": "conditional",
+      "profile": {
+        "id": "ref-ford-transit-custom-20-ecoblue-105",
+        "brand": "Ford",
+        "model": "Transit Custom",
+        "engine": "2.0 EcoBlue (1995 cc)",
+        "generation": "Mk1 (I facelift 2)",
+        "version": "Published Stage 1 reference",
+        "yearRange": "2019–2022",
+        "fuel": "Diesel",
+        "stockPowerHp": 105,
+        "stockTorqueNm": 360,
+        "stages": [
+          {
+            "name": "Stage 1",
+            "powerHp": 190,
+            "torqueNm": 440,
+            "requirements": "2.0 EcoBlue 105 PS diesel, reference generation 2019–2022; original hardware/software scope and condition to confirm.",
+            "packageItems": [
+              "Vehicle-specific software scope and diagnostic checks before work"
+            ],
+            "confidenceLevel": "estimated",
+            "recommendedUse": "daily",
+            "hardwareRequired": false,
+            "tcuRecommended": false,
+            "logCheckRecommended": true,
+            "notes": [
+              "Independent tuner-published peak estimate; actual outcome depends on the vehicle and fuel. Not a NoordTune dyno result."
+            ]
+          },
+          {
+            "name": "Stage 2",
+            "requirements": "No applicable published output reference; scope to be confirmed.",
+            "packageItems": [],
+            "confidenceLevel": "estimated",
+            "hardwareRequired": true,
+            "notes": [
+              "No power or torque values have been invented for this Stage."
+            ]
+          },
+          {
+            "name": "Stage 3+",
+            "requirements": "No applicable published output reference; scope to be confirmed.",
+            "packageItems": [],
+            "confidenceLevel": "estimated",
+            "hardwareRequired": true,
+            "notes": [
+              "No power or torque values have been invented for this Stage."
+            ]
+          }
+        ],
+        "options": [
+          "dpf",
+          "adblue",
+          "egr",
+          "scr",
+          "immo",
+          "speed-limiter"
+        ],
+        "ecuType": "To be identified",
+        "ecuSupport": {
+          "status": "manual-review"
+        },
+        "transmissionSupport": {
+          "status": "manual-review"
+        },
+        "recommendedPackage": {
+          "stage": "Stage 1",
+          "recommendedOptionIds": [],
+          "verificationRequired": true
+        },
+        "provenance": "tuner-reference",
+        "sourceReferences": [
+          {
+            "title": "Ford Transit Custom manufacturer brochure",
+            "url": "https://www.ford.ie/content/dam/guxeu/ie/Documents/Brochures/CVs/BRO-New_transit_custom.pdf",
+            "scope": "2.0 EcoBlue 105 PS / 77 kW stock variant: 360 Nm. Manufacturer brochure; exact installed variant and production date still require confirmation.",
+            "sourceType": "manufacturer",
+            "retrievedAt": "2026-09-15",
+            "retrievalMethod": "search-index"
+          },
+          {
+            "title": "BR-Performance: Transit Custom 2.0 EcoBlue 105",
+            "url": "https://www.br-performance.be/fr-be/reprogrammation/1-voitures/23-ford/12695-transit-custom/14309-i-facelift-2-2019-2022/23049-2-0-ecoblue/",
+            "scope": "Transit Custom I Facelift 2 (2019–2022), 2.0 EcoBlue: stock 105 ch / 360 Nm; Stage 1 190 ch / 440 Nm. Tuner-published peak estimate only; software scope, vehicle/hardware condition to confirm. No source price, guarantee, image or dyno curve adopted.",
+            "sourceType": "tuner",
+            "retrievedAt": "2026-09-15",
+            "retrievalMethod": "search-index"
+          }
+        ],
+        "conditions": [
+          "2.0 EcoBlue 105 PS diesel, reference generation 2019–2022; original hardware/software scope and condition to confirm.",
+          "ECU/access and vehicle condition must be checked before execution; published peak values are indicative."
+        ],
+        "verificationRequired": true
+      },
+      "reasonCodes": [
+        "GENERATION_BOUNDARY_REVIEW"
+      ]
+    }
+  },
+  {
+    "id": "transit-connect",
+    "httpStatus": 200,
+    "source": "RDW Open Data",
+    "retrievedAt": "2026-09-15T10:48:15.796Z",
+    "make": "FORD",
+    "model": "TRANSIT CONNECT",
+    "engine": {
+      "cylinders": 4,
+      "displacementCc": 1499,
+      "powerKw": 73.5,
+      "powerHp": 100
+    },
+    "registration": {
+      "firstAdmission": "2018-10-17",
+      "firstAdmissionYear": 2018,
+      "firstRegistrationNl": "2018-10-17",
+      "apkExpiry": "2027-04-03"
+    },
+    "estimate": {
+      "status": "conditional",
+      "profile": {
+        "id": "ref-ford-transit-connect-15-tdci-100",
+        "brand": "Ford",
+        "model": "Transit Connect",
+        "engine": "1.5 TDCi pre-facelift reference (1499 cc)",
+        "generation": "Mk2 (II pre-facelift)",
+        "version": "Published Stage 1 reference",
+        "yearRange": "2015–2018",
+        "fuel": "Diesel",
+        "stockPowerHp": 100,
+        "stockTorqueNm": 250,
+        "stages": [
+          {
+            "name": "Stage 1",
+            "powerHp": 125,
+            "torqueNm": 330,
+            "requirements": "Only for the pre-facelift 1.5 TDCi 100 PS diesel; confirm engine generation before applying these figures. This is not an EcoBlue estimate.",
+            "packageItems": [
+              "Vehicle-specific software scope and diagnostic checks before work"
+            ],
+            "confidenceLevel": "estimated",
+            "recommendedUse": "daily",
+            "hardwareRequired": false,
+            "tcuRecommended": false,
+            "logCheckRecommended": true,
+            "notes": [
+              "Independent tuner-published peak estimate; actual outcome depends on the vehicle and fuel. Not a NoordTune dyno result."
+            ]
+          },
+          {
+            "name": "Stage 2",
+            "requirements": "No applicable published output reference; scope to be confirmed.",
+            "packageItems": [],
+            "confidenceLevel": "estimated",
+            "hardwareRequired": true,
+            "notes": [
+              "No power or torque values have been invented for this Stage."
+            ]
+          },
+          {
+            "name": "Stage 3+",
+            "requirements": "No applicable published output reference; scope to be confirmed.",
+            "packageItems": [],
+            "confidenceLevel": "estimated",
+            "hardwareRequired": true,
+            "notes": [
+              "No power or torque values have been invented for this Stage."
+            ]
+          }
+        ],
+        "options": [
+          "dpf",
+          "adblue",
+          "egr",
+          "scr",
+          "immo",
+          "speed-limiter"
+        ],
+        "ecuType": "To be identified",
+        "ecuSupport": {
+          "status": "manual-review"
+        },
+        "transmissionSupport": {
+          "status": "manual-review"
+        },
+        "recommendedPackage": {
+          "stage": "Stage 1",
+          "recommendedOptionIds": [],
+          "verificationRequired": true
+        },
+        "provenance": "tuner-reference",
+        "sourceReferences": [
+          {
+            "title": "Ford: New Transit Connect 1.5 TDCi powertrains (2015)",
+            "url": "https://media.ford.com/content/fordmedia/feu/gb/en/news/2015/06/01/ford-delivers-class-leading-fuel-efficiency--segment-first-techn.html",
+            "scope": "Manufacturer: 1.5 TDCi ECOnetic 100 PS / 250 Nm introduced summer 2015; replaces the earlier 1.6 TDCi configuration.",
+            "sourceType": "manufacturer",
+            "retrievedAt": "2026-09-15",
+            "retrievalMethod": "search-index"
+          },
+          {
+            "title": "BR-Performance: Transit Connect II 1.5 TDCi 100",
+            "url": "https://www.br-performance.be/nl-be/chiptuning/1-wagens/23-ford/12693-transit-connect/14273-ii-2013-2018/22985-1-5-tdci/",
+            "scope": "Transit Connect II 1.5 TDCi (2015–2018), pre-facelift: stock 100 pk / 250 Nm; Stage 1 125 pk / 330 Nm. This reference does not establish EcoBlue output.",
+            "sourceType": "tuner",
+            "retrievedAt": "2026-09-15",
+            "retrievalMethod": "search-index"
+          },
+          {
+            "title": "Ford: New Transit Connect EcoBlue powertrains (2018)",
+            "url": "https://media.ford.com/content/fordmedia/feu/gb/en/news/2018/07/06/new-ford-transit-connect-cuts-fuel-bills-for-operators-by-up-to-.html",
+            "scope": "Ford introduces the new 1.5 EcoBlue 75/100/120 PS Connect in mid-2018. A 2018 first-registration date plus 1499 cc / 100 pk does not establish pre-facelift TDCi versus EcoBlue.",
+            "sourceType": "manufacturer",
+            "retrievedAt": "2026-09-15",
+            "retrievalMethod": "search-index"
+          }
+        ],
+        "conditions": [
+          "Only for the pre-facelift 1.5 TDCi 100 PS diesel; confirm engine generation before applying these figures. This is not an EcoBlue estimate.",
+          "A 2018 first registration does not resolve the TDCi/EcoBlue engine change; identify the engine family from vehicle documentation or an engine inspection.",
+          "ECU/access and vehicle condition must be checked before execution; published peak values are indicative."
+        ],
+        "verificationRequired": true
+      },
+      "reasonCodes": [
+        "GENERATION_BOUNDARY_REVIEW",
+        "CONNECT_ENGINE_GENERATION_REVIEW"
+      ]
+    }
+  }
+]

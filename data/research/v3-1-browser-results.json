@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-09-16T19:32:22.428Z",
+  "localProductionServer": "http://localhost:3120",
+  "ownerRoute": {
+    "method": "Genuine local HTTP RDW requests; no interception for OWNER-A, OWNER-B, OWNER-C, OWNER-D.",
+    "cases": 28,
+    "liveCases": 12,
+    "syntheticInterceptedCases": 16,
+    "widths": [
+      320,
+      1440
+    ],
+    "compactLocales": [
+      "en",
+      "pl"
+    ],
+    "runtimeErrors": 0
+  },
+  "v31Focused": {
+    "method": "Local production UI with intercepted deterministic DTOs produced by the real server normalizer from the committed sanitized RDW cohort. QA31xx inputs are synthetic, not live registrations. The four owner plates are tested separately using genuine HTTP requests.",
+    "cases": 14,
+    "recoveredCases": 8,
+    "conflictCases": 4,
+    "unsupportedCases": 2,
+    "retainedScreenshots": [
+      "alfa-320.png",
+      "mini-conflict-320.png"
+    ],
+    "runtimeErrors": 0
+  },
+  "checks": "Selected stage figures, provenance, displayed quote, WhatsApp content and price, chart, 320/1440 layout, compact EN/PL, and no candidate/debug API output all passed. Owner HTTP and intercepted fixtures are distinguished."
+}

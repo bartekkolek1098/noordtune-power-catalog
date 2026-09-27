@@ -11,8 +11,8 @@ const lookupSchema = z.object({
   kenteken: z.string().min(1).max(16)
 });
 
-export async function GET(request: NextRequest) {
-  return handleLookup(request, request.nextUrl.searchParams.get("kenteken"));
+export async function GET() {
+  return errorResponse("METHOD_NOT_ALLOWED", "Use POST for vehicle lookup.", 405, {Allow: "POST"});
 }
 
 export async function POST(request: NextRequest) {
@@ -27,6 +27,7 @@ export async function POST(request: NextRequest) {
 }
 
 async function handleLookup(request: NextRequest, input: string | null) {
+  const startedAt = performance.now();
   const ip =
     request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
     request.headers.get("x-real-ip") ||
@@ -60,14 +61,10 @@ async function handleLookup(request: NextRequest, input: string | null) {
       );
     }
 
-    const includeRaw =
-      request.nextUrl.searchParams.get("includeRaw") === "1" ||
-      request.nextUrl.searchParams.get("includeRaw") === "true";
     const payload: Partial<typeof result> = {...result};
-
-    if (!includeRaw) {
-      delete payload.raw;
-    }
+    // The public lookup always returns a compact selected result, including
+    // when a caller supplies the former includeRaw query parameter.
+    delete payload.raw;
 
     return NextResponse.json(
       {
@@ -78,6 +75,7 @@ async function handleLookup(request: NextRequest, input: string | null) {
         headers: {
           "Cache-Control": "no-store",
           "X-RDW-Cache": result.cached ? "hit" : "miss",
+          "Server-Timing": `rdw-lookup;dur=${(performance.now() - startedAt).toFixed(1)}`,
           "X-RateLimit-Remaining": String(limited.remaining),
           "X-RateLimit-Reset": String(Math.ceil(limited.resetAt / 1000))
         }

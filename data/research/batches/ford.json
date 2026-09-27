@@ -1,0 +1,1835 @@
+[
+  {
+    "id": "shiftech-ford-transit-custom-2017-diesel-20-ecoblue-105",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2017/diesel/2.0-ecoblue-105",
+    "retrievedAt": "2026-09-15T22:30:27.557Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "13c3251df7b6b85e3b2a399dfbcae0a6af3a8cda0d20e552e9f1bfae5c7b8a4d",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 460
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "NOORDTUNE_TARGET_REVIEW_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2017-diesel-20-ecoblue-130",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2017/diesel/2.0-ecoblue-130",
+    "retrievedAt": "2026-09-15T22:31:18.672Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "05672a4757dd2b03c29b1462483a835a56b4e40b1006e9fd934f12c50d640276",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 385,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 200,
+        "torqueNm": 480,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2017-diesel-20-ecoblue-170",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2017/diesel/2.0-ecoblue-170",
+    "retrievedAt": "2026-09-15T22:31:22.675Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d00b1019fc2bbe8a73d23e316fe2d25cd241be7c81750423109232ba49f74ba3",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "stockTorqueNm": 405,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 200,
+        "torqueNm": 480,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2017-diesel-20-tdci-ecoblue-eu6-190",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2017/diesel/2.0-tdci-ecoblue-eu6-190",
+    "retrievedAt": "2026-09-15T22:31:26.534Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "3e41916dfc2138712287a16bcddcb6635a6e74fa1f9c23eda30c6676fa2e3789",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 TDCI EcoBlue EU6",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 230,
+        "torqueNm": 460
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2025-diesel-20-ecoblue-110",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2025/diesel/2.0-ecoblue-110",
+    "retrievedAt": "2026-09-15T22:31:30.520Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a8fba2f2fc384d211f1ecf21430853fd5486aa96b8e6c08a45a2df10eecff60b",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2025",
+      "yearFrom": 2025,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 375,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2025-diesel-20-ecoblue-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2025/diesel/2.0-ecoblue-136",
+    "retrievedAt": "2026-09-15T22:31:34.141Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ca65997d7938d88641d60ec29fae741dbfff6a8d0052aa2b6b7113d445262dd3",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Custom",
+      "generation": "2025",
+      "yearFrom": 2025,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 410,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 205,
+        "torqueNm": 470
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-custom-2025-diesel-20-ecoblue-170",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2025/diesel/20-ecoblue-170",
+    "retrievedAt": "2026-09-15T22:31:39.076Z",
+    "status": "unavailable",
+    "retrievalMethod": "page",
+    "notes": [
+      "Rendered page fetch did not yield an identifiable Stage 1 table. No values inferred from URL or search snippets."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-2017-diesel-20-ecoblue-105",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2017/diesel/2.0-ecoblue-105",
+    "retrievedAt": "2026-09-15T22:31:42.697Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "31de9874f88db7a53ec0174a08ff783ed330c2f248770296772d251578223e8e",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 460
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ],
+    "consensusGroup": "ford-transit-2017-ecoblue-105"
+  },
+  {
+    "id": "shiftech-ford-transit-2017-diesel-20-ecoblue-130",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2017/diesel/2.0-ecoblue-130",
+    "retrievedAt": "2026-09-15T22:31:46.414Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0da59942e8346a404204db46226b67a5050cfb94a4c492aa63189c536f4fa522",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 470
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-2017-diesel-20-ecoblue-170",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2017/diesel/2.0-ecoblue-170",
+    "retrievedAt": "2026-09-15T22:31:50.475Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "17c6e2a9c506fe1bb5f11c07ee6b02e0f1ab62a4ebefe444bd9b2bb3810a4aa6",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "stockTorqueNm": 405,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 460
+      },
+      "stage2": {
+        "powerHp": 200,
+        "torqueNm": 480,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-75",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-75",
+    "retrievedAt": "2026-09-15T22:31:54.397Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c340b25c879bdb2c3728ebab1e378b8799da54e98af4052f82211a351579fca3",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TDCI EU5",
+      "engineFamily": "TDCi",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 75,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 95,
+        "torqueNm": 295
+      },
+      "stage2": {
+        "powerHp": 105,
+        "torqueNm": 315,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "CONNECT_ENGINE_GENERATION_CONFIRMATION_REQUIRED",
+      "SOURCE_EMISSIONS_SCOPE_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented.",
+      "Provider explicitly labels this TDCi application EU5. Do not silently apply its Stage 2 hardware/emissions scope to Euro VI or EcoBlue vehicles."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-100",
+    "retrievedAt": "2026-09-15T22:32:08.738Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "476a729058c5a10dd8ddc9458b964eae4a944f777035a64c04ae98b421778db3",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TDCI EU5",
+      "engineFamily": "TDCi",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 100,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 125,
+        "torqueNm": 330
+      },
+      "stage2": {
+        "powerHp": 135,
+        "torqueNm": 350,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "CONNECT_ENGINE_GENERATION_CONFIRMATION_REQUIRED",
+      "SOURCE_EMISSIONS_SCOPE_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented.",
+      "Provider explicitly labels this TDCi application EU5. Do not silently apply its Stage 2 hardware/emissions scope to Euro VI or EcoBlue vehicles."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-120",
+    "retrievedAt": "2026-09-15T22:32:12.708Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9159d6216c3b68c007c4afa07a4af91fd6e5a859c8aa6b3e1b2ff7a615827e6a",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 TDCI EU5",
+      "engineFamily": "TDCi",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 270,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 330
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 350,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "CONNECT_ENGINE_GENERATION_CONFIRMATION_REQUIRED",
+      "SOURCE_EMISSIONS_SCOPE_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented.",
+      "Provider explicitly labels this TDCi application EU5. Do not silently apply its Stage 2 hardware/emissions scope to Euro VI or EcoBlue vehicles."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-75",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-ecoblue-75",
+    "retrievedAt": "2026-09-15T22:32:16.375Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ed9b32a0d5eeb0fbdc5f1e54f7190dbac41854c58609b3a4e4b8575800586d2b",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 75,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 120,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "CONNECT_ENGINE_GENERATION_CONFIRMATION_REQUIRED",
+      "SOURCE_GENERATION_YEAR_CONFLICT"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented.",
+      "Provider groups EcoBlue under a 2016 generation route. This is not evidence of an EcoBlue engine in a 2016 vehicle; manufacturer transition evidence must bound application."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-ecoblue-100",
+    "retrievedAt": "2026-09-15T22:32:20.295Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2c4e90ae7c2e8a003766531309681c2dd475cb04a783b528147db6021dd91839",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 100,
+      "stockTorqueNm": 215,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 120,
+        "torqueNm": 275
+      },
+      "stage2": {
+        "powerHp": 130,
+        "torqueNm": 295,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "CONNECT_ENGINE_GENERATION_CONFIRMATION_REQUIRED",
+      "SOURCE_GENERATION_YEAR_CONFLICT"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented.",
+      "Provider groups EcoBlue under a 2016 generation route. This is not evidence of an EcoBlue engine in a 2016 vehicle; manufacturer transition evidence must bound application."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-transit-connect-2016-diesel-15-ecoblue-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-ecoblue-120",
+    "retrievedAt": "2026-09-15T22:32:24.489Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f1ab1415bc04dfbc37cddf8cd83123237a4438e8ab9be86296bff0afd1b4583a",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Transit Connect",
+      "generation": "2016",
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 EcoBlue",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 300,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 360
+      },
+      "stage2": {
+        "powerHp": 165,
+        "torqueNm": 380,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "CONNECT_ENGINE_GENERATION_CONFIRMATION_REQUIRED",
+      "SOURCE_GENERATION_YEAR_CONFLICT"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented.",
+      "Provider groups EcoBlue under a 2016 generation route. This is not evidence of an EcoBlue engine in a 2016 vehicle; manufacturer transition evidence must bound application."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-10-t-ecoboost-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.0-t-ecoboost-100",
+    "retrievedAt": "2026-09-15T22:32:28.572Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "912bdc49590c76686ee049ced2f4b6a8523d7138cf28d38ea75c4f6e733ce44e",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 100,
+      "stockTorqueNm": 170,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 250
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-10-t-ecoboost-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.0-t-ecoboost-125",
+    "retrievedAt": "2026-09-15T22:32:32.153Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a581ad60a9b55fbcc39457143a54e320a41134a64811e262bef9b582203ac484",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 125,
+      "stockTorqueNm": 170,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 250
+      },
+      "stage2": {
+        "powerHp": 152,
+        "torqueNm": 263,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-10-t-ecoboost-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.0-t-ecoboost-140",
+    "retrievedAt": "2026-09-15T22:32:36.198Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ffbd03881c189ae22451208188eea2312af263451d2759f8e030075c85ecee6e",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 180,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 260
+      },
+      "stage2": {
+        "powerHp": 163,
+        "torqueNm": 273,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-16-t-ecoboost-182",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.6-t-ecoboost-182",
+    "retrievedAt": "2026-09-15T22:32:40.114Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "071b8a667be12a36e75ee03f4412a9cca2c355a11736b2cb6c5c4919d478ba97",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 182,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 315,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-fiesta-2013-mkvii-petrol-16-t-ecoboost-st200-200",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii/petrol/1.6-t-ecoboost-st200-200",
+    "retrievedAt": "2026-09-15T22:32:44.196Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c9c1a5f4db5ccdce9e75598697ff50bfb9f9912d6342331ad73bf729adef0612",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2013 - MkVII",
+      "yearFrom": 2013,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T EcoBoost (ST200)",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 200,
+      "stockTorqueNm": 290,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 330
+      },
+      "stage2": {
+        "powerHp": 231,
+        "torqueNm": 347,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-fiesta-2017-mkviii-petrol-10-t-ecoboost-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2017-mkviii/petrol/1.0-t-ecoboost-100",
+    "retrievedAt": "2026-09-15T22:32:48.458Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9d659abf4675c1ea5fe89527bcf8dcc9ffabb8c718b7d7f04c06e13c1fdb8990",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2017 - MKVIII",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 100,
+      "stockTorqueNm": 170,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 250
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-fiesta-2017-mkviii-petrol-10-t-ecoboost-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2017-mkviii/petrol/1.0-t-ecoboost-125",
+    "retrievedAt": "2026-09-15T22:32:52.170Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7a5427a8b2b75d26a910629aaa76b13d3292d7d4dcdd2d0ab5f9427890d7be12",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2017 - MKVIII",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 125,
+      "stockTorqueNm": 170,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 250
+      },
+      "stage2": {
+        "powerHp": 152,
+        "torqueNm": 263,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-fiesta-2017-mkviii-petrol-10-t-ecoboost-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2017-mkviii/petrol/1.0-t-ecoboost-140",
+    "retrievedAt": "2026-09-15T22:32:55.765Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dbde302895aa6820fb6b03542739f44a25f94eda59dd27d76dc45d607cf61e1b",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2017 - MKVIII",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 180,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 260
+      },
+      "stage2": {
+        "powerHp": 163,
+        "torqueNm": 273,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-fiesta-2017-mkviii-petrol-15-t-ecoboost-200",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2017-mkviii/petrol/1.5-t-ecoboost-200",
+    "retrievedAt": "2026-09-15T22:33:07.962Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "124bc7a1e81c498ff9b1a1b8e550726641597b521c820b4662c1b64474e6f939",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Fiesta",
+      "generation": "2017 - MKVIII",
+      "yearFrom": 2017,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 T Ecoboost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 200,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 370
+      },
+      "stage2": {
+        "powerHp": 231,
+        "torqueNm": 387,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-10-t-ecoboost-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/1.0-t-ecoboost-100",
+    "retrievedAt": "2026-09-15T22:33:11.777Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "37ea16c19de6ff641d4328dcef72cd5692b105a5072498a6912cd904be46d0f8",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 100,
+      "stockTorqueNm": 170,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 250
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-10-t-ecoboost-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/1.0-t-ecoboost-125",
+    "retrievedAt": "2026-09-15T22:33:15.910Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bf8156d29b9ea481131c566290ee88afacb50d3a1775f1b915b856d205799d71",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 125,
+      "stockTorqueNm": 170,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 250
+      },
+      "stage2": {
+        "powerHp": 152,
+        "torqueNm": 263,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-15-t-ecoboost-150",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/1.5-t-ecoboost-150",
+    "retrievedAt": "2026-09-15T22:33:19.715Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "069dbbb465563813a1988e0023d7af990497ff2494dc444bfbc8489201634477",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 T Ecoboost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 194,
+        "torqueNm": 315,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-15-t-ecoboost-182",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/1.5-t-ecoboost-182",
+    "retrievedAt": "2026-09-15T22:33:23.512Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "bc51c0a7037febf188c8ccc4d8858ec72c29142ce43c8f16999207b29a60048b",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5 T Ecoboost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 182,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 205,
+        "torqueNm": 290
+      },
+      "stage2": {
+        "powerHp": 215,
+        "torqueNm": 305,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-20-t-ecoboost-st-250",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/2.0-t-ecoboost-st-250",
+    "retrievedAt": "2026-09-15T22:33:27.490Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "945f7538f87c9b10145f9b3ff99be1157796157ca48a0daa640b284d4658d434",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 T EcoBoost (ST)",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 250,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 265,
+        "torqueNm": 440
+      },
+      "stage2": {
+        "powerHp": 278,
+        "torqueNm": 462,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2014-mkiii-petrol-23-t-ecoboost-rs-350",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii/petrol/2.3-t-ecoboost-rs-350",
+    "retrievedAt": "2026-09-15T22:33:31.748Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "72d36eb32b1a9ad0ef25a756a3b9807c45e83983a6fdbd9d472b52f41aed51bd",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2014 - MkIII-FL",
+      "yearFrom": 2014,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.3 T Ecoboost (RS)",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 2300,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 350,
+      "stockTorqueNm": 440,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 375,
+        "torqueNm": 520
+      },
+      "stage2": {
+        "powerHp": 394,
+        "torqueNm": 546,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-10-t-ecoboost-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/1.0-t-ecoboost-100",
+    "retrievedAt": "2026-09-15T22:33:35.678Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fa5484304d054296a881158885dc9b41dc62340f9de2c347e9d69fb74b4148ab",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2018 - MkIV",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 100,
+      "stockTorqueNm": 170,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 135,
+        "torqueNm": 250
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-10-t-ecoboost-125",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/1.0-t-ecoboost-125",
+    "retrievedAt": "2026-09-15T22:33:39.504Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "faa50a901eb1a4f58ac839922e879c7ce089bf2a0aa847a548f0dae0990a0b3b",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2018 - MkIV",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T EcoBoost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 125,
+      "stockTorqueNm": 170,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 250
+      },
+      "stage2": {
+        "powerHp": 152,
+        "torqueNm": 263,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-15t-ecoboost-150",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/1.5t-ecoboost-150",
+    "retrievedAt": "2026-09-15T22:33:43.729Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6477d6fb6a3ba651b5baa629b9558ab358535415bd0aabb39b911badbb76214b",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2018 - MkIV",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5T Ecoboost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 340
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-15t-ecoboost-182",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/1.5t-ecoboost-182",
+    "retrievedAt": "2026-09-15T22:33:47.490Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9a7fcd6f64bca61696341b7c08821e276fc5295719ebded41838ba50f9a0fa45",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "MkIV",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.5T Ecoboost",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 182,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 340
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-ford-focus-2018-mkiv-petrol-23-t-ecoboost-st-280",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv/petrol/2.3-t-ecoboost-st-280",
+    "retrievedAt": "2026-09-15T22:33:51.337Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "db16558b6c6f7d3e7cfa7c2a3434ee8bbdef3d1f304e745f94f27536ed2607f6",
+    "identity": {
+      "brand": "Ford",
+      "modelFamily": "Focus",
+      "generation": "2018 - MkIV",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.3 T Ecoboost (ST)",
+      "engineFamily": "EcoBoost",
+      "displacementCc": 2300,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 280,
+      "stockTorqueNm": 420,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 320,
+        "torqueNm": 500
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "unlimited-chiptuning-ford-transit-ecoblue-2-0-tdci-105-pk-euro-6",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-ford-transit-ecoblue-2-0-tdci-105-pk-euro-6.html",
+    "retrievedAt": "2026-09-15T22:41:44.858Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "973609f31ff2254ed8cd8f8cd4f2a168fd9b3f784ec133829fd68930cfa268bc",
+    "identity": {
+      "aspiration": "turbo",
+      "displacementPrecision": "nominal",
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown",
+      "brand": "Ford",
+      "modelFamily": "Transit",
+      "generation": "2017",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 EcoBlue TDCi Euro 6",
+      "engineFamily": "EcoBlue",
+      "displacementCc": 2000,
+      "stockPowerHp": 105,
+      "stockTorqueNm": 360
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 440,
+        "conditions": [
+          "Provider calls the ordinary software programme Normal."
+        ]
+      }
+    },
+    "conditions": [
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Provider Normal mapped to Stage 1. Separately published Ecotuning115PS/380Nm and Xtreme205PS/450Nm are retained here; Xtreme is not relabelled Stage 2.",
+      "Page title contains100pk but application heading/table105pk. Table stock105/360 retained; title inconsistency requires review."
+    ],
+    "applicability": [
+      "Category https://www.unlimitedtuning.nl/ford/transit/2017-t-m-nu-eu6/diesel.html explicitly scopes2017–2019 andEURO6Y. Category combinesTransit/TransitCustom but this observation retains page modelTransit; do not silently duplicate intoCustom."
+    ],
+    "consensusGroup": "ford-transit-2017-ecoblue-105",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/ford/transit/2017-t-m-nu-eu6/diesel.html"
+    ]
+  },
+  {
+    "id": "unlimited-chiptuning-ford-transit-connect-1-5-tdci-100-pk",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-ford-transit-connect-1-5-tdci-100-pk.html",
+    "retrievedAt": "2026-09-15T22:39:28.185Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "787c7a370946f986f689e66bd367993740bbc93ccfd3c300e538c2a6bf86104b",
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 340
+      }
+    },
+    "conditions": [
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Application names Ford Transit Connect1.5TDCi100PS/250Nm. Stage1+ separately145PS/355Nm; notStage2.",
+      "Exact engine-generation/year band absent from fetched application. Kept as comparison evidence only; no accepted identity invented."
+    ],
+    "applicability": [
+      "TDCi only; no application to EcoBlue without independent identity evidence."
+    ]
+  }
+]

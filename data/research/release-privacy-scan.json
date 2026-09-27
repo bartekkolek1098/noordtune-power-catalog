@@ -1,0 +1,17 @@
+{
+  "scope": "Current tracked tree plus new commit candidates; earlier feature commits intentionally excluded. Known local inputs checked in compact, lowercase, hyphenated, spaced and URL-encoded forms.",
+  "aliases": [
+    "OWNER-A",
+    "OWNER-B",
+    "OWNER-C",
+    "OWNER-D"
+  ],
+  "filesScanned": 405,
+  "trackedTextMatches": 0,
+  "ownerFilenameMatches": 0,
+  "browserJsFiles": 27,
+  "browserJsMatches": 0,
+  "staticHtmlFiles": 3,
+  "staticHtmlMatches": 0,
+  "runtimeTransportOrStorageViolations": 0
+}

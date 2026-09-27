@@ -1,0 +1,3496 @@
+{
+  "checkedAt": "2026-09-16T15:30:48.019Z",
+  "base": "http://localhost:3119",
+  "method": "Four owner plates use the actual HTTP RDW route; seven additional cases use deterministic real-resolver DTOs intercepted only for those synthetic cases. Persisted real registration IDs are SHA-256 prefixes; messages and raw plates are not retained.",
+  "screenshots": [
+    "rdw-8317bc75fa554551918f-320.png",
+    "rdw-98f2cf6fc1d8390debc0-320.png",
+    "kia-sportage-136-320.png",
+    "bmw-340i-hardware-320.png",
+    "unsupported-ev-320.png"
+  ],
+  "results": [
+    {
+      "id": "rdw-e3cf5826fdd74cc9ea70",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": true,
+      "identity": {
+        "make": "LAND ROVER",
+        "model": "DEFENDER",
+        "version": "Stationwagen",
+        "type": "LE",
+        "variant": "HCBBC0",
+        "execution": "50AC010",
+        "vehicleType": "Personenauto",
+        "body": "Stationwagen",
+        "color": "Bruin",
+        "doors": 5,
+        "seats": 5,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1999,
+          "powerKw": 177,
+          "powerHp": 241
+        },
+        "dimensions": {
+          "lengthCm": 476,
+          "widthCm": 200,
+          "weightKg": 2292,
+          "runningWeightKg": 2392
+        },
+        "performance": {
+          "topSpeedKmh": 188
+        },
+        "emissions": {
+          "co2Gkm": 204,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 DG"
+        },
+        "registration": {
+          "firstAdmission": "2020-06-12",
+          "firstAdmissionYear": 2020,
+          "firstRegistrationNl": "2020-06-12",
+          "apkExpiry": "2027-06-12"
+        }
+      },
+      "selectedLevel": 3,
+      "profile": "land-rover-defender-2-0-sd4-2020",
+      "coverageClass": "C",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 290,
+          "torqueNm": 590,
+          "provenance": "canonical-estimated",
+          "visiblePower": "290 pk",
+          "visibleTorque": "590 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:listed-premium-complexity-family:higher-complexity:Stage 1",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 320,
+          "torqueNm": 660,
+          "provenance": "canonical-estimated",
+          "visiblePower": "320 pk",
+          "visibleTorque": "660 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 69900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:listed-premium-complexity-family:higher-complexity:Stage 2",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:listed-premium-complexity-family:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4680,
+      "requestDurationMs": 555,
+      "serverTiming": "rdw-lookup;dur=256.6",
+      "cache": "miss",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,162.135C53.111,157.387,66.222,152.639,79.333,149.15C92.444,145.661,105.556,143.43,118.667,141.2",
+        "width": 78.6669921875,
+        "height": 20.93499755859375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "sampleId": "rdw-e3cf5826fdd74cc9ea70"
+    },
+    {
+      "id": "rdw-8317bc75fa554551918f",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": true,
+      "identity": {
+        "make": "FORD",
+        "model": "TRANSIT CONNECT",
+        "version": "Gesloten Opbouw",
+        "type": "PU2",
+        "variant": "Z2GA1BFX",
+        "execution": "F2BBBSABDADBK",
+        "vehicleType": "Bedrijfsauto",
+        "body": "Gesloten Opbouw",
+        "color": "N.v.t.",
+        "doors": null,
+        "seats": 2,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1499,
+          "powerKw": 73.5,
+          "powerHp": 100
+        },
+        "dimensions": {
+          "lengthCm": 483,
+          "widthCm": 184,
+          "weightKg": 1591,
+          "runningWeightKg": 1691
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": 123,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 AH"
+        },
+        "registration": {
+          "firstAdmission": "2018-10-17",
+          "firstAdmissionYear": 2018,
+          "firstRegistrationNl": "2018-10-17",
+          "apkExpiry": "2027-04-03"
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "coverageClass": "C",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 125,
+          "torqueNm": 330,
+          "provenance": "reference",
+          "visiblePower": "≈125 pk",
+          "visibleTorque": "≈330 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+            "pricingCategory": "contemporary-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            125,
+            140
+          ],
+          "torqueRangeNm": [
+            330,
+            340
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "125–140 pk",
+          "visibleTorque": "330–340 Nm (schatting)",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:reference-category:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 2",
+            "pricingCategory": "contemporary-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 8748,
+      "requestDurationMs": 290,
+      "serverTiming": "rdw-lookup;dur=227.2",
+      "cache": "miss",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,163.647C53.111,157.931,66.222,152.216,79.333,148.059C92.444,143.902,105.556,141.304,118.667,138.706",
+        "width": 78.6669921875,
+        "height": 24.941009521484375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "sampleId": "rdw-8317bc75fa554551918f"
+    },
+    {
+      "id": "rdw-09653a78f1852e9c1408",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": true,
+      "identity": {
+        "make": "FORD",
+        "model": "TRANSIT CUSTOM",
+        "version": "Gesloten Opbouw",
+        "type": "FCC",
+        "variant": "YLF61ABX",
+        "execution": "R5WGASABC00UA",
+        "vehicleType": "Bedrijfsauto",
+        "body": "Gesloten Opbouw",
+        "color": "N.v.t.",
+        "doors": null,
+        "seats": 5,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1995,
+          "powerKw": 77,
+          "powerHp": 105
+        },
+        "dimensions": {
+          "lengthCm": 497,
+          "widthCm": 203,
+          "weightKg": 2031,
+          "runningWeightKg": 2131
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": 165,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 Y"
+        },
+        "registration": {
+          "firstAdmission": "2019-04-29",
+          "firstAdmissionYear": 2019,
+          "firstRegistrationNl": "2019-04-29",
+          "apkExpiry": "2027-07-07"
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-ford-transit-custom-d463142a0598",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 190,
+          "torqueNm": 460,
+          "provenance": "single-source",
+          "visiblePower": "≈190 pk",
+          "visibleTorque": "≈460 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 1",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            190,
+            215
+          ],
+          "torqueRangeNm": [
+            460,
+            470
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "190–215 pk",
+          "visibleTorque": "460–470 Nm (schatting)",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 69900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:reference-category:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 2",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 5524,
+      "requestDurationMs": 300,
+      "serverTiming": "rdw-lookup;dur=242.3",
+      "cache": "miss",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,188.9C53.111,176.828,66.222,164.756,79.333,158.867C92.444,152.978,105.556,151.506,118.667,150.033",
+        "width": 78.6669921875,
+        "height": 38.86698913574219
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "sampleId": "rdw-09653a78f1852e9c1408"
+    },
+    {
+      "id": "rdw-98f2cf6fc1d8390debc0",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": true,
+      "identity": {
+        "make": "BMW",
+        "model": "128TI",
+        "version": "Hatchback",
+        "type": "F1H",
+        "variant": "7L51",
+        "execution": "IAW500MG",
+        "vehicleType": "Personenauto",
+        "body": "Hatchback",
+        "color": "Wit",
+        "doors": 4,
+        "seats": 5,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "powerKw": 195,
+          "powerHp": 265
+        },
+        "dimensions": {
+          "lengthCm": 432,
+          "widthCm": 180,
+          "weightKg": 1420,
+          "runningWeightKg": 1520
+        },
+        "performance": {
+          "topSpeedKmh": 250
+        },
+        "emissions": {
+          "co2Gkm": 139,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 AP"
+        },
+        "registration": {
+          "firstAdmission": "2022-09-14",
+          "firstAdmissionYear": 2022,
+          "firstRegistrationNl": "2026-05-29",
+          "apkExpiry": "2027-12-31"
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "sourced-bmw-1-series-ae8b9b336dc6",
+      "coverageClass": "A",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 305,
+          "torqueNm": 490,
+          "provenance": "multi-source",
+          "visiblePower": "≈305 pk",
+          "visibleTorque": "≈490 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 70000,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+            "pricingCategory": "advanced-unlock",
+            "scope": "advanced-unlock-package",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 320,
+          "provenance": "single-source",
+          "visiblePower": "≈320 pk",
+          "visibleTorque": "Te bevestigen",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "advanced-unlock-higher-stage-scope-unassigned"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 70000,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+        "pricingCategory": "advanced-unlock",
+        "scope": "advanced-unlock-package",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4992,
+      "requestDurationMs": 617,
+      "serverTiming": "rdw-lookup;dur=554.4",
+      "cache": "miss",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,132.367C53.111,126.919,66.222,121.472,79.333,118.233C92.444,114.994,105.556,113.964,118.667,112.933",
+        "width": 78.6669921875,
+        "height": 19.43402099609375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "sampleId": "rdw-98f2cf6fc1d8390debc0"
+    },
+    {
+      "id": "kia-sportage-136",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Kia",
+        "model": "Sportage",
+        "doors": null,
+        "seats": null,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1598,
+          "powerKw": 100,
+          "powerHp": 136
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2024-01-01",
+          "firstAdmissionYear": 2024
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-kia-sportage-cf81934b1b24",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 160,
+          "torqueNm": 340,
+          "provenance": "single-source",
+          "visiblePower": "≈160 pk",
+          "visibleTorque": "≈340 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 170,
+          "torqueNm": 360,
+          "provenance": "single-source",
+          "visiblePower": "≈170 pk",
+          "visibleTorque": "≈360 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 59900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 2",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+        "pricingCategory": "modern-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4696,
+      "requestDurationMs": 60,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,145.911C53.111,140.513,66.222,135.115,79.333,131.778C92.444,128.441,105.556,127.165,118.667,125.889",
+        "width": 78.6669921875,
+        "height": 20.021995544433594
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "kia-ceed-140",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Kia",
+        "model": "Ceed",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1353,
+          "powerKw": 103,
+          "powerHp": 140
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2019-01-01",
+          "firstAdmissionYear": 2019
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "sourced-kia-ceed-acb48ab8cda1",
+      "coverageClass": "A",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 170,
+          "torqueNm": 290,
+          "provenance": "multi-source",
+          "visiblePower": "≈170 pk",
+          "visibleTorque": "≈290 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 175,
+          "torqueNm": 300,
+          "provenance": "multi-source",
+          "visiblePower": "≈175 pk",
+          "visibleTorque": "≈300 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4964,
+      "requestDurationMs": 59,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,127.067C53.111,117.644,66.222,108.222,79.333,105.867C92.444,103.511,105.556,102.922,118.667,102.333",
+        "width": 78.6669921875,
+        "height": 24.733993530273438
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "bmw-340i-hardware",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "BMW",
+        "model": "340i F30",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 6,
+          "displacementCc": 2998,
+          "powerKw": 240,
+          "powerHp": 326
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2016-01-01",
+          "firstAdmissionYear": 2016
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "sourced-bmw-3-series-f20a064c3462",
+      "coverageClass": "A",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 415,
+          "torqueNm": 580,
+          "provenance": "multi-source",
+          "visiblePower": "≈415 pk",
+          "visibleTorque": "≈580 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:registered-output-at-least-250pk:higher-complexity:Stage 1",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 440,
+          "torqueNm": 610,
+          "provenance": "multi-source",
+          "visiblePower": "≈440 pk",
+          "visibleTorque": "≈610 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 69900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:registered-output-at-least-250pk:higher-complexity:Stage 2",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "powerHp": 550,
+          "torqueNm": 650,
+          "provenance": "single-source",
+          "visiblePower": "≈550 pk",
+          "visibleTorque": "≈650 Nm",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "stage3-hardware-scope-unapproved"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:registered-output-at-least-250pk:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 5380,
+      "requestDurationMs": 60,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,139.61C53.111,130.026,66.222,120.442,79.333,116.025C92.444,111.608,105.556,113.817,118.667,109.4C131.778,104.983,144.889,92.617,158,80.25",
+        "width": 118,
+        "height": 59.3599853515625
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "vag-golf-diesel",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Volkswagen",
+        "model": "Golf",
+        "doors": null,
+        "seats": null,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1598,
+          "powerKw": 81,
+          "powerHp": 110
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2015-01-01",
+          "firstAdmissionYear": 2015
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-volkswagen-golf-4dc79825e3b5",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 145,
+          "torqueNm": 310,
+          "provenance": "single-source",
+          "visiblePower": "≈145 pk",
+          "visibleTorque": "≈310 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 155,
+          "torqueNm": 330,
+          "provenance": "single-source",
+          "visiblePower": "≈155 pk",
+          "visibleTorque": "≈330 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4530,
+      "requestDurationMs": 65,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,157.412C53.111,148.578,66.222,139.745,79.333,135.588C92.444,131.431,105.556,130.392,118.667,129.353",
+        "width": 78.6669921875,
+        "height": 28.059005737304688
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "generic-petrol",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Toyota",
+        "model": "Yaris",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1496,
+          "powerKw": 92,
+          "powerHp": 125
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2022-01-01",
+          "firstAdmissionYear": 2022
+        }
+      },
+      "selectedLevel": 4,
+      "profile": "rdw-generic-4054831dcd6a",
+      "coverageClass": "D",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerRangeHp": [
+            125,
+            130
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "125–130 pk",
+          "visibleTorque": "Te bevestigen",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            125,
+            135
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "125–135 pk",
+          "visibleTorque": "Te bevestigen",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 59900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 2",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+        "pricingCategory": "modern-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4858,
+      "requestDurationMs": 58,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,36.714C53.111,34.19,66.222,31.667,79.333,29.143C92.444,26.619,105.556,24.095,118.667,21.571",
+        "width": 78.6669921875,
+        "height": 15.14300537109375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "unsupported-ev",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Tesla",
+        "model": "Model 3",
+        "doors": null,
+        "seats": null,
+        "fuel": "Elektriciteit",
+        "fuels": [
+          "Elektriciteit"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 0,
+          "powerKw": 208,
+          "powerHp": 283
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2022-01-01",
+          "firstAdmissionYear": 2022
+        }
+      },
+      "quote": {
+        "kind": "on-request",
+        "currency": "EUR",
+        "reasonCode": "applicable-commercial-profile-unavailable"
+      },
+      "unsupported": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "whatsapp": true
+    },
+    {
+      "id": "ford-focus-125",
+      "width": 320,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Ford",
+        "model": "Focus EcoBoost",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 3,
+          "displacementCc": 999,
+          "powerKw": 92,
+          "powerHp": 125
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2017-01-01",
+          "firstAdmissionYear": 2017
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-ford-focus-7ceb2689aadc",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 145,
+          "torqueNm": 250,
+          "provenance": "single-source",
+          "visiblePower": "≈145 pk",
+          "visibleTorque": "≈250 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 150,
+          "torqueNm": 260,
+          "provenance": "single-source",
+          "visiblePower": "≈150 pk",
+          "visibleTorque": "≈260 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4615,
+      "requestDurationMs": 69,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,124.077C53.111,117.282,66.222,110.487,79.333,107.769C92.444,105.051,105.556,104.372,118.667,103.692",
+        "width": 78.6669921875,
+        "height": 20.38500213623047
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "rdw-e3cf5826fdd74cc9ea70",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": true,
+      "identity": {
+        "make": "LAND ROVER",
+        "model": "DEFENDER",
+        "version": "Stationwagen",
+        "type": "LE",
+        "variant": "HCBBC0",
+        "execution": "50AC010",
+        "vehicleType": "Personenauto",
+        "body": "Stationwagen",
+        "color": "Bruin",
+        "doors": 5,
+        "seats": 5,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1999,
+          "powerKw": 177,
+          "powerHp": 241
+        },
+        "dimensions": {
+          "lengthCm": 476,
+          "widthCm": 200,
+          "weightKg": 2292,
+          "runningWeightKg": 2392
+        },
+        "performance": {
+          "topSpeedKmh": 188
+        },
+        "emissions": {
+          "co2Gkm": 204,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 DG"
+        },
+        "registration": {
+          "firstAdmission": "2020-06-12",
+          "firstAdmissionYear": 2020,
+          "firstRegistrationNl": "2020-06-12",
+          "apkExpiry": "2027-06-12"
+        }
+      },
+      "selectedLevel": 3,
+      "profile": "land-rover-defender-2-0-sd4-2020",
+      "coverageClass": "C",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 290,
+          "torqueNm": 590,
+          "provenance": "canonical-estimated",
+          "visiblePower": "290 pk",
+          "visibleTorque": "590 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:listed-premium-complexity-family:higher-complexity:Stage 1",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 320,
+          "torqueNm": 660,
+          "provenance": "canonical-estimated",
+          "visiblePower": "320 pk",
+          "visibleTorque": "660 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 69900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:listed-premium-complexity-family:higher-complexity:Stage 2",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:listed-premium-complexity-family:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4679,
+      "requestDurationMs": 63,
+      "serverTiming": "rdw-lookup;dur=0.1",
+      "cache": "hit",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,162.135C148.667,157.387,257.333,152.639,366,149.15C474.667,145.661,583.333,143.43,692,141.2",
+        "width": 652,
+        "height": 20.93499755859375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "sampleId": "rdw-e3cf5826fdd74cc9ea70"
+    },
+    {
+      "id": "rdw-8317bc75fa554551918f",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": true,
+      "identity": {
+        "make": "FORD",
+        "model": "TRANSIT CONNECT",
+        "version": "Gesloten Opbouw",
+        "type": "PU2",
+        "variant": "Z2GA1BFX",
+        "execution": "F2BBBSABDADBK",
+        "vehicleType": "Bedrijfsauto",
+        "body": "Gesloten Opbouw",
+        "color": "N.v.t.",
+        "doors": null,
+        "seats": 2,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1499,
+          "powerKw": 73.5,
+          "powerHp": 100
+        },
+        "dimensions": {
+          "lengthCm": 483,
+          "widthCm": 184,
+          "weightKg": 1591,
+          "runningWeightKg": 1691
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": 123,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 AH"
+        },
+        "registration": {
+          "firstAdmission": "2018-10-17",
+          "firstAdmissionYear": 2018,
+          "firstRegistrationNl": "2018-10-17",
+          "apkExpiry": "2027-04-03"
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "coverageClass": "C",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 125,
+          "torqueNm": 330,
+          "provenance": "reference",
+          "visiblePower": "≈125 pk",
+          "visibleTorque": "≈330 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+            "pricingCategory": "contemporary-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            125,
+            140
+          ],
+          "torqueRangeNm": [
+            330,
+            340
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "125–140 pk",
+          "visibleTorque": "330–340 Nm (schatting)",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:reference-category:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 2",
+            "pricingCategory": "contemporary-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 8747,
+      "requestDurationMs": 63,
+      "serverTiming": "rdw-lookup;dur=0.0",
+      "cache": "hit",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,163.647C148.667,157.931,257.333,152.216,366,148.059C474.667,143.902,583.333,141.304,692,138.706",
+        "width": 652,
+        "height": 24.94097900390625
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "sampleId": "rdw-8317bc75fa554551918f"
+    },
+    {
+      "id": "rdw-09653a78f1852e9c1408",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": true,
+      "identity": {
+        "make": "FORD",
+        "model": "TRANSIT CUSTOM",
+        "version": "Gesloten Opbouw",
+        "type": "FCC",
+        "variant": "YLF61ABX",
+        "execution": "R5WGASABC00UA",
+        "vehicleType": "Bedrijfsauto",
+        "body": "Gesloten Opbouw",
+        "color": "N.v.t.",
+        "doors": null,
+        "seats": 5,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1995,
+          "powerKw": 77,
+          "powerHp": 105
+        },
+        "dimensions": {
+          "lengthCm": 497,
+          "widthCm": 203,
+          "weightKg": 2031,
+          "runningWeightKg": 2131
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": 165,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 Y"
+        },
+        "registration": {
+          "firstAdmission": "2019-04-29",
+          "firstAdmissionYear": 2019,
+          "firstRegistrationNl": "2019-04-29",
+          "apkExpiry": "2027-07-07"
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-ford-transit-custom-d463142a0598",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 190,
+          "torqueNm": 460,
+          "provenance": "single-source",
+          "visiblePower": "≈190 pk",
+          "visibleTorque": "≈460 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 1",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            190,
+            215
+          ],
+          "torqueRangeNm": [
+            460,
+            470
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "190–215 pk",
+          "visibleTorque": "460–470 Nm (schatting)",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 69900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:reference-category:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 2",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 5523,
+      "requestDurationMs": 64,
+      "serverTiming": "rdw-lookup;dur=0.0",
+      "cache": "hit",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,188.9C148.667,176.828,257.333,164.756,366,158.867C474.667,152.978,583.333,151.506,692,150.033",
+        "width": 652,
+        "height": 38.86700439453125
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "sampleId": "rdw-09653a78f1852e9c1408"
+    },
+    {
+      "id": "rdw-98f2cf6fc1d8390debc0",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": true,
+      "identity": {
+        "make": "BMW",
+        "model": "128TI",
+        "version": "Hatchback",
+        "type": "F1H",
+        "variant": "7L51",
+        "execution": "IAW500MG",
+        "vehicleType": "Personenauto",
+        "body": "Hatchback",
+        "color": "Wit",
+        "doors": 4,
+        "seats": 5,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "powerKw": 195,
+          "powerHp": 265
+        },
+        "dimensions": {
+          "lengthCm": 432,
+          "widthCm": 180,
+          "weightKg": 1420,
+          "runningWeightKg": 1520
+        },
+        "performance": {
+          "topSpeedKmh": 250
+        },
+        "emissions": {
+          "co2Gkm": 139,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 AP"
+        },
+        "registration": {
+          "firstAdmission": "2022-09-14",
+          "firstAdmissionYear": 2022,
+          "firstRegistrationNl": "2026-05-29",
+          "apkExpiry": "2027-12-31"
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "sourced-bmw-1-series-ae8b9b336dc6",
+      "coverageClass": "A",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 305,
+          "torqueNm": 490,
+          "provenance": "multi-source",
+          "visiblePower": "≈305 pk",
+          "visibleTorque": "≈490 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 70000,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+            "pricingCategory": "advanced-unlock",
+            "scope": "advanced-unlock-package",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 320,
+          "provenance": "single-source",
+          "visiblePower": "≈320 pk",
+          "visibleTorque": "Te bevestigen",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "advanced-unlock-higher-stage-scope-unassigned"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 70000,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+        "pricingCategory": "advanced-unlock",
+        "scope": "advanced-unlock-package",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4991,
+      "requestDurationMs": 72,
+      "serverTiming": "rdw-lookup;dur=0.1",
+      "cache": "hit",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,132.367C148.667,126.919,257.333,121.472,366,118.233C474.667,114.994,583.333,113.964,692,112.933",
+        "width": 652,
+        "height": 19.43402099609375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "sampleId": "rdw-98f2cf6fc1d8390debc0"
+    },
+    {
+      "id": "kia-sportage-136",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Kia",
+        "model": "Sportage",
+        "doors": null,
+        "seats": null,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1598,
+          "powerKw": 100,
+          "powerHp": 136
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2024-01-01",
+          "firstAdmissionYear": 2024
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-kia-sportage-cf81934b1b24",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 160,
+          "torqueNm": 340,
+          "provenance": "single-source",
+          "visiblePower": "≈160 pk",
+          "visibleTorque": "≈340 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 170,
+          "torqueNm": 360,
+          "provenance": "single-source",
+          "visiblePower": "≈170 pk",
+          "visibleTorque": "≈360 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 59900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 2",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+        "pricingCategory": "modern-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4696,
+      "requestDurationMs": 63,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,145.911C148.667,140.513,257.333,135.115,366,131.778C474.667,128.441,583.333,127.165,692,125.889",
+        "width": 652,
+        "height": 20.021987915039062
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "kia-ceed-140",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Kia",
+        "model": "Ceed",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1353,
+          "powerKw": 103,
+          "powerHp": 140
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2019-01-01",
+          "firstAdmissionYear": 2019
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "sourced-kia-ceed-acb48ab8cda1",
+      "coverageClass": "A",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 170,
+          "torqueNm": 290,
+          "provenance": "multi-source",
+          "visiblePower": "≈170 pk",
+          "visibleTorque": "≈290 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 175,
+          "torqueNm": 300,
+          "provenance": "multi-source",
+          "visiblePower": "≈175 pk",
+          "visibleTorque": "≈300 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4964,
+      "requestDurationMs": 63,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,127.067C148.667,117.644,257.333,108.222,366,105.867C474.667,103.511,583.333,102.922,692,102.333",
+        "width": 652,
+        "height": 24.7340087890625
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "bmw-340i-hardware",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "BMW",
+        "model": "340i F30",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 6,
+          "displacementCc": 2998,
+          "powerKw": 240,
+          "powerHp": 326
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2016-01-01",
+          "firstAdmissionYear": 2016
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "sourced-bmw-3-series-f20a064c3462",
+      "coverageClass": "A",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 415,
+          "torqueNm": 580,
+          "provenance": "multi-source",
+          "visiblePower": "≈415 pk",
+          "visibleTorque": "≈580 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:registered-output-at-least-250pk:higher-complexity:Stage 1",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 440,
+          "torqueNm": 610,
+          "provenance": "multi-source",
+          "visiblePower": "≈440 pk",
+          "visibleTorque": "≈610 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 69900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:registered-output-at-least-250pk:higher-complexity:Stage 2",
+            "pricingCategory": "higher-complexity",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "powerHp": 550,
+          "torqueNm": 650,
+          "provenance": "single-source",
+          "visiblePower": "≈550 pk",
+          "visibleTorque": "≈650 Nm",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "stage3-hardware-scope-unapproved"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:registered-output-at-least-250pk:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 5380,
+      "requestDurationMs": 63,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,139.61C148.667,130.026,257.333,120.442,366,116.025C474.667,111.608,583.333,113.817,692,109.4C800.667,104.983,909.333,92.617,1018,80.25",
+        "width": 978,
+        "height": 59.36000061035156
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "vag-golf-diesel",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Volkswagen",
+        "model": "Golf",
+        "doors": null,
+        "seats": null,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1598,
+          "powerKw": 81,
+          "powerHp": 110
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2015-01-01",
+          "firstAdmissionYear": 2015
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-volkswagen-golf-4dc79825e3b5",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 145,
+          "torqueNm": 310,
+          "provenance": "single-source",
+          "visiblePower": "≈145 pk",
+          "visibleTorque": "≈310 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 155,
+          "torqueNm": 330,
+          "provenance": "single-source",
+          "visiblePower": "≈155 pk",
+          "visibleTorque": "≈330 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4530,
+      "requestDurationMs": 64,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,157.412C148.667,148.578,257.333,139.745,366,135.588C474.667,131.431,583.333,130.392,692,129.353",
+        "width": 652,
+        "height": 28.0589599609375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "generic-petrol",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Toyota",
+        "model": "Yaris",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1496,
+          "powerKw": 92,
+          "powerHp": 125
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2022-01-01",
+          "firstAdmissionYear": 2022
+        }
+      },
+      "selectedLevel": 4,
+      "profile": "rdw-generic-4054831dcd6a",
+      "coverageClass": "D",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerRangeHp": [
+            125,
+            130
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "125–130 pk",
+          "visibleTorque": "Te bevestigen",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            125,
+            135
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "125–135 pk",
+          "visibleTorque": "Te bevestigen",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 59900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 2",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+        "pricingCategory": "modern-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4858,
+      "requestDurationMs": 63,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,36.714C148.667,34.19,257.333,31.667,366,29.143C474.667,26.619,583.333,24.095,692,21.571",
+        "width": 652,
+        "height": 15.14300537109375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "unsupported-ev",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Tesla",
+        "model": "Model 3",
+        "doors": null,
+        "seats": null,
+        "fuel": "Elektriciteit",
+        "fuels": [
+          "Elektriciteit"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 0,
+          "powerKw": 208,
+          "powerHp": 283
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2022-01-01",
+          "firstAdmissionYear": 2022
+        }
+      },
+      "quote": {
+        "kind": "on-request",
+        "currency": "EUR",
+        "reasonCode": "applicable-commercial-profile-unavailable"
+      },
+      "unsupported": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      },
+      "whatsapp": true
+    },
+    {
+      "id": "ford-focus-125",
+      "width": 1440,
+      "locale": "nl",
+      "liveApi": false,
+      "identity": {
+        "make": "Ford",
+        "model": "Focus EcoBoost",
+        "doors": null,
+        "seats": null,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 3,
+          "displacementCc": 999,
+          "powerKw": 92,
+          "powerHp": 125
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2017-01-01",
+          "firstAdmissionYear": 2017
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-ford-focus-7ceb2689aadc",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 145,
+          "torqueNm": 250,
+          "provenance": "single-source",
+          "visiblePower": "≈145 pk",
+          "visibleTorque": "≈250 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 39900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 150,
+          "torqueNm": 260,
+          "provenance": "single-source",
+          "visiblePower": "≈150 pk",
+          "visibleTorque": "≈260 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 2",
+            "pricingCategory": "standard-2010s",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Maatwerk / hardware-afhankelijk",
+          "visibleTorque": "Maatwerk / hardware-afhankelijk",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 39900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4615,
+      "requestDurationMs": 71,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,124.077C148.667,117.282,257.333,110.487,366,107.769C474.667,105.051,583.333,104.372,692,103.692",
+        "width": 652,
+        "height": 20.385009765625
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "rdw-8317bc75fa554551918f",
+      "width": 320,
+      "locale": "en",
+      "liveApi": true,
+      "identity": {
+        "make": "FORD",
+        "model": "TRANSIT CONNECT",
+        "version": "Gesloten Opbouw",
+        "type": "PU2",
+        "variant": "Z2GA1BFX",
+        "execution": "F2BBBSABDADBK",
+        "vehicleType": "Bedrijfsauto",
+        "body": "Gesloten Opbouw",
+        "color": "N.v.t.",
+        "doors": null,
+        "seats": 2,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1499,
+          "powerKw": 73.5,
+          "powerHp": 100
+        },
+        "dimensions": {
+          "lengthCm": 483,
+          "widthCm": 184,
+          "weightKg": 1591,
+          "runningWeightKg": 1691
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": 123,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 AH"
+        },
+        "registration": {
+          "firstAdmission": "2018-10-17",
+          "firstAdmissionYear": 2018,
+          "firstRegistrationNl": "2018-10-17",
+          "apkExpiry": "2027-04-03"
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "coverageClass": "C",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 125,
+          "torqueNm": 330,
+          "provenance": "reference",
+          "visiblePower": "≈125 hp",
+          "visibleTorque": "≈330 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+            "pricingCategory": "contemporary-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            125,
+            140
+          ],
+          "torqueRangeNm": [
+            330,
+            340
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "125–140 hp",
+          "visibleTorque": "330–340 Nm (estimate)",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:reference-category:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 2",
+            "pricingCategory": "contemporary-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Custom / hardware-dependent",
+          "visibleTorque": "Custom / hardware-dependent",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 8747,
+      "requestDurationMs": 57,
+      "serverTiming": "rdw-lookup;dur=0.0",
+      "cache": "hit",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,163.647C53.111,157.931,66.222,152.216,79.333,148.059C92.444,143.902,105.556,141.304,118.667,138.706",
+        "width": 78.6669921875,
+        "height": 24.941009521484375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "sampleId": "rdw-8317bc75fa554551918f"
+    },
+    {
+      "id": "rdw-98f2cf6fc1d8390debc0",
+      "width": 320,
+      "locale": "en",
+      "liveApi": true,
+      "identity": {
+        "make": "BMW",
+        "model": "128TI",
+        "version": "Hatchback",
+        "type": "F1H",
+        "variant": "7L51",
+        "execution": "IAW500MG",
+        "vehicleType": "Personenauto",
+        "body": "Hatchback",
+        "color": "Wit",
+        "doors": 4,
+        "seats": 5,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "powerKw": 195,
+          "powerHp": 265
+        },
+        "dimensions": {
+          "lengthCm": 432,
+          "widthCm": 180,
+          "weightKg": 1420,
+          "runningWeightKg": 1520
+        },
+        "performance": {
+          "topSpeedKmh": 250
+        },
+        "emissions": {
+          "co2Gkm": 139,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 AP"
+        },
+        "registration": {
+          "firstAdmission": "2022-09-14",
+          "firstAdmissionYear": 2022,
+          "firstRegistrationNl": "2026-05-29",
+          "apkExpiry": "2027-12-31"
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "sourced-bmw-1-series-ae8b9b336dc6",
+      "coverageClass": "A",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 305,
+          "torqueNm": 490,
+          "provenance": "multi-source",
+          "visiblePower": "≈305 hp",
+          "visibleTorque": "≈490 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 70000,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+            "pricingCategory": "advanced-unlock",
+            "scope": "advanced-unlock-package",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 320,
+          "provenance": "single-source",
+          "visiblePower": "≈320 hp",
+          "visibleTorque": "To be confirmed",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "advanced-unlock-higher-stage-scope-unassigned"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Custom / hardware-dependent",
+          "visibleTorque": "Custom / hardware-dependent",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 70000,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+        "pricingCategory": "advanced-unlock",
+        "scope": "advanced-unlock-package",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4991,
+      "requestDurationMs": 59,
+      "serverTiming": "rdw-lookup;dur=0.0",
+      "cache": "hit",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,132.367C53.111,126.919,66.222,121.472,79.333,118.233C92.444,114.994,105.556,113.964,118.667,112.933",
+        "width": 78.6669921875,
+        "height": 19.43402099609375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "sampleId": "rdw-98f2cf6fc1d8390debc0"
+    },
+    {
+      "id": "kia-sportage-136",
+      "width": 320,
+      "locale": "en",
+      "liveApi": false,
+      "identity": {
+        "make": "Kia",
+        "model": "Sportage",
+        "doors": null,
+        "seats": null,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1598,
+          "powerKw": 100,
+          "powerHp": 136
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2024-01-01",
+          "firstAdmissionYear": 2024
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-kia-sportage-cf81934b1b24",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 160,
+          "torqueNm": 340,
+          "provenance": "single-source",
+          "visiblePower": "≈160 hp",
+          "visibleTorque": "≈340 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 170,
+          "torqueNm": 360,
+          "provenance": "single-source",
+          "visiblePower": "≈170 hp",
+          "visibleTorque": "≈360 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 59900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 2",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Custom / hardware-dependent",
+          "visibleTorque": "Custom / hardware-dependent",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+        "pricingCategory": "modern-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4696,
+      "requestDurationMs": 61,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,145.911C53.111,140.513,66.222,135.115,79.333,131.778C92.444,128.441,105.556,127.165,118.667,125.889",
+        "width": 78.6669921875,
+        "height": 20.021995544433594
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "rdw-8317bc75fa554551918f",
+      "width": 320,
+      "locale": "pl",
+      "liveApi": true,
+      "identity": {
+        "make": "FORD",
+        "model": "TRANSIT CONNECT",
+        "version": "Gesloten Opbouw",
+        "type": "PU2",
+        "variant": "Z2GA1BFX",
+        "execution": "F2BBBSABDADBK",
+        "vehicleType": "Bedrijfsauto",
+        "body": "Gesloten Opbouw",
+        "color": "N.v.t.",
+        "doors": null,
+        "seats": 2,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1499,
+          "powerKw": 73.5,
+          "powerHp": 100
+        },
+        "dimensions": {
+          "lengthCm": 483,
+          "widthCm": 184,
+          "weightKg": 1591,
+          "runningWeightKg": 1691
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": 123,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 AH"
+        },
+        "registration": {
+          "firstAdmission": "2018-10-17",
+          "firstAdmissionYear": 2018,
+          "firstRegistrationNl": "2018-10-17",
+          "apkExpiry": "2027-04-03"
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "coverageClass": "C",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 125,
+          "torqueNm": 330,
+          "provenance": "reference",
+          "visiblePower": "≈125 KM",
+          "visibleTorque": "≈330 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+            "pricingCategory": "contemporary-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerRangeHp": [
+            125,
+            140
+          ],
+          "torqueRangeNm": [
+            330,
+            340
+          ],
+          "provenance": "generic-indicative",
+          "visiblePower": "125–140 KM",
+          "visibleTorque": "330–340 Nm (szacunek)",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 54900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:reference-category:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 2",
+            "pricingCategory": "contemporary-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Indywidualnie / zależnie od osprzętu",
+          "visibleTorque": "Indywidualnie / zależnie od osprzętu",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 8747,
+      "requestDurationMs": 61,
+      "serverTiming": "rdw-lookup;dur=0.1",
+      "cache": "hit",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,163.647C53.111,157.931,66.222,152.216,79.333,148.059C92.444,143.902,105.556,141.304,118.667,138.706",
+        "width": 78.6669921875,
+        "height": 24.941009521484375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "sampleId": "rdw-8317bc75fa554551918f"
+    },
+    {
+      "id": "rdw-98f2cf6fc1d8390debc0",
+      "width": 320,
+      "locale": "pl",
+      "liveApi": true,
+      "identity": {
+        "make": "BMW",
+        "model": "128TI",
+        "version": "Hatchback",
+        "type": "F1H",
+        "variant": "7L51",
+        "execution": "IAW500MG",
+        "vehicleType": "Personenauto",
+        "body": "Hatchback",
+        "color": "Wit",
+        "doors": 4,
+        "seats": 5,
+        "fuel": "Benzine",
+        "fuels": [
+          "Benzine"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "powerKw": 195,
+          "powerHp": 265
+        },
+        "dimensions": {
+          "lengthCm": 432,
+          "widthCm": 180,
+          "weightKg": 1420,
+          "runningWeightKg": 1520
+        },
+        "performance": {
+          "topSpeedKmh": 250
+        },
+        "emissions": {
+          "co2Gkm": 139,
+          "euroClass": "6",
+          "exhaustLevel": "EURO 6 AP"
+        },
+        "registration": {
+          "firstAdmission": "2022-09-14",
+          "firstAdmissionYear": 2022,
+          "firstRegistrationNl": "2026-05-29",
+          "apkExpiry": "2027-12-31"
+        }
+      },
+      "selectedLevel": 1,
+      "profile": "sourced-bmw-1-series-ae8b9b336dc6",
+      "coverageClass": "A",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 305,
+          "torqueNm": 490,
+          "provenance": "multi-source",
+          "visiblePower": "≈305 KM",
+          "visibleTorque": "≈490 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 70000,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+            "pricingCategory": "advanced-unlock",
+            "scope": "advanced-unlock-package",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 320,
+          "provenance": "single-source",
+          "visiblePower": "≈320 KM",
+          "visibleTorque": "Do potwierdzenia",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "advanced-unlock-higher-stage-scope-unassigned"
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Indywidualnie / zależnie od osprzętu",
+          "visibleTorque": "Indywidualnie / zależnie od osprzętu",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 70000,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+        "pricingCategory": "advanced-unlock",
+        "scope": "advanced-unlock-package",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4991,
+      "requestDurationMs": 61,
+      "serverTiming": "rdw-lookup;dur=0.0",
+      "cache": "hit",
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,132.367C53.111,126.919,66.222,121.472,79.333,118.233C92.444,114.994,105.556,113.964,118.667,112.933",
+        "width": 78.6669921875,
+        "height": 19.43402099609375
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      },
+      "sampleId": "rdw-98f2cf6fc1d8390debc0"
+    },
+    {
+      "id": "kia-sportage-136",
+      "width": 320,
+      "locale": "pl",
+      "liveApi": false,
+      "identity": {
+        "make": "Kia",
+        "model": "Sportage",
+        "doors": null,
+        "seats": null,
+        "fuel": "Diesel",
+        "fuels": [
+          "Diesel"
+        ],
+        "engine": {
+          "cylinders": 4,
+          "displacementCc": 1598,
+          "powerKw": 100,
+          "powerHp": 136
+        },
+        "dimensions": {
+          "lengthCm": null,
+          "widthCm": null,
+          "weightKg": null,
+          "runningWeightKg": null
+        },
+        "performance": {
+          "topSpeedKmh": null
+        },
+        "emissions": {
+          "co2Gkm": null
+        },
+        "registration": {
+          "firstAdmission": "2024-01-01",
+          "firstAdmissionYear": 2024
+        }
+      },
+      "selectedLevel": 2,
+      "profile": "sourced-kia-sportage-cf81934b1b24",
+      "coverageClass": "B",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "powerHp": 160,
+          "torqueNm": 340,
+          "provenance": "single-source",
+          "visiblePower": "≈160 KM",
+          "visibleTorque": "≈340 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 44900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 1",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 2",
+          "powerHp": 170,
+          "torqueNm": 360,
+          "provenance": "single-source",
+          "visiblePower": "≈170 KM",
+          "visibleTorque": "≈360 Nm",
+          "quote": {
+            "kind": "from",
+            "indicative": true,
+            "status": "draft-local-owner-review",
+            "amountCents": 59900,
+            "currency": "EUR",
+            "taxBasis": "inclusive",
+            "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 2",
+            "pricingCategory": "modern-standard",
+            "scope": "vehicle-software",
+            "stageName": "Stage 2",
+            "confirmationRequired": true
+          }
+        },
+        {
+          "stage": "Stage 3+",
+          "visiblePower": "Indywidualnie / zależnie od osprzętu",
+          "visibleTorque": "Indywidualnie / zależnie od osprzętu",
+          "quote": {
+            "kind": "on-request",
+            "currency": "EUR",
+            "reasonCode": "custom-hardware-scope-unassigned"
+          }
+        }
+      ],
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-runtime-v1:ordinary-resolved-ice-default:modern-standard:Stage 1",
+        "pricingCategory": "modern-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "responseBytes": 4696,
+      "requestDurationMs": 68,
+      "chart": true,
+      "powerCurve": {
+        "path": "M40,145.911C53.111,140.513,66.222,135.115,79.333,131.778C92.444,128.441,105.556,127.165,118.667,125.889",
+        "width": 78.6669921875,
+        "height": 20.021987915039062
+      },
+      "options": true,
+      "whatsapp": true,
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "overflow": []
+      }
+    }
+  ],
+  "errors": [],
+  "datasetFingerprint": "fbcfda2b8bb162cb26e0ad28bfe40ef1b5e03acbe680b4ee965fb277b33d4d40"
+}

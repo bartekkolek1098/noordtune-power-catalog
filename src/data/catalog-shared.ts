@@ -1,4 +1,5 @@
-import {getPublicServicePrice, type PricingTierId} from "./pricing.ts";
+import type {StageScope, StageComparison} from "../lib/stage-presentation.ts";
+import {getPublicServicePrice, type PricingTierId, type QuoteResolution} from "./pricing.ts";
 
 export type FuelType = "Petrol" | "Diesel" | "Hybrid" | "Electric";
 export type ConfidenceLevel = "verified" | "estimated" | "manual-review";
@@ -73,11 +74,14 @@ export type RecommendedPackageDefinition = {
 };
 
 export type StageDefinition = {
+  customerScope?: StageScope;
+  comparison?: StageComparison;
   name: StageName;
   powerHp: number;
   torqueNm: number;
   price: number;
   sourcePrice?: number;
+  quote?: QuoteResolution;
   requirements: string;
   packageItems: string[];
   pricingTier?: PricingTierId;

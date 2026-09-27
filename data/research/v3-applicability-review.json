@@ -1,0 +1,6467 @@
+{
+  "baselineHead": "515fb4fa765cefc8f1c8d59a46c6daa7536dc727",
+  "policy": "Frozen top250 exact make/model/displacement/year scope. Actual page facts only; no generated cross-products. Independent scope review and compatible stock identity precede conservative consensus. V2 duplicate consolidation is explicit, never counted as new coverage by itself.",
+  "scopes": [
+    {
+      "sourceId": "atm-v3-9c85b0321b22ff56",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "sourceUrl": "https://media.mercedes-benz.com/article/2b85f050-d753-46fa-8882-98fc066adf32",
+      "retrievedAt": "2026-09-16T17:17:27.335Z",
+      "contentSha256": "05a28f3d00e995ea6ab08bf774d975f94c0085130434988a5108ee5976ef024b",
+      "reason": "OM654 is documented from late 2020 in specified rear-drive Sprinter variants; earlier broad body years are excluded."
+    },
+    {
+      "sourceId": "atm-v3-0b172f7b5b526a3e",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "sourceUrl": "https://media.mercedes-benz.com/article/2b85f050-d753-46fa-8882-98fc066adf32",
+      "retrievedAt": "2026-09-16T17:17:27.335Z",
+      "contentSha256": "05a28f3d00e995ea6ab08bf774d975f94c0085130434988a5108ee5976ef024b",
+      "reason": "OM654 is documented from late 2020 in specified rear-drive Sprinter variants; earlier broad body years are excluded."
+    },
+    {
+      "sourceId": "atm-v3-b187325ed9e3eb66",
+      "yearFrom": 2018,
+      "yearTo": 2026,
+      "sourceUrl": "https://ford-no.mynewsdesk.com/pressreleases/nye-ford-transit-connect-med-kraftig-redusert-drivstofforbruk-2580110",
+      "retrievedAt": "2026-09-16T17:22:04.601Z",
+      "contentSha256": "550957ae43002e9c2bd4dfc8dede5e7f0eb8cd119c8e086659f9ead9b3820a20",
+      "reason": "Manufacturer introduces this EcoBlue application in 2018. The broader 2016 breadcrumb does not date this engine."
+    },
+    {
+      "sourceId": "atm-v3-3ff663b75f474f64",
+      "yearFrom": 2018,
+      "yearTo": 2026,
+      "sourceUrl": "https://ford-no.mynewsdesk.com/pressreleases/nye-ford-transit-connect-med-kraftig-redusert-drivstofforbruk-2580110",
+      "retrievedAt": "2026-09-16T17:22:04.601Z",
+      "contentSha256": "550957ae43002e9c2bd4dfc8dede5e7f0eb8cd119c8e086659f9ead9b3820a20",
+      "reason": "Manufacturer introduces this EcoBlue application in 2018. The broader 2016 breadcrumb does not date this engine."
+    },
+    {
+      "sourceId": "atm-v3-1ae04be0863f1442",
+      "yearFrom": 2018,
+      "yearTo": 2026,
+      "sourceUrl": "https://ford-no.mynewsdesk.com/pressreleases/nye-ford-transit-connect-med-kraftig-redusert-drivstofforbruk-2580110",
+      "retrievedAt": "2026-09-16T17:22:04.601Z",
+      "contentSha256": "550957ae43002e9c2bd4dfc8dede5e7f0eb8cd119c8e086659f9ead9b3820a20",
+      "reason": "Manufacturer introduces this EcoBlue application in 2018. The broader 2016 breadcrumb does not date this engine."
+    },
+    {
+      "sourceId": "atm-v3-568865a65c1491f9",
+      "yearFrom": 2003,
+      "yearTo": 2009,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-vito-110-cdi-95pk/",
+      "retrievedAt": "2026-09-16T17:22:03.095Z",
+      "contentSha256": "c37afff1a19691de5a58360adc9dd17071717dcaab6c1046a1116c9a27152bae",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-a10f7eba4771e947",
+      "yearFrom": 2003,
+      "yearTo": 2009,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-vito-111-cdi-116pk-4461/",
+      "retrievedAt": "2026-09-16T17:22:09.190Z",
+      "contentSha256": "5076ac6081101909931b80b59e53e0482fe48aa89bedcf9cb685214be2fe4bdb",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-89e957af95b554e3",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-vito-114-cdi-20d-euro-6-2021-136pk/",
+      "retrievedAt": "2026-09-16T17:22:19.201Z",
+      "contentSha256": "e071151b5c8759456690815f4418715f04fdb39f37b7928d94dda785a422fbdf",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-1227da3c7fa5cf80",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-vito-116-cdi-euro-6-2021-163pk/",
+      "retrievedAt": "2026-09-16T17:22:27.227Z",
+      "contentSha256": "db31d028ac504c03628832fb4460e0a0787237a20cc7c31875c5c97e86d66288",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-e337846843195f15",
+      "yearFrom": 2020,
+      "yearTo": 2020,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/mercedes-benz-vito-119-cdi-euro-6-2021-190pk/",
+      "retrievedAt": "2026-09-16T17:22:31.213Z",
+      "contentSha256": "533753a0d6bc15e85ed3fc7d0406b8a54e36d9457c6cf804789ffd5e167a79d5",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-a2c6cdeca80d6459",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/man-lcv-tge-20-tdi-cr-102pk-18003/",
+      "retrievedAt": "2026-09-16T17:22:39.251Z",
+      "contentSha256": "8b4ecf8a947b6afcf4568e045beab186ffa96eea496003ed6efd9dfca793d027",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-d7b5f749ff100d40",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/man-lcv-tge-20-tdi-cr-140pk-18004/",
+      "retrievedAt": "2026-09-16T17:22:45.275Z",
+      "contentSha256": "8768fa8b6c1ea86d1da313c729fe0acb0960ea12673f894474a694b164842fd8",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-772139186de51206",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/man-lcv-tge-20-tdi-cr-177pk-18005/",
+      "retrievedAt": "2026-09-16T17:22:49.302Z",
+      "contentSha256": "c8dd957f7dcb5f26709e3c17338370761e312f4ae348688910149fd296db2e97",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-2e1f6ea5895207be",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/man-lcv-tge-20-tdi-cr-102pk-18003/",
+      "retrievedAt": "2026-09-16T17:22:39.251Z",
+      "contentSha256": "8b4ecf8a947b6afcf4568e045beab186ffa96eea496003ed6efd9dfca793d027",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-45f150f499e0cdb4",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/man-lcv-tge-20-tdi-cr-140pk-18004/",
+      "retrievedAt": "2026-09-16T17:22:45.275Z",
+      "contentSha256": "8768fa8b6c1ea86d1da313c729fe0acb0960ea12673f894474a694b164842fd8",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-bcd5e823bcbd38ac",
+      "yearFrom": 2017,
+      "yearTo": 2019,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/man-lcv-tge-20-tdi-cr-177pk-18005/",
+      "retrievedAt": "2026-09-16T17:22:49.302Z",
+      "contentSha256": "c8dd957f7dcb5f26709e3c17338370761e312f4ae348688910149fd296db2e97",
+      "reason": "This provider publishes a later distinct engine/ECU application for the same output. Restrict the predecessor source to before that start; retain both raw tables and avoid selecting the older higher tune for the later application."
+    },
+    {
+      "sourceId": "atm-v3-35591bc4c547583b",
+      "yearFrom": 2019,
+      "yearTo": 2020,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/volkswagen-transporter-multivan-20-tsi-204pk-12059/",
+      "retrievedAt": "2026-09-16T17:10:48.941Z",
+      "contentSha256": "abb146a7da66caa5346d413f7b981f35b8ee9e38bff2cff084922841904704d8",
+      "reason": "Later provider application explicitly unavailable. The predecessor vote is restricted to years before that application; no global NoordTune exclusion."
+    },
+    {
+      "sourceId": "atm-v3-91b69694b89c092b",
+      "yearFrom": 2017,
+      "yearTo": 2020,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/mazda-cx-5-20-skyactiv-g-165pk-12220/",
+      "retrievedAt": "2026-09-16T17:25:06.023Z",
+      "contentSha256": "895583f8a5ed6d25c814355b6f78a556133a941a2afe510792cc6286fa8cc258",
+      "reason": "Later provider application explicitly unavailable. The predecessor vote is restricted to years before that application; no global NoordTune exclusion."
+    },
+    {
+      "sourceId": "atm-v3-2160f9a3510b1b8f",
+      "yearFrom": 2020,
+      "yearTo": 2022,
+      "sourceUrl": "https://www.atm-chiptuning.com/chiptuning/hyundai-i20-10-t-gdi-100pk-13248/",
+      "retrievedAt": "2026-09-16T17:26:02.304Z",
+      "contentSha256": "96b6d507b3eac02aae6f47f92d7de6189070e216714f82e9386fb8c62ccdb8ba",
+      "reason": "Later provider application explicitly unavailable. The predecessor vote is restricted to years before that application; no global NoordTune exclusion."
+    }
+  ],
+  "records": [
+    {
+      "sourceId": "atm-v3-06d6f043a748b0a5",
+      "groupIds": [
+        "rdw-group-5be285a5e27a9c82"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-8faf4b5ea141f78c",
+      "groupIds": [
+        "rdw-group-5be285a5e27a9c82"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-bac91a1a0c0eaef4",
+      "groupIds": [
+        "rdw-group-5be285a5e27a9c82"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9c85b0321b22ff56",
+      "groupIds": [
+        "rdw-group-5be285a5e27a9c82"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-0b172f7b5b526a3e",
+      "groupIds": [
+        "rdw-group-5be285a5e27a9c82"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-de18d76e6468e10b",
+      "groupIds": [
+        "rdw-group-5be285a5e27a9c82"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-7fdd90ab8d6707d6",
+      "groupIds": [
+        "rdw-group-17f3b2f61226479e",
+        "rdw-group-d3836efc5d66a2d5",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-transporter-ee435d2ff945",
+      "existingCandidates": [
+        "sourced-volkswagen-transporter-ee435d2ff945"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-d0cd07c6aca9910d",
+      "groupIds": [
+        "rdw-group-17f3b2f61226479e",
+        "rdw-group-d3836efc5d66a2d5",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-transporter-38c507560c86",
+      "existingCandidates": [
+        "sourced-volkswagen-transporter-38c507560c86"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-83d3df3078754fd3",
+      "groupIds": [
+        "rdw-group-17f3b2f61226479e",
+        "rdw-group-d3836efc5d66a2d5",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-540d6f7af3d3774f",
+      "groupIds": [
+        "rdw-group-17f3b2f61226479e",
+        "rdw-group-d3836efc5d66a2d5",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-transporter-d37c60bb3daa",
+      "existingCandidates": [
+        "sourced-volkswagen-transporter-d37c60bb3daa"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-c356f92de61589a9",
+      "groupIds": [
+        "rdw-group-17f3b2f61226479e",
+        "rdw-group-d3836efc5d66a2d5",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-transporter-0e6632096562",
+      "existingCandidates": [
+        "sourced-volkswagen-transporter-0e6632096562"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-ad4c68cde2d7bc74",
+      "groupIds": [
+        "rdw-group-f57003b03567c51c",
+        "rdw-group-18f6ea8d443463ab"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6c73926ca8fa821d",
+      "groupIds": [
+        "rdw-group-f57003b03567c51c",
+        "rdw-group-18f6ea8d443463ab"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-71df9b036c125619",
+      "groupIds": [
+        "rdw-group-f57003b03567c51c",
+        "rdw-group-18f6ea8d443463ab"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-caddy-350a182f5891",
+      "existingCandidates": [
+        "sourced-volkswagen-caddy-350a182f5891",
+        "sourced-volkswagen-caddy-b32d654b8ae6"
+      ],
+      "retired": [
+        "sourced-volkswagen-caddy-b32d654b8ae6"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f32059cc71efaa90",
+      "groupIds": [
+        "rdw-group-a39db165ad899984",
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-8e4b069ed5c1b71d",
+      "groupIds": [
+        "rdw-group-a39db165ad899984",
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-crafter-760a917086fc",
+      "existingCandidates": [
+        "sourced-volkswagen-crafter-760a917086fc"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-6fddf5c711d74630",
+      "groupIds": [
+        "rdw-group-a39db165ad899984",
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6ecbdcba462fa95c",
+      "groupIds": [
+        "rdw-group-94426727a9f36d13",
+        "rdw-group-4a4fbbd889126b9a"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-040f3d3e90fe65cf",
+      "groupIds": [
+        "rdw-group-94426727a9f36d13"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-044698d9280983e9",
+      "groupIds": [
+        "rdw-group-94426727a9f36d13",
+        "rdw-group-4a4fbbd889126b9a"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4fc4ed1914917221",
+      "groupIds": [
+        "rdw-group-94426727a9f36d13",
+        "rdw-group-4a4fbbd889126b9a"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cd5a7a1efb391e95",
+      "groupIds": [
+        "rdw-group-94426727a9f36d13"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-52eb81a6637adef8",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-235cc0f779e22712",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c3e0614ea741fa03",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b360ddcd3a655282",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec",
+        "rdw-group-60d4ea3006a0c0e6"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-77807dd7a5863ae1",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1706d37e19fa98f1",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6a8b2190b3f5ef73",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec",
+        "rdw-group-60d4ea3006a0c0e6"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-caddy-ce00f32a90bd",
+      "existingCandidates": [
+        "sourced-volkswagen-caddy-ce00f32a90bd"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-f7aa748d7e543eac",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3e28ca30d49479de",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6596b63c890d5b84",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec",
+        "rdw-group-60d4ea3006a0c0e6"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-caddy-64cddfde8f4b",
+      "existingCandidates": [
+        "sourced-volkswagen-caddy-64cddfde8f4b"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-2a0502a23155890a",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e8a7195f0325d657",
+      "groupIds": [
+        "rdw-group-a57f2f6384a596ec"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c49ec4adcded09b2",
+      "groupIds": [
+        "rdw-group-f6c3f2697db369f9",
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-renault-master-d6b3a0086a29",
+      "existingCandidates": [
+        "sourced-renault-master-d6b3a0086a29"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "shiftech-v2-4a92c825f60d3a8f",
+      "groupIds": [
+        "rdw-group-f6c3f2697db369f9",
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-renault-master-010cdf901dc2",
+      "existingCandidates": [
+        "sourced-renault-master-010cdf901dc2"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-6e00b5212db38941",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-fd41f23b26d02fe7",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-da0826b0cb119133",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-5c8f75175a94cc34",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a97fff56953fa622",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b156d4d5f3a0b4d8",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-1121a021e470a7e4",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d6a28c30377ffa2d",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-64f35360de6a2229",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-35591bc4c547583b",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9712258f3766888f",
+      "groupIds": [
+        "rdw-group-f7cb79afea7b2503",
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-89e957af95b554e3",
+      "groupIds": [
+        "rdw-group-d1857d043d5f69fb"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-235bbd1086d6438a",
+      "groupIds": [
+        "rdw-group-d1857d043d5f69fb"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-1227da3c7fa5cf80",
+      "groupIds": [
+        "rdw-group-d1857d043d5f69fb"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-31d038eac3b0cb3d",
+      "groupIds": [
+        "rdw-group-d1857d043d5f69fb"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-e337846843195f15",
+      "groupIds": [
+        "rdw-group-d1857d043d5f69fb"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-e122a3d588bbe54a",
+      "groupIds": [
+        "rdw-group-d1857d043d5f69fb"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b85037bd38572b0b",
+      "groupIds": [
+        "rdw-group-d1857d043d5f69fb"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-35d3c32735920401",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a3b87631ae963ead",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-3d79607703b3c0b6",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-cc3590c90d692435",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d78fb1c3e430b9aa",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c7a010975c574870",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-452acadd317612e9",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-68b5f6ad4ff2f722",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5c9383f832b0425e",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5f78b22ded3c9010",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b9a652c09a933007",
+      "groupIds": [
+        "rdw-group-75f61229206476f5"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6380f124c44cfb11",
+      "groupIds": [
+        "rdw-group-154faa7a5809da5e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-0ca4c43a1881e727",
+      "groupIds": [
+        "rdw-group-154faa7a5809da5e"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-778f71240b911e80",
+      "groupIds": [
+        "rdw-group-154faa7a5809da5e"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-88098e228978be41",
+      "groupIds": [
+        "rdw-group-154faa7a5809da5e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-3442d8bd73dc75bf",
+      "groupIds": [
+        "rdw-group-154faa7a5809da5e"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1ab8762d914d098c",
+      "groupIds": [
+        "rdw-group-154faa7a5809da5e"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4e243b21f273b561",
+      "groupIds": [
+        "rdw-group-258c8eca67d14df6",
+        "rdw-group-56b2a6796050c62b",
+        "rdw-group-0316bac0b54616c8"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-renault-clio-87212ceb6741",
+      "existingCandidates": [
+        "sourced-renault-clio-87212ceb6741"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-cced49e24ea3febe",
+      "groupIds": [
+        "rdw-group-258c8eca67d14df6",
+        "rdw-group-56b2a6796050c62b",
+        "rdw-group-0316bac0b54616c8"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-renault-clio-70035de1a6f4",
+      "existingCandidates": [
+        "sourced-renault-clio-70035de1a6f4"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-45bacfc3fc79b845",
+      "groupIds": [
+        "rdw-group-258c8eca67d14df6",
+        "rdw-group-56b2a6796050c62b",
+        "rdw-group-0316bac0b54616c8"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "ADDITIONAL_SAME_PROVIDER_MIRROR_REQUIRES_SCOPE_REVIEW"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-73d87b8f0424465c",
+      "groupIds": [
+        "rdw-group-2d385fb18ad55ac8",
+        "rdw-group-7a68f64a6bcb57c0"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-ff3890c7c8353f85",
+      "groupIds": [
+        "rdw-group-2d385fb18ad55ac8"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-441aaa68d639250d",
+      "groupIds": [
+        "rdw-group-2d385fb18ad55ac8",
+        "rdw-group-7a68f64a6bcb57c0"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-ddcbb1285ea6eb26",
+      "groupIds": [
+        "rdw-group-2d385fb18ad55ac8"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-40005068b3ceb820",
+      "groupIds": [
+        "rdw-group-2d385fb18ad55ac8",
+        "rdw-group-7a68f64a6bcb57c0"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-2372c9306f9e8a0d",
+      "groupIds": [
+        "rdw-group-2d385fb18ad55ac8"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-05f095f9d0ef9ff3",
+      "groupIds": [
+        "rdw-group-a40242895671f2ad"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-90974b412a7799e8",
+      "groupIds": [
+        "rdw-group-a40242895671f2ad"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-40466abff0d386b3",
+      "groupIds": [
+        "rdw-group-a40242895671f2ad"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-568e0697a091e99b",
+      "groupIds": [
+        "rdw-group-a40242895671f2ad"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-98d8e50b7c799a3e",
+      "groupIds": [
+        "rdw-group-a40242895671f2ad"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c17185e980362d75",
+      "groupIds": [
+        "rdw-group-a40242895671f2ad",
+        "rdw-group-3e56c37eec2a7c80"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-7e16fbddfad1d321",
+      "groupIds": [
+        "rdw-group-a40242895671f2ad",
+        "rdw-group-3e56c37eec2a7c80"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-4faa90d543c01a31",
+      "groupIds": [
+        "rdw-group-a40242895671f2ad",
+        "rdw-group-3e56c37eec2a7c80"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-f839eff1f1b6e49e",
+      "groupIds": [
+        "rdw-group-444bd385f0e91f1f",
+        "rdw-group-d8722fb5ab7865f5",
+        "rdw-group-749a39f547b99d28",
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-ford-transit-da9473cabbe8",
+      "existingCandidates": [
+        "sourced-ford-transit-da9473cabbe8"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-5cd8d142dbdf9e3f",
+      "groupIds": [
+        "rdw-group-444bd385f0e91f1f",
+        "rdw-group-d8722fb5ab7865f5",
+        "rdw-group-749a39f547b99d28",
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9dce49ddbdab9049",
+      "groupIds": [
+        "rdw-group-444bd385f0e91f1f",
+        "rdw-group-d8722fb5ab7865f5",
+        "rdw-group-749a39f547b99d28",
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-344b9741e8fa1013",
+      "groupIds": [
+        "rdw-group-444bd385f0e91f1f",
+        "rdw-group-d8722fb5ab7865f5",
+        "rdw-group-749a39f547b99d28",
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-2026f9d08526619c",
+      "groupIds": [
+        "rdw-group-71cafa63298aab0a",
+        "rdw-group-913fe63224a78d99",
+        "rdw-group-c080f28502abfbfb"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-61e4b138c108ed4c",
+      "groupIds": [
+        "rdw-group-b2a7a2a8748fc32d",
+        "rdw-group-fa5ada256ad7d0d1"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-fdc6371fc03ef0ae",
+      "groupIds": [
+        "rdw-group-b2a7a2a8748fc32d"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-499061c1caef328d",
+      "groupIds": [
+        "rdw-group-b2a7a2a8748fc32d"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c3dd95fe964e1ebf",
+      "groupIds": [
+        "rdw-group-b2a7a2a8748fc32d",
+        "rdw-group-fa5ada256ad7d0d1"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-11ea1041a9963433",
+      "groupIds": [
+        "rdw-group-b2a7a2a8748fc32d",
+        "rdw-group-fa5ada256ad7d0d1"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-fe1a081108b57e01",
+      "groupIds": [
+        "rdw-group-b2a7a2a8748fc32d",
+        "rdw-group-fa5ada256ad7d0d1"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-75c62e9a56806b9e",
+      "groupIds": [
+        "rdw-group-913fe63224a78d99"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d6d678f41fd677b0",
+      "groupIds": [
+        "rdw-group-913fe63224a78d99"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-e5b02aeee7ca0ba3",
+      "groupIds": [
+        "rdw-group-913fe63224a78d99"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-00b101a570d492e7",
+      "groupIds": [
+        "rdw-group-913fe63224a78d99"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b187325ed9e3eb66",
+      "groupIds": [
+        "rdw-group-99da9c70ab649d0c",
+        "rdw-group-2895cfad57fe4f47"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-3ff663b75f474f64",
+      "groupIds": [
+        "rdw-group-99da9c70ab649d0c",
+        "rdw-group-2895cfad57fe4f47"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-1ae04be0863f1442",
+      "groupIds": [
+        "rdw-group-99da9c70ab649d0c",
+        "rdw-group-2895cfad57fe4f47"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6fb7aa622e723032",
+      "groupIds": [
+        "rdw-group-99da9c70ab649d0c",
+        "rdw-group-2895cfad57fe4f47"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-ford-transit-connect-db936c8558e6",
+      "existingCandidates": [
+        "sourced-ford-transit-connect-db936c8558e6"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-c26f64ad9e4b69e0",
+      "groupIds": [
+        "rdw-group-99da9c70ab649d0c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-71a68ae9f207107e",
+      "groupIds": [
+        "rdw-group-99da9c70ab649d0c",
+        "rdw-group-2895cfad57fe4f47"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-ford-transit-connect-694c712b8c33",
+      "existingCandidates": [
+        "sourced-ford-transit-connect-694c712b8c33"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-3103c6835e199b82",
+      "groupIds": [
+        "rdw-group-99da9c70ab649d0c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-671adfbc1c7e9624",
+      "groupIds": [
+        "rdw-group-99da9c70ab649d0c",
+        "rdw-group-2895cfad57fe4f47"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a0761c813879373e",
+      "groupIds": [
+        "rdw-group-99da9c70ab649d0c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-78b1a3e87dc71258",
+      "groupIds": [
+        "rdw-group-f29c5c435d72bc37"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-378add76d796281e",
+      "groupIds": [
+        "rdw-group-f29c5c435d72bc37"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c9883d2acb5a2f06",
+      "groupIds": [
+        "rdw-group-f29c5c435d72bc37"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-daa7ebdfee4d81d9",
+      "groupIds": [
+        "rdw-group-f29c5c435d72bc37"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-01ed5baef7fbb8bf",
+      "groupIds": [
+        "rdw-group-f29c5c435d72bc37"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-8398d8ea98316ff2",
+      "groupIds": [
+        "rdw-group-43252fa5a630237b"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-97bf9961a5f22448",
+      "groupIds": [
+        "rdw-group-43252fa5a630237b"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ad1203196e59a94f",
+      "groupIds": [
+        "rdw-group-43252fa5a630237b"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-e229e20192f925cf",
+      "groupIds": [
+        "rdw-group-43252fa5a630237b"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "shiftech-v2-e2977b01608ecc85",
+      "groupIds": [
+        "rdw-group-43252fa5a630237b"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "shiftech-v2-a52a3185587dccde",
+      "groupIds": [
+        "rdw-group-43252fa5a630237b"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "shiftech-v2-f7a8d6c164f8df3b",
+      "groupIds": [
+        "rdw-group-43252fa5a630237b"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-5e2569fc209116c0",
+      "groupIds": [
+        "rdw-group-7f4ebf4f97546f87",
+        "rdw-group-c28de69bc2e3615f",
+        "rdw-group-edce371be5f5c9c5"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-208-ff4aa33a224e",
+      "existingCandidates": [
+        "sourced-peugeot-208-ff4aa33a224e"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-2af084345edc37ca",
+      "groupIds": [
+        "rdw-group-7f4ebf4f97546f87",
+        "rdw-group-c28de69bc2e3615f",
+        "rdw-group-edce371be5f5c9c5"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-208-5066b8663939",
+      "existingCandidates": [
+        "sourced-peugeot-208-5066b8663939"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-dc2074de4c665329",
+      "groupIds": [
+        "rdw-group-7f4ebf4f97546f87",
+        "rdw-group-c28de69bc2e3615f",
+        "rdw-group-edce371be5f5c9c5"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-208-db05b5584d82",
+      "existingCandidates": [
+        "sourced-peugeot-208-db05b5584d82"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-e1a181dce21891dc",
+      "groupIds": [
+        "rdw-group-7f4ebf4f97546f87",
+        "rdw-group-d13cf2b85cc7e258"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4c4f3308045e2134",
+      "groupIds": [
+        "rdw-group-7f4ebf4f97546f87"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-bf653c350dfa376e",
+      "groupIds": [
+        "rdw-group-7f4ebf4f97546f87",
+        "rdw-group-d13cf2b85cc7e258"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e422f2b5324338e8",
+      "groupIds": [
+        "rdw-group-f99b4b8d552e7b03"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b87faa9ccdc3e85d",
+      "groupIds": [
+        "rdw-group-f99b4b8d552e7b03"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-43b93c85685a46bd",
+      "groupIds": [
+        "rdw-group-f99b4b8d552e7b03"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dc64ce89e029701c",
+      "groupIds": [
+        "rdw-group-fcb81a0b88bdf846"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-beb17c4104488d1c",
+      "groupIds": [
+        "rdw-group-fcb81a0b88bdf846",
+        "rdw-group-c03e02274246366e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-7c96d20128353812",
+      "groupIds": [
+        "rdw-group-fcb81a0b88bdf846"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-cfc82ffa34d5cce3",
+      "groupIds": [
+        "rdw-group-fcb81a0b88bdf846",
+        "rdw-group-c03e02274246366e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-cb04322966bcd177",
+      "groupIds": [
+        "rdw-group-fcb81a0b88bdf846"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-e4305ac50db1e09b",
+      "groupIds": [
+        "rdw-group-fcb81a0b88bdf846",
+        "rdw-group-c03e02274246366e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6b718e72599deee5",
+      "groupIds": [
+        "rdw-group-fcb81a0b88bdf846"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-650b95d9ba4e4acb",
+      "groupIds": [
+        "rdw-group-934c9df8b219f130",
+        "rdw-group-b52aa9b2c22950dc",
+        "rdw-group-1137dd8094b51205"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-aaeec0c6de5c3171",
+      "groupIds": [
+        "rdw-group-934c9df8b219f130",
+        "rdw-group-b52aa9b2c22950dc",
+        "rdw-group-1137dd8094b51205"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-70de6b36e10bec42",
+      "groupIds": [
+        "rdw-group-934c9df8b219f130",
+        "rdw-group-b52aa9b2c22950dc",
+        "rdw-group-1137dd8094b51205"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-0ed2ede944a7b429",
+      "groupIds": [
+        "rdw-group-934c9df8b219f130",
+        "rdw-group-1ed1a8aa88a696f7"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9cdeb6464db5fb6c",
+      "groupIds": [
+        "rdw-group-934c9df8b219f130"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c4b32bd92ebee929",
+      "groupIds": [
+        "rdw-group-934c9df8b219f130",
+        "rdw-group-1ed1a8aa88a696f7"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-2008-16c85b308d16",
+      "existingCandidates": [
+        "sourced-peugeot-2008-16c85b308d16"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-6a5e611c217b596a",
+      "groupIds": [
+        "rdw-group-934c9df8b219f130"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a5cac78b3f153a0f",
+      "groupIds": [
+        "rdw-group-934c9df8b219f130",
+        "rdw-group-1ed1a8aa88a696f7"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-2008-43848be1d171",
+      "existingCandidates": [
+        "sourced-peugeot-2008-43848be1d171"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-0c916396a7dc0211",
+      "groupIds": [
+        "rdw-group-5b05ded8fe444aed"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5fb3e816f573f0ea",
+      "groupIds": [
+        "rdw-group-5b05ded8fe444aed"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c89b1701957f33c7",
+      "groupIds": [
+        "rdw-group-5b05ded8fe444aed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9185c645dbc5d7b1",
+      "groupIds": [
+        "rdw-group-5b05ded8fe444aed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-ffbeb2a199fb6203",
+      "groupIds": [
+        "rdw-group-5b05ded8fe444aed"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f8bf0e435db6a43a",
+      "groupIds": [
+        "rdw-group-5b05ded8fe444aed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b3de3c66b45c8f60",
+      "groupIds": [
+        "rdw-group-9a44a7aafa1eca84"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-skoda-octavia-6d13abff3143",
+      "existingCandidates": [
+        "sourced-skoda-octavia-6d13abff3143"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-54ac9d5b121ca870",
+      "groupIds": [
+        "rdw-group-9a44a7aafa1eca84"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b7d2901344f8db35",
+      "groupIds": [
+        "rdw-group-87f7b72d200d4813"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a689c2e0be897f13",
+      "groupIds": [
+        "rdw-group-87f7b72d200d4813"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-67f49e4e97b426f7",
+      "groupIds": [
+        "rdw-group-87f7b72d200d4813"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6b948a924f45fc4f",
+      "groupIds": [
+        "rdw-group-87f7b72d200d4813"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6c3e910237827955",
+      "groupIds": [
+        "rdw-group-87f7b72d200d4813"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-49c65262acdf838d",
+      "groupIds": [
+        "rdw-group-87f7b72d200d4813"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-cdefcca8d8f800b0",
+      "groupIds": [
+        "rdw-group-87f7b72d200d4813"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-bbbb1e7d6e2499d7",
+      "groupIds": [
+        "rdw-group-7b487a1054299def"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-polo-e646771f2fe5",
+      "existingCandidates": [
+        "sourced-volkswagen-polo-e646771f2fe5"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-1cbc120b34076ac0",
+      "groupIds": [
+        "rdw-group-7b487a1054299def",
+        "rdw-group-2e0eaf1e5d09d83a"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2426e58318a986f1",
+      "groupIds": [
+        "rdw-group-7b487a1054299def",
+        "rdw-group-2e0eaf1e5d09d83a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-13e0a3b636318d05",
+      "groupIds": [
+        "rdw-group-7b487a1054299def",
+        "rdw-group-2e0eaf1e5d09d83a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-8644cdde5a37c4df",
+      "groupIds": [
+        "rdw-group-7b487a1054299def",
+        "rdw-group-2e0eaf1e5d09d83a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-8237c6f9d5d8b68d",
+      "groupIds": [
+        "rdw-group-7b487a1054299def"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-polo-cb965744f248",
+      "existingCandidates": [
+        "sourced-volkswagen-polo-cb965744f248"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-6d0e9f31dd38f10d",
+      "groupIds": [
+        "rdw-group-7b487a1054299def"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-polo-8cf1b1cc56bf",
+      "existingCandidates": [
+        "sourced-volkswagen-polo-8cf1b1cc56bf"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-efa517b8f0987c41",
+      "groupIds": [
+        "rdw-group-185a74e670b67a06"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c734bf0db3a640e8",
+      "groupIds": [
+        "rdw-group-185a74e670b67a06",
+        "rdw-group-17aa251e54028bc8"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-dfc0da8b8f112ec1",
+      "groupIds": [
+        "rdw-group-185a74e670b67a06"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-1c0c31bc2e5d0fcc",
+      "groupIds": [
+        "rdw-group-185a74e670b67a06",
+        "rdw-group-17aa251e54028bc8"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9aadcf15b2cd054d",
+      "groupIds": [
+        "rdw-group-9a48d6916e702002",
+        "rdw-group-ea371a17713b675f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c2c82fc00d688a85",
+      "groupIds": [
+        "rdw-group-9a48d6916e702002",
+        "rdw-group-f030dc3b23429b4f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-91b69694b89c092b",
+      "groupIds": [
+        "rdw-group-9a48d6916e702002",
+        "rdw-group-f030dc3b23429b4f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c77ebe4634e2a5f1",
+      "groupIds": [
+        "rdw-group-9a48d6916e702002",
+        "rdw-group-ea371a17713b675f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-37613ffaa3340258",
+      "groupIds": [
+        "rdw-group-03822a9f210cd28b"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-3113a34c45385907",
+      "groupIds": [
+        "rdw-group-03822a9f210cd28b"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9da7be2b75d0ba5c",
+      "groupIds": [
+        "rdw-group-36b86a1a0b6d4e64"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-4d3c71dec40a6aa6",
+      "groupIds": [
+        "rdw-group-36b86a1a0b6d4e64"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-43b2e71d380aba59",
+      "groupIds": [
+        "rdw-group-f6752f2db400aa4b"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-up-03af60fdc923",
+      "existingCandidates": [
+        "sourced-volkswagen-up-03af60fdc923"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-18c28889de36b8d5",
+      "groupIds": [
+        "rdw-group-f6752f2db400aa4b"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "OPEN_APPLICATION_SCOPE_EXCEEDS_TEN_YEARS"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-99b4c9508793dcc2",
+      "groupIds": [
+        "rdw-group-f6752f2db400aa4b"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-up-38e69ff22b9b",
+      "existingCandidates": [
+        "sourced-volkswagen-up-38e69ff22b9b"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-98c6911643440537",
+      "groupIds": [
+        "rdw-group-f6752f2db400aa4b"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-up-8662da112481",
+      "existingCandidates": [
+        "sourced-volkswagen-up-8662da112481"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-f8d581b316e6029a",
+      "groupIds": [
+        "rdw-group-937320f3120841fe"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "OPEN_APPLICATION_SCOPE_EXCEEDS_TEN_YEARS"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9321c0fba4a63d88",
+      "groupIds": [
+        "rdw-group-937320f3120841fe"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "OPEN_APPLICATION_SCOPE_EXCEEDS_TEN_YEARS"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5898f6eb0ffb2807",
+      "groupIds": [
+        "rdw-group-937320f3120841fe"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-2a33e5df276a13af",
+      "groupIds": [
+        "rdw-group-f657bb9d4fe33ea9",
+        "rdw-group-6c105180070a2731"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f7c4fbc2fa9a3215",
+      "groupIds": [
+        "rdw-group-f657bb9d4fe33ea9",
+        "rdw-group-6c105180070a2731"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2160f9a3510b1b8f",
+      "groupIds": [
+        "rdw-group-ded801fe483cccdb"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-3e9361c01c9d3f65",
+      "groupIds": [
+        "rdw-group-93f2c28f743a7014"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-2f3cfcb2a055ed63",
+      "groupIds": [
+        "rdw-group-93f2c28f743a7014"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-162b68162414caae",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7",
+        "rdw-group-5c1de032c8e22789"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-dc352cc817070158",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7",
+        "rdw-group-5c1de032c8e22789"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-7e36604c1049518e",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-2a251f49030850cf",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7",
+        "rdw-group-5c1de032c8e22789"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-647f604ff35f560f",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-52f65a73f42d8087",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7",
+        "rdw-group-5c1de032c8e22789"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-17ba3197404d40ea",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-730aee854756b4b5",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7",
+        "rdw-group-e7406f07bbb7333e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d0dc6cdddcf68aca",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7",
+        "rdw-group-e7406f07bbb7333e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-f83ad4d45fe3ed58",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7",
+        "rdw-group-e7406f07bbb7333e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6e164bb22003dac8",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7",
+        "rdw-group-e7406f07bbb7333e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-00760b6e665fd6b4",
+      "groupIds": [
+        "rdw-group-afa3126824f22eb7",
+        "rdw-group-e7406f07bbb7333e"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-91ebe4c2f6cf52cf",
+      "groupIds": [
+        "rdw-group-2760385b7f6cd7bf"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-794eaa6828351c8e",
+      "groupIds": [
+        "rdw-group-2760385b7f6cd7bf"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-f794070d0c04f98e",
+      "groupIds": [
+        "rdw-group-4d87cda2ddb2caa5"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-41c1ee90e4931f25",
+      "groupIds": [
+        "rdw-group-14829e3e7d7ba575",
+        "rdw-group-74bc602a17b18f57"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-3008-c109e828315e",
+      "existingCandidates": [
+        "sourced-peugeot-3008-c109e828315e"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-7ea6b0f2c2a17c59",
+      "groupIds": [
+        "rdw-group-14829e3e7d7ba575",
+        "rdw-group-74bc602a17b18f57"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-280c61dd50300348",
+      "groupIds": [
+        "rdw-group-14829e3e7d7ba575"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1765253d547fcc33",
+      "groupIds": [
+        "rdw-group-14829e3e7d7ba575",
+        "rdw-group-74bc602a17b18f57"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-3008-44d097b5a4fd",
+      "existingCandidates": [
+        "sourced-peugeot-3008-44d097b5a4fd"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-40b2eb2a4121964c",
+      "groupIds": [
+        "rdw-group-3ad2e75e16a58043"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-308-67fe6268f575",
+      "existingCandidates": [
+        "sourced-peugeot-308-67fe6268f575"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-26ea2f6d9bc62b79",
+      "groupIds": [
+        "rdw-group-3ad2e75e16a58043"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-308-2398cc650647",
+      "existingCandidates": [
+        "sourced-peugeot-308-2398cc650647"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-c6c97977741edb83",
+      "groupIds": [
+        "rdw-group-3ad2e75e16a58043",
+        "rdw-group-7c3fcf2fa5b431de"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7ac5f3460487f572",
+      "groupIds": [
+        "rdw-group-3ad2e75e16a58043",
+        "rdw-group-7c3fcf2fa5b431de"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-42c2d74aa4e14b5a",
+      "groupIds": [
+        "rdw-group-b4802d93bbb3dbaa",
+        "rdw-group-e9a6c9f56723a508"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-07dcac38ac2e80d3",
+      "groupIds": [
+        "rdw-group-b4802d93bbb3dbaa"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-0cc007b4e9f880b0",
+      "groupIds": [
+        "rdw-group-b4802d93bbb3dbaa",
+        "rdw-group-e9a6c9f56723a508"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-3ad88264c735b4fe",
+      "groupIds": [
+        "rdw-group-b4802d93bbb3dbaa",
+        "rdw-group-e9a6c9f56723a508"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b6eee0ec3b6e5434",
+      "groupIds": [
+        "rdw-group-b537de34cdc0dfdf"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-aeb0bb421ff00d86",
+      "groupIds": [
+        "rdw-group-b537de34cdc0dfdf"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a58cd59e6889429d",
+      "groupIds": [
+        "rdw-group-b537de34cdc0dfdf"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c51a9e9f45a2141c",
+      "groupIds": [
+        "rdw-group-b537de34cdc0dfdf",
+        "rdw-group-1340702b5b308f10"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-4b42f7cb99d2698a",
+      "groupIds": [
+        "rdw-group-b537de34cdc0dfdf",
+        "rdw-group-1340702b5b308f10"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-2d6ce9f494689da5",
+      "groupIds": [
+        "rdw-group-b537de34cdc0dfdf",
+        "rdw-group-1340702b5b308f10"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-16c8a5906c0f38b7",
+      "groupIds": [
+        "rdw-group-b537de34cdc0dfdf",
+        "rdw-group-1340702b5b308f10"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-3394f35220259665",
+      "groupIds": [
+        "rdw-group-b537de34cdc0dfdf",
+        "rdw-group-1340702b5b308f10"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-1230ec92ba6b3819",
+      "groupIds": [
+        "rdw-group-b7778422abe52188",
+        "rdw-group-74bc602a17b18f57"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-1b1b0b62fe038c9d",
+      "groupIds": [
+        "rdw-group-b7778422abe52188"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-8a529bcf85950ef4",
+      "groupIds": [
+        "rdw-group-b7778422abe52188",
+        "rdw-group-74bc602a17b18f57"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-84e7df5ddf360b92",
+      "groupIds": [
+        "rdw-group-b7778422abe52188"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-17348693abecc04b",
+      "groupIds": [
+        "rdw-group-2e3ecfc3def0696f",
+        "rdw-group-23e02d53368f48b7"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9f70fbaca647e86a",
+      "groupIds": [
+        "rdw-group-2e3ecfc3def0696f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-cf877a6476593f3f",
+      "groupIds": [
+        "rdw-group-2e3ecfc3def0696f",
+        "rdw-group-23e02d53368f48b7"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-e525307f1b551858",
+      "groupIds": [
+        "rdw-group-2e3ecfc3def0696f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-343b31cc7100b554",
+      "groupIds": [
+        "rdw-group-2e3ecfc3def0696f",
+        "rdw-group-23e02d53368f48b7"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-3bc394cc6e2b36d8",
+      "groupIds": [
+        "rdw-group-2e3ecfc3def0696f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9ca5b75749fd194e",
+      "groupIds": [
+        "rdw-group-2e3ecfc3def0696f",
+        "rdw-group-23e02d53368f48b7"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d42161799a092a52",
+      "groupIds": [
+        "rdw-group-a5e64a43efdd884c",
+        "rdw-group-dcf60a3a42a7868f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b27407a21d9491ee",
+      "groupIds": [
+        "rdw-group-a5e64a43efdd884c",
+        "rdw-group-820eaf1cdee7d559"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-68818b1e0499b500",
+      "groupIds": [
+        "rdw-group-a5e64a43efdd884c",
+        "rdw-group-dcf60a3a42a7868f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-7258f30baa48b6e3",
+      "groupIds": [
+        "rdw-group-a5e64a43efdd884c",
+        "rdw-group-820eaf1cdee7d559"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-307c2eb73303147a",
+      "groupIds": [
+        "rdw-group-a5e64a43efdd884c",
+        "rdw-group-dcf60a3a42a7868f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-ad4b6e36d193d47c",
+      "groupIds": [
+        "rdw-group-a5e64a43efdd884c",
+        "rdw-group-820eaf1cdee7d559"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6f822351ed63ddbd",
+      "groupIds": [
+        "rdw-group-60d4ea3006a0c0e6"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-2f9ba638db0dc8af",
+      "groupIds": [
+        "rdw-group-60d4ea3006a0c0e6"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-caddy-e6595fd7f7d7",
+      "existingCandidates": [
+        "sourced-volkswagen-caddy-e6595fd7f7d7"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-ae5d77376bb64949",
+      "groupIds": [
+        "rdw-group-445598acaebcd73c"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "OPEN_APPLICATION_SCOPE_EXCEEDS_TEN_YEARS"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f7f998ab4bda75e9",
+      "groupIds": [
+        "rdw-group-8d38113adf315fd0",
+        "rdw-group-303a1472c02a21db"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-857717264ea3",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-857717264ea3"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-203bab89128a5b6f",
+      "groupIds": [
+        "rdw-group-8d38113adf315fd0",
+        "rdw-group-d4167dd9f3c9f912"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-44fa049787840086",
+      "groupIds": [
+        "rdw-group-8d38113adf315fd0",
+        "rdw-group-303a1472c02a21db"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-79daaf5dfb23",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-79daaf5dfb23"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-0c6e54b88508c68f",
+      "groupIds": [
+        "rdw-group-8d38113adf315fd0",
+        "rdw-group-d4167dd9f3c9f912"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-18121f82a45ae263",
+      "groupIds": [
+        "rdw-group-8d38113adf315fd0",
+        "rdw-group-303a1472c02a21db"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-71cb691e11b6",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-71cb691e11b6"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-1afbf1a2497bc598",
+      "groupIds": [
+        "rdw-group-8d38113adf315fd0",
+        "rdw-group-303a1472c02a21db"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-94226ef1becd",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-94226ef1becd"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-8c94669ce2224248",
+      "groupIds": [
+        "rdw-group-50d97f384138ff29"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-141d1224b4dbb7cc",
+      "groupIds": [
+        "rdw-group-50d97f384138ff29",
+        "rdw-group-29b55876e44df041"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-3008-d9c6695018a9",
+      "existingCandidates": [
+        "sourced-peugeot-3008-d9c6695018a9"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-3eb9a96dff2c11d5",
+      "groupIds": [
+        "rdw-group-70665971905ce2f9"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-opel-vivaro-8ef1f5a406d4",
+      "existingCandidates": [
+        "sourced-opel-vivaro-8ef1f5a406d4"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-b0b6615d216c23f2",
+      "groupIds": [
+        "rdw-group-70665971905ce2f9"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-opel-vivaro-7ec3f09de7d9",
+      "existingCandidates": [
+        "sourced-opel-vivaro-7ec3f09de7d9"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-b86c859ef0f38151",
+      "groupIds": [
+        "rdw-group-70665971905ce2f9"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-opel-vivaro-231fc46608ce",
+      "existingCandidates": [
+        "sourced-opel-vivaro-231fc46608ce"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-17c6525317271b2f",
+      "groupIds": [
+        "rdw-group-70665971905ce2f9"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-48360d308756f741",
+      "groupIds": [
+        "rdw-group-ad66e794e87e74de",
+        "rdw-group-bdb2916ff587253f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d400499401fa3b25",
+      "groupIds": [
+        "rdw-group-ad66e794e87e74de"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-1e4292ade7819c7e",
+      "groupIds": [
+        "rdw-group-ad66e794e87e74de",
+        "rdw-group-bdb2916ff587253f"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-seat-leon-6de33a4d8706",
+      "existingCandidates": [
+        "sourced-seat-leon-6de33a4d8706"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-658a5dab79627d56",
+      "groupIds": [
+        "rdw-group-ad66e794e87e74de",
+        "rdw-group-bdb2916ff587253f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-dc63e3b83395db5c",
+      "groupIds": [
+        "rdw-group-ad66e794e87e74de"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-61a1176d409b0837",
+      "groupIds": [
+        "rdw-group-dcc35660551b5b76"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8bf6bbded82c9715",
+      "groupIds": [
+        "rdw-group-dcc35660551b5b76",
+        "rdw-group-f60424f333fdcb46"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-nissan-qashqai-fd074bfe9eab",
+      "existingCandidates": [
+        "sourced-nissan-qashqai-fd074bfe9eab"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-9d73f82ffd2d0c65",
+      "groupIds": [
+        "rdw-group-8a4d5f9881ca1511"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-opel-corsa-83066d51d4e0",
+      "existingCandidates": [
+        "sourced-opel-corsa-83066d51d4e0"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-587f8e341b5665cd",
+      "groupIds": [
+        "rdw-group-8a4d5f9881ca1511"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-opel-corsa-2b834f2e3de2",
+      "existingCandidates": [
+        "sourced-opel-corsa-2b834f2e3de2"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-aeb3a86cc7ae2503",
+      "groupIds": [
+        "rdw-group-5088cc5ddfa360ad"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b0083b182ae4fc6d",
+      "groupIds": [
+        "rdw-group-5088cc5ddfa360ad"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-65e3582d6166321b",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c",
+        "rdw-group-6e5644efb6c48b03"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-e3bac51703a75f2b",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c",
+        "rdw-group-7b047d75a3927a81"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-17d52b9908e8f5c8",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d4a00819bb9ac2d4",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c",
+        "rdw-group-6e5644efb6c48b03"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-447a6600f30da84c",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c",
+        "rdw-group-7b047d75a3927a81"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f1d631fd6af0dc58",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a4228ee88cf34b76",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c",
+        "rdw-group-7b047d75a3927a81"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-235928938cc43fde",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c",
+        "rdw-group-6e5644efb6c48b03"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6a33b68555f93393",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-8ce4293a2deafc1d",
+      "groupIds": [
+        "rdw-group-eb3fe9caba6e937c",
+        "rdw-group-7b047d75a3927a81"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-2b6b1efcedd72792",
+      "groupIds": [
+        "rdw-group-7c3fcf2fa5b431de"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-74944d5e99bdc21c",
+      "groupIds": [
+        "rdw-group-7c3fcf2fa5b431de"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-f7e043fbf3b21c83",
+      "groupIds": [
+        "rdw-group-29b55876e44df041"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c2274cfb5063635e",
+      "groupIds": [
+        "rdw-group-749a39f547b99d28"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-ford-transit-3a6adc6be1ca",
+      "existingCandidates": [
+        "sourced-ford-transit-3a6adc6be1ca"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-aa34c94709410b3f",
+      "groupIds": [
+        "rdw-group-749a39f547b99d28"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-adbdf213f056a328",
+      "groupIds": [
+        "rdw-group-749a39f547b99d28"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-ford-transit-37012b8f5610",
+      "existingCandidates": [
+        "sourced-ford-transit-37012b8f5610"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-dcaad6b6db67ced0",
+      "groupIds": [
+        "rdw-group-f52134bd3debf70a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-deecec488c55fc39",
+      "groupIds": [
+        "rdw-group-17aa251e54028bc8"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-eafa9d0f7c51e5b6",
+      "groupIds": [
+        "rdw-group-1cf6305b4e3bc9dc"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-619bcb01c5394469",
+      "groupIds": [
+        "rdw-group-1cf6305b4e3bc9dc"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-5961e4a106fe6d98",
+      "groupIds": [
+        "rdw-group-1cf6305b4e3bc9dc"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-ford-focus-200ff01776c1",
+      "existingCandidates": [
+        "sourced-ford-focus-200ff01776c1"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-fe399ea0ddb9ea07",
+      "groupIds": [
+        "rdw-group-1cf6305b4e3bc9dc"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-970137156b85a06e",
+      "groupIds": [
+        "rdw-group-1cf6305b4e3bc9dc"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6d13a5cc97eafb32",
+      "groupIds": [
+        "rdw-group-1cf6305b4e3bc9dc"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a894d50b02795c50",
+      "groupIds": [
+        "rdw-group-2ac6700ac62b2111"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b528a208d6846c4e",
+      "groupIds": [
+        "rdw-group-2ac6700ac62b2111"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-e60f97c42aa3c1e5",
+      "groupIds": [
+        "rdw-group-d4167dd9f3c9f912"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-c7fbfea892f8",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-c7fbfea892f8"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-0e47340486a65a22",
+      "groupIds": [
+        "rdw-group-d4167dd9f3c9f912"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-51612c4938c8",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-51612c4938c8"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-ed8ea1c0bd4256db",
+      "groupIds": [
+        "rdw-group-deb08ce99f14814a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-69e9f8a2e1830f51",
+      "groupIds": [
+        "rdw-group-deb08ce99f14814a"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2b13a934a7f7fc71",
+      "groupIds": [
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8dc978b96200b9a2",
+      "groupIds": [
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f2182a3759172790",
+      "groupIds": [
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8216fcf2f0a0b61f",
+      "groupIds": [
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-19b78a5eafa2c7f3",
+      "groupIds": [
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-4f1cddb96d1a9ac6",
+      "groupIds": [
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2f5e21339408589b",
+      "groupIds": [
+        "rdw-group-fe5bc636367d0d79"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a5d9e263eb8f2582",
+      "groupIds": [
+        "rdw-group-e5bf6ca4f1422190"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d81d963a6c8dd5b8",
+      "groupIds": [
+        "rdw-group-d16a4f38d7de08dd"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-f20c4aebe85f202b",
+      "groupIds": [
+        "rdw-group-d16a4f38d7de08dd"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-1a3675fe30100322",
+      "groupIds": [
+        "rdw-group-d16a4f38d7de08dd"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-5e242e09c18cef4b",
+      "groupIds": [
+        "rdw-group-2e0eaf1e5d09d83a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-1916d0e4b1c1f336",
+      "groupIds": [
+        "rdw-group-2e0eaf1e5d09d83a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a244be42f11f8589",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70",
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6fa1d806878d9fa5",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-9feb8f24499632e1",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6640176567cbf198",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70",
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-98ddeb15274e2d1e",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70",
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-61b863000e3d88db",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70",
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-db7f2a30e978a493",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-95376e439530",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-95376e439530"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-9408999d7b859e5e",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70",
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-2b164b91b6f10fa0",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70",
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d989ba36d86474fc",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-680e83382987",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-680e83382987"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-7ab8772fb8004beb",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-fc43af21074c",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-fc43af21074c"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-23b0ae98eca70ce7",
+      "groupIds": [
+        "rdw-group-4e931fdb6f2a3c70"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-96c598277865",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-96c598277865"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-7a251a2833c60258",
+      "groupIds": [
+        "rdw-group-dcf60a3a42a7868f"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-4c15793ddf78417e",
+      "groupIds": [
+        "rdw-group-097ea174a1553c3b"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b5d67e7752f5c48a",
+      "groupIds": [
+        "rdw-group-097ea174a1553c3b"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-abe29d61de127030",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e",
+        "rdw-group-e9eb7d88e9a55877"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-4f291420362e8c7d",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6e6163359a2c2bf3",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e",
+        "rdw-group-e9eb7d88e9a55877"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-636a2d9e75c7c9fc",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e",
+        "rdw-group-e9eb7d88e9a55877"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-mini-cooper-s-6fc51dc0e4d9",
+      "existingCandidates": [
+        "sourced-mini-cooper-s-6fc51dc0e4d9"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-839751edcfdef4e2",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-bab6c4d8b8e9b52a",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b01770a27cb52609",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e",
+        "rdw-group-e9eb7d88e9a55877"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "ADDITIONAL_SAME_PROVIDER_MIRROR_REQUIRES_SCOPE_REVIEW"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-765080fe1ee632a2",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-485f9d600d15f03c",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e",
+        "rdw-group-e9eb7d88e9a55877"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d9607a6182e04669",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-78c373e6404f515f",
+      "groupIds": [
+        "rdw-group-00ff50d823106d8e",
+        "rdw-group-e9eb7d88e9a55877"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-mini-cooper-s-0cdacfd4384f",
+      "existingCandidates": [
+        "sourced-mini-cooper-s-0cdacfd4384f"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-57b76402c0baec3e",
+      "groupIds": [
+        "rdw-group-e9a6c9f56723a508"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c615bf27cebdb5c0",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-756ebd060d65c700",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e49f50552c36b042",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-0a4eec5a0234c67e",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-e76f7b2b01453a0a",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a16a940f5029c02c",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-79bb48ec9e201b2f",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b3527df0ec3a2e0c",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-64cb3303097249bc",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-dbdb695f4f15a845",
+      "groupIds": [
+        "rdw-group-1082c1d3355c9f5e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-989c5bfd29371216",
+      "groupIds": [
+        "rdw-group-f0c4783d8ca0b134"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-39412fe795fd5227",
+      "groupIds": [
+        "rdw-group-f0c4783d8ca0b134"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-partner-2d9c2a354ede",
+      "existingCandidates": [
+        "sourced-peugeot-partner-2d9c2a354ede"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-ad5235faed304b26",
+      "groupIds": [
+        "rdw-group-f0c4783d8ca0b134"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-peugeot-partner-c09ffaa681f6",
+      "existingCandidates": [
+        "sourced-peugeot-partner-c09ffaa681f6"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-9fe48c068e931bc1",
+      "groupIds": [
+        "rdw-group-6e5644efb6c48b03"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6e4e1a1c4b5c6fef",
+      "groupIds": [
+        "rdw-group-6e5644efb6c48b03"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-3a96a1086e5ed71c",
+      "groupIds": [
+        "rdw-group-6e5644efb6c48b03"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-fe4aa178f9d7b736",
+      "groupIds": [
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-8546a79261175d1e",
+      "groupIds": [
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a3b4da0c26112907",
+      "groupIds": [
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-d310261c8edb",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-d310261c8edb"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-01849e8b2cb0b15b",
+      "groupIds": [
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b9acb267a5ab55d9",
+      "groupIds": [
+        "rdw-group-18201187ce83416a"
+      ],
+      "disposition": "corroboration",
+      "profileId": "sourced-volkswagen-tiguan-5c1ccb7ee71d",
+      "existingCandidates": [
+        "sourced-volkswagen-tiguan-5c1ccb7ee71d"
+      ],
+      "retired": []
+    },
+    {
+      "sourceId": "atm-v3-4abb2a612f0979c4",
+      "groupIds": [
+        "rdw-group-5c1de032c8e22789"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-05aaa605b2f0c2f6",
+      "groupIds": [
+        "rdw-group-5c1de032c8e22789"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-59324d1459a23a87",
+      "groupIds": [
+        "rdw-group-5c1de032c8e22789"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d01fb8813c410d4f",
+      "groupIds": [
+        "rdw-group-303a1472c02a21db"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-6a8096fa0e8ee093",
+      "groupIds": [
+        "rdw-group-303a1472c02a21db"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-f2ffdfd7a3c74646",
+      "groupIds": [
+        "rdw-group-ee49f5e07e23661c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-738b0827ea878440",
+      "groupIds": [
+        "rdw-group-ee49f5e07e23661c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-37f78c331fd01ae2",
+      "groupIds": [
+        "rdw-group-ee49f5e07e23661c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-f19248cd25b67ab8",
+      "groupIds": [
+        "rdw-group-ee49f5e07e23661c"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-cb87eac3a7affc30",
+      "groupIds": [
+        "rdw-group-c03e02274246366e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-8cbbda7b3db817a0",
+      "groupIds": [
+        "rdw-group-c03e02274246366e"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-55b042e66115d67b",
+      "groupIds": [
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_FACELIFT_CORROBORATION_RETAINED_WITHOUT_DUPLICATING_EXISTING_ENGINE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b32b1212e572c565",
+      "groupIds": [
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARSER_FACT_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4ca1ed8d03887bee",
+      "groupIds": [
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_FACELIFT_CORROBORATION_RETAINED_WITHOUT_DUPLICATING_EXISTING_ENGINE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-888055274f6963b2",
+      "groupIds": [
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARSER_FACT_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9289334577d9af16",
+      "groupIds": [
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARSER_FACT_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-51c04125813cc9cc",
+      "groupIds": [
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_FACELIFT_CORROBORATION_RETAINED_WITHOUT_DUPLICATING_EXISTING_ENGINE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-54620049504e320a",
+      "groupIds": [
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARSER_FACT_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-df5e8080b07eefb5",
+      "groupIds": [
+        "rdw-group-06d8061baf7622bc"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-a4dc495b545de06d",
+      "groupIds": [
+        "rdw-group-3e56c37eec2a7c80"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-438542b2a9be4b7e",
+      "groupIds": [
+        "rdw-group-3e56c37eec2a7c80"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-c0643019193c8c6a",
+      "groupIds": [
+        "rdw-group-3e56c37eec2a7c80"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-4f72e8ae76a96d70",
+      "groupIds": [
+        "rdw-group-3e56c37eec2a7c80"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-355a17e211db34d2",
+      "groupIds": [
+        "rdw-group-3e56c37eec2a7c80"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-0943a48379532135",
+      "groupIds": [
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2abc43e6f2ee0d8f",
+      "groupIds": [
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e32811cfdb145535",
+      "groupIds": [
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-89d20da360670b01",
+      "groupIds": [
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-0e39c056d295a806",
+      "groupIds": [
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0d9086fa47284386",
+      "groupIds": [
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-b690c8fbc30c2678",
+      "groupIds": [
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-438f1602ba235c1a",
+      "groupIds": [
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "deferred",
+      "reasons": [
+        "PARTIAL_PERIOD_CORROBORATION_RETAINED_WITHOUT_SHRINKING_EXISTING_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8390b705855d5fab",
+      "groupIds": [
+        "rdw-group-c79a45490e42f2ed"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-23dd54d69005b956",
+      "groupIds": [
+        "rdw-group-8c3993ce0bd6fe39"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-d8624dfd794947cd",
+      "groupIds": [
+        "rdw-group-8c3993ce0bd6fe39"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-873c4a8715f97122",
+      "groupIds": [
+        "rdw-group-8c3993ce0bd6fe39"
+      ],
+      "disposition": "new-profile-candidate",
+      "reasons": []
+    },
+    {
+      "sourceId": "atm-v3-50d5c80dbf23b984",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6e665bfd97b7eb7f",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0795487266f0bd04",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7fce407c07e26ed2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6b6fe49e2c5d39c5",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9bdde3978a13f920",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a8f8f659ec582ca6",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b17d307dc2557b0a",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-11d4b22f7d8cfd9a",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-89855f1e1fc40a7e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e540a4b4614ca237",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5a92ae28ac676d3e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d5d28f88bc000ca3",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7bb28b9e80fa8f86",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c79a979b58db82c7",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1e7164d094cd7729",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-adfbe92fb92bc2f9",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-db6d52301803120d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-44314b47a43f18e0",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8e0080ab94501e32",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e9b7e8a5c6758a8d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-80fc629fa4390cd0",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bc3c2d9c200a3dfa",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-64711e6476baf471",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6a299bbfc08b5771",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-da52dc7ddc1cf631",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e09c52d4903ce510",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5f643f1fa1e69bbf",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-863e6d244367ac35",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a08a9b7be4a4b91b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e42643d39c9ada9b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f7cf69bda499a625",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d12aa398429c4547",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-52d9e291c83e4bfb",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4b994dc0722fed7d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9616f4884427f682",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1131da30c302661c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e257df53d18824f5",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bc57959cc30276de",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-04a56ddca5b31a89",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-373e2c040ddaeebf",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c555e5824c5e93cd",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4032770f2c21de25",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7d833b8caf4e379e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5ac655a88c802f4c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-af180eece3aa70ad",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5edb5daec998e9f3",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3e6125df8dbec476",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0d4c36d9472b5bd0",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a51b4838f14d2413",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-67bb1c1cbc268947",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d1e5c6303f990ce3",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-417707a86481e90d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-879e2c3f67530987",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-39b71789107ffbff",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ebed574848ded006",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-19ddf24892c8cc22",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1a61c1a094b3d10b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9e838e195a8da6dc",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-52c4adb99ca424b1",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b8da953e445b2a08",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f6569bc9085acdcd",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-10879a9345e63152",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bb92a18beebb3ee0",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-30f07f37eab76d36",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c2f150fbec9a0be5",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a2c6cdeca80d6459",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d7b5f749ff100d40",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-772139186de51206",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2e1f6ea5895207be",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-45f150f499e0cdb4",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bcd5e823bcbd38ac",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5cdf709241bfb202",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-235c4a4ebc038b07",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8860fb9967c81211",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e41db1f8d61d6672",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8774095ddef4ab22",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b669b94e7893fb9d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-941aef880138f441",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0a975bc8b60a10fa",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bf045829753f66c6",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c153a5dbc2136bb5",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2dbcb980957f45ad",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0dc37c76967808bc",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-228afaf0c6164ac7",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4b37487c4329b4f4",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-13f5c37d4b73aaaf",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2ae6dc31af374d74",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-838bd3ea95c5ee72",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-632a328705da07b1",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6ff96ede5b9ce133",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4d4c46570b74143e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-568865a65c1491f9",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-94184eb619f06a7e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c0f711aed3af07ce",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-07db39f2a0fbf633",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0beb2f4a38a2adb3",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b7019076e5006d4f",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a10f7eba4771e947",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b93d1a058822105b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b06e8c7d9b9580a5",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9b6eb32600b8eefb",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3643998d8d6f0bf8",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1d85f7b048e53e4a",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-32c67bc13da79b45",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1c2f15463ebb4030",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7ed7f73cbb5b054e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c9de4583d90053a2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dfdf6b9448a57ad3",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d97dfdae8bb4ac7b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-850f6bbdd38ae33e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c12a8a26491a0196",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4565cb5d953502b1",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-98977b9dc1cd7d6e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-124404f72c69eaff",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7a2b63eaf2972a04",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-029fea9ca07b8350",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4382f735a74e1043",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-546d7db3c133f7a2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9a275daffe3f3c63",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0d05a0fa382367fb",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0be05d4d4a967ad6",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-acc2c7b2f84b776f",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-16c73a9c7685d19d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dc207cc9a89ae66c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-fa617d1939e3041b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d7dc6f589278d668",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dbee79d91b080489",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ef5e253d77d614e6",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-17e9464a209f1420",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dd2e7ff92fcc3086",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4ae39da43ffe4229",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cd29bfae8f59c44d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-284d6d8f466adb75",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-14a25324fef21e6d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-480c1736e544005f",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0a0e8e25c9932ff2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ea281f17be6e00f2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6a43ca87543c40f8",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5ddbcb7900eea639",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c14d2f3c2251d11b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a259ffce5b2c964d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e1ab7c3d6b250ae4",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c4ca3b26f0fcee6c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8b2035c5445143ac",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c6d70955c6fb94fa",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f91529c3557827dc",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a0645f9d84263d51",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2ee9230a63330520",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a8ea5cc105379f6a",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-98bff8076af33476",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-965a223bba4f912f",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-06b5e963f893fd36",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-683c78e8209bad71",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f6ca5723ff6fe0c9",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ceab4a8810d55ce1",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5c9f0d7885890329",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c1a156b7ba3d098c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-12261870fca0dba4",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c28648bbf42b2598",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d0a4aae8dcafd2d2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-944f7c2d5afd0244",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-96e2ed14760f5c3c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8c5b86ae8b646aaf",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c2ce3488e5d785e2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2b5e406480533f84",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bc1ded1eee284926",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8f93edf6953d42a6",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8f25bc831c4bcb25",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f91d356e86ee699c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-740bdcb3c125482d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5d1d533f45e30c09",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-77db667bf0a6255b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-994ede62ed4739b8",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-866fc81c9d3f411e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8089dfd9e1bd588e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ddd0ac5d3ccee68c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-85289f74c9428215",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4d27c5d5df9dd7dd",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6c0d8ac03f3d64e9",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-51ce330f70f52820",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-31537af4bdf31074",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-17bab1c03f5b888d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3842944181c0d2ca",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-15a215d3e366b505",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2d0fb848a33b04ad",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3750d9931397fd6a",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0a64ba57d7bcb2ef",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-77d1f1f52af0d2f5",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ee456b1540686f74",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9457a04ca2fd2813",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-75a907bdb7e61463",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cca22d163dfe345d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-376a95ed4a8739af",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c5e77104e00a6436",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bd9ee1999da48bca",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-35d0816245f34faa",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-34dbbab41fca48c2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-028d62d9c3dbf4ce",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-43c0bf436906a308",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7383ddaae51e16f8",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-18ba7111bf863958",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cc29182470bbb6d9",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-580a040047bb05e6",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-fe48672106855a49",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e7d585bd83f9191f",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b6aacd01713969d2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-840f077275b2e0a3",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-71594546a4d0c9d6",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-67344f152c35e9a1",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-74f6df282bb17923",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c0e4a9747b635363",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8b0fa60ec401b686",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-fa825bcc74bc6734",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d983000bf7f71386",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f94ab49e0ce6fdc7",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-30d5b335bdb2e242",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cacdd71450d2afe9",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-9bd941b04ec4a605",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-653455822efc9c59",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0fe012c20ba8c271",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-99e00797cfeb7633",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-50e7e558f370f838",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-57f9a15554a97cd4",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-325c163bd64c8ec2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-086cea0ed40a2e10",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dcde18bf7be0849d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f93445aaf9592b11",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e6ecc7e00c8b12de",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-35eb7a491950e05e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b240cd23534db722",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d20ad146a4f33ede",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e5c90801f4b0453f",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b6d9b32bf5543de4",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1fb7ca34bd64f4aa",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6d6c5ffd4b716573",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b1712159bcec1d58",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-358489b97636998a",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-c028302dfb3179d2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3fa39f55edc72c7b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3eeef39ad629338b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-025c1bc45b4b2ada",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f5caeac3a9c705bb",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-857b30e915312596",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1bddf62fab673fec",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ff4c89628a6db505",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-fe420404c4ef1280",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-115be17327e45e99",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-929ef44bc4d623b0",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bb74111e7e5a2bee",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2ae799f9e470b530",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1137353d5b89ab8b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d9e249d129f028c0",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-24b17a32433c6de4",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-be7ba84fd410619c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-47717c12e86c8373",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-31a32d8e9296bcc9",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8657e85a8409044d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1fea0120f9ab5818",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-59b2aa9d95b89088",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d54d68deec6a0c16",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-20c8e8090f97e5c8",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d8b10d355afd1c14",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-ee5dc7ec8148c324",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7159acb35241c763",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bf6d59a5100c3989",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-db193dc2e2879775",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e91bbde133be6f5e",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5a51181cbe9ebfc3",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d1d656e04080b534",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-581e510825a2d47b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-91a2ee292d176713",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7326fa3a6b573a03",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4d55faf7b4e3d923",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-2457777135233163",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cab12ec70b42dc2c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-6a8b6ffb888b91cb",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8bf0f5686dcb390c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-b781f939a165f01c",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-709378d9bee626a0",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5dcbcc101a0e3a08",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-dd231f09eb14b121",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-24468112ec34cfe3",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bdf98bb8c6d16052",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-e93f2bb7181b82dd",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-f11bf7c7fc189cb3",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-3f39fd960bb85e2f",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4562f2b698d4e5bc",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-21c0e4f15b23d9e2",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-4ee78bb33b7a6bf8",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-1f128977696debe5",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-62b632e0ff5756d1",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-7e61646e39eedb11",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-d2893d16472b4f41",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0bfaf1939373c595",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-213dc88970d2a04a",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-0de3a1668b2066a5",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-11d564922ce6f73a",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-a0a4208eb221f90b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-eba4e04c18aed3a8",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-bd3e7909f2e23c7d",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-8316ca5ad31250be",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "INCOMPLETE_OR_NEGATIVE_APPLICATION",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-cea4b8517f6e846b",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-5c916280d2e1dddc",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "atm-v3-571bb9e79d55e926",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    },
+    {
+      "sourceId": "shiftech-v2-f77ccecdee8ad1ca",
+      "groupIds": [],
+      "disposition": "deferred",
+      "reasons": [
+        "PARSER_FACT_REVIEW_REQUIRED",
+        "OUTSIDE_FROZEN_TOP250_TECHNICAL_SCOPE"
+      ]
+    }
+  ]
+}

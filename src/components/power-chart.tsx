@@ -9,46 +9,41 @@ import {
   XAxis,
   YAxis
 } from "recharts";
-import {useEffect, useState} from "react";
-import type {StageDefinition} from "@/data/catalog-shared";
+import {useEffect, useMemo, useState} from "react";
+import type {Locale} from "@/i18n/routing";
+import {estimateChartData, type ChartEstimateStage} from "@/lib/estimate-chart";
 
 export function PowerChart({
+  locale = "nl",
   powerUnit = "pk",
   stages,
   stockPower,
   stockLabel = "Stock",
   stockTorque
 }: {
+  locale?: Locale;
   powerUnit?: string;
-  stages: StageDefinition[];
+  stages: ChartEstimateStage[];
   stockPower: number;
   stockLabel?: string;
-  stockTorque: number;
+  stockTorque?: number;
 }) {
   const [mounted, setMounted] = useState(false);
-  const data = [
-    {
-      name: stockLabel,
-      pk: stockPower,
-      nm: stockTorque
-    },
-    ...stages.map((stage) => ({
-      name: stage.name.replace("Stage ", "S"),
-      pk: stage.powerHp,
-      nm: stage.torqueNm
-    }))
-  ];
+  const hasRanges = stages.some(stage => !stage.customHardware && (stage.powerRangeHp || stage.torqueRangeNm));
+  const separateScenarios = stages.some(stage => stage.provenance === "generic-indicative" || (stage.comparison && stage.comparison.comparability !== "same-reference"));
+  const hasApproximate = stages.some(stage => !stage.customHardware && stage.approximate);
+  const data = useMemo(() => estimateChartData(stages, stockPower, stockTorque, stockLabel), [stages, stockLabel, stockPower, stockTorque]);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   if (!mounted) {
-    return <div className="h-64 w-full rounded-lg bg-white/[0.035]" />;
+    return <><div className="h-64 w-full rounded-lg bg-white/[0.035]" /><ChartCaption locale={locale} hasRanges={hasRanges} hasApproximate={hasApproximate} separateScenarios={separateScenarios} /></>;
   }
 
   return (
-    <div className="h-64 min-w-0 w-full">
+    <><div className="h-64 min-w-0 w-full" data-testid="catalog-power-chart" data-has-ranges={hasRanges}>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={data} margin={{left: -20, right: 12, top: 14, bottom: 0}}>
           <defs>
@@ -65,6 +60,7 @@ export function PowerChart({
           <XAxis dataKey="name" stroke="rgba(255,255,255,0.55)" tickLine={false} />
           <YAxis stroke="rgba(255,255,255,0.55)" tickLine={false} />
           <Tooltip
+            formatter={(value, _name, item) => `${item.payload?.approximate ? "≈" : ""}${Array.isArray(value) ? value[0] === value[1] ? String(value[0]) : value.join("–") : value}`}
             contentStyle={{
               background: "#0d1117",
               border: "1px solid rgba(255,255,255,.14)",
@@ -89,6 +85,22 @@ export function PowerChart({
           />
         </AreaChart>
       </ResponsiveContainer>
-    </div>
+    </div><ChartCaption locale={locale} hasRanges={hasRanges} hasApproximate={hasApproximate} separateScenarios={separateScenarios} /></>
   );
+}
+
+function ChartCaption({locale, hasRanges, hasApproximate, separateScenarios}: {locale: Locale; hasRanges?: boolean; hasApproximate?: boolean; separateScenarios?: boolean}) {
+  return <p className="mt-2 text-xs leading-5 text-muted-foreground" data-testid="catalog-chart-caption">{{
+    nl: "Catalogusillustratie van piekwaarden; geen rollenbankmeting of gemeten toerentalcurve.",
+    en: "Catalog illustration of peak values; not a dyno measurement or measured RPM curve.",
+    pl: "Ilustracja katalogowych wartości szczytowych; nie jest pomiarem z hamowni ani zmierzoną krzywą obrotów."
+  }[locale]}{separateScenarios ? " " + {nl: "Afzonderlijke scenario’s; geen gegarandeerde opbouw in vermogen of koppel.", en: "Separate scenarios; no guaranteed progression in power or torque.", pl: "Oddzielne warianty; bez gwarancji wzrostu mocy lub momentu."}[locale] : ""}{hasRanges ? " " + {
+    nl: "De banden tonen de vermelde bereiken; bronwaarden blijven punten.",
+    en: "Bands show the listed ranges; source figures remain points.",
+    pl: "Pasma pokazują podane przedziały; wartości źródłowe pozostają punktami."
+  }[locale] : ""}{hasApproximate ? " " + {
+    nl: "≈ geeft een benaderde cataloguswaarde aan; maatwerk zonder brongetal wordt niet uitgezet.",
+    en: "≈ marks an approximate catalog figure; custom work without a sourced figure is not plotted.",
+    pl: "≈ oznacza przybliżoną wartość katalogową; indywidualny tuning bez danych źródłowych nie jest wykreślany."
+  }[locale] : ""}</p>;
 }

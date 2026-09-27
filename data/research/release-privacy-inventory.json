@@ -1,0 +1,572 @@
+{
+  "scope": "Entire tracked tree before cleanup; anonymous labels only. History is not rewritten.",
+  "textFiles": [
+    {
+      "path": "data/research/v3-1-browser-results.json",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "data/research/v3-2-verification.json",
+      "hits": [
+        {
+          "alias": "OWNER-B",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-data/V3_1_MATCH_RECOVERY.md",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-data/V3_2_TARGETED_RECOVERY.md",
+      "hits": [
+        {
+          "alias": "OWNER-B",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-data/browser-v3-2/browser-acceptance.json",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 8
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 13
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 8
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-data/browser/browser-acceptance.json",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 6
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 13
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 6
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/TUNING_PROFILE_BACKLOG.md",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/artifact-link-audit.json",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 8
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 8
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 8
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 3
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 3
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 3
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/final-review/browser-acceptance.json",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 20
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 20
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 20
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/runtime/LIVE_RDW_AND_REFERENCE_RESEARCH.md",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 5
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 3
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 3
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/runtime/RUNTIME_PRICING_POLICY.md",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/runtime/browser-acceptance.json",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 14
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 14
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 14
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/runtime/live-rdw-identities.json",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 3
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 3
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 3
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/runtime/runtime-coverage.json",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/runtime/runtime-coverage.md",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/tuning-qa/runtime/screenshot-inventory.json",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 10
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 10
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 10
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "path": "scripts/build-v3-2-review.cjs",
+      "hits": [
+        {
+          "alias": "OWNER-B",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "scripts/qa-rdw-final-review.cjs",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "scripts/qa-rdw-runtime.cjs",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "scripts/qa-tuning-dataset-v1.cjs",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 4
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "scripts/qa-v3-2-browser.cjs",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 4
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "scripts/test-rdw-runtime-coverage.ts",
+      "hits": [
+        {
+          "alias": "OWNER-A",
+          "count": 1
+        },
+        {
+          "alias": "OWNER-B",
+          "count": 3
+        },
+        {
+          "alias": "OWNER-C",
+          "count": 2
+        },
+        {
+          "alias": "OWNER-D",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "filenames": [
+    {
+      "path": "docs/tuning-data/browser-v3-2/OWNER-D-320.png",
+      "aliases": [
+        "OWNER-D"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-data/browser-v3-2/OWNER-B-320.png",
+      "aliases": [
+        "OWNER-B"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-data/browser/OWNER-D-320.png",
+      "aliases": [
+        "OWNER-D"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-data/browser/OWNER-B-320.png",
+      "aliases": [
+        "OWNER-B"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-qa/final-review/OWNER-A-1440.png",
+      "aliases": [
+        "OWNER-A"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-qa/final-review/OWNER-A-320.png",
+      "aliases": [
+        "OWNER-A"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-qa/final-review/OWNER-D-1440.png",
+      "aliases": [
+        "OWNER-D"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-qa/final-review/OWNER-D-320.png",
+      "aliases": [
+        "OWNER-D"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-qa/final-review/OWNER-B-1440.png",
+      "aliases": [
+        "OWNER-B"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-qa/final-review/OWNER-B-320.png",
+      "aliases": [
+        "OWNER-B"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-qa/final-review/OWNER-C-1440.png",
+      "aliases": [
+        "OWNER-C"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    },
+    {
+      "path": "docs/tuning-qa/final-review/OWNER-C-320.png",
+      "aliases": [
+        "OWNER-C"
+      ],
+      "action": "removed redundant screenshot; inspected result-only pixels, no registration visible"
+    }
+  ],
+  "counts": {
+    "textFiles": 24,
+    "textOccurrences": 401,
+    "filenames": 12
+  }
+}

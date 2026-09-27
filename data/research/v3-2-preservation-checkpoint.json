@@ -1,0 +1,11 @@
+{
+  "head": "14ca5b91044fb29f2747c2079df5aca9781fba9f",
+  "profiles": 1246,
+  "profilesSha256": "b99b7fca3051f8326d8e96eb32f83577c367193f08dadbc3117a47dd1fddae81",
+  "sourceObservations": 3329,
+  "sourceObservationsSha256": "6009faa0b004430cbb1cbdae90bb1b9927c484d48aa77a7e0b1989b29d973768",
+  "clientJs": {
+    "files": 25,
+    "bytes": 1422757
+  }
+}

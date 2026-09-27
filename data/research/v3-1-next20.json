@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 1,
+  "method": "Frozen 3,000-row purposive sample. Group exact make/model/displacement/fuel/registered-power combinations still at D after V3.1; exclude any accepted profile with the same technical tuple, even if its year scope differs. Rank by observed sampled registrations, then scenario count and frozen group rank. Counts are sample observations, not Dutch fleet population estimates.",
+  "totalEligibleConfigurations": 142,
+  "next20": [
+    {
+      "rank": 1,
+      "make": "MAZDA",
+      "model": "MAZDA MX-5",
+      "displacementCc": 1798,
+      "fuel": "Petrol",
+      "registeredPowerKw": 93,
+      "approximatePowerPs": 126,
+      "observedRegistrations": 24,
+      "observedScenarioCount": 9,
+      "firstAdmissionYears": [
+        2005,
+        2014
+      ],
+      "groupIds": [
+        "rdw-group-8c2b475e5aebcd73",
+        "rdw-group-2c5dd62fc382ca3c"
+      ],
+      "bestPriorityRank": 167,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 2,
+      "make": "FIAT",
+      "model": "FIAT DOBLO'",
+      "displacementCc": 1598,
+      "fuel": "Diesel",
+      "registeredPowerKw": 77,
+      "approximatePowerPs": 105,
+      "observedRegistrations": 22,
+      "observedScenarioCount": 12,
+      "firstAdmissionYears": [
+        2016,
+        2023
+      ],
+      "groupIds": [
+        "rdw-group-b2f5e390bd5b7bf7",
+        "rdw-group-d82e820f89f28d34"
+      ],
+      "bestPriorityRank": 115,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 3,
+      "make": "PEUGEOT",
+      "model": "5008",
+      "displacementCc": 1199,
+      "fuel": "Petrol",
+      "registeredPowerKw": 96,
+      "approximatePowerPs": 131,
+      "observedRegistrations": 20,
+      "observedScenarioCount": 12,
+      "firstAdmissionYears": [
+        2015,
+        2021
+      ],
+      "groupIds": [
+        "rdw-group-19d7f0a1272b1d8a",
+        "rdw-group-324d9980291016c1"
+      ],
+      "bestPriorityRank": 124,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 4,
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "displacementCc": 1240,
+      "fuel": "Petrol",
+      "registeredPowerKw": 59,
+      "approximatePowerPs": 80,
+      "observedRegistrations": 17,
+      "observedScenarioCount": 10,
+      "firstAdmissionYears": [
+        2003,
+        2009
+      ],
+      "groupIds": [
+        "rdw-group-1878976f06bdcbc2",
+        "rdw-group-edb1209719e84d6c"
+      ],
+      "bestPriorityRank": 101,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 5,
+      "make": "CITROEN",
+      "model": "C5 AIRCROSS",
+      "displacementCc": 1598,
+      "fuel": "Petrol",
+      "registeredPowerKw": 133,
+      "approximatePowerPs": 181,
+      "observedRegistrations": 16,
+      "observedScenarioCount": 7,
+      "firstAdmissionYears": [
+        2018,
+        2020
+      ],
+      "groupIds": [
+        "rdw-group-540dd1ed1793c0c5",
+        "rdw-group-dbf2fcecbc87d6cf"
+      ],
+      "bestPriorityRank": 83,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 6,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1395,
+      "fuel": "Petrol",
+      "registeredPowerKw": 103,
+      "approximatePowerPs": 140,
+      "observedRegistrations": 16,
+      "observedScenarioCount": 6,
+      "firstAdmissionYears": [
+        2013,
+        2015
+      ],
+      "groupIds": [
+        "rdw-group-75fc80529082550d",
+        "rdw-group-72becee98a12d6f4"
+      ],
+      "bestPriorityRank": 130,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 7,
+      "make": "AUDI",
+      "model": "AUDI A4",
+      "displacementCc": 1798,
+      "fuel": "Petrol",
+      "registeredPowerKw": 88,
+      "approximatePowerPs": 120,
+      "observedRegistrations": 13,
+      "observedScenarioCount": 11,
+      "firstAdmissionYears": [
+        2008,
+        2012
+      ],
+      "groupIds": [
+        "rdw-group-b94c08a28302cc17",
+        "rdw-group-3ce1842350df0da6"
+      ],
+      "bestPriorityRank": 209,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 8,
+      "make": "RENAULT",
+      "model": "CLIO",
+      "displacementCc": 1598,
+      "fuel": "Petrol",
+      "registeredPowerKw": 79,
+      "approximatePowerPs": 107,
+      "observedRegistrations": 13,
+      "observedScenarioCount": 10,
+      "firstAdmissionYears": [
+        2000,
+        2005
+      ],
+      "groupIds": [
+        "rdw-group-f52134bd3debf70a",
+        "rdw-group-96b4ea4497a4eda1"
+      ],
+      "bestPriorityRank": 104,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 9,
+      "make": "FIAT",
+      "model": "FIAT 500",
+      "displacementCc": 875,
+      "fuel": "Petrol",
+      "registeredPowerKw": 63,
+      "approximatePowerPs": 86,
+      "observedRegistrations": 13,
+      "observedScenarioCount": 8,
+      "firstAdmissionYears": [
+        2010,
+        2017
+      ],
+      "groupIds": [
+        "rdw-group-468b69573893b922",
+        "rdw-group-f79166738ff1a5c4"
+      ],
+      "bestPriorityRank": 99,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 10,
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "displacementCc": 1198,
+      "fuel": "Petrol",
+      "registeredPowerKw": 59,
+      "approximatePowerPs": 80,
+      "observedRegistrations": 13,
+      "observedScenarioCount": 5,
+      "firstAdmissionYears": [
+        2010,
+        2017
+      ],
+      "groupIds": [
+        "rdw-group-aa833658437c4aaa",
+        "rdw-group-4742bce10c407955"
+      ],
+      "bestPriorityRank": 113,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 11,
+      "make": "VOLKSWAGEN",
+      "model": "T-ROC",
+      "displacementCc": 1984,
+      "fuel": "Petrol",
+      "registeredPowerKw": 140,
+      "approximatePowerPs": 190,
+      "observedRegistrations": 13,
+      "observedScenarioCount": 5,
+      "firstAdmissionYears": [
+        2017,
+        2024
+      ],
+      "groupIds": [
+        "rdw-group-16d99b96a68db66d",
+        "rdw-group-21670943316616df"
+      ],
+      "bestPriorityRank": 171,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 12,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1896,
+      "fuel": "Diesel",
+      "registeredPowerKw": 77,
+      "approximatePowerPs": 105,
+      "observedRegistrations": 12,
+      "observedScenarioCount": 12,
+      "firstAdmissionYears": [
+        2005,
+        2009
+      ],
+      "groupIds": [
+        "rdw-group-95b4c425fae7b47c"
+      ],
+      "bestPriorityRank": 230,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 13,
+      "make": "BMW",
+      "model": "520I",
+      "displacementCc": 1998,
+      "fuel": "Petrol",
+      "registeredPowerKw": 135,
+      "approximatePowerPs": 184,
+      "observedRegistrations": 12,
+      "observedScenarioCount": 10,
+      "firstAdmissionYears": [
+        2017,
+        2019
+      ],
+      "groupIds": [
+        "rdw-group-b94b282b1866fd03"
+      ],
+      "bestPriorityRank": 210,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 14,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1595,
+      "fuel": "Petrol",
+      "registeredPowerKw": 75,
+      "approximatePowerPs": 102,
+      "observedRegistrations": 12,
+      "observedScenarioCount": 10,
+      "firstAdmissionYears": [
+        2005,
+        2009
+      ],
+      "groupIds": [
+        "rdw-group-bd23df685195fd4e"
+      ],
+      "bestPriorityRank": 224,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 15,
+      "make": "MAZDA",
+      "model": "MAZDA 6",
+      "displacementCc": 1798,
+      "fuel": "Petrol",
+      "registeredPowerKw": 88,
+      "approximatePowerPs": 120,
+      "observedRegistrations": 12,
+      "observedScenarioCount": 9,
+      "firstAdmissionYears": [
+        2005,
+        2009
+      ],
+      "groupIds": [
+        "rdw-group-767f6d7d74c58c14"
+      ],
+      "bestPriorityRank": 158,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 16,
+      "make": "MERCEDES-BENZ",
+      "model": "B 180",
+      "displacementCc": 1595,
+      "fuel": "Petrol",
+      "registeredPowerKw": 90,
+      "approximatePowerPs": 122,
+      "observedRegistrations": 12,
+      "observedScenarioCount": 8,
+      "firstAdmissionYears": [
+        2011,
+        2014
+      ],
+      "groupIds": [
+        "rdw-group-d00d2e2698b3980b"
+      ],
+      "bestPriorityRank": 203,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 17,
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI COLT",
+      "displacementCc": 1499,
+      "fuel": "Petrol",
+      "registeredPowerKw": 80,
+      "approximatePowerPs": 109,
+      "observedRegistrations": 12,
+      "observedScenarioCount": 8,
+      "firstAdmissionYears": [
+        2005,
+        2009
+      ],
+      "groupIds": [
+        "rdw-group-e382b134e8364501"
+      ],
+      "bestPriorityRank": 212,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 18,
+      "make": "FIAT",
+      "model": "FIAT 500",
+      "displacementCc": 1242,
+      "fuel": "Petrol",
+      "registeredPowerKw": 51,
+      "approximatePowerPs": 69,
+      "observedRegistrations": 12,
+      "observedScenarioCount": 7,
+      "firstAdmissionYears": [
+        2010,
+        2014
+      ],
+      "groupIds": [
+        "rdw-group-b67f1960ca11f285"
+      ],
+      "bestPriorityRank": 98,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 19,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1390,
+      "fuel": "Petrol",
+      "registeredPowerKw": 90,
+      "approximatePowerPs": 122,
+      "observedRegistrations": 12,
+      "observedScenarioCount": 7,
+      "firstAdmissionYears": [
+        2010,
+        2013
+      ],
+      "groupIds": [
+        "rdw-group-df3d5a70f0061a52"
+      ],
+      "bestPriorityRank": 184,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    },
+    {
+      "rank": 20,
+      "make": "BMW",
+      "model": "318I",
+      "displacementCc": 1998,
+      "fuel": "Petrol",
+      "registeredPowerKw": 115,
+      "approximatePowerPs": 156,
+      "observedRegistrations": 12,
+      "observedScenarioCount": 7,
+      "firstAdmissionYears": [
+        2020,
+        2024
+      ],
+      "groupIds": [
+        "rdw-group-004e3cf010c3a9ba"
+      ],
+      "bestPriorityRank": 236,
+      "evidenceNeeded": "Dated exact model/fuel/factory-output/displacement application with Stage 1 values and engine/generation applicability."
+    }
+  ]
+}

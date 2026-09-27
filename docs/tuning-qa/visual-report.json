@@ -1,0 +1,2923 @@
+{
+  "generatedAt": "2026-09-15T10:11:53.657Z",
+  "baseline": {
+    "sha": "4d12e510953fb57c3f8f84a737880ff860a617e7",
+    "url": "http://localhost:3102",
+    "source": "C:\\Users\\barto\\AppData\\Local\\Temp\\noordtune-tuning-baseline-4d12e510"
+  },
+  "finalUrl": "http://localhost:3100",
+  "syntheticIdentifiersOnly": true,
+  "notes": [
+    "Both versions use the same installed Chrome executable, fonts, viewport and sanitized deterministic RDW vehicle facts; matching is evaluated by each version's actual catalog function.",
+    "BMW128ti, Transit Custom and Transit Connect use sanitized official RDW make/model, displacement, power and first-admission facts retrieved for the task. Synthetic identifier ZZ1001 replaces all plates. Other curated examples use controlled synthetic registration dates.",
+    "Only the Next.js development overlay is hidden equally in both versions; no vehicle, quote or layout pixels are masked.",
+    "Date, quote/access text, conservative matching, manual-review status and neutral output areas may legitimately alter result height.",
+    "WhatsApp hrefs are decoded and asserted without opening or sending any message."
+  ],
+  "results": [
+    {
+      "version": "baseline",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "legacy-no-match",
+      "contentWidth": 204,
+      "height": 3992.5,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkBMW 128TIBenzine1998 cc · 265 pkAPK 2027-03-15Type -Handmatige ",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkBMW 128TIBenzine1998 cc · 265 pkAPK 2027-03-15Type -",
+          "clientWidth": 202,
+          "scrollWidth": 215,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW check",
+          "clientWidth": 170,
+          "scrollWidth": 199,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Handmatige controleAanbevolen vervolgstapVoertuig gedetecteerd, exacte catalogusmatch nog niet beves",
+          "clientWidth": 202,
+          "scrollWidth": 278,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageVermogenKoppelStage 1313 pk716 NmStage 2350 pk808 NmStage 3+419 pk914 NmOptiesDPF off / deleteR",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptiesDPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.v",
+          "clientWidth": 252,
+          "scrollWidth": 258,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.vanaf €",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / snelheidsbegrenzerSnelheidslimiet aanpassen na controle van aandrijving en banden.vanaf €119",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw128ti-320.png",
+      "summary": "baseline-bmw128ti-320-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "conflict",
+      "contentWidth": 204,
+      "height": 4232.5,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw128ti-320.png",
+      "summary": "final-bmw128ti-320-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 14 september 2022",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    },
+    {
+      "version": "final",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 360,
+      "matchStatus": "conflict",
+      "contentWidth": 244,
+      "height": 3815.5,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw128ti-360.png",
+      "summary": "final-bmw128ti-360-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 14 september 2022"
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 360,
+      "matchStatus": "legacy-no-match",
+      "contentWidth": 244,
+      "height": 3773.5,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkBMW 128TIBenzine1998 cc · 265 pkAPK 2027-03-15Type -Handmatige ",
+          "clientWidth": 244,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Handmatige controleAanbevolen vervolgstapVoertuig gedetecteerd, exacte catalogusmatch nog niet beves",
+          "clientWidth": 242,
+          "scrollWidth": 278,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageVermogenKoppelStage 1313 pk716 NmStage 2350 pk808 NmStage 3+419 pk914 NmOptiesDPF off / deleteR",
+          "clientWidth": 244,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptiesDPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.v",
+          "clientWidth": 252,
+          "scrollWidth": 258,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.vanaf €",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / snelheidsbegrenzerSnelheidslimiet aanpassen na controle van aandrijving en banden.vanaf €119",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw128ti-360.png",
+      "summary": "baseline-bmw128ti-360-summary.png",
+      "errors": []
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 390,
+      "matchStatus": "legacy-no-match",
+      "contentWidth": 274,
+      "height": 3421.5,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Handmatige controleAanbevolen vervolgstapVoertuig gedetecteerd, exacte catalogusmatch nog niet beves",
+          "clientWidth": 272,
+          "scrollWidth": 278,
+          "overflowX": "hidden"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw128ti-390.png",
+      "summary": "baseline-bmw128ti-390-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 390,
+      "matchStatus": "conflict",
+      "contentWidth": 274,
+      "height": 3437.5,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw128ti-390.png",
+      "summary": "final-bmw128ti-390-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 14 september 2022"
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 430,
+      "matchStatus": "legacy-no-match",
+      "contentWidth": 314,
+      "height": 3061,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw128ti-430.png",
+      "summary": "baseline-bmw128ti-430-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 430,
+      "matchStatus": "conflict",
+      "contentWidth": 314,
+      "height": 3244,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw128ti-430.png",
+      "summary": "final-bmw128ti-430-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 14 september 2022"
+    },
+    {
+      "version": "final",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 768,
+      "matchStatus": "conflict",
+      "contentWidth": 652,
+      "height": 2446,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw128ti-768.png",
+      "summary": "final-bmw128ti-768-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 14 september 2022"
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 768,
+      "matchStatus": "legacy-no-match",
+      "contentWidth": 652,
+      "height": 2558,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw128ti-768.png",
+      "summary": "baseline-bmw128ti-768-summary.png",
+      "errors": []
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 1024,
+      "matchStatus": "legacy-no-match",
+      "contentWidth": 908,
+      "height": 1984,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw128ti-1024.png",
+      "summary": "baseline-bmw128ti-1024-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 1024,
+      "matchStatus": "conflict",
+      "contentWidth": 908,
+      "height": 1916,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw128ti-1024.png",
+      "summary": "final-bmw128ti-1024-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 14 september 2022"
+    },
+    {
+      "version": "final",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "conflict",
+      "contentWidth": 1064,
+      "height": 1856,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw128ti-1440.png",
+      "summary": "final-bmw128ti-1440-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 14 september 2022",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw128ti",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "legacy-no-match",
+      "contentWidth": 1064,
+      "height": 1924,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw128ti-1440.png",
+      "summary": "baseline-bmw128ti-1440-summary.png",
+      "errors": []
+    },
+    {
+      "version": "baseline",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "legacy-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 204,
+      "height": 4138,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkVOLKSWAGEN GOLF GTIBenzine1984 cc · 230 pkAPK 2027-03-15Type -V",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkVOLKSWAGEN GOLF GTIBenzine1984 cc · 230 pkAPK 2027-03-15Type -",
+          "clientWidth": 202,
+          "scrollWidth": 215,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW check",
+          "clientWidth": 170,
+          "scrollWidth": 199,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Voertuig gevondenCatalog matchVolkswagen Golf GTI2.0 TSI EA888 · Bosch MED17 / MG1Bekijk tuning pagi",
+          "clientWidth": 204,
+          "scrollWidth": 230,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 202,
+          "scrollWidth": 325,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 162,
+          "scrollWidth": 305,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageVermogenKoppelStage 1300 pk450 NmStage 2335 pk500 NmStage 3+430 pk560 NmOptiesDPF off / deleteR",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptiesDPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.v",
+          "clientWidth": 252,
+          "scrollWidth": 258,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.vanaf €",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / snelheidsbegrenzerSnelheidslimiet aanpassen na controle van aandrijving en banden.vanaf €119",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-golf-gti-320.png",
+      "summary": "baseline-golf-gti-320-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "catalog-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 204,
+      "height": 4201.5,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 6,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-golf-gti-320.png",
+      "summary": "final-golf-gti-320-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 mei 2017",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "EGR off",
+        "quoteReachable": true,
+        "preserved": true
+      },
+      "detailsStatus": 200
+    },
+    {
+      "version": "final",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 360,
+      "matchStatus": "catalog-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 244,
+      "height": 3751,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 6,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-golf-gti-360.png",
+      "summary": "final-golf-gti-360-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 mei 2017"
+    },
+    {
+      "version": "baseline",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 360,
+      "matchStatus": "legacy-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 244,
+      "height": 4049,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkVOLKSWAGEN GOLF GTIBenzine1984 cc · 230 pkAPK 2027-03-15Type -V",
+          "clientWidth": 244,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 242,
+          "scrollWidth": 325,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 202,
+          "scrollWidth": 305,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageVermogenKoppelStage 1300 pk450 NmStage 2335 pk500 NmStage 3+430 pk560 NmOptiesDPF off / deleteR",
+          "clientWidth": 244,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptiesDPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.v",
+          "clientWidth": 252,
+          "scrollWidth": 258,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.vanaf €",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / snelheidsbegrenzerSnelheidslimiet aanpassen na controle van aandrijving en banden.vanaf €119",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-golf-gti-360.png",
+      "summary": "baseline-golf-gti-360-summary.png",
+      "errors": []
+    },
+    {
+      "version": "baseline",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 390,
+      "matchStatus": "legacy-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 274,
+      "height": 3797,
+      "overflow": [
+        {
+          "tag": "SECTION",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 272,
+          "scrollWidth": 325,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 232,
+          "scrollWidth": 305,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-golf-gti-390.png",
+      "summary": "baseline-golf-gti-390-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 390,
+      "matchStatus": "catalog-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 274,
+      "height": 3511,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 6,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-golf-gti-390.png",
+      "summary": "final-golf-gti-390-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 mei 2017"
+    },
+    {
+      "version": "baseline",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 430,
+      "matchStatus": "legacy-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 314,
+      "height": 3474,
+      "overflow": [
+        {
+          "tag": "SECTION",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 312,
+          "scrollWidth": 325,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 272,
+          "scrollWidth": 305,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-golf-gti-430.png",
+      "summary": "baseline-golf-gti-430-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 430,
+      "matchStatus": "catalog-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 314,
+      "height": 3305.000244140625,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 6,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-golf-gti-430.png",
+      "summary": "final-golf-gti-430-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 mei 2017"
+    },
+    {
+      "version": "baseline",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 768,
+      "matchStatus": "legacy-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 652,
+      "height": 2774,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-golf-gti-768.png",
+      "summary": "baseline-golf-gti-768-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 768,
+      "matchStatus": "catalog-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 652,
+      "height": 2439,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 6,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-golf-gti-768.png",
+      "summary": "final-golf-gti-768-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 mei 2017"
+    },
+    {
+      "version": "baseline",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 1024,
+      "matchStatus": "legacy-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 908,
+      "height": 2182,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-golf-gti-1024.png",
+      "summary": "baseline-golf-gti-1024-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 1024,
+      "matchStatus": "catalog-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 908,
+      "height": 1944,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 6,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-golf-gti-1024.png",
+      "summary": "final-golf-gti-1024-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 mei 2017"
+    },
+    {
+      "version": "baseline",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "legacy-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 1064,
+      "height": 2142,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-golf-gti-1440.png",
+      "summary": "baseline-golf-gti-1440-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "golf-gti",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "catalog-match",
+      "matchId": "vw-golf-20-tsi-ea888",
+      "contentWidth": 1064,
+      "height": 1924,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 6,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-golf-gti-1440.png",
+      "summary": "final-golf-gti-1440-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 mei 2017",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "EGR off",
+        "quoteReachable": true,
+        "preserved": true
+      },
+      "detailsStatus": 200
+    },
+    {
+      "version": "baseline",
+      "fixture": "transit-custom",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "legacy-match",
+      "matchId": "ford-transit-custom-1-6-tdci-2012",
+      "contentWidth": 204,
+      "height": 4021,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkFORD TRANSIT CUSTOMDiesel1995 cc · 105 pkAPK 2027-03-15Type -Vo",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkFORD TRANSIT CUSTOMDiesel1995 cc · 105 pkAPK 2027-03-15Type -",
+          "clientWidth": 202,
+          "scrollWidth": 215,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW check",
+          "clientWidth": 170,
+          "scrollWidth": 199,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Voertuig gevondenCatalog matchFord Transit Custom 1.6 TDCi1.6 TDCi · Bosch EDC17 / MD1Bekijk tuning ",
+          "clientWidth": 204,
+          "scrollWidth": 230,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 202,
+          "scrollWidth": 309,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 162,
+          "scrollWidth": 289,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageVermogenKoppelStage 1140 pk320 NmStage 2155 pk360 NmStage 3+175 pk400 NmOptiesDPF off / deleteR",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptiesDPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.v",
+          "clientWidth": 252,
+          "scrollWidth": 258,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.vanaf €",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / snelheidsbegrenzerSnelheidslimiet aanpassen na controle van aandrijving en banden.vanaf €119",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/ford-transit-custom-1-6-tdci-2012",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-transit-custom-320.png",
+      "summary": "baseline-transit-custom-320-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "transit-custom",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "conflict",
+      "contentWidth": 204,
+      "height": 4140.5,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-transit-custom-320.png",
+      "summary": "final-transit-custom-320-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 29 april 2019",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    },
+    {
+      "version": "baseline",
+      "fixture": "transit-custom",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "legacy-match",
+      "matchId": "ford-transit-custom-1-6-tdci-2012",
+      "contentWidth": 1064,
+      "height": 2063,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/ford-transit-custom-1-6-tdci-2012",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-transit-custom-1440.png",
+      "summary": "baseline-transit-custom-1440-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "transit-custom",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "conflict",
+      "contentWidth": 1064,
+      "height": 1856,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-transit-custom-1440.png",
+      "summary": "final-transit-custom-1440-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 29 april 2019",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    },
+    {
+      "version": "baseline",
+      "fixture": "transit-connect",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "legacy-match",
+      "matchId": "ford-transit-1-6-tdci-2000",
+      "contentWidth": 204,
+      "height": 3997,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkFORD TRANSIT CONNECTDiesel1499 cc · 100 pkAPK 2027-03-15Type -V",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkFORD TRANSIT CONNECTDiesel1499 cc · 100 pkAPK 2027-03-15Type -",
+          "clientWidth": 202,
+          "scrollWidth": 215,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW check",
+          "clientWidth": 170,
+          "scrollWidth": 199,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Voertuig gevondenCatalog matchFord Transit 1.6 TDCi1.6 TDCi · Bosch EDC17 / MD1Bekijk tuning paginaP",
+          "clientWidth": 204,
+          "scrollWidth": 230,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 202,
+          "scrollWidth": 309,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 162,
+          "scrollWidth": 289,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageVermogenKoppelStage 1140 pk320 NmStage 2155 pk360 NmStage 3+175 pk400 NmOptiesDPF off / deleteR",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptiesDPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.v",
+          "clientWidth": 252,
+          "scrollWidth": 258,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.vanaf €",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / snelheidsbegrenzerSnelheidslimiet aanpassen na controle van aandrijving en banden.vanaf €119",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/ford-transit-1-6-tdci-2000",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-transit-connect-320.png",
+      "summary": "baseline-transit-connect-320-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "transit-connect",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "no-match",
+      "contentWidth": 204,
+      "height": 4140.5,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-transit-connect-320.png",
+      "summary": "final-transit-connect-320-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 17 oktober 2018",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    },
+    {
+      "version": "final",
+      "fixture": "transit-connect",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "no-match",
+      "contentWidth": 1064,
+      "height": 1856,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-transit-connect-1440.png",
+      "summary": "final-transit-connect-1440-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 17 oktober 2018",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    },
+    {
+      "version": "baseline",
+      "fixture": "transit-connect",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "legacy-match",
+      "matchId": "ford-transit-1-6-tdci-2000",
+      "contentWidth": 1064,
+      "height": 2063,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/ford-transit-1-6-tdci-2000",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-transit-connect-1440.png",
+      "summary": "baseline-transit-connect-1440-summary.png",
+      "errors": []
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw320d",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "legacy-match",
+      "matchId": "bmw-320d-b47",
+      "contentWidth": 204,
+      "height": 4086,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkBMW 320DDiesel1995 cc · 190 pkAPK 2027-03-15Type -Voertuig gevo",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkBMW 320DDiesel1995 cc · 190 pkAPK 2027-03-15Type -",
+          "clientWidth": 202,
+          "scrollWidth": 215,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW check",
+          "clientWidth": 170,
+          "scrollWidth": 199,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Voertuig gevondenCatalog matchBMW 3 Serie 320d2.0d B47 · Bosch EDC17 / MD1Bekijk tuning paginaPrijsi",
+          "clientWidth": 204,
+          "scrollWidth": 230,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 202,
+          "scrollWidth": 325,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 162,
+          "scrollWidth": 305,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageVermogenKoppelStage 1225 pk470 NmStage 2245 pk520 NmStage 3+280 pk600 NmOptiesDPF off / deleteR",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptiesDPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.v",
+          "clientWidth": 252,
+          "scrollWidth": 258,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.vanaf €",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / snelheidsbegrenzerSnelheidslimiet aanpassen na controle van aandrijving en banden.vanaf €119",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/bmw-320d-b47",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw320d-320.png",
+      "summary": "baseline-bmw320d-320-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "bmw320d",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "catalog-match",
+      "matchId": "bmw-320d-b47",
+      "contentWidth": 204,
+      "height": 4601.5,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/bmw-320d-b47",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw320d-320.png",
+      "summary": "final-bmw320d-320-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 september 2017",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      },
+      "detailsStatus": 200
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw320d",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "legacy-match",
+      "matchId": "bmw-320d-b47",
+      "contentWidth": 1064,
+      "height": 2142,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/bmw-320d-b47",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw320d-1440.png",
+      "summary": "baseline-bmw320d-1440-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "bmw320d",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "catalog-match",
+      "matchId": "bmw-320d-b47",
+      "contentWidth": 1064,
+      "height": 2156,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/bmw-320d-b47",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw320d-1440.png",
+      "summary": "final-bmw320d-1440-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 september 2017",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      },
+      "detailsStatus": 200
+    },
+    {
+      "version": "baseline",
+      "fixture": "golf-r",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "legacy-match",
+      "matchId": "volkswagen-golf-2-0-tsi-r-2012",
+      "contentWidth": 204,
+      "height": 4118,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkVOLKSWAGEN GOLF RBenzine1984 cc · 300 pkAPK 2027-03-15Type -Voe",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkVOLKSWAGEN GOLF RBenzine1984 cc · 300 pkAPK 2027-03-15Type -",
+          "clientWidth": 202,
+          "scrollWidth": 215,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW check",
+          "clientWidth": 170,
+          "scrollWidth": 199,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Voertuig gevondenCatalog matchVolkswagen Golf 2.0 TSI R2.0 TSI R · Bosch MED17 / MG1Bekijk tuning pa",
+          "clientWidth": 204,
+          "scrollWidth": 230,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 202,
+          "scrollWidth": 325,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 162,
+          "scrollWidth": 305,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageVermogenKoppelStage 1365 pk480 NmStage 2425 pk540 NmStage 3+510 pk620 NmOptiesDPF off / deleteR",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptiesDPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.v",
+          "clientWidth": 252,
+          "scrollWidth": 258,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.vanaf €",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / snelheidsbegrenzerSnelheidslimiet aanpassen na controle van aandrijving en banden.vanaf €119",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/volkswagen-golf-2-0-tsi-r-2012",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-golf-r-320.png",
+      "summary": "baseline-golf-r-320-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "golf-r",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "ambiguous",
+      "contentWidth": 204,
+      "height": 4108.5,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-golf-r-320.png",
+      "summary": "final-golf-r-320-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 september 2017",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    },
+    {
+      "version": "baseline",
+      "fixture": "golf-r",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "legacy-match",
+      "matchId": "volkswagen-golf-2-0-tsi-r-2012",
+      "contentWidth": 1064,
+      "height": 2142,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/volkswagen-golf-2-0-tsi-r-2012",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-golf-r-1440.png",
+      "summary": "baseline-golf-r-1440-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "golf-r",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "ambiguous",
+      "contentWidth": 1064,
+      "height": 1856,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-golf-r-1440.png",
+      "summary": "final-golf-r-1440-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 12 september 2017",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    },
+    {
+      "version": "baseline",
+      "fixture": "focus-st",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "legacy-match",
+      "matchId": "ford-focus-st-20-ecoboost",
+      "contentWidth": 204,
+      "height": 3965.000244140625,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkFORD FOCUS STBenzine1999 cc · 250 pkAPK 2027-03-15Type -Voertui",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW checkFORD FOCUS STBenzine1999 cc · 250 pkAPK 2027-03-15Type -",
+          "clientWidth": 202,
+          "scrollWidth": 215,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Gedetecteerd voertuignieuwe RDW check",
+          "clientWidth": 170,
+          "scrollWidth": 199,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Voertuig gevondenCatalog matchFord Focus ST2.0 EcoBoost · Bosch MED17Bekijk tuning paginaPrijsindica",
+          "clientWidth": 204,
+          "scrollWidth": 230,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 202,
+          "scrollWidth": 309,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aanbevolen pakketBeste daily setupStage 1 is voor dagelijks gebruik meestal het beste startpunt: dui",
+          "clientWidth": 162,
+          "scrollWidth": 289,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageVermogenKoppelStage 1285 pk430 NmStage 2315 pk470 NmStage 3+380 pk540 NmOptiesDPF off / deleteR",
+          "clientWidth": 204,
+          "scrollWidth": 259,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptiesDPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.v",
+          "clientWidth": 252,
+          "scrollWidth": 258,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteRoetfilter software-oplossing voor off-road/export waar wettelijk toegestaan.vanaf €",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / snelheidsbegrenzerSnelheidslimiet aanpassen na controle van aandrijving en banden.vanaf €119",
+          "clientWidth": 220,
+          "scrollWidth": 242,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/ford-focus-st-20-ecoboost",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-focus-st-320.png",
+      "summary": "baseline-focus-st-320-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "focus-st",
+      "locale": "nl",
+      "width": 320,
+      "matchStatus": "catalog-match",
+      "matchId": "ford-focus-st-20-ecoboost",
+      "contentWidth": 204,
+      "height": 3810.5,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 5,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/ford-focus-st-20-ecoboost",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-focus-st-320.png",
+      "summary": "final-focus-st-320-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 10 augustus 2015",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "EGR off",
+        "quoteReachable": true,
+        "preserved": true
+      },
+      "detailsStatus": 200
+    },
+    {
+      "version": "baseline",
+      "fixture": "focus-st",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "legacy-match",
+      "matchId": "ford-focus-st-20-ecoboost",
+      "contentWidth": 1064,
+      "height": 2063,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/ford-focus-st-20-ecoboost",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-focus-st-1440.png",
+      "summary": "baseline-focus-st-1440-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "focus-st",
+      "locale": "nl",
+      "width": 1440,
+      "matchStatus": "catalog-match",
+      "matchId": "ford-focus-st-20-ecoboost",
+      "contentWidth": 1064,
+      "height": 1749,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 5,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/ford-focus-st-20-ecoboost",
+          "text": "Bekijk tuning pagina"
+        }
+      ],
+      "whatsappLinks": 2,
+      "plateBeforeManual": true,
+      "screenshot": "final-focus-st-1440.png",
+      "summary": "final-focus-st-1440-summary.png",
+      "errors": [],
+      "firstRegistration": "Eerste toelating: 10 augustus 2015",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "EGR off",
+        "quoteReachable": true,
+        "preserved": true
+      },
+      "detailsStatus": 200
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw128ti",
+      "locale": "en",
+      "width": 320,
+      "matchStatus": "legacy-no-match",
+      "contentWidth": 204,
+      "height": 4373,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Detected vehiclefresh RDW checkBMW 128TIBenzine1998 cc · 265 hpAPK 2027-03-15Type -Manual reviewReco",
+          "clientWidth": 204,
+          "scrollWidth": 210,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "StagePowerTorqueStage 1313 hp716 NmStage 2350 hp808 NmStage 3+419 hp914 NmOptionsDPF off / deleteDPF",
+          "clientWidth": 204,
+          "scrollWidth": 210,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "StagePowerTorqueStage 1313 hp716 NmStage 2350 hp808 NmStage 3+419 hp914 Nm",
+          "clientWidth": 203,
+          "scrollWidth": 221,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "OptionsDPF off / deleteDPF software solution for off-road/export use where legally permitted.from €1",
+          "clientWidth": 203,
+          "scrollWidth": 209,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteDPF software solution for off-road/export use where legally permitted.from €185AdBlu",
+          "clientWidth": 171,
+          "scrollWidth": 193,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "DPF off / deleteDPF software solution for off-road/export use where legally permitted.from €185",
+          "clientWidth": 171,
+          "scrollWidth": 179,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "AdBlue offAdBlue/SCR diagnostics and software solution where legally permitted.from €199",
+          "clientWidth": 171,
+          "scrollWidth": 179,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "SCR deleteSCR software solution after diagnostics and legal check.from €219",
+          "clientWidth": 171,
+          "scrollWidth": 175,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Immo offImmobilizer service for ECU replacement and diagnostic repair.from €169",
+          "clientWidth": 171,
+          "scrollWidth": 181,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Vmax / speed limiterSpeed limit adjustment after drivetrain and tire suitability check.from €119",
+          "clientWidth": 171,
+          "scrollWidth": 175,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Launch controlLaunch strategy for supported ECU/TCU combinations.from €165",
+          "clientWidth": 171,
+          "scrollWidth": 190,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Pops & Bangs / CrackleCrackle calibration for petrol engines, configured conservatively.from €149",
+          "clientWidth": 171,
+          "scrollWidth": 193,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "DSG / TCU tuningShift strategy, torque limits and response for DSG/ZF/TCU.from €249",
+          "clientWidth": 171,
+          "scrollWidth": 185,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw128ti-en-320.png",
+      "summary": "baseline-bmw128ti-en-320-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "bmw128ti",
+      "locale": "en",
+      "width": 320,
+      "matchStatus": "conflict",
+      "contentWidth": 204,
+      "height": 4077,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw128ti-en-320.png",
+      "summary": "final-bmw128ti-en-320-summary.png",
+      "errors": [],
+      "firstRegistration": "First registration: 14 September 2022",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    },
+    {
+      "version": "baseline",
+      "fixture": "bmw128ti",
+      "locale": "pl",
+      "width": 320,
+      "matchStatus": "legacy-no-match",
+      "contentWidth": 204,
+      "height": 4291,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "Wykryty pojazdnowe sprawdzenie RDWBMW 128TIBenzine1998 cc · 265 KMAPK 2027-03-15Type -Ręczna weryfik",
+          "clientWidth": 204,
+          "scrollWidth": 219,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Wykryty pojazdnowe sprawdzenie RDW",
+          "clientWidth": 170,
+          "scrollWidth": 181,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "Ręczna weryfikacjaPolecany następny krokAuto wykryte, dokładne dopasowanie w katalogu wymaga potwier",
+          "clientWidth": 202,
+          "scrollWidth": 245,
+          "overflowX": "hidden"
+        },
+        {
+          "tag": "DIV",
+          "text": "StageMocMomentStage 1313 KM716 NmStage 2350 KM808 NmStage 3+419 KM914 NmOpcjeDPF off / deleteProgram",
+          "clientWidth": 204,
+          "scrollWidth": 219,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "DIV",
+          "text": "DPF off / deleteProgramowe rozwiązanie DPF do off-road/exportu tam, gdzie prawo na to pozwala.od €18",
+          "clientWidth": 185,
+          "scrollWidth": 193,
+          "overflowX": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Immo offUsługa immobilizera przy wymianie ECU i naprawach diagnostycznych.od €169",
+          "clientWidth": 185,
+          "scrollWidth": 193,
+          "overflowX": "visible"
+        }
+      ],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 9,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "baseline-bmw128ti-pl-320.png",
+      "summary": "baseline-bmw128ti-pl-320-summary.png",
+      "errors": []
+    },
+    {
+      "version": "final",
+      "fixture": "bmw128ti",
+      "locale": "pl",
+      "width": 320,
+      "matchStatus": "conflict",
+      "contentWidth": 204,
+      "height": 4385,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 3,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 1,
+      "plateBeforeManual": true,
+      "screenshot": "final-bmw128ti-pl-320.png",
+      "summary": "final-bmw128ti-pl-320-summary.png",
+      "errors": [],
+      "firstRegistration": "Pierwsza rejestracja: 14 września 2022",
+      "interaction": {
+        "stage": "Stage 2",
+        "option": "DPF off / delete",
+        "quoteReachable": true,
+        "preserved": true
+      }
+    }
+  ],
+  "detailPages": [
+    {
+      "fixture": "golf-gti",
+      "width": 320,
+      "contentWidth": 320,
+      "height": 6301,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 0,
+      "checkboxes": 6,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/audi-a3-20-tdi",
+          "text": "Bekijk Audi A3 2.0 TDI"
+        },
+        {
+          "href": "/nl/vehicles/volkswagen-golf-7-16-tdi",
+          "text": "Bekijk Volkswagen Golf 7 1.6 TDI"
+        },
+        {
+          "href": "/nl/vehicles/volkswagen-golf-7-20-tdi",
+          "text": "Bekijk Volkswagen Golf 7 2.0 TDI"
+        }
+      ],
+      "whatsappLinks": 5,
+      "quote": {
+        "kind": "from",
+        "amountCents": 34900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "pricing-v2:vw-golf-20-tsi-ea888:stage1-advanced",
+        "confirmationRequired": true
+      },
+      "offer": {
+        "@type": "Offer",
+        "price": "349.00",
+        "priceCurrency": "EUR",
+        "description": "Vanaf € 349",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "minPrice": "349.00",
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": true
+        },
+        "url": "https://power.noordtune.nl/nl/volkswagen/golf-gti/2-0-tsi/stage-1",
+        "seller": {
+          "@type": "AutoRepair",
+          "name": "NoordTune",
+          "url": "https://www.noordtune.nl",
+          "telephone": "+31685759600",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "A. Vogelstraat 1",
+            "postalCode": "9406 XD",
+            "addressLocality": "Assen",
+            "addressCountry": "NL"
+          }
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stage 1 Volkswagen Golf GTI chiptuning",
+          "provider": {
+            "@type": "AutoRepair",
+            "name": "NoordTune",
+            "url": "https://www.noordtune.nl",
+            "telephone": "+31685759600",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "A. Vogelstraat 1",
+              "postalCode": "9406 XD",
+              "addressLocality": "Assen",
+              "addressCountry": "NL"
+            }
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Assen"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Drenthe"
+            },
+            {
+              "@type": "City",
+              "name": "Groningen"
+            },
+            {
+              "@type": "Country",
+              "name": "Netherlands"
+            }
+          ],
+          "serviceType": [
+            "Chiptuning",
+            "ECU tuning",
+            "Stage tuning"
+          ],
+          "url": "https://power.noordtune.nl/nl/volkswagen/golf-gti/2-0-tsi/stage-1"
+        }
+      },
+      "screenshot": "final-detail-golf-gti-320.png"
+    },
+    {
+      "fixture": "golf-gti",
+      "width": 1440,
+      "contentWidth": 1180,
+      "height": 2356,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 0,
+      "checkboxes": 6,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/audi-a3-20-tdi",
+          "text": "Bekijk Audi A3 2.0 TDI"
+        },
+        {
+          "href": "/nl/vehicles/volkswagen-golf-7-16-tdi",
+          "text": "Bekijk Volkswagen Golf 7 1.6 TDI"
+        },
+        {
+          "href": "/nl/vehicles/volkswagen-golf-7-20-tdi",
+          "text": "Bekijk Volkswagen Golf 7 2.0 TDI"
+        }
+      ],
+      "whatsappLinks": 5,
+      "quote": {
+        "kind": "from",
+        "amountCents": 34900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "pricing-v2:vw-golf-20-tsi-ea888:stage1-advanced",
+        "confirmationRequired": true
+      },
+      "offer": {
+        "@type": "Offer",
+        "price": "349.00",
+        "priceCurrency": "EUR",
+        "description": "Vanaf € 349",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "minPrice": "349.00",
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": true
+        },
+        "url": "https://power.noordtune.nl/nl/volkswagen/golf-gti/2-0-tsi/stage-1",
+        "seller": {
+          "@type": "AutoRepair",
+          "name": "NoordTune",
+          "url": "https://www.noordtune.nl",
+          "telephone": "+31685759600",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "A. Vogelstraat 1",
+            "postalCode": "9406 XD",
+            "addressLocality": "Assen",
+            "addressCountry": "NL"
+          }
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stage 1 Volkswagen Golf GTI chiptuning",
+          "provider": {
+            "@type": "AutoRepair",
+            "name": "NoordTune",
+            "url": "https://www.noordtune.nl",
+            "telephone": "+31685759600",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "A. Vogelstraat 1",
+              "postalCode": "9406 XD",
+              "addressLocality": "Assen",
+              "addressCountry": "NL"
+            }
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Assen"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Drenthe"
+            },
+            {
+              "@type": "City",
+              "name": "Groningen"
+            },
+            {
+              "@type": "Country",
+              "name": "Netherlands"
+            }
+          ],
+          "serviceType": [
+            "Chiptuning",
+            "ECU tuning",
+            "Stage tuning"
+          ],
+          "url": "https://power.noordtune.nl/nl/volkswagen/golf-gti/2-0-tsi/stage-1"
+        }
+      },
+      "screenshot": "final-detail-golf-gti-1440.png"
+    },
+    {
+      "fixture": "bmw320d",
+      "width": 320,
+      "contentWidth": 320,
+      "height": 6663,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 0,
+      "checkboxes": 8,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/bmw-x3-e83-20d",
+          "text": "Bekijk BMW X3 2.0d"
+        },
+        {
+          "href": "/nl/vehicles/bmw-1-series-f20-f21-118i",
+          "text": "Bekijk BMW 1 Serie F20/F21 118i"
+        },
+        {
+          "href": "/nl/vehicles/bmw-1-series-f20-f21-118d",
+          "text": "Bekijk BMW 1 Serie F20/F21 118d"
+        }
+      ],
+      "whatsappLinks": 5,
+      "quote": {
+        "kind": "on-request",
+        "currency": "EUR",
+        "reasonCode": "ecu-access-review",
+        "conditionalBudgetFromCents": 70000
+      },
+      "offer": {
+        "@type": "Offer",
+        "description": "Prijs op aanvraag",
+        "url": "https://power.noordtune.nl/nl/bmw/3-series/320d/stage-1",
+        "seller": {
+          "@type": "AutoRepair",
+          "name": "NoordTune",
+          "url": "https://www.noordtune.nl",
+          "telephone": "+31685759600",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "A. Vogelstraat 1",
+            "postalCode": "9406 XD",
+            "addressLocality": "Assen",
+            "addressCountry": "NL"
+          }
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stage 1 BMW 3 Serie 320d chiptuning",
+          "provider": {
+            "@type": "AutoRepair",
+            "name": "NoordTune",
+            "url": "https://www.noordtune.nl",
+            "telephone": "+31685759600",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "A. Vogelstraat 1",
+              "postalCode": "9406 XD",
+              "addressLocality": "Assen",
+              "addressCountry": "NL"
+            }
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Assen"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Drenthe"
+            },
+            {
+              "@type": "City",
+              "name": "Groningen"
+            },
+            {
+              "@type": "Country",
+              "name": "Netherlands"
+            }
+          ],
+          "serviceType": [
+            "Chiptuning",
+            "ECU tuning",
+            "Stage tuning"
+          ],
+          "url": "https://power.noordtune.nl/nl/bmw/3-series/320d/stage-1"
+        }
+      },
+      "screenshot": "final-detail-bmw320d-320.png"
+    },
+    {
+      "fixture": "bmw320d",
+      "width": 1440,
+      "contentWidth": 1180,
+      "height": 2298,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 0,
+      "checkboxes": 8,
+      "charts": 0,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/bmw-x3-e83-20d",
+          "text": "Bekijk BMW X3 2.0d"
+        },
+        {
+          "href": "/nl/vehicles/bmw-1-series-f20-f21-118i",
+          "text": "Bekijk BMW 1 Serie F20/F21 118i"
+        },
+        {
+          "href": "/nl/vehicles/bmw-1-series-f20-f21-118d",
+          "text": "Bekijk BMW 1 Serie F20/F21 118d"
+        }
+      ],
+      "whatsappLinks": 5,
+      "quote": {
+        "kind": "on-request",
+        "currency": "EUR",
+        "reasonCode": "ecu-access-review",
+        "conditionalBudgetFromCents": 70000
+      },
+      "offer": {
+        "@type": "Offer",
+        "description": "Prijs op aanvraag",
+        "url": "https://power.noordtune.nl/nl/bmw/3-series/320d/stage-1",
+        "seller": {
+          "@type": "AutoRepair",
+          "name": "NoordTune",
+          "url": "https://www.noordtune.nl",
+          "telephone": "+31685759600",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "A. Vogelstraat 1",
+            "postalCode": "9406 XD",
+            "addressLocality": "Assen",
+            "addressCountry": "NL"
+          }
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stage 1 BMW 3 Serie 320d chiptuning",
+          "provider": {
+            "@type": "AutoRepair",
+            "name": "NoordTune",
+            "url": "https://www.noordtune.nl",
+            "telephone": "+31685759600",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "A. Vogelstraat 1",
+              "postalCode": "9406 XD",
+              "addressLocality": "Assen",
+              "addressCountry": "NL"
+            }
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Assen"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Drenthe"
+            },
+            {
+              "@type": "City",
+              "name": "Groningen"
+            },
+            {
+              "@type": "Country",
+              "name": "Netherlands"
+            }
+          ],
+          "serviceType": [
+            "Chiptuning",
+            "ECU tuning",
+            "Stage tuning"
+          ],
+          "url": "https://power.noordtune.nl/nl/bmw/3-series/320d/stage-1"
+        }
+      },
+      "screenshot": "final-detail-bmw320d-1440.png"
+    },
+    {
+      "fixture": "golf-r",
+      "width": 320,
+      "contentWidth": 320,
+      "height": 5993,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 0,
+      "checkboxes": 5,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk Volkswagen Golf GTI"
+        },
+        {
+          "href": "/nl/vehicles/audi-a3-20-tdi",
+          "text": "Bekijk Audi A3 2.0 TDI"
+        },
+        {
+          "href": "/nl/vehicles/volkswagen-golf-7-16-tdi",
+          "text": "Bekijk Volkswagen Golf 7 1.6 TDI"
+        }
+      ],
+      "whatsappLinks": 5,
+      "quote": {
+        "kind": "on-request",
+        "currency": "EUR",
+        "reasonCode": "generated-configuration-unreviewed"
+      },
+      "offer": {
+        "@type": "Offer",
+        "description": "Prijs op aanvraag",
+        "url": "https://power.noordtune.nl/nl/volkswagen/golf-7-r/2-0-tsi-300/stage-1",
+        "seller": {
+          "@type": "AutoRepair",
+          "name": "NoordTune",
+          "url": "https://www.noordtune.nl",
+          "telephone": "+31685759600",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "A. Vogelstraat 1",
+            "postalCode": "9406 XD",
+            "addressLocality": "Assen",
+            "addressCountry": "NL"
+          }
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stage 1 Volkswagen Golf 7 R chiptuning",
+          "provider": {
+            "@type": "AutoRepair",
+            "name": "NoordTune",
+            "url": "https://www.noordtune.nl",
+            "telephone": "+31685759600",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "A. Vogelstraat 1",
+              "postalCode": "9406 XD",
+              "addressLocality": "Assen",
+              "addressCountry": "NL"
+            }
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Assen"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Drenthe"
+            },
+            {
+              "@type": "City",
+              "name": "Groningen"
+            },
+            {
+              "@type": "Country",
+              "name": "Netherlands"
+            }
+          ],
+          "serviceType": [
+            "Chiptuning",
+            "ECU tuning",
+            "Stage tuning"
+          ],
+          "url": "https://power.noordtune.nl/nl/volkswagen/golf-7-r/2-0-tsi-300/stage-1"
+        }
+      },
+      "screenshot": "final-detail-golf-r-320.png"
+    },
+    {
+      "fixture": "golf-r",
+      "width": 1440,
+      "contentWidth": 1180,
+      "height": 2214,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 0,
+      "checkboxes": 5,
+      "charts": 1,
+      "detailsLinks": [
+        {
+          "href": "/nl/vehicles/vw-golf-20-tsi-ea888",
+          "text": "Bekijk Volkswagen Golf GTI"
+        },
+        {
+          "href": "/nl/vehicles/audi-a3-20-tdi",
+          "text": "Bekijk Audi A3 2.0 TDI"
+        },
+        {
+          "href": "/nl/vehicles/volkswagen-golf-7-16-tdi",
+          "text": "Bekijk Volkswagen Golf 7 1.6 TDI"
+        }
+      ],
+      "whatsappLinks": 5,
+      "quote": {
+        "kind": "on-request",
+        "currency": "EUR",
+        "reasonCode": "generated-configuration-unreviewed"
+      },
+      "offer": {
+        "@type": "Offer",
+        "description": "Prijs op aanvraag",
+        "url": "https://power.noordtune.nl/nl/volkswagen/golf-7-r/2-0-tsi-300/stage-1",
+        "seller": {
+          "@type": "AutoRepair",
+          "name": "NoordTune",
+          "url": "https://www.noordtune.nl",
+          "telephone": "+31685759600",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "A. Vogelstraat 1",
+            "postalCode": "9406 XD",
+            "addressLocality": "Assen",
+            "addressCountry": "NL"
+          }
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stage 1 Volkswagen Golf 7 R chiptuning",
+          "provider": {
+            "@type": "AutoRepair",
+            "name": "NoordTune",
+            "url": "https://www.noordtune.nl",
+            "telephone": "+31685759600",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "A. Vogelstraat 1",
+              "postalCode": "9406 XD",
+              "addressLocality": "Assen",
+              "addressCountry": "NL"
+            }
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Assen"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Drenthe"
+            },
+            {
+              "@type": "City",
+              "name": "Groningen"
+            },
+            {
+              "@type": "Country",
+              "name": "Netherlands"
+            }
+          ],
+          "serviceType": [
+            "Chiptuning",
+            "ECU tuning",
+            "Stage tuning"
+          ],
+          "url": "https://power.noordtune.nl/nl/volkswagen/golf-7-r/2-0-tsi-300/stage-1"
+        }
+      },
+      "screenshot": "final-detail-golf-r-1440.png"
+    },
+    {
+      "fixture": "focus-st",
+      "width": 320,
+      "contentWidth": 320,
+      "height": 5651,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 0,
+      "checkboxes": 5,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 5,
+      "quote": {
+        "kind": "from",
+        "amountCents": 34900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "pricing-v2:ford-focus-st-20-ecoboost:stage1-advanced",
+        "confirmationRequired": true
+      },
+      "offer": {
+        "@type": "Offer",
+        "price": "349.00",
+        "priceCurrency": "EUR",
+        "description": "Vanaf € 349",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "minPrice": "349.00",
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": true
+        },
+        "url": "https://power.noordtune.nl/nl/ford/focus-st/2-0-ecoboost/stage-1",
+        "seller": {
+          "@type": "AutoRepair",
+          "name": "NoordTune",
+          "url": "https://www.noordtune.nl",
+          "telephone": "+31685759600",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "A. Vogelstraat 1",
+            "postalCode": "9406 XD",
+            "addressLocality": "Assen",
+            "addressCountry": "NL"
+          }
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stage 1 Ford Focus ST chiptuning",
+          "provider": {
+            "@type": "AutoRepair",
+            "name": "NoordTune",
+            "url": "https://www.noordtune.nl",
+            "telephone": "+31685759600",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "A. Vogelstraat 1",
+              "postalCode": "9406 XD",
+              "addressLocality": "Assen",
+              "addressCountry": "NL"
+            }
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Assen"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Drenthe"
+            },
+            {
+              "@type": "City",
+              "name": "Groningen"
+            },
+            {
+              "@type": "Country",
+              "name": "Netherlands"
+            }
+          ],
+          "serviceType": [
+            "Chiptuning",
+            "ECU tuning",
+            "Stage tuning"
+          ],
+          "url": "https://power.noordtune.nl/nl/ford/focus-st/2-0-ecoboost/stage-1"
+        }
+      },
+      "screenshot": "final-detail-focus-st-320.png"
+    },
+    {
+      "fixture": "focus-st",
+      "width": 1440,
+      "contentWidth": 1180,
+      "height": 2078,
+      "overflow": [],
+      "internalScrollbars": [],
+      "pageOverflow": false,
+      "stageRows": 0,
+      "checkboxes": 5,
+      "charts": 1,
+      "detailsLinks": [],
+      "whatsappLinks": 5,
+      "quote": {
+        "kind": "from",
+        "amountCents": 34900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "pricing-v2:ford-focus-st-20-ecoboost:stage1-advanced",
+        "confirmationRequired": true
+      },
+      "offer": {
+        "@type": "Offer",
+        "price": "349.00",
+        "priceCurrency": "EUR",
+        "description": "Vanaf € 349",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "minPrice": "349.00",
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": true
+        },
+        "url": "https://power.noordtune.nl/nl/ford/focus-st/2-0-ecoboost/stage-1",
+        "seller": {
+          "@type": "AutoRepair",
+          "name": "NoordTune",
+          "url": "https://www.noordtune.nl",
+          "telephone": "+31685759600",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "A. Vogelstraat 1",
+            "postalCode": "9406 XD",
+            "addressLocality": "Assen",
+            "addressCountry": "NL"
+          }
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stage 1 Ford Focus ST chiptuning",
+          "provider": {
+            "@type": "AutoRepair",
+            "name": "NoordTune",
+            "url": "https://www.noordtune.nl",
+            "telephone": "+31685759600",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "A. Vogelstraat 1",
+              "postalCode": "9406 XD",
+              "addressLocality": "Assen",
+              "addressCountry": "NL"
+            }
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Assen"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Drenthe"
+            },
+            {
+              "@type": "City",
+              "name": "Groningen"
+            },
+            {
+              "@type": "Country",
+              "name": "Netherlands"
+            }
+          ],
+          "serviceType": [
+            "Chiptuning",
+            "ECU tuning",
+            "Stage tuning"
+          ],
+          "url": "https://power.noordtune.nl/nl/ford/focus-st/2-0-ecoboost/stage-1"
+        }
+      },
+      "screenshot": "final-detail-focus-st-1440.png"
+    }
+  ],
+  "errors": [],
+  "browser": "152.0.7977.83",
+  "summary": {
+    "lookupComparisons": 26,
+    "finalOverflowCases": [],
+    "finalInternalScrollbarCases": 0,
+    "finalPageErrors": [],
+    "detailOverflowCases": []
+  }
+}

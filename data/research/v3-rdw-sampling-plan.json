@@ -1,0 +1,4760 @@
+{
+  "schemaVersion": 1,
+  "baselineHead": "515fb4fa765cefc8f1c8d59a46c6daa7536dc727",
+  "createdAt": "2026-09-16T17:04:58.881Z",
+  "method": "Top 250 frozen V2 priority groups. Three four-registration slices at the beginning, middle and end of the group ordered by first admission and then registration. Offsets use the frozen aggregate count; at most 12 registrations per group (3000 total). No source/profile outcome is used. A bounded purposive diversity sample, not a random or complete output census.",
+  "qaSelection": "Keep all prior 222 records. Add the first unseen verified middle-slice registration in priority order, then beginning/end as needed, until 400. Preselected before the fuel join and before V3 profile promotion. No substitutions based on tuning outcome. Prior rows retain their original facts and verification.",
+  "populationWhere": "export_indicator = 'Nee' AND (voertuigsoort = 'Personenauto' OR (voertuigsoort = 'Bedrijfsauto' AND toegestane_maximum_massa_voertuig <= 3500))",
+  "groups": [
+    {
+      "id": "rdw-group-5be285a5e27a9c82",
+      "frequencyRank": 38,
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER",
+      "displacementCc": 1950,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 26860,
+      "priorityRank": 1,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        13428,
+        26856
+      ]
+    },
+    {
+      "id": "rdw-group-17f3b2f61226479e",
+      "frequencyRank": 226,
+      "make": "VOLKSWAGEN",
+      "model": "TRANSPORTER",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 9030,
+      "priorityRank": 2,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        4513,
+        9026
+      ]
+    },
+    {
+      "id": "rdw-group-f57003b03567c51c",
+      "frequencyRank": 53,
+      "make": "VOLKSWAGEN",
+      "model": "CADDY MODIFIED PARTITION WALL",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 22215,
+      "priorityRank": 3,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        11105,
+        22211
+      ]
+    },
+    {
+      "id": "rdw-group-a39db165ad899984",
+      "frequencyRank": 59,
+      "make": "VOLKSWAGEN",
+      "model": "CRAFTER",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 21129,
+      "priorityRank": 4,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        10562,
+        21125
+      ]
+    },
+    {
+      "id": "rdw-group-94426727a9f36d13",
+      "frequencyRank": 22,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 32004,
+      "priorityRank": 5,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        16000,
+        32000
+      ]
+    },
+    {
+      "id": "rdw-group-a57f2f6384a596ec",
+      "frequencyRank": 70,
+      "make": "VOLKSWAGEN",
+      "model": "CADDY",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 19862,
+      "priorityRank": 6,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        9929,
+        19858
+      ]
+    },
+    {
+      "id": "rdw-group-f6c3f2697db369f9",
+      "frequencyRank": 89,
+      "make": "RENAULT",
+      "model": "MASTER",
+      "displacementCc": 2299,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 17697,
+      "priorityRank": 7,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        8846,
+        17693
+      ]
+    },
+    {
+      "id": "rdw-group-f7cb79afea7b2503",
+      "frequencyRank": 65,
+      "make": "VOLKSWAGEN",
+      "model": "TRANSPORTER",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 20302,
+      "priorityRank": 8,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        10149,
+        20298
+      ]
+    },
+    {
+      "id": "rdw-group-d1857d043d5f69fb",
+      "frequencyRank": 104,
+      "make": "MERCEDES-BENZ",
+      "model": "VITO",
+      "displacementCc": 1950,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 15936,
+      "priorityRank": 9,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        7966,
+        15932
+      ]
+    },
+    {
+      "id": "rdw-group-75f61229206476f5",
+      "frequencyRank": 131,
+      "make": "OPEL",
+      "model": "VIVARO-B",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 13703,
+      "priorityRank": 10,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        6849,
+        13699
+      ]
+    },
+    {
+      "id": "rdw-group-154faa7a5809da5e",
+      "frequencyRank": 74,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 19326,
+      "priorityRank": 11,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        9661,
+        19322
+      ]
+    },
+    {
+      "id": "rdw-group-258c8eca67d14df6",
+      "frequencyRank": 81,
+      "make": "RENAULT",
+      "model": "CLIO",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 18358,
+      "priorityRank": 12,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        9177,
+        18354
+      ]
+    },
+    {
+      "id": "rdw-group-2d385fb18ad55ac8",
+      "frequencyRank": 84,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1390,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 17893,
+      "priorityRank": 13,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        8944,
+        17889
+      ]
+    },
+    {
+      "id": "rdw-group-a40242895671f2ad",
+      "frequencyRank": 176,
+      "make": "PEUGEOT",
+      "model": "PARTNER",
+      "displacementCc": 1560,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 11260,
+      "priorityRank": 14,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        5628,
+        11256
+      ]
+    },
+    {
+      "id": "rdw-group-444bd385f0e91f1f",
+      "frequencyRank": 186,
+      "make": "FORD",
+      "model": "TRANSIT",
+      "displacementCc": 1995,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 10632,
+      "priorityRank": 15,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        5314,
+        10628
+      ]
+    },
+    {
+      "id": "rdw-group-71cafa63298aab0a",
+      "frequencyRank": 112,
+      "make": "FORD",
+      "model": "FOCUS",
+      "displacementCc": 1596,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 15329,
+      "priorityRank": 16,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        7662,
+        15325
+      ]
+    },
+    {
+      "id": "rdw-group-b2a7a2a8748fc32d",
+      "frequencyRank": 115,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1498,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 15182,
+      "priorityRank": 17,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        7589,
+        15178
+      ]
+    },
+    {
+      "id": "rdw-group-913fe63224a78d99",
+      "frequencyRank": 121,
+      "make": "FORD",
+      "model": "FOCUS",
+      "displacementCc": 1596,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 14604,
+      "priorityRank": 18,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        7300,
+        14600
+      ]
+    },
+    {
+      "id": "rdw-group-99da9c70ab649d0c",
+      "frequencyRank": 233,
+      "make": "FORD",
+      "model": "TRANSIT CONNECT",
+      "displacementCc": 1499,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 8902,
+      "priorityRank": 19,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4449,
+        8898
+      ]
+    },
+    {
+      "id": "rdw-group-2895cfad57fe4f47",
+      "frequencyRank": 238,
+      "make": "FORD",
+      "model": "TRANSIT CONNECT",
+      "displacementCc": 1499,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 8817,
+      "priorityRank": 20,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4406,
+        8813
+      ]
+    },
+    {
+      "id": "rdw-group-f29c5c435d72bc37",
+      "frequencyRank": 257,
+      "make": "MAN",
+      "model": "TGE",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 8354,
+      "priorityRank": 21,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4175,
+        8350
+      ]
+    },
+    {
+      "id": "rdw-group-43252fa5a630237b",
+      "frequencyRank": 40,
+      "make": "RENAULT",
+      "model": "TRAFIC",
+      "displacementCc": 1997,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 26196,
+      "priorityRank": 22,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        13096,
+        26192
+      ]
+    },
+    {
+      "id": "rdw-group-7f4ebf4f97546f87",
+      "frequencyRank": 29,
+      "make": "PEUGEOT",
+      "model": "208",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 30040,
+      "priorityRank": 23,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        15018,
+        30036
+      ]
+    },
+    {
+      "id": "rdw-group-c28de69bc2e3615f",
+      "frequencyRank": 33,
+      "make": "PEUGEOT",
+      "model": "208",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 28926,
+      "priorityRank": 24,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        14461,
+        28922
+      ]
+    },
+    {
+      "id": "rdw-group-f99b4b8d552e7b03",
+      "frequencyRank": 307,
+      "make": "OPEL",
+      "model": "COMBO",
+      "displacementCc": 1499,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 7256,
+      "priorityRank": 25,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3626,
+        7252
+      ]
+    },
+    {
+      "id": "rdw-group-fcb81a0b88bdf846",
+      "frequencyRank": 315,
+      "make": "MERCEDES-BENZ",
+      "model": "CITAN",
+      "displacementCc": 1461,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 7096,
+      "priorityRank": 26,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3546,
+        7092
+      ]
+    },
+    {
+      "id": "rdw-group-23bbdf2b64a9857a",
+      "frequencyRank": 1,
+      "make": "PEUGEOT",
+      "model": "PEUGEOT 107",
+      "displacementCc": 998,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 69055,
+      "priorityRank": 27,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        34525,
+        69051
+      ]
+    },
+    {
+      "id": "rdw-group-934c9df8b219f130",
+      "frequencyRank": 39,
+      "make": "PEUGEOT",
+      "model": "2008",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 26795,
+      "priorityRank": 28,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        13395,
+        26791
+      ]
+    },
+    {
+      "id": "rdw-group-5b05ded8fe444aed",
+      "frequencyRank": 342,
+      "make": "RENAULT",
+      "model": "KANGOO",
+      "displacementCc": 1461,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 6564,
+      "priorityRank": 29,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        3280,
+        6560
+      ]
+    },
+    {
+      "id": "rdw-group-18f6ea8d443463ab",
+      "frequencyRank": 940,
+      "make": "VOLKSWAGEN",
+      "model": "CADDY",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2366,
+      "priorityRank": 30,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1181,
+        2362
+      ]
+    },
+    {
+      "id": "rdw-group-9a44a7aafa1eca84",
+      "frequencyRank": 223,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 9148,
+      "priorityRank": 31,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        4572,
+        9144
+      ]
+    },
+    {
+      "id": "rdw-group-b52aa9b2c22950dc",
+      "frequencyRank": 48,
+      "make": "PEUGEOT",
+      "model": "2008",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 22902,
+      "priorityRank": 32,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        11449,
+        22898
+      ]
+    },
+    {
+      "id": "rdw-group-19f7d3be8837a620",
+      "frequencyRank": 2,
+      "make": "TOYOTA",
+      "model": "TOYOTA AYGO",
+      "displacementCc": 998,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 57157,
+      "priorityRank": 33,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        28576,
+        57153
+      ]
+    },
+    {
+      "id": "rdw-group-87f7b72d200d4813",
+      "frequencyRank": 413,
+      "make": "CITROEN",
+      "model": "BERLINGO",
+      "displacementCc": 1560,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 5687,
+      "priorityRank": 34,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2841,
+        5683
+      ]
+    },
+    {
+      "id": "rdw-group-7b487a1054299def",
+      "frequencyRank": 3,
+      "make": "VOLKSWAGEN",
+      "model": "POLO",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 56146,
+      "priorityRank": 35,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        28071,
+        56142
+      ]
+    },
+    {
+      "id": "rdw-group-185a74e670b67a06",
+      "frequencyRank": 235,
+      "make": "RENAULT",
+      "model": "MEGANE",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 8827,
+      "priorityRank": 36,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        4411,
+        8823
+      ]
+    },
+    {
+      "id": "rdw-group-9a48d6916e702002",
+      "frequencyRank": 57,
+      "make": "MAZDA",
+      "model": "MAZDA CX-5",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 21576,
+      "priorityRank": 37,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        10786,
+        21572
+      ]
+    },
+    {
+      "id": "rdw-group-03822a9f210cd28b",
+      "frequencyRank": 254,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 8444,
+      "priorityRank": 38,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        4220,
+        8440
+      ]
+    },
+    {
+      "id": "rdw-group-c080f28502abfbfb",
+      "frequencyRank": 262,
+      "make": "FORD",
+      "model": "FOCUS",
+      "displacementCc": 1596,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 8271,
+      "priorityRank": 39,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        4133,
+        8267
+      ]
+    },
+    {
+      "id": "rdw-group-4a4fbbd889126b9a",
+      "frequencyRank": 267,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 8122,
+      "priorityRank": 40,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        4059,
+        8118
+      ]
+    },
+    {
+      "id": "rdw-group-36b86a1a0b6d4e64",
+      "frequencyRank": 268,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 8118,
+      "priorityRank": 41,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4057,
+        8114
+      ]
+    },
+    {
+      "id": "rdw-group-f6752f2db400aa4b",
+      "frequencyRank": 4,
+      "make": "VOLKSWAGEN",
+      "model": "UP",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 50979,
+      "priorityRank": 42,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        25487,
+        50975
+      ]
+    },
+    {
+      "id": "rdw-group-937320f3120841fe",
+      "frequencyRank": 5,
+      "make": "CITROEN",
+      "model": "CITROEN C1",
+      "displacementCc": 998,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 50332,
+      "priorityRank": 43,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        25164,
+        50328
+      ]
+    },
+    {
+      "id": "rdw-group-f657bb9d4fe33ea9",
+      "frequencyRank": 73,
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "displacementCc": 1332,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 19607,
+      "priorityRank": 44,
+      "baselineLayer": "A",
+      "offsets": [
+        0,
+        9801,
+        19603
+      ]
+    },
+    {
+      "id": "rdw-group-ded801fe483cccdb",
+      "frequencyRank": 295,
+      "make": "HYUNDAI",
+      "model": "I20",
+      "displacementCc": 998,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 7532,
+      "priorityRank": 45,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        3764,
+        7528
+      ]
+    },
+    {
+      "id": "rdw-group-93f2c28f743a7014",
+      "frequencyRank": 317,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1498,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 7085,
+      "priorityRank": 46,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3540,
+        7081
+      ]
+    },
+    {
+      "id": "rdw-group-afa3126824f22eb7",
+      "frequencyRank": 546,
+      "make": "FIAT",
+      "model": "FIAT DUCATO",
+      "displacementCc": 2287,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 4239,
+      "priorityRank": 47,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2117,
+        4235
+      ]
+    },
+    {
+      "id": "rdw-group-2760385b7f6cd7bf",
+      "frequencyRank": 9,
+      "make": "RENAULT",
+      "model": "TWINGO",
+      "displacementCc": 1149,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 42137,
+      "priorityRank": 48,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        21066,
+        42133
+      ]
+    },
+    {
+      "id": "rdw-group-4d87cda2ddb2caa5",
+      "frequencyRank": 11,
+      "make": "KIA",
+      "model": "PICANTO",
+      "displacementCc": 998,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 41790,
+      "priorityRank": 49,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        20893,
+        41786
+      ]
+    },
+    {
+      "id": "rdw-group-14829e3e7d7ba575",
+      "frequencyRank": 351,
+      "make": "PEUGEOT",
+      "model": "3008",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 6347,
+      "priorityRank": 50,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3171,
+        6343
+      ]
+    },
+    {
+      "id": "rdw-group-3ad2e75e16a58043",
+      "frequencyRank": 110,
+      "make": "PEUGEOT",
+      "model": "308",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 15637,
+      "priorityRank": 51,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        7816,
+        15633
+      ]
+    },
+    {
+      "id": "rdw-group-fa5ada256ad7d0d1",
+      "frequencyRank": 380,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1498,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2025,
+      "yearBandTo": 2029,
+      "vehicles": 6009,
+      "priorityRank": 52,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3002,
+        6005
+      ]
+    },
+    {
+      "id": "rdw-group-b4802d93bbb3dbaa",
+      "frequencyRank": 393,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 5861,
+      "priorityRank": 53,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2928,
+        5857
+      ]
+    },
+    {
+      "id": "rdw-group-d13cf2b85cc7e258",
+      "frequencyRank": 120,
+      "make": "PEUGEOT",
+      "model": "208",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 14631,
+      "priorityRank": 54,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        7313,
+        14627
+      ]
+    },
+    {
+      "id": "rdw-group-b537de34cdc0dfdf",
+      "frequencyRank": 122,
+      "make": "MINI",
+      "model": "COOPER",
+      "displacementCc": 1499,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 14481,
+      "priorityRank": 55,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        7238,
+        14477
+      ]
+    },
+    {
+      "id": "rdw-group-b7778422abe52188",
+      "frequencyRank": 416,
+      "make": "PEUGEOT",
+      "model": "3008",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 5637,
+      "priorityRank": 56,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2816,
+        5633
+      ]
+    },
+    {
+      "id": "rdw-group-2e3ecfc3def0696f",
+      "frequencyRank": 419,
+      "make": "RENAULT",
+      "model": "MEGANE",
+      "displacementCc": 1332,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 5600,
+      "priorityRank": 57,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2798,
+        5596
+      ]
+    },
+    {
+      "id": "rdw-group-a5e64a43efdd884c",
+      "frequencyRank": 424,
+      "make": "CITROEN",
+      "model": "C4 PICASSO",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 5512,
+      "priorityRank": 58,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2754,
+        5508
+      ]
+    },
+    {
+      "id": "rdw-group-1bd1bde42f717bce",
+      "frequencyRank": 432,
+      "make": "BMW",
+      "model": "320I",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 5424,
+      "priorityRank": 59,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2710,
+        5420
+      ]
+    },
+    {
+      "id": "rdw-group-60d4ea3006a0c0e6",
+      "frequencyRank": 1502,
+      "make": "VOLKSWAGEN",
+      "model": "CADDY",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 1333,
+      "priorityRank": 60,
+      "baselineLayer": "C",
+      "offsets": [
+        0,
+        664,
+        1329
+      ]
+    },
+    {
+      "id": "rdw-group-e329d5e8f32b7da5",
+      "frequencyRank": 18,
+      "make": "FORD",
+      "model": "KA",
+      "displacementCc": 1242,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 33140,
+      "priorityRank": 61,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        16568,
+        33136
+      ]
+    },
+    {
+      "id": "rdw-group-445598acaebcd73c",
+      "frequencyRank": 19,
+      "make": "PEUGEOT",
+      "model": "108",
+      "displacementCc": 998,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 33118,
+      "priorityRank": 62,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        16557,
+        33114
+      ]
+    },
+    {
+      "id": "rdw-group-8d38113adf315fd0",
+      "frequencyRank": 448,
+      "make": "VOLKSWAGEN",
+      "model": "TIGUAN",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 5209,
+      "priorityRank": 63,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2602,
+        5205
+      ]
+    },
+    {
+      "id": "rdw-group-23e02d53368f48b7",
+      "frequencyRank": 453,
+      "make": "RENAULT",
+      "model": "MEGANE",
+      "displacementCc": 1332,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 5167,
+      "priorityRank": 64,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2581,
+        5163
+      ]
+    },
+    {
+      "id": "rdw-group-50d97f384138ff29",
+      "frequencyRank": 143,
+      "make": "PEUGEOT",
+      "model": "3008",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 12840,
+      "priorityRank": 65,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        6418,
+        12836
+      ]
+    },
+    {
+      "id": "rdw-group-70665971905ce2f9",
+      "frequencyRank": 203,
+      "make": "OPEL",
+      "model": "VIVARO",
+      "displacementCc": 1997,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 9978,
+      "priorityRank": 66,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4987,
+        9974
+      ]
+    },
+    {
+      "id": "rdw-group-585e1b72dc07d86b",
+      "frequencyRank": 25,
+      "make": "SUZUKI",
+      "model": "ALTO",
+      "displacementCc": 996,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 31243,
+      "priorityRank": 67,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        15619,
+        31239
+      ]
+    },
+    {
+      "id": "rdw-group-ad66e794e87e74de",
+      "frequencyRank": 484,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 4844,
+      "priorityRank": 68,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2420,
+        4840
+      ]
+    },
+    {
+      "id": "rdw-group-dcc35660551b5b76",
+      "frequencyRank": 165,
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 11765,
+      "priorityRank": 69,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        5880,
+        11761
+      ]
+    },
+    {
+      "id": "rdw-group-8a4d5f9881ca1511",
+      "frequencyRank": 31,
+      "make": "OPEL",
+      "model": "CORSA",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 29225,
+      "priorityRank": 70,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        14610,
+        29221
+      ]
+    },
+    {
+      "id": "rdw-group-071b70c4423cd598",
+      "frequencyRank": 32,
+      "make": "OPEL",
+      "model": "KARL / VIVA",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 28961,
+      "priorityRank": 71,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        14478,
+        28957
+      ]
+    },
+    {
+      "id": "rdw-group-5088cc5ddfa360ad",
+      "frequencyRank": 34,
+      "make": "VOLVO",
+      "model": "XC40",
+      "displacementCc": 1477,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 28613,
+      "priorityRank": 72,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        14304,
+        28609
+      ]
+    },
+    {
+      "id": "rdw-group-3683943bf4b344d5",
+      "frequencyRank": 15,
+      "make": "FORD",
+      "model": "FIESTA",
+      "displacementCc": 998,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 35835,
+      "priorityRank": 73,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        17915,
+        35831
+      ]
+    },
+    {
+      "id": "rdw-group-3e510ca64987b1d3",
+      "frequencyRank": 35,
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 27613,
+      "priorityRank": 74,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        13804,
+        27609
+      ]
+    },
+    {
+      "id": "rdw-group-ea371a17713b675f",
+      "frequencyRank": 185,
+      "make": "MAZDA",
+      "model": "MAZDA CX-5",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 10717,
+      "priorityRank": 75,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        5356,
+        10713
+      ]
+    },
+    {
+      "id": "rdw-group-7f074ee37413ed56",
+      "frequencyRank": 557,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1395,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 4150,
+      "priorityRank": 76,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2073,
+        4146
+      ]
+    },
+    {
+      "id": "rdw-group-30b68ee640dbb389",
+      "frequencyRank": 41,
+      "make": "HYUNDAI",
+      "model": "I10",
+      "displacementCc": 998,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 26099,
+      "priorityRank": 77,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        13047,
+        26095
+      ]
+    },
+    {
+      "id": "rdw-group-f030dc3b23429b4f",
+      "frequencyRank": 190,
+      "make": "MAZDA",
+      "model": "MAZDA CX-5",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 10319,
+      "priorityRank": 78,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        5157,
+        10315
+      ]
+    },
+    {
+      "id": "rdw-group-2072f05416e0b210",
+      "frequencyRank": 194,
+      "make": "DACIA",
+      "model": "SANDERO",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 10253,
+      "priorityRank": 79,
+      "baselineLayer": "E",
+      "offsets": [
+        0,
+        5124,
+        10249
+      ]
+    },
+    {
+      "id": "rdw-group-74bc602a17b18f57",
+      "frequencyRank": 590,
+      "make": "PEUGEOT",
+      "model": "3008",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 3947,
+      "priorityRank": 80,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1971,
+        3943
+      ]
+    },
+    {
+      "id": "rdw-group-7a68f64a6bcb57c0",
+      "frequencyRank": 591,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1390,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 3939,
+      "priorityRank": 81,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1967,
+        3935
+      ]
+    },
+    {
+      "id": "rdw-group-d8722fb5ab7865f5",
+      "frequencyRank": 901,
+      "make": "FORD",
+      "model": "TRANSIT",
+      "displacementCc": 1996,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2485,
+      "priorityRank": 82,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1240,
+        2481
+      ]
+    },
+    {
+      "id": "rdw-group-540dd1ed1793c0c5",
+      "frequencyRank": 608,
+      "make": "CITROEN",
+      "model": "C5 AIRCROSS",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 3864,
+      "priorityRank": 83,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1930,
+        3860
+      ]
+    },
+    {
+      "id": "rdw-group-601ad30915f982f6",
+      "frequencyRank": 613,
+      "make": "AUDI",
+      "model": "Q5",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 3819,
+      "priorityRank": 84,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1907,
+        3815
+      ]
+    },
+    {
+      "id": "rdw-group-a4e2d44e3eef9eff",
+      "frequencyRank": 43,
+      "make": "SUZUKI",
+      "model": "SWIFT",
+      "displacementCc": 1328,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 24058,
+      "priorityRank": 85,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        12027,
+        24054
+      ]
+    },
+    {
+      "id": "rdw-group-bc1a2277d62475c3",
+      "frequencyRank": 292,
+      "make": "PEUGEOT",
+      "model": "EXPERT",
+      "displacementCc": 1997,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 7576,
+      "priorityRank": 86,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3786,
+        7572
+      ]
+    },
+    {
+      "id": "rdw-group-eb3fe9caba6e937c",
+      "frequencyRank": 44,
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER",
+      "displacementCc": 2143,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 23872,
+      "priorityRank": 87,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        11934,
+        23868
+      ]
+    },
+    {
+      "id": "rdw-group-4e1e69c928ae43dc",
+      "frequencyRank": 618,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1498,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2025,
+      "yearBandTo": 2029,
+      "vehicles": 3766,
+      "priorityRank": 88,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1881,
+        3762
+      ]
+    },
+    {
+      "id": "rdw-group-af712ebcef4d6077",
+      "frequencyRank": 232,
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI OUTLANDER",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 8905,
+      "priorityRank": 89,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        4450,
+        8901
+      ]
+    },
+    {
+      "id": "rdw-group-3b80fd6e024f1bc4",
+      "frequencyRank": 55,
+      "make": "FIAT",
+      "model": "FIAT PANDA",
+      "displacementCc": 1242,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 21907,
+      "priorityRank": 90,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        10951,
+        21903
+      ]
+    },
+    {
+      "id": "rdw-group-7c3fcf2fa5b431de",
+      "frequencyRank": 243,
+      "make": "PEUGEOT",
+      "model": "308",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 8661,
+      "priorityRank": 91,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        4328,
+        8657
+      ]
+    },
+    {
+      "id": "rdw-group-29b55876e44df041",
+      "frequencyRank": 250,
+      "make": "PEUGEOT",
+      "model": "3008",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 8532,
+      "priorityRank": 92,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4264,
+        8528
+      ]
+    },
+    {
+      "id": "rdw-group-1340702b5b308f10",
+      "frequencyRank": 252,
+      "make": "MINI",
+      "model": "COOPER",
+      "displacementCc": 1499,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 8501,
+      "priorityRank": 93,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4248,
+        8497
+      ]
+    },
+    {
+      "id": "rdw-group-639032c6a1ef4e07",
+      "frequencyRank": 701,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1395,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 3297,
+      "priorityRank": 94,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1646,
+        3293
+      ]
+    },
+    {
+      "id": "rdw-group-a594ca31602f5c64",
+      "frequencyRank": 61,
+      "make": "CITROEN",
+      "model": "C3",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 20653,
+      "priorityRank": 95,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        10324,
+        20649
+      ]
+    },
+    {
+      "id": "rdw-group-749a39f547b99d28",
+      "frequencyRank": 346,
+      "make": "FORD",
+      "model": "TRANSIT",
+      "displacementCc": 1995,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 6530,
+      "priorityRank": 96,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3263,
+        6526
+      ]
+    },
+    {
+      "id": "rdw-group-e7406f07bbb7333e",
+      "frequencyRank": 1070,
+      "make": "FIAT",
+      "model": "FIAT DUCATO",
+      "displacementCc": 2287,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2063,
+      "priorityRank": 97,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1029,
+        2059
+      ]
+    },
+    {
+      "id": "rdw-group-b67f1960ca11f285",
+      "frequencyRank": 62,
+      "make": "FIAT",
+      "model": "FIAT 500",
+      "displacementCc": 1242,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 20586,
+      "priorityRank": 98,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        10291,
+        20582
+      ]
+    },
+    {
+      "id": "rdw-group-468b69573893b922",
+      "frequencyRank": 67,
+      "make": "FIAT",
+      "model": "FIAT 500",
+      "displacementCc": 875,
+      "cylinders": 2,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 20151,
+      "priorityRank": 99,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        10073,
+        20147
+      ]
+    },
+    {
+      "id": "rdw-group-9afb94e8fad9bfb9",
+      "frequencyRank": 276,
+      "make": "TOYOTA",
+      "model": "TOYOTA COROLLA",
+      "displacementCc": 1987,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 8000,
+      "priorityRank": 100,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3998,
+        7996
+      ]
+    },
+    {
+      "id": "rdw-group-1878976f06bdcbc2",
+      "frequencyRank": 285,
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "displacementCc": 1240,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 7696,
+      "priorityRank": 101,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3846,
+        7692
+      ]
+    },
+    {
+      "id": "rdw-group-f79166738ff1a5c4",
+      "frequencyRank": 75,
+      "make": "FIAT",
+      "model": "FIAT 500",
+      "displacementCc": 875,
+      "cylinders": 2,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 19306,
+      "priorityRank": 102,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        9651,
+        19302
+      ]
+    },
+    {
+      "id": "rdw-group-6c105180070a2731",
+      "frequencyRank": 287,
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "displacementCc": 1332,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 7658,
+      "priorityRank": 103,
+      "baselineLayer": "A",
+      "offsets": [
+        0,
+        3827,
+        7654
+      ]
+    },
+    {
+      "id": "rdw-group-f52134bd3debf70a",
+      "frequencyRank": 750,
+      "make": "RENAULT",
+      "model": "CLIO",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 3014,
+      "priorityRank": 104,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1505,
+        3010
+      ]
+    },
+    {
+      "id": "rdw-group-48dac4d823c69d8e",
+      "frequencyRank": 751,
+      "make": "FORD",
+      "model": "FIESTA",
+      "displacementCc": 1596,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 3013,
+      "priorityRank": 105,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1504,
+        3009
+      ]
+    },
+    {
+      "id": "rdw-group-17aa251e54028bc8",
+      "frequencyRank": 756,
+      "make": "RENAULT",
+      "model": "MEGANE",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2994,
+      "priorityRank": 106,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1495,
+        2990
+      ]
+    },
+    {
+      "id": "rdw-group-1cf6305b4e3bc9dc",
+      "frequencyRank": 783,
+      "make": "FORD",
+      "model": "FOCUS",
+      "displacementCc": 1560,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2892,
+      "priorityRank": 107,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1444,
+        2888
+      ]
+    },
+    {
+      "id": "rdw-group-127121ef85715c50",
+      "frequencyRank": 324,
+      "make": "TOYOTA",
+      "model": "TOYOTA C-HR",
+      "displacementCc": 1987,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 6879,
+      "priorityRank": 108,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3437,
+        6875
+      ]
+    },
+    {
+      "id": "rdw-group-f9e943aad54386bf",
+      "frequencyRank": 832,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1595,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 2718,
+      "priorityRank": 109,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1357,
+        2714
+      ]
+    },
+    {
+      "id": "rdw-group-fc7bf5890193c4df",
+      "frequencyRank": 840,
+      "make": "BMW",
+      "model": "320I",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2681,
+      "priorityRank": 110,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1338,
+        2677
+      ]
+    },
+    {
+      "id": "rdw-group-ab24a1dd1f34a143",
+      "frequencyRank": 846,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1395,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2650,
+      "priorityRank": 111,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1323,
+        2646
+      ]
+    },
+    {
+      "id": "rdw-group-9b451a0d098bcff9",
+      "frequencyRank": 336,
+      "make": "NISSAN",
+      "model": "NISSAN JUKE",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 6617,
+      "priorityRank": 112,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        3306,
+        6613
+      ]
+    },
+    {
+      "id": "rdw-group-aa833658437c4aaa",
+      "frequencyRank": 337,
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "displacementCc": 1198,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 6599,
+      "priorityRank": 113,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3297,
+        6595
+      ]
+    },
+    {
+      "id": "rdw-group-2c6acadcce61051a",
+      "frequencyRank": 851,
+      "make": "FORD",
+      "model": "FOCUS",
+      "displacementCc": 1999,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 2619,
+      "priorityRank": 114,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1307,
+        2615
+      ]
+    },
+    {
+      "id": "rdw-group-b2f5e390bd5b7bf7",
+      "frequencyRank": 1272,
+      "make": "FIAT",
+      "model": "FIAT DOBLO'",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1651,
+      "priorityRank": 115,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        823,
+        1647
+      ]
+    },
+    {
+      "id": "rdw-group-7e3f744773827369",
+      "frequencyRank": 100,
+      "make": "MAZDA",
+      "model": "MAZDA CX-3",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 16459,
+      "priorityRank": 116,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        8227,
+        16455
+      ]
+    },
+    {
+      "id": "rdw-group-56b2a6796050c62b",
+      "frequencyRank": 879,
+      "make": "RENAULT",
+      "model": "CLIO",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 2546,
+      "priorityRank": 117,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1271,
+        2542
+      ]
+    },
+    {
+      "id": "rdw-group-e2c5fab2bec39469",
+      "frequencyRank": 106,
+      "make": "SEAT",
+      "model": "IBIZA",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 15873,
+      "priorityRank": 118,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        7934,
+        15869
+      ]
+    },
+    {
+      "id": "rdw-group-e5891447f12658a1",
+      "frequencyRank": 109,
+      "make": "VOLKSWAGEN",
+      "model": "CADDY",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 15791,
+      "priorityRank": 119,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        7893,
+        15787
+      ]
+    },
+    {
+      "id": "rdw-group-a4f58429e3086f4c",
+      "frequencyRank": 891,
+      "make": "PEUGEOT",
+      "model": "5008",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2496,
+      "priorityRank": 120,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1246,
+        2492
+      ]
+    },
+    {
+      "id": "rdw-group-873378b47baa0e1b",
+      "frequencyRank": 894,
+      "make": "CITROEN",
+      "model": "C4",
+      "displacementCc": 1587,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 2490,
+      "priorityRank": 121,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1243,
+        2486
+      ]
+    },
+    {
+      "id": "rdw-group-e5819c2750068468",
+      "frequencyRank": 902,
+      "make": "PEUGEOT",
+      "model": "2008",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2484,
+      "priorityRank": 122,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1240,
+        2480
+      ]
+    },
+    {
+      "id": "rdw-group-edce371be5f5c9c5",
+      "frequencyRank": 361,
+      "make": "PEUGEOT",
+      "model": "208",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2025,
+      "yearBandTo": 2029,
+      "vehicles": 6227,
+      "priorityRank": 123,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        3111,
+        6223
+      ]
+    },
+    {
+      "id": "rdw-group-19d7f0a1272b1d8a",
+      "frequencyRank": 369,
+      "make": "PEUGEOT",
+      "model": "5008",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 6155,
+      "priorityRank": 124,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3075,
+        6151
+      ]
+    },
+    {
+      "id": "rdw-group-a4d61739d7635466",
+      "frequencyRank": 381,
+      "make": "NISSAN",
+      "model": "NISSAN JUKE",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 6008,
+      "priorityRank": 125,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3002,
+        6004
+      ]
+    },
+    {
+      "id": "rdw-group-2ac6700ac62b2111",
+      "frequencyRank": 930,
+      "make": "PEUGEOT",
+      "model": "208",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2387,
+      "priorityRank": 126,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1191,
+        2383
+      ]
+    },
+    {
+      "id": "rdw-group-e495123654c911b8",
+      "frequencyRank": 390,
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 5901,
+      "priorityRank": 127,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2948,
+        5897
+      ]
+    },
+    {
+      "id": "rdw-group-060b2baf053cd2d6",
+      "frequencyRank": 946,
+      "make": "RENAULT",
+      "model": "CLIO",
+      "displacementCc": 1789,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2025,
+      "yearBandTo": 2029,
+      "vehicles": 2346,
+      "priorityRank": 128,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1171,
+        2342
+      ]
+    },
+    {
+      "id": "rdw-group-dc833f13ed021053",
+      "frequencyRank": 952,
+      "make": "PEUGEOT",
+      "model": "508",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2326,
+      "priorityRank": 129,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1161,
+        2322
+      ]
+    },
+    {
+      "id": "rdw-group-75fc80529082550d",
+      "frequencyRank": 958,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1395,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 2314,
+      "priorityRank": 130,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1155,
+        2310
+      ]
+    },
+    {
+      "id": "rdw-group-da14724504a8ae6d",
+      "frequencyRank": 964,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 2306,
+      "priorityRank": 131,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1151,
+        2302
+      ]
+    },
+    {
+      "id": "rdw-group-324d9980291016c1",
+      "frequencyRank": 404,
+      "make": "PEUGEOT",
+      "model": "5008",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 5749,
+      "priorityRank": 132,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2872,
+        5745
+      ]
+    },
+    {
+      "id": "rdw-group-1137dd8094b51205",
+      "frequencyRank": 411,
+      "make": "PEUGEOT",
+      "model": "2008",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2025,
+      "yearBandTo": 2029,
+      "vehicles": 5701,
+      "priorityRank": 133,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2848,
+        5697
+      ]
+    },
+    {
+      "id": "rdw-group-cccf3040b42acd0c",
+      "frequencyRank": 982,
+      "make": "CITROEN",
+      "model": "C4",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2258,
+      "priorityRank": 134,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1127,
+        2254
+      ]
+    },
+    {
+      "id": "rdw-group-afca21e0ea9c02aa",
+      "frequencyRank": 988,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1395,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2240,
+      "priorityRank": 135,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1118,
+        2236
+      ]
+    },
+    {
+      "id": "rdw-group-d4167dd9f3c9f912",
+      "frequencyRank": 1002,
+      "make": "VOLKSWAGEN",
+      "model": "TIGUAN",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2207,
+      "priorityRank": 136,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1101,
+        2203
+      ]
+    },
+    {
+      "id": "rdw-group-a9e0cb8b1825e7be",
+      "frequencyRank": 428,
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 5470,
+      "priorityRank": 137,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2733,
+        5466
+      ]
+    },
+    {
+      "id": "rdw-group-deb08ce99f14814a",
+      "frequencyRank": 1038,
+      "make": "PEUGEOT",
+      "model": "308",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2129,
+      "priorityRank": 138,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1062,
+        2125
+      ]
+    },
+    {
+      "id": "rdw-group-405e1a14e7c669c6",
+      "frequencyRank": 1042,
+      "make": "VOLKSWAGEN",
+      "model": "POLO",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 2119,
+      "priorityRank": 139,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1057,
+        2115
+      ]
+    },
+    {
+      "id": "rdw-group-2a05a136a47787df",
+      "frequencyRank": 1095,
+      "make": "AUDI",
+      "model": "Q3",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2017,
+      "priorityRank": 140,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1006,
+        2013
+      ]
+    },
+    {
+      "id": "rdw-group-a9e585a9522658e7",
+      "frequencyRank": 1099,
+      "make": "FORD",
+      "model": "FOCUS",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2025,
+      "yearBandTo": 2029,
+      "vehicles": 2004,
+      "priorityRank": 141,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1000,
+        2000
+      ]
+    },
+    {
+      "id": "rdw-group-f60424f333fdcb46",
+      "frequencyRank": 480,
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 4941,
+      "priorityRank": 142,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2468,
+        4937
+      ]
+    },
+    {
+      "id": "rdw-group-0ca5d6047d604626",
+      "frequencyRank": 1129,
+      "make": "PEUGEOT",
+      "model": "5008",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1928,
+      "priorityRank": 143,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        962,
+        1924
+      ]
+    },
+    {
+      "id": "rdw-group-1cf32e76de2b81d6",
+      "frequencyRank": 485,
+      "make": "BMW",
+      "model": "330E",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 4833,
+      "priorityRank": 144,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2414,
+        4829
+      ]
+    },
+    {
+      "id": "rdw-group-dd0fc5c19961af2c",
+      "frequencyRank": 159,
+      "make": "BMW",
+      "model": "3ER REIHE",
+      "displacementCc": 1995,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 12061,
+      "priorityRank": 145,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        6028,
+        12057
+      ]
+    },
+    {
+      "id": "rdw-group-9b5a7d93aa2cb0a4",
+      "frequencyRank": 160,
+      "make": "AUDI",
+      "model": "A1 SPORTBACK",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 12056,
+      "priorityRank": 146,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        6026,
+        12052
+      ]
+    },
+    {
+      "id": "rdw-group-fe5bc636367d0d79",
+      "frequencyRank": 162,
+      "make": "VOLKSWAGEN",
+      "model": "CRAFTER",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 11999,
+      "priorityRank": 147,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        5997,
+        11995
+      ]
+    },
+    {
+      "id": "rdw-group-d82e820f89f28d34",
+      "frequencyRank": 1623,
+      "make": "FIAT",
+      "model": "FIAT DOBLO'",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 1194,
+      "priorityRank": 148,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        595,
+        1190
+      ]
+    },
+    {
+      "id": "rdw-group-ba51f4c8a5d1e5cb",
+      "frequencyRank": 1158,
+      "make": "VOLKSWAGEN",
+      "model": "POLO",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 1881,
+      "priorityRank": 149,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        938,
+        1877
+      ]
+    },
+    {
+      "id": "rdw-group-e5bf6ca4f1422190",
+      "frequencyRank": 164,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 11789,
+      "priorityRank": 150,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        5892,
+        11785
+      ]
+    },
+    {
+      "id": "rdw-group-d3836efc5d66a2d5",
+      "frequencyRank": 1177,
+      "make": "VOLKSWAGEN",
+      "model": "TRANSPORTER",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 1850,
+      "priorityRank": 151,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        923,
+        1846
+      ]
+    },
+    {
+      "id": "rdw-group-d16a4f38d7de08dd",
+      "frequencyRank": 507,
+      "make": "CITROEN",
+      "model": "C4 PICASSO",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 4643,
+      "priorityRank": 152,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2319,
+        4639
+      ]
+    },
+    {
+      "id": "rdw-group-3094c16c3ab0a0b4",
+      "frequencyRank": 168,
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI COLT",
+      "displacementCc": 1332,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 11627,
+      "priorityRank": 153,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        5811,
+        11623
+      ]
+    },
+    {
+      "id": "rdw-group-dfd5ad596b7645cf",
+      "frequencyRank": 1183,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 1833,
+      "priorityRank": 154,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        914,
+        1829
+      ]
+    },
+    {
+      "id": "rdw-group-39a4ba10b333f41f",
+      "frequencyRank": 171,
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI OUTLANDER",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 11559,
+      "priorityRank": 155,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        5777,
+        11555
+      ]
+    },
+    {
+      "id": "rdw-group-2e0eaf1e5d09d83a",
+      "frequencyRank": 8,
+      "make": "VOLKSWAGEN",
+      "model": "POLO",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 45656,
+      "priorityRank": 156,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        22826,
+        45652
+      ]
+    },
+    {
+      "id": "rdw-group-4e931fdb6f2a3c70",
+      "frequencyRank": 1201,
+      "make": "VOLKSWAGEN",
+      "model": "TIGUAN",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1781,
+      "priorityRank": 157,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        888,
+        1777
+      ]
+    },
+    {
+      "id": "rdw-group-767f6d7d74c58c14",
+      "frequencyRank": 1222,
+      "make": "MAZDA",
+      "model": "MAZDA 6",
+      "displacementCc": 1798,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 1749,
+      "priorityRank": 158,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        872,
+        1745
+      ]
+    },
+    {
+      "id": "rdw-group-1ed1a8aa88a696f7",
+      "frequencyRank": 529,
+      "make": "PEUGEOT",
+      "model": "2008",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 4349,
+      "priorityRank": 159,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2172,
+        4345
+      ]
+    },
+    {
+      "id": "rdw-group-57334ace698c2434",
+      "frequencyRank": 532,
+      "make": "TOYOTA",
+      "model": "TOYOTA RAV4",
+      "displacementCc": 1987,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 4326,
+      "priorityRank": 160,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2161,
+        4322
+      ]
+    },
+    {
+      "id": "rdw-group-dcf60a3a42a7868f",
+      "frequencyRank": 1240,
+      "make": "CITROEN",
+      "model": "C4 PICASSO",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1719,
+      "priorityRank": 161,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        857,
+        1715
+      ]
+    },
+    {
+      "id": "rdw-group-f16e82ee1f9413de",
+      "frequencyRank": 1242,
+      "make": "AUDI",
+      "model": "Q3",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1717,
+      "priorityRank": 162,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        856,
+        1713
+      ]
+    },
+    {
+      "id": "rdw-group-097ea174a1553c3b",
+      "frequencyRank": 539,
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "displacementCc": 1618,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 4292,
+      "priorityRank": 163,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2144,
+        4288
+      ]
+    },
+    {
+      "id": "rdw-group-2929523edb087ca7",
+      "frequencyRank": 438,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 5395,
+      "priorityRank": 164,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2695,
+        5391
+      ]
+    },
+    {
+      "id": "rdw-group-72becee98a12d6f4",
+      "frequencyRank": 1250,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1395,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 1699,
+      "priorityRank": 165,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        847,
+        1695
+      ]
+    },
+    {
+      "id": "rdw-group-9bddc66c2bd827a1",
+      "frequencyRank": 545,
+      "make": "MERCEDES-BENZ",
+      "model": "C 350 E",
+      "displacementCc": 1991,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 4259,
+      "priorityRank": 166,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2127,
+        4255
+      ]
+    },
+    {
+      "id": "rdw-group-8c2b475e5aebcd73",
+      "frequencyRank": 1255,
+      "make": "MAZDA",
+      "model": "MAZDA MX-5",
+      "displacementCc": 1798,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 1689,
+      "priorityRank": 167,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        842,
+        1685
+      ]
+    },
+    {
+      "id": "rdw-group-fe7a144822b6a0f1",
+      "frequencyRank": 188,
+      "make": "MINI",
+      "model": "MINI",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 10506,
+      "priorityRank": 168,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        5251,
+        10502
+      ]
+    },
+    {
+      "id": "rdw-group-00ff50d823106d8e",
+      "frequencyRank": 551,
+      "make": "MINI",
+      "model": "COOPER S",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 4176,
+      "priorityRank": 169,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        2086,
+        4172
+      ]
+    },
+    {
+      "id": "rdw-group-1155ca2aab056758",
+      "frequencyRank": 189,
+      "make": "SEAT",
+      "model": "MII",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 10424,
+      "priorityRank": 170,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        5210,
+        10420
+      ]
+    },
+    {
+      "id": "rdw-group-16d99b96a68db66d",
+      "frequencyRank": 1273,
+      "make": "VOLKSWAGEN",
+      "model": "T-ROC",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1651,
+      "priorityRank": 171,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        823,
+        1647
+      ]
+    },
+    {
+      "id": "rdw-group-e9a6c9f56723a508",
+      "frequencyRank": 1281,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1641,
+      "priorityRank": 172,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        818,
+        1637
+      ]
+    },
+    {
+      "id": "rdw-group-1772f8ecb9bb588f",
+      "frequencyRank": 573,
+      "make": "BMW",
+      "model": "320E",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 4058,
+      "priorityRank": 173,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        2027,
+        4054
+      ]
+    },
+    {
+      "id": "rdw-group-1082c1d3355c9f5e",
+      "frequencyRank": 198,
+      "make": "RENAULT",
+      "model": "MASTER",
+      "displacementCc": 2299,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 10094,
+      "priorityRank": 174,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        5045,
+        10090
+      ]
+    },
+    {
+      "id": "rdw-group-f0c4783d8ca0b134",
+      "frequencyRank": 200,
+      "make": "PEUGEOT",
+      "model": "PARTNER",
+      "displacementCc": 1499,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 10018,
+      "priorityRank": 175,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        5007,
+        10014
+      ]
+    },
+    {
+      "id": "rdw-group-8fd3504569720630",
+      "frequencyRank": 1345,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1595,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 1542,
+      "priorityRank": 176,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        769,
+        1538
+      ]
+    },
+    {
+      "id": "rdw-group-1f11b24a81f549fd",
+      "frequencyRank": 604,
+      "make": "AUDI",
+      "model": "AUDI A1",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 3871,
+      "priorityRank": 177,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1933,
+        3867
+      ]
+    },
+    {
+      "id": "rdw-group-eccba51154fb0368",
+      "frequencyRank": 1349,
+      "make": "RENAULT",
+      "model": "CLIO",
+      "displacementCc": 898,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 1536,
+      "priorityRank": 178,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        766,
+        1532
+      ]
+    },
+    {
+      "id": "rdw-group-f20245806a92b380",
+      "frequencyRank": 210,
+      "make": "FIAT",
+      "model": "FIAT PUNTO",
+      "displacementCc": 1368,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 9680,
+      "priorityRank": 179,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4838,
+        9676
+      ]
+    },
+    {
+      "id": "rdw-group-edb1209719e84d6c",
+      "frequencyRank": 616,
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "displacementCc": 1240,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 3782,
+      "priorityRank": 180,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1889,
+        3778
+      ]
+    },
+    {
+      "id": "rdw-group-d41395f5920c4d65",
+      "frequencyRank": 214,
+      "make": "NISSAN",
+      "model": "NISSAN PIXO",
+      "displacementCc": 996,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 9483,
+      "priorityRank": 181,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4739,
+        9479
+      ]
+    },
+    {
+      "id": "rdw-group-9f6a19f438966da0",
+      "frequencyRank": 1372,
+      "make": "PEUGEOT",
+      "model": "508",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 1500,
+      "priorityRank": 182,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        748,
+        1496
+      ]
+    },
+    {
+      "id": "rdw-group-3108d02ed25f6dc3",
+      "frequencyRank": 653,
+      "make": "MAZDA",
+      "model": "MAZDA CX-5",
+      "displacementCc": 2488,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 3592,
+      "priorityRank": 183,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1794,
+        3588
+      ]
+    },
+    {
+      "id": "rdw-group-df3d5a70f0061a52",
+      "frequencyRank": 1440,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1390,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 1409,
+      "priorityRank": 184,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        702,
+        1405
+      ]
+    },
+    {
+      "id": "rdw-group-8804df1d3b91f3cc",
+      "frequencyRank": 1454,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1390,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 1391,
+      "priorityRank": 185,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        693,
+        1387
+      ]
+    },
+    {
+      "id": "rdw-group-d5724eba514cb98f",
+      "frequencyRank": 676,
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 3428,
+      "priorityRank": 186,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1712,
+        3424
+      ]
+    },
+    {
+      "id": "rdw-group-8254b52b07f71511",
+      "frequencyRank": 677,
+      "make": "AUDI",
+      "model": "AUDI A3",
+      "displacementCc": 1390,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 3423,
+      "priorityRank": 187,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1709,
+        3419
+      ]
+    },
+    {
+      "id": "rdw-group-6e5644efb6c48b03",
+      "frequencyRank": 247,
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER",
+      "displacementCc": 2143,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 8585,
+      "priorityRank": 188,
+      "baselineLayer": "E",
+      "offsets": [
+        0,
+        4290,
+        8581
+      ]
+    },
+    {
+      "id": "rdw-group-4e0b29825b388ab4",
+      "frequencyRank": 17,
+      "make": "VOLKSWAGEN",
+      "model": "POLO",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 34177,
+      "priorityRank": 189,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        17086,
+        34173
+      ]
+    },
+    {
+      "id": "rdw-group-eee55c32271d474b",
+      "frequencyRank": 691,
+      "make": "AUDI",
+      "model": "AUDI A4",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 3375,
+      "priorityRank": 190,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1685,
+        3371
+      ]
+    },
+    {
+      "id": "rdw-group-c6d2ac9daecdd997",
+      "frequencyRank": 1507,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 1329,
+      "priorityRank": 191,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        662,
+        1325
+      ]
+    },
+    {
+      "id": "rdw-group-17b5f79e33bd6338",
+      "frequencyRank": 3586,
+      "make": "VOLKSWAGEN",
+      "model": "CADDY",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 329,
+      "priorityRank": 192,
+      "baselineLayer": "C",
+      "offsets": [
+        0,
+        162,
+        325
+      ]
+    },
+    {
+      "id": "rdw-group-e11c0b5c435453b4",
+      "frequencyRank": 717,
+      "make": "NISSAN",
+      "model": "NISSAN X-TRAIL",
+      "displacementCc": 1618,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 3212,
+      "priorityRank": 193,
+      "baselineLayer": "A",
+      "offsets": [
+        0,
+        1604,
+        3208
+      ]
+    },
+    {
+      "id": "rdw-group-dff916216502b85f",
+      "frequencyRank": 724,
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "displacementCc": 1497,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 3182,
+      "priorityRank": 194,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1589,
+        3178
+      ]
+    },
+    {
+      "id": "rdw-group-db23389feca5596c",
+      "frequencyRank": 728,
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI OUTLANDER",
+      "displacementCc": 2360,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 3159,
+      "priorityRank": 195,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1577,
+        3155
+      ]
+    },
+    {
+      "id": "rdw-group-0316bac0b54616c8",
+      "frequencyRank": 1581,
+      "make": "RENAULT",
+      "model": "CLIO",
+      "displacementCc": 999,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2025,
+      "yearBandTo": 2029,
+      "vehicles": 1249,
+      "priorityRank": 196,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        622,
+        1245
+      ]
+    },
+    {
+      "id": "rdw-group-7b047d75a3927a81",
+      "frequencyRank": 282,
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER",
+      "displacementCc": 2143,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 7839,
+      "priorityRank": 197,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        3917,
+        7835
+      ]
+    },
+    {
+      "id": "rdw-group-3c36126f51e2edae",
+      "frequencyRank": 26,
+      "make": "RENAULT",
+      "model": "CAPTUR",
+      "displacementCc": 898,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 31043,
+      "priorityRank": 198,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        15519,
+        31039
+      ]
+    },
+    {
+      "id": "rdw-group-a87227b302a11c1a",
+      "frequencyRank": 1598,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1390,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 1232,
+      "priorityRank": 199,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        614,
+        1228
+      ]
+    },
+    {
+      "id": "rdw-group-0ffd138c9939998a",
+      "frequencyRank": 1609,
+      "make": "AUDI",
+      "model": "Q5",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 1216,
+      "priorityRank": 200,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        606,
+        1212
+      ]
+    },
+    {
+      "id": "rdw-group-dbf2fcecbc87d6cf",
+      "frequencyRank": 1614,
+      "make": "CITROEN",
+      "model": "C5 AIRCROSS",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1206,
+      "priorityRank": 201,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        601,
+        1202
+      ]
+    },
+    {
+      "id": "rdw-group-aeab6c940c6a6c4b",
+      "frequencyRank": 747,
+      "make": "NISSAN",
+      "model": "NISSAN JUKE",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 3027,
+      "priorityRank": 202,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1511,
+        3023
+      ]
+    },
+    {
+      "id": "rdw-group-d00d2e2698b3980b",
+      "frequencyRank": 289,
+      "make": "MERCEDES-BENZ",
+      "model": "B 180",
+      "displacementCc": 1595,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 7596,
+      "priorityRank": 203,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3796,
+        7592
+      ]
+    },
+    {
+      "id": "rdw-group-d4514ebaed69338e",
+      "frequencyRank": 754,
+      "make": "MERCEDES-BENZ",
+      "model": "E 200",
+      "displacementCc": 1991,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 2998,
+      "priorityRank": 204,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1497,
+        2994
+      ]
+    },
+    {
+      "id": "rdw-group-678e5b3497c14852",
+      "frequencyRank": 1633,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1498,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 1181,
+      "priorityRank": 205,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        588,
+        1177
+      ]
+    },
+    {
+      "id": "rdw-group-b97c839598517551",
+      "frequencyRank": 1636,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1395,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 1179,
+      "priorityRank": 206,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        587,
+        1175
+      ]
+    },
+    {
+      "id": "rdw-group-18201187ce83416a",
+      "frequencyRank": 1640,
+      "make": "VOLKSWAGEN",
+      "model": "TIGUAN",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 1177,
+      "priorityRank": 207,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        586,
+        1173
+      ]
+    },
+    {
+      "id": "rdw-group-5c1de032c8e22789",
+      "frequencyRank": 2247,
+      "make": "FIAT",
+      "model": "FIAT DUCATO",
+      "displacementCc": 2287,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 736,
+      "priorityRank": 208,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        366,
+        732
+      ]
+    },
+    {
+      "id": "rdw-group-b94c08a28302cc17",
+      "frequencyRank": 775,
+      "make": "AUDI",
+      "model": "AUDI A4",
+      "displacementCc": 1798,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2920,
+      "priorityRank": 209,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1458,
+        2916
+      ]
+    },
+    {
+      "id": "rdw-group-b94b282b1866fd03",
+      "frequencyRank": 778,
+      "make": "BMW",
+      "model": "520I",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 2907,
+      "priorityRank": 210,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1451,
+        2903
+      ]
+    },
+    {
+      "id": "rdw-group-303a1472c02a21db",
+      "frequencyRank": 1669,
+      "make": "VOLKSWAGEN",
+      "model": "TIGUAN",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 1151,
+      "priorityRank": 211,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        573,
+        1147
+      ]
+    },
+    {
+      "id": "rdw-group-e382b134e8364501",
+      "frequencyRank": 784,
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI COLT",
+      "displacementCc": 1499,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 2889,
+      "priorityRank": 212,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1442,
+        2885
+      ]
+    },
+    {
+      "id": "rdw-group-ee49f5e07e23661c",
+      "frequencyRank": 1676,
+      "make": "CITROEN",
+      "model": "C4 PICASSO",
+      "displacementCc": 1997,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 1145,
+      "priorityRank": 213,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        570,
+        1141
+      ]
+    },
+    {
+      "id": "rdw-group-6d621b79279eeb7a",
+      "frequencyRank": 789,
+      "make": "MERCEDES-BENZ",
+      "model": "C 300 E",
+      "displacementCc": 1999,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2863,
+      "priorityRank": 214,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1429,
+        2859
+      ]
+    },
+    {
+      "id": "rdw-group-2fa19d87c7e79de8",
+      "frequencyRank": 792,
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI OUTLANDER",
+      "displacementCc": 2360,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2842,
+      "priorityRank": 215,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1419,
+        2838
+      ]
+    },
+    {
+      "id": "rdw-group-62d8349099901272",
+      "frequencyRank": 1696,
+      "make": "PEUGEOT",
+      "model": "508",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1120,
+      "priorityRank": 216,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        558,
+        1116
+      ]
+    },
+    {
+      "id": "rdw-group-3ce1842350df0da6",
+      "frequencyRank": 813,
+      "make": "AUDI",
+      "model": "AUDI A4",
+      "displacementCc": 1798,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 2773,
+      "priorityRank": 217,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1384,
+        2769
+      ]
+    },
+    {
+      "id": "rdw-group-e7fd90567ad7ea77",
+      "frequencyRank": 241,
+      "make": "MERCEDES-BENZ",
+      "model": "C 180",
+      "displacementCc": 1595,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 8722,
+      "priorityRank": 218,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        4359,
+        8718
+      ]
+    },
+    {
+      "id": "rdw-group-820eaf1cdee7d559",
+      "frequencyRank": 1757,
+      "make": "CITROEN",
+      "model": "C4 PICASSO",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 1063,
+      "priorityRank": 219,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        529,
+        1059
+      ]
+    },
+    {
+      "id": "rdw-group-e1c3212d4d0b32fa",
+      "frequencyRank": 334,
+      "make": "MINI",
+      "model": "MINI COOPER",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 6634,
+      "priorityRank": 220,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        3315,
+        6630
+      ]
+    },
+    {
+      "id": "rdw-group-c03e02274246366e",
+      "frequencyRank": 340,
+      "make": "MERCEDES-BENZ",
+      "model": "CITAN",
+      "displacementCc": 1461,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 6570,
+      "priorityRank": 221,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        3283,
+        6566
+      ]
+    },
+    {
+      "id": "rdw-group-386f6660d02315fa",
+      "frequencyRank": 860,
+      "make": "AUDI",
+      "model": "AUDI TT",
+      "displacementCc": 1781,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 2592,
+      "priorityRank": 222,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1294,
+        2588
+      ]
+    },
+    {
+      "id": "rdw-group-8b1c24f824c2a5c5",
+      "frequencyRank": 861,
+      "make": "AUDI",
+      "model": "AUDI A1",
+      "displacementCc": 1390,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2589,
+      "priorityRank": 223,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1292,
+        2585
+      ]
+    },
+    {
+      "id": "rdw-group-bd23df685195fd4e",
+      "frequencyRank": 1807,
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "displacementCc": 1595,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 1027,
+      "priorityRank": 224,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        511,
+        1023
+      ]
+    },
+    {
+      "id": "rdw-group-c983be547152e761",
+      "frequencyRank": 1814,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1781,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 1024,
+      "priorityRank": 225,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        510,
+        1020
+      ]
+    },
+    {
+      "id": "rdw-group-d29335893594553f",
+      "frequencyRank": 1815,
+      "make": "HYUNDAI",
+      "model": "I20",
+      "displacementCc": 998,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2025,
+      "yearBandTo": 2029,
+      "vehicles": 1022,
+      "priorityRank": 226,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        509,
+        1018
+      ]
+    },
+    {
+      "id": "rdw-group-d8d6b79dc9694bc7",
+      "frequencyRank": 872,
+      "make": "CITROEN",
+      "model": "C5 AIRCROSS",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2563,
+      "priorityRank": 227,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1279,
+        2559
+      ]
+    },
+    {
+      "id": "rdw-group-2c5dd62fc382ca3c",
+      "frequencyRank": 1821,
+      "make": "MAZDA",
+      "model": "MAZDA MX-5",
+      "displacementCc": 1798,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 1018,
+      "priorityRank": 228,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        507,
+        1014
+      ]
+    },
+    {
+      "id": "rdw-group-4742bce10c407955",
+      "frequencyRank": 876,
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "displacementCc": 1198,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 2552,
+      "priorityRank": 229,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1274,
+        2548
+      ]
+    },
+    {
+      "id": "rdw-group-95b4c425fae7b47c",
+      "frequencyRank": 1825,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1896,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 1015,
+      "priorityRank": 230,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        505,
+        1011
+      ]
+    },
+    {
+      "id": "rdw-group-67b224651ff3f97b",
+      "frequencyRank": 882,
+      "make": "CITROEN",
+      "model": "C4",
+      "displacementCc": 1199,
+      "cylinders": 3,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2528,
+      "priorityRank": 231,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1262,
+        2524
+      ]
+    },
+    {
+      "id": "rdw-group-8c8327599d07151a",
+      "frequencyRank": 1841,
+      "make": "BMW",
+      "model": "320I",
+      "displacementCc": 1997,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 1003,
+      "priorityRank": 232,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        499,
+        999
+      ]
+    },
+    {
+      "id": "rdw-group-e9eb7d88e9a55877",
+      "frequencyRank": 886,
+      "make": "MINI",
+      "model": "COOPER S",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2513,
+      "priorityRank": 233,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        1254,
+        2509
+      ]
+    },
+    {
+      "id": "rdw-group-6f181c7efd8f173a",
+      "frequencyRank": 1851,
+      "make": "RENAULT",
+      "model": "MEGANE",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 994,
+      "priorityRank": 234,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        495,
+        990
+      ]
+    },
+    {
+      "id": "rdw-group-06d8061baf7622bc",
+      "frequencyRank": 71,
+      "make": "FORD",
+      "model": "TRANSIT CUSTOM",
+      "displacementCc": 1995,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 19795,
+      "priorityRank": 235,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        9895,
+        19791
+      ]
+    },
+    {
+      "id": "rdw-group-004e3cf010c3a9ba",
+      "frequencyRank": 895,
+      "make": "BMW",
+      "model": "318I",
+      "displacementCc": 1998,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2488,
+      "priorityRank": 236,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1242,
+        2484
+      ]
+    },
+    {
+      "id": "rdw-group-3a36bce682028510",
+      "frequencyRank": 1866,
+      "make": "PEUGEOT",
+      "model": "208",
+      "displacementCc": 1560,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 981,
+      "priorityRank": 237,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        488,
+        977
+      ]
+    },
+    {
+      "id": "rdw-group-9fe6019045078727",
+      "frequencyRank": 1872,
+      "make": "AUDI",
+      "model": "Q5",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 975,
+      "priorityRank": 238,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        485,
+        971
+      ]
+    },
+    {
+      "id": "rdw-group-96b4ea4497a4eda1",
+      "frequencyRank": 1879,
+      "make": "RENAULT",
+      "model": "CLIO",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2000,
+      "yearBandTo": 2004,
+      "vehicles": 968,
+      "priorityRank": 239,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        482,
+        964
+      ]
+    },
+    {
+      "id": "rdw-group-3e56c37eec2a7c80",
+      "frequencyRank": 377,
+      "make": "PEUGEOT",
+      "model": "PARTNER",
+      "displacementCc": 1560,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 6047,
+      "priorityRank": 240,
+      "baselineLayer": "C",
+      "offsets": [
+        0,
+        3021,
+        6043
+      ]
+    },
+    {
+      "id": "rdw-group-70d026d2f9a3af28",
+      "frequencyRank": 45,
+      "make": "VOLKSWAGEN",
+      "model": "T-ROC",
+      "displacementCc": 1498,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 23808,
+      "priorityRank": 241,
+      "baselineLayer": "C",
+      "offsets": [
+        0,
+        11902,
+        23804
+      ]
+    },
+    {
+      "id": "rdw-group-b996fce974200eb7",
+      "frequencyRank": 1909,
+      "make": "SKODA",
+      "model": "OCTAVIA RS",
+      "displacementCc": 1395,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 944,
+      "priorityRank": 242,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        470,
+        940
+      ]
+    },
+    {
+      "id": "rdw-group-b2bb57da4465fab6",
+      "frequencyRank": 948,
+      "make": "MINI",
+      "model": "COOPER",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2010,
+      "yearBandTo": 2014,
+      "vehicles": 2344,
+      "priorityRank": 243,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1170,
+        2340
+      ]
+    },
+    {
+      "id": "rdw-group-e8a46d028ded9bf5",
+      "frequencyRank": 306,
+      "make": "PEUGEOT",
+      "model": "EXPERT",
+      "displacementCc": 1997,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 7323,
+      "priorityRank": 244,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        3659,
+        7319
+      ]
+    },
+    {
+      "id": "rdw-group-21670943316616df",
+      "frequencyRank": 1950,
+      "make": "VOLKSWAGEN",
+      "model": "T-ROC",
+      "displacementCc": 1984,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 920,
+      "priorityRank": 245,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        458,
+        916
+      ]
+    },
+    {
+      "id": "rdw-group-bdb2916ff587253f",
+      "frequencyRank": 1948,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1197,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 920,
+      "priorityRank": 246,
+      "baselineLayer": "B",
+      "offsets": [
+        0,
+        458,
+        916
+      ]
+    },
+    {
+      "id": "rdw-group-1a75339d4a38449d",
+      "frequencyRank": 968,
+      "make": "NISSAN",
+      "model": "NISSAN JUKE",
+      "displacementCc": 1598,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2020,
+      "yearBandTo": 2024,
+      "vehicles": 2295,
+      "priorityRank": 247,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        1145,
+        2291
+      ]
+    },
+    {
+      "id": "rdw-group-c79a45490e42f2ed",
+      "frequencyRank": 82,
+      "make": "VOLKSWAGEN",
+      "model": "TRANSPORTER",
+      "displacementCc": 1968,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 18203,
+      "priorityRank": 248,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        9099,
+        18199
+      ]
+    },
+    {
+      "id": "rdw-group-8c3993ce0bd6fe39",
+      "frequencyRank": 412,
+      "make": "FORD",
+      "model": "TRANSIT CUSTOM",
+      "displacementCc": 2198,
+      "cylinders": 4,
+      "vehicleClass": "Bedrijfsauto",
+      "yearBandFrom": 2015,
+      "yearBandTo": 2019,
+      "vehicles": 5691,
+      "priorityRank": 249,
+      "baselineLayer": "E",
+      "offsets": [
+        0,
+        2843,
+        5687
+      ]
+    },
+    {
+      "id": "rdw-group-fde6a389d9f24761",
+      "frequencyRank": 54,
+      "make": "VOLKSWAGEN",
+      "model": "POLO",
+      "displacementCc": 1390,
+      "cylinders": 4,
+      "vehicleClass": "Personenauto",
+      "yearBandFrom": 2005,
+      "yearBandTo": 2009,
+      "vehicles": 22192,
+      "priorityRank": 250,
+      "baselineLayer": "D",
+      "offsets": [
+        0,
+        11094,
+        22188
+      ]
+    }
+  ]
+}

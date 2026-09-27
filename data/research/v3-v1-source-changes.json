@@ -1,0 +1,5602 @@
+{
+  "baselineHead": "d92bcd179813d1587e82e7f3a12ee5f1914648df",
+  "baselineProfiles": 280,
+  "missingProfiles": 0,
+  "reviewedConsolidations": 0,
+  "numericChanged": 15,
+  "scopeChanged": 16,
+  "records": [
+    {
+      "profileId": "sourced-citroen-jumper-7fc46f9a8cc5",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-0f53616bc3fa9899"
+      ],
+      "before": {
+        "id": "sourced-citroen-jumper-7fc46f9a8cc5",
+        "sourceIds": [
+          "shiftech-2564"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumper",
+        "generation": "III",
+        "yearFrom": 2019,
+        "stockPowerHp": 140,
+        "stockTorqueNm": 340,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 195,
+            "torqueNm": 430
+          },
+          "stage2": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-citroen-jumper-7fc46f9a8cc5",
+        "sourceIds": [
+          "shiftech-2564",
+          "unlimited-v2-0f53616bc3fa9899"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumper",
+        "generation": "III",
+        "yearFrom": 2019,
+        "stockPowerHp": 140,
+        "stockTorqueNm": 340,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 195,
+            "torqueNm": 430
+          },
+          "stage2": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-0f53616bc3fa9899",
+          "targetSourceId": "shiftech-2564",
+          "generation": "III",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-citroen-jumper-2-2-bluehdi-140-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumper/2019-iii/diesel/2.2-bluehdi-eu6b-140"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-0f53616bc3fa9899",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-citroen-jumper-2-2-bluehdi-140-pk.html",
+          "retrievedAt": "2026-09-16T14:37:39.250Z",
+          "contentSha256": "c4828e037ac0ca87d187a4d280cdd37beb7de4c01dd2cd8ca4b58ce42456b118",
+          "identity": {
+            "brand": "Citroën",
+            "modelFamily": "Jumper",
+            "generation": "2019 t/m nu",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "Citroen Jumper 2.2 BlueHDI",
+            "displacementCc": 2200,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 140,
+            "stockTorqueNm": 340,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 195,
+              "torqueNm": 430
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-citroen-jumpy-4638d7bffac2",
+      "changedFields": [
+        "yearTo"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-acc45141927a9dfe"
+      ],
+      "before": {
+        "id": "sourced-citroen-jumpy-4638d7bffac2",
+        "sourceIds": [
+          "shiftech-2576"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumpy",
+        "generation": "III",
+        "yearFrom": 2016,
+        "yearTo": 2023,
+        "stockPowerHp": 180,
+        "stockTorqueNm": 400,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-citroen-jumpy-4638d7bffac2",
+        "sourceIds": [
+          "shiftech-2576",
+          "unlimited-v2-acc45141927a9dfe"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumpy",
+        "generation": "III",
+        "yearFrom": 2016,
+        "yearTo": 2019,
+        "stockPowerHp": 180,
+        "stockTorqueNm": 400,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-acc45141927a9dfe",
+          "targetSourceId": "shiftech-2576",
+          "generation": "III",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-2-0-bluehdi-180-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-180"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-acc45141927a9dfe",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-2-0-bluehdi-180-pk.html",
+          "retrievedAt": "2026-09-16T14:38:15.381Z",
+          "contentSha256": "0fb1ef5e6cefd00a1f5d8de9556ff68a270daeb1d57f0fff441d1e8376ebdef5",
+          "identity": {
+            "brand": "Citroën",
+            "modelFamily": "Jumpy",
+            "generation": "2016 t/m 2019",
+            "yearFrom": 2016,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "Citroen Jumpy 2.0 BlueHDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 180,
+            "stockTorqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 215,
+              "torqueNm": 470
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-citroen-jumpy-474a2afbab05",
+      "changedFields": [
+        "yearTo"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-194a739fdd886033"
+      ],
+      "before": {
+        "id": "sourced-citroen-jumpy-474a2afbab05",
+        "sourceIds": [
+          "shiftech-2574"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumpy",
+        "generation": "III",
+        "yearFrom": 2016,
+        "yearTo": 2023,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 320,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-citroen-jumpy-474a2afbab05",
+        "sourceIds": [
+          "shiftech-2574",
+          "unlimited-v2-194a739fdd886033"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumpy",
+        "generation": "III",
+        "yearFrom": 2016,
+        "yearTo": 2019,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 320,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-194a739fdd886033",
+          "targetSourceId": "shiftech-2574",
+          "generation": "III",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-2-0-bluehdi-120-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-120"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-194a739fdd886033",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-2-0-bluehdi-120-pk.html",
+          "retrievedAt": "2026-09-16T14:38:11.391Z",
+          "contentSha256": "9092aba1d14b46081f6159e9bb1e1b45dd2deb4b18fcd5e97dbe4fae6e5f003e",
+          "identity": {
+            "brand": "Citroën",
+            "modelFamily": "Jumpy",
+            "generation": "2016 t/m 2019",
+            "yearFrom": 2016,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "Citroen Jumpy 2.0 BlueHDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 120,
+            "stockTorqueNm": 310,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 215,
+              "torqueNm": 470
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-citroen-jumpy-66bf5955fa20",
+      "changedFields": [
+        "yearTo"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-c7e58c72503273ea"
+      ],
+      "before": {
+        "id": "sourced-citroen-jumpy-66bf5955fa20",
+        "sourceIds": [
+          "shiftech-2575"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumpy",
+        "generation": "III",
+        "yearFrom": 2016,
+        "yearTo": 2023,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 370,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-citroen-jumpy-66bf5955fa20",
+        "sourceIds": [
+          "shiftech-2575",
+          "unlimited-v2-c7e58c72503273ea"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumpy",
+        "generation": "III",
+        "yearFrom": 2016,
+        "yearTo": 2019,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 370,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-c7e58c72503273ea",
+          "targetSourceId": "shiftech-2575",
+          "generation": "III",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-2-0-bluehdi-150-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-150"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-c7e58c72503273ea",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-2-0-bluehdi-150-pk.html",
+          "retrievedAt": "2026-09-16T14:38:13.379Z",
+          "contentSha256": "3f850fe90d409a98878fc3b7adfda955de82578ae0d1c572e4e3869f11f7b211",
+          "identity": {
+            "brand": "Citroën",
+            "modelFamily": "Jumpy",
+            "generation": "2016 t/m 2019",
+            "yearFrom": 2016,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "Citroen Jumpy 2.0 BlueHDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 150,
+            "stockTorqueNm": 370,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 215,
+              "torqueNm": 470
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-citroen-jumpy-db30d074ee8a",
+      "changedFields": [
+        "yearTo"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-f3a2f85dffeaaee3"
+      ],
+      "before": {
+        "id": "sourced-citroen-jumpy-db30d074ee8a",
+        "sourceIds": [
+          "shiftech-2577"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumpy",
+        "generation": "III",
+        "yearFrom": 2016,
+        "yearTo": 2023,
+        "stockPowerHp": 115,
+        "stockTorqueNm": 300,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 340
+          },
+          "stage2": {
+            "powerHp": 150,
+            "torqueNm": 360
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-citroen-jumpy-db30d074ee8a",
+        "sourceIds": [
+          "shiftech-2577",
+          "unlimited-v2-f3a2f85dffeaaee3"
+        ],
+        "brand": "Citroën",
+        "modelFamily": "Jumpy",
+        "generation": "III",
+        "yearFrom": 2016,
+        "yearTo": 2019,
+        "stockPowerHp": 115,
+        "stockTorqueNm": 300,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 340
+          },
+          "stage2": {
+            "powerHp": 150,
+            "torqueNm": 360
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-f3a2f85dffeaaee3",
+          "targetSourceId": "shiftech-2577",
+          "generation": "III",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-1-6-bluehdi-115-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/1.6-bluehdi-115"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-f3a2f85dffeaaee3",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-1-6-bluehdi-115-pk.html",
+          "retrievedAt": "2026-09-16T14:38:17.414Z",
+          "contentSha256": "719756e1a7c9e06cad4db013a0a60bd23040850bc372940a3d1044bac351bda0",
+          "identity": {
+            "brand": "Citroën",
+            "modelFamily": "Jumpy",
+            "generation": "2016 t/m 2019",
+            "yearFrom": 2016,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "Citroen Jumpy 1.6 BlueHDI",
+            "displacementCc": 1600,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 115,
+            "stockTorqueNm": 300,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 145,
+              "torqueNm": 350
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-ford-transit-37012b8f5610",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "atm-v3-adbdf213f056a328"
+      ],
+      "before": {
+        "id": "sourced-ford-transit-37012b8f5610",
+        "sourceIds": [
+          "shiftech-ford-transit-2017-diesel-20-ecoblue-170"
+        ],
+        "brand": "Ford",
+        "modelFamily": "Transit",
+        "generation": "2017",
+        "yearFrom": 2017,
+        "yearTo": 2018,
+        "stockPowerHp": 170,
+        "stockTorqueNm": 405,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 190,
+            "torqueNm": 460
+          },
+          "stage2": {
+            "powerHp": 200,
+            "torqueNm": 480
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-ford-transit-37012b8f5610",
+        "sourceIds": [
+          "shiftech-ford-transit-2017-diesel-20-ecoblue-170",
+          "atm-v3-adbdf213f056a328"
+        ],
+        "brand": "Ford",
+        "modelFamily": "Transit",
+        "generation": "2017",
+        "yearFrom": 2017,
+        "yearTo": 2018,
+        "stockPowerHp": 170,
+        "stockTorqueNm": 405,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 190,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 200,
+            "torqueNm": 480
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "atm-v3-adbdf213f056a328",
+          "targetSourceId": "shiftech-ford-transit-2017-diesel-20-ecoblue-170",
+          "generation": "2017",
+          "evidenceUrls": [
+            "https://www.atm-chiptuning.com/chiptuning/ford-transit-20-tdci-ecoblue-170pk/",
+            "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2017/diesel/2.0-ecoblue-170"
+          ],
+          "reason": "Reviewed same make/model/fuel, exact factory PS and Nm, compatible actual/nominal displacement and overlapping generation starts within one year. Intersect published applicability; retain every source value and one provider vote."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "atm-v3-adbdf213f056a328",
+          "provider": "atm-chiptuning",
+          "url": "https://www.atm-chiptuning.com/chiptuning/ford-transit-20-tdci-ecoblue-170pk/",
+          "retrievedAt": "2026-09-16T17:16:20.144Z",
+          "contentSha256": "0ef12f353aab0e26b29583be360f9b7ab25b6fdc7cf6a413d1f9a7e5f827fc39",
+          "identity": {
+            "brand": "Ford",
+            "modelFamily": "Transit",
+            "generation": "8th - 2017 - 2018",
+            "yearFrom": 2017,
+            "yearTo": 2018,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 TDCi EcoBlue 170pk",
+            "engineFamily": "EcoBlue",
+            "engineCodes": [
+              "YNF6",
+              "YNFS"
+            ],
+            "displacementCc": 1996,
+            "displacementPrecision": "exact",
+            "stockPowerHp": 170,
+            "stockTorqueNm": 405,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "ecuFamily": "Siemens/Continental SID211",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 190,
+              "torqueNm": 450
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-ford-transit-3a6adc6be1ca",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "atm-v3-c2274cfb5063635e"
+      ],
+      "before": {
+        "id": "sourced-ford-transit-3a6adc6be1ca",
+        "sourceIds": [
+          "shiftech-ford-transit-2017-diesel-20-ecoblue-105",
+          "unlimited-chiptuning-ford-transit-ecoblue-2-0-tdci-105-pk-euro-6"
+        ],
+        "brand": "Ford",
+        "modelFamily": "Transit",
+        "generation": "2017",
+        "yearFrom": 2017,
+        "yearTo": 2018,
+        "stockPowerHp": 105,
+        "stockTorqueNm": 360,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 190,
+            "torqueNm": 450
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-ford-transit-3a6adc6be1ca",
+        "sourceIds": [
+          "shiftech-ford-transit-2017-diesel-20-ecoblue-105",
+          "unlimited-chiptuning-ford-transit-ecoblue-2-0-tdci-105-pk-euro-6",
+          "atm-v3-c2274cfb5063635e"
+        ],
+        "brand": "Ford",
+        "modelFamily": "Transit",
+        "generation": "2017",
+        "yearFrom": 2017,
+        "yearTo": 2018,
+        "stockPowerHp": 105,
+        "stockTorqueNm": 360,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 190,
+            "torqueNm": 450
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "atm-v3-c2274cfb5063635e",
+          "targetSourceId": "shiftech-ford-transit-2017-diesel-20-ecoblue-105",
+          "generation": "2017",
+          "evidenceUrls": [
+            "https://www.atm-chiptuning.com/chiptuning/ford-transit-20-tdci-ecoblue-105pk/",
+            "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2017/diesel/2.0-ecoblue-105",
+            "https://www.unlimitedtuning.nl/chiptuning-ford-transit-ecoblue-2-0-tdci-105-pk-euro-6.html"
+          ],
+          "reason": "Reviewed same make/model/fuel, exact factory PS and Nm, compatible actual/nominal displacement and overlapping generation starts within one year. Intersect published applicability; retain every source value and one provider vote."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "atm-v3-c2274cfb5063635e",
+          "provider": "atm-chiptuning",
+          "url": "https://www.atm-chiptuning.com/chiptuning/ford-transit-20-tdci-ecoblue-105pk/",
+          "retrievedAt": "2026-09-16T17:16:12.140Z",
+          "contentSha256": "cc48de90fb6c60fc87bf1bb66a2cb71feee8c17f205eeded1d0ffde5f6ba5e37",
+          "identity": {
+            "brand": "Ford",
+            "modelFamily": "Transit",
+            "generation": "8th - 2017 - 2018",
+            "yearFrom": 2017,
+            "yearTo": 2018,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 TDCi EcoBlue 105pk",
+            "engineFamily": "EcoBlue",
+            "engineCodes": [
+              "YLF6",
+              "YLFS"
+            ],
+            "displacementCc": 1996,
+            "displacementPrecision": "exact",
+            "stockPowerHp": 105,
+            "stockTorqueNm": 360,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "ecuFamily": "Siemens/Continental SID211 & Siemens/Continental SID209",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 190,
+              "torqueNm": 450
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-ford-transit-connect-694c712b8c33",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-82b4a79e0fc8cd10",
+        "atm-v3-71a68ae9f207107e"
+      ],
+      "before": {
+        "id": "sourced-ford-transit-connect-694c712b8c33",
+        "sourceIds": [
+          "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120"
+        ],
+        "brand": "Ford",
+        "modelFamily": "Transit Connect",
+        "generation": "2016",
+        "yearFrom": 2016,
+        "yearTo": 2022,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 270,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 330
+          },
+          "stage2": {
+            "powerHp": 150,
+            "torqueNm": 350
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-ford-transit-connect-694c712b8c33",
+        "sourceIds": [
+          "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
+          "unlimited-v2-82b4a79e0fc8cd10",
+          "atm-v3-71a68ae9f207107e"
+        ],
+        "brand": "Ford",
+        "modelFamily": "Transit Connect",
+        "generation": "2016",
+        "yearFrom": 2016,
+        "yearTo": 2022,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 270,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 320
+          },
+          "stage2": {
+            "powerHp": 150,
+            "torqueNm": 350
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-82b4a79e0fc8cd10",
+          "targetSourceId": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
+          "generation": "2016",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-ford-transit-connect-1-5-tdci-120-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-120"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        },
+        {
+          "sourceId": "atm-v3-71a68ae9f207107e",
+          "targetSourceId": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
+          "generation": "2016",
+          "evidenceUrls": [
+            "https://www.atm-chiptuning.com/chiptuning/ford-transit-connect-15-tdci-120pk-10728/",
+            "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-120",
+            "https://www.unlimitedtuning.nl/chiptuning-ford-transit-connect-1-5-tdci-120-pk.html"
+          ],
+          "reason": "Reviewed same make/model/fuel, exact factory PS and Nm, compatible actual/nominal displacement and overlapping generation starts within one year. Intersect published applicability; retain every source value and one provider vote."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-82b4a79e0fc8cd10",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-ford-transit-connect-1-5-tdci-120-pk.html",
+          "retrievedAt": "2026-09-16T14:18:04.763Z",
+          "contentSha256": "e7c549813e6e05efb6941458692abef18f1cdf2aea2dade2c7e301ac69163e91",
+          "identity": {
+            "brand": "Ford",
+            "modelFamily": "Transit Connect",
+            "generation": "2016 t/m nu",
+            "yearFrom": 2016,
+            "fuel": "Diesel",
+            "engineMarketingName": "1.5 TDCI",
+            "displacementCc": 1500,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 120,
+            "stockTorqueNm": 270,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown",
+            "engineFamily": "TDCi"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 150,
+              "torqueNm": 340
+            }
+          }
+        },
+        {
+          "sourceId": "atm-v3-71a68ae9f207107e",
+          "provider": "atm-chiptuning",
+          "url": "https://www.atm-chiptuning.com/chiptuning/ford-transit-connect-15-tdci-120pk-10728/",
+          "retrievedAt": "2026-09-16T17:16:36.168Z",
+          "contentSha256": "ca994cf56cfc1e16494f1ff0c6bbea4b7faec75e2bf7be144875e2551a336727",
+          "identity": {
+            "brand": "Ford",
+            "modelFamily": "Transit Connect",
+            "generation": "3th - 2016 ->",
+            "yearFrom": 2016,
+            "fuel": "Diesel",
+            "engineMarketingName": "1.5 TDCi 120pk",
+            "engineFamily": "TDCi",
+            "engineCodes": [
+              "XWGB"
+            ],
+            "displacementCc": 1499,
+            "displacementPrecision": "exact",
+            "stockPowerHp": 120,
+            "stockTorqueNm": 270,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "ecuFamily": "Bosch MD1CS005 & Bosch EDC17C70",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 145,
+              "torqueNm": 320
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-ford-transit-connect-db936c8558e6",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "atm-v3-6fb7aa622e723032"
+      ],
+      "before": {
+        "id": "sourced-ford-transit-connect-db936c8558e6",
+        "sourceIds": [
+          "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100"
+        ],
+        "brand": "Ford",
+        "modelFamily": "Transit Connect",
+        "generation": "2016",
+        "yearFrom": 2016,
+        "yearTo": 2022,
+        "stockPowerHp": 100,
+        "stockTorqueNm": 250,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 125,
+            "torqueNm": 330
+          },
+          "stage2": {
+            "powerHp": 135,
+            "torqueNm": 350
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-ford-transit-connect-db936c8558e6",
+        "sourceIds": [
+          "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100",
+          "atm-v3-6fb7aa622e723032"
+        ],
+        "brand": "Ford",
+        "modelFamily": "Transit Connect",
+        "generation": "2016",
+        "yearFrom": 2016,
+        "yearTo": 2022,
+        "stockPowerHp": 100,
+        "stockTorqueNm": 250,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 125,
+            "torqueNm": 320
+          },
+          "stage2": {
+            "powerHp": 135,
+            "torqueNm": 350
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "atm-v3-6fb7aa622e723032",
+          "targetSourceId": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-100",
+          "generation": "2016",
+          "evidenceUrls": [
+            "https://www.atm-chiptuning.com/chiptuning/ford-transit-connect-15-tdci-100pk-10727/",
+            "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-100"
+          ],
+          "reason": "Reviewed same make/model/fuel, exact factory PS and Nm, compatible actual/nominal displacement and overlapping generation starts within one year. Intersect published applicability; retain every source value and one provider vote."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "atm-v3-6fb7aa622e723032",
+          "provider": "atm-chiptuning",
+          "url": "https://www.atm-chiptuning.com/chiptuning/ford-transit-connect-15-tdci-100pk-10727/",
+          "retrievedAt": "2026-09-16T17:16:32.141Z",
+          "contentSha256": "2905082951c8abcab21c60469bbbf39dd0d6dc3696b651a915f5153acbdedbfe",
+          "identity": {
+            "brand": "Ford",
+            "modelFamily": "Transit Connect",
+            "generation": "3th - 2016 ->",
+            "yearFrom": 2016,
+            "fuel": "Diesel",
+            "engineMarketingName": "1.5 TDCi 100pk",
+            "engineFamily": "TDCi",
+            "engineCodes": [
+              "XVGA"
+            ],
+            "displacementCc": 1499,
+            "displacementPrecision": "exact",
+            "stockPowerHp": 100,
+            "stockTorqueNm": 250,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "ecuFamily": "Bosch MD1CS005 & Bosch EDC17C70",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 145,
+              "torqueNm": 320
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-hyundai-i30-044258a3a6bf",
+      "changedFields": [
+        "yearFrom"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-bcf5dc2df5b2ea83"
+      ],
+      "before": {
+        "id": "sourced-hyundai-i30-044258a3a6bf",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-136"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "2016 - PD",
+        "yearFrom": 2016,
+        "yearTo": 2019,
+        "stockPowerHp": 136,
+        "stockTorqueNm": 280,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 160,
+            "torqueNm": 340
+          },
+          "stage2": {
+            "powerHp": 170,
+            "torqueNm": 360
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-hyundai-i30-044258a3a6bf",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-136",
+          "unlimited-v2-bcf5dc2df5b2ea83"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "2016 - PD",
+        "yearFrom": 2017,
+        "yearTo": 2019,
+        "stockPowerHp": 136,
+        "stockTorqueNm": 280,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 160,
+            "torqueNm": 340
+          },
+          "stage2": {
+            "powerHp": 170,
+            "torqueNm": 360
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-bcf5dc2df5b2ea83",
+          "targetSourceId": "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-136",
+          "generation": "2016 - PD",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-1-6-crdi-136-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/diesel/1.6-crdi-eu6-136"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-bcf5dc2df5b2ea83",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-1-6-crdi-136-pk.html",
+          "retrievedAt": "2026-09-16T13:48:55.127Z",
+          "contentSha256": "80139ad1a3797fa416bff168b827251002104e0af813646a1b989bbec1704828",
+          "identity": {
+            "brand": "Hyundai",
+            "modelFamily": "i30",
+            "generation": "2017 t/m nu",
+            "yearFrom": 2017,
+            "fuel": "Diesel",
+            "engineMarketingName": "1.6 CRDI",
+            "displacementCc": 1600,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 136,
+            "stockTorqueNm": 280,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 165,
+              "torqueNm": 350
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-hyundai-i30-2f748c558a5e",
+      "changedFields": [
+        "yearFrom"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-f71950cd2473daef"
+      ],
+      "before": {
+        "id": "sourced-hyundai-i30-2f748c558a5e",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-petrol-20t-n-performance-275"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "2016 - PD",
+        "yearFrom": 2016,
+        "yearTo": 2019,
+        "stockPowerHp": 275,
+        "stockTorqueNm": 353,
+        "displacementCc": 2000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 300,
+            "torqueNm": 430
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-hyundai-i30-2f748c558a5e",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-petrol-20t-n-performance-275",
+          "unlimited-v2-f71950cd2473daef"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "2016 - PD",
+        "yearFrom": 2017,
+        "yearTo": 2019,
+        "stockPowerHp": 275,
+        "stockTorqueNm": 353,
+        "displacementCc": 2000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 300,
+            "torqueNm": 430
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-f71950cd2473daef",
+          "targetSourceId": "shiftech-hyundai-i30-2016-pd-petrol-20t-n-performance-275",
+          "generation": "2016 - PD",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-2-0-t-275-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/2.0t-n-performance-275"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-f71950cd2473daef",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-2-0-t-275-pk.html",
+          "retrievedAt": "2026-09-16T13:49:05.113Z",
+          "contentSha256": "9c7e49b515d3e0c8374eb2427c261df67572906a5945d822b7eac7751bd4dead",
+          "identity": {
+            "brand": "Hyundai",
+            "modelFamily": "i30",
+            "generation": "2017 t/m nu",
+            "yearFrom": 2017,
+            "fuel": "Petrol",
+            "engineMarketingName": "2.0 T",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 275,
+            "stockTorqueNm": 353,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 300,
+              "torqueNm": 440
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-hyundai-i30-62975a767077",
+      "changedFields": [
+        "yearFrom"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-a7c4344429e997ed"
+      ],
+      "before": {
+        "id": "sourced-hyundai-i30-62975a767077",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-petrol-20t-n-250"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "PD",
+        "yearFrom": 2016,
+        "yearTo": 2019,
+        "stockPowerHp": 250,
+        "stockTorqueNm": 353,
+        "displacementCc": 2000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 300,
+            "torqueNm": 440
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-hyundai-i30-62975a767077",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-petrol-20t-n-250",
+          "unlimited-v2-a7c4344429e997ed"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "PD",
+        "yearFrom": 2017,
+        "yearTo": 2019,
+        "stockPowerHp": 250,
+        "stockTorqueNm": 353,
+        "displacementCc": 2000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 300,
+            "torqueNm": 440
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-a7c4344429e997ed",
+          "targetSourceId": "shiftech-hyundai-i30-2016-pd-petrol-20t-n-250",
+          "generation": "PD",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-2-0-t-250-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/2.0t-n-250"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-a7c4344429e997ed",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-2-0-t-250-pk.html",
+          "retrievedAt": "2026-09-16T13:49:03.133Z",
+          "contentSha256": "afdd3a37722d8e9931164879c6927c2d29441db73f5b4f0e8c299db5b7db7be7",
+          "identity": {
+            "brand": "Hyundai",
+            "modelFamily": "i30",
+            "generation": "2017 t/m nu",
+            "yearFrom": 2017,
+            "fuel": "Petrol",
+            "engineMarketingName": "2.0 T",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 250,
+            "stockTorqueNm": 353,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 300,
+              "torqueNm": 440
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-hyundai-i30-bfaa7466e2b6",
+      "changedFields": [
+        "yearFrom"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-dd71a1f67a7ea4e4"
+      ],
+      "before": {
+        "id": "sourced-hyundai-i30-bfaa7466e2b6",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-petrol-14-t-gdi-140"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "2016 - PD",
+        "yearFrom": 2016,
+        "yearTo": 2019,
+        "stockPowerHp": 140,
+        "stockTorqueNm": 240,
+        "displacementCc": 1400,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 170,
+            "torqueNm": 290
+          },
+          "stage2": {
+            "powerHp": 175,
+            "torqueNm": 300
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-hyundai-i30-bfaa7466e2b6",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-petrol-14-t-gdi-140",
+          "unlimited-v2-dd71a1f67a7ea4e4"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "2016 - PD",
+        "yearFrom": 2017,
+        "yearTo": 2019,
+        "stockPowerHp": 140,
+        "stockTorqueNm": 240,
+        "displacementCc": 1400,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 170,
+            "torqueNm": 290
+          },
+          "stage2": {
+            "powerHp": 175,
+            "torqueNm": 300
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-dd71a1f67a7ea4e4",
+          "targetSourceId": "shiftech-hyundai-i30-2016-pd-petrol-14-t-gdi-140",
+          "generation": "2016 - PD",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-1-4-t-gdi-140-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/1.4-t-gdi-140"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-dd71a1f67a7ea4e4",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-1-4-t-gdi-140-pk.html",
+          "retrievedAt": "2026-09-16T13:48:57.124Z",
+          "contentSha256": "af0b879ad95fca609b07bef0d7c14c375e42472a07aad6c62cf76d421000ee6a",
+          "identity": {
+            "brand": "Hyundai",
+            "modelFamily": "i30",
+            "generation": "2017 t/m nu",
+            "yearFrom": 2017,
+            "fuel": "Petrol",
+            "engineMarketingName": "1.4 T-GDI",
+            "displacementCc": 1400,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 140,
+            "stockTorqueNm": 242,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 170,
+              "torqueNm": 290
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-hyundai-i30-e5eb161e1b17",
+      "changedFields": [
+        "yearFrom"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-37fed53cdb02dc2b"
+      ],
+      "before": {
+        "id": "sourced-hyundai-i30-e5eb161e1b17",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-petrol-10-t-gdi-120"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "2016 - PD",
+        "yearFrom": 2016,
+        "yearTo": 2019,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 172,
+        "displacementCc": 1000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 230
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-hyundai-i30-e5eb161e1b17",
+        "sourceIds": [
+          "shiftech-hyundai-i30-2016-pd-petrol-10-t-gdi-120",
+          "unlimited-v2-37fed53cdb02dc2b"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "i30",
+        "generation": "2016 - PD",
+        "yearFrom": 2017,
+        "yearTo": 2019,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 172,
+        "displacementCc": 1000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 230
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-37fed53cdb02dc2b",
+          "targetSourceId": "shiftech-hyundai-i30-2016-pd-petrol-10-t-gdi-120",
+          "generation": "2016 - PD",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-1-0-t-gdi-120-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/1.0-t-gdi-120"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-37fed53cdb02dc2b",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-1-0-t-gdi-120-pk.html",
+          "retrievedAt": "2026-09-16T13:48:59.066Z",
+          "contentSha256": "5d8b57f8c5d933f2c70fa72ed095135460a4015461b0ea7acb0eff2da743b087",
+          "identity": {
+            "brand": "Hyundai",
+            "modelFamily": "i30",
+            "generation": "2017 t/m nu",
+            "yearFrom": 2017,
+            "fuel": "Petrol",
+            "engineMarketingName": "1.0 T-GDI",
+            "displacementCc": 1000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 120,
+            "stockTorqueNm": 172,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 140,
+              "torqueNm": 230
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-hyundai-tucson-7a47bbfca514",
+      "changedFields": [
+        "yearTo",
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-5101a700db7765df"
+      ],
+      "before": {
+        "id": "sourced-hyundai-tucson-7a47bbfca514",
+        "sourceIds": [
+          "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-184"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "Tucson",
+        "generation": "2015 - TL",
+        "yearFrom": 2015,
+        "yearTo": 2019,
+        "stockPowerHp": 184,
+        "stockTorqueNm": 392,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-hyundai-tucson-7a47bbfca514",
+        "sourceIds": [
+          "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-184",
+          "unlimited-v2-5101a700db7765df"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "Tucson",
+        "generation": "2015 - TL",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "stockPowerHp": 184,
+        "stockTorqueNm": 392,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-5101a700db7765df",
+          "targetSourceId": "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-184",
+          "generation": "2015 - TL",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-hyundai-tucson-2-0-crdi-184-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/2.0-crdi-eu6-184"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-5101a700db7765df",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-hyundai-tucson-2-0-crdi-184-pk.html",
+          "retrievedAt": "2026-09-16T13:50:15.451Z",
+          "contentSha256": "1d26541bf166ef0543f4673129e0b566a9c0a803201bcb4c11d4345cdd0d05d5",
+          "identity": {
+            "brand": "Hyundai",
+            "modelFamily": "Tucson",
+            "generation": "2015 t/m 2018",
+            "yearFrom": 2015,
+            "yearTo": 2018,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 CRDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 184,
+            "stockTorqueNm": 383,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 210,
+              "torqueNm": 460
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-hyundai-tucson-cb0f697df918",
+      "changedFields": [
+        "yearTo"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-93038c4fc6cb2708"
+      ],
+      "before": {
+        "id": "sourced-hyundai-tucson-cb0f697df918",
+        "sourceIds": [
+          "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-141"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "Tucson",
+        "generation": "2015 - TL",
+        "yearFrom": 2015,
+        "yearTo": 2019,
+        "stockPowerHp": 141,
+        "stockTorqueNm": 340,
+        "displacementCc": 1700,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 170,
+            "torqueNm": 390
+          },
+          "stage2": {
+            "powerHp": 180,
+            "torqueNm": 410
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-hyundai-tucson-cb0f697df918",
+        "sourceIds": [
+          "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-141",
+          "unlimited-v2-93038c4fc6cb2708"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "Tucson",
+        "generation": "2015 - TL",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "stockPowerHp": 141,
+        "stockTorqueNm": 340,
+        "displacementCc": 1700,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 170,
+            "torqueNm": 390
+          },
+          "stage2": {
+            "powerHp": 180,
+            "torqueNm": 410
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-93038c4fc6cb2708",
+          "targetSourceId": "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-141",
+          "generation": "2015 - TL",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-hyundai-tucson-1-7-crdi-141-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/1.7-crdi-eu6-141"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-93038c4fc6cb2708",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-hyundai-tucson-1-7-crdi-141-pk.html",
+          "retrievedAt": "2026-09-16T13:50:43.502Z",
+          "contentSha256": "987198251bfcbf2a49bf9448f2b0b8e45d962dde4ea485757abfbbbe1c0bfb86",
+          "identity": {
+            "brand": "Hyundai",
+            "modelFamily": "Tucson",
+            "generation": "2015 t/m 2018",
+            "yearFrom": 2015,
+            "yearTo": 2018,
+            "fuel": "Diesel",
+            "engineMarketingName": "1.7 CRDI",
+            "displacementCc": 1700,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 141,
+            "stockTorqueNm": 340,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 170,
+              "torqueNm": 380
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-hyundai-tucson-f460c431e592",
+      "changedFields": [
+        "yearTo",
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-d3334d3876520738"
+      ],
+      "before": {
+        "id": "sourced-hyundai-tucson-f460c431e592",
+        "sourceIds": [
+          "shiftech-hyundai-tucson-2015-tl-petrol-16-t-gdi-177"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "Tucson",
+        "generation": "2015 - TL",
+        "yearFrom": 2015,
+        "yearTo": 2019,
+        "stockPowerHp": 177,
+        "stockTorqueNm": 265,
+        "displacementCc": 1600,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 220,
+            "torqueNm": 330
+          },
+          "stage2": {
+            "powerHp": 230,
+            "torqueNm": 350
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-hyundai-tucson-f460c431e592",
+        "sourceIds": [
+          "shiftech-hyundai-tucson-2015-tl-petrol-16-t-gdi-177",
+          "unlimited-v2-d3334d3876520738"
+        ],
+        "brand": "Hyundai",
+        "modelFamily": "Tucson",
+        "generation": "2015 - TL",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "stockPowerHp": 177,
+        "stockTorqueNm": 265,
+        "displacementCc": 1600,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 215,
+            "torqueNm": 340
+          },
+          "stage2": {
+            "powerHp": 230,
+            "torqueNm": 350
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-d3334d3876520738",
+          "targetSourceId": "shiftech-hyundai-tucson-2015-tl-petrol-16-t-gdi-177",
+          "generation": "2015 - TL",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-hyundai-tucson-1-6-t-gdi-177-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/petrol/1.6-t-gdi-177"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-d3334d3876520738",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-hyundai-tucson-1-6-t-gdi-177-pk.html",
+          "retrievedAt": "2026-09-16T13:50:13.449Z",
+          "contentSha256": "d7b7f0bdabee6c6d65c530feb42fb14fd26cf2883dd96a817c1ce0fb5867844a",
+          "identity": {
+            "brand": "Hyundai",
+            "modelFamily": "Tucson",
+            "generation": "2015 t/m 2018",
+            "yearFrom": 2015,
+            "yearTo": 2018,
+            "fuel": "Petrol",
+            "engineMarketingName": "1.6 T-GDI",
+            "displacementCc": 1600,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 177,
+            "stockTorqueNm": 265,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 210,
+              "torqueNm": 350
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-kia-ceed-2e382da4dcf8",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-d8d4648b0456c63f"
+      ],
+      "before": {
+        "id": "sourced-kia-ceed-2e382da4dcf8",
+        "sourceIds": [
+          "shiftech-kia-ceed-2018-petrol-10-t-gdi-100"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Ceed",
+        "generation": "2018",
+        "yearFrom": 2018,
+        "stockPowerHp": 100,
+        "stockTorqueNm": 172,
+        "displacementCc": 1000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 230
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-kia-ceed-2e382da4dcf8",
+        "sourceIds": [
+          "shiftech-kia-ceed-2018-petrol-10-t-gdi-100",
+          "unlimited-v2-d8d4648b0456c63f"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Ceed",
+        "generation": "2018",
+        "yearFrom": 2018,
+        "stockPowerHp": 100,
+        "stockTorqueNm": 172,
+        "displacementCc": 1000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 230
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-d8d4648b0456c63f",
+          "targetSourceId": "shiftech-kia-ceed-2018-petrol-10-t-gdi-100",
+          "generation": "2018",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-1-0-t-gdi-100-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.0-t-gdi-100"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-d8d4648b0456c63f",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-1-0-t-gdi-100-pk.html",
+          "retrievedAt": "2026-09-16T13:44:21.443Z",
+          "contentSha256": "6515bc9a682f3f8aafb136e84094e2834d7d79a58e336f20c4372e58fdd2c06f",
+          "identity": {
+            "brand": "Kia",
+            "modelFamily": "Ceed",
+            "generation": "2018 t/m nu",
+            "yearFrom": 2018,
+            "fuel": "Petrol",
+            "engineMarketingName": "1.0 T-GDI",
+            "displacementCc": 1000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 100,
+            "stockTorqueNm": 172,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 140,
+              "torqueNm": 230
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-kia-ceed-7149155f19ef",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-6cddf120be8cc9fb"
+      ],
+      "before": {
+        "id": "sourced-kia-ceed-7149155f19ef",
+        "sourceIds": [
+          "shiftech-kia-ceed-2018-petrol-16-t-gdi-204"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Ceed",
+        "generation": "2018",
+        "yearFrom": 2018,
+        "stockPowerHp": 204,
+        "stockTorqueNm": 265,
+        "displacementCc": 1600,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 235,
+            "torqueNm": 340
+          },
+          "stage2": {
+            "powerHp": 245,
+            "torqueNm": 360
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-kia-ceed-7149155f19ef",
+        "sourceIds": [
+          "shiftech-kia-ceed-2018-petrol-16-t-gdi-204",
+          "unlimited-v2-6cddf120be8cc9fb"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Ceed",
+        "generation": "2018",
+        "yearFrom": 2018,
+        "stockPowerHp": 204,
+        "stockTorqueNm": 265,
+        "displacementCc": 1600,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 235,
+            "torqueNm": 350
+          },
+          "stage2": {
+            "powerHp": 245,
+            "torqueNm": 360
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-6cddf120be8cc9fb",
+          "targetSourceId": "shiftech-kia-ceed-2018-petrol-16-t-gdi-204",
+          "generation": "2018",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-gt-1-6-t-gdi-204-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.6-t-gdi-204"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-6cddf120be8cc9fb",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-gt-1-6-t-gdi-204-pk.html",
+          "retrievedAt": "2026-09-16T13:44:23.345Z",
+          "contentSha256": "aee25448bb778aa96c2fc73fe1751836f133f917c5d4ea0b8827b4bf51eddba7",
+          "identity": {
+            "brand": "Kia",
+            "modelFamily": "Ceed",
+            "generation": "2018 t/m nu",
+            "yearFrom": 2018,
+            "fuel": "Petrol",
+            "engineMarketingName": "GT 1.6 T-GDI",
+            "displacementCc": 1600,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 204,
+            "stockTorqueNm": 265,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 240,
+              "torqueNm": 360
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-kia-ceed-ff93ac5fd329",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-d0ae7b123d0532cc"
+      ],
+      "before": {
+        "id": "sourced-kia-ceed-ff93ac5fd329",
+        "sourceIds": [
+          "shiftech-kia-ceed-2018-petrol-10-t-gdi-120"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Ceed",
+        "generation": "2018",
+        "yearFrom": 2018,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 172,
+        "displacementCc": 1000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 230
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-kia-ceed-ff93ac5fd329",
+        "sourceIds": [
+          "shiftech-kia-ceed-2018-petrol-10-t-gdi-120",
+          "unlimited-v2-d0ae7b123d0532cc"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Ceed",
+        "generation": "2018",
+        "yearFrom": 2018,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 172,
+        "displacementCc": 1000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 140,
+            "torqueNm": 230
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-d0ae7b123d0532cc",
+          "targetSourceId": "shiftech-kia-ceed-2018-petrol-10-t-gdi-120",
+          "generation": "2018",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-1-0-t-gdi-120-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.0-t-gdi-120"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-d0ae7b123d0532cc",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-1-0-t-gdi-120-pk.html",
+          "retrievedAt": "2026-09-16T13:42:16.041Z",
+          "contentSha256": "e31321f21ae0d11a86a9cf7ef20736c7b32ac38b2a6dac3bdf6dc237a447dc1d",
+          "identity": {
+            "brand": "Kia",
+            "modelFamily": "Ceed",
+            "generation": "2018 t/m nu",
+            "yearFrom": 2018,
+            "fuel": "Petrol",
+            "engineMarketingName": "1.0 T-GDI",
+            "displacementCc": 1000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 120,
+            "stockTorqueNm": 172,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 140,
+              "torqueNm": 230
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-kia-sorento-0afcf96f24a9",
+      "changedFields": [
+        "yearFrom"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-966216ab380016c1"
+      ],
+      "before": {
+        "id": "sourced-kia-sorento-0afcf96f24a9",
+        "sourceIds": [
+          "shiftech-kia-sorento-2009-xm-diesel-22-crdi-eu5-197"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sorento",
+        "generation": "2009 - XM",
+        "yearFrom": 2009,
+        "yearTo": 2013,
+        "stockPowerHp": 197,
+        "stockTorqueNm": 422,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 230,
+            "torqueNm": 500
+          },
+          "stage2": {
+            "powerHp": 240,
+            "torqueNm": 520
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-kia-sorento-0afcf96f24a9",
+        "sourceIds": [
+          "shiftech-kia-sorento-2009-xm-diesel-22-crdi-eu5-197",
+          "unlimited-v2-966216ab380016c1"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sorento",
+        "generation": "2009 - XM",
+        "yearFrom": 2010,
+        "yearTo": 2013,
+        "stockPowerHp": 197,
+        "stockTorqueNm": 422,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 230,
+            "torqueNm": 500
+          },
+          "stage2": {
+            "powerHp": 240,
+            "torqueNm": 520
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-966216ab380016c1",
+          "targetSourceId": "shiftech-kia-sorento-2009-xm-diesel-22-crdi-eu5-197",
+          "generation": "2009 - XM",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-kia-sorento-2-2-crdi-197-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2009-xm/diesel/2.2-crdi-eu5-197"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-966216ab380016c1",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-kia-sorento-2-2-crdi-197-pk.html",
+          "retrievedAt": "2026-09-16T13:45:52.257Z",
+          "contentSha256": "9b55ae6336878ccc876475f669f3aee2d380432f9f33ea6217c635c70ec04768",
+          "identity": {
+            "brand": "Kia",
+            "modelFamily": "Sorento",
+            "generation": "2010 t/m 2015",
+            "yearFrom": 2010,
+            "yearTo": 2015,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.2 CRDI",
+            "displacementCc": 2200,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 197,
+            "stockTorqueNm": 422,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 235,
+              "torqueNm": 510
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-kia-sportage-93b8abb48ecb",
+      "changedFields": [
+        "yearFrom",
+        "yearTo"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-21c72ab0877ccaad"
+      ],
+      "before": {
+        "id": "sourced-kia-sportage-93b8abb48ecb",
+        "sourceIds": [
+          "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-141"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sportage",
+        "generation": "2015 - QL",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "stockPowerHp": 141,
+        "stockTorqueNm": 340,
+        "displacementCc": 1700,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 170,
+            "torqueNm": 390
+          },
+          "stage2": {
+            "powerHp": 180,
+            "torqueNm": 410
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-kia-sportage-93b8abb48ecb",
+        "sourceIds": [
+          "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-141",
+          "unlimited-v2-21c72ab0877ccaad"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sportage",
+        "generation": "2015 - QL",
+        "yearFrom": 2016,
+        "yearTo": 2018,
+        "stockPowerHp": 141,
+        "stockTorqueNm": 340,
+        "displacementCc": 1700,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 170,
+            "torqueNm": 390
+          },
+          "stage2": {
+            "powerHp": 180,
+            "torqueNm": 410
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-21c72ab0877ccaad",
+          "targetSourceId": "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-141",
+          "generation": "2015 - QL",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-1-7-crdi-141-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/1.7-crdi-eu6-141"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-21c72ab0877ccaad",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-1-7-crdi-141-pk.html",
+          "retrievedAt": "2026-09-16T13:46:48.527Z",
+          "contentSha256": "9dfd413b8e232178386b5a5e28d88c03b4b176f2c0f8aef1c54b8c5d54f206d1",
+          "identity": {
+            "brand": "Kia",
+            "modelFamily": "Sportage",
+            "generation": "2016 t/m 2018",
+            "yearFrom": 2016,
+            "yearTo": 2018,
+            "fuel": "Diesel",
+            "engineMarketingName": "1.7 CRDI",
+            "displacementCc": 1700,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 141,
+            "stockTorqueNm": 340,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 170,
+              "torqueNm": 380
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-kia-sportage-c39453bc018d",
+      "changedFields": [
+        "yearFrom",
+        "yearTo"
+      ],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-fc5eb47bd3f825a3"
+      ],
+      "before": {
+        "id": "sourced-kia-sportage-c39453bc018d",
+        "sourceIds": [
+          "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-184"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sportage",
+        "generation": "QL",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "stockPowerHp": 184,
+        "stockTorqueNm": 392,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-kia-sportage-c39453bc018d",
+        "sourceIds": [
+          "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-184",
+          "unlimited-v2-fc5eb47bd3f825a3"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sportage",
+        "generation": "QL",
+        "yearFrom": 2016,
+        "yearTo": 2018,
+        "stockPowerHp": 184,
+        "stockTorqueNm": 392,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Applicability narrowed to the intersection of independently published source scopes.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-fc5eb47bd3f825a3",
+          "targetSourceId": "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-184",
+          "generation": "QL",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-2-0-crdi-2016-2018-184-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/2.0-crdi-eu6-184"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-fc5eb47bd3f825a3",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-2-0-crdi-2016-2018-184-pk.html",
+          "retrievedAt": "2026-09-16T13:46:46.508Z",
+          "contentSha256": "1e71ec99e62aeaa916fd67edd0e4f1344bfcde6c433dd02e2ae1c4cd965c4d8b",
+          "identity": {
+            "brand": "Kia",
+            "modelFamily": "Sportage",
+            "generation": "2016 t/m 2018",
+            "yearFrom": 2016,
+            "yearTo": 2018,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 CRDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 184,
+            "stockTorqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 205,
+              "torqueNm": 450
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-kia-sportage-c7dbca8955bc",
+      "changedFields": [
+        "yearFrom",
+        "yearTo",
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-e23fd8c2241825e8"
+      ],
+      "before": {
+        "id": "sourced-kia-sportage-c7dbca8955bc",
+        "sourceIds": [
+          "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-136"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sportage",
+        "generation": "QL",
+        "yearFrom": 2015,
+        "yearTo": 2020,
+        "stockPowerHp": 136,
+        "stockTorqueNm": 373,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 175,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 185,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-kia-sportage-c7dbca8955bc",
+        "sourceIds": [
+          "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-136",
+          "unlimited-v2-e23fd8c2241825e8"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sportage",
+        "generation": "QL",
+        "yearFrom": 2016,
+        "yearTo": 2018,
+        "stockPowerHp": 136,
+        "stockTorqueNm": 373,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 175,
+            "torqueNm": 440
+          },
+          "stage2": {
+            "powerHp": 185,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-e23fd8c2241825e8",
+          "targetSourceId": "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-136",
+          "generation": "QL",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-2-0-crdi-136-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/2.0-crdi-eu6-136"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-e23fd8c2241825e8",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-2-0-crdi-136-pk.html",
+          "retrievedAt": "2026-09-16T13:46:22.416Z",
+          "contentSha256": "ee866ed290071bf62f88758bf4ad88931d81dceaf8f2bd2a512ba9193c056572",
+          "identity": {
+            "brand": "Kia",
+            "modelFamily": "Sportage",
+            "generation": "2016 t/m 2018",
+            "yearFrom": 2016,
+            "yearTo": 2018,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 CRDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 136,
+            "stockTorqueNm": 370,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 180,
+              "torqueNm": 425
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-kia-sportage-e9419b3478e2",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-0c185110b82fdd04"
+      ],
+      "before": {
+        "id": "sourced-kia-sportage-e9419b3478e2",
+        "sourceIds": [
+          "shiftech-kia-sportage-2010-sl-diesel-17-crdi-eu5-115"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sportage",
+        "generation": "2010 - SL",
+        "yearFrom": 2010,
+        "yearTo": 2014,
+        "stockPowerHp": 115,
+        "stockTorqueNm": 260,
+        "displacementCc": 1700,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 150,
+            "torqueNm": 310
+          },
+          "stage2": {
+            "powerHp": 160,
+            "torqueNm": 330
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-kia-sportage-e9419b3478e2",
+        "sourceIds": [
+          "shiftech-kia-sportage-2010-sl-diesel-17-crdi-eu5-115",
+          "unlimited-v2-0c185110b82fdd04"
+        ],
+        "brand": "Kia",
+        "modelFamily": "Sportage",
+        "generation": "2010 - SL",
+        "yearFrom": 2010,
+        "yearTo": 2014,
+        "stockPowerHp": 115,
+        "stockTorqueNm": 260,
+        "displacementCc": 1700,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 150,
+            "torqueNm": 310
+          },
+          "stage2": {
+            "powerHp": 160,
+            "torqueNm": 330
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-0c185110b82fdd04",
+          "targetSourceId": "shiftech-kia-sportage-2010-sl-diesel-17-crdi-eu5-115",
+          "generation": "2010 - SL",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-1-7-crdi-115-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2010-sl/diesel/1.7-crdi-eu5-115"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-0c185110b82fdd04",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-1-7-crdi-115-pk.html",
+          "retrievedAt": "2026-09-16T13:46:26.436Z",
+          "contentSha256": "7bd927a11545c27a47542a49310c03512ae7ea0f2708a4c288b9efa88319187b",
+          "identity": {
+            "brand": "Kia",
+            "modelFamily": "Sportage",
+            "generation": "2010 t/m 2016",
+            "yearFrom": 2010,
+            "yearTo": 2016,
+            "fuel": "Diesel",
+            "engineMarketingName": "1.7 CRDI",
+            "displacementCc": 1700,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 115,
+            "stockTorqueNm": 255,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 155,
+              "torqueNm": 320
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-opel-movano-c4e5c897447d",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-81f609fbd49cf83e",
+        "unlimited-v2-ce75c36310911765"
+      ],
+      "before": {
+        "id": "sourced-opel-movano-c4e5c897447d",
+        "sourceIds": [
+          "shiftech-13561"
+        ],
+        "brand": "Opel",
+        "modelFamily": "Movano",
+        "generation": "2021",
+        "yearFrom": 2021,
+        "stockPowerHp": 165,
+        "stockTorqueNm": 370,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 195,
+            "torqueNm": 430
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-opel-movano-c4e5c897447d",
+        "sourceIds": [
+          "shiftech-13561",
+          "unlimited-v2-81f609fbd49cf83e",
+          "unlimited-v2-ce75c36310911765"
+        ],
+        "brand": "Opel",
+        "modelFamily": "Movano",
+        "generation": "2021",
+        "yearFrom": 2021,
+        "stockPowerHp": 165,
+        "stockTorqueNm": 370,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 195,
+            "torqueNm": 430
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-81f609fbd49cf83e",
+          "targetSourceId": "shiftech-13561",
+          "generation": "2021",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-opel-movano-2-2-bluehdi-140-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/movano/2021/diesel/2.2-cdti-165"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        },
+        {
+          "sourceId": "unlimited-v2-ce75c36310911765",
+          "targetSourceId": "shiftech-13561",
+          "generation": "2021",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-opel-movano-2-2-bluehdi-165-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/movano/2021/diesel/2.2-cdti-165"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-81f609fbd49cf83e",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-opel-movano-2-2-bluehdi-140-pk.html",
+          "retrievedAt": "2026-09-16T14:43:10.376Z",
+          "contentSha256": "e3b2d2b1447b3e3700c95616dbf66cab563c099ead236e17f7642bcc1f65e836",
+          "identity": {
+            "brand": "Opel",
+            "modelFamily": "Movano",
+            "generation": "2021 t/m nu",
+            "yearFrom": 2021,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.2 BlueHDI",
+            "displacementCc": 2200,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 165,
+            "stockTorqueNm": 370,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 195,
+              "torqueNm": 430
+            }
+          }
+        },
+        {
+          "sourceId": "unlimited-v2-ce75c36310911765",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-opel-movano-2-2-bluehdi-165-pk.html",
+          "retrievedAt": "2026-09-16T14:43:12.376Z",
+          "contentSha256": "0571f1a4b0a5443eec40d7ae5577e3da323bb9f5a85f961830ec16cfe99e0c35",
+          "identity": {
+            "brand": "Opel",
+            "modelFamily": "Movano",
+            "generation": "2021 t/m nu",
+            "yearFrom": 2021,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.2 BlueHDi",
+            "displacementCc": 2200,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 165,
+            "stockTorqueNm": 370,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 195,
+              "torqueNm": 430
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-opel-vivaro-231fc46608ce",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-3f270c5fcb6ae756",
+        "atm-v3-b86c859ef0f38151"
+      ],
+      "before": {
+        "id": "sourced-opel-vivaro-231fc46608ce",
+        "sourceIds": [
+          "shiftech-7905"
+        ],
+        "brand": "Opel",
+        "modelFamily": "Vivaro",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "yearTo": 2023,
+        "stockPowerHp": 177,
+        "stockTorqueNm": 400,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 210,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 220,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-opel-vivaro-231fc46608ce",
+        "sourceIds": [
+          "shiftech-7905",
+          "unlimited-v2-3f270c5fcb6ae756",
+          "atm-v3-b86c859ef0f38151"
+        ],
+        "brand": "Opel",
+        "modelFamily": "Vivaro",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "yearTo": 2023,
+        "stockPowerHp": 177,
+        "stockTorqueNm": 400,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 220,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-3f270c5fcb6ae756",
+          "targetSourceId": "shiftech-7905",
+          "generation": "2019",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-177-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-177"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        },
+        {
+          "sourceId": "atm-v3-b86c859ef0f38151",
+          "targetSourceId": "shiftech-7905",
+          "generation": "2019",
+          "evidenceUrls": [
+            "https://www.atm-chiptuning.com/chiptuning/opel-vivaro-20d-177pk/",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-177",
+            "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-177-pk.html"
+          ],
+          "reason": "Reviewed same make/model/fuel, exact factory PS and Nm, compatible actual/nominal displacement and overlapping generation starts within one year. Intersect published applicability; retain every source value and one provider vote."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-3f270c5fcb6ae756",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-177-pk.html",
+          "retrievedAt": "2026-09-16T14:43:54.436Z",
+          "contentSha256": "a3e902e78535fd3b1dac8b18f719f0512074969c815b8983b2ab795b9b8d2ad3",
+          "identity": {
+            "brand": "Opel",
+            "modelFamily": "Vivaro",
+            "generation": "2019 T/M Nu",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0D",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 177,
+            "stockTorqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 205,
+              "torqueNm": 450
+            }
+          }
+        },
+        {
+          "sourceId": "atm-v3-b86c859ef0f38151",
+          "provider": "atm-chiptuning",
+          "url": "https://www.atm-chiptuning.com/chiptuning/opel-vivaro-20d-177pk/",
+          "retrievedAt": "2026-09-16T17:32:38.218Z",
+          "contentSha256": "9ec9eecd9343df53a92d8864b507684e8c5e8ed0998cad86df3b66fe7a37e336",
+          "identity": {
+            "brand": "Opel",
+            "modelFamily": "Vivaro",
+            "generation": "2019 ->",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0d 177pk",
+            "displacementCc": 1997,
+            "displacementPrecision": "exact",
+            "stockPowerHp": 177,
+            "stockTorqueNm": 400,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "ecuFamily": "Delphi DCM7.1A",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 200,
+              "torqueNm": 440
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-opel-vivaro-7ec3f09de7d9",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-c9fbf4d7d7a5b0d1",
+        "atm-v3-b0b6615d216c23f2"
+      ],
+      "before": {
+        "id": "sourced-opel-vivaro-7ec3f09de7d9",
+        "sourceIds": [
+          "shiftech-7902"
+        ],
+        "brand": "Opel",
+        "modelFamily": "Vivaro",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "yearTo": 2023,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 370,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 210,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 220,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-opel-vivaro-7ec3f09de7d9",
+        "sourceIds": [
+          "shiftech-7902",
+          "unlimited-v2-c9fbf4d7d7a5b0d1",
+          "atm-v3-b0b6615d216c23f2"
+        ],
+        "brand": "Opel",
+        "modelFamily": "Vivaro",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "yearTo": 2023,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 370,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 220,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-c9fbf4d7d7a5b0d1",
+          "targetSourceId": "shiftech-7902",
+          "generation": "2019",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-150-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-150"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        },
+        {
+          "sourceId": "atm-v3-b0b6615d216c23f2",
+          "targetSourceId": "shiftech-7902",
+          "generation": "2019",
+          "evidenceUrls": [
+            "https://www.atm-chiptuning.com/chiptuning/opel-vivaro-20d-150pk/",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-150",
+            "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-150-pk.html"
+          ],
+          "reason": "Reviewed same make/model/fuel, exact factory PS and Nm, compatible actual/nominal displacement and overlapping generation starts within one year. Intersect published applicability; retain every source value and one provider vote."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-c9fbf4d7d7a5b0d1",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-150-pk.html",
+          "retrievedAt": "2026-09-16T14:43:52.410Z",
+          "contentSha256": "41c58922805acca4a759d773c1e3188909dd26cad0d296d7472d3fdb2ad9b589",
+          "identity": {
+            "brand": "Opel",
+            "modelFamily": "Vivaro",
+            "generation": "2019 T/M Nu",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0D",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 150,
+            "stockTorqueNm": 370,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 205,
+              "torqueNm": 460
+            }
+          }
+        },
+        {
+          "sourceId": "atm-v3-b0b6615d216c23f2",
+          "provider": "atm-chiptuning",
+          "url": "https://www.atm-chiptuning.com/chiptuning/opel-vivaro-20d-150pk/",
+          "retrievedAt": "2026-09-16T17:32:36.204Z",
+          "contentSha256": "a18a3a10ef26f102d9343f37e8dac1914aad92175128d6402c9edc94df023ec8",
+          "identity": {
+            "brand": "Opel",
+            "modelFamily": "Vivaro",
+            "generation": "2019 ->",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0d 150pk",
+            "engineCodes": [
+              "D20DTH",
+              "DW10FDU"
+            ],
+            "displacementCc": 1997,
+            "displacementPrecision": "exact",
+            "stockPowerHp": 150,
+            "stockTorqueNm": 370,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "ecuFamily": "Delphi DCM7.1A",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 200,
+              "torqueNm": 450
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-opel-vivaro-8ef1f5a406d4",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-1e24682979013db0",
+        "atm-v3-3eb9a96dff2c11d5"
+      ],
+      "before": {
+        "id": "sourced-opel-vivaro-8ef1f5a406d4",
+        "sourceIds": [
+          "shiftech-7901"
+        ],
+        "brand": "Opel",
+        "modelFamily": "Vivaro",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "yearTo": 2023,
+        "stockPowerHp": 122,
+        "stockTorqueNm": 340,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 210,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 220,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-opel-vivaro-8ef1f5a406d4",
+        "sourceIds": [
+          "shiftech-7901",
+          "unlimited-v2-1e24682979013db0",
+          "atm-v3-3eb9a96dff2c11d5"
+        ],
+        "brand": "Opel",
+        "modelFamily": "Vivaro",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "yearTo": 2023,
+        "stockPowerHp": 122,
+        "stockTorqueNm": 340,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 190,
+            "torqueNm": 400
+          },
+          "stage2": {
+            "powerHp": 220,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-1e24682979013db0",
+          "targetSourceId": "shiftech-7901",
+          "generation": "2019",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-122-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-122"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        },
+        {
+          "sourceId": "atm-v3-3eb9a96dff2c11d5",
+          "targetSourceId": "shiftech-7901",
+          "generation": "2019",
+          "evidenceUrls": [
+            "https://www.atm-chiptuning.com/chiptuning/opel-vivaro-20d-122pk/",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-122",
+            "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-122-pk.html"
+          ],
+          "reason": "Reviewed same make/model/fuel, exact factory PS and Nm, compatible actual/nominal displacement and overlapping generation starts within one year. Intersect published applicability; retain every source value and one provider vote."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-1e24682979013db0",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-122-pk.html",
+          "retrievedAt": "2026-09-16T14:43:48.447Z",
+          "contentSha256": "2b932074791b2b12a9f1c1f67044a95228d998fa821e2f76f86c04aade64bdeb",
+          "identity": {
+            "brand": "Opel",
+            "modelFamily": "Vivaro",
+            "generation": "2019 T/M Nu",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0D",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 122,
+            "stockTorqueNm": 340,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 205,
+              "torqueNm": 460
+            }
+          }
+        },
+        {
+          "sourceId": "atm-v3-3eb9a96dff2c11d5",
+          "provider": "atm-chiptuning",
+          "url": "https://www.atm-chiptuning.com/chiptuning/opel-vivaro-20d-122pk/",
+          "retrievedAt": "2026-09-16T17:32:34.232Z",
+          "contentSha256": "4f1454e93f4b5485afc5826720147afdd1e9665449fda424f1191659d2bdc736",
+          "identity": {
+            "brand": "Opel",
+            "modelFamily": "Vivaro",
+            "generation": "2019 ->",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0d 122pk",
+            "engineCodes": [
+              "D20DTL",
+              "DW10FEU"
+            ],
+            "displacementCc": 1997,
+            "displacementPrecision": "exact",
+            "stockPowerHp": 122,
+            "stockTorqueNm": 340,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "ecuFamily": "Delphi DCM7.1A",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 190,
+              "torqueNm": 400
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-peugeot-boxer-2293ccf7d0ef",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-b77ca775689ee2a2"
+      ],
+      "before": {
+        "id": "sourced-peugeot-boxer-2293ccf7d0ef",
+        "sourceIds": [
+          "shiftech-8231"
+        ],
+        "brand": "Peugeot",
+        "modelFamily": "Boxer",
+        "generation": "II - Phase II",
+        "yearFrom": 2014,
+        "yearTo": 2018,
+        "stockPowerHp": 130,
+        "stockTorqueNm": 340,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 400
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 420
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-peugeot-boxer-2293ccf7d0ef",
+        "sourceIds": [
+          "shiftech-8231",
+          "unlimited-v2-b77ca775689ee2a2"
+        ],
+        "brand": "Peugeot",
+        "modelFamily": "Boxer",
+        "generation": "II - Phase II",
+        "yearFrom": 2014,
+        "yearTo": 2018,
+        "stockPowerHp": 130,
+        "stockTorqueNm": 340,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 400
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 420
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-b77ca775689ee2a2",
+          "targetSourceId": "shiftech-8231",
+          "generation": "II - Phase II",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-0-bluehdi-130-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2014-ii-phase-ii/diesel/2.0-bluehdi-130"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-b77ca775689ee2a2",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-0-bluehdi-130-pk.html",
+          "retrievedAt": "2026-09-16T14:31:57.846Z",
+          "contentSha256": "f383c4f167d600c2d784e305df49cc2ecbdb85fe38697baf9714eaf7a87d2bf1",
+          "identity": {
+            "brand": "Peugeot",
+            "modelFamily": "Boxer",
+            "generation": "2006 t/m 2019",
+            "yearFrom": 2006,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 BlueHDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 130,
+            "stockTorqueNm": 340,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 215,
+              "torqueNm": 470
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-peugeot-boxer-81536821a661",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-e6ab393edbef42ac"
+      ],
+      "before": {
+        "id": "sourced-peugeot-boxer-81536821a661",
+        "sourceIds": [
+          "shiftech-433439"
+        ],
+        "brand": "Peugeot",
+        "modelFamily": "Boxer",
+        "generation": "III",
+        "yearFrom": 2019,
+        "stockPowerHp": 140,
+        "stockTorqueNm": 340,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 195,
+            "torqueNm": 430
+          },
+          "stage2": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-peugeot-boxer-81536821a661",
+        "sourceIds": [
+          "shiftech-433439",
+          "unlimited-v2-e6ab393edbef42ac"
+        ],
+        "brand": "Peugeot",
+        "modelFamily": "Boxer",
+        "generation": "III",
+        "yearFrom": 2019,
+        "stockPowerHp": 140,
+        "stockTorqueNm": 340,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 195,
+            "torqueNm": 430
+          },
+          "stage2": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-e6ab393edbef42ac",
+          "targetSourceId": "shiftech-433439",
+          "generation": "III",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-2-bluehdi-140-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-140"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-e6ab393edbef42ac",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-2-bluehdi-140-pk.html",
+          "retrievedAt": "2026-09-16T14:31:33.810Z",
+          "contentSha256": "eca8ccd652fc5dc5e6bbb39f392b5f0e330b074fc9650a1fd8917dc296477395",
+          "identity": {
+            "brand": "Peugeot",
+            "modelFamily": "Boxer",
+            "generation": "2019 t/m nu",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.2 BlueHDI",
+            "displacementCc": 2200,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 140,
+            "stockTorqueNm": 340,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 195,
+              "torqueNm": 430
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-peugeot-boxer-8db6ddce71f2",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-86dfce0b8d052755"
+      ],
+      "before": {
+        "id": "sourced-peugeot-boxer-8db6ddce71f2",
+        "sourceIds": [
+          "shiftech-8244"
+        ],
+        "brand": "Peugeot",
+        "modelFamily": "Boxer",
+        "generation": "III",
+        "yearFrom": 2019,
+        "stockPowerHp": 165,
+        "stockTorqueNm": 370,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 195,
+            "torqueNm": 430
+          },
+          "stage2": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-peugeot-boxer-8db6ddce71f2",
+        "sourceIds": [
+          "shiftech-8244",
+          "unlimited-v2-86dfce0b8d052755"
+        ],
+        "brand": "Peugeot",
+        "modelFamily": "Boxer",
+        "generation": "III",
+        "yearFrom": 2019,
+        "stockPowerHp": 165,
+        "stockTorqueNm": 370,
+        "displacementCc": 2200,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 195,
+            "torqueNm": 430
+          },
+          "stage2": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-86dfce0b8d052755",
+          "targetSourceId": "shiftech-8244",
+          "generation": "III",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-2-bluehdi-165-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-165"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-86dfce0b8d052755",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-2-bluehdi-165-pk.html",
+          "retrievedAt": "2026-09-16T14:31:35.775Z",
+          "contentSha256": "c8ce59278691ce518b2d4241cbb1b23308928b3e1d8973cd771531c637050473",
+          "identity": {
+            "brand": "Peugeot",
+            "modelFamily": "Boxer",
+            "generation": "2019 t/m nu",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.2 BlueHDI",
+            "displacementCc": 2200,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 165,
+            "stockTorqueNm": 370,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 195,
+              "torqueNm": 430
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-peugeot-boxer-ed7e27653ba4",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-e7e1d99df911f5a5"
+      ],
+      "before": {
+        "id": "sourced-peugeot-boxer-ed7e27653ba4",
+        "sourceIds": [
+          "shiftech-8232"
+        ],
+        "brand": "Peugeot",
+        "modelFamily": "Boxer",
+        "generation": "II - Phase II",
+        "yearFrom": 2014,
+        "yearTo": 2018,
+        "stockPowerHp": 160,
+        "stockTorqueNm": 350,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-peugeot-boxer-ed7e27653ba4",
+        "sourceIds": [
+          "shiftech-8232",
+          "unlimited-v2-e7e1d99df911f5a5"
+        ],
+        "brand": "Peugeot",
+        "modelFamily": "Boxer",
+        "generation": "II - Phase II",
+        "yearFrom": 2014,
+        "yearTo": 2018,
+        "stockPowerHp": 160,
+        "stockTorqueNm": 350,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-e7e1d99df911f5a5",
+          "targetSourceId": "shiftech-8232",
+          "generation": "II - Phase II",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-0-bluehdi-160-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2014-ii-phase-ii/diesel/2.0-bluehdi-160"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-e7e1d99df911f5a5",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-0-bluehdi-160-pk.html",
+          "retrievedAt": "2026-09-16T14:31:59.934Z",
+          "contentSha256": "587aa2f5c0329dc0bc3a63af011949b906e18d92678d2522eb797b92814665cf",
+          "identity": {
+            "brand": "Peugeot",
+            "modelFamily": "Boxer",
+            "generation": "2006 t/m 2019",
+            "yearFrom": 2006,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 BlueHDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 160,
+            "stockTorqueNm": 350,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 215,
+              "torqueNm": 470
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-clio-6253cf25fcc7",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-ddd38fa9c8af09ed",
+        "unlimited-v2-b9cf8956f54d447f"
+      ],
+      "before": {
+        "id": "sourced-renault-clio-6253cf25fcc7",
+        "sourceIds": [
+          "shiftech-8574"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "IV",
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "stockPowerHp": 90,
+        "stockTorqueNm": 135,
+        "displacementCc": 900,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 105,
+            "torqueNm": 160
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-clio-6253cf25fcc7",
+        "sourceIds": [
+          "shiftech-8574",
+          "unlimited-v2-ddd38fa9c8af09ed",
+          "unlimited-v2-b9cf8956f54d447f"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "IV",
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "stockPowerHp": 90,
+        "stockTorqueNm": 135,
+        "displacementCc": 900,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 105,
+            "torqueNm": 160
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-ddd38fa9c8af09ed",
+          "targetSourceId": "shiftech-8574",
+          "generation": "IV",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-clio-0-9-tce-90-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/0.9-tce-90"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        },
+        {
+          "sourceId": "unlimited-v2-b9cf8956f54d447f",
+          "targetSourceId": "shiftech-8574",
+          "generation": "IV",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-ph2-0-9-tce-90-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/0.9-tce-90"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-ddd38fa9c8af09ed",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-clio-0-9-tce-90-pk.html",
+          "retrievedAt": "2026-09-16T14:19:53.227Z",
+          "contentSha256": "ac4d232d3d12ce8ce00ba98cc416934c394386746d5424c6873bb2f4b2005f12",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Clio",
+            "generation": "Type 4 - 2012 t/m 2019",
+            "yearFrom": 2012,
+            "yearTo": 2019,
+            "fuel": "Petrol",
+            "engineMarketingName": "4 Ph1 0.9 TCE",
+            "displacementCc": 900,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 90,
+            "stockTorqueNm": 135,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 115,
+              "torqueNm": 180
+            }
+          }
+        },
+        {
+          "sourceId": "unlimited-v2-b9cf8956f54d447f",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-ph2-0-9-tce-90-pk.html",
+          "retrievedAt": "2026-09-16T14:19:57.154Z",
+          "contentSha256": "10c777de0d6624c70235b37c6cb6129bcdf849347982998b676015edee88ab7c",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Clio",
+            "generation": "Type 4 - 2012 t/m 2019",
+            "yearFrom": 2012,
+            "yearTo": 2019,
+            "fuel": "Petrol",
+            "engineMarketingName": "4 Ph2 0.9 TCE",
+            "displacementCc": 900,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 90,
+            "stockTorqueNm": 140,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 120,
+              "torqueNm": 200
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-clio-850848ddff5e",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-13ecc6323746c32b"
+      ],
+      "before": {
+        "id": "sourced-renault-clio-850848ddff5e",
+        "sourceIds": [
+          "shiftech-8576"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "IV",
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 190,
+        "displacementCc": 1200,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 135,
+            "torqueNm": 230
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-clio-850848ddff5e",
+        "sourceIds": [
+          "shiftech-8576",
+          "unlimited-v2-13ecc6323746c32b"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "IV",
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 190,
+        "displacementCc": 1200,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 135,
+            "torqueNm": 230
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-13ecc6323746c32b",
+          "targetSourceId": "shiftech-8576",
+          "generation": "IV",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-1-2-tce-120-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/1.2-tce-120"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-13ecc6323746c32b",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-1-2-tce-120-pk.html",
+          "retrievedAt": "2026-09-16T14:20:05.341Z",
+          "contentSha256": "9f68f5479d64cc6136260a54dd65f71b046047e5e844a850338c957cb9a0b91a",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Clio",
+            "generation": "Type 4 - 2012 t/m 2019",
+            "yearFrom": 2012,
+            "yearTo": 2019,
+            "fuel": "Petrol",
+            "engineMarketingName": "4 1.2 TCE",
+            "displacementCc": 1200,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 120,
+            "stockTorqueNm": 190,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 145,
+              "torqueNm": 240
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-clio-894df6872fcb",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-4ad5f711625a319b"
+      ],
+      "before": {
+        "id": "sourced-renault-clio-894df6872fcb",
+        "sourceIds": [
+          "shiftech-8581"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "IV (II)",
+        "yearFrom": 2016,
+        "yearTo": 2018,
+        "stockPowerHp": 110,
+        "stockTorqueNm": 260,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 135,
+            "torqueNm": 300
+          },
+          "stage2": {
+            "powerHp": 145,
+            "torqueNm": 320
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-clio-894df6872fcb",
+        "sourceIds": [
+          "shiftech-8581",
+          "unlimited-v2-4ad5f711625a319b"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "IV (II)",
+        "yearFrom": 2016,
+        "yearTo": 2018,
+        "stockPowerHp": 110,
+        "stockTorqueNm": 260,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 135,
+            "torqueNm": 300
+          },
+          "stage2": {
+            "powerHp": 145,
+            "torqueNm": 320
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-4ad5f711625a319b",
+          "targetSourceId": "shiftech-8581",
+          "generation": "IV (II)",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-1-5-dci-110-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2016-iv-ii/diesel/1.5-dci-eu6-110"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-4ad5f711625a319b",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-1-5-dci-110-pk.html",
+          "retrievedAt": "2026-09-16T14:20:13.236Z",
+          "contentSha256": "6fceb970d6c6678c44fadad3310a465d723318b2922380e26be89c89ce5f5cb7",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Clio",
+            "generation": "Type 4 - 2012 t/m 2019",
+            "yearFrom": 2012,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "4 1.5 DCI",
+            "displacementCc": 1500,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 110,
+            "stockTorqueNm": 260,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 135,
+              "torqueNm": 310
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-clio-f033416ef469",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-f20003484f752c4f"
+      ],
+      "before": {
+        "id": "sourced-renault-clio-f033416ef469",
+        "sourceIds": [
+          "shiftech-8591"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "V",
+        "yearFrom": 2019,
+        "yearTo": 2022,
+        "stockPowerHp": 130,
+        "stockTorqueNm": 240,
+        "displacementCc": 1300,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 175,
+            "torqueNm": 300
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-clio-f033416ef469",
+        "sourceIds": [
+          "shiftech-8591",
+          "unlimited-v2-f20003484f752c4f"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "V",
+        "yearFrom": 2019,
+        "yearTo": 2022,
+        "stockPowerHp": 130,
+        "stockTorqueNm": 240,
+        "displacementCc": 1300,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 165,
+            "torqueNm": 300
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-f20003484f752c4f",
+          "targetSourceId": "shiftech-8591",
+          "generation": "V",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-clio-5-1-3-tce-gpf-130-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2019-v/essence/1.3-tce-gpf-130"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-f20003484f752c4f",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-clio-5-1-3-tce-gpf-130-pk.html",
+          "retrievedAt": "2026-09-16T14:19:35.097Z",
+          "contentSha256": "13a0ec7337e9ec2bae1a0c390a3fcede14bd0703955f91dd2f5dda1cf1f35682",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Clio",
+            "generation": "Type 5 - 2019 t/m nu",
+            "yearFrom": 2019,
+            "fuel": "Petrol",
+            "engineMarketingName": "5 1.3 TCE (GPF)",
+            "displacementCc": 1300,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 130,
+            "stockTorqueNm": 240,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 165,
+              "torqueNm": 300
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-clio-fab1803d232b",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-37a0913ec52a41f4"
+      ],
+      "before": {
+        "id": "sourced-renault-clio-fab1803d232b",
+        "sourceIds": [
+          "shiftech-8579"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "IV",
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "stockPowerHp": 90,
+        "stockTorqueNm": 220,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 110,
+            "torqueNm": 250
+          },
+          "stage2": {
+            "powerHp": 120,
+            "torqueNm": 270
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-clio-fab1803d232b",
+        "sourceIds": [
+          "shiftech-8579",
+          "unlimited-v2-37a0913ec52a41f4"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Clio",
+        "generation": "IV",
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "stockPowerHp": 90,
+        "stockTorqueNm": 220,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 110,
+            "torqueNm": 250
+          },
+          "stage2": {
+            "powerHp": 120,
+            "torqueNm": 270
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-37a0913ec52a41f4",
+          "targetSourceId": "shiftech-8579",
+          "generation": "IV",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-1-5-dci-90-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/diesel/1.5-dci-eu5-90"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-37a0913ec52a41f4",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-1-5-dci-90-pk.html",
+          "retrievedAt": "2026-09-16T14:20:17.308Z",
+          "contentSha256": "0ab12436a4be4cdbf8ce2a3c93912275f0aaf3db7f7eccacf5dfa36af7a7c812",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Clio",
+            "generation": "Type 4 - 2012 t/m 2019",
+            "yearFrom": 2012,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "4 1.5 DCI",
+            "displacementCc": 1500,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 90,
+            "stockTorqueNm": 220,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 115,
+              "torqueNm": 260
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-megane-0d85b09ffbb6",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-d8c5d446574fc90f"
+      ],
+      "before": {
+        "id": "sourced-renault-megane-0d85b09ffbb6",
+        "sourceIds": [
+          "shiftech-8775"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Megane",
+        "generation": "III",
+        "yearFrom": 2008,
+        "yearTo": 2013,
+        "stockPowerHp": 110,
+        "stockTorqueNm": 240,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 130,
+            "torqueNm": 300
+          },
+          "stage2": {
+            "powerHp": 140,
+            "torqueNm": 320
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-megane-0d85b09ffbb6",
+        "sourceIds": [
+          "shiftech-8775",
+          "unlimited-v2-d8c5d446574fc90f"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Megane",
+        "generation": "III",
+        "yearFrom": 2008,
+        "yearTo": 2013,
+        "stockPowerHp": 110,
+        "stockTorqueNm": 240,
+        "displacementCc": 1500,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 130,
+            "torqueNm": 300
+          },
+          "stage2": {
+            "powerHp": 140,
+            "torqueNm": 320
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-d8c5d446574fc90f",
+          "targetSourceId": "shiftech-8775",
+          "generation": "III",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-megane-iii-1-5-dci-110-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/1.5-dci-eu5-110"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-d8c5d446574fc90f",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-iii-1-5-dci-110-pk.html",
+          "retrievedAt": "2026-09-16T14:23:04.096Z",
+          "contentSha256": "11f782d2e0e221e79bfcf75874953669e2865cad71072d05b4b0a0e38bebd9d0",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Megane",
+            "generation": "Megane 3 2008 t/m 2015",
+            "yearFrom": 2008,
+            "yearTo": 2015,
+            "fuel": "Diesel",
+            "engineMarketingName": "III 1.5 DCI",
+            "displacementCc": 1500,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 110,
+            "stockTorqueNm": 240,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 135,
+              "torqueNm": 300
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-megane-3c6ce49187d2",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-f001c2b9cc8dbf70"
+      ],
+      "before": {
+        "id": "sourced-renault-megane-3c6ce49187d2",
+        "sourceIds": [
+          "shiftech-8777"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Megane",
+        "generation": "III",
+        "yearFrom": 2008,
+        "yearTo": 2013,
+        "stockPowerHp": 130,
+        "stockTorqueNm": 320,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 150,
+            "torqueNm": 360
+          },
+          "stage2": {
+            "powerHp": 160,
+            "torqueNm": 380
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-megane-3c6ce49187d2",
+        "sourceIds": [
+          "shiftech-8777",
+          "unlimited-v2-f001c2b9cc8dbf70"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Megane",
+        "generation": "III",
+        "yearFrom": 2008,
+        "yearTo": 2013,
+        "stockPowerHp": 130,
+        "stockTorqueNm": 320,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 150,
+            "torqueNm": 360
+          },
+          "stage2": {
+            "powerHp": 160,
+            "torqueNm": 380
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-f001c2b9cc8dbf70",
+          "targetSourceId": "shiftech-8777",
+          "generation": "III",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-megane-iii-1-6-dci-130-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/1.6-dci-130"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-f001c2b9cc8dbf70",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-iii-1-6-dci-130-pk.html",
+          "retrievedAt": "2026-09-16T14:22:53.929Z",
+          "contentSha256": "cffdd5b395935e48e62eb83d47eb1805b70f73882d3bb89b13daf857d8a481e6",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Megane",
+            "generation": "Megane 3 2008 t/m 2015",
+            "yearFrom": 2008,
+            "yearTo": 2015,
+            "fuel": "Diesel",
+            "engineMarketingName": "III 1.6 DCI",
+            "displacementCc": 1600,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 130,
+            "stockTorqueNm": 320,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 165,
+              "torqueNm": 385
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-trafic-0ad0c1d80ad9",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-6658fb33af65a287"
+      ],
+      "before": {
+        "id": "sourced-renault-trafic-0ad0c1d80ad9",
+        "sourceIds": [
+          "shiftech-8905"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Trafic",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "stockPowerHp": 145,
+        "stockTorqueNm": 350,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 440
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 460
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-trafic-0ad0c1d80ad9",
+        "sourceIds": [
+          "shiftech-8905",
+          "unlimited-v2-6658fb33af65a287"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Trafic",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "stockPowerHp": 145,
+        "stockTorqueNm": 350,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 440
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 460
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-6658fb33af65a287",
+          "targetSourceId": "shiftech-8905",
+          "generation": "2019",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2-0-dci-145-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2019/diesel/2.0-blue-dci-145"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-6658fb33af65a287",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2-0-dci-145-pk.html",
+          "retrievedAt": "2026-09-16T14:24:26.256Z",
+          "contentSha256": "5b7240902167a5435666e4de0c987243b7452846c05db58734665a4b3dc28bd7",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Trafic",
+            "generation": "2019 t/m nu",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 DCI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 145,
+            "stockTorqueNm": 350,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 200,
+              "torqueNm": 440
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-trafic-7795970cbb61",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-900c0abc420824eb"
+      ],
+      "before": {
+        "id": "sourced-renault-trafic-7795970cbb61",
+        "sourceIds": [
+          "shiftech-8896"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Trafic",
+        "generation": "2014",
+        "yearFrom": 2014,
+        "yearTo": 2015,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 320,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 165,
+            "torqueNm": 390
+          },
+          "stage2": {
+            "powerHp": 175,
+            "torqueNm": 410
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-trafic-7795970cbb61",
+        "sourceIds": [
+          "shiftech-8896",
+          "unlimited-v2-900c0abc420824eb"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Trafic",
+        "generation": "2014",
+        "yearFrom": 2014,
+        "yearTo": 2015,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 320,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 165,
+            "torqueNm": 390
+          },
+          "stage2": {
+            "powerHp": 175,
+            "torqueNm": 410
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-900c0abc420824eb",
+          "targetSourceId": "shiftech-8896",
+          "generation": "2014",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2015-1-6-dci-bi-turbo-120-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2014/diesel/1.6-dci-bi-turbo-eu5-120"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-900c0abc420824eb",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2015-1-6-dci-bi-turbo-120-pk.html",
+          "retrievedAt": "2026-09-16T14:24:36.246Z",
+          "contentSha256": "8cad502ef375a05d04ab18b6851cf34af7b76886b916ac9c804cb27de41bb438",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Trafic",
+            "generation": "2014 t/m 2016",
+            "yearFrom": 2014,
+            "yearTo": 2016,
+            "fuel": "Diesel",
+            "engineMarketingName": "2015 1.6 DCI Bi-Turbo EU5",
+            "displacementCc": 1600,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 120,
+            "stockTorqueNm": 320,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 175,
+              "torqueNm": 390
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-renault-trafic-e9b224974c31",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-76a617a1919108ff"
+      ],
+      "before": {
+        "id": "sourced-renault-trafic-e9b224974c31",
+        "sourceIds": [
+          "shiftech-8906"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Trafic",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "stockPowerHp": 170,
+        "stockTorqueNm": 380,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 440
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 460
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-renault-trafic-e9b224974c31",
+        "sourceIds": [
+          "shiftech-8906",
+          "unlimited-v2-76a617a1919108ff"
+        ],
+        "brand": "Renault",
+        "modelFamily": "Trafic",
+        "generation": "2019",
+        "yearFrom": 2019,
+        "stockPowerHp": 170,
+        "stockTorqueNm": 380,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 200,
+            "torqueNm": 440
+          },
+          "stage2": {
+            "powerHp": 210,
+            "torqueNm": 460
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-76a617a1919108ff",
+          "targetSourceId": "shiftech-8906",
+          "generation": "2019",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2-0-dci-170-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2019/diesel/2.0-blue-dci-170"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-76a617a1919108ff",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2-0-dci-170-pk.html",
+          "retrievedAt": "2026-09-16T14:24:28.252Z",
+          "contentSha256": "81338c23e1ab695d0825a04bbdd43c1d3a91dea3d8f9b0dc4710804e21f087ee",
+          "identity": {
+            "brand": "Renault",
+            "modelFamily": "Trafic",
+            "generation": "2019 t/m nu",
+            "yearFrom": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 DCI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 170,
+            "stockTorqueNm": 380,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 200,
+              "torqueNm": 440
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-seat-leon-62ffd70d0206",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-bd941e4992969dcf"
+      ],
+      "before": {
+        "id": "sourced-seat-leon-62ffd70d0206",
+        "sourceIds": [
+          "shiftech-9433"
+        ],
+        "brand": "Seat",
+        "modelFamily": "Leon",
+        "generation": "5F MK1",
+        "yearFrom": 2013,
+        "yearTo": 2016,
+        "stockPowerHp": 105,
+        "stockTorqueNm": 250,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 145,
+            "torqueNm": 310
+          },
+          "stage2": {
+            "powerHp": 155,
+            "torqueNm": 330
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-seat-leon-62ffd70d0206",
+        "sourceIds": [
+          "shiftech-9433",
+          "unlimited-v2-bd941e4992969dcf"
+        ],
+        "brand": "Seat",
+        "modelFamily": "Leon",
+        "generation": "5F MK1",
+        "yearFrom": 2013,
+        "yearTo": 2016,
+        "stockPowerHp": 105,
+        "stockTorqueNm": 250,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 145,
+            "torqueNm": 320
+          },
+          "stage2": {
+            "powerHp": 155,
+            "torqueNm": 330
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-bd941e4992969dcf",
+          "targetSourceId": "shiftech-9433",
+          "generation": "5F MK1",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-seat-leon-1-6-tdi-105-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/1.6-tdi-eu5-105"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-bd941e4992969dcf",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-seat-leon-1-6-tdi-105-pk.html",
+          "retrievedAt": "2026-09-16T14:51:22.073Z",
+          "contentSha256": "64cef2d331e2b7c3d5c803e56e6438c9882b09f5eff875a34b289472e9070486",
+          "identity": {
+            "brand": "Seat",
+            "modelFamily": "Leon",
+            "generation": "5F MK1 2012 t/m 2017",
+            "yearFrom": 2012,
+            "yearTo": 2017,
+            "fuel": "Diesel",
+            "engineMarketingName": "1P/5F 1.6 TDI",
+            "displacementCc": 1600,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 105,
+            "stockTorqueNm": 250,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 145,
+              "torqueNm": 325
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-skoda-octavia-1f22baa7a281",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-b914b6b5896075d6"
+      ],
+      "before": {
+        "id": "sourced-skoda-octavia-1f22baa7a281",
+        "sourceIds": [
+          "shiftech-9653"
+        ],
+        "brand": "Skoda",
+        "modelFamily": "Octavia",
+        "generation": "2017",
+        "yearFrom": 2017,
+        "yearTo": 2019,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 250,
+        "displacementCc": 1500,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 175,
+            "torqueNm": 300
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-skoda-octavia-1f22baa7a281",
+        "sourceIds": [
+          "shiftech-9653",
+          "unlimited-v2-b914b6b5896075d6"
+        ],
+        "brand": "Skoda",
+        "modelFamily": "Octavia",
+        "generation": "2017",
+        "yearFrom": 2017,
+        "yearTo": 2019,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 250,
+        "displacementCc": 1500,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 175,
+            "torqueNm": 300
+          },
+          "stage2": null,
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-b914b6b5896075d6",
+          "targetSourceId": "shiftech-9653",
+          "generation": "2017",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-skoda-octavia-1-5-tsi-150-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2017/petrol/1.5-tsi-150"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-b914b6b5896075d6",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-skoda-octavia-1-5-tsi-150-pk.html",
+          "retrievedAt": "2026-09-16T14:49:09.659Z",
+          "contentSha256": "5f6bfe44cb4f831ab5497d0e35bdb7f2eb1b943fe0b6ce2b57a397681c7a0196",
+          "identity": {
+            "brand": "Skoda",
+            "modelFamily": "Octavia",
+            "generation": "2017 t/m 2020",
+            "yearFrom": 2017,
+            "yearTo": 2020,
+            "fuel": "Petrol",
+            "engineMarketingName": "1.5 TSI",
+            "displacementCc": 1500,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 150,
+            "stockTorqueNm": 250,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 175,
+              "torqueNm": 300
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-toyota-proace-536d16cf16aa",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-d61419853ecd2d0e"
+      ],
+      "before": {
+        "id": "sourced-toyota-proace-536d16cf16aa",
+        "sourceIds": [
+          "shiftech-10213"
+        ],
+        "brand": "Toyota",
+        "modelFamily": "ProAce",
+        "generation": "2020",
+        "yearFrom": 2020,
+        "yearTo": 2023,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 370,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 210,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 220,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-toyota-proace-536d16cf16aa",
+        "sourceIds": [
+          "shiftech-10213",
+          "unlimited-v2-d61419853ecd2d0e"
+        ],
+        "brand": "Toyota",
+        "modelFamily": "ProAce",
+        "generation": "2020",
+        "yearFrom": 2020,
+        "yearTo": 2023,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 370,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 205,
+            "torqueNm": 450
+          },
+          "stage2": {
+            "powerHp": 220,
+            "torqueNm": 470
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-d61419853ecd2d0e",
+          "targetSourceId": "shiftech-10213",
+          "generation": "2020",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-toyota-proace-2-0-bluehdi-150-pk.html",
+            "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/toyota/proace/2020/diesel/2.0-d-4d-150"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-d61419853ecd2d0e",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-toyota-proace-2-0-bluehdi-150-pk.html",
+          "retrievedAt": "2026-09-16T13:36:50.847Z",
+          "contentSha256": "2025bf6802ed3fe7549dc1c540b14d4e67174acb7c4f8dfc249fd463d7881a13",
+          "identity": {
+            "brand": "Toyota",
+            "modelFamily": "Proace",
+            "generation": "2019 T/m 2023",
+            "yearFrom": 2019,
+            "yearTo": 2023,
+            "fuel": "Diesel",
+            "engineMarketingName": "2.0 BlueHDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 150,
+            "stockTorqueNm": 370,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 205,
+              "torqueNm": 460
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-volkswagen-golf-4b2b00a63103",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-8a1b842c070811e5"
+      ],
+      "before": {
+        "id": "sourced-volkswagen-golf-4b2b00a63103",
+        "sourceIds": [
+          "shiftech-10548"
+        ],
+        "brand": "Volkswagen",
+        "modelFamily": "Golf",
+        "generation": "VI",
+        "yearFrom": 2008,
+        "yearTo": 2011,
+        "stockPowerHp": 110,
+        "stockTorqueNm": 250,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 185,
+            "torqueNm": 370
+          },
+          "stage2": {
+            "powerHp": 195,
+            "torqueNm": 390
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-volkswagen-golf-4b2b00a63103",
+        "sourceIds": [
+          "shiftech-10548",
+          "unlimited-v2-8a1b842c070811e5"
+        ],
+        "brand": "Volkswagen",
+        "modelFamily": "Golf",
+        "generation": "VI",
+        "yearFrom": 2008,
+        "yearTo": 2011,
+        "stockPowerHp": 110,
+        "stockTorqueNm": 250,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 185,
+            "torqueNm": 380
+          },
+          "stage2": {
+            "powerHp": 195,
+            "torqueNm": 390
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-8a1b842c070811e5",
+          "targetSourceId": "shiftech-10548",
+          "generation": "VI",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-6-2-0-tdi-110-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/2.0-tdi-cr-110"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-8a1b842c070811e5",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-6-2-0-tdi-110-pk.html",
+          "retrievedAt": "2026-09-16T13:53:54.186Z",
+          "contentSha256": "de62789897cd80a33808c0aacc00a7f086bc3d22c1fc3620517690376d2efddb",
+          "identity": {
+            "brand": "Volkswagen",
+            "modelFamily": "Golf",
+            "generation": "Golf 6 2008 t/m 2012",
+            "yearFrom": 2008,
+            "yearTo": 2012,
+            "fuel": "Diesel",
+            "engineMarketingName": "6 2.0 TDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 110,
+            "stockTorqueNm": 250,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 185,
+              "torqueNm": 400
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-volkswagen-passat-8e4e5519548a",
+      "changedFields": [
+        "stages"
+      ],
+      "numericChanged": true,
+      "addedSourceIds": [
+        "unlimited-v2-9831958f67078127"
+      ],
+      "before": {
+        "id": "sourced-volkswagen-passat-8e4e5519548a",
+        "sourceIds": [
+          "shiftech-10768"
+        ],
+        "brand": "Volkswagen",
+        "modelFamily": "Passat",
+        "generation": "B8",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "stockPowerHp": 240,
+        "stockTorqueNm": 500,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 290,
+            "torqueNm": 580
+          },
+          "stage2": {
+            "powerHp": 300,
+            "torqueNm": 600
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-volkswagen-passat-8e4e5519548a",
+        "sourceIds": [
+          "shiftech-10768",
+          "unlimited-v2-9831958f67078127"
+        ],
+        "brand": "Volkswagen",
+        "modelFamily": "Passat",
+        "generation": "B8",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "stockPowerHp": 240,
+        "stockTorqueNm": 500,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 275,
+            "torqueNm": 560
+          },
+          "stage2": {
+            "powerHp": 300,
+            "torqueNm": 600
+          },
+          "stage3": null
+        }
+      },
+      "reason": "New independent source enters the existing conservative consensus: one vote per provider; conflict uses the minimum, otherwise rounded median; no maximum selection.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-9831958f67078127",
+          "targetSourceId": "shiftech-10768",
+          "generation": "B8",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-volkswagen-passat-b8-2-0-tdi-bi-turbo-240-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-240"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-9831958f67078127",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-passat-b8-2-0-tdi-bi-turbo-240-pk.html",
+          "retrievedAt": "2026-09-16T13:54:42.346Z",
+          "contentSha256": "b424c04748f15181fb693332d4200996bff359f5fc2bdc8ee57e65f0d97e0a00",
+          "identity": {
+            "brand": "Volkswagen",
+            "modelFamily": "Passat",
+            "generation": "B8 2014 t/m 2019",
+            "yearFrom": 2014,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "B8 2.0 TDI Bi-Turbo",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 240,
+            "stockTorqueNm": 500,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 275,
+              "torqueNm": 560
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-volkswagen-passat-c0b98ad9212c",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-d903c4a80235bdbf"
+      ],
+      "before": {
+        "id": "sourced-volkswagen-passat-c0b98ad9212c",
+        "sourceIds": [
+          "shiftech-10772"
+        ],
+        "brand": "Volkswagen",
+        "modelFamily": "Passat",
+        "generation": "B8",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 320,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 185,
+            "torqueNm": 420
+          },
+          "stage2": {
+            "powerHp": 195,
+            "torqueNm": 440
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-volkswagen-passat-c0b98ad9212c",
+        "sourceIds": [
+          "shiftech-10772",
+          "unlimited-v2-d903c4a80235bdbf"
+        ],
+        "brand": "Volkswagen",
+        "modelFamily": "Passat",
+        "generation": "B8",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "stockPowerHp": 150,
+        "stockTorqueNm": 320,
+        "displacementCc": 2000,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 185,
+            "torqueNm": 420
+          },
+          "stage2": {
+            "powerHp": 195,
+            "torqueNm": 440
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-d903c4a80235bdbf",
+          "targetSourceId": "shiftech-10772",
+          "generation": "B8",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-volkswagen-passat-b8-2-0-tdi-150-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-150"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-d903c4a80235bdbf",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-passat-b8-2-0-tdi-150-pk.html",
+          "retrievedAt": "2026-09-16T13:54:36.304Z",
+          "contentSha256": "b99a897a6122470f728e4c6601449665051a4fc1567706f7c10ddd335f47b7dc",
+          "identity": {
+            "brand": "Volkswagen",
+            "modelFamily": "Passat",
+            "generation": "B8 2014 t/m 2019",
+            "yearFrom": 2014,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "B8 2.0 TDI",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 150,
+            "stockTorqueNm": 320,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 195,
+              "torqueNm": 430
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-volkswagen-passat-ddb7daba8e0d",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-e215623759daaa51"
+      ],
+      "before": {
+        "id": "sourced-volkswagen-passat-ddb7daba8e0d",
+        "sourceIds": [
+          "shiftech-10769"
+        ],
+        "brand": "Volkswagen",
+        "modelFamily": "Passat",
+        "generation": "B8",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 260,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 145,
+            "torqueNm": 310
+          },
+          "stage2": {
+            "powerHp": 155,
+            "torqueNm": 330
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-volkswagen-passat-ddb7daba8e0d",
+        "sourceIds": [
+          "shiftech-10769",
+          "unlimited-v2-e215623759daaa51"
+        ],
+        "brand": "Volkswagen",
+        "modelFamily": "Passat",
+        "generation": "B8",
+        "yearFrom": 2015,
+        "yearTo": 2018,
+        "stockPowerHp": 120,
+        "stockTorqueNm": 260,
+        "displacementCc": 1600,
+        "fuel": "Diesel",
+        "stages": {
+          "stage1": {
+            "powerHp": 145,
+            "torqueNm": 310
+          },
+          "stage2": {
+            "powerHp": 155,
+            "torqueNm": 330
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-e215623759daaa51",
+          "targetSourceId": "shiftech-10769",
+          "generation": "B8",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-volkswagen-passat-b8-1-6-tdi-120-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/1.6-tdi-eu6-120"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-e215623759daaa51",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-volkswagen-passat-b8-1-6-tdi-120-pk.html",
+          "retrievedAt": "2026-09-16T13:54:44.335Z",
+          "contentSha256": "b95de006b9aca1df92f91abff3dec35fdf585781db7dc30af955df090ef4bf1d",
+          "identity": {
+            "brand": "Volkswagen",
+            "modelFamily": "Passat",
+            "generation": "B8 2014 t/m 2019",
+            "yearFrom": 2014,
+            "yearTo": 2019,
+            "fuel": "Diesel",
+            "engineMarketingName": "B8 1.6 TDI",
+            "displacementCc": 1600,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 120,
+            "stockTorqueNm": 250,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 150,
+              "torqueNm": 310
+            }
+          }
+        }
+      ]
+    },
+    {
+      "profileId": "sourced-volvo-v40-82d3da02fa2f",
+      "changedFields": [],
+      "numericChanged": false,
+      "addedSourceIds": [
+        "unlimited-v2-972d79b9ab948c00"
+      ],
+      "before": {
+        "id": "sourced-volvo-v40-82d3da02fa2f",
+        "sourceIds": [
+          "shiftech-11221"
+        ],
+        "brand": "Volvo",
+        "modelFamily": "V40",
+        "generation": "2015",
+        "yearFrom": 2015,
+        "stockPowerHp": 190,
+        "stockTorqueNm": 300,
+        "displacementCc": 2000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 225,
+            "torqueNm": 400
+          },
+          "stage2": {
+            "powerHp": 235,
+            "torqueNm": 420
+          },
+          "stage3": null
+        }
+      },
+      "after": {
+        "id": "sourced-volvo-v40-82d3da02fa2f",
+        "sourceIds": [
+          "shiftech-11221",
+          "unlimited-v2-972d79b9ab948c00"
+        ],
+        "brand": "Volvo",
+        "modelFamily": "V40",
+        "generation": "2015",
+        "yearFrom": 2015,
+        "stockPowerHp": 190,
+        "stockTorqueNm": 300,
+        "displacementCc": 2000,
+        "fuel": "Petrol",
+        "stages": {
+          "stage1": {
+            "powerHp": 225,
+            "torqueNm": 400
+          },
+          "stage2": {
+            "powerHp": 235,
+            "torqueNm": 420
+          },
+          "stage3": null
+        }
+      },
+      "reason": "Independent corroboration; existing selected facts retained.",
+      "counterpartReviews": [
+        {
+          "sourceId": "unlimited-v2-972d79b9ab948c00",
+          "targetSourceId": "shiftech-11221",
+          "generation": "2015",
+          "evidenceUrls": [
+            "https://www.unlimitedtuning.nl/chiptuning-volvo-v40-2-0-t4-190-pk.html",
+            "https://www.shiftech.eu/en/chiptuning/car/volvo/v40/2015/petrol/t4-2.0-190"
+          ],
+          "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "unlimited-v2-972d79b9ab948c00",
+          "provider": "unlimited-tuning",
+          "url": "https://www.unlimitedtuning.nl/chiptuning-volvo-v40-2-0-t4-190-pk.html",
+          "retrievedAt": "2026-09-16T15:08:22.609Z",
+          "contentSha256": "794160a90b127f05b6c24468ca23953f9c50f5d160c13b5b04650dd0e3a89f03",
+          "identity": {
+            "brand": "Volvo",
+            "modelFamily": "V40",
+            "generation": "2015 t/m nu",
+            "yearFrom": 2015,
+            "fuel": "Petrol",
+            "engineMarketingName": "2.0 T4",
+            "displacementCc": 2000,
+            "displacementPrecision": "nominal",
+            "stockPowerHp": 190,
+            "stockTorqueNm": 300,
+            "powerUnit": "PS",
+            "torqueUnit": "Nm",
+            "electrification": "unknown"
+          },
+          "stages": {
+            "stage1": {
+              "powerHp": 225,
+              "torqueNm": 400
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

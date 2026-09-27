@@ -1,0 +1,2482 @@
+[
+  {
+    "brand": "Alfa Romeo",
+    "modelFamily": "156",
+    "generation": "1997",
+    "yearFrom": 1997,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/156/2002/diesel/2.4-jtd-175",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2001,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Alfa Romeo",
+    "modelFamily": "156",
+    "generation": "2002",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/156/2005/diesel/1.9-jtdm-115",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2004,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Alfa Romeo",
+    "modelFamily": "166",
+    "generation": "1999",
+    "yearFrom": 1999,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/166/2003/petrol/3.2-i-v6-24v-240",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2002,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Alfa Romeo",
+    "modelFamily": "Brera",
+    "generation": "2005",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/brera/2008/diesel/2.0-jtdm-170",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Alfa Romeo",
+    "modelFamily": "Giulia",
+    "generation": "2015",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulia/2019/diesel/2.2-jtd-136",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Alfa Romeo",
+    "modelFamily": "Giulia",
+    "generation": "2019",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulia/2022/petrol/2.0-tb-280",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Alfa Romeo",
+    "modelFamily": "Giulietta",
+    "generation": "2010",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/giulietta/2016/diesel/1.6-jtdm-120",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Alfa Romeo",
+    "modelFamily": "Stelvio",
+    "generation": "2017",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/stelvio/2022/petrol/2.0-tb-280",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Alfa Romeo",
+    "modelFamily": "Tonale",
+    "generation": "2022",
+    "yearFrom": 2022,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/alfa-romeo/tonale/tonale-ii/hybrid_petrol/13-plug-in-hybrid-q4-269-270",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2024,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A3",
+    "generation": "1996 - 8L",
+    "yearFrom": 1996,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2003-8p/diesel/1.9-tdi-ip-105",
+    "retrievedAt": "2026-09-15T22:29:10.932Z",
+    "yearTo": 2002,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A3",
+    "generation": "2003 - 8P",
+    "yearFrom": 2003,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2008-8p/petrol/1.2-tsi-tfsi-105",
+    "retrievedAt": "2026-09-15T22:29:10.932Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A3",
+    "generation": "2008 - 8P",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2012-8v/petrol/1.8-tsi-tfsi-180",
+    "retrievedAt": "2026-09-15T22:29:10.932Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A3",
+    "generation": "2012 - 8V",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2016-8v-fl/petrol/1.0-tsi-tfsi-115",
+    "retrievedAt": "2026-09-15T22:29:10.932Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A3",
+    "generation": "2016 - 8V-FL",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2019-8y/diesel/35-tdi-2.0-150",
+    "retrievedAt": "2026-09-15T22:29:10.932Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A3",
+    "generation": "2019 - 8Y",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2024-8y-fl/diesel/20-tdi-116-300",
+    "retrievedAt": "2026-09-15T22:29:10.932Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A4",
+    "generation": "2000 - B6",
+    "yearFrom": 2000,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2004-b7/diesel/2.7-tdi-180",
+    "retrievedAt": "2026-09-15T22:29:12.948Z",
+    "yearTo": 2003,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A4",
+    "generation": "2004 - B7",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2008-b8/diesel/3.0-tdi-240",
+    "retrievedAt": "2026-09-15T22:29:12.948Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A4",
+    "generation": "2008 - B8",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2015-b9/petrol/2.0-tfsi-190",
+    "retrievedAt": "2026-09-15T22:29:12.948Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A4",
+    "generation": "2015 - B9",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a4/2018-b9-fl/diesel/35-tdi-2.0-150",
+    "retrievedAt": "2026-09-15T22:29:12.948Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A6",
+    "generation": "1997 - C5",
+    "yearFrom": 1997,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2004-c6/petrol/2.0-tfsi-170",
+    "retrievedAt": "2026-09-15T22:29:14.999Z",
+    "yearTo": 2003,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A6",
+    "generation": "2004 - C6",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2008-c6-fl/diesel/2.7-tdi-190",
+    "retrievedAt": "2026-09-15T22:29:14.999Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A6",
+    "generation": "2008 - C6-FL",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2011-c7/diesel/3.0-tdi-313",
+    "retrievedAt": "2026-09-15T22:29:14.999Z",
+    "yearTo": 2010,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A6",
+    "generation": "2011 - C7",
+    "yearFrom": 2011,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2018-c8/diesel/40-tdi-2.0-204",
+    "retrievedAt": "2026-09-15T22:29:14.999Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A6",
+    "generation": "2018 - C8",
+    "yearFrom": 2018,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2023-c8-fl/diesel/35-tdi-2.0-163",
+    "retrievedAt": "2026-09-15T22:29:14.999Z",
+    "yearTo": 2022,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Audi",
+    "modelFamily": "A6",
+    "generation": "2023 - C8-FL",
+    "yearFrom": 2023,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/audi/a6/2025-c9/hybrid_petrol/55-tfsi-e-2.0-367",
+    "retrievedAt": "2026-09-15T22:29:14.999Z",
+    "yearTo": 2024,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "1-serie",
+    "generation": "2005 - E81-E87",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2007-e81-e87-lci/petrol/35i-n54-306",
+    "retrievedAt": "2026-09-15T22:35:12.297Z",
+    "yearTo": 2006,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "1-serie",
+    "generation": "2007 - E81-E87-LCI",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2011-f20/petrol/14i-102",
+    "retrievedAt": "2026-09-15T22:35:12.297Z",
+    "yearTo": 2010,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "1-serie",
+    "generation": "2011 - F20",
+    "yearFrom": 2011,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2015-f20-lci/petrol/16i-1.5t-109",
+    "retrievedAt": "2026-09-15T22:35:12.297Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "1-serie",
+    "generation": "2015 - F20-LCI - F52",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2019-f40/petrol/35i-2.0t-306",
+    "retrievedAt": "2026-09-15T22:35:12.297Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "1-serie",
+    "generation": "2019 - F40",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/1-serie/2024-f70/petrol/16i-15-122",
+    "retrievedAt": "2026-09-15T22:35:12.297Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "3-serie",
+    "generation": "1998 - E46",
+    "yearFrom": 1998,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2005-e90/petrol/20i-150",
+    "retrievedAt": "2026-09-15T22:35:14.185Z",
+    "yearTo": 2004,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "3-serie",
+    "generation": "2005 - E90",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2008-e90-lci/petrol/30i-272",
+    "retrievedAt": "2026-09-15T22:35:14.185Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "3-serie",
+    "generation": "2008 - E90-LCI",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2012-f30-f31-f35/diesel/30d-258",
+    "retrievedAt": "2026-09-15T22:35:14.185Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "3-serie",
+    "generation": "2012 - F30-F31-F35",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2015-f30-f31-f35-lci/petrol/40i-326",
+    "retrievedAt": "2026-09-15T22:35:14.185Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "3-serie",
+    "generation": "2015 - F30-F31-F35-LCI",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2019-g20-g21/petrol/m40i-374",
+    "retrievedAt": "2026-09-15T22:35:14.185Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "3-serie",
+    "generation": "2019 - G20-G21",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/3-serie/2022-g20-g21-lci/diesel/18d-150",
+    "retrievedAt": "2026-09-15T22:35:14.185Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "5-serie",
+    "generation": "1995 - E39",
+    "yearFrom": 1995,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2003-e60/petrol/23i-177",
+    "retrievedAt": "2026-09-15T22:35:16.182Z",
+    "yearTo": 2002,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "5-serie",
+    "generation": "2003 - E60",
+    "yearFrom": 2003,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2010-f10-f11/petrol/50i-407",
+    "retrievedAt": "2026-09-15T22:35:16.182Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "5-serie",
+    "generation": "2010 - F10-F11",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2016-g30-g31/petrol/30i-2.0t-eu6d-252",
+    "retrievedAt": "2026-09-15T22:35:16.182Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "5-serie",
+    "generation": "2016 - G30-G31",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2020-g30-g31-lci/petrol/20i-20t-eu6d-184-290",
+    "retrievedAt": "2026-09-15T22:35:16.182Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "BMW",
+    "modelFamily": "5-serie",
+    "generation": "2020 - G30-G31-LCI",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/bmw/5-serie/2023-g60-g61-g62/petrol/20i-16-190-310",
+    "retrievedAt": "2026-09-15T22:35:16.182Z",
+    "yearTo": 2022,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Citroën",
+    "modelFamily": "Jumper",
+    "generation": "2002 - I - Phase II",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/citroen/jumper/2006-ii-phase-i/diesel/2.2-hdi-110",
+    "retrievedAt": "2026-09-15T22:27:56.952Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Citroën",
+    "modelFamily": "Jumper",
+    "generation": "2006 - II - Phase I",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/citroen/jumper/2014-ii-phase-ii/diesel/2.0-bluehdi-130",
+    "retrievedAt": "2026-09-15T22:27:56.952Z",
+    "yearTo": 2013,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Citroën",
+    "modelFamily": "Jumper",
+    "generation": "2014 - II - Phase II",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/citroen/jumper/2019-iii/diesel/2.2-bluehdi-eu6b-120",
+    "retrievedAt": "2026-09-15T22:27:56.952Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Citroën",
+    "modelFamily": "Jumpy",
+    "generation": "2007 - II - Phase I",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/citroen/jumpy/2012-ii-phase-ii/diesel/2.0-hdi-128",
+    "retrievedAt": "2026-09-15T22:27:54.946Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Citroën",
+    "modelFamily": "Jumpy",
+    "generation": "2012 - II - Phase II",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:27:54.946Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Citroën",
+    "modelFamily": "Jumpy",
+    "generation": "2016 - III",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/citroen/jumpy/2024-iii-phase-ii/electric/75-kwh-136-260",
+    "retrievedAt": "2026-09-15T22:27:54.946Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "500",
+    "generation": "2007",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/500/2015/diesel/1.3-mjet-eu6-95",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "500",
+    "generation": "2015",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/500/2020/hybrid_petrol/1.0-mild-hybrid-69",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "500",
+    "generation": "2020",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/500/2025/petrol/10-gse-65-92",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2024,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "500X",
+    "generation": "2014",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/500x/2022/hybrid_petrol/15-gse-136-240",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Bravo",
+    "generation": "2001",
+    "yearFrom": 2001,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/bravo/2007/diesel/1.6-jtdm-105",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2006,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Ducato",
+    "generation": "2002 - II - Phase I",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/ducato/2011-iii-phase-i/diesel/2.0-jtdm-115",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2010,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Ducato",
+    "generation": "2011 - III - Phase I",
+    "yearFrom": 2011,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/ducato/2016-iii-phase-ii/diesel/2.3-multijet2-euro6-150",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Ducato",
+    "generation": "2016 - III - Phase II",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/ducato/2019-iii-am2020/diesel/2.3-multijet2-power-euro6d-180",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Ducato",
+    "generation": "2019 - III - Phase III",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/ducato/2021-iii-phase-iv/diesel/22-multijet3-120-320",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Fiorino",
+    "generation": "2007",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/fiorino/2016/diesel/1.3-mjet-85",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Panda",
+    "generation": "2003",
+    "yearFrom": 2003,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/panda/2012/diesel/1.3-mjet-75",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Panda",
+    "generation": "2012",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/panda/2017/diesel/1.3-mjet-95",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Panda",
+    "generation": "2017",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/panda/2020/petrol/1.0i-firefly-70",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Panda",
+    "generation": "2020",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/panda/2024/petrol/1.0i-firefly-70",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Punto",
+    "generation": "2003",
+    "yearFrom": 2003,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/punto/2012-phase-iii/petrol/0.9-twin-air-85",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Scudo",
+    "generation": "2008",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/scudo/2013/diesel/1.6-jtdm-90",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2012,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Scudo",
+    "generation": "2013",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/scudo/2022/diesel/1.5-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Strada",
+    "generation": "2009",
+    "yearFrom": 2009,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/strada/2020/petrol/1.3i-flexfuel-101",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Toro",
+    "generation": "2016",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/toro/2021/diesel/2.0-jtdm-170",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Ulysse",
+    "generation": "2002",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/ulysse/2008/diesel/2.0-jtdm-120",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Fiat",
+    "modelFamily": "Ulysse",
+    "generation": "2008",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/fiat/ulysse/2022/electric/50-kwh-136-260",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Fiesta",
+    "generation": "1995-mkiii",
+    "yearFrom": 1995,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2003-mkv",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2002,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Fiesta",
+    "generation": "2003-mkv",
+    "yearFrom": 2003,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2008-mkvi",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Fiesta",
+    "generation": "2008-mkvi",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2013-mkvii",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2012,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Fiesta",
+    "generation": "2013-mkvii",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/fiesta/2017-mkviii",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Focus",
+    "generation": "1998-mki",
+    "yearFrom": 1998,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2004-mkii",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2003,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Focus",
+    "generation": "2004-mkii",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2011-mkiii",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2010,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Focus",
+    "generation": "2011-mkiii",
+    "yearFrom": 2011,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2014-mkiii",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2013,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Focus",
+    "generation": "2014-mkiii",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2018-mkiv",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Focus",
+    "generation": "2018-mkiv",
+    "yearFrom": 2018,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/focus/2022-mkiv-fl",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit",
+    "generation": "1994",
+    "yearFrom": 1994,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2000",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 1999,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit",
+    "generation": "2000",
+    "yearFrom": 2000,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2006",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit",
+    "generation": "2006",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2013",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2012,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit",
+    "generation": "2013",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2017",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit",
+    "generation": "2017",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2019",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit",
+    "generation": "2019",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit/2024",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit Connect",
+    "generation": "2002",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2013",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2012,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit Connect",
+    "generation": "2013",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit Connect",
+    "generation": "2016",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2023",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2022,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit Custom",
+    "generation": "2013",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2017",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Ford",
+    "modelFamily": "Transit Custom",
+    "generation": "2017",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/ford/transit-custom/2025",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2024,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Hyundai",
+    "modelFamily": "i30",
+    "generation": "2006-fd",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2011-gd",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2010,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Hyundai",
+    "modelFamily": "i30",
+    "generation": "2011-gd",
+    "yearFrom": 2011,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Hyundai",
+    "modelFamily": "i30",
+    "generation": "2016-pd",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2020-pd-fl",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Hyundai",
+    "modelFamily": "i30",
+    "generation": "2020-pd-fl",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2024-pd-fl",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Hyundai",
+    "modelFamily": "Tucson",
+    "generation": "2004-jm",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2009-lm",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2008,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Hyundai",
+    "modelFamily": "Tucson",
+    "generation": "2009-lm",
+    "yearFrom": 2009,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Hyundai",
+    "modelFamily": "Tucson",
+    "generation": "2015-tl",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2020-nx4",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jaguar",
+    "modelFamily": "E-pace",
+    "generation": "2017",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jaguar/e-pace/2021/diesel/2.0-d165-mhev-165",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jaguar",
+    "modelFamily": "F-Pace",
+    "generation": "2016",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jaguar/f-pace/2021/petrol/3.0-p340-mhev-340",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jaguar",
+    "modelFamily": "F-Type",
+    "generation": "2013",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jaguar/f-type/2020/petrol/2.0-p300-300",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jaguar",
+    "modelFamily": "XF",
+    "generation": "2008 - X250",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xf/2015-x260/petrol/3.0-v6-supercharged-340",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jaguar",
+    "modelFamily": "XF",
+    "generation": "2015 - X260",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xf/2020/diesel/2.0-d200-mhev-200",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jaguar",
+    "modelFamily": "XJ",
+    "generation": "2003 - X350",
+    "yearFrom": 2003,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jaguar/xj/2009-x351/diesel/3.0-d-275",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2008,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Avenger",
+    "generation": "2023",
+    "yearFrom": 2023,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/avenger/2026/petrol/1.2-turbo-110",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2025,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Cherokee",
+    "generation": "2001",
+    "yearFrom": 2001,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/cherokee/2005/diesel/2.8-crd-177",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2004,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Cherokee",
+    "generation": "2005",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/cherokee/2010/diesel/2.8-crd-200",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Cherokee",
+    "generation": "2010",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/cherokee/2014/diesel/2.0-jtdm-140",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2013,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Cherokee",
+    "generation": "2014",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/cherokee/2019/diesel/2.2-multijet-eu6d-195",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Commander",
+    "generation": "2006",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/commander/2011/diesel/2.2-crd-163",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2010,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Compass",
+    "generation": "2006",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/compass/2011/diesel/2.2-crd-163",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2010,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Compass",
+    "generation": "2011",
+    "yearFrom": 2011,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/compass/2017/petrol/1.4-multi-air-140",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Compass",
+    "generation": "2017",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/compass/2021/hybrid_petrol/1.5-gse-t4-150",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Compass",
+    "generation": "2021",
+    "yearFrom": 2021,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/compass/2025/petrol/12-hybrid-136-e-dcs6-145-230",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2024,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Grand Cherokee",
+    "generation": "2005 - WK",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/grand-cherokee/2011-wk2/diesel/3.0-crd-eu5-250",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2010,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Grand Cherokee",
+    "generation": "2011 - WK2",
+    "yearFrom": 2011,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/grand-cherokee/2021-wl/hybrid_petrol/4xe-2.0t-375",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Wrangler",
+    "generation": "1996 - TJ",
+    "yearFrom": 1996,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/wrangler/2007-jk/diesel/2.8-crd-177",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2006,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Wrangler",
+    "generation": "2007 - JK",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/wrangler/2010-jk-fl/diesel/2.8-crd-200",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Jeep",
+    "modelFamily": "Wrangler",
+    "generation": "2010 - JK-FL",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/jeep/wrangler/2018-jl/diesel/2.2-jtdm-200",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Ceed",
+    "generation": "2007",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2012",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Ceed",
+    "generation": "2012",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2015",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Ceed",
+    "generation": "2015",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Sorento",
+    "generation": "2002-bl",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2006-bl-fl",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Sorento",
+    "generation": "2006-bl-fl",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2009-xm",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2008,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Sorento",
+    "generation": "2009-xm",
+    "yearFrom": 2009,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2014-um",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2013,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Sorento",
+    "generation": "2014-um",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2020-mq4",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Sportage",
+    "generation": "2004-je-km",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2007-je-km-fl",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2006,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Sportage",
+    "generation": "2007-je-km-fl",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2010-sl",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Sportage",
+    "generation": "2010-sl",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Sportage",
+    "generation": "2015-ql",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Kia",
+    "modelFamily": "Sportage",
+    "generation": "2021-nq5",
+    "yearFrom": 2021,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2024-nq5",
+    "retrievedAt": "2026-09-15T22:23:27.803Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Defender",
+    "generation": "2000",
+    "yearFrom": 2000,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/defender/2007/diesel/2.4-td4-122",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2006,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Defender",
+    "generation": "2007",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/defender/2012/diesel/2.2-td4-122",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Defender",
+    "generation": "2012",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/defender/2020/petrol/2.0-p300-300",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Defender",
+    "generation": "2020",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/defender/2024/petrol/44-v8-635-750",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Discovery",
+    "generation": "1999 - II",
+    "yearFrom": 1999,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery/2004-iii/diesel/2.7-tdv6-190",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2003,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Discovery",
+    "generation": "2004 - III",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery/2008-iv/diesel/2.7-tdv6-190",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Discovery",
+    "generation": "2008 - IV",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery/2017-v/diesel/2.0-td4-180",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Discovery",
+    "generation": "2017 - V",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery/2020-vi/diesel/3.0-d250-250",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Discovery Sport",
+    "generation": "2015",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/discovery-sport/2020/hybrid_petrol/1.5-p300e-phev-309",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Evoque",
+    "generation": "2011",
+    "yearFrom": 2011,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/evoque/2015/diesel/2.0-td4-180",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Evoque",
+    "generation": "2015",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/evoque/2018/petrol/2.0t-250",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Evoque",
+    "generation": "2018",
+    "yearFrom": 2018,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/evoque/2023/petrol/1.5-p160-160",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2022,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Freelander",
+    "generation": "1997",
+    "yearFrom": 1997,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/freelander/2006/diesel/2.2-td4-160",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Freelander",
+    "generation": "2006",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/freelander/2011/diesel/2.2-td4-150",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2010,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Range Rover",
+    "generation": "2002 - L322",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/range-rover/2012-l405/diesel/3.0-tdv6-258",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Range Rover",
+    "generation": "2012 - L405",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/range-rover/2018-l405-fl/petrol/5.0-v8-supercharged-565",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Range Rover",
+    "generation": "2018 - L405-FL",
+    "yearFrom": 2018,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/range-rover/2022-l460/diesel/3.0-d300-mhev-300",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Range Rover Sport",
+    "generation": "2005 - L320",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/range-rover-sport/2012-l494/diesel/3.0-tdv6-258",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Range Rover Sport",
+    "generation": "2012 - L494",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/range-rover-sport/2018-l494-fl/petrol/5.0-v8-supercharged-525",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Land-Rover",
+    "modelFamily": "Range Rover Sport",
+    "generation": "2018 - L494-FL",
+    "yearFrom": 2018,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/land-rover/range-rover-sport/2022-l461/diesel/3.0-d300-mhev-300",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "A-Class",
+    "generation": "1997 - W168",
+    "yearFrom": 1997,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/a/2004-w169/diesel/180-cdi-2.0-109",
+    "retrievedAt": "2026-09-15T22:27:40.986Z",
+    "yearTo": 2003,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "A-Class",
+    "generation": "2004 - W169",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/a/2012-w176/diesel/180-cdi-1.5-110",
+    "retrievedAt": "2026-09-15T22:27:40.986Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "A-Class",
+    "generation": "2012 - W176",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/a/2015-w176/petrol/160-eu6-1.6t-102",
+    "retrievedAt": "2026-09-15T22:27:40.986Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "A-Class",
+    "generation": "2015 - W176",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/a/2018-w177/diesel/180d-1.5-116",
+    "retrievedAt": "2026-09-15T22:27:40.986Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "A-Class",
+    "generation": "2018 - W177",
+    "yearFrom": 2018,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/a/2022-w177-fl/petrol/a-180-13t-mild-hybrid-136-230",
+    "retrievedAt": "2026-09-15T22:27:40.986Z",
+    "yearTo": 2021,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "C-Class",
+    "generation": "2000 - W203",
+    "yearFrom": 2000,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/c/2004-w203/petrol/180-kompressor-1.8k-143",
+    "retrievedAt": "2026-09-15T22:27:42.895Z",
+    "yearTo": 2003,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "C-Class",
+    "generation": "2004 - W203",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/c/2007-w204/diesel/350-cdi-3.0-231",
+    "retrievedAt": "2026-09-15T22:27:42.895Z",
+    "yearTo": 2006,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "C-Class",
+    "generation": "2007 - W204",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/c/2010-w204/diesel/180-cdi-2.1-120",
+    "retrievedAt": "2026-09-15T22:27:42.895Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "C-Class",
+    "generation": "2010 - W204",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/c/2014-w205/petrol/180-eu6-1.6t-156",
+    "retrievedAt": "2026-09-15T22:27:42.895Z",
+    "yearTo": 2013,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "C-Class",
+    "generation": "2014 - W205",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/c/2018-w205-fl/diesel/180d-1.6-122",
+    "retrievedAt": "2026-09-15T22:27:42.895Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "C-Class",
+    "generation": "2018 - W205-FL",
+    "yearFrom": 2018,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/c/2021-w206/petrol/180-eu6-1.5t-170",
+    "retrievedAt": "2026-09-15T22:27:42.895Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "C-Class",
+    "generation": "2021 - W206",
+    "yearFrom": 2021,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/c/2026-w206-fl/petrol/300-eu6-258",
+    "retrievedAt": "2026-09-15T22:27:42.895Z",
+    "yearTo": 2025,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "E-Class",
+    "generation": "2002 - W211",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/e/2006-w211/diesel/420-cdi-4.0-314",
+    "retrievedAt": "2026-09-15T22:27:44.911Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "E-Class",
+    "generation": "2006 - W211",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/e/2009-w212/diesel/300-cdi-3.0-204",
+    "retrievedAt": "2026-09-15T22:27:44.911Z",
+    "yearTo": 2008,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "E-Class",
+    "generation": "2009 - W212",
+    "yearFrom": 2009,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/e/2013-w212/petrol/200-eu6-2.0t-184",
+    "retrievedAt": "2026-09-15T22:27:44.911Z",
+    "yearTo": 2012,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "E-Class",
+    "generation": "2013 - W212",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/e/2016-w213/petrol/200-eu6-2.0t-184",
+    "retrievedAt": "2026-09-15T22:27:44.911Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "E-Class",
+    "generation": "2016 - W213",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/e/2020-w213-fl/diesel/200d-1.6-160",
+    "retrievedAt": "2026-09-15T22:27:44.911Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "E-Class",
+    "generation": "2020 - W213-FL",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/e/2025/hybrid_petrol/amg-e-53-hybrid-30-604-750",
+    "retrievedAt": "2026-09-15T22:27:44.911Z",
+    "yearTo": 2022,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "Vito",
+    "generation": "2000 - W638",
+    "yearFrom": 2000,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/vito/2006-w639/diesel/120-cdi-3.0-204",
+    "retrievedAt": "2026-09-15T22:27:46.914Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "Vito",
+    "generation": "2006 - W639",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/vito/2010-w639/diesel/110-cdi-2.1-95",
+    "retrievedAt": "2026-09-15T22:27:46.914Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "Vito",
+    "generation": "2010 - W639",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/vito/2015-w447/diesel/109-cdi-1.6-90",
+    "retrievedAt": "2026-09-15T22:27:46.914Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "Vito",
+    "generation": "2015 - W447",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/vito/2019-w447-ii/diesel/110-cdi-1.7-102",
+    "retrievedAt": "2026-09-15T22:27:46.914Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "modelFamily": "Vito",
+    "generation": "2019 - W447-II",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/mercedes/vito/2024/diesel/114-cdi-195d-euro-6e-136-330",
+    "retrievedAt": "2026-09-15T22:27:46.914Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Opel",
+    "modelFamily": "Movano",
+    "generation": "2004",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/opel/movano/2010/diesel/2.3-cdti-100",
+    "retrievedAt": "2026-09-15T22:28:00.943Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Opel",
+    "modelFamily": "Movano",
+    "generation": "2010",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/opel/movano/2014/diesel/2.3-dci-bi-turbo-163",
+    "retrievedAt": "2026-09-15T22:28:00.943Z",
+    "yearTo": 2013,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Opel",
+    "modelFamily": "Movano",
+    "generation": "2014",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/opel/movano/2021/diesel/2.2-cdti-120",
+    "retrievedAt": "2026-09-15T22:28:00.943Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Opel",
+    "modelFamily": "Vivaro",
+    "generation": "2003",
+    "yearFrom": 2003,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/opel/vivaro/2015/diesel/1.6-cdti-95",
+    "retrievedAt": "2026-09-15T22:27:58.946Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Opel",
+    "modelFamily": "Vivaro",
+    "generation": "2015",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-122",
+    "retrievedAt": "2026-09-15T22:27:58.946Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Opel",
+    "modelFamily": "Vivaro",
+    "generation": "2019",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/opel/vivaro/2024/diesel/1.5-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:27:58.946Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "308",
+    "generation": "2007 - 2013",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/308/2013-phase-i/diesel/1.6-bluehdi-120",
+    "retrievedAt": "2026-09-15T22:27:48.923Z",
+    "yearTo": 2012,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "308",
+    "generation": "2013 - II- PHASE I",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/308/2017-phase-ii/petrol/1.2-thp-puretech-110",
+    "retrievedAt": "2026-09-15T22:27:48.923Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "308",
+    "generation": "2017 - II- PHASE II",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/308/2021/petrol/1.2-thp-puretech-gpf-110",
+    "retrievedAt": "2026-09-15T22:27:48.923Z",
+    "yearTo": 2020,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "308",
+    "generation": "2021 - III- PHASE I",
+    "yearFrom": 2021,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/308/2025-iii-phase-ii/petrol/12-hybrid-136-e-dcs6-145-230",
+    "retrievedAt": "2026-09-15T22:27:48.923Z",
+    "yearTo": 2024,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "Boxer",
+    "generation": "2002 - I - Phase II",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/boxer/2006-ii-phase-i/diesel/3.0-hdi-177",
+    "retrievedAt": "2026-09-15T22:27:52.922Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "Boxer",
+    "generation": "2006 - II - Phase I",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/boxer/2014-ii-phase-ii/diesel/2.2-e-hdi-130",
+    "retrievedAt": "2026-09-15T22:27:52.922Z",
+    "yearTo": 2013,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "Boxer",
+    "generation": "2014 - II - Phase II",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-120",
+    "retrievedAt": "2026-09-15T22:27:52.922Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "Expert / Traveller",
+    "generation": "1995 - I",
+    "yearFrom": 1995,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/expert-traveller/2006-ii/diesel/2.0-hdi-120",
+    "retrievedAt": "2026-09-15T22:27:50.914Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "Expert / Traveller",
+    "generation": "2006 - II",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/expert-traveller/2016-iii/diesel/1.6-bluehdi-ss-95",
+    "retrievedAt": "2026-09-15T22:27:50.914Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Peugeot",
+    "modelFamily": "Expert / Traveller",
+    "generation": "2016 - III",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/peugeot/expert-traveller/2024/diesel/20-bluehdi-177-400",
+    "retrievedAt": "2026-09-15T22:27:50.914Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Clio",
+    "generation": "2001 - II",
+    "yearFrom": 2001,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/clio/2005-iii/petrol/2.0i-197",
+    "retrievedAt": "2026-09-15T22:28:06.967Z",
+    "yearTo": 2004,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Clio",
+    "generation": "2005 - III",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/clio/2012-iv/petrol/1.2-tce-90",
+    "retrievedAt": "2026-09-15T22:28:06.967Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Clio",
+    "generation": "2012 - IV",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/clio/2016-iv-ii/diesel/1.5-dci-eu6-110",
+    "retrievedAt": "2026-09-15T22:28:06.967Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Clio",
+    "generation": "2016 - IV (II)",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/clio/2019-v/diesel/1.5-blue-dci-eu6d-115",
+    "retrievedAt": "2026-09-15T22:28:06.967Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Clio",
+    "generation": "2019 - V",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/clio/2023-v-ii/petrol/1.0-tce-90",
+    "retrievedAt": "2026-09-15T22:28:06.967Z",
+    "yearTo": 2022,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Clio",
+    "generation": "2023 - V (II)",
+    "yearFrom": 2023,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/clio/2025-vi/petrol/1.2-tce-eu6-115",
+    "retrievedAt": "2026-09-15T22:28:06.967Z",
+    "yearTo": 2024,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Megane",
+    "generation": "2002 - II",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/megane/2008-iii/petrol/2.0t-220",
+    "retrievedAt": "2026-09-15T22:28:04.962Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Megane",
+    "generation": "2008 - III",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/megane/2014-iii-ii/petrol/1.2-tce-115",
+    "retrievedAt": "2026-09-15T22:28:04.962Z",
+    "yearTo": 2013,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Megane",
+    "generation": "2014 - III (II)",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/megane/2016-iv/diesel/1.6-dci-130",
+    "retrievedAt": "2026-09-15T22:28:04.962Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Megane",
+    "generation": "2016 - IV",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/megane/2020-iv-ii/petrol/1.3-tce-gpf-140",
+    "retrievedAt": "2026-09-15T22:28:04.962Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Megane",
+    "generation": "2020 - IV (II)",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/megane/2024-v/electric/e-tech-220-220",
+    "retrievedAt": "2026-09-15T22:28:04.962Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Trafic",
+    "generation": "2001",
+    "yearFrom": 2001,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/trafic/2006/diesel/2.0-dci-120",
+    "retrievedAt": "2026-09-15T22:28:08.988Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Trafic",
+    "generation": "2006",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/trafic/2014/diesel/1.6-dci-eu5-90",
+    "retrievedAt": "2026-09-15T22:28:08.988Z",
+    "yearTo": 2013,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Trafic",
+    "generation": "2014",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/trafic/2016/diesel/1.6-dci-eu6-95",
+    "retrievedAt": "2026-09-15T22:28:08.988Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Renault",
+    "modelFamily": "Trafic",
+    "generation": "2016",
+    "yearFrom": 2016,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/renault/trafic/2019/diesel/2.0-blue-dci-120",
+    "retrievedAt": "2026-09-15T22:28:08.988Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Seat",
+    "modelFamily": "Leon",
+    "generation": "1999 - 1M",
+    "yearFrom": 1999,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2005-1p/petrol/2.0-tfsi-185",
+    "retrievedAt": "2026-09-15T22:29:16.979Z",
+    "yearTo": 2004,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Seat",
+    "modelFamily": "Leon",
+    "generation": "2005 - 1P",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/petrol/1.8-tsi-tfsi-180",
+    "retrievedAt": "2026-09-15T22:29:16.979Z",
+    "yearTo": 2012,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Seat",
+    "modelFamily": "Leon",
+    "generation": "2013 - 5F MK1",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2017-5f-mk2/diesel/1.6-tdi-cr-eu6-115",
+    "retrievedAt": "2026-09-15T22:29:16.979Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Seat",
+    "modelFamily": "Leon",
+    "generation": "2017 - 5F MK2",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2020/petrol/1.5-tsi-150",
+    "retrievedAt": "2026-09-15T22:29:16.979Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "1997",
+    "yearFrom": 1997,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.4-tsi-tfsi-122",
+    "retrievedAt": "2026-09-15T22:29:18.977Z",
+    "yearTo": 2004,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "2005",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/petrol/1.4-tsi-tfsi-ss-140",
+    "retrievedAt": "2026-09-15T22:29:18.977Z",
+    "yearTo": 2012,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "2013",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2017/petrol/1.0-tsi-tfsi-115",
+    "retrievedAt": "2026-09-15T22:29:18.977Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "2017",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2020/petrol/1.0-tsi-tfsi-110",
+    "retrievedAt": "2026-09-15T22:29:18.977Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Skoda",
+    "modelFamily": "Octavia",
+    "generation": "2020",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2024/petrol/15-etsi-116-220",
+    "retrievedAt": "2026-09-15T22:29:18.977Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Toyota",
+    "modelFamily": "ProAce",
+    "generation": "2014",
+    "yearFrom": 2014,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/toyota/proace/2020/diesel/2.0-d-4d-120",
+    "retrievedAt": "2026-09-15T22:28:02.951Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Toyota",
+    "modelFamily": "ProAce",
+    "generation": "2020",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/toyota/proace/2024/electric/50-kwh-136-260",
+    "retrievedAt": "2026-09-15T22:28:02.951Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Golf",
+    "generation": "1997 - IV",
+    "yearFrom": 1997,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2003-v/diesel/1.9-tdi-ip-105",
+    "retrievedAt": "2026-09-15T22:29:07.017Z",
+    "yearTo": 2002,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Golf",
+    "generation": "2003 - V",
+    "yearFrom": 2003,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/1.6-tdi-cr-90",
+    "retrievedAt": "2026-09-15T22:29:07.017Z",
+    "yearTo": 2007,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Golf",
+    "generation": "2008 - VI",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2012-vii-mki/petrol/2.0-tsi-220",
+    "retrievedAt": "2026-09-15T22:29:07.017Z",
+    "yearTo": 2011,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Golf",
+    "generation": "2012 - VII MKI",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2017-vii-mkii/petrol/1.0-tsi-tfsi-110",
+    "retrievedAt": "2026-09-15T22:29:07.017Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Golf",
+    "generation": "2017 - VII MKII",
+    "yearFrom": 2017,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2020-viii/petrol/1.5-etsi-150",
+    "retrievedAt": "2026-09-15T22:29:07.017Z",
+    "yearTo": 2019,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Golf",
+    "generation": "2020 - VIII",
+    "yearFrom": 2020,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2024-viii-mkii/hybrid_petrol/1.5-tsi-ehybrid-272",
+    "retrievedAt": "2026-09-15T22:29:07.017Z",
+    "yearTo": 2023,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Passat",
+    "generation": "1996 - B5",
+    "yearFrom": 1996,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2005-b6/petrol/3.6-fsi-300",
+    "retrievedAt": "2026-09-15T22:29:08.942Z",
+    "yearTo": 2004,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Passat",
+    "generation": "2005 - B6",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2010-b7/diesel/1.6-tdi-cr-105",
+    "retrievedAt": "2026-09-15T22:29:08.942Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Passat",
+    "generation": "2010 - B7",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/petrol/1.4-tsi-tfsi-ss-125",
+    "retrievedAt": "2026-09-15T22:29:08.942Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Passat",
+    "generation": "2015 - B8",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2019/petrol/2.0-tsi-opf-190",
+    "retrievedAt": "2026-09-15T22:29:08.942Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volkswagen",
+    "modelFamily": "Passat",
+    "generation": "2019 - B8-FL",
+    "yearFrom": 2019,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2023-b9/petrol/1.5-etsi-150",
+    "retrievedAt": "2026-09-15T22:29:08.942Z",
+    "yearTo": 2022,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "C30",
+    "generation": "2006",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/c30/2010/diesel/1.6d-109",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "C70",
+    "generation": "1999",
+    "yearFrom": 1999,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/c70/2006/diesel/2.0-d3-150",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "C70",
+    "generation": "2006",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/c70/2010/diesel/2.0-d-136",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "S40",
+    "generation": "2000",
+    "yearFrom": 2000,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/s40/2004/diesel/1.6d-109",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2003,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "S40",
+    "generation": "2004",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/s40/2010/diesel/1.6-d2-115",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "S60",
+    "generation": "2002",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/s60/2005/diesel/2.4-d-128",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2004,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "S60",
+    "generation": "2005",
+    "yearFrom": 2005,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/s60/2010/diesel/2.0-d3-163",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2009,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "S60",
+    "generation": "2010",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/s60/2015/petrol/t3-1.5-152",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "S60",
+    "generation": "2015",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/s60/2019/petrol/20-b3-163-265",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2018,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "S80",
+    "generation": "2002",
+    "yearFrom": 2002,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/s80/2006/diesel/2.4-d-175",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "S80",
+    "generation": "2006",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/s80/2016/diesel/2.0-d2-eu6-120",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "V40",
+    "generation": "2012",
+    "yearFrom": 2012,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/v40/2015/diesel/2.0-d4-eu6-190",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "V50",
+    "generation": "2004",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/v50/2007/diesel/1.6-d2-115",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2006,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "V60",
+    "generation": "2010",
+    "yearFrom": 2010,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2015/petrol/polestar-2.0-367",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "V60",
+    "generation": "2015",
+    "yearFrom": 2015,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/v60/2018/petrol/t5-2.0-250",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2017,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "V70",
+    "generation": "2004",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/v70/2007/diesel/1.6d-109",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2006,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "V70",
+    "generation": "2007",
+    "yearFrom": 2007,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/v70/2016/diesel/2.0-d2-eu6-120",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2015,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "XC 60",
+    "generation": "2008",
+    "yearFrom": 2008,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/xc-60/2017/diesel/2.0-d4-eu6-190",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2016,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "XC 70",
+    "generation": "2000 I (I)",
+    "yearFrom": 2000,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/xc-70/2004-i-ii/diesel/2.4-d5-185",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2003,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "XC 70",
+    "generation": "2004 I (II)",
+    "yearFrom": 2004,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/xc-70/2007/diesel/2.0-d3-163",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2008,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "XC 70",
+    "generation": "2009 II (I)",
+    "yearFrom": 2009,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/xc-70/2013/diesel/2.4-d4-181",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2012,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "XC 70",
+    "generation": "2013 II (II)",
+    "yearFrom": 2013,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/xc-70/2025-iii/hybrid_petrol/long-range-15t-plug-in-hybrid-dht-318-255",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2024,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "XC 90",
+    "generation": "2003",
+    "yearFrom": 2003,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/xc-90/2006/diesel/2.4-d5-200",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2005,
+    "method": "successor-generation-start"
+  },
+  {
+    "brand": "Volvo",
+    "modelFamily": "XC 90",
+    "generation": "2006",
+    "yearFrom": 2006,
+    "sourceUrl": "https://www.shiftech.eu/en/chiptuning/car/volvo/xc-90/2015/diesel/2.0-d5-225",
+    "retrievedAt": "2026-09-15T22:33:20.785Z",
+    "yearTo": 2014,
+    "method": "successor-generation-start"
+  }
+]

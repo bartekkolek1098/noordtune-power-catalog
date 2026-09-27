@@ -1,0 +1,2799 @@
+{
+  "checkedAt": "2026-09-15T20:25:48.055Z",
+  "functionalCommit": "920ae2e31f1610cc157307d75ae972264786a494",
+  "archiveCommit": "0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
+  "method": "Parse direct Markdown links/images/reference definitions and HTML href/src in every tracked or nonignored Markdown/HTML file. Verify local artifact existence, exact PNG inventory bytes, archived Git blob identity, and HTTP HEAD for every unique used immutable archive URL. Historical JSON measurements are preserved; research/application URLs and in-page anchors are outside this artifact-existence audit.",
+  "summary": {
+    "markdownHtmlFiles": 26,
+    "localArtifactLinks": 74,
+    "localPngLinks": 30,
+    "archivedScreenshotReferences": 40,
+    "uniqueArchivedScreenshotUrls": 36,
+    "archiveCommitReferences": 6,
+    "httpUrlsChecked": 37,
+    "httpFailures": 0,
+    "retainedPngs": 40,
+    "removedPngsWithExactArchives": 291,
+    "missingLocalLinks": 0,
+    "missingOrMismatchedArchivedLinks": 0,
+    "invalidImageInventoryEntries": 0,
+    "totalFailures": 0
+  },
+  "reportsScanned": [
+    "docs/tuning-qa/ARTIFACT_CLEANUP.md",
+    "CATALOG_DATA_AUDIT.md",
+    "CATALOG_DATA_REPORT.md",
+    "CURATED_BATCH_1_REVIEW.md",
+    "CURATED_PRICING_REVIEW.md",
+    "CURATED_TECHNICAL_SERVICE_REVIEW.md",
+    "PRICING_V2_REVIEW.md",
+    "README.md",
+    "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+    "docs/content-model.md",
+    "docs/deployment.md",
+    "docs/instalacja-noordtune-power.md",
+    "docs/rdw-integration.md",
+    "docs/tuning-qa/GENERIC_RANGE_POLICY.md",
+    "docs/tuning-qa/TUNING_PROFILE_BACKLOG.md",
+    "docs/tuning-qa/TUNING_REFERENCE_RESEARCH.md",
+    "docs/tuning-qa/corrective-all24-before-after.md",
+    "docs/tuning-qa/corrective/corrective-results.html",
+    "docs/tuning-qa/corrective/visual-comparison.html",
+    "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+    "docs/tuning-qa/runtime/LIVE_RDW_AND_REFERENCE_RESEARCH.md",
+    "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md",
+    "docs/tuning-qa/runtime/RUNTIME_PRICING_POLICY.md",
+    "docs/tuning-qa/runtime/SCREENSHOT_RETENTION_PROPOSAL.md",
+    "docs/tuning-qa/runtime/runtime-coverage.md",
+    "docs/tuning-qa/visual-comparison.html"
+  ],
+  "localLinks": [
+    {
+      "report": "docs/tuning-qa/ARTIFACT_CLEANUP.md",
+      "line": 12,
+      "syntax": "markdown-link",
+      "target": "runtime/SCREENSHOT_RETENTION_PROPOSAL.md",
+      "resolvedTarget": "docs/tuning-qa/runtime/SCREENSHOT_RETENTION_PROPOSAL.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/ARTIFACT_CLEANUP.md",
+      "line": 12,
+      "syntax": "markdown-link",
+      "target": "runtime/screenshot-inventory.json",
+      "resolvedTarget": "docs/tuning-qa/runtime/screenshot-inventory.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/ARTIFACT_CLEANUP.md",
+      "line": 29,
+      "syntax": "markdown-link",
+      "target": "artifact-link-audit.json",
+      "resolvedTarget": "docs/tuning-qa/artifact-link-audit.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/ARTIFACT_CLEANUP.md",
+      "line": 29,
+      "syntax": "markdown-link",
+      "target": "final-review/FINAL_ACCURACY_REVIEW.md",
+      "resolvedTarget": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 3,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "resolvedTarget": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 64,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective-all24-before-after.json",
+      "resolvedTarget": "docs/tuning-qa/corrective-all24-before-after.json",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 64,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective-all24-before-after.md",
+      "resolvedTarget": "docs/tuning-qa/corrective-all24-before-after.md",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 114,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/rdw-provenance.json",
+      "resolvedTarget": "docs/tuning-qa/rdw-provenance.json",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 128,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/rdw-result-examples.json",
+      "resolvedTarget": "docs/tuning-qa/corrective/rdw-result-examples.json",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 159,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/visual-comparison.html",
+      "resolvedTarget": "docs/tuning-qa/corrective/visual-comparison.html",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 160,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/corrective-results.html",
+      "resolvedTarget": "docs/tuning-qa/corrective/corrective-results.html",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 161,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/final-bmw128ti-1440.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/final-bmw128ti-1440.png",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 161,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/manual-ref-bmw-128ti-f40-265-nl-search-320.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/manual-ref-bmw-128ti-f40-265-nl-search-320.png",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 162,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/production-smoke.json",
+      "resolvedTarget": "docs/tuning-qa/corrective/production-smoke.json",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 162,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/browser-bundle-check.json",
+      "resolvedTarget": "docs/tuning-qa/corrective/browser-bundle-check.json",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 163,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/visual-report.json",
+      "resolvedTarget": "docs/tuning-qa/corrective/visual-report.json",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 163,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/manual-reference-report.json",
+      "resolvedTarget": "docs/tuning-qa/corrective/manual-reference-report.json",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 163,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/corrective/live-api-results.json",
+      "resolvedTarget": "docs/tuning-qa/corrective/live-api-results.json",
+      "exists": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 163,
+      "syntax": "markdown-link",
+      "target": "docs/tuning-qa/TUNING_REFERENCE_RESEARCH.md",
+      "resolvedTarget": "docs/tuning-qa/TUNING_REFERENCE_RESEARCH.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/GENERIC_RANGE_POLICY.md",
+      "line": 56,
+      "syntax": "markdown-link",
+      "target": "runtime/LIVE_RDW_AND_REFERENCE_RESEARCH.md",
+      "resolvedTarget": "docs/tuning-qa/runtime/LIVE_RDW_AND_REFERENCE_RESEARCH.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/TUNING_PROFILE_BACKLOG.md",
+      "line": 7,
+      "syntax": "markdown-link",
+      "target": "runtime/live-rdw-identities.json",
+      "resolvedTarget": "docs/tuning-qa/runtime/live-rdw-identities.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/TUNING_PROFILE_BACKLOG.md",
+      "line": 7,
+      "syntax": "markdown-link",
+      "target": "runtime/runtime-coverage.md",
+      "resolvedTarget": "docs/tuning-qa/runtime/runtime-coverage.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/corrective-results.html",
+      "line": 1,
+      "syntax": "html-href",
+      "target": "../final-review/FINAL_ACCURACY_REVIEW.md",
+      "resolvedTarget": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/corrective-results.html",
+      "line": 1,
+      "syntax": "html-href",
+      "target": "final-bmw128ti-1440.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/final-bmw128ti-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/corrective-results.html",
+      "line": 1,
+      "syntax": "html-src",
+      "target": "final-bmw128ti-1440.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/final-bmw128ti-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "../final-review/FINAL_ACCURACY_REVIEW.md",
+      "resolvedTarget": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "baseline-bmw128ti-320.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/baseline-bmw128ti-320.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "final-bmw128ti-320.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/final-bmw128ti-320.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "baseline-golf-gti-320.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/baseline-golf-gti-320.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "final-golf-gti-320.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/final-golf-gti-320.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "baseline-bmw128ti-1440.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/baseline-bmw128ti-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "final-bmw128ti-1440.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/final-bmw128ti-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "baseline-golf-gti-1440.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/baseline-golf-gti-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "final-golf-gti-1440.png",
+      "resolvedTarget": "docs/tuning-qa/corrective/final-golf-gti-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 22,
+      "syntax": "markdown-link",
+      "target": "../GENERIC_RANGE_POLICY.md",
+      "resolvedTarget": "docs/tuning-qa/GENERIC_RANGE_POLICY.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 24,
+      "syntax": "markdown-link",
+      "target": "../runtime/RUNTIME_PRICING_POLICY.md",
+      "resolvedTarget": "docs/tuning-qa/runtime/RUNTIME_PRICING_POLICY.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 26,
+      "syntax": "markdown-link",
+      "target": "../runtime/runtime-coverage.md",
+      "resolvedTarget": "docs/tuning-qa/runtime/runtime-coverage.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 34,
+      "syntax": "markdown-link",
+      "target": "../TUNING_PROFILE_BACKLOG.md",
+      "resolvedTarget": "docs/tuning-qa/TUNING_PROFILE_BACKLOG.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 46,
+      "syntax": "markdown-link",
+      "target": "browser-bundle-check.json",
+      "resolvedTarget": "docs/tuning-qa/final-review/browser-bundle-check.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 47,
+      "syntax": "markdown-link",
+      "target": "browser-acceptance.json",
+      "resolvedTarget": "docs/tuning-qa/final-review/browser-acceptance.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 48,
+      "syntax": "markdown-link",
+      "target": "source-validation.json",
+      "resolvedTarget": "docs/tuning-qa/final-review/source-validation.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 62,
+      "syntax": "markdown-link",
+      "target": "public-exact-320.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/public-exact-320.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 62,
+      "syntax": "markdown-link",
+      "target": "public-exact-1440.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/public-exact-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 63,
+      "syntax": "markdown-link",
+      "target": "canonical-nonpublic-320.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/canonical-nonpublic-320.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 63,
+      "syntax": "markdown-link",
+      "target": "canonical-nonpublic-1440.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/canonical-nonpublic-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 64,
+      "syntax": "markdown-link",
+      "target": "generic-petrol-320.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/generic-petrol-320.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 64,
+      "syntax": "markdown-link",
+      "target": "generic-petrol-1440.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/generic-petrol-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 65,
+      "syntax": "markdown-link",
+      "target": "generic-diesel-320.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/generic-diesel-320.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 65,
+      "syntax": "markdown-link",
+      "target": "generic-diesel-1440.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/generic-diesel-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 66,
+      "syntax": "markdown-link",
+      "target": "unsupported-ev-320.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/unsupported-ev-320.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "line": 66,
+      "syntax": "markdown-link",
+      "target": "unsupported-ev-1440.png",
+      "resolvedTarget": "docs/tuning-qa/final-review/unsupported-ev-1440.png",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/LIVE_RDW_AND_REFERENCE_RESEARCH.md",
+      "line": 5,
+      "syntax": "markdown-link",
+      "target": "../GENERIC_RANGE_POLICY.md",
+      "resolvedTarget": "docs/tuning-qa/GENERIC_RANGE_POLICY.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/LIVE_RDW_AND_REFERENCE_RESEARCH.md",
+      "line": 9,
+      "syntax": "markdown-link",
+      "target": "./live-rdw-identities.json",
+      "resolvedTarget": "docs/tuning-qa/runtime/live-rdw-identities.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/LIVE_RDW_AND_REFERENCE_RESEARCH.md",
+      "line": 43,
+      "syntax": "markdown-link",
+      "target": "../../../src/data/tuning-reference-research.ts",
+      "resolvedTarget": "src/data/tuning-reference-research.ts",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md",
+      "line": 24,
+      "syntax": "markdown-link",
+      "target": "./live-rdw-identities.json",
+      "resolvedTarget": "docs/tuning-qa/runtime/live-rdw-identities.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md",
+      "line": 24,
+      "syntax": "markdown-link",
+      "target": "./LIVE_RDW_AND_REFERENCE_RESEARCH.md",
+      "resolvedTarget": "docs/tuning-qa/runtime/LIVE_RDW_AND_REFERENCE_RESEARCH.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md",
+      "line": 43,
+      "syntax": "markdown-link",
+      "target": "../../../src/data/tuning-heuristics.ts",
+      "resolvedTarget": "src/data/tuning-heuristics.ts",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md",
+      "line": 49,
+      "syntax": "markdown-link",
+      "target": "./runtime-coverage.md",
+      "resolvedTarget": "docs/tuning-qa/runtime/runtime-coverage.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md",
+      "line": 50,
+      "syntax": "markdown-link",
+      "target": "./browser-acceptance.json",
+      "resolvedTarget": "docs/tuning-qa/runtime/browser-acceptance.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md",
+      "line": 51,
+      "syntax": "markdown-link",
+      "target": "./browser-bundle-check.json",
+      "resolvedTarget": "docs/tuning-qa/runtime/browser-bundle-check.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/RUNTIME_ESTIMATE_REVIEW.md",
+      "line": 52,
+      "syntax": "markdown-link",
+      "target": "./SCREENSHOT_RETENTION_PROPOSAL.md",
+      "resolvedTarget": "docs/tuning-qa/runtime/SCREENSHOT_RETENTION_PROPOSAL.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/SCREENSHOT_RETENTION_PROPOSAL.md",
+      "line": 5,
+      "syntax": "markdown-link",
+      "target": "screenshot-inventory.json",
+      "resolvedTarget": "docs/tuning-qa/runtime/screenshot-inventory.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/SCREENSHOT_RETENTION_PROPOSAL.md",
+      "line": 16,
+      "syntax": "markdown-link",
+      "target": "../final-review/FINAL_ACCURACY_REVIEW.md",
+      "resolvedTarget": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/SCREENSHOT_RETENTION_PROPOSAL.md",
+      "line": 24,
+      "syntax": "markdown-link",
+      "target": "../ARTIFACT_CLEANUP.md",
+      "resolvedTarget": "docs/tuning-qa/ARTIFACT_CLEANUP.md",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/runtime/SCREENSHOT_RETENTION_PROPOSAL.md",
+      "line": 24,
+      "syntax": "markdown-link",
+      "target": "../artifact-link-audit.json",
+      "resolvedTarget": "docs/tuning-qa/artifact-link-audit.json",
+      "exists": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "final-review/FINAL_ACCURACY_REVIEW.md",
+      "resolvedTarget": "docs/tuning-qa/final-review/FINAL_ACCURACY_REVIEW.md",
+      "exists": true
+    }
+  ],
+  "archivedScreenshotLinks": [
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 159,
+      "syntax": "markdown-link",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/visual-comparison.png",
+      "archivePath": "docs/tuning-qa/corrective/visual-comparison.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "f51b6fcf21b103f9e725068e3e8e01d77780c5b8",
+      "matchesManifest": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 160,
+      "syntax": "markdown-link",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/corrective-results.png",
+      "archivePath": "docs/tuning-qa/corrective/corrective-results.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "c8ee9288bf107cb3c9c6d3bfcc20870751e5ddb4",
+      "matchesManifest": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 161,
+      "syntax": "markdown-link",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "34dd6bffcd5575498445757ac3bc259e502a1e84",
+      "matchesManifest": true
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 161,
+      "syntax": "markdown-link",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "dd8aa6a65c02f37addd6ad247adb79558f7c26e1",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/corrective-results.html",
+      "line": 1,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "34dd6bffcd5575498445757ac3bc259e502a1e84",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/corrective-results.html",
+      "line": 1,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "34dd6bffcd5575498445757ac3bc259e502a1e84",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/corrective-results.html",
+      "line": 1,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "dd8aa6a65c02f37addd6ad247adb79558f7c26e1",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/corrective-results.html",
+      "line": 1,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "dd8aa6a65c02f37addd6ad247adb79558f7c26e1",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-bmw128ti-320-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/baseline-bmw128ti-320-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "e9a942655c817a236511409fb39eb15f37d5cfd5",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-bmw128ti-320-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/final-bmw128ti-320-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "43817a14888d1cbaf935ce5e8750069477f2d27f",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-golf-gti-320-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/baseline-golf-gti-320-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "8c7de3faa0e0f1f6637283f6d7a960ef363d0329",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-golf-gti-320-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/final-golf-gti-320-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "100279f8bf982201c8b3a2b303e265ee374aceb4",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-bmw128ti-1440-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/baseline-bmw128ti-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "1ce74a67d980152ce959dc1e03040c18ff1630b2",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-bmw128ti-1440-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/final-bmw128ti-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "b29773b17b0cd8b2b1120c28f729b8a3cf92c7ef",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-golf-gti-1440-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/baseline-golf-gti-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "e80d2d2c7b72402a1fbf355a3273ca5512866208",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-golf-gti-1440-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/final-golf-gti-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "53dbf25dc69203457e5e80e95301b65cc728f059",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-transit-custom-1440-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/baseline-transit-custom-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "3570f74f8f4d4a5a053984ec0cbf0e2aef9808ad",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-transit-custom-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/baseline-transit-custom-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "66d7103f03c9974bf2dee747e4cd19001f686764",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-custom-1440-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-custom-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "7168b73605a8e74387468b2914b43c83fde03594",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "34dd6bffcd5575498445757ac3bc259e502a1e84",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-transit-connect-1440-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/baseline-transit-connect-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "775efae158003dac07c9305d3fa252d003fa4be9",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-transit-connect-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/baseline-transit-connect-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "a2ee7db0663067c40221eff4926fa88002368d66",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-connect-1440-summary.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-connect-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "51b179e90e75fb222eb9ee1dfccabf9492bf37cf",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "archivePath": "docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "dd8aa6a65c02f37addd6ad247adb79558f7c26e1",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-bmw128ti-320-summary.png",
+      "archivePath": "docs/tuning-qa/baseline-bmw128ti-320-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "e9a942655c817a236511409fb39eb15f37d5cfd5",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-bmw128ti-320.png",
+      "archivePath": "docs/tuning-qa/baseline-bmw128ti-320.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "8777935f3479dd81eb660381675f8c5b6924cdc8",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-bmw128ti-320-summary.png",
+      "archivePath": "docs/tuning-qa/final-bmw128ti-320-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "a6076cd8fdba0b62aeb9291fc8b1c696d4ea4e0a",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-bmw128ti-320.png",
+      "archivePath": "docs/tuning-qa/final-bmw128ti-320.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "9233d30e9842081999cab4db1619719a928d0ce6",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-golf-gti-320-summary.png",
+      "archivePath": "docs/tuning-qa/baseline-golf-gti-320-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "8c7de3faa0e0f1f6637283f6d7a960ef363d0329",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-golf-gti-320.png",
+      "archivePath": "docs/tuning-qa/baseline-golf-gti-320.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "3cbd87caaa0cc1f2d0087b03d73564ce6f127eb5",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-golf-gti-320-summary.png",
+      "archivePath": "docs/tuning-qa/final-golf-gti-320-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "4319d9702fc9bb9c5493a50be50da4d25d62d009",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-golf-gti-320.png",
+      "archivePath": "docs/tuning-qa/final-golf-gti-320.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "186e8a4af12b9e58b6db49671cacf7cf87e47eea",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-bmw128ti-1440-summary.png",
+      "archivePath": "docs/tuning-qa/baseline-bmw128ti-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "1ce74a67d980152ce959dc1e03040c18ff1630b2",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-bmw128ti-1440.png",
+      "archivePath": "docs/tuning-qa/baseline-bmw128ti-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "7b1bb9c36df9c6dccb14d2c4c55540bca03d5241",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-bmw128ti-1440-summary.png",
+      "archivePath": "docs/tuning-qa/final-bmw128ti-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "470ebdf2907dedf233db0c2e46f63b21bb97aa0b",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-bmw128ti-1440.png",
+      "archivePath": "docs/tuning-qa/final-bmw128ti-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "0bc248c3f002bd0bdcb23d338fdcfb7626e7b546",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-golf-gti-1440-summary.png",
+      "archivePath": "docs/tuning-qa/baseline-golf-gti-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "e80d2d2c7b72402a1fbf355a3273ca5512866208",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-golf-gti-1440.png",
+      "archivePath": "docs/tuning-qa/baseline-golf-gti-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "d187c0ab26c47df35cf58b91f9110a3dcc194c08",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-src",
+      "target": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-golf-gti-1440-summary.png",
+      "archivePath": "docs/tuning-qa/final-golf-gti-1440-summary.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "67369caef7f3adf1db09df6c9cfe504cf41469f1",
+      "matchesManifest": true
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-golf-gti-1440.png",
+      "archivePath": "docs/tuning-qa/final-golf-gti-1440.png",
+      "existsAtCommit": true,
+      "archivedGitBlob": "8c8c2f9bb58347fd966123d606622eadeb8203c9",
+      "matchesManifest": true
+    }
+  ],
+  "archivedCommitLinks": [
+    {
+      "report": "docs/tuning-qa/ARTIFACT_CLEANUP.md",
+      "line": 16,
+      "syntax": "markdown-link",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/commit/0c096a051b277ee2e37a1f4f69fb83d3b05418e6"
+    },
+    {
+      "report": "TUNING_IDENTITY_PRICING_FIX_REVIEW.md",
+      "line": 3,
+      "syntax": "markdown-link",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/commit/0c096a051b277ee2e37a1f4f69fb83d3b05418e6"
+    },
+    {
+      "report": "docs/tuning-qa/corrective/corrective-results.html",
+      "line": 1,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/commit/0c096a051b277ee2e37a1f4f69fb83d3b05418e6"
+    },
+    {
+      "report": "docs/tuning-qa/corrective/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/commit/0c096a051b277ee2e37a1f4f69fb83d3b05418e6"
+    },
+    {
+      "report": "docs/tuning-qa/runtime/SCREENSHOT_RETENTION_PROPOSAL.md",
+      "line": 20,
+      "syntax": "markdown-link",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/commit/0c096a051b277ee2e37a1f4f69fb83d3b05418e6"
+    },
+    {
+      "report": "docs/tuning-qa/visual-comparison.html",
+      "line": 3,
+      "syntax": "html-href",
+      "target": "https://github.com/bartekkolek1098/noordtune-power-catalog/commit/0c096a051b277ee2e37a1f4f69fb83d3b05418e6"
+    }
+  ],
+  "httpResults": [
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/corrective-results.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/visual-comparison.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-bmw128ti-320-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-bmw128ti-320-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-bmw128ti-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-golf-gti-320-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-golf-gti-320-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-bmw128ti-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-golf-gti-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-transit-custom-1440.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-custom-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-transit-connect-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-transit-connect-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-transit-connect-1440.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-bmw128ti-320-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-bmw128ti-320-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/final-golf-gti-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/corrective/baseline-transit-custom-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-bmw128ti-320.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-bmw128ti-320.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-golf-gti-320-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-golf-gti-320-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-golf-gti-320.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-golf-gti-320.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-bmw128ti-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-bmw128ti-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-bmw128ti-1440.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-golf-gti-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-bmw128ti-1440.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bartekkolek1098/noordtune-power-catalog/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-golf-gti-1440-summary.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/final-golf-gti-1440.png",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/commit/0c096a051b277ee2e37a1f4f69fb83d3b05418e6",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://github.com/bartekkolek1098/noordtune-power-catalog/blob/0c096a051b277ee2e37a1f4f69fb83d3b05418e6/docs/tuning-qa/baseline-golf-gti-1440.png",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "imageInventoryChecks": [
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-en-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-en-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-pl-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw128ti-pl-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw320d-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw320d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw320d-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-bmw320d-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-focus-st-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-focus-st-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-focus-st-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-focus-st-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-gti-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-r-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-r-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-r-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-golf-r-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-transit-connect-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-transit-connect-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-transit-connect-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-transit-connect-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-transit-custom-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-transit-custom-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-transit-custom-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/baseline-transit-custom-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-en-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-en-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-pl-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw128ti-pl-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw320d-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw320d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw320d-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-bmw320d-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-focus-st-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-focus-st-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-focus-st-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-focus-st-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-gti-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-r-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-r-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-r-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-golf-r-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-connect-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/baseline-transit-custom-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/corrective-results.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-en-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-en-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-pl-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw128ti-pl-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw320d-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw320d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw320d-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-bmw320d-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-detail-bmw320d-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-detail-bmw320d-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-detail-focus-st-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-detail-focus-st-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-detail-golf-gti-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-detail-golf-gti-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-detail-golf-r-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-detail-golf-r-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-focus-st-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-focus-st-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-focus-st-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-focus-st-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-gti-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-r-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-r-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-r-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-golf-r-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-connect-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/final-transit-custom-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-bmw-128ti-f40-265-nl-cascade-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-bmw-128ti-f40-265-nl-cascade-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-bmw-128ti-f40-265-nl-search-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-bmw-128ti-f40-265-nl-search-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-connect-15-tdci-100-en-search-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-cascade-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-cascade-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-search-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-connect-15-tdci-100-nl-search-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-connect-15-tdci-100-pl-search-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-cascade-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-cascade-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-search-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/manual-ref-ford-transit-custom-20-ecoblue-105-nl-search-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-audi-a3-20-tdi-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-audi-a3-8v-16-tdi-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-audi-a4-b9-20-tdi-190-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-audi-a4-b9-20-tfsi-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-audi-a6-c7-30-tdi-272-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-bmw-1-series-f20-f21-118d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-bmw-1-series-f20-f21-118i-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-bmw-1-series-f20-f21-120d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-bmw-3-series-f30-f31-318d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-bmw-3-series-f30-f31-330d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-bmw-3-series-g20-g21-320i-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-bmw-320d-b47-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-bmw-5-series-f10-f11-520d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-bmw-x3-e83-20d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-ford-focus-st-20-ecoboost-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-mercedes-a45-amg-m133-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-seat-leon-cupra-5f-20-tsi-300-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-skoda-octavia-5e-20-tdi-150-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-volkswagen-golf-7-16-tdi-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-volkswagen-golf-7-20-tdi-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-volkswagen-golf-7-r-20-tsi-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-volkswagen-passat-b8-20-tdi-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-volvo-xc60-d5-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/public-vw-golf-20-tsi-ea888-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/corrective/visual-comparison.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-en-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-en-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-pl-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw128ti-pl-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw320d-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw320d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw320d-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-bmw320d-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-detail-bmw320d-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-detail-bmw320d-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-detail-focus-st-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-detail-focus-st-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-detail-golf-gti-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-detail-golf-gti-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-detail-golf-r-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-detail-golf-r-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-focus-st-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-focus-st-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-focus-st-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-focus-st-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-1024-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-1024.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-360-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-360.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-390-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-390.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-430-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-430.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-768-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-gti-768.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-r-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-r-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-r-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-golf-r-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/canonical-nonpublic-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/canonical-nonpublic-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/generic-diesel-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/generic-diesel-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/generic-petrol-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/generic-petrol-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/public-exact-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/public-exact-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/unsupported-ev-1440.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-review/unsupported-ev-320.png",
+      "status": "retained-local",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-transit-connect-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-transit-connect-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-transit-connect-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-transit-connect-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-transit-custom-1440-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-transit-custom-1440.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-transit-custom-320-summary.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/final-transit-custom-320.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    },
+    {
+      "path": "docs/tuning-qa/visual-comparison.png",
+      "status": "archived-removed-from-branch",
+      "valid": true
+    }
+  ],
+  "excludedExternalOrAnchorReferences": 34,
+  "literalPngMentionsReviewed": [
+    {
+      "report": "README.md",
+      "line": 72,
+      "note": "Literal code-path mention outside Markdown/HTML links; brand-logo examples reviewed separately."
+    },
+    {
+      "report": "docs/instalacja-noordtune-power.md",
+      "line": 9,
+      "note": "Literal code-path mention outside Markdown/HTML links; brand-logo examples reviewed separately."
+    }
+  ],
+  "failures": [],
+  "releasePrivacyCleanup": "Historical owner-image references omitted; archived URLs are not rewritten to fictitious anonymous filenames."
+}

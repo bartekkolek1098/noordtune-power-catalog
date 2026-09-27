@@ -1,0 +1,1398 @@
+[
+  {
+    "id": "shiftech-6045",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2012-w176/diesel/180-cdi-1.5-110",
+    "retrievedAt": "2026-09-15T22:30:13.962Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2d2e3fef9920b791879fdb28f3be7f28ded8b58a95db88a489dbf907fedac6ac",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "engineMarketingName": "180 CDI (1.5)",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 130,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 140,
+        "torqueNm": 320,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes A; generation label: 2012 - W176; engine: 180 CDI (1.5)."
+    ]
+  },
+  {
+    "id": "shiftech-6047",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2012-w176/diesel/160-cdi-1.5-90",
+    "retrievedAt": "2026-09-15T22:30:17.837Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2f3247b01c83e40c3ba038cee98357ecd7966cdbbce39e7733130596f2dc89db",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "engineMarketingName": "160 CDI (1.5)",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 130,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 140,
+        "torqueNm": 320,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes A; generation label: 2012 - W176; engine: 160 CDI (1.5)."
+    ]
+  },
+  {
+    "id": "shiftech-6051",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2012-w176/essence/45-amg-2.0t-360",
+    "retrievedAt": "2026-09-15T22:30:21.420Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2b9613fd78d402af05a48f71687ca2baf1bb1510c06a44535c83873e6ecb4bdd",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "engineMarketingName": "45 AMG (2.0T)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 360,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 400,
+        "torqueNm": 540
+      },
+      "stage2": {
+        "powerHp": 420,
+        "torqueNm": 560,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed.",
+      "Manufacturer stock validation: https://media.mercedes-benz.nl/a-45-amg-eerste-amg-model-met-viercilinder-motor-indrukwekkend-modeloffensief-van-mercedes-amg-in-geneve/; retrieved 2026-09-15T22:53:22.024Z; SHA256 f0771454c6623aae25d3d8c5109ff3f65120acc85198e52ccacd9fcee9b77aff. Structured facts retained in data/research/mercedes-stock-validation.json; original tuning-provider identity remains unchanged."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes A; generation label: 2012 - W176; engine: 45 AMG (2.0T).",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "consensusGroup": "verified-shiftech-6051-unlimited",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mercedes-benz-w176-a45-amg-360-pk.html",
+      "https://www.unlimitedtuning.nl/mercedes/chiptuning-mercedes-benz-a-klasse/w176-2012-heden/benzine.html",
+      "https://media.mercedes-benz.nl/a-45-amg-eerste-amg-model-met-viercilinder-motor-indrukwekkend-modeloffensief-van-mercedes-amg-in-geneve/"
+    ],
+    "stockValidation": {
+      "sourceId": "mercedes-stock-a45-360",
+      "fields": [
+        "stockPowerHp",
+        "stockTorqueNm",
+        "cylinders",
+        "aspiration"
+      ]
+    }
+  },
+  {
+    "id": "shiftech-6062",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2015-w176/essence/45-amg-2.0t-381",
+    "retrievedAt": "2026-09-15T22:30:24.757Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d02490308f2e9f930c5ac5a1b01747a5f6d60ba3692eebbb14ab64e174434071",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "engineMarketingName": "45 AMG (2.0T)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 381,
+      "stockTorqueNm": 475,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "engineFamily": "M133"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 410,
+        "torqueNm": 540
+      },
+      "stage2": {
+        "powerHp": 430,
+        "torqueNm": 570,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed.",
+      "Manufacturer stock validation: https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/; retrieved 2026-09-15T22:53:47.477Z; SHA256 8f0c83f6da2eca30dfa81dfa5754b7ec6af4b2b651a59a4687344948a8b19f48. Structured facts retained in data/research/mercedes-stock-validation.json; original tuning-provider identity remains unchanged.",
+      "Engine family M133 is supported by the manufacturer comparison of the predecessor at 475 Nm and 40 PS below the 421 PS M139; the 381 PS / 475 Nm A45 counterpart is the reviewed application. Provider original figures and year band remain unchanged."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes A; generation label: 2015 - W176; engine: 45 AMG (2.0T).",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "consensusGroup": "verified-shiftech-6062-unlimited",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mercedes-w176-45-amg-381-pk.html",
+      "https://www.unlimitedtuning.nl/mercedes/chiptuning-mercedes-benz-a-klasse/w176-2012-heden/benzine.html",
+      "https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/"
+    ]
+  },
+  {
+    "id": "shiftech-6070",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2018-w177/diesel/180d-1.5-116",
+    "retrievedAt": "2026-09-15T22:30:28.172Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "d019aa7939756c491ec609f2ce09bc20b38563370c61c1cd05dfdeec0ac6b43d",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W177",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2018,
+      "fuel": "Diesel",
+      "engineMarketingName": "180d (1.5)",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "stockTorqueNm": 260,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 330,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes A; generation label: 2018 - W177; engine: 180d (1.5)."
+    ]
+  },
+  {
+    "id": "shiftech-6074",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2018-w177/diesel/220d-2.0-190",
+    "retrievedAt": "2026-09-15T22:30:31.460Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e47bf78eb8d31b70a97c551ede463c1f00bcaa330a50802b4630f5d7c1eff2c6",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W177",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2018,
+      "fuel": "Diesel",
+      "engineMarketingName": "220d (2.0)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 480
+      },
+      "stage2": {
+        "powerHp": 225,
+        "torqueNm": 500,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes A; generation label: 2018 - W177; engine: 220d (2.0)."
+    ]
+  },
+  {
+    "id": "shiftech-6075",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2018-w177/diesel/200d-2.0-150",
+    "retrievedAt": "2026-09-15T22:30:34.844Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ccdfb2fd8e5e871aec12fb338d060b6ae999fdee432a802d5a978d650e8af26e",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W177",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2018,
+      "fuel": "Diesel",
+      "engineMarketingName": "200d (2.0)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 440
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 460,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes A; generation label: 2018 - W177; engine: 200d (2.0)."
+    ]
+  },
+  {
+    "id": "shiftech-6079",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2018-w177/essence/45-amg-s-2.0t-421",
+    "retrievedAt": "2026-09-15T22:30:38.247Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5bd02807a0853c3c8f9bb96b22782b85e3e71c020a9a47604f7cb1b8a5923113",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W177",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "engineMarketingName": "45 AMG  S (2.0T)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 421,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "engineFamily": "M139"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 460,
+        "torqueNm": 560
+      },
+      "stage2": {
+        "powerHp": 490,
+        "torqueNm": 600,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed.",
+      "Manufacturer stock validation: https://media.mercedes-benz.com/article/19e630dc-5835-4576-9d36-06a4b2c8b9fc; retrieved 2026-09-15T22:53:24.122Z; SHA256 d7f003c151c5467e3f88821a3255abade10e11f8f370f1ede0f95087ce628a01. Structured facts retained in data/research/mercedes-stock-validation.json; original tuning-provider identity remains unchanged.",
+      "Manufacturer stock validation: https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/; retrieved 2026-09-15T22:53:47.477Z; SHA256 8f0c83f6da2eca30dfa81dfa5754b7ec6af4b2b651a59a4687344948a8b19f48. Structured facts retained in data/research/mercedes-stock-validation.json; original tuning-provider identity remains unchanged.",
+      "Engine family M139 is an enrichment from the linked manufacturer engine article (421 PS / 500 Nm), cross-checked against the manufacturer A45 S specification. Provider nominal displacement and original year band remain unchanged."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes A; generation label: 2018 - W177; engine: 45 AMG  S (2.0T).",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "consensusGroup": "verified-shiftech-6079-unlimited",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mercedes-w177-a45-amg-s-2-0t-421-pk.html",
+      "https://www.unlimitedtuning.nl/mercedes/chiptuning-mercedes-benz-a-klasse/w177-2018-t-m-nu/benzine.html",
+      "https://media.mercedes-benz.com/article/19e630dc-5835-4576-9d36-06a4b2c8b9fc",
+      "https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/"
+    ],
+    "stockValidation": {
+      "sourceId": "mercedes-stock-a45s-421",
+      "fields": [
+        "stockPowerHp",
+        "stockTorqueNm",
+        "displacementCc",
+        "cylinders",
+        "aspiration"
+      ]
+    }
+  },
+  {
+    "id": "shiftech-6157",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2007-w204/diesel/200-cdi-2.1-136",
+    "retrievedAt": "2026-09-15T22:30:41.526Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dce4294bacbca126ad2b0a2478f54f0b8638e620af4362dc034c333ffa72a1a1",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W204",
+      "aliases": [
+        "C"
+      ],
+      "yearFrom": 2007,
+      "fuel": "Diesel",
+      "engineMarketingName": "200 CDI (2.1)",
+      "displacementCc": 2100,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 270,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 200,
+        "torqueNm": 470,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes C; generation label: 2007 - W204; engine: 200 CDI (2.1)."
+    ]
+  },
+  {
+    "id": "shiftech-6158",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2007-w204/diesel/220-cdi-2.1-170",
+    "retrievedAt": "2026-09-15T22:30:44.859Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fd5192c885511698a9ddf09d2a8a7ee046d85e8bb509ba0a8c52062b9492bf7b",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W204",
+      "aliases": [
+        "C"
+      ],
+      "yearFrom": 2007,
+      "fuel": "Diesel",
+      "engineMarketingName": "220 CDI (2.1)",
+      "displacementCc": 2100,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 210,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 220,
+        "torqueNm": 520,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes C; generation label: 2007 - W204; engine: 220 CDI (2.1)."
+    ]
+  },
+  {
+    "id": "shiftech-6154",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2007-w204/diesel/250-cdi-2.1-204",
+    "retrievedAt": "2026-09-15T22:31:11.113Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0988e3a5c4f90dced0dacf8a9bfe52473f46815fa54b8dd7486924b4c11f31c8",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W204",
+      "aliases": [
+        "C"
+      ],
+      "yearFrom": 2007,
+      "fuel": "Diesel",
+      "engineMarketingName": "250 CDI (2.1)",
+      "displacementCc": 2100,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 235,
+        "torqueNm": 550
+      },
+      "stage2": {
+        "powerHp": 245,
+        "torqueNm": 570,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes C; generation label: 2007 - W204; engine: 250 CDI (2.1)."
+    ]
+  },
+  {
+    "id": "shiftech-6189",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2014-w205/diesel/180-bluetec-1.6-116",
+    "retrievedAt": "2026-09-15T22:31:14.518Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0d0ded03428a12b144cc0cb18a79261d71ad7bea667fde4de4af5c701b1325aa",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205",
+      "aliases": [
+        "C"
+      ],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "180 BlueTEC (1.6)",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 350
+      },
+      "stage2": {
+        "powerHp": 165,
+        "torqueNm": 370,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes C; generation label: 2014 - W205; engine: 180 BlueTEC (1.6)."
+    ]
+  },
+  {
+    "id": "shiftech-6190",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2014-w205/diesel/200-bluetec-1.6-136",
+    "retrievedAt": "2026-09-15T22:31:17.968Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "75569e11b39250dc3a75f213a14c5b953803a974d7405c3a351f7338b77259e4",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205",
+      "aliases": [
+        "C"
+      ],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "200 BlueTEC (1.6)",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 350
+      },
+      "stage2": {
+        "powerHp": 165,
+        "torqueNm": 370,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes C; generation label: 2014 - W205; engine: 200 BlueTEC (1.6)."
+    ]
+  },
+  {
+    "id": "shiftech-6191",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2014-w205/diesel/220-bluetec-2.1-170",
+    "retrievedAt": "2026-09-15T22:31:21.777Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "a3194629945678fdfe139b82da68c25f24bb52d434f69524c9f7ebd3134edd42",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205",
+      "aliases": [
+        "C"
+      ],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "220 BlueTEC (2.1)",
+      "displacementCc": 2100,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 225,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 235,
+        "torqueNm": 520,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes C; generation label: 2014 - W205; engine: 220 BlueTEC (2.1)."
+    ]
+  },
+  {
+    "id": "shiftech-6207",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2018-w205-fl/diesel/220d-2.0-194",
+    "retrievedAt": "2026-09-15T22:31:25.245Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1895e9784d8b35af537cf0944d9fb526f2441e00a8baf80af273cdf071ff47f8",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205-FL",
+      "aliases": [
+        "C"
+      ],
+      "yearFrom": 2018,
+      "fuel": "Diesel",
+      "engineMarketingName": "220d (2.0)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 194,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 480
+      },
+      "stage2": {
+        "powerHp": 225,
+        "torqueNm": 500,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes C; generation label: 2018 - W205-FL; engine: 220d (2.0)."
+    ]
+  },
+  {
+    "id": "shiftech-6222",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/c/2018-w205-fl/diesel/200d-1.6-160",
+    "retrievedAt": "2026-09-15T22:31:28.809Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b5001fa06c2aa786fb0ce34a9b872d6999f8ae3b68091c4cfc5992e152f5bc40",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "C-Class",
+      "generation": "W205-FL",
+      "aliases": [
+        "C"
+      ],
+      "yearFrom": 2018,
+      "fuel": "Diesel",
+      "engineMarketingName": "200d (1.6)",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 160,
+      "stockTorqueNm": 360,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 200,
+        "torqueNm": 440,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes C; generation label: 2018 - W205-FL; engine: 200d (1.6)."
+    ]
+  },
+  {
+    "id": "shiftech-6439",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/e/2016-w213/diesel/220d-2.0-194",
+    "retrievedAt": "2026-09-15T22:31:32.541Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "69606320d46aebbb0d2814c0e0b16abafeed04f06d8c72f126b0cddc6fdbe03d",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "E-Class",
+      "generation": "W213",
+      "aliases": [
+        "E"
+      ],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "220d (2.0)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 194,
+      "stockTorqueNm": 400,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 215,
+        "torqueNm": 480
+      },
+      "stage2": {
+        "powerHp": 225,
+        "torqueNm": 500,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes E; generation label: 2016 - W213; engine: 220d (2.0)."
+    ]
+  },
+  {
+    "id": "shiftech-6844",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/vito/2015-w447/diesel/109-cdi-1.6-90",
+    "retrievedAt": "2026-09-15T22:31:36.421Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "77f78822621f07a85f6a7bae07d69786d51cabcacba012f7694a9b1d0c2e6108",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Vito",
+      "generation": "W447",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "109 CDI (1.6)",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 150,
+        "torqueNm": 330,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes Vito; generation label: 2015 - W447; engine: 109 CDI (1.6)."
+    ]
+  },
+  {
+    "id": "shiftech-6847",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/vito/2015-w447/diesel/116-cdi-2.1-163",
+    "retrievedAt": "2026-09-15T22:31:40.049Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dd3b2dff1c5e47389eb0eec54efa1d44f4143de15ccba07a871fc4a78b34c289",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Vito",
+      "generation": "W447",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "116 CDI (2.1)",
+      "displacementCc": 2100,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 163,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 520
+      },
+      "stage2": {
+        "powerHp": 230,
+        "torqueNm": 540,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes Vito; generation label: 2015 - W447; engine: 116 CDI (2.1)."
+    ]
+  },
+  {
+    "id": "shiftech-6848",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/vito/2015-w447/diesel/119-cdi-bluetec-2.1-190",
+    "retrievedAt": "2026-09-15T22:31:44.214Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "eb6d18a5910734bcdb0f08d60caf183120f3c3c389f1a8c93a28ccf529990a55",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "Vito",
+      "generation": "W447",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "119 CDI BlueTEC (2.1)",
+      "displacementCc": 2100,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 440,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 520
+      },
+      "stage2": {
+        "powerHp": 230,
+        "torqueNm": 540,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Mercedes Vito; generation label: 2015 - W447; engine: 119 CDI BlueTEC (2.1)."
+    ]
+  },
+  {
+    "id": "unlimited-counterpart-6047",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mercedes-benz-w176-a160-cdi-90-pk.html",
+    "retrievedAt": "2026-09-15T22:40:28.508Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "527ca2bb10e9c4f35a5c7b1c9b18e4c3c5bddbbcd5ceebe77228b9ca1084e008",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "engineMarketingName": "160 CDI (1.5)",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2018
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from Diesel - 2012 t/m 2018 - W176 - A - Mercedes - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:38:46.700Z, SHA256 76b83336298d3f23e4ba882655fcb19c2fd37d76e99f77bce32abb1903223d28.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":90,\"torqueNm\":240},{\"label\":\"Ecotuning\",\"powerHp\":100,\"torqueNm\":255},{\"label\":\"Normal\",\"powerHp\":135,\"torqueNm\":310},{\"label\":\"Xtreme\",\"powerHp\":145,\"torqueNm\":325}].",
+      "STOCK_TORQUE_SOURCE_CONFLICT: Shiftech counterpart records 200 Nm, this source records 240 Nm. Facts are retained for research; no accepted stages or consensus pairing until exact configuration is reviewed. Candidate Stage 1: 135 PS / 310 Nm."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/mercedes/chiptuning-mercedes-benz-a-klasse/w176-2012-heden/diesel.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2012-w176/diesel/160-cdi-1.5-90"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Mercedes Benz W176 A160 CDI 90 pk."
+    ]
+  },
+  {
+    "id": "unlimited-counterpart-6051",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mercedes-benz-w176-a45-amg-360-pk.html",
+    "retrievedAt": "2026-09-15T22:40:30.550Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "ce39450284639bc8da94c5d4c6ee03a38674521df2fecbed81bb10a6f1358622",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "engineMarketingName": "45 AMG (2.0T)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 360,
+      "stockTorqueNm": 450,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2018
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from Benzine - 2012 t/m 2018 - W176 - A - Mercedes - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:39:00.614Z, SHA256 fb2dccd7abb1e775c389d2cbe7b3dfd73b32996a29acf182980ebfdc8c979841.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":360,\"torqueNm\":450},{\"label\":\"Normal\",\"powerHp\":410,\"torqueNm\":530},{\"label\":\"Xtreme\",\"powerHp\":420,\"torqueNm\":550},{\"label\":\"Stage 3\",\"powerHp\":480,\"torqueNm\":620}].",
+      "Manufacturer stock validation: https://media.mercedes-benz.nl/a-45-amg-eerste-amg-model-met-viercilinder-motor-indrukwekkend-modeloffensief-van-mercedes-amg-in-geneve/; retrieved 2026-09-15T22:53:22.024Z; SHA256 f0771454c6623aae25d3d8c5109ff3f65120acc85198e52ccacd9fcee9b77aff. Structured facts retained in data/research/mercedes-stock-validation.json; original tuning-provider identity remains unchanged."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/mercedes/chiptuning-mercedes-benz-a-klasse/w176-2012-heden/benzine.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2012-w176/essence/45-amg-2.0t-360",
+      "https://media.mercedes-benz.nl/a-45-amg-eerste-amg-model-met-viercilinder-motor-indrukwekkend-modeloffensief-van-mercedes-amg-in-geneve/"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Mercedes Benz W176 A45 AMG 360 pk.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "stages": {
+      "stage1": {
+        "powerHp": 410,
+        "torqueNm": 530
+      },
+      "stage3": {
+        "powerHp": 480,
+        "torqueNm": 620,
+        "conditions": [
+          "Explicit provider Stage 3 table; detailed hardware package is not specified on the retrieved page and must be scoped before use."
+        ]
+      }
+    },
+    "consensusGroup": "verified-shiftech-6051-unlimited",
+    "stockValidation": {
+      "sourceId": "mercedes-stock-a45-360",
+      "fields": [
+        "stockPowerHp",
+        "stockTorqueNm",
+        "cylinders",
+        "aspiration"
+      ]
+    }
+  },
+  {
+    "id": "unlimited-counterpart-6062",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mercedes-w176-45-amg-381-pk.html",
+    "retrievedAt": "2026-09-15T22:40:32.411Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "9533f9c7d98bd62e9ff3a96892e984ef24daff7f5ae82dff2588147e94fa3bd1",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W176",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "engineMarketingName": "45 AMG (2.0T)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 381,
+      "stockTorqueNm": 475,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2018,
+      "engineFamily": "M133"
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from Benzine - 2012 t/m 2018 - W176 - A - Mercedes - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:39:00.614Z, SHA256 fb2dccd7abb1e775c389d2cbe7b3dfd73b32996a29acf182980ebfdc8c979841.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":381,\"torqueNm\":475},{\"label\":\"Normal\",\"powerHp\":420,\"torqueNm\":540},{\"label\":\"Xtreme\",\"powerHp\":425,\"torqueNm\":560},{\"label\":\"Stage 3\",\"powerHp\":480,\"torqueNm\":620}].",
+      "Manufacturer stock validation: https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/; retrieved 2026-09-15T22:53:47.477Z; SHA256 8f0c83f6da2eca30dfa81dfa5754b7ec6af4b2b651a59a4687344948a8b19f48. Structured facts retained in data/research/mercedes-stock-validation.json; original tuning-provider identity remains unchanged.",
+      "Engine family M133 is supported by the manufacturer comparison of the predecessor at 475 Nm and 40 PS below the 421 PS M139; the 381 PS / 475 Nm A45 counterpart is the reviewed application. Provider original figures and year band remain unchanged."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/mercedes/chiptuning-mercedes-benz-a-klasse/w176-2012-heden/benzine.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2015-w176/essence/45-amg-2.0t-381",
+      "https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Mercedes W176 45 AMG 381 pk.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "stages": {
+      "stage1": {
+        "powerHp": 420,
+        "torqueNm": 540
+      },
+      "stage3": {
+        "powerHp": 480,
+        "torqueNm": 620,
+        "conditions": [
+          "Explicit provider Stage 3 table; detailed hardware package is not specified on the retrieved page and must be scoped before use."
+        ]
+      }
+    },
+    "consensusGroup": "verified-shiftech-6062-unlimited"
+  },
+  {
+    "id": "unlimited-counterpart-6079",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-mercedes-w177-a45-amg-s-2-0t-421-pk.html",
+    "retrievedAt": "2026-09-15T22:40:34.477Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "d75ed8336484ce1e755e7fa74a64319ef2036a30f50251f2e6c519aa9f21261c",
+    "identity": {
+      "brand": "Mercedes-Benz",
+      "modelFamily": "A-Class",
+      "generation": "W177",
+      "aliases": [
+        "A"
+      ],
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "engineMarketingName": "45 AMG  S (2.0T)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 421,
+      "stockTorqueNm": 500,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2022,
+      "engineFamily": "M139"
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from Benzine - 2018 t/m 2022 - W177 - A - Mercedes - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:38:44.712Z, SHA256 0aacf2a760f52631a7f19841abfad3e1b309d074a6e7666dad6a4cf38aec2ec3.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":421,\"torqueNm\":500},{\"label\":\"Normal\",\"powerHp\":460,\"torqueNm\":620},{\"label\":\"Xtreme\",\"powerHp\":470,\"torqueNm\":630}].",
+      "Manufacturer stock validation: https://media.mercedes-benz.com/article/19e630dc-5835-4576-9d36-06a4b2c8b9fc; retrieved 2026-09-15T22:53:24.122Z; SHA256 d7f003c151c5467e3f88821a3255abade10e11f8f370f1ede0f95087ce628a01. Structured facts retained in data/research/mercedes-stock-validation.json; original tuning-provider identity remains unchanged.",
+      "Manufacturer stock validation: https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/; retrieved 2026-09-15T22:53:47.477Z; SHA256 8f0c83f6da2eca30dfa81dfa5754b7ec6af4b2b651a59a4687344948a8b19f48. Structured facts retained in data/research/mercedes-stock-validation.json; original tuning-provider identity remains unchanged.",
+      "Engine family M139 is an enrichment from the linked manufacturer engine article (421 PS / 500 Nm), cross-checked against the manufacturer A45 S specification. Provider nominal displacement and original year band remain unchanged."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/mercedes/chiptuning-mercedes-benz-a-klasse/w177-2018-t-m-nu/benzine.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/mercedes/a/2018-w177/essence/45-amg-s-2.0t-421",
+      "https://media.mercedes-benz.com/article/19e630dc-5835-4576-9d36-06a4b2c8b9fc",
+      "https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Mercedes W177 A45 AMG-S 2.0T 421 pk.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "stages": {
+      "stage1": {
+        "powerHp": 460,
+        "torqueNm": 620
+      }
+    },
+    "consensusGroup": "verified-shiftech-6079-unlimited",
+    "stockValidation": {
+      "sourceId": "mercedes-stock-a45s-421",
+      "fields": [
+        "stockPowerHp",
+        "stockTorqueNm",
+        "displacementCc",
+        "cylinders",
+        "aspiration"
+      ]
+    }
+  },
+  {
+    "id": "mercedes-stock-a45-360",
+    "provider": "manufacturer",
+    "sourceName": "Mercedes-Benz manufacturer media",
+    "url": "https://media.mercedes-benz.nl/a-45-amg-eerste-amg-model-met-viercilinder-motor-indrukwekkend-modeloffensief-van-mercedes-amg-in-geneve/",
+    "retrievedAt": "2026-09-15T22:53:22.024Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "f0771454c6623aae25d3d8c5109ff3f65120acc85198e52ccacd9fcee9b77aff",
+    "notes": [
+      "Factual stock validation: {\"brand\":\"Mercedes-Benz\",\"model\":\"A 45 AMG\",\"stockPowerKw\":265,\"stockPowerHp\":360,\"powerUnit\":\"PS\",\"stockTorqueNm\":450,\"cylinders\":4,\"aspiration\":\"turbo\"}.",
+      "Supporting stock evidence only, not a tuning source. Does not create a tuning Stage or infer a production year band."
+    ],
+    "applicability": [
+      "Applies to source observations shiftech-6051, unlimited-counterpart-6051; reviewed model/output equivalence is retained in data/research/mercedes-stock-validation.json."
+    ]
+  },
+  {
+    "id": "mercedes-stock-a45s-421",
+    "provider": "manufacturer",
+    "sourceName": "Mercedes-Benz manufacturer media",
+    "url": "https://media.mercedes-benz.com/article/19e630dc-5835-4576-9d36-06a4b2c8b9fc",
+    "retrievedAt": "2026-09-15T22:53:24.122Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "d7f003c151c5467e3f88821a3255abade10e11f8f370f1ede0f95087ce628a01",
+    "notes": [
+      "Factual stock validation: {\"brand\":\"Mercedes-Benz\",\"model\":\"A 45 S 4MATIC+\",\"stockPowerKw\":310,\"stockPowerHp\":421,\"powerUnit\":\"PS\",\"stockTorqueNm\":500,\"displacementCc\":1991,\"cylinders\":4,\"aspiration\":\"turbo\"}.",
+      "Supporting stock evidence only, not a tuning source. Does not create a tuning Stage or infer a production year band."
+    ],
+    "applicability": [
+      "Applies to source observations shiftech-6079, unlimited-counterpart-6079; reviewed model/output equivalence is retained in data/research/mercedes-stock-validation.json."
+    ]
+  },
+  {
+    "id": "mercedes-stock-m139-m133",
+    "provider": "manufacturer",
+    "sourceName": "Mercedes-Benz manufacturer media",
+    "url": "https://media.mercedes-benz.nl/serieproductie-van-de-krachtigste-mercedes-amg-viercilindermotor-van-start-in-affalterbach/",
+    "retrievedAt": "2026-09-15T22:53:47.477Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "8f0c83f6da2eca30dfa81dfa5754b7ec6af4b2b651a59a4687344948a8b19f48",
+    "notes": [
+      "Factual stock validation: {\"engineFamily\":\"M139\",\"stockPowerKw\":310,\"stockPowerHp\":421,\"powerUnit\":\"PS\",\"stockTorqueNm\":500,\"displacementCc\":1991,\"cylinders\":4,\"aspiration\":\"turbo\"}.",
+      "Manufacturer identifies M139 at421PS/500Nm and explicitly names predecessor M133 with475Nm. The381PS predecessor is40PS below421PS in the same statement; model-specific grouping remains anchored by the matching A45 tuning pages. This supporting evidence does not overwrite provider raw identities or create a tuning Stage value.",
+      "Supporting stock evidence only, not a tuning source. Does not create a tuning Stage or infer a production year band."
+    ],
+    "applicability": [
+      "Applies to source observations shiftech-6079, unlimited-counterpart-6079, shiftech-6062, unlimited-counterpart-6062; reviewed model/output equivalence is retained in data/research/mercedes-stock-validation.json."
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "sourceId": "shiftech-v2-0c5cfde9131def2f",
+    "manufacturerSourceId": "manufacturer-v2-aygo-first-generation",
+    "yearFrom": 2005,
+    "yearTo": 2014,
+    "generation": "2005 - AB10 AB20 AB30",
+    "sourceUrl": "https://media.toyota.co.uk/vehicles/aygo-archive-2005/",
+    "retrievedAt": "2026-09-16T14:52:22.468Z",
+    "contentSha256": "90b81e1794e6a5d5053bf574ec79a464f6c1c40aeaf708222e9436155ab11429",
+    "reason": "Toyota identifies the first Aygo generation as 2005–2014. This bounds the tuner application; it does not establish an individual engine introduction date."
+  },
+  {
+    "sourceId": "shiftech-v2-8c631a469f31f60e",
+    "manufacturerSourceId": "manufacturer-v2-peugeot-107",
+    "yearFrom": 2005,
+    "yearTo": 2014,
+    "generation": "2005",
+    "sourceUrl": "https://www.peugeot.nl/het-merk/de-wereld-van-peugeot/historische-peugeot-modellen.html",
+    "retrievedAt": "2026-09-16T14:52:58.218Z",
+    "contentSha256": "5c6ea91fad66540803df663e2f5319748a5fd68ab8d796107d3214fe589f43f5",
+    "reason": "Peugeot lists the 107 model period as 2005–2014. This bounds the tuner application; it does not establish an individual engine introduction date."
+  },
+  {
+    "sourceId": "shiftech-v2-38f5ec4d86908fac",
+    "manufacturerSourceId": "manufacturer-v2-volkswagen-up",
+    "yearFrom": 2012,
+    "yearTo": 2023,
+    "generation": "2012",
+    "sourceUrl": "https://www.volkswagen.at/service-zubehoer/ueber-dein-auto/vorgaengermodelle/up",
+    "retrievedAt": "2026-09-16T14:52:25.520Z",
+    "contentSha256": "312024af87266b00a866664b1f236ce76a64c3c808bc5820d965ffbe97cffe1b",
+    "reason": "Volkswagen lists the up! model period as 2011–2023. The tuner starts its application at 2012, so the retained intersection is 2012–2023. The distinct e-up! and GTI periods do not supply tuning evidence."
+  },
+  {
+    "sourceId": "shiftech-v2-e03cf2a15193e8bf",
+    "manufacturerSourceId": "manufacturer-v2-volkswagen-up",
+    "yearFrom": 2012,
+    "yearTo": 2023,
+    "generation": "2012",
+    "sourceUrl": "https://www.volkswagen.at/service-zubehoer/ueber-dein-auto/vorgaengermodelle/up",
+    "retrievedAt": "2026-09-16T14:52:25.520Z",
+    "contentSha256": "312024af87266b00a866664b1f236ce76a64c3c808bc5820d965ffbe97cffe1b",
+    "reason": "Volkswagen lists the up! model period as 2011–2023. The tuner starts its application at 2012, so the retained intersection is 2012–2023. The distinct e-up! and GTI periods do not supply tuning evidence."
+  },
+  {
+    "sourceId": "shiftech-v2-b6b637f71e866bd0",
+    "manufacturerSourceId": "manufacturer-v2-volkswagen-up",
+    "yearFrom": 2012,
+    "yearTo": 2023,
+    "generation": "2012",
+    "sourceUrl": "https://www.volkswagen.at/service-zubehoer/ueber-dein-auto/vorgaengermodelle/up",
+    "retrievedAt": "2026-09-16T14:52:25.520Z",
+    "contentSha256": "312024af87266b00a866664b1f236ce76a64c3c808bc5820d965ffbe97cffe1b",
+    "reason": "Volkswagen lists the up! model period as 2011–2023. The tuner starts its application at 2012, so the retained intersection is 2012–2023. The distinct e-up! and GTI periods do not supply tuning evidence."
+  }
+]

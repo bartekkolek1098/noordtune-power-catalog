@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "shiftech-8775",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/1.5-dci-eu5-110",
+    "retrievedAt": "2026-09-15T22:36:20.898Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "85eb97583d2dd8f098a6c62d3728283e7c92318c105566a3993d5c3b8fdef31d",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2008,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 DCI EU5",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 130,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 140,
+        "torqueNm": 320,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Megane; generation label: 2008 - III; engine: 1.5 DCI EU5."
+    ]
+  },
+  {
+    "id": "shiftech-8777",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/1.6-dci-130",
+    "retrievedAt": "2026-09-15T22:36:24.447Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "987e311bff75cffe847c00ef605675fa79f57718dd7411b99a321303df21981b",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2008,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 DCI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 360
+      },
+      "stage2": {
+        "powerHp": 160,
+        "torqueNm": 380,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Megane; generation label: 2008 - III; engine: 1.6 DCI."
+    ]
+  },
+  {
+    "id": "shiftech-8779",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/2.0-dci-150",
+    "retrievedAt": "2026-09-15T22:36:29.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e69b053699ccbbac1c1240336d083bf272eea89937732e0df750486bff05c5e3",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "III",
+      "aliases": [],
+      "yearFrom": 2008,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 DCI",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 185,
+        "torqueNm": 400
+      },
+      "stage2": {
+        "powerHp": 195,
+        "torqueNm": 420,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Megane; generation label: 2008 - III; engine: 2.0 DCI."
+    ]
+  },
+  {
+    "id": "shiftech-8797",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.6-dci-130",
+    "retrievedAt": "2026-09-15T22:36:47.879Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "31a42042b4b51eead9c038c16df7b5fc8c39860ab720680593abb3ded210bc4d",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 DCI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 360
+      },
+      "stage2": {
+        "powerHp": 160,
+        "torqueNm": 380,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Megane; generation label: 2016 - IV; engine: 1.6 DCI.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "consensusGroup": "verified-shiftech-8797-unlimited",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-6-dci-130-pk.html",
+      "https://www.unlimitedtuning.nl/renault/chiptuning-renault-megane/megane-4/diesel.html"
+    ]
+  },
+  {
+    "id": "shiftech-8798",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.6-dci-bi-turbo-165",
+    "retrievedAt": "2026-09-15T22:36:51.208Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "97f6b803248bf613ff4231d8e0059e966c12af5b5b2a79932f5a7a227dbb216b",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 DCI Bi-Turbo",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 165,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "aspiration": "turbo"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 180,
+        "torqueNm": 420
+      },
+      "stage2": {
+        "powerHp": 190,
+        "torqueNm": 440,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Megane; generation label: 2016 - IV; engine: 1.6 DCI Bi-Turbo.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "consensusGroup": "verified-shiftech-8798-unlimited",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-6-dci-165-pk.html",
+      "https://www.unlimitedtuning.nl/renault/chiptuning-renault-megane/megane-4/diesel.html"
+    ]
+  },
+  {
+    "id": "shiftech-8802",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.5-dci-eu6-110",
+    "retrievedAt": "2026-09-15T22:36:54.971Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "82b4811f38734bc37a45d2ef412312593953d89a9ca62c64ab48f6b5675ad6f7",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 DCI EU6",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 260,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 135,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 145,
+        "torqueNm": 320,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Megane; generation label: 2016 - IV; engine: 1.5 DCI EU6."
+    ]
+  },
+  {
+    "id": "shiftech-8803",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.5-dci-eu6-90",
+    "retrievedAt": "2026-09-15T22:36:58.527Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e9003b4c44e18cbd7d79041660cb31493cedd64b183cfed86ad79855761d8fe4",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 DCI EU6",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 110,
+        "torqueNm": 250
+      },
+      "stage2": {
+        "powerHp": 120,
+        "torqueNm": 270,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Megane; generation label: 2016 - IV; engine: 1.5 DCI EU6."
+    ]
+  },
+  {
+    "id": "shiftech-8574",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/0.9-tce-90",
+    "retrievedAt": "2026-09-15T22:37:02.262Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0f297efb3a1ee42fb5c0697dade9dab362a0b914509697e9bb035b45845b221e",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "engineMarketingName": "0.9 TCE",
+      "displacementCc": 900,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 135,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 105,
+        "torqueNm": 165
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Clio; generation label: 2012 - IV; engine: 0.9 TCE."
+    ]
+  },
+  {
+    "id": "shiftech-8576",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/1.2-tce-120",
+    "retrievedAt": "2026-09-15T22:37:06.005Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7634c79585c5c15eb1ddaa7c9f02c7891f47217659ac6683f60c476a98e3f824",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2012,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.2 TCE",
+      "displacementCc": 1200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 190,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 135,
+        "torqueNm": 230
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Clio; generation label: 2012 - IV; engine: 1.2 TCE."
+    ]
+  },
+  {
+    "id": "shiftech-8579",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/diesel/1.5-dci-eu5-90",
+    "retrievedAt": "2026-09-15T22:37:09.589Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "2b640fb036bf2afac37f7f875330d5df21dbf40a8d4acab9400ca1aa7ba8342c",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2012,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 DCI EU5",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 220,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 110,
+        "torqueNm": 250
+      },
+      "stage2": {
+        "powerHp": 120,
+        "torqueNm": 270,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Clio; generation label: 2012 - IV; engine: 1.5 DCI EU5."
+    ]
+  },
+  {
+    "id": "shiftech-8581",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2016-iv-ii/diesel/1.5-dci-eu6-110",
+    "retrievedAt": "2026-09-15T22:37:13.080Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5f3b26b4fe79215d9b914c0dc4fe7ebc30dddd77d3e862851935cb352b6d49a7",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "IV (II)",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 DCI EU6",
+      "displacementCc": 1500,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 260,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 135,
+        "torqueNm": 300
+      },
+      "stage2": {
+        "powerHp": 145,
+        "torqueNm": 320,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Clio; generation label: 2016 - IV (II); engine: 1.5 DCI EU6."
+    ]
+  },
+  {
+    "id": "shiftech-8591",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2019-v/essence/1.3-tce-gpf-130",
+    "retrievedAt": "2026-09-15T22:37:16.748Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b5cc8adb2c41b59144f416d0130c6dedfa0e236fe2d52ffa6e1da5cd9bd48ded",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Clio",
+      "generation": "V",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.3 TCE GPF",
+      "displacementCc": 1300,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 300
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Clio; generation label: 2019 - V; engine: 1.3 TCE GPF."
+    ]
+  },
+  {
+    "id": "shiftech-8896",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2014/diesel/1.6-dci-bi-turbo-eu5-120",
+    "retrievedAt": "2026-09-15T22:37:20.371Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c141361f8a27c0ca8f4a797ba6f4392689747049c5777e778de74102ca71d356",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2014",
+      "aliases": [],
+      "yearFrom": 2014,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 DCI Bi-Turbo EU5",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "aspiration": "turbo"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 165,
+        "torqueNm": 390
+      },
+      "stage2": {
+        "powerHp": 175,
+        "torqueNm": 410,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Trafic; generation label: 2014; engine: 1.6 DCI Bi-Turbo EU5."
+    ]
+  },
+  {
+    "id": "shiftech-8903",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2016/diesel/1.6-dci-130",
+    "retrievedAt": "2026-09-15T22:37:44.786Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "e5c98c222ea80f1f829f8f7a77fcfa080791817992219a8c715de103ae38a717",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2016",
+      "aliases": [],
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 DCI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 360
+      },
+      "stage2": {
+        "powerHp": 160,
+        "torqueNm": 380,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Trafic; generation label: 2016; engine: 1.6 DCI."
+    ]
+  },
+  {
+    "id": "shiftech-8905",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2019/diesel/2.0-blue-dci-145",
+    "retrievedAt": "2026-09-15T22:37:48.374Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "352e0b05664c977ef8d74f58a97efc88306a97fdd58ebc1e85b029b6f4a6802e",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2019",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 Blue dCi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 145,
+      "stockTorqueNm": 350,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 440
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 460,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Trafic; generation label: 2019; engine: 2.0 Blue dCi."
+    ]
+  },
+  {
+    "id": "shiftech-8906",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2019/diesel/2.0-blue-dci-170",
+    "retrievedAt": "2026-09-15T22:37:51.949Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8a98556497d3545a1f0fcc210eede128ad69a869e5b1d486b23356d62b684594",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Trafic",
+      "generation": "2019",
+      "aliases": [],
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "engineMarketingName": "2.0 Blue dCi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 170,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 440
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 460,
+        "conditions": [
+          "Provider publishes this Stage as a hardware-dependent calibration; the applicable vehicle hardware must be confirmed."
+        ]
+      }
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Factual Stage table extracted from the actual rendered provider page, not a search snippet. contentSha256 hashes the retrieved rendered-text extraction; it is not a raw HTML hash.",
+      "Source power unit ch is metric PS; torque is Nm. No competitor prices or marketing text are retained.",
+      "The provider supplies a generation start year without an explicit end year; no end year or exact manufacturing interval has been inferred.",
+      "Nominal displacement is taken only from the published engine label; exact cc, cylinders, engine code and installed ECU are unconfirmed."
+    ],
+    "applicability": [
+      "Provider model label: Renault Trafic; generation label: 2019; engine: 2.0 Blue dCi."
+    ]
+  },
+  {
+    "id": "unlimited-counterpart-8802",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-5-dci-110-pk.html",
+    "retrievedAt": "2026-09-15T22:40:44.542Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "5831ab2cb74aed855afde5921bf9fb58e05e6d8479892ce8b957b5bc84aade65",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 DCI EU6",
+      "displacementCc": 1461,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2021,
+      "engineCodes": [
+        "K9K"
+      ],
+      "ecuFamily": "Bosch EDC17C84"
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from Diesel - Megane 4 2015 t/m 2021 - Megane - Renault - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:25:41.907Z, SHA256 979803fdc30aa65bf26e94e84ee46bb75342ceb4f899ff6d21a1640a68cf4228.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":110,\"torqueNm\":250},{\"label\":\"Ecotuning\",\"powerHp\":120,\"torqueNm\":270},{\"label\":\"Stage 1\",\"powerHp\":135,\"torqueNm\":310},{\"label\":\"Stage 1+\",\"powerHp\":145,\"torqueNm\":325}].",
+      "STOCK_TORQUE_SOURCE_CONFLICT: Shiftech counterpart records 260 Nm, this source records 250 Nm. Facts are retained for research; no accepted stages or consensus pairing until exact configuration is reviewed. Candidate Stage 1: 135 PS / 310 Nm."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/renault/chiptuning-renault-megane/megane-4/diesel.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.5-dci-eu6-110"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Renault megane 4 1.5 DCI 110 pk."
+    ]
+  },
+  {
+    "id": "unlimited-counterpart-8803",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-5-dci-90-pk.html",
+    "retrievedAt": "2026-09-15T22:40:46.569Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "d913fce1b13afad71644b1fb156ae634f2365ccc85f385f63279a80bb91e7169",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.5 DCI EU6",
+      "displacementCc": 1461,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 90,
+      "stockTorqueNm": 200,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2021,
+      "engineCodes": [
+        "K9K"
+      ],
+      "ecuFamily": "Bosch EDC17C84"
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from Diesel - Megane 4 2015 t/m 2021 - Megane - Renault - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:25:41.907Z, SHA256 979803fdc30aa65bf26e94e84ee46bb75342ceb4f899ff6d21a1640a68cf4228.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":90,\"torqueNm\":200},{\"label\":\"Ecotuning\",\"powerHp\":100,\"torqueNm\":220},{\"label\":\"Stage 1\",\"powerHp\":115,\"torqueNm\":260},{\"label\":\"Stage 1+\",\"powerHp\":130,\"torqueNm\":280}].",
+      "STOCK_TORQUE_SOURCE_CONFLICT: Shiftech counterpart records 220 Nm, this source records 200 Nm. Facts are retained for research; no accepted stages or consensus pairing until exact configuration is reviewed. Candidate Stage 1: 115 PS / 260 Nm."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/renault/chiptuning-renault-megane/megane-4/diesel.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.5-dci-eu6-90"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Renault megane 4 1.5 DCI 90 pk."
+    ]
+  },
+  {
+    "id": "unlimited-counterpart-8797",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-6-dci-130-pk.html",
+    "retrievedAt": "2026-09-15T22:40:48.530Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "e8637483a557e63fca220fb1ad48fd9c0e4745962e31c063c79c39ddc28c6027",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 DCI",
+      "displacementCc": 1598,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 130,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "yearTo": 2021,
+      "engineCodes": [
+        "R9M"
+      ],
+      "ecuFamily": "Bosch EDC17C84"
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from Diesel - Megane 4 2015 t/m 2021 - Megane - Renault - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:25:41.907Z, SHA256 979803fdc30aa65bf26e94e84ee46bb75342ceb4f899ff6d21a1640a68cf4228.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":130,\"torqueNm\":320},{\"label\":\"Ecotuning\",\"powerHp\":140,\"torqueNm\":340},{\"label\":\"Stage 1\",\"powerHp\":155,\"torqueNm\":370},{\"label\":\"Stage 1+\",\"powerHp\":165,\"torqueNm\":390}]."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/renault/chiptuning-renault-megane/megane-4/diesel.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.6-dci-130"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Renault megane 4 1.6 DCI 130 pk.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "stages": {
+      "stage1": {
+        "powerHp": 155,
+        "torqueNm": 370
+      }
+    },
+    "consensusGroup": "verified-shiftech-8797-unlimited"
+  },
+  {
+    "id": "unlimited-counterpart-8798",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning NL",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-renault-megane-4-1-6-dci-165-pk.html",
+    "retrievedAt": "2026-09-15T22:40:50.529Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "46a62f61d955f76679413d953584906142adf925be4450b6516022ef917018e3",
+    "identity": {
+      "brand": "Renault",
+      "modelFamily": "Megane",
+      "generation": "IV",
+      "aliases": [],
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "engineMarketingName": "1.6 DCI Bi-Turbo",
+      "displacementCc": 1598,
+      "displacementPrecision": "exact",
+      "stockPowerHp": 165,
+      "stockTorqueNm": 380,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "aspiration": "turbo",
+      "yearTo": 2021,
+      "engineCodes": [
+        "R9M"
+      ],
+      "ecuFamily": "Bosch EDC17C84"
+    },
+    "conditions": [
+      "External provider reference, not a measured or owner-approved NoordTune result."
+    ],
+    "notes": [
+      "Raw HTML hash; actual HTTP 200 page retrieved. Source power pk is metric PS; torque Nm.",
+      "Generation/category scope verified from Diesel - Megane 4 2015 t/m 2021 - Megane - Renault - Auto - Chiptuning - Unlimited Tuning; category retrieved 2026-09-15T22:25:41.907Z, SHA256 979803fdc30aa65bf26e94e84ee46bb75342ceb4f899ff6d21a1640a68cf4228.",
+      "Normal maps to Stage 1 on the provider package explanation; Xtreme is Stage 1.5, not Stage 2. Explanation retrieved 2026-09-15T22:44:47.897Z, SHA256 5eaeef06f4a555f6aa21a4c9a2221f8b1e3fc181b1e39f393eff3713535c1bb1.",
+      "Exact cc, engine code and ECU are retained only where the retrieved technical specification table states them; source ECU is not confirmation of the installed unit.",
+      "Factual provider package columns (not all correspond to NoordTune stages): [{\"label\":\"Standaard\",\"powerHp\":165,\"torqueNm\":380},{\"label\":\"Ecotuning\",\"powerHp\":175,\"torqueNm\":400},{\"label\":\"Stage 1\",\"powerHp\":190,\"torqueNm\":420},{\"label\":\"Stage 1+\",\"powerHp\":200,\"torqueNm\":440}]."
+    ],
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/renault/chiptuning-renault-megane/megane-4/diesel.html",
+      "https://www.unlimitedtuning.nl/tuningspakketten.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2016-iv/diesel/1.6-dci-bi-turbo-165"
+    ],
+    "applicability": [
+      "Actual product is linked from the retrieved generation category. Product heading: Chiptuning Renault megane 4 1.6 DCI 165 pk.",
+      "Reviewed counterpart identity: same brand, model family, fuel, nominal engine label, stock power and stock torque. Generation bands overlap; raw year bands and nominal/exact displacement remain unchanged for intersection during normalization."
+    ],
+    "stages": {
+      "stage1": {
+        "powerHp": 190,
+        "torqueNm": 420
+      }
+    },
+    "consensusGroup": "verified-shiftech-8798-unlimited"
+  }
+]

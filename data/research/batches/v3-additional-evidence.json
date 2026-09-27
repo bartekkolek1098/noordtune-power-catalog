@@ -1,0 +1,38 @@
+[
+  {
+    "id": "manufacturer-v3-vito-2024-110",
+    "provider": "manufacturer",
+    "sourceName": "Mercedes-Benz Croatian Vito technical price list, identity fields only",
+    "url": "https://retail.mercedes-benz.hr/files/cjenici/Cjenik_Vito.pdf",
+    "retrievedAt": "2026-09-16T17:43:10.668Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b05fa56b8eebe3b7b01bc23a5a7123519cd15571033a719f241611fa7afcb87b",
+    "applicability": [
+      "Manufacturer catalogue valid from 1 March 2024 identifies diesel Vito 110 CDI panel vans, 1950 cc and 75 kW/102 PS. This verifies existence of the application, not ATM missing displacement, its erroneous petrol label, the Shiftech 280 Nm stock value, or a pre-2024 engine period."
+    ],
+    "conditions": [],
+    "notes": [
+      "Hash covers actual rendered public page/PDF extraction. Only factual identity and availability notes retained. No prices or marketing copied."
+    ]
+  },
+  {
+    "id": "shiftech-v3-md1cs104-availability",
+    "provider": "shiftech",
+    "sourceName": "Shiftech public ECU availability bulletin",
+    "url": "https://www.shiftech.eu/en/news/bosch-md1cs004-md1cs104-calculator-almost-all-vag-20-tdi-diesel-engines-can-finally-be-remapped",
+    "retrievedAt": "2026-09-16T17:43:10.668Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fd1aa1c28167b68ce4136d4b9de4cb34ada2ae1d8be5feb1d37c5d1438393ac9",
+    "applicability": [
+      "24 June 2026 bulletin explicitly says Transporter T6.1 Stage 1 is available after ECU unlock. The table lists 110 PS/250 Nm (+80 PS/+170 Nm), 150 PS/340 Nm (+40 PS/+80 Nm), and 204 PS/450 Nm (+26 PS/+50 Nm). Broad model/year list is not sufficient to assign those outputs to every listed VAG van. Stock torque differs from the current ATM 150 PS/360 Nm application; do not combine them."
+    ],
+    "conditions": [
+      "V3_APPLICABILITY_UNRESOLVED"
+    ],
+    "notes": [
+      "Hash covers actual rendered public page/PDF extraction. Only factual identity and availability notes retained. No prices or marketing copied."
+    ]
+  }
+]

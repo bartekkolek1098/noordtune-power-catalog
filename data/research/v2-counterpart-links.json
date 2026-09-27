@@ -1,0 +1,814 @@
+[
+  {
+    "sourceId": "unlimited-v2-d61419853ecd2d0e",
+    "targetSourceId": "shiftech-10213",
+    "generation": "2020",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-toyota-proace-2-0-bluehdi-150-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/toyota/proace/2020/diesel/2.0-d-4d-150"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-d8d4648b0456c63f",
+    "targetSourceId": "shiftech-kia-ceed-2018-petrol-10-t-gdi-100",
+    "generation": "2018",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-1-0-t-gdi-100-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.0-t-gdi-100"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-d0ae7b123d0532cc",
+    "targetSourceId": "shiftech-kia-ceed-2018-petrol-10-t-gdi-120",
+    "generation": "2018",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-1-0-t-gdi-120-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.0-t-gdi-120"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-6cddf120be8cc9fb",
+    "targetSourceId": "shiftech-kia-ceed-2018-petrol-16-t-gdi-204",
+    "generation": "2018",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-gt-1-6-t-gdi-204-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.6-t-gdi-204"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-966216ab380016c1",
+    "targetSourceId": "shiftech-kia-sorento-2009-xm-diesel-22-crdi-eu5-197",
+    "generation": "2009 - XM",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-kia-sorento-2-2-crdi-197-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2009-xm/diesel/2.2-crdi-eu5-197"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-0c185110b82fdd04",
+    "targetSourceId": "shiftech-kia-sportage-2010-sl-diesel-17-crdi-eu5-115",
+    "generation": "2010 - SL",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-1-7-crdi-115-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2010-sl/diesel/1.7-crdi-eu5-115"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-e23fd8c2241825e8",
+    "targetSourceId": "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-136",
+    "generation": "QL",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-2-0-crdi-136-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/2.0-crdi-eu6-136"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-fc5eb47bd3f825a3",
+    "targetSourceId": "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-184",
+    "generation": "QL",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-2-0-crdi-2016-2018-184-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/2.0-crdi-eu6-184"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-21c72ab0877ccaad",
+    "targetSourceId": "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-141",
+    "generation": "2015 - QL",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-1-7-crdi-141-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/1.7-crdi-eu6-141"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-bcf5dc2df5b2ea83",
+    "targetSourceId": "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-136",
+    "generation": "2016 - PD",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-1-6-crdi-136-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/diesel/1.6-crdi-eu6-136"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-dd71a1f67a7ea4e4",
+    "targetSourceId": "shiftech-hyundai-i30-2016-pd-petrol-14-t-gdi-140",
+    "generation": "2016 - PD",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-1-4-t-gdi-140-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/1.4-t-gdi-140"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-37fed53cdb02dc2b",
+    "targetSourceId": "shiftech-hyundai-i30-2016-pd-petrol-10-t-gdi-120",
+    "generation": "2016 - PD",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-1-0-t-gdi-120-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/1.0-t-gdi-120"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-a7c4344429e997ed",
+    "targetSourceId": "shiftech-hyundai-i30-2016-pd-petrol-20t-n-250",
+    "generation": "PD",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-2-0-t-250-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/2.0t-n-250"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-f71950cd2473daef",
+    "targetSourceId": "shiftech-hyundai-i30-2016-pd-petrol-20t-n-performance-275",
+    "generation": "2016 - PD",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-hyundai-i30-2-0-t-275-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/2.0t-n-performance-275"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-d3334d3876520738",
+    "targetSourceId": "shiftech-hyundai-tucson-2015-tl-petrol-16-t-gdi-177",
+    "generation": "2015 - TL",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-hyundai-tucson-1-6-t-gdi-177-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/petrol/1.6-t-gdi-177"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-5101a700db7765df",
+    "targetSourceId": "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-184",
+    "generation": "2015 - TL",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-hyundai-tucson-2-0-crdi-184-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/2.0-crdi-eu6-184"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-93038c4fc6cb2708",
+    "targetSourceId": "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-141",
+    "generation": "2015 - TL",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-hyundai-tucson-1-7-crdi-141-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/1.7-crdi-eu6-141"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-8a1b842c070811e5",
+    "targetSourceId": "shiftech-10548",
+    "generation": "VI",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-golf-6-2-0-tdi-110-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/golf/2008-vi/diesel/2.0-tdi-cr-110"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-d903c4a80235bdbf",
+    "targetSourceId": "shiftech-10772",
+    "generation": "B8",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-passat-b8-2-0-tdi-150-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-150"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-9831958f67078127",
+    "targetSourceId": "shiftech-10768",
+    "generation": "B8",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-passat-b8-2-0-tdi-bi-turbo-240-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/2.0-tdi-cr-eu6-240"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-e215623759daaa51",
+    "targetSourceId": "shiftech-10769",
+    "generation": "B8",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-passat-b8-1-6-tdi-120-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/passat/2015-b8/diesel/1.6-tdi-eu6-120"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-82b4a79e0fc8cd10",
+    "targetSourceId": "shiftech-ford-transit-connect-2016-diesel-15-tdci-eu5-120",
+    "generation": "2016",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-ford-transit-connect-1-5-tdci-120-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/ford/transit-connect/2016/diesel/1.5-tdci-eu5-120"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-f20003484f752c4f",
+    "targetSourceId": "shiftech-8591",
+    "generation": "V",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-clio-5-1-3-tce-gpf-130-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2019-v/essence/1.3-tce-gpf-130"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-ddd38fa9c8af09ed",
+    "targetSourceId": "shiftech-8574",
+    "generation": "IV",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-clio-0-9-tce-90-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/0.9-tce-90"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-b9cf8956f54d447f",
+    "targetSourceId": "shiftech-8574",
+    "generation": "IV",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-ph2-0-9-tce-90-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/0.9-tce-90"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-13ecc6323746c32b",
+    "targetSourceId": "shiftech-8576",
+    "generation": "IV",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-1-2-tce-120-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/essence/1.2-tce-120"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-4ad5f711625a319b",
+    "targetSourceId": "shiftech-8581",
+    "generation": "IV (II)",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-1-5-dci-110-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2016-iv-ii/diesel/1.5-dci-eu6-110"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-37a0913ec52a41f4",
+    "targetSourceId": "shiftech-8579",
+    "generation": "IV",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-clio-4-1-5-dci-90-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/clio/2012-iv/diesel/1.5-dci-eu5-90"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-f001c2b9cc8dbf70",
+    "targetSourceId": "shiftech-8777",
+    "generation": "III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-megane-iii-1-6-dci-130-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/1.6-dci-130"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-d8c5d446574fc90f",
+    "targetSourceId": "shiftech-8775",
+    "generation": "III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-megane-iii-1-5-dci-110-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/megane/2008-iii/diesel/1.5-dci-eu5-110"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-6658fb33af65a287",
+    "targetSourceId": "shiftech-8905",
+    "generation": "2019",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2-0-dci-145-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2019/diesel/2.0-blue-dci-145"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-76a617a1919108ff",
+    "targetSourceId": "shiftech-8906",
+    "generation": "2019",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2-0-dci-170-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2019/diesel/2.0-blue-dci-170"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-900c0abc420824eb",
+    "targetSourceId": "shiftech-8896",
+    "generation": "2014",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2015-1-6-dci-bi-turbo-120-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/renault/trafic/2014/diesel/1.6-dci-bi-turbo-eu5-120"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-e6ab393edbef42ac",
+    "targetSourceId": "shiftech-433439",
+    "generation": "III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-2-bluehdi-140-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-140"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-86dfce0b8d052755",
+    "targetSourceId": "shiftech-8244",
+    "generation": "III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-2-bluehdi-165-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-165"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-b77ca775689ee2a2",
+    "targetSourceId": "shiftech-8231",
+    "generation": "II - Phase II",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-0-bluehdi-130-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2014-ii-phase-ii/diesel/2.0-bluehdi-130"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-e7e1d99df911f5a5",
+    "targetSourceId": "shiftech-8232",
+    "generation": "II - Phase II",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-0-bluehdi-160-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/peugeot/boxer/2014-ii-phase-ii/diesel/2.0-bluehdi-160"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-0f53616bc3fa9899",
+    "targetSourceId": "shiftech-2564",
+    "generation": "III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-citroen-jumper-2-2-bluehdi-140-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumper/2019-iii/diesel/2.2-bluehdi-eu6b-140"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-194a739fdd886033",
+    "targetSourceId": "shiftech-2574",
+    "generation": "III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-2-0-bluehdi-120-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-120"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-c7e58c72503273ea",
+    "targetSourceId": "shiftech-2575",
+    "generation": "III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-2-0-bluehdi-150-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-150"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-acc45141927a9dfe",
+    "targetSourceId": "shiftech-2576",
+    "generation": "III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-2-0-bluehdi-180-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/2.0-bluehdi-180"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-f3a2f85dffeaaee3",
+    "targetSourceId": "shiftech-2577",
+    "generation": "III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-citroen-jumpy-1-6-bluehdi-115-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/citroen/jumpy/2016-iii/diesel/1.6-bluehdi-115"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-81f609fbd49cf83e",
+    "targetSourceId": "shiftech-13561",
+    "generation": "2021",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-opel-movano-2-2-bluehdi-140-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/movano/2021/diesel/2.2-cdti-165"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-ce75c36310911765",
+    "targetSourceId": "shiftech-13561",
+    "generation": "2021",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-opel-movano-2-2-bluehdi-165-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/movano/2021/diesel/2.2-cdti-165"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-1e24682979013db0",
+    "targetSourceId": "shiftech-7901",
+    "generation": "2019",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-122-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-122"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-c9fbf4d7d7a5b0d1",
+    "targetSourceId": "shiftech-7902",
+    "generation": "2019",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-150-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-eu6d-150"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-3f270c5fcb6ae756",
+    "targetSourceId": "shiftech-7905",
+    "generation": "2019",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-opel-vivaro-2-0d-177-pk.html",
+      "https://www.shiftech.eu/fr/reprogrammation-moteur/voiture/opel/vivaro/2019/diesel/2.0-turbo-d-177"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-b914b6b5896075d6",
+    "targetSourceId": "shiftech-9653",
+    "generation": "2017",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-skoda-octavia-1-5-tsi-150-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2017/petrol/1.5-tsi-150"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-bd941e4992969dcf",
+    "targetSourceId": "shiftech-9433",
+    "generation": "5F MK1",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-seat-leon-1-6-tdi-105-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2013-5f-mk1/diesel/1.6-tdi-eu5-105"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-972d79b9ab948c00",
+    "targetSourceId": "shiftech-11221",
+    "generation": "2015",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-volvo-v40-2-0-t4-190-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/volvo/v40/2015/petrol/t4-2.0-190"
+    ],
+    "reason": "Same make/model/fuel/nominal cc, exact stock PS and compatible stock Nm, with one plausible V1 body/engine counterpart. Published scope either contains V1 or has a generation start within two years and at least three overlapping years (or the complete shorter V1 scope). Applicability uses the intersection, never a union; any resulting V1 scope/consensus change is recorded."
+  },
+  {
+    "sourceId": "unlimited-v2-cc6a2ed4eb51e932",
+    "targetSourceId": "shiftech-v2-b7a1ae44b50c5b64",
+    "generation": "2010",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-nissan-juke-1-6i-117-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/nissan/juke/2010/petrol/1.6i-16v-117"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-b431c8be961155ef",
+    "targetSourceId": "shiftech-v2-77452fdf19573593",
+    "generation": "2010",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-nissan-juke-1-6t-218-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/nissan/juke/2010/petrol/1.6t-nismo-218"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-cb0d8dd69f955c1e",
+    "targetSourceId": "shiftech-v2-f95194c0ac3f31ae",
+    "generation": "2017 - J11 2",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-nissan-qashqai-1-3-dig-t-140-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/nissan/qashqai/2017-j11-2/petrol/1.3-dig-t-gpf-140"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-417f410f382b7abf",
+    "targetSourceId": "shiftech-v2-454874bfd0a9c774",
+    "generation": "2017 - J11 2",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-nissan-qashqai-1-3-dig-t-160-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/nissan/qashqai/2017-j11-2/petrol/1.3-dig-t-gpf-160"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-fb8bca32084b52c3",
+    "targetSourceId": "shiftech-v2-c0b416cf4208a7ec",
+    "generation": "2017 - III II",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-nissan-x-trail-2014-1-6-dci-130-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/nissan/x-trail/2017-iii-ii/diesel/1.6-dci-130"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-ffdb7e40b56b6fe8",
+    "targetSourceId": "shiftech-v2-8e7e11b1bb5f85a0",
+    "generation": "2017 - III II",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-nissan-x-trail-2014-2-0-dci-177-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/nissan/x-trail/2017-iii-ii/diesel/2.0-dci-177"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-fd84162c85d6ae4b",
+    "targetSourceId": "shiftech-v2-d4ea0e6c14ae80ba",
+    "generation": "2018 - II",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-dacia-duster-1-2-tce-125-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/dacia/duster/2018-ii/petrol/1.2-tce-eu6-125"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-2871ba130f34f583",
+    "targetSourceId": "shiftech-v2-4ea926341348a800",
+    "generation": "2013",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-dacia-logan-0-9-tce-90-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/dacia/logan/2013/petrol/0.9-tce-90"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-91ac4f5731977330",
+    "targetSourceId": "shiftech-v2-5ee88dcda5c9d666",
+    "generation": "2020 - III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-dacia-sandero-1-0-eco-gas-100-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/dacia/sandero/2020-iii/petrol/1.0-eco-g-100"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-525f64b3896930f3",
+    "targetSourceId": "shiftech-v2-5ee88dcda5c9d666",
+    "generation": "2020 - III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-dacia-sandero-1-0-tce-100-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/dacia/sandero/2020-iii/petrol/1.0-eco-g-100"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-b66d87bdf4e9a6c9",
+    "targetSourceId": "shiftech-v2-c1c86cd4268af8de",
+    "generation": "2020 - III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-dacia-sandero-1-0-tce-90-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/dacia/sandero/2020-iii/petrol/1.0-tce-90"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-1f0af64d7b288806",
+    "targetSourceId": "shiftech-v2-646329ed8a844b8d",
+    "generation": "2017",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-suzuki-swift-1-2-vvt-94-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/suzuki/swift/2017/petrol/1.2i-vvt-94"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-3b7eb46cc879a1e1",
+    "targetSourceId": "shiftech-v2-c8bb957be2c8231b",
+    "generation": "2015",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-suzuki-vitara-1-4-boosterjet-140-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/suzuki/vitara/2015/petrol/1.4-t-boosterjet-140"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-6850af8a47393ed8",
+    "targetSourceId": "shiftech-v2-88065c174aa0943b",
+    "generation": "2015",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-suzuki-vitara-1-6-ddis-120-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/suzuki/vitara/2015/diesel/1.6-ddis-120"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-101774ea5208b331",
+    "targetSourceId": "shiftech-v2-c8bb957be2c8231b",
+    "generation": "2015",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-suzuki-vitara-1-4-boosterjet-s-140-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/suzuki/vitara/2015/petrol/1.4-t-boosterjet-140"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-23097910d7e1148c",
+    "targetSourceId": "shiftech-v2-6214bb017966c42d",
+    "generation": "2013",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mazda-6-2013-2018-2-0i-skyactiv-g-145-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/mazda/mazda-6/2013/petrol/2.0-skyactiv-g-145"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-8a61aed6821d1f96",
+    "targetSourceId": "shiftech-v2-91352e3e82f1f4bd",
+    "generation": "2013",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mazda-6-2013-2018-2-0i-skyactiv-g-165-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/mazda/mazda-6/2013/petrol/2.0-skyactiv-g-165"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-93ea946f4ff1e49b",
+    "targetSourceId": "shiftech-v2-014eaab1dc4a7c7d",
+    "generation": "2010 - I",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mitsubishi-asx-1-6-did-115-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/mitsubishi/asx/2010-i/diesel/1.6-di-d-115"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-ace04e40cc2ef8e8",
+    "targetSourceId": "shiftech-v2-3aa9e05087e8dada",
+    "generation": "2010 - I",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mitsubishi-asx-1-8-did-150-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/mitsubishi/asx/2010-i/diesel/1.8-di-d-150"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-b0ae74a89245f082",
+    "targetSourceId": "shiftech-v2-c33dbbbe7b9c675d",
+    "generation": "2007",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mitsubishi-outlander-2007-2012-2-0-did-140-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/mitsubishi/outlander/2007/diesel/2.0-di-d-140"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-4154d53010b190d5",
+    "targetSourceId": "shiftech-v2-d258b3c1606b289e",
+    "generation": "2019",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mitsubishi-outlander-2017-2-2-did-150-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/mitsubishi/outlander/2019/diesel/2.2-di-d-150"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-578dcb9f47ca019c",
+    "targetSourceId": "shiftech-v2-82a7420bb3175e99",
+    "generation": "2020",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-ford-puma-1-0t-flexifuel-125-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/ford/puma/2020/petrol/1.0-t-ecoboost-125"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-f57db89387590aca",
+    "targetSourceId": "shiftech-v2-8c1f5554296495e7",
+    "generation": "2019",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-renault-trafic-2-0-dci-120-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/renault/trafic/2019/diesel/2.0-blue-dci-120"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-b8534fd9a026f9f1",
+    "targetSourceId": "shiftech-v2-e7de275268d9d132",
+    "generation": "2019 - III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-peugeot-boxer-2-2-bluehdi-120-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/peugeot/boxer/2019-iii/diesel/2.2-bluehdi-eu6b-120"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-78e7f1eeb95b2eb7",
+    "targetSourceId": "shiftech-v2-2be7bf7da69c09e1",
+    "generation": "2019 - III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-citroen-jumper-2-2-bluehdi-120-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/citroen/jumper/2019-iii/diesel/2.2-bluehdi-eu6b-120"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-703ddbc7faa89cf4",
+    "targetSourceId": "shiftech-v2-a772813556edd7ce",
+    "generation": "2016",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-fiat-talento-1-6-m-jet-95-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/fiat/talento/2016/diesel/1.6-jtdm-95"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-501edfbe5cd822bb",
+    "targetSourceId": "shiftech-v2-921cfa9beac744e8",
+    "generation": "2018 - W907 W910",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mercedes-sprinter-w910-2018-211-311-2-1-cdi-114-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/mercedes/sprinter/2018-w907-w910/diesel/211-311-411-511-cdi-2.1-114"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-178a6618665e628c",
+    "targetSourceId": "shiftech-v2-698fadf6b9097259",
+    "generation": "2018 - W907 W910",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-mercedes-sprinter-w910-2018-214-314-2-1-cdi-143-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/mercedes/sprinter/2018-w907-w910/diesel/214-314-414-514-cdi-2.1-143"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-9dfa3b5a45c84395",
+    "targetSourceId": "shiftech-v2-38f5ec4d86908fac",
+    "generation": "2012",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-up-1-0i-60-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/up/2012/petrol/1.0i-60"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-c114c079d6a27692",
+    "targetSourceId": "shiftech-v2-e03cf2a15193e8bf",
+    "generation": "2012",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-volkswagen-up-1-0i-75-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/volkswagen/up/2012/petrol/1.0i-75"
+    ],
+    "reason": "Unique cross-provider make/model/fuel/nominal-displacement/exact-stock-PS/stock-Nm counterpart, with generation starts within two years and a shared published scope of at least two years. Retain the intersection and all conflicting output facts."
+  },
+  {
+    "sourceId": "unlimited-v2-a345b056f5ec38aa",
+    "targetSourceId": "shiftech-v2-899062c92cdfce12",
+    "generation": "2014 - III",
+    "evidenceUrls": [
+      "https://www.unlimitedtuning.nl/chiptuning-nissan-x-trail-2014-1-6-dci-130-pk.html",
+      "https://www.shiftech.eu/en/chiptuning/car/nissan/x-trail/2014-iii/diesel/1.6-dci-130",
+      "https://sklep.vtech.pl/konfigurator-powerchip/",
+      "https://sklep.vtech.pl/konfigurator-powerchip/"
+    ],
+    "reason": "Identical independently reviewed generation and period, same make/model/fuel/nominal cc/exact stock PS and stock Nm. Model-label capitalization is not a technical difference. The separately published facelift has a different period and is not merged. Preserve both providers and select the conservative consensus."
+  }
+]

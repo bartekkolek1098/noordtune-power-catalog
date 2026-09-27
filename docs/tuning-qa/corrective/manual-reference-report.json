@@ -1,0 +1,509 @@
+{
+  "generatedAt": "2026-09-15T10:55:40.638Z",
+  "baseUrl": "http://localhost:3100",
+  "notes": [
+    "Manual selections do not supply registration dates or plates. WhatsApp links were decoded without opening or sending messages.",
+    "Both quick search and the brand/model/year/engine flow select the same server reference profile and shared vehicle-scope quote. No reference SEO route is created.",
+    "The existing absolute diagonal background decoration is excluded from content-overflow metrics; all content descendants and whole-page overflow remain checked. The pointer is moved off cards before measuring intentional hover-arrow transforms."
+  ],
+  "cases": [
+    {
+      "fixture": "ref-bmw-128ti-f40-265",
+      "width": 320,
+      "mode": "search",
+      "locale": "nl",
+      "profile": "ref-bmw-128ti-f40-265",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 70000,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+        "pricingCategory": "advanced-unlock",
+        "scope": "advanced-unlock-package",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "265 → 310 pk · 480 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: BMW 128ti\nEerste toelating: Niet beschikbaar\nBrandstof: Petrol\nMotorprofiel: 2.0 petrol (1998 cc)\nVermogen: 265 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: BMW 128ti 2.0 petrol (1998 cc)\nECU/toegang: ECU-controle vóór uitvoering; eventuele unlock te bevestigen\nStage: Stage 1\nIndicatieve uitkomst: 310 pk / 480 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 700\nBudget voor het scenario waarin ECU-unlock nodig is; dit bevestigt geen vergrendelde ECU.\nIndicatieve Stage 1-pakketbegroting voor het scenario met geavanceerde ECU-unlock; definitieve scope en prijs na identificatie. Geen automatische toeslag.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-bmw-128ti-f40-265-nl-search-320.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "EGR off",
+      "errors": []
+    },
+    {
+      "fixture": "ref-bmw-128ti-f40-265",
+      "width": 320,
+      "mode": "cascade",
+      "locale": "nl",
+      "profile": "ref-bmw-128ti-f40-265",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 70000,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+        "pricingCategory": "advanced-unlock",
+        "scope": "advanced-unlock-package",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "265 → 310 pk · 480 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: BMW 128ti\nEerste toelating: Niet beschikbaar\nBrandstof: Petrol\nMotorprofiel: 2.0 petrol (1998 cc)\nVermogen: 265 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: BMW 128ti 2.0 petrol (1998 cc)\nECU/toegang: ECU-controle vóór uitvoering; eventuele unlock te bevestigen\nStage: Stage 1\nIndicatieve uitkomst: 310 pk / 480 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 700\nBudget voor het scenario waarin ECU-unlock nodig is; dit bevestigt geen vergrendelde ECU.\nIndicatieve Stage 1-pakketbegroting voor het scenario met geavanceerde ECU-unlock; definitieve scope en prijs na identificatie. Geen automatische toeslag.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-bmw-128ti-f40-265-nl-cascade-320.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "EGR off",
+      "errors": []
+    },
+    {
+      "fixture": "ref-bmw-128ti-f40-265",
+      "width": 1440,
+      "mode": "search",
+      "locale": "nl",
+      "profile": "ref-bmw-128ti-f40-265",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 70000,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+        "pricingCategory": "advanced-unlock",
+        "scope": "advanced-unlock-package",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "265 → 310 pk · 480 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: BMW 128ti\nEerste toelating: Niet beschikbaar\nBrandstof: Petrol\nMotorprofiel: 2.0 petrol (1998 cc)\nVermogen: 265 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: BMW 128ti 2.0 petrol (1998 cc)\nECU/toegang: ECU-controle vóór uitvoering; eventuele unlock te bevestigen\nStage: Stage 1\nIndicatieve uitkomst: 310 pk / 480 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 700\nBudget voor het scenario waarin ECU-unlock nodig is; dit bevestigt geen vergrendelde ECU.\nIndicatieve Stage 1-pakketbegroting voor het scenario met geavanceerde ECU-unlock; definitieve scope en prijs na identificatie. Geen automatische toeslag.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-bmw-128ti-f40-265-nl-search-1440.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "EGR off",
+      "errors": []
+    },
+    {
+      "fixture": "ref-bmw-128ti-f40-265",
+      "width": 1440,
+      "mode": "cascade",
+      "locale": "nl",
+      "profile": "ref-bmw-128ti-f40-265",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 70000,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-bmw-128ti-f40-265:advanced-unlock:Stage 1",
+        "pricingCategory": "advanced-unlock",
+        "scope": "advanced-unlock-package",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "265 → 310 pk · 480 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: BMW 128ti\nEerste toelating: Niet beschikbaar\nBrandstof: Petrol\nMotorprofiel: 2.0 petrol (1998 cc)\nVermogen: 265 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: BMW 128ti 2.0 petrol (1998 cc)\nECU/toegang: ECU-controle vóór uitvoering; eventuele unlock te bevestigen\nStage: Stage 1\nIndicatieve uitkomst: 310 pk / 480 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 700\nBudget voor het scenario waarin ECU-unlock nodig is; dit bevestigt geen vergrendelde ECU.\nIndicatieve Stage 1-pakketbegroting voor het scenario met geavanceerde ECU-unlock; definitieve scope en prijs na identificatie. Geen automatische toeslag.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-bmw-128ti-f40-265-nl-cascade-1440.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "EGR off",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-custom-20-ecoblue-105",
+      "width": 320,
+      "mode": "search",
+      "locale": "nl",
+      "profile": "ref-ford-transit-custom-20-ecoblue-105",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "105 → 190 pk · 440 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: Ford Transit Custom\nEerste toelating: Niet beschikbaar\nBrandstof: Diesel\nMotorprofiel: 2.0 EcoBlue (1995 cc)\nVermogen: 105 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: Ford Transit Custom 2.0 EcoBlue (1995 cc)\nECU/toegang: ECU-controle vóór uitvoering\nStage: Stage 1\nIndicatieve uitkomst: 190 pk / 440 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 549\nIndicatie voor het gekozen voertuigprofiel. Softwarekalibratie; benodigde hardware en geavanceerde ECU-unlock apart te beoordelen. ECU-controle vóór uitvoering.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-ford-transit-custom-20-ecoblue-105-nl-search-320.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-custom-20-ecoblue-105",
+      "width": 320,
+      "mode": "cascade",
+      "locale": "nl",
+      "profile": "ref-ford-transit-custom-20-ecoblue-105",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "105 → 190 pk · 440 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: Ford Transit Custom\nEerste toelating: Niet beschikbaar\nBrandstof: Diesel\nMotorprofiel: 2.0 EcoBlue (1995 cc)\nVermogen: 105 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: Ford Transit Custom 2.0 EcoBlue (1995 cc)\nECU/toegang: ECU-controle vóór uitvoering\nStage: Stage 1\nIndicatieve uitkomst: 190 pk / 440 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 549\nIndicatie voor het gekozen voertuigprofiel. Softwarekalibratie; benodigde hardware en geavanceerde ECU-unlock apart te beoordelen. ECU-controle vóór uitvoering.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-ford-transit-custom-20-ecoblue-105-nl-cascade-320.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-custom-20-ecoblue-105",
+      "width": 1440,
+      "mode": "search",
+      "locale": "nl",
+      "profile": "ref-ford-transit-custom-20-ecoblue-105",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "105 → 190 pk · 440 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: Ford Transit Custom\nEerste toelating: Niet beschikbaar\nBrandstof: Diesel\nMotorprofiel: 2.0 EcoBlue (1995 cc)\nVermogen: 105 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: Ford Transit Custom 2.0 EcoBlue (1995 cc)\nECU/toegang: ECU-controle vóór uitvoering\nStage: Stage 1\nIndicatieve uitkomst: 190 pk / 440 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 549\nIndicatie voor het gekozen voertuigprofiel. Softwarekalibratie; benodigde hardware en geavanceerde ECU-unlock apart te beoordelen. ECU-controle vóór uitvoering.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-ford-transit-custom-20-ecoblue-105-nl-search-1440.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-custom-20-ecoblue-105",
+      "width": 1440,
+      "mode": "cascade",
+      "locale": "nl",
+      "profile": "ref-ford-transit-custom-20-ecoblue-105",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 54900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-custom-20-ecoblue-105:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "105 → 190 pk · 440 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: Ford Transit Custom\nEerste toelating: Niet beschikbaar\nBrandstof: Diesel\nMotorprofiel: 2.0 EcoBlue (1995 cc)\nVermogen: 105 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: Ford Transit Custom 2.0 EcoBlue (1995 cc)\nECU/toegang: ECU-controle vóór uitvoering\nStage: Stage 1\nIndicatieve uitkomst: 190 pk / 440 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 549\nIndicatie voor het gekozen voertuigprofiel. Softwarekalibratie; benodigde hardware en geavanceerde ECU-unlock apart te beoordelen. ECU-controle vóór uitvoering.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-ford-transit-custom-20-ecoblue-105-nl-cascade-1440.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-connect-15-tdci-100",
+      "width": 320,
+      "mode": "search",
+      "locale": "nl",
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "100 → 125 pk · 330 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: Ford Transit Connect\nEerste toelating: Niet beschikbaar\nBrandstof: Diesel\nMotorprofiel: 1.5 TDCi pre-facelift reference (1499 cc)\nVermogen: 100 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: Ford Transit Connect 1.5 TDCi pre-facelift reference (1499 cc)\nECU/toegang: ECU-controle vóór uitvoering\nStage: Stage 1\nIndicatieve uitkomst: 125 pk / 330 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 449\nIndicatie voor het gekozen voertuigprofiel. Softwarekalibratie; benodigde hardware en geavanceerde ECU-unlock apart te beoordelen. ECU-controle vóór uitvoering.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-ford-transit-connect-15-tdci-100-nl-search-320.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-connect-15-tdci-100",
+      "width": 320,
+      "mode": "cascade",
+      "locale": "nl",
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "100 → 125 pk · 330 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: Ford Transit Connect\nEerste toelating: Niet beschikbaar\nBrandstof: Diesel\nMotorprofiel: 1.5 TDCi pre-facelift reference (1499 cc)\nVermogen: 100 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: Ford Transit Connect 1.5 TDCi pre-facelift reference (1499 cc)\nECU/toegang: ECU-controle vóór uitvoering\nStage: Stage 1\nIndicatieve uitkomst: 125 pk / 330 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 449\nIndicatie voor het gekozen voertuigprofiel. Softwarekalibratie; benodigde hardware en geavanceerde ECU-unlock apart te beoordelen. ECU-controle vóór uitvoering.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-ford-transit-connect-15-tdci-100-nl-cascade-320.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-connect-15-tdci-100",
+      "width": 1440,
+      "mode": "search",
+      "locale": "nl",
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "100 → 125 pk · 330 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: Ford Transit Connect\nEerste toelating: Niet beschikbaar\nBrandstof: Diesel\nMotorprofiel: 1.5 TDCi pre-facelift reference (1499 cc)\nVermogen: 100 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: Ford Transit Connect 1.5 TDCi pre-facelift reference (1499 cc)\nECU/toegang: ECU-controle vóór uitvoering\nStage: Stage 1\nIndicatieve uitkomst: 125 pk / 330 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 449\nIndicatie voor het gekozen voertuigprofiel. Softwarekalibratie; benodigde hardware en geavanceerde ECU-unlock apart te beoordelen. ECU-controle vóór uitvoering.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-ford-transit-connect-15-tdci-100-nl-search-1440.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-connect-15-tdci-100",
+      "width": 1440,
+      "mode": "cascade",
+      "locale": "nl",
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "100 → 125 pk · 330 Nm",
+      "initialMessage": "Hallo NoordTune, ik wil graag een offerte voor deze auto:\nTaal: Nederlands\nAuto: Ford Transit Connect\nEerste toelating: Niet beschikbaar\nBrandstof: Diesel\nMotorprofiel: 1.5 TDCi pre-facelift reference (1499 cc)\nVermogen: 100 pk\nCatalogusindicatie — ECU-controle vóór uitvoering: Ford Transit Connect 1.5 TDCi pre-facelift reference (1499 cc)\nECU/toegang: ECU-controle vóór uitvoering\nStage: Stage 1\nIndicatieve uitkomst: 125 pk / 330 Nm\nExtra opties: -\nPrijs: Indicatief vanaf € 449\nIndicatie voor het gekozen voertuigprofiel. Softwarekalibratie; benodigde hardware en geavanceerde ECU-unlock apart te beoordelen. ECU-controle vóór uitvoering.\nExacte motor-/ECU-variant en definitieve setup te bevestigen.\nKunnen jullie dit controleren en advies geven?",
+      "screenshot": "manual-ref-ford-transit-connect-15-tdci-100-nl-cascade-1440.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-connect-15-tdci-100",
+      "width": 320,
+      "mode": "search",
+      "locale": "en",
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "100 → 125 hp · 330 Nm",
+      "initialMessage": "Hello NoordTune, I would like a quote for this car:\nLanguage: English\nCar: Ford Transit Connect\nFirst registration: Unavailable\nFuel: Diesel\nEngine profile: 1.5 TDCi pre-facelift reference (1499 cc)\nPower: 100 hp\nCatalog estimate — ECU check before work: Ford Transit Connect 1.5 TDCi pre-facelift reference (1499 cc)\nECU/access: ECU check before work\nStage: Stage 1\nIndicative output: 125 hp / 330 Nm\nExtra options: -\nPrice: Indicative from €449\nEstimate for the selected vehicle profile. Software calibration; required hardware and advanced ECU unlocking assessed separately. ECU check before work.\nExact engine/ECU variant and final setup to be confirmed.\nCould you check this and advise?",
+      "screenshot": "manual-ref-ford-transit-connect-15-tdci-100-en-search-320.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    },
+    {
+      "fixture": "ref-ford-transit-connect-15-tdci-100",
+      "width": 320,
+      "mode": "search",
+      "locale": "pl",
+      "profile": "ref-ford-transit-connect-15-tdci-100",
+      "quote": {
+        "kind": "from",
+        "indicative": true,
+        "status": "draft-local-owner-review",
+        "amountCents": 44900,
+        "currency": "EUR",
+        "taxBasis": "inclusive",
+        "policyId": "draft-local-v1:ref-ford-transit-connect-15-tdci-100:contemporary-standard:Stage 1",
+        "pricingCategory": "contemporary-standard",
+        "scope": "vehicle-software",
+        "stageName": "Stage 1",
+        "confirmationRequired": true
+      },
+      "output": "100 → 125 KM · 330 Nm",
+      "initialMessage": "Cześć NoordTune, proszę o wycenę tego auta:\nJęzyk: polski\nAuto: Ford Transit Connect\nPierwsza rejestracja: Brak danych\nPaliwo: Diesel\nProfil silnika: 1.5 TDCi pre-facelift reference (1499 cc)\nMoc: 100 KM\nWartości katalogowe — kontrola ECU przed wykonaniem: Ford Transit Connect 1.5 TDCi pre-facelift reference (1499 cc)\nECU/dostęp: Kontrola ECU przed wykonaniem\nStage: Stage 1\nOrientacyjny wynik: 125 KM / 330 Nm\nOpcje dodatkowe: -\nCena: Orientacyjnie od 449 €\nWycena dla wybranego profilu pojazdu. Kalibracja oprogramowania; wymagany sprzęt i zaawansowane odblokowanie ECU do osobnej oceny. Kontrola ECU przed pracą.\nDokładny wariant silnika/ECU i końcowa konfiguracja do potwierdzenia.\nProszę o sprawdzenie i poradę.",
+      "screenshot": "manual-ref-ford-transit-connect-15-tdci-100-pl-search-320.png",
+      "metrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "expandedMetrics": {
+        "overflow": [],
+        "internalScrollbars": 0,
+        "pageOverflow": false
+      },
+      "optionPreserved": "DPF off / delete",
+      "errors": []
+    }
+  ],
+  "browser": "152.0.7977.83",
+  "summary": {
+    "cases": 14,
+    "overflow": 0,
+    "pageErrors": 0,
+    "manualReferences": 3,
+    "firstRegistrationUnavailable": 14
+  }
+}

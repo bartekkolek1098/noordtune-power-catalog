@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-09-15T23:19:17.573Z",
+  "browserJavaScriptChunks": 25,
+  "browserJavaScriptBytes": 1422708,
+  "canonicalRecords": 58586,
+  "publicVehicles": 24,
+  "nonPublicCanonicalIdsChecked": 58562,
+  "nonPublicCanonicalIdsInBrowserChunks": [],
+  "sourcedProfileIdsChecked": 280,
+  "scope": "Production browser JavaScript; selected profile DTOs in HTML/RSC/API are intentionally excluded."
+}

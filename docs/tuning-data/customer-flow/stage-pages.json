@@ -1,0 +1,58 @@
+{
+  "rows": [
+    {
+      "locale": "nl",
+      "stage": "Stage 1",
+      "path": "/nl/volkswagen/golf-gti/2-0-tsi/stage-1",
+      "content": true
+    },
+    {
+      "locale": "nl",
+      "stage": "Stage 2",
+      "path": "/nl/volkswagen/golf-gti/2-0-tsi/stage-2",
+      "content": true
+    },
+    {
+      "locale": "nl",
+      "stage": "Stage 3+",
+      "path": "/nl/volkswagen/golf-gti/2-0-tsi/stage-3-plus",
+      "content": true
+    },
+    {
+      "locale": "en",
+      "stage": "Stage 1",
+      "path": "/en/volkswagen/golf-gti/2-0-tsi/stage-1",
+      "content": true
+    },
+    {
+      "locale": "en",
+      "stage": "Stage 2",
+      "path": "/en/volkswagen/golf-gti/2-0-tsi/stage-2",
+      "content": true
+    },
+    {
+      "locale": "en",
+      "stage": "Stage 3+",
+      "path": "/en/volkswagen/golf-gti/2-0-tsi/stage-3-plus",
+      "content": true
+    },
+    {
+      "locale": "pl",
+      "stage": "Stage 1",
+      "path": "/pl/volkswagen/golf-gti/2-0-tsi/stage-1",
+      "content": true
+    },
+    {
+      "locale": "pl",
+      "stage": "Stage 2",
+      "path": "/pl/volkswagen/golf-gti/2-0-tsi/stage-2",
+      "content": true
+    },
+    {
+      "locale": "pl",
+      "stage": "Stage 3+",
+      "path": "/pl/volkswagen/golf-gti/2-0-tsi/stage-3-plus",
+      "content": true
+    }
+  ]
+}

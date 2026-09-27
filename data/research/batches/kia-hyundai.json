@@ -1,0 +1,2194 @@
+[
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-diesel-16-crdi-116-280",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/diesel/16-crdi-116-280",
+    "retrievedAt": "2026-09-15T22:30:27.557Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ddba3af2a0d851d6b148e21272a846da1a5b02533b94347104e912ecbee9f76d",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2021 - NQ5",
+      "yearFrom": 2021,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 CRDi",
+      "engineFamily": "CRDi",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 116,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 360
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ],
+    "supportingUrls": [
+      "https://press.kia.com/ie/en/home/media-resouces/press-releases/2021/The-all-new-Sportage.html"
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-diesel-16-crdi-136-320",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/diesel/16-crdi-136-320",
+    "retrievedAt": "2026-09-15T22:34:40.268Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "10d15cb2fd92bc52388ae762fdb134859c8a96e0c5625ebc35b0e3f8f7cf0549",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2021 - NQ5",
+      "yearFrom": 2021,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 CRDi",
+      "engineFamily": "CRDi",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 320,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 360
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "SOURCE_STOCK_TORQUE_SCOPE_DISCREPANCY"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented.",
+      "Other Shiftech NQ5 application pages publish different stock torque and Stage 1 values for 136 PS. Preserve separate source scope and require engine/gearbox/electrification review before consensus."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ],
+    "supportingUrls": [
+      "https://press.kia.com/ie/en/home/media-resouces/press-releases/2021/The-all-new-Sportage.html"
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2024-nq5-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2024-nq5/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:34:43.978Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "42dfe967616cf61850136df2e8318f7bce9b5ec7947ba0fb1d2dd0d1ee5cfd17",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2024 - NQ5",
+      "yearFrom": 2024,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 160,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 170,
+        "torqueNm": 360,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "SOURCE_STOCK_TORQUE_SCOPE_DISCREPANCY"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented.",
+      "Other Shiftech NQ5 application pages publish different stock torque and Stage 1 values for 136 PS. Preserve separate source scope and require engine/gearbox/electrification review before consensus."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-petrol-16-t-gdi-48v-150",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/petrol/1.6-t-gdi-48v-150",
+    "retrievedAt": "2026-09-15T22:34:47.653Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "49703fc9e5c53db667e806b1731f4147c370e85832d1552074f23d7005d4c0d4",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2021 - NQ5",
+      "yearFrom": 2021,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T-GDI 48v",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "mild-hybrid"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 320
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "MILD_HYBRID_ENGINE_OUTPUT_SCOPE_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability.",
+      "Source explicitly labels a 48V/mild-hybrid application. Do not treat combined hybrid output as combustion-engine output."
+    ],
+    "supportingUrls": [
+      "https://press.kia.com/ie/en/home/media-resouces/press-releases/2021/The-all-new-Sportage.html"
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-petrol-16-t-gdi-160-265",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/petrol/16-t-gdi-160-265",
+    "retrievedAt": "2026-09-15T22:34:51.271Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "eb1263e831dcde1850c56ef15b024926f235d84ec02c9d331a1ec1f313841ead",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2021 - NQ5",
+      "yearFrom": 2021,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 160,
+      "stockTorqueNm": 265,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 320
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ],
+    "supportingUrls": [
+      "https://press.kia.com/ie/en/home/media-resouces/press-releases/2021/The-all-new-Sportage.html"
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-petrol-16-t-gdi-177",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/petrol/1.6-t-gdi-177",
+    "retrievedAt": "2026-09-15T22:34:55.477Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "ebc310ec39b7bab98d4db6e5f6ec2e06b7a5de8541d8fc713c3facf0381a7609",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2015 - QL",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 177,
+      "stockTorqueNm": 265,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 218,
+        "torqueNm": 330
+      },
+      "stage2": {
+        "powerHp": 229,
+        "torqueNm": 347,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ],
+    "consensusGroup": "kia-sportage-ql-16-tgdi-177",
+    "supportingUrls": [
+      "https://press.kia.com/pl/pl/home/press-kits/2020/debiut-kia-sportage-black-edition.html"
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2021-nq5-petrol-16-t-gdi-180",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2021-nq5/petrol/1.6-t-gdi-180",
+    "retrievedAt": "2026-09-15T22:34:59.624Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "dbc36e2dbef61b43befeef858edff6bc6ed4dbde13090baa99bda22976792c5a",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2021 - NQ5",
+      "yearFrom": 2021,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 265,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 220,
+        "torqueNm": 310
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ],
+    "supportingUrls": [
+      "https://press.kia.com/ie/en/home/media-resouces/press-releases/2021/The-all-new-Sportage.html"
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2010-sl-diesel-17-crdi-eu5-115",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2010-sl/diesel/1.7-crdi-eu5-115",
+    "retrievedAt": "2026-09-15T22:35:03.600Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f1a665dcc681d9e6b71034de3c617cc8cb7292a725c34df86ed1989d7700f3ce",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2010 - SL",
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.7 CRDI EU5",
+      "engineFamily": "CRDi",
+      "displacementCc": 1700,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 260,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 310
+      },
+      "stage2": {
+        "powerHp": 160,
+        "torqueNm": 330,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2010-sl-diesel-20-crdi-eu5-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2010-sl/diesel/2.0-crdi-eu5-136",
+    "retrievedAt": "2026-09-15T22:35:07.579Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "81a64134c16b0f4a42d217829a966d459f88f4295ab77e8853a7d8d63aaeb57b",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2010 - SL",
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 CRDI EU5",
+      "engineFamily": "CRDi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 314,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 410
+      },
+      "stage2": {
+        "powerHp": 185,
+        "torqueNm": 430,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2010-sl-diesel-20-crdi-eu5-184",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2010-sl/diesel/2.0-crdi-eu5-184",
+    "retrievedAt": "2026-09-15T22:35:11.302Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1ebbe02566dc80f39c3502b8a8725401ef5b97078a51924e0ea3f5385ab11dae",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2010 - SL",
+      "yearFrom": 2010,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 CRDI EU5",
+      "engineFamily": "CRDi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 392,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-115",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/1.7-crdi-eu6-115",
+    "retrievedAt": "2026-09-15T22:35:15.008Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9562fd4c5445a45fedf56865df3b02e82e8bd7df4e2441236ce8a87e962eaeb6",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2015 - QL",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.7 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1700,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 160,
+        "torqueNm": 360,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-diesel-17-crdi-eu6-141",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/1.7-crdi-eu6-141",
+    "retrievedAt": "2026-09-15T22:35:18.760Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "98c352f6c33ab9371953487e796331f39b0ef2592f3901d782a2031bbeb2b635",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "2015 - QL",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.7 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1700,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 141,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 395
+      },
+      "stage2": {
+        "powerHp": 180,
+        "torqueNm": 415,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/2.0-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:35:22.422Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "84c583be452f4e49364851e2db562ada49ad22e0354d9c8ba75d58cbdf852a09",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "QL",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 373,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 185,
+        "torqueNm": 470,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-sportage-2015-ql-diesel-20-crdi-eu6-184",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sportage/2015-ql/diesel/2.0-crdi-eu6-184",
+    "retrievedAt": "2026-09-15T22:35:26.207Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0f1820d93e1b1ac5c7ef35159d989c77699b278071ac7399fb0beff8b2f4eddb",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "QL",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 392,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-ceed-2015-petrol-10-t-gdi-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2015/petrol/1.0-t-gdi-120",
+    "retrievedAt": "2026-09-15T22:35:30.020Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f60e19884f3cb8a564c6df75c8ba7e9d1e66679e28e4922473b2363833c8a48c",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 172,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 230
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-ceed-2015-petrol-16-t-gdi-204",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2015/petrol/1.6-t-gdi-204",
+    "retrievedAt": "2026-09-15T22:35:43.419Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "00c84d461667f6e68cf679ea6bca21d9167ceaf00cfb0550e6cf6346d8fe0b10",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2015",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 265,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 235,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 247,
+        "torqueNm": 357,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-petrol-10-t-gdi-100",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.0-t-gdi-100",
+    "retrievedAt": "2026-09-15T22:35:48.208Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "c3f6a14ac52c1448b843c5fd540a06968f2e310846450388672ac88c80f8cd30",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 100,
+      "stockTorqueNm": 172,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 227
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-petrol-10-t-gdi-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.0-t-gdi-120",
+    "retrievedAt": "2026-09-15T22:35:52.546Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "42566c785f0d3894cc6f628723a2ea5c6547bc3bdcc57da6a2c39bb54a4415cb",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 172,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 230
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-petrol-14-t-gdi-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.4-t-gdi-140",
+    "retrievedAt": "2026-09-15T22:35:56.635Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f402caf49e09d4e6d4e718088279cdeb55eda1fedfe3e2711273896f54eb2c8b",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.4 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 290
+      },
+      "stage2": {
+        "powerHp": 175,
+        "torqueNm": 302,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ],
+    "consensusGroup": "kia-ceed-2018-14-tgdi-140"
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-petrol-16-t-gdi-204",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/petrol/1.6-t-gdi-204",
+    "retrievedAt": "2026-09-15T22:36:00.762Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "9161a3a7e19fb448376aa06af72e3c58b0a0558ebab142558d33902f2069fb19",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 265,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 235,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 247,
+        "torqueNm": 357,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-diesel-16-crdi-eu6-110",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/diesel/1.6-crdi-eu6-110",
+    "retrievedAt": "2026-09-15T22:36:04.734Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f7a241ab2ec8a82c696a5db0c3706a8a0a71d112c79ed8997d327e8c2133a239",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 260,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 145,
+        "torqueNm": 320
+      },
+      "stage2": {
+        "powerHp": 155,
+        "torqueNm": 340,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-ceed-2018-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/ceed/2018/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:36:08.771Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "428358ae32ad3a1bc01dd9fb82f41b0eec474d87d68ff3e7a8526562f0dbdfb5",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 160,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 170,
+        "torqueNm": 360,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-proceed-2019-petrol-10-t-gdi-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/proceed/2019/petrol/1.0-t-gdi-120",
+    "retrievedAt": "2026-09-15T22:36:14.030Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1e90709d04dd4c25d70bcd05961584dc2cb8f4e1c431d246417fdf9c734d6c3a",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "ProCeed",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 172,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 230
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-proceed-2019-petrol-14-t-gdi-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/proceed/2019/petrol/1.4-t-gdi-140",
+    "retrievedAt": "2026-09-15T22:36:17.760Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "992ca55f5592d3d07a8cab699a8bab2109458bf2a3d50aef855ab5bdd02cc8ca",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "ProCeed",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.4 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 290
+      },
+      "stage2": {
+        "powerHp": 175,
+        "torqueNm": 302,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-proceed-2019-petrol-16-t-gdi-204",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/proceed/2019/petrol/1.6-t-gdi-204",
+    "retrievedAt": "2026-09-15T22:36:21.664Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b480d880932c820533ec39a4eeb296c70066e76cd319390104f025ef62ccabc9",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "ProCeed",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 265,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 235,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 247,
+        "torqueNm": 357,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-proceed-2019-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/proceed/2019/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:36:25.377Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "7fe77d88270c1d85babe2131a71fb4e147cb7fc490d5c5baaff8d30297160d7e",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "ProCeed",
+      "generation": "2019",
+      "yearFrom": 2019,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 160,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 170,
+        "torqueNm": 360,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-sorento-2009-xm-diesel-22-crdi-eu5-197",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2009-xm/diesel/2.2-crdi-eu5-197",
+    "retrievedAt": "2026-09-15T22:36:31.640Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "0182cea89ea767531f0f5d3f0610edca8af76c4ac2413863562f194e4431da97",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sorento",
+      "generation": "2009 - XM",
+      "yearFrom": 2009,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.2 CRDI EU5",
+      "engineFamily": "CRDi",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 197,
+      "stockTorqueNm": 422,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 230,
+        "torqueNm": 500
+      },
+      "stage2": {
+        "powerHp": 240,
+        "torqueNm": 520,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-kia-sorento-2020-mq4-diesel-22-crdi-eu6-202",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/kia/sorento/2020-mq4/diesel/2.2-crdi-eu6-202",
+    "retrievedAt": "2026-09-15T22:36:35.398Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "255a17028e084ea27709e8d27d0f7cdcacd0570bf3e20e48830e2ec89d8ae4bf",
+    "identity": {
+      "brand": "Kia",
+      "modelFamily": "Sorento",
+      "generation": "2020 - MQ4",
+      "yearFrom": 2020,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.2 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 2200,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 202,
+      "stockTorqueNm": 440,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 230,
+        "torqueNm": 520
+      },
+      "stage2": {
+        "powerHp": 240,
+        "torqueNm": 540,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-petrol-10-t-gdi-120",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/1.0-t-gdi-120",
+    "retrievedAt": "2026-09-15T22:36:45.993Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "58301ed60bcc997cf6b57fd2a6bc48bfa5de0f721520d885e192c367cbf97ae0",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.0 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 172,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 140,
+        "torqueNm": 230
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-petrol-14-t-gdi-140",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/1.4-t-gdi-140",
+    "retrievedAt": "2026-09-15T22:36:49.640Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1a021a9c16d705164555396b6cb526d5b12b25f268d763096f5ef92d3dc60fed",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.4 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1400,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 240,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 290
+      },
+      "stage2": {
+        "powerHp": 175,
+        "torqueNm": 302,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-petrol-20t-n-250",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/2.0t-n-250",
+    "retrievedAt": "2026-09-15T22:36:53.932Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "1394b0df72141ed99a7cea8feb8f86a925c966d86afbc7aac82d094d3dbdcd9d",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "PD",
+      "yearFrom": 2016,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0T (N)",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 250,
+      "stockTorqueNm": 353,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 440
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-petrol-20t-n-performance-275",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/petrol/2.0t-n-performance-275",
+    "retrievedAt": "2026-09-15T22:36:57.830Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "86c43604adc1b53bc3bda7d67e0b89027cc4162053307eb9b45a44e56fc3a7d1",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0T (N) Performance",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 275,
+      "stockTorqueNm": 353,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 300,
+        "torqueNm": 430
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-115",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/diesel/1.6-crdi-eu6-115",
+    "retrievedAt": "2026-09-15T22:37:01.584Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "6d827b4f706e3d57157e0f9800ba6d77fe4cb5a4a6714ab25303b84c1c791329",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 320
+      },
+      "stage2": {
+        "powerHp": 160,
+        "torqueNm": 340,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-i30-2016-pd-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/i30/2016-pd/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:37:06.799Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "12ae488c214fe79476eabe948938e1d0bd18963d42b3ee2534834ea1a0f8154e",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "i30",
+      "generation": "2016 - PD",
+      "yearFrom": 2016,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 160,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 170,
+        "torqueNm": 360,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-115",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/1.7-crdi-eu6-115",
+    "retrievedAt": "2026-09-15T22:37:10.749Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "38a5e954e3bd03918b931c0d15f5e538fe34d002307a0e3afce3fa44221798b2",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.7 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1700,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 150,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 160,
+        "torqueNm": 360,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-diesel-17-crdi-eu6-141",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/1.7-crdi-eu6-141",
+    "retrievedAt": "2026-09-15T22:37:14.373Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "fcfab592370a6a7f397320c9ef3b929460877feb74e38acb84b6b2e6f0038211",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.7 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1700,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 141,
+      "stockTorqueNm": 340,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 395
+      },
+      "stage2": {
+        "powerHp": 180,
+        "torqueNm": 415,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/2.0-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:37:18.130Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "64602fe4804e2f8d3686b9c15b6e35b2607e5e940131bd35dc3a9cab1089c839",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 373,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 175,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 185,
+        "torqueNm": 470,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-diesel-20-crdi-eu6-184",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/diesel/2.0-crdi-eu6-184",
+    "retrievedAt": "2026-09-15T22:37:22.113Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "f74a7ebd885559ac2c283b54a6b39c14f727cb02fa81a439d3b9dc064aef3e93",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "2.0 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 2000,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 184,
+      "stockTorqueNm": 392,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 200,
+        "torqueNm": 450
+      },
+      "stage2": {
+        "powerHp": 210,
+        "torqueNm": 470,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2015-tl-petrol-16-t-gdi-177",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2015-tl/petrol/1.6-t-gdi-177",
+    "retrievedAt": "2026-09-15T22:37:26.174Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "466777bb577e8defad4f89a444251e5ea68fe74fa85612814150b3a8a13799f6",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2015 - TL",
+      "yearFrom": 2015,
+      "fuel": "Petrol",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 177,
+      "stockTorqueNm": 265,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 218,
+        "torqueNm": 330
+      },
+      "stage2": {
+        "powerHp": 229,
+        "torqueNm": 347,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "shiftech-hyundai-tucson-2020-nx4-diesel-16-crdi-eu6-136",
+    "provider": "shiftech",
+    "sourceName": "Shiftech",
+    "url": "https://www.shiftech.eu/en/chiptuning/car/hyundai/tucson/2020-nx4/diesel/1.6-crdi-eu6-136",
+    "retrievedAt": "2026-09-15T22:37:30.235Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "8011108b7173dad8f22f20a15184ec807a94ddc2571a4288a19b296d2d5332da",
+    "identity": {
+      "brand": "Hyundai",
+      "modelFamily": "Tucson",
+      "generation": "2020 - NX4",
+      "yearFrom": 2020,
+      "fuel": "Diesel",
+      "aspiration": "turbo",
+      "engineMarketingName": "1.6 CRDI EU6",
+      "engineFamily": "CRDi",
+      "displacementCc": 1600,
+      "displacementPrecision": "nominal",
+      "stockPowerHp": 136,
+      "stockTorqueNm": 280,
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown"
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 160,
+        "torqueNm": 340
+      },
+      "stage2": {
+        "powerHp": 170,
+        "torqueNm": 360,
+        "conditions": [
+          "Published provider Stage 2 result. Specific supporting hardware, fuel and emissions applicability require configuration review."
+        ]
+      }
+    },
+    "conditions": [
+      "SOURCE_GENERATION_START_ONLY",
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Factual figures transcribed from the rendered public application page; SHA-256 hashes the captured rendered source text, not the HTTP SPA shell.",
+      "English page labels horsepower hp; recorded in the provider metric-horsepower (PS/ch) convention.",
+      "Source generation start is retained; no generation end, exact displacement, engine code, cylinder count, ECU or gearbox is invented."
+    ],
+    "applicability": [
+      "Applies only to the named model, provider generation and engine/output variant. A generation start label alone does not establish an engine introduction date or indefinite future applicability."
+    ]
+  },
+  {
+    "id": "unlimited-chiptuning-kia-ceed-1-4-t-gdi-140-pk",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-kia-ceed-1-4-t-gdi-140-pk.html",
+    "retrievedAt": "2026-09-15T22:41:46.717Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "b05b96f9c1c297bfbb7f6a57804a3a7056db5fdb055f7a27a4b950ec54bc6852",
+    "identity": {
+      "aspiration": "turbo",
+      "displacementPrecision": "nominal",
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown",
+      "brand": "Kia",
+      "modelFamily": "Ceed",
+      "generation": "2018",
+      "yearFrom": 2018,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.4 T-GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1400,
+      "stockPowerHp": 140,
+      "stockTorqueNm": 242
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 170,
+        "torqueNm": 290,
+        "conditions": [
+          "Provider calls the ordinary software programme Normal."
+        ]
+      },
+      "stage2": {
+        "powerHp": 190,
+        "torqueNm": 310,
+        "conditions": [
+          "Provider specifies a changed exhaust/downpipe with200-cell sports catalyst. Hardware and road-use emissions suitability require review."
+        ]
+      }
+    },
+    "conditions": [
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Provider Normal mapped to Stage1; Xtreme180PS/310Nm remains a separate programme and is not relabelled Stage2.",
+      "Stock242Nm differs fromShiftech240Nm; retained unmodified."
+    ],
+    "applicability": [
+      "Linked category https://www.unlimitedtuning.nl/kia/chiptuning-kia-ceed/2018-t-m-nu/benzine.html starts2018 and publishes no closing year."
+    ],
+    "consensusGroup": "kia-ceed-2018-14-tgdi-140",
+    "supportingUrls": [
+      "https://www.unlimitedtuning.nl/kia/chiptuning-kia-ceed/2018-t-m-nu/benzine.html"
+    ]
+  },
+  {
+    "id": "unlimited-chiptuning-kia-sportage-1-6t-gdi-177-pk",
+    "provider": "unlimited-tuning",
+    "sourceName": "Unlimited Tuning",
+    "url": "https://www.unlimitedtuning.nl/chiptuning-kia-sportage-1-6t-gdi-177-pk.html",
+    "retrievedAt": "2026-09-15T22:41:48.753Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "httpStatus": 200,
+    "contentSha256": "68d800632804e7f1102c9f707d36990f271f3cebe396456036dbb26c0b0fe43a",
+    "identity": {
+      "aspiration": "turbo",
+      "displacementPrecision": "nominal",
+      "powerUnit": "PS",
+      "torqueUnit": "Nm",
+      "electrification": "unknown",
+      "brand": "Kia",
+      "modelFamily": "Sportage",
+      "generation": "QL",
+      "yearFrom": 2016,
+      "yearTo": 2018,
+      "fuel": "Petrol",
+      "engineMarketingName": "1.6T GDI",
+      "engineFamily": "T-GDI",
+      "displacementCc": 1600,
+      "stockPowerHp": 177,
+      "stockTorqueNm": 265
+    },
+    "stages": {
+      "stage1": {
+        "powerHp": 225,
+        "torqueNm": 360,
+        "conditions": [
+          "Provider calls the ordinary software programme Normal."
+        ]
+      }
+    },
+    "conditions": [
+      "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED"
+    ],
+    "notes": [
+      "Provider Normal mapped to Stage1; Xtreme235PS/380Nm is retained separately and is notStage2.",
+      "This is a second source for theQL177PS application, not an additional technical profile created solely by a different provider generation-start label."
+    ],
+    "applicability": [
+      "Category https://www.unlimitedtuning.nl/kia/chiptuning-kia-sportage/2016-t-m-2018/benzine.html explicitly2016–2018; QL relationship reviewed against named engine/output and manufacturer Sportage scope."
+    ],
+    "consensusGroup": "kia-sportage-ql-16-tgdi-177",
+    "supportingUrls": [
+      "https://press.kia.com/pl/pl/home/press-kits/2020/debiut-kia-sportage-black-edition.html",
+      "https://www.unlimitedtuning.nl/kia/chiptuning-kia-sportage/2016-t-m-2018/benzine.html"
+    ]
+  },
+  {
+    "id": "manufacturer-kia-sportage-europe2021",
+    "provider": "manufacturer",
+    "sourceName": "Kia Europe",
+    "url": "https://press.kia.com/ie/en/home/media-resouces/press-releases/2021/The-all-new-Sportage.html",
+    "retrievedAt": "2026-09-15T22:40:49.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "5567ca5f8eef657ceca91254203ae4bc8d7a20532242dbf44f292ed636b65dfe",
+    "notes": [
+      "2021 European fifth-generation Sportage release: diesel115/136PS;136PS availablewithMHEV. Petrol1.6TGDI150/180PSwithMHEV; fourcylinders named. HEV230PSandPHEV265PS are systemoutputs, with180PS originatingfromICE.",
+      "Shiftech116PSdiesellabel differs by1PS from manufacturer115PS; do not silently claim exact manufacturer validation of every tuner row.",
+      "Manufacturer does not establish gearbox or ECU of any particular registered vehicle."
+    ],
+    "conditions": [
+      "MANUFACTURER_STOCK_CONTEXT_ONLY"
+    ]
+  },
+  {
+    "id": "manufacturer-kia-sportage-blackedition2020",
+    "provider": "manufacturer",
+    "sourceName": "Kia Europe",
+    "url": "https://press.kia.com/pl/pl/home/press-kits/2020/debiut-kia-sportage-black-edition.html",
+    "retrievedAt": "2026-09-15T22:40:53.000Z",
+    "status": "retrieved",
+    "retrievalMethod": "page",
+    "contentSha256": "b85851f7b298d99baa83d54665564bc9ec76efa98b6387741a9bedae2e39c7ff",
+    "notes": [
+      "2020 SportageBlackEdition: turbo1.6TGDI177PS/265Nm;1.6diesel115PS/280Nm; EcoDynamics+48Vmildhybrid136PS/320Nm.",
+      "Manufacturer confirms application-dependent electrification and stocktorque; no tuning outputs are supplied."
+    ],
+    "conditions": [
+      "MANUFACTURER_STOCK_CONTEXT_ONLY"
+    ]
+  },
+  {
+    "id": "br-performance-access-block-sportage",
+    "provider": "br-performance",
+    "sourceName": "BR-Performance",
+    "url": "https://www.br-performance.be/en-be/chiptuning/1-cars/29-kia/1449-sportage/10408-2018-2024/10409-1-6-crdi/",
+    "retrievedAt": "2026-09-15T22:22:42.782Z",
+    "status": "blocked",
+    "retrievalMethod": "page",
+    "httpStatus": 403,
+    "contentSha256": "96354c58c8fd7ff3828c578741a26b104ef35b26246210c6ac88d11b8921850f",
+    "notes": [
+      "Cloudflare403. Automated retrieval stopped provider-wide; no alternate country endpoint or proxy used. Search snippets not accepted as factual profile evidence."
+    ]
+  },
+  {
+    "id": "celtic-tuning-access-unavailable-sportage",
+    "provider": "celtic-tuning",
+    "sourceName": "Celtic Tuning",
+    "url": "https://www.celtictuning.co.uk/services/kia/sportage-2016/diesel/1-6-crdi-134-bhp-2019-ECU-remap-chiptuning/stage-1",
+    "retrievedAt": "2026-09-15T22:22:57.570Z",
+    "status": "blocked",
+    "retrievalMethod": "page",
+    "notes": [
+      "Shared provider cache reported an existing403block; no application request or browser bypass performed. Search discoveries remain unaccepted."
+    ]
+  }
+]
