@@ -1,15 +1,16 @@
 import type {Locale} from "@/i18n/routing";
 import {sitePath} from "@/lib/site-path";
+import {NOORDTUNE_BUSINESS} from "@/lib/business-info";
 
-export const MAIN_SITE_URL = "https://www.noordtune.nl";
+export const MAIN_SITE_URL = NOORDTUNE_BUSINESS.url;
 
 type LinkItem = {
   href: string;
   label: string;
 };
 
-export const whatsappPhoneLabel = "+31 685 759 600";
-export const whatsappPhoneHref = "tel:+31685759600";
+export const whatsappPhoneLabel = NOORDTUNE_BUSINESS.telephoneLabel;
+export const whatsappPhoneHref = `tel:${NOORDTUNE_BUSINESS.telephone}`;
 
 export function mainLocaleHref(locale: Locale) {
   return `${MAIN_SITE_URL}/${locale}`;

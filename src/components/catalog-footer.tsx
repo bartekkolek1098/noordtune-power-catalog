@@ -2,6 +2,10 @@ import {Clock, Mail, MapPin, MessageCircle, Phone} from "lucide-react";
 import type {Locale} from "@/i18n/routing";
 import {NoordTuneLogo} from "@/components/noordtune-logo";
 import {
+  localizedBusinessLocation,
+  NOORDTUNE_BUSINESS
+} from "@/lib/business-info";
+import {
   footerCopy,
   legalLinks,
   mainLocaleHref,
@@ -14,6 +18,7 @@ export function CatalogFooter({locale}: {locale: Locale}) {
   const copy = footerCopy(locale);
   const nav = mainNavItems(locale);
   const legal = legalLinks(locale);
+  const location = localizedBusinessLocation(locale);
 
   return (
     <footer className="border-t border-white/10 bg-[#050505]">
@@ -31,13 +36,19 @@ export function CatalogFooter({locale}: {locale: Locale}) {
           <div>
             <h2 className="racing-title text-lg text-white">{copy.contact}</h2>
             <div className="mt-4 space-y-3 text-sm text-muted-foreground">
-              <a className="flex items-center gap-2 hover:text-primary" href="tel:+31685759600">
+              <a
+                className="flex items-center gap-2 hover:text-primary"
+                href={`tel:${NOORDTUNE_BUSINESS.telephone}`}
+              >
                 <Phone className="h-4 w-4 text-primary" />
                 {whatsappPhoneLabel}
               </a>
-              <a className="flex items-center gap-2 hover:text-primary" href="mailto:info@noordtune.nl">
+              <a
+                className="flex items-center gap-2 hover:text-primary"
+                href={`mailto:${NOORDTUNE_BUSINESS.email}`}
+              >
                 <Mail className="h-4 w-4 text-primary" />
-                info@noordtune.nl
+                {NOORDTUNE_BUSINESS.email}
               </a>
               <a
                 className="flex items-center gap-2 hover:text-primary"
@@ -60,7 +71,7 @@ export function CatalogFooter({locale}: {locale: Locale}) {
               </span>
               <span className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary" />
-                A. Vogelstraat 1, 9406 XD Assen
+                {location}
               </span>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import type {Locale} from "@/i18n/routing";
+import {NOORDTUNE_BUSINESS} from "./business-info.ts";
 import type {EstimateStage} from "../data/tuning-estimates-shared.ts";
 import {customHardwareLabel, formatEstimatePower, formatEstimateTorque} from "./estimate-copy.ts";
 import {
@@ -11,7 +12,7 @@ import {
   type QuoteResolution
 } from "../data/pricing.ts";
 
-const WHATSAPP_NUMBER = "31685759600";
+const WHATSAPP_NUMBER = NOORDTUNE_BUSINESS.telephone.replace(/^\+/, "");
 
 const genericMessages: Record<Locale, string> = {
   nl: "Hallo NoordTune, ik wil graag een offerte voor chiptuning ontvangen.",
