@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   ),
   title: {
     default: "NoordTune Power Catalog",
-    template: "%s | NoordTune Power Catalog"
+    template: "%s | NoordTune"
   },
   description:
     "RDW kenteken lookup en tuning catalog voor stages, deletes, DSG/TCU tuning en maatwerk offertes.",

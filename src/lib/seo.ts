@@ -1,12 +1,15 @@
 import type {Metadata} from "next";
 import type {EngineVariant, StageDefinition} from "@/data/catalog-shared";
 import {getVehicleSeoSlugs, stageSlugMap} from "@/data/catalog";
-import {formatQuote, resolveStageQuote} from "@/data/pricing";
-import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
-import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {routing, type Locale} from "@/i18n/routing";
-import {MAIN_SITE_URL} from "@/lib/noordtune-links";
 import {absoluteUrl} from "@/lib/site-url";
+import {NOORDTUNE_BUSINESS} from "@/lib/business-info";
+import {
+  brandedSeoTitle,
+  homepageMetadataCopy,
+  stageMetadataCopy,
+  vehicleMetadataCopy
+} from "@/lib/seo-copy";
 
 export {absoluteUrl, POWER_SITE_URL} from "@/lib/site-url";
 export {quoteOfferFields} from "@/lib/quote-offer";
@@ -15,50 +18,20 @@ const localeMeta: Record<
   Locale,
   {
     og: string;
-    powerUnit: string;
-    vehicleTitleSuffix: string;
-    stageTitleSuffix: string;
-    from: string;
-    to: string;
-    and: string;
-    area: string;
-    catalog: string;
   }
 > = {
   nl: {
-    og: "nl_NL",
-    powerUnit: "pk",
-    vehicleTitleSuffix: "chiptuning | Stage 1 tuning NoordTune",
-    stageTitleSuffix: "chiptuning NoordTune",
-    from: "van",
-    to: "naar",
-    and: "en",
-    area: "Assen, Drenthe en Groningen",
-    catalog: "NoordTune Power Catalog"
+    og: "nl_NL"
   },
   en: {
-    og: "en_US",
-    powerUnit: "hp",
-    vehicleTitleSuffix: "tuning | Stage 1 remap NoordTune",
-    stageTitleSuffix: "tuning NoordTune",
-    from: "from",
-    to: "to",
-    and: "and",
-    area: "Assen, Drenthe and Groningen",
-    catalog: "NoordTune Power Catalog"
+    og: "en_US"
   },
   pl: {
-    og: "pl_PL",
-    powerUnit: "KM",
-    vehicleTitleSuffix: "chiptuning | Stage 1 NoordTune",
-    stageTitleSuffix: "chiptuning NoordTune",
-    from: "z",
-    to: "do",
-    and: "i",
-    area: "Assen, Drenthe i Groningen",
-    catalog: "NoordTune Power Catalog"
+    og: "pl_PL"
   }
 };
+
+export {brandedSeoTitle, homepageMetadataCopy};
 
 export function absoluteAssetUrl(path: string) {
   if (/^https?:\/\//.test(path)) {
@@ -104,17 +77,7 @@ export function vehicleMetadata(
   locale: Locale,
   vehicle: EngineVariant
 ): Pick<Metadata, "title" | "description" | "openGraph" | "twitter"> {
-  const meta = localeMeta[locale];
-  const stage = vehicle.stages[0];
-  const quoteLabel = formatQuote(resolveStageQuote(vehicle, stage), locale);
-  const estimateLabel = catalogEstimateLabel(vehicle, locale);
-  const title = `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${meta.vehicleTitleSuffix}`;
-  const description =
-    locale === "en"
-      ? `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${meta.from} ${vehicle.stockPowerHp} ${meta.powerUnit} ${meta.to} ${stage.powerHp} ${meta.powerUnit} ${meta.and} ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} in the ${meta.catalog} for ${meta.area}.`
-      : locale === "pl"
-        ? `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${meta.from} ${vehicle.stockPowerHp} ${meta.powerUnit} ${meta.to} ${stage.powerHp} ${meta.powerUnit} ${meta.and} ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} w ${meta.catalog} dla ${meta.area}.`
-        : `${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${meta.from} ${vehicle.stockPowerHp} ${meta.powerUnit} ${meta.to} ${stage.powerHp} ${meta.powerUnit} ${meta.and} ${stage.torqueNm} Nm, ${quoteLabel}. ${estimateLabel} in de ${meta.catalog} voor ${meta.area}.`;
+  const {title, description} = vehicleMetadataCopy(locale, vehicle);
 
   return sharedMetadata(locale, title, description, vehicle, absoluteUrl(vehicleDetailPath(locale, vehicle)));
 }
@@ -124,28 +87,10 @@ export function stageMetadata(
   vehicle: EngineVariant,
   stage: StageDefinition
 ): Pick<Metadata, "title" | "description" | "openGraph" | "twitter"> {
-  const meta = localeMeta[locale];
-  const displayStage = applyStageHardwarePolicy([stage])[0];
-  const quoteLabel = formatQuote(resolveStageQuote(vehicle, displayStage), locale);
-  const estimateLabel = catalogEstimateLabel(vehicle, locale);
-  const output = formatEstimatePower(displayStage, locale);
-  const torque = displayStage.customHardware ? "" : `, ${formatEstimateTorque(displayStage, locale)}`;
-  const title = `${vehicle.brand} ${vehicle.model} ${vehicle.engine} ${stage.name} | ${output} ${meta.stageTitleSuffix}`;
-  const description =
-    locale === "en"
-      ? `${stage.name} for ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} to ${output}${torque}, ${quoteLabel}. ${estimateLabel} for ECU tuning around ${meta.area}.`
-      : locale === "pl"
-        ? `${stage.name} dla ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} do ${output}${torque}, ${quoteLabel}. ${estimateLabel} ECU tuning w NoordTune Power Catalog dla ${meta.area}.`
-        : `${stage.name} voor ${vehicle.brand} ${vehicle.model} ${vehicle.engine}: ${vehicle.stockPowerHp} ${meta.powerUnit} naar ${output}${torque}, ${quoteLabel}. ${estimateLabel} voor ECU tuning rond ${meta.area}.`;
+  const {title, description} = stageMetadataCopy(locale, vehicle, stage);
   const url = absoluteUrl(stageSeoPath(locale, vehicle, stage.name));
 
   return sharedMetadata(locale, title, description, vehicle, url);
-}
-
-function catalogEstimateLabel(vehicle: EngineVariant, locale: Locale) {
-  return vehicle.publicationSource === "existing-curated"
-    ? {nl: "Voertuigspecifieke catalogusindicatie", en: "Vehicle-specific catalog estimate", pl: "Orientacyjny szacunek katalogowy"}[locale]
-    : {nl: "Ongeverifieerde catalogusschatting; toepasbaarheid te bevestigen", en: "Unreviewed catalog estimate; applicability to be confirmed", pl: "Niezweryfikowany szacunek katalogowy; zastosowanie do potwierdzenia"}[locale];
 }
 
 export function breadcrumbListJsonLd(items: Array<{name: string; url: string}>) {
@@ -164,15 +109,14 @@ export function breadcrumbListJsonLd(items: Array<{name: string; url: string}>) 
 export function noordTuneProviderJsonLd() {
   return {
     "@type": "AutoRepair",
-    name: "NoordTune",
-    url: MAIN_SITE_URL,
-    telephone: "+31685759600",
+    name: NOORDTUNE_BUSINESS.name,
+    url: NOORDTUNE_BUSINESS.url,
+    telephone: NOORDTUNE_BUSINESS.telephone,
+    email: NOORDTUNE_BUSINESS.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "A. Vogelstraat 1",
-      postalCode: "9406 XD",
-      addressLocality: "Assen",
-      addressCountry: "NL"
+      addressLocality: NOORDTUNE_BUSINESS.address.locality,
+      addressCountry: NOORDTUNE_BUSINESS.address.countryCode
     }
   };
 }
@@ -194,12 +138,13 @@ function sharedMetadata(
   url: string
 ): Pick<Metadata, "title" | "description" | "openGraph" | "twitter"> {
   const image = absoluteAssetUrl(vehicle.image);
+  const socialTitle = brandedSeoTitle(title);
 
   return {
     title,
     description,
     openGraph: {
-      title,
+      title: socialTitle,
       description,
       url,
       siteName: "NoordTune Power Catalog",
@@ -216,7 +161,7 @@ function sharedMetadata(
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: socialTitle,
       description,
       images: [image]
     }

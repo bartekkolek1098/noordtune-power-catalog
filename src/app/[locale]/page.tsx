@@ -15,6 +15,7 @@ import {
   Wrench
 } from "lucide-react";
 import {
+  engineCatalog,
   getBrands,
   getPopularVehicleSelectorItems,
   getVehicleById
@@ -37,7 +38,15 @@ import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
 import {localizedServiceOptions} from "@/lib/service-copy";
-import {stageSeoPath} from "@/lib/seo";
+import {
+  alternateLanguageUrls,
+  areaServedJsonLd,
+  brandedSeoTitle,
+  homepageMetadataCopy,
+  noordTuneProviderJsonLd,
+  stageSeoPath,
+  vehicleDetailPath
+} from "@/lib/seo";
 import {assetPath, sitePath} from "@/lib/site-path";
 import {absoluteUrl} from "@/lib/site-url";
 import {formatCurrency} from "@/lib/utils";
@@ -50,22 +59,19 @@ type PageProps = {
 export async function generateMetadata({params}: PageProps) {
   const {locale} = await params;
   const safeLocale = isLocale(locale) ? locale : routing.defaultLocale;
-  const t = await getTranslations({locale: safeLocale, namespace: "Home"});
+  const copy = homepageMetadataCopy(safeLocale);
+  const socialTitle = brandedSeoTitle(copy.title);
 
   return {
-    title: t("title"),
-    description: t("intro"),
+    title: copy.title,
+    description: copy.description,
     alternates: {
       canonical: absoluteUrl(`/${safeLocale}`),
-      languages: {
-        nl: absoluteUrl("/nl"),
-        en: absoluteUrl("/en"),
-        pl: absoluteUrl("/pl")
-      }
+      languages: alternateLanguageUrls("")
     },
     openGraph: {
-      title: t("title"),
-      description: t("intro"),
+      title: socialTitle,
+      description: copy.description,
       url: absoluteUrl(`/${safeLocale}`),
       siteName: "NoordTune Power Catalog",
       locale: safeLocale === "en" ? "en_US" : safeLocale === "pl" ? "pl_PL" : "nl_NL",
@@ -73,8 +79,8 @@ export async function generateMetadata({params}: PageProps) {
     },
     twitter: {
       card: "summary_large_image",
-      title: t("title"),
-      description: t("intro")
+      title: socialTitle,
+      description: copy.description
     }
   };
 }
@@ -127,13 +133,29 @@ export default async function HomePage({params}: PageProps) {
     rdwPrimary: manual("rdwPrimary"),
     from: t("from")
   };
+  const popularVehicleIds = new Set(popularCars.map((car) => car.detailId));
+  const additionalCatalogVehicles = engineCatalog.filter(
+    (vehicle) => !popularVehicleIds.has(vehicle.id)
+  );
+  const catalogLinksCopy = {
+    nl: {
+      title: "Meer tuningprofielen",
+      intro: "Open een voertuigprofiel en bekijk daar de beschikbare Stage-pagina’s."
+    },
+    en: {
+      title: "More tuning profiles",
+      intro: "Open a vehicle profile to view its available Stage pages."
+    },
+    pl: {
+      title: "Więcej profili tuningu",
+      intro: "Otwórz profil pojazdu, aby zobaczyć dostępne strony Stage."
+    }
+  }[safeLocale];
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    name: "NoordTune",
-    url: "https://power.noordtune.nl",
-    areaServed: "NL",
+    ...noordTuneProviderJsonLd(),
+    areaServed: areaServedJsonLd(),
     serviceType: [
       "Chiptuning",
       "ECU tuning",
@@ -529,6 +551,31 @@ export default async function HomePage({params}: PageProps) {
               </article>
             );
           })}
+        </div>
+      </section>
+
+      <section className="container pb-12" aria-labelledby="more-catalog-vehicles">
+        <div className="rounded-lg border border-white/10 bg-black/55 p-5 md:p-6">
+          <h2
+            className="text-2xl font-black uppercase italic tracking-normal text-white"
+            id="more-catalog-vehicles"
+          >
+            {catalogLinksCopy.title}
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            {catalogLinksCopy.intro}
+          </p>
+          <div className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {additionalCatalogVehicles.map((vehicle) => (
+              <a
+                className="rounded-md border border-white/10 bg-white/[0.03] px-3 py-2 text-sm font-semibold text-slate-200 transition hover:border-primary/60 hover:text-primary"
+                href={sitePath(vehicleDetailPath(safeLocale, vehicle))}
+                key={vehicle.id}
+              >
+                {vehicle.brand} {vehicle.model} · {vehicle.engine}
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
