@@ -149,7 +149,7 @@ export function customerStagePresentation(stage: EstimateStage, locale: Locale, 
 
 export function customerStageNotes(stage: EstimateStage, locale: Locale, profile?: TuningEstimateProfile) {
   const p = customerStagePresentation(stage, locale, profile);
-  return [...new Set([p.summary, ...p.requirements, ...p.limitations])];
+  return [...new Set([p.summary, ...(profile?.configurationNote ? [profile.configurationNote[locale]] : []), ...p.requirements, ...p.limitations])];
 }
 
 /** Disclosure contains only a provider/domain label and link, never internal scope paragraphs. */

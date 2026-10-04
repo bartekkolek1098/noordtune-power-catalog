@@ -82,13 +82,14 @@ for (const source of profiles) {
   const actual = current.profile!;
   check(Boolean(actual), source.id + ": complete ICE retains estimate");
   const actualStage = actual.stages[0], quote = resolveStageQuote(actual, actualStage, {access: assessVehicleAccess(actual)});
-  check(quote.kind === "from" && quote.amountCents > 0, source.id + ": ordinary Stage 1 numeric price");
+  check(actualStage.quoteRequired ? quote.kind === "on-request" : quote.kind === "from" && quote.amountCents > 0, source.id + ": price follows reviewed technical availability");
   for (const locale of ["nl", "en", "pl"] as const) {
     const message = createLookupQuoteMessage({locale, plate: "SYNTHETIC", vehicle: input.make + " " + input.model, fuel: input.fuel,
       firstAdmissionYear: input.firstRegistrationYear, registeredPower: {value: input.powerHp!, unit: "PS"}, displacementCc: input.displacementCc,
       stage: actualStage.name, options: [], quote, access: assessVehicleAccess(actual), engine: actual.engine,
       estimateSource: actual.sourceConfidence, indicativeOutput: actualStage});
-    check(message.includes(formatQuote(quote, locale)), source.id + "/" + locale + ": WhatsApp quote");
+    const requestCopy = {nl:"op aanvraag",en:"on request",pl:"wycena indywidualna"}[locale];
+    check(quote.kind === "on-request" ? message.toLocaleLowerCase().includes(requestCopy) && !message.includes("€") : message.includes(formatQuote(quote, locale)), source.id + "/" + locale + ": WhatsApp quote");
     check(message.includes(formatEstimatePower(actualStage, locale)), source.id + "/" + locale + ": WhatsApp power");
     if (actualStage.torqueNm || actualStage.torqueRangeNm) check(message.includes(formatEstimateTorque(actualStage, locale)), source.id + "/" + locale + ": WhatsApp torque");
     check(message.includes(String(input.firstRegistrationYear)), source.id + "/" + locale + ": admission year");
@@ -183,7 +184,7 @@ for (const entry of canonicalGroups.values()) {
  if (nominal.length !== 1) stats.incompleteDisplacement++;
  if (current === "C" || current === "D" || current === "E") {
    const priority = (complete ? 100 : crossProduct ? 0 : 20) + (["Ford", "Kia", "Hyundai", "BMW", "Volkswagen", "Audi", "Renault", "Peugeot", "Citroën", "Opel"].includes(v.brand) ? 20 : 0) + (/\b(?:Transit|Connect|Custom|Sportage|Ceed|Focus|Fiesta|Golf|Octavia|308|Expert|Jumpy|Vivaro|Trafic)\b/i.test(v.model) ? 10 : 0);
-   backlog.push({brand: v.brand, model: v.model, engine: v.engine, fuel: v.fuel, stockPowerHp: v.stockPowerHp, stockTorqueNm: v.stockTorqueNm,
+   backlog.push({brand: v.brand, model: v.model, engine: v.engine, fuel: v.fuel, stockPowerHp: v.stockPowerHp, stockTorqueNm: v.stockTorqueNm!,
      yearFrom: years[0], yearTo: years.at(-1)!, sourceCopies: entry.copies, coverageClass: current, flags, priority});
    const family = v.model.replace(/\s+\d\.\d.*$/, ""), familyKey = v.brand + "|" + family;
    const familyRow = familyBacklog.get(familyKey) ?? {brand: v.brand, family, unsourcedIdentities: 0, completeIdentity: 0, generatedCrossProduct: 0};

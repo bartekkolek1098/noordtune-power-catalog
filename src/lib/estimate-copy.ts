@@ -9,13 +9,13 @@ export function customHardwareLabel(locale: Locale) {
 export function formatEstimatePower(stage: Pick<EstimateStage, "powerHp" | "powerRangeHp" | "approximate" | "customHardware">, locale: Locale) {
   if (stage.customHardware) return customHardwareLabel(locale);
   const unit = {nl: "pk", en: "hp", pl: "KM"}[locale];
-  if (stage.powerRangeHp) return `${stage.powerRangeHp[0]}–${stage.powerRangeHp[1]} ${unit}`;
+  if (stage.powerRangeHp) return stage.powerRangeHp[0] === stage.powerRangeHp[1] ? `≈${stage.powerRangeHp[0]} ${unit}` : `${stage.powerRangeHp[0]}–${stage.powerRangeHp[1]} ${unit}`;
   return stage.powerHp === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.approximate ? "≈" : ""}${stage.powerHp} ${unit}`;
 }
 
 export function formatEstimateTorque(stage: Pick<EstimateStage, "torqueNm" | "torqueRangeNm" | "approximate" | "customHardware">, locale: Locale) {
   if (stage.customHardware) return customHardwareLabel(locale);
-  if (stage.torqueRangeNm) return `${stage.torqueRangeNm[0]}–${stage.torqueRangeNm[1]} Nm (${{nl: "schatting", en: "estimate", pl: "szacunek"}[locale]})`;
+  if (stage.torqueRangeNm) return stage.torqueRangeNm[0] === stage.torqueRangeNm[1] ? `≈${stage.torqueRangeNm[0]} Nm` : `${stage.torqueRangeNm[0]}–${stage.torqueRangeNm[1]} Nm (${{nl: "schatting", en: "estimate", pl: "szacunek"}[locale]})`;
   return stage.torqueNm === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.approximate ? "≈" : ""}${stage.torqueNm} Nm`;
 }
 

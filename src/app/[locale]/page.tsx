@@ -468,7 +468,7 @@ export default async function HomePage({params}: PageProps) {
                         quote: bmwExampleQuote,
                         access: assessVehicleAccess(bmwExample),
                         matchStatus: "catalog-match",
-                        vehiclePower: `${bmwExample.stockPowerHp} ${copy.powerUnit} -> ${bmwExample.stages[0].powerHp} ${copy.powerUnit}`
+                        vehiclePower: `${bmwExample.stockPowerHp} ${copy.powerUnit} -> ${formatEstimatePower(bmwExample.stages[0], safeLocale)}`
                       })
                     })}
                     rel="noreferrer"
@@ -542,7 +542,9 @@ export default async function HomePage({params}: PageProps) {
                     className="mt-2 block rounded-md border border-primary/20 bg-primary/10 px-3 py-2 text-sm font-semibold text-primary transition hover:border-primary hover:bg-primary/15"
                     href={stageHref}
                   >
-                    {car.stageLine[safeLocale]}
+                    {detailVehicle?.configurationNote
+                      ? `${detailVehicle.version} · ${detailVehicle.stockPowerHp} ${{nl: "pk", en: "hp", pl: "KM"}[safeLocale]} → Stage 1: ${formatEstimatePower(detailVehicle.stages[0], safeLocale)}`
+                      : car.stageLine[safeLocale]}
                   </a>
                   <p className="mt-3 text-sm leading-6 text-muted-foreground">
                     {car.note[safeLocale]}

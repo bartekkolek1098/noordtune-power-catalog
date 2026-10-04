@@ -18,6 +18,7 @@ import {
   resolveStageQuote
 } from "@/data/pricing";
 import {getCatalogEstimateProfile} from "@/data/tuning-estimates-shared";
+import {technicalFamilyLabel} from "@/lib/technical-identity-copy";
 import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
@@ -199,10 +200,10 @@ export function VehicleDetail({
               label: text.power,
               value: `${vehicle.stockPowerHp} → ${formatEstimatePower(selectedStage, locale)}`
             },
-            {label: text.torque, value: `${vehicle.stockTorqueNm} → ${formatEstimateTorque(selectedStage, locale)}`},
+            {label: text.torque, value: `${formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, locale)} → ${formatEstimateTorque(selectedStage, locale)}`},
             {
               label: text.gain,
-              value: selectedStage.customHardware ? customHardwareLabel(locale) : selectedStage.powerHp === undefined || selectedStage.torqueNm === undefined ? "—" : `+${selectedStage.powerHp - vehicle.stockPowerHp} ${powerUnit} / +${
+              value: selectedStage.customHardware ? customHardwareLabel(locale) : selectedStage.powerHp === undefined || selectedStage.torqueNm === undefined || vehicle.stockTorqueNm === undefined ? "—" : `+${selectedStage.powerHp - vehicle.stockPowerHp} ${powerUnit} / +${
                 selectedStage.torqueNm - vehicle.stockTorqueNm
               } Nm`
             }
@@ -369,7 +370,7 @@ export function VehicleDetail({
               <ul className="mt-2 space-y-1 text-xs leading-5 text-muted-foreground">{[...presentation.requirements, ...presentation.limitations].map(note => <li key={note}>{note}</li>)}</ul>
               <div className="mt-4 grid grid-cols-2 gap-2 text-sm text-muted-foreground">
                 <span>
-                  {text.ecu}: {vehicle.ecuSupport?.family ?? vehicle.ecuType}
+                  {text.ecu}: {technicalFamilyLabel(vehicle.ecuSupport, vehicle.ecuType, locale)}
                   {vehicle.ecuSupport?.status === "verified" ? (
                     <small className="mt-1 block text-[11px] font-bold uppercase tracking-[0.08em] text-primary">
                       {text.technical.verified}
@@ -377,7 +378,7 @@ export function VehicleDetail({
                   ) : null}
                 </span>
                 <span>
-                  {text.gearbox}: {vehicle.transmissionSupport?.gearboxFamily ?? vehicle.gearbox ?? "-"}
+                  {text.gearbox}: {technicalFamilyLabel(vehicle.transmissionSupport, vehicle.gearbox ?? "", locale)}
                   {vehicle.transmissionSupport?.status === "verified" ? (
                     <small className="mt-1 block text-[11px] font-bold uppercase tracking-[0.08em] text-primary">
                       {text.technical.verified}
@@ -392,6 +393,7 @@ export function VehicleDetail({
                   {text.technical.identityNote}
                 </p>
               ) : null}
+              {vehicle.configurationNote ? <p className="mt-3 text-xs leading-5 text-muted-foreground">{vehicle.configurationNote[locale]}</p> : null}
               {estimateLimitations(estimateProfile, locale).map((note) => (
                 <p className="mt-3 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>
               ))}

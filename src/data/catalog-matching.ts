@@ -135,6 +135,8 @@ function generations(make: string, value: string) {
   const result = text.match(/\bmk\s?\d\b/g)?.map((value) => value.replace(" ", "")) ?? [];
   if (make === "volkswagen") result.push(...(text.match(/\bgolf\s[5-8]\b/g) ?? []), ...(text.match(/\bb[5-9]\b/g) ?? []));
   if (make === "audi") result.push(...(text.match(/\b(?:8[plvy]|b[5-9]|c[5-8])\b/g) ?? []));
+  if (make === "seat") result.push(...(text.match(/\b(?:5f|kl)\b/g) ?? []));
+  if (make === "volvo") result.push(...(text.match(/\bxc60\s(?:ii|i)\b/g) ?? []));
   return result;
 }
 
@@ -154,7 +156,7 @@ function equivalentKey(candidate: CatalogCandidate) {
     vehicle.stockPowerHp, vehicle.stockTorqueNm, vehicle.gearbox, vehicle.generation,
     vehicle.engineIdentity?.engineCodes, vehicle.ecuType, candidate.displacementCc, candidate.cylinders,
     candidate.registryTypes, candidate.registryVariants, candidate.registryExecutions,
-    vehicle.stages.map((stage) => [stage.name, stage.powerHp, stage.torqueNm])
+    vehicle.stages.map((stage) => [stage.name, stage.powerHp, stage.torqueNm, stage.powerRangeHp, stage.torqueRangeNm, stage.customHardware, stage.quoteRequired])
   ]);
 }
 

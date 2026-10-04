@@ -136,7 +136,7 @@ function createQuoteMessage(input: VehicleQuoteMessageInput & {plate?: string}) 
   const output = input.indicativeOutput?.customHardware ? customHardwareLabel(input.locale) : [
     input.indicativeOutput?.powerHp !== undefined || input.indicativeOutput?.powerRangeHp ? formatEstimatePower(input.indicativeOutput, input.locale) : undefined,
     input.indicativeOutput?.torqueNm !== undefined || input.indicativeOutput?.torqueRangeNm ? formatEstimateTorque(input.indicativeOutput, input.locale) : undefined
-  ].filter(Boolean).join(" / ");
+  ].filter(Boolean).join(" / ") || (input.indicativeOutput ? formatEstimatePower(input.indicativeOutput, input.locale) : "");
   return [
     text.intro,
     text.language,

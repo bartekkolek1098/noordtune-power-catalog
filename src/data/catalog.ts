@@ -16,6 +16,7 @@ import {
   type PricingTierId
 } from "./pricing.ts";
 import {applyCuratedTechnicalProfile} from "./curated-technical.ts";
+import {applyPublicCatalogTruth} from "./public-catalog-truth.ts";
 import {assessCatalogMatch, normalizeCatalogFuel, normalizeCatalogMake, type CatalogCandidate, type CatalogMatchInput} from "./catalog-matching.ts";
 import {tuningReferenceProfiles} from "./tuning-estimates.ts";
 import {getCatalogEstimateProfile, type EstimateResolution, type TuningEstimateProfile} from "./tuning-estimates-shared.ts";
@@ -1531,10 +1532,13 @@ function applyPublicPricing(vehicle: EngineVariant): EngineVariant {
 export const engineCatalog: EngineVariant[] = [
   ...existingCuratedEngineCatalog.map(applyCuratedTechnicalProfile),
   ...promotedCuratedEngineCatalog
-].map(applyPublicPricing);
+].map(applyPublicCatalogTruth).map(applyPublicPricing);
 
 const publicVehicleByCanonicalId = new Map(
   engineCatalog.map((vehicle) => [vehicle.sourceCanonicalId ?? vehicle.id, vehicle])
+);
+const publicSourceModels = new Map(
+  vehicleDatabase.filter(vehicle => publicVehicleByCanonicalId.has(vehicle.id)).map(vehicle => [vehicle.id, vehicle.model])
 );
 
 export function getVehicleById(id: string) {
@@ -1608,7 +1612,7 @@ export function getPopularVehicleSelectorItems(limit = 4) {
   return vehicleDatabase
     .filter((vehicle) => vehicle.popular)
     .slice(0, limit)
-    .map(toVehicleSelectorItem);
+    .map(vehicle => toVehicleSelectorItem(vehicle));
 }
 
 export function searchVehicleSelectorItems(query: string, limit = 4) {
@@ -1634,8 +1638,8 @@ export function searchVehicleSelectorItems(query: string, limit = 4) {
   });
   const selectorItems = [
     ...referenceMatches.map(toReferenceSelectorItem),
-    ...publicMatches.map(toVehicleSelectorItem),
-    ...(referenceMatches.length ? [] : searchVehicles(query).map(toVehicleSelectorItem))
+    ...publicMatches.map(vehicle => toVehicleSelectorItem(vehicle)),
+    ...(referenceMatches.length ? [] : searchVehicles(query).map(vehicle => toVehicleSelectorItem(vehicle)))
   ];
 
   return uniqueVehicleSelectorItems(
@@ -1656,6 +1660,7 @@ export function getVehicleSelectorItems({
   return uniqueVehicleSelectorItems(
     [
       ...tuningReferenceProfiles.filter((profile) => profile.brand === brand && profile.model === model && referenceProfileYears(profile).includes(year)).map(toReferenceSelectorItem),
+      ...engineCatalog.filter(vehicle => vehicle.brand === brand && (vehicle.model === model || publicSourceModels.get(vehicle.sourceCanonicalId ?? vehicle.id) === model) && vehicle.years.includes(year)).map(vehicle => toVehicleSelectorItem(vehicle, year)),
       ...vehicleDatabase
       .filter(
         (vehicle) =>
@@ -1663,14 +1668,19 @@ export function getVehicleSelectorItems({
           vehicle.model === model &&
           vehicle.years.includes(year)
       )
-      .map(toVehicleSelectorItem)
+      .filter(vehicle => {
+        const corrected = publicVehicleByCanonicalId.get(vehicle.id);
+        return !corrected?.configurationNote || corrected.years.includes(year) || corrected.id !== vehicle.id;
+      })
+      .map(vehicle => toVehicleSelectorItem(vehicle, year))
     ],
     limit
   );
 }
 
-function toVehicleSelectorItem(vehicle: EngineVariant): VehicleSelectorItem {
-  const publicVehicle = publicVehicleByCanonicalId.get(vehicle.id) ?? vehicle;
+function toVehicleSelectorItem(vehicle: EngineVariant, selectedYear?: number): VehicleSelectorItem {
+  const corrected = publicVehicleByCanonicalId.get(vehicle.id);
+  const publicVehicle = corrected && (!corrected.configurationNote || corrected.years.includes(selectedYear ?? vehicle.years[0])) ? corrected : vehicle;
   const stage = publicVehicle.stages[0];
 
   return {

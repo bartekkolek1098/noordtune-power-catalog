@@ -1,4 +1,6 @@
 import {customerVehicle} from "@/lib/customer-profile";
+import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
+import {technicalFamilyLabel} from "@/lib/technical-identity-copy";
 import {notFound} from "next/navigation";
 import {ArrowLeft} from "lucide-react";
 import {engineCatalog, getVehicleById} from "@/data/catalog";
@@ -167,7 +169,7 @@ export default async function VehiclePage({params}: PageProps) {
           </div>
           <div className="max-w-4xl">
             <Badge className="mb-4 border-primary/30 bg-primary/15 text-primary">
-              {t("technical.ecuFamily")}: {vehicle.ecuSupport?.family ?? vehicle.ecuType}
+              {t("technical.ecuFamily")}: {technicalFamilyLabel(vehicle.ecuSupport, vehicle.ecuType, safeLocale)}
             </Badge>
             <h1 className="racing-title text-5xl leading-none md:text-7xl">
               {vehicle.brand} {vehicle.model}
@@ -177,11 +179,11 @@ export default async function VehiclePage({params}: PageProps) {
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-sm">
               <span className="rounded-md border border-white/10 bg-white/[0.05] px-3 py-2">
-                {t("stock")}: {vehicle.stockPowerHp} {powerUnit} / {vehicle.stockTorqueNm} Nm
+                {t("stock")}: {vehicle.stockPowerHp} {powerUnit} / {formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, safeLocale)}
               </span>
               <span className="rounded-md border border-primary/30 bg-primary/15 px-3 py-2 text-primary">
-                {t("tuned")}: {vehicle.stages[0].powerHp} {powerUnit} /{" "}
-                {vehicle.stages[0].torqueNm} Nm
+                {t("tuned")}: {formatEstimatePower(vehicle.stages[0], safeLocale)} /{" "}
+                {formatEstimateTorque(vehicle.stages[0], safeLocale)}
               </span>
               <span className="rounded-md border border-white/10 bg-white/[0.05] px-3 py-2">
                 {vehicle.yearRange}

@@ -79,7 +79,7 @@ test("technical year/template duplicates collapse without choosing conflicting o
   assert.deepEqual(reverse, result);
 });
 test("materially different canonical outputs fall back instead of selecting first", () => {
-  const alternative = candidate({id: "other-output", stages: candidate().stages.map((stage) => ({...stage, powerHp: stage.powerHp + 20}))});
+  const alternative = candidate({id: "other-output", stages: candidate().stages.map((stage) => ({...stage, powerHp: (stage.powerHp ?? stage.powerRangeHp?.[0] ?? 0) + 20}))});
   const result = resolveRdwTuningEstimate(identity, {...empty, canonicalVehicles: [candidate(), alternative]});
   assert.equal(result.resolutionLevel, 4);
   assert.ok(result.reasonCodes.includes("MULTIPLE_CANONICAL_TECHNICAL_PROFILES"));

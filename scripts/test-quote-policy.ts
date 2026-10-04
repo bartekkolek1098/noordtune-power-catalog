@@ -20,13 +20,19 @@ function amount(quote: import("../src/data/pricing").QuoteResolution) {
   return quote.amountCents;
 }
 
-test("all 24 public profiles retain three numeric software estimates despite verification flags", () => {
+test("all 24 public profiles quote only assigned technical scope; verification flags alone do not remove estimates", () => {
   assert.equal(catalog.engineCatalog.length, 24);
   for (const vehicle of catalog.engineCatalog) {
     for (const stage of vehicle.stages) {
       const quote = pricing.resolveStageQuote(vehicle, stage, {access: unknownAccess});
+      if (stage.quoteRequired || stage.customHardware) {
+        assert.equal(quote.kind, "on-request");
+        assert.equal(stage.powerHp, undefined);
+        assert.equal(stage.torqueNm, undefined);
+        continue;
+      }
       assert.ok(amount(quote) >= 29900, `${vehicle.id} ${stage.name}`);
-      assert.ok(stage.powerHp > 0 && stage.torqueNm > 0);
+      assert.ok((stage.powerHp ?? stage.powerRangeHp?.[0] ?? 0) > 0 && (stage.torqueNm ?? stage.torqueRangeNm?.[0] ?? 0) > 0);
       if (quote.kind === "from") {
         assert.equal(quote.status, "draft-local-owner-review");
         assert.equal(quote.indicative, true);

@@ -241,7 +241,7 @@ safety("equivalent-year-copy", ambiguitySource.input, {...emptySources, canonica
   same(result.resolutionLevel ?? result.profile?.resolutionLevel, 3, "Equivalent year copies collapse into one canonical output profile");
   verifyProfile({...ambiguitySource, id: "equivalent-year-copy"}, result);
 });
-const conflicting = {...duplicate, id: "runtime-synthetic-different-output", stages: duplicate.stages.map(stage => ({...stage, powerHp: stage.powerHp + 23, torqueNm: stage.torqueNm + 31}))};
+const conflicting = {...duplicate, id: "runtime-synthetic-different-output", stages: duplicate.stages.map(stage => ({...stage, powerHp: stage.powerHp! + 23, torqueNm: stage.torqueNm! + 31}))};
 safety("multiple-technical-profiles", ambiguitySource.input, {...emptySources, canonicalVehicles: [vehicle, conflicting]}, result => {
   same(result.resolutionLevel ?? result.profile?.resolutionLevel, 4, "Distinct technically compatible peak outputs use generic indication instead of arbitrary first-row selection");
   check(result.reasonCodes.includes("MULTIPLE_CANONICAL_TECHNICAL_PROFILES"), "Ambiguous canonical output is explained");

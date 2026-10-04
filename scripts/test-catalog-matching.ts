@@ -132,7 +132,7 @@ for (const fixture of registryFixtures) test(`official sanitized regression ${fi
 test("representative curated BMW, Golf GTI and manual Focus select correct public IDs", () => {
   const examples: [Input, string][] = [
     [{make: "BMW", model: "320d", fuel: "Diesel", displacementCc: 1995, powerHp: 190, firstRegistrationYear: 2017}, "bmw-320d-b47"],
-    [{make: "Volkswagen", model: "Golf GTI", fuel: "Petrol", displacementCc: 1984, powerHp: 230, firstRegistrationYear: 2017}, "vw-golf-20-tsi-ea888"],
+    [{make: "Volkswagen", model: "Golf GTI", fuel: "Petrol", displacementCc: 1984, powerHp: 230, firstRegistrationYear: 2016}, "vw-golf-20-tsi-ea888"],
     [{make: "Ford", model: "Focus ST", fuel: "Petrol", displacementCc: 1999, powerHp: 250, firstRegistrationYear: 2015}, "ford-focus-st-20-ecoboost"]
   ];
   for (const [input, id] of examples) {

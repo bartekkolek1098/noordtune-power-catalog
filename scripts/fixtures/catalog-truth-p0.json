@@ -1,0 +1,296 @@
+[
+  {
+    "id": "bmw-320d-b47",
+    "action": "CORRECT",
+    "slugs": {
+      "brand": "bmw",
+      "model": "3-series",
+      "engine": "320d"
+    },
+    "stockHp": 190,
+    "stockNm": 400,
+    "years": [
+      2015,
+      2019
+    ],
+    "generation": "F30/F31 LCI",
+    "capacity": 1995,
+    "wrongGeneration": "G20",
+    "stage1": [
+      [
+        220,
+        225
+      ],
+      [
+        440,
+        460
+      ]
+    ],
+    "stage1Cents": 44900
+  },
+  {
+    "id": "vw-golf-20-tsi-ea888",
+    "action": "CORRECT",
+    "slugs": {
+      "brand": "volkswagen",
+      "model": "golf-gti",
+      "engine": "2-0-tsi"
+    },
+    "stockHp": 230,
+    "stockNm": 350,
+    "years": [
+      2013,
+      2017
+    ],
+    "generation": "Golf 7",
+    "capacity": 1984,
+    "wrongGeneration": "Golf 8",
+    "stage1": [
+      [
+        300,
+        305
+      ],
+      [
+        440,
+        460
+      ]
+    ],
+    "stage1Cents": 44900
+  },
+  {
+    "id": "bmw-3-series-g20-g21-320i",
+    "action": "CORRECT",
+    "slugs": {
+      "brand": "bmw",
+      "model": "3-series-g20-g21",
+      "engine": "320i"
+    },
+    "stockHp": 184,
+    "stockNm": 300,
+    "years": [
+      2019,
+      2024
+    ],
+    "generation": "G20/G21",
+    "capacity": 1998,
+    "wrongGeneration": "F30",
+    "stage1": null,
+    "stage1Cents": null
+  },
+  {
+    "id": "volkswagen-golf-7-r-20-tsi",
+    "action": "CORRECT",
+    "slugs": {
+      "brand": "volkswagen",
+      "model": "golf-7-r",
+      "engine": "2-0-tsi-300"
+    },
+    "stockHp": 300,
+    "stockNm": 380,
+    "years": [
+      2014,
+      2016
+    ],
+    "generation": "Golf 7",
+    "capacity": 1984,
+    "wrongGeneration": "Golf 8",
+    "stage1": [
+      [
+        350,
+        350
+      ],
+      [
+        460,
+        460
+      ]
+    ],
+    "stage1Cents": 54900
+  },
+  {
+    "id": "bmw-x3-e83-20d",
+    "action": "REMOVE_UNSUPPORTED_EXACT_CLAIM",
+    "slugs": {
+      "brand": "bmw",
+      "model": "2-0d",
+      "engine": "x3"
+    },
+    "stockHp": 177,
+    "stockNm": 350,
+    "years": [
+      2007,
+      2010
+    ],
+    "generation": "E83",
+    "capacity": 1995,
+    "wrongGeneration": "F25",
+    "stage1": [
+      [
+        210,
+        215
+      ],
+      [
+        425,
+        430
+      ]
+    ],
+    "stage1Cents": 29900
+  },
+  {
+    "id": "audi-a4-b9-20-tdi-190",
+    "action": "CORRECT",
+    "slugs": {
+      "brand": "audi",
+      "model": "a4-b9",
+      "engine": "2-0-tdi-190"
+    },
+    "stockHp": 190,
+    "stockNm": 400,
+    "years": [
+      2016,
+      2020
+    ],
+    "generation": "B9",
+    "capacity": 1968,
+    "wrongGeneration": "B8",
+    "stage1": [
+      [
+        220,
+        225
+      ],
+      [
+        450,
+        460
+      ]
+    ],
+    "stage1Cents": 44900
+  },
+  {
+    "id": "volkswagen-passat-b8-20-tdi",
+    "action": "MAKE_CONDITIONAL",
+    "slugs": {
+      "brand": "volkswagen",
+      "model": "passat-b8",
+      "engine": "2-0-tdi-150"
+    },
+    "stockHp": 150,
+    "stockNm": null,
+    "years": [
+      2015,
+      2020
+    ],
+    "generation": "B8",
+    "capacity": 1968,
+    "wrongGeneration": "B7",
+    "stage1": null,
+    "stage1Cents": null
+  },
+  {
+    "id": "ford-focus-st-20-ecoboost",
+    "action": "WITHHOLD_OUTPUT",
+    "slugs": {
+      "brand": "ford",
+      "model": "focus-st",
+      "engine": "2-0-ecoboost"
+    },
+    "stockHp": 250,
+    "stockNm": 360,
+    "years": [
+      2012,
+      2018
+    ],
+    "generation": "Mk3",
+    "capacity": 1999,
+    "wrongGeneration": "Mk4",
+    "stage1": null,
+    "stage1Cents": null
+  },
+  {
+    "id": "volvo-xc60-d5",
+    "action": "WITHHOLD_OUTPUT",
+    "slugs": {
+      "brand": "volvo",
+      "model": "d5",
+      "engine": "xc60"
+    },
+    "stockHp": 220,
+    "stockNm": 440,
+    "years": [
+      2014,
+      2017
+    ],
+    "generation": "XC60 I",
+    "capacity": 2400,
+    "wrongGeneration": "XC60 II",
+    "stage1": null,
+    "stage1Cents": null
+  },
+  {
+    "id": "seat-leon-cupra-5f-20-tsi-300",
+    "action": "MAKE_CONDITIONAL",
+    "slugs": {
+      "brand": "seat",
+      "model": "leon-cupra-5f",
+      "engine": "2-0-tsi-300"
+    },
+    "stockHp": 300,
+    "stockNm": null,
+    "years": [
+      2017,
+      2018
+    ],
+    "generation": "5F",
+    "capacity": 1984,
+    "wrongGeneration": "KL",
+    "stage1": null,
+    "stage1Cents": null
+  },
+  {
+    "id": "mercedes-a45-amg-m133",
+    "action": "MAKE_CONDITIONAL",
+    "slugs": {
+      "brand": "mercedes-benz",
+      "model": "a-45-amg",
+      "engine": "2-0-turbo"
+    },
+    "stockHp": 360,
+    "stockNm": 450,
+    "years": [
+      2013,
+      2018
+    ],
+    "generation": "W176",
+    "capacity": 1991,
+    "wrongGeneration": "W177",
+    "stage1": [
+      [
+        400,
+        410
+      ],
+      [
+        530,
+        540
+      ]
+    ],
+    "stage1Cents": 54900
+  },
+  {
+    "id": "bmw-1-series-f20-f21-118d",
+    "action": "MAKE_CONDITIONAL",
+    "slugs": {
+      "brand": "bmw",
+      "model": "1-series-f20-f21",
+      "engine": "118d"
+    },
+    "stockHp": 150,
+    "stockNm": null,
+    "years": [
+      2015,
+      2019
+    ],
+    "generation": "F20/F21",
+    "capacity": 1995,
+    "wrongGeneration": "F40",
+    "stage1": null,
+    "stage1Cents": null
+  }
+]

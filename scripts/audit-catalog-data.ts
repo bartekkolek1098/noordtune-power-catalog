@@ -6,6 +6,7 @@ const {readdirSync, readFileSync, writeFileSync} = require("node:fs") as typeof 
 const {createHash} = require("node:crypto") as typeof import("node:crypto");
 const {dirname, relative, resolve} = require("node:path") as typeof import("node:path");
 const catalog = require("../src/data/catalog.ts") as typeof import("../src/data/catalog");
+const {applyPublicCatalogTruth, publicCatalogTruthReviews} = require("../src/data/public-catalog-truth.ts") as typeof import("../src/data/public-catalog-truth");
 const {curatedVehiclePublications} = require("../src/data/curated-catalog.ts") as typeof import(
   "../src/data/curated-catalog"
 );
@@ -16,6 +17,7 @@ const {serviceOptions} = require("../src/data/catalog-shared.ts") as typeof impo
   "../src/data/catalog-shared"
 );
 const pricing = require("../src/data/pricing.ts") as typeof import("../src/data/pricing");
+const {formatEstimatePower, formatEstimateTorque} = require("../src/lib/estimate-copy.ts") as typeof import("../src/lib/estimate-copy");
 const {routing} = require("../src/i18n/routing.ts") as typeof import("../src/i18n/routing");
 
 type AuditSeverity = "critical" | "warning";
@@ -302,7 +304,8 @@ addIssue(
 
 const publishedValueDrift: string[] = [];
 for (const publication of curatedVehiclePublications) {
-  const source = canonicalVehicleById.get(publication.sourceId);
+  const original = canonicalVehicleById.get(publication.sourceId);
+  const source = original && applyPublicCatalogTruth({...original, id: publication.id});
   const published = publicVehicleById.get(publication.id);
 
   if (!source || !published) {
@@ -312,12 +315,20 @@ for (const publication of curatedVehiclePublications) {
   const sourceStages = source.stages.map((stage) => ({
     name: stage.name,
     powerHp: stage.powerHp,
-    torqueNm: stage.torqueNm
+    torqueNm: stage.torqueNm,
+    powerRangeHp: stage.powerRangeHp,
+    torqueRangeNm: stage.torqueRangeNm,
+    quoteRequired: stage.quoteRequired,
+    customHardware: stage.customHardware
   }));
   const publishedStages = published.stages.map((stage) => ({
     name: stage.name,
     powerHp: stage.powerHp,
-    torqueNm: stage.torqueNm
+    torqueNm: stage.torqueNm,
+    powerRangeHp: stage.powerRangeHp,
+    torqueRangeNm: stage.torqueRangeNm,
+    quoteRequired: stage.quoteRequired,
+    customHardware: stage.customHardware
   }));
 
   if (
@@ -332,7 +343,7 @@ for (const publication of curatedVehiclePublications) {
 addIssue(
   "critical",
   "PUBLISHED_SOURCE_VALUE_DRIFT",
-  "Published technical values and options must match their canonical source; public pricing is audited separately.",
+  "Published values and options must match the source plus the explicit P0 correction projection; public pricing is audited separately.",
   publishedValueDrift
 );
 
@@ -368,6 +379,7 @@ const invalidPublicPricingAssignments: string[] = [];
 const technicalAccessMethodUnknown: string[] = [];
 
 for (const vehicle of catalog.engineCatalog) {
+  const truthReview = publicCatalogTruthReviews.find(row => row.id === vehicle.id);
 
   if (
     !vehicle.brand ||
@@ -376,8 +388,7 @@ for (const vehicle of catalog.engineCatalog) {
     !vehicle.yearRange ||
     !Number.isFinite(vehicle.stockPowerHp) ||
     vehicle.stockPowerHp <= 0 ||
-    !Number.isFinite(vehicle.stockTorqueNm) ||
-    vehicle.stockTorqueNm <= 0
+    (vehicle.stockTorqueNm === undefined ? !truthReview?.unknownStockTorque : !Number.isFinite(vehicle.stockTorqueNm) || vehicle.stockTorqueNm <= 0)
   ) {
     invalidPublicCore.push(vehicle.id);
   }
@@ -388,8 +399,8 @@ for (const vehicle of catalog.engineCatalog) {
       (stage) =>
         !Number.isFinite(stage.price) ||
         stage.price <= 0 ||
-        stage.powerHp < vehicle.stockPowerHp ||
-        stage.torqueNm < vehicle.stockTorqueNm
+        (stage.powerHp === undefined ? !(stage.powerRangeHp?.every(n => Number.isFinite(n) && n >= vehicle.stockPowerHp) || stage.quoteRequired && truthReview) : !Number.isFinite(stage.powerHp) || stage.powerHp < vehicle.stockPowerHp) ||
+        (stage.torqueNm === undefined ? !(stage.torqueRangeNm?.every(n => Number.isFinite(n) && n >= (vehicle.stockTorqueNm ?? 0)) || stage.quoteRequired && truthReview) : !Number.isFinite(stage.torqueNm) || vehicle.stockTorqueNm !== undefined && stage.torqueNm < vehicle.stockTorqueNm)
     )
   ) {
     invalidPublicStages.push(vehicle.id);
@@ -459,7 +470,7 @@ for (const vehicle of catalog.engineCatalog) {
 
     // The same compatible public profile and commercial scope share one resolver.
     // Physical ECU identification and generated provenance do not erase estimates.
-    const rdwQuote = pricing.resolveStageQuote(vehicle, sourceStage);
+    const rdwQuote = pricing.resolveStageQuote(vehicle, stage);
     if (JSON.stringify(rdwQuote) !== JSON.stringify(expectedQuote)) {
       rdwPublicPricingMismatches.push(
         `${vehicle.id}: ${stage.name} public=${JSON.stringify(expectedQuote)}, RDW=${JSON.stringify(rdwQuote)}`
@@ -475,7 +486,7 @@ for (const vehicle of catalog.engineCatalog) {
       .getVehicleSelectorItems({
         brand: source.brand,
         model: source.model,
-        year: source.years[0]
+        year: truthReview ? vehicle.years[0] : source.years[0]
       })
       .find((item) => item.id === vehicle.id);
 
@@ -917,7 +928,7 @@ for (const vehicle of catalog.vehicleDatabase) {
   if (
     !Number.isFinite(vehicle.stockPowerHp) ||
     vehicle.stockPowerHp <= 0 ||
-    !Number.isFinite(vehicle.stockTorqueNm) ||
+    vehicle.stockTorqueNm === undefined || !Number.isFinite(vehicle.stockTorqueNm) ||
     vehicle.stockTorqueNm <= 0
   ) {
     missingStockValues.push(vehicle.id);
@@ -979,11 +990,11 @@ for (const vehicle of catalog.vehicleDatabase) {
       invalidStagePrices.push(stageId);
     }
 
-    if (stage.powerHp < vehicle.stockPowerHp) {
+    if (stage.powerHp === undefined || !Number.isFinite(stage.powerHp) || stage.powerHp < vehicle.stockPowerHp) {
       lowerStagePower.push(stageId);
     }
 
-    if (stage.torqueNm < vehicle.stockTorqueNm) {
+    if (stage.torqueNm === undefined || !Number.isFinite(stage.torqueNm) || vehicle.stockTorqueNm === undefined || stage.torqueNm < vehicle.stockTorqueNm) {
       lowerStageTorque.push(stageId);
     }
 
@@ -1268,6 +1279,11 @@ const previousPublicCommercialHashes = {
     "3341d50c62d725a7b55cd1bf54425a7ebddc666bb0eca8825aa6360d39cf6e6d"
 } as const;
 
+// Explicitly authorized public technical correction; canonical data, routes and services
+// retain the original release hashes. test-catalog-truth-p0 additionally freezes all
+// 12 unrelated public records and checks every corrected value/withheld output.
+const approvedP0PublicTechnicalHash = "a549fa22f49202684defaaef9b932563fcccf4a37e2a97fa6e8595d07d901d35";
+
 const currentTechnicalHashes = {
   canonicalFull: semanticHash(catalog.vehicleDatabase),
   canonicalCommercial: semanticHash(
@@ -1295,7 +1311,7 @@ const currentPublicCommercialHashes = {
 const semanticIntegrityFailures = Object.entries(productionTechnicalBaseline)
   .filter(
     ([key, expected]) =>
-      currentTechnicalHashes[key as keyof typeof currentTechnicalHashes] !== expected
+      currentTechnicalHashes[key as keyof typeof currentTechnicalHashes] !== (key === "publicTechnical" ? approvedP0PublicTechnicalHash : expected)
   )
   .map(
     ([key, expected]) =>
@@ -1318,7 +1334,7 @@ if (
 addIssue(
   "critical",
   "PRODUCTION_SEMANTIC_INTEGRITY",
-  "Protected technical data, canonical prices, routes and service definitions must remain identical to production. Matching and quote policy changes are checked by executable regressions.",
+  "Canonical data/prices, routes and services retain the release baseline; only the explicit P0 public correction hash is accepted. Matching and quote policy changes are checked by executable regressions.",
   semanticIntegrityFailures
 );
 
@@ -1441,7 +1457,7 @@ const technicalVehicleDetails = catalog.engineCatalog
     const stageRows = vehicle.stages
       .map(
         (stage) =>
-          `| ${stage.name} | ${stage.powerHp} hp | ${stage.torqueNm} Nm | ${pricing.formatQuote(pricing.resolveStageQuote(vehicle, stage), "en")} | ${stage.pricingTier ?? "none"} |`
+          `| ${stage.name} | ${formatEstimatePower(stage, "en")} | ${formatEstimateTorque(stage, "en")} | ${pricing.formatQuote(pricing.resolveStageQuote(vehicle, stage), "en")} | ${stage.pricingTier ?? "none"} |`
       )
       .join("\n");
     const compatibility = vehicle.options
@@ -1462,7 +1478,7 @@ const technicalVehicleDetails = catalog.engineCatalog
 | Source canonical ID | \`${vehicle.sourceCanonicalId ?? "missing"}\` |
 | Generation / platform | ${vehicle.generation ?? "MANUAL_REVIEW"} / ${vehicle.platform ?? "MANUAL_REVIEW"} |
 | Fuel / years | ${vehicle.fuel} / ${vehicle.yearRange} |
-| Stock output | ${vehicle.stockPowerHp} hp / ${vehicle.stockTorqueNm} Nm |
+| Stock output | ${vehicle.stockPowerHp} hp / ${formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, "en")} |
 | Current ECU label | ${vehicle.ecuType} |
 | Current gearbox label | ${vehicle.gearbox ?? "MANUAL_REVIEW"} |
 | Engine code status | ${statusLabel(vehicle.engineIdentity?.status)}${vehicle.engineIdentity?.engineCodes?.length ? ` (${vehicle.engineIdentity.engineCodes.join(", ")})` : ""} |
@@ -1522,7 +1538,8 @@ ${technicalVehicleDetails}
 ${Object.entries(productionTechnicalBaseline)
   .map(([key, expected]) => {
     const current = currentTechnicalHashes[key as keyof typeof currentTechnicalHashes];
-    return `| ${key} | \`${expected}\` | \`${current}\` | ${current === expected ? "PASS" : "FAIL"} |`;
+    const approved = key === "publicTechnical" ? approvedP0PublicTechnicalHash : expected;
+    return `| ${key} | \`${expected}\` | \`${current}\` | ${current === approved ? key === "publicTechnical" ? "PASS (approved P0 correction)" : "PASS" : "FAIL"} |`;
   })
   .join("\n")}
 
