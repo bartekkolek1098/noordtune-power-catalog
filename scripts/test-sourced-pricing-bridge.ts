@@ -90,6 +90,20 @@ const concrete: [SourcedTuningProfile, EstimateMatchInput, string, number, numbe
 for (const [source, input, pricingId, familyCents, vehicleCents] of concrete) {
   const result = resolveRdwTuningEstimate(input);
   const reference = tuningReferenceProfiles.find(profile => profile.id === pricingId);
+  const corrected = engineCatalog.find(vehicle => vehicle.id === pricingId && vehicle.configurationNote);
+  if (corrected) {
+    equal(result.profile?.id, corrected.id, pricingId + " reviewed truth correction takes precedence");
+    equal(result.profile?.vehicleId, corrected.id, pricingId + " corrected public scope retains its route");
+    equal(result.profile?.stages[0].powerRangeHp, [220,225], pricingId + " corrected conditional power");
+    equal(result.profile?.stages[0].torqueRangeNm, [440,460], pricingId + " corrected conditional torque");
+    equal(result.profile?.ecuSupport?.basis, "documented-application", pricingId + " application is not fitted ECU identification");
+    for (const [scope, cents] of [["family",familyCents],["vehicle",vehicleCents]] as const) {
+      const quote = resolveStageQuote(result.profile, result.profile?.stages[0], {scope});
+      equal(quote.kind === "from" ? quote.amountCents : undefined, cents, pricingId + " deliberate pricing retained");
+    }
+    equal(resolveStageQuote(result.profile,result.profile?.stages[1]).kind,"on-request",pricingId + " unconfirmed Stage 2 quoted on request");
+    continue;
+  }
   equal(result.profile?.id, reference?.id ?? source.id, pricingId + " technical identity follows per-stage precedence");
   equal(result.profile?.pricingProfileId, pricingId, pricingId + " runtime bridge");
   equal(result.profile?.provenance, reference ? "tuner-reference" : "sourced-profile", pricingId + " provenance follows selected technical layer");

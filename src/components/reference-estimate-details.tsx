@@ -65,6 +65,7 @@ function ReferenceSetup({profile, locale}: ReferenceDetailsProps) {
             {!stage.customHardware && stage.torqueNm !== undefined ? ` · ${formatEstimateTorque(stage, locale)}` : ""}
           </p>
           <p className="mt-2 text-xs leading-5 text-muted-foreground">{presentation.summary}</p>
+          {profile.configurationNote ? <p className="mt-2 text-xs leading-5 text-muted-foreground">{profile.configurationNote[locale]}</p> : null}
           {isConnect ? <p className="mt-2 text-xs leading-5 text-muted-foreground" data-testid="manual-connect-condition">{text.connectCondition}</p> : null}
           {presentation.limitations.map(note => <p className="mt-2 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>)}
           <Button className="mt-4 h-auto min-h-11 max-w-full whitespace-normal rounded-[3px] text-center" onClick={() => setStageIndex(0)} type="button" variant="outline">

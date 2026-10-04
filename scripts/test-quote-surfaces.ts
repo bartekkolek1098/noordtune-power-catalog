@@ -41,7 +41,7 @@ for (const vehicle of catalog.engineCatalog) {
   equal(Object.hasOwn(quoteOfferFields(displayQuote, "nl"), "price"), false, `${vehicle.id}: custom Stage Offer has no unscoped amount`);
   equal(profile.stages[2].powerHp, vehicle.stages[2].powerHp, `${vehicle.id}: presentation does not mutate retained source data`);
   const quote = pricing.resolveStageQuote(vehicle, stage);
-  equal(quote.kind, "from", `${vehicle.id}: explicit family policy restores numeric Stage 1`);
+  equal(quote.kind, stage.quoteRequired ? "on-request" : "from", `${vehicle.id}: quote follows the reviewed technical scope`);
   equal(pricing.resolveStageQuote(profile, stage, {estimateApplicable: true, scope: "family", access: {status: "unknown", reasonCode: "test-unknown-ecu"}}), quote, `${vehicle.id}: unknown ECU does not erase commercial estimate`);
   const canonical = catalog.vehicleDatabase.find(
     (candidate) => candidate.id === (vehicle.sourceCanonicalId ?? vehicle.id)
@@ -50,7 +50,7 @@ for (const vehicle of catalog.engineCatalog) {
   const selector = catalog.getVehicleSelectorItems({
     brand: canonical.brand,
     model: canonical.model,
-    year: canonical.years[0]
+    year: vehicle.configurationNote ? vehicle.years[0] : canonical.years[0]
   }).find((candidate) => candidate.id === vehicle.id);
   equal(selector?.quote, quote, `${vehicle.id}: selector matches vehicle quote`);
   const quickSearch = catalog.searchVehicleSelectorItems(
@@ -119,7 +119,7 @@ assert.ok(message.includes("Prijs: op aanvraag na ECU- en voertuigcontrole"));
 assert.ok(message.includes("Stage 2"));
 for (const option of selectedOptions) assert.ok(message.includes(option.name));
 equal(new URL(whatsappHref({locale: "nl", message})).searchParams.get("text"), message, "WhatsApp encoding retains the same quote and selections");
-const numericBase = pricing.resolveStageQuote(focus, focus.stages[0]);
+const numericBase = pricing.resolveStageQuote(bmw, bmw.stages[0]);
 assert.equal(numericBase.kind, "from");
 const numericTotal = pricing.addQuoteOptions(numericBase, optionsCents);
 assert.equal(numericTotal.kind, "from");

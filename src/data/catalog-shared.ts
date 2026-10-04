@@ -23,6 +23,8 @@ export type EngineIdentity = {
 };
 
 export type EcuSupport = {
+  /** Application coverage is not identification of the fitted unit. */
+  basis?: "documented-application" | "unconfirmed";
   family?: string;
   variants?: string[];
   status: TechnicalIdentityStatus;
@@ -30,6 +32,7 @@ export type EcuSupport = {
 };
 
 export type TransmissionSupport = {
+  basis?: "documented-application" | "unconfirmed";
   gearboxFamily?: string;
   variants?: string[];
   status: TechnicalIdentityStatus;
@@ -37,6 +40,7 @@ export type TransmissionSupport = {
 };
 
 export type TcuSupport = {
+  basis?: "documented-application" | "unconfirmed";
   family?: string;
   variants?: string[];
   status: TechnicalIdentityStatus;
@@ -75,10 +79,22 @@ export type RecommendedPackageDefinition = {
 
 export type StageDefinition = {
   customerScope?: StageScope;
+  /** Curated customer copy; internal source reasons never enter this field. */
+  customerNote?: {nl: string; en: string; pl: string};
+  /** Source model-year scope; registration outside it cannot establish applicability. */
+  referenceYearRange?: [number, number];
   comparison?: StageComparison;
   name: StageName;
-  powerHp: number;
-  torqueNm: number;
+  powerHp?: number;
+  torqueNm?: number;
+  powerRangeHp?: [number, number];
+  torqueRangeNm?: [number, number];
+  approximate?: boolean;
+  provenance?: "reviewed" | "reference" | "canonical-estimated" | "generic-indicative" | "multi-source" | "single-source";
+  customHardware?: boolean;
+  hardwareScopeApproved?: boolean;
+  /** No priced package is assigned until this technical scope is confirmed. */
+  quoteRequired?: boolean;
   price: number;
   sourcePrice?: number;
   quote?: QuoteResolution;
@@ -118,7 +134,9 @@ export type EngineVariant = {
   yearRange: string;
   years: number[];
   stockPowerHp: number;
-  stockTorqueNm: number;
+  stockTorqueNm?: number;
+  configurationNote?: {nl: string; en: string; pl: string};
+  outputReferences?: {title: string; url: string; scope: string; retrievedAt: string; sourceType: "manufacturer" | "tuner"; retrievalMethod: "page" | "search-index"}[];
   ecuType: string;
   gearbox?: "DSG" | "ZF" | "TCU" | "Manual";
   generation?: string;

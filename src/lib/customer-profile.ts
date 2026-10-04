@@ -12,8 +12,10 @@ export function customerProfile(profile: TuningEstimateProfile): TuningEstimateP
 }
 
 export function customerVehicle(vehicle: EngineVariant): EngineVariant {
-  const stages = customerProfile(getCatalogEstimateProfile(vehicle)).stages;
-  return {...vehicle, stages: vehicle.stages.map((stage, i) => ({...stage, ...stages[i], powerHp: stage.powerHp, torqueNm: stage.torqueNm, price: stage.price})),
+  const profile = customerProfile(getCatalogEstimateProfile(vehicle));
+  return {...vehicle, stages: vehicle.stages.map((stage, i) => ({...stage, ...profile.stages[i], price: stage.price})),
+    outputReferences: vehicle.outputReferences?.map(source => ({...source, title: new URL(source.url).hostname, scope: ""})),
+    dataNotes: undefined, technicalNotes: undefined,
     technicalEvidence: undefined,
     engineIdentity: vehicle.engineIdentity ? {...vehicle.engineIdentity, notes: undefined} : undefined,
     ecuSupport: vehicle.ecuSupport ? {...vehicle.ecuSupport, notes: undefined} : undefined,

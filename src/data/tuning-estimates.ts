@@ -2,7 +2,7 @@ import type {EngineVariant} from "./catalog-shared.ts";
 import {serviceOptions} from "./catalog-shared.ts";
 import {assessCatalogMatch, type CatalogMatchInput} from "./catalog-matching.ts";
 import {
-  getCatalogEstimateProfile, unavailableEstimateStage,
+  getCatalogEstimateProfileForRegistration, unavailableEstimateStage,
   type EstimateResolution, type EstimateSourceReference, type TuningEstimateProfile
 } from "./tuning-estimates-shared.ts";
 
@@ -117,7 +117,7 @@ export function resolveTuningEstimate(input: EstimateMatchInput, publicVehicles:
   const rejected: string[] = [];
   const profiles = [
     ...tuningReferenceProfiles.map((profile) => ({profile, vehicle: referenceCandidate(profile), displacementCc: referenceDisplacements[profile.id]})),
-    ...publicVehicles.map((vehicle) => ({profile: getCatalogEstimateProfile(vehicle), vehicle, displacementCc: publicDisplacementScopes[vehicle.id]}))
+    ...publicVehicles.map((vehicle) => ({profile: getCatalogEstimateProfileForRegistration(vehicle, input.firstRegistrationYear ?? (Number(input.firstRegistrationDate?.slice(0, 4)) || undefined)), vehicle, displacementCc: publicDisplacementScopes[vehicle.id]}))
   ];
   for (const entry of profiles) {
     const assessment = assessCatalogMatch(input, [{variant: entry.vehicle, applicability: "reviewed", displacementCc: entry.displacementCc}]);
@@ -138,6 +138,7 @@ export function resolveTuningEstimate(input: EstimateMatchInput, publicVehicles:
       if (!identifiedTdci) reasons.push("CONNECT_ENGINE_GENERATION_REVIEW" as never);
     }
     if (entry.profile.id === "bmw-1-series-f20-f21-118i") reasons.push("CATALOG_DISPLACEMENT_UNRESOLVED");
+    if (entry.profile.configurationNote) reasons.push("PUBLIC_CONFIGURATION_CONFIRMATION" as never);
     eligible.push({profile: entry.profile, reasons});
   }
   // Collapse repeated source/year copies only when identity, generation, stock and tuned
@@ -145,7 +146,7 @@ export function resolveTuningEstimate(input: EstimateMatchInput, publicVehicles:
   const unique = new Map<string, typeof eligible[number]>();
   for (const item of eligible) {
     const p = item.profile;
-    const key = JSON.stringify([p.brand.toLowerCase(), p.model.toLowerCase(), p.engine.toLowerCase(), p.generation, p.fuel, p.stockPowerHp, p.stockTorqueNm, p.gearbox, p.stages.map((s) => [s.name, s.powerHp, s.torqueNm])]);
+    const key = JSON.stringify([p.brand.toLowerCase(), p.model.toLowerCase(), p.engine.toLowerCase(), p.generation, p.fuel, p.stockPowerHp, p.stockTorqueNm, p.gearbox, p.stages.map((s) => [s.name, s.powerHp, s.torqueNm, s.powerRangeHp, s.torqueRangeNm, s.customHardware, s.quoteRequired])]);
     if (!unique.has(key)) unique.set(key, item);
   }
   if (unique.size !== 1) return {status: "unavailable", reasonCodes: unique.size ? ["MULTIPLE_ESTIMATE_CONFIGURATIONS"] : [...new Set(["NO_APPLICABLE_TUNING_PROFILE", ...rejected])].filter((reason) => reason !== "NO_MODEL_FAMILY")};

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import {formatEstimatePower, formatEstimateTorque} from "../src/lib/estimate-copy.ts";
 import {mkdirSync, writeFileSync} from "node:fs";
 import {createRequire} from "node:module";
 import {dirname, resolve} from "node:path";
@@ -69,7 +70,7 @@ const fixtures: {id: string; vehicle: RdwVehicleRow; fuel: RdwFuelRow[]; expecte
   {id: "SYN102", vehicle: {merk: "FORD", handelsbenaming: "TRANSIT CUSTOM", cilinderinhoud: "1995", datum_eerste_toelating_dt: "2019-04-29T00:00:00.000", type: "FCC", variant: "YLF61ABX"}, fuel: [{brandstof_omschrijving: "Diesel", nettomaximumvermogen: "77"}], expected: "conflict"},
   {id: "SYN103", vehicle: {merk: "FORD", handelsbenaming: "TRANSIT CONNECT", cilinderinhoud: "1499", datum_eerste_toelating_dt: "2018-10-17T00:00:00.000", type: "PU2", variant: "Z2GA1BFX"}, fuel: [{brandstof_omschrijving: "Diesel", nettomaximumvermogen: "73.5"}], expected: "no-match"},
   {id: "SYN104", vehicle: {merk: "BMW", handelsbenaming: "320D", cilinderinhoud: "1995", datum_eerste_toelating: "20170615"}, fuel: [{brandstof_omschrijving: "Diesel", nettomaximumvermogen: "140"}], expected: "catalog-match"},
-  {id: "SYN105", vehicle: {merk: "VOLKSWAGEN", handelsbenaming: "GOLF GTI", cilinderinhoud: "1984", datum_eerste_toelating: "20170615"}, fuel: [{brandstof_omschrijving: "Benzine", nettomaximumvermogen: "169"}], expected: "catalog-match"},
+  {id: "SYN105", vehicle: {merk: "VOLKSWAGEN", handelsbenaming: "GOLF GTI", cilinderinhoud: "1984", datum_eerste_toelating: "20170615"}, fuel: [{brandstof_omschrijving: "Benzine", nettomaximumvermogen: "169"}], expected: "ambiguous"},
   {id: "SYN106", vehicle: {merk: "VOLKSWAGEN", handelsbenaming: "GOLF R", cilinderinhoud: "1984", datum_eerste_toelating: "20170615"}, fuel: [{brandstof_omschrijving: "Benzine", nettomaximumvermogen: "221"}], expected: "ambiguous"},
   {id: "SYN107", vehicle: {merk: "FORD", handelsbenaming: "FOCUS ST", cilinderinhoud: "1999", datum_eerste_toelating: "20150615"}, fuel: [{brandstof_omschrijving: "Benzine", nettomaximumvermogen: "184"}], expected: "catalog-match"}
 ];
@@ -80,7 +81,7 @@ const quoteResults = normalized.map(({fixture, result}) => {
   const profile = result.tuningEstimate.profile;
   const identity = profile ?? {make: vehicle.make, model: vehicle.model};
   const access = assessVehicleAccess(identity);
-  const baseQuote = resolveStageQuote(identity, {name: "Stage 1"}, {estimateApplicable: Boolean(profile), scope: "vehicle", access});
+  const baseQuote = resolveStageQuote(identity, profile?.stages[0], {estimateApplicable: Boolean(profile), scope: "vehicle", access});
   const quote = addQuoteOptions(baseQuote, 14900);
   const message = createLookupQuoteMessage({
     locale: "nl", plate: fixture.id, vehicle: `${vehicle.make} ${vehicle.model}`, fuel: vehicle.fuel,
@@ -103,15 +104,20 @@ for (const {fixture, result, quote, message} of quoteResults) test(`normalized R
   assert.ok(message.includes(`${fixture.fuel[0].nettomaximumvermogen} kW`));
   assert.ok(message.includes(`(${result.vehicle.registration.firstAdmissionYear})`));
   assert.ok(message.includes("Extra opties: Selected service"));
-  assert.ok(result.tuningEstimate.profile?.stages[0].powerHp, "Compatible RDW fixture must retain a numeric Stage 1 estimate");
-  assert.ok(result.tuningEstimate.profile?.stages[0].torqueNm);
-  assert.equal(quote.kind, "from", "An explicitly scoped compatible fixture keeps an indicative commercial quote");
   const stage = result.tuningEstimate.profile!.stages[0];
-  const displayedPower = stage.powerRangeHp ? stage.powerRangeHp.join("–") : `${stage.approximate ? "≈" : ""}${stage.powerHp}`;
-  assert.ok(message.includes(`Indicatieve uitkomst: ${displayedPower} pk`));
-  if (stage.torqueRangeNm) assert.ok(message.includes(`${stage.torqueRangeNm.join("–")} Nm (schatting)`));
+  if (stage.quoteRequired) {
+    assert.equal(stage.powerHp,undefined);
+    assert.equal(stage.torqueNm,undefined);
+    assert.equal(quote.kind,"on-request");
+  } else {
+    assert.ok(stage.powerHp || stage.powerRangeHp,"Compatible reference retains a point or conditional range");
+    assert.ok(stage.torqueNm || stage.torqueRangeNm);
+    assert.equal(quote.kind,"from");
+  }
+  assert.ok(message.includes(`Indicatieve uitkomst: ${formatEstimatePower(stage, "nl")}`));
+  assert.ok(message.includes(formatEstimateTorque(stage, "nl")));
   assert.doesNotMatch(message, /configuratieconflict/i);
-  assert.ok(message.includes(formatQuote(quote, "nl")));
+  assert.ok(quote.kind === "on-request" ? message.includes("Prijs: op aanvraag") : message.includes(formatQuote(quote, "nl")));
 });
 test("BMW conditional unlock package is numeric and selected options are added exactly once", () => {
   const result = quoteResults[0];

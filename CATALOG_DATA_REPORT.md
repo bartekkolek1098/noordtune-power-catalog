@@ -63,15 +63,15 @@ None.
   - volvo-xc60-d5
   - ford-focus-st-20-ecoboost
   - bmw-1-series-f20-f21-118i
-- **MISSING_PUBLIC_ENGINE_CODE** (20): No engine code is stored; do not claim one until manually verified.
+- **MISSING_PUBLIC_ENGINE_CODE** (22): No engine code is stored; do not claim one until manually verified.
+  - vw-golf-20-tsi-ea888
   - audi-a3-20-tdi
-  - volvo-xc60-d5
+  - mercedes-a45-amg-m133
+  - bmw-x3-e83-20d
   - ford-focus-st-20-ecoboost
   - bmw-1-series-f20-f21-118i
   - bmw-1-series-f20-f21-118d
   - bmw-1-series-f20-f21-120d
-  - bmw-3-series-f30-f31-318d
-  - bmw-3-series-f30-f31-330d
 - **MISSING_PUBLIC_TCU_TYPE** (23): Automatic gearbox is listed but the exact TCU type is not stored.
   - vw-golf-20-tsi-ea888
   - bmw-320d-b47
@@ -108,23 +108,22 @@ None.
   - volvo-xc60-d5
   - ford-focus-st-20-ecoboost
   - bmw-1-series-f20-f21-118i
-- **BROAD_ECU_FAMILY_ONLY** (7): Broad ECU-family labels are not exact ECU identification.
-  - vw-golf-20-tsi-ea888: Bosch MED17 / MG1
-  - bmw-320d-b47: Bosch EDC17 / MD1
+- **BROAD_ECU_FAMILY_ONLY** (6): Broad ECU-family labels are not exact ECU identification.
+  - vw-golf-20-tsi-ea888: Continental Simos 18.x
+  - bmw-320d-b47: Bosch EDC17
   - audi-a3-20-tdi: Bosch EDC17
-  - mercedes-a45-amg-m133: Bosch MED17
-  - bmw-x3-e83-20d: Bosch EDC16
-  - volvo-xc60-d5: Bosch EDC17
-  - ford-focus-st-20-ecoboost: Bosch MED17
-- **CURATED_ENGINE_CODE_REVIEW** (20): No supported engine-family code is stored; manual identification remains required.
+  - bmw-1-series-f20-f21-118d: Bosch EDC17
+  - volkswagen-golf-7-r-20-tsi: Continental Simos 18.x
+  - seat-leon-cupra-5f-20-tsi-300: Continental Simos 18.x
+- **CURATED_ENGINE_CODE_REVIEW** (22): No supported engine-family code is stored; manual identification remains required.
+  - vw-golf-20-tsi-ea888
   - audi-a3-20-tdi
-  - volvo-xc60-d5
+  - mercedes-a45-amg-m133
+  - bmw-x3-e83-20d
   - ford-focus-st-20-ecoboost
   - bmw-1-series-f20-f21-118i
   - bmw-1-series-f20-f21-118d
   - bmw-1-series-f20-f21-120d
-  - bmw-3-series-f30-f31-318d
-  - bmw-3-series-f30-f31-330d
 - **CURATED_TCU_UNKNOWN** (23): Automatic transmission is listed without an evidence-backed exact TCU variant.
   - vw-golf-20-tsi-ea888
   - bmw-320d-b47
@@ -134,15 +133,15 @@ None.
   - volvo-xc60-d5
   - bmw-1-series-f20-f21-118i
   - bmw-1-series-f20-f21-118d
-- **CURATED_TRANSMISSION_AMBIGUOUS** (20): Transmission identity is estimated or requires manual review.
+- **CURATED_TRANSMISSION_AMBIGUOUS** (23): Transmission identity is estimated or requires manual review.
+  - vw-golf-20-tsi-ea888
+  - bmw-320d-b47
   - mercedes-a45-amg-m133
+  - bmw-x3-e83-20d
   - volvo-xc60-d5
   - ford-focus-st-20-ecoboost
   - bmw-1-series-f20-f21-118i
   - bmw-1-series-f20-f21-118d
-  - bmw-1-series-f20-f21-120d
-  - bmw-3-series-f30-f31-318d
-  - bmw-3-series-f30-f31-330d
 - **MANUAL_REVIEW_SERVICE_COMPATIBILITY** (99): Service remains commercially visible only with explicit manual confirmation.
   - vw-golf-20-tsi-ea888: immo
   - vw-golf-20-tsi-ea888: launch

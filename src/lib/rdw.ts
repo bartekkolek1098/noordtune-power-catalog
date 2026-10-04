@@ -184,7 +184,7 @@ export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[],
   tuningEstimate.detailsAction = resolveDetailsAction(tuningEstimate.profile, engineCatalog);
   if (tuningEstimate.profile) tuningEstimate.profile = customerProfile({...tuningEstimate.profile, conditionCodes: [...new Set([...(tuningEstimate.profile.conditionCodes ?? []), ...tuningEstimate.reasonCodes])]});
   const quoteIdentity = tuningEstimate.profile ?? identityInput;
-  const tuningQuote = resolveStageQuote(quoteIdentity, {name: "Stage 1"}, {
+  const tuningQuote = resolveStageQuote(quoteIdentity, tuningEstimate.profile?.stages[0], {
     estimateApplicable: Boolean(tuningEstimate.profile), scope: "vehicle",
     access: assessVehicleAccess(quoteIdentity)
   });

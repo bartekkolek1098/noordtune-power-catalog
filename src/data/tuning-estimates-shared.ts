@@ -35,7 +35,7 @@ export type EstimateSourceReference = {
 /** A peak-value catalog illustration, never identification of an installed ECU or a dyno run. */
 export type TuningEstimateProfile = Pick<EngineVariant,
   "options" | "gearbox" | "serviceCompatibility" | "recommendedPackage" | "ecuSupport" | "ecuType"
-  | "transmissionSupport" | "tcuSupport" | "generation" | "version" | "yearRange"
+  | "transmissionSupport" | "tcuSupport" | "generation" | "version" | "yearRange" | "configurationNote"
 > & {
   id: string;
   vehicleId?: string;
@@ -75,9 +75,22 @@ export type EstimateResolution = {
   };
 };
 
+/** A registration year can exclude a source model-year scope, never confirm it. */
+function scopeStageToRegistration(stage: EstimateStage, year?: number): EstimateStage {
+  const range = stage.referenceYearRange;
+  if (!range || (year !== undefined && year >= range[0] && year <= range[1])) return stage;
+  return {...stage, powerHp: undefined, torqueNm: undefined, powerRangeHp: undefined, torqueRangeNm: undefined,
+    approximate: false, provenance: "reviewed", quoteRequired: true, customHardware: false,
+    hardwareRequired: false, customerScope: {fuelRon: [], hardware: []},
+    customerNote: {
+      nl: `${stage.name}-referentie alleen voor modeljaar ${range[0]}–${range[1]}. De registratie bevestigt die uitvoering niet; toepasselijke waarden en prijs na voertuigidentificatie.`,
+      en: `${stage.name} reference only for model years ${range[0]}–${range[1]}. Registration does not confirm that configuration; applicable output and price follow vehicle identification.`,
+      pl: `Referencja ${stage.name} tylko dla roczników modelowych ${range[0]}–${range[1]}. Rejestracja nie potwierdza wersji; parametry i cena po identyfikacji auta.`
+    }};
+}
+
 /** Client-safe adapter; receives one selected vehicle, never imports the catalog. */
 export function getCatalogEstimateProfile(vehicle: EngineVariant): TuningEstimateProfile {
-  const is320iSource = vehicle.id === "bmw-3-series-g20-g21-320i";
   const is118iSource = vehicle.id === "bmw-1-series-f20-f21-118i";
   return {
     id: vehicle.id,
@@ -91,11 +104,15 @@ export function getCatalogEstimateProfile(vehicle: EngineVariant): TuningEstimat
     yearRange: vehicle.yearRange,
     stockPowerHp: vehicle.stockPowerHp,
     stockTorqueNm: vehicle.stockTorqueNm,
+    configurationNote: vehicle.configurationNote,
     stages: vehicle.stages.map(({name, powerHp, torqueNm, requirements, packageItems,
-      confidenceLevel, recommendedUse, hardwareRequired, tcuRecommended, logCheckRecommended, notes, customerScope, comparison}) => ({
+      confidenceLevel, recommendedUse, hardwareRequired, tcuRecommended, logCheckRecommended, notes, customerScope, comparison,
+      powerRangeHp, torqueRangeNm, provenance, approximate, customHardware, hardwareScopeApproved, quoteRequired, customerNote, referenceYearRange}) => ({
       name, powerHp, torqueNm, requirements, customerScope, comparison, packageItems: [...packageItems],
       confidenceLevel: confidenceLevel ?? "estimated", recommendedUse, hardwareRequired,
-      tcuRecommended, logCheckRecommended, notes: notes ? [...notes] : undefined
+      tcuRecommended, logCheckRecommended, notes: notes ? [...notes] : undefined,
+      powerRangeHp, torqueRangeNm, provenance, approximate, customHardware, hardwareScopeApproved, quoteRequired,
+      ...(customerNote ? {customerNote} : {}), ...(referenceYearRange ? {referenceYearRange} : {})
     })),
     options: [...vehicle.options],
     gearbox: vehicle.gearbox,
@@ -106,18 +123,11 @@ export function getCatalogEstimateProfile(vehicle: EngineVariant): TuningEstimat
     transmissionSupport: vehicle.transmissionSupport,
     tcuSupport: vehicle.tcuSupport,
     provenance: "existing-catalog",
-    sourceReferences: [{
+    sourceReferences: vehicle.outputReferences ?? [{
       title: "NoordTune existing public catalog",
       sourceType: "existing-catalog",
       scope: `${vehicle.brand} ${vehicle.model}, ${vehicle.engine}, ${vehicle.yearRange}; existing source peak values, including estimated/generated provenance. Source ${vehicle.sourceCanonicalId ?? vehicle.id}.`
-    }, ...(is320iSource ? [{
-      title: "BMW 3 Series Touring manufacturer specifications (2019)",
-      url: "https://www.press.bmwgroup.com/poland/article/attachment/T0297058PL/432766",
-      sourceType: "manufacturer" as const,
-      retrievedAt: "2026-09-15",
-      retrievalMethod: "search-index" as const,
-      scope: "G20/G21 320i 1998 cc / 184 hp manufacturer specification lists 300 Nm. Existing catalog stock torque 270 Nm is retained pending a separate source-data correction."
-    }] : []), ...(is118iSource ? [{
+    }, ...(is118iSource ? [{
       title: "BMW 118i engine transition in summer 2015",
       url: "https://www.press.bmwgroup.com/poland/article/detail/T0221323PL/zmiany-specyfikacyjne-w-modelach-bmw-w-lecie-2015?language=pl",
       sourceType: "manufacturer" as const,
@@ -134,15 +144,19 @@ export function getCatalogEstimateProfile(vehicle: EngineVariant): TuningEstimat
     }] : [])],
     conditions: [
       "Existing catalog estimates; exact engine/ECU, software, transmission, vehicle condition and applicable hardware require confirmation before work.",
-      ...(is320iSource ? ["The retained catalog stock torque is 270 Nm; the manufacturer lists 300 Nm for G20/G21 320i. Source torque and derived gains require review before a separate source correction."] : []),
       ...(is118iSource ? ["This 2016-source 118i estimate is scoped to 1499 cc. The earlier 1598 cc / 136 hp engine is not equivalent and requires its own tuning reference."] : [])
     ],
     conditionCodes: [
-      ...(is320iSource ? ["SOURCE_STOCK_TORQUE_DISCREPANCY"] : []),
       ...(is118iSource ? ["ENGINE_DISPLACEMENT_SCOPE_1499"] : [])
     ],
     verificationRequired: true
   };
+}
+
+/** Registration narrows applicability without changing the selected public-page reference. */
+export function getCatalogEstimateProfileForRegistration(vehicle: EngineVariant, year?: number): TuningEstimateProfile {
+  const profile = getCatalogEstimateProfile(vehicle);
+  return {...profile, stages: profile.stages.map(stage => scopeStageToRegistration(stage, year))};
 }
 
 export function unavailableEstimateStage(name: StageName): EstimateStage {

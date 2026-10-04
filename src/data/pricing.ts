@@ -298,6 +298,7 @@ export type QuoteVehicle = {
 type PublicPricingVehicle = QuoteVehicle & {id: string};
 type PublicPricingStage = {
   name: PublicStageName;
+  quoteRequired?: boolean;
   customHardware?: boolean;
   hardwareScopeApproved?: boolean;
   price?: number;
@@ -441,9 +442,10 @@ function applicableAccessEvidence(access: AccessAssessment) {
 }
 
 /** Independent commercial estimate. Callers pass a compatible profile, never a rejected candidate. */
-export function resolveStageQuote(vehicle: QuoteVehicle | null | undefined, stage: {name: PublicStageName; customHardware?: boolean; hardwareScopeApproved?: boolean} | undefined, context: QuoteContext = {}): QuoteResolution {
+export function resolveStageQuote(vehicle: QuoteVehicle | null | undefined, stage: {name: PublicStageName; customHardware?: boolean; hardwareScopeApproved?: boolean; quoteRequired?: boolean} | undefined, context: QuoteContext = {}): QuoteResolution {
   const request = (reasonCode: string): QuoteResolution => ({kind: "on-request", currency: "EUR", reasonCode});
   if (!stage) return request("stage-scope-unavailable");
+  if (stage.quoteRequired) return request("stage-configuration-unconfirmed");
   if (stage.customHardware) return request("custom-hardware-scope-unassigned");
   if (context.identityConflict) return request("incompatible-profile-identity");
   if (context.estimateApplicable === false) return request("applicable-commercial-profile-unavailable");

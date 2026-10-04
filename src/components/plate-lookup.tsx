@@ -354,6 +354,7 @@ export function PlateLookup({
                     </p>
                     <p className="mt-2 text-xs leading-5 text-muted-foreground">{presentation.summary}</p>
                     {presentation.limitations.map(note => <p className="mt-2 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>)}
+                    {profile.configurationNote ? <p className="mt-2 text-xs leading-5 text-muted-foreground">{profile.configurationNote[locale]}</p> : null}
                     {estimateLimitations({...profile, conditionCodes: profile.conditionCodes?.filter(code => !["NOORDTUNE_TARGET_REVIEW_REQUIRED", "SOURCE_CONSENSUS_CONFLICT", "GENERIC_TORQUE_UNAVAILABLE"].includes(code))}, locale).map(note => <p className="mt-2 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>)}
                     <Button asChild className="mt-4 h-auto min-h-11 max-w-full whitespace-normal rounded-[3px] text-center" variant="outline">
                       {detailsAction.kind === "vehicle-page" ? <a data-testid="rdw-details-action" href={sitePath("/" + locale + detailsAction.path)}>

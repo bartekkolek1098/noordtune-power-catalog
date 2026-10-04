@@ -7,7 +7,7 @@ import {serviceOptions, type EngineVariant, type StageName} from "../data/catalo
 import {assessCatalogMatch, nominalEngineDisplacements, nominalDisplacementMatches,
   normalizeCatalogFuel, registeredPowerToMetricHp} from "../data/catalog-matching.ts";
 import {tuningReferenceProfiles, type EstimateMatchInput} from "../data/tuning-estimates.ts";
-import {getCatalogEstimateProfile, type EstimateResolution, type EstimateStage,
+import {getCatalogEstimateProfile, getCatalogEstimateProfileForRegistration, type EstimateResolution, type EstimateStage,
   type TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
 import {genericTuningHeuristics, strongStage1ScenarioStockWidths, type GenericEstimateCategory} from "../data/tuning-heuristics.ts";
 import {connectStage1Comparison} from "../data/tuning-reference-research.ts";
@@ -71,6 +71,16 @@ export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: Run
 
 function resolveProductionEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources): EstimateResolution {
   if(hasUnsupportedSourcedPowertrain(input))return {status:"unavailable",coverageClass:"E",reasonCodes:["UNSUPPORTED_POWERTRAIN_ESTIMATE","MANUFACTURER_ELECTRIFIED_APPLICATION"]};
+  // The reviewed public correction is authoritative for its bounded scope.
+  // Historical provider/canonical fallbacks cannot reintroduce withheld outputs.
+  const corrected = (sources.publicVehicles ?? engineCatalog).filter(vehicle => vehicle.configurationNote
+    && vehicle.years.includes(firstAdmissionYear(input) ?? -1) && eligibleReasons(input, vehicle, 2));
+  if (corrected.length === 1) {
+    const profile = getCatalogEstimateProfileForRegistration(corrected[0], firstAdmissionYear(input));
+    return {status: "conditional", coverageClass: "C", resolutionLevel: 2,
+      reasonCodes: ["PUBLIC_CONFIGURATION_CONFIRMATION"],
+      profile: {...profile, coverageClass: "C", resolutionLevel: 2, sourceConfidence: "canonical-existing"}};
+  }
   const references = applicableReferences(input, sources.references ?? tuningReferenceProfiles);
   const retained = references.length ? resolveLegacyRdwTuningEstimate(input, {...sources, references, publicVehicles: [], canonicalVehicles: []}) : undefined;
   const retainedStages = retained?.profile?.stages.filter(stage => stage.provenance === "reference" && supportedStage(stage)) ?? [];
@@ -299,7 +309,7 @@ export function resolveSourcedPricingProfileId(input: EstimateMatchInput, source
 function technicalKey(profile: TuningEstimateProfile) {
   return JSON.stringify([makeKey(profile.brand), normalize(profile.model), normalize(profile.engine), profile.fuel,
     nominalEngineDisplacements(profile.engine), profile.stockPowerHp, profile.stockTorqueNm,
-    profile.stages.map((stage) => [stage.name, stage.powerHp, stage.torqueNm])]);
+    profile.stages.map((stage) => [stage.name, stage.powerHp, stage.torqueNm, stage.powerRangeHp, stage.torqueRangeNm, stage.customHardware, stage.quoteRequired])]);
 }
 function collapse(entries: Eligible[]) {
   const groups = new Map<string, Eligible>();
@@ -432,7 +442,7 @@ export function resolveLegacyRdwTuningEstimate(input: EstimateMatchInput, source
   const publicEntries = (sources.publicVehicles ?? engineCatalog).flatMap((vehicle): Eligible[] => {
     if (!familyCompatible(input, vehicle, primaryReference?.profile) || !generationCompatible(vehicle, primaryReference?.profile)) return [];
     const match = eligibleReasons(input, vehicle, 2);
-    return match ? [{profile: getCatalogEstimateProfile(vehicle), reasons: match, level: 2}] : [];
+    return match ? [{profile: getCatalogEstimateProfileForRegistration(vehicle, firstAdmissionYear(input)), reasons: match, level: 2}] : [];
   });
   const publicGroups = collapse(publicEntries);
   const primaryPublic = publicGroups.length === 1 ? publicGroups[0] : undefined;
@@ -465,6 +475,12 @@ export function resolveLegacyRdwTuningEstimate(input: EstimateMatchInput, source
   const stages: EstimateStage[] = [];
   const used = new Set<Eligible>();
   for (const name of stageNames) {
+    const reviewedScope = primaryPublic?.profile.stages.find(stage => stage.name === name);
+    if (primaryPublic?.profile.configurationNote && reviewedScope?.quoteRequired) {
+      stages.push({...reviewedScope, resolutionLevel: 2});
+      used.add(primaryPublic);
+      continue;
+    }
     const source = selected.find((entry) => entry.profile.stages.some((stage) => stage.name === name && supportedStage(stage)));
     if (source) {
       const stage = source.profile.stages.find((item) => item.name === name)!;

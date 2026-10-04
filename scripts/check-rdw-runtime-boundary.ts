@@ -5,6 +5,7 @@ import ts from "typescript";
 
 const sourceRoot = resolve("src");
 const canonical = resolve("src/data/catalog.ts");
+const publicTruth = resolve("src/data/public-catalog-truth.ts");
 const runtime = resolve("src/lib/rdw-tuning-estimate.ts");
 const sourceDataset = resolve("src/data/tuning-profiles");
 function sourceFiles(directory: string): string[] {
@@ -44,7 +45,7 @@ for (const client of clients) {
   function follow(file: string, chain: string[]) {
     if (visited.has(file)) return;
     visited.add(file);
-    if (file === canonical || file === runtime || file.startsWith(sourceDataset)) {leaks.push([...chain,file].map(path=>relative(process.cwd(),path)));return;}
+    if (file === canonical || file === publicTruth || file === runtime || file.startsWith(sourceDataset)) {leaks.push([...chain,file].map(path=>relative(process.cwd(),path)));return;}
     for (const dependency of graph.get(file) ?? []) follow(dependency,[...chain,file]);
   }
   follow(client,[]);
