@@ -15,12 +15,14 @@ const labels = {
   pl: {pending: "Do potwierdzenia", custom: "Indywidualnie / zależnie od osprzętu", request: "Wycena indywidualna", unit: "KM"}
 };
 const forbidden = /SOURCE_OWNER_REVIEW|HARDWARE_SCOPE_REVIEW|PUBLIC_CONFIGURATION_CONFIRMATION|factory-b47|shiftech-\d|source-voting|source consensus|no recursive Stage multipliers|Dokładne stockkoppel|undefined|NaN/;
-const report = {method: "Genuine local production pages and interactions; fixture identities only, no live registrations or outgoing messages. WhatsApp destinations inspected without navigation.", vehicles: [], stageRoutes: [], homes: [], screenshots: [], errors: []};
+const report = {method: "Genuine local production pages and interactions; fixture identities only, no live registrations or outgoing messages. WhatsApp destinations inspected without navigation.", vehicles: [], stageRoutes: [], options: [], homes: [], screenshots: [], errors: []};
 function rangeLabel(range, unit) { return range[0] === range[1] ? `≈${range[0]} ${unit}` : `${range[0]}–${range[1]} ${unit}`; }
 function expectedOutput(fixture, index, locale) {
-  if (index) return [labels[locale].custom];
+  if (index === 2 || (index === 1 && fixture.stage2Action === "CUSTOM_ON_REQUEST")) return [labels[locale].custom];
+  if (index === 1) return fixture.stage2 ? [`≈${fixture.stage2[0]} ${labels[locale].unit}`, `≈${fixture.stage2[1]} Nm`] : [labels[locale].pending];
   return fixture.stage1 ? [rangeLabel(fixture.stage1[0], labels[locale].unit), rangeLabel(fixture.stage1[1], "Nm")] : [labels[locale].pending];
 }
+function cents(fixture, index) { return index === 0 ? fixture.stage1Cents : index === 1 ? fixture.stage2Cents : null; }
 function hasAll(text, fragments, name) { for (const fragment of fragments) assert.ok(text.includes(fragment), `${name}: missing ${fragment}`); }
 function message(href) { return new URL(href).searchParams.get("text"); }
 async function selected(page, fixture, index, locale) {
@@ -33,19 +35,43 @@ async function selected(page, fixture, index, locale) {
   hasAll(quoteMessage, [stageName, ...expectedOutput(fixture, index, locale)], `${fixture.id}/${locale} WhatsApp ${stageName}`);
   assert.doesNotMatch(quoteMessage, forbidden);
   const topPrice = await aside.locator("div.text-4xl").innerText();
-  if (index || fixture.stage1Cents === null) {
+  const amount = cents(fixture,index);
+  if (amount === null) {
     assert.equal(topPrice, labels[locale].request, `${fixture.id}/${locale}/${stageName} request price`);
     assert.ok(!/\b(?:299|449|549|699|899)\b/.test(quoteMessage), "withheld quote must not restore a numeric base price");
   } else {
-    assert.ok(topPrice.includes(String(fixture.stage1Cents / 100)), "deliberate price retained");
+    assert.ok(topPrice.includes(String(amount / 100)), "deliberate price retained");
     assert.ok(quoteMessage.includes(topPrice), "WhatsApp agrees with visible price");
   }
   hasAll(await aside.innerText(), expectedOutput(fixture, index, locale), "visible calculator output");
+  const vehicle = engineCatalog.find(vehicle => vehicle.id === fixture.id);
+  const stageNote = vehicle.stages[index].customerNote?.[locale];
+  if (stageNote) {
+    hasAll(await section.innerText(),[stageNote],"Stage-specific reason/hardware in calculator");
+    hasAll(quoteMessage,[stageNote],"Stage-specific reason/hardware in WhatsApp draft");
+  }
   const sticky = section.getByTestId("vehicle-sticky-quote").locator("a");
   for (let i = 0; i < await sticky.count(); i++) assert.equal(await sticky.nth(i).getAttribute("href"), quote);
   const recommendation = section.getByTestId("vehicle-recommendation").locator("article").nth(index);
   await recommendation.locator("button").click();
   hasAll(message(await section.getByTestId("vehicle-recommendation-quote").getAttribute("href")), [stageName, ...expectedOutput(fixture, index, locale)], "recommendation selection agrees");
+  const option = aside.locator("label").filter({hasText: "Vmax /"});
+  if (await option.count()) {
+    await option.locator('input[type="checkbox"]').check();
+    const optionPrice = await aside.locator("div.text-4xl").innerText();
+    const optionMessage = message(await section.getByTestId("vehicle-recommendation-quote").getAttribute("href"));
+    hasAll(optionMessage,["Vmax /",...expectedOutput(fixture,index,locale)],"option quote agrees with selected Stage");
+    if (amount === null) {
+      assert.equal(optionPrice,labels[locale].request,"option cannot price unresolved Stage");
+      hasAll(optionMessage,[{nl:"Prijs: op aanvraag",en:"Price: on request",pl:"Cena: wycena indywidualna"}[locale]],"option draft remains on request");
+    } else {
+      assert.ok(optionPrice.includes(String(amount / 100 + 119)),"existing option adds once to existing software price");
+      hasAll(optionMessage,[optionPrice],"priced option draft agrees with displayed total");
+    }
+    await option.locator('input[type="checkbox"]').uncheck();
+    assert.equal(await aside.locator("div.text-4xl").innerText(),topPrice,"unchecking restores base quote");
+    report.options.push({locale,id:fixture.id,stage:stageName,option:"speed-limiter",checkedAndUnchecked:true});
+  }
 }
 function monitor(page, location) {
   page.on("pageerror", error => report.errors.push(`${location}: ${error.message}`));
@@ -67,15 +93,24 @@ function monitor(page, location) {
         assert.doesNotMatch(body, forbidden);
         hasAll(body, [vehicle.configurationNote[locale], technicalFamilyLabel(vehicle.ecuSupport, vehicle.ecuType, locale), `${fixture.stockHp} ${labels[locale].unit}`, ...expectedOutput(fixture, 0, locale)], "vehicle public facts");
         if (fixture.stockNm === null) assert.ok(body.includes(labels[locale].pending), "missing stock torque remains unknown");
+        if (fixture.stage2) {
+          // An isolated supported point must remain visible when adjacent Stage outputs are withheld.
+          await page.locator('[data-testid="catalog-power-chart"] .recharts-area-dots circle').nth(3).waitFor();
+          assert.equal(await page.locator('[data-testid="catalog-power-chart"] .recharts-area-dots circle').count(),4,"only stock and supported S2 point pairs plotted");
+        }
         for (let index = 0; index < 3; index++) await selected(page, fixture, index, locale);
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), "390px vehicle overflow");
         report.vehicles.push({locale, id: fixture.id, width: 390, stageInteractions: 3, recommendationInteractions: 3});
-        if (fixture.id === "bmw-320d-b47" || fixture.id === "bmw-3-series-g20-g21-320i") {
-          await page.locator("#tuning-calculator aside").locator("button").filter({hasText: "Stage 1"}).click();
-          await page.locator("#tuning-calculator").scrollIntoViewIfNeeded();
-          const screenshot = `${locale}-${fixture.id}-390.png`;
-          await page.screenshot({path: path.join(output, screenshot), fullPage: true});
-          report.screenshots.push(screenshot);
+        const visualProfiles = ["bmw-320d-b47","vw-golf-20-tsi-ea888","volkswagen-golf-7-r-20-tsi","ford-focus-st-20-ecoboost","volvo-xc60-d5","mercedes-a45-amg-m133"];
+        if ((locale === "nl" && visualProfiles.includes(fixture.id)) || fixture.id === "volvo-xc60-d5") {
+          await page.setViewportSize({width:1320,height:1000});
+          for (const stageName of ["Stage 1","Stage 2"]) {
+            await page.locator("#tuning-calculator aside").locator("button").filter({hasText: stageName}).click();
+            const screenshot = `${locale}-${fixture.id}-${stageName.replace(" ","-")}-1320.png`;
+            await page.locator("#tuning-calculator").screenshot({path: path.join(output, screenshot)});
+            report.screenshots.push(screenshot);
+          }
+          await page.setViewportSize({width:390,height:900});
         }
         for (const [index, name] of ["Stage 1", "Stage 2", "Stage 3+"].entries()) {
           const slug = fixture.slugs;
@@ -87,8 +122,8 @@ function monitor(page, location) {
           const jsonLd = await page.locator('script[type="application/ld+json"]').evaluateAll(nodes => nodes.map(node => JSON.parse(node.textContent)));
           const service = jsonLd.find(item => item["@type"] === "Vehicle");
           assert.ok(service?.offers, "Stage structured Offer");
-          if (index || fixture.stage1Cents === null) assert.equal(service.offers.price, undefined, "on-request Offer omits price");
-          else assert.equal(service.offers.price, (fixture.stage1Cents / 100).toFixed(2));
+          if (cents(fixture,index) === null) assert.equal(service.offers.price, undefined, "on-request Offer omits price");
+          else assert.equal(service.offers.price, (cents(fixture,index) / 100).toFixed(2));
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), "390px Stage overflow");
           assert.doesNotMatch(await page.locator("main").innerText(), forbidden);
           report.stageRoutes.push({path: stagePath, initialSelection: name});

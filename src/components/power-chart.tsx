@@ -74,6 +74,8 @@ export function PowerChart({
             strokeWidth={3}
             fill="url(#power)"
             type="monotone"
+            connectNulls={false}
+            dot={data.some(point => Array.isArray(point.pk)) ? false : {r: 3}}
           />
           <Area
             dataKey="nm"
@@ -82,6 +84,8 @@ export function PowerChart({
             strokeWidth={2}
             fill="url(#torque)"
             type="monotone"
+            connectNulls={false}
+            dot={data.some(point => Array.isArray(point.nm)) ? false : {r: 3}}
           />
         </AreaChart>
       </ResponsiveContainer>

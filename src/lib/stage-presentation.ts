@@ -1,7 +1,7 @@
 import type {EstimateStage, TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
 import type {Locale} from "../i18n/routing.ts";
 
-export type HardwarePart = "downpipe" | "sport-catalyst" | "intercooler" | "intake" | "spark-plugs" | "turbo" | "b58-turbo" | "fuel-pump" | "fuel-system" | "cooling" | "exhaust";
+export type HardwarePart = "downpipe" | "sport-catalyst" | "intercooler" | "intake" | "spark-plugs" | "turbo" | "b58-turbo" | "fuel-pump" | "fuel-system" | "cooling" | "exhaust" | "rear-exhaust";
 export type StageScope = {
   fuelRon: number[];
   hardware: {part: HardwarePart; requirement: "required" | "recommended" | "check"}[];
@@ -89,7 +89,7 @@ const copy = {
     dsg: "De bron beperkt DSG7 tot 320 Nm; de gemonteerde versnellingsbak moet worden bevestigd.", automatic: "Versnellingsbaksoftware aanbevolen bij een automaat.",
     lower: "De bron vermeldt 165–170 pk op RON 95; hogere waarden vragen brandstof met een hoger octaangetal.",
     fuel: "Brandstof voor deze bronconfiguratie", required: "Vereist", recommended: "Aanbevolen", check: "Te controleren",
-    parts: {downpipe:"Downpipe", "sport-catalyst":"Sportkatalysator", intercooler:"Intercooler", intake:"Inlaat", "spark-plugs":"Bougies", turbo:"Turbo-upgrade", "b58-turbo":"B58 turbo-upgrade", "fuel-pump":"B58TU hogedrukbrandstofpomp", "fuel-system":"Brandstofsysteem", cooling:"Koeling", exhaust:"Uitlaatflow"}
+    parts: {"rear-exhaust":"Achterste uitlaatsysteem", downpipe:"Downpipe", "sport-catalyst":"Sportkatalysator", intercooler:"Intercooler", intake:"Inlaat", "spark-plugs":"Bougies", turbo:"Turbo-upgrade", "b58-turbo":"B58 turbo-upgrade", "fuel-pump":"B58TU hogedrukbrandstofpomp", "fuel-system":"Brandstofsysteem", cooling:"Koeling", exhaust:"Uitlaatflow"}
   },
   en: {
     heading: "Details of this Stage", general: "General estimate, not a measurement or a confirmed model variant. The exact configuration is checked before work.",
@@ -105,7 +105,7 @@ const copy = {
     dsg: "The source limits DSG7 to 320 Nm; the installed transmission must be confirmed.", automatic: "Transmission software recommended for automatic cars.",
     lower: "The source lists 165–170 hp on RON 95; higher figures need higher-octane fuel.",
     fuel: "Fuel for this source configuration", required: "Required", recommended: "Recommended", check: "To check",
-    parts: {downpipe:"Downpipe", "sport-catalyst":"Sport catalyst", intercooler:"Intercooler", intake:"Intake", "spark-plugs":"Spark plugs", turbo:"Turbo upgrade", "b58-turbo":"Upgraded B58 turbo", "fuel-pump":"B58TU high-pressure fuel pump", "fuel-system":"Fuel system", cooling:"Cooling", exhaust:"Exhaust flow"}
+    parts: {"rear-exhaust":"Rear exhaust system", downpipe:"Downpipe", "sport-catalyst":"Sport catalyst", intercooler:"Intercooler", intake:"Intake", "spark-plugs":"Spark plugs", turbo:"Turbo upgrade", "b58-turbo":"Upgraded B58 turbo", "fuel-pump":"B58TU high-pressure fuel pump", "fuel-system":"Fuel system", cooling:"Cooling", exhaust:"Exhaust flow"}
   },
   pl: {
     heading: "Szczegóły tego Stage", general: "Ogólna estymacja, nie pomiar ani wynik dla potwierdzonej wersji silnika. Dokładną konfigurację sprawdzimy przed realizacją.",
@@ -121,7 +121,7 @@ const copy = {
     dsg: "Źródło ogranicza DSG7 do 320 Nm; trzeba potwierdzić zamontowaną skrzynię biegów.", automatic: "Zalecane oprogramowanie skrzyni w autach z automatem.",
     lower: "Źródło podaje 165–170 KM na RON 95; wyższe wartości wymagają paliwa o wyższej liczbie oktanowej.",
     fuel: "Paliwo dla tej konfiguracji źródłowej", required: "Wymagane", recommended: "Zalecane", check: "Do sprawdzenia",
-    parts: {downpipe:"Downpipe", "sport-catalyst":"Katalizator sportowy", intercooler:"Intercooler", intake:"Dolot", "spark-plugs":"Świece", turbo:"Modyfikacja turbosprężarki", "b58-turbo":"Zmodyfikowana turbosprężarka B58", "fuel-pump":"Wysokociśnieniowa pompa paliwa B58TU", "fuel-system":"Układ paliwowy", cooling:"Chłodzenie", exhaust:"Przepływ spalin"}
+    parts: {"rear-exhaust":"Tylny układ wydechowy", downpipe:"Downpipe", "sport-catalyst":"Katalizator sportowy", intercooler:"Intercooler", intake:"Dolot", "spark-plugs":"Świece", turbo:"Modyfikacja turbosprężarki", "b58-turbo":"Zmodyfikowana turbosprężarka B58", "fuel-pump":"Wysokociśnieniowa pompa paliwa B58TU", "fuel-system":"Układ paliwowy", cooling:"Chłodzenie", exhaust:"Przepływ spalin"}
   }
 } as const;
 
@@ -130,7 +130,7 @@ export function customerStagePresentation(stage: EstimateStage, locale: Locale, 
   const comparison = stage.comparison ?? compareStages(profile?.stages.find(s => s.name === "Stage 1"), stage);
   const generic = stage.provenance === "generic-indicative";
   const category = stage.customHardware ? "custom" : generic ? "general" : "indicative";
-  const requirements = [stage.customHardware ? t.custom : stage.name === "Stage 1" ? t.software : t.hardware,
+  const requirements = [...(stage.customerNote ? [stage.customerNote[locale]] : [stage.customHardware ? t.custom : stage.name === "Stage 1" ? t.software : t.hardware]),
     ...(scope.fuelRon.length ? [`${t.fuel}: ${scope.fuelRon.map(n => `RON ${n}`).join(" / ")}.`] : []),
     ...scope.hardware.map(h => `${t[h.requirement]}: ${t.parts[h.part]}.`),
     ...(scope.transmission ? [scope.transmission === "dsg7-320" ? t.dsg : t.automatic] : []),

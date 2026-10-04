@@ -1282,7 +1282,7 @@ const previousPublicCommercialHashes = {
 // Explicitly authorized public technical correction; canonical data, routes and services
 // retain the original release hashes. test-catalog-truth-p0 additionally freezes all
 // 12 unrelated public records and checks every corrected value/withheld output.
-const approvedP0PublicTechnicalHash = "a549fa22f49202684defaaef9b932563fcccf4a37e2a97fa6e8595d07d901d35";
+const approvedP0PublicTechnicalHash = "c73bc01aea52a7aa060c17b3b0db77d03b27e9eb3330eec868577e439b4b030a";
 
 const currentTechnicalHashes = {
   canonicalFull: semanticHash(catalog.vehicleDatabase),

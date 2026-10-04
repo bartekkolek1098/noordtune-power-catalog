@@ -79,6 +79,10 @@ export type RecommendedPackageDefinition = {
 
 export type StageDefinition = {
   customerScope?: StageScope;
+  /** Curated customer copy; internal source reasons never enter this field. */
+  customerNote?: {nl: string; en: string; pl: string};
+  /** Source model-year scope; registration outside it cannot establish applicability. */
+  referenceYearRange?: [number, number];
   comparison?: StageComparison;
   name: StageName;
   powerHp?: number;

@@ -11,7 +11,7 @@ Historical Pricing V2 tier metadata and canonical source prices remain unchanged
 | Audi A3 2.0 TDI | EUR 299 | EUR 449 | stage1-standard | EUR 449 | EUR 549 | stage2-standard | EUR 699 | EUR 849 | stage3-standard | CONDITIONAL | EUR 249 |
 | Mercedes-Benz A 45 AMG | EUR 399 | EUR 549 | stage1-modern | EUR 549 | On request | stage2-performance | EUR 999 | On request | stage3-performance | MANUAL_REVIEW | EUR 249 |
 | BMW X3 2.0d | EUR 299 | EUR 299 | stage1-standard | EUR 449 | On request | stage2-standard | EUR 699 | On request | stage3-standard | CONDITIONAL | EUR 249 |
-| Volvo XC60 D5 | EUR 349 | On request | stage1-advanced | EUR 499 | On request | stage2-advanced | EUR 849 | On request | stage3-advanced | MANUAL_REVIEW | EUR 249 |
+| Volvo XC60 D5 | EUR 349 | On request | stage1-advanced | EUR 499 | EUR 549 | stage2-advanced | EUR 849 | On request | stage3-advanced | MANUAL_REVIEW | EUR 249 |
 | Ford Focus ST | EUR 349 | On request | stage1-advanced | EUR 499 | On request | stage2-advanced | EUR 849 | On request | stage3-advanced | NOT_APPLICABLE | - |
 | BMW 1 Serie F20/F21 118i | EUR 299 | EUR 449 | stage1-standard | EUR 449 | EUR 549 | stage2-standard | EUR 699 | EUR 849 | stage3-standard | MANUAL_REVIEW | EUR 249 |
 | BMW 1 Serie F20/F21 118d | EUR 299 | On request | stage1-standard | EUR 449 | On request | stage2-standard | EUR 699 | On request | stage3-standard | MANUAL_REVIEW | EUR 249 |
@@ -36,9 +36,9 @@ Historical Pricing V2 tier metadata and canonical source prices remain unchanged
 | Public price | Stage 1 vehicles | Stage 2 vehicles | Stage 3+ vehicles |
 | ---: | ---: | ---: | ---: |
 | EUR 299 / 449 / 699 | 1 | 0 | 0 |
-| EUR 449 / 549 / 849 | 13 | 10 | 10 |
+| EUR 449 / 549 / 849 | 13 | 11 | 10 |
 | EUR 549 / 699 / 999 | 4 | 2 | 2 |
-| On request | 6 | 12 | 12 |
+| On request | 6 | 11 | 12 |
 
 ## Transmission Pricing
 

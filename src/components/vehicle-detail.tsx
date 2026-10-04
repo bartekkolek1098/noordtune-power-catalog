@@ -203,7 +203,7 @@ export function VehicleDetail({
             {label: text.torque, value: `${formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, locale)} → ${formatEstimateTorque(selectedStage, locale)}`},
             {
               label: text.gain,
-              value: selectedStage.customHardware ? customHardwareLabel(locale) : selectedStage.powerHp === undefined || selectedStage.torqueNm === undefined || vehicle.stockTorqueNm === undefined ? "—" : `+${selectedStage.powerHp - vehicle.stockPowerHp} ${powerUnit} / +${
+              value: selectedStage.customHardware ? customHardwareLabel(locale) : selectedStage.powerHp === undefined || selectedStage.torqueNm === undefined || vehicle.stockTorqueNm === undefined ? "—" : `${selectedStage.approximate ? "≈" : ""}+${selectedStage.powerHp - vehicle.stockPowerHp} ${powerUnit} / ${selectedStage.approximate ? "≈" : ""}+${
                 selectedStage.torqueNm - vehicle.stockTorqueNm
               } Nm`
             }
