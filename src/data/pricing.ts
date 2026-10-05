@@ -430,7 +430,7 @@ export function assessVehicleAccess(vehicle?: QuoteVehicle | null): AccessAssess
   const make = (vehicle?.brand ?? vehicle?.make ?? "").trim().toUpperCase();
   const identity = [vehicle?.model, vehicle?.engine, vehicle?.version, vehicle?.generation].filter(Boolean).join(" ");
   const family = [vehicle?.ecuType, vehicle?.ecuSupport?.family].filter(Boolean).join(" ");
-  const mixedBmwIds = ["bmw-320d-b47", "bmw-1-series-f20-f21-118i", "bmw-1-series-f20-f21-118d", "bmw-1-series-f20-f21-120d", "bmw-3-series-f30-f31-318d", "bmw-3-series-f30-f31-330d", "bmw-5-series-f10-f11-520d", "bmw-3-series-g20-g21-320i"];
+  const mixedBmwIds = ["bmw-320d-b47", "bmw-1-series-f20-f21-118i", "bmw-1-series-f20-f21-120d", "bmw-3-series-f30-f31-318d", "bmw-3-series-f30-f31-330d", "bmw-5-series-f10-f11-520d", "bmw-3-series-g20-g21-320i"];
   const bmw = make === "BMW" || publicId?.startsWith("bmw-") || vehicle?.id === "ref-bmw-128ti-f40-265";
   if (bmw && (mixedBmwIds.includes(publicId ?? "") || vehicle?.id === "ref-bmw-128ti-f40-265" || /\b128\s*ti\b|\bF40\b|\bG(?:20|21|30|31|42)\b/i.test(identity) || /\b(?:MD1|MG1)[A-Z0-9]*\b/i.test(family))) {
     return {status: "possible-unlock-review", reasonCode: "bmw-identity-or-mixed-ecu-family-review", scenario: "bmw-unlock-review"};

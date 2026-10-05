@@ -13,7 +13,7 @@ export function customerProfile(profile: TuningEstimateProfile): TuningEstimateP
 
 export function customerVehicle(vehicle: EngineVariant): EngineVariant {
   const profile = customerProfile(getCatalogEstimateProfile(vehicle));
-  return {...vehicle, stages: vehicle.stages.map((stage, i) => ({...stage, ...profile.stages[i], price: stage.price})),
+  return {...vehicle, stages: vehicle.stages.map((stage, i) => ({...stage, ...profile.stages[i], identityScope: undefined, price: stage.price})),
     outputReferences: vehicle.outputReferences?.map(source => ({...source, title: new URL(source.url).hostname, scope: ""})),
     dataNotes: undefined, technicalNotes: undefined,
     technicalEvidence: undefined,

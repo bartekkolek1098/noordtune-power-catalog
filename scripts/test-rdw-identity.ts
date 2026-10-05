@@ -72,7 +72,7 @@ const fixtures: {id: string; vehicle: RdwVehicleRow; fuel: RdwFuelRow[]; expecte
   {id: "SYN104", vehicle: {merk: "BMW", handelsbenaming: "320D", cilinderinhoud: "1995", datum_eerste_toelating: "20170615"}, fuel: [{brandstof_omschrijving: "Diesel", nettomaximumvermogen: "140"}], expected: "catalog-match"},
   {id: "SYN105", vehicle: {merk: "VOLKSWAGEN", handelsbenaming: "GOLF GTI", cilinderinhoud: "1984", datum_eerste_toelating: "20170615"}, fuel: [{brandstof_omschrijving: "Benzine", nettomaximumvermogen: "169"}], expected: "ambiguous"},
   {id: "SYN106", vehicle: {merk: "VOLKSWAGEN", handelsbenaming: "GOLF R", cilinderinhoud: "1984", datum_eerste_toelating: "20170615"}, fuel: [{brandstof_omschrijving: "Benzine", nettomaximumvermogen: "221"}], expected: "ambiguous"},
-  {id: "SYN107", vehicle: {merk: "FORD", handelsbenaming: "FOCUS ST", cilinderinhoud: "1999", datum_eerste_toelating: "20150615"}, fuel: [{brandstof_omschrijving: "Benzine", nettomaximumvermogen: "184"}], expected: "catalog-match"}
+  {id: "SYN107", vehicle: {merk: "FORD", handelsbenaming: "FOCUS ST", cilinderinhoud: "1999", datum_eerste_toelating: "20150615"}, fuel: [{brandstof_omschrijving: "Benzine", nettomaximumvermogen: "184"}], expected: "ambiguous"}
 ];
 
 const normalized = fixtures.map((fixture) => ({fixture, result: normalizeRdwVehicle(fixture.vehicle, fixture.fuel, fixture.id)}));

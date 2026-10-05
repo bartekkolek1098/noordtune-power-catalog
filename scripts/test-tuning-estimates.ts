@@ -43,7 +43,7 @@ test("estimated provenance, verification flags and unknown ECU never erase publi
     assert.notEqual(profile.ecuSupport?.status, "verified");
   }
 });
-test("all 24 public profiles resolve through identity validation with compatible vehicle facts", () => {
+test("all 24 public profiles resolve while scoped outputs wait for complete identity facts", () => {
   const capacities: Record<string, number> = {
     "vw-golf-20-tsi-ea888": 1984, "bmw-320d-b47": 1995, "audi-a3-20-tdi": 1968,
     "mercedes-a45-amg-m133": 1991, "bmw-x3-e83-20d": 1995, "volvo-xc60-d5": 2400,
@@ -65,7 +65,15 @@ test("all 24 public profiles resolve through identity validation with compatible
     }, engineCatalog);
     assert.notEqual(result.status, "unavailable", `${vehicle.id}: ${result.reasonCodes.join(", ")}`);
     assert.equal(result.profile?.vehicleId, vehicle.id, vehicle.id);
-    assert.deepEqual(result.profile?.stages, getCatalogEstimateProfile(vehicle).stages, vehicle.id);
+    if (vehicle.stages[0].identityScope) {
+      assert.equal(result.profile?.stages[0].powerHp, undefined, `${vehicle.id}: scoped point output`);
+      assert.equal(result.profile?.stages[0].powerRangeHp, undefined, `${vehicle.id}: scoped range output`);
+      assert.equal(result.profile?.stages[0].torqueNm, undefined, `${vehicle.id}: scoped point torque`);
+      assert.equal(result.profile?.stages[0].torqueRangeNm, undefined, `${vehicle.id}: scoped range torque`);
+      assert.equal(result.profile?.stages[0].quoteRequired, true, `${vehicle.id}: scoped quote`);
+    } else {
+      assert.deepEqual(result.profile?.stages, getCatalogEstimateProfile(vehicle).stages, vehicle.id);
+    }
   }
 });
 test("BMW 320d / GTI / Golf R use corrected ranges; manual Focus withholds output", () => {
@@ -82,8 +90,8 @@ test("BMW 320d / GTI / Golf R use corrected ranges; manual Focus withholds outpu
     assert.deepEqual(result.profile?.stages[0].powerRangeHp, hp);
     assert.deepEqual(result.profile?.stages[0].torqueRangeNm, nm);
     if (id.startsWith("ford-focus")) {
-      assert.equal(result.profile?.gearbox, "Manual");
-      assert.equal(result.profile?.serviceCompatibility?.gearbox.status, "not-applicable");
+      assert.equal(result.profile?.gearbox, undefined);
+      assert.equal(result.profile?.serviceCompatibility?.gearbox.status, "manual-review");
     }
   }
 });

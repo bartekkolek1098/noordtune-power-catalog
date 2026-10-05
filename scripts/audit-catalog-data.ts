@@ -343,7 +343,7 @@ for (const publication of curatedVehiclePublications) {
 addIssue(
   "critical",
   "PUBLISHED_SOURCE_VALUE_DRIFT",
-  "Published values and options must match the source plus the explicit P0 correction projection; public pricing is audited separately.",
+  "Published values and options must match the source plus the approved catalog-truth correction projection; public pricing is audited separately.",
   publishedValueDrift
 );
 
@@ -1279,10 +1279,10 @@ const previousPublicCommercialHashes = {
     "3341d50c62d725a7b55cd1bf54425a7ebddc666bb0eca8825aa6360d39cf6e6d"
 } as const;
 
-// Explicitly authorized public technical correction; canonical data, routes and services
-// retain the original release hashes. test-catalog-truth-p0 additionally freezes all
-// 12 unrelated public records and checks every corrected value/withheld output.
-const approvedP0PublicTechnicalHash = "c73bc01aea52a7aa060c17b3b0db77d03b27e9eb3330eec868577e439b4b030a";
+// Explicitly authorized P0 and P1 public technical corrections; canonical data, routes
+// and services retain the original release hashes. The focused catalog-truth suites
+// freeze unrelated public records and check every corrected or withheld output.
+const approvedPublicTechnicalHash = "725f8cfd3a32578ba4adffac49dced259bd9f780bff2ccbcc1fa0fe7dd0db783";
 
 const currentTechnicalHashes = {
   canonicalFull: semanticHash(catalog.vehicleDatabase),
@@ -1311,7 +1311,7 @@ const currentPublicCommercialHashes = {
 const semanticIntegrityFailures = Object.entries(productionTechnicalBaseline)
   .filter(
     ([key, expected]) =>
-      currentTechnicalHashes[key as keyof typeof currentTechnicalHashes] !== (key === "publicTechnical" ? approvedP0PublicTechnicalHash : expected)
+      currentTechnicalHashes[key as keyof typeof currentTechnicalHashes] !== (key === "publicTechnical" ? approvedPublicTechnicalHash : expected)
   )
   .map(
     ([key, expected]) =>
@@ -1334,7 +1334,7 @@ if (
 addIssue(
   "critical",
   "PRODUCTION_SEMANTIC_INTEGRITY",
-  "Canonical data/prices, routes and services retain the release baseline; only the explicit P0 public correction hash is accepted. Matching and quote policy changes are checked by executable regressions.",
+  "Canonical data/prices, routes and services retain the release baseline; only the approved public catalog-truth correction hash is accepted. Matching and quote policy changes are checked by executable regressions.",
   semanticIntegrityFailures
 );
 
@@ -1538,8 +1538,8 @@ ${technicalVehicleDetails}
 ${Object.entries(productionTechnicalBaseline)
   .map(([key, expected]) => {
     const current = currentTechnicalHashes[key as keyof typeof currentTechnicalHashes];
-    const approved = key === "publicTechnical" ? approvedP0PublicTechnicalHash : expected;
-    return `| ${key} | \`${expected}\` | \`${current}\` | ${current === approved ? key === "publicTechnical" ? "PASS (approved P0 correction)" : "PASS" : "FAIL"} |`;
+    const approved = key === "publicTechnical" ? approvedPublicTechnicalHash : expected;
+    return `| ${key} | \`${expected}\` | \`${current}\` | ${current === approved ? key === "publicTechnical" ? "PASS (approved catalog-truth correction)" : "PASS" : "FAIL"} |`;
   })
   .join("\n")}
 

@@ -223,24 +223,25 @@
       "engine": "2-0-tdi-150"
     },
     "stockHp": 150,
-    "stockNm": null,
+    "stockNm": 340,
     "years": [
-      2015,
+      2019,
       2020
     ],
-    "generation": "B8",
+    "generation": "B8 facelift",
     "capacity": 1968,
     "wrongGeneration": "B7",
     "stage1": null,
-    "stage1Cents": null,
-    "stage2Action": "WITHHOLD_UNTIL_IDENTIFIED",
+    "stage1Point": [190, 420],
+    "stage1Cents": 44900,
+    "stage2Action": "CUSTOM_ON_REQUEST",
     "stage2": null,
     "stage2Cents": null,
     "stage2Hardware": []
   },
   {
     "id": "ford-focus-st-20-ecoboost",
-    "action": "WITHHOLD_OUTPUT",
+    "action": "MAKE_CONDITIONAL",
     "slugs": {
       "brand": "ford",
       "model": "focus-st",
@@ -249,15 +250,15 @@
     "stockHp": 250,
     "stockNm": 360,
     "years": [
-      2012,
+      2015,
       2018
     ],
-    "generation": "Mk3",
+    "generation": "Mk3 facelift",
     "capacity": 1999,
     "wrongGeneration": "Mk4",
-    "stage1": null,
-    "stage1Cents": null,
-    "stage2Action": "WITHHOLD_UNTIL_IDENTIFIED",
+    "stage1": [[265, 270], [430, 440]],
+    "stage1Cents": 44900,
+    "stage2Action": "CUSTOM_ON_REQUEST",
     "stage2": null,
     "stage2Cents": null,
     "stage2Hardware": [
@@ -316,20 +317,26 @@
       "engine": "2-0-tsi-300"
     },
     "stockHp": 300,
-    "stockNm": null,
+    "stockNm": 380,
     "years": [
       2017,
       2018
     ],
-    "generation": "5F",
+    "generation": "5F pre-GPF",
     "capacity": 1984,
     "wrongGeneration": "KL",
     "stage1": null,
-    "stage1Cents": null,
-    "stage2Action": "WITHHOLD_UNTIL_IDENTIFIED",
+    "stage1Point": [350, 460],
+    "stage1Cents": 54900,
+    "stage2Action": "CUSTOM_ON_REQUEST",
     "stage2": null,
     "stage2Cents": null,
-    "stage2Hardware": []
+    "stage2Hardware": [
+      {"part": "downpipe", "requirement": "check"},
+      {"part": "sport-catalyst", "requirement": "check"},
+      {"part": "intake", "requirement": "check"},
+      {"part": "cooling", "requirement": "check"}
+    ]
   },
   {
     "id": "mercedes-a45-amg-m133",
@@ -386,17 +393,18 @@
       "engine": "118d"
     },
     "stockHp": 150,
-    "stockNm": null,
+    "stockNm": 320,
     "years": [
       2015,
       2019
     ],
-    "generation": "F20/F21",
+    "generation": "F20/F21 LCI",
     "capacity": 1995,
     "wrongGeneration": "F40",
     "stage1": null,
-    "stage1Cents": null,
-    "stage2Action": "WITHHOLD_UNTIL_IDENTIFIED",
+    "stage1Point": [190, 400],
+    "stage1Cents": 44900,
+    "stage2Action": "CUSTOM_ON_REQUEST",
     "stage2": null,
     "stage2Cents": null,
     "stage2Hardware": []

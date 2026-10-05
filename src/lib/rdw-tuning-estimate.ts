@@ -7,7 +7,7 @@ import {serviceOptions, type EngineVariant, type StageName} from "../data/catalo
 import {assessCatalogMatch, nominalEngineDisplacements, nominalDisplacementMatches,
   normalizeCatalogFuel, registeredPowerToMetricHp} from "../data/catalog-matching.ts";
 import {tuningReferenceProfiles, type EstimateMatchInput} from "../data/tuning-estimates.ts";
-import {getCatalogEstimateProfile, getCatalogEstimateProfileForRegistration, type EstimateResolution, type EstimateStage,
+import {getCatalogEstimateProfile, getCatalogEstimateProfileForIdentity, type EstimateResolution, type EstimateStage,
   type TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
 import {genericTuningHeuristics, strongStage1ScenarioStockWidths, type GenericEstimateCategory} from "../data/tuning-heuristics.ts";
 import {connectStage1Comparison} from "../data/tuning-reference-research.ts";
@@ -76,10 +76,11 @@ function resolveProductionEstimate(input: EstimateMatchInput, sources: RuntimeEs
   const corrected = (sources.publicVehicles ?? engineCatalog).filter(vehicle => vehicle.configurationNote
     && vehicle.years.includes(firstAdmissionYear(input) ?? -1) && eligibleReasons(input, vehicle, 2));
   if (corrected.length === 1) {
-    const profile = getCatalogEstimateProfileForRegistration(corrected[0], firstAdmissionYear(input));
-    return {status: "conditional", coverageClass: "C", resolutionLevel: 2,
+    const profile = getCatalogEstimateProfileForIdentity(corrected[0], input);
+    const coverageClass = profile.coverageClass ?? "C";
+    return {status: "conditional", coverageClass, resolutionLevel: 2,
       reasonCodes: ["PUBLIC_CONFIGURATION_CONFIRMATION"],
-      profile: {...profile, coverageClass: "C", resolutionLevel: 2, sourceConfidence: "canonical-existing"}};
+      profile: {...profile, coverageClass, resolutionLevel: 2, sourceConfidence: "canonical-existing"}};
   }
   const references = applicableReferences(input, sources.references ?? tuningReferenceProfiles);
   const retained = references.length ? resolveLegacyRdwTuningEstimate(input, {...sources, references, publicVehicles: [], canonicalVehicles: []}) : undefined;
@@ -442,7 +443,7 @@ export function resolveLegacyRdwTuningEstimate(input: EstimateMatchInput, source
   const publicEntries = (sources.publicVehicles ?? engineCatalog).flatMap((vehicle): Eligible[] => {
     if (!familyCompatible(input, vehicle, primaryReference?.profile) || !generationCompatible(vehicle, primaryReference?.profile)) return [];
     const match = eligibleReasons(input, vehicle, 2);
-    return match ? [{profile: getCatalogEstimateProfileForRegistration(vehicle, firstAdmissionYear(input)), reasons: match, level: 2}] : [];
+    return match ? [{profile: getCatalogEstimateProfileForIdentity(vehicle, input), reasons: match, level: 2}] : [];
   });
   const publicGroups = collapse(publicEntries);
   const primaryPublic = publicGroups.length === 1 ? publicGroups[0] : undefined;
