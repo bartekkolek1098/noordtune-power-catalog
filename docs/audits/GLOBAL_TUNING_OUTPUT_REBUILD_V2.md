@@ -42,6 +42,23 @@ A public Stage 2 number requires compatible vehicle identity **and** actual Stag
 
 The ratio analysis is kept only as QA to find outliers. It must never generate customer values.
 
+## Cross-provider normalization pass
+
+The first Stage 1 grouping was intentionally very strict and only found 42 multi-source groups. A second audit normalized provider naming differences such as `BMW 3 Series / 3 serie`, `Mercedes A / A-Class`, `Up / Up!`, while keeping model family, fuel, displacement, stock power, year overlap, generation/chassis hints and stock-torque compatibility as hard gates.
+
+The tightened all-pairs clustering result is:
+
+- **3,251** usable Stage 1 observations.
+- **2,680** normalized configuration clusters.
+- **317** clusters with at least two independent providers.
+- **246** clusters whose source outputs are close enough for a conservative Stage 1 range under the audit rules.
+- **71** multi-source conflicts that must stay withheld or be split further.
+- **2,363** single-source conditional clusters.
+
+This is a major increase in evidence reuse without adding new source pages, but it is still **research-only**. No cluster is promoted automatically. The audit explicitly rejects transitive generation bridges, invalid year intersections and material stock-torque disagreement.
+
+The next join audit maps these 246 candidate consensus clusters to the 4,592 normalized selector taxonomy rows. Its first deliberately conservative pass produces **16 single-row joins**, **3 multiple-row joins** and **227 unmatched clusters**. This does not mean the remaining source evidence is unusable; it means provider generation/engine naming still needs a reviewed normalization layer before automatic attachment. Only unambiguous identity joins are eligible for later implementation.
+
 ## Database rebuild architecture
 
 - **Discovery layer:** competitor/manufacturer taxonomy; V-Tech is useful here even when its product is an external PowerChip module.
