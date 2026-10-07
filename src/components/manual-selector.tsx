@@ -64,6 +64,7 @@ export function ManualSelector({
   const [referenceEstimate, setReferenceEstimate] = useState<EstimateResolution>();
   const [referenceLoading, setReferenceLoading] = useState(false);
   const [referenceError, setReferenceError] = useState(false);
+  const [taxonomySelection, setTaxonomySelection] = useState<VehicleSelectorItem>();
   const referenceCopy = locale === "en"
     ? {loading: "Loading the catalog estimate…", error: "The estimate could not be loaded. Select the vehicle to try again.", conditional: "Conditional reference: confirm the engine generation before applying these estimated figures.", connect: "Pre-facelift 1.5 TDCi reference only. Confirm the engine generation; a 2018 registration alone does not establish TDCi or EcoBlue."}
     : locale === "pl"
@@ -74,7 +75,7 @@ export function ManualSelector({
     const normalized = brandFilter.toLowerCase();
     return initialBrands.filter((item) => item.toLowerCase().includes(normalized));
   }, [brandFilter, initialBrands]);
-  const selectedVehicle = engines.find((vehicle) => vehicle.id === vehicleId);
+  const selectedVehicle = taxonomySelection ?? engines.find((vehicle) => vehicle.id === vehicleId);
   const versionLabel = (vehicle: VehicleSelectorItem) => vehicle.kind === "reference" && vehicle.version === "Published Stage 1 reference"
     ? {nl: "Referentie voor Stage 1", en: "Stage 1 reference", pl: "Profil referencyjny Stage 1"}[locale]
     : vehicle.version;
@@ -211,6 +212,7 @@ export function ManualSelector({
     setYears([]);
     setEngines([]);
     setReferenceId("");
+    setTaxonomySelection(undefined);
   }
 
   function detailHref(vehicle: VehicleSelectorItem) {
@@ -218,6 +220,14 @@ export function ManualSelector({
   }
 
   function selectReference(vehicle: VehicleSelectorItem) {
+    if (vehicle.kind === "taxonomy") {
+      setTaxonomySelection(vehicle);
+      setReferenceId("");
+      setReferenceEstimate(undefined);
+      setReferenceError(false);
+      return;
+    }
+    setTaxonomySelection(undefined);
     if (referenceId === vehicle.id && referenceEstimate?.profile) {
       focusConfigurator("manual-reference-result");
       return;
@@ -352,6 +362,7 @@ export function ManualSelector({
                   setYears([]);
                   setEngines([]);
                   setReferenceId("");
+                  setTaxonomySelection(undefined);
                 }}
                 options={models}
                 placeholder={brand ? text.selectModel : text.selectBrand}
@@ -365,6 +376,7 @@ export function ManualSelector({
                   setVehicleId("");
                   setEngines([]);
                   setReferenceId("");
+                  setTaxonomySelection(undefined);
                 }}
                 options={years.map(String)}
                 placeholder={model ? text.selectYear : text.selectModel}
@@ -385,6 +397,7 @@ export function ManualSelector({
                     }
                   } else {
                     setReferenceId("");
+                    setTaxonomySelection(undefined);
                   }
                 }}
                 options={engines.map((vehicle) => ({
@@ -415,9 +428,22 @@ export function ManualSelector({
                     </p>
                   </div>
                   <Button asChild className="h-auto min-h-10 max-w-full whitespace-normal rounded-[3px] py-2 text-center font-black uppercase shadow-[0_0_28px_rgba(227,6,19,.32)]">
-                    {selectedVehicle.pagePath ? <a href={detailHref(selectedVehicle)}>{detailsActionLabel({kind: "vehicle-page", path: selectedVehicle.pagePath}, locale)}<ChevronRight className="h-4 w-4" /></a>
-                      : <button type="button" onClick={() => selectReference(selectedVehicle)}>{detailsActionLabel({kind: "inline-configurator", target: "rdw-configurator"}, locale)}<ChevronRight className="h-4 w-4" /></button>}
-
+                    {selectedVehicle.pagePath ? (
+                      <a href={detailHref(selectedVehicle)}>
+                        {detailsActionLabel({kind: "vehicle-page", path: selectedVehicle.pagePath}, locale)}
+                        <ChevronRight className="h-4 w-4" />
+                      </a>
+                    ) : selectedVehicle.kind === "taxonomy" ? (
+                      <button type="button" onClick={() => focusConfigurator("rdw-configurator")}>
+                        {{nl: "Bevestig met kenteken", en: "Confirm with plate", pl: "Potwierdź po rejestracji"}[locale]}
+                        <ChevronRight className="h-4 w-4" />
+                      </button>
+                    ) : (
+                      <button type="button" onClick={() => selectReference(selectedVehicle)}>
+                        {detailsActionLabel({kind: "inline-configurator", target: "rdw-configurator"}, locale)}
+                        <ChevronRight className="h-4 w-4" />
+                      </button>
+                    )}
                   </Button>
                 </div>
               ) : (

@@ -19,6 +19,15 @@ import {applyCuratedTechnicalProfile} from "./curated-technical.ts";
 import {applyPublicCatalogTruth} from "./public-catalog-truth.ts";
 import {assessCatalogMatch, normalizeCatalogFuel, normalizeCatalogMake, type CatalogCandidate, type CatalogMatchInput} from "./catalog-matching.ts";
 import {tuningReferenceProfiles} from "./tuning-estimates.ts";
+import {
+  hasTaxonomyCoverage,
+  taxonomyBrands,
+  searchTaxonomySelectorItems,
+  taxonomyModelsForBrand,
+  taxonomyRowsForSelection,
+  taxonomySelectorItem,
+  taxonomyYearsForModel
+} from "./catalog-taxonomy-v2.ts";
 import {getCatalogEstimateProfile, type EstimateResolution, type TuningEstimateProfile} from "./tuning-estimates-shared.ts";
 
 export type {
@@ -1549,26 +1558,45 @@ export function getVehicleById(id: string) {
 }
 
 export function getBrands() {
-  return Array.from(new Set(vehicleDatabase.map((vehicle) => vehicle.brand))).sort();
+  return Array.from(
+    new Set([
+      ...taxonomyBrands(),
+      ...engineCatalog.map(vehicle => vehicle.brand),
+      ...tuningReferenceProfiles.map(profile => profile.brand),
+      ...vehicleDatabase.map(vehicle => vehicle.brand)
+    ])
+  ).sort();
 }
 
 export function getModelsForBrand(brand: string) {
+  const taxonomyModels = taxonomyModelsForBrand(brand);
+  const legacyFallback = taxonomyModels.length
+    ? []
+    : vehicleDatabase.filter(vehicle => vehicle.brand === brand).map(vehicle => vehicle.model);
+
   return Array.from(
     new Set([
-      ...vehicleDatabase
-        .filter((vehicle) => vehicle.brand === brand)
-        .map((vehicle) => vehicle.model),
+      ...taxonomyModels,
+      ...legacyFallback,
+      ...engineCatalog.filter(vehicle => vehicle.brand === brand).map(vehicle => vehicle.model),
       ...tuningReferenceProfiles.filter((profile) => profile.brand === brand).map((profile) => profile.model)
     ])
   ).sort();
 }
 
 export function getYearsForModel(brand: string, model: string) {
+  const taxonomyYears = taxonomyYearsForModel(brand, model);
+  const legacyFallback = taxonomyYears.length
+    ? []
+    : vehicleDatabase
+        .filter(vehicle => vehicle.brand === brand && vehicle.model === model)
+        .flatMap(vehicle => vehicle.years);
+
   return Array.from(
     new Set([
-      ...vehicleDatabase
-        .filter((vehicle) => vehicle.brand === brand && vehicle.model === model)
-        .flatMap((vehicle) => vehicle.years),
+      ...taxonomyYears,
+      ...legacyFallback,
+      ...engineCatalog.filter(vehicle => vehicle.brand === brand && vehicle.model === model).flatMap(vehicle => vehicle.years),
       ...tuningReferenceProfiles.filter((profile) => profile.brand === brand && profile.model === model).flatMap(referenceProfileYears)
     ])
   ).sort((a, b) => b - a);
@@ -1636,10 +1664,11 @@ export function searchVehicleSelectorItems(query: string, limit = 4) {
 
     return tokens.length > 0 && tokens.every((token) => haystack.includes(token));
   });
+  const taxonomyMatches = searchTaxonomySelectorItems(query, limit);
   const selectorItems = [
     ...referenceMatches.map(toReferenceSelectorItem),
     ...publicMatches.map(vehicle => toVehicleSelectorItem(vehicle)),
-    ...(referenceMatches.length ? [] : searchVehicles(query).map(vehicle => toVehicleSelectorItem(vehicle)))
+    ...taxonomyMatches
   ];
 
   return uniqueVehicleSelectorItems(
@@ -1657,24 +1686,38 @@ export function getVehicleSelectorItems({
   model: string;
   year: number;
 }, limit = Number.POSITIVE_INFINITY) {
+  const taxonomyRows = taxonomyRowsForSelection(brand, model, year);
+  const legacyFallback = hasTaxonomyCoverage(brand, model, year)
+    ? []
+    : vehicleDatabase
+        .filter(
+          vehicle =>
+            vehicle.brand === brand &&
+            vehicle.model === model &&
+            vehicle.years.includes(year)
+        )
+        .filter(vehicle => {
+          const corrected = publicVehicleByCanonicalId.get(vehicle.id);
+          // A canonical row shadowed by a reviewed public profile must not restore
+          // historical output outside that profile's supported period.
+          return !corrected?.configurationNote || corrected.years.includes(year);
+        })
+        .map(vehicle => toVehicleSelectorItem(vehicle, year));
+
   return uniqueVehicleSelectorItems(
     [
-      ...tuningReferenceProfiles.filter((profile) => profile.brand === brand && profile.model === model && referenceProfileYears(profile).includes(year)).map(toReferenceSelectorItem),
-      ...engineCatalog.filter(vehicle => vehicle.brand === brand && (vehicle.model === model || publicSourceModels.get(vehicle.sourceCanonicalId ?? vehicle.id) === model) && vehicle.years.includes(year)).map(vehicle => toVehicleSelectorItem(vehicle, year)),
-      ...vehicleDatabase
-      .filter(
-        (vehicle) =>
+      ...tuningReferenceProfiles
+        .filter(profile => profile.brand === brand && profile.model === model && referenceProfileYears(profile).includes(year))
+        .map(toReferenceSelectorItem),
+      ...engineCatalog
+        .filter(vehicle =>
           vehicle.brand === brand &&
-          vehicle.model === model &&
+          (vehicle.model === model || publicSourceModels.get(vehicle.sourceCanonicalId ?? vehicle.id) === model) &&
           vehicle.years.includes(year)
-      )
-      .filter(vehicle => {
-        const corrected = publicVehicleByCanonicalId.get(vehicle.id);
-        // A canonical row shadowed by a reviewed public profile must not restore
-        // historical output outside that profile's supported period.
-        return !corrected?.configurationNote || corrected.years.includes(year);
-      })
-      .map(vehicle => toVehicleSelectorItem(vehicle, year))
+        )
+        .map(vehicle => toVehicleSelectorItem(vehicle, year)),
+      ...taxonomyRows.map(taxonomySelectorItem),
+      ...legacyFallback
     ],
     limit
   );
