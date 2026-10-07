@@ -224,17 +224,17 @@ test("all three references are manually searchable and selectable with identical
     ["Transit Connect", "ref-ford-transit-connect-15-tdci-100", "Ford", "Transit Connect", 2018, 44900]
   ] as const) {
     const search = searchVehicleSelectorItems(query);
-    assert.equal(search.length, 1, query);
-    assert.equal(search[0].kind, "reference");
-    assert.equal(search[0].id, id);
+    const reference = search.find(item => item.kind === "reference");
+    assert.ok(reference, query);
+    assert.equal(reference.id, id);
     assert.ok(getModelsForBrand(brand).includes(model));
     assert.ok(getYearsForModel(brand, model).includes(year));
     assert.equal(getVehicleSelectorItems({brand, model, year})[0].id, id);
     const selected = getReferenceSelectorEstimate(id)!;
     assert.equal(selected.profile?.id, id);
     assert.equal(selected.profile?.stages[0].powerHp, tuningReferenceProfiles.find((profile) => profile.id === id)?.stages[0].powerHp);
-    assert.deepEqual(search[0].quote, resolveStageQuote(selected.profile, selected.profile?.stages[0], {scope: "vehicle"}));
-    assert.equal(search[0].quote.kind === "from" ? search[0].quote.amountCents : undefined, amount);
+    assert.deepEqual(reference.quote, resolveStageQuote(selected.profile, selected.profile?.stages[0], {scope: "vehicle"}));
+    assert.equal(reference.quote.kind === "from" ? reference.quote.amountCents : undefined, amount);
     assert.equal(getVehicleById(id), undefined);
     if (model === "Transit Connect") assert.ok(selected.reasonCodes.includes("CONNECT_ENGINE_GENERATION_REVIEW"));
   }

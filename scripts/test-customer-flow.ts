@@ -14,7 +14,7 @@ assert.equal(resolveDetailsAction(profile,engineCatalog).kind,'vehicle-page');
 for(const changed of [{vehicleId:'missing'},{vehicleId:undefined,pricingProfileId:vehicle.id},{provenance:'sourced-profile' as const},{engine:'Wrong engine'},{stockPowerHp:99},{stages:profile.stages.map(s=>({...s,powerHp:999}))}]) assert.equal(resolveDetailsAction({...profile,...changed},engineCatalog).kind,'inline-configurator');
 assert.equal(resolveDetailsAction(undefined,engineCatalog).kind,'unavailable');
 for(const item of [...searchVehicleSelectorItems('Golf',100),...getVehicleSelectorItems({brand:'Ford',model:'Transit Connect',year:2018})]) {
- if(item.pagePath)assert(engineCatalog.some(v=>item.pagePath===`/vehicles/${v.id}`));else assert(item.kind==='reference'||item.kind==='estimate');
+ if(item.pagePath)assert(engineCatalog.some(v=>item.pagePath===`/vehicles/${v.id}`));else assert(item.kind==='reference'||item.kind==='estimate'||item.kind==='taxonomy');
 }
 const base:EstimateStage={name:'Stage 1',powerHp:200,torqueNm:400,provenance:'single-source',sourceProfileId:'same',requirements:'RON 98',packageItems:[]};
 const equal:EstimateStage={...base,name:'Stage 2',powerHp:220};
