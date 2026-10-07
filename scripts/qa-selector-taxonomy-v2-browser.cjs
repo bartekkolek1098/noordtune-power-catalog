@@ -45,13 +45,39 @@ const systemBrowser=[
     const selector=page.locator("#manual-selector");
     assert.ok(await selector.isVisible());
     const quick=selector.locator("input").first();
+    const selects=selector.locator("select");
+    const waitForOption=async(index,value)=>page.waitForFunction(
+      ({index,value})=>{
+        const select=document.querySelectorAll("#manual-selector select")[index];
+        return Boolean(select&&Array.from(select.options).some(option=>option.value===value));
+      },
+      {index,value}
+    );
+    await selects.nth(0).selectOption("Volkswagen");
+    await waitForOption(1,"Golf");
+    await selects.nth(1).selectOption("Golf");
+    await waitForOption(2,"2019");
+    await selects.nth(2).selectOption("2019");
+    await page.waitForFunction(()=>{
+      const select=document.querySelectorAll("#manual-selector select")[3];
+      return Boolean(select&&select.options.length>1);
+    });
+    const firstEngine=await selects.nth(3).locator("option").nth(1).getAttribute("value");
+    assert.ok(firstEngine);
+    await selects.nth(3).selectOption(firstEngine);
+
     await quick.fill("Volkswagen Transporter 204");
     const result=selector.locator('[data-testid="manual-result-action"]').first();
     await result.waitFor({state:"visible"});
     assert.match(await result.innerText(),/Transporter/i);
     assert.match(await result.innerText(),/204/i);
     await result.click();
-    assert.ok(await page.getByRole("button",{name:/Bevestig met kenteken/i}).isVisible());
+    const confirmPlate=selector.getByRole("button",{name:/Bevestig met kenteken/i});
+    assert.ok(await confirmPlate.isVisible());
+    assert.match(await confirmPlate.locator("xpath=..").innerText(),/Transporter/i);
+
+    await selects.nth(1).selectOption("Transporter");
+    assert.equal(await confirmPlate.count(),0,"changing the manual model must clear a quick-search taxonomy selection");
 
     await quick.fill("Volkswagen Golf 2.0 BiTDI 2019");
     await page.waitForTimeout(350);

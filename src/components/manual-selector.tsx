@@ -75,7 +75,7 @@ export function ManualSelector({
     const normalized = brandFilter.toLowerCase();
     return initialBrands.filter((item) => item.toLowerCase().includes(normalized));
   }, [brandFilter, initialBrands]);
-  const selectedVehicle = engines.find((vehicle) => vehicle.id === vehicleId) ?? taxonomySelection;
+  const selectedVehicle = taxonomySelection ?? engines.find((vehicle) => vehicle.id === vehicleId);
   const versionLabel = (vehicle: VehicleSelectorItem) => vehicle.kind === "reference" && vehicle.version === "Published Stage 1 reference"
     ? {nl: "Referentie voor Stage 1", en: "Stage 1 reference", pl: "Profil referencyjny Stage 1"}[locale]
     : vehicle.version;
@@ -362,6 +362,7 @@ export function ManualSelector({
                   setYears([]);
                   setEngines([]);
                   setReferenceId("");
+                  setTaxonomySelection(undefined);
                 }}
                 options={models}
                 placeholder={brand ? text.selectModel : text.selectBrand}

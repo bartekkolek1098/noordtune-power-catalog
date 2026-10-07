@@ -30,6 +30,32 @@ assert.equal(
   catalogTaxonomyV2.find(row => row.brand === "Alfa Romeo" && /JTDm/.test(row.engine))?.fuel,
   "Diesel"
 );
+for (const [marker, expectedFuel] of [
+  ["BiTDI", "Diesel"],
+  ["CRD", "Diesel"],
+  ["DI-D", "Diesel"],
+  ["TiD", "Diesel"],
+  ["MZR-CD", "Diesel"],
+  ["1.3TDCi", "Diesel"],
+  ["BlueTDI", "Diesel"],
+  ["MultiJet2", "Diesel"],
+  ["324td", "Diesel"],
+  ["VTi", "Petrol"],
+  ["Kompressor", "Petrol"],
+  ["Ti-VCT", "Petrol"],
+  ["2.0TSI", "Petrol"],
+  ["318Ci", "Petrol"]
+] as const) {
+  const row = catalogTaxonomyV2.find(item => item.engine.toLowerCase().includes(marker.toLowerCase()));
+  assert.ok(row, `expected taxonomy marker ${marker}`);
+  assert.equal(row.fuel, expectedFuel, `${marker} fuel classification`);
+}
+assert.ok(
+  catalogTaxonomyV2
+    .filter(row => row.brand === "MINI" && /(?:Cooper|One) (?:D|SD)\b/i.test(row.engine))
+    .every(row => row.fuel === "Diesel"),
+  "MINI Cooper/One D and SD variants must not be classified as petrol"
+);
 
 assert.ok(getBrands().includes("Volkswagen"));
 assert.ok(getBrands().includes("BMW"));

@@ -25,6 +25,20 @@ Snapshot imported:
 - 4,592 normalized unique configurations
 - 55 normalized brands
 - 438 make/model families
+- 2,282 explicit Diesel classifications
+- 1,426 explicit Petrol classifications
+- 100 explicit Hybrid classifications
+- 784 intentionally unresolved fuel classifications
+
+Fuel normalization is marker-based and conservative. The latest refinement adds
+explicit diesel/petrol naming families and formatting variants such as BiTDI,
+CRD, DI-D, TiD, MZR-CD, TDCi, BlueTDI, MultiJet2, VTi, Kompressor, Ti-VCT,
+BMW td/tds/Ci/is/e suffixes and no-space labels such as `2.0TSI`.
+
+The refinement changes only the `fuel` field in the tracked 4,592-row
+taxonomy. Vehicle identity, years, engine labels, stock power and source URLs
+remain unchanged. Ambiguous labels remain `Unknown` rather than being inferred
+from displacement, year or power.
 
 The tracked taxonomy retains the public source URL for every row.
 
@@ -110,6 +124,8 @@ Browser/API QA confirms:
 - legitimate Transporter 204 remains selectable;
 - taxonomy-only items are on-request;
 - customer must confirm via RDW before a tuning result;
+- a quick-search taxonomy choice correctly overrides any older manual engine selection;
+- changing manual model clears a prior quick-search taxonomy choice;
 - no SEO/sitemap expansion occurred.
 
 ## Next database step

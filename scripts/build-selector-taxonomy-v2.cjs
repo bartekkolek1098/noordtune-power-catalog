@@ -15,21 +15,28 @@ const fuel=(label,brand)=>{
   if(/\b(?:electric|bev|ev|e-tron|e tron|id\.?\s*[3-9]|born)\b/.test(s))return "Electric";
 
   if(
-    /\b(?:tdi|tdci|ecoblue|cdi|cdti|dci|bluehdi|hdi|crdi|multijet|diesel|d-4d|jtd|jtdm|turbo\s*d|td4|sd4|tdv6|sdv6)\b/.test(s) ||
+    /\b(?:tdi|bitdi|bluetdi|ctdi|vcdti|vcdi|tdci|tddi|td|tds|dti|ecoblue|cdi|cdti|dci|bluehdi|hdi|crdi|crd|multijet|multijet2|mutlijet|diesel|sdi|d-4d|d4d|d-cat|mz-cd|mzr-cd|skyactiv-d|jtd|jtdm|tid|ttid|gtd|turbo\s*d|td4|sd4|tdv6|sdv6)\b/.test(s) ||
+    /\b\d[.,]\d{1,2}\s*(?:tdi|tdci|td|tds|d)\b/.test(s) ||
+    /\bdi[-\s]?d(?:c)?\b/.test(s) ||
     /\b\d{2,3}d\b/.test(s) ||
-    /\b(?:d2|d3|d4|d5|d6)\b/.test(s)
+    /\b(?:d2|d3|d4|d5|d6)\b/.test(s) ||
+    (b==="bmw" && /\bm?\d{3}(?:d|td|tds)\b/.test(s)) ||
+    (b==="mini" && /^(?:d|sd)\b/.test(s)) ||
+    (b==="mini" && /\b(?:one|cooper)\s+(?:d|sd)\b/.test(s))
   )return "Diesel";
 
   if(
-    /\b(?:tsi|tfsi|fsi|ecoboost|tce|t-gdi|gdi|benzine|petrol|puretech|thp|multiair|skyactiv-g|vvt-i|vvt|si4|t-jet|tbi|twin\s*spark|jts|mpi|vtec|wrx|sti)\b/.test(s) ||
+    /\b(?:tsi|tfsi|fsi|ecoboost|tce|t-gdi|gdi|benzine|petrol|puretech|thp|multiair|skyactiv-g|sky-g|vvt-i|vvt|vti|ti-vct|duratec|si4|t-jet|tbi|twin\s*spark|twinair|jts|mpi|vtec|mivec|mzi|mzr|mps|cvvt|gsl|kompressor|wrx|sti|vr6|w12|r32)\b/.test(s) ||
+    /\b\d[.,]\d{1,2}\s*(?:tsi|tfsi|fsi|t-gdi|gdi|tbi|thp)\b/.test(s) ||
+    /\b\d[.,]\d{1,2}\s*i\b/.test(s) ||
     /\b\d{2,3}(?:i|ti)\b/.test(s) ||
     /\b(?:t3|t4|t5|t6)\b/.test(s) ||
-    /\b(?:gti|gtd|amg|cupra|nismo|jcw|cooper)\b/.test(s) ||
+    /\b(?:gti|amg|cupra|nismo|jcw)\b/.test(s) ||
     /\bv[568]\b/.test(s) ||
     /\b\d[.,]\d\s*t\b/.test(s)
   )return "Petrol";
 
-  if(b==="bmw" && /\b(?:m\d{2,3}i|\d{2,3}i)\b/.test(s))return "Petrol";
+  if(b==="bmw" && /\b(?:m\d{2,3}i|\d{2,3}(?:i|ci|is|e))\b/.test(s))return "Petrol";
   if(b==="bmw" && /\b\d{2,3}d\b/.test(s))return "Diesel";
   if(b.includes("mercedes") && /\bamg\b/.test(s))return "Petrol";
 
