@@ -9,6 +9,8 @@ import {
   Euro,
   Gauge,
   Info,
+  MessageCircle,
+  Search,
   Settings2,
   ShieldCheck,
   SlidersHorizontal,
@@ -153,6 +155,11 @@ export default async function HomePage({params}: PageProps) {
       intro: "Otwórz profil pojazdu, aby zobaczyć dostępne strony Stage."
     }
   }[safeLocale];
+  const mobileCta = {
+    nl: {check: "Check kenteken", whatsapp: "WhatsApp"},
+    en: {check: "Check plate", whatsapp: "WhatsApp"},
+    pl: {check: "Sprawdź auto", whatsapp: "WhatsApp"}
+  }[safeLocale];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -168,7 +175,7 @@ export default async function HomePage({params}: PageProps) {
   };
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#050505]" id="top">
+    <main className="min-h-screen overflow-hidden bg-[#050505] pb-20 sm:pb-0" id="top">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
@@ -176,42 +183,42 @@ export default async function HomePage({params}: PageProps) {
 
       <CatalogHeader locale={safeLocale} />
 
-      <section className="relative border-b border-white/10">
+      <section className="relative border-b border-white/10 bg-[#050505]">
         <Image
           alt="Dark performance car in a tuning workshop"
-          className="absolute inset-0 object-cover object-center opacity-72"
+          className="absolute inset-0 hidden object-cover object-center opacity-55 md:block"
           fill
           priority
           quality={90}
           sizes="100vw"
           src={assetPath(homepageHeroImage)}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,#050505_0%,rgba(5,5,5,.92)_35%,rgba(5,5,5,.62)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,#050505_0%,rgba(5,5,5,.96)_48%,rgba(5,5,5,.78)_100%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(226,0,15,.18),transparent_28%,rgba(226,0,15,.08)_75%,transparent)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_74%_18%,rgba(226,0,15,.24),transparent_24rem)]" />
         <div className="absolute right-0 top-24 hidden h-[34rem] w-[58%] skew-y-[-7deg] bg-[repeating-linear-gradient(100deg,transparent_0_28px,rgba(226,0,15,.18)_30px,transparent_33px)] opacity-45 lg:block" />
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#050505] to-transparent" />
 
-        <div className="container relative z-10 pb-10 pt-10 lg:pt-14">
-          <div className="grid gap-9 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+        <div className="container relative z-10 pb-7 pt-6 sm:pb-10 sm:pt-10 lg:pt-14">
+          <div className="max-w-4xl">
             <div>
-              <Badge className="mb-5 border-primary/30 bg-primary/10 text-primary">
+              <Badge className="mb-4 border-primary/30 bg-primary/10 text-primary sm:mb-5">
                 {copy.heroKicker}
               </Badge>
-              <h1 className="racing-title max-w-3xl text-[2.65rem] leading-[0.92] text-white sm:text-5xl md:text-7xl">
+              <h1 className="racing-title max-w-3xl text-[2.15rem] leading-[0.96] text-white sm:text-5xl md:text-7xl">
                 {copy.heroLineA}
                 <span className="block text-primary max-sm:text-[1.9rem] max-sm:leading-none max-sm:hyphens-auto">
                   {copy.heroLineB}
                 </span>
                 <span className="block">{copy.heroLineC}</span>
               </h1>
-              <p className="mt-6 max-w-xl text-sm leading-7 text-slate-200 md:text-base">
+              <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-300 sm:mt-5 sm:text-[0.95rem] sm:leading-7 md:text-base">
                 {copy.heroIntro}
               </p>
             </div>
           </div>
 
-          <div className="panel-edge mt-9 grid gap-4 bg-black/78 p-4 shadow-[0_0_80px_rgba(0,0,0,.42)] backdrop-blur">
+          <div className="mt-5 grid gap-3 sm:mt-7 sm:rounded-lg sm:border sm:border-white/10 sm:bg-black/80 sm:p-4 sm:shadow-[0_0_80px_rgba(0,0,0,.42)] sm:backdrop-blur lg:mt-9">
             <PlateLookup
               locale={safeLocale}
               text={{
@@ -268,25 +275,26 @@ export default async function HomePage({params}: PageProps) {
               }}
             />
 
-            <ManualSelector
-              initialBrands={selectorBrands}
-              initialPopularVehicles={selectorPopularVehicles}
-              locale={safeLocale}
-              text={manualText}
-            />
+            <a
+              className="flex min-h-12 items-center justify-center gap-2 rounded-md border border-white/10 bg-white/[0.035] px-4 text-sm font-black uppercase text-white transition hover:border-primary/45 hover:bg-primary/10 hover:text-primary"
+              href="#manual-selector"
+            >
+              {copy.manualPanelTitle}
+              <ChevronRight className="h-4 w-4" />
+            </a>
           </div>
 
-          <div className="mt-4 grid gap-4 lg:grid-cols-3">
+          <div className="mt-4 hidden gap-3 sm:grid sm:grid-cols-3">
             {[
               {icon: ClipboardList, ...copy.featureA},
               {icon: Gauge, ...copy.featureB},
               {icon: Euro, ...copy.featureC}
             ].map((feature) => (
               <div
-                className="grid gap-4 rounded-lg border border-white/10 bg-black/70 p-5 sm:grid-cols-[auto_1fr]"
+                className="grid gap-3 rounded-lg border border-white/10 bg-black/70 p-4 sm:grid-cols-[auto_1fr] sm:p-5"
                 key={feature.title}
               >
-                <feature.icon className="h-10 w-10 text-primary" />
+                <feature.icon className="h-8 w-8 text-primary sm:h-9 sm:w-9" />
                 <div>
                   <div className="font-black uppercase text-white">{feature.title}</div>
                   <p className="mt-1 text-sm leading-6 text-muted-foreground">{feature.text}</p>
@@ -295,6 +303,15 @@ export default async function HomePage({params}: PageProps) {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="container py-7 sm:py-9">
+        <ManualSelector
+          initialBrands={selectorBrands}
+          initialPopularVehicles={selectorPopularVehicles}
+          locale={safeLocale}
+          text={manualText}
+        />
       </section>
 
       <section className="container py-8">
@@ -347,7 +364,7 @@ export default async function HomePage({params}: PageProps) {
           <p className="mt-2 text-sm text-muted-foreground">{copy.exampleIntro}</p>
 
           <div className="mt-6 grid gap-4 xl:grid-cols-[310px_1fr_230px]">
-            <div className="overflow-hidden rounded-lg border border-white/10 bg-black/70">
+            <div className="order-2 overflow-hidden rounded-lg border border-white/10 bg-black/70 xl:order-1">
               <div className="relative h-48">
                 <Image
                   alt="BMW 320d NoordTune tuning voorbeeld"
@@ -381,8 +398,8 @@ export default async function HomePage({params}: PageProps) {
               </div>
             </div>
 
-            <div className="grid gap-4">
-              <div className="grid gap-3 md:grid-cols-4">
+            <div className="order-1 grid gap-4 xl:order-2">
+              <div className="grid gap-3 sm:grid-cols-3">
                 <div className="rounded-lg border border-white/10 bg-black/45 p-4">
                   <div className="text-xs font-black uppercase text-muted-foreground">
                     {copy.standard}
@@ -431,7 +448,7 @@ export default async function HomePage({params}: PageProps) {
               </div>
             </div>
 
-            <aside className="rounded-lg border border-white/10 bg-black/70 p-5">
+            <aside className="order-3 rounded-lg border border-white/10 bg-black/70 p-5">
               <div className="text-sm font-black uppercase text-white">
                 {copy.individualQuote}
               </div>
@@ -668,7 +685,26 @@ export default async function HomePage({params}: PageProps) {
       <div id="quote">
         <CatalogFooter locale={safeLocale} />
       </div>
-      <FloatingWhatsappButton locale={safeLocale} />
+
+      <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-[1fr_auto] gap-2 border-t border-white/10 bg-black/95 p-2 shadow-[0_-12px_36px_rgba(0,0,0,.48)] backdrop-blur sm:hidden">
+        <a
+          className="flex min-h-12 items-center justify-center gap-2 rounded-md bg-primary px-4 text-sm font-black uppercase text-white shadow-[0_0_28px_rgba(227,6,19,.32)]"
+          href="#rdw-configurator"
+        >
+          <Search className="h-4 w-4" />
+          {mobileCta.check}
+        </a>
+        <a
+          aria-label={mobileCta.whatsapp}
+          className="grid h-12 w-14 place-items-center rounded-md border border-[#25d366]/40 bg-[#25d366] text-white"
+          href={whatsappHref({locale: safeLocale})}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <MessageCircle className="h-5 w-5" />
+        </a>
+      </div>
+      <FloatingWhatsappButton locale={safeLocale} mobileCtaOffset />
     </main>
   );
 }

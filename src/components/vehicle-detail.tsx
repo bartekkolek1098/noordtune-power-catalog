@@ -24,7 +24,7 @@ import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
 import {customerStageNotes, customerStagePresentation} from "@/lib/stage-presentation";
-import {customHardwareLabel, estimateLimitations, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
+import {customHardwareLabel, estimateLimitations, formatEstimateGain, formatEstimatePower, formatEstimateSource, formatEstimateTorque, formatEstimateTorqueCompact} from "@/lib/estimate-copy";
 import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
@@ -192,20 +192,28 @@ export function VehicleDetail({
   }
 
   return (
-    <div className="grid min-w-0 gap-6 pb-24 lg:grid-cols-[minmax(0,1fr)_420px] lg:pb-0">
+    <div className="grid min-w-0 gap-5 pb-24 lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-6 lg:pb-0">
       <div className="min-w-0 space-y-6">
-        <div className="grid min-w-0 gap-4 md:grid-cols-3">
+        <div className="hidden min-w-0 gap-3 sm:grid sm:grid-cols-3">
           {[
             {
-              label: text.power,
-              value: `${vehicle.stockPowerHp} → ${formatEstimatePower(selectedStage, locale)}`
+              label: text.stock,
+              value: `${vehicle.stockPowerHp} ${powerUnit} / ${formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, locale)}`
             },
-            {label: text.torque, value: `${formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, locale)} → ${formatEstimateTorque(selectedStage, locale)}`},
+            {
+              label: selectedStage.name,
+              value: selectedStage.customHardware
+                ? customHardwareLabel(locale)
+                : `${formatEstimatePower(selectedStage, locale)} / ${formatEstimateTorqueCompact(selectedStage, locale)}`
+            },
             {
               label: text.gain,
-              value: selectedStage.customHardware ? customHardwareLabel(locale) : selectedStage.powerHp === undefined || selectedStage.torqueNm === undefined || vehicle.stockTorqueNm === undefined ? "—" : `${selectedStage.approximate ? "≈" : ""}+${selectedStage.powerHp - vehicle.stockPowerHp} ${powerUnit} / ${selectedStage.approximate ? "≈" : ""}+${
-                selectedStage.torqueNm - vehicle.stockTorqueNm
-              } Nm`
+              value: formatEstimateGain(
+                selectedStage,
+                vehicle.stockPowerHp,
+                vehicle.stockTorqueNm,
+                locale
+              )
             }
           ].map((item) => (
             <div className="min-w-0 rounded-[3px] border border-white/10 bg-black/45 p-4" key={item.label}>
@@ -245,7 +253,7 @@ export function VehicleDetail({
             </Badge>
           </div>
 
-          <div className="mt-6 grid min-w-0 gap-3 md:grid-cols-3">
+          <div className="mt-6 grid min-w-0 gap-3 sm:grid-cols-2">
             {recommendationCards.map(({description, index, label, stage}) => {
               const isRecommendedSelection = recommendedPackage === stage.name;
 
@@ -277,8 +285,14 @@ export function VehicleDetail({
                     {description}
                   </p>
                   <div className="mt-4 border-t border-white/10 pt-3 text-sm font-black text-white">
-                    <span className="block">
-                      {formatEstimatePower(stage, locale)}{!stage.customHardware ? ` / ${formatEstimateTorque(stage, locale)}` : ""}
+                    <span className="flex flex-wrap items-baseline gap-x-2">
+                      <span className="text-xl">{formatEstimatePower(stage, locale)}</span>
+                      {!stage.customHardware ? (
+                        <>
+                          <span className="text-base text-slate-500">/</span>
+                          <span className="text-base text-slate-300">{formatEstimateTorqueCompact(stage, locale)}</span>
+                        </>
+                      ) : null}
                     </span>
                     <span className="mt-1 block text-xs text-primary">
                       {formatQuote(resolveStageQuote(estimateProfile, stage, {estimateApplicable: true, scope: "family"}), locale)}
@@ -402,7 +416,7 @@ export function VehicleDetail({
         </div>
       </div>
 
-      <aside className="min-w-0 space-y-4 rounded-[3px] border border-primary/40 bg-black/70 p-5 shadow-[0_0_80px_rgba(226,0,15,.2)]">
+      <aside className="min-w-0 space-y-4 rounded-lg border border-primary/35 bg-black/75 p-4 shadow-[0_0_80px_rgba(226,0,15,.16)] sm:p-5 lg:sticky lg:top-24 lg:self-start">
         <div>
           <div className="text-sm font-bold uppercase tracking-[0.18em] text-primary">
             {text.calculator}

@@ -236,22 +236,22 @@ export function PlateLookup({
   }
 
   return (
-    <Card className="panel-edge min-w-0 carbon-panel border-primary/20 shadow-glow">
-      <CardHeader className="pb-4">
-        <div className="flex items-center justify-between gap-4">
+    <Card className="panel-edge min-w-0 scroll-mt-24 carbon-panel border-primary/20 shadow-glow" id="rdw-configurator">
+      <CardHeader className="p-4 pb-3 sm:p-6 sm:pb-4">
+        <div className="flex items-center justify-between gap-3 sm:gap-4">
           <div>
-            <CardTitle className="flex items-center gap-2 text-2xl">
-              <Car className="h-6 w-6 text-primary" />
+            <CardTitle className="flex items-center gap-2 text-xl sm:text-2xl">
+              <Car className="h-5 w-5 text-primary sm:h-6 sm:w-6" />
               {text.label}
             </CardTitle>
-            <p className="mt-2 text-sm text-muted-foreground">{text.source}</p>
+            <p className="mt-1 hidden text-sm text-muted-foreground sm:block sm:mt-2">{text.source}</p>
           </div>
           <Badge className="border-primary/30 bg-primary/10 text-primary">
             RDW
           </Badge>
         </div>
       </CardHeader>
-      <CardContent>
+      <CardContent className="px-4 pb-4 sm:px-6 sm:pb-6">
         <form className="space-y-4" onSubmit={onSubmit}>
           <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
             <div className="relative">

@@ -82,26 +82,26 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
   nl: {
     nav: ["HOME", "KATALOGUS", "DIAGNOSE", "WERKWIJZE", "RESULTATEN", "OVER ONS", "CONTACT"],
     phone: "+31 685 759 600",
-    heroKicker: "RDW VERMOGENSCATALOGUS",
-    heroLineA: "Controleer de",
-    heroLineB: "tuning­mogelijkheden",
-    heroLineC: "van jouw auto.",
+    heroKicker: "RDW VERMOGENSCATALOGUS • ASSEN",
+    heroLineA: "Check wat jouw",
+    heroLineB: "auto écht",
+    heroLineC: "kan.",
     heroIntro:
-      "NoordTune combineert RDW-gegevens met een professionele tuningcatalogus. Bekijk direct mogelijkheden voor Stage 1 / 2, DPF / AdBlue / EGR, DSG / TCU tuning en ontvang een indicatie op maat.",
+      "Voertuigspecifieke Stage 1 en Stage 2 informatie, zonder generieke gokwaarden.",
     manualPanelTitle: "Of kies jouw auto handmatig",
     manualPanelText:
       "Voor klanten buiten Nederland: kies merk, model, bouwjaar en motor zonder Nederlands kenteken.",
     featureA: {
-      title: "RDW-gegevens",
-      text: "We halen betrouwbare voertuiggegevens rechtstreeks op via de RDW-database."
+      title: "Exacte voertuigdata eerst",
+      text: "RDW helpt de juiste uitvoering af te bakenen voordat we tuningwaarden tonen."
     },
     featureB: {
-      title: "Stage 1 / 2",
-      text: "Bekijk alle beschikbare stages en prestatieniveaus voor jouw motor."
+      title: "Stage 1 & Stage 2",
+      text: "Geen generieke gokwaarden: brononderbouwd waar mogelijk, anders duidelijk op aanvraag."
     },
     featureC: {
-      title: "Directe prijsindicatie",
-      text: "Ontvang direct een prijsindicatie of vraag een offerte op maat aan."
+      title: "Duidelijke volgende stap",
+      text: "Zie direct een passende prijsindicatie of vraag via WhatsApp om voertuigbevestiging."
     },
     exampleEyebrow: "Voorbeeldresultaat",
     exampleHeadingA: "Voorbeeld",
@@ -187,26 +187,26 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
   en: {
     nav: ["HOME", "POWER CATALOG", "DIAGNOSTICS", "PROCESS", "RESULTS", "ABOUT", "CONTACT"],
     phone: "+31 685 759 600",
-    heroKicker: "RDW POWER CATALOG",
-    heroLineA: "Check your car's",
-    heroLineB: "tuning potential",
-    heroLineC: "instantly.",
+    heroKicker: "RDW POWER CATALOG • ASSEN",
+    heroLineA: "Check what your",
+    heroLineB: "car can really",
+    heroLineC: "do.",
     heroIntro:
-      "NoordTune combines RDW vehicle data with a professional tuning catalog. Instantly view Stage 1 / 2, DPF / AdBlue / EGR, DSG / TCU tuning options and receive a tailored indication.",
+      "Vehicle-specific Stage 1 and Stage 2 information, without generic guesswork.",
     manualPanelTitle: "Or choose your car manually",
     manualPanelText:
       "For customers outside the Netherlands: choose make, model, year and engine without a Dutch plate.",
     featureA: {
-      title: "RDW data",
-      text: "We retrieve reliable vehicle data directly from the RDW database."
+      title: "Vehicle identity first",
+      text: "RDW data helps narrow the exact configuration before tuning figures are shown."
     },
     featureB: {
-      title: "Stage 1 / 2",
-      text: "View available stages and performance levels for your engine."
+      title: "Stage 1 & Stage 2",
+      text: "No generic guesswork: source-backed where possible, otherwise clearly on request."
     },
     featureC: {
-      title: "Instant price indication",
-      text: "Receive a direct indication or request a custom quote."
+      title: "Clear next step",
+      text: "See a scoped price indication or request vehicle confirmation through WhatsApp."
     },
     exampleEyebrow: "Example result",
     exampleHeadingA: "Example ",
@@ -292,26 +292,26 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
   pl: {
     nav: ["HOME", "KATALOG MOCY", "DIAGNOSTYKA", "JAK DZIAŁAMY", "WYNIKI", "O NAS", "KONTAKT"],
     phone: "+31 685 759 600",
-    heroKicker: "KATALOG MOCY RDW",
-    heroLineA: "Sprawdź",
-    heroLineB: "możliwości tuningu",
-    heroLineC: "swojego auta.",
+    heroKicker: "KATALOG MOCY RDW • ASSEN",
+    heroLineA: "Sprawdź, co",
+    heroLineB: "naprawdę potrafi",
+    heroLineC: "Twoje auto.",
     heroIntro:
-      "NoordTune łączy dane RDW z profesjonalnym katalogiem tuningu. Od razu sprawdzisz Stage 1 / 2, DPF / AdBlue / EGR, tuning DSG / TCU i otrzymasz indywidualną wycenę.",
+      "Dane Stage 1 i Stage 2 dla konkretnego auta, bez generowanych wartości na podstawie zgadywania.",
     manualPanelTitle: "Lub wybierz auto ręcznie",
     manualPanelText:
       "Dla klientów spoza Holandii: wybierz markę, model, rok i silnik bez holenderskiej tablicy.",
     featureA: {
-      title: "Dane RDW",
-      text: "Pobieramy wiarygodne dane pojazdu bezpośrednio z bazy RDW."
+      title: "Najpierw identyfikacja auta",
+      text: "Dane RDW pomagają zawęzić dokładną wersję zanim pokażemy parametry tuningu."
     },
     featureB: {
-      title: "Stage 1 / 2",
-      text: "Zobacz dostępne stage i poziomy osiągów dla swojego silnika."
+      title: "Stage 1 & Stage 2",
+      text: "Bez zgadywania: dane źródłowe tam, gdzie są mocne, a w pozostałych przypadkach jasne „na zapytanie”."
     },
     featureC: {
-      title: "Szybka cena orientacyjna",
-      text: "Otrzymaj od razu orientacyjną cenę albo poproś o wycenę."
+      title: "Jasny następny krok",
+      text: "Zobacz właściwą cenę orientacyjną albo poproś na WhatsApp o potwierdzenie konfiguracji."
     },
     exampleEyebrow: "Przykładowy wynik",
     exampleHeadingA: "Przykładowy ",
