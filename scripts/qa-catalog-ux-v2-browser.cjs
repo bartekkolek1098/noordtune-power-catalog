@@ -1,0 +1,83 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+const assert = require("node:assert/strict");
+const {existsSync, mkdirSync} = require("node:fs");
+const {join} = require("node:path");
+const {tmpdir} = require("node:os");
+const {chromium} = require(
+  process.env.PLAYWRIGHT_MODULE ||
+    "C:/Users/barto/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright"
+);
+
+const baseUrl = process.env.UX_QA_URL || "http://127.0.0.1:3011";
+const outputDir = join(tmpdir(), "noordtune-catalog-ux-v2");
+mkdirSync(outputDir, {recursive: true});
+const systemBrowser = [
+  process.env.PLAYWRIGHT_EXECUTABLE,
+  "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+].find((path) => path && existsSync(path));
+
+const expected = {
+  nl: {headline: /Check wat jouw.*auto écht.*kan\./is, manual: "Of kies jouw auto handmatig"},
+  en: {headline: /Check what your.*car can really.*do\./is, manual: "Or choose your car manually"},
+  pl: {headline: /Sprawdź, co.*naprawdę potrafi.*Twoje auto\./is, manual: "Lub wybierz auto ręcznie"}
+};
+
+(async () => {
+  const browser = await chromium.launch({
+    headless: true,
+    ...(systemBrowser ? {executablePath: systemBrowser} : {})
+  });
+  const errors = [];
+  try {
+    for (const locale of ["nl", "en", "pl"]) {
+      for (const width of [320, 390, 768, 1440]) {
+        const page = await browser.newPage({viewport: {width, height: width < 768 ? 844 : 960}});
+        page.on("console", message => {
+          if (message.type() === "error") errors.push(`${locale}/${width} console: ${message.text()}`);
+        });
+        page.on("pageerror", error => errors.push(`${locale}/${width} page: ${error.message}`));
+        await page.goto(`${baseUrl}/${locale}`, {waitUntil: "networkidle"});
+
+        const h1 = await page.locator("h1").first().innerText();
+        assert.match(h1, expected[locale].headline, `${locale}/${width}: conversion headline`);
+        const plate = page.locator("input.plate-shadow");
+        assert.ok(await plate.isVisible(), `${locale}/${width}: plate lookup visible`);
+        const plateBox = await plate.boundingBox();
+        assert.ok(plateBox && plateBox.y < (width < 768 ? 720 : 900), `${locale}/${width}: plate lookup above first-screen threshold`);
+
+        const manualCta = page.locator('a[href="#manual-selector"]').first();
+        assert.ok(await manualCta.isVisible(), `${locale}/${width}: manual selector CTA visible`);
+        assert.ok(await page.locator("#manual-selector").isVisible(), `${locale}/${width}: manual selector exists`);
+        const manualBox = await page.locator("#manual-selector").boundingBox();
+        if (width < 768) assert.ok(manualBox && manualBox.y > plateBox.y, `${locale}/${width}: manual selector follows plate-first flow`);
+
+        const bodyText = await page.locator("body").innerText();
+        assert.ok(!bodyText.includes("Stage 3+"), `${locale}/${width}: no Stage 3+ customer copy`);
+        const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+        assert.ok(overflow <= 1, `${locale}/${width}: horizontal overflow ${overflow}px`);
+
+        if (locale === "nl" && width === 390) {
+          const stage1 = page.getByText("Stage 1", {exact: true}).first();
+          const stage2 = page.getByText("Stage 2", {exact: true}).first();
+          const s1 = await stage1.boundingBox();
+          const s2 = await stage2.boundingBox();
+          assert.ok(s1 && s2 && s1.y < s2.y, "mobile: Stage 1 precedes Stage 2");
+          await page.screenshot({path: join(outputDir, "home-nl-390.png"), fullPage: true});
+        }
+        if (locale === "nl" && width === 1440) {
+          await page.screenshot({path: join(outputDir, "home-nl-1440.png"), fullPage: true});
+        }
+        await page.close();
+      }
+    }
+
+    assert.deepEqual(errors, [], errors.join("\n"));
+    console.log(`Catalog UX V2 browser PASS: NL/EN/PL at 320/390/768/1440; plate-first flow, Stage 1/2 only, no overflow. Screenshots: ${outputDir}`);
+  } finally {
+    await browser.close();
+  }
+})().catch(error => {
+  console.error(error);
+  process.exitCode = 1;
+});
