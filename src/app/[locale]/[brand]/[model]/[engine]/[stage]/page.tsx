@@ -1,5 +1,5 @@
 import {customerVehicle} from "@/lib/customer-profile";
-import {notFound} from "next/navigation";
+import {notFound, permanentRedirect} from "next/navigation";
 import {getTranslations} from "next-intl/server";
 import {
   engineCatalog,
@@ -8,6 +8,7 @@ import {
   getVehicleSeoSlugs,
   stageSlugMap
 } from "@/data/catalog";
+import {isPublicCatalogStageName} from "@/data/catalog-shared";
 import {formatQuote, resolveStageQuote} from "@/data/pricing";
 import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
 import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
@@ -51,7 +52,7 @@ export function generateStaticParams() {
     engineCatalog.flatMap((vehicle) => {
       const slugs = getVehicleSeoSlugs(vehicle);
 
-      return vehicle.stages.map((stage) => ({
+      return vehicle.stages.filter((stage) => isPublicCatalogStageName(stage.name)).map((stage) => ({
         locale,
         brand: slugs.brand,
         model: slugs.model,
@@ -67,16 +68,17 @@ export async function generateMetadata({params}: PageProps) {
   const safeLocale = isLocale(locale) ? locale : routing.defaultLocale;
   const vehicle = getVehicleBySeoSlugs(brand, model, engine);
   const stageName = getStageNameFromSlug(stage);
-  const selectedStage = vehicle?.stages.find((item) => item.name === stageName);
+  const displayVehicle = vehicle ? customerVehicle(vehicle) : undefined;
+  const selectedStage = displayVehicle?.stages.find((item) => item.name === stageName);
 
-  if (!vehicle || !stageName || !selectedStage) {
+  if (!vehicle || !displayVehicle || !stageName || !selectedStage) {
     return {};
   }
 
   const path = stageSeoPathWithoutLocale(vehicle, selectedStage.name);
 
   return {
-    ...stageMetadata(safeLocale, vehicle, selectedStage),
+    ...stageMetadata(safeLocale, displayVehicle, selectedStage),
     alternates: {
       canonical: absoluteUrl(`/${safeLocale}${path}`),
       languages: alternateLanguageUrls(path)
@@ -98,13 +100,18 @@ export default async function VehicleStagePage({params}: PageProps) {
     notFound();
   }
 
-  const selectedStage = applyStageHardwarePolicy(vehicle.stages).find((item) => item.name === stageName);
+  const safeLocale = locale as Locale;
+
+  if (stageName === "Stage 3+") {
+    permanentRedirect(stageSeoPath(safeLocale, vehicle, "Stage 2"));
+  }
+
+  const displayVehicle = customerVehicle(vehicle);
+  const selectedStage = applyStageHardwarePolicy(displayVehicle.stages).find((item) => item.name === stageName);
 
   if (!selectedStage) {
     notFound();
   }
-
-  const safeLocale = locale as Locale;
   const t = await getTranslations({locale: safeLocale, namespace: "Vehicle"});
   const powerUnit = safeLocale === "en" ? "hp" : safeLocale === "pl" ? "KM" : "pk";
   const slugs = getVehicleSeoSlugs(vehicle);
@@ -112,7 +119,7 @@ export default async function VehicleStagePage({params}: PageProps) {
   const currentStageUrl = absoluteUrl(stageSeoPath(safeLocale, vehicle, selectedStage.name));
   const vehicleUrl = absoluteUrl(vehicleDetailPath(safeLocale, vehicle));
   const provider = noordTuneProviderJsonLd();
-  const selectedQuote = resolveStageQuote(vehicle, selectedStage);
+  const selectedQuote = resolveStageQuote(displayVehicle, selectedStage);
   const catalogLabel = safeLocale === "en" ? "Power Catalog" : safeLocale === "pl" ? "Katalog mocy" : "Catalogus";
   const chiptuningLabel =
     safeLocale === "en"
@@ -173,7 +180,7 @@ export default async function VehicleStagePage({params}: PageProps) {
       href: chiptuningHref(safeLocale),
       label: t("seo.mainChiptuning")
     },
-    ...vehicle.stages
+    ...displayVehicle.stages
       .filter((candidate) => candidate.name !== selectedStage.name)
       .map((candidate) => ({
         href: sitePath(stageSeoPath(safeLocale, vehicle, candidate.name)),
@@ -314,7 +321,7 @@ export default async function VehicleStagePage({params}: PageProps) {
               quoteSelected: t("recommendation.quoteSelected")
             }
           }}
-          vehicle={customerVehicle(vehicle)}
+          vehicle={displayVehicle}
         />
         <SeoInfoSections
           cards={seoCards}

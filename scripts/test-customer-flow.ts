@@ -45,5 +45,5 @@ const resolved=resolveRdwTuningEstimate({make:'BMW',model:'128ti',fuel:'Petrol',
 const safe=customerProfile(resolved);assert.equal(safe.stages[0].powerHp,310);assert.equal(safe.stages[0].torqueNm,480);assert.equal(safe.stages[1].powerHp,320);assert.equal(safe.stages[1].torqueNm,undefined);
 assert.equal(estimateChartData(safe.stages,265)[2].pk,320);assert.equal(estimateChartData(safe.stages,265)[2].nm,null);
 assert.doesNotMatch(JSON.stringify(safe),/NoordTune generic RDW indication policy|no recursive Stage|Rounded local planning range|No defensible stock torque source/);
-for(const v of engineCatalog){const p=getCatalogEstimateProfile(customerVehicle(v));assert.deepEqual(p.stages.map(s=>[s.powerHp,s.torqueNm]),v.stages.map(s=>[s.powerHp,s.torqueNm]));}
+for(const v of engineCatalog){const safeVehicle=customerVehicle(v);const p=getCatalogEstimateProfile(safeVehicle);assert.deepEqual(p.stages.map(s=>[s.powerHp,s.torqueNm]),safeVehicle.stages.map(s=>[s.powerHp,s.torqueNm]));}
 console.log('Customer flow: verified navigation, six comparison causes, localized scope, independent field availability and shared message/chart values PASS.');

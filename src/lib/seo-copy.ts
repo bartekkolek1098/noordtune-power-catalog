@@ -22,7 +22,7 @@ const localeCopy: Record<
     stageTitleSuffix: "chiptuning",
     homeTitle: "Chiptuning catalogus & RDW-check",
     homeDescription:
-      "Bekijk voertuigspecifieke tuningprofielen voor Stage 1, 2 en 3+, met prijsindicaties via RDW-kentekencheck of handmatige selectie."
+      "Bekijk voertuigspecifieke tuningprofielen voor Stage 1 en Stage 2, met prijsindicaties via RDW-kentekencheck of handmatige selectie."
   },
   en: {
     powerUnit: "hp",
@@ -30,7 +30,7 @@ const localeCopy: Record<
     stageTitleSuffix: "tuning",
     homeTitle: "Chiptuning catalog & RDW check",
     homeDescription:
-      "View vehicle-specific Stage 1, 2 and 3+ tuning profiles with price indications through an RDW plate check or manual selection."
+      "View vehicle-specific Stage 1 and Stage 2 tuning profiles with price indications through an RDW plate check or manual selection."
   },
   pl: {
     powerUnit: "KM",
@@ -38,7 +38,7 @@ const localeCopy: Record<
     stageTitleSuffix: "chiptuning",
     homeTitle: "Katalog chiptuningu i sprawdzanie RDW",
     homeDescription:
-      "Sprawdź profile tuningu Stage 1, 2 i 3+ z cenami orientacyjnymi przez numer rejestracyjny RDW lub wybór ręczny."
+      "Sprawdź profile tuningu Stage 1 i Stage 2 z cenami orientacyjnymi przez numer rejestracyjny RDW lub wybór ręczny."
   }
 };
 

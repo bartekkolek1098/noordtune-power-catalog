@@ -52,7 +52,7 @@ export async function generateMetadata({params}: PageProps) {
   }
 
   return {
-    ...vehicleMetadata(safeLocale, vehicle),
+    ...vehicleMetadata(safeLocale, customerVehicle(vehicle)),
     alternates: {
       canonical: absoluteUrl(vehicleDetailPath(safeLocale, vehicle)),
       languages: alternateLanguageUrls(`/vehicles/${vehicle.id}`)
@@ -74,6 +74,7 @@ export default async function VehiclePage({params}: PageProps) {
   }
 
   const safeLocale = locale as Locale;
+  const displayVehicle = customerVehicle(vehicle);
   const t = await getTranslations({locale: safeLocale, namespace: "Vehicle"});
   const powerUnit = safeLocale === "en" ? "hp" : safeLocale === "pl" ? "KM" : "pk";
   const catalogLabel = safeLocale === "en" ? "Power Catalog" : safeLocale === "pl" ? "Katalog mocy" : "Catalogus";
@@ -114,7 +115,7 @@ export default async function VehiclePage({params}: PageProps) {
       label: t("seo.quoteLink"),
       primary: true
     },
-    ...vehicle.stages.map((stage) => ({
+    ...displayVehicle.stages.map((stage) => ({
       href: sitePath(stageSeoPath(safeLocale, vehicle, stage.name)),
       label: `${stage.name} ${vehicle.brand} ${vehicle.model}`
     })),
@@ -182,8 +183,8 @@ export default async function VehiclePage({params}: PageProps) {
                 {t("stock")}: {vehicle.stockPowerHp} {powerUnit} / {formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, safeLocale)}
               </span>
               <span className="rounded-md border border-primary/30 bg-primary/15 px-3 py-2 text-primary">
-                {t("tuned")}: {formatEstimatePower(vehicle.stages[0], safeLocale)} /{" "}
-                {formatEstimateTorque(vehicle.stages[0], safeLocale)}
+                {t("tuned")}: {formatEstimatePower(displayVehicle.stages[0], safeLocale)} /{" "}
+                {formatEstimateTorque(displayVehicle.stages[0], safeLocale)}
               </span>
               <span className="rounded-md border border-white/10 bg-white/[0.05] px-3 py-2">
                 {vehicle.yearRange}
@@ -261,7 +262,7 @@ export default async function VehiclePage({params}: PageProps) {
               quoteSelected: t("recommendation.quoteSelected")
             }
           }}
-          vehicle={customerVehicle(vehicle)}
+          vehicle={displayVehicle}
         />
         <SeoInfoSections
           cards={seoCards}

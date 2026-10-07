@@ -13,11 +13,12 @@ const {curatedVehiclePublications} = require("../src/data/curated-catalog.ts") a
 const {curatedVehicleTechnicalProfiles} = require("../src/data/curated-technical.ts") as typeof import(
   "../src/data/curated-technical"
 );
-const {serviceOptions} = require("../src/data/catalog-shared.ts") as typeof import(
+const {serviceOptions, isPublicCatalogStageName} = require("../src/data/catalog-shared.ts") as typeof import(
   "../src/data/catalog-shared"
 );
 const pricing = require("../src/data/pricing.ts") as typeof import("../src/data/pricing");
 const {formatEstimatePower, formatEstimateTorque} = require("../src/lib/estimate-copy.ts") as typeof import("../src/lib/estimate-copy");
+const {customerVehicle} = require("../src/lib/customer-profile.ts") as typeof import("../src/lib/customer-profile");
 const {routing} = require("../src/i18n/routing.ts") as typeof import("../src/i18n/routing");
 
 type AuditSeverity = "critical" | "warning";
@@ -51,7 +52,7 @@ const stageCount = catalog.vehicleDatabase.reduce(
   0
 );
 const seoStageDefinitionCount = catalog.engineCatalog.reduce(
-  (total, vehicle) => total + vehicle.stages.length,
+  (total, vehicle) => total + vehicle.stages.filter((stage) => isPublicCatalogStageName(stage.name)).length,
   0
 );
 const localeCount = routing.locales.length;
@@ -480,8 +481,13 @@ for (const vehicle of catalog.engineCatalog) {
 
   const source = canonicalVehicleById.get(vehicle.sourceCanonicalId ?? vehicle.id);
   const publicStage1 = vehicle.stages.find((stage) => stage.name === "Stage 1");
+  const customerSafeVehicle = customerVehicle(vehicle);
+  const customerSafeStage1 = customerSafeVehicle.stages.find((stage) => stage.name === "Stage 1");
+  const customerSafeStage1Quote = customerSafeStage1
+    ? pricing.resolveStageQuote(customerSafeVehicle, customerSafeStage1)
+    : undefined;
 
-  if (source && publicStage1) {
+  if (source && publicStage1 && customerSafeStage1Quote) {
     const selectorItem = catalog
       .getVehicleSelectorItems({
         brand: source.brand,
@@ -490,9 +496,9 @@ for (const vehicle of catalog.engineCatalog) {
       })
       .find((item) => item.id === vehicle.id);
 
-    if (!selectorItem || JSON.stringify(selectorItem.quote) !== JSON.stringify(publicStage1.quote)) {
+    if (!selectorItem || JSON.stringify(selectorItem.quote) !== JSON.stringify(customerSafeStage1Quote)) {
       manualSelectorPricingMismatches.push(
-        `${vehicle.id}: engine selector=${JSON.stringify(selectorItem?.quote)}, public=${JSON.stringify(publicStage1.quote)}`
+        `${vehicle.id}: engine selector=${JSON.stringify(selectorItem?.quote)}, customer-safe=${JSON.stringify(customerSafeStage1Quote)}`
       );
     }
 
@@ -500,9 +506,9 @@ for (const vehicle of catalog.engineCatalog) {
       .searchVehicleSelectorItems(`${vehicle.brand} ${vehicle.model}`, 4)
       .find((item) => item.id === vehicle.id);
 
-    if (!quickSearchItem || JSON.stringify(quickSearchItem.quote) !== JSON.stringify(publicStage1.quote)) {
+    if (!quickSearchItem || JSON.stringify(quickSearchItem.quote) !== JSON.stringify(customerSafeStage1Quote)) {
       manualSelectorPricingMismatches.push(
-        `${vehicle.id}: quick search=${JSON.stringify(quickSearchItem?.quote)}, public=${JSON.stringify(publicStage1.quote)}`
+        `${vehicle.id}: quick search=${JSON.stringify(quickSearchItem?.quote)}, customer-safe=${JSON.stringify(customerSafeStage1Quote)}`
       );
     }
   }
@@ -1178,10 +1184,12 @@ const sitemapRouteKeys = routing.locales.flatMap((locale) => [
   ...catalog.engineCatalog.map((vehicle) => `/${locale}/vehicles/${vehicle.id}`),
   ...catalog.engineCatalog.flatMap((vehicle) => {
     const slugs = catalog.getVehicleSeoSlugs(vehicle);
-    return vehicle.stages.map(
-      (stage) =>
-        `/${locale}/${slugs.brand}/${slugs.model}/${slugs.engine}/${catalog.stageSlugMap[stage.name]}`
-    );
+    return vehicle.stages
+      .filter((stage) => isPublicCatalogStageName(stage.name))
+      .map(
+        (stage) =>
+          `/${locale}/${slugs.brand}/${slugs.model}/${slugs.engine}/${catalog.stageSlugMap[stage.name]}`
+      );
   })
 ]);
 const duplicateSitemapRoutes = duplicateGroups(
@@ -1283,6 +1291,7 @@ const previousPublicCommercialHashes = {
 // and services retain the original release hashes. The focused catalog-truth suites
 // freeze unrelated public records and check every corrected or withheld output.
 const approvedPublicTechnicalHash = "725f8cfd3a32578ba4adffac49dced259bd9f780bff2ccbcc1fa0fe7dd0db783";
+const approvedStage12PublicRoutesHash = "7836f3c8119bc4464ef57de499e3b9aa29796b0be4b342aae93ee9cd902146af";
 
 const currentTechnicalHashes = {
   canonicalFull: semanticHash(catalog.vehicleDatabase),
@@ -1311,7 +1320,13 @@ const currentPublicCommercialHashes = {
 const semanticIntegrityFailures = Object.entries(productionTechnicalBaseline)
   .filter(
     ([key, expected]) =>
-      currentTechnicalHashes[key as keyof typeof currentTechnicalHashes] !== (key === "publicTechnical" ? approvedPublicTechnicalHash : expected)
+      currentTechnicalHashes[key as keyof typeof currentTechnicalHashes] !== (
+        key === "publicTechnical"
+          ? approvedPublicTechnicalHash
+          : key === "publicRoutes"
+            ? approvedStage12PublicRoutesHash
+            : expected
+      )
   )
   .map(
     ([key, expected]) =>
@@ -1324,7 +1339,7 @@ if (
   catalog.engineCatalog.length !== 24 ||
   catalog.vehicleDatabase.length !== 58_586 ||
   stageCount !== 175_758 ||
-  sitemapUrlCount !== 291
+  sitemapUrlCount !== 219
 ) {
   semanticIntegrityFailures.push(
     `counts: public=${catalog.engineCatalog.length}, canonical=${catalog.vehicleDatabase.length}, stages=${stageCount}, sitemap=${sitemapUrlCount}`
@@ -1554,7 +1569,7 @@ ${Object.entries(previousPublicCommercialHashes)
   })
   .join("\n")}
 
-Protected counts: 24 public vehicles, 58,586 canonical vehicles, 175,758 canonical stage definitions and 291 sitemap URLs.
+Protected counts: 24 public vehicles, 58,586 canonical vehicles, 175,758 canonical stage definitions and 219 public sitemap URLs (Stage 1/2 only).
 
 Matcher wrapper fingerprint deliberately changed from \`c9c9fda79732266e7bf65d3b4b025f71f8d06a66ac914ba2d1340768c1c12df8\` to \`${currentTechnicalHashes.rdwMatcher}\`. Behavioral regressions check rejection, ambiguity and generated applicability; unchanged-matcher equality is no longer a requirement for this identity fix.
 

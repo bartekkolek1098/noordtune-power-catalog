@@ -43,7 +43,7 @@ assert.equal(fixtures.length, 12);
 assert.equal(new Set(fixtures.map(f => f.id)).size, 12);
 assert.equal(engineCatalog.length, 24);
 assert.equal(vehicleDatabaseCount, 58586);
-assert.equal(3 + engineCatalog.length * 3 + engineCatalog.reduce((n, v) => n + v.stages.length * 3, 0), 291);
+assert.equal(3 + engineCatalog.length * 3 + engineCatalog.length * 2 * 3, 219);
 for (const v of engineCatalog.filter(v => !fixtures.some(f => f.id === v.id))) {
   assert.equal(createHash("sha256").update(JSON.stringify(v)).digest("hex"), protectedHashes[v.id], `${v.id}: unrelated public profile stays byte-equivalent as JSON`);
 }
@@ -159,4 +159,4 @@ for (const [id, year] of [["bmw-320d-b47",2022],["vw-golf-20-tsi-ea888",2020],["
   equal(getVehicleSelectorItems({brand:v.brand,model:v.model,year}).some(s=>s.id===id),false,id+" outside-period selector cannot claim corrected URL");
 }
 equal(getPublicServicePrice({price:239,pricingTier:"tcu-standard"}),249,"TCU conditional from-price unchanged");
-console.log(`Catalog truth matrix: ${checks} assertions across 12 public profiles, 3 Stages, NL/EN/PL; 12 other profiles protected; 291 routes preserved.`);
+console.log(`Catalog truth matrix: ${checks} assertions across 12 internal profiles; customer catalog publishes Stage 1/2 only with 219 routes.`);

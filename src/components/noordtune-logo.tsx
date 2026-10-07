@@ -27,7 +27,7 @@ export function NoordTuneLogo({
         fill
         priority={!compact}
         sizes={compact ? "166px" : "(min-width: 768px) 250px, 202px"}
-        src={assetPath("/brand/v8/header-logo-transparent-small.png")}
+        src={assetPath("/brand/noordtune-logo-dark.svg")}
       />
     </span>
   );

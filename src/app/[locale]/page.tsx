@@ -22,6 +22,7 @@ import {
 } from "@/data/catalog";
 import {addQuoteOptions, assessVehicleAccess, formatQuote, resolveStageQuote} from "@/data/pricing";
 import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
+import {customerVehicle} from "@/lib/customer-profile";
 import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {
   homeVisualCopy,
@@ -97,7 +98,8 @@ export default async function HomePage({params}: PageProps) {
   const copy = homeVisualCopy[safeLocale];
   const localeCode = safeLocale === "en" ? "en-US" : safeLocale === "pl" ? "pl-PL" : "nl-NL";
   const services = localizedServiceOptions(safeLocale);
-  const bmwExample = getVehicleById("bmw-320d-b47");
+  const bmwExampleSource = getVehicleById("bmw-320d-b47");
+  const bmwExample = bmwExampleSource ? customerVehicle(bmwExampleSource) : undefined;
   const bmwExampleQuote = addQuoteOptions(
     resolveStageQuote(bmwExample, bmwExample?.stages[0]),
     services
@@ -503,7 +505,8 @@ export default async function HomePage({params}: PageProps) {
         </h2>
         <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {popularCars.map((car, index) => {
-            const detailVehicle = getVehicleById(car.detailId);
+            const detailVehicleSource = getVehicleById(car.detailId);
+            const detailVehicle = detailVehicleSource ? customerVehicle(detailVehicleSource) : undefined;
             const detailHref = sitePath(`/${safeLocale}/vehicles/${car.detailId}`);
             const stageHref = detailVehicle?.stages[0]
               ? sitePath(stageSeoPath(safeLocale, detailVehicle, detailVehicle.stages[0].name))
