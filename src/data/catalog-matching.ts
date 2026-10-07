@@ -80,8 +80,9 @@ const manufacturer=normalizeCatalogMake;
 
 export function normalizeCatalogFuel(value?: string): FuelType | undefined {
   const fuel = normalize(value);
-  // The catalog has no gas/conversion/hydrogen applicability. Do not erase those
-  // registry facts by selecting the petrol part of an unrepresented powertrain.
+  // CNG is a distinct fuel: never borrow a petrol/TSI result. Dual-fuel and
+  // other conversions stay unconfirmed rather than silently treated as petrol.
+  if (fuel === "cng") return "CNG";
   if (/\b(?:lpg|cng|lng|waterstof|hydrogen|gas)\b/.test(fuel)
     || (/benzine|petrol/.test(fuel) && /diesel/.test(fuel))) return undefined;
   // A petrol/electric combination describes a hybrid powertrain, not a petrol-only engine.

@@ -17,7 +17,9 @@ type VerifiedApplication = {
   cylinders: number;
   stockPowerHp: number;
   stockTorqueNm: number;
-  fuel: "Petrol" | "Diesel";
+  fuel: "Petrol" | "Diesel" | "CNG";
+  engineLabel: string;
+  requirements: string;
   powerRangeHp: [number, number];
   torqueRangeNm: [number, number];
   sources: EstimateSourceReference[];
@@ -39,6 +41,8 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
   stockPowerHp: 136,
   stockTorqueNm: 220,
   fuel: "Petrol",
+  engineLabel: "1.5 turbo petrol (1499 cc)",
+  requirements: "Confirm installed ECU, RON grade, fuel/hardware compatibility, and vehicle condition before calibration.",
   powerRangeHp: [165, 180],
   torqueRangeNm: [278, 280],
   sources: [
@@ -53,6 +57,37 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
       scope: "F40 118i 1.5 T 136 PS, MG1CS201 application, approximately +29 PS/+58 Nm; ECU not identified by RDW."}
   ],
   reviewNote: "Published F40 136 PS Stage 1 claims disagree; range spans observed 165–180 PS and 278–280 Nm. RON grade, ECU family, condition and transmission must be checked. These are not NoordTune measurements."
+}, {
+  id: "rdw-vw-caddy-iv-14-tgi-cng-110",
+  make: "Volkswagen",
+  model: "Caddy",
+  generation: "IV (2K facelift, 2015–2020)",
+  yearFrom: 2015,
+  yearTo: 2020,
+  displacementCc: 1395,
+  cylinders: 4,
+  stockPowerHp: 110,
+  stockTorqueNm: 200,
+  fuel: "CNG",
+  engineLabel: "1.4 TGI CNG (1395 cc)",
+  requirements: "Confirm CNG / gas-system compatibility, original ECU calibration, vehicle condition and transmission before work. Do not substitute petrol-only figures.",
+  powerRangeHp: [135, 140],
+  torqueRangeNm: [240, 250],
+  sources: [
+    {title: "BR-Performance Caddy IV 1.4 TGI", sourceType: "tuner", retrievalMethod: "page",
+      retrievedAt: "2026-10-07", url: "https://www.br-performance.nl/nl-nl/chiptuning/1-wagens/54-volkswagen/2937-caddy/7057-iv-07-2015-2020/7633-1-4-tgi/",
+      scope: "2015–2020 Caddy IV 1.4 TGI 110/200 stock, Stage 1 135/250."},
+    {title: "Shiftech Caddy 1.4 TGI 110", sourceType: "tuner", retrievalMethod: "page",
+      retrievedAt: "2026-10-07", url: "https://www.shiftech.eu/en/chiptuning/car/volkswagen/caddy/2015-4/petrol/1.4-tgi-110",
+      scope: "2015-onwards Caddy 1.4 TGI 110/200 stock, Stage 1 135/240; verify CNG application."},
+    {title: "VAGtechniek Caddy 2K facelift2 1.4 TGI", sourceType: "tuner", retrievalMethod: "page",
+      retrievedAt: "2026-10-07", url: "https://www.vagtechniek.nl/chiptuning/volkswagen/caddy/2k-facelift2/1.4-tgi-110pk/",
+      scope: "Caddy 2K facelift2 1.4 TGI 110/200 stock, Stage 1 140/250. Excludes Stage 1+ 145/260."},
+    {title: "Van Drie Performance Caddy 2015–2020 1.4 TGI", sourceType: "tuner", retrievalMethod: "page",
+      retrievedAt: "2026-10-07", url: "https://vandrieperformance.nl/voertuigen/volkswagen-caddy-2015-2020-1-4-tgi-110pk/",
+      scope: "2015–2020 Caddy 1.4 TGI 110/200 stock, Stage 1 135/250, published indicative figures."}
+  ],
+  reviewNote: "Indicative values from generation-and-fuel-specific 1.4 TGI references. Provider outputs vary: 135–140 PS, 240–250 Nm. Installed CNG system, ECU and fuel-specific calibration require workshop verification. No guarantee of power or road legality."
 }];
 
 function normalized(value?: string) {
@@ -75,13 +110,14 @@ function matches(input: EstimateMatchInput, app: VerifiedApplication) {
   const model = normalized(input.model);
   const generationHints = [input.model, input.type, input.variant, input.execution].filter(Boolean).join(" ");
   // An explicit conflicting body code is veto evidence even if power and year fit.
-  if (/\b(?:F20|F21)\b/i.test(generationHints)) return false;
+  if (app.make === "BMW" && /\b(?:F20|F21)\b/i.test(generationHints)) return false;
   return normalized(input.make) === normalized(app.make)
     && model.split(" ").includes(normalized(app.model))
     && year !== undefined && year >= app.yearFrom && year <= app.yearTo
     && input.displacementCc === app.displacementCc
     && (input.cylinders == null || input.cylinders === app.cylinders)
     && normalizeCatalogFuel(input.fuel) === app.fuel
+    && (app.fuel !== "CNG" || normalized(input.fuel) === "cng")
     && hp != null && Math.abs(hp - app.stockPowerHp) <= 0.6;
 }
 
@@ -94,7 +130,7 @@ export function resolveVerifiedRdwApplication(input: EstimateMatchInput, applica
     reasonCodes: ["GENERATION_SCOPED_SOURCE_EVIDENCE", "SOURCE_OWNER_REVIEW_REQUIRED", "OUTPUT_RANGE_SOURCE_CONFLICT", "ECU_AND_FUEL_SCOPE_UNCONFIRMED"],
     profile: {
       id: app.id, brand: app.make, model: `1 Series ${app.generation} ${app.model}`,
-      engine: "1.5 turbo petrol (1499 cc)", generation: app.generation, version: `${app.generation} ${app.model}, published indicative output`,
+      engine: app.engineLabel, generation: app.generation, version: `${app.generation} ${app.model}, published indicative output`,
       yearRange: `${app.yearFrom}–${app.yearTo}`, fuel: app.fuel,
       stockPowerHp: app.stockPowerHp, stockTorqueNm: app.stockTorqueNm,
       stages: [
@@ -103,7 +139,7 @@ export function resolveVerifiedRdwApplication(input: EstimateMatchInput, applica
           approximate: true, provenance: "multi-source", sourceConfidence: "multi-source",
           sourceProfileId: app.id, resolutionLevel: 1, confidenceLevel: "manual-review", recommendedUse: "daily",
           hardwareRequired: false, tcuRecommended: false, logCheckRecommended: true,
-          requirements: "Confirm installed ECU, RON grade, fuel/hardware compatibility, and vehicle condition before calibration.",
+          requirements: app.requirements,
           packageItems: [], notes: [app.reviewNote],
           quoteRequired: true,
           evidenceSourceIds: app.sources.map((source) => source.url!)
@@ -117,8 +153,9 @@ export function resolveVerifiedRdwApplication(input: EstimateMatchInput, applica
       recommendedPackage: {stage: "Stage 1", recommendedOptionIds: [], verificationRequired: true},
       provenance: "sourced-profile", sourceConfidence: "multi-source", coverageClass: "B", resolutionLevel: 1,
       sourceReferences: app.sources,
-      runtimeCommercialIdentity: {status: "resolved-compatible", make: app.make, model: app.model, fuel: app.fuel,
-        registeredPowerHp: app.stockPowerHp, displacementCc: app.displacementCc, firstAdmissionYear: yearOf(input)},
+      ...(app.fuel !== "CNG" ? {runtimeCommercialIdentity: {status: "resolved-compatible" as const,
+        make: app.make, model: app.model, fuel: app.fuel, registeredPowerHp: app.stockPowerHp,
+        displacementCc: app.displacementCc, firstAdmissionYear: yearOf(input)}} : {}),
       conditions: [app.reviewNote], conditionCodes: ["SOURCE_OWNER_REVIEW_REQUIRED", "OUTPUT_RANGE_SOURCE_CONFLICT", "ECU_AND_FUEL_SCOPE_UNCONFIRMED"],
       verificationRequired: true
     }

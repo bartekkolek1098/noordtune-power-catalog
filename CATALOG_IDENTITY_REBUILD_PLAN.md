@@ -45,3 +45,16 @@ This application is kept separate from F40 140 PS and earlier F20/F21 136 PS. Th
 5. Roll out in guarded phases: preview browser tests (all NL/EN/PL), review of priority families, release, production smoke/RDW QA, and error/coverage monitoring. Publish more numeric profiles only after their evidence gates pass.
 
 **Release rule:** Do not merge or deploy a patch unless local regressions, exact Git SHA Vercel deployment and fresh protected-preview QA all pass. Vercel connection presently has a 403 permission blocker for `bartekkolek1098s-projects`; human owner authorization is required for protected-preview browser testing.
+
+
+## Customer-first RDW recovery (second incident)
+
+Production check of the reported commercial vehicle showed a **2019 Volkswagen Caddy, RDW 1,395 cc / 81 kW / 110 PS / CNG**. The old normalizer returned an unknown powertrain and withheld the entire tuning profile. This is not evidence that CNG tuning is impossible; CNG must simply never receive petrol-only Stage output.
+
+The expanded exact-source layer now has **Caddy IV / 2K facelift, 1.4 TGI CNG, 110 PS, 2015–2020**. Four independently presented public tuning entries support an indicative Stage 1 **135–140 PS / 240–250 Nm**. Scope and installed gas-system / ECU / fuel calibration still need confirmation. Stage 2 is on request. Never assume tuning results from the 1.4 TSI petrol variant or borrow prices from source providers.
+
+Official RDW information is visible first, even if tuning is not confirmed. The compact lookup card now shows the actual RDW first admission (explicitly **not** a guaranteed manufacturing/model year), registered kW and converted metric hp, fuel and capacity. An expandable technical section exposes the source-provided type/variant/execution, APK and Dutch registration date, category/body, dimensions, loading and towing masses, original technical homologation, installed gas-system descriptor, emissions, odometer status and recall indicator when present. No ownership or personal information is passed to analytics. The API continues stripping the raw RDW response.
+
+When a tuning profile has no customer-safe Stage 1 value, a **separate comparable-application panel** can display a reference range only if publicly sourced records agree on make, model family, overlapping year period, fuel, displacement and original power. It explicitly says it is **not** the value for this exact vehicle, carries source URLs, shows generation ambiguity and asks the customer to contact NoordTune. It does not create exact Stage 1/2 values or apply default gain percentages. With no relevant public reference, display all known factory RDW data and a direct enquiry CTA instead of false precision.
+
+Regression coverage includes synthetic CNG and BMW registrations, year/fuel/power/cylinder/model conflict cases, the complete research/canonical audit, and actual browser lookups on the production-build preview across mobile/desktop NL/PL. No real plate or user details are committed to Git.
