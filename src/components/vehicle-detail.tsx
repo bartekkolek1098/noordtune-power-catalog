@@ -192,9 +192,9 @@ export function VehicleDetail({
   }
 
   return (
-    <div className="grid min-w-0 gap-6 pb-24 lg:grid-cols-[minmax(0,1fr)_420px] lg:pb-0">
+    <div className="grid min-w-0 gap-5 pb-24 lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-6 lg:pb-0">
       <div className="min-w-0 space-y-6">
-        <div className="grid min-w-0 gap-4 md:grid-cols-3">
+        <div className="grid min-w-0 gap-3 sm:grid-cols-3">
           {[
             {
               label: text.power,
@@ -245,7 +245,7 @@ export function VehicleDetail({
             </Badge>
           </div>
 
-          <div className="mt-6 grid min-w-0 gap-3 md:grid-cols-3">
+          <div className="mt-6 grid min-w-0 gap-3 sm:grid-cols-2">
             {recommendationCards.map(({description, index, label, stage}) => {
               const isRecommendedSelection = recommendedPackage === stage.name;
 
@@ -278,7 +278,7 @@ export function VehicleDetail({
                   </p>
                   <div className="mt-4 border-t border-white/10 pt-3 text-sm font-black text-white">
                     <span className="block">
-                      {formatEstimatePower(stage, locale)}{!stage.customHardware ? ` / ${formatEstimateTorque(stage, locale)}` : ""}
+                      <span className="text-xl">{formatEstimatePower(stage, locale)}</span>{!stage.customHardware ? <span className="ml-2 text-base text-slate-300">/ {formatEstimateTorque(stage, locale)}</span> : null}
                     </span>
                     <span className="mt-1 block text-xs text-primary">
                       {formatQuote(resolveStageQuote(estimateProfile, stage, {estimateApplicable: true, scope: "family"}), locale)}
@@ -402,7 +402,7 @@ export function VehicleDetail({
         </div>
       </div>
 
-      <aside className="min-w-0 space-y-4 rounded-[3px] border border-primary/40 bg-black/70 p-5 shadow-[0_0_80px_rgba(226,0,15,.2)]">
+      <aside className="min-w-0 space-y-4 rounded-lg border border-primary/35 bg-black/75 p-4 shadow-[0_0_80px_rgba(226,0,15,.16)] sm:p-5 lg:sticky lg:top-24 lg:self-start">
         <div>
           <div className="text-sm font-bold uppercase tracking-[0.18em] text-primary">
             {text.calculator}

@@ -19,6 +19,23 @@ export function CatalogFooter({locale}: {locale: Locale}) {
   const nav = mainNavItems(locale);
   const legal = legalLinks(locale);
   const location = localizedBusinessLocation(locale);
+  const productContext = {
+    nl: {
+      label: "NoordTune Power Catalog",
+      text: "De Power Catalog is onderdeel van NoordTune.nl. Voor diensten, projecten en bedrijfsinformatie ga je naar de hoofdsite.",
+      cta: "Naar NoordTune.nl"
+    },
+    en: {
+      label: "NoordTune Power Catalog",
+      text: "The Power Catalog is part of NoordTune.nl. Visit the main website for services, projects and company information.",
+      cta: "Go to NoordTune.nl"
+    },
+    pl: {
+      label: "NoordTune Power Catalog",
+      text: "Power Catalog jest częścią NoordTune.nl. Usługi, realizacje i informacje o firmie znajdziesz na głównej stronie.",
+      cta: "Przejdź do NoordTune.nl"
+    }
+  }[locale];
 
   return (
     <footer className="border-t border-white/10 bg-[#050505]">
@@ -28,9 +45,19 @@ export function CatalogFooter({locale}: {locale: Locale}) {
             <a aria-label="NoordTune.nl" href={mainLocaleHref(locale)} rel="noreferrer">
               <NoordTuneLogo className="h-[62px] w-[216px]" />
             </a>
-            <p className="mt-4 max-w-sm text-sm leading-6 text-muted-foreground">
-              {copy.description}
+            <div className="mt-3 text-xs font-black uppercase tracking-[0.16em] text-primary">
+              {productContext.label}
+            </div>
+            <p className="mt-2 max-w-sm text-sm leading-6 text-muted-foreground">
+              {productContext.text}
             </p>
+            <a
+              className="mt-3 inline-flex text-sm font-black text-white transition hover:text-primary"
+              href={mainLocaleHref(locale)}
+              rel="noreferrer"
+            >
+              {productContext.cta} →
+            </a>
           </div>
 
           <div>

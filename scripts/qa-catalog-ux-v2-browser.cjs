@@ -82,8 +82,25 @@ const expected = {
       }
     }
 
+    const vehiclePage = await browser.newPage({viewport: {width: 390, height: 844}});
+    vehiclePage.on("console", message => {
+      if (message.type() === "error") errors.push(`vehicle/390 console: ${message.text()}`);
+    });
+    vehiclePage.on("pageerror", error => errors.push(`vehicle/390 page: ${error.message}`));
+    await vehiclePage.goto(`${baseUrl}/nl/vehicles/bmw-320d-b47`, {waitUntil: "networkidle"});
+    assert.ok(await vehiclePage.getByText("Stage 1", {exact: true}).first().isVisible(), "vehicle/390: Stage 1 visible");
+    assert.ok(await vehiclePage.getByText("Stage 2", {exact: true}).first().isVisible(), "vehicle/390: Stage 2 visible");
+    assert.ok(!(await vehiclePage.locator("body").innerText()).includes("Stage 3+"), "vehicle/390: Stage 3+ absent");
+    assert.ok(await vehiclePage.locator('[data-testid="vehicle-sticky-quote"]').isVisible(), "vehicle/390: sticky quote visible");
+    const footerMainSite = vehiclePage.locator('footer a[aria-label="NoordTune.nl"]').first();
+    assert.equal(await footerMainSite.getAttribute("href"), "https://www.noordtune.nl/nl", "vehicle/390: footer returns to NoordTune.nl");
+    const vehicleOverflow = await vehiclePage.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+    assert.ok(vehicleOverflow <= 1, `vehicle/390: horizontal overflow ${vehicleOverflow}px`);
+    await vehiclePage.screenshot({path: join(outputDir, "vehicle-bmw320d-nl-390.png"), fullPage: true});
+    await vehiclePage.close();
+
     assert.deepEqual(errors, [], errors.join("\n"));
-    console.log(`Catalog UX V2 browser PASS: NL/EN/PL at 320/390/768/1440; plate-first flow, Stage 1/2 only, no overflow. Screenshots: ${outputDir}`);
+    console.log(`Catalog UX V2 browser PASS: NL/EN/PL at 320/390/768/1440 plus BMW vehicle mobile; plate-first flow, Stage 1/2 only, NoordTune.nl hierarchy and no overflow. Screenshots: ${outputDir}`);
   } finally {
     await browser.close();
   }
