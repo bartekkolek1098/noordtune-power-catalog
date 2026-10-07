@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
 import {engineCatalog, vehicleDatabaseCount, searchVehicleSelectorItems, getModelsForBrand, getYearsForModel, getVehicleSelectorItems, getReferenceSelectorEstimate, getVehicleById} from "../src/data/catalog.ts";
 import {getCatalogEstimateProfile} from "../src/data/tuning-estimates-shared.ts";
+import {customerVehicle} from "../src/lib/customer-profile.ts";
+import {formatEstimateGain, formatEstimatePower, formatEstimateTorqueCompact} from "../src/lib/estimate-copy.ts";
 import {resolveTuningEstimate, tuningReferenceProfiles, type EstimateMatchInput} from "../src/data/tuning-estimates.ts";
 import {resolveStageQuote} from "../src/data/pricing.ts";
 
@@ -11,6 +13,41 @@ const canonicalCount = vehicleDatabaseCount;
 const bmw: EstimateMatchInput = {make: "BMW", model: "128TI", fuel: "Benzine", displacementCc: 1998, registeredPower: {value: 195, unit: "kW"}, firstRegistrationDate: "2022-09-14", type: "F1H", variant: "7L51", cylinders: 4};
 const custom: EstimateMatchInput = {make: "FORD", model: "TRANSIT CUSTOM", fuel: "Diesel", displacementCc: 1995, registeredPower: {value: 77, unit: "kW"}, firstRegistrationDate: "2019-04-29", type: "FCC", variant: "YLF61ABX"};
 const connect: EstimateMatchInput = {make: "FORD", model: "TRANSIT CONNECT", fuel: "Diesel", displacementCc: 1499, registeredPower: {value: 73.5, unit: "kW"}, firstRegistrationDate: "2018-10-17", type: "PU2", variant: "Z2GA1BFX"};
+
+test("all 24 customer vehicle pages derive visible gains from actual Stage output ranges", () => {
+  for (const vehicle of engineCatalog) {
+    const profile = getCatalogEstimateProfile(customerVehicle(vehicle));
+    assert.ok(profile.stockPowerHp > 0, vehicle.id);
+    assert.deepEqual(profile.stages.map(stage => stage.name), ["Stage 1", "Stage 2"], vehicle.id);
+    for (const stage of profile.stages) {
+      for (const locale of ["nl", "en", "pl"] as const) {
+        const gain = formatEstimateGain(stage, profile.stockPowerHp, profile.stockTorqueNm, locale);
+        const power = stage.powerRangeHp ?? (stage.powerHp !== undefined ? [stage.powerHp, stage.powerHp] : undefined);
+        const torque = stage.torqueRangeNm ?? (stage.torqueNm !== undefined ? [stage.torqueNm, stage.torqueNm] : undefined);
+        const unit = {nl: "pk", en: "hp", pl: "KM"}[locale];
+        if (power) {
+          const start = power[0] - profile.stockPowerHp, end = power[1] - profile.stockPowerHp;
+          assert.ok(start >= 0 && end >= start, vehicle.id + " power range");
+          assert.match(gain, new RegExp("\\+" + start + (start === end ? "" : "–" + end) + " " + unit), vehicle.id + " gain " + locale);
+          assert.notEqual(gain, "—", vehicle.id + " must not show blank gain");
+        }
+        if (torque && profile.stockTorqueNm !== undefined) {
+          const start = torque[0] - profile.stockTorqueNm, end = torque[1] - profile.stockTorqueNm;
+          assert.match(gain, new RegExp("\\+" + start + (start === end ? "" : "–" + end) + " Nm"), vehicle.id + " torque gain " + locale);
+        }
+        if (!power && !(torque && profile.stockTorqueNm !== undefined)) assert.equal(gain, "—", vehicle.id + " unavailable Stage");
+        assert.ok(!formatEstimatePower(stage, locale).includes("→"), vehicle.id);
+        assert.ok(!formatEstimateTorqueCompact(stage, locale).includes("szacunek"), vehicle.id);
+      }
+    }
+  }
+  const golf = getCatalogEstimateProfile(customerVehicle(engineCatalog.find(vehicle => vehicle.id === "vw-golf-20-tsi-ea888")!));
+  assert.equal(golf.stockPowerHp, 230);
+  assert.equal(golf.stockTorqueNm, 350);
+  assert.equal(formatEstimateGain(golf.stages[0], golf.stockPowerHp, golf.stockTorqueNm, "pl"), "+70–75 KM / +90–110 Nm");
+  const bmw320d = getCatalogEstimateProfile(customerVehicle(engineCatalog.find(vehicle => vehicle.id === "bmw-320d-b47")!));
+  assert.equal(formatEstimateGain(bmw320d.stages[0], bmw320d.stockPowerHp, bmw320d.stockTorqueNm, "pl"), "+30–35 KM / +40–60 Nm");
+});
 
 test("all 24 public configurations retain 72 selectable Stages with reviewed output availability", () => {
   assert.equal(engineCatalog.length, 24);

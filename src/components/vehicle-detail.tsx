@@ -24,7 +24,7 @@ import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
 import {customerStageNotes, customerStagePresentation} from "@/lib/stage-presentation";
-import {customHardwareLabel, estimateLimitations, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
+import {estimateLimitations, formatEstimateGain, formatEstimatePower, formatEstimateSource, formatEstimateTorque, formatEstimateTorqueCompact} from "@/lib/estimate-copy";
 import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
@@ -194,27 +194,54 @@ export function VehicleDetail({
   return (
     <div className="grid min-w-0 gap-6 pb-24 lg:grid-cols-[minmax(0,1fr)_420px] lg:pb-0">
       <div className="min-w-0 space-y-6">
-        <div className="grid min-w-0 gap-4 md:grid-cols-3">
-          {[
-            {
-              label: text.power,
-              value: `${vehicle.stockPowerHp} → ${formatEstimatePower(selectedStage, locale)}`
-            },
-            {label: text.torque, value: `${formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, locale)} → ${formatEstimateTorque(selectedStage, locale)}`},
-            {
-              label: text.gain,
-              value: selectedStage.customHardware ? customHardwareLabel(locale) : selectedStage.powerHp === undefined || selectedStage.torqueNm === undefined || vehicle.stockTorqueNm === undefined ? "—" : `${selectedStage.approximate ? "≈" : ""}+${selectedStage.powerHp - vehicle.stockPowerHp} ${powerUnit} / ${selectedStage.approximate ? "≈" : ""}+${
-                selectedStage.torqueNm - vehicle.stockTorqueNm
-              } Nm`
-            }
-          ].map((item) => (
-            <div className="min-w-0 rounded-[3px] border border-white/10 bg-black/45 p-4" key={item.label}>
-              <div className="text-xs font-bold uppercase tracking-[0.18em] text-primary">
-                {item.label}
+        <div className="grid min-w-0 grid-cols-2 gap-3 md:grid-cols-3" data-testid="vehicle-output-summary">
+          {(() => {
+            const stockPower = estimateProfile.stockPowerHp;
+            const stockTorque = estimateProfile.stockTorqueNm;
+            const gain = formatEstimateGain(selectedStage, stockPower, stockTorque, locale);
+            const [gainPower, gainTorque] = gain === "—"
+              ? [{nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale], undefined]
+              : gain.split(" / ");
+            const figures = [
+              {
+                id: "stock",
+                label: text.stock,
+                power: `${stockPower} ${powerUnit}`,
+                torque: formatEstimateTorque({torqueNm: stockTorque}, locale)
+              },
+              {
+                id: "stage",
+                label: selectedStage.name,
+                power: formatEstimatePower(selectedStage, locale),
+                torque: selectedStage.customHardware || (
+                  selectedStage.powerHp === undefined && selectedStage.powerRangeHp === undefined &&
+                  selectedStage.torqueNm === undefined && selectedStage.torqueRangeNm === undefined
+                ) ? undefined : formatEstimateTorqueCompact(selectedStage, locale)
+              },
+              {
+                id: "gain",
+                label: text.gain,
+                power: gainPower,
+                torque: gainTorque
+              }
+            ];
+            return figures.map(item => (
+              <div
+                className={`min-w-0 rounded-[3px] border border-white/10 bg-black/45 p-3 sm:p-4 ${item.id === "gain" ? "col-span-2 md:col-span-1" : ""}`}
+                data-testid={`vehicle-output-${item.id}`}
+                key={item.id}
+              >
+                <div className="text-xs font-bold uppercase tracking-[0.14em] text-primary">{item.label}</div>
+                <div className="mt-2 break-words text-lg font-black leading-tight text-white sm:text-xl">{item.power}</div>
+                {item.torque ? <div className="mt-1 break-words text-base font-bold leading-tight text-slate-200 sm:text-lg">{item.torque}</div> : null}
+                {item.id === "stage" && selectedStage.approximate
+                  ? <p className="mt-2 text-[11px] leading-4 text-muted-foreground">
+                      {{nl: "Indicatieve waarden", en: "Indicative figures", pl: "Wartości orientacyjne"}[locale]}
+                    </p>
+                  : null}
               </div>
-              <div className="mt-2 break-words text-2xl font-black">{item.value}</div>
-            </div>
-          ))}
+            ));
+          })()}
         </div>
 
         <section
@@ -278,7 +305,7 @@ export function VehicleDetail({
                   </p>
                   <div className="mt-4 border-t border-white/10 pt-3 text-sm font-black text-white">
                     <span className="block">
-                      {formatEstimatePower(stage, locale)}{!stage.customHardware ? ` / ${formatEstimateTorque(stage, locale)}` : ""}
+                      {formatEstimatePower(stage, locale)}{!stage.customHardware ? ` / ${formatEstimateTorqueCompact(stage, locale)}` : ""}
                     </span>
                     <span className="mt-1 block text-xs text-primary">
                       {formatQuote(resolveStageQuote(estimateProfile, stage, {estimateApplicable: true, scope: "family"}), locale)}
@@ -444,7 +471,7 @@ export function VehicleDetail({
                   </span>
                 </span>
                 <span className="mt-1 block text-sm text-muted-foreground">
-                  {formatEstimatePower(stage, locale)}{!stage.customHardware ? ` / ${formatEstimateTorque(stage, locale)}` : ""}
+                  {formatEstimatePower(stage, locale)}{!stage.customHardware ? ` / ${formatEstimateTorqueCompact(stage, locale)}` : ""}
                 </span>
               </button>
             ))}
