@@ -7,11 +7,32 @@ const input=process.argv[2];
 if(!input||!fs.existsSync(input)) throw new Error("Usage: node scripts/build-selector-taxonomy-v2.cjs <vtech-discovery-v2.json>");
 const source=JSON.parse(fs.readFileSync(input,"utf8"));
 const brandMap={"Mercedes":"Mercedes-Benz","Seat":"SEAT","Mini":"MINI","Citroen":"Citroën","Alfa":"Alfa Romeo"};
-const fuel=label=>{
+const fuel=(label,brand)=>{
   const s=String(label??"").toLowerCase();
-  if(/\b(?:tdi|tdci|ecoblue|cdi|dci|hdi|crdi|multijet|diesel|d-4d|jtd)\b/.test(s))return "Diesel";
-  if(/\b(?:gte|e-hybrid|ehybrid|phev|hybrid|mhev|etsi|e-tsi)\b/.test(s))return "Hybrid";
-  if(/\b(?:tsi|tfsi|ecoboost|tce|t-gdi|gdi|benzine|petrol|turbo)\b/.test(s))return "Petrol";
+  const b=String(brand??"").toLowerCase();
+
+  if(/\b(?:gte|e-hybrid|ehybrid|phev|hybrid|mhev|mild hybrid|etsi|e-tsi|t8)\b/.test(s))return "Hybrid";
+  if(/\b(?:electric|bev|ev|e-tron|e tron|id\.?\s*[3-9]|born)\b/.test(s))return "Electric";
+
+  if(
+    /\b(?:tdi|tdci|ecoblue|cdi|cdti|dci|bluehdi|hdi|crdi|multijet|diesel|d-4d|jtd|jtdm|turbo\s*d|td4|sd4|tdv6|sdv6)\b/.test(s) ||
+    /\b\d{2,3}d\b/.test(s) ||
+    /\b(?:d2|d3|d4|d5|d6)\b/.test(s)
+  )return "Diesel";
+
+  if(
+    /\b(?:tsi|tfsi|fsi|ecoboost|tce|t-gdi|gdi|benzine|petrol|puretech|thp|multiair|skyactiv-g|vvt-i|vvt|si4|t-jet|tbi|twin\s*spark|jts|mpi|vtec|wrx|sti)\b/.test(s) ||
+    /\b\d{2,3}(?:i|ti)\b/.test(s) ||
+    /\b(?:t3|t4|t5|t6)\b/.test(s) ||
+    /\b(?:gti|gtd|amg|cupra|nismo|jcw|cooper)\b/.test(s) ||
+    /\bv[568]\b/.test(s) ||
+    /\b\d[.,]\d\s*t\b/.test(s)
+  )return "Petrol";
+
+  if(b==="bmw" && /\b(?:m\d{2,3}i|\d{2,3}i)\b/.test(s))return "Petrol";
+  if(b==="bmw" && /\b\d{2,3}d\b/.test(s))return "Diesel";
+  if(b.includes("mercedes") && /\bamg\b/.test(s))return "Petrol";
+
   return "Unknown";
 };
 const displacement=label=>{
@@ -34,7 +55,7 @@ const rows=source.variants.map(row=>{
     yearFrom:years.length?Math.min(...years):undefined,
     yearTo:years.length?Math.max(...years):undefined,
     engine:row.engineMarketingName,
-    fuel:fuel(row.engineMarketingName),
+    fuel:fuel(row.engineMarketingName,normalizedBrand),
     displacementCc:displacement(row.engineMarketingName),
     stockPowerHp:power(row.engineMarketingName),
     sourceUrl:row.url

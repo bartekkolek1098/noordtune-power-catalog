@@ -9,7 +9,7 @@ export type CatalogTaxonomyRow = {
   yearFrom: number;
   yearTo: number;
   engine: string;
-  fuel: "Petrol" | "Diesel" | "Hybrid" | "Unknown";
+  fuel: "Petrol" | "Diesel" | "Hybrid" | "Electric" | "Unknown";
   displacementCc?: number;
   stockPowerHp?: number;
   sourceUrl: string;

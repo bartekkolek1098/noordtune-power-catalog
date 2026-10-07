@@ -18,6 +18,19 @@ assert.equal(new Set(catalogTaxonomyV2.map(row => row.id)).size, catalogTaxonomy
 assert.equal(catalogTaxonomyV2Source.provider, "V-Tech");
 assert.equal(catalogTaxonomyV2Source.role, "taxonomy-only");
 
+assert.equal(
+  catalogTaxonomyV2.find(row => row.brand === "BMW" && row.model === "1" && row.generation === "F40" && /118d/.test(row.engine))?.fuel,
+  "Diesel"
+);
+assert.equal(
+  catalogTaxonomyV2.find(row => row.brand === "Audi" && row.model === "A4" && /1\.8 TFSI/.test(row.engine))?.fuel,
+  "Petrol"
+);
+assert.equal(
+  catalogTaxonomyV2.find(row => row.brand === "Alfa Romeo" && /JTDm/.test(row.engine))?.fuel,
+  "Diesel"
+);
+
 assert.ok(getBrands().includes("Volkswagen"));
 assert.ok(getBrands().includes("BMW"));
 
