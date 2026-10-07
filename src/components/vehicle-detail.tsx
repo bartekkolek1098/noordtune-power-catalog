@@ -24,7 +24,7 @@ import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
 import {customerStageNotes, customerStagePresentation} from "@/lib/stage-presentation";
-import {customHardwareLabel, estimateLimitations, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
+import {customHardwareLabel, estimateLimitations, formatEstimateGain, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
 import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
@@ -197,15 +197,23 @@ export function VehicleDetail({
         <div className="hidden min-w-0 gap-3 sm:grid sm:grid-cols-3">
           {[
             {
-              label: text.power,
-              value: `${vehicle.stockPowerHp} → ${formatEstimatePower(selectedStage, locale)}`
+              label: text.stock,
+              value: `${vehicle.stockPowerHp} ${powerUnit} / ${formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, locale)}`
             },
-            {label: text.torque, value: `${formatEstimateTorque({torqueNm: vehicle.stockTorqueNm}, locale)} → ${formatEstimateTorque(selectedStage, locale)}`},
+            {
+              label: selectedStage.name,
+              value: selectedStage.customHardware
+                ? customHardwareLabel(locale)
+                : `${formatEstimatePower(selectedStage, locale)} / ${formatEstimateTorque(selectedStage, locale)}`
+            },
             {
               label: text.gain,
-              value: selectedStage.customHardware ? customHardwareLabel(locale) : selectedStage.powerHp === undefined || selectedStage.torqueNm === undefined || vehicle.stockTorqueNm === undefined ? "—" : `${selectedStage.approximate ? "≈" : ""}+${selectedStage.powerHp - vehicle.stockPowerHp} ${powerUnit} / ${selectedStage.approximate ? "≈" : ""}+${
-                selectedStage.torqueNm - vehicle.stockTorqueNm
-              } Nm`
+              value: formatEstimateGain(
+                selectedStage,
+                vehicle.stockPowerHp,
+                vehicle.stockTorqueNm,
+                locale
+              )
             }
           ].map((item) => (
             <div className="min-w-0 rounded-[3px] border border-white/10 bg-black/45 p-4" key={item.label}>

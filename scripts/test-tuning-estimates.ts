@@ -3,6 +3,7 @@ import {engineCatalog, vehicleDatabaseCount, searchVehicleSelectorItems, getMode
 import {getCatalogEstimateProfile} from "../src/data/tuning-estimates-shared.ts";
 import {resolveTuningEstimate, tuningReferenceProfiles, type EstimateMatchInput} from "../src/data/tuning-estimates.ts";
 import {resolveStageQuote} from "../src/data/pricing.ts";
+import {formatEstimateGain} from "../src/lib/estimate-copy.ts";
 
 let passed = 0;
 function test(name: string, run: () => void) { run(); passed++; console.log(`PASS ${name}`); }
@@ -94,6 +95,13 @@ test("BMW 320d / GTI / Golf R use corrected ranges; manual Focus withholds outpu
       assert.equal(result.profile?.serviceCompatibility?.gearbox.status, "manual-review");
     }
   }
+});
+test("BMW 320d range gain copy is explicit instead of blank", () => {
+  const vehicle = engineCatalog.find(item => item.id === "bmw-320d-b47");
+  assert.ok(vehicle);
+  const stage = getCatalogEstimateProfile(vehicle).stages[0];
+  assert.equal(formatEstimateGain(stage, 190, 400, "pl"), "+30–35 KM / +40–60 Nm");
+  assert.equal(formatEstimateGain(stage, 190, 400, "nl"), "+30–35 pk / +40–60 Nm");
 });
 test("BMW 128ti uses manufacturer stock and RON98 tuner Stage 1 reference", () => {
   const result = resolveTuningEstimate(bmw, engineCatalog);

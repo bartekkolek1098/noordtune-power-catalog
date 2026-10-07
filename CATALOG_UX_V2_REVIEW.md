@@ -51,7 +51,10 @@ Vehicle pages prioritize the decision path before secondary technical detail.
 - Stage 2 remains honest about on-request scope where evidence is insufficient;
 - ECU-family detail is not placed in the mobile conversion hero;
 - the secondary NoordTune.nl/chiptuning CTA is hidden from the mobile hero;
-- sticky quote / WhatsApp actions remain available.
+- sticky quote / WhatsApp actions remain available;
+- range-based Stage 1 output is presented as separate stock / Stage / gain values;
+- derived gain ranges no longer collapse to an empty dash;
+- the comparison chart labels power and torque explicitly and uses separate Y axes.
 
 ## Localization
 

@@ -105,16 +105,29 @@ const expected = {
     const recommendation = vehiclePage.locator('[data-testid="vehicle-recommendation"]');
     const recommendationBox = await recommendation.boundingBox();
     assert.ok(recommendationBox && recommendationBox.y < 900, `vehicle/390: Stage comparison starts at ${recommendationBox?.y}px`);
-    assert.ok(await vehiclePage.getByText("Stage 1", {exact: true}).first().isVisible(), "vehicle/390: Stage 1 visible");
-    assert.ok(await vehiclePage.getByText("Stage 2", {exact: true}).first().isVisible(), "vehicle/390: Stage 2 visible");
+    assert.ok(await recommendation.getByText("Stage 1", {exact: true}).isVisible(), "vehicle/390: Stage 1 visible");
+    assert.ok(await recommendation.getByText("Stage 2", {exact: true}).isVisible(), "vehicle/390: Stage 2 visible");
     assert.ok(!(await vehiclePage.locator("body").innerText()).includes("Stage 3+"), "vehicle/390: Stage 3+ absent");
     assert.ok(await vehiclePage.locator('[data-testid="vehicle-sticky-quote"]').isVisible(), "vehicle/390: sticky quote visible");
     const footerMainSite = vehiclePage.locator('footer a[aria-label="NoordTune.nl"]').first();
     assert.equal(await footerMainSite.getAttribute("href"), "https://www.noordtune.nl/nl", "vehicle/390: footer returns to NoordTune.nl");
     const vehicleOverflow = await vehiclePage.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     assert.ok(vehicleOverflow <= 1, `vehicle/390: horizontal overflow ${vehicleOverflow}px`);
+    assert.ok(await vehiclePage.getByText("Vermogen (pk)", {exact: true}).isVisible(), "vehicle/390: chart labels power explicitly");
+    assert.ok(await vehiclePage.getByText("Koppel (Nm)", {exact: true}).isVisible(), "vehicle/390: chart labels torque explicitly");
     await vehiclePage.screenshot({path: join(outputDir, "vehicle-bmw320d-nl-390.png"), fullPage: true});
     await vehiclePage.close();
+
+    const vehicleTablet = await browser.newPage({viewport: {width: 768, height: 960}});
+    await vehicleTablet.goto(`${baseUrl}/pl/vehicles/bmw-320d-b47`, {waitUntil: "networkidle"});
+    const tabletText = await vehicleTablet.locator("body").innerText();
+    assert.ok(tabletText.includes("SERIA\n190 KM / 400 Nm"), "vehicle/768: stock output is a separate card");
+    assert.ok(tabletText.includes("STAGE 1\n220–225 KM / 440–460 Nm"), "vehicle/768: Stage 1 output is a separate card");
+    assert.ok(tabletText.includes("PRZYROST\n+30–35 KM / +40–60 Nm"), "vehicle/768: range gain is calculated");
+    assert.ok(!tabletText.includes("190 →"), "vehicle/768: legacy mixed stock-to-stage arrow is absent");
+    assert.ok(await vehicleTablet.getByText("Moc (KM)", {exact: true}).isVisible(), "vehicle/768: Polish chart power label visible");
+    assert.ok(await vehicleTablet.getByText("Moment (Nm)", {exact: true}).isVisible(), "vehicle/768: Polish chart torque label visible");
+    await vehicleTablet.close();
 
     assert.deepEqual(errors, [], errors.join("\n"));
     console.log(`Catalog UX V2 browser PASS: NL/EN/PL at 320/390/768/1440 plus BMW vehicle mobile; plate-first flow, Stage 1/2 only, NoordTune.nl hierarchy and no overflow. Screenshots: ${outputDir}`);

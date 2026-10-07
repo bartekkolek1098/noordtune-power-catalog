@@ -19,6 +19,29 @@ export function formatEstimateTorque(stage: Pick<EstimateStage, "torqueNm" | "to
   return stage.torqueNm === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.approximate ? "≈" : ""}${stage.torqueNm} Nm`;
 }
 
+export function formatEstimateGain(
+  stage: Pick<EstimateStage, "powerHp" | "powerRangeHp" | "torqueNm" | "torqueRangeNm" | "approximate" | "customHardware">,
+  stockPowerHp: number,
+  stockTorqueNm: number | undefined,
+  locale: Locale
+) {
+  if (stage.customHardware) return "—";
+  const unit = {nl: "pk", en: "hp", pl: "KM"}[locale];
+  const power = stage.powerRangeHp ?? (stage.powerHp === undefined ? undefined : [stage.powerHp, stage.powerHp] as [number, number]);
+  const torque = stage.torqueRangeNm ?? (stage.torqueNm === undefined ? undefined : [stage.torqueNm, stage.torqueNm] as [number, number]);
+  const formatDelta = (range: [number, number], stock: number, suffix: string) => {
+    const low = range[0] - stock;
+    const high = range[1] - stock;
+    const prefix = stage.approximate && range[0] === range[1] ? "≈" : "";
+    return low === high ? `${prefix}+${low} ${suffix}` : `+${low}–${high} ${suffix}`;
+  };
+  const parts = [
+    power ? formatDelta(power, stockPowerHp, unit) : undefined,
+    torque && stockTorqueNm !== undefined ? formatDelta(torque, stockTorqueNm, "Nm") : undefined
+  ].filter((value): value is string => Boolean(value));
+  return parts.length ? parts.join(" / ") : "—";
+}
+
 export function formatEstimateSource(stage: EstimateStage, locale: Locale) {
   if (stage.customHardware) return {nl: "Maatwerk", en: "Custom setup", pl: "Indywidualny tuning"}[locale];
   const source = stage.provenance ?? "reviewed";
