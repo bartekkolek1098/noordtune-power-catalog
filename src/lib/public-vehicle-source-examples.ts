@@ -19,6 +19,15 @@ export type PublicVehicleSourceExample = {
   sourceUrls: string[];
   independentlyPublishedValues: number;
   ownerReviewRequired: boolean;
+  /** Only when a tuner reported a dyno baseline different from official stock. */
+  observedStockBaseline?: {
+    officialPowerHp: number;
+    officialTorqueNm: number;
+  };
+  sourceStageLabel?: "Stage 1+";
+  sourceEngineCode?: string;
+  awdOnly?: boolean;
+  ecuDecodeRequired?: boolean;
 };
 
 // Already reviewed displacement scopes from the retained public matcher.
@@ -119,16 +128,27 @@ export function getPublicVehicleSourceExamples(
       !nominalDisplacementMatches(sample.displacementCc, cc) ||
       !matchingYears.length ||
       !sample.sourceUrls.length || !sample.sourceUrls.every(url=>/^https:\/\//i.test(url)) ||
-      sample.powerRangeHp[0] <= vehicle.stockPowerHp ||
-      sample.torqueRangeNm[0] <= stockTorque) continue;
+      sample.powerRangeHp[0] <= (sample.observedStockPowerHp ?? vehicle.stockPowerHp) ||
+      sample.torqueRangeNm[0] <= (sample.observedStockTorqueNm ?? stockTorque) ||
+      // A partially specified baseline could misstate the quoted source gain.
+      ((sample.observedStockPowerHp === undefined) !== (sample.observedStockTorqueNm === undefined)) ||
+      (sample.observedStockPowerHp !== undefined && !sample.sourceEngineCode) ||
+      (sample.observedStockPowerHp !== undefined && !sample.sourceStageLabel)) continue;
     results.push({
       sourceProfileId: sample.id, generation:sample.expectedGeneration,
       yearFrom:Math.min(...matchingYears),yearTo:Math.max(...matchingYears),
-      stockPowerHp:sample.stockPowerHp,stockTorqueNm:sample.stockTorqueNm,
+      stockPowerHp:sample.observedStockPowerHp ?? sample.stockPowerHp,
+      stockTorqueNm:sample.observedStockTorqueNm ?? sample.stockTorqueNm,
+      ...(sample.observedStockPowerHp !== undefined && sample.observedStockTorqueNm !== undefined
+        ? {observedStockBaseline: {officialPowerHp:sample.stockPowerHp,officialTorqueNm:sample.stockTorqueNm}} : {}),
+      ...(sample.sourceStageLabel ? {sourceStageLabel:sample.sourceStageLabel} : {}),
+      ...(sample.sourceEngineCode ? {sourceEngineCode:sample.sourceEngineCode} : {}),
+      ...(sample.awdOnly ? {awdOnly:true} : {}),
+      ...(sample.ecuDecodeRequired ? {ecuDecodeRequired:true} : {}),
       stage1PowerRangeHp:sample.powerRangeHp,
       stage1TorqueRangeNm:sample.torqueRangeNm,
       sourceUrls:sample.sourceUrls.slice(0,3),
-      independentlyPublishedValues:sample.sourceUrls.length,
+      independentlyPublishedValues:sample.stage1ObservationCount ?? sample.sourceUrls.length,
       ownerReviewRequired:true
     });
   }

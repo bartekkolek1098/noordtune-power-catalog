@@ -14,8 +14,8 @@ Status: evidence-gated coverage extension. This project does **not** yet have 10
 | Outcome | Public vehicle profiles |
 | --- | ---: |
 | Direct customer-safe Stage 1 numerical output | 10 |
-| No direct value, but dated source-applicable Stage 1 examples | 12 |
-| No appropriate published numeric source yet; review/contact | 2 |
+| No direct value, but dated published Stage 1 examples (including one Stage 1+ measured source) | 14 |
+| No relevant published example yet; review/contact only | 0 |
 | **Total** | **24** |
 
 The previous UI had only 10/24 customer-visible numeric Stage 1 results, because the customer safety adapter intentionally strips legacy-generated output lacking published evidence. A range-sensitive tiles fix did not repair this source-coverage gap. Separate date- and identity-scoped examples now make relevant published evidence visible without inventing or reassigning values.
@@ -24,9 +24,12 @@ Evidence examples from the existing reviewed 1,269-source pool cover BMW 118i F2
 
 **Second evidence-closure pass (2026-10-08):** Volkswagen Golf VII Mk2 2.0 TDI DFGA 150 PS / 340 Nm is now supported by a dated single-source *example*, 2017–2019, stock 150/340 to 185/425. Audi A6 C7 EU6 3.0 TDI 272 PS / 600 Nm is supported by two distinct *examples*, scoped conservatively to 2015–2018: 300–308 PS / 650–668 Nm. They are kept separate from Golf 150/320 and A6 272/580 applications. They remain **source comparisons, not verified tuning outputs of the customer's installed ECU**.
 
-**Remaining two public research priorities:**
-- Volvo XC60 D5 AWD 220 PS / 440 Nm: Volvo's own technical table identifies **D5244T20 220/440** separately from **D5244T22 220/420**. Some tuning sites present the 220/440 data with **D5244T11** or measured 221/428 for T20. Do not convert those variants into a guaranteed customer Stage 1 until application/ECU identity is confirmed.
-- Škoda Octavia 5E 2.0 TDI 150 PS / 340 Nm: reviewed 5E sources repeatedly report **150/320 Nm**, while later Octavia IV 2.0 TDI can have **150/340 Nm**. The legacy 5E stock torque may be wrong; verify against manufacturer/type-approval evidence before correcting this card or publishing new figures. Do not transfer Octavia IV tuning output to the 5E.
+**Third evidence-closure pass (2026-10-08) — two final public example gaps:**
+
+- **Volvo XC60 I D5 AWD D5244T20 220 PS / 440 Nm**, 2016–2017: Volvo's manufacturer engine table explicitly distinguishes D5244T20 220/440 from D5244T22 220/420. BSR independently publishes a **Stage 1+** application **only for D5244T20 AWD**, requiring ECU decoding. Its **measured** baseline is 221 PS / 428 Nm and tuned reading 282 PS / 533 Nm, hence **+61 PS / +105 Nm relative to that measured baseline only**. The source card *separately* displays manufacturer factory 220/440, labels measured baseline, and never reports +62/+93 as though it were measured. Not a NoordTune Stage 1 commitment. Stage 1 and 2 vehicle-specific output remain withheld. Sources: https://www.bsrtuning.nl/tuning-kits/t/3265/volvo-xc60-d5-awd-220hp-2016-2017-d-5244-t20 and Volvo XC60 2016 engine specifications: https://www.volvocars.com/nl/support/car/xc60/16w17/article/d24bb7d1e21ec6e4c0a801e801cf6114/510652ac31fe5b38c0a801e8014486bc/c48f21dbf78fa679c0a801e800b1d372/.
+- **Škoda Octavia 5E 2.0 TDI 150 PS / 340 Nm**, restricted to **2017–2018**: NL-market AutoWeek specifications confirm 150/340 for that 5E facelift, and SW-Performance lists separate **DFF/DCY 150/340** and **CKF/CRM/CYK 150/320** variants. Only the DFF/DCY Stage 1 **170 PS / 380 Nm** source example appears. Do not transfer 150/320 older diesel or 2020-on Octavia IV variants. Sources: https://www.swperformance.de/filter/fahrzeugtyp/pkw/marke/skoda/modell/octavia/typ/octavia_iii_-_5e_seit_11.2012/motorisierung/2.0_tdi_cr_-_150ps.html and https://www.autoweek.nl/auto/90479/skoda-octavia-2-0-tdi-150pk-greentech-style/.
+
+**All 24 public pages now have either a numeric Stage 1 figure or at least one separately labeled published tuning application example.** This is **not** 100% direct Stage 1 availability and **not** RDW fleet-wide tuning coverage. Some examples apply only to selected engines, transmissions and years; none prove the user's installed ECU or calibration is supported.
 
 ## Broad RDW and canonical scope
 

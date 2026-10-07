@@ -10,6 +10,9 @@ const copy = {
     note: "Voor deze brede cataloguskaart is het exacte Stage 1-resultaat nog niet bevestigd. De onderstaande afzonderlijke bronvoorbeelden gelden uitsluitend voor de aangegeven toepassingsjaren en origineel vermogen/koppel. Controle van motor, ECU, brandstof en uitvoering is vereist.",
     period: "Bronperiode", stock: "Bronserie", stage1: "Stage 1 bij deze bron", gain: "Verschil in deze bron",
     sources: "Gepubliceerde bronnen", review: "Bronnen verschillen; NoordTune controleert de toepasselijke configuratie.",
+    measuredStock: "Gemeten origineel bij bron", factoryStock: "Fabriekswaarde voor deze configuratie",
+    measuredWarning: "Het bronvoorbeeld gebruikt een afwijkende gemeten uitgangswaarde. De toename is uitsluitend berekend vanaf die bronmeting, niet vanaf de fabriekswaarde van uw auto.",
+    engineCode: "Motorcode bron", awdOnly: "alleen AWD / vierwielaandrijving", ecuDecode: "ECU-decoding vereist volgens bron",
     contact: "Vraag Stage 1 voor mijn uitvoering aan",
     noSourceTitle: "Stage 1: controle van de exacte uitvoering",
     noSourceNote: "De fabrieksspecificaties staan hierboven. Voor deze combinatie hebben we nog geen toepasselijke, betrouwbare bron voor een specifiek Stage 1-getal. Vraag NoordTune om de motor- en ECU-variant te controleren en een persoonlijke vermogensindicatie te maken."
@@ -19,6 +22,9 @@ const copy = {
     note: "The exact Stage 1 result is not confirmed for this broad catalog entry. These separate published source examples apply only to the listed application years and factory power/torque. Engine, ECU, fuel and installed vehicle configuration still require confirmation.",
     period: "Reference period", stock: "Source stock", stage1: "Stage 1 from this source", gain: "Difference for this source",
     sources: "Published sources", review: "Sources differ; NoordTune checks the applicable configuration.",
+    measuredStock: "Source-measured stock", factoryStock: "Factory specification of catalog variant",
+    measuredWarning: "This example uses a different measured starting point. The displayed gain is calculated from the source's own measured baseline, not from your vehicle's factory figures.",
+    engineCode: "Source engine code", awdOnly: "AWD / all-wheel drive only", ecuDecode: "Source requires ECU decoding",
     contact: "Ask for Stage 1 on my exact vehicle",
     noSourceTitle: "Stage 1: exact configuration review",
     noSourceNote: "Factory specifications are shown above. We do not yet have a reliable Stage 1 output reference scoped to this full configuration. Ask NoordTune to verify the engine and ECU and provide a vehicle-specific power indication."
@@ -28,6 +34,9 @@ const copy = {
     note: "Dokładny wynik Stage 1 nie jest jeszcze potwierdzony dla tej szerokiej karty katalogowej. Poniższe osobne przykłady dotyczą tylko wskazanych lat zastosowania i mocy oraz momentu seryjnego. NoordTune potwierdzi generację, ECU, paliwo i wersję auta przed ofertą.",
     period: "Lata referencji", stock: "Seria wg źródła", stage1: "Stage 1 wg źródła", gain: "Przyrost w tej referencji",
     sources: "Źródła publiczne", review: "Źródła różnią się; NoordTune sprawdzi właściwą konfigurację.",
+    measuredStock: "Seria zmierzona przez źródło", factoryStock: "Dane fabryczne tej wersji",
+    measuredWarning: "Źródło zmierzyło inne wartości seryjne niż katalog producenta. Przyrost obliczamy wyłącznie względem pomiaru źródłowego, nie parametrów fabrycznych Twojego auta.",
+    engineCode: "Kod silnika źródła", awdOnly: "tylko AWD / napęd 4×4", ecuDecode: "Według źródła wymagane odblokowanie ECU",
     contact: "Zapytaj o Stage 1 dla mojego auta",
     noSourceTitle: "Stage 1: weryfikacja konkretnej wersji",
     noSourceNote: "Parametry seryjne są podane powyżej. Dla tej konfiguracji nie mamy jeszcze wiarygodnych, zgodnych źródeł pozwalających pokazać konkretną moc Stage 1. NoordTune sprawdzi silnik i ECU oraz przygotuje orientacyjną wycenę i wynik dla Twojego auta."
@@ -67,10 +76,18 @@ export function PublicVehicleSourceExamples({examples,locale,quoteHref}: {
                 <div className="text-xs font-semibold text-amber-200">{t.period}: {example.yearFrom}{example.yearFrom===example.yearTo?"":`–${example.yearTo}`}</div>
               </div>
               <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-3">
-                <div><div className="text-xs text-slate-400">{t.stock}</div><div className="mt-1 text-sm font-semibold text-white">{example.stockPowerHp} {unit} / {example.stockTorqueNm} Nm</div></div>
-                <div><div className="text-xs text-slate-400">{t.stage1}</div><div className="mt-1 text-sm font-semibold text-white">{showRange(example.stage1PowerRangeHp,unit)}{example.stage1TorqueRangeNm?` / ${showRange(example.stage1TorqueRangeNm,"Nm")}`:""}</div></div>
+                <div><div className="text-xs text-slate-400">{example.observedStockBaseline ? t.measuredStock : t.stock}</div><div className="mt-1 text-sm font-semibold text-white">{example.stockPowerHp} {unit} / {example.stockTorqueNm} Nm</div></div>
+                <div><div className="text-xs text-slate-400">{example.sourceStageLabel ?? t.stage1}</div><div className="mt-1 text-sm font-semibold text-white">{showRange(example.stage1PowerRangeHp,unit)}{example.stage1TorqueRangeNm?` / ${showRange(example.stage1TorqueRangeNm,"Nm")}`:""}</div></div>
                 <div><div className="text-xs text-slate-400">{t.gain}</div><div className="mt-1 text-sm font-semibold text-amber-200">{gain}</div></div>
               </div>
+              {example.observedStockBaseline ? (
+                <p className="mt-2 text-xs leading-5 text-amber-100" data-testid="vehicle-source-measured-warning">
+                  <strong>{t.factoryStock}: {example.observedStockBaseline.officialPowerHp} {unit} / {example.observedStockBaseline.officialTorqueNm} Nm.</strong> {t.measuredWarning}
+                </p>
+              ) : null}
+              {example.sourceEngineCode ? <p className="mt-2 text-xs leading-5 text-slate-300" data-testid="vehicle-source-engine-scope">
+                {t.engineCode}: <strong>{example.sourceEngineCode}</strong>{example.awdOnly ? ` · ${t.awdOnly}` : ""}{example.ecuDecodeRequired ? ` · ${t.ecuDecode}` : ""}
+              </p> : null}
               {example.ownerReviewRequired ? <p className="mt-2 text-xs text-amber-200">{t.review}</p> : null}
               <div className="mt-3 flex flex-wrap items-center gap-3 text-xs">
                 <span className="text-slate-400">{t.sources}:</span>
