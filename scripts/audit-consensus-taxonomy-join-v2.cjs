@@ -78,7 +78,7 @@ for(const cluster of consensus){
     row.fuel===i.fuel &&
     row.stockPowerHp===i.stockPowerHp &&
     (!i.displacementCc||!row.displacementCc||Math.abs(row.displacementCc-i.displacementCc)<=80) &&
-    yearOverlap(cluster,row)>=1 &&
+    yearOverlap(cluster,row)>=2 &&
     generationCompatible(cluster,row) &&
     engineCompatible(cluster,row)
   );
