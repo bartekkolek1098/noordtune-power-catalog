@@ -12,7 +12,7 @@ import {resolveStageQuote} from "@/data/pricing";
 export const runtime = "nodejs";
 
 const MAX_SEARCH_RESULTS = 4;
-const MAX_ENGINE_RESULTS = 25;
+const MAX_ENGINE_RESULTS = 60;
 const cacheHeaders = {
   "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400"
 };
