@@ -1,0 +1,25 @@
+{
+  "createdAt": "2026-10-07T12:56:39.552Z",
+  "policy": "QA ONLY — never derive a customer Stage 2 from these ratios.",
+  "count": 320,
+  "groups": [
+    {
+      "fuel": "Petrol",
+      "count": 77,
+      "stage1GainPctMedian": 16.67,
+      "stage2GainPctMedian": 22.73,
+      "additionalStage2VsStage1PctMedian": 5,
+      "minAdditionalPct": 2.5,
+      "maxAdditionalPct": 14.29
+    },
+    {
+      "fuel": "Diesel",
+      "count": 243,
+      "stage1GainPctMedian": 23.33,
+      "stage2GainPctMedian": 30.77,
+      "additionalStage2VsStage1PctMedian": 5.41,
+      "minAdditionalPct": 0,
+      "maxAdditionalPct": 10.53
+    }
+  ]
+}
