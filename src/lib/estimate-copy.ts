@@ -19,6 +19,12 @@ export function formatEstimateTorque(stage: Pick<EstimateStage, "torqueNm" | "to
   return stage.torqueNm === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.approximate ? "≈" : ""}${stage.torqueNm} Nm`;
 }
 
+export function formatEstimateTorqueCompact(stage: Pick<EstimateStage, "torqueNm" | "torqueRangeNm" | "approximate" | "customHardware">, locale: Locale) {
+  if (stage.customHardware) return customHardwareLabel(locale);
+  if (stage.torqueRangeNm) return stage.torqueRangeNm[0] === stage.torqueRangeNm[1] ? `≈${stage.torqueRangeNm[0]} Nm` : `${stage.torqueRangeNm[0]}–${stage.torqueRangeNm[1]} Nm`;
+  return stage.torqueNm === undefined ? {nl: "Te bevestigen", en: "To be confirmed", pl: "Do potwierdzenia"}[locale] : `${stage.approximate ? "≈" : ""}${stage.torqueNm} Nm`;
+}
+
 export function formatEstimateGain(
   stage: Pick<EstimateStage, "powerHp" | "powerRangeHp" | "torqueNm" | "torqueRangeNm" | "approximate" | "customHardware">,
   stockPowerHp: number,

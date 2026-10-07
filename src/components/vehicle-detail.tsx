@@ -24,7 +24,7 @@ import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
 import {customerStageNotes, customerStagePresentation} from "@/lib/stage-presentation";
-import {customHardwareLabel, estimateLimitations, formatEstimateGain, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
+import {customHardwareLabel, estimateLimitations, formatEstimateGain, formatEstimatePower, formatEstimateSource, formatEstimateTorque, formatEstimateTorqueCompact} from "@/lib/estimate-copy";
 import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
@@ -204,7 +204,7 @@ export function VehicleDetail({
               label: selectedStage.name,
               value: selectedStage.customHardware
                 ? customHardwareLabel(locale)
-                : `${formatEstimatePower(selectedStage, locale)} / ${formatEstimateTorque(selectedStage, locale)}`
+                : `${formatEstimatePower(selectedStage, locale)} / ${formatEstimateTorqueCompact(selectedStage, locale)}`
             },
             {
               label: text.gain,
@@ -285,8 +285,14 @@ export function VehicleDetail({
                     {description}
                   </p>
                   <div className="mt-4 border-t border-white/10 pt-3 text-sm font-black text-white">
-                    <span className="block">
-                      <span className="text-xl">{formatEstimatePower(stage, locale)}</span>{!stage.customHardware ? <span className="ml-2 text-base text-slate-300">/ {formatEstimateTorque(stage, locale)}</span> : null}
+                    <span className="flex flex-wrap items-baseline gap-x-2">
+                      <span className="text-xl">{formatEstimatePower(stage, locale)}</span>
+                      {!stage.customHardware ? (
+                        <>
+                          <span className="text-base text-slate-500">/</span>
+                          <span className="text-base text-slate-300">{formatEstimateTorqueCompact(stage, locale)}</span>
+                        </>
+                      ) : null}
                     </span>
                     <span className="mt-1 block text-xs text-primary">
                       {formatQuote(resolveStageQuote(estimateProfile, stage, {estimateApplicable: true, scope: "family"}), locale)}
