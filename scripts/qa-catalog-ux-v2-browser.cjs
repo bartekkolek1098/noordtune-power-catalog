@@ -41,6 +41,12 @@ const expected = {
 
         const h1 = await page.locator("h1").first().innerText();
         assert.match(h1, expected[locale].headline, `${locale}/${width}: conversion headline`);
+        const mainSiteLogo = page.locator('header a[aria-label="NoordTune.nl"]').first();
+        assert.equal(
+          await mainSiteLogo.getAttribute("href"),
+          `https://www.noordtune.nl/${locale}`,
+          `${locale}/${width}: NoordTune.nl remains the primary company-site destination`
+        );
         const plate = page.locator("input.plate-shadow");
         assert.ok(await plate.isVisible(), `${locale}/${width}: plate lookup visible`);
         const plateBox = await plate.boundingBox();
@@ -48,6 +54,10 @@ const expected = {
 
         const manualCta = page.locator('a[href="#manual-selector"]').first();
         assert.ok(await manualCta.isVisible(), `${locale}/${width}: manual selector CTA visible`);
+        if (width < 640) {
+          assert.ok(await page.locator('a[href="#rdw-configurator"]').last().isVisible(), `${locale}/${width}: sticky plate CTA visible`);
+          assert.ok(!(await page.locator('[data-testid="floating-whatsapp"]').isVisible()), `${locale}/${width}: floating WhatsApp hidden behind mobile CTA bar`);
+        }
         assert.ok(await page.locator("#manual-selector").isVisible(), `${locale}/${width}: manual selector exists`);
         const manualBox = await page.locator("#manual-selector").boundingBox();
         if (width < 768) assert.ok(manualBox && manualBox.y > plateBox.y, `${locale}/${width}: manual selector follows plate-first flow`);

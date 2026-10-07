@@ -236,7 +236,7 @@ export function PlateLookup({
   }
 
   return (
-    <Card className="panel-edge min-w-0 carbon-panel border-primary/20 shadow-glow">
+    <Card className="panel-edge min-w-0 scroll-mt-24 carbon-panel border-primary/20 shadow-glow" id="rdw-configurator">
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between gap-4">
           <div>

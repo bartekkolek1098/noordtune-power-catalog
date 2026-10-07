@@ -28,11 +28,17 @@ export function CatalogHeader({
       <div className="container flex min-h-[62px] w-full max-w-full min-w-0 items-center gap-2 py-2 min-[390px]:min-h-[68px] sm:min-h-[72px] sm:gap-3 xl:min-h-[84px]">
         <a
           aria-label="NoordTune.nl"
-          className="shrink-0"
+          className="group shrink-0"
           href={mainLocaleHref(locale)}
           rel="noreferrer"
+          title="NoordTune.nl"
         >
-          <NoordTuneLogo className="h-[34px] w-[112px] min-[360px]:h-[40px] min-[360px]:w-[132px] min-[390px]:h-[44px] min-[390px]:w-[146px] min-[430px]:h-[48px] min-[430px]:w-[160px] sm:h-[58px] sm:w-[202px] lg:h-[64px] lg:w-[222px] xl:h-[66px] xl:w-[230px]" />
+          <span className="flex flex-col">
+            <NoordTuneLogo className="h-[34px] w-[112px] min-[360px]:h-[40px] min-[360px]:w-[132px] min-[390px]:h-[44px] min-[390px]:w-[146px] min-[430px]:h-[48px] min-[430px]:w-[160px] sm:h-[58px] sm:w-[202px] lg:h-[64px] lg:w-[222px] xl:h-[66px] xl:w-[230px]" />
+            <span className="-mt-0.5 pl-0.5 text-[0.52rem] font-black uppercase tracking-[0.18em] text-white/45 transition group-hover:text-primary sm:hidden">
+              Power Catalog
+            </span>
+          </span>
         </a>
 
         <CatalogNav
@@ -65,7 +71,7 @@ export function CatalogHeader({
       </div>
 
       <CatalogNav
-        className="container flex w-full max-w-full min-w-0 gap-3 overflow-x-auto overscroll-x-contain border-t border-white/10 py-2 text-[0.68rem] xl:hidden"
+        className="container hidden w-full max-w-full min-w-0 gap-3 overflow-x-auto overscroll-x-contain border-t border-white/10 py-2 text-[0.68rem] sm:flex xl:hidden"
         items={navItems}
       />
     </header>

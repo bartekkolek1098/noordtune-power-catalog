@@ -9,6 +9,8 @@ import {
   Euro,
   Gauge,
   Info,
+  MessageCircle,
+  Search,
   Settings2,
   ShieldCheck,
   SlidersHorizontal,
@@ -153,6 +155,11 @@ export default async function HomePage({params}: PageProps) {
       intro: "Otwórz profil pojazdu, aby zobaczyć dostępne strony Stage."
     }
   }[safeLocale];
+  const mobileCta = {
+    nl: {check: "Check kenteken", whatsapp: "WhatsApp"},
+    en: {check: "Check plate", whatsapp: "WhatsApp"},
+    pl: {check: "Sprawdź auto", whatsapp: "WhatsApp"}
+  }[safeLocale];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -168,7 +175,7 @@ export default async function HomePage({params}: PageProps) {
   };
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#050505]" id="top">
+    <main className="min-h-screen overflow-hidden bg-[#050505] pb-20 sm:pb-0" id="top">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
@@ -678,7 +685,26 @@ export default async function HomePage({params}: PageProps) {
       <div id="quote">
         <CatalogFooter locale={safeLocale} />
       </div>
-      <FloatingWhatsappButton locale={safeLocale} />
+
+      <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-[1fr_auto] gap-2 border-t border-white/10 bg-black/95 p-2 shadow-[0_-12px_36px_rgba(0,0,0,.48)] backdrop-blur sm:hidden">
+        <a
+          className="flex min-h-12 items-center justify-center gap-2 rounded-md bg-primary px-4 text-sm font-black uppercase text-white shadow-[0_0_28px_rgba(227,6,19,.32)]"
+          href="#rdw-configurator"
+        >
+          <Search className="h-4 w-4" />
+          {mobileCta.check}
+        </a>
+        <a
+          aria-label={mobileCta.whatsapp}
+          className="grid h-12 w-14 place-items-center rounded-md border border-[#25d366]/40 bg-[#25d366] text-white"
+          href={whatsappHref({locale: safeLocale})}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <MessageCircle className="h-5 w-5" />
+        </a>
+      </div>
+      <FloatingWhatsappButton locale={safeLocale} mobileCtaOffset />
     </main>
   );
 }
