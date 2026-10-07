@@ -14,15 +14,19 @@ Status: evidence-gated coverage extension. This project does **not** yet have 10
 | Outcome | Public vehicle profiles |
 | --- | ---: |
 | Direct customer-safe Stage 1 numerical output | 10 |
-| No direct value, but dated source-applicable Stage 1 examples | 10 |
-| No appropriate published numeric source yet; review/contact | 4 |
+| No direct value, but dated source-applicable Stage 1 examples | 12 |
+| No appropriate published numeric source yet; review/contact | 2 |
 | **Total** | **24** |
 
 The previous UI had only 10/24 customer-visible numeric Stage 1 results, because the customer safety adapter intentionally strips legacy-generated output lacking published evidence. A range-sensitive tiles fix did not repair this source-coverage gap. Separate date- and identity-scoped examples now make relevant published evidence visible without inventing or reassigning values.
 
 Evidence examples from the existing reviewed 1,269-source pool cover BMW 118i F20/F21, 120d F20/F21, 318d F30/F31, 330d F30/F31, Golf 7 1.6 TDI and Audi A4 B9 2.0 TFSI. Four newly reviewed comparable applications cover BMW 520d F10, BMW 320i G20, Audi A3 8V 1.6 TDI and Audi A3 8V 2.0 TDI. Their actual application years, original horsepower and original torque are validated; some published targets vary and are represented as source ranges.
 
-**Remaining four public research priorities:** Volvo XC60 D5 220 PS / 440 Nm, VW Golf 7 2.0 TDI 150 PS / 340 Nm, Audi A6 C7 3.0 TDI 272 PS / 600 Nm and Skoda Octavia 5E 2.0 TDI 150 PS / 340 Nm. Existing source listings for these frequently state *different factory torque* (e.g. 150/320 vs 150/340, or 272/580 vs 272/600). They must not be silently promoted onto the public vehicle configuration.
+**Second evidence-closure pass (2026-10-08):** Volkswagen Golf VII Mk2 2.0 TDI DFGA 150 PS / 340 Nm is now supported by a dated single-source *example*, 2017–2019, stock 150/340 to 185/425. Audi A6 C7 EU6 3.0 TDI 272 PS / 600 Nm is supported by two distinct *examples*, scoped conservatively to 2015–2018: 300–308 PS / 650–668 Nm. They are kept separate from Golf 150/320 and A6 272/580 applications. They remain **source comparisons, not verified tuning outputs of the customer's installed ECU**.
+
+**Remaining two public research priorities:**
+- Volvo XC60 D5 AWD 220 PS / 440 Nm: Volvo's own technical table identifies **D5244T20 220/440** separately from **D5244T22 220/420**. Some tuning sites present the 220/440 data with **D5244T11** or measured 221/428 for T20. Do not convert those variants into a guaranteed customer Stage 1 until application/ECU identity is confirmed.
+- Škoda Octavia 5E 2.0 TDI 150 PS / 340 Nm: reviewed 5E sources repeatedly report **150/320 Nm**, while later Octavia IV 2.0 TDI can have **150/340 Nm**. The legacy 5E stock torque may be wrong; verify against manufacturer/type-approval evidence before correcting this card or publishing new figures. Do not transfer Octavia IV tuning output to the 5E.
 
 ## Broad RDW and canonical scope
 

@@ -73,5 +73,30 @@ export const reviewedPublicStage1Samples: readonly ReviewedPublicStage1Sample[] 
       "https://tuning.aktuning.se/audi/a3/8v-mk2-2016-2019/20-tdi-150-hk/steg-1"
     ],
     reviewedAt: "2026-10-07", status: "owner-review-required"
+  },
+  {
+    id: "research-vw-golf7-mk2-dfga-150-340",
+    publicVehicleId: "volkswagen-golf-7-20-tdi",
+    expectedMake: "Volkswagen", expectedModel: "Golf 7 2.0 TDI", expectedGeneration: "Golf 7",
+    expectedFuel: "Diesel", displacementCc: 1968, stockPowerHp: 150, stockTorqueNm: 340,
+    yearFrom: 2017, yearTo: 2019,
+    powerRangeHp: [185, 185], torqueRangeNm: [425, 425],
+    sourceUrls: [
+      "https://www.biesseracing.com/en/listino/volkswagen/golf%3A319%3Agolf-VIIMk/volkswagen-golf-2-0-tdi-150cv-dfga.html"
+    ],
+    reviewedAt: "2026-10-08", status: "owner-review-required"
+  },
+  {
+    id: "research-audi-a6-c7-eu6-272-600",
+    publicVehicleId: "audi-a6-c7-30-tdi-272",
+    expectedMake: "Audi", expectedModel: "A6 C7 3.0 TDI", expectedGeneration: "C7",
+    expectedFuel: "Diesel", displacementCc: 2967, stockPowerHp: 272, stockTorqueNm: 600,
+    yearFrom: 2015, yearTo: 2018,
+    powerRangeHp: [300, 308], torqueRangeNm: [650, 668],
+    sourceUrls: [
+      "https://www.turboperformance.de/chiptuning/pkw/audi/a6-c7/3.0-v6-tdi-272PS",
+      "https://proremaps.co.uk/remap-stats/audi-a6-c7-2011-2018-3-0-tdi-eu6-272hp-203kw-600nm/"
+    ],
+    reviewedAt: "2026-10-08", status: "owner-review-required"
   }
 ];
