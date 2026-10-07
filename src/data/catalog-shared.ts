@@ -77,7 +77,30 @@ export type RecommendedPackageDefinition = {
   notes?: string[];
 };
 
+/** Internal applicability facts for a reviewed public Stage reference.
+ * Registration can exclude a scope, but every other listed fact needs direct
+ * identity evidence before a runtime estimate may retain numeric output.
+ */
+export type StageIdentityScope = {
+  label: {nl: string; en: string; pl: string};
+  yearRange?: [number, number];
+  stockTorqueNm?: number;
+  displacementCc?: number;
+  generationMarkers?: string[];
+  engineFamilyMarkers?: string[];
+  transmissionFamilies?: Array<"manual" | "dsg6" | "automatic8">;
+  emissionsMarkers?: string[];
+  fuelGradeMarkers?: string[];
+  excludedFuelGradeMarkers?: string[];
+  fuelRonMin?: number;
+  marketMarkers?: string[];
+  bodyStyleMarkers?: string[];
+  drivetrainMarkers?: string[];
+};
+
 export type StageDefinition = {
+  /** Server-side runtime gate; removed from customer DTOs. */
+  identityScope?: StageIdentityScope;
   customerScope?: StageScope;
   /** Curated customer copy; internal source reasons never enter this field. */
   customerNote?: {nl: string; en: string; pl: string};

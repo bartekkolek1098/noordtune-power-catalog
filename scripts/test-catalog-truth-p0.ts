@@ -20,10 +20,11 @@ import type {EngineVariant} from "../src/data/catalog-shared.ts";
 
 type Fixture = {id: string; action: string; slugs: {brand: string; model: string; engine: string};
   stockHp: number; stockNm: number | null; years: [number, number]; generation: string;
-  capacity: number; wrongGeneration: string; stage1: [[number, number], [number, number]] | null; stage1Cents: number | null;
+  capacity: number; wrongGeneration: string; stage1: [[number, number], [number, number]] | null; stage1Point?: [number, number]; stage1Cents: number | null;
   stage2Action: "SUPPORTED_POINT" | "CUSTOM_ON_REQUEST" | "WITHHOLD_UNTIL_IDENTIFIED";
   stage2: [number, number] | null; stage2Cents: number | null; stage2Hardware: NonNullable<EngineVariant["stages"][number]["customerScope"]>["hardware"]};
 const fixtures: Fixture[] = JSON.parse(readFileSync(new URL("./fixtures/catalog-truth-p0.json", import.meta.url), "utf8"));
+const p1IdentityGated = new Set(["volkswagen-passat-b8-20-tdi", "ford-focus-st-20-ecoboost", "seat-leon-cupra-5f-20-tsi-300", "bmw-1-series-f20-f21-118d"]);
 const protectedHashes: Record<string, string> = {
   "audi-a3-20-tdi": "f49381dafcc9b78164b8ff0d9438165f8840b6f24c74f74e5378ead061c1bc6a",
   "bmw-1-series-f20-f21-118i": "ffac0d2f3688d25cfb7c618b71f97e5c4c028ee966480846997c816face59d5f",
@@ -73,19 +74,25 @@ for (const f of fixtures) {
   const profile = getCatalogEstimateProfile(v);
   const runtime = resolveRdwTuningEstimate(input, {publicVehicles: [v]}).profile!;
   equal(runtime.vehicleId, f.id, f.id + " RDW uses corrected public profile");
-  equal(runtime.stages.map(s => [s.name,s.powerHp,s.torqueNm,s.powerRangeHp,s.torqueRangeNm,s.customHardware,s.quoteRequired]),
+  if (p1IdentityGated.has(f.id)) {
+    equal([runtime.stages[0].powerHp,runtime.stages[0].torqueNm,runtime.stages[0].powerRangeHp,runtime.stages[0].torqueRangeNm,runtime.stages[0].quoteRequired],
+      [undefined,undefined,undefined,undefined,true],f.id+" incomplete runtime identity cannot borrow P1 Stage 1");
+    equal(runtime.stages.slice(1).map(s=>[s.name,s.customHardware,s.quoteRequired]),profile.stages.slice(1).map(s=>[s.name,s.customHardware,s.quoteRequired]),f.id+" independently reviewed later Stages survive identity gating");
+  } else equal(runtime.stages.map(s => [s.name,s.powerHp,s.torqueNm,s.powerRangeHp,s.torqueRangeNm,s.customHardware,s.quoteRequired]),
     profile.stages.map(s => [s.name,s.powerHp,s.torqueNm,s.powerRangeHp,s.torqueRangeNm,s.customHardware,s.quoteRequired]), f.id + " no historical fallback restores precision");
   equal(runtime.stockTorqueNm, v.stockTorqueNm, f.id + " RDW stock torque");
   equal(runtime.ecuSupport, profile.ecuSupport, f.id + " controller uncertainty survives RDW");
   equal(v.stages[0].powerRangeHp ?? null, f.stage1?.[0] ?? null, f.id + " Stage 1 power");
   equal(v.stages[0].torqueRangeNm ?? null, f.stage1?.[1] ?? null, f.id + " Stage 1 torque");
+  equal([v.stages[0].powerHp ?? null,v.stages[0].torqueNm ?? null],f.stage1Point ?? [null,null],f.id+" Stage 1 point");
   equal([v.stages[1].powerHp ?? null, v.stages[1].torqueNm ?? null], f.stage2 ?? [null,null], f.id + " independent Stage 2 point");
   equal(v.stages[1].customHardware, f.stage2Action === "CUSTOM_ON_REQUEST", f.id + " custom is separate from identity withholding");
   equal(v.stages[1].customerScope?.hardware, f.stage2Hardware, f.id + " explicit hardware scope");
   const review = publicCatalogTruthReviews.find(row => row.id === f.id)!;
   equal(Object.keys(review.stages), ["Stage 1","Stage 2","Stage 3+"], f.id + " all stage decisions explicit");
   for (const s of v.stages) {
-    equal([s.powerHp,s.torqueNm], s.name === "Stage 2" && f.stage2 ? f.stage2 : [undefined,undefined], f.id + " no stale point output");
+    const expectedPoint = s.name === "Stage 1" && f.stage1Point ? f.stage1Point : s.name === "Stage 2" && f.stage2 ? f.stage2 : [undefined,undefined];
+    equal([s.powerHp,s.torqueNm], expectedPoint, f.id + " no stale point output");
     const q = resolveStageQuote(v,s);
     equal(s.quote, q, f.id + " stored quote");
     equal(resolveStageQuote(profile,profile.stages.find(p=>p.name===s.name)),q,f.id + " DTO quote");
@@ -121,7 +128,7 @@ for (const f of fixtures) {
   assert.doesNotMatch(JSON.stringify(safe.outputReferences), /factory-|shiftech-|SOURCE_|source-voting/);
   const chart = estimateChartData(profile.stages,v.stockPowerHp,v.stockTorqueNm);
   equal(chart.slice(2).map(p=>[p.pk,p.nm]),[f.stage2 ?? [null,null],[null,null]],f.id+" chart plots only supported Stage 2 and leaves gaps");
-  if (!f.stage1) equal([chart[1].pk,chart[1].nm],[null,null],f.id+" withheld Stage 1 not plotted");
+  if (!f.stage1 && !f.stage1Point) equal([chart[1].pk,chart[1].nm],[null,null],f.id+" withheld Stage 1 not plotted");
   if (f.stockNm === null) equal(chart[0].nm,null,f.id+" unknown stock torque not plotted as zero");
   // Controller identity and access cannot become verified from a registration-year change.
   for (const year of f.years) {
@@ -145,11 +152,11 @@ for (const year of [2014,2015,undefined]) {
   }
 }
 equal(fixtures.filter(f=>f.stage2).length,1,"one supported Stage 2 reference");
-equal(fixtures.filter(f=>f.stage2Action==="CUSTOM_ON_REQUEST").length,6,"six separately reviewed custom scopes");
-equal(fixtures.filter(f=>f.stage2Action==="WITHHOLD_UNTIL_IDENTIFIED").length,5,"five unresolved identity scopes");
+equal(fixtures.filter(f=>f.stage2Action==="CUSTOM_ON_REQUEST").length,10,"ten separately reviewed custom scopes");
+equal(fixtures.filter(f=>f.stage2Action==="WITHHOLD_UNTIL_IDENTIFIED").length,1,"one unresolved identity scope");
 for (const [id, year] of [["bmw-320d-b47",2022],["vw-golf-20-tsi-ea888",2020],["volkswagen-golf-7-r-20-tsi",2018]] as const) {
   const v=engineCatalog.find(v=>v.id===id)!;
   equal(getVehicleSelectorItems({brand:v.brand,model:v.model,year}).some(s=>s.id===id),false,id+" outside-period selector cannot claim corrected URL");
 }
 equal(getPublicServicePrice({price:239,pricingTier:"tcu-standard"}),249,"TCU conditional from-price unchanged");
-console.log(`P0 truth matrix: ${checks} assertions across 12 public profiles, 3 Stages, NL/EN/PL; 12 other profiles protected; 291 routes preserved.`);
+console.log(`Catalog truth matrix: ${checks} assertions across 12 public profiles, 3 Stages, NL/EN/PL; 12 other profiles protected; 291 routes preserved.`);

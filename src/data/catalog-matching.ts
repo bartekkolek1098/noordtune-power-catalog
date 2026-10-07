@@ -28,6 +28,17 @@ export type CatalogMatchInput = {
   variant?: string;
   execution?: string;
   cylinders?: number | null;
+  /** Optional workshop/owner evidence. RDW does not supply these fields. */
+  stockTorqueNm?: number | null;
+  generationEvidence?: string;
+  engineFamily?: string;
+  transmission?: string;
+  emissionsConfiguration?: string;
+  fuelGrade?: string;
+  fuelRon?: number | null;
+  market?: string;
+  bodyStyle?: string;
+  drivetrain?: string;
 };
 
 /** This reviews a catalog relationship, never the installed engine or ECU. */

@@ -1670,7 +1670,9 @@ export function getVehicleSelectorItems({
       )
       .filter(vehicle => {
         const corrected = publicVehicleByCanonicalId.get(vehicle.id);
-        return !corrected?.configurationNote || corrected.years.includes(year) || corrected.id !== vehicle.id;
+        // A canonical row shadowed by a reviewed public profile must not restore
+        // historical output outside that profile's supported period.
+        return !corrected?.configurationNote || corrected.years.includes(year);
       })
       .map(vehicle => toVehicleSelectorItem(vehicle, year))
     ],
@@ -1776,6 +1778,7 @@ function toReferenceSelectorItem(profile: TuningEstimateProfile): VehicleSelecto
 export function getReferenceSelectorEstimate(id: string): EstimateResolution | undefined {
   const reference = tuningReferenceProfiles.find((profile) => profile.id === id);
   const canonical = !reference ? vehicleDatabase.find(vehicle => vehicle.id === id) : undefined;
+  if (canonical && publicVehicleByCanonicalId.has(canonical.id)) return undefined;
   const profile = reference ?? (canonical ? {...getCatalogEstimateProfile(canonical), vehicleId: undefined,
     provenance: "canonical-estimated" as const} : undefined);
   if (!profile) return undefined;

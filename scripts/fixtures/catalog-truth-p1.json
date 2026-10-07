@@ -1,0 +1,143 @@
+[
+  {
+    "id": "bmw-3-series-g20-g21-320i",
+    "grade": "C",
+    "stock": [184, 300],
+    "years": [2019, 2024],
+    "generation": "G20/G21",
+    "ecuFamily": "Bosch MG1CS201",
+    "stage1": {"kind": "WITHHELD", "output": null, "priceCents": null},
+    "stage2Action": "WITHHOLD_UNTIL_IDENTIFIED",
+    "supportedIdentity": {
+      "firstRegistrationYear": 2020,
+      "stockTorqueNm": 300,
+      "generationEvidence": "G20 320i",
+      "engineFamily": "B48",
+      "transmission": "8-speed Steptronic",
+      "fuelGrade": "premium petrol"
+    },
+    "rejectedIdentities": [
+      {"label": "incompatible 184/270 application", "input": {"firstRegistrationYear": 2020, "stockTorqueNm": 270, "generationEvidence": "G20", "engineFamily": "B48", "transmission": "8-speed Steptronic"}}
+    ]
+  },
+  {
+    "id": "volkswagen-passat-b8-20-tdi",
+    "grade": "B",
+    "stock": [150, 340],
+    "years": [2019, 2020],
+    "generation": "B8 facelift",
+    "ecuFamily": "Bosch MD1CS004",
+    "stage1": {"kind": "POINT", "output": [190, 420], "priceCents": 44900},
+    "stage2Action": "CUSTOM_ON_REQUEST",
+    "supportedIdentity": {
+      "firstRegistrationYear": 2019,
+      "stockTorqueNm": 340,
+      "generationEvidence": "B8 facelift",
+      "engineFamily": "2.0 TDI Evo",
+      "transmission": "6-speed manual"
+    },
+    "rejectedIdentities": [
+      {"label": "150/360 DSG scope", "input": {"firstRegistrationYear": 2019, "stockTorqueNm": 360, "generationEvidence": "B8 facelift", "engineFamily": "2.0 TDI Evo", "transmission": "7-speed DSG"}},
+      {"label": "pre-facelift", "input": {"firstRegistrationYear": 2018, "stockTorqueNm": 340, "generationEvidence": "B8 pre-facelift", "engineFamily": "2.0 TDI", "transmission": "6-speed manual"}},
+      {"label": "unknown gearbox", "input": {"firstRegistrationYear": 2019, "stockTorqueNm": 340, "generationEvidence": "B8 facelift", "engineFamily": "2.0 TDI Evo"}}
+    ]
+  },
+  {
+    "id": "ford-focus-st-20-ecoboost",
+    "grade": "B",
+    "stock": [250, 360],
+    "years": [2015, 2018],
+    "generation": "Mk3 facelift",
+    "ecuFamily": "Bosch MEDG17.0 / MED17.0",
+    "stage1": {"kind": "RANGE", "output": [[265, 270], [430, 440]], "priceCents": 44900},
+    "stage2Action": "CUSTOM_ON_REQUEST",
+    "supportedIdentity": {
+      "firstRegistrationYear": 2017,
+      "stockTorqueNm": 360,
+      "generationEvidence": "Mk3 facelift",
+      "engineFamily": "2.0 EcoBoost",
+      "transmission": "MMT6 6-speed manual",
+      "emissionsConfiguration": "Euro 6",
+      "fuelGrade": "premium petrol"
+    },
+    "rejectedIdentities": [
+      {"label": "pre-facelift", "input": {"firstRegistrationYear": 2014, "stockTorqueNm": 360, "generationEvidence": "Mk3 pre-facelift", "engineFamily": "2.0 EcoBoost", "transmission": "MMT6 manual", "emissionsConfiguration": "Euro 5", "fuelGrade": "premium petrol"}},
+      {"label": "E85 scenario", "input": {"firstRegistrationYear": 2017, "stockTorqueNm": 360, "generationEvidence": "Mk3 facelift", "engineFamily": "2.0 EcoBoost", "transmission": "MMT6 manual", "emissionsConfiguration": "Euro 6", "fuelGrade": "premium E85"}},
+      {"label": "unknown fuel", "input": {"firstRegistrationYear": 2017, "stockTorqueNm": 360, "generationEvidence": "Mk3 facelift", "engineFamily": "2.0 EcoBoost", "transmission": "MMT6 manual", "emissionsConfiguration": "Euro 6"}}
+    ]
+  },
+  {
+    "id": "seat-leon-cupra-5f-20-tsi-300",
+    "grade": "B",
+    "stock": [300, 380],
+    "years": [2017, 2018],
+    "generation": "5F pre-GPF",
+    "ecuFamily": "Continental Simos 18.x",
+    "tcuFamily": "Temic DQ250 MQB",
+    "stage1": {"kind": "POINT", "output": [350, 460], "priceCents": 54900},
+    "stage2Action": "CUSTOM_ON_REQUEST",
+    "supportedIdentity": {
+      "firstRegistrationYear": 2018,
+      "stockTorqueNm": 380,
+      "generationEvidence": "5F pre-GPF",
+      "engineFamily": "2.0 TSI",
+      "transmission": "6-speed DSG DQ250",
+      "emissionsConfiguration": "pre-GPF Euro 6",
+      "fuelRon": 98,
+      "bodyStyle": "hatch",
+      "drivetrain": "FWD"
+    },
+    "manualIdentity": {
+      "firstRegistrationYear": 2018,
+      "stockTorqueNm": 380,
+      "generationEvidence": "5F pre-GPF",
+      "engineFamily": "2.0 TSI",
+      "transmission": "6-speed manual",
+      "emissionsConfiguration": "pre-GPF Euro 6",
+      "fuelRon": 98,
+      "bodyStyle": "SC",
+      "drivetrain": "FWD"
+    },
+    "rejectedIdentities": [
+      {"label": "incompatible 400 Nm stock", "input": {"firstRegistrationYear": 2018, "stockTorqueNm": 400, "generationEvidence": "5F pre-GPF", "engineFamily": "2.0 TSI", "transmission": "6-speed DSG", "emissionsConfiguration": "pre-GPF", "fuelRon": 98, "bodyStyle": "hatch", "drivetrain": "FWD"}},
+      {"label": "later GPF", "input": {"firstRegistrationYear": 2019, "stockTorqueNm": 380, "generationEvidence": "5F GPF", "engineFamily": "2.0 TSI", "transmission": "DQ381 7-speed DSG", "emissionsConfiguration": "GPF", "fuelRon": 98, "bodyStyle": "hatch", "drivetrain": "FWD"}},
+      {"label": "insufficient octane", "input": {"firstRegistrationYear": 2018, "stockTorqueNm": 380, "generationEvidence": "5F pre-GPF", "engineFamily": "2.0 TSI", "transmission": "6-speed DSG", "emissionsConfiguration": "pre-GPF", "fuelRon": 95, "bodyStyle": "hatch", "drivetrain": "FWD"}}
+    ]
+  },
+  {
+    "id": "bmw-1-series-f20-f21-118d",
+    "grade": "B",
+    "stock": [150, 320],
+    "years": [2015, 2019],
+    "generation": "F20/F21 LCI",
+    "ecuFamily": "Bosch EDC17C50",
+    "tcuFamily": "ZF 8HPxx",
+    "stage1": {"kind": "POINT", "output": [190, 400], "priceCents": 44900},
+    "stage2Action": "CUSTOM_ON_REQUEST",
+    "supportedIdentity": {
+      "firstRegistrationYear": 2017,
+      "stockTorqueNm": 320,
+      "displacementCc": 1995,
+      "generationEvidence": "F20 LCI",
+      "engineFamily": "B47",
+      "transmission": "8-speed Steptronic",
+      "emissionsConfiguration": "Euro 6",
+      "market": "NL"
+    },
+    "manualIdentity": {
+      "firstRegistrationYear": 2017,
+      "stockTorqueNm": 320,
+      "displacementCc": 1995,
+      "generationEvidence": "F21 LCI",
+      "engineFamily": "B47",
+      "transmission": "6-speed manual",
+      "emissionsConfiguration": "Euro 6",
+      "market": "Netherlands"
+    },
+    "rejectedIdentities": [
+      {"label": "old 330 Nm scope", "input": {"firstRegistrationYear": 2017, "stockTorqueNm": 330, "displacementCc": 1995, "generationEvidence": "F20 LCI", "engineFamily": "B47", "transmission": "8-speed Steptronic", "emissionsConfiguration": "Euro 6", "market": "NL"}},
+      {"label": "unknown engine family", "input": {"firstRegistrationYear": 2017, "stockTorqueNm": 320, "displacementCc": 1995, "generationEvidence": "F20 LCI", "transmission": "8-speed Steptronic", "emissionsConfiguration": "Euro 6", "market": "NL"}},
+      {"label": "unknown transmission", "input": {"firstRegistrationYear": 2017, "stockTorqueNm": 320, "displacementCc": 1995, "generationEvidence": "F20 LCI", "engineFamily": "B47", "emissionsConfiguration": "Euro 6", "market": "NL"}}
+    ]
+  }
+]

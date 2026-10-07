@@ -1,7 +1,9 @@
 import type {EngineVariant, FuelType, StageDefinition, StageName} from "./catalog-shared.ts";
+import type {CatalogMatchInput} from "./catalog-matching.ts";
 import type {RuntimeCommercialIdentity} from "./runtime-pricing.ts";
 import type {StageScope, StageComparison} from "../lib/stage-presentation.ts";
 import type {DetailsAction} from "../lib/details-action.ts";
+import {getPublicCatalogTruthGrade} from "./catalog-truth-grades.ts";
 
 export type EstimateStage = Omit<StageDefinition, "powerHp" | "torqueNm" | "price" | "sourcePrice" | "quote"> & {
   powerHp?: number;
@@ -89,6 +91,82 @@ function scopeStageToRegistration(stage: EstimateStage, year?: number): Estimate
     }};
 }
 
+const normalizeIdentityFact = (value?: string | null) => (value ?? "").normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+function containsMarker(value: string, markers?: readonly string[]) {
+  return !markers?.length || markers.some(marker => value.includes(normalizeIdentityFact(marker)));
+}
+
+function transmissionFamilies(value?: string) {
+  const normalized = normalizeIdentityFact(value);
+  const result = new Set<"manual" | "dsg6" | "automatic8">();
+  if (/\b(?:manual|handbak|mmt6|6mt|six speed manual|6 speed manual)\b/.test(normalized)) result.add("manual");
+  if (/\b(?:dq250|dsg6|6 dsg|6 speed dsg|six speed dsg)\b/.test(normalized)) result.add("dsg6");
+  if (/\b(?:8hp|zf8|steptronic|8 speed|eight speed|8 traps|achttraps)\b/.test(normalized)) result.add("automatic8");
+  return result;
+}
+
+function registrationYear(input: CatalogMatchInput) {
+  if (input.firstRegistrationYear && Number.isInteger(input.firstRegistrationYear)) return input.firstRegistrationYear;
+  const value = input.firstRegistrationDate;
+  return value && /^\d{4}-\d{2}-\d{2}$/.test(value) ? Number(value.slice(0, 4)) : undefined;
+}
+
+function withholdIdentityScopedStage(stage: EstimateStage, label: {nl: string; en: string; pl: string}): EstimateStage {
+  return {...stage, powerHp: undefined, torqueNm: undefined, powerRangeHp: undefined, torqueRangeNm: undefined,
+    approximate: false, provenance: "reviewed", quoteRequired: true, customHardware: false,
+    hardwareRequired: false, tcuRecommended: false, customerScope: {fuelRon: [], hardware: []},
+    customerNote: {
+      nl: `${stage.name}-waarden en prijs gelden alleen voor de bevestigde ${label.nl}. De beschikbare voertuiggegevens bewijzen dit scope nog niet; eerst identificeren.`,
+      en: `${stage.name} output and price apply only to the confirmed ${label.en}. The available vehicle data do not yet prove this scope; identify it first.`,
+      pl: `Parametry i cena ${stage.name} dotyczą tylko potwierdzonego zakresu: ${label.pl}. Dostępne dane auta jeszcze go nie potwierdzają; najpierw identyfikacja.`
+    }};
+}
+
+function scopeStageToIdentity(stage: EstimateStage, source: StageDefinition, input: CatalogMatchInput): EstimateStage {
+  const dated = scopeStageToRegistration(stage, registrationYear(input));
+  const scope = source.identityScope;
+  if (!scope || dated.quoteRequired) return dated;
+  const year = registrationYear(input);
+  const generation = normalizeIdentityFact([input.generationEvidence, input.model, input.type, input.variant, input.execution].filter(Boolean).join(" "));
+  const engine = normalizeIdentityFact([input.engineFamily, input.model, input.type, input.variant, input.execution].filter(Boolean).join(" "));
+  const emissions = normalizeIdentityFact(input.emissionsConfiguration);
+  const fuelGrade = normalizeIdentityFact(input.fuelGrade);
+  const market = normalizeIdentityFact(input.market);
+  const body = normalizeIdentityFact(input.bodyStyle);
+  const drivetrain = normalizeIdentityFact(input.drivetrain);
+  const transmission = transmissionFamilies(input.transmission);
+  const match = (!scope.yearRange || (year !== undefined && year >= scope.yearRange[0] && year <= scope.yearRange[1]))
+    && (scope.stockTorqueNm === undefined || input.stockTorqueNm === scope.stockTorqueNm)
+    && (scope.displacementCc === undefined || input.displacementCc === scope.displacementCc)
+    && containsMarker(generation, scope.generationMarkers)
+    && containsMarker(engine, scope.engineFamilyMarkers)
+    && (!scope.transmissionFamilies?.length || scope.transmissionFamilies.some(value => transmission.has(value)))
+    && containsMarker(emissions, scope.emissionsMarkers)
+    && containsMarker(fuelGrade, scope.fuelGradeMarkers)
+    && (!scope.excludedFuelGradeMarkers?.some(marker => fuelGrade.includes(normalizeIdentityFact(marker))))
+    && (scope.fuelRonMin === undefined || (input.fuelRon !== undefined && input.fuelRon !== null && input.fuelRon >= scope.fuelRonMin))
+    && containsMarker(market, scope.marketMarkers)
+    && containsMarker(body, scope.bodyStyleMarkers)
+    && containsMarker(drivetrain, scope.drivetrainMarkers);
+  return match ? dated : withholdIdentityScopedStage(dated, scope.label);
+}
+
+function applyTransmissionIdentity(profile: TuningEstimateProfile, input: CatalogMatchInput): TuningEstimateProfile {
+  const families = transmissionFamilies(input.transmission);
+  const baseCompatibility = profile.serviceCompatibility ?? {};
+  if (families.has("manual")) return {...profile, gearbox: "Manual",
+    tcuSupport: {status: "manual-review", basis: "unconfirmed"},
+    serviceCompatibility: {...baseCompatibility, gearbox: {status: "not-applicable", note: "Confirmed manual scope; no TCU tuning product."}}};
+  const automatic = families.has("dsg6") ? "DSG" : families.has("automatic8") ? "ZF" : undefined;
+  if (automatic && profile.tcuSupport?.basis === "documented-application") return {...profile, gearbox: automatic,
+    serviceCompatibility: {...baseCompatibility, gearbox: {status: "conditional", note: "Automatic transmission family supplied; identify the exact gearbox and TCU before offering tuning."}}};
+  if (!automatic) return {...profile, gearbox: undefined,
+    serviceCompatibility: {...baseCompatibility, gearbox: {status: "manual-review", note: "Installed transmission not identified; TCU eligibility requires separate evidence."}}};
+  return profile;
+}
+
 /** Client-safe adapter; receives one selected vehicle, never imports the catalog. */
 export function getCatalogEstimateProfile(vehicle: EngineVariant): TuningEstimateProfile {
   const is118iSource = vehicle.id === "bmw-1-series-f20-f21-118i";
@@ -123,6 +201,7 @@ export function getCatalogEstimateProfile(vehicle: EngineVariant): TuningEstimat
     transmissionSupport: vehicle.transmissionSupport,
     tcuSupport: vehicle.tcuSupport,
     provenance: "existing-catalog",
+    coverageClass: getPublicCatalogTruthGrade(vehicle.id),
     sourceReferences: vehicle.outputReferences ?? [{
       title: "NoordTune existing public catalog",
       sourceType: "existing-catalog",
@@ -155,8 +234,16 @@ export function getCatalogEstimateProfile(vehicle: EngineVariant): TuningEstimat
 
 /** Registration narrows applicability without changing the selected public-page reference. */
 export function getCatalogEstimateProfileForRegistration(vehicle: EngineVariant, year?: number): TuningEstimateProfile {
+  return getCatalogEstimateProfileForIdentity(vehicle, {firstRegistrationYear: year});
+}
+
+/** Runtime adapter: retain a reviewed numeric Stage only when all required
+ * non-registration facts in its truth-overlay scope are explicitly present.
+ */
+export function getCatalogEstimateProfileForIdentity(vehicle: EngineVariant, input: CatalogMatchInput): TuningEstimateProfile {
   const profile = getCatalogEstimateProfile(vehicle);
-  return {...profile, stages: profile.stages.map(stage => scopeStageToRegistration(stage, year))};
+  return applyTransmissionIdentity({...profile,
+    stages: profile.stages.map((stage, index) => scopeStageToIdentity(stage, vehicle.stages[index], input))}, input);
 }
 
 export function unavailableEstimateStage(name: StageName): EstimateStage {

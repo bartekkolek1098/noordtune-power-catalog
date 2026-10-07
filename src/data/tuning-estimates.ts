@@ -2,7 +2,7 @@ import type {EngineVariant} from "./catalog-shared.ts";
 import {serviceOptions} from "./catalog-shared.ts";
 import {assessCatalogMatch, type CatalogMatchInput} from "./catalog-matching.ts";
 import {
-  getCatalogEstimateProfileForRegistration, unavailableEstimateStage,
+  getCatalogEstimateProfileForIdentity, unavailableEstimateStage,
   type EstimateResolution, type EstimateSourceReference, type TuningEstimateProfile
 } from "./tuning-estimates-shared.ts";
 
@@ -117,7 +117,7 @@ export function resolveTuningEstimate(input: EstimateMatchInput, publicVehicles:
   const rejected: string[] = [];
   const profiles = [
     ...tuningReferenceProfiles.map((profile) => ({profile, vehicle: referenceCandidate(profile), displacementCc: referenceDisplacements[profile.id]})),
-    ...publicVehicles.map((vehicle) => ({profile: getCatalogEstimateProfileForRegistration(vehicle, input.firstRegistrationYear ?? (Number(input.firstRegistrationDate?.slice(0, 4)) || undefined)), vehicle, displacementCc: publicDisplacementScopes[vehicle.id]}))
+    ...publicVehicles.map((vehicle) => ({profile: getCatalogEstimateProfileForIdentity(vehicle, input), vehicle, displacementCc: publicDisplacementScopes[vehicle.id]}))
   ];
   for (const entry of profiles) {
     const assessment = assessCatalogMatch(input, [{variant: entry.vehicle, applicability: "reviewed", displacementCc: entry.displacementCc}]);
