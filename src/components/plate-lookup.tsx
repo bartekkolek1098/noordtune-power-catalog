@@ -672,7 +672,6 @@ const lookupRuntimeCopy: Record<
     customRequirement: string;
     stage1Items: string[];
     stage2Items: string[];
-    stage3Items: string[];
   }
 > = {
   nl: {
@@ -706,11 +705,6 @@ const lookupRuntimeCopy: Record<
       "Hardware- en onderhoudscontrole",
       "Logcontrole onder belasting"
     ],
-    stage3Items: [
-      "Indicatieve maatwerk setup",
-      "Turbo/brandstofcontrole",
-      "Offerte op basis van exacte voertuigconfiguratie"
-    ]
   },
   en: {
     catalogIndication: "Catalog estimate",
@@ -743,11 +737,6 @@ const lookupRuntimeCopy: Record<
       "Hardware and maintenance check",
       "Load logging check"
     ],
-    stage3Items: [
-      "Indicative custom setup",
-      "Turbo/fuel system check",
-      "Quote based on exact vehicle configuration"
-    ]
   },
   pl: {
     catalogIndication: "Szacunek katalogowy",
@@ -780,14 +769,9 @@ const lookupRuntimeCopy: Record<
       "Kontrola hardware i stanu technicznego",
       "Logi pod obciążeniem"
     ],
-    stage3Items: [
-      "Orientacyjna konfiguracja indywidualna",
-      "Kontrola turbo i układu paliwowego",
-      "Oferta na podstawie dokładnej konfiguracji auta"
-    ]
   }
 };
 
 function createPendingStages() {
-  return [unavailableEstimateStage("Stage 1"), unavailableEstimateStage("Stage 2"), unavailableEstimateStage("Stage 3+")];
+  return [unavailableEstimateStage("Stage 1"), unavailableEstimateStage("Stage 2")];
 }

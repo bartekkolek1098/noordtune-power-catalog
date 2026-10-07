@@ -1680,10 +1680,15 @@ export function getVehicleSelectorItems({
   );
 }
 
+function selectorSafeStage(stage: StageDefinition) {
+  const trusted = ["reference", "single-source", "multi-source"].includes(stage.provenance ?? "");
+  return trusted ? stage : {...stage, quoteRequired: true};
+}
+
 function toVehicleSelectorItem(vehicle: EngineVariant, selectedYear?: number): VehicleSelectorItem {
   const corrected = publicVehicleByCanonicalId.get(vehicle.id);
   const publicVehicle = corrected && (!corrected.configurationNote || corrected.years.includes(selectedYear ?? vehicle.years[0])) ? corrected : vehicle;
-  const stage = publicVehicle.stages[0];
+  const stage = selectorSafeStage(publicVehicle.stages[0]);
 
   return {
     id: publicVehicle.id,

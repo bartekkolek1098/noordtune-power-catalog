@@ -87,7 +87,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     heroLineB: "tuning­mogelijkheden",
     heroLineC: "van jouw auto.",
     heroIntro:
-      "NoordTune combineert RDW-gegevens met een professionele tuningcatalogus. Bekijk direct mogelijkheden voor Stage 1 / 2 / 3+, DPF / AdBlue / EGR, DSG / TCU tuning en ontvang een indicatie op maat.",
+      "NoordTune combineert RDW-gegevens met een professionele tuningcatalogus. Bekijk direct mogelijkheden voor Stage 1 / 2, DPF / AdBlue / EGR, DSG / TCU tuning en ontvang een indicatie op maat.",
     manualPanelTitle: "Of kies jouw auto handmatig",
     manualPanelText:
       "Voor klanten buiten Nederland: kies merk, model, bouwjaar en motor zonder Nederlands kenteken.",
@@ -96,7 +96,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
       text: "We halen betrouwbare voertuiggegevens rechtstreeks op via de RDW-database."
     },
     featureB: {
-      title: "Stage 1 / 2 / 3+",
+      title: "Stage 1 / 2",
       text: "Bekijk alle beschikbare stages en prestatieniveaus voor jouw motor."
     },
     featureC: {
@@ -149,9 +149,9 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
           "Een softwareaanpassing kan invloed hebben op fabrieks- of dealergarantie. We leggen vooraf duidelijk uit wat er wordt aangepast, zodat je een bewuste keuze kunt maken."
       },
       {
-        question: "Wat is het verschil tussen Stage 1, 2 en 3+?",
+        question: "Wat is het verschil tussen Stage 1 en Stage 2?",
         answer:
-          "Stage 1 is software op een standaard auto. Stage 2 vraagt meestal hardware zoals downpipe, intake of intercooler. Stage 3+ is maatwerk met grotere turbo, brandstof- of koelingupgrades."
+          "Stage 1 is software op een standaard auto. Stage 2 is voertuigspecifiek en kan extra hardware vragen, zoals inlaat, intercooler of een aangepaste uitlaatconfiguratie. De exacte setup bevestigen we vooraf."
       },
       {
         question: "Wat zijn DPF, EGR en AdBlue opties?",
@@ -192,7 +192,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     heroLineB: "tuning potential",
     heroLineC: "instantly.",
     heroIntro:
-      "NoordTune combines RDW vehicle data with a professional tuning catalog. Instantly view Stage 1 / 2 / 3+, DPF / AdBlue / EGR, DSG / TCU tuning options and receive a tailored indication.",
+      "NoordTune combines RDW vehicle data with a professional tuning catalog. Instantly view Stage 1 / 2, DPF / AdBlue / EGR, DSG / TCU tuning options and receive a tailored indication.",
     manualPanelTitle: "Or choose your car manually",
     manualPanelText:
       "For customers outside the Netherlands: choose make, model, year and engine without a Dutch plate.",
@@ -201,7 +201,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
       text: "We retrieve reliable vehicle data directly from the RDW database."
     },
     featureB: {
-      title: "Stage 1 / 2 / 3+",
+      title: "Stage 1 / 2",
       text: "View available stages and performance levels for your engine."
     },
     featureC: {
@@ -254,9 +254,9 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
           "Software changes can affect manufacturer or dealer warranty. We explain the work clearly before tuning, so you can make an informed decision."
       },
       {
-        question: "What is the difference between Stage 1, 2 and 3+?",
+        question: "What is the difference between Stage 1 and Stage 2?",
         answer:
-          "Stage 1 is software for a standard car. Stage 2 usually requires hardware such as a downpipe, intake or intercooler. Stage 3+ is custom work with larger turbo, fuel or cooling upgrades."
+          "Stage 1 is software for a standard car. Stage 2 is vehicle-specific and may require supporting hardware such as intake, intercooler or an adapted exhaust configuration. We confirm the exact setup first."
       },
       {
         question: "What are DPF, EGR and AdBlue options?",
@@ -297,7 +297,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     heroLineB: "możliwości tuningu",
     heroLineC: "swojego auta.",
     heroIntro:
-      "NoordTune łączy dane RDW z profesjonalnym katalogiem tuningu. Od razu sprawdzisz Stage 1 / 2 / 3+, DPF / AdBlue / EGR, tuning DSG / TCU i otrzymasz indywidualną wycenę.",
+      "NoordTune łączy dane RDW z profesjonalnym katalogiem tuningu. Od razu sprawdzisz Stage 1 / 2, DPF / AdBlue / EGR, tuning DSG / TCU i otrzymasz indywidualną wycenę.",
     manualPanelTitle: "Lub wybierz auto ręcznie",
     manualPanelText:
       "Dla klientów spoza Holandii: wybierz markę, model, rok i silnik bez holenderskiej tablicy.",
@@ -306,7 +306,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
       text: "Pobieramy wiarygodne dane pojazdu bezpośrednio z bazy RDW."
     },
     featureB: {
-      title: "Stage 1 / 2 / 3+",
+      title: "Stage 1 / 2",
       text: "Zobacz dostępne stage i poziomy osiągów dla swojego silnika."
     },
     featureC: {
@@ -361,7 +361,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
       {
         question: "Czym różni się Stage 1, 2 i 3+?",
         answer:
-          "Stage 1 to samo oprogramowanie w seryjnym aucie. Stage 2 zwykle wymaga osprzętu, np. downpipe, dolotu lub intercoolera. Stage 3+ to indywidualny projekt z większą turbiną, paliwem lub chłodzeniem."
+          "Stage 1 to oprogramowanie dla seryjnego auta. Stage 2 jest zależny od konkretnej konfiguracji i może wymagać dodatkowego osprzętu, np. dolotu, intercoolera lub zmodyfikowanego układu wydechowego. Dokładny zakres potwierdzamy przed realizacją."
       },
       {
         question: "Czym są opcje DPF, EGR i AdBlue?",

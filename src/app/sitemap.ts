@@ -1,5 +1,6 @@
 import type {MetadataRoute} from "next";
 import {engineCatalog, getVehicleSeoSlugs, stageSlugMap} from "@/data/catalog";
+import {isPublicCatalogStageName} from "@/data/catalog-shared";
 import {routing} from "@/i18n/routing";
 import {absoluteUrl} from "@/lib/site-url";
 
@@ -20,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     engineCatalog.flatMap((vehicle) => {
       const slugs = getVehicleSeoSlugs(vehicle);
 
-      return vehicle.stages.map((stage) => ({
+      return vehicle.stages.filter((stage) => isPublicCatalogStageName(stage.name)).map((stage) => ({
         url: absoluteUrl(
           `/${locale}/${slugs.brand}/${slugs.model}/${slugs.engine}/${stageSlugMap[stage.name]}`
         ),

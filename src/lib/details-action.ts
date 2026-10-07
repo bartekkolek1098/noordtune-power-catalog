@@ -1,4 +1,4 @@
-import type {EngineVariant} from "../data/catalog-shared.ts";
+import {isPublicCatalogStageName, type EngineVariant} from "../data/catalog-shared.ts";
 import {getCatalogEstimateProfile, type TuningEstimateProfile} from "../data/tuning-estimates-shared.ts";
 import {applyStageHardwarePolicy} from "./stage-hardware-policy.ts";
 import type {Locale} from "../i18n/routing.ts";
@@ -14,8 +14,10 @@ export function resolveDetailsAction(profile: TuningEstimateProfile | undefined,
   if (!page || profile.provenance !== "existing-catalog" ||
       !["brand", "model", "engine", "fuel", "generation", "yearRange", "stockPowerHp", "stockTorqueNm"].every(key =>
         profile[key as keyof TuningEstimateProfile] === page[key as keyof EngineVariant])) return inline;
-  const figures = (value: TuningEstimateProfile) => applyStageHardwarePolicy(value.stages).map(stage =>
-    [stage.name, stage.powerHp, stage.torqueNm, stage.powerRangeHp, stage.torqueRangeNm, Boolean(stage.customHardware)]);
+  const figures = (value: TuningEstimateProfile) => applyStageHardwarePolicy(value.stages)
+    .filter(stage => isPublicCatalogStageName(stage.name))
+    .map(stage =>
+      [stage.name, stage.powerHp, stage.torqueNm, stage.powerRangeHp, stage.torqueRangeNm, Boolean(stage.customHardware)]);
   if (JSON.stringify(figures(profile)) !== JSON.stringify(figures(getCatalogEstimateProfile(page)))) return inline;
   return {kind: "vehicle-page", path: `/vehicles/${page.id}`};
 }

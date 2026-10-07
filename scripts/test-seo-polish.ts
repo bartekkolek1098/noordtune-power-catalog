@@ -6,6 +6,7 @@ import {
   getVehicleSeoSlugs,
   stageSlugMap
 } from "../src/data/catalog.ts";
+import {isPublicCatalogStageName} from "../src/data/catalog-shared.ts";
 import {popularCars} from "../src/data/homepage.ts";
 import {resolveStageQuote} from "../src/data/pricing.ts";
 import {routing} from "../src/i18n/routing.ts";
@@ -29,7 +30,7 @@ const expectedRoutes = routing.locales.flatMap((locale) => [
   ...engineCatalog.flatMap((vehicle) => {
     const slugs = getVehicleSeoSlugs(vehicle);
 
-    return vehicle.stages.map(
+    return vehicle.stages.filter((stage) => isPublicCatalogStageName(stage.name)).map(
       (stage) =>
         `/${locale}/${slugs.brand}/${slugs.model}/${slugs.engine}/${stageSlugMap[stage.name]}`
     );
@@ -37,8 +38,8 @@ const expectedRoutes = routing.locales.flatMap((locale) => [
 ]);
 
 assert.equal(engineCatalog.length, 24, "The curated public catalog must stay at 24 vehicles");
-assert.equal(expectedRoutes.length, 291, "The public sitemap route set must stay at 291 URLs");
-assert.equal(new Set(expectedRoutes).size, 291, "Every public sitemap route must be unique");
+assert.equal(expectedRoutes.length, 219, "The public sitemap route set must contain home, vehicle, Stage 1 and Stage 2 URLs only");
+assert.equal(new Set(expectedRoutes).size, 219, "Every public sitemap route must be unique");
 
 const publicIds = new Set(engineCatalog.map((vehicle) => vehicle.id));
 const popularPublicIds = new Set(
@@ -77,7 +78,7 @@ for (const locale of routing.locales) {
     titles.add(vehicleCopy.title);
     descriptions.add(vehicleCopy.description);
 
-    for (const stage of vehicle.stages) {
+    for (const stage of vehicle.stages.filter((candidate) => isPublicCatalogStageName(candidate.name))) {
       const stageCopy = stageMetadataCopy(locale, vehicle, stage);
       const displayStage = applyStageHardwarePolicy([stage])[0];
       const quote = resolveStageQuote(vehicle, displayStage);

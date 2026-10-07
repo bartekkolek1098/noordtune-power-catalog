@@ -8,6 +8,7 @@ import {getCatalogEstimateProfile} from "../src/data/tuning-estimates-shared.ts"
 import {quoteOfferFields} from "../src/lib/quote-offer.ts";
 import {isVehicleServiceSelectable} from "../src/lib/vehicle-services.ts";
 import {catalogVerificationCopy} from "../src/lib/catalog-verification-copy.ts";
+import {customerVehicle} from "../src/lib/customer-profile.ts";
 import {createVehicleQuoteMessage, whatsappHref} from "../src/lib/whatsapp.ts";
 import {customHardwareLabel, estimateLimitations, estimateStageTechnicalNotes, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "../src/lib/estimate-copy.ts";
 import {estimateChartData} from "../src/lib/estimate-chart.ts";
@@ -41,7 +42,10 @@ for (const vehicle of catalog.engineCatalog) {
   equal(Object.hasOwn(quoteOfferFields(displayQuote, "nl"), "price"), false, `${vehicle.id}: custom Stage Offer has no unscoped amount`);
   equal(profile.stages[2].powerHp, vehicle.stages[2].powerHp, `${vehicle.id}: presentation does not mutate retained source data`);
   const quote = pricing.resolveStageQuote(vehicle, stage);
-  equal(quote.kind, stage.quoteRequired ? "on-request" : "from", `${vehicle.id}: quote follows the reviewed technical scope`);
+  equal(quote.kind, stage.quoteRequired ? "on-request" : "from", `${vehicle.id}: internal quote follows the reviewed technical scope`);
+  const customerVehicleDto = customerVehicle(vehicle);
+  const customerStage = customerVehicleDto.stages[0];
+  const customerQuote = pricing.resolveStageQuote(customerVehicleDto, customerStage);
   equal(pricing.resolveStageQuote(profile, stage, {estimateApplicable: true, scope: "family", access: {status: "unknown", reasonCode: "test-unknown-ecu"}}), quote, `${vehicle.id}: unknown ECU does not erase commercial estimate`);
   const canonical = catalog.vehicleDatabase.find(
     (candidate) => candidate.id === (vehicle.sourceCanonicalId ?? vehicle.id)
@@ -52,11 +56,11 @@ for (const vehicle of catalog.engineCatalog) {
     model: canonical.model,
     year: vehicle.configurationNote ? vehicle.years[0] : canonical.years[0]
   }).find((candidate) => candidate.id === vehicle.id);
-  equal(selector?.quote, quote, `${vehicle.id}: selector matches vehicle quote`);
+  equal(selector?.quote, customerQuote, `${vehicle.id}: selector matches customer-safe vehicle quote`);
   const quickSearch = catalog.searchVehicleSelectorItems(
     `${vehicle.brand} ${vehicle.model} ${vehicle.engine}`, 20000
   ).find((candidate) => candidate.id === vehicle.id);
-  equal(quickSearch?.quote, quote, `${vehicle.id}: quick search matches vehicle quote`);
+  equal(quickSearch?.quote, customerQuote, `${vehicle.id}: quick search matches customer-safe vehicle quote`);
 
   for (const selectedStage of vehicle.stages) {
     const selectedQuote = pricing.resolveStageQuote(vehicle, selectedStage);

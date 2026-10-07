@@ -24,7 +24,7 @@ const fixtures: Fixture[] = JSON.parse(readFileSync(new URL("./fixtures/catalog-
 assert.equal(fixtures.length, 5);
 assert.equal(engineCatalog.length, 24);
 assert.equal(vehicleDatabaseCount, 58586);
-assert.equal(3 + engineCatalog.length * 3 + engineCatalog.reduce((count, vehicle) => count + vehicle.stages.length * 3, 0), 291);
+assert.equal(3 + engineCatalog.length * 3 + engineCatalog.length * 2 * 3, 219);
 
 let checks = 0;
 const equal = (actual: unknown, expected: unknown, label: string) => { assert.deepEqual(actual, expected, label); checks++; };
@@ -143,4 +143,4 @@ equal(fixtures.filter(fixture => fixture.stage1.kind === "WITHHELD").length, 1, 
 equal(fixtures.filter(fixture => fixture.stage2Action === "CUSTOM_ON_REQUEST").length, 4, "four Stage 2 custom scopes");
 equal(fixtures.filter(fixture => fixture.stage2Action === "WITHHOLD_UNTIL_IDENTIFIED").length, 1, "one Stage 2 identity withholding");
 
-console.log(`Catalog Truth P1: ${checks} contract assertions; 4 C->B, 1 C retained, 3 Stage 1 points, 1 range, 1 withheld, 0 numeric Stage 2, 291 routes.`);
+console.log(`Catalog Truth P1: ${checks} contract assertions; 4 C->B, 1 C retained, 3 Stage 1 points, 1 range, 1 withheld, 0 numeric Stage 2, 219 public routes.`);

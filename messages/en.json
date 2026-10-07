@@ -131,7 +131,7 @@
     "recommendation": {
       "eyebrow": "Recommended package",
       "title": "Choose the setup that fits your car",
-      "intro": "For daily use we usually recommend Stage 1. Stage 2 and Stage 3+ are performance-focused alternatives that require a hardware and vehicle-condition check first.",
+      "intro": "For daily use we usually recommend Stage 1. Stage 2 is a performance-focused, vehicle-specific option that requires a hardware and vehicle-condition check first.",
       "recommendedBadge": "Our advice",
       "bestDaily": "Best daily setup",
       "bestDailyText": "Safe daily drivability, stock hardware and a clear improvement in power and torque.",

@@ -5,6 +5,11 @@ export type FuelType = "Petrol" | "Diesel" | "Hybrid" | "Electric";
 export type ConfidenceLevel = "verified" | "estimated" | "manual-review";
 export type RecommendedUse = "daily" | "performance" | "custom";
 export type StageName = "Stage 1" | "Stage 2" | "Stage 3+";
+export const publicCatalogStageNames = ["Stage 1", "Stage 2"] as const satisfies readonly StageName[];
+export type PublicCatalogStageName = (typeof publicCatalogStageNames)[number];
+export function isPublicCatalogStageName(name: StageName): name is PublicCatalogStageName {
+  return publicCatalogStageNames.includes(name as PublicCatalogStageName);
+}
 export type TechnicalIdentityStatus =
   | "verified"
   | "supported-family"
