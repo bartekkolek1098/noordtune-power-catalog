@@ -88,6 +88,12 @@ const expected = {
     });
     vehiclePage.on("pageerror", error => errors.push(`vehicle/390 page: ${error.message}`));
     await vehiclePage.goto(`${baseUrl}/nl/vehicles/bmw-320d-b47`, {waitUntil: "networkidle"});
+    const vehicleHero = vehiclePage.locator('[data-testid="vehicle-hero"]');
+    assert.ok(await vehicleHero.isVisible(), "vehicle/390: vehicle hero visible");
+    assert.ok(!(await vehicleHero.innerText()).includes("ECU-familie"), "vehicle/390: ECU family moved below the conversion hero");
+    assert.ok(!(await vehicleHero.getByText("Chiptuning hoofdsite", {exact: true}).isVisible()), "vehicle/390: secondary company CTA hidden from mobile hero");
+    const heroBox = await vehicleHero.boundingBox();
+    assert.ok(heroBox && heroBox.height < 580, `vehicle/390: compact mobile hero height ${heroBox?.height}px`);
     assert.ok(await vehiclePage.getByText("Stage 1", {exact: true}).first().isVisible(), "vehicle/390: Stage 1 visible");
     assert.ok(await vehiclePage.getByText("Stage 2", {exact: true}).first().isVisible(), "vehicle/390: Stage 2 visible");
     assert.ok(!(await vehiclePage.locator("body").innerText()).includes("Stage 3+"), "vehicle/390: Stage 3+ absent");

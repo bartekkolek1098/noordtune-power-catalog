@@ -1,6 +1,5 @@
 import {customerVehicle} from "@/lib/customer-profile";
 import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
-import {technicalFamilyLabel} from "@/lib/technical-identity-copy";
 import {notFound} from "next/navigation";
 import {ArrowLeft} from "lucide-react";
 import {engineCatalog, getVehicleById} from "@/data/catalog";
@@ -10,7 +9,6 @@ import {CatalogVerificationNotice} from "@/components/catalog-verification-notic
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {SeoInfoSections} from "@/components/seo-info-sections";
 import {VehicleDetail} from "@/components/vehicle-detail";
-import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {isLocale, routing, type Locale} from "@/i18n/routing";
 import {catalogHref, chiptuningHref, mainLocaleHref} from "@/lib/noordtune-links";
@@ -134,7 +132,7 @@ export default async function VehiclePage({params}: PageProps) {
         dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbJsonLd)}}
       />
       <CatalogHeader locale={safeLocale} languagePath={`/vehicles/${vehicle.id}`} />
-      <section className="relative overflow-hidden border-b border-white/10">
+      <section className="relative overflow-hidden border-b border-white/10" data-testid="vehicle-hero">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -142,8 +140,8 @@ export default async function VehiclePage({params}: PageProps) {
           }}
         />
         <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(226,0,15,.22),transparent_42%,rgba(255,255,255,.08))]" />
-        <div className="container relative z-10 pb-16 pt-8">
-          <nav className="mb-6 flex flex-wrap items-center gap-2 text-xs font-bold uppercase text-muted-foreground">
+        <div className="container relative z-10 pb-10 pt-6 sm:pb-16 sm:pt-8">
+          <nav className="mb-4 flex flex-wrap items-center gap-2 text-xs font-bold uppercase text-muted-foreground sm:mb-6">
             <a className="hover:text-primary" href={mainLocaleHref(safeLocale)}>
               NoordTune.nl
             </a>
@@ -157,21 +155,18 @@ export default async function VehiclePage({params}: PageProps) {
             </span>
           </nav>
 
-          <div className="mb-8 flex flex-wrap gap-3">
+          <div className="mb-5 flex flex-wrap gap-3 sm:mb-8">
             <Button asChild className="rounded-[3px]" variant="outline">
               <a href={sitePath(`/${safeLocale}#manual-selector`)}>
                 <ArrowLeft className="h-4 w-4" />
                 {t("back")}
               </a>
             </Button>
-            <Button asChild className="rounded-[3px]" variant="outline">
+            <Button asChild className="hidden rounded-[3px] sm:inline-flex" variant="outline">
               <a href={chiptuningHref(safeLocale)}>{chiptuningLabel}</a>
             </Button>
           </div>
           <div className="max-w-4xl">
-            <Badge className="mb-4 border-primary/30 bg-primary/15 text-primary">
-              {t("technical.ecuFamily")}: {technicalFamilyLabel(vehicle.ecuSupport, vehicle.ecuType, safeLocale)}
-            </Badge>
             <h1 className="racing-title text-5xl leading-none md:text-7xl">
               {vehicle.brand} {vehicle.model}
             </h1>
