@@ -30,6 +30,8 @@ import {createVehicleQuoteMessage, whatsappHref} from "@/lib/whatsapp";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {PowerChart} from "@/components/power-chart";
+import {PublicVehicleSourceExamples} from "@/components/public-vehicle-source-examples";
+import type {PublicVehicleSourceExample} from "@/lib/public-vehicle-source-examples";
 
 type VehicleCopy = {
   fromPrice: string;
@@ -90,12 +92,14 @@ export function VehicleDetail({
   initialStageName,
   locale,
   text,
-  vehicle
+  vehicle,
+  sourceExamples = []
 }: {
   initialStageName?: StageDefinition["name"];
   locale: Locale;
   text: VehicleCopy;
   vehicle: EngineVariant;
+  sourceExamples?: readonly PublicVehicleSourceExample[];
 }) {
   const estimateProfile = useMemo(() => {
     const profile = getCatalogEstimateProfile(vehicle);
@@ -243,6 +247,10 @@ export function VehicleDetail({
             ));
           })()}
         </div>
+
+        {!estimateProfile.stages.some(stage => stage.name === "Stage 1" && (stage.powerHp !== undefined || stage.powerRangeHp !== undefined))
+          ? <PublicVehicleSourceExamples examples={sourceExamples} locale={locale} quoteHref={quoteHref} />
+          : null}
 
         <section
           className="panel-edge min-w-0 overflow-hidden border-primary/30 p-5 md:p-6"

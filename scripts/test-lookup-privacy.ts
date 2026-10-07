@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
-import {openLookupContact} from "../src/lib/lookup-contact.ts";
+import {openFailedRdwContact, openLookupContact} from "../src/lib/lookup-contact.ts";
 import {resolveStageQuote} from "../src/data/pricing.ts";
 
 const route=readFileSync("src/app/api/rdw-lookup/route.ts","utf8");
@@ -28,4 +28,17 @@ for(const locale of ["nl","en","pl"] as const) {
   assert.equal(calls,1);const text=new URL(urls[0]).searchParams.get("text")!;
   for(const value of ["QA1234","Stage 2","180","300","2022","Synthetic option"])assert.ok(text.includes(value));
 }
-console.log("POST-only handler structure and explicit-click contact helper PASS; opener stubbed, no external navigation/message.");
+for (const locale of ["nl","en","pl"] as const) {
+  let calls=0;
+  openFailedRdwContact({plate:"INVALID",locale,message:"Synthetic outage test"},()=>{calls++;});
+  assert.equal(calls,0,"no WhatsApp for invalid plate");
+  openFailedRdwContact({plate:"AB-12-CD",locale,message:"Synthetic outage test"},(url,target,features)=>{
+    calls++;
+    assert.equal(target,"_blank");
+    assert.equal(features,"noopener,noreferrer");
+    const encoded=new URL(url).searchParams.get("text")!;
+    assert.ok(encoded.includes("AB12CD") && encoded.includes("Synthetic outage test"));
+  });
+  assert.equal(calls,1,"only the explicit support click opens a URL");
+}
+console.log("POST-only handler and explicit-click contact helpers PASS; browser state never stores a plate URL.");

@@ -1,4 +1,5 @@
 import {customerVehicle} from "@/lib/customer-profile";
+import {getPublicVehicleSourceExamples} from "@/lib/public-vehicle-source-examples";
 import {notFound, permanentRedirect} from "next/navigation";
 import {getTranslations} from "next-intl/server";
 import {
@@ -265,6 +266,7 @@ export default async function VehicleStagePage({params}: PageProps) {
 
       <section className="container scroll-mt-32 py-10" id="tuning-calculator">
         <VehicleDetail
+          sourceExamples={getPublicVehicleSourceExamples(vehicle)}
           initialStageName={stageName}
           locale={safeLocale}
           text={{

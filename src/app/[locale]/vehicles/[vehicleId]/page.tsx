@@ -1,4 +1,5 @@
 import {customerVehicle} from "@/lib/customer-profile";
+import {getPublicVehicleSourceExamples} from "@/lib/public-vehicle-source-examples";
 import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
 import {technicalFamilyLabel} from "@/lib/technical-identity-copy";
 import {notFound} from "next/navigation";
@@ -207,6 +208,7 @@ export default async function VehiclePage({params}: PageProps) {
 
       <section className="container scroll-mt-32 py-10" id="tuning-calculator">
         <VehicleDetail
+          sourceExamples={getPublicVehicleSourceExamples(vehicle)}
           locale={safeLocale}
           text={{
             fromPrice: t("fromPrice"),
