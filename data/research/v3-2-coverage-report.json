@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "fixtureNature": "Synthetic source-derived technical identities, not live RDW outcomes. Nominal source displacement is explicitly retained. No real plates or owners.",
   "datasetFingerprint": "63e005fe8658c3b9510a89eacaf37f72f3eaef187dd63eaf4984a9df3de0dc75",
-  "assertions": 31707,
+  "assertions": 31692,
   "fixtureCount": 1266,
   "nonPublicFixtureCount": 1247,
   "scope": {
@@ -15,15 +15,15 @@
   "before": {
     "A": 0,
     "B": 0,
-    "C": 169,
-    "D": 1097,
+    "C": 160,
+    "D": 1106,
     "E": 0
   },
   "after": {
-    "A": 185,
+    "A": 182,
     "B": 972,
-    "C": 10,
-    "D": 99,
+    "C": 12,
+    "D": 100,
     "E": 0
   },
   "perBrand": {
@@ -48,26 +48,26 @@
     },
     "VAG": {
       "fixtures": 360,
-      "sourced": 330,
+      "sourced": 327,
       "nonPublic": 342,
       "before": {
         "A": 0,
         "B": 0,
-        "C": 65,
-        "D": 295,
+        "C": 64,
+        "D": 296,
         "E": 0
       },
       "after": {
         "A": 47,
-        "B": 283,
-        "C": 5,
+        "B": 282,
+        "C": 6,
         "D": 25,
         "E": 0
       }
     },
     "BMW": {
       "fixtures": 43,
-      "sourced": 35,
+      "sourced": 33,
       "nonPublic": 43,
       "before": {
         "A": 0,
@@ -77,9 +77,9 @@
         "E": 0
       },
       "after": {
-        "A": 32,
-        "B": 3,
-        "C": 0,
+        "A": 30,
+        "B": 4,
+        "C": 1,
         "D": 8,
         "E": 0
       }
@@ -143,13 +143,13 @@
     },
     "Ford": {
       "fixtures": 110,
-      "sourced": 92,
+      "sourced": 91,
       "nonPublic": 109,
       "before": {
         "A": 0,
         "B": 0,
-        "C": 5,
-        "D": 105,
+        "C": 4,
+        "D": 106,
         "E": 0
       },
       "after": {
@@ -186,8 +186,8 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 30,
-        "D": 70,
+        "C": 27,
+        "D": 73,
         "E": 0
       },
       "after": {
@@ -300,8 +300,8 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 0,
-        "D": 19,
+        "C": 1,
+        "D": 18,
         "E": 0
       },
       "after": {
@@ -314,7 +314,7 @@
     },
     "Mercedes-Benz": {
       "fixtures": 67,
-      "sourced": 67,
+      "sourced": 66,
       "nonPublic": 67,
       "before": {
         "A": 0,
@@ -324,9 +324,9 @@
         "E": 0
       },
       "after": {
-        "A": 5,
+        "A": 4,
         "B": 62,
-        "C": 0,
+        "C": 1,
         "D": 0,
         "E": 0
       }
@@ -433,15 +433,15 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 21,
-        "D": 93,
+        "C": 15,
+        "D": 99,
         "E": 0
       },
       "after": {
         "A": 21,
         "B": 83,
-        "C": 1,
-        "D": 9,
+        "C": 0,
+        "D": 10,
         "E": 0
       }
     },
@@ -452,8 +452,8 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 3,
-        "D": 125,
+        "C": 4,
+        "D": 124,
         "E": 0
       },
       "after": {
@@ -528,15 +528,15 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 169,
-        "D": 1097,
+        "C": 160,
+        "D": 1106,
         "E": 0
       },
       "after": {
-        "A": 185,
+        "A": 182,
         "B": 972,
-        "C": 10,
-        "D": 99,
+        "C": 12,
+        "D": 100,
         "E": 0
       }
     },
@@ -545,15 +545,15 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 39,
-        "D": 224,
+        "C": 33,
+        "D": 230,
         "E": 0
       },
       "after": {
         "A": 35,
         "B": 203,
-        "C": 1,
-        "D": 24,
+        "C": 0,
+        "D": 25,
         "E": 0
       }
     },
@@ -562,15 +562,15 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 139,
-        "D": 889,
+        "C": 129,
+        "D": 899,
         "E": 0
       },
       "after": {
-        "A": 159,
+        "A": 156,
         "B": 773,
-        "C": 6,
-        "D": 90,
+        "C": 8,
+        "D": 91,
         "E": 0
       }
     },
@@ -579,14 +579,14 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 65,
-        "D": 295,
+        "C": 64,
+        "D": 296,
         "E": 0
       },
       "after": {
         "A": 47,
-        "B": 283,
-        "C": 5,
+        "B": 282,
+        "C": 6,
         "D": 25,
         "E": 0
       }
@@ -601,9 +601,9 @@
         "E": 0
       },
       "after": {
-        "A": 32,
-        "B": 3,
-        "C": 0,
+        "A": 30,
+        "B": 4,
+        "C": 1,
         "D": 8,
         "E": 0
       }
@@ -613,8 +613,8 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 27,
-        "D": 259,
+        "C": 26,
+        "D": 260,
         "E": 0
       },
       "after": {
@@ -630,8 +630,8 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 5,
-        "D": 105,
+        "C": 4,
+        "D": 106,
         "E": 0
       },
       "after": {
@@ -647,8 +647,8 @@
       "before": {
         "A": 0,
         "B": 0,
-        "C": 30,
-        "D": 70,
+        "C": 27,
+        "D": 73,
         "E": 0
       },
       "after": {
@@ -669,9 +669,9 @@
         "E": 0
       },
       "after": {
-        "A": 5,
+        "A": 4,
         "B": 62,
-        "C": 0,
+        "C": 1,
         "D": 0,
         "E": 0
       }
@@ -679,6 +679,22 @@
   },
   "groupMethod": "Groups overlap. Priority brands are the explicitly targeted European/NL research brands, not an invented fleet ranking. Vans use explicit commercial model names. PSA/Stellantis includes Peugeot, Citroen, DS, Opel, Fiat, Alfa Romeo and Jeep; Toyota commercial applications are counted under vans.",
   "unresolved": [
+    {
+      "sourceProfileId": "sourced-audi-a4-4959cacd7fc9",
+      "input": {
+        "make": "Audi",
+        "model": "A4 2.0 TDI CR EU6",
+        "fuel": "Diesel",
+        "displacementCc": 2000,
+        "powerHp": 190,
+        "firstRegistrationYear": 2016,
+        "type": "B9"
+      },
+      "after": "C",
+      "reasons": [
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
+      ]
+    },
     {
       "sourceProfileId": "sourced-bmw-1-series-33fe051cb8a9",
       "input": {
@@ -696,6 +712,23 @@
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sourceProfileId": "sourced-bmw-1-series-6ebc2eb9a634",
+      "input": {
+        "make": "BMW",
+        "model": "1 Series 118d",
+        "fuel": "Diesel",
+        "displacementCc": 1995,
+        "powerHp": 150,
+        "firstRegistrationYear": 2016,
+        "type": "F20-LCI - F52",
+        "variant": "B47"
+      },
+      "after": "B",
+      "reasons": [
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
       ]
     },
     {
@@ -791,6 +824,23 @@
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sourceProfileId": "sourced-bmw-3-series-fd3ee8694aa2",
+      "input": {
+        "make": "BMW",
+        "model": "3 Series 320d",
+        "fuel": "Diesel",
+        "displacementCc": 1995,
+        "powerHp": 190,
+        "firstRegistrationYear": 2016,
+        "type": "F30-F31-F35-LCI",
+        "variant": "B47"
+      },
+      "after": "C",
+      "reasons": [
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
       ]
     },
     {
@@ -936,6 +986,23 @@
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sourceProfileId": "sourced-ford-focus-aad797fd0812",
+      "input": {
+        "make": "Ford",
+        "model": "Focus 2.0 T EcoBoost (ST)",
+        "fuel": "Petrol",
+        "displacementCc": 2000,
+        "powerHp": 250,
+        "firstRegistrationYear": 2015,
+        "type": "2014 - MkIII-FL",
+        "variant": "EcoBoost"
+      },
+      "after": "B",
+      "reasons": [
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
       ]
     },
     {
@@ -1233,6 +1300,22 @@
       ]
     },
     {
+      "sourceProfileId": "sourced-mercedes-benz-a-class-2ae520f8a92c",
+      "input": {
+        "make": "Mercedes-Benz",
+        "model": "A-Class 45 AMG (2.0T)",
+        "fuel": "Petrol",
+        "displacementCc": 2000,
+        "powerHp": 360,
+        "firstRegistrationYear": 2013,
+        "type": "W176"
+      },
+      "after": "C",
+      "reasons": [
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
+      ]
+    },
+    {
       "sourceProfileId": "sourced-mini-cooper-00f9e19eb586",
       "input": {
         "make": "Mini",
@@ -1246,7 +1329,6 @@
       "after": "D",
       "reasons": [
         "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
@@ -1265,7 +1347,6 @@
       "after": "D",
       "reasons": [
         "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
@@ -1284,7 +1365,6 @@
       "after": "D",
       "reasons": [
         "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
@@ -1305,7 +1385,6 @@
       "after": "D",
       "reasons": [
         "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
@@ -1324,9 +1403,8 @@
       },
       "after": "C",
       "reasons": [
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "GENERATION_BOUNDARY_REVIEW",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
     },
@@ -1343,9 +1421,8 @@
       },
       "after": "C",
       "reasons": [
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "GENERATION_BOUNDARY_REVIEW",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
     },
@@ -1362,9 +1439,8 @@
       },
       "after": "C",
       "reasons": [
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "GENERATION_BOUNDARY_REVIEW",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
     },
@@ -1381,9 +1457,8 @@
       },
       "after": "C",
       "reasons": [
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "GENERATION_BOUNDARY_REVIEW",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
     },
@@ -1626,7 +1701,6 @@
       "after": "D",
       "reasons": [
         "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
@@ -1717,7 +1791,6 @@
       "after": "D",
       "reasons": [
         "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
@@ -1734,11 +1807,10 @@
         "firstRegistrationYear": 2022,
         "type": "2021 ->"
       },
-      "after": "C",
+      "after": "D",
       "reasons": [
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
-        "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK",
+        "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
     },
@@ -2030,7 +2102,6 @@
       "after": "D",
       "reasons": [
         "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
@@ -2084,6 +2155,22 @@
       "reasons": [
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sourceProfileId": "sourced-seat-leon-1462d25d1149",
+      "input": {
+        "make": "Seat",
+        "model": "Leon 2.0 TSI",
+        "fuel": "Petrol",
+        "displacementCc": 2000,
+        "powerHp": 300,
+        "firstRegistrationYear": 2018,
+        "type": "5F MK2"
+      },
+      "after": "B",
+      "reasons": [
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
       ]
     },
     {
@@ -2272,10 +2359,7 @@
       },
       "after": "C",
       "reasons": [
-        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
-        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
       ]
     },
     {
@@ -2291,10 +2375,7 @@
       },
       "after": "C",
       "reasons": [
-        "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
-        "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
       ]
     },
     {
@@ -2363,6 +2444,22 @@
       "reasons": [
         "GENERIC_INDICATIVE_STAGE_FALLBACK",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
+      ]
+    },
+    {
+      "sourceProfileId": "sourced-volkswagen-passat-c22c5b7ebdb2",
+      "input": {
+        "make": "Volkswagen",
+        "model": "Passat B8 2.0 TDI",
+        "fuel": "Diesel",
+        "displacementCc": 2000,
+        "powerHp": 150,
+        "firstRegistrationYear": 2020,
+        "type": "B8 (FL)"
+      },
+      "after": "B",
+      "reasons": [
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
       ]
     },
     {
@@ -2582,9 +2679,8 @@
       },
       "after": "C",
       "reasons": [
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "GENERATION_BOUNDARY_REVIEW",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
     },
@@ -2601,9 +2697,8 @@
       },
       "after": "C",
       "reasons": [
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "GENERATION_BOUNDARY_REVIEW",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
     },
@@ -2620,9 +2715,8 @@
       },
       "after": "C",
       "reasons": [
-        "EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED",
         "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
-        "REGISTRATION_OUTSIDE_CATALOG_PERIOD",
+        "GENERATION_BOUNDARY_REVIEW",
         "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS"
       ]
     },
@@ -2745,29 +2839,29 @@
     "before": {
       "A": 0,
       "B": 0,
-      "C": 1687,
-      "D": 1275,
+      "C": 1695,
+      "D": 1267,
       "E": 0
     },
     "after": {
-      "A": 24,
-      "B": 92,
-      "C": 1625,
-      "D": 1221,
+      "A": 23,
+      "B": 91,
+      "C": 1634,
+      "D": 1214,
       "E": 0
     },
     "completeIdentityBefore": {
       "A": 0,
       "B": 0,
-      "C": 1686,
-      "D": 429,
+      "C": 1693,
+      "D": 422,
       "E": 0
     },
     "completeIdentityAfter": {
-      "A": 24,
-      "B": 90,
-      "C": 1625,
-      "D": 376,
+      "A": 23,
+      "B": 89,
+      "C": 1634,
+      "D": 369,
       "E": 0
     },
     "perBrand": {
@@ -2781,15 +2875,15 @@
         "before": {
           "A": 0,
           "B": 0,
-          "C": 664,
-          "D": 162,
+          "C": 666,
+          "D": 160,
           "E": 0
         },
         "after": {
           "A": 6,
-          "B": 49,
-          "C": 636,
-          "D": 135,
+          "B": 48,
+          "C": 638,
+          "D": 134,
           "E": 0
         }
       },
@@ -2808,9 +2902,9 @@
           "E": 0
         },
         "after": {
-          "A": 1,
+          "A": 0,
           "B": 0,
-          "C": 1,
+          "C": 2,
           "D": 360,
           "E": 0
         }
@@ -2869,15 +2963,15 @@
         "before": {
           "A": 0,
           "B": 0,
-          "C": 103,
-          "D": 54,
+          "C": 102,
+          "D": 55,
           "E": 0
         },
         "after": {
           "A": 0,
           "B": 9,
-          "C": 100,
-          "D": 48,
+          "C": 99,
+          "D": 49,
           "E": 0
         }
       },
@@ -3067,15 +3161,15 @@
         "before": {
           "A": 0,
           "B": 0,
-          "C": 35,
-          "D": 21,
+          "C": 42,
+          "D": 14,
           "E": 0
         },
         "after": {
           "A": 0,
           "B": 2,
-          "C": 35,
-          "D": 19,
+          "C": 42,
+          "D": 12,
           "E": 0
         }
       },
@@ -3372,15 +3466,15 @@
         "before": {
           "A": 0,
           "B": 0,
-          "C": 1687,
-          "D": 1275,
+          "C": 1695,
+          "D": 1267,
           "E": 0
         },
         "after": {
-          "A": 24,
-          "B": 92,
-          "C": 1625,
-          "D": 1221,
+          "A": 23,
+          "B": 91,
+          "C": 1634,
+          "D": 1214,
           "E": 0
         }
       },
@@ -3389,15 +3483,15 @@
         "before": {
           "A": 0,
           "B": 0,
-          "C": 1191,
-          "D": 994,
+          "C": 1199,
+          "D": 986,
           "E": 0
         },
         "after": {
-          "A": 21,
-          "B": 70,
-          "C": 1147,
-          "D": 947,
+          "A": 20,
+          "B": 69,
+          "C": 1156,
+          "D": 940,
           "E": 0
         }
       },
@@ -3406,15 +3500,15 @@
         "before": {
           "A": 0,
           "B": 0,
-          "C": 664,
-          "D": 162,
+          "C": 666,
+          "D": 160,
           "E": 0
         },
         "after": {
           "A": 6,
-          "B": 49,
-          "C": 636,
-          "D": 135,
+          "B": 48,
+          "C": 638,
+          "D": 134,
           "E": 0
         }
       },
@@ -3428,9 +3522,9 @@
           "E": 0
         },
         "after": {
-          "A": 1,
+          "A": 0,
           "B": 0,
-          "C": 1,
+          "C": 2,
           "D": 360,
           "E": 0
         }
@@ -3457,15 +3551,15 @@
         "before": {
           "A": 0,
           "B": 0,
-          "C": 103,
-          "D": 54,
+          "C": 102,
+          "D": 55,
           "E": 0
         },
         "after": {
           "A": 0,
           "B": 9,
-          "C": 100,
-          "D": 48,
+          "C": 99,
+          "D": 49,
           "E": 0
         }
       },
@@ -3491,15 +3585,15 @@
         "before": {
           "A": 0,
           "B": 0,
-          "C": 374,
-          "D": 78,
+          "C": 381,
+          "D": 71,
           "E": 0
         },
         "after": {
           "A": 6,
           "B": 15,
-          "C": 362,
-          "D": 69,
+          "C": 369,
+          "D": 62,
           "E": 0
         }
       },
@@ -4060,7 +4154,7 @@
         "yearFrom": 2000,
         "yearTo": 2026,
         "sourceCopies": 27,
-        "coverageClass": "C",
+        "coverageClass": "D",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -5924,6 +6018,22 @@
       },
       {
         "brand": "Volkswagen",
+        "model": "Golf GTI",
+        "engine": "2.0 TSI EA888",
+        "fuel": "Petrol",
+        "stockPowerHp": 230,
+        "stockTorqueNm": 350,
+        "yearFrom": 2014,
+        "yearTo": 2020,
+        "sourceCopies": 1,
+        "coverageClass": "C",
+        "flags": [
+          "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
+        ],
+        "priority": 130
+      },
+      {
+        "brand": "Volkswagen",
         "model": "Golf GTI 1.5 TSI",
         "engine": "1.5 TSI",
         "fuel": "Petrol",
@@ -6012,7 +6122,7 @@
         "yearFrom": 2010,
         "yearTo": 2026,
         "sourceCopies": 17,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -6140,7 +6250,7 @@
         "yearFrom": 2010,
         "yearTo": 2026,
         "sourceCopies": 17,
-        "coverageClass": "C",
+        "coverageClass": "D",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -7772,7 +7882,7 @@
         "yearFrom": 2012,
         "yearTo": 2026,
         "sourceCopies": 15,
-        "coverageClass": "C",
+        "coverageClass": "D",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -11508,6 +11618,22 @@
       },
       {
         "brand": "BMW",
+        "model": "3 Serie 320d",
+        "engine": "2.0d B47",
+        "fuel": "Diesel",
+        "stockPowerHp": 190,
+        "stockTorqueNm": 400,
+        "yearFrom": 2015,
+        "yearTo": 2022,
+        "sourceCopies": 1,
+        "coverageClass": "C",
+        "flags": [
+          "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
+        ],
+        "priority": 120
+      },
+      {
+        "brand": "BMW",
         "model": "X3 2.0d",
         "engine": "2.0d M47",
         "fuel": "Diesel",
@@ -12172,7 +12298,7 @@
         "yearFrom": 2018,
         "yearTo": 2026,
         "sourceCopies": 9,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -12188,7 +12314,7 @@
         "yearFrom": 2018,
         "yearTo": 2026,
         "sourceCopies": 9,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -12204,7 +12330,7 @@
         "yearFrom": 2018,
         "yearTo": 2026,
         "sourceCopies": 9,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -12220,7 +12346,7 @@
         "yearFrom": 2018,
         "yearTo": 2026,
         "sourceCopies": 9,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -12236,7 +12362,7 @@
         "yearFrom": 2018,
         "yearTo": 2026,
         "sourceCopies": 9,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -12252,7 +12378,7 @@
         "yearFrom": 2018,
         "yearTo": 2026,
         "sourceCopies": 9,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -12268,7 +12394,7 @@
         "yearFrom": 2018,
         "yearTo": 2026,
         "sourceCopies": 9,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -32124,7 +32250,7 @@
         "yearFrom": 2012,
         "yearTo": 2026,
         "sourceCopies": 15,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -32684,7 +32810,7 @@
         "yearFrom": 2012,
         "yearTo": 2026,
         "sourceCopies": 15,
-        "coverageClass": "D",
+        "coverageClass": "C",
         "flags": [
           "GENERATED_SOURCE_APPLICABILITY_UNVALIDATED"
         ],
@@ -51178,6 +51304,13 @@
         "generatedCrossProduct": 0
       },
       {
+        "brand": "Volkswagen",
+        "family": "Golf GTI",
+        "unsourcedIdentities": 11,
+        "completeIdentity": 5,
+        "generatedCrossProduct": 6
+      },
+      {
         "brand": "Hyundai",
         "family": "i30",
         "unsourcedIdentities": 5,
@@ -51400,13 +51533,6 @@
         "unsourcedIdentities": 5,
         "completeIdentity": 5,
         "generatedCrossProduct": 0
-      },
-      {
-        "brand": "Volkswagen",
-        "family": "Golf GTI",
-        "unsourcedIdentities": 10,
-        "completeIdentity": 4,
-        "generatedCrossProduct": 6
       },
       {
         "brand": "Cupra",
@@ -51661,6 +51787,13 @@
         "generatedCrossProduct": 0
       },
       {
+        "brand": "BMW",
+        "family": "3 Serie 320d",
+        "unsourcedIdentities": 3,
+        "completeIdentity": 1,
+        "generatedCrossProduct": 0
+      },
+      {
         "brand": "Volvo",
         "family": "XC60 D5",
         "unsourcedIdentities": 2,
@@ -51904,13 +52037,6 @@
         "unsourcedIdentities": 2,
         "completeIdentity": 0,
         "generatedCrossProduct": 2
-      },
-      {
-        "brand": "BMW",
-        "family": "3 Serie 320d",
-        "unsourcedIdentities": 2,
-        "completeIdentity": 0,
-        "generatedCrossProduct": 0
       },
       {
         "brand": "BMW",
@@ -58143,28 +58269,27 @@
       "nonPublic": false,
       "isolatedSourceMatched": true,
       "before": "C",
-      "after": "B",
-      "selectedProfileId": "sourced-audi-a4-4959cacd7fc9",
+      "after": "C",
+      "selectedProfileId": "audi-a4-b9-20-tdi-190",
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 220,
-          "torqueNm": 450,
+          "powerRangeHp": [
+            220,
+            225
+          ],
           "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "provenance": "multi-source"
         },
         {
           "name": "Stage 2",
-          "powerHp": 230,
-          "torqueNm": 470,
-          "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "customHardware": true,
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 3+",
-          "customHardware": true
+          "customHardware": true,
+          "provenance": "reviewed"
         }
       ],
       "quote": {
@@ -59516,42 +59641,29 @@
       "nonPublic": true,
       "isolatedSourceMatched": true,
       "before": "C",
-      "after": "A",
-      "selectedProfileId": "sourced-bmw-1-series-6ebc2eb9a634",
+      "after": "B",
+      "selectedProfileId": "bmw-1-series-f20-f21-118d",
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 190,
-          "torqueNm": 400,
           "customHardware": false,
-          "provenance": "multi-source",
-          "sourceConfidence": "multi-source"
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 2",
-          "powerHp": 200,
-          "torqueNm": 420,
-          "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "customHardware": true,
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 3+",
-          "customHardware": true
+          "customHardware": true,
+          "provenance": "reviewed"
         }
       ],
       "quote": {
-        "kind": "from",
-        "indicative": true,
-        "status": "draft-local-owner-review",
-        "amountCents": 44900,
+        "kind": "on-request",
         "currency": "EUR",
-        "taxBasis": "inclusive",
-        "policyId": "draft-local-v1:bmw-1-series-f20-f21-118d:contemporary-standard:Stage 1",
-        "pricingCategory": "contemporary-standard",
-        "scope": "family-software",
-        "stageName": "Stage 1",
-        "confirmationRequired": true
+        "reasonCode": "stage-configuration-unconfirmed"
       }
     },
     {
@@ -61082,28 +61194,27 @@
       "nonPublic": true,
       "isolatedSourceMatched": true,
       "before": "C",
-      "after": "A",
-      "selectedProfileId": "sourced-bmw-3-series-fd3ee8694aa2",
+      "after": "C",
+      "selectedProfileId": "bmw-320d-b47",
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 220,
-          "torqueNm": 450,
+          "powerRangeHp": [
+            220,
+            225
+          ],
           "customHardware": false,
-          "provenance": "multi-source",
-          "sourceConfidence": "multi-source"
+          "provenance": "multi-source"
         },
         {
           "name": "Stage 2",
-          "powerHp": 235,
-          "torqueNm": 480,
-          "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "customHardware": true,
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 3+",
-          "customHardware": true
+          "customHardware": true,
+          "provenance": "reviewed"
         }
       ],
       "quote": {
@@ -68257,41 +68368,28 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "B",
-      "selectedProfileId": "sourced-ford-focus-aad797fd0812",
+      "selectedProfileId": "ford-focus-st-20-ecoboost",
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 265,
-          "torqueNm": 440,
           "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 2",
-          "powerHp": 280,
-          "torqueNm": 460,
-          "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "customHardware": true,
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 3+",
-          "customHardware": true
+          "customHardware": true,
+          "provenance": "reviewed"
         }
       ],
       "quote": {
-        "kind": "from",
-        "indicative": true,
-        "status": "draft-local-owner-review",
-        "amountCents": 44900,
+        "kind": "on-request",
         "currency": "EUR",
-        "taxBasis": "inclusive",
-        "policyId": "draft-local-v1:ford-focus-st-20-ecoboost:contemporary-standard:Stage 1",
-        "pricingCategory": "contemporary-standard",
-        "scope": "family-software",
-        "stageName": "Stage 1",
-        "confirmationRequired": true
+        "reasonCode": "stage-configuration-unconfirmed"
       }
     },
     {
@@ -70380,7 +70478,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "B",
       "selectedProfileId": "sourced-ford-transit-connect-5aaa7df78cfd",
       "stages": [
@@ -74873,7 +74971,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "B",
       "selectedProfileId": "sourced-kia-ceed-18713fd1c600",
       "stages": [
@@ -75350,7 +75448,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "A",
       "selectedProfileId": "sourced-kia-ceed-7149155f19ef",
       "stages": [
@@ -76144,7 +76242,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "B",
       "selectedProfileId": "sourced-kia-proceed-24e9064063e4",
       "stages": [
@@ -79630,7 +79728,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "D",
+      "before": "C",
       "after": "B",
       "selectedProfileId": "sourced-mazda-cx-5-d95b390689e3",
       "stages": [
@@ -79644,12 +79742,11 @@
         },
         {
           "name": "Stage 2",
-          "powerRangeHp": [
-            170,
-            180
-          ],
+          "powerHp": 235,
+          "torqueNm": 290,
           "customHardware": false,
-          "provenance": "generic-indicative"
+          "provenance": "canonical-estimated",
+          "sourceConfidence": "canonical-existing"
         },
         {
           "name": "Stage 3+",
@@ -79895,32 +79992,27 @@
       "nonPublic": true,
       "isolatedSourceMatched": true,
       "before": "C",
-      "after": "A",
-      "selectedProfileId": "sourced-mercedes-benz-a-class-2ae520f8a92c",
+      "after": "C",
+      "selectedProfileId": "mercedes-a45-amg-m133",
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 405,
-          "torqueNm": 530,
+          "powerRangeHp": [
+            400,
+            410
+          ],
           "customHardware": false,
-          "provenance": "multi-source",
-          "sourceConfidence": "multi-source"
+          "provenance": "multi-source"
         },
         {
           "name": "Stage 2",
-          "powerHp": 420,
-          "torqueNm": 560,
-          "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "customHardware": true,
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 3+",
-          "powerHp": 480,
-          "torqueNm": 620,
-          "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "customHardware": true,
+          "provenance": "reviewed"
         }
       ],
       "quote": {
@@ -79930,9 +80022,9 @@
         "amountCents": 54900,
         "currency": "EUR",
         "taxBasis": "inclusive",
-        "policyId": "draft-runtime-v1:registered-output-at-least-250pk:higher-complexity:Stage 1",
+        "policyId": "draft-local-v1:mercedes-a45-amg-m133:higher-complexity:Stage 1",
         "pricingCategory": "higher-complexity",
-        "scope": "vehicle-software",
+        "scope": "family-software",
         "stageName": "Stage 1",
         "confirmationRequired": true
       }
@@ -86461,7 +86553,7 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "C",
-      "selectedProfileId": "nissan-qashqai-1-2-dig-t-2007",
+      "selectedProfileId": "nissan-qashqai-1-2-dig-t-2018",
       "stages": [
         {
           "name": "Stage 1",
@@ -86513,7 +86605,7 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "C",
-      "selectedProfileId": "nissan-qashqai-1-2-dig-t-2007",
+      "selectedProfileId": "nissan-qashqai-1-2-dig-t-2015",
       "stages": [
         {
           "name": "Stage 1",
@@ -86882,7 +86974,7 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "C",
-      "selectedProfileId": "nissan-qashqai-1-2-dig-t-2007",
+      "selectedProfileId": "nissan-qashqai-1-2-dig-t-2014",
       "stages": [
         {
           "name": "Stage 1",
@@ -86987,7 +87079,7 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "C",
-      "selectedProfileId": "nissan-qashqai-1-2-dig-t-2007",
+      "selectedProfileId": "nissan-qashqai-1-2-dig-t-2018",
       "stages": [
         {
           "name": "Stage 1",
@@ -92694,7 +92786,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "B",
       "selectedProfileId": "sourced-peugeot-3008-6e8b88d451eb",
       "stages": [
@@ -92708,11 +92800,12 @@
         },
         {
           "name": "Stage 2",
-          "powerHp": 220,
-          "torqueNm": 330,
+          "powerRangeHp": [
+            190,
+            225
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "generic-indicative"
         },
         {
           "name": "Stage 3+",
@@ -93010,7 +93103,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "B",
       "selectedProfileId": "sourced-peugeot-3008-d8912cc35a29",
       "stages": [
@@ -93024,11 +93117,12 @@
         },
         {
           "name": "Stage 2",
-          "powerHp": 220,
-          "torqueNm": 330,
+          "powerRangeHp": [
+            190,
+            225
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "generic-indicative"
         },
         {
           "name": "Stage 3+",
@@ -93543,25 +93637,29 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
-      "after": "C",
-      "selectedProfileId": "peugeot-308-1-2-puretech-2007",
+      "before": "D",
+      "after": "D",
+      "selectedProfileId": "rdw-generic-d1c4eb5ea929",
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 135,
-          "torqueNm": 250,
+          "powerRangeHp": [
+            110,
+            115
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "generic-indicative",
+          "sourceConfidence": "generic-fallback"
         },
         {
           "name": "Stage 2",
-          "powerHp": 155,
-          "torqueNm": 280,
+          "powerRangeHp": [
+            110,
+            120
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "generic-indicative",
+          "sourceConfidence": "generic-fallback"
         },
         {
           "name": "Stage 3+",
@@ -93806,7 +93904,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "A",
       "selectedProfileId": "sourced-peugeot-308-67fe6268f575",
       "stages": [
@@ -93820,11 +93918,12 @@
         },
         {
           "name": "Stage 2",
-          "powerHp": 155,
-          "torqueNm": 280,
+          "powerRangeHp": [
+            145,
+            170
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "generic-indicative"
         },
         {
           "name": "Stage 3+",
@@ -94489,7 +94588,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "B",
       "selectedProfileId": "sourced-peugeot-308-fa1ef3bd887f",
       "stages": [
@@ -94503,11 +94602,12 @@
         },
         {
           "name": "Stage 2",
-          "powerHp": 220,
-          "torqueNm": 330,
+          "powerRangeHp": [
+            195,
+            230
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "generic-indicative"
         },
         {
           "name": "Stage 3+",
@@ -94541,7 +94641,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "B",
       "selectedProfileId": "sourced-peugeot-308-fd8070e506d9",
       "stages": [
@@ -94555,11 +94655,12 @@
         },
         {
           "name": "Stage 2",
-          "powerHp": 155,
-          "torqueNm": 280,
+          "powerRangeHp": [
+            145,
+            170
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "generic-indicative"
         },
         {
           "name": "Stage 3+",
@@ -97286,7 +97387,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "D",
+      "before": "C",
       "after": "A",
       "selectedProfileId": "sourced-renault-clio-87212ceb6741",
       "stages": [
@@ -97300,12 +97401,11 @@
         },
         {
           "name": "Stage 2",
-          "powerRangeHp": [
-            105,
-            110
-          ],
+          "powerHp": 140,
+          "torqueNm": 220,
           "customHardware": false,
-          "provenance": "generic-indicative"
+          "provenance": "canonical-estimated",
+          "sourceConfidence": "canonical-existing"
         },
         {
           "name": "Stage 3+",
@@ -104158,41 +104258,28 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "B",
-      "selectedProfileId": "sourced-seat-leon-1462d25d1149",
+      "selectedProfileId": "seat-leon-cupra-5f-20-tsi-300",
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 350,
-          "torqueNm": 460,
           "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 2",
-          "powerHp": 370,
-          "torqueNm": 480,
-          "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "customHardware": true,
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 3+",
-          "customHardware": true
+          "customHardware": true,
+          "provenance": "reviewed"
         }
       ],
       "quote": {
-        "kind": "from",
-        "indicative": true,
-        "status": "draft-local-owner-review",
-        "amountCents": 54900,
+        "kind": "on-request",
         "currency": "EUR",
-        "taxBasis": "inclusive",
-        "policyId": "draft-local-v1:seat-leon-cupra-5f-20-tsi-300:higher-complexity:Stage 1",
-        "pricingCategory": "higher-complexity",
-        "scope": "family-software",
-        "stageName": "Stage 1",
-        "confirmationRequired": true
+        "reasonCode": "stage-configuration-unconfirmed"
       }
     },
     {
@@ -104471,7 +104558,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "D",
+      "before": "C",
       "after": "A",
       "selectedProfileId": "sourced-seat-leon-62ffd70d0206",
       "stages": [
@@ -106580,7 +106667,7 @@
       },
       "nonPublic": true,
       "isolatedSourceMatched": true,
-      "before": "D",
+      "before": "C",
       "after": "B",
       "selectedProfileId": "sourced-skoda-octavia-c1b9d44f6d44",
       "stages": [
@@ -112316,23 +112403,22 @@
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 300,
-          "torqueNm": 450,
+          "powerRangeHp": [
+            300,
+            305
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "multi-source"
         },
         {
           "name": "Stage 2",
-          "powerHp": 335,
-          "torqueNm": 500,
-          "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "customHardware": true,
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 3+",
-          "customHardware": true
+          "customHardware": true,
+          "provenance": "reviewed"
         }
       ],
       "quote": {
@@ -113053,23 +113139,22 @@
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 300,
-          "torqueNm": 450,
+          "powerRangeHp": [
+            300,
+            305
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "multi-source"
         },
         {
           "name": "Stage 2",
-          "powerHp": 335,
-          "torqueNm": 500,
-          "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "customHardware": true,
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 3+",
-          "customHardware": true
+          "customHardware": true,
+          "provenance": "reviewed"
         }
       ],
       "quote": {
@@ -114266,7 +114351,7 @@
       },
       "nonPublic": false,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "B",
       "selectedProfileId": "sourced-volkswagen-golf-a6691c2bfcfc",
       "stages": [
@@ -115002,7 +115087,7 @@
       },
       "nonPublic": false,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "B",
       "selectedProfileId": "sourced-volkswagen-golf-d00b1b270c03",
       "stages": [
@@ -115016,11 +115101,12 @@
         },
         {
           "name": "Stage 2",
-          "powerHp": 335,
-          "torqueNm": 500,
+          "powerRangeHp": [
+            305,
+            355
+          ],
           "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "provenance": "generic-indicative"
         },
         {
           "name": "Stage 3+",
@@ -115031,12 +115117,12 @@
         "kind": "from",
         "indicative": true,
         "status": "draft-local-owner-review",
-        "amountCents": 44900,
+        "amountCents": 54900,
         "currency": "EUR",
         "taxBasis": "inclusive",
-        "policyId": "draft-local-v1:vw-golf-20-tsi-ea888:contemporary-standard:Stage 1",
-        "pricingCategory": "contemporary-standard",
-        "scope": "family-software",
+        "policyId": "draft-runtime-v1:explicit-performance-family:higher-complexity:Stage 1",
+        "pricingCategory": "higher-complexity",
+        "scope": "vehicle-software",
         "stageName": "Stage 1",
         "confirmationRequired": true
       }
@@ -116056,7 +116142,7 @@
       },
       "nonPublic": false,
       "isolatedSourceMatched": true,
-      "before": "C",
+      "before": "D",
       "after": "A",
       "selectedProfileId": "sourced-volkswagen-passat-c0b98ad9212c",
       "stages": [
@@ -116085,12 +116171,12 @@
         "kind": "from",
         "indicative": true,
         "status": "draft-local-owner-review",
-        "amountCents": 44900,
+        "amountCents": 39900,
         "currency": "EUR",
         "taxBasis": "inclusive",
-        "policyId": "draft-local-v1:volkswagen-passat-b8-20-tdi:contemporary-standard:Stage 1",
-        "pricingCategory": "contemporary-standard",
-        "scope": "family-software",
+        "policyId": "draft-runtime-v1:ordinary-2010s-commercial-scope:standard-2010s:Stage 1",
+        "pricingCategory": "standard-2010s",
+        "scope": "vehicle-software",
         "stageName": "Stage 1",
         "confirmationRequired": true
       }
@@ -116110,41 +116196,28 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "B",
-      "selectedProfileId": "sourced-volkswagen-passat-c22c5b7ebdb2",
+      "selectedProfileId": "volkswagen-passat-b8-20-tdi",
       "stages": [
         {
           "name": "Stage 1",
-          "powerHp": 195,
-          "torqueNm": 430,
           "customHardware": false,
-          "provenance": "single-source",
-          "sourceConfidence": "single-source"
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 2",
-          "powerHp": 200,
-          "torqueNm": 450,
-          "customHardware": false,
-          "provenance": "canonical-estimated",
-          "sourceConfidence": "canonical-existing"
+          "customHardware": true,
+          "provenance": "reviewed"
         },
         {
           "name": "Stage 3+",
-          "customHardware": true
+          "customHardware": true,
+          "provenance": "reviewed"
         }
       ],
       "quote": {
-        "kind": "from",
-        "indicative": true,
-        "status": "draft-local-owner-review",
-        "amountCents": 44900,
+        "kind": "on-request",
         "currency": "EUR",
-        "taxBasis": "inclusive",
-        "policyId": "draft-local-v1:volkswagen-passat-b8-20-tdi:contemporary-standard:Stage 1",
-        "pricingCategory": "contemporary-standard",
-        "scope": "family-software",
-        "stageName": "Stage 1",
-        "confirmationRequired": true
+        "reasonCode": "stage-configuration-unconfirmed"
       }
     },
     {
@@ -121904,7 +121977,7 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "C",
-      "selectedProfileId": "volkswagen-transporter-2-0-bitdi-2003",
+      "selectedProfileId": "volkswagen-transporter-2-0-bitdi-2020",
       "stages": [
         {
           "name": "Stage 1",
@@ -122220,7 +122293,7 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "C",
-      "selectedProfileId": "volkswagen-transporter-2-0-tdi-140-2003",
+      "selectedProfileId": "volkswagen-transporter-2-0-tdi-140-2010",
       "stages": [
         {
           "name": "Stage 1",
@@ -122378,7 +122451,7 @@
       "isolatedSourceMatched": true,
       "before": "C",
       "after": "C",
-      "selectedProfileId": "volkswagen-transporter-2-0-bitdi-2003",
+      "selectedProfileId": "volkswagen-transporter-2-0-bitdi-2016",
       "stages": [
         {
           "name": "Stage 1",

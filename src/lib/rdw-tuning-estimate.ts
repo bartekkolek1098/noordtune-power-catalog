@@ -15,6 +15,7 @@ import {sourcedTuningProfiles, tuningProfileSources} from "../data/tuning-profil
 import type {SourcedTuningProfile} from "../data/tuning-profiles/schema.ts";
 import {matchSourcedProfile, sourceRegistrationYear} from "./sourced-tuning-match.ts";
 import {hasUnsupportedSourcedPowertrain} from "./sourced-powertrain.ts";
+import {resolveVerifiedRdwApplication} from "../data/verified-rdw-applications.ts";
 import {compareStages, stageScope} from "./stage-presentation.ts";
 
 export type RuntimeEstimateSources = {
@@ -71,6 +72,9 @@ export function resolveRdwTuningEstimate(input: EstimateMatchInput, sources: Run
 
 function resolveProductionEstimate(input: EstimateMatchInput, sources: RuntimeEstimateSources): EstimateResolution {
   if(hasUnsupportedSourcedPowertrain(input))return {status:"unavailable",coverageClass:"E",reasonCodes:["UNSUPPORTED_POWERTRAIN_ESTIMATE","MANUFACTURER_ELECTRIFIED_APPLICATION"]};
+  // Reviewed identity-scoped applications outrank legacy cross-generation catalogue fallbacks.
+  const verifiedApplication = resolveVerifiedRdwApplication(input);
+  if (verifiedApplication) return verifiedApplication;
   // The reviewed public correction is authoritative for its bounded scope.
   // Historical provider/canonical fallbacks cannot reintroduce withheld outputs.
   const corrected = (sources.publicVehicles ?? engineCatalog).filter(vehicle => vehicle.configurationNote
@@ -94,7 +98,10 @@ function resolveProductionEstimate(input: EstimateMatchInput, sources: RuntimeEs
     // existing commercial software schedule. Preserve that assignment separately
     // when a previously priced reference is now outside its technical period.
     const commercialReferences = collapse((sources.references ?? tuningReferenceProfiles).flatMap((profile): Eligible[] => {
-      const reasons = eligibleReasons(input, referenceVehicle(profile), 1);
+      // Pricing category is independent of technical eligibility. A compatible
+      // commercial family can keep an indicative quote after its source year,
+      // but its out-of-scope tuning output is never reused.
+      const reasons = eligibleReasons(input, referenceVehicle(profile), 1, "pricing");
       return reasons ? [{profile, reasons, level: 1}] : [];
     }));
     const pricingProfileId = commercialReferences.length === 1 ? commercialReferences[0].profile.id : fallback.profile.pricingProfileId;
@@ -220,7 +227,11 @@ function generationCompatible(vehicle: Pick<EngineVariant, "generation" | "versi
   return !expected.length || !actual.length || expected.some((token) => actual.includes(token));
 }
 
-function eligibleReasons(input: EstimateMatchInput, vehicle: EngineVariant, level: 1 | 2 | 3): string[] | undefined {
+function eligibleReasons(input: EstimateMatchInput, vehicle: EngineVariant, level: 1 | 2 | 3, scope: "technical" | "pricing" = "technical"): string[] | undefined {
+  // First admission is not a VIN decoder, but it must never authorize copying
+  // older-generation figures into a later vehicle. Unknown year stays reviewable.
+  const year = firstAdmissionYear(input);
+  if (scope === "technical" && year !== undefined && !vehicle.years.includes(year)) return undefined;
   const assessment = assessCatalogMatch(input, [{variant: vehicle, applicability: "reviewed", displacementCc: displacementScopes[vehicle.id]}]);
   if (!assessment.candidates.length || !familyCompatible(input, vehicle)) return undefined;
   const reasons: string[] = assessment.candidates[0].reasonCodes;
