@@ -30,7 +30,7 @@ import type {Locale} from "@/i18n/routing";
 import {localizeServiceOption} from "@/lib/service-copy";
 import {formatCurrency} from "@/lib/utils";
 import {sitePath} from "@/lib/site-path";
-import {openLookupContact} from "@/lib/lookup-contact";
+import {openFailedRdwContact, openLookupContact} from "@/lib/lookup-contact";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
@@ -113,6 +113,11 @@ export function PlateLookup({
 
 
   const profile = result?.tuningEstimate.profile;
+  // A fallback/catalog template without published Stage 1 numbers is not a
+  // confirmed vehicle-specific tuning result. Keep its quote path, but lead
+  // with RDW facts and a manual review rather than a misleading green match.
+  const hasNumericStage1 = Boolean(profile?.stages.some(stage => stage.name === "Stage 1" &&
+    !stage.customHardware && (stage.powerHp !== undefined || stage.powerRangeHp !== undefined)));
   const stages = useMemo(() => profile?.stages ?? createPendingStages(), [profile]);
 
   const availableOptions = useMemo(() => {
@@ -136,6 +141,7 @@ export function PlateLookup({
   const localeCode = locale === "en" ? "en-US" : locale === "pl" ? "pl-PL" : "nl-NL";
   const powerUnit = locale === "en" ? "hp" : locale === "pl" ? "KM" : "pk";
   const localCopy = lookupRuntimeCopy[locale];
+  const normalizedPlate = plate.replace(/[^a-z0-9]/gi, "").toUpperCase().slice(0, 6);
   const quoteVehicleLabel = result
       ? `${result.vehicle.make} ${result.vehicle.model}`.trim()
       : undefined;
@@ -159,8 +165,8 @@ export function PlateLookup({
     openLookupContact({
           displacementCc: result.vehicle.engine.displacementCc,
           matchStatus: result.tuningMatch.status,
-          estimateProfileLabel: profile ? `${profile.brand} ${profile.model} ${profile.engine}` : undefined,
-          engine: profile?.engine,
+          estimateProfileLabel: hasNumericStage1 && profile ? `${profile.brand} ${profile.model} ${profile.engine}` : undefined,
+          engine: hasNumericStage1 ? profile?.engine : undefined,
           indicativeOutput: selectedStage,
           estimateSource: formatEstimateSource(selectedStage, locale),
           estimateNotes: [...customerStageNotes(selectedStage, locale, profile), ...(profile ? estimateLimitations({...profile, conditionCodes: profile.conditionCodes?.filter(code => !["NOORDTUNE_TARGET_REVIEW_REQUIRED", "SOURCE_CONSENSUS_CONFLICT", "GENERIC_TORQUE_UNAVAILABLE"].includes(code))}, locale) : [])],
@@ -207,7 +213,10 @@ export function PlateLookup({
         const code = payload?.error?.code ?? "LOOKUP_ERROR";
         setError({
           code,
-          message: code === "NOT_FOUND" ? text.notFound : text.invalid
+          message: code === "NOT_FOUND" ? text.notFound :
+            code === "RATE_LIMITED" ? localCopy.rateLimited :
+            code === "RDW_UNAVAILABLE" || code === "SERVER_ERROR" ? localCopy.lookupUnavailable :
+            text.invalid
         });
         return;
       }
@@ -216,7 +225,7 @@ export function PlateLookup({
     } catch {
       setError({
         code: "NETWORK_ERROR",
-        message: localCopy.networkError
+        message: localCopy.lookupUnavailable
       });
     } finally {
       setLoading(false);
@@ -290,7 +299,20 @@ export function PlateLookup({
             >
               <div className="flex gap-3">
                 <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
-                <span>{error.message}</span>
+                <div className="min-w-0">
+                  <p>{error.message}</p>
+                  {normalizedPlate.length === 6 ? (
+                    <button
+                      className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-[3px] bg-primary px-4 py-2 text-xs font-black uppercase text-white"
+                      data-testid="rdw-error-contact"
+                      onClick={() => openFailedRdwContact({plate: normalizedPlate, locale, message: localCopy.lookupHelpMessage})}
+                      type="button"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      {localCopy.lookupHelpCta}
+                    </button>
+                  ) : null}
+                </div>
               </div>
             </motion.div>
           ) : null}
@@ -307,7 +329,7 @@ export function PlateLookup({
               {result.comparison ? <RdwSourceComparison comparison={result.comparison} locale={locale} /> : null}
 
               <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)]">
-                {profile ? (
+                {profile && hasNumericStage1 ? (
                   <div className="rounded-[3px] border border-emerald-400/25 bg-[linear-gradient(145deg,rgba(16,185,129,.08),rgba(0,0,0,.34))] p-4">
                     <div className="mb-3 flex flex-wrap items-center gap-2">
                       <Badge className="rounded-[3px] border-emerald-400/35 bg-emerald-400/10 text-emerald-300">
@@ -518,7 +540,7 @@ export function PlateLookup({
                     {text.recommendation.indicativeEstimate}
                   </div>
                 ) : null}
-                {profile ? <PowerChart
+                {profile && hasNumericStage1 ? <PowerChart
                   locale={locale}
                   powerUnit={powerUnit}
                   stages={profile.stages}
@@ -641,6 +663,10 @@ const lookupRuntimeCopy: Record<
     cacheMiss: string;
     exactMatch: string;
     networkError: string;
+    lookupUnavailable: string;
+    rateLimited: string;
+    lookupHelpCta: string;
+    lookupHelpMessage: string;
     requestQuote: string;
     unknownFuel: string;
     indicativeRequirement: string;
@@ -666,6 +692,10 @@ const lookupRuntimeCopy: Record<
     cacheMiss: "nieuwe RDW check",
     exactMatch: "NoordTune bevestigt de exacte ECU en motorvariant in de offerte.",
     networkError: "RDW lookup kon niet worden geladen.",
+    lookupUnavailable: "RDW is tijdelijk niet bereikbaar. Probeer later opnieuw of vraag NoordTune rechtstreeks om advies voor dit kenteken.",
+    rateLimited: "Te veel kentekenchecks. Probeer het later opnieuw of stuur je kenteken naar NoordTune.",
+    lookupHelpCta: "Vraag tuningadvies aan",
+    lookupHelpMessage: "Hallo NoordTune, de RDW-check kon mijn auto niet tonen. Kunnen jullie de configuratie en Stage 1 mogelijkheden controleren voor kenteken:",
     requestQuote: "Vraag offerte aan",
     unknownFuel: "Brandstof onbekend",
     indicativeRequirement: "Catalogusmatch vereist",
@@ -698,6 +728,10 @@ const lookupRuntimeCopy: Record<
     cacheMiss: "fresh RDW check",
     exactMatch: "NoordTune confirms the exact ECU and engine variant in the quote.",
     networkError: "RDW lookup could not be loaded.",
+    lookupUnavailable: "RDW is temporarily unavailable. Please try again later or ask NoordTune to review the vehicle using its registration.",
+    rateLimited: "Too many registration checks. Try later or send the registration to NoordTune.",
+    lookupHelpCta: "Ask about my vehicle",
+    lookupHelpMessage: "Hello NoordTune, the RDW lookup could not show my vehicle. Could you verify the configuration and Stage 1 options for plate:",
     requestQuote: "Request quote",
     unknownFuel: "Fuel unknown",
     indicativeRequirement: "Catalog match required",
@@ -730,6 +764,10 @@ const lookupRuntimeCopy: Record<
     cacheMiss: "nowe sprawdzenie RDW",
     exactMatch: "NoordTune potwierdzi dokładny ECU i wariant silnika w wycenie.",
     networkError: "Nie udało się załadować wyszukiwania RDW.",
+    lookupUnavailable: "RDW jest chwilowo niedostępne. Spróbuj później albo poproś NoordTune o sprawdzenie auta po rejestracji.",
+    rateLimited: "Zbyt wiele wyszukiwań. Spróbuj później albo prześlij rejestrację do NoordTune.",
+    lookupHelpCta: "Zapytaj o możliwości auta",
+    lookupHelpMessage: "Cześć NoordTune, nie udało się znaleźć auta przez RDW. Czy możecie sprawdzić wersję i możliwości Stage 1 dla rejestracji:",
     requestQuote: "Poproś o wycenę",
     unknownFuel: "Paliwo nieznane",
     indicativeRequirement: "Wymagane dopasowanie katalogu",
