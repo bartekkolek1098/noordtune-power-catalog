@@ -60,8 +60,8 @@ for(const vehicle of engineCatalog) {
 }
 assert.equal(engineCatalog.length,24);
 assert.equal(direct,10,"baseline direct numeric customer Stage 1 coverage changed");
-assert.equal(examplesOnly,10,"ten vetted example-supported public cards, including four additional observed applications");
-assert.equal(reviewOnly,4,"four cards still require further source-specific review");
+assert.equal(examplesOnly,12,"twelve source-example-supported public cards");
+assert.equal(reviewOnly,2,"two cards still require further source-specific review");
 assert.equal(direct+examplesOnly+reviewOnly,24);
 for(const id of [
  "bmw-1-series-f20-f21-118i","bmw-1-series-f20-f21-120d",
@@ -89,7 +89,7 @@ assert.ok(g20Refs.every(ref=>ref.stockTorqueNm===300),
   "184/270 or 184/290 source must not be represented as 184/300");
 assert.ok(g20Refs.every(ref=>ref.yearTo<=2021),
   "G20 example cannot pretend to cover later engine/software years");
-assert.equal(reviewedPublicStage1Samples.length,4);
+assert.equal(reviewedPublicStage1Samples.length,6);
 for (const sample of reviewedPublicStage1Samples) {
   const vehicle=engineCatalog.find(v=>v.id===sample.publicVehicleId)!;
   assert.ok(vehicle,"Research sample public vehicle exists");
@@ -106,4 +106,37 @@ for (const sample of reviewedPublicStage1Samples) {
 }
 assert.deepEqual(getPublicVehicleSourceExamples({...bmw320i,years:[2023,2024]}),[],
   "G20 source years cannot be extrapolated into 2023-2024");
+
+// New independent Golf VII Mk2 DFGA and A6 C7 EU6 examples must never
+// spill into pre-facelift years, other generations or stock torque bands.
+const golf = engineCatalog.find(v=>v.id==="volkswagen-golf-7-20-tdi")!;
+const gRefs = getPublicVehicleSourceExamples(golf).filter(ref=>ref.sourceProfileId==="research-vw-golf7-mk2-dfga-150-340");
+assert.equal(gRefs.length,1);
+assert.deepEqual(gRefs[0].stage1PowerRangeHp,[185,185]);
+assert.deepEqual(gRefs[0].stage1TorqueRangeNm,[425,425]);
+assert.deepEqual([gRefs[0].yearFrom,gRefs[0].yearTo],[2017,2019]);
+assert.deepEqual(getPublicVehicleSourceExamples({...golf,years:[2013,2014,2015,2016]}),[],
+  "Golf Mk2 evidence cannot be backdated into Mk1 years");
+assert.ok(!getPublicVehicleSourceExamples({...golf,stockTorqueNm:320}).some(ref=>ref.sourceProfileId==="research-vw-golf7-mk2-dfga-150-340"),
+  "Stock 320 Nm Golf cannot receive 340 Nm DFGA example; it may retain its own correctly scoped Mk1 reference");
+assert.deepEqual(getPublicVehicleSourceExamples({...golf,generation:"Golf 8"}),[],
+  "Golf 8 may not borrow Golf 7 proof");
+
+const a6 = engineCatalog.find(v=>v.id==="audi-a6-c7-30-tdi-272")!;
+const a6Refs=getPublicVehicleSourceExamples(a6).filter(ref=>ref.sourceProfileId==="research-audi-a6-c7-eu6-272-600");
+assert.equal(a6Refs.length,1);
+assert.deepEqual(a6Refs[0].stage1PowerRangeHp,[300,308]);
+assert.deepEqual(a6Refs[0].stage1TorqueRangeNm,[650,668]);
+assert.deepEqual([a6Refs[0].yearFrom,a6Refs[0].yearTo],[2015,2018]);
+assert.equal(a6Refs[0].sourceUrls.length,2);
+assert.deepEqual(getPublicVehicleSourceExamples({...a6,years:[2014]}),[],
+  "A6 EU6 example cannot be extrapolated into 2014");
+assert.ok(!getPublicVehicleSourceExamples({...a6,stockTorqueNm:580}).some(ref=>ref.sourceProfileId==="research-audi-a6-c7-eu6-272-600"),
+  "272 / 580 Nm A6 cannot borrow 272 / 600 Nm sample; it may match its own correctly scoped source");
+assert.deepEqual(getPublicVehicleSourceExamples({...a6,generation:"C8"}),[],
+  "C8 cannot borrow C7 Stage 1 sample");
+
+const skoda=engineCatalog.find(v=>v.id==="skoda-octavia-5e-20-tdi-150")!;
+assert.deepEqual(getPublicVehicleSourceExamples(skoda),[],
+  "Octavia 5E stock 340 Nm remains unverified; 5E 320 Nm and 2020 Octavia IV 340 Nm do not match");
 console.log(JSON.stringify({result:"PASS",publicProfiles:24,directNumeric:direct,datedSourceExampleOnly:examplesOnly,reviewRequiredNoNumeric:reviewOnly,datedExampleRows:exampleRows,sourceDatasetSize:sourcedTuningProfiles.length,stage3Public:0}));
