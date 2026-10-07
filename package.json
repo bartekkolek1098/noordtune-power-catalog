@@ -22,7 +22,7 @@
     "research:atm": "node scripts/research-atm.cjs",
     "research:rdw-outputs": "node scripts/research-rdw-output-sample.cjs",
     "research:rdw-source-gaps": "node --no-warnings scripts/report-rdw-source-gaps.cjs --summary",
-    "test:rdw-source-gaps": "node --no-warnings scripts/test-rdw-source-gaps.cjs",
+    "test:rdw-source-gaps": "node --no-warnings scripts/test-rdw-source-gaps.cjs && node --no-warnings scripts/test-model-sibling-rejections.cjs",
     "research:shiftech": "node scripts/research-shiftech.cjs",
     "research:unlimited": "node scripts/research-unlimited.cjs",
     "test:nl-fleet-v2": "node scripts/test-research-providers.cjs && node --no-warnings scripts/test-nl-fleet-v2.ts",

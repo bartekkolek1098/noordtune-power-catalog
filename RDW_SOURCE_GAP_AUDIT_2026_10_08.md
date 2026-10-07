@@ -45,6 +45,19 @@ Each of the 3,157 nonmatches is placed in one *first-failed* bucket. Other unres
 
 Do **not** fix the 772 model-family rejections by blanket string similarity. A better alias mapping must retain strict generation, fuel, stock horsepower, displacement, VIN-independent identity and manufacturer-specific model-sibling guards.
 
+### Verified model-name collision analysis
+
+A second deterministic tool, `node --no-warnings scripts/report-model-sibling-rejections.cjs --summary`, examined **all 772 model-family rejections** after the first five filters (make, fuel, factory power, displacement and year). Only **108** have even *superficially similar spelling* to an unrelated source model (minimum normalized edit distance ratio under 0.45 or prefix containment). **Neither those 108 nor the other 664 constitute approved aliases.** They include clearly different model bodies that must never inherit a tune without independent technical evidence.
+
+Examples identified in the existing provider source pool:
+- BMW 2 Series / 4 Series with shared power/displacement versus BMW 3 Series;
+- Audi A5 versus A4 and Q5;
+- Volkswagen Passat versus Golf or Tiguan;
+- Ford Tourneo Custom versus Transit Custom (related vans, but not an ECU-file equivalence certificate);
+- Citroën C4 versus C4 Picasso, Peugeot 3008 versus 308 and Volvo V70 versus V40.
+
+Current matcher correctly refuses these cross-model substitutions. The separate test `scripts/test-model-sibling-rejections.cjs` checks those protected boundaries. A real counterexample demonstrates the permitted approach: one provider explicitly identifies **Volkswagen Transporter / Multivan / Caravelle T6, 2.0 TDI 204 PS**, and the sourced profile already contains the three exact aliases. It is permitted only for those named models in a compatible T6 scope; California, T5, T6.1 and T7 remain excluded. **No additional generic alias was authorized by this audit.**
+
 ## 2. Independent RDW Dutch fleet aggregate
 
 The separate RDW aggregate snapshot covers **11,327,762** non-exported passenger and <=3,500 kg light commercial registrations in the recorded population definition. Only the **top 5,000** make/model/cc/cylinders/class/first-admission-band groups are supplied; these represent **10,155,079** registrations in that historical snapshot.
