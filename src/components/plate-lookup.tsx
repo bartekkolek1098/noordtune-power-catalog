@@ -22,7 +22,8 @@ import type {RdwLookupResult} from "@/lib/rdw";
 import {serviceOptions} from "@/data/catalog-shared";
 import {unavailableEstimateStage} from "@/data/tuning-estimates-shared";
 import {addQuoteOptions, assessVehicleAccess, conditionalBudgetNote, formatAccessAssessment, formatQuote, formatQuoteScope, resolveStageQuote} from "@/data/pricing";
-import {formatRegistrationDate} from "@/lib/rdw-date";
+import {RdwVehicleFacts} from "@/components/rdw-vehicle-facts";
+import {RdwSourceComparison} from "@/components/rdw-source-comparison";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
 import {estimateLimitations, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
 import type {Locale} from "@/i18n/routing";
@@ -302,33 +303,8 @@ export function PlateLookup({
               exit={{opacity: 0, y: -8}}
               initial={{opacity: 0, y: 8}}
             >
-              <div className="rounded-[3px] border border-white/10 bg-black/35 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,.04)]">
-                <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-                  <div className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                    {text.detected}
-                  </div>
-                  <Badge variant={result.cached ? "secondary" : "default"}>
-                    {result.cached ? localCopy.cacheHit : localCopy.cacheMiss}
-                  </Badge>
-                </div>
-                <div className="text-2xl font-black">
-                  {result.vehicle.make} {result.vehicle.model}
-                </div>
-                <div className="mt-2 grid gap-2 text-sm text-muted-foreground sm:grid-cols-2">
-                  <span>{result.vehicle.fuel ?? localCopy.unknownFuel}</span>
-                  <span>
-                    {result.vehicle.engine.displacementCc ?? "-"} cc ·{" "}
-                    {result.vehicle.engine.powerHp ?? "-"} {powerUnit}
-                  </span>
-                  <span>
-                    APK {result.vehicle.registration.apkExpiry ?? "-"}
-                  </span>
-                  <span>Type {result.vehicle.variant ?? result.vehicle.type ?? "-"}</span>
-                  <span className="sm:col-span-2" data-testid="rdw-first-registration">
-                    {localCopy.firstRegistration}: {formatRegistrationDate(result.vehicle.registration.firstAdmission, locale)}
-                  </span>
-                </div>
-              </div>
+              <RdwVehicleFacts cached={result.cached} locale={locale} vehicle={result.vehicle} />
+              {result.comparison ? <RdwSourceComparison comparison={result.comparison} locale={locale} /> : null}
 
               <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)]">
                 {profile ? (

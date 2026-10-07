@@ -2,6 +2,7 @@ import {customerProfile} from "./customer-profile.ts";
 import {findCatalogMatch} from "../data/catalog.ts";
 import {assessVehicleAccess, resolveStageQuote, type QuoteResolution} from "../data/pricing.ts";
 import {resolveRdwTuningEstimate} from "./rdw-tuning-estimate.ts";
+import {getComparableSourceStage1, type SimilarStage1Comparison} from "./rdw-source-comparison.ts";
 import {resolveDetailsAction} from "./details-action.ts";
 import {engineCatalog} from "../data/catalog.ts";
 import {firstAdmissionYear, parseRdwDate} from "./rdw-date.ts";
@@ -21,11 +22,26 @@ export type RdwVehicleRow = {
   massa_ledig_voertuig?: string;
   massa_rijklaar?: string;
   toegestane_maximum_massa_voertuig?: string;
+  technische_max_massa_voertuig?: string;
+  maximum_massa_samenstelling?: string;
+  maximum_massa_trekken_ongeremd?: string;
+  aanhangwagen_middenas_geremd?: string;
+  laadvermogen?: string;
+  wielbasis?: string;
+  hoogte_voertuig?: string;
+  aantal_wielen?: string;
+  europese_voertuigcategorie?: string;
+  type_gasinstallatie?: string;
+  typegoedkeuringsnummer?: string;
+  openstaande_terugroepactie_indicator?: string;
+  tellerstandoordeel?: string;
+  jaar_laatste_registratie_tellerstand?: string;
   datum_eerste_toelating_dt?: string;
   datum_eerste_toelating?: string;
   datum_eerste_tenaamstelling_in_nederland_dt?: string;
   datum_eerste_tenaamstelling_in_nederland?: string;
   vervaldatum_apk_dt?: string;
+  vervaldatum_apk?: string;
   eerste_kleur?: string;
   aantal_deuren?: string;
   aantal_zitplaatsen?: string;
@@ -44,6 +60,7 @@ export type RdwFuelRow = {
   emissiecode_omschrijving?: string;
   nettomaximumvermogen?: string;
   uitlaatemissieniveau?: string;
+  brandstofverbruik_gecombineerd?: string;
 };
 
 export type RdwLookupResult = {
@@ -75,8 +92,29 @@ export type RdwLookupResult = {
     dimensions: {
       lengthCm?: number | null;
       widthCm?: number | null;
+      heightCm?: number | null;
+      wheelbaseCm?: number | null;
       weightKg?: number | null;
       runningWeightKg?: number | null;
+    };
+    weights: {
+      maximumPermittedKg?: number | null;
+      technicalMaximumKg?: number | null;
+      combinedMaximumKg?: number | null;
+      payloadKg?: number | null;
+      brakedTrailerKg?: number | null;
+      unbrakedTrailerKg?: number | null;
+    };
+    approval: {
+      europeanCategory?: string;
+      approvalNumber?: string;
+      gasInstallationType?: string;
+      wheels?: number | null;
+      recallIndicator?: string;
+    };
+    odometer: {
+      assessment?: string;
+      assessmentYear?: number | null;
     };
     performance: {
       topSpeedKmh?: number | null;
@@ -97,6 +135,8 @@ export type RdwLookupResult = {
   // arrays and rejected canonical vehicles are never browser DTOs.
   tuningMatch: Pick<ReturnType<typeof findCatalogMatch>, "status" | "reasonCodes">;
   tuningEstimate: ReturnType<typeof resolveRdwTuningEstimate>;
+  /** Similar sourced applications, NEVER numeric output attributed to this vehicle. */
+  comparison?: SimilarStage1Comparison;
   tuningQuote: QuoteResolution;
   raw?: {
     vehicle: RdwVehicleRow;
@@ -183,6 +223,9 @@ export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[],
   const tuningEstimate = resolveRdwTuningEstimate(identityInput);
   tuningEstimate.detailsAction = resolveDetailsAction(tuningEstimate.profile, engineCatalog);
   if (tuningEstimate.profile) tuningEstimate.profile = customerProfile({...tuningEstimate.profile, conditionCodes: [...new Set([...(tuningEstimate.profile.conditionCodes ?? []), ...tuningEstimate.reasonCodes])]});
+  const publicStage1 = tuningEstimate.profile?.stages.find(stage=>stage.name==="Stage 1");
+  const hasScopedStage1 = publicStage1 && (publicStage1.powerHp!==undefined || publicStage1.powerRangeHp!==undefined);
+  const comparison = !hasScopedStage1 ? getComparableSourceStage1(identityInput) : undefined;
   const quoteIdentity = tuningEstimate.profile ?? identityInput;
   const tuningQuote = resolveStageQuote(quoteIdentity, tuningEstimate.profile?.stages[0], {
     estimateApplicable: Boolean(tuningEstimate.profile), scope: "vehicle",
@@ -218,8 +261,29 @@ export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[],
       dimensions: {
         lengthCm: toNumber(vehicle.lengte),
         widthCm: toNumber(vehicle.breedte),
+        heightCm: toNumber(vehicle.hoogte_voertuig),
+        wheelbaseCm: toNumber(vehicle.wielbasis),
         weightKg: toNumber(vehicle.massa_ledig_voertuig),
         runningWeightKg: toNumber(vehicle.massa_rijklaar)
+      },
+      weights: {
+        maximumPermittedKg: toNumber(vehicle.toegestane_maximum_massa_voertuig),
+        technicalMaximumKg: toNumber(vehicle.technische_max_massa_voertuig),
+        combinedMaximumKg: toNumber(vehicle.maximum_massa_samenstelling),
+        payloadKg: toNumber(vehicle.laadvermogen),
+        brakedTrailerKg: toNumber(vehicle.aanhangwagen_middenas_geremd),
+        unbrakedTrailerKg: toNumber(vehicle.maximum_massa_trekken_ongeremd)
+      },
+      approval: {
+        europeanCategory: vehicle.europese_voertuigcategorie,
+        approvalNumber: vehicle.typegoedkeuringsnummer,
+        gasInstallationType: vehicle.type_gasinstallatie,
+        wheels: toNumber(vehicle.aantal_wielen),
+        recallIndicator: vehicle.openstaande_terugroepactie_indicator
+      },
+      odometer: {
+        assessment: vehicle.tellerstandoordeel,
+        assessmentYear: toNumber(vehicle.jaar_laatste_registratie_tellerstand)
       },
       performance: {
         topSpeedKmh: toNumber(vehicle.maximale_constructiesnelheid)
@@ -233,11 +297,12 @@ export function normalizeRdwVehicle(vehicle: RdwVehicleRow, fuels: RdwFuelRow[],
         firstAdmission,
         firstAdmissionYear: firstAdmissionYear(firstAdmission),
         firstRegistrationNl: parseRdwDate(vehicle.datum_eerste_tenaamstelling_in_nederland_dt) ?? parseRdwDate(vehicle.datum_eerste_tenaamstelling_in_nederland),
-        apkExpiry: parseRdwDate(vehicle.vervaldatum_apk_dt)
+        apkExpiry: parseRdwDate(vehicle.vervaldatum_apk_dt) ?? parseRdwDate(vehicle.vervaldatum_apk)
       }
     },
     tuningMatch,
     tuningEstimate,
+    ...(comparison ? {comparison}:{}),
     tuningQuote,
     raw: {
       vehicle,
@@ -257,7 +322,7 @@ async function fetchRdwRows<T>(
   url.searchParams.set("kenteken", plate);
   url.searchParams.set("$limit", String(limit));
   url.searchParams.set("$select", resource === VEHICLE_RESOURCE
-    ? "merk,handelsbenaming,inrichting,voertuigsoort,aantal_cilinders,cilinderinhoud,massa_ledig_voertuig,massa_rijklaar,datum_eerste_toelating_dt,datum_eerste_toelating,datum_eerste_tenaamstelling_in_nederland_dt,datum_eerste_tenaamstelling_in_nederland,vervaldatum_apk_dt,eerste_kleur,aantal_deuren,aantal_zitplaatsen,maximale_constructiesnelheid,lengte,breedte,type,variant,uitvoering"
+    ? "merk,handelsbenaming,inrichting,voertuigsoort,aantal_cilinders,cilinderinhoud,massa_ledig_voertuig,massa_rijklaar,toegestane_maximum_massa_voertuig,technische_max_massa_voertuig,maximum_massa_samenstelling,maximum_massa_trekken_ongeremd,aanhangwagen_middenas_geremd,laadvermogen,wielbasis,hoogte_voertuig,aantal_wielen,europese_voertuigcategorie,type_gasinstallatie,typegoedkeuringsnummer,openstaande_terugroepactie_indicator,tellerstandoordeel,jaar_laatste_registratie_tellerstand,datum_eerste_toelating_dt,datum_eerste_toelating,datum_eerste_tenaamstelling_in_nederland_dt,datum_eerste_tenaamstelling_in_nederland,vervaldatum_apk_dt,vervaldatum_apk,eerste_kleur,aantal_deuren,aantal_zitplaatsen,maximale_constructiesnelheid,lengte,breedte,type,variant,uitvoering"
     : "brandstof_omschrijving,nettomaximumvermogen,co2_uitstoot_gecombineerd,emissiecode_omschrijving,uitlaatemissieniveau");
 
   const headers: HeadersInit = {

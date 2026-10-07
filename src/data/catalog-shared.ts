@@ -1,7 +1,7 @@
 import type {StageScope, StageComparison} from "../lib/stage-presentation.ts";
 import {getPublicServicePrice, type PricingTierId, type QuoteResolution} from "./pricing.ts";
 
-export type FuelType = "Petrol" | "Diesel" | "Hybrid" | "Electric";
+export type FuelType = "Petrol" | "Diesel" | "Hybrid" | "Electric" | "CNG";
 export type ConfidenceLevel = "verified" | "estimated" | "manual-review";
 export type RecommendedUse = "daily" | "performance" | "custom";
 export type StageName = "Stage 1" | "Stage 2" | "Stage 3+";

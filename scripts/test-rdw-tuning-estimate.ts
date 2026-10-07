@@ -69,11 +69,11 @@ test("every runtime hierarchy level removes inherited gearbox services without t
     assert.ok(result.profile?.stages.every(hasPower));
   }
 });
-test("technical year/template duplicates collapse without choosing conflicting output", () => {
+test("year-specific canonical copies cannot lend output from a different registration period", () => {
   const copies = [2016, 2017, 2018].map((year) => candidate({id: `copy-${year}`, years: [year], yearRange: String(year), version: `${year} EcoBoost`}));
   const result = resolveRdwTuningEstimate(identity, {...empty, canonicalVehicles: copies});
   assert.equal(result.resolutionLevel, 3);
-  assert.ok(result.reasonCodes.includes("EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED"));
+  assert.ok(!result.reasonCodes.includes("EQUIVALENT_CANONICAL_DUPLICATES_COLLAPSED"));
   assert.equal(result.profile?.stages[0].powerHp, 155);
   const reverse = resolveRdwTuningEstimate(identity, {...empty, canonicalVehicles: [...copies].reverse()});
   assert.deepEqual(reverse, result);
@@ -244,15 +244,15 @@ test("registered-unit rounding cannot turn Connect comparison into a strong-Stag
   assert.ok(!result.reasonCodes.includes("STRONG_STAGE1_REFERENCE_SCENARIO"));
   assert.ok(result.profile?.stages.slice(1).every((stage) => stage.genericScenario === "standard-range"));
 });
-test("runtime commercial metadata preserves registered identity rather than source year", () => {
+test("runtime commercial metadata preserves RDW identity without borrowing a different model year", () => {
   const result = resolveRdwTuningEstimate({...identity, firstRegistrationYear: undefined, firstRegistrationDate: "2020-06-12", cylinders: 3}, {...empty, canonicalVehicles: [candidate({years: [2016], yearRange: "2016"})]});
-  assert.equal(result.profile?.runtimeCommercialIdentity?.status, "resolved-compatible");
+  assert.equal(result.profile?.runtimeCommercialIdentity?.status, "resolved-generic");
   assert.equal(result.profile?.runtimeCommercialIdentity?.firstAdmissionYear, 2020);
   assert.equal(result.profile?.runtimeCommercialIdentity?.cylinders, 3);
   assert.equal(result.profile?.runtimeCommercialIdentity?.registeredPowerHp, 125);
   assert.equal(result.profile?.runtimeCommercialIdentity?.model, "Focus");
   assert.equal(result.profile?.runtimeCommercialIdentity?.displacementCc, 999);
-  assert.equal(result.profile?.yearRange, "2016");
+  assert.equal(result.profile?.yearRange, "2020");
 });
 test("live Defender technical facts expose non-public canonical coverage", () => {
   const result = resolveRdwTuningEstimate({make: "LAND ROVER", model: "DEFENDER", fuel: "Diesel", displacementCc: 1999, registeredPower: {value: 177, unit: "kW"}, firstRegistrationDate: "2020-06-12", type: "LE", variant: "HCBBC0", execution: "50AC010", cylinders: 4});

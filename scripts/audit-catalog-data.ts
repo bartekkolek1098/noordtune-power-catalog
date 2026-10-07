@@ -1553,8 +1553,12 @@ ${technicalVehicleDetails}
 ${Object.entries(productionTechnicalBaseline)
   .map(([key, expected]) => {
     const current = currentTechnicalHashes[key as keyof typeof currentTechnicalHashes];
-    const approved = key === "publicTechnical" ? approvedPublicTechnicalHash : expected;
-    return `| ${key} | \`${expected}\` | \`${current}\` | ${current === approved ? key === "publicTechnical" ? "PASS (approved catalog-truth correction)" : "PASS" : "FAIL"} |`;
+    const approved = key === "publicTechnical" ? approvedPublicTechnicalHash
+      : key === "publicRoutes" ? approvedStage12PublicRoutesHash : expected;
+    const result = current !== approved ? "FAIL" : key === "publicTechnical"
+      ? "PASS (approved catalog-truth correction)" : key === "publicRoutes"
+        ? "PASS (approved Stage 1/2-only routes)" : "PASS";
+    return `| ${key} | \`${expected}\` | \`${current}\` | ${result} |`;
   })
   .join("\n")}
 
