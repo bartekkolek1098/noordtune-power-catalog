@@ -18,6 +18,15 @@ export type ReviewedPublicStage1Sample = {
   powerRangeHp: [number, number];
   torqueRangeNm: [number, number];
   sourceUrls: string[];
+  /** Source dyno baseline when different from manufacturer/vehicle-card stock. */
+  observedStockPowerHp?: number;
+  observedStockTorqueNm?: number;
+  sourceStageLabel?: "Stage 1+";
+  sourceEngineCode?: string;
+  awdOnly?: boolean;
+  ecuDecodeRequired?: boolean;
+  /** Count only published tuning outputs, excluding manufacturer/factory specifications. */
+  stage1ObservationCount?: number;
   reviewedAt: string;
   status: "owner-review-required";
 };
@@ -96,6 +105,39 @@ export const reviewedPublicStage1Samples: readonly ReviewedPublicStage1Sample[] 
     sourceUrls: [
       "https://www.turboperformance.de/chiptuning/pkw/audi/a6-c7/3.0-v6-tdi-272PS",
       "https://proremaps.co.uk/remap-stats/audi-a6-c7-2011-2018-3-0-tdi-eu6-272hp-203kw-600nm/"
+    ],
+    reviewedAt: "2026-10-08", status: "owner-review-required"
+  },
+  {
+    id: "research-skoda-octavia5e-150-340-dff-dcy",
+    publicVehicleId: "skoda-octavia-5e-20-tdi-150",
+    expectedMake: "Skoda", expectedModel: "Octavia 5E 2.0 TDI", expectedGeneration: "5E",
+    expectedFuel: "Diesel", displacementCc: 1968, stockPowerHp: 150, stockTorqueNm: 340,
+    yearFrom: 2017, yearTo: 2018,
+    powerRangeHp: [170, 170], torqueRangeNm: [380, 380],
+    sourceUrls: [
+      "https://www.swperformance.de/filter/fahrzeugtyp/pkw/marke/skoda/modell/octavia/typ/octavia_iii_-_5e_seit_11.2012/motorisierung/2.0_tdi_cr_-_150ps.html",
+      "https://www.autoweek.nl/auto/90479/skoda-octavia-2-0-tdi-150pk-greentech-style/"
+    ],
+    sourceEngineCode: "DFF / DCY", stage1ObservationCount: 1,
+    reviewedAt: "2026-10-08", status: "owner-review-required"
+  },
+  {
+    id: "research-volvo-xc60i-d5244t20-awd-bsr-2016",
+    publicVehicleId: "volvo-xc60-d5",
+    expectedMake: "Volvo", expectedModel: "XC60 D5", expectedGeneration: "XC60 I",
+    expectedFuel: "Diesel", displacementCc: 2400, stockPowerHp: 220, stockTorqueNm: 440,
+    yearFrom: 2016, yearTo: 2017,
+    // BSR's published measured stock reading is different from Volvo's 220/440
+    // manufacturer specification. Never subtract one source from the other.
+    observedStockPowerHp: 221, observedStockTorqueNm: 428,
+    powerRangeHp: [282, 282], torqueRangeNm: [533, 533],
+    sourceStageLabel: "Stage 1+",
+    sourceEngineCode: "D5244T20", awdOnly: true, ecuDecodeRequired: true,
+    stage1ObservationCount: 1,
+    sourceUrls: [
+      "https://www.bsrtuning.nl/tuning-kits/t/3265/volvo-xc60-d5-awd-220hp-2016-2017-d-5244-t20",
+      "https://www.volvocars.com/nl/support/car/xc60/16w17/article/d24bb7d1e21ec6e4c0a801e801cf6114/510652ac31fe5b38c0a801e8014486bc/c48f21dbf78fa679c0a801e800b1d372/"
     ],
     reviewedAt: "2026-10-08", status: "owner-review-required"
   }

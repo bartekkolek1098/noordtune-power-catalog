@@ -26,8 +26,13 @@ for(const vehicle of engineCatalog) {
    assert.ok(!isDirect || ref.sourceProfileId,vehicle.id);
    assert.ok(ref.yearFrom<=ref.yearTo && ref.yearTo<=Math.max(...vehicle.years));
    assert.ok(ref.yearFrom>=Math.min(...vehicle.years));
-   assert.ok(ref.stockPowerHp===vehicle.stockPowerHp,vehicle.id+" stock power must exactly match");
-   assert.ok(ref.stockTorqueNm===vehicle.stockTorqueNm,vehicle.id+" stock torque must exactly match");
+   if (ref.observedStockBaseline) {
+     assert.equal(ref.observedStockBaseline.officialPowerHp,vehicle.stockPowerHp,vehicle.id+" factory power identity");
+     assert.equal(ref.observedStockBaseline.officialTorqueNm,vehicle.stockTorqueNm,vehicle.id+" factory torque identity");
+   } else {
+     assert.equal(ref.stockPowerHp,vehicle.stockPowerHp,vehicle.id+" published source factory power");
+     assert.equal(ref.stockTorqueNm,vehicle.stockTorqueNm,vehicle.id+" published source factory torque");
+   }
    assert.ok(ref.stage1PowerRangeHp[0]>ref.stockPowerHp,vehicle.id+" source power gain");
    assert.ok(ref.stage1PowerRangeHp[1]>=ref.stage1PowerRangeHp[0]);
    assert.ok(ref.sourceUrls.length>=1 && ref.sourceUrls.every(url=>url.startsWith("https://")));
@@ -60,8 +65,8 @@ for(const vehicle of engineCatalog) {
 }
 assert.equal(engineCatalog.length,24);
 assert.equal(direct,10,"baseline direct numeric customer Stage 1 coverage changed");
-assert.equal(examplesOnly,12,"twelve source-example-supported public cards");
-assert.equal(reviewOnly,2,"two cards still require further source-specific review");
+assert.equal(examplesOnly,14,"fourteen source-example-supported public cards");
+assert.equal(reviewOnly,0,"no public card missing a reviewed source example or direct Stage 1");
 assert.equal(direct+examplesOnly+reviewOnly,24);
 for(const id of [
  "bmw-1-series-f20-f21-118i","bmw-1-series-f20-f21-120d",
@@ -89,7 +94,7 @@ assert.ok(g20Refs.every(ref=>ref.stockTorqueNm===300),
   "184/270 or 184/290 source must not be represented as 184/300");
 assert.ok(g20Refs.every(ref=>ref.yearTo<=2021),
   "G20 example cannot pretend to cover later engine/software years");
-assert.equal(reviewedPublicStage1Samples.length,6);
+assert.equal(reviewedPublicStage1Samples.length,8);
 for (const sample of reviewedPublicStage1Samples) {
   const vehicle=engineCatalog.find(v=>v.id===sample.publicVehicleId)!;
   assert.ok(vehicle,"Research sample public vehicle exists");
@@ -137,6 +142,45 @@ assert.deepEqual(getPublicVehicleSourceExamples({...a6,generation:"C8"}),[],
   "C8 cannot borrow C7 Stage 1 sample");
 
 const skoda=engineCatalog.find(v=>v.id==="skoda-octavia-5e-20-tdi-150")!;
-assert.deepEqual(getPublicVehicleSourceExamples(skoda),[],
-  "Octavia 5E stock 340 Nm remains unverified; 5E 320 Nm and 2020 Octavia IV 340 Nm do not match");
+const skodaRefs=getPublicVehicleSourceExamples(skoda).filter(ref=>ref.sourceProfileId==="research-skoda-octavia5e-150-340-dff-dcy");
+assert.equal(skodaRefs.length,1);
+assert.deepEqual([skodaRefs[0].yearFrom,skodaRefs[0].yearTo],[2017,2018]);
+assert.deepEqual(skodaRefs[0].stage1PowerRangeHp,[170,170]);
+assert.deepEqual(skodaRefs[0].stage1TorqueRangeNm,[380,380]);
+assert.equal(skodaRefs[0].sourceEngineCode,"DFF / DCY");
+assert.equal(skodaRefs[0].independentlyPublishedValues,1,"Factory specification must not count as separate tuning output");
+assert.ok(skodaRefs[0].sourceUrls.length>=2,"Independently scoped original and tuning URLs");
+for(const invalid of [
+  {...skoda,stockTorqueNm:320},
+  {...skoda,generation:"Octavia IV"},
+  {...skoda,years:[2013,2014,2015,2016,2019,2020]},
+  {...skoda,model:"Octavia IV 2.0 TDI"}
+]) assert.ok(!getPublicVehicleSourceExamples(invalid).some(ref=>ref.sourceProfileId==="research-skoda-octavia5e-150-340-dff-dcy"),
+  "5E 150/340 must not leak into different stock/years/generation");
+
+const volvo=engineCatalog.find(v=>v.id==="volvo-xc60-d5")!;
+const volvoRefs=getPublicVehicleSourceExamples(volvo).filter(ref=>ref.sourceProfileId==="research-volvo-xc60i-d5244t20-awd-bsr-2016");
+assert.equal(volvoRefs.length,1);
+assert.deepEqual([volvoRefs[0].yearFrom,volvoRefs[0].yearTo],[2016,2017]);
+assert.deepEqual(volvoRefs[0].observedStockBaseline,{officialPowerHp:220,officialTorqueNm:440});
+assert.equal(volvoRefs[0].stockPowerHp,221,"BSR measured stock must remain measured");
+assert.equal(volvoRefs[0].stockTorqueNm,428,"BSR measured torque must remain measured");
+assert.deepEqual(volvoRefs[0].stage1PowerRangeHp,[282,282]);
+assert.deepEqual(volvoRefs[0].stage1TorqueRangeNm,[533,533]);
+assert.equal(volvoRefs[0].sourceStageLabel,"Stage 1+");
+assert.equal(volvoRefs[0].sourceEngineCode,"D5244T20");
+assert.equal(volvoRefs[0].independentlyPublishedValues,1,"BSR alone publishes this Stage 1+ example; Volvo is the factory specification");
+assert.equal(volvoRefs[0].awdOnly,true);
+assert.equal(volvoRefs[0].ecuDecodeRequired,true);
+assert.equal(formatEstimateGain({powerRangeHp:volvoRefs[0].stage1PowerRangeHp,torqueRangeNm:volvoRefs[0].stage1TorqueRangeNm},volvoRefs[0].stockPowerHp,volvoRefs[0].stockTorqueNm,"pl"),"+61 KM / +105 Nm");
+assert.notEqual(formatEstimateGain({powerRangeHp:volvoRefs[0].stage1PowerRangeHp,torqueRangeNm:volvoRefs[0].stage1TorqueRangeNm},volvo.stockPowerHp,volvo.stockTorqueNm,"pl"),"+61 KM / +105 Nm",
+  "Using factory baseline would misstate the observed source gain");
+for(const invalid of [
+  {...volvo,stockTorqueNm:420},
+  {...volvo,years:[2014,2015]},
+  {...volvo,model:"XC70 D5"},
+  {...volvo,generation:"XC60 II"},
+  {...volvo,fuel:"Petrol" as const}
+]) assert.ok(!getPublicVehicleSourceExamples(invalid).some(ref=>ref.sourceProfileId==="research-volvo-xc60i-d5244t20-awd-bsr-2016"),
+  "Volvo measured source cannot bleed to different engine/year/drive class");
 console.log(JSON.stringify({result:"PASS",publicProfiles:24,directNumeric:direct,datedSourceExampleOnly:examplesOnly,reviewRequiredNoNumeric:reviewOnly,datedExampleRows:exampleRows,sourceDatasetSize:sourcedTuningProfiles.length,stage3Public:0}));
