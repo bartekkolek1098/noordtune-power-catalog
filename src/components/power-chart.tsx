@@ -4,6 +4,7 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
+  Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -33,6 +34,8 @@ export function PowerChart({
   const separateScenarios = stages.some(stage => stage.provenance === "generic-indicative" || (stage.comparison && stage.comparison.comparability !== "same-reference"));
   const hasApproximate = stages.some(stage => !stage.customHardware && stage.approximate);
   const data = useMemo(() => estimateChartData(stages, stockPower, stockTorque, stockLabel), [stages, stockLabel, stockPower, stockTorque]);
+  const powerLabel = {nl: "Vermogen", en: "Power", pl: "Moc"}[locale];
+  const torqueLabel = {nl: "Koppel", en: "Torque", pl: "Moment"}[locale];
 
   useEffect(() => {
     setMounted(true);
@@ -45,7 +48,7 @@ export function PowerChart({
   return (
     <><div className="h-64 min-w-0 w-full" data-testid="catalog-power-chart" data-has-ranges={hasRanges}>
       <ResponsiveContainer width="100%" height="100%">
-        <AreaChart data={data} margin={{left: -20, right: 12, top: 14, bottom: 0}}>
+        <AreaChart data={data} margin={{left: 0, right: 0, top: 8, bottom: 0}}>
           <defs>
             <linearGradient id="power" x1="0" x2="0" y1="0" y2="1">
               <stop offset="0%" stopColor="#c4ff28" stopOpacity={0.9} />
@@ -58,7 +61,29 @@ export function PowerChart({
           </defs>
           <CartesianGrid stroke="rgba(255,255,255,0.08)" vertical={false} />
           <XAxis dataKey="name" stroke="rgba(255,255,255,0.55)" tickLine={false} />
-          <YAxis stroke="rgba(255,255,255,0.55)" tickLine={false} />
+          <YAxis
+            allowDataOverflow={false}
+            axisLine={false}
+            stroke="#c4ff28"
+            tickLine={false}
+            width={42}
+            yAxisId="power"
+          />
+          <YAxis
+            allowDataOverflow={false}
+            axisLine={false}
+            orientation="right"
+            stroke="#ffd000"
+            tickLine={false}
+            width={42}
+            yAxisId="torque"
+          />
+          <Legend
+            align="left"
+            height={30}
+            verticalAlign="top"
+            wrapperStyle={{fontSize: 12}}
+          />
           <Tooltip
             formatter={(value, _name, item) => `${item.payload?.approximate ? "≈" : ""}${Array.isArray(value) ? value[0] === value[1] ? String(value[0]) : value.join("–") : value}`}
             contentStyle={{
@@ -69,23 +94,25 @@ export function PowerChart({
           />
           <Area
             dataKey="pk"
-            name={powerUnit}
+            name={`${powerLabel} (${powerUnit})`}
             stroke="#c4ff28"
             strokeWidth={3}
             fill="url(#power)"
             type="monotone"
             connectNulls={false}
             dot={data.some(point => Array.isArray(point.pk)) ? false : {r: 3}}
+            yAxisId="power"
           />
           <Area
             dataKey="nm"
-            name="Nm"
+            name={`${torqueLabel} (Nm)`}
             stroke="#ffd000"
             strokeWidth={2}
             fill="url(#torque)"
             type="monotone"
             connectNulls={false}
             dot={data.some(point => Array.isArray(point.nm)) ? false : {r: 3}}
+            yAxisId="torque"
           />
         </AreaChart>
       </ResponsiveContainer>
