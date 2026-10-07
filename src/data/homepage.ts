@@ -87,7 +87,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     heroLineB: "auto écht",
     heroLineC: "kan.",
     heroIntro:
-      "Vul je kenteken in. We combineren RDW-gegevens met voertuigspecifieke tuningdata en tonen alleen vermogens die technisch onderbouwd zijn voor de passende configuratie.",
+      "Voertuigspecifieke Stage 1 en Stage 2 informatie, zonder generieke gokwaarden.",
     manualPanelTitle: "Of kies jouw auto handmatig",
     manualPanelText:
       "Voor klanten buiten Nederland: kies merk, model, bouwjaar en motor zonder Nederlands kenteken.",
@@ -192,7 +192,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     heroLineB: "car can really",
     heroLineC: "do.",
     heroIntro:
-      "Enter your plate. We combine RDW data with vehicle-specific tuning evidence and only show power figures that are defensible for the matching configuration.",
+      "Vehicle-specific Stage 1 and Stage 2 information, without generic guesswork.",
     manualPanelTitle: "Or choose your car manually",
     manualPanelText:
       "For customers outside the Netherlands: choose make, model, year and engine without a Dutch plate.",
@@ -297,7 +297,7 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     heroLineB: "naprawdę potrafi",
     heroLineC: "Twoje auto.",
     heroIntro:
-      "Wpisz numer rejestracyjny. Łączymy dane RDW z danymi tuningu dla konkretnej konfiguracji i pokazujemy tylko wartości, które można technicznie uzasadnić.",
+      "Dane Stage 1 i Stage 2 dla konkretnego auta, bez generowanych wartości na podstawie zgadywania.",
     manualPanelTitle: "Lub wybierz auto ręcznie",
     manualPanelText:
       "Dla klientów spoza Holandii: wybierz markę, model, rok i silnik bez holenderskiej tablicy.",

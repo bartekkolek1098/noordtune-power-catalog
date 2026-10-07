@@ -50,7 +50,11 @@ const expected = {
         const plate = page.locator("input.plate-shadow");
         assert.ok(await plate.isVisible(), `${locale}/${width}: plate lookup visible`);
         const plateBox = await plate.boundingBox();
-        assert.ok(plateBox && plateBox.y < (width < 768 ? 720 : 900), `${locale}/${width}: plate lookup above first-screen threshold`);
+        const plateFirstScreenThreshold = width < 640 ? 460 : 900;
+        assert.ok(
+          plateBox && plateBox.y < plateFirstScreenThreshold,
+          `${locale}/${width}: plate lookup above first-screen threshold ${plateFirstScreenThreshold}px`
+        );
 
         const manualCta = page.locator('a[href="#manual-selector"]').first();
         assert.ok(await manualCta.isVisible(), `${locale}/${width}: manual selector CTA visible`);
@@ -94,6 +98,13 @@ const expected = {
     assert.ok(!(await vehicleHero.getByText("Chiptuning hoofdsite", {exact: true}).isVisible()), "vehicle/390: secondary company CTA hidden from mobile hero");
     const heroBox = await vehicleHero.boundingBox();
     assert.ok(heroBox && heroBox.height < 580, `vehicle/390: compact mobile hero height ${heroBox?.height}px`);
+    const verification = vehiclePage.locator('[data-testid="catalog-verification"]');
+    const verificationBox = await verification.boundingBox();
+    assert.ok(verificationBox && verificationBox.height < 100, `vehicle/390: compact verification height ${verificationBox?.height}px`);
+    assert.ok(!(await verification.locator("p").first().isVisible()), "vehicle/390: verification detail copy collapsed on mobile");
+    const recommendation = vehiclePage.locator('[data-testid="vehicle-recommendation"]');
+    const recommendationBox = await recommendation.boundingBox();
+    assert.ok(recommendationBox && recommendationBox.y < 900, `vehicle/390: Stage comparison starts at ${recommendationBox?.y}px`);
     assert.ok(await vehiclePage.getByText("Stage 1", {exact: true}).first().isVisible(), "vehicle/390: Stage 1 visible");
     assert.ok(await vehiclePage.getByText("Stage 2", {exact: true}).first().isVisible(), "vehicle/390: Stage 2 visible");
     assert.ok(!(await vehiclePage.locator("body").innerText()).includes("Stage 3+"), "vehicle/390: Stage 3+ absent");

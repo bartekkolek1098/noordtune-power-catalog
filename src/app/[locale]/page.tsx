@@ -199,26 +199,26 @@ export default async function HomePage({params}: PageProps) {
         <div className="absolute right-0 top-24 hidden h-[34rem] w-[58%] skew-y-[-7deg] bg-[repeating-linear-gradient(100deg,transparent_0_28px,rgba(226,0,15,.18)_30px,transparent_33px)] opacity-45 lg:block" />
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#050505] to-transparent" />
 
-        <div className="container relative z-10 pb-10 pt-8 sm:pt-10 lg:pt-14">
+        <div className="container relative z-10 pb-7 pt-6 sm:pb-10 sm:pt-10 lg:pt-14">
           <div className="max-w-4xl">
             <div>
-              <Badge className="mb-5 border-primary/30 bg-primary/10 text-primary">
+              <Badge className="mb-4 border-primary/30 bg-primary/10 text-primary sm:mb-5">
                 {copy.heroKicker}
               </Badge>
-              <h1 className="racing-title max-w-3xl text-[2.45rem] leading-[0.94] text-white sm:text-5xl md:text-7xl">
+              <h1 className="racing-title max-w-3xl text-[2.15rem] leading-[0.96] text-white sm:text-5xl md:text-7xl">
                 {copy.heroLineA}
                 <span className="block text-primary max-sm:text-[1.9rem] max-sm:leading-none max-sm:hyphens-auto">
                   {copy.heroLineB}
                 </span>
                 <span className="block">{copy.heroLineC}</span>
               </h1>
-              <p className="mt-5 max-w-2xl text-[0.95rem] leading-7 text-slate-300 md:text-base">
+              <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-300 sm:mt-5 sm:text-[0.95rem] sm:leading-7 md:text-base">
                 {copy.heroIntro}
               </p>
             </div>
           </div>
 
-          <div className="panel-edge mt-7 grid gap-4 bg-black/82 p-3 shadow-[0_0_80px_rgba(0,0,0,.42)] backdrop-blur sm:p-4 lg:mt-9">
+          <div className="mt-5 grid gap-3 sm:mt-7 sm:rounded-lg sm:border sm:border-white/10 sm:bg-black/80 sm:p-4 sm:shadow-[0_0_80px_rgba(0,0,0,.42)] sm:backdrop-blur lg:mt-9">
             <PlateLookup
               locale={safeLocale}
               text={{
@@ -284,7 +284,7 @@ export default async function HomePage({params}: PageProps) {
             </a>
           </div>
 
-          <div className="mt-4 grid gap-3 sm:grid-cols-3">
+          <div className="mt-4 hidden gap-3 sm:grid sm:grid-cols-3">
             {[
               {icon: ClipboardList, ...copy.featureA},
               {icon: Gauge, ...copy.featureB},

@@ -1,78 +1,86 @@
 # NoordTune Power Catalog UX V2 — Review
 
-Base branch:
-`fix/catalog-safety-brand-stage3-v1`
+Base production main after Taxonomy V2:
+`e62a2f0eaf43c248b481798e4ad91347a70bf831`
 
-Safety dependency head:
-`17b941b7c9c4df3b7de8da145c90c08010d771ba`
+Branch:
+`feature/catalog-ux-v2-mobile`
 
 Figma concept:
 https://www.figma.com/design/zKB4LRkT6wj6Cp4ZYcUJSy
 
 ## Product goal
 
-Make the catalog easier to understand and convert on a phone without weakening
-the technical-safety rules introduced by the catalog-safety branch.
+Make the Power Catalog fast to understand and convert on a phone while keeping
+NoordTune.nl visibly primary and preserving every catalog-safety boundary.
 
-This UX pass does not change tuning figures, pricing policy, matching, canonical
-data, RDW behavior, privacy rules, routes or sitemap.
+This UX pass does not generate tuning figures, widen Stage eligibility, change
+pricing policy, expose the 58,586-row server catalog, add SEO pages or alter RDW
+privacy behavior.
 
-## Changes
+## Current UX
 
-### Plate-first hero
+### Plate-first homepage
 
-The homepage now starts with a simpler conversion message:
+The homepage starts with vehicle identification rather than technical detail.
 
-- identify the vehicle first;
-- show source-backed Stage 1 / Stage 2 information;
-- avoid generic guess values;
-- provide a clear next action.
+- compact mobile header linked back to NoordTune.nl;
+- concise Stage 1 / Stage 2 positioning without generic guess values;
+- RDW plate input is the dominant first action;
+- on 320–390 px viewports the plate field begins before 460 px;
+- manual selection follows as the fallback path;
+- the three supporting trust cards are deferred on phone widths;
+- sticky mobile actions keep plate lookup and WhatsApp available.
 
-On mobile the decorative hero image is hidden so the plate lookup stays fast,
-clear and visually dominant.
+### Real selector taxonomy
 
-### Manual selection
+The branch includes the merged Taxonomy V2 production layer.
 
-The large manual selector is no longer competing with the plate lookup in the
-hero. The hero contains one explicit manual-selection CTA and the complete
-manual selector follows immediately below the hero.
+- 4,592 real discovery configurations;
+- generated model × trim cross-products are suppressed where taxonomy covers;
+- taxonomy-only vehicles remain on-request;
+- no new SEO pages are created;
+- Stage 3 remains absent from the customer catalog.
 
-### Trust messaging
+### Vehicle detail hierarchy
 
-The three benefit cards were rewritten around:
+Vehicle pages prioritize the decision path before secondary technical detail.
 
-- exact vehicle identity first;
-- Stage 1 / Stage 2 evidence instead of generic figures;
-- a clear price indication or confirmation request.
-
-### Result priority on mobile
-
-The example result now presents the Stage 1 / Stage 2 cards before the secondary
-vehicle-detail panel on narrow screens.
+- compact mobile hero;
+- Stage 1 before Stage 2;
+- Stage 2 remains honest about on-request scope where evidence is insufficient;
+- ECU-family detail is not placed in the mobile conversion hero;
+- the secondary NoordTune.nl/chiptuning CTA is hidden from the mobile hero;
+- sticky quote / WhatsApp actions remain available.
 
 ## Localization
 
-Conversion copy was updated consistently in NL, EN and PL.
+Conversion hierarchy and copy are implemented in NL, EN and PL.
 
 ## Validation
 
-PASS:
+PASS on the integrated branch:
 
+- `pnpm test:tuning`
+- `pnpm test:seo`
 - `pnpm typecheck`
 - `pnpm lint`
-- `pnpm test:seo`
-- `pnpm test:tuning`
 - `pnpm build`
-- dedicated browser QA at 320 / 390 / 768 / 1440 px for NL / EN / PL
+- local production browser QA at 320 / 390 / 768 / 1440 for NL / EN / PL
+- BMW 320d mobile vehicle-detail QA
 
 Browser QA verifies:
 
-- plate lookup visible in the first-screen conversion flow;
+- NoordTune.nl remains the primary company-site destination;
+- plate lookup stays inside the mobile first-screen threshold;
 - manual selector follows the plate-first flow;
-- Stage 1 precedes Stage 2 on mobile;
+- Stage 1 precedes Stage 2;
 - no Stage 3+ customer copy;
 - no horizontal overflow;
-- no console/page errors.
+- no console/page errors;
+- mobile sticky conversion controls remain usable.
 
-The implementation remains stacked on the catalog-safety branch and must not be
-merged independently before PR #22.
+## Release gate
+
+Draft until the latest pushed head has a successful Vercel Preview and that exact
+Preview tree passes fresh browser QA. Do not merge from local-only QA.

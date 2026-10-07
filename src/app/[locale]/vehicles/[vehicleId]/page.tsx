@@ -191,6 +191,7 @@ export default async function VehiclePage({params}: PageProps) {
 
       {vehicle.verificationRequired ? (
         <CatalogVerificationNotice
+          mobileCompact
           text={catalogVerificationCopy(vehicle, safeLocale, {
             badge: t("verification.badge"),
             title: t("verification.title"),
