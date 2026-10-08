@@ -24,16 +24,16 @@
     "missingFirstAdmissionYear": 0
   },
   "stage1": {
-    "sourceLinkedIndicative": 1672,
+    "sourceLinkedIndicative": 1773,
     "genericIndicative": 0,
     "canonicalEstimated": 0,
     "otherNumericUnverified": 5,
-    "withoutNumeric": 1323,
-    "anyNumeric": 1677,
-    "sourceLinkedShareOfFrozenPercent": 55.73,
-    "sourceLinkedWithinOrdinaryIce": 1672,
-    "sourceLinkedWithinFullTechnicalIdentity": 1545,
-    "sourceLinkedShareOfOrdinaryIcePercent": 64.56,
+    "withoutNumeric": 1222,
+    "anyNumeric": 1778,
+    "sourceLinkedShareOfFrozenPercent": 59.1,
+    "sourceLinkedWithinOrdinaryIce": 1773,
+    "sourceLinkedWithinFullTechnicalIdentity": 1646,
+    "sourceLinkedShareOfOrdinaryIcePercent": 68.46,
     "disclaimer": "Source-linked is an application/reference published Stage 1, NOT a measured or guaranteed owner/ECU result. Generic and generated canonical numbers are NOT counted as sourced."
   },
   "stage2": {
@@ -44,25 +44,14 @@
     "customerNumeric": 0
   },
   "internalCoverageClasses": {
-    "A": 213,
-    "B": 1454,
-    "C": 77,
-    "D": 853,
+    "A": 207,
+    "B": 1561,
+    "C": 67,
+    "D": 762,
     "E": 403,
     "unknown": 0
   },
   "topUnresolvedGroups": [
-    {
-      "priorityRank": 20,
-      "make": "FORD",
-      "model": "TRANSIT CONNECT",
-      "displacementCc": 1499,
-      "yearBand": "2020–2024",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
-    },
     {
       "priorityRank": 39,
       "make": "FORD",
@@ -117,17 +106,6 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 11
-    },
-    {
-      "priorityRank": 74,
-      "make": "NISSAN",
-      "model": "NISSAN QASHQAI",
-      "displacementCc": 1197,
-      "yearBand": "2015–2019",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
     },
     {
       "priorityRank": 76,
@@ -271,17 +249,6 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 0
-    },
-    {
-      "priorityRank": 137,
-      "make": "NISSAN",
-      "model": "NISSAN QASHQAI",
-      "displacementCc": 1197,
-      "yearBand": "2010–2014",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
     },
     {
       "priorityRank": 141,
@@ -491,6 +458,39 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 6
+    },
+    {
+      "priorityRank": 192,
+      "make": "VOLKSWAGEN",
+      "model": "CADDY",
+      "displacementCc": 1984,
+      "yearBand": "2010–2014",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 3
+    },
+    {
+      "priorityRank": 194,
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "displacementCc": 1497,
+      "yearBand": "2020–2024",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 0
+    },
+    {
+      "priorityRank": 195,
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI OUTLANDER",
+      "displacementCc": 2360,
+      "yearBand": "2015–2019",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 0
     }
   ],
   "nextDecisionRule": "Prioritize unresolved groups from this fixed nonrandom cohort, then verify precise stock kW, engine generation, RDW type, cc, fuel, ECU/gearbox constraints and independent tuner sources before releasing any Stage 1 result."

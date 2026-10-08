@@ -10,6 +10,7 @@ const {planBrowserQa}=require("./rdw-browser-qa-plan.cjs");
 const {reviewedBulkRdwApplications}=require("../src/data/reviewed-rdw-bulk-batch.ts");
 const {reviewedRdwBulkBatch2}=require("../src/data/reviewed-rdw-bulk-batch-2.ts");
 const {reviewedRdwBulkBatch3}=require("../src/data/reviewed-rdw-bulk-batch-3.ts");
+const {reviewedRdwBulkBatch4}=require("../src/data/reviewed-rdw-bulk-batch-4.ts");
 
 const flag=process.argv[2]??"--smoke";
 assert.ok(["--smoke","--full"].includes(flag),
@@ -21,7 +22,8 @@ const target=process.env.RDW_QA_URL||"http://127.0.0.1:3157";
 const rootOutput=process.env.RDW_QA_OUTPUT||
   "C:/Users/barto/Desktop/noordtune-rdw-risk-qa";
 const targets=[
-  {script:"qa-rdw-bulk-3-browser.cjs",label:"new15",apps:reviewedRdwBulkBatch3,mode:full?"full":"smoke"},
+  {script:"qa-rdw-bulk-4-browser.cjs",label:"new25",apps:reviewedRdwBulkBatch4,mode:full?"full":"smoke"},
+  {script:"qa-rdw-bulk-3-browser.cjs",label:"previous15third",apps:reviewedRdwBulkBatch3,mode:full?"full":"regression"},
   {script:"qa-rdw-bulk-2-browser.cjs",label:"previous20",apps:reviewedRdwBulkBatch2,mode:full?"full":"regression"},
   {script:"qa-rdw-bulk-browser.cjs",label:"previous15",apps:reviewedBulkRdwApplications,mode:full?"full":"regression"}
 ];
