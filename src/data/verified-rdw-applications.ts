@@ -292,6 +292,40 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
       scope:"A1 8X 1390 cc original 122 PS/200 Nm, Stage 1 155 PS/270 Nm, listed engine CNVA/ECU MED17.5.5; not proof of customer's installed ECU."}
   ],
   reviewNote:"The exact 90 kW Audi A1 8X petrol has Audi factory 122 PS/200 Nm; published mild-to-strong Stage 1 source claims span 135–155 PS and 230–270 Nm. The owner must verify engine/ECU, RON, maintenance and DQ200/manual drivetrain before a price or performance statement. These are independent provider claims, not measured NoordTune output; no numerical Stage 2/3."
+}, {
+  id: "rdw-audi-a3-8p-14-tfsi-125",
+  make: "Audi", model: "A3", generation: "8P facelift (2008–2012)",
+  yearFrom: 2008, yearTo: 2012,
+  displacementCc: 1390, cylinders: 4,
+  registeredPowerKw: 92, requiredRdwType: "8P",
+  allowedRdwModels: ["AUDI A3", "A3"],
+  stockPowerHp: 125, stockTorqueNm: 200, fuel: "Petrol",
+  engineLabel: "1.4 TFSI petrol turbo 1390 cc / 92 kW (CAXC/EA111 check required)",
+  requirements: "Require actual Audi A3 facelift type 8P 1390 cc original 92 kW petrol and model-year-suitable engine. Source catalogues target 2008–2012; 2013/2014 first registrations are withheld until ECU and production-year documentary evidence is reviewed. Confirm CAXC/EA111 engine and installed ECU, timing chain/oil health, RON grade and manual or DQ200 dry-clutch limits. Excludes A3 8V/8Y/8L, 1.2 TFSI 1197 cc, 122 PS/90 kW, Sportback without exact reviewed registration name, hybrids/E85 and unsupported later stages.",
+  powerRangeHp: [135, 150], torqueRangeNm: [230, 255],
+  sources: [
+    {title: "TVS Engineering Audi A3 8P 1.4 TFSI 125 PS mild Stage 1",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://tvsengineering.com/tuning/audi-a3-8p-2008-2012-1-4-tfsi-125hp-tuning/",
+      scope: "Audi A3 8P 2008–2012, original 125 PS/200 Nm, documented CAXC and DQ200 provider scope. Mild Stage 1 135 PS/230 Nm; gearbox type not inferred from RDW."},
+    {title: "Shiftech Audi A3 8P 1.4 TSI/TFSI 125 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.shiftech.eu/en/chiptuning/car/audi/a3/2008-8p/petrol/1.4-tsi-tfsi-125",
+      scope: "Audi A3 8P 1.4 TFSI stock 125 PS/200 Nm, Stage 1 140 PS/240 Nm; separate E85 programmes explicitly excluded."},
+    {title: "VAGtechniek Audi A3 8P facelift 1.4 TFSI 125 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.vagtechniek.nl/chiptuning/audi/a3/8p-facelift/1.4-tfsi-125pk/",
+      scope: "A3 8P facelift 1.4 TFSI 125 PS/200 Nm, Stage 1 145 PS/250 Nm; Stage 1+ 150 PS/260 Nm not included."},
+    {title: "BR-Performance Audi A3 8P facelift 1.4 TSI 125 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.br-performance.nl/nl-nl/chiptuning/1-wagens/11-audi/213-a3-a3-berline/214-8p-mk2-2008-2012/5156-1-4-tsi/",
+      scope: "A3 8P facelift 2008–2012 1.4 TSI stock 125 PS/200 Nm, Stage 1 145 PS/250 Nm, not E85."},
+    {title: "SLS Tuning Audi A3 8P 1.4 TSI original 92 kW",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.slstuning.de/chiptuning/audi/a3-8p/800-14-tsi/stage-1/",
+      scope: "A3 8P original 92 kW / 125 PS / 200 Nm; Stage 1 110 kW / 150 PS / 255 Nm. The 110 kW denotes tuned power, NOT another stock A3 engine."}
+  ],
+  reviewNote: "Five reviewed A3 8P 125 PS Stage 1 source indications: 135–150 PS and 230–255 Nm; output is a publisher range, not NoordTune dyno data or a guarantee. Exact 92 kW/1390cc/8P registration and 2008–2012 original admission required. Four 2013 A3 8P registrations in the frozen cohort remain held for production-year/ECU evidence. A competing Tuning Service listing erroneously states 1197cc for its nominal 1.4 TFSI 125 PS; intentionally excluded. Installed CAXC, ECU, DSG/manual, maintenance and fuel require workshop review; no Stage 2 or Stage 3 figures."
 }];
 
 function normalized(value?: string) {
@@ -328,6 +362,8 @@ function matches(input: EstimateMatchInput, app: VerifiedApplication) {
   // RDW 8X is not the later GB/8Y Audi A1; a contradictory generation hint vetoes the claim.
   if (app.make === "Audi" && app.generation.startsWith("8X") &&
     /\b(?:GB|8Y|S1)\b/i.test(generationHints)) return false;
+  if (app.make === "Audi" && app.generation.startsWith("8P") &&
+    /\b(?:8L|8V|8Y)\b/i.test(generationHints)) return false;
   return normalized(input.make) === normalized(app.make)
     && model.split(" ").includes(normalized(app.model))
     && (app.allowedRdwModels === undefined || app.allowedRdwModels.some(name => normalized(name) === model))
