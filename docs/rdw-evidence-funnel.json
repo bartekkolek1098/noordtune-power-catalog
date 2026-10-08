@@ -24,16 +24,16 @@
     "missingFirstAdmissionYear": 0
   },
   "stage1": {
-    "sourceLinkedIndicative": 1527,
+    "sourceLinkedIndicative": 1556,
     "genericIndicative": 0,
     "canonicalEstimated": 0,
     "otherNumericUnverified": 5,
-    "withoutNumeric": 1468,
-    "anyNumeric": 1532,
-    "sourceLinkedShareOfFrozenPercent": 50.9,
-    "sourceLinkedWithinOrdinaryIce": 1527,
-    "sourceLinkedWithinFullTechnicalIdentity": 1400,
-    "sourceLinkedShareOfOrdinaryIcePercent": 58.96,
+    "withoutNumeric": 1439,
+    "anyNumeric": 1561,
+    "sourceLinkedShareOfFrozenPercent": 51.87,
+    "sourceLinkedWithinOrdinaryIce": 1556,
+    "sourceLinkedWithinFullTechnicalIdentity": 1429,
+    "sourceLinkedShareOfOrdinaryIcePercent": 60.08,
     "disclaimer": "Source-linked is an application/reference published Stage 1, NOT a measured or guaranteed owner/ECU result. Generic and generated canonical numbers are NOT counted as sourced."
   },
   "stage2": {
@@ -44,10 +44,10 @@
     "customerNumeric": 0
   },
   "internalCoverageClasses": {
-    "A": 270,
-    "B": 1252,
-    "C": 111,
-    "D": 964,
+    "A": 213,
+    "B": 1338,
+    "C": 109,
+    "D": 937,
     "E": 403,
     "unknown": 0
   },
@@ -73,17 +73,6 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 0
-    },
-    {
-      "priorityRank": 45,
-      "make": "HYUNDAI",
-      "model": "I20",
-      "displacementCc": 998,
-      "yearBand": "2020–2024",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 4
     },
     {
       "priorityRank": 59,
@@ -196,17 +185,6 @@
       "technicalFactsComplete": 12
     },
     {
-      "priorityRank": 95,
-      "make": "CITROEN",
-      "model": "C3",
-      "displacementCc": 1199,
-      "yearBand": "2015–2019",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
-    },
-    {
       "priorityRank": 100,
       "make": "TOYOTA",
       "model": "TOYOTA COROLLA",
@@ -251,17 +229,6 @@
       "technicalFactsComplete": 12
     },
     {
-      "priorityRank": 118,
-      "make": "SEAT",
-      "model": "IBIZA",
-      "displacementCc": 999,
-      "yearBand": "2015–2019",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
-    },
-    {
       "priorityRank": 120,
       "make": "PEUGEOT",
       "model": "5008",
@@ -287,17 +254,6 @@
       "priorityRank": 125,
       "make": "NISSAN",
       "model": "NISSAN JUKE",
-      "displacementCc": 999,
-      "yearBand": "2020–2024",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
-    },
-    {
-      "priorityRank": 127,
-      "make": "NISSAN",
-      "model": "NISSAN MICRA",
       "displacementCc": 999,
       "yearBand": "2020–2024",
       "sampleCount": 12,
@@ -491,6 +447,50 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 11
+    },
+    {
+      "priorityRank": 168,
+      "make": "MINI",
+      "model": "MINI",
+      "displacementCc": 1598,
+      "yearBand": "2010–2014",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 12
+    },
+    {
+      "priorityRank": 170,
+      "make": "SEAT",
+      "model": "MII",
+      "displacementCc": 999,
+      "yearBand": "2010–2014",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 12
+    },
+    {
+      "priorityRank": 173,
+      "make": "BMW",
+      "model": "320E",
+      "displacementCc": 1998,
+      "yearBand": "2020–2024",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 0
+    },
+    {
+      "priorityRank": 176,
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "displacementCc": 1595,
+      "yearBand": "2000–2004",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 0
     }
   ],
   "nextDecisionRule": "Prioritize unresolved groups from this fixed nonrandom cohort, then verify precise stock kW, engine generation, RDW type, cc, fuel, ECU/gearbox constraints and independent tuner sources before releasing any Stage 1 result."
