@@ -643,3 +643,7 @@ export const popularCars: PopularCar[] = [
     }
   }
 ];
+
+/** Only three photo cards on the catalog landing page; every other curated vehicle remains linked below. */
+const featuredCatalogIds = new Set(["bmw-320d-b47", "vw-golf-20-tsi-ea888", "audi-a3-20-tdi"]);
+export const featuredCatalogCars = popularCars.filter((car) => featuredCatalogIds.has(car.detailId));

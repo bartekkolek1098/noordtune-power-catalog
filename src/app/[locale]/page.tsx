@@ -13,7 +13,7 @@ import {customerVehicle} from "@/lib/customer-profile";
 import {catalogHomeCopy} from "@/data/catalog-home-copy";
 import {chiptuningHref, mainLocaleHref} from "@/lib/noordtune-links";
 
-import {homeVisualCopy,popularCars} from "@/data/homepage";
+import {homeVisualCopy,featuredCatalogCars} from "@/data/homepage";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
@@ -108,7 +108,7 @@ export default async function HomePage({params}: PageProps) {
     rdwPrimary: manual("rdwPrimary"),
     from: t("from")
   };
-  const popularVehicleIds = new Set(popularCars.map((car) => car.detailId));
+  const popularVehicleIds = new Set(featuredCatalogCars.map((car) => car.detailId));
   const additionalCatalogVehicles = engineCatalog.filter(
     (vehicle) => !popularVehicleIds.has(vehicle.id)
   );
@@ -307,7 +307,7 @@ export default async function HomePage({params}: PageProps) {
         <h2 className="ux-content-heading mt-4" id="catalog-popular-heading">{pageCopy.featured.title}</h2>
         <p className="ux-section-intro">{pageCopy.featured.intro}</p>
         <div className="ux-vehicle-cards">
-          {popularCars.map((car)=>{
+          {featuredCatalogCars.map((car)=>{
             const original=getVehicleById(car.detailId);
             const vehicle=original?customerVehicle(original):undefined;
             const href=sitePath(`/${safeLocale}/vehicles/${car.detailId}`);

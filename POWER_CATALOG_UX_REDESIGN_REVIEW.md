@@ -44,6 +44,14 @@ Editable UI mockups: [NoordTune UX Refresh — Figma](https://www.figma.com/desi
 - **SEO:** homepage metadata and content now explicitly describe `power.noordtune.nl` as a standalone **CollectionPage** backed by the main `www.noordtune.nl` provider. The canonical/hreflang remain on the power subdomain; all 219 public URLs and 24 curated vehicle pages remain linked. NL/EN/PL vehicle/stage SEO explanation copy now explicitly covers scope, estimate limitations, Stage 2 hardware checks and the source of the workshop quotation.
 - **Quality gate:** the mobile/SEO suite asserts 10-item header parity, flags, full-screen navigation, desktop photo/card gap, no second desktop hero image, original RDW figures, localized source copy, collection schema, all curated profile links, vehicle details and Stage 1 SEO route at 320/390/768/1440px. Rebuild and focused SEO QA required before review.
 
+## Iteration 4 — shorter featured cars and Zichtgroei credit
+
+- On the catalog landing page only **three** curated cars render as photographic cards (BMW 3 Series, VW Golf GTI / R, Audi A3 / S3). Previously the larger gallery showed ten photographic cards and made the page unnecessarily long.
+- All other **21** curated vehicle profiles remain present as server-rendered links in the expandable `More vehicle profiles` section. The 219 canonical sitemap routes and full 24-profile internal link coverage are unchanged.
+- The footer now shows a small (112 px wide) **Zichtgroei** logo sourced from the user's supplied official SVG brand pack, with a localized attribution for website and catalog-system development in NL/EN/PL. The credit is intentionally secondary to the NoordTune logo and existing navigation. No unverified agency domain was added.
+- The new logo is a standalone vector asset at `public/brand/zichtgroei-logo-footer.svg`. It does not change the NoordTune favicon or branding.
+- A focused mobile/SEO smoke check verifies exactly three photographic cards, all 24 curated profile links, the Zichtgroei logo/credit and lack of horizontal overflow.
+
 ## Verification and acceptance
 
 - `pnpm typecheck` and `pnpm exec eslint src`: zero errors.

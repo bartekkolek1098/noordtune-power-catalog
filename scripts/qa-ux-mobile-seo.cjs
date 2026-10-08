@@ -49,6 +49,13 @@ const scenarios=[["nl",320,720],["nl",390,844],["nl",768,900],["nl",1440,900],["
    const schemas=await page.locator('script[type="application/ld+json"]').allTextContents();
    assert.ok(schemas.some(x=>JSON.parse(x)["@type"]==="CollectionPage"),"Catalog home uses CollectionPage, not workshop service schema");
    assert.equal(await page.locator("#catalog-handoff-heading").count(),1,"The catalog hands off workshop services to NoordTune.nl");
+   assert.equal(await page.locator(".ux-vehicle-cards > .ux-vehicle-card").count(),3,"Home must have exactly three photo vehicle cards");
+   const zLogo=page.locator('footer img[alt="Zichtgroei"]');
+   assert.equal(await zLogo.count(),1,"Zichtgroei attribution uses one small, accessible logo");
+   assert.ok((await zLogo.getAttribute("src"))?.includes("zichtgroei-logo-footer.svg"),"Footer uses the supplied SVG brand logo");
+   const credit=await page.locator('footer [aria-label="Zichtgroei"]').innerText();
+   assert.match(credit,locale==="nl"?/website en catalogussysteem/i:locale==="en"?/website and catalog system/i:/strony oraz systemu katalogowego/i,"Footer development credit is localized");
+   assert.ok((await zLogo.boundingBox())?.width<=120,"Designer credit must not dominate footer");
    if(locale==="nl"){
     const hrefs=await page.locator('a[href^="/nl/vehicles/"]').evaluateAll(es=>[...new Set(es.map(a=>a.getAttribute("href")).filter(Boolean))]);
     assert.ok(hrefs.length>=24,"At least 24 curated vehicle profiles remain linked for SEO");
