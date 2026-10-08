@@ -15,18 +15,12 @@ const output=process.env.RDW_QA_OUTPUT||"C:/Users/barto/Desktop/noordtune-rdw-bu
 const oidc=process.env.VERCEL_OIDC_TOKEN||"";
 const previewOrigin=new URL(base).origin;
 const protectedPreview=new URL(base).hostname.endsWith(".vercel.app");
-const selectedApps=process.env.RDW_QA_ONLY
- ? reviewedBulkRdwApplications.filter(a=>a.id===process.env.RDW_QA_ONLY)
- : reviewedBulkRdwApplications;
-assert.ok(selectedApps.length>0,"Explicit QA subset must identify an approved application");
-const expectedJourneys=selectedApps.length*5;
-const scenarios=selectedApps.flatMap((app,index)=>{
-  const tasks=["nl","en","pl"].map(locale=>({app,index,locale,width:390}));
-  tasks.push({app,index,locale:"nl",width:320},{app,index,locale:"nl",width:1180});
-  return tasks;
-});
+const qaMode=process.env.RDW_QA_MODE||"full";
+const {planBrowserQa}=require("./rdw-browser-qa-plan.cjs");
+const {selectedApps,scenarios,expectedJourneys}=planBrowserQa(
+  reviewedBulkRdwApplications,{mode:qaMode,only:process.env.RDW_QA_ONLY||""}
+);
 assert.equal(reviewedBulkRdwApplications.length,20);
-assert.equal(scenarios.length,expectedJourneys);
 const allowed=frozen.rows;
 (async()=>{
  fs.mkdirSync(output,{recursive:true});
@@ -128,15 +122,15 @@ const allowed=frozen.rows;
       stockPs:app.stockPowerHp,stage1:app.powerRangeHp,torque:app.torqueRangeNm,overflow});
     }finally{await page.close();}
    }
-   assert.equal(batch.length,5);
+   assert.equal(batch.length,items.length);
    results.push(...batch);
    console.log("PASS RDW_BULK_APPLICATION "+app.id+" "+results.length+"/"+expectedJourneys);
   }
   assert.equal(results.length,expectedJourneys);
   fs.writeFileSync(path.join(output,"qa-summary.json"),
-    JSON.stringify({checkedAt:new Date().toISOString(),applicationCount:selectedApps.length,
+    JSON.stringify({checkedAt:new Date().toISOString(),mode:qaMode,allApplications:reviewedBulkRdwApplications.length,applicationCount:selectedApps.length,
       count:results.length,results,protectedPreview:!!(oidc&&protectedPreview)},null,2)+"\n");
   console.log("RDW_BULK2_BROWSER_QA_PASS: "+results.length+"/"+expectedJourneys+" across "+selectedApps.length+" exact source-reviewed RDW applications "+
-    "(NL/EN/PL 390px and NL 320/1180px); "+(oidc&&protectedPreview?"protected preview":"local/public HTTP"));
+    "(mode="+qaMode+"); "+(oidc&&protectedPreview?"protected preview":"local/public HTTP"));
  }finally{await context.close();await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
