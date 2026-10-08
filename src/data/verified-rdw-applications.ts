@@ -176,6 +176,32 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
       scope: "Official Nissan release: Juke 1.2 DIG-T 115 PS (85 kW), 190 Nm, 1197 cc with six-speed manual. Manufacturer stock data only, not an ECU or tuning result."}
   ],
   reviewNote: "Independent F15 1.2 DIG-T Stage 1 observations 130–131 PS / 230–231 Nm. Official original 85 kW corresponds to a manufacturer-labelled 115 PS, while the RDW metric conversion is rounded to 116 PS. ECU, transmission, year, fuel and vehicle condition must be checked; no guarantee of gains."
+}, {
+  id: "rdw-skoda-octavia-5e-14-tsi-140",
+  make: "Skoda", model: "Octavia", generation: "5E (III, pre-facelift)",
+  yearFrom: 2013, yearTo: 2015,
+  displacementCc: 1395, cylinders: 4,
+  // RDW registration 103 kW resolves to about 140 metric PS.
+  registeredPowerKw: 103, requiredRdwType: "5E",
+  stockPowerHp: 140, stockTorqueNm: 250, fuel: "Petrol",
+  engineLabel: "1.4 TSI EA211 (1395 cc, 103 kW), CHPA check required",
+  requirements: "Confirm Octavia III type 5E, EA211/CHPA engine code and installed ECU; verify fuel octane, engine health and manual/DSG clutch or gearbox torque limits before calibration. Excludes 1.4 TSI 150 PS, 1.4 TGI G-TEC CNG, hybrid and Stage 1+.",
+  powerRangeHp: [170, 180], torqueRangeNm: [300, 320],
+  sources: [
+    {title: "BR-Performance Octavia III 1.4 TSI CHPA 140 PS (2013–2015)",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.br-performance.nl/nl-nl/chiptuning/1-wagens/49-skoda/2764-octavia/5430-2013-2017/5435-1-4-tsi-chpa/",
+      scope: "Octavia III 1.4 TSI 140 PS / 250 Nm, model years 2013–2015, Stage 1 170 PS / 300 Nm; explicitly not the later 150 PS engine."},
+    {title: "Shiftech Octavia 2013 1.4 TSI 140 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2013/petrol/1.4-tsi-tfsi-ss-140",
+      scope: "Octavia 2013 1.4 TSI 140 PS / 250 Nm; Stage 1 180 PS / 300 Nm, excluding E85."},
+    {title: "VAGtechniek Octavia 5E 1.4 TSI 140 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.vagtechniek.nl/chiptuning/skoda/octavia/5e/1.4-tsi-140pk/",
+      scope: "Octavia 5E 1.4 TSI 140 PS / 250 Nm, Stage 1 180 PS / 320 Nm; separate Stage 1+ 185/330 is excluded, DSG requires individual confirmation."}
+  ],
+  reviewNote: "Three independently published 5E/CHPA 140 PS Stage 1 indications span 170–180 PS and 300–320 Nm; source-only example, not a NoordTune dyno measurement. Exact 103 kW RDW type 5E petrol identity is required. ECU, fuel, clutch/DSG, condition and calibration limits must be confirmed before quotation; no numerical Stage 2 or Stage 3."
 }];
 
 function normalized(value?: string) {
@@ -205,6 +231,8 @@ function matches(input: EstimateMatchInput, app: VerifiedApplication) {
     ? /\b(?:1M|5F|KL)\b/i : /\b(?:1M|1P|KL)\b/i).test(generationHints)) return false;
   if (app.make === "Nissan" && app.generation.startsWith("F15") &&
     /\b(?:F16|J11|J12)\b/i.test(generationHints)) return false;
+  if (app.make === "Skoda" && app.generation.startsWith("5E") &&
+    /\b(?:1Z|NX)\b/i.test(generationHints)) return false;
   return normalized(input.make) === normalized(app.make)
     && model.split(" ").includes(normalized(app.model))
     && year !== undefined && year >= app.yearFrom && year <= app.yearTo
