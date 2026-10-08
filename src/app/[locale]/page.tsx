@@ -9,8 +9,6 @@ import {
   Info,
   Settings2,
   ShieldCheck,
-  SlidersHorizontal,
-  Wrench
 } from "lucide-react";
 import {
   engineCatalog,
@@ -31,6 +29,7 @@ import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {ManualSelector} from "@/components/manual-selector";
+import {HeroPhoto} from "@/components/hero-photo";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {PlateLookup} from "@/components/plate-lookup";
 import {Badge} from "@/components/ui/badge";
@@ -159,6 +158,12 @@ export default async function HomePage({params}: PageProps) {
     pl: {check:"Sprawdź możliwości", manual:"Lub szukaj po marce i modelu", diagnostic:"Przejrzysty punkt wyjścia dla Twojego auta", search:"Wolisz wybrać auto ręcznie?"}
   }[safeLocale];
 
+  const processCopy = {
+    nl: {eyebrow:"EERST BEGRIJPEN. DAN AFSTEMMEN.",intro:"Geen standaardbelofte voor iedere motor. We beginnen bij de voertuiggegevens en bepalen daarna welke vervolgstap verantwoord is.",cta:"Controleer jouw auto",imageAlt:"Illustratieve foto van een monteur die een automotor controleert",photoCredit:"Sfeerbeeld · Dextar Studio / Unsplash"},
+    en: {eyebrow:"UNDERSTAND FIRST. TUNE SECOND.",intro:"No blanket performance promise. We start with the vehicle facts, then determine the appropriate next step.",cta:"Check your car",imageAlt:"Illustrative photograph of a mechanic inspecting a vehicle engine",photoCredit:"Illustrative photo · Dextar Studio / Unsplash"},
+    pl: {eyebrow:"NAJPIERW ANALIZA. POTEM TUNING.",intro:"Nie obiecujemy jednego wyniku dla każdego silnika. Najpierw dane pojazdu, później odpowiedni zakres prac.",cta:"Sprawdź samochód",imageAlt:"Ilustracyjne zdjęcie mechanika kontrolującego silnik",photoCredit:"Zdjęcie ilustracyjne · Dextar Studio / Unsplash"}
+  }[safeLocale];
+
   const jsonLd = {
     "@context": "https://schema.org",
     ...noordTuneProviderJsonLd(),
@@ -198,25 +203,7 @@ export default async function HomePage({params}: PageProps) {
                 <a href="#manual-selector">{quickCopy.manual}</a>
               </div>
             </div>
-            <div className="ux-hero__visual hidden lg:flex" aria-label={quickCopy.diagnostic}>
-              <div className="ux-reference-top">
-                <span>NOORDTUNE / POWER CATALOG</span>
-                <span>01 — 03</span>
-              </div>
-              <div className="ux-reference-body">
-                <span className="ux-reference-marker">RDW / 01</span>
-                <strong>{quickCopy.diagnostic}</strong>
-                <p>{copy.featureA.text}</p>
-              </div>
-              <div className="ux-reference-bottom">
-                {copy.process.slice(0,3).map((step,index)=>(
-                  <div className="ux-reference-step" key={step.title}>
-                    <span>{String(index+1).padStart(2,"0")}</span>
-                    <span>{step.title}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <HeroPhoto locale={safeLocale} />
           </div>
           <div className="ux-lookup-wrap scroll-mt-28" id="rdw-check">
             <PlateLookup
@@ -276,6 +263,7 @@ export default async function HomePage({params}: PageProps) {
             />
           </div>
           <a className="ux-mobile-manual-link lg:hidden" href="#manual-selector">{quickCopy.manual}<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
+          <HeroPhoto locale={safeLocale} compact />
           <div className="ux-assurances" aria-label={quickCopy.diagnostic}>
             {[copy.featureA,copy.featureB,copy.featureC].map((feature,index)=>(
               <div className="ux-assurance" key={feature.title}>
@@ -580,26 +568,36 @@ export default async function HomePage({params}: PageProps) {
         </div>
       </section>
 
-      <section className="container py-12" id="how">
-        <div className="rounded-lg border border-white/10 bg-black/55 p-6">
-          <h2 className="ux-content-heading text-center">
-            {copy.howTitleA} <span className="text-primary">{copy.howTitleB}</span>
-          </h2>
-          <div className="ux-steps mt-8 grid gap-5 md:grid-cols-4">
-            {[ClipboardList, ShieldCheck, SlidersHorizontal, Wrench].map((Icon, index) => {
-              const step = copy.process[index];
-              return (
-                <div className="text-center" key={step.title}>
-                  <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full border border-primary text-primary">
-                    <Icon className="h-6 w-6" />
+      <section className="container ux-process-section" id="how">
+        <div className="ux-process-layout">
+          <figure className="ux-process-photo">
+            <Image
+              alt={processCopy.imageAlt}
+              className="ux-process-photo__image object-cover"
+              fill
+              loading="lazy"
+              quality={82}
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              src={assetPath("/brand/editorial/engine-inspection-unsplash-dextar-studio.jpg")}
+            />
+            <figcaption className="ux-process-photo__credit">{processCopy.photoCredit}</figcaption>
+          </figure>
+          <div className="ux-process-content">
+            <p className="ux-eyebrow">{processCopy.eyebrow}</p>
+            <h2 className="ux-content-heading mt-5">{copy.howTitleA} <span className="text-primary">{copy.howTitleB}</span></h2>
+            <p className="ux-process-intro">{processCopy.intro}</p>
+            <ol className="ux-process-list">
+              {copy.process.map((step, index) => (
+                <li key={step.title}>
+                  <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+                  <div>
+                    <h3>{step.title}</h3>
+                    <p>{step.text}</p>
                   </div>
-                  <div className="font-black uppercase text-white">
-                    {index + 1}. {step.title}
-                  </div>
-                  <p className="mt-2 text-sm leading-6 text-muted-foreground">{step.text}</p>
-                </div>
-              );
-            })}
+                </li>
+              ))}
+            </ol>
+            <a className="ux-process-cta" href="#rdw-check">{processCopy.cta}<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
           </div>
         </div>
       </section>

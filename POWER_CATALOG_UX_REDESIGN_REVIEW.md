@@ -18,12 +18,22 @@ Editable UI mockups: [NoordTune UX Refresh — Figma](https://www.figma.com/desi
 ## Changed surfaces
 
 - `src/app/[locale]/page.tsx`: editorial intro, RDW primary, clear manual-search path, text-only service tiles, structured sections, mobile action bar.
-- `src/app/globals.css`: theme, accessible focus states, responsive layout, spacing, touch targets and reduced-motion support.
+- `src/app/globals.css` + `src/app/editorial-v2.css`: preserve the stable base design and isolate iteration-2 photographic styling for a low-risk UI revert, accessible focus states, responsive spacing, touch targets and reduced-motion support.
+- `src/components/hero-photo.tsx`: two responsive uses of one accessible, credited, locally optimized photograph — a desktop editorial panel and a compact below-form mobile strip.
 - `src/components/catalog-header.tsx` and `language-switcher.tsx`: single clean desktop nav, compact mobile menu, no off-screen menu ribbon.
 - `src/components/plate-lookup.tsx` and `manual-selector.tsx`: visual styling and input labeling; data logic and networking unchanged.
 - `src/components/mobile-action-bar.tsx` plus vehicle/stage pages: faster conversion action on mobile, without duplicate floating WhatsApp controls.
 - `src/components/vehicle-detail.tsx`, shared buttons, colors: visually consistent result cards without changing power, torque or pricing formulas.
 - `src/data/homepage.ts`: shorter, genuinely informative NL/EN/PL introductory copy; no SEO metadata rewrites.
+
+## Iteration 2 — premium photography and shorter mobile journey
+
+- **Hero:** a real, subtly desaturated headlight photograph alongside a three-line typographic statement on desktop. On mobile, the registration form stays above the photographic strip, so the image cannot push the primary lookup out of the first viewport.
+- **Technical process:** a separately photographed engine inspection reinforces the procedure instead of using generic icons or fictional dynamometer curves. Both photographs are labelled illustrative and never represented as NoordTune customer work.
+- **Manual search:** the brand/model/year/engine selectors appear ahead of popular vehicles on mobile unless a quick-search query is active (in that case, search results appear first). The quick-search and RDW lookup each wait for actual React hydration in browser QA.
+- **Vehicle pages:** secondary cross-site button is hidden in the mobile hero (still available at desktop and in the content), retaining the primary return link and making output data reachable sooner. Source/ECU warnings remain visible; factory, Stage 1 and gain calculations are unchanged.
+- **Media provenance:** photo by [Ryan Collins](https://unsplash.com/photos/close-up-of-a-dark-car-with-headlights-on-C_wWePb8dXo) in `public/brand/editorial/car-headlight-unsplash-ryan-collins.jpg` (142 KB); photo by [Dextar Studio](https://unsplash.com/photos/mechanic-inspecting-a-car-engine-with-hood-open-erWc6mrOq_I) in `public/brand/editorial/engine-inspection-unsplash-dextar-studio.jpg` (181 KB). Both are listed as free to use under the [Unsplash License](https://unsplash.com/license) at time of inclusion, and photographer credits appear directly beside the images. Review trademark/person publicity rights before using the photos outside this contextual design.
+- **Figma:** the original 7/10 concepts remain alongside two newer, editable V2 mobile/desktop compositions; the V2 photo layers are real Figma image fills, not screenshots of the finished UI.
 
 ## Verification and acceptance
 

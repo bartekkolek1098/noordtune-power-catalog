@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 /* Mobile-first visual and SEO smoke regression for the NoordTune design refresh.
    All RDW requests are mocked from an anonymized technical sample; no customer plate. */
 const assert=require("node:assert/strict");
@@ -39,7 +40,8 @@ const scenarios=[["nl",320,720],["nl",390,844],["nl",768,900],["nl",1440,900],["
    assert.equal(response?.status(),200,locale+" home 200");
    assert.equal(await page.locator("h1").count(),1,locale+" exactly one h1");
    const heading=await page.locator("h1").innerText();
-   assert.match(heading,locale==="nl"?/chiptuning voor/:locale==="pl"?/chiptuning dla/:/tuning for/);
+   assert.match(heading,/chiptuning/i,"Localized H1 must mention chiptuning");
+   assert.match(heading,locale==="nl"?/zonder giswerk/i:locale==="en"?/no guesswork/i:/bez zgadywania/i,"Localized message must stay consistent");
    const canonical=await page.locator('link[rel="canonical"]').first().getAttribute("href");
    assert.ok(canonical?.endsWith("/"+locale),"Canonical persists: "+canonical);
    assert.ok((await page.locator('link[hreflang]').count())>=3,"Hreflang paths remain present");
@@ -70,11 +72,35 @@ const scenarios=[["nl",320,720],["nl",390,844],["nl",768,900],["nl",1440,900],["
     await page.screenshot({path:path.join(output,"verified-final-"+width+".png"),fullPage:false});
    }
    if(width===1440){
-    assert.ok(await page.locator(".ux-reference-body").isVisible(),"Desktop real-text editorial section");
-    assert.equal(await page.locator(".ux-hero__visual img").count(),0,"No synthetic hero stock photo");
+    const photo=page.locator(".ux-hero-photo--desktop");
+    assert.ok(await photo.isVisible(),"Real editorial photo visible on desktop");
+    assert.match(await photo.locator("img").getAttribute("alt")||"",/sfeerbeeld/i,"Photo described as illustrative");
+    await page.waitForFunction(()=>{const i=document.querySelector(".ux-hero-photo--desktop img");return Boolean(i&&i.complete&&i.naturalWidth>0)},null,{timeout:15000});
+    const process=page.locator(".ux-process-photo");
+    await process.scrollIntoViewIfNeeded();
+    await page.waitForFunction(()=>{const i=document.querySelector(".ux-process-photo img");return Boolean(i&&i.complete&&i.naturalWidth>0)},null,{timeout:15000});
+   }
+   if(width<1024){
+    assert.ok(await page.locator(".ux-hero-photo--compact").isVisible(),"Compact editorial photo visible on mobile");
+   }
+   if(locale==="nl"&&width===390){
+    const filters=page.getByTestId("manual-vehicle-filters");
+    const popular=page.getByTestId("manual-popular-list");
+    await filters.scrollIntoViewIfNeeded();
+    const first=await filters.boundingBox(),second=await popular.boundingBox();
+    assert.ok(first&&second&&first.y<second.y,"Manual filters must precede popular cards");
+    const quick=page.locator("#manual-quick-search");
+    await page.waitForFunction(()=>{const i=document.querySelector("#manual-quick-search");return Boolean(i&&Object.keys(i).some(k=>k.startsWith("__reactFiber$")))},null,{timeout:15000});
+    await quick.fill("BMW");
+    await page.waitForFunction(()=>{
+      const element=document.querySelector('[data-testid="manual-popular-list"]');
+      return Boolean(element&&getComputedStyle(element).order==="1");
+    },null,{timeout:5000});
+    await quick.fill("");
    }
    // Exercises existing application contract with a fully synthetic RDW registration.
    if(width===390&&["nl","en","pl"].includes(locale)){
+    await page.waitForFunction(()=>{const i=document.querySelector('input[maxlength="10"]');return Boolean(i&&Object.keys(i).some(k=>k.startsWith("__reactFiber$")))},null,{timeout:15000});
     await input.fill("QA0000");
     const http=page.waitForResponse(r=>r.url().includes("/api/rdw-lookup")&&r.request().method()==="POST");
     await submit.click();
@@ -105,6 +131,6 @@ const scenarios=[["nl",320,720],["nl",390,844],["nl",768,900],["nl",1440,900],["
    journeys++;
    await page.close();
   }
-  console.log("UX_MOBILE_SEO_PASS",JSON.stringify({journeys,lookup,verifiedLocales:["nl","en","pl"],minWidth:320,visualStockHero:false,seoCanonical:true}));
+  console.log("UX_MOBILE_SEO_PASS",JSON.stringify({journeys,lookup,verifiedLocales:["nl","en","pl"],minWidth:320,licensedEditorialPhotography:true,seoCanonical:true}));
  } finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});

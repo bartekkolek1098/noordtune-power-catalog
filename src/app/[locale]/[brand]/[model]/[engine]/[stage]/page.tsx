@@ -191,7 +191,7 @@ export default async function VehicleStagePage({params}: PageProps) {
   ];
 
   return (
-    <main className="min-h-screen bg-background pb-[calc(5.25rem+env(safe-area-inset-bottom))] lg:pb-0">
+    <main className="ux-vehicle-page min-h-screen bg-background pb-[calc(5.25rem+env(safe-area-inset-bottom))] lg:pb-0">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
@@ -208,7 +208,7 @@ export default async function VehicleStagePage({params}: PageProps) {
             backgroundImage: `linear-gradient(90deg, rgba(2,4,8,.96), rgba(2,4,8,.78) 46%, rgba(2,4,8,.56)), url('${assetPath(vehicle.image)}')`
           }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(226,0,15,.22),transparent_42%,rgba(255,255,255,.08))]" />
+        <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(9,12,13,.15),transparent_48%)]" />
         <div className="container relative z-10 pb-16 pt-8">
           <nav className="mb-6 flex flex-wrap items-center gap-2 text-xs font-bold uppercase text-muted-foreground">
             <a className="hover:text-primary" href={mainLocaleHref(safeLocale)}>
@@ -229,13 +229,13 @@ export default async function VehicleStagePage({params}: PageProps) {
             <span className="text-white">{stageName}</span>
           </nav>
 
-          <div className="mb-8 flex flex-wrap gap-3">
-            <Button asChild className="rounded-[3px]" variant="outline">
+          <div className="mb-5 flex flex-wrap gap-2">
+            <Button asChild className="rounded-xl" variant="outline">
               <a href={sitePath(`/${safeLocale}/vehicles/${vehicle.id}`)}>
                 {vehicle.brand} {vehicle.model}
               </a>
             </Button>
-            <Button asChild className="rounded-[3px]" variant="outline">
+            <Button asChild className="hidden rounded-xl sm:inline-flex" variant="outline">
               <a href={chiptuningHref(safeLocale)}>{chiptuningLabel}</a>
             </Button>
           </div>
@@ -243,7 +243,7 @@ export default async function VehicleStagePage({params}: PageProps) {
             <Badge className="mb-4 border-primary/30 bg-primary/15 text-primary">
               {stageName} {formatQuote(selectedQuote, safeLocale)}
             </Badge>
-            <h1 className="racing-title text-5xl leading-none md:text-7xl">
+            <h1 className="racing-title text-[clamp(2.4rem,6vw,4.9rem)] leading-[1.03]">
               {vehicle.brand} {vehicle.model} {stageName}
             </h1>
             <p className="mt-4 text-2xl font-bold text-slate-100 md:text-3xl">

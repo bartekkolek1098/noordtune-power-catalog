@@ -83,11 +83,11 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     nav: ["HOME", "KATALOGUS", "DIAGNOSE", "WERKWIJZE", "RESULTATEN", "OVER ONS", "CONTACT"],
     phone: "+31 685 759 600",
     heroKicker: "RDW VERMOGENSCATALOGUS",
-    heroLineA: "Ontdek de",
-    heroLineB: "chiptuning voor",
-    heroLineC: "jouw auto.",
+    heroLineA: "Chiptuning",
+    heroLineB: "voor jouw auto.",
+    heroLineC: "Zonder giswerk.",
     heroIntro:
-      "Voer je kenteken in voor fabrieksgegevens en een eerlijke Stage 1-indicatie. We controleren de juiste motor en ECU altijd apart.",
+      "Bekijk fabrieksgegevens, Stage 1-indicaties mét bronnen en de volgende stap voor jouw auto. Motorcode, ECU en transmissie controleren we vóór tuning.",
     manualPanelTitle: "Of kies jouw auto handmatig",
     manualPanelText:
       "Voor klanten buiten Nederland: kies merk, model, bouwjaar en motor zonder Nederlands kenteken.",
@@ -188,11 +188,11 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     nav: ["HOME", "POWER CATALOG", "DIAGNOSTICS", "PROCESS", "RESULTS", "ABOUT", "CONTACT"],
     phone: "+31 685 759 600",
     heroKicker: "RDW POWER CATALOG",
-    heroLineA: "Find the right",
-    heroLineB: "tuning for",
-    heroLineC: "your car.",
+    heroLineA: "Chiptuning",
+    heroLineB: "for your car.",
+    heroLineC: "No guesswork.",
     heroIntro:
-      "Enter your Dutch plate for factory specs and an honest Stage 1 indication. We always check engine and ECU compatibility individually.",
+      "View factory specifications, source-linked Stage 1 indications and the right next step for your vehicle. Engine, ECU and gearbox require verification.",
     manualPanelTitle: "Or choose your car manually",
     manualPanelText:
       "For customers outside the Netherlands: choose make, model, year and engine without a Dutch plate.",
@@ -293,11 +293,11 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     nav: ["HOME", "KATALOG MOCY", "DIAGNOSTYKA", "JAK DZIAŁAMY", "WYNIKI", "O NAS", "KONTAKT"],
     phone: "+31 685 759 600",
     heroKicker: "KATALOG MOCY RDW",
-    heroLineA: "Sprawdź",
-    heroLineB: "chiptuning dla",
-    heroLineC: "swojego auta.",
+    heroLineA: "Chiptuning",
+    heroLineB: "dla Twojego auta.",
+    heroLineC: "Bez zgadywania.",
     heroIntro:
-      "Wpisz holenderską rejestrację i sprawdź dane fabryczne oraz orientacyjny Stage 1. Silnik i ECU zawsze weryfikujemy indywidualnie.",
+      "Sprawdź dane fabryczne, orientacyjne Stage 1 ze źródłami i następny krok dla auta. Silnik, ECU oraz skrzynię weryfikujemy indywidualnie.",
     manualPanelTitle: "Lub wybierz auto ręcznie",
     manualPanelText:
       "Dla klientów spoza Holandii: wybierz markę, model, rok i silnik bez holenderskiej tablicy.",

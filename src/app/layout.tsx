@@ -1,6 +1,7 @@
 import type {Metadata, Viewport} from "next";
 import {absoluteUrl, POWER_SITE_URL} from "@/lib/site-url";
 import "./globals.css";
+import "./editorial-v2.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(

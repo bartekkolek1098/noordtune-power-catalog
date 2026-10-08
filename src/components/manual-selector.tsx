@@ -288,8 +288,8 @@ export function ManualSelector({
           </div>
         </div>
 
-        <div className="grid min-w-0 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,.86fr)_minmax(0,1.14fr)]">
-          <div className="rounded-lg border border-white/10 bg-black/45 p-3 sm:p-4">
+        <div className="grid min-w-0 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)]">
+          <div data-testid="manual-popular-list" className={cn("rounded-2xl border border-white/10 bg-black/45 p-3 sm:p-4",hasSearchQuery?"order-1 lg:order-2":"order-2 lg:order-2")}>
             <div className="mb-3 flex items-center gap-2 text-xs font-black uppercase tracking-normal text-primary">
               <Star className="h-4 w-4 fill-primary" />
               {text.popular}
@@ -297,7 +297,7 @@ export function ManualSelector({
             <div className="grid gap-2">
               {visibleVehicles.map((vehicle) => { const ResultAction = vehicle.pagePath ? "a" : "button"; return (
                 <ResultAction
-                className="group grid w-full gap-2 rounded-[3px] text-left border border-white/10 bg-white/[0.035] p-3 transition hover:border-primary/50 hover:bg-primary/10"
+                className="group grid w-full gap-2 rounded-xl text-left border border-white/10 bg-white/[0.035] p-3 transition hover:border-primary/50 hover:bg-white/[0.07] focus-visible:ring-2 focus-visible:ring-primary"
                   href={detailHref(vehicle)}
                   type={vehicle.pagePath ? undefined : "button"}
                   data-testid="manual-result-action"
@@ -335,7 +335,7 @@ export function ManualSelector({
             </div>
           </div>
 
-          <div className="rounded-lg border border-primary/20 bg-black/55 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,.05)] sm:p-4">
+          <div data-testid="manual-vehicle-filters" className={cn("rounded-2xl border border-white/15 bg-[#202323] p-4 sm:p-5",hasSearchQuery?"order-2 lg:order-1":"order-1 lg:order-1")}>
             <label className="mb-2 block text-xs font-black uppercase tracking-normal text-slate-300">
               {text.brandSearch}
             </label>
