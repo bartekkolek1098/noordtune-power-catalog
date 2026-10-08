@@ -24,16 +24,16 @@
     "missingFirstAdmissionYear": 0
   },
   "stage1": {
-    "sourceLinkedIndicative": 1556,
+    "sourceLinkedIndicative": 1672,
     "genericIndicative": 0,
     "canonicalEstimated": 0,
     "otherNumericUnverified": 5,
-    "withoutNumeric": 1439,
-    "anyNumeric": 1561,
-    "sourceLinkedShareOfFrozenPercent": 51.87,
-    "sourceLinkedWithinOrdinaryIce": 1556,
-    "sourceLinkedWithinFullTechnicalIdentity": 1429,
-    "sourceLinkedShareOfOrdinaryIcePercent": 60.08,
+    "withoutNumeric": 1323,
+    "anyNumeric": 1677,
+    "sourceLinkedShareOfFrozenPercent": 55.73,
+    "sourceLinkedWithinOrdinaryIce": 1672,
+    "sourceLinkedWithinFullTechnicalIdentity": 1545,
+    "sourceLinkedShareOfOrdinaryIcePercent": 64.56,
     "disclaimer": "Source-linked is an application/reference published Stage 1, NOT a measured or guaranteed owner/ECU result. Generic and generated canonical numbers are NOT counted as sourced."
   },
   "stage2": {
@@ -45,9 +45,9 @@
   },
   "internalCoverageClasses": {
     "A": 213,
-    "B": 1338,
-    "C": 109,
-    "D": 937,
+    "B": 1454,
+    "C": 77,
+    "D": 853,
     "E": 403,
     "unknown": 0
   },
@@ -73,17 +73,6 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 0
-    },
-    {
-      "priorityRank": 59,
-      "make": "BMW",
-      "model": "320I",
-      "displacementCc": 1998,
-      "yearBand": "2015–2019",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 11
     },
     {
       "priorityRank": 61,
@@ -218,17 +207,6 @@
       "technicalFactsComplete": 4
     },
     {
-      "priorityRank": 110,
-      "make": "BMW",
-      "model": "320I",
-      "displacementCc": 1998,
-      "yearBand": "2020–2024",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
-    },
-    {
       "priorityRank": 120,
       "make": "PEUGEOT",
       "model": "5008",
@@ -249,17 +227,6 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 0
-    },
-    {
-      "priorityRank": 125,
-      "make": "NISSAN",
-      "model": "NISSAN JUKE",
-      "displacementCc": 999,
-      "yearBand": "2020–2024",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
     },
     {
       "priorityRank": 128,
@@ -317,17 +284,6 @@
       "technicalFactsComplete": 12
     },
     {
-      "priorityRank": 140,
-      "make": "AUDI",
-      "model": "Q3",
-      "displacementCc": 1984,
-      "yearBand": "2010–2014",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
-    },
-    {
       "priorityRank": 141,
       "make": "FORD",
       "model": "FOCUS",
@@ -372,17 +328,6 @@
       "technicalFactsComplete": 7
     },
     {
-      "priorityRank": 146,
-      "make": "AUDI",
-      "model": "A1 SPORTBACK",
-      "displacementCc": 999,
-      "yearBand": "2015–2019",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
-    },
-    {
       "priorityRank": 153,
       "make": "MITSUBISHI",
       "model": "MITSUBISHI COLT",
@@ -416,17 +361,6 @@
       "technicalFactsComplete": 4
     },
     {
-      "priorityRank": 162,
-      "make": "AUDI",
-      "model": "Q3",
-      "displacementCc": 1984,
-      "yearBand": "2015–2019",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 11
-    },
-    {
       "priorityRank": 166,
       "make": "MERCEDES-BENZ",
       "model": "C 350 E",
@@ -436,17 +370,6 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 0
-    },
-    {
-      "priorityRank": 167,
-      "make": "MAZDA",
-      "model": "MAZDA MX-5",
-      "displacementCc": 1798,
-      "yearBand": "2005–2009",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 11
     },
     {
       "priorityRank": 168,
@@ -491,6 +414,83 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 0
+    },
+    {
+      "priorityRank": 178,
+      "make": "RENAULT",
+      "model": "CLIO",
+      "displacementCc": 898,
+      "yearBand": "2020–2024",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 12
+    },
+    {
+      "priorityRank": 179,
+      "make": "FIAT",
+      "model": "FIAT PUNTO",
+      "displacementCc": 1368,
+      "yearBand": "2005–2009",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 4
+    },
+    {
+      "priorityRank": 181,
+      "make": "NISSAN",
+      "model": "NISSAN PIXO",
+      "displacementCc": 996,
+      "yearBand": "2010–2014",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 12
+    },
+    {
+      "priorityRank": 182,
+      "make": "PEUGEOT",
+      "model": "508",
+      "displacementCc": 1598,
+      "yearBand": "2020–2024",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 6
+    },
+    {
+      "priorityRank": 183,
+      "make": "MAZDA",
+      "model": "MAZDA CX-5",
+      "displacementCc": 2488,
+      "yearBand": "2015–2019",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 12
+    },
+    {
+      "priorityRank": 190,
+      "make": "AUDI",
+      "model": "AUDI A4",
+      "displacementCc": 1984,
+      "yearBand": "2005–2009",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 4
+    },
+    {
+      "priorityRank": 191,
+      "make": "SEAT",
+      "model": "LEON",
+      "displacementCc": 1984,
+      "yearBand": "2005–2009",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 6
     }
   ],
   "nextDecisionRule": "Prioritize unresolved groups from this fixed nonrandom cohort, then verify precise stock kW, engine generation, RDW type, cc, fuel, ECU/gearbox constraints and independent tuner sources before releasing any Stage 1 result."

@@ -10,15 +10,15 @@
 | RDW original engine kW present | 2,983 | 3,000 | Factory power exists in the registration; torque/ECU do not |
 | Full technical fields incl. RDW body type | 2,260 | 3,000 | Make/model/engine kW/cc/cylinders/year/type/single ordinary ICE fuel |
 | Ordinary ICE, interpretable RDW base | 2,590 | 3,000 | Safe denominator for a petrol/diesel Stage 1 discovery funnel |
-| **Stage 1 numeric with linked published sources** | **1,556** | **3,000** | Indicative; always requires physical ECU/transmission verification |
-| Stage 1 source-linked among ordinary ICE | 1,556 | 2,590 | Source links within the interpretable petrol/diesel subset only |
+| **Stage 1 numeric with linked published sources** | **1,672** | **3,000** | Indicative; always requires physical ECU/transmission verification |
+| Stage 1 source-linked among ordinary ICE | 1,672 | 2,590 | Source links within the interpretable petrol/diesel subset only |
 | Stage 1 generic numeric (not sourced) | 0 | 3,000 | Not considered verified Stage 1 coverage |
 | Stage 1 generated/canonical numeric | 0 | 3,000 | Not considered verified Stage 1 coverage |
 | Stage 1 other unverified numeric | 5 | 3,000 | Not considered verified Stage 1 coverage |
-| Stage 1 numerical output withheld | 1,439 | 3,000 | Do not invent an output; refer to workshop quote |
+| Stage 1 numerical output withheld | 1,323 | 3,000 | Do not invent an output; refer to workshop quote |
 | Public numerical Stage 3 | 0 | 3,000 | Stage 3 output must remain withheld |
 
-**Source-linked Stage 1: 51.87% of this frozen, nonrandom sample; 60.08% relative to the ordinary-ICE interpretable subset.** Neither number is a Dutch-fleet percentage.
+**Source-linked Stage 1: 55.73% of this frozen, nonrandom sample; 64.56% relative to the ordinary-ICE interpretable subset.** Neither number is a Dutch-fleet percentage.
 
 ## Priority groups with no complete source-linked Stage 1
 
@@ -26,7 +26,6 @@
 |---:|---|---|---:|---:|---:|
 | 20 | FORD TRANSIT CONNECT, 1499 cc | 2020–2024 | 12 | 12 | 12 |
 | 39 | FORD FOCUS, 1596 cc | 2000–2004 | 12 | 12 | 0 |
-| 59 | BMW 320I, 1998 cc | 2015–2019 | 12 | 12 | 11 |
 | 61 | FORD KA, 1242 cc | 2010–2014 | 12 | 12 | 12 |
 | 62 | PEUGEOT 108, 998 cc | 2015–2019 | 12 | 12 | 9 |
 | 67 | SUZUKI ALTO, 996 cc | 2010–2014 | 12 | 12 | 12 |
@@ -39,16 +38,17 @@
 | 100 | TOYOTA TOYOTA COROLLA, 1987 cc | 2020–2024 | 12 | 12 | 0 |
 | 108 | TOYOTA TOYOTA C-HR, 1987 cc | 2020–2024 | 12 | 12 | 0 |
 | 109 | SEAT LEON, 1595 cc | 2005–2009 | 12 | 12 | 4 |
-| 110 | BMW 320I, 1998 cc | 2020–2024 | 12 | 12 | 12 |
 | 120 | PEUGEOT 5008, 1598 cc | 2010–2014 | 12 | 12 | 11 |
 | 121 | CITROEN C4, 1587 cc | 2005–2009 | 12 | 12 | 0 |
-| 125 | NISSAN NISSAN JUKE, 999 cc | 2020–2024 | 12 | 12 | 12 |
 | 128 | RENAULT CLIO, 1789 cc | 2025–2029 | 12 | 12 | 0 |
 | 129 | PEUGEOT 508, 1598 cc | 2010–2014 | 12 | 12 | 12 |
 | 134 | CITROEN C4, 1598 cc | 2010–2014 | 12 | 12 | 12 |
 | 135 | VOLKSWAGEN GOLF, 1395 cc | 2020–2024 | 12 | 12 | 0 |
 | 137 | NISSAN NISSAN QASHQAI, 1197 cc | 2010–2014 | 12 | 12 | 12 |
-| 140 | AUDI Q3, 1984 cc | 2010–2014 | 12 | 12 | 12 |
+| 141 | FORD FOCUS, 999 cc | 2025–2029 | 12 | 12 | 0 |
+| 143 | PEUGEOT 5008, 1598 cc | 2015–2019 | 12 | 12 | 12 |
+| 144 | BMW 330E, 1998 cc | 2020–2024 | 12 | 12 | 0 |
+| 145 | BMW 3ER REIHE, 1995 cc | 2005–2009 | 12 | 12 | 7 |
 
 This queue **does not prove turbocharged compatibility**. Resolve factory kW, exact generation and drivetrain using sources before publishing results. Cars with naturally aspirated engines, EVs, LPG, hybrids or disputed gearbox/ECU must not inherit generated power figures.
 

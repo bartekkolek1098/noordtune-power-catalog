@@ -75,7 +75,7 @@ const unique=new Set<string>();
 export function buildReviewedRdwBulkBatch(entries: readonly Seed[]) { return entries.map(seed=>{
   if(unique.has(seed.id))throw Error("Duplicate approved bulk RDW ID: "+seed.id);
   unique.add(seed.id);
-  if(!/^rdw-bulk(?:2)?-/.test(seed.id)||seed.from>seed.to||seed.from<2008||seed.to>2026
+  if(!/^rdw-bulk(?:2)?-/.test(seed.id)||seed.from>seed.to||seed.from<1995||seed.to>2026
     ||!seed.type||seed.cc<=0||seed.cylinders<=0||seed.kw<=0)throw Error("Incomplete reviewed bulk RDW scope "+seed.id);
   if(seed.power[0]>seed.power[1]||seed.torque[0]>seed.torque[1])throw Error("Invalid Stage1 envelope "+seed.id);
   const factoryPs=Math.round(seed.kw*1.359621617);
