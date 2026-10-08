@@ -20,6 +20,8 @@ type VerifiedApplication = {
   registeredPowerKw?: number;
   /** A known RDW homologation body code is positive, not guessed, evidence. */
   requiredRdwType?: string;
+  /** Restrict reviewed applications to exact RDW trading names where aliases are unsafe. */
+  allowedRdwModels?: readonly string[];
   stockTorqueNm: number;
   fuel: "Petrol" | "Diesel" | "CNG";
   engineLabel: string;
@@ -232,6 +234,64 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
       scope: "Octavia II 1390 cc CAXA, Bosch MED17.5.20 reference, 122 PS / 200 Nm, published Stage 1 155 PS / 270 Nm; installed ECU still unconfirmed."}
   ],
   reviewNote: "Four published Octavia II/1Z 1.4 TSI 122 PS Stage 1 observations range 140–155 PS and 240–270 Nm. Original 90 kW and fuel are confirmed RDW facts, while 200 Nm, CAXA and ECU references are external. These are indicative publisher examples, not NoordTune measured output. Verify real 1Z generation, ECU, fuel grade, timing chain/condition and gearbox before a quote; no numerical Stage 2 or Stage 3."
+}, {
+  id: "rdw-audi-a1-8x-12-tfsi-86",
+  make: "Audi", model: "A1", generation: "8X (2010–2014)",
+  yearFrom: 2010, yearTo: 2014,
+  displacementCc: 1197, cylinders: 4,
+  registeredPowerKw: 63, requiredRdwType: "8X", allowedRdwModels: ["AUDI A1", "A1"],
+  stockPowerHp: 86, stockTorqueNm: 160, fuel: "Petrol",
+  engineLabel: "1.2 TFSI petrol turbo, 1197 cc (CBZA/EA111 check required)",
+  requirements: "Confirm original 63 kW Audi A1 8X CBZA engine, installed Simos 10 or other ECU by vehicle scan, firmware, maintenance/timing-chain condition, fuel grade and manual/DSG DQ200 torque capacity. Provider sources disagree on mild versus aggressive Stage 1; do not claim ECU compatibility from RDW. Excludes E85, S1/Sportback without independent matching, Stage 2 and Stage 3.",
+  powerRangeHp: [105, 130], torqueRangeNm: [175, 220],
+  sources: [
+    {title:"TVS Engineering Audi A1 8X 1.2 TFSI 86 PS (mild Stage 1)",
+      sourceType:"tuner", retrievalMethod:"page", retrievedAt:"2026-10-08",
+      url:"https://tvsengineering.com/tuning/audi-a1-8x-2010-2014-1-2-tfsi-86hp-tuning/",
+      scope:"Audi A1 8X 2010–2014, CBZA EA111, 86 PS / 160 Nm, mild Stage 1 105 PS / 175 Nm. TVS also has separate Stage 2 values; excluded."},
+    {title:"BR-Performance Audi A1 8X 1.2 TFSI 86 PS",
+      sourceType:"tuner", retrievalMethod:"page", retrievedAt:"2026-10-08",
+      url:"https://www.br-performance.nl/nl-nl/chiptuning/1-wagens/11-audi/202-a1/203-8x-2010-2014/204-1-2-tfsi/",
+      scope:"Audi A1 8X 2010–2014, stock 86 PS/160 Nm, Stage 1 130 PS/215 Nm. E85 excluded."},
+    {title:"Shiftech Audi A1 8X 1.2 TSI/TFSI 85 PS",
+      sourceType:"tuner", retrievalMethod:"page", retrievedAt:"2026-10-08",
+      url:"https://www.shiftech.eu/en/chiptuning/car/audi/a1/2010-8x/petrol/1.2-tsi-tfsi-85",
+      scope:"Audi A1 8X 1.2 TFSI original 85 PS/160 Nm (provider rounding), Stage 1 130 PS/220 Nm. Official RDW registered 63 kW rounds to 86 metric PS."}
+  ],
+  reviewNote:"Independent Audi A1 8X 1.2 TFSI providers differ substantially: TVS mild Stage 1 105/175, BR-Performance 130/215 and Shiftech 130/220. The 105–130 PS / 175–220 Nm interval is a sourced indication, NOT a predicted achievable range for an uninspected car. A more aggressive 140/225 Stage 1 claim by another provider was deliberately not automatically approved. Stock 63 kW is an RDW fact; 160 Nm, CBZA and ECU family are externally sourced and must be confirmed. No unsupported higher Stage numbers."
+}, {
+  id: "rdw-audi-a1-8x-14-tfsi-122",
+  make: "Audi", model: "A1", generation: "8X (2010–2014)",
+  yearFrom: 2010, yearTo: 2014,
+  displacementCc: 1390, cylinders: 4,
+  registeredPowerKw: 90, requiredRdwType: "8X", allowedRdwModels: ["AUDI A1", "A1"],
+  stockPowerHp: 122, stockTorqueNm: 200, fuel: "Petrol",
+  engineLabel: "1.4 TFSI petrol turbo, 1390 cc (EA111; exact engine code to verify)",
+  requirements: "Verify original 90 kW 122 PS A1 8X, actual engine code (manufacturer and tuner sources vary CPVA/CNVA), installed ECU and software, RON grade, timing-chain/engine health, and especially DQ200 dry clutch or manual gearbox torque limits before any calibration. Excludes 1.4 140/185 PS, E85, later GB/8Y, hybrid/CNG, and numerical Stage 2/3.",
+  powerRangeHp: [135, 155], torqueRangeNm: [230, 270],
+  sources: [
+    {title:"Audi A1 1.4 TFSI 90 kW manufacturer specification",
+      sourceType:"manufacturer", retrievalMethod:"page", retrievedAt:"2026-10-08",
+      url:"https://www.audi.de/dam/nemo/customer-area/more-information/predecessor-models/a1/a1/pdf/AU210_1.4TFSI_119_2010_neu.pdf",
+      scope:"March 2010 official Audi A1 1.4 TFSI 90 kW/122 PS, 1390 cc/200 Nm and S tronic DSG; factory specification only, not a tuning output or installed ECU identity."},
+    {title:"TVS Engineering Audi A1 8X 1.4 TFSI 122 PS (mild Stage 1)",
+      sourceType:"tuner", retrievalMethod:"page", retrievedAt:"2026-10-08",
+      url:"https://tvsengineering.com/tuning/audi-a1-8x-2010-2014-1-4-tfsi-122hp-tuning/",
+      scope:"A1 8X 1.4 TFSI 122 PS/200 Nm, mild Stage 1 135 PS/230 Nm, DQ200 gearbox source scope; customer-specific gearbox must be verified."},
+    {title:"Shiftech Audi A1 8X 1.4 TSI/TFSI 122 PS",
+      sourceType:"tuner", retrievalMethod:"page", retrievedAt:"2026-10-08",
+      url:"https://www.shiftech.eu/en/chiptuning/car/audi/a1/2010-8x/petrol/1.4-tsi-tfsi-122",
+      scope:"A1 8X stock 122 PS/200 Nm, Stage 1 140 PS/240 Nm; E85 tuning is separately published and excluded."},
+    {title:"BR-Performance Audi A1 8X 1.4 TFSI 122 PS",
+      sourceType:"tuner", retrievalMethod:"page", retrievedAt:"2026-10-08",
+      url:"https://www.br-performance.nl/nl-nl/chiptuning/1-wagens/11-audi/202-a1/203-8x-2010-2014/205-1-4-tfsi/",
+      scope:"Audi A1 8X 2010–2014, original 122 PS/200 Nm, Stage 1 145 PS/250 Nm. No E85."},
+    {title:"Tuning Service Audi A1 8X 1.4 TFSI 122 PS",
+      sourceType:"tuner", retrievalMethod:"page", retrievedAt:"2026-10-08",
+      url:"https://tuningservice.nl/chiptuning/audi/a1/8x-2010-2014/14-tfsi-122pk/",
+      scope:"A1 8X 1390 cc original 122 PS/200 Nm, Stage 1 155 PS/270 Nm, listed engine CNVA/ECU MED17.5.5; not proof of customer's installed ECU."}
+  ],
+  reviewNote:"The exact 90 kW Audi A1 8X petrol has Audi factory 122 PS/200 Nm; published mild-to-strong Stage 1 source claims span 135–155 PS and 230–270 Nm. The owner must verify engine/ECU, RON, maintenance and DQ200/manual drivetrain before a price or performance statement. These are independent provider claims, not measured NoordTune output; no numerical Stage 2/3."
 }];
 
 function normalized(value?: string) {
@@ -265,8 +325,12 @@ function matches(input: EstimateMatchInput, app: VerifiedApplication) {
     /\b(?:1Z|NX)\b/i.test(generationHints)) return false;
   if (app.make === "Skoda" && app.generation.startsWith("1Z") &&
     /\b(?:5E|NX|III|IV)\b/i.test(generationHints)) return false;
+  // RDW 8X is not the later GB/8Y Audi A1; a contradictory generation hint vetoes the claim.
+  if (app.make === "Audi" && app.generation.startsWith("8X") &&
+    /\b(?:GB|8Y|S1)\b/i.test(generationHints)) return false;
   return normalized(input.make) === normalized(app.make)
     && model.split(" ").includes(normalized(app.model))
+    && (app.allowedRdwModels === undefined || app.allowedRdwModels.some(name => normalized(name) === model))
     && year !== undefined && year >= app.yearFrom && year <= app.yearTo
     && input.displacementCc === app.displacementCc
     && (app.requiredRdwType === undefined || normalized(input.type) === normalized(app.requiredRdwType))
