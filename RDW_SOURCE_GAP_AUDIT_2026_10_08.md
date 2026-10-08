@@ -104,3 +104,27 @@ Current published 24 cards: **10 direct Stage 1 figures, 14 separately labeled s
 Keep Stage 3 off public UI, sitemap and customer responses. Stage 2 numerical output remains hardware/evidence gated. Keep `power.noordtune.nl` subordinate to `noordtune.nl`. Apply every future runtime change to a separate feature branch with strict matching tests, protected Preview browser QA and production exact-SHA checks.
 
 This audit is a data/research baseline only and requires **no Power Catalog deployment**.
+
+
+## 5. Real resolver replay on 3,000 previously frozen RDW observations
+
+A second, bounded diagnostic replays the original vehicle and fuel facts in the existing `nl-top-groups-output-sample.json` through the **current** `normalizeRdwVehicle` runtime. It uses only a synthetic plate `QA0000`, makes **no live RDW/network calls**, and emits only aggregate make/model/category outcomes (no plate, VIN, ownership or registry type/variant/execution fields). The frozen sample was selected before tuning outcomes from the top 250 priority groups, is purposive rather than random, and does not represent a Dutch-fleet success rate.
+
+Run `pnpm research:rdw-observed -- --summary` for a summary; full reproducibility guard: `pnpm test:rdw-observed`. The frozen output and source SHA-256 fingerprints are stored in `data/research/rdw-observed-3000-coverage-2026-10-08.json`.
+
+| Current resolver output on frozen sample | Observations |
+| --- | ---: |
+| RDW make and model preserved | **3,000 / 3,000** |
+| Numeric (still indicative/conditional) Stage 1 | **1,379** |
+| Separate comparable source example for an otherwise non-numeric result | **294** |
+| Non-numeric and no matched comparison; RDW facts and enquiry remain | **1,327** |
+| RDW registered power missing/unusable | **17** |
+| Customer-facing Stage 3 | **0** |
+
+Fuel context of this bounded sample: **595 diesel observations (401 numeric)**, **2,000 petrol observations (978 numeric)**, and **405 alternative/mixed-fuel/electrified observations (zero generic numeric Stage 1)**. An existing source example may be visible on an otherwise non-numeric result, but cannot be silently promoted into an approved ECU tune.
+
+Historical A/B source-coverage classifications were **1,120 / 3,000**. Current A/B classifications are **1,369 / 3,000**, with **253 category improvements** and **four downgrades**. All four downgrades still return *some* numeric Stage 1 output; two are Ford Transit Custom 2020 with unconfirmed EcoBlue generation/ECU scope, and two are VW Golfs using conditional public vehicle cards. Therefore **do not call these four missing tuning results**; their lower category denotes conservative technical certainty, not an empty card. Original source profile identity was not necessarily retained and is not proof of tuning compatibility.
+
+Sample-specific gaps needing source and technical applicability review include SEAT Leon, VW Golf, Škoda Octavia, Nissan Qashqai, Mitsubishi Outlander and Nissan Juke, but these mixed model-family counts include naturally aspirated, alternative-fuel and different engine generations. Prioritize actual verified turbo-ICE original kW/cc/fuel/year/code combinations within those families before treating any model as a tuning opportunity.
+
+The replay does not authorize a runtime match change or broad numerical extrapolation. Its purpose is to detect future **identity loss, unsupported Stage 3, changes to direct/source-comparison classification, and regressions in A/B evidence** using an immutable public-data sample.

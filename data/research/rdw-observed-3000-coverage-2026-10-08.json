@@ -1,0 +1,672 @@
+{
+  "schemaVersion": 1,
+  "derivedOn": "2026-10-08",
+  "method": "Read-only offline replay of frozen purposive top-250 RDW aggregate-group observations via the current normalizeRdwVehicle, synthetic plate QA0000 only",
+  "inputFingerprints": {
+    "rdwObservationsSha256": "6f906d30eb9bf6631c855e3ffad58cb96b56c387c53e0f013bb2766d28d3aa60",
+    "historicalClassificationSha256": "30fd529abed2de84b73f97a3f3397d3d5a5b3bd69c841e6ce33644a5115ee182"
+  },
+  "stats": {
+    "rows": 3000,
+    "makeModelPreserved": 3000,
+    "vehicleContainsSensitiveIdentity": 0,
+    "missingRegisteredPower": 17,
+    "numericStage1": 1379,
+    "noNumeric": 1621,
+    "sourceComparison": 294,
+    "customerStage3": 0,
+    "byCoverage": {
+      "B": 1075,
+      "E": 403,
+      "C": 113,
+      "A": 294,
+      "D": 1115
+    },
+    "byFuel": {
+      "Diesel": {
+        "observations": 595,
+        "numericStage1": 401
+      },
+      "Benzine": {
+        "observations": 2000,
+        "numericStage1": 978
+      },
+      "Benzine / LPG": {
+        "observations": 9,
+        "numericStage1": 0
+      },
+      "Elektriciteit / Benzine": {
+        "observations": 291,
+        "numericStage1": 0
+      },
+      "Benzine / Elektriciteit": {
+        "observations": 95,
+        "numericStage1": 0
+      },
+      "CNG": {
+        "observations": 7,
+        "numericStage1": 0
+      },
+      "Benzine / CNG": {
+        "observations": 2,
+        "numericStage1": 0
+      },
+      "LPG / Elektriciteit / Benzine": {
+        "observations": 1,
+        "numericStage1": 0
+      }
+    },
+    "historicalAB": 1120,
+    "currentAB": 1369,
+    "improvedToAB": 253,
+    "demotedFromAB": 4,
+    "baselineCompared": 3000,
+    "changedSelectedProfile": 375
+  },
+  "lowerConfidenceChanges": [
+    {
+      "make": "FORD",
+      "model": "TRANSIT CUSTOM",
+      "oldCoverage": "B",
+      "currentCoverage": "C",
+      "oldProfileId": "sourced-ford-transit-custom-d463142a0598",
+      "currentProfileId": "ref-ford-transit-custom-20-ecoblue-105",
+      "numericStage1StillVisible": true,
+      "reasonCodes": [
+        "SOURCED_MODEL_ENGINE_MATCH",
+        "SOURCE_OWNER_REVIEW_REQUIRED",
+        "NOORDTUNE_TARGET_REVIEW_REQUIRED",
+        "SOURCE_GENERATION_START_ONLY",
+        "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+        "SOURCE_GENERATION_SCOPE_ADJUSTED",
+        "GENERIC_INDICATIVE_STAGE_FALLBACK"
+      ],
+      "observations": 2
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "oldCoverage": "B",
+      "currentCoverage": "C",
+      "oldProfileId": "sourced-volkswagen-golf-f5fdb06851ed",
+      "currentProfileId": "volkswagen-golf-7-r-20-tsi",
+      "numericStage1StillVisible": true,
+      "reasonCodes": [
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
+      ],
+      "observations": 1
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "oldCoverage": "B",
+      "currentCoverage": "C",
+      "oldProfileId": "sourced-volkswagen-golf-d00b1b270c03",
+      "currentProfileId": "vw-golf-20-tsi-ea888",
+      "numericStage1StillVisible": true,
+      "reasonCodes": [
+        "PUBLIC_CONFIGURATION_CONFIRMATION"
+      ],
+      "observations": 1
+    }
+  ],
+  "topMissingNumericModels": [
+    {
+      "make": "SEAT",
+      "model": "LEON",
+      "observations": 144,
+      "numericStage1": 44,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "B": 36,
+        "A": 8,
+        "D": 83,
+        "E": 17
+      }
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "observations": 168,
+      "numericStage1": 88,
+      "sourceComparison": 11,
+      "missingPower": 1,
+      "coverage": {
+        "B": 75,
+        "D": 47,
+        "E": 33,
+        "C": 5,
+        "A": 8
+      }
+    },
+    {
+      "make": "SKODA",
+      "model": "OCTAVIA",
+      "observations": 132,
+      "numericStage1": 78,
+      "sourceComparison": 0,
+      "missingPower": 2,
+      "coverage": {
+        "B": 46,
+        "A": 32,
+        "E": 36,
+        "D": 18
+      }
+    },
+    {
+      "make": "NISSAN",
+      "model": "NISSAN QASHQAI",
+      "observations": 96,
+      "numericStage1": 46,
+      "sourceComparison": 24,
+      "missingPower": 0,
+      "coverage": {
+        "A": 12,
+        "E": 20,
+        "B": 34,
+        "D": 30
+      }
+    },
+    {
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI OUTLANDER",
+      "observations": 48,
+      "numericStage1": 4,
+      "sourceComparison": 0,
+      "missingPower": 1,
+      "coverage": {
+        "E": 40,
+        "B": 4,
+        "D": 4
+      }
+    },
+    {
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "observations": 72,
+      "numericStage1": 30,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "B": 30,
+        "D": 42
+      }
+    },
+    {
+      "make": "RENAULT",
+      "model": "CLIO",
+      "observations": 84,
+      "numericStage1": 44,
+      "sourceComparison": 0,
+      "missingPower": 3,
+      "coverage": {
+        "A": 35,
+        "E": 15,
+        "D": 13,
+        "B": 9,
+        "C": 12
+      }
+    },
+    {
+      "make": "NISSAN",
+      "model": "NISSAN JUKE",
+      "observations": 48,
+      "numericStage1": 11,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "A": 11,
+        "D": 25,
+        "E": 12
+      }
+    },
+    {
+      "make": "BMW",
+      "model": "320I",
+      "observations": 36,
+      "numericStage1": 0,
+      "sourceComparison": 32,
+      "missingPower": 0,
+      "coverage": {
+        "D": 20,
+        "C": 16
+      }
+    },
+    {
+      "make": "CITROEN",
+      "model": "C4",
+      "observations": 36,
+      "numericStage1": 0,
+      "sourceComparison": 0,
+      "missingPower": 1,
+      "coverage": {
+        "D": 31,
+        "E": 5
+      }
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "2008",
+      "observations": 60,
+      "numericStage1": 24,
+      "sourceComparison": 23,
+      "missingPower": 0,
+      "coverage": {
+        "D": 23,
+        "B": 24,
+        "E": 13
+      }
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "508",
+      "observations": 36,
+      "numericStage1": 0,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "D": 26,
+        "C": 4,
+        "E": 6
+      }
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "5008",
+      "observations": 48,
+      "numericStage1": 16,
+      "sourceComparison": 4,
+      "missingPower": 0,
+      "coverage": {
+        "C": 4,
+        "D": 24,
+        "A": 12,
+        "E": 4,
+        "B": 4
+      }
+    },
+    {
+      "make": "RENAULT",
+      "model": "MEGANE",
+      "observations": 60,
+      "numericStage1": 28,
+      "sourceComparison": 19,
+      "missingPower": 0,
+      "coverage": {
+        "D": 32,
+        "B": 28
+      }
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "CADDY",
+      "observations": 60,
+      "numericStage1": 28,
+      "sourceComparison": 20,
+      "missingPower": 0,
+      "coverage": {
+        "C": 7,
+        "B": 21,
+        "D": 25,
+        "A": 7
+      }
+    },
+    {
+      "make": "AUDI",
+      "model": "Q5",
+      "observations": 36,
+      "numericStage1": 11,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "B": 11,
+        "C": 4,
+        "E": 16,
+        "D": 5
+      }
+    },
+    {
+      "make": "AUDI",
+      "model": "AUDI A4",
+      "observations": 36,
+      "numericStage1": 11,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "D": 25,
+        "A": 11
+      }
+    },
+    {
+      "make": "AUDI",
+      "model": "Q3",
+      "observations": 24,
+      "numericStage1": 0,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "D": 24
+      }
+    },
+    {
+      "make": "AUDI",
+      "model": "AUDI A1",
+      "observations": 24,
+      "numericStage1": 0,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "D": 24
+      }
+    },
+    {
+      "make": "FORD",
+      "model": "FOCUS",
+      "observations": 72,
+      "numericStage1": 48,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "B": 44,
+        "D": 12,
+        "A": 4,
+        "E": 12
+      }
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "I20",
+      "observations": 24,
+      "numericStage1": 0,
+      "sourceComparison": 4,
+      "missingPower": 0,
+      "coverage": {
+        "D": 9,
+        "E": 15
+      }
+    },
+    {
+      "make": "MAZDA",
+      "model": "MAZDA MX-5",
+      "observations": 24,
+      "numericStage1": 0,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "D": 24
+      }
+    },
+    {
+      "make": "MITSUBISHI",
+      "model": "MITSUBISHI COLT",
+      "observations": 24,
+      "numericStage1": 0,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "D": 24
+      }
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "POLO",
+      "observations": 72,
+      "numericStage1": 48,
+      "sourceComparison": 15,
+      "missingPower": 0,
+      "coverage": {
+        "B": 48,
+        "D": 24
+      }
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "TIGUAN",
+      "observations": 60,
+      "numericStage1": 36,
+      "sourceComparison": 19,
+      "missingPower": 1,
+      "coverage": {
+        "D": 23,
+        "A": 20,
+        "E": 1,
+        "B": 16
+      }
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "T-ROC",
+      "observations": 36,
+      "numericStage1": 13,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "B": 13,
+        "C": 23
+      }
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "208",
+      "observations": 72,
+      "numericStage1": 50,
+      "sourceComparison": 1,
+      "missingPower": 0,
+      "coverage": {
+        "B": 36,
+        "D": 10,
+        "A": 14,
+        "E": 12
+      }
+    },
+    {
+      "make": "FORD",
+      "model": "TRANSIT CONNECT",
+      "observations": 24,
+      "numericStage1": 3,
+      "sourceComparison": 21,
+      "missingPower": 0,
+      "coverage": {
+        "D": 21,
+        "C": 3
+      }
+    },
+    {
+      "make": "MAZDA",
+      "model": "MAZDA CX-5",
+      "observations": 48,
+      "numericStage1": 27,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "D": 17,
+        "B": 27,
+        "E": 4
+      }
+    },
+    {
+      "make": "CITROEN",
+      "model": "C5 AIRCROSS",
+      "observations": 36,
+      "numericStage1": 16,
+      "sourceComparison": 0,
+      "missingPower": 0,
+      "coverage": {
+        "A": 16,
+        "E": 12,
+        "C": 8
+      }
+    },
+    {
+      "make": "FORD",
+      "model": "TRANSIT",
+      "observations": 36,
+      "numericStage1": 16,
+      "sourceComparison": 10,
+      "missingPower": 0,
+      "coverage": {
+        "A": 2,
+        "B": 14,
+        "D": 19,
+        "C": 1
+      }
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "3008",
+      "observations": 60,
+      "numericStage1": 40,
+      "sourceComparison": 6,
+      "missingPower": 0,
+      "coverage": {
+        "E": 14,
+        "D": 6,
+        "B": 24,
+        "A": 16
+      }
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "308",
+      "observations": 36,
+      "numericStage1": 16,
+      "sourceComparison": 8,
+      "missingPower": 0,
+      "coverage": {
+        "A": 4,
+        "D": 8,
+        "B": 12,
+        "E": 12
+      }
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "TRANSPORTER",
+      "observations": 48,
+      "numericStage1": 29,
+      "sourceComparison": 14,
+      "missingPower": 4,
+      "coverage": {
+        "E": 4,
+        "C": 6,
+        "A": 17,
+        "B": 12,
+        "D": 9
+      }
+    },
+    {
+      "make": "FIAT",
+      "model": "FIAT 500",
+      "observations": 36,
+      "numericStage1": 22,
+      "sourceComparison": 3,
+      "missingPower": 0,
+      "coverage": {
+        "B": 22,
+        "D": 14
+      }
+    }
+  ],
+  "topReasonCodes": [
+    {
+      "code": "GENERIC_INDICATIVE_STAGE_FALLBACK",
+      "observations": 2373
+    },
+    {
+      "code": "SOURCED_MODEL_ENGINE_MATCH",
+      "observations": 1371
+    },
+    {
+      "code": "SOURCE_OWNER_REVIEW_REQUIRED",
+      "observations": 1283
+    },
+    {
+      "code": "ASPIRATION_UNCONFIRMED_CONSERVATIVE_ESTIMATE",
+      "observations": 1115
+    },
+    {
+      "code": "NO_COMPATIBLE_SOURCED_PROFILE",
+      "observations": 937
+    },
+    {
+      "code": "UNSUPPORTED_POWERTRAIN_ESTIMATE",
+      "observations": 386
+    },
+    {
+      "code": "SOURCE_GENERATION_END_UNCONFIRMED",
+      "observations": 284
+    },
+    {
+      "code": "MULTIPLE_SOURCED_ENGINE_CONFIGURATIONS",
+      "observations": 261
+    },
+    {
+      "code": "SOURCE_CONSENSUS_CONFLICT",
+      "observations": 131
+    },
+    {
+      "code": "MULTIPLE_CANONICAL_TECHNICAL_PROFILES",
+      "observations": 108
+    },
+    {
+      "code": "GENERATION_BOUNDARY_REVIEW",
+      "observations": 90
+    },
+    {
+      "code": "CANONICAL_ESTIMATE_VERIFICATION_REQUIRED",
+      "observations": 87
+    },
+    {
+      "code": "SOURCE_GENERATION_SCOPE_ADJUSTED",
+      "observations": 38
+    },
+    {
+      "code": "PUBLIC_CONFIGURATION_CONFIRMATION",
+      "observations": 21
+    },
+    {
+      "code": "SOURCE_GENERATION_START_ONLY",
+      "observations": 21
+    },
+    {
+      "code": "ENGINE_CONFIGURATION_CONFIRMATION_REQUIRED",
+      "observations": 21
+    },
+    {
+      "code": "ENGINE_FAMILY_LABEL_CONFLICT",
+      "observations": 18
+    },
+    {
+      "code": "MISSING_OR_INVALID_REGISTERED_POWER",
+      "observations": 17
+    },
+    {
+      "code": "UNKNOWN_OR_CONFLICTING_POWERTRAIN",
+      "observations": 12
+    },
+    {
+      "code": "MANUFACTURER_ELECTRIFIED_APPLICATION",
+      "observations": 8
+    },
+    {
+      "code": "SOURCED_IDENTITY_INCOMPLETE",
+      "observations": 7
+    },
+    {
+      "code": "CONNECT_ENGINE_GENERATION_REVIEW",
+      "observations": 3
+    },
+    {
+      "code": "NOORDTUNE_TARGET_REVIEW_REQUIRED",
+      "observations": 2
+    }
+  ],
+  "limitations": [
+    "This is a frozen purposive 3,000-record sample from 250 priority model groups, not a random sample or a full-fleet success rate.",
+    "A numeric Stage 1 output in this report may be conditional and requires technical owner/ECU/fuel/hardware verification before sale.",
+    "A/B are coverage grades, not necessarily confirmation of the precise customer's ECU or a guaranteed tuning result.",
+    "Comparison output is clearly separated from direct Stage 1 and does not prove the listed reference fits the customer's installed engine.",
+    "Only aggregate make/model/coverage outcomes and public profile IDs are emitted. No sample IDs, RDW registry type/variant/execution codes, VINs, plates, ownership dates or owner fields are retained."
+  ]
+}
