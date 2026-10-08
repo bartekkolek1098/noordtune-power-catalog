@@ -29,6 +29,14 @@ const cases = ["nl","en","pl"].flatMap(locale=>[320,390,1180].map(width=>({local
   const browser = await chromium.launch({headless:true,...(chrome?{executablePath:chrome}:{})});
   const report = [];
   const ctx = await browser.newContext({viewport:{width:390,height:900},reducedMotion:"reduce"});
+  const oidcToken = process.env.VERCEL_OIDC_TOKEN || "";
+  if (oidcToken) {
+    // Never expose the short-lived token to other origins or in browser state.
+    const previewOrigin = new URL(root).origin;
+    await ctx.route(url => url.origin === previewOrigin, route => route.continue({
+      headers: {...route.request().headers(), "x-vercel-trusted-oidc-idp-token":oidcToken}
+    }));
+  }
   try {
     if (share) {
       const authPage = await ctx.newPage();
@@ -37,7 +45,8 @@ const cases = ["nl","en","pl"].flatMap(locale=>[320,390,1180].map(width=>({local
       await authPage.close();
     }
     for (const {locale,width} of cases) {
-      const page = await ctx.newPage({viewport:{width,height:950}});
+      const page = await ctx.newPage();
+      await page.setViewportSize({width,height:950});
       const errors = [];
       const requests = [];
       page.on("pageerror",e=>errors.push(e.message));
@@ -92,5 +101,5 @@ const cases = ["nl","en","pl"].flatMap(locale=>[320,390,1180].map(width=>({local
   }
   assert.equal(report.length,9);
   fs.writeFileSync(path.join(output,"qa-summary.json"),JSON.stringify({checkedAt:new Date().toISOString(),cases:report,errors:[]},null,2)+"\n");
-  console.log("OCTAVIA_BROWSER_QA_PASS: 9/9 NL/EN/PL × 320/390/1180, synthetic RDW; preview auth "+(share?"yes":"no"));
+  console.log("OCTAVIA_BROWSER_QA_PASS: 9/9 NL/EN/PL × 320/390/1180, synthetic RDW; preview auth "+(share||oidcToken?"yes":"no"));
 })().catch(e=>{console.error(e);process.exitCode=1});
