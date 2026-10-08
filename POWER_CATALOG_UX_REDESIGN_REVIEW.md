@@ -17,7 +17,7 @@ Editable UI mockups: [NoordTune UX Refresh — Figma](https://www.figma.com/desi
 
 ## Changed surfaces
 
-- `src/app/[locale]/page.tsx`: editorial intro, RDW primary, clear manual-search path, text-only service tiles, structured sections, mobile action bar.
+- `src/app/[locale]/page.tsx`: editorial RDW-first intro, manual discovery, indexed vehicle links and scoped Stage 1 example; all marketing-service panels replaced with catalog-specific content.
 - `src/app/globals.css` + `src/app/editorial-v2.css`: preserve the stable base design and isolate iteration-2 photographic styling for a low-risk UI revert, accessible focus states, responsive spacing, touch targets and reduced-motion support.
 - `src/components/hero-photo.tsx`: two responsive uses of one accessible, credited, locally optimized photograph — a desktop editorial panel and a compact below-form mobile strip.
 - `src/components/catalog-header.tsx` and `language-switcher.tsx`: single clean desktop nav, compact mobile menu, no off-screen menu ribbon.
@@ -34,6 +34,15 @@ Editable UI mockups: [NoordTune UX Refresh — Figma](https://www.figma.com/desi
 - **Vehicle pages:** secondary cross-site button is hidden in the mobile hero (still available at desktop and in the content), retaining the primary return link and making output data reachable sooner. Source/ECU warnings remain visible; factory, Stage 1 and gain calculations are unchanged.
 - **Media provenance:** photo by [Ryan Collins](https://unsplash.com/photos/close-up-of-a-dark-car-with-headlights-on-C_wWePb8dXo) in `public/brand/editorial/car-headlight-unsplash-ryan-collins.jpg` (142 KB); photo by [Dextar Studio](https://unsplash.com/photos/mechanic-inspecting-a-car-engine-with-hood-open-erWc6mrOq_I) in `public/brand/editorial/engine-inspection-unsplash-dextar-studio.jpg` (181 KB). Both are listed as free to use under the [Unsplash License](https://unsplash.com/license) at time of inclusion, and photographer credits appear directly beside the images. Review trademark/person publicity rights before using the photos outside this contextual design.
 - **Figma:** the original 7/10 concepts remain alongside two newer, editable V2 mobile/desktop compositions; the V2 photo layers are real Figma image fills, not screenshots of the finished UI.
+
+## Iteration 3 — corporate header parity, desktop composition and catalog-specific SEO
+
+- **Corporate parity:** compared live `www.noordtune.nl/nl` and its `src/components/header.tsx`, `mobile-menu.tsx`, `language-switcher.tsx` and `src/content/site.ts`. Catalog now uses the same genuine SVG logo (SHA-256 matches), 10 nav destinations and ordering, locale flags NL/EN/PL, approx. 73px mobile / 87px desktop header height, uppercase compact desktop nav, and full-screen mobile menu. The catalog is the active destination; the logo and corporate nav lead to localized `www.noordtune.nl` pages, while locale switching remains in the current catalog path.
+- **One hero photo:** desktop is intentionally photo-led, but the mobile-only duplicate is forced off above 1023px. A 36px separation between the desktop photograph and the plate card prevents merged cards. Mobile retains the previously approved photo below the RDW form.
+- **Graphite manual selector:** replaced the pale/ivory outer background with a subtle dark neutral block. Form fields and labels still have strong contrast; the page remains accessible and free of horizontal overflow.
+- **Purpose-specific home sections:** replaced the cramped BMW 3-column sales calculator and vehicle services price grid with a compact **190pk / 400Nm → Stage 1 220–225pk / 440–460Nm (indicative)** catalog example, readable vehicle cards, a disclosure list for additional curated engines, a five-question RDW/source/ECU FAQ, and a clear hand-off to the main NoordTune site. No general workshop-service descriptions or guaranteed dyno claims on the catalog landing page.
+- **SEO:** homepage metadata and content now explicitly describe `power.noordtune.nl` as a standalone **CollectionPage** backed by the main `www.noordtune.nl` provider. The canonical/hreflang remain on the power subdomain; all 219 public URLs and 24 curated vehicle pages remain linked. NL/EN/PL vehicle/stage SEO explanation copy now explicitly covers scope, estimate limitations, Stage 2 hardware checks and the source of the workshop quotation.
+- **Quality gate:** the mobile/SEO suite asserts 10-item header parity, flags, full-screen navigation, desktop photo/card gap, no second desktop hero image, original RDW figures, localized source copy, collection schema, all curated profile links, vehicle details and Stage 1 SEO route at 320/390/768/1440px. Rebuild and focused SEO QA required before review.
 
 ## Verification and acceptance
 

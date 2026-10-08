@@ -46,24 +46,46 @@ const scenarios=[["nl",320,720],["nl",390,844],["nl",768,900],["nl",1440,900],["
    assert.ok(canonical?.endsWith("/"+locale),"Canonical persists: "+canonical);
    assert.ok((await page.locator('link[hreflang]').count())>=3,"Hreflang paths remain present");
    assert.ok((await page.locator('script[type="application/ld+json"]').count())>=1,"Structured data persists");
+   const schemas=await page.locator('script[type="application/ld+json"]').allTextContents();
+   assert.ok(schemas.some(x=>JSON.parse(x)["@type"]==="CollectionPage"),"Catalog home uses CollectionPage, not workshop service schema");
+   assert.equal(await page.locator("#catalog-handoff-heading").count(),1,"The catalog hands off workshop services to NoordTune.nl");
+   if(locale==="nl"){
+    const hrefs=await page.locator('a[href^="/nl/vehicles/"]').evaluateAll(es=>[...new Set(es.map(a=>a.getAttribute("href")).filter(Boolean))]);
+    assert.ok(hrefs.length>=24,"At least 24 curated vehicle profiles remain linked for SEO");
+   }
    const input=page.locator('input[maxlength="10"]').first();
    await input.waitFor({state:"visible"});
    const submit=input.locator("xpath=ancestor::form").locator('button[type="submit"]');
    await submit.waitFor({state:"visible"});
+   const lang=page.locator('header nav[aria-label="Language switcher"]:visible').first();
+   assert.equal(await lang.locator("a").count(),3,"Header must show three flags as on NoordTune.nl");
+   assert.ok((await lang.locator('a[lang="pl"]').first().getAttribute("href"))?.startsWith("/pl"),"Polish locale stays on catalog");
+   assert.equal(await page.locator("header").first().evaluate(e=>Math.round(e.getBoundingClientRect().height)),width>=1280?87:73,"Header height matches the corporate website");
+   const homeHref=await page.locator('header a[aria-label="NoordTune.nl home"]').getAttribute("href");
+   assert.equal(homeHref,"https://www.noordtune.nl/"+locale,"Brand logo opens localized corporate site");
    if(width===320){
     const rect=await submit.boundingBox();
-    assert.ok(rect&&rect.y+rect.height<=height-50,"Small-phone primary search button must remain above sticky action bar");
-    const menu=page.locator("details.ux-header-menu");
-    await menu.locator("summary").click();
-    assert.ok(await menu.getByRole("navigation").isVisible(),"Mobile hamburger menu opens");
-    assert.ok((await menu.locator("a").count())>=5,"Menu contains navigation");
-    await menu.locator("summary").click();
+    assert.ok(rect&&rect.y+rect.height<=height-50,"Small-phone primary search button stays above sticky actions");
+    const menu=page.locator('button[aria-controls="catalog-mobile-navigation"]');
+    await page.waitForFunction(()=>{const n=document.querySelector('button[aria-controls="catalog-mobile-navigation"]');return Boolean(n&&Object.keys(n).some(k=>k.startsWith("__reactFiber$")))},null,{timeout:15000});
+    await menu.click();
+    const overlay=page.getByRole("dialog",{name:locale==="nl"?"Mobiel navigatiemenu":locale==="pl"?"Mobilne menu nawigacji":"Mobile navigation menu"});
+    await overlay.waitFor({state:"visible"});
+    const menuNav=overlay.getByRole("navigation",{name:locale==="nl"?"Mobiel navigatiemenu":locale==="pl"?"Mobilne menu nawigacji":"Mobile navigation menu"});
+    assert.equal(await menuNav.locator("a").count(),10,"Full-screen menu mirrors 10 corporate links");
+    const menuLinks=await menuNav.locator("a").allTextContents();
+    assert.ok(menuLinks.some(x=>/Nieuws|News|Aktualno/i.test(x)),"Company news link in mobile menu");
+    await overlay.getByRole("button",{name:locale==="nl"?"Menu sluiten":locale==="pl"?"Zamknij menu":"Close menu"}).click();
+    await overlay.waitFor({state:"hidden"});
    }
-   if(width===390){
-    const lang=page.locator("details.ux-language-menu");
-    await lang.locator("summary").click();
-    assert.ok((await lang.locator('a[lang="pl"]').count())===1,"Mobile locale selector exposes Polish");
-    await lang.locator("summary").click();
+   if(width===1440){
+    const nav=page.locator('header nav[aria-label="Main menu"]');
+    assert.deepEqual(
+      (await nav.locator("a").allTextContents()).map(x=>x.trim()),
+      ["Home","Catalogus","Chiptuning","Diagnose","Diensten","Prijzen","Resultaten","Nieuws & Blog","Over ons","Contact"],
+      "Desktop menu labels and order must match NoordTune.nl"
+    );
+    assert.equal((await nav.locator('a[aria-current="page"]').innerText()).toLowerCase(),"catalogus");
    }
    assert.ok(await page.locator(".ux-mobile-actions").isVisible()=== (width<768),"Mobile action bar only at mobile width");
    const documentWidth=await page.evaluate(()=>document.documentElement.scrollWidth);
@@ -73,7 +95,11 @@ const scenarios=[["nl",320,720],["nl",390,844],["nl",768,900],["nl",1440,900],["
    }
    if(width===1440){
     const photo=page.locator(".ux-hero-photo--desktop");
-    assert.ok(await photo.isVisible(),"Real editorial photo visible on desktop");
+    assert.ok(await photo.isVisible(),"One real editorial photo on desktop");
+    assert.equal(await page.locator(".ux-hero-photo--compact").isVisible(),false,"Mobile photo must never duplicate on desktop");
+    const right=await photo.boundingBox();
+    const lookup=await page.locator(".ux-lookup-wrap").boundingBox();
+    assert.ok(right&&lookup&&lookup.y-(right.y+right.height)>=24,"Hero photo must not touch RDW card");
     assert.match(await photo.locator("img").getAttribute("alt")||"",/sfeerbeeld/i,"Photo described as illustrative");
     await page.waitForFunction(()=>{const i=document.querySelector(".ux-hero-photo--desktop img");return Boolean(i&&i.complete&&i.naturalWidth>0)},null,{timeout:15000});
     const process=page.locator(".ux-process-photo");
@@ -128,9 +154,20 @@ const scenarios=[["nl",320,720],["nl",390,844],["nl",768,900],["nl",1440,900],["
    assert.ok((await page.locator('link[rel="canonical"]').getAttribute("href"))?.includes("/nl/vehicles/"));
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth)<=width+1,"Vehicle no horizontal overflow");
    if(width===390)assert.ok(await page.locator(".ux-mobile-actions").isVisible(),"Vehicle mobile sticky consultation");
+      assert.ok(await page.locator(".ux-profile-info").isVisible(),"Vehicle SEO explanation is readable");
+   const info=await page.locator(".ux-profile-info").innerText();
+   assert.ok(info.toLowerCase().includes("motorprofiel"),"Profile content must explain engine profile, not only sell services");
    journeys++;
    await page.close();
   }
+  const stage=await browser.newPage({viewport:{width:390,height:844}});
+  const stageResponse=await stage.goto(base+"/nl/bmw/3-series/320d/stage-1",{waitUntil:"domcontentloaded"});
+  assert.equal(stageResponse?.status(),200,"Stage 1 SEO route remains reachable");
+  assert.equal(await stage.locator("h1").count(),1);
+  assert.ok(await stage.locator(".ux-profile-info").isVisible(),"Stage page includes scoped catalog facts");
+  assert.ok(await stage.evaluate(()=>document.documentElement.scrollWidth)<=391,"Stage page does not overflow mobile viewport");
+  journeys++;
+  await stage.close();
   console.log("UX_MOBILE_SEO_PASS",JSON.stringify({journeys,lookup,verifiedLocales:["nl","en","pl"],minWidth:320,licensedEditorialPhotography:true,seoCanonical:true}));
  } finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});

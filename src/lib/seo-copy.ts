@@ -20,25 +20,25 @@ const localeCopy: Record<
     powerUnit: "pk",
     vehicleTitleSuffix: "chiptuning & Stage 1",
     stageTitleSuffix: "chiptuning",
-    homeTitle: "Chiptuning catalogus & RDW-check",
+    homeTitle: "RDW vermogenscatalogus | Stage 1 per kenteken",
     homeDescription:
-      "Bekijk voertuigspecifieke tuningprofielen voor Stage 1 en Stage 2, met prijsindicaties via RDW-kentekencheck of handmatige selectie."
+      "Controleer fabrieksgegevens via RDW en bekijk Stage 1-indicaties met bronnen. Zoek ook op merk, model en motor. De vermogenscatalogus van NoordTune.nl."
   },
   en: {
     powerUnit: "hp",
     vehicleTitleSuffix: "tuning & Stage 1",
     stageTitleSuffix: "tuning",
-    homeTitle: "Chiptuning catalog & RDW check",
+    homeTitle: "RDW power catalog | Stage 1 by registration",
     homeDescription:
-      "View vehicle-specific Stage 1 and Stage 2 tuning profiles with price indications through an RDW plate check or manual selection."
+      "Check factory specifications using RDW and explore source-linked Stage 1 estimates. Search by plate, make, model or engine. A catalog by NoordTune.nl."
   },
   pl: {
     powerUnit: "KM",
     vehicleTitleSuffix: "chiptuning i Stage 1",
     stageTitleSuffix: "chiptuning",
-    homeTitle: "Katalog chiptuningu i sprawdzanie RDW",
+    homeTitle: "Katalog mocy RDW | Stage 1 dla Twojego auta",
     homeDescription:
-      "Sprawdź profile tuningu Stage 1 i Stage 2 z cenami orientacyjnymi przez numer rejestracyjny RDW lub wybór ręczny."
+      "Sprawdź fabryczną moc w RDW i orientacyjne Stage 1 ze źródłami. Szukaj po numerze rejestracji lub wybierz markę i silnik. Katalog NoordTune.nl."
   }
 };
 
