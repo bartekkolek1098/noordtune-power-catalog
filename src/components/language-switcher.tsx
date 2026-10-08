@@ -1,43 +1,45 @@
+import {ChevronDown} from "lucide-react";
 import {type Locale, routing} from "@/i18n/routing";
 import {sitePath} from "@/lib/site-path";
 import {cn} from "@/lib/utils";
 
-const languageLabels: Record<Locale, {flag: string; label: string}> = {
-  nl: {flag: "🇳🇱", label: "Nederlands"},
-  en: {flag: "🇬🇧", label: "English"},
-  pl: {flag: "🇵🇱", label: "Polski"}
-};
+const labels:Record<Locale,string>={nl:"Nederlands",en:"English",pl:"Polski"};
 
-export function LanguageSwitcher({
-  locale,
-  path = ""
-}: {
-  locale: Locale;
-  path?: string;
-}) {
+export function LanguageSwitcher({locale,path=""}:{locale:Locale;path?:string}) {
   return (
-    <nav aria-label="Language" className="flex shrink-0 items-center gap-1">
-      {routing.locales.map((candidate) => {
-        const item = languageLabels[candidate];
-        const href = sitePath(`/${candidate}${path}`);
-
-        return (
+    <nav aria-label="Language / Taal / Język" className="shrink-0">
+      <div className="hidden items-center gap-1 sm:flex">
+        {routing.locales.map(candidate=>(
           <a
-            aria-label={item.label}
+            aria-current={candidate===locale?"page":undefined}
+            aria-label={labels[candidate]}
             className={cn(
-              "flex h-8 w-8 items-center justify-center rounded-[3px] border text-lg transition-colors min-[360px]:h-9 min-[360px]:w-9 min-[430px]:h-10 min-[430px]:w-10 min-[430px]:text-xl",
-              candidate === locale
-                ? "border-primary bg-primary/15 shadow-[0_0_24px_rgba(227,6,19,.28)]"
-                : "border-white/10 bg-black/30 hover:border-primary/50 hover:bg-primary/10"
+              "flex h-10 w-10 items-center justify-center rounded-lg border text-[11px] font-bold tracking-[.07em] transition-colors focus-visible:ring-2 focus-visible:ring-primary",
+              candidate===locale?"border-white/35 bg-white/[.13] text-white":"border-transparent text-[#999fa1] hover:border-white/20 hover:text-white"
             )}
-            href={href}
+            href={sitePath(`/${candidate}${path}`)}
             key={candidate}
-            title={item.label}
-          >
-            <span aria-hidden>{item.flag}</span>
-          </a>
-        );
-      })}
+            lang={candidate}
+            title={labels[candidate]}
+          >{candidate.toUpperCase()}</a>
+        ))}
+      </div>
+      <details className="ux-language-menu relative sm:hidden">
+        <summary aria-label={labels[locale]} className="flex min-h-11 cursor-pointer items-center gap-1.5 rounded-xl border border-white/20 px-2.5 text-[12px] font-bold tracking-[.05em] text-white">
+          {locale.toUpperCase()}<ChevronDown className="h-3 w-3"/>
+        </summary>
+        <div className="ux-language-menu-list absolute right-0 top-full z-50 mt-2 min-w-[140px] rounded-xl border border-white/15 bg-[#1b1d1f] p-1.5 shadow-xl">
+          {routing.locales.map(candidate=>(
+            <a
+              className={cn("block min-h-11 rounded-lg px-3 py-3 text-sm",candidate===locale?"bg-primary/10 text-white":"text-[#bcbfc0] hover:bg-white/[.08]")}
+              href={sitePath(`/${candidate}${path}`)}
+              key={candidate}
+              lang={candidate}
+              aria-current={candidate===locale?"page":undefined}
+            >{labels[candidate]}</a>
+          ))}
+        </div>
+      </details>
     </nav>
   );
 }

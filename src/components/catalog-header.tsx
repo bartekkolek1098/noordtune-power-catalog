@@ -1,11 +1,16 @@
-import {MessageCircle} from "lucide-react";
+import {ArrowUpRight, Menu, MessageCircle} from "lucide-react";
 import type {Locale} from "@/i18n/routing";
 import {LanguageSwitcher} from "@/components/language-switcher";
 import {NoordTuneLogo} from "@/components/noordtune-logo";
-import {Button} from "@/components/ui/button";
-import {mainLocaleHref, mainNavItems, whatsappPhoneLabel} from "@/lib/noordtune-links";
+import {mainLocaleHref, mainNavItems} from "@/lib/noordtune-links";
 import {cn} from "@/lib/utils";
 import {whatsappHref} from "@/lib/whatsapp";
+
+const mobileCopy: Record<Locale,{menu:string;contact:string;catalog:string}> = {
+  nl:{menu:"Menu",contact:"Advies aanvragen",catalog:"Vermogenscatalogus"},
+  en:{menu:"Menu",contact:"Ask for advice",catalog:"Power catalog"},
+  pl:{menu:"Menu",contact:"Zapytaj o wycenę",catalog:"Katalog mocy"}
+};
 
 export function CatalogHeader({
   className,
@@ -17,85 +22,58 @@ export function CatalogHeader({
   locale: Locale;
 }) {
   const navItems = mainNavItems(locale);
-
+  const copy=mobileCopy[locale];
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-50 border-b border-white/10 bg-black/86 backdrop-blur-xl",
-        className
-      )}
-    >
-      <div className="container flex min-h-[62px] w-full max-w-full min-w-0 items-center gap-2 py-2 min-[390px]:min-h-[68px] sm:min-h-[72px] sm:gap-3 xl:min-h-[84px]">
-        <a
-          aria-label="NoordTune.nl"
-          className="shrink-0"
-          href={mainLocaleHref(locale)}
-          rel="noreferrer"
-        >
-          <NoordTuneLogo className="h-[34px] w-[112px] min-[360px]:h-[40px] min-[360px]:w-[132px] min-[390px]:h-[44px] min-[390px]:w-[146px] min-[430px]:h-[48px] min-[430px]:w-[160px] sm:h-[58px] sm:w-[202px] lg:h-[64px] lg:w-[222px] xl:h-[66px] xl:w-[230px]" />
+    <header className={cn("ux-site-header sticky top-0 z-50",className)}>
+      <div className="container flex h-[66px] items-center justify-between gap-3 sm:h-[76px] xl:h-[82px]">
+        <a className="inline-flex shrink-0 items-center" aria-label="NoordTune.nl" href={mainLocaleHref(locale)}>
+          <NoordTuneLogo className="h-[37px] w-[130px] min-[380px]:h-[43px] min-[380px]:w-[152px] sm:h-[49px] sm:w-[171px] xl:h-[54px] xl:w-[190px]"/>
         </a>
 
-        <CatalogNav
-          className="hidden min-w-0 flex-1 items-center justify-center gap-3 xl:flex 2xl:gap-4"
-          items={navItems}
-        />
+        <nav aria-label={copy.menu} className="hidden items-center gap-5 xl:flex 2xl:gap-7">
+          {navItems.map((item)=>(
+            <a
+              key={item.href+"-"+item.label}
+              aria-current={item.active?"page":undefined}
+              className={cn(
+                "border-b-2 border-transparent py-2 text-[12px] font-semibold tracking-[.01em] transition-colors hover:text-white 2xl:text-[13px]",
+                item.active?"border-primary text-white":"text-[#aeb3b4]"
+              )}
+              href={item.href}
+            >{item.label}</a>
+          ))}
+        </nav>
 
-        <div className="ml-auto flex min-w-0 shrink-0 items-center gap-1.5 min-[390px]:gap-2 sm:gap-3">
-          <LanguageSwitcher locale={locale} path={languagePath} />
-          <Button
-            asChild
-            className="hidden h-11 rounded-[3px] border border-white/20 bg-black/50 px-4 text-xs font-black uppercase text-white hover:border-primary hover:bg-primary/10 hover:text-primary min-[1400px]:inline-flex"
-            variant="outline"
+        <div className="ml-auto flex shrink-0 items-center gap-2 sm:gap-3">
+          <LanguageSwitcher locale={locale} path={languagePath}/>
+          <a
+            className="hidden min-h-11 items-center gap-2 rounded-xl border border-white/20 px-3 text-xs font-semibold text-white transition hover:border-white/50 hover:bg-white/[.06] md:inline-flex xl:hidden 2xl:inline-flex"
+            href={whatsappHref({locale})}
+            rel="noreferrer"
+            target="_blank"
           >
-            <a href={whatsappHref({locale})} rel="noreferrer" target="_blank">
-              <MessageCircle className="h-4 w-4" />
-              {whatsappPhoneLabel}
-            </a>
-          </Button>
-          <Button
-            asChild
-            aria-label="WhatsApp NoordTune"
-            className="h-10 w-10 rounded-[3px] border border-[#25d366]/40 bg-[#25d366] p-0 text-white hover:bg-[#20bd5b] min-[430px]:h-11 min-[430px]:w-11 min-[1400px]:hidden"
-          >
-            <a href={whatsappHref({locale})} rel="noreferrer" target="_blank">
-              <MessageCircle className="h-5 w-5" />
-            </a>
-          </Button>
+            <MessageCircle className="h-[17px] w-[17px]"/>
+            <span className="hidden lg:inline 2xl:inline">{copy.contact}</span>
+          </a>
+          <details className="ux-header-menu relative xl:hidden">
+            <summary className="flex min-h-11 cursor-pointer select-none items-center gap-2 rounded-xl border border-white/20 px-3 text-sm font-semibold text-white transition hover:bg-white/[.06] focus-visible:ring-2 focus-visible:ring-primary">
+              <Menu className="h-[19px] w-[19px]" aria-hidden="true"/>
+              <span className="hidden min-[400px]:inline">{copy.menu}</span>
+            </summary>
+            <nav aria-label={copy.menu} className="ux-header-menu-list absolute right-0 top-full mt-3 w-[min(85vw,320px)] overflow-hidden rounded-2xl border border-white/15 bg-[#1b1d1f] p-2 shadow-[0_18px_55px_rgba(0,0,0,.46)]">
+              {navItems.map(item=>(
+                <a
+                  aria-current={item.active?"page":undefined}
+                  className={cn("flex min-h-12 items-center justify-between rounded-xl px-4 text-sm font-medium transition hover:bg-white/[.08]",item.active?"bg-primary/10 text-white":"text-[#c8cbcb]")}
+                  href={item.href}
+                  key={item.href+"-"+item.label}
+                >{item.label}{item.active?<span className="h-1.5 w-1.5 rounded-full bg-primary"/>:null}</a>
+              ))}
+              <a href={whatsappHref({locale})} target="_blank" rel="noreferrer" className="mt-2 flex min-h-12 items-center justify-between rounded-xl bg-primary px-4 text-sm font-bold text-white">{copy.contact}<ArrowUpRight className="h-4 w-4"/></a>
+            </nav>
+          </details>
         </div>
       </div>
-
-      <CatalogNav
-        className="container flex w-full max-w-full min-w-0 gap-3 overflow-x-auto overscroll-x-contain border-t border-white/10 py-2 text-[0.68rem] xl:hidden"
-        items={navItems}
-      />
     </header>
-  );
-}
-
-function CatalogNav({
-  className,
-  items
-}: {
-  className?: string;
-  items: ReturnType<typeof mainNavItems>;
-}) {
-  return (
-    <nav aria-label="Main menu" className={cn("text-white", className)}>
-      {items.map((item) => (
-        <a
-          aria-current={item.active ? "page" : undefined}
-          className={cn(
-            "whitespace-nowrap font-black uppercase tracking-normal transition hover:text-primary focus:outline-none focus-visible:text-primary",
-            item.active
-              ? "text-primary"
-              : "text-white/86"
-          )}
-          href={item.href}
-          key={`${item.label}-${item.href}`}
-        >
-          {item.label}
-        </a>
-      ))}
-    </nav>
   );
 }

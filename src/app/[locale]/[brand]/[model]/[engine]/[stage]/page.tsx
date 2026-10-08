@@ -15,6 +15,7 @@ import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
 import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
+import {MobileActionBar} from "@/components/mobile-action-bar";
 import {CatalogVerificationNotice} from "@/components/catalog-verification-notice";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {SeoInfoSections} from "@/components/seo-info-sections";
@@ -200,7 +201,7 @@ export default async function VehicleStagePage({params}: PageProps) {
         dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbJsonLd)}}
       />
       <CatalogHeader locale={safeLocale} languagePath={stagePath} />
-      <section className="relative overflow-hidden border-b border-white/10">
+      <section className="ux-vehicle-hero relative overflow-hidden border-b border-white/10">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -333,6 +334,7 @@ export default async function VehicleStagePage({params}: PageProps) {
         />
       </section>
       <CatalogFooter locale={safeLocale} />
+      <MobileActionBar locale={safeLocale} mode="vehicle" vehicleLabel={`${vehicle.brand} ${vehicle.model} ${vehicle.engine}`}/>
       <FloatingWhatsappButton
         locale={safeLocale}
         mobileCtaOffset

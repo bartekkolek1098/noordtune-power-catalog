@@ -6,8 +6,6 @@ import {
   ChevronRight,
   CircleCheck,
   ClipboardList,
-  Euro,
-  Gauge,
   Info,
   Settings2,
   ShieldCheck,
@@ -26,7 +24,6 @@ import {customerVehicle} from "@/lib/customer-profile";
 import {applyStageHardwarePolicy} from "@/lib/stage-hardware-policy";
 import {
   homeVisualCopy,
-  homepageHeroImage,
   performanceBanners,
   popularCars
 } from "@/data/homepage";
@@ -34,6 +31,7 @@ import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {ManualSelector} from "@/components/manual-selector";
+import {MobileActionBar} from "@/components/mobile-action-bar";
 import {PlateLookup} from "@/components/plate-lookup";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
@@ -154,6 +152,13 @@ export default async function HomePage({params}: PageProps) {
     }
   }[safeLocale];
 
+
+  const quickCopy = {
+    nl: {check:"Bekijk de mogelijkheden", manual:"Of zoek op merk en model", diagnostic:"Een helder startpunt voor jouw auto", search:"Liever handmatig zoeken?"},
+    en: {check:"View the possibilities", manual:"Or search by make and model", diagnostic:"A clearer starting point for your car", search:"Prefer to choose your car?"},
+    pl: {check:"Sprawdź możliwości", manual:"Lub szukaj po marce i modelu", diagnostic:"Przejrzysty punkt wyjścia dla Twojego auta", search:"Wolisz wybrać auto ręcznie?"}
+  }[safeLocale];
+
   const jsonLd = {
     "@context": "https://schema.org",
     ...noordTuneProviderJsonLd(),
@@ -168,7 +173,7 @@ export default async function HomePage({params}: PageProps) {
   };
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#050505]" id="top">
+    <main className="ux-home min-h-screen overflow-x-clip" id="top">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
@@ -176,42 +181,44 @@ export default async function HomePage({params}: PageProps) {
 
       <CatalogHeader locale={safeLocale} />
 
-      <section className="relative border-b border-white/10">
-        <Image
-          alt="Dark performance car in a tuning workshop"
-          className="absolute inset-0 object-cover object-center opacity-72"
-          fill
-          priority
-          quality={90}
-          sizes="100vw"
-          src={assetPath(homepageHeroImage)}
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,#050505_0%,rgba(5,5,5,.92)_35%,rgba(5,5,5,.62)_100%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(226,0,15,.18),transparent_28%,rgba(226,0,15,.08)_75%,transparent)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_74%_18%,rgba(226,0,15,.24),transparent_24rem)]" />
-        <div className="absolute right-0 top-24 hidden h-[34rem] w-[58%] skew-y-[-7deg] bg-[repeating-linear-gradient(100deg,transparent_0_28px,rgba(226,0,15,.18)_30px,transparent_33px)] opacity-45 lg:block" />
-        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#050505] to-transparent" />
 
-        <div className="container relative z-10 pb-10 pt-10 lg:pt-14">
-          <div className="grid gap-9 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-            <div>
-              <Badge className="mb-5 border-primary/30 bg-primary/10 text-primary">
-                {copy.heroKicker}
-              </Badge>
-              <h1 className="racing-title max-w-3xl text-[2.65rem] leading-[0.92] text-white sm:text-5xl md:text-7xl">
+      <section className="ux-hero" aria-labelledby="catalog-intro-heading">
+        <div className="container relative">
+          <div className="ux-hero__grid">
+            <div className="ux-hero__content">
+              <p className="ux-eyebrow">{copy.heroKicker}</p>
+              <h1 className="ux-hero__title" id="catalog-intro-heading">
                 {copy.heroLineA}
-                <span className="block text-primary max-sm:text-[1.9rem] max-sm:leading-none max-sm:hyphens-auto">
-                  {copy.heroLineB}
-                </span>
-                <span className="block">{copy.heroLineC}</span>
+                <span>{copy.heroLineB}</span>
+                <span>{copy.heroLineC}</span>
               </h1>
-              <p className="mt-6 max-w-xl text-sm leading-7 text-slate-200 md:text-base">
-                {copy.heroIntro}
-              </p>
+              <p className="ux-hero__description">{copy.heroIntro}</p>
+              <div className="ux-hero__actions">
+                <a href="#rdw-check">{quickCopy.check}<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
+                <a href="#manual-selector">{quickCopy.manual}</a>
+              </div>
+            </div>
+            <div className="ux-hero__visual hidden lg:flex" aria-label={quickCopy.diagnostic}>
+              <div className="ux-reference-top">
+                <span>NOORDTUNE / POWER CATALOG</span>
+                <span>01 — 03</span>
+              </div>
+              <div className="ux-reference-body">
+                <span className="ux-reference-marker">RDW / 01</span>
+                <strong>{quickCopy.diagnostic}</strong>
+                <p>{copy.featureA.text}</p>
+              </div>
+              <div className="ux-reference-bottom">
+                {copy.process.slice(0,3).map((step,index)=>(
+                  <div className="ux-reference-step" key={step.title}>
+                    <span>{String(index+1).padStart(2,"0")}</span>
+                    <span>{step.title}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-
-          <div className="panel-edge mt-9 grid gap-4 bg-black/78 p-4 shadow-[0_0_80px_rgba(0,0,0,.42)] backdrop-blur">
+          <div className="ux-lookup-wrap scroll-mt-28" id="rdw-check">
             <PlateLookup
               locale={safeLocale}
               text={{
@@ -267,29 +274,15 @@ export default async function HomePage({params}: PageProps) {
                 }
               }}
             />
-
-            <ManualSelector
-              initialBrands={selectorBrands}
-              initialPopularVehicles={selectorPopularVehicles}
-              locale={safeLocale}
-              text={manualText}
-            />
           </div>
-
-          <div className="mt-4 grid gap-4 lg:grid-cols-3">
-            {[
-              {icon: ClipboardList, ...copy.featureA},
-              {icon: Gauge, ...copy.featureB},
-              {icon: Euro, ...copy.featureC}
-            ].map((feature) => (
-              <div
-                className="grid gap-4 rounded-lg border border-white/10 bg-black/70 p-5 sm:grid-cols-[auto_1fr]"
-                key={feature.title}
-              >
-                <feature.icon className="h-10 w-10 text-primary" />
+          <a className="ux-mobile-manual-link lg:hidden" href="#manual-selector">{quickCopy.manual}<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
+          <div className="ux-assurances" aria-label={quickCopy.diagnostic}>
+            {[copy.featureA,copy.featureB,copy.featureC].map((feature,index)=>(
+              <div className="ux-assurance" key={feature.title}>
+                <span className="ux-assurance__index">{String(index+1).padStart(2,"0")}</span>
                 <div>
-                  <div className="font-black uppercase text-white">{feature.title}</div>
-                  <p className="mt-1 text-sm leading-6 text-muted-foreground">{feature.text}</p>
+                  <h3>{feature.title}</h3>
+                  <p>{feature.text}</p>
                 </div>
               </div>
             ))}
@@ -297,50 +290,52 @@ export default async function HomePage({params}: PageProps) {
         </div>
       </section>
 
-      <section className="container py-8">
-        <div className="grid gap-4 lg:grid-cols-3">
-          {performanceBanners.map((banner) => (
-            <article
-              className="group relative min-h-[270px] overflow-hidden rounded-lg border border-white/10 bg-black shadow-[0_0_60px_rgba(226,0,15,.12)]"
-              key={banner.id}
-            >
-              <Image
-                alt={banner.title[safeLocale]}
-                className="object-cover opacity-68 transition duration-500 group-hover:scale-[1.04] group-hover:opacity-88"
-                fill
-                quality={82}
-                sizes="(min-width: 1024px) 33vw, 100vw"
-                src={assetPath(banner.image)}
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,.16),rgba(0,0,0,.9))]" />
-              <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(226,0,15,.28),transparent_42%,rgba(255,255,255,.08))]" />
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="mb-3 flex items-center justify-between gap-3">
-                  <Badge className="border-primary/35 bg-primary/20 text-primary">
-                    {banner.accent}
-                  </Badge>
-                  <span className="rounded-md border border-white/15 bg-black/55 px-3 py-1 text-sm font-black text-white">
-                    {banner.stat[safeLocale]}
-                  </span>
-                </div>
-                <h2 className="text-2xl font-black uppercase italic leading-tight tracking-normal">
-                  {banner.title[safeLocale]}
-                </h2>
-                <p className="mt-2 text-sm leading-6 text-slate-200">
-                  {banner.subtitle[safeLocale]}
-                </p>
+      <section className="ux-manual-section" aria-label={quickCopy.search}>
+        <div className="container">
+          <p className="ux-eyebrow">{quickCopy.search}</p>
+          <div className="ux-manual-shell">
+            <ManualSelector
+              initialBrands={selectorBrands}
+              initialPopularVehicles={selectorPopularVehicles}
+              locale={safeLocale}
+              text={manualText}
+            />
+          </div>
+        </div>
+      </section>
+
+
+      <section className="container ux-content-section">
+        <div className="ux-services-intro">
+          <div>
+            <p className="ux-eyebrow">{t("services")}</p>
+            <h2 className="ux-content-heading mt-4">{copy.featureB.title}</h2>
+          </div>
+          <p className="text-sm leading-7 text-muted-foreground">{copy.featureB.text}</p>
+        </div>
+        <div className="ux-service-tiles">
+          {performanceBanners.map((banner,index)=>(
+            <article className="ux-service-tile" key={banner.id}>
+              <div className="ux-service-tile__top">
+                <span>{String(index+1).padStart(2,"0")} / 03</span>
+                <span>{banner.accent}</span>
               </div>
+              <div>
+                <h3>{banner.title[safeLocale]}</h3>
+                <p>{banner.subtitle[safeLocale]}</p>
+              </div>
+              <div className="ux-service-tile__rule" aria-hidden="true"/>
             </article>
           ))}
         </div>
       </section>
 
       {bmwExample ? (
-        <section className="container py-12" id="results">
+        <section className="ux-example py-12 md:py-20" id="results"><div className="container">
           <Badge className="mb-3 border-primary/30 bg-primary/10 text-primary">
             {copy.exampleEyebrow}
           </Badge>
-          <h2 className="text-3xl font-black uppercase italic tracking-normal md:text-4xl">
+          <h2 className="ux-content-heading">
             {copy.exampleHeadingA}
             <span className="text-primary">{copy.exampleHeadingB}</span>
           </h2>
@@ -493,17 +488,18 @@ export default async function HomePage({params}: PageProps) {
             <Info className="mt-0.5 h-4 w-4 shrink-0" />
             {copy.disclaimer}
           </p>
+          </div>
         </section>
       ) : null}
 
-      <section className="container py-14">
+      <section className="container ux-content-section">
         <Badge className="mb-3 border-primary/30 bg-primary/10 text-primary">
           {t("results")}
         </Badge>
-        <h2 className="text-3xl font-black uppercase italic tracking-normal md:text-4xl">
+        <h2 className="ux-content-heading">
           {t("featured")}
         </h2>
-        <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="ux-vehicle-cards mt-7 grid gap-3 min-[360px]:grid-cols-2 lg:grid-cols-5 lg:gap-5">
           {popularCars.map((car, index) => {
             const detailVehicleSource = getVehicleById(car.detailId);
             const detailVehicle = detailVehicleSource ? customerVehicle(detailVehicleSource) : undefined;
@@ -514,11 +510,11 @@ export default async function HomePage({params}: PageProps) {
 
             return (
               <article
-                className="group overflow-hidden rounded-lg border border-white/10 bg-black/70 shadow-[0_0_42px_rgba(0,0,0,.28)] transition hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_0_44px_rgba(226,0,15,.16)]"
+                className="ux-card group overflow-hidden transition-colors hover:border-primary/50"
                 key={car.id}
               >
                 <a href={detailHref}>
-                  <span className="relative block aspect-[4/3] overflow-hidden bg-black">
+                  <span className="relative block aspect-[5/4] overflow-hidden bg-black">
                     <Image
                       alt={`${car.title} ${car.platform}`}
                       className="object-cover transition duration-500 group-hover:scale-[1.05]"
@@ -534,15 +530,15 @@ export default async function HomePage({params}: PageProps) {
                     </span>
                   </span>
                 </a>
-                <div className="p-4">
+                <div className="p-3 sm:p-4">
                   <a
-                    className="block text-lg font-black uppercase leading-tight tracking-normal text-white transition hover:text-primary"
+                    className="block text-base font-bold leading-tight tracking-[-.02em] text-white transition hover:text-primary sm:text-lg"
                     href={detailHref}
                   >
                     {car.title}
                   </a>
                   <a
-                    className="mt-2 block rounded-md border border-primary/20 bg-primary/10 px-3 py-2 text-sm font-semibold text-primary transition hover:border-primary hover:bg-primary/15"
+                    className="mt-3 block rounded-lg border border-white/10 bg-[#26292a] px-3 py-2 text-xs font-semibold leading-5 text-[#fff] transition hover:border-primary/50 sm:text-sm"
                     href={stageHref}
                   >
                     {detailVehicle?.configurationNote
@@ -562,7 +558,7 @@ export default async function HomePage({params}: PageProps) {
       <section className="container pb-12" aria-labelledby="more-catalog-vehicles">
         <div className="rounded-lg border border-white/10 bg-black/55 p-5 md:p-6">
           <h2
-            className="text-2xl font-black uppercase italic tracking-normal text-white"
+            className="ux-section-title text-white"
             id="more-catalog-vehicles"
           >
             {catalogLinksCopy.title}
@@ -586,10 +582,10 @@ export default async function HomePage({params}: PageProps) {
 
       <section className="container py-12" id="how">
         <div className="rounded-lg border border-white/10 bg-black/55 p-6">
-          <h2 className="text-center text-3xl font-black uppercase italic tracking-normal">
+          <h2 className="ux-content-heading text-center">
             {copy.howTitleA} <span className="text-primary">{copy.howTitleB}</span>
           </h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-4">
+          <div className="ux-steps mt-8 grid gap-5 md:grid-cols-4">
             {[ClipboardList, ShieldCheck, SlidersHorizontal, Wrench].map((Icon, index) => {
               const step = copy.process[index];
               return (
@@ -669,6 +665,7 @@ export default async function HomePage({params}: PageProps) {
         <CatalogFooter locale={safeLocale} />
       </div>
       <FloatingWhatsappButton locale={safeLocale} />
+      <MobileActionBar locale={safeLocale}/>
     </main>
   );
 }

@@ -83,11 +83,11 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     nav: ["HOME", "KATALOGUS", "DIAGNOSE", "WERKWIJZE", "RESULTATEN", "OVER ONS", "CONTACT"],
     phone: "+31 685 759 600",
     heroKicker: "RDW VERMOGENSCATALOGUS",
-    heroLineA: "Controleer de",
-    heroLineB: "tuning­mogelijkheden",
-    heroLineC: "van jouw auto.",
+    heroLineA: "Ontdek de",
+    heroLineB: "chiptuning voor",
+    heroLineC: "jouw auto.",
     heroIntro:
-      "NoordTune combineert RDW-gegevens met een professionele tuningcatalogus. Bekijk direct mogelijkheden voor Stage 1 / 2, DPF / AdBlue / EGR, DSG / TCU tuning en ontvang een indicatie op maat.",
+      "Voer je kenteken in voor fabrieksgegevens en een eerlijke Stage 1-indicatie. We controleren de juiste motor en ECU altijd apart.",
     manualPanelTitle: "Of kies jouw auto handmatig",
     manualPanelText:
       "Voor klanten buiten Nederland: kies merk, model, bouwjaar en motor zonder Nederlands kenteken.",
@@ -188,11 +188,11 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     nav: ["HOME", "POWER CATALOG", "DIAGNOSTICS", "PROCESS", "RESULTS", "ABOUT", "CONTACT"],
     phone: "+31 685 759 600",
     heroKicker: "RDW POWER CATALOG",
-    heroLineA: "Check your car's",
-    heroLineB: "tuning potential",
-    heroLineC: "instantly.",
+    heroLineA: "Find the right",
+    heroLineB: "tuning for",
+    heroLineC: "your car.",
     heroIntro:
-      "NoordTune combines RDW vehicle data with a professional tuning catalog. Instantly view Stage 1 / 2, DPF / AdBlue / EGR, DSG / TCU tuning options and receive a tailored indication.",
+      "Enter your Dutch plate for factory specs and an honest Stage 1 indication. We always check engine and ECU compatibility individually.",
     manualPanelTitle: "Or choose your car manually",
     manualPanelText:
       "For customers outside the Netherlands: choose make, model, year and engine without a Dutch plate.",
@@ -294,10 +294,10 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     phone: "+31 685 759 600",
     heroKicker: "KATALOG MOCY RDW",
     heroLineA: "Sprawdź",
-    heroLineB: "możliwości tuningu",
+    heroLineB: "chiptuning dla",
     heroLineC: "swojego auta.",
     heroIntro:
-      "NoordTune łączy dane RDW z profesjonalnym katalogiem tuningu. Od razu sprawdzisz Stage 1 / 2, DPF / AdBlue / EGR, tuning DSG / TCU i otrzymasz indywidualną wycenę.",
+      "Wpisz holenderską rejestrację i sprawdź dane fabryczne oraz orientacyjny Stage 1. Silnik i ECU zawsze weryfikujemy indywidualnie.",
     manualPanelTitle: "Lub wybierz auto ręcznie",
     manualPanelText:
       "Dla klientów spoza Holandii: wybierz markę, model, rok i silnik bez holenderskiej tablicy.",
