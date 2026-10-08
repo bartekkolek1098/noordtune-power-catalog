@@ -1,0 +1,52 @@
+{
+  "p0": [
+    {
+      "id": "customer-output-guard",
+      "status": "IMPLEMENT_IN_PR22",
+      "action": "Block customer numeric output from generic/canonical-estimated profiles; preserve source-backed/reviewed values."
+    },
+    {
+      "id": "stage3-public-removal",
+      "status": "IMPLEMENT_IN_PR22",
+      "action": "Publish Stage 1/2 only; redirect legacy Stage 3+ URLs."
+    },
+    {
+      "id": "replace-cross-product-generator",
+      "status": "NEXT",
+      "action": "Stop generating model × trim Cartesian products as customer-identifiable vehicles. Build selector identity rows from discovered competitor/manufacturer taxonomy."
+    }
+  ],
+  "p1": [
+    {
+      "id": "import-vtech-taxonomy",
+      "count": 4722,
+      "action": "Use V-Tech as discovery/taxonomy only; do not use PowerChip module gains as remap votes."
+    },
+    {
+      "id": "stage1-consensus",
+      "count": 28,
+      "action": "Promote bounded multi-source Stage 1 ranges after identity checks."
+    },
+    {
+      "id": "single-source-review",
+      "count": 3032,
+      "action": "Add independent corroboration or keep customer output on request."
+    },
+    {
+      "id": "stage1-conflicts",
+      "count": 14,
+      "action": "Split identity or withhold; never average incompatible variants."
+    }
+  ],
+  "p2": [
+    {
+      "id": "stage2-hardware-review",
+      "count": 309,
+      "action": "Stage 2 requires exact compatible source plus defined hardware/fuel/transmission scope. Ratios remain QA-only."
+    },
+    {
+      "id": "seo-publication",
+      "action": "Only publish SEO pages after identity + Stage 1 confidence gates. Full lookup taxonomy may be much larger than SEO page set."
+    }
+  ]
+}
