@@ -24,16 +24,16 @@
     "missingFirstAdmissionYear": 0
   },
   "stage1": {
-    "sourceLinkedIndicative": 1463,
+    "sourceLinkedIndicative": 1527,
     "genericIndicative": 0,
     "canonicalEstimated": 0,
     "otherNumericUnverified": 5,
-    "withoutNumeric": 1532,
-    "anyNumeric": 1468,
-    "sourceLinkedShareOfFrozenPercent": 48.77,
-    "sourceLinkedWithinOrdinaryIce": 1463,
-    "sourceLinkedWithinFullTechnicalIdentity": 1336,
-    "sourceLinkedShareOfOrdinaryIcePercent": 56.49,
+    "withoutNumeric": 1468,
+    "anyNumeric": 1532,
+    "sourceLinkedShareOfFrozenPercent": 50.9,
+    "sourceLinkedWithinOrdinaryIce": 1527,
+    "sourceLinkedWithinFullTechnicalIdentity": 1400,
+    "sourceLinkedShareOfOrdinaryIcePercent": 58.96,
     "disclaimer": "Source-linked is an application/reference published Stage 1, NOT a measured or guaranteed owner/ECU result. Generic and generated canonical numbers are NOT counted as sourced."
   },
   "stage2": {
@@ -45,9 +45,9 @@
   },
   "internalCoverageClasses": {
     "A": 270,
-    "B": 1188,
-    "C": 113,
-    "D": 1026,
+    "B": 1252,
+    "C": 111,
+    "D": 964,
     "E": 403,
     "unknown": 0
   },
@@ -84,17 +84,6 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 4
-    },
-    {
-      "priorityRank": 50,
-      "make": "PEUGEOT",
-      "model": "3008",
-      "displacementCc": 1598,
-      "yearBand": "2020–2024",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 2
     },
     {
       "priorityRank": 59,
@@ -471,22 +460,33 @@
       "technicalFactsComplete": 4
     },
     {
-      "priorityRank": 159,
-      "make": "PEUGEOT",
-      "model": "2008",
-      "displacementCc": 1199,
-      "yearBand": "2010–2014",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
-    },
-    {
       "priorityRank": 162,
       "make": "AUDI",
       "model": "Q3",
       "displacementCc": 1984,
       "yearBand": "2015–2019",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 11
+    },
+    {
+      "priorityRank": 166,
+      "make": "MERCEDES-BENZ",
+      "model": "C 350 E",
+      "displacementCc": 1991,
+      "yearBand": "2015–2019",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 0
+    },
+    {
+      "priorityRank": 167,
+      "make": "MAZDA",
+      "model": "MAZDA MX-5",
+      "displacementCc": 1798,
+      "yearBand": "2005–2009",
       "sampleCount": 12,
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
