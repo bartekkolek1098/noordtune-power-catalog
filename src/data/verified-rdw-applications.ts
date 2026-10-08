@@ -16,6 +16,10 @@ type VerifiedApplication = {
   displacementCc: number;
   cylinders: number;
   stockPowerHp: number;
+  /** RDW's original kW must match for rounded 115/116 PS references. */
+  registeredPowerKw?: number;
+  /** A known RDW homologation body code is positive, not guessed, evidence. */
+  requiredRdwType?: string;
   stockTorqueNm: number;
   fuel: "Petrol" | "Diesel" | "CNG";
   engineLabel: string;
@@ -118,6 +122,60 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
     }
   ],
   reviewNote: "Published 1P/CAXC 125 PS Stage 1 observations span 145–150 PS and 250–265 Nm; this is an indicative source range, not measured NoordTune output. Exact engine code, ECU software, fuel quality and workshop applicability require manual verification. No automatic Stage 2."
+}, {
+  id: "rdw-seat-leon-5f-10-tsi-85kw",
+  make: "Seat", model: "Leon", generation: "5F (III)",
+  yearFrom: 2015, yearTo: 2020,
+  displacementCc: 999, cylinders: 3,
+  // RDW: registered 85 kW -> rounded 116 metric PS. Provider references
+  // normally label the very same 85 kW engine as "115 PS".
+  stockPowerHp: 116, registeredPowerKw: 85, requiredRdwType: "5F", stockTorqueNm: 200, fuel: "Petrol",
+  engineLabel: "1.0 TSI / EcoTSI petrol turbo (999 cc), CHZD check required",
+  requirements: "Confirm actual 5F engine code CHZD/ECU (Bosch MED17.5.21), gearbox, RON grade, hardware and maintenance condition. RDW 85 kW rounds to 116 metric PS, while providers label the original output 115 PS. Excludes hybrids, E85 and Stage 1+.",
+  powerRangeHp: [130, 135], torqueRangeNm: [225, 240],
+  sources: [
+    {title: "BR-Performance Leon 5F facelift 1.0 TSI 115 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.br-performance.lu/en-lu/chiptuning/1-cars/48-seat/2724-leon/9004-iii-facelift-5f-2016-2020/22357-1-0-tsi/",
+      scope: "Leon III facelift 5F 1.0 TSI 115 PS / 200 Nm, Stage 1 130 PS / 240 Nm. No E85 or hardware Stage 2."},
+    {title: "Shiftech Leon 5F MK2 1.0 TSI 115 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.shiftech.eu/en/chiptuning/car/seat/leon/2017-5f-mk2/petrol/1.0-tsi-tfsi-115",
+      scope: "2017-on Leon 5F Mk2 1.0 TSI 115 PS / 200 Nm, Stage 1 135 PS / 240 Nm."},
+    {title: "VAGtechniek Leon 5F facelift 1.0 EcoTSI 115 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.vagtechniek.nl/chiptuning/seat/leon/5f-facelift/1.0-ecotsi-115pk/",
+      scope: "Leon 5F facelift 1.0 EcoTSI stock 115 PS / 200 Nm, Stage 1 135 PS / 225 Nm; separate Stage 1+ 140/240 excluded."}
+  ],
+  reviewNote: "Three published 5F 1.0 TSI Stage 1 observations span 130–135 PS / 225–240 Nm, original provider stock is labelled 115 PS / 200 Nm. RDW 85 kW displays approximately 116 metric PS after conversion; any displayed gain is calculated against registered 116 PS, not a provider-stated +15/+20. These are indicative, not NoordTune measured figures."
+}, {
+  id: "rdw-nissan-juke-f15-12-digt-85kw",
+  make: "Nissan", model: "Juke", generation: "F15 facelift",
+  yearFrom: 2014, yearTo: 2019,
+  displacementCc: 1197, cylinders: 4,
+  stockPowerHp: 116, registeredPowerKw: 85, requiredRdwType: "F15", stockTorqueNm: 190, fuel: "Petrol",
+  engineLabel: "1.2 DIG-T turbo petrol (1197 cc), HR12DDT / HRA2 check required",
+  requirements: "Confirm F15 model, installed HR12DDT/HRA2 engine, manual gearbox, ECU family (Siemens/Continental EMS3155 or compatible), fuel grade and condition. Nissan/ADAC specify 85 kW / 115 PS / 190 Nm; RDW 85 kW is displayed as about 116 metric PS. Not a Stage 2 promise.",
+  powerRangeHp: [130, 131], torqueRangeNm: [230, 231],
+  sources: [
+    {title: "Shiftech Nissan Juke F15 1.2 DIG-T 115 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.shiftech.eu/en/chiptuning/car/nissan/juke/2010/petrol/1.2-dig-t-115",
+      scope: "Juke F15 1.2 DIG-T stock 115 PS / 190 Nm, Stage 1 130 PS / 230 Nm, no Stage 2 output reused."},
+    {title: "RS-Tronic Nissan Juke 1.2 DIG-T 115 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://rstronic.com/en/chiptuning/nissan/juke/2010/1.2-dig-t-115",
+      scope: "F15 Juke 1.2 DIG-T original 115 PS / 190 Nm, Stage 1 130 PS / 230 Nm."},
+    {title: "KHPTOOLS Nissan Juke 1.2 DIG-T 115 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.khptools.com/reprogramacion/turismos-furgonetas/nissan/juke/2010-2018/12-dig-t/115/3440/stage-1",
+      scope: "Juke 2010–2018 1.2 DIG-T 115 PS / 190 Nm, Stage 1 131 PS / 231 Nm."},
+    {title: "Nissan News: new Juke DIG-T 115 factory powertrain",
+      sourceType: "manufacturer", retrievalMethod: "search-index", retrievedAt: "2026-10-08",
+      url: "https://france.nissannews.com/fr-FR/releases/nouveau-nissan-juke-un-crossover-toujours-plus-turbulent?downloadUrl=%2Ffr-FR%2Freleases%2Frelease-117996%2Fdownload&la=1",
+      scope: "Official Nissan release: Juke 1.2 DIG-T 115 PS (85 kW), 190 Nm, 1197 cc with six-speed manual. Manufacturer stock data only, not an ECU or tuning result."}
+  ],
+  reviewNote: "Independent F15 1.2 DIG-T Stage 1 observations 130–131 PS / 230–231 Nm. Official original 85 kW corresponds to a manufacturer-labelled 115 PS, while the RDW metric conversion is rounded to 116 PS. ECU, transmission, year, fuel and vehicle condition must be checked; no guarantee of gains."
 }];
 
 function normalized(value?: string) {
@@ -141,16 +199,24 @@ function matches(input: EstimateMatchInput, app: VerifiedApplication) {
   const generationHints = [input.model, input.type, input.variant, input.execution].filter(Boolean).join(" ");
   // An explicit conflicting body code is veto evidence even if power and year fit.
   if (app.make === "BMW" && /\b(?:F20|F21)\b/i.test(generationHints)) return false;
-  // Exact 1P source is not transferable to earlier Leon 1M, later Leon 5F/KL.
-  if (app.make === "Seat" && /\b(?:1M|5F|KL)\b/i.test(generationHints)) return false;
+  // Explicit generation veto. Similar power and displacement do not identify
+  // a model family or ECU. Seat 1P and 5F are distinct applications.
+  if (app.make === "Seat" && (app.generation.startsWith("1P")
+    ? /\b(?:1M|5F|KL)\b/i : /\b(?:1M|1P|KL)\b/i).test(generationHints)) return false;
+  if (app.make === "Nissan" && app.generation.startsWith("F15") &&
+    /\b(?:F16|J11|J12)\b/i.test(generationHints)) return false;
   return normalized(input.make) === normalized(app.make)
     && model.split(" ").includes(normalized(app.model))
     && year !== undefined && year >= app.yearFrom && year <= app.yearTo
     && input.displacementCc === app.displacementCc
+    && (app.requiredRdwType === undefined || normalized(input.type) === normalized(app.requiredRdwType))
     && (input.cylinders == null || input.cylinders === app.cylinders)
     && normalizeCatalogFuel(input.fuel) === app.fuel
     && (app.fuel !== "CNG" || normalized(input.fuel) === "cng")
     && hp != null && Math.abs(hp - app.stockPowerHp) <= 0.6
+    && (app.registeredPowerKw === undefined ||
+      (input.registeredPower?.unit === "kW" &&
+       Math.abs(input.registeredPower.value - app.registeredPowerKw) <= 0.25))
     && (input.stockTorqueNm == null || Math.abs(input.stockTorqueNm - app.stockTorqueNm) < 1);
 }
 
