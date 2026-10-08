@@ -88,6 +88,36 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
       scope: "2015–2020 Caddy 1.4 TGI 110/200 stock, Stage 1 135/250, published indicative figures."}
   ],
   reviewNote: "Indicative values from generation-and-fuel-specific 1.4 TGI references. Provider outputs vary: 135–140 PS, 240–250 Nm. Installed CNG system, ECU and fuel-specific calibration require workshop verification. No guarantee of power or road legality."
+}, {
+  id: "rdw-seat-leon-1p-14-tsi-125",
+  make: "Seat", model: "Leon", generation: "1P facelift",
+  yearFrom: 2009, yearTo: 2011,
+  displacementCc: 1390, cylinders: 4,
+  stockPowerHp: 125, stockTorqueNm: 200, fuel: "Petrol",
+  engineLabel: "1.4 TSI CAXC turbo petrol (1390 cc)",
+  requirements: "Confirm Seat Leon 1P / engine CAXC and Bosch MED17.5.20 or MED17.5.5 ECU, fuel quality, gearbox, installed hardware and engine condition. A 2009–2011 admission alone does not verify an installed ECU.",
+  powerRangeHp: [145, 150], torqueRangeNm: [250, 265],
+  sources: [
+    {
+      title: "VAGtechniek Seat Leon 1P facelift 1.4 TSI 125 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.vagtechniek.nl/chiptuning/seat/leon/1p-facelift/1.4-tsi-125pk/",
+      scope: "1P facelift 1.4 TSI 125 PS / 200 Nm, Stage 1 145 PS / 250 Nm; Stage 1+ and fuel scope excluded."
+    },
+    {
+      title: "Tuning Service Seat Leon 1P 1.4 TSI 125 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://tuningservice.nl/chiptuning/seat/leon/1p-2005-2012/14-tsi-125pk/",
+      scope: "Leon 1P 2005–2012, 1390 cc, CAXC, Bosch MED17.5.20, stock 125 PS / 200 Nm, Stage 1 150 PS / 265 Nm; Stage 2 excluded."
+    },
+    {
+      title: "BPT Portal Seat Leon 1P 1.4 TSI 125 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://bpt-portal.com/nl/tuning/cars/seat/leon/1p-2005-2012/1-4-tsi-125hp/",
+      scope: "Leon 1P 2005–2012, CAXC, Bosch MED17.5.20/MED17.5.5, 125 PS / 200 Nm stock; Stage 1 145 PS / 250 Nm."
+    }
+  ],
+  reviewNote: "Published 1P/CAXC 125 PS Stage 1 observations span 145–150 PS and 250–265 Nm; this is an indicative source range, not measured NoordTune output. Exact engine code, ECU software, fuel quality and workshop applicability require manual verification. No automatic Stage 2."
 }];
 
 function normalized(value?: string) {
@@ -111,6 +141,8 @@ function matches(input: EstimateMatchInput, app: VerifiedApplication) {
   const generationHints = [input.model, input.type, input.variant, input.execution].filter(Boolean).join(" ");
   // An explicit conflicting body code is veto evidence even if power and year fit.
   if (app.make === "BMW" && /\b(?:F20|F21)\b/i.test(generationHints)) return false;
+  // Exact 1P source is not transferable to earlier Leon 1M, later Leon 5F/KL.
+  if (app.make === "Seat" && /\b(?:1M|5F|KL)\b/i.test(generationHints)) return false;
   return normalized(input.make) === normalized(app.make)
     && model.split(" ").includes(normalized(app.model))
     && year !== undefined && year >= app.yearFrom && year <= app.yearTo
@@ -118,7 +150,8 @@ function matches(input: EstimateMatchInput, app: VerifiedApplication) {
     && (input.cylinders == null || input.cylinders === app.cylinders)
     && normalizeCatalogFuel(input.fuel) === app.fuel
     && (app.fuel !== "CNG" || normalized(input.fuel) === "cng")
-    && hp != null && Math.abs(hp - app.stockPowerHp) <= 0.6;
+    && hp != null && Math.abs(hp - app.stockPowerHp) <= 0.6
+    && (input.stockTorqueNm == null || Math.abs(input.stockTorqueNm - app.stockTorqueNm) < 1);
 }
 
 export function resolveVerifiedRdwApplication(input: EstimateMatchInput, applications = verifiedRdwApplications): EstimateResolution | undefined {
@@ -129,7 +162,8 @@ export function resolveVerifiedRdwApplication(input: EstimateMatchInput, applica
     status: "conditional", coverageClass: "B", resolutionLevel: 1,
     reasonCodes: ["GENERATION_SCOPED_SOURCE_EVIDENCE", "SOURCE_OWNER_REVIEW_REQUIRED", "OUTPUT_RANGE_SOURCE_CONFLICT", "ECU_AND_FUEL_SCOPE_UNCONFIRMED"],
     profile: {
-      id: app.id, brand: app.make, model: `1 Series ${app.generation} ${app.model}`,
+      id: app.id, brand: app.make,
+      model: app.make === "BMW" ? `1 Series ${app.generation} ${app.model}` : `${app.model} ${app.generation}`,
       engine: app.engineLabel, generation: app.generation, version: `${app.generation} ${app.model}, published indicative output`,
       yearRange: `${app.yearFrom}–${app.yearTo}`, fuel: app.fuel,
       stockPowerHp: app.stockPowerHp, stockTorqueNm: app.stockTorqueNm,
