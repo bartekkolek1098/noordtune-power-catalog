@@ -15,13 +15,18 @@ const output=process.env.RDW_QA_OUTPUT||"C:/Users/barto/Desktop/noordtune-rdw-bu
 const oidc=process.env.VERCEL_OIDC_TOKEN||"";
 const previewOrigin=new URL(base).origin;
 const protectedPreview=new URL(base).hostname.endsWith(".vercel.app");
-const scenarios=reviewedBulkRdwApplications.flatMap((app,index)=>{
+const selectedApps=process.env.RDW_QA_ONLY
+ ? reviewedBulkRdwApplications.filter(a=>a.id===process.env.RDW_QA_ONLY)
+ : reviewedBulkRdwApplications;
+assert.ok(selectedApps.length>0,"Explicit QA subset must identify an approved application");
+const expectedJourneys=selectedApps.length*5;
+const scenarios=selectedApps.flatMap((app,index)=>{
   const tasks=["nl","en","pl"].map(locale=>({app,index,locale,width:390}));
   tasks.push({app,index,locale:"nl",width:320},{app,index,locale:"nl",width:1180});
   return tasks;
 });
 assert.equal(reviewedBulkRdwApplications.length,15);
-assert.equal(scenarios.length,75);
+assert.equal(scenarios.length,expectedJourneys);
 const allowed=frozen.rows;
 (async()=>{
  fs.mkdirSync(output,{recursive:true});
@@ -36,7 +41,7 @@ const allowed=frozen.rows;
  }
  const results=[];
  try{
-  for(const app of reviewedBulkRdwApplications){
+  for(const app of selectedApps){
    const index=reviewedBulkRdwApplications.indexOf(app);
    const row=allowed.find(r=>
      r.vehicle.merk?.toLowerCase()===app.make.toLowerCase()&&
@@ -89,7 +94,9 @@ const allowed=frozen.rows;
      assert.ok(text.includes(payload.vehicle.make)&&text.includes(payload.vehicle.model),
       "Original RDW make/model visible");
      assert.ok(text.includes(app.registeredPowerKw+" kW"),app.id+" original kW");
-     assert.ok(text.includes(app.displacementCc+" cc"),app.id+" original cc");
+     const facts=await page.getByTestId("rdw-vehicle-facts").innerText();
+     const expectedCc=new Intl.NumberFormat(locale==="en"?"en-GB":locale).format(app.displacementCc)+" cm"+String.fromCharCode(179);
+     assert.ok(facts.includes(expectedCc),app.id+" exact registered engine displacement displayed");
      assert.ok(text.includes(String(app.stockPowerHp)),app.id+" correctly rounded factory PS");
      for(const value of [...app.powerRangeHp,...app.torqueRangeNm])
        assert.ok(text.includes(String(value)),app.id+" missing sourced Stage1 "+value);
@@ -116,13 +123,13 @@ const allowed=frozen.rows;
    }
    assert.equal(batch.length,5);
    results.push(...batch);
-   console.log("PASS RDW_BULK_APPLICATION "+app.id+" "+results.length+"/75");
+   console.log("PASS RDW_BULK_APPLICATION "+app.id+" "+results.length+"/"+expectedJourneys);
   }
-  assert.equal(results.length,75);
+  assert.equal(results.length,expectedJourneys);
   fs.writeFileSync(path.join(output,"qa-summary.json"),
-    JSON.stringify({checkedAt:new Date().toISOString(),applicationCount:15,
+    JSON.stringify({checkedAt:new Date().toISOString(),applicationCount:selectedApps.length,
       count:results.length,results,protectedPreview:!!(oidc&&protectedPreview)},null,2)+"\n");
-  console.log("RDW_BULK_BROWSER_QA_PASS: 75/75 across 15 exact source-reviewed RDW applications "+
+  console.log("RDW_BULK_BROWSER_QA_PASS: "+results.length+"/"+expectedJourneys+" across "+selectedApps.length+" exact source-reviewed RDW applications "+
     "(NL/EN/PL 390px and NL 320/1180px); "+(oidc&&protectedPreview?"protected preview":"local/public HTTP"));
  }finally{await context.close();await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
