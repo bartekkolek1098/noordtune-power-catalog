@@ -24,16 +24,16 @@
     "missingFirstAdmissionYear": 0
   },
   "stage1": {
-    "sourceLinkedIndicative": 1447,
+    "sourceLinkedIndicative": 1463,
     "genericIndicative": 0,
     "canonicalEstimated": 0,
     "otherNumericUnverified": 5,
-    "withoutNumeric": 1548,
-    "anyNumeric": 1452,
-    "sourceLinkedShareOfFrozenPercent": 48.23,
-    "sourceLinkedWithinOrdinaryIce": 1447,
-    "sourceLinkedWithinFullTechnicalIdentity": 1320,
-    "sourceLinkedShareOfOrdinaryIcePercent": 55.87,
+    "withoutNumeric": 1532,
+    "anyNumeric": 1468,
+    "sourceLinkedShareOfFrozenPercent": 48.77,
+    "sourceLinkedWithinOrdinaryIce": 1463,
+    "sourceLinkedWithinFullTechnicalIdentity": 1336,
+    "sourceLinkedShareOfOrdinaryIcePercent": 56.49,
     "disclaimer": "Source-linked is an application/reference published Stage 1, NOT a measured or guaranteed owner/ECU result. Generic and generated canonical numbers are NOT counted as sourced."
   },
   "stage2": {
@@ -45,9 +45,9 @@
   },
   "internalCoverageClasses": {
     "A": 270,
-    "B": 1172,
+    "B": 1188,
     "C": 113,
-    "D": 1042,
+    "D": 1026,
     "E": 403,
     "unknown": 0
   },
@@ -227,17 +227,6 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 0
-    },
-    {
-      "priorityRank": 106,
-      "make": "RENAULT",
-      "model": "MEGANE",
-      "displacementCc": 1197,
-      "yearBand": "2010–2014",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 12
     },
     {
       "priorityRank": 108,
@@ -491,6 +480,17 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 12
+    },
+    {
+      "priorityRank": 162,
+      "make": "AUDI",
+      "model": "Q3",
+      "displacementCc": 1984,
+      "yearBand": "2015–2019",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 11
     }
   ],
   "nextDecisionRule": "Prioritize unresolved groups from this fixed nonrandom cohort, then verify precise stock kW, engine generation, RDW type, cc, fuel, ECU/gearbox constraints and independent tuner sources before releasing any Stage 1 result."

@@ -10,15 +10,15 @@
 | RDW original engine kW present | 2,983 | 3,000 | Factory power exists in the registration; torque/ECU do not |
 | Full technical fields incl. RDW body type | 2,260 | 3,000 | Make/model/engine kW/cc/cylinders/year/type/single ordinary ICE fuel |
 | Ordinary ICE, interpretable RDW base | 2,590 | 3,000 | Safe denominator for a petrol/diesel Stage 1 discovery funnel |
-| **Stage 1 numeric with linked published sources** | **1,447** | **3,000** | Indicative; always requires physical ECU/transmission verification |
-| Stage 1 source-linked among ordinary ICE | 1,447 | 2,590 | Source links within the interpretable petrol/diesel subset only |
+| **Stage 1 numeric with linked published sources** | **1,463** | **3,000** | Indicative; always requires physical ECU/transmission verification |
+| Stage 1 source-linked among ordinary ICE | 1,463 | 2,590 | Source links within the interpretable petrol/diesel subset only |
 | Stage 1 generic numeric (not sourced) | 0 | 3,000 | Not considered verified Stage 1 coverage |
 | Stage 1 generated/canonical numeric | 0 | 3,000 | Not considered verified Stage 1 coverage |
 | Stage 1 other unverified numeric | 5 | 3,000 | Not considered verified Stage 1 coverage |
-| Stage 1 numerical output withheld | 1,548 | 3,000 | Do not invent an output; refer to workshop quote |
+| Stage 1 numerical output withheld | 1,532 | 3,000 | Do not invent an output; refer to workshop quote |
 | Public numerical Stage 3 | 0 | 3,000 | Stage 3 output must remain withheld |
 
-**Source-linked Stage 1: 48.23% of this frozen, nonrandom sample; 55.87% relative to the ordinary-ICE interpretable subset.** Neither number is a Dutch-fleet percentage.
+**Source-linked Stage 1: 48.77% of this frozen, nonrandom sample; 56.49% relative to the ordinary-ICE interpretable subset.** Neither number is a Dutch-fleet percentage.
 
 ## Priority groups with no complete source-linked Stage 1
 
@@ -40,7 +40,6 @@
 | 90 | FIAT FIAT PANDA, 1242 cc | 2010–2014 | 12 | 12 | 12 |
 | 95 | CITROEN C3, 1199 cc | 2015–2019 | 12 | 12 | 12 |
 | 100 | TOYOTA TOYOTA COROLLA, 1987 cc | 2020–2024 | 12 | 12 | 0 |
-| 106 | RENAULT MEGANE, 1197 cc | 2010–2014 | 12 | 12 | 12 |
 | 108 | TOYOTA TOYOTA C-HR, 1987 cc | 2020–2024 | 12 | 12 | 0 |
 | 109 | SEAT LEON, 1595 cc | 2005–2009 | 12 | 12 | 4 |
 | 110 | BMW 320I, 1998 cc | 2020–2024 | 12 | 12 | 12 |
@@ -49,6 +48,7 @@
 | 121 | CITROEN C4, 1587 cc | 2005–2009 | 12 | 12 | 0 |
 | 125 | NISSAN NISSAN JUKE, 999 cc | 2020–2024 | 12 | 12 | 12 |
 | 127 | NISSAN NISSAN MICRA, 999 cc | 2020–2024 | 12 | 12 | 12 |
+| 128 | RENAULT CLIO, 1789 cc | 2025–2029 | 12 | 12 | 0 |
 
 This queue **does not prove turbocharged compatibility**. Resolve factory kW, exact generation and drivetrain using sources before publishing results. Cars with naturally aspirated engines, EVs, LPG, hybrids or disputed gearbox/ECU must not inherit generated power figures.
 

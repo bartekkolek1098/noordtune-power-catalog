@@ -326,6 +326,62 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
       scope: "A3 8P original 92 kW / 125 PS / 200 Nm; Stage 1 110 kW / 150 PS / 255 Nm. The 110 kW denotes tuned power, NOT another stock A3 engine."}
   ],
   reviewNote: "Five reviewed A3 8P 125 PS Stage 1 source indications: 135–150 PS and 230–255 Nm; output is a publisher range, not NoordTune dyno data or a guarantee. Exact 92 kW/1390cc/8P registration and 2008–2012 original admission required. Four 2013 A3 8P registrations in the frozen cohort remain held for production-year/ECU evidence. A competing Tuning Service listing erroneously states 1197cc for its nominal 1.4 TFSI 125 PS; intentionally excluded. Installed CAXC, ECU, DSG/manual, maintenance and fuel require workshop review; no Stage 2 or Stage 3 figures."
+}, {
+  id: "rdw-renault-megane-z-12-tce-115",
+  make: "Renault", model: "Megane", generation: "III (RDW Z, 2012–2015)",
+  yearFrom: 2012, yearTo: 2015,
+  displacementCc: 1197, cylinders: 4,
+  registeredPowerKw: 85, requiredRdwType: "Z",
+  allowedRdwModels: ["MEGANE"],
+  stockPowerHp: 116, stockTorqueNm: 190, fuel: "Petrol",
+  engineLabel: "1.2 TCe 115, H5Ft turbo petrol (RDW 1197 cc, source marketing 115 PS)",
+  requirements: "Confirm original 85 kW RDW Megane III type Z and the actual H5Ft engine/ECU before calibration. Sources label 115 PS while 85 kW rounds to 116 metric PS; never overwrite the registered power. Check oil consumption, timing-chain/engine condition, fault codes, fuel octane, emissions legality and actual manual/EDC clutch/transmission torque limits. Published 1198 cc brochure figures are a one-cc nominal specification mismatch and not a license to match another engine. Exclude RFB Megane IV, Nissan DIG-T, E85, hybrids and unsupported Stage 2/3.",
+  powerRangeHp: [130, 135], torqueRangeNm: [230, 230],
+  sources: [
+    {title:"BR-Performance Megane III phase 2 1.2 TCe 115 PS 2012–2013",
+      sourceType:"tuner",retrievalMethod:"page",retrievedAt:"2026-10-08",
+      url:"https://www.br-performance.lu/en-lu/chiptuning/1-cars/45-renault/2547-megane/5366-megane-3-ph2-2012-2013/5369-1-2-tce/",
+      scope:"Megane III phase2 2012–2013, original marketed 115 PS / 190 Nm, Stage 1 130 PS / 230 Nm; E85 explicitly incompatible."},
+    {title:"BR-Performance Megane III phase 3 1.2 TCe 115 PS 2014–2015",
+      sourceType:"tuner",retrievalMethod:"page",retrievedAt:"2026-10-08",
+      url:"https://www.br-performance.fr/brp-paris/reprogrammation/1-voitures/45-renault/2547-megane/5988-megane-3-ph3-2014-2015/5994-1-2-tce/",
+      scope:"Megane III phase3 2014–2015 original 115 PS / 190 Nm, Stage 1 130 PS / 230 Nm; different from 130 PS version."},
+    {title:"Shiftech Megane III phase 3 1.2 TCe 115",
+      sourceType:"tuner",retrievalMethod:"page",retrievedAt:"2026-10-08",
+      url:"https://www.shiftech.eu/en/chiptuning/car/renault/megane/2014-iii-ii/petrol/1.2-tce-115",
+      scope:"2014 Megane III 1.2 TCe 115 PS / 190 Nm, Stage 1 135 PS / 230 Nm, E85 a separate product and excluded."}
+  ],
+  reviewNote:"Indicative external Stage 1 claims for the 1.2 TCe 115 range 130–135 PS, 230 Nm; this is not a NoordTune dyno result or an achievable-output guarantee. RDW 85kW converts to displayed 116 PS despite the marketed 115 PS. Source catalogues often round the nominal 1197cc RDW engine to 1198cc. ECU, fuel, oil/timing-chain health and gearbox must be inspected. No higher Stage output."
+}, {
+  id: "rdw-renault-megane-z-12-tce-130",
+  make: "Renault", model: "Megane", generation: "III (RDW Z, 2013–2015)",
+  yearFrom: 2013, yearTo: 2015,
+  displacementCc: 1197, cylinders: 4,
+  registeredPowerKw: 97, requiredRdwType: "Z",
+  allowedRdwModels: ["MEGANE"],
+  stockPowerHp: 132, stockTorqueNm: 205, fuel: "Petrol",
+  engineLabel: "1.2 Energy TCe 130 H5Ft (RDW 1197 cc / 97 kW; marketing 130 PS)",
+  requirements: "Require type Z Megane III with original RDW 97 kW/1197cc petrol, not 96 kW, 85 kW, hybrid, type RFB/Megane IV or Nissan Juke. Renault's 130 PS marketing differs from the mathematical 97 kW→132 metric PS conversion, and the official source lists a nominal 1198 cc displacement: preserve RDW facts and verify engine code H5Ft. Inspect ECU software, maintenance/oil consumption, timing chain, fault codes, octane, manual/EDC gearbox/clutch and legal/road suitability; source high torque is not automatically suitable. No Stage 2/3.",
+  powerRangeHp: [140, 150], torqueRangeNm: [230, 255],
+  sources: [
+    {title:"Renault official 2013 Energy TCe 130 introduction",
+      sourceType:"manufacturer",retrievalMethod:"page",retrievedAt:"2026-10-08",
+      url:"https://suppliers.renault.com/pfr_visible/Images/20130305_DP_Renault_Geneva_2013_GB_tcm319-1141028.pdf",
+      scope:"Renault 2013 Geneva briefing pp30–31: TCe 130, 97kW at 5,500rpm, marketed 130hp, 205Nm, official nominal 1198cc, Megane III application. Manufacturer factory facts only, not a Stage 1 result. RDW reports 1197cc; source nominal differs by 1cc."},
+    {title:"BR-Performance Megane III phase 3 1.2 TCe 130",
+      sourceType:"tuner",retrievalMethod:"page",retrievedAt:"2026-10-08",
+      url:"https://www.br-performance.fr/brp-paris/reprogrammation/1-voitures/45-renault/2547-megane/5988-megane-3-ph3-2014-2015/5990-1-2-tce/",
+      scope:"Megane III phase3 2014–2015 original 130PS / 205Nm marketed, Stage 1 140PS / 230Nm. E85 excluded."},
+    {title:"Shiftech Megane III phase 3 1.2 TCe 130",
+      sourceType:"tuner",retrievalMethod:"page",retrievedAt:"2026-10-08",
+      url:"https://www.shiftech.eu/en/chiptuning/car/renault/megane/2014-iii-ii/petrol/1.2-tce-130",
+      scope:"Megane III 2014 1.2 TCe 130PS / 205Nm, Stage 1 145PS / 255Nm. E85 has a separate programme not included."},
+    {title:"GSG Performance Megane III phase 3 1.2 TCe 130",
+      sourceType:"tuner",retrievalMethod:"page",retrievedAt:"2026-10-08",
+      url:"https://gsgperformance.com/car-detail/renault/megane/3-ph3-2013-2015/1-2-tce-130hp",
+      scope:"Megane III phase3 2013–2015, marketed factory 130PS / 205Nm, Stage 1 150PS / 240Nm; independent tuner claim only, not NoordTune approval of stated performance."}
+  ],
+  reviewNote:"Published phase3 TCe130 Stage 1 results differ: 140/230 (BR), 145/255 (Shiftech), 150/240 (GSG). The 140–150PS / 230–255Nm values are illustrative provider outputs, never a guaranteed range. 97kW RDW rounds to 132 metric PS, not the manufacturer's 130 PS marketing convention; torque 205Nm is manufacturer-sourced. Nominal 1198cc is in Renault's 2013 press information while RDW reports 1197cc. Check true H5Ft ECU, engine health, fuel and gearbox before any quote; no Stage 2/3."
 }];
 
 function normalized(value?: string) {
@@ -364,6 +420,9 @@ function matches(input: EstimateMatchInput, app: VerifiedApplication) {
     /\b(?:GB|8Y|S1)\b/i.test(generationHints)) return false;
   if (app.make === "Audi" && app.generation.startsWith("8P") &&
     /\b(?:8L|8V|8Y)\b/i.test(generationHints)) return false;
+  // Megane III (Z) and Megane IV (RFB/B9) must not inherit each other\'s ECU/gearbox outputs.
+  if (app.make === "Renault" && app.generation.startsWith("III") &&
+    /\b(?:RFB|B9|IV|MK4)\b/i.test(generationHints)) return false;
   return normalized(input.make) === normalized(app.make)
     && model.split(" ").includes(normalized(app.model))
     && (app.allowedRdwModels === undefined || app.allowedRdwModels.some(name => normalized(name) === model))
