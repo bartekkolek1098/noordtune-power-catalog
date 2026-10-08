@@ -84,6 +84,12 @@ const allowed=frozen.rows;
      assert.equal(resp?.status(),200,app.id+" "+locale+" home HTTP");
      const field=page.locator('input[maxlength="10"]');
      await field.waitFor({state:"visible"});
+     // Server HTML can show the form before Next/React attaches its handlers.
+     // Wait for the actual client component to hydrate, not an arbitrary sleep.
+     await page.waitForFunction(()=>{
+       const element=document.querySelector('input[maxlength="10"]');
+       return Boolean(element&&Object.keys(element).some(key=>key.startsWith("__reactFiber$")));
+     },null,{timeout:30000});
      await field.fill(plate);
      const api=page.waitForResponse(r=>r.url().includes("/api/rdw-lookup")&&r.request().method()==="POST");
      await field.locator("xpath=ancestor::form").locator('button[type="submit"]').click();
