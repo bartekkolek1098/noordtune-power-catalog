@@ -5,11 +5,11 @@ import {sourceMake, sourceModelFamily} from "../lib/sourced-tuning-match.ts";
 import {sourcedTuningProfiles,tuningProfileSources} from "./tuning-profiles/index.ts";
 import type {EstimateSourceReference} from "./tuning-estimates-shared.ts";
 
-type ExtraEvidence = {provider:string;title:string;url:string;stage1Hp:number;stage1Nm:number;scope:string};
-type Seed = {
+export type ExtraEvidence = {provider:string;title:string;url:string;stage1Hp:number;stage1Nm:number;scope:string};
+export type Seed = {
   id:string; make:string; model:string; rdwModel:string; type:string;
   from:number; to:number; cc:number; cylinders:number; kw:number;
-  stockNm:number; engine:string; power:readonly [number,number]; torque:readonly [number,number];
+  stockNm:number; engine:string; fuel?:"Petrol"|"Diesel"; power:readonly [number,number]; torque:readonly [number,number];
   profileIds:readonly string[]; extras?:readonly ExtraEvidence[];
   scope:string;
 };
@@ -72,13 +72,14 @@ const seeds:readonly Seed[]=[
 const profileById=new Map(sourcedTuningProfiles.map(profile=>[profile.id,profile]));
 const sourceById=new Map(tuningProfileSources.map(record=>[record.id,record]));
 const unique=new Set<string>();
-export const reviewedBulkRdwApplications=seeds.map(seed=>{
+export function buildReviewedRdwBulkBatch(entries: readonly Seed[]) { return entries.map(seed=>{
   if(unique.has(seed.id))throw Error("Duplicate approved bulk RDW ID: "+seed.id);
   unique.add(seed.id);
-  if(!seed.id.startsWith("rdw-bulk-")||seed.from>seed.to||seed.from<2008||seed.to>2026
+  if(!/^rdw-bulk(?:2)?-/.test(seed.id)||seed.from>seed.to||seed.from<2008||seed.to>2026
     ||!seed.type||seed.cc<=0||seed.cylinders<=0||seed.kw<=0)throw Error("Incomplete reviewed bulk RDW scope "+seed.id);
   if(seed.power[0]>seed.power[1]||seed.torque[0]>seed.torque[1])throw Error("Invalid Stage1 envelope "+seed.id);
   const factoryPs=Math.round(seed.kw*1.359621617);
+  const fuel = seed.fuel ?? ((seed.id.includes("-tdi-")||seed.id.includes("-dci-"))?"Diesel":"Petrol");
   const expectedModel=sourceModelFamily(sourceMake(seed.make),seed.model);
   const values:{provider:string;powerHp:number;torqueNm:number;ref:EstimateSourceReference}[]=[];
   const profiles=seed.profileIds.map(id=>{
@@ -86,7 +87,7 @@ export const reviewedBulkRdwApplications=seeds.map(seed=>{
     if(sourceMake(profile.brand)!==sourceMake(seed.make)
       ||sourceModelFamily(sourceMake(profile.brand),profile.modelFamily)!==expectedModel
       ||profile.fuel!=="Petrol"&&profile.fuel!=="Diesel"
-      ||profile.fuel!== (seed.id.includes("-tdi-")?"Diesel":"Petrol")
+      ||profile.fuel!==fuel
       ||Math.abs(profile.stockPowerHp-factoryPs)>1.5
       ||(profile.stockTorqueNm!==undefined&&Math.abs(profile.stockTorqueNm-seed.stockNm)>20)
       ||(profile.displacementPrecision==="exact"?Math.abs(profile.displacementCc-seed.cc)>2:Math.abs(profile.displacementCc-seed.cc)>49)
@@ -126,12 +127,13 @@ export const reviewedBulkRdwApplications=seeds.map(seed=>{
     id:seed.id,make:seed.make,model:seed.model,generation:`${seed.type} reviewed RDW application`,
     yearFrom:seed.from,yearTo:seed.to,displacementCc:seed.cc,cylinders:seed.cylinders,
     registeredPowerKw:seed.kw,requiredRdwType:seed.type,allowedRdwModels:[seed.rdwModel],
-    stockPowerHp:factoryPs,stockTorqueNm:seed.stockNm,fuel:(seed.id.includes("-tdi-")?"Diesel":"Petrol") as "Diesel"|"Petrol",
+    stockPowerHp:factoryPs,stockTorqueNm:seed.stockNm,fuel,
     engineLabel:seed.engine,
     requirements:`${generalChecks} ${seed.scope}`,
     powerRangeHp:[...seed.power] as [number,number],torqueRangeNm:[...seed.torque] as [number,number],
     sources:refs,
     reviewNote:`Bulk reviewer evidence ${providers.length} independent source publishers (${providers.join(", ")}); ${seed.scope} Original ${seed.kw} kW rounds to ${factoryPs} metric PS; source market names may use a different rounded PS. External factory torque ${seed.stockNm} Nm is not an RDW field. Stage 1 ${seed.power[0]}–${seed.power[1]} PS / ${seed.torque[0]}–${seed.torque[1]} Nm is a published indicator, not a guarantee or NoordTune dyno result. ECU, engine health, gearbox and emissions require owner-specific workshop confirmation. Stage 2/3 withheld.`
   };
-});
+}); }
+export const reviewedBulkRdwApplications=buildReviewedRdwBulkBatch(seeds);
 export const reviewedBulkRdwApplicationCount=reviewedBulkRdwApplications.length;
