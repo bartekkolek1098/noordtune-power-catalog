@@ -101,7 +101,7 @@ for(const row of observed){
 }
 assert.equal(observed.length,144,"Frozen Seat Leon bounded sample size");
 assert.equal(appScoped,15,"15 observed compatible pre-facelift/1P 125 PS registrations recover numeric output");
-assert.equal(sampleDirect,59,"Seat Leon numeric Stage1 outcome after application inclusion");
+assert.equal(sampleDirect,71,"Seat Leon numeric Stage 1: original 44 + reviewed 1P 15 + 5F 1.0 TSI 12; all scopes independently tested");
 assert.deepEqual(Object.fromEntries(recoveredYears),{"2009":8,"2010":7});
 
 const bmw=resolveRdwTuningEstimate({
