@@ -13,7 +13,7 @@ const output = process.env.RDW_QA_OUTPUT || "C:/Users/barto/Desktop/noordtune-me
 const oidcToken = process.env.VERCEL_OIDC_TOKEN || "";
 const apps=[
   {id:"115",cc:1197,kw:85,ps:116,originalTorque:190,power:[130,135],torque:[230,230],year:"2012",plate:"QA0115"},
-  {id:"130",cc:1197,kw:97,ps:132,originalTorque:205,power:[140,150],torque:[230,255],year:"2013",plate:"QA0130"}
+  {id:"130",cc:1197,kw:97,ps:132,originalTorque:205,power:[140,150],torque:[230,240],year:"2013",plate:"QA0130"}
 ];
 const cases=apps.flatMap(app=>["nl","en","pl"].flatMap(locale=>
   [320,390,1180].map(width=>({app,locale,width}))));

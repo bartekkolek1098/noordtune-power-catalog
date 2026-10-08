@@ -7,7 +7,7 @@ Accept only **RENAULT MEGANE**, original RDW **type Z**, **1197 cm³**, four-cyl
 | Reviewed homologated Mégane III identity | RDW original | Independently sourced original torque | Indicative published Stage 1 | Calculated displayed gain |
 | --- | --- | --- | --- | --- |
 | **1.2 TCe 115**, 2012–2015, type Z | **85 kW ≈ 116 metric PS** (marketing 115 PS) | **190 Nm** | **130–135 PS / 230 Nm** | **+14–19 PS / +40 Nm** |
-| **1.2 TCe 130**, 2013–2015, type Z | **97 kW ≈ 132 metric PS** (marketing 130 PS) | **205 Nm** | **140–150 PS / 230–255 Nm** | **+8–18 PS / +25–50 Nm** |
+| **1.2 TCe 130**, 2013–2015, type Z | **97 kW ≈ 132 metric PS** (marketing 130 PS) | **205 Nm** | **140–150 PS / 230–240 Nm** | **+8–18 PS / +25–35 Nm** |
 
 **Rounding / engine caveat:** RDW provides original power in kW. Dutch RDW original 85 or 97 kW converts arithmetically to 116 or 132 metric PS while Renault's marketing names remain 115 and 130 PS. Stock torque 190/205 Nm is not an RDW field. Renault's 2013 manufacturer document says nominal **1,198 cm³** for Energy TCe 130 and Dutch third-party car specifications also quote **1,198 cm³** for 115, whereas this frozen RDW subcohort says **1,197 cm³**. We do not silently overwrite RDW facts or widen the exact-displacement matcher; a workshop must inspect the true H5Ft engine code and ECU before any price or claimed output.
 
@@ -24,10 +24,10 @@ All Stage 1 values are *external provider examples* across different calibration
 
 - [Renault official Geneva briefing, March 2013, pp. 30–31](https://suppliers.renault.com/pfr_visible/Images/20130305_DP_Renault_Geneva_2013_GB_tcm319-1141028.pdf): manufacturer Energy TCe 130 **97 kW at 5,500 rpm**, marketed **130 hp**, **205 Nm**, nominal **1,198 cm³**, in New Mégane III. **Factory specification only.**
 - [BR-Performance Mégane III phase 3 2014–2015 1.2 TCe 130](https://www.br-performance.fr/brp-paris/reprogrammation/1-voitures/45-renault/2547-megane/5988-megane-3-ph3-2014-2015/5990-1-2-tce/): Stage 1 **140 PS / 230 Nm**.
-- [Shiftech Mégane III 2014 1.2 TCe 130](https://www.shiftech.eu/en/chiptuning/car/renault/megane/2014-iii-ii/petrol/1.2-tce-130): Stage 1 **145 PS / 255 Nm**.
+- [Shiftech Mégane III 2014 1.2 TCe 130](https://www.shiftech.eu/en/chiptuning/car/renault/megane/2014-iii-ii/petrol/1.2-tce-130): Stage 1 **140 PS / 230 Nm** on the live page (an indexed copy previously showed 145/255; that inconsistent higher figure is excluded).
 - [GSG Performance Mégane III phase 3 2013–2015 1.2 TCe 130](https://gsgperformance.com/car-detail/renault/megane/3-ph3-2013-2015/1-2-tce-130hp): Stage 1 **150 PS / 240 Nm**.
 
-The 130 PS sources disagree on tuned torque and achieved power. We display the outer sourced envelope with strict original 97-kW identity, and label it illustrative rather than promise to reach the upper value. Do not borrow early phase 2 1.4 TCe 130 data; that is a different displacement/engine.
+The 130 PS sources disagree on tuned torque and achieved power, and the Shiftech indexed snapshot disagrees with its live page. We withhold the higher 255 Nm value and display the conservative 230–240 Nm sourced envelope with strict original 97-kW identity, and label it illustrative rather than promise to reach the upper value. Do not borrow early phase 2 1.4 TCe 130 data; that is a different displacement/engine.
 
 ## Frozen source-backed coverage delta and QA gates
 

@@ -14,7 +14,7 @@ const cases = [
     expected:{"2012":4,"2013":2,"2014":3,"2015":1},total:10},
   {id:"rdw-renault-megane-z-12-tce-130",kw:97,stockHp:132,stockNm:205,
     yearFrom:2013,yearTo:2015,power:[140,150] as [number,number],
-    torque:[230,255] as [number,number],stockName:"TCe 130",sourceCount:4,
+    torque:[230,240] as [number,number],stockName:"TCe 130",sourceCount:4,
     expected:{"2013":2,"2014":1,"2015":3},total:6}
 ] as const;
 let negativeChecks=0;

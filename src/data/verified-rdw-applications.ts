@@ -362,7 +362,7 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
   stockPowerHp: 132, stockTorqueNm: 205, fuel: "Petrol",
   engineLabel: "1.2 Energy TCe 130 H5Ft (RDW 1197 cc / 97 kW; marketing 130 PS)",
   requirements: "Require type Z Megane III with original RDW 97 kW/1197cc petrol, not 96 kW, 85 kW, hybrid, type RFB/Megane IV or Nissan Juke. Renault's 130 PS marketing differs from the mathematical 97 kW→132 metric PS conversion, and the official source lists a nominal 1198 cc displacement: preserve RDW facts and verify engine code H5Ft. Inspect ECU software, maintenance/oil consumption, timing chain, fault codes, octane, manual/EDC gearbox/clutch and legal/road suitability; source high torque is not automatically suitable. No Stage 2/3.",
-  powerRangeHp: [140, 150], torqueRangeNm: [230, 255],
+  powerRangeHp: [140, 150], torqueRangeNm: [230, 240],
   sources: [
     {title:"Renault official 2013 Energy TCe 130 introduction",
       sourceType:"manufacturer",retrievalMethod:"page",retrievedAt:"2026-10-08",
@@ -375,13 +375,13 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
     {title:"Shiftech Megane III phase 3 1.2 TCe 130",
       sourceType:"tuner",retrievalMethod:"page",retrievedAt:"2026-10-08",
       url:"https://www.shiftech.eu/en/chiptuning/car/renault/megane/2014-iii-ii/petrol/1.2-tce-130",
-      scope:"Megane III 2014 1.2 TCe 130PS / 205Nm, Stage 1 145PS / 255Nm. E85 has a separate programme not included."},
+      scope:"Megane III 2014 1.2 TCe 130PS / 205Nm, live page Stage 1 140PS / 230Nm; search index previously showed 145PS / 255Nm. Withhold the higher inconsistent value; E85 separately excluded."},
     {title:"GSG Performance Megane III phase 3 1.2 TCe 130",
       sourceType:"tuner",retrievalMethod:"page",retrievedAt:"2026-10-08",
       url:"https://gsgperformance.com/car-detail/renault/megane/3-ph3-2013-2015/1-2-tce-130hp",
       scope:"Megane III phase3 2013–2015, marketed factory 130PS / 205Nm, Stage 1 150PS / 240Nm; independent tuner claim only, not NoordTune approval of stated performance."}
   ],
-  reviewNote:"Published phase3 TCe130 Stage 1 results differ: 140/230 (BR), 145/255 (Shiftech), 150/240 (GSG). The 140–150PS / 230–255Nm values are illustrative provider outputs, never a guaranteed range. 97kW RDW rounds to 132 metric PS, not the manufacturer's 130 PS marketing convention; torque 205Nm is manufacturer-sourced. Nominal 1198cc is in Renault's 2013 press information while RDW reports 1197cc. Check true H5Ft ECU, engine health, fuel and gearbox before any quote; no Stage 2/3."
+  reviewNote:"Conservatively scoped phase3 TCe130 Stage 1 results: 140/230 (BR), 140/230 (Shiftech live page) and 150/240 (GSG). Shiftech indexed 145/255 contradicts the live page, so the higher torque is excluded pending manual reconciliation. The 140–150PS / 230–240Nm values are illustrative provider outputs, never a guaranteed range. 97kW RDW rounds to 132 metric PS, not the manufacturer's 130 PS marketing convention; torque 205Nm is manufacturer-sourced. Nominal 1198cc is in Renault's 2013 press information while RDW reports 1197cc. Check true H5Ft ECU, engine health, fuel and gearbox before any quote; no Stage 2/3."
 }];
 
 function normalized(value?: string) {
