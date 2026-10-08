@@ -202,6 +202,36 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
       scope: "Octavia 5E 1.4 TSI 140 PS / 250 Nm, Stage 1 180 PS / 320 Nm; separate Stage 1+ 185/330 is excluded, DSG requires individual confirmation."}
   ],
   reviewNote: "Three independently published 5E/CHPA 140 PS Stage 1 indications span 170–180 PS and 300–320 Nm; source-only example, not a NoordTune dyno measurement. Exact 103 kW RDW type 5E petrol identity is required. ECU, fuel, clutch/DSG, condition and calibration limits must be confirmed before quotation; no numerical Stage 2 or Stage 3."
+}, {
+  id: "rdw-skoda-octavia-1z-14-tsi-122",
+  make: "Skoda", model: "Octavia", generation: "1Z facelift (II)",
+  yearFrom: 2009, yearTo: 2013,
+  displacementCc: 1390, cylinders: 4,
+  // Registered 90 kW rounds to 122 metric PS; RDW cannot identify CAXA/ECU.
+  registeredPowerKw: 90, requiredRdwType: "1Z",
+  stockPowerHp: 122, stockTorqueNm: 200, fuel: "Petrol",
+  engineLabel: "1.4 TSI petrol turbo (1390 cc), CAXA check required",
+  requirements: "Confirm 1Z facelift, CAXA engine family, installed Bosch MED17.5.x ECU/software, octane, engine condition, timing-chain history, DSG/manual clutch and torque limit before any calibration. Excludes III 5E, NX, CNG/hybrid, E85, Stage 1+, and unsupported Stage 2.",
+  powerRangeHp: [140, 155], torqueRangeNm: [240, 270],
+  sources: [
+    {title: "VAGtechniek Octavia 1Z facelift 1.4 TSI 122 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.vagtechniek.nl/chiptuning/skoda/octavia/1z-facelift/1.4-tsi-122pk/",
+      scope: "Octavia II 1Z facelift, 2009–2013, 1.4 TSI original 122 PS / 200 Nm. Standard Stage 1 145 PS / 250 Nm; separate Stage 1+ 150/260 excluded."},
+    {title: "BR-Performance Octavia II 1.4 TSI 122 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.br-performance.nl/nl-nl/chiptuning/1-wagens/49-skoda/2764-octavia/2765-2004-2012/2767-1-4-tsi/",
+      scope: "Octavia II 2004–2012 1.4 TSI original 122 PS / 200 Nm, Stage 1 145 PS / 250 Nm; 2013 admission supported separately by 1Z facelift source."},
+    {title: "Shiftech Octavia II 1.4 TSI 122 PS",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://www.shiftech.eu/en/chiptuning/car/skoda/octavia/2005/petrol/1.4-tsi-tfsi-122",
+      scope: "Octavia II 1.4 TSI 122 PS / 200 Nm, Stage 1 140 PS / 240 Nm; no E85 conversion figure reused."},
+    {title: "Tuning Service Octavia II 1.4 TSI 122 PS CAXA",
+      sourceType: "tuner", retrievalMethod: "page", retrievedAt: "2026-10-08",
+      url: "https://tuningservice.nl/chiptuning/skoda/octavia/2004-2012/14-tsi-122pk/",
+      scope: "Octavia II 1390 cc CAXA, Bosch MED17.5.20 reference, 122 PS / 200 Nm, published Stage 1 155 PS / 270 Nm; installed ECU still unconfirmed."}
+  ],
+  reviewNote: "Four published Octavia II/1Z 1.4 TSI 122 PS Stage 1 observations range 140–155 PS and 240–270 Nm. Original 90 kW and fuel are confirmed RDW facts, while 200 Nm, CAXA and ECU references are external. These are indicative publisher examples, not NoordTune measured output. Verify real 1Z generation, ECU, fuel grade, timing chain/condition and gearbox before a quote; no numerical Stage 2 or Stage 3."
 }];
 
 function normalized(value?: string) {
@@ -233,6 +263,8 @@ function matches(input: EstimateMatchInput, app: VerifiedApplication) {
     /\b(?:F16|J11|J12)\b/i.test(generationHints)) return false;
   if (app.make === "Skoda" && app.generation.startsWith("5E") &&
     /\b(?:1Z|NX)\b/i.test(generationHints)) return false;
+  if (app.make === "Skoda" && app.generation.startsWith("1Z") &&
+    /\b(?:5E|NX|III|IV)\b/i.test(generationHints)) return false;
   return normalized(input.make) === normalized(app.make)
     && model.split(" ").includes(normalized(app.model))
     && year !== undefined && year >= app.yearFrom && year <= app.yearTo
