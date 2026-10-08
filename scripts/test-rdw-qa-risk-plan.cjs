@@ -4,11 +4,13 @@ const {planBrowserQa,viewportPattern}=require("./rdw-browser-qa-plan.cjs");
 const {reviewedBulkRdwApplications}=require("../src/data/reviewed-rdw-bulk-batch.ts");
 const {reviewedRdwBulkBatch2}=require("../src/data/reviewed-rdw-bulk-batch-2.ts");
 const {reviewedRdwBulkBatch3}=require("../src/data/reviewed-rdw-bulk-batch-3.ts");
+const {reviewedRdwBulkBatch4}=require("../src/data/reviewed-rdw-bulk-batch-4.ts");
 
 for(const [name,apps,count] of [
   ["first bulk",reviewedBulkRdwApplications,15],
   ["second bulk",reviewedRdwBulkBatch2,20],
-  ["third bulk",reviewedRdwBulkBatch3,15]
+  ["third bulk",reviewedRdwBulkBatch3,15],
+  ["fourth bulk",reviewedRdwBulkBatch4,25]
 ]){
   assert.equal(apps.length,count,name);
   const full=planBrowserQa(apps,{mode:"full"});
