@@ -10,6 +10,7 @@ import {
  type ReviewedRdwApplication
 } from "@/data/nl-stage1-engine-seo";
 import {absoluteUrl} from "@/lib/site-url";
+import {nlModelHubByEngineSlug,nlModelHubPath} from "@/data/nl-model-family-seo";
 import {sitePath} from "@/lib/site-path";
 import {chiptuningHref} from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
@@ -52,6 +53,7 @@ export default async function NlStage1MotorPage({params}:Props){
  const power=allStage1PowerRange(p.applications);
  const torque=allStage1TorqueRange(p.applications);
  const related=nlStage1EngineProfiles.filter(other=>other.slug!==p.slug&&other.applications[0].make===p.applications[0].make).slice(0,4);
+ const modelHub=nlModelHubByEngineSlug.get(p.slug);
  const current=absoluteUrl(nlStage1EnginePath(p.slug));
  const list=absoluteUrl("/nl/motoren");
  const bread=breadcrumbListJsonLd([
@@ -156,6 +158,12 @@ export default async function NlStage1MotorPage({params}:Props){
       <a href={chiptuningHref("nl")} className="ux-nl-engine-underlink">Meer over chiptuning bij NoordTune.nl<ArrowUpRight aria-hidden="true" className="h-4 w-4"/></a>
      </div>
     </section>
+    {modelHub?(
+      <a className="ux-nl-model-engine-crosslink" href={sitePath(nlModelHubPath(modelHub.slug))}>
+       <span>Vergelijk alle beoordeelde motorvarianten van {modelHub.brand} {modelHub.model}</span>
+       <ChevronRight aria-hidden="true" className="h-4 w-4 shrink-0"/>
+      </a>
+    ):null}
     {related.length>0?(
      <section className="ux-nl-engine-related" aria-labelledby="related-title">
       <h2 id="related-title">Andere motorvarianten van {p.applications[0].make}</h2>

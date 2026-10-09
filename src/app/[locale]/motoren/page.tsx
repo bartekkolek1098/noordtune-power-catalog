@@ -5,6 +5,7 @@ import {CatalogHeader} from "@/components/catalog-header";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {nlStage1EngineProfiles,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
+import {nlModelFamilyHubs} from "@/data/nl-model-family-seo";
 import {absoluteUrl} from "@/lib/site-url";
 import {chiptuningHref} from "@/lib/noordtune-links";
 import {sitePath} from "@/lib/site-path";
@@ -16,7 +17,7 @@ export function generateStaticParams(){return [{locale:"nl"}];}
 export async function generateMetadata({params}:Props):Promise<Metadata>{
  const {locale}=await params;
  if(locale!=="nl")return {robots:{index:false,follow:false}};
- const title="Stage 1 motorprofielen | Zoek jouw motor | NoordTune";
+ const title="Stage 1 motorprofielen | Zoek jouw motor";
  const description="Vergelijk Stage 1-indicaties voor Nissan, BMW, Volkswagen, Ford en Renault. Origineel vermogen, RDW-varianten, ECU-controles en onafhankelijke bronnen.";
  return {title,description,robots:{index:true,follow:true},
   alternates:{canonical:absoluteUrl("/nl/motoren")},
@@ -88,7 +89,10 @@ export default async function NlMotorenPage({params}:Props){
     <p>Een technisch modelnummer identificeert niet automatisch de motorcode, ECU-versie of versnellingsbak.
      Daarom voegen we overeenkomstige bronvarianten samen en publiceren we alleen motorprofielen die
      voldoende onderscheidende informatie bevatten. Stage 2 en Stage 3 krijgen hier geen automatische vermogensbelofte.</p>
-    <a href={sitePath("/nl#manual-selector")}>Zoek jouw merk, bouwjaar en motor<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
+    <div className="ux-nl-model-crosslinks">
+      <a href={sitePath("/nl/modellen")}>Vergelijk {nlModelFamilyHubs.length} automodellen<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
+      <a href={sitePath("/nl#manual-selector")}>Zoek jouw merk, bouwjaar en motor<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
+     </div>
    </section>
    <CatalogFooter locale="nl"/>
    <MobileActionBar locale="nl" primaryHref={sitePath("/nl#rdw-check")}/>
