@@ -37,10 +37,10 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.equal(sitemap.status(),200);
   const xml=await sitemap.text();
   const locs=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-  assert.equal(locs.length,281,"274 route sitemap (269 previous + five validated engines)");
+  assert.equal(locs.length,288,"288 routes: 281 prior + seven reviewed NL van engines");
   const vanUrls=locs.filter(x=>x.includes("/nl/bedrijfswagens"));
-  assert.equal(vanUrls.length,33,"One directory plus 15 models and ten exact engines");
-  assert.equal(new Set(vanUrls).size,33,"Van sitemap canonicals unique");
+  assert.equal(vanUrls.length,40,"One van directory + 16 models + 23 sourced engine pages");
+  assert.equal(new Set(vanUrls).size,40,"Van sitemap canonicals unique");
   assert.ok(!xml.includes("/en/bedrijfswagens")&&!xml.includes("/pl/bedrijfswagens"));
 
   for(const m of nlVanModels){
@@ -61,7 +61,7 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
    const r=await page.request.get(base+path);
    assert.equal(r.status(),404,"No unsupported translated pages "+path);
   }
-  for(const [slug,expected] of [["mercedes-sprinter",3],["mercedes-vito",2],["toyota-proace",0],["peugeot-partner",1],["ford-transit-connect",3],["ford-transit-custom",3],["peugeot-expert",2],["fiat-ducato",2]]){
+  for(const [slug,expected] of [["mercedes-sprinter",4],["mercedes-vito",6],["toyota-proace",0],["peugeot-partner",1],["ford-transit-connect",3],["ford-transit-custom",3],["peugeot-expert",4],["fiat-ducato",3]]){
    const r=await page.goto(base+"/nl/bedrijfswagens/"+slug,{waitUntil:"domcontentloaded",timeout:45000});
    assert.equal(r?.status(),200);
    assert.equal(await page.locator("h1").count(),1);
@@ -74,7 +74,7 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
    if(slug==="ford-transit-connect")await page.screenshot({path:process.env.TEMP+"/noordtune-ford-connect-mobile.png",fullPage:false});
    console.log("NL_VAN_MODEL_BROWSER_PASS",slug,expected);
   }
-  for(const slug of ["ford-transit-20-ecoblue-130","volkswagen-transporter-t6-20-tdi-204","peugeot-partner-15-bluehdi-100","ford-transit-custom-22-tdci-100","ford-transit-custom-22-tdci-125","ford-transit-custom-20-ecoblue-130","mercedes-sprinter-w906-21-cdi-143","peugeot-expert-20-bluehdi-120","fiat-ducato-23-multijet-130-2013-15","fiat-ducato-23-multijet-130-euro6-2018-19","mercedes-vito-114-cdi-1950-2023","mercedes-vito-114-cdi-1950-euro6e-2024","mercedes-sprinter-315-cdi-1950-150","peugeot-expert-20-bluehdi-180-2019-22"]){
+  for(const slug of ["ford-transit-20-ecoblue-130","volkswagen-transporter-t6-20-tdi-204","peugeot-partner-15-bluehdi-100","ford-transit-custom-22-tdci-100","ford-transit-custom-22-tdci-125","ford-transit-custom-20-ecoblue-130","mercedes-sprinter-w906-21-cdi-143","peugeot-expert-20-bluehdi-120","fiat-ducato-23-multijet-130-2013-15","fiat-ducato-23-multijet-130-euro6-2018-19","mercedes-vito-114-cdi-1950-2023","mercedes-vito-114-cdi-1950-euro6e-2024","mercedes-sprinter-315-cdi-1950-150","peugeot-expert-20-bluehdi-180-2019-22","mercedes-vito-116-cdi-1950-2023","mercedes-vito-116-cdi-1950-euro6e-2024","mercedes-vito-119-cdi-1950-2020","mercedes-vito-119-cdi-1950-euro6e-2024","mercedes-sprinter-317-cdi-1950-170-2023-24","peugeot-expert-20-bluehdi-145-2022-24","fiat-ducato-23-multijet-120-euro6-2020-21"]){
    await page.goto(base+"/nl/bedrijfswagens/motoren/"+slug,{waitUntil:"domcontentloaded"});
    assert.equal(await page.locator("h1").count(),1);
    assert.ok(await page.locator('ul.ux-van-engine-source-links a').count()>=2);
@@ -93,8 +93,8 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.equal(await page.locator('a[href="/nl/bedrijfswagens"]').count(),1,"NL homepage links vans category");
   assert.deepEqual(errors,[],"No runtime JavaScript errors");
   console.log("NL_VAN_BROWSER_QA_PASS",JSON.stringify({
-   indexedVanPages:16,browseOnlyModels:6,exactStage1VanEnginePages:16,
-   verifiedSourceApplications:30,indexedVanUrls:33,totalSitemapUrls:281,
+   indexedVanPages:16,browseOnlyModels:6,exactStage1VanEnginePages:23,
+   verifiedSourceApplications:38,indexedVanUrls:40,totalSitemapUrls:288,
    testedWidths:[320,390,1440],translatedThin404:4
   }));
  }finally{await browser.close();}
