@@ -261,6 +261,66 @@ const specs:readonly ExtraVanEngineSpec[]=[
   intro:"De Transit Connect met RDW-type PU2, 1499 cc en 73,3 kW kan in 2024 nog voorkomen naast de latere geheel andere generatie op Volkswagen-platform. Voor deze specifieke oudere EcoBlue-motor geven drie onafhankelijke publicaties een normale Stage 1-indicatie die tussen de leveranciers licht verschilt.",
   checks:"Vergelijk RDW TRANSIT CONNECT type PU2, originele 73,3 kW, 1499 cc diesel, vier cilinders en toelating 2024. Controleer of werkelijk de eerdere 1.5 EcoBlue met Bosch MD1CS005 aanwezig is en geen nieuwe Connect 2.0 diesel; verifieer koppeling, transmissie en dat DPF/EGR/SCR correct blijven werken. Origineel koppel verschilt tussen leveranciers.",
   appIds:["rdw-bulk-9-ford-transit-connect-pu2-15ecoblue100-2024"],
+},
+{
+  "slug": "opel-vivaro-b-16-cdti-95-euro6-2017-19",
+  "modelSlug": "opel-vivaro",
+  "title": "Opel Vivaro B 1.6 CDTI 95 Euro 6 (2017–2019)",
+  "intro": "De Opel Vivaro B met originele 70 kW en 1598 cc is de zuinige 95 pk-diesel uit de Euro 6-generatie. Voor precies deze RDW-type F7-motor bestaan eigen Opel-bronnen, maar 2014–2016 Euro 5-gegevens en de latere Vivaro van 2019 op PSA-platform mogen niet worden samengevoegd.",
+  "checks": "Controleer VIVARO-B type F7, 1598 cc, originele 70 kW, diesel, eerste toelating 2017–2019 en de werkelijke R9M-motorcode. ECU-soft en een onafhankelijke aanbieder noemen 350 Nm, ATM noemt 370 Nm: de ECU, Euro-fase, koppeling, handbak en SCR/DPF moeten vóór tuning gecontroleerd worden.",
+  "appIds": [
+    "rdw-bulk-10-opel-vivaro-b-f7-16cdti95-euro6-2017-19"
+  ]
+},
+{
+  "slug": "opel-vivaro-b-16-cdti-120-euro6-2017-19",
+  "modelSlug": "opel-vivaro",
+  "title": "Opel Vivaro B 1.6 CDTI 120 Euro 6 (2017–2019)",
+  "intro": "De 1.6 CDTI 120 heeft in de RDW-registratie 89 kW, wat afgerond 121 metrische pk oplevert. Dit is een eigen fabrieksvariant van Opel Vivaro B, los van de 70 kW 95 pk en van de 92 kW BiTurbo 125 pk, met afzonderlijk gecontroleerde tunerpublicaties voor Euro 6.",
+  "checks": "Verifieer RDW-type F7 en handelsnaam VIVARO-B, 1598 cc, 89 kW en 2017–2019. Publicaties spreken 300 of 320 Nm origineel en 350 of 370 Nm na Stage 1; het fabriekskoppel staat niet in RDW. Controleer R9M D4, ECU-versie, echte Turbo-variant, de versnellingsbak en werkende AdBlue/SCR en DPF.",
+  "appIds": [
+    "rdw-bulk-10-opel-vivaro-b-f7-16cdti120-euro6-2017-19"
+  ]
+},
+{
+  "slug": "opel-vivaro-b-16-biturbo-125-euro6-2017-19",
+  "modelSlug": "opel-vivaro",
+  "title": "Opel Vivaro B 1.6 CDTI BiTurbo 125 (2017–2019)",
+  "intro": "De Vivaro B BiTurbo 125 met oorspronkelijke 92 kW en 1598 cc gebruikt een andere afstelling dan de 95 en 120 pk CDTI. Drie onafhankelijke leveranciers publiceren Stage 1-waarden voor de 2016–2019 Euro 6-familie, waaronder verschillende maxima voor deze 125 pk-uitvoering.",
+  "checks": "Controleer VIVARO-B, RDW F7, 1598 cc, originele 92 kW, 2017–2019, motor R9M D4 met twee turbochargers, Bosch EDC17C42/C84, softwareversie, DPF/SCR en draaglast. Zakelijke busjes met aanhanger mogen niet automatisch het maximale gepubliceerde koppel toepassen.",
+  "appIds": [
+    "rdw-bulk-10-opel-vivaro-b-f7-16biturbo125-euro6-2017-19"
+  ]
+},
+{
+  "slug": "opel-vivaro-b-16-biturbo-145-euro6-2019",
+  "modelSlug": "opel-vivaro",
+  "title": "Opel Vivaro B 1.6 CDTI BiTurbo 145 Euro 6 (2019)",
+  "intro": "De 2019 Opel Vivaro B 1.6 BiTurbo 145 met 107 kW en 1598 cc is de sterkere Euro 6-variant van de oudere F7-generatie. Twee leveranciers die 2019 expliciet in hun motoroverzicht opnemen publiceren dezelfde gewone Stage 1-indicatie; dat is geen bewijs dat elke 2019 Vivaro identieke ECU-software heeft.",
+  "checks": "Vergelijk de RDW-handelsbenaming VIVARO-B, type F7, 107 kW, 1598 cc, diesel en eerste toelating 2019. Controleer de originele BiTurbo-motorcode R9M D4, werkelijke EDC17C84, transmissie, koeling en SCR/AdBlue/DPF; gebruik deze gegevens niet voor VIVARO type V of 92 kW 125 pk.",
+  "appIds": [
+    "rdw-bulk-10-opel-vivaro-b-f7-16biturbo145-euro6-2019"
+  ]
+},
+{
+  "slug": "ford-transit-connect-15-tdci-120-2015",
+  "modelSlug": "ford-transit-connect",
+  "title": "Ford Transit Connect 1.5 TDCi 120 (2015)",
+  "intro": "De oudere Ford Transit Connect PU2 1.5 TDCi 120 uit 2015 gebruikt 1499 cc en originele 88 kW. Het is nadrukkelijk niet dezelfde EcoBlue-generatie als de Connect 1.5 vanaf 2018 of de nieuwere 2.0 diesel. De uitgekozen onafhankelijke publicaties tonen verschillende gewone Stage 1-indicaties.",
+  "checks": "Identificeer RDW-model TRANSIT CONNECT, type PU2, eerste toelating 2015, 1499 cc, 88 kW diesel, vier cilinders, motorkode XWGB en de werkelijke ECU. ATM is specifiek voor Connect; de tweede leverancier groepeert Tourneo en Connect. Controleer handbak, DPF/EGR en de voertuigconditie.",
+  "appIds": [
+    "rdw-bulk-10-ford-transit-connect-pu2-15tdci120-2015"
+  ]
+},
+{
+  "slug": "peugeot-expert-20-bluehdi-177-2024",
+  "modelSlug": "peugeot-expert",
+  "title": "Peugeot Expert 2.0 BlueHDi 177 (2024)",
+  "intro": "Deze Peugeot Expert met 1997 cc en originele RDW-motoroutput 130 kW wordt door verschillende aanbieders als 177 of 180 pk geadverteerd. Voor het faceliftjaar 2024 zijn onafhankelijke externe Stage 1-publicaties met 205 pk gevonden, maar die verschillen over het eindkoppel en kunnen een andere Euro 6-fase beschrijven.",
+  "checks": "Controleer bij deze Expert type V, 1997 cc, 130 kW en eerste toelating 2024, werkelijk DW10/AH01-motorlabel, Delphi DCM-software en eventuele ECU-unlock. De externe opgegeven 440 of 460 Nm is niet vanzelf geschikt voor elke EAT8 of zwaar beladen werkbus; DPF, EGR en SCR/AdBlue blijven legaal actief.",
+  "appIds": [
+    "rdw-bulk-10-peugeot-expert-v-20bluehdi177-2024"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -277,7 +337,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==30||new Set(nlVanEngines.map(x=>x.slug)).size!==30)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==36||new Set(nlVanEngines.map(x=>x.slug)).size!==36)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];

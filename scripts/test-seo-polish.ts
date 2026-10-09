@@ -51,8 +51,8 @@ const expectedRoutes = [
 ];
 
 assert.equal(engineCatalog.length, 24, "The curated public catalog must stay at 24 vehicles");
-assert.equal(expectedRoutes.length, 296, "The sitemap includes 248 previous routes plus 21 curated NL van URLs");
-assert.equal(new Set(expectedRoutes).size, 296, "Every public sitemap route must be unique");
+assert.equal(expectedRoutes.length, 303, "The sitemap includes 248 previous routes plus 21 curated NL van URLs");
+assert.equal(new Set(expectedRoutes).size, 303, "Every public sitemap route must be unique");
 
 const publicIds = new Set(engineCatalog.map((vehicle) => vehicle.id));
 const popularPublicIds = new Set(
