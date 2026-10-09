@@ -2,6 +2,7 @@ import type {MetadataRoute} from "next";
 import {engineCatalog, getVehicleSeoSlugs, stageSlugMap} from "@/data/catalog";
 import {isPublicCatalogStageName} from "@/data/catalog-shared";
 import {nlStage1EngineProfiles,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
+import {nlModelFamilyHubs,nlModelHubPath} from "@/data/nl-model-family-seo";
 import {routing} from "@/i18n/routing";
 import {absoluteUrl} from "@/lib/site-url";
 
@@ -40,5 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority:0.7
     }))
   ];
-  return [...homePages, ...vehiclePages, ...stagePages, ...nlEnginePages];
+  const nlModelPages=[
+    {url:absoluteUrl("/nl/modellen"),changeFrequency:"monthly" as const,priority:0.78},
+    ...nlModelFamilyHubs.map(hub=>({
+      url:absoluteUrl(nlModelHubPath(hub.slug)),
+      changeFrequency:"monthly" as const,priority:0.74
+    }))
+  ];
+  return [...homePages, ...vehiclePages, ...stagePages, ...nlEnginePages, ...nlModelPages];
 }

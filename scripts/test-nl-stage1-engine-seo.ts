@@ -20,6 +20,7 @@ for(const p of nlStage1EngineProfiles){
  assert.ok(!titles.has(title),"Duplicate page SEO title "+title);
  assert.ok(!descriptions.has(description),"Duplicate page SEO description "+description);
  assert.ok(title.includes(p.headline)&&title.includes("Stage 1"));
+ assert.ok(!title.includes("| NoordTune"),"Root metadata template adds brand exactly once");
  assert.ok(description.includes("RDW-varianten")&&description.includes("bronnen"));
  assert.ok(description.length>=100&&description.length<220);
  titles.add(title);descriptions.add(description);

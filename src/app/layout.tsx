@@ -3,6 +3,7 @@ import {absoluteUrl, POWER_SITE_URL} from "@/lib/site-url";
 import "./globals.css";
 import "./editorial-v2.css";
 import "./nl-stage1-engine-seo.css";
+import "./nl-model-family-seo.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(

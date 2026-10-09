@@ -66,7 +66,7 @@ export function nlStage1EngineMetadata(profile:NlStage1EngineProfile) {
   const a=profile.applications[0];
   const hpRange=allStage1PowerRange(profile.applications);
   const hp=hpRange[0]===hpRange[1]?String(hpRange[0]):hpRange.join("–");
-  const title=`${profile.headline} Stage 1 | NoordTune`;
+  const title=`${profile.headline} Stage 1`;
   const description=`${profile.headline}: origineel ${a.stockPowerHp} pk, Stage 1 indicatief ${hp} pk. RDW-varianten, ECU-check en onafhankelijke bronnen | NoordTune.`;
   return {title,description};
 }

@@ -9,6 +9,7 @@ import {
 import {isPublicCatalogStageName} from "../src/data/catalog-shared.ts";
 import {featuredCatalogCars} from "../src/data/homepage.ts";
 import {nlStage1EngineProfiles,nlStage1EnginePath} from "../src/data/nl-stage1-engine-seo.ts";
+import {nlModelFamilyHubs,nlModelHubPath} from "../src/data/nl-model-family-seo.ts";
 import {resolveStageQuote} from "../src/data/pricing.ts";
 import {routing} from "../src/i18n/routing.ts";
 import {
@@ -39,12 +40,14 @@ const expectedRoutes = [
   })
 ]),
   "/nl/motoren",
-  ...nlStage1EngineProfiles.map(p=>nlStage1EnginePath(p.slug))
+  ...nlStage1EngineProfiles.map(p=>nlStage1EnginePath(p.slug)),
+  "/nl/modellen",
+  ...nlModelFamilyHubs.map(h=>nlModelHubPath(h.slug))
 ];
 
 assert.equal(engineCatalog.length, 24, "The curated public catalog must stay at 24 vehicles");
-assert.equal(expectedRoutes.length, 241, "Public sitemap includes 219 existing routes and 22 NL motor profile routes");
-assert.equal(new Set(expectedRoutes).size, 241, "Every public sitemap route must be unique");
+assert.equal(expectedRoutes.length, 248, "The sitemap includes 219 legacy, 22 engine and seven NL model routes");
+assert.equal(new Set(expectedRoutes).size, 248, "Every public sitemap route must be unique");
 
 const publicIds = new Set(engineCatalog.map((vehicle) => vehicle.id));
 const popularPublicIds = new Set(
