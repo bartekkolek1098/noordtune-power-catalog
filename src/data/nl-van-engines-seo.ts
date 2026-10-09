@@ -134,6 +134,77 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "appIds": [
     "rdw-bulk-6-peugeot-expert-v-20bluehdi180-2019-22"
   ]
+},
+  {
+  "slug": "mercedes-vito-116-cdi-1950-2023",
+  "modelSlug": "mercedes-vito",
+  "title": "Mercedes-Benz Vito 116 CDI 2.0 (2023)",
+  "intro": "De Mercedes-Benz Vito 116 CDI met originele 120 kW en 1950 cc is een andere fabrieksafstelling dan de 114 CDI van 100 kW of 119 CDI van 140 kW. Voor 2023 hebben we twee bronpublicaties met dezelfde normale Stage 1-indicatie voor de Euro 6 D-full-fase gevonden. RDW bevestigt echter niet zelfstandig de geïnstalleerde ECU of de emissiehomologatie.",
+  "checks": "Controleer VITO type 639/4, originele RDW 120 kW, 1950 cc en toelating 2023. Bevestig werkelijke OM654-code, Euro 6 D-full-fase, Bosch ECU en unlock, automaat of handbak, DPF/SCR en de belasting van een zakelijke werkbus; de BR/ECU-Soft-resultaten zijn geen transmissiegoedkeuring.",
+  "appIds": [
+    "rdw-bulk-7-mercedes-vito-6394-20-116cdi163-2023"
+  ]
+},
+  {
+  "slug": "mercedes-vito-116-cdi-1950-euro6e-2024",
+  "modelSlug": "mercedes-vito",
+  "title": "Mercedes-Benz Vito 116 CDI Euro 6e (2024)",
+  "intro": "De Vito 116 CDI van 2024 met 1950 cc en 120 kW valt binnen een nieuwere Euro 6e-brongroep dan veel 2020–2023-uitvoeringen. Twee onafhankelijke aanbieders noemen hetzelfde normale Stage 1-resultaat; dat blijft uitsluitend een referentie totdat de werkelijke Mercedes-software en emissievariant zijn gecontroleerd.",
+  "checks": "Verifieer RDW-type 639/4, diesel 1950 cc, oorspronkelijke 120 kW, eerste toelating in 2024, werkelijk bevestigde Euro 6e, ECU-firmware, Bosch motormanagement, transmissietype en SCR/AdBlue. Het oudere Vito 116 CDI Euro 6 D-temp-resultaat mag niet worden gekopieerd.",
+  "appIds": [
+    "rdw-bulk-7-mercedes-vito-6394-20-116cdi163-euro6e-2024"
+  ]
+},
+  {
+  "slug": "mercedes-vito-119-cdi-1950-2020",
+  "modelSlug": "mercedes-vito",
+  "title": "Mercedes-Benz Vito 119 CDI 2.0 (2020)",
+  "intro": "De Mercedes-Benz Vito 119 CDI met originele 140 kW en 1950 cc in de onderzochte 2020-registratie behoort niet automatisch tot dezelfde softwarefase als de Euro 6e-uitvoering van 2024. Twee onafhankelijke leveranciers publiceren voor de oudere W447 Euro 6 D-temp-groep zeer hoge, onderling verschillende cijfers; we tonen de volledige bandbreedte, niet één aanbevolen eindresultaat.",
+  "checks": "Bevestig exact RDW-type 639/2, eerste toelating 2020, diesel 1950 cc en originele 140 kW, daarna de echte OM654-motor, ECU-firmware en Euro 6 D-temp-variant. Vooral de opgegeven 550–570 Nm mag niet als veilige automaatgrens voor een zwaar beladen bus worden geïnterpreteerd.",
+  "appIds": [
+    "rdw-bulk-7-mercedes-vito-6392-20-119cdi190-2020"
+  ]
+},
+  {
+  "slug": "mercedes-vito-119-cdi-1950-euro6e-2024",
+  "modelSlug": "mercedes-vito",
+  "title": "Mercedes-Benz Vito 119 CDI Euro 6e (2024)",
+  "intro": "De Vito 119 CDI met 140 kW en 1950 cc is in 2024 als Euro 6e-referentie bij afzonderlijke tuners beschreven. De gewone Stage 1-indicatie van deze bronfase verschilt van sommige oudere D-temp-cijfers. Het RDW-type en jaartal zijn slechts een eerste filter en bewijzen nooit de daadwerkelijke ECU of transmissie.",
+  "checks": "Verifieer VITO RDW-type 639/4, origineel 140 kW, diesel 1950 cc, eerste toelating 2024 en exact Euro 6e-motormanagement. Controleer OM654, ECU-unlock, automaatkoppel, koeling, roetfilter en SCR; geen overname van hogere 2020-publicaties zonder diagnose.",
+  "appIds": [
+    "rdw-bulk-7-mercedes-vito-6394-20-119cdi190-euro6e-2024"
+  ]
+},
+  {
+  "slug": "mercedes-sprinter-317-cdi-1950-170-2023-24",
+  "modelSlug": "mercedes-sprinter",
+  "title": "Mercedes-Benz Sprinter 317 CDI 2.0 170",
+  "intro": "De Sprinter 317 CDI met originele 125 kW en 1950 cc is een andere afstelling dan de eerder beoordeelde 315 CDI 110 kW. Voor de onderzochte 2023–2024 Euro 6 D-full-kandidaat noemen twee specifiekere tunerpublicaties een bescheiden Stage 1-indicatie; een algemenere pagina met hogere cijfers is bewust niet gebruikt.",
+  "checks": "Controleer RDW SPRINTER type 906BB35, 1950 cc, originele 125 kW diesel, 2023–2024, werkelijk OM654-blok, ECU-software en Euro 6 D-full. De RDW-typecode duidt niet zelfstandig een W907/W910-chassis aan; kijk ook naar automaat, laadgewicht, DPF en SCR/AdBlue.",
+  "appIds": [
+    "rdw-bulk-7-mercedes-sprinter-906bb35-20-317cdi170-2023-24"
+  ]
+},
+  {
+  "slug": "peugeot-expert-20-bluehdi-145-2022-24",
+  "modelSlug": "peugeot-expert",
+  "title": "Peugeot Expert III 2.0 BlueHDi 145",
+  "intro": "De Peugeot Expert III 2.0 BlueHDi 145 in de gecontroleerde RDW-configuratie heeft originele 106 kW en 1997 cc. Dat rekent om naar ongeveer 144 metrische pk, terwijl aanbieders de handelsnaam 145 pk gebruiken. De afzonderlijke 2022- en 2024-uitvoeringen delen een bronbereik, maar hun geïnstalleerde Euro 6-ECU mag niet als identiek worden beschouwd.",
+  "checks": "Controleer Peugeot Expert RDW-type V, diesel 1997 cc, originele 106 kW, toelatingsjaar 2022 of 2024, daadwerkelijke DW10/Delphi DCM7.1A ECU en Euro 6.3 tegenover facelift-emissiefase. De bronnen verschillen in gepubliceerd origineel koppel (370 of 379 Nm), dat RDW zelf niet rapporteert.",
+  "appIds": [
+    "rdw-bulk-7-peugeot-expert-v-20bluehdi145-2022",
+    "rdw-bulk-7-peugeot-expert-v-20bluehdi145-2024"
+  ]
+},
+  {
+  "slug": "fiat-ducato-23-multijet-120-euro6-2020-21",
+  "modelSlug": "fiat-ducato",
+  "title": "Fiat Ducato 2.3 MultiJet 120 Euro 6 (2020–2021)",
+  "intro": "De Fiat Ducato III met 2.3 MultiJet 120 heeft in de bekeken RDW-variant originele 88 kW en 2287 cc. Twee onafhankelijke leveranciers publiceren voor de Euro 6-motor hoge maar licht uiteenlopende Stage 1-cijfers. Ze horen nadrukkelijk niet bij de 96 kW 130 pk-versies uit eerdere batches.",
+  "checks": "Bevestig FIAT DUCATO type 250, diesel 2287 cc, originele 88 kW en eerste toelating in 2020–2021. De F1AGL411-motorcode en werkelijke Marelli/Bosch ECU, versnellingsbak, koeling, SCR/DPF en eventuele zware camperopbouw moeten eerst worden gecontroleerd; 460+ Nm is geen goedgekeurde bedrijfslimiet.",
+  "appIds": [
+    "rdw-bulk-7-fiat-ducato-250-23multijet120-2020-21"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -150,7 +221,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==16||new Set(nlVanEngines.map(x=>x.slug)).size!==16)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==23||new Set(nlVanEngines.map(x=>x.slug)).size!==23)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];
