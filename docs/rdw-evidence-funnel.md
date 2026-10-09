@@ -10,15 +10,15 @@
 | RDW original engine kW present | 2,983 | 3,000 | Factory power exists in the registration; torque/ECU do not |
 | Full technical fields incl. RDW body type | 2,260 | 3,000 | Make/model/engine kW/cc/cylinders/year/type/single ordinary ICE fuel |
 | Ordinary ICE, interpretable RDW base | 2,590 | 3,000 | Safe denominator for a petrol/diesel Stage 1 discovery funnel |
-| **Stage 1 numeric with linked published sources** | **1,785** | **3,000** | Indicative; always requires physical ECU/transmission verification |
-| Stage 1 source-linked among ordinary ICE | 1,785 | 2,590 | Source links within the interpretable petrol/diesel subset only |
+| **Stage 1 numeric with linked published sources** | **1,795** | **3,000** | Indicative; always requires physical ECU/transmission verification |
+| Stage 1 source-linked among ordinary ICE | 1,795 | 2,590 | Source links within the interpretable petrol/diesel subset only |
 | Stage 1 generic numeric (not sourced) | 0 | 3,000 | Not considered verified Stage 1 coverage |
 | Stage 1 generated/canonical numeric | 0 | 3,000 | Not considered verified Stage 1 coverage |
 | Stage 1 other unverified numeric | 5 | 3,000 | Not considered verified Stage 1 coverage |
-| Stage 1 numerical output withheld | 1,210 | 3,000 | Do not invent an output; refer to workshop quote |
+| Stage 1 numerical output withheld | 1,200 | 3,000 | Do not invent an output; refer to workshop quote |
 | Public numerical Stage 3 | 0 | 3,000 | Stage 3 output must remain withheld |
 
-**Source-linked Stage 1: 59.5% of this frozen, nonrandom sample; 68.92% relative to the ordinary-ICE interpretable subset.** Neither number is a Dutch-fleet percentage.
+**Source-linked Stage 1: 59.83% of this frozen, nonrandom sample; 69.31% relative to the ordinary-ICE interpretable subset.** Neither number is a Dutch-fleet percentage.
 
 ## Priority groups with no complete source-linked Stage 1
 

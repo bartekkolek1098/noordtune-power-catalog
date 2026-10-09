@@ -237,6 +237,30 @@ const specs:readonly ExtraVanEngineSpec[]=[
   intro:"De compacte Fiat Doblò 1.6 MultiJet met 1598 cc en originele 77 kW heeft binnen RDW-type 263 een apart gecontroleerd Stage 1-bronprofiel voor 2015–2020. De nieuwere MultiJet 120, de 90 pk en andere Opel- of Peugeot-bestelwagens mogen deze cijfers niet overnemen.",
   checks:"Vergelijk RDW FIAT DOBLO' type 263, originele 77 kW, 1598 cc, diesel en toelatingsjaar 2015–2020. Bevestig de 198A3000-motorcode, Bosch EDC17C49/EDC17C69/EDC16C39-variant, versnellingsbak en laadprofiel; DPF, EGR en SCR/AdBlue blijven volledig functioneren.",
   appIds:["rdw-bulk-8-fiat-doblo-263-16multijet105-2015-20"],
+},
+{
+  slug:"ford-transit-20-ecoblue-130-2024",
+  modelSlug:"ford-transit",
+  title:"Ford Transit 2.0 EcoBlue 130 (2024)",
+  intro:"Deze Ford Transit uit de modelgeneratie 2024 heeft bij de RDW originele 95,7 kW en een dieselmotor van 1996 cc. ECU-Soft en BSR beschrijven voor de 130 pk Transit V een overeenkomende normale Stage 1-indicatie, maar hun publicatie bewijst niet dat elke bestelwagen dezelfde ECU bevat.",
+  checks:"Controleer RDW-handelsbenaming TRANSIT, carrosserie- of typecode FCD, originele 95,7 kW, 1996 cc diesel, vier cilinders en eerste toelating 2024. Verifieer daarna ECU-unlock, Euro-emissiefase, FWD/RWD, handbak of automaat, koppeling en werkbelading. DPF, EGR en SCR/AdBlue blijven legaal en functioneel.",
+  appIds:["rdw-bulk-9-ford-transit-fcd-20ecoblue130-2024"],
+},
+{
+  slug:"ford-transit-20-ecoblue-165-2024",
+  modelSlug:"ford-transit",
+  title:"Ford Transit 2.0 EcoBlue 165 (2024)",
+  intro:"De Transit EcoBlue 165 uit 2024 heeft originele RDW-motoroutput 121,3 kW en 1996 cc; dit is een andere fabrieksafstelling dan de Transit 130 met 95,7 kW. Twee afzonderlijke aanbieders publiceren een Stage 1-indicatie, terwijl bij sommige automaten ook het oorspronkelijke koppel verschilt.",
+  checks:"Controleer FORD TRANSIT type FCD, 121,3 kW, diesel 1996 cc en eerste toelating 2024. De bron met 390 Nm fabriekskoppel is niet automatisch geschikt voor BVA8-uitvoeringen die soms 360 Nm voeren: identificeer ECU, BVA8/BVA10 of handbak, unlock, emissiesystemen, laadgewicht en transmissiekoppel vóór een offerte.",
+  appIds:["rdw-bulk-9-ford-transit-fcd-20ecoblue165-2024"],
+},
+{
+  slug:"ford-transit-connect-15-ecoblue-100-pu2-2024",
+  modelSlug:"ford-transit-connect",
+  title:"Ford Transit Connect 1.5 EcoBlue 100 (PU2, 2024)",
+  intro:"De Transit Connect met RDW-type PU2, 1499 cc en 73,3 kW kan in 2024 nog voorkomen naast de latere geheel andere generatie op Volkswagen-platform. Voor deze specifieke oudere EcoBlue-motor geven drie onafhankelijke publicaties een normale Stage 1-indicatie die tussen de leveranciers licht verschilt.",
+  checks:"Vergelijk RDW TRANSIT CONNECT type PU2, originele 73,3 kW, 1499 cc diesel, vier cilinders en toelating 2024. Controleer of werkelijk de eerdere 1.5 EcoBlue met Bosch MD1CS005 aanwezig is en geen nieuwe Connect 2.0 diesel; verifieer koppeling, transmissie en dat DPF/EGR/SCR correct blijven werken. Origineel koppel verschilt tussen leveranciers.",
+  appIds:["rdw-bulk-9-ford-transit-connect-pu2-15ecoblue100-2024"],
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -253,7 +277,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==27||new Set(nlVanEngines.map(x=>x.slug)).size!==27)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==30||new Set(nlVanEngines.map(x=>x.slug)).size!==30)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];
