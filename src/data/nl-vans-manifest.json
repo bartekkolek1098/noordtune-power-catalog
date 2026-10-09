@@ -19,7 +19,10 @@
         "rdw-bulk-four-ford-transit-fcd-20ecoblue130-2018-19",
         "rdw-bulk-four-ford-transit-fed-20ecoblue130-2022",
         "rdw-bulk-9-ford-transit-fcd-20ecoblue130-2024",
-        "rdw-bulk-9-ford-transit-fcd-20ecoblue165-2024"
+        "rdw-bulk-9-ford-transit-fcd-20ecoblue165-2024",
+        "rdw-bulk-12-ford-transit-fed-20ecoblue130-2018-19",
+        "rdw-bulk-12-ford-transit-fcd-20ecoblue130-2019",
+        "rdw-bulk-12-ford-transit-fcd-20ecoblue170-2016"
       ],
       "engineSlugs": [],
       "faq": [
@@ -119,7 +122,9 @@
         "rdw-bulk-four-vw-transporter-7j0-t6-20tdi204-2017-19",
         "rdw-bulk-8-volkswagen-transporter-7j0-t61-20tdi150-2020-21",
         "rdw-bulk-11-vw-transporter-7j0-t61-20tdi150-2024",
-        "rdw-bulk-11-vw-transporter-7j0-t61-20tdi110-2024"
+        "rdw-bulk-11-vw-transporter-7j0-t61-20tdi110-2024",
+        "rdw-bulk-12-vw-transporter-7j0-t5-20bitdi180-2015",
+        "rdw-bulk-12-vw-transporter-7j0-t5-20tdi102-2015"
       ],
       "engineSlugs": [
         "volkswagen-transporter-t6-20-tdi-204"
@@ -188,7 +193,8 @@
         "rdw-bulk-four-vw-caddy-2kn-20tdi110-2014",
         "rdw-bulk-four-vw-caddy-2kn-20tdi102-2017-20",
         "rdw-bulk-four-vw-caddy-skn-20tdi102-2024",
-        "rdw-bulk-four-vw-caddy-skn-20tdi122-2022-24"
+        "rdw-bulk-four-vw-caddy-skn-20tdi122-2022-24",
+        "rdw-bulk-12-volkswagen-caddy-2kn-20-ecofuel-cng-109-2014"
       ],
       "engineSlugs": [
         "volkswagen-caddy-iv-20-tdi-102",
@@ -224,7 +230,9 @@
         "rdw-bulk-5-mercedes-sprinter-906bb35-21cdi143-2018",
         "rdw-bulk-6-mercedes-sprinter-906bb35-1950-315cdi150-2020",
         "rdw-bulk-6-mercedes-sprinter-906bb35-1950-315cdi150-2024",
-        "rdw-bulk-7-mercedes-sprinter-906bb35-20-317cdi170-2023-24"
+        "rdw-bulk-7-mercedes-sprinter-906bb35-20-317cdi170-2023-24",
+        "rdw-bulk-12-mercedes-sprinter-906bb35-21-313cdi129-2013",
+        "rdw-bulk-12-mercedes-sprinter-906ka35-21-316cdi163-2010"
       ],
       "engineSlugs": [],
       "faq": [
@@ -341,7 +349,8 @@
         "url": "https://www.peugeot.nl/professional/ontdek-onze-bedrijfswagens.html"
       },
       "verifiedIds": [
-        "rdw-bulk-peugeot-partner-e-15bluehdi100-2022-24"
+        "rdw-bulk-peugeot-partner-e-15bluehdi100-2022-24",
+        "rdw-bulk-12-peugeot-partner-7-16hdi75-2015"
       ],
       "engineSlugs": [],
       "faq": [
@@ -460,7 +469,9 @@
       "checks": "Controleer motorcode K9K, 55 kW, 1461 cc, RDW-type W, ECU-software, transmissie en DPF voordat een bronwaarde geldt.",
       "manufacturerSource": null,
       "verifiedIds": [
-        "rdw-bulk2-renault-kangoo-w-15dci75"
+        "rdw-bulk2-renault-kangoo-w-15dci75",
+        "rdw-bulk-12-renault-kangoo-w-15dci90-2015",
+        "rdw-bulk-12-renault-kangoo-w-15dci90-2019"
       ],
       "engineSlugs": [],
       "faq": [
@@ -556,16 +567,38 @@
           "Ja. Voor weggebruik horen SCR/AdBlue, roetfilter en EGR volgens de geldende emissie-eisen te blijven functioneren. Een normale Stage 1-vermogensindicatie is geen toestemming om emissiesystemen buiten werking te stellen."
         ]
       ]
-    }
-  ],
-  "pending": [
+    },
     {
       "slug": "renault-trafic",
       "make": "Renault",
       "model": "Trafic",
       "size": "Middel",
-      "indexable": false
-    },
+      "indexable": true,
+      "intro": "De Renault Trafic is een middelgrote bedrijfsbus voor installateurs, bouwbedrijven en koeriersdiensten. De gecontroleerde moderne 2.0 Blue dCi 150 met 1997 cc en 110 kW heeft twee motorbronnen die de gewone Stage 1-indicatie afzonderlijk publiceren, maar alleen een workshopscan identificeert de werkelijke ECU.",
+      "difference": "Trafic III facelift Blue dCi 150 is technisch anders dan oudere 1.6 dCi, de 110 en 130 pk-uitvoeringen en de sterkere 170 pk Trafic. Ook voertuigen uit 2023 en 2024 kunnen verschillende emissiesoftware of handgeschakelde en EAG9-automatische versnellingsbakken hebben; originele RDW-kW en motorcode blijven leidend.",
+      "usage": "Voor monteurs en transporteurs met dagelijks gereedschap, laadruimte en soms een aanhanger zijn trekvermogen bij lage toerentallen en een betrouwbare automatische of handgeschakelde transmissie essentieel. Een Stage 1 verandert nooit de wettelijke maximummassa of het trekgewicht.",
+      "checks": "Bevestig TRAFIC type L, originele 110 kW, diesel 1997 cc, vier cilinders, eerste toelating 2023–2024, exacte M9R- en ECU-firmware en Euro 6d-Full. Inspecteer koppeling of EAG9-automaat, onderhoud, DPF/EGR en SCR/AdBlue. Wettelijke uitlaatsystemen blijven in werking.",
+      "manufacturerSource": {
+        "name": "Renault Bedrijfswagens officiële Trafic dieselmotor informatie",
+        "url": "https://bedrijfswagens.renault.nl/modellen/trafic/dieselmotor.html"
+      },
+      "verifiedIds": [
+        "rdw-bulk-12-renault-trafic-l-20bluedci150-2023-24"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Is een Renault Trafic 2.0 Blue dCi 150 hetzelfde als de 110 of 170 pk-uitvoering?",
+          "Nee. De gecontroleerde Trafic is de oorspronkelijke 110 kW / 150 pk-variant. Andere vermogensversies kunnen een andere motor- en transmissieafstelling hebben en krijgen niet automatisch dezelfde externe Stage 1-waarden."
+        ],
+        [
+          "Verandert chiptuning de laadcapaciteit of mag AdBlue uitgeschakeld worden?",
+          "Nee. Het wettelijke laad- en trekgewicht blijft ongewijzigd. Voor weggebruik moeten SCR/AdBlue, DPF en EGR overeenkomstig de emissievoorschriften blijven functioneren; wij tonen hier alleen reguliere Stage 1-indicaties."
+        ]
+      ]
+    }
+  ],
+  "pending": [
     {
       "slug": "opel-movano",
       "make": "Opel",

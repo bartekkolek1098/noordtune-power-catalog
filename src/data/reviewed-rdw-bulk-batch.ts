@@ -9,7 +9,7 @@ export type ExtraEvidence = {provider:string;title:string;url:string;stage1Hp:nu
 export type Seed = {
   id:string; make:string; model:string; rdwModel:string; type:string;
   from:number; to:number; cc:number; cylinders:number; kw:number;
-  stockNm:number; engine:string; fuel?:"Petrol"|"Diesel"; power:readonly [number,number]; torque:readonly [number,number];
+  stockNm:number; engine:string; fuel?:"Petrol"|"Diesel"|"CNG"; power:readonly [number,number]; torque:readonly [number,number];
   profileIds:readonly string[]; extras?:readonly ExtraEvidence[];
   scope:string;
 };

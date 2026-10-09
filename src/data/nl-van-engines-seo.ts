@@ -361,6 +361,117 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "appIds": [
     "rdw-bulk-11-renault-master-ma-23dci130-euro6-2017"
   ]
+},
+{
+  "slug": "volkswagen-caddy-20-ecofuel-cng-109-2014",
+  "modelSlug": "volkswagen-caddy",
+  "title": "Volkswagen Caddy 2.0 EcoFuel CNG 109 (2014)",
+  "intro": "De Volkswagen Caddy EcoFuel 2.0 van 2014 rijdt op aardgas (CNG), met 1984 cc en originele 80 kW in de RDW-registratie. Dit is een atmosferische gasmotor, geen 2.0 TDI en geen 1.4 TGI. Drie onafhankelijke leveranciers publiceren bescheiden, uiteenlopende Stage 1-indicaties voor deze brandstofspecifieke motor.",
+  "checks": "Controleer RDW CADDY type 2KN, 1984 cc, 80 kW, vier cilinders, alleen CNG en eerste toelating 2014. Verifieer de originele EcoFuel CNG-injectie, brandstofinstallatie, ECU-firmware, lambda-regeling, katalysator en handbak. De externe 116–125 pk en 170–182 Nm zijn geen gegarandeerde waarden of geldige cijfers voor benzine/LPG.",
+  "appIds": [
+    "rdw-bulk-12-volkswagen-caddy-2kn-20-ecofuel-cng-109-2014"
+  ]
+},
+{
+  "slug": "volkswagen-transporter-t5-20-bitdi-180-2015",
+  "modelSlug": "volkswagen-transporter",
+  "title": "Volkswagen Transporter T5 2.0 BiTDI 180 (2015)",
+  "intro": "De 2.0 BiTDI 180 pk van de Transporter T5.1 uit 2015 heeft origineel 132 kW en een dubbel turbosysteem. In de laatste T5-jaren verschillen externe leveranciers sterk in hun normale Stage 1-waarden. De RDW-code 7J0 alleen bevestigt niet of werkelijk de juiste CFCA-motor, ECU en transmissie aanwezig zijn.",
+  "checks": "Controleer RDW TRANSPORTER 7J0, 1968 cc diesel, originele 132 kW en toelating 2015. Bevestig feitelijke T5.1 en CFCA, Bosch EDC17CP20, verbruik van olie, EGR-koeler, beide turbo's, DPF, handbak of DSG DQ500 en veilige koppelgrenzen. De externe bovengrens is geen bedrijfsadvies voor een beladen bus.",
+  "appIds": [
+    "rdw-bulk-12-vw-transporter-7j0-t5-20bitdi180-2015"
+  ]
+},
+{
+  "slug": "volkswagen-transporter-t5-20-tdi-102-2015",
+  "modelSlug": "volkswagen-transporter",
+  "title": "Volkswagen Transporter T5 2.0 TDI 102 (2015)",
+  "intro": "De Transporter T5 met 75 kW en 1968 cc uit 2015 is doorgaans een 102 pk TDI met een kleinere koppeling en vijfversnellingsbak dan de zwaardere motorvarianten. Publicaties voor een T5 Stage 1 verschillen, daarom kiezen we bewust voor het lagere bereik en vermijden we hoge koppelclaims voor de standaard handbak.",
+  "checks": "Controleer 2015 VW TRANSPORTER 7J0, 1968 cc, originele 75 kW diesel en werkelijk T5.1 met 2.0 TDI 102. Inspecteer ECU, 5-versnellingsbak, vliegwiel, koppeling, koeling en DPF/EGR; sommige leveranciers noemen 175 pk, maar dat getal wordt hier niet als veilig aanbevolen. Eerste toelating 2015 kan op generatiegrens vallen.",
+  "appIds": [
+    "rdw-bulk-12-vw-transporter-7j0-t5-20tdi102-2015"
+  ]
+},
+{
+  "slug": "ford-transit-fed-20-ecoblue-130-2018-19",
+  "modelSlug": "ford-transit",
+  "title": "Ford Transit 2.0 EcoBlue 130 FED (2018–2019)",
+  "intro": "Deze grote Ford Transit heeft RDW-type FED, een 2.0 EcoBlue met 1995 cc en originele 96 kW. In de periode 2018–2019 verschenen verschillende Transit- en Transit Custom-configuraties met dezelfde handelsnaam 130 pk, maar RDW-type FED is niet uitwisselbaar met FCC of FCD.",
+  "checks": "Controleer RDW TRANSIT FED, eerste toelating 2018 of 2019, 1995 cc, originele 96 kW, vier cilinders en diesel. Verifieer YMF6-motorcode, echte Siemens/Continental SID-firmware, mogelijke ECU-unlock, DPF/SCR, natte distributieriem waar van toepassing en transmissie. De leveranciers hanteren nominaal 1996 cc; RDW blijft 1995 cc.",
+  "appIds": [
+    "rdw-bulk-12-ford-transit-fed-20ecoblue130-2018-19"
+  ]
+},
+{
+  "slug": "ford-transit-fcd-20-ecoblue-130-2019",
+  "modelSlug": "ford-transit",
+  "title": "Ford Transit 2.0 EcoBlue 130 FCD (2019)",
+  "intro": "De Ford Transit met RDW-type FCD uit 2019 is met 95,6 kW en 1995 cc geregistreerd, terwijl de vergelijkbare FED-uitvoering 96 kW heeft. Het kleine verschil in origineel geregistreerde kW is voor een strikte kentekenmatch belangrijk; dit profiel mag niet automatisch voor beide uitvoeringen worden hergebruikt.",
+  "checks": "Vergelijk type FCD, RDW-handelsnaam TRANSIT, originele 95,6 kW, diesel 1995 cc en eerste toelating in 2019. Controleer ECU-identiteit, YMF6/EcoBlue-motor, daadwerkelijke Euro 6-fase, bedrijfsbelasting, natte distributieriem indien aanwezig, koppeling en SCR/DPF. Stage 1 is een extern gepubliceerd bereik, geen garantie.",
+  "appIds": [
+    "rdw-bulk-12-ford-transit-fcd-20ecoblue130-2019"
+  ]
+},
+{
+  "slug": "ford-transit-fcd-20-ecoblue-170-2016",
+  "modelSlug": "ford-transit",
+  "title": "Ford Transit 2.0 EcoBlue 170 FCD (2016)",
+  "intro": "De Ford Transit van 2016 met originele 125 kW en 1995 cc is een 170 pk EcoBlue uit de overgang van oudere 2.2 TDCi naar 2.0 Euro 6. Een leverancier beschrijft expliciet de Transit-generatie 2016–2018, terwijl een tweede de 125 kW-motorvariant bevestigt maar niet zelfstandig de toegangssoftware bepaalt.",
+  "checks": "Controleer het echte bouwjaar en RDW TRANSIT FCD, originele 125 kW, 1995 cc diesel, vier cilinders en eerste toelating 2016. Lees ECU en bevestig YNFS/YLF6-motorcode, Euro 6-emissiefase, firmware, SID211 of latere controller, transmissie en onderhoud. Geen vermogenscijfers van Transit Custom of 2.2 Puma overnemen.",
+  "appIds": [
+    "rdw-bulk-12-ford-transit-fcd-20ecoblue170-2016"
+  ]
+},
+{
+  "slug": "renault-kangoo-15-dci-90-2015-2019",
+  "modelSlug": "renault-kangoo",
+  "title": "Renault Kangoo II 1.5 dCi 90 (2015 en 2019)",
+  "intro": "De Renault Kangoo II 1.5 dCi 90 met 1461 cc en 66 kW komt in gecontroleerde RDW-observaties uit 2015 en 2019 voor. Externe bronnen ondersteunen voor beide jaren de handelsvariant 90 pk, maar de Euro-emissiefase en ECU kunnen verschillen. Daarom zijn beide jaren als afzonderlijke RDW-toepassing vastgelegd.",
+  "checks": "Controleer KANGOO type W, 1461 cc, originele 66 kW, eerste toelating 2015 of 2019, werkelijke K9K-motorcode, Bosch EDC17 of Delphi DCM, Euro-norm, koppeling en DPF/SCR waar aanwezig. De leveranciers publiceren slechts circa 110–111 pk na Stage 1; cijfers van 55 kW 75 pk en 81 kW 110 pk worden niet gekopieerd.",
+  "appIds": [
+    "rdw-bulk-12-renault-kangoo-w-15dci90-2015",
+    "rdw-bulk-12-renault-kangoo-w-15dci90-2019"
+  ]
+},
+{
+  "slug": "peugeot-partner-16-hdi-75-2015",
+  "modelSlug": "peugeot-partner",
+  "title": "Peugeot Partner II 1.6 HDi 75 (2015)",
+  "intro": "De Peugeot Partner 1.6 HDi 75 met 1560 cc en 55 kW bevindt zich in 2015 precies op de grens tussen de oudere HDi en nieuwere BlueHDi Euro 6. Twee externe publicaties beschrijven specifiek de oudere HDi 75; pas na bevestiging van de werkelijke motorcode hoort hun Stage 1-indicatie bij deze RDW-variant.",
+  "checks": "Controleer PARTNER RDW-type 7, 1560 cc, 55 kW diesel, vier cilinders en toelating 2015. Verifieer of werkelijk de oudere DV6 1.6 HDi met passende ECU is gemonteerd; een BlueHDi 75 uit juni 2015 of later kan 230 Nm originele bronmoment hebben en een geheel andere softwarefase. Geen automatische aanbeveling zonder motordiagnose.",
+  "appIds": [
+    "rdw-bulk-12-peugeot-partner-7-16hdi75-2015"
+  ]
+},
+{
+  "slug": "mercedes-sprinter-w906-313-cdi-129-2013",
+  "modelSlug": "mercedes-sprinter",
+  "title": "Mercedes Sprinter W906 313 CDI 2.1 129 (2013)",
+  "intro": "De Mercedes Sprinter 313 CDI 2.1 met originele 95 kW uit 2013 is een andere fabrieksafstelling dan de 120 kW 316 CDI of latere 1950 cc OM654. Voor de gecontroleerde W906-toepassing publiceren twee bronnen uiteenlopende, maar gewone Stage 1-waarden. Het RDW-type bevestigt niet zelfstandig de ECU-firmware.",
+  "checks": "Controleer SPRINTER RDW-type 906BB35, 2143 cc, 95 kW diesel en toelatingsjaar 2013. Verifieer OM651-motorcode, Delphi CRD2/CRD3-variant, Euro 5-fase, originele transmissie, draagvermogen, DPF/EGR en onderhoud. De weergegeven leveranciergrenzen 154–161 pk en 355–384 Nm zijn geen mechanische goedkeuring.",
+  "appIds": [
+    "rdw-bulk-12-mercedes-sprinter-906bb35-21-313cdi129-2013"
+  ]
+},
+{
+  "slug": "mercedes-sprinter-w906-316-cdi-163-2010",
+  "modelSlug": "mercedes-sprinter",
+  "title": "Mercedes Sprinter W906 316 CDI 2.1 163 (2010)",
+  "intro": "De Sprinter uit 2010 met originele 120 kW en 2143 cc behoort mogelijk tot de OM651 316 CDI-generatie. Twee tunerpublicaties geven verschillende gewone Stage 1-cijfers, van 187 tot 200 pk; die mogen nooit als gegarandeerde veilige koppelgrens voor een zwaar beladen bus worden geïnterpreteerd.",
+  "checks": "Controleer exacte RDW-bodycode 906 KA 35, originele 120 kW, 2143 cc, eerste toelating 2010, werkelijke OM651 tegenover oudere OM646 en geïnstalleerde Delphi ECU. Vergelijk handbak/automaat, voertuiggewicht, thermisch beheer, DPF en emissienorm. De hoogste externe vermelde 480 Nm vereist altijd een individuele conservatieve koppelbeoordeling.",
+  "appIds": [
+    "rdw-bulk-12-mercedes-sprinter-906ka35-21-316cdi163-2010"
+  ]
+},
+{
+  "slug": "renault-trafic-20-blue-dci-150-2023-24",
+  "modelSlug": "renault-trafic",
+  "title": "Renault Trafic III 2.0 Blue dCi 150 (2023–2024)",
+  "intro": "De Renault Trafic met 1997 cc en originele 110 kW is een bestelwagen voor koeriers, aannemers en onderhoudsdiensten. Voor de 2.0 Blue dCi 150 vanaf 2022 bestaan twee onafhankelijke chiptuningpublicaties met hetzelfde normale Stage 1-resultaat, terwijl Renault zelf de originele 350 Nm en 110 kW bevestigt.",
+  "checks": "Controleer TRAFIC RDW-type L, originele 110 kW, diesel 1997 cc, vier cilinders en eerste toelating 2023 of 2024. Verifieer werkelijke Blue dCi 150, Renault M9R-motorcode, Euro 6d-Full, ECU, handbak of EAG9-automaat, SCR/AdBlue, DPF en belasting. Verhoogde trekkracht verandert het wettelijk toegestane laadgewicht niet.",
+  "appIds": [
+    "rdw-bulk-12-renault-trafic-l-20bluedci150-2023-24"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -377,7 +488,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==40||new Set(nlVanEngines.map(x=>x.slug)).size!==40)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==51||new Set(nlVanEngines.map(x=>x.slug)).size!==51)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];
