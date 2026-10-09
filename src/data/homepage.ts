@@ -83,11 +83,11 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     nav: ["HOME", "KATALOGUS", "DIAGNOSE", "WERKWIJZE", "RESULTATEN", "OVER ONS", "CONTACT"],
     phone: "+31 685 759 600",
     heroKicker: "RDW VERMOGENSCATALOGUS",
-    heroLineA: "Controleer de",
-    heroLineB: "tuning­mogelijkheden",
-    heroLineC: "van jouw auto.",
+    heroLineA: "Chiptuning",
+    heroLineB: "voor jouw auto.",
+    heroLineC: "Zonder giswerk.",
     heroIntro:
-      "NoordTune combineert RDW-gegevens met een professionele tuningcatalogus. Bekijk direct mogelijkheden voor Stage 1 / 2, DPF / AdBlue / EGR, DSG / TCU tuning en ontvang een indicatie op maat.",
+      "Bekijk fabrieksgegevens, Stage 1-indicaties mét bronnen en de volgende stap voor jouw auto. Motorcode, ECU en transmissie controleren we vóór tuning.",
     manualPanelTitle: "Of kies jouw auto handmatig",
     manualPanelText:
       "Voor klanten buiten Nederland: kies merk, model, bouwjaar en motor zonder Nederlands kenteken.",
@@ -188,11 +188,11 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     nav: ["HOME", "POWER CATALOG", "DIAGNOSTICS", "PROCESS", "RESULTS", "ABOUT", "CONTACT"],
     phone: "+31 685 759 600",
     heroKicker: "RDW POWER CATALOG",
-    heroLineA: "Check your car's",
-    heroLineB: "tuning potential",
-    heroLineC: "instantly.",
+    heroLineA: "Chiptuning",
+    heroLineB: "for your car.",
+    heroLineC: "No guesswork.",
     heroIntro:
-      "NoordTune combines RDW vehicle data with a professional tuning catalog. Instantly view Stage 1 / 2, DPF / AdBlue / EGR, DSG / TCU tuning options and receive a tailored indication.",
+      "View factory specifications, source-linked Stage 1 indications and the right next step for your vehicle. Engine, ECU and gearbox require verification.",
     manualPanelTitle: "Or choose your car manually",
     manualPanelText:
       "For customers outside the Netherlands: choose make, model, year and engine without a Dutch plate.",
@@ -293,11 +293,11 @@ export const homeVisualCopy: Record<Locale, HomeVisualCopy> = {
     nav: ["HOME", "KATALOG MOCY", "DIAGNOSTYKA", "JAK DZIAŁAMY", "WYNIKI", "O NAS", "KONTAKT"],
     phone: "+31 685 759 600",
     heroKicker: "KATALOG MOCY RDW",
-    heroLineA: "Sprawdź",
-    heroLineB: "możliwości tuningu",
-    heroLineC: "swojego auta.",
+    heroLineA: "Chiptuning",
+    heroLineB: "dla Twojego auta.",
+    heroLineC: "Bez zgadywania.",
     heroIntro:
-      "NoordTune łączy dane RDW z profesjonalnym katalogiem tuningu. Od razu sprawdzisz Stage 1 / 2, DPF / AdBlue / EGR, tuning DSG / TCU i otrzymasz indywidualną wycenę.",
+      "Sprawdź dane fabryczne, orientacyjne Stage 1 ze źródłami i następny krok dla auta. Silnik, ECU oraz skrzynię weryfikujemy indywidualnie.",
     manualPanelTitle: "Lub wybierz auto ręcznie",
     manualPanelText:
       "Dla klientów spoza Holandii: wybierz markę, model, rok i silnik bez holenderskiej tablicy.",
@@ -643,3 +643,7 @@ export const popularCars: PopularCar[] = [
     }
   }
 ];
+
+/** Only three photo cards on the catalog landing page; every other curated vehicle remains linked below. */
+const featuredCatalogIds = new Set(["bmw-320d-b47", "vw-golf-20-tsi-ea888", "audi-a3-20-tdi"]);
+export const featuredCatalogCars = popularCars.filter((car) => featuredCatalogIds.has(car.detailId));

@@ -246,31 +246,31 @@ export function PlateLookup({
   }
 
   return (
-    <Card className="panel-edge min-w-0 carbon-panel border-primary/20 shadow-glow">
+    <Card className="panel-edge min-w-0 border-white/15 bg-[#1c1f20]">
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between gap-4">
           <div>
-            <CardTitle className="flex items-center gap-2 text-2xl">
+            <CardTitle className="flex items-center gap-3 text-xl font-bold tracking-[-.03em] sm:text-2xl">
               <Car className="h-6 w-6 text-primary" />
               {text.label}
             </CardTitle>
             <p className="mt-2 text-sm text-muted-foreground">{text.source}</p>
           </div>
-          <Badge className="border-primary/30 bg-primary/10 text-primary">
+          <Badge className="border-white/15 bg-white/[.06] px-3 text-xs font-semibold text-slate-200">
             RDW
           </Badge>
         </div>
       </CardHeader>
       <CardContent>
         <form className="space-y-4" onSubmit={onSubmit}>
-          <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
+          <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto]">
             <div className="relative">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex w-10 items-center justify-center rounded-l-lg bg-[#164394] text-xs font-black text-white">
+              <div className="pointer-events-none absolute inset-y-0 left-0 flex w-11 items-center justify-center rounded-l-xl bg-[#15479c] text-xs font-black text-white">
                 NL
               </div>
               <Input
                 aria-label={text.label}
-                className="plate-shadow h-14 border-0 bg-[#ffd000] pl-12 text-center text-2xl font-black uppercase tracking-[0.18em] text-black placeholder:text-black/35 focus-visible:ring-primary"
+                className="plate-shadow h-[58px] rounded-xl border-0 bg-[#ffd31d] pl-12 text-center text-[24px] font-extrabold uppercase tracking-[.12em] text-[#121619] placeholder:text-black/40 focus-visible:ring-white sm:h-[60px]"
                 inputMode="text"
                 maxLength={10}
                 onChange={(event) => setPlate(event.target.value)}
@@ -278,7 +278,7 @@ export function PlateLookup({
                 value={plate}
               />
             </div>
-            <Button className="h-14 rounded-[3px] px-6 font-black uppercase" disabled={loading} type="submit">
+            <Button className="h-[58px] rounded-xl px-8 text-sm font-bold tracking-[.01em] sm:h-[60px] sm:min-w-[160px]" disabled={loading} type="submit">
               {loading ? (
                 <Loader2 className="h-4 w-4 animate-spin" />
               ) : (

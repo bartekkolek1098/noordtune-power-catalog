@@ -198,7 +198,7 @@ export function VehicleDetail({
   return (
     <div className="grid min-w-0 gap-6 pb-24 lg:grid-cols-[minmax(0,1fr)_420px] lg:pb-0">
       <div className="min-w-0 space-y-6">
-        <div className="grid min-w-0 grid-cols-2 gap-3 md:grid-cols-3" data-testid="vehicle-output-summary">
+        <div className="ux-result-metrics grid min-w-0 grid-cols-2 gap-3 md:grid-cols-3" data-testid="vehicle-output-summary">
           {(() => {
             const stockPower = estimateProfile.stockPowerHp;
             const stockTorque = estimateProfile.stockTorqueNm;

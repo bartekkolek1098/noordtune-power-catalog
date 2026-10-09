@@ -7,6 +7,7 @@ import {ArrowLeft} from "lucide-react";
 import {engineCatalog, getVehicleById} from "@/data/catalog";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {CatalogHeader} from "@/components/catalog-header";
+import {MobileActionBar} from "@/components/mobile-action-bar";
 import {CatalogVerificationNotice} from "@/components/catalog-verification-notice";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {SeoInfoSections} from "@/components/seo-info-sections";
@@ -129,20 +130,20 @@ export default async function VehiclePage({params}: PageProps) {
   ];
 
   return (
-    <main className="min-h-screen bg-background pb-[calc(5.25rem+env(safe-area-inset-bottom))] lg:pb-0">
+    <main className="ux-vehicle-page min-h-screen bg-background pb-[calc(5.25rem+env(safe-area-inset-bottom))] lg:pb-0">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbJsonLd)}}
       />
       <CatalogHeader locale={safeLocale} languagePath={`/vehicles/${vehicle.id}`} />
-      <section className="relative overflow-hidden border-b border-white/10">
+      <section className="ux-vehicle-hero relative overflow-hidden border-b border-white/10">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `linear-gradient(90deg, rgba(2,4,8,.96), rgba(2,4,8,.78) 46%, rgba(2,4,8,.56)), url('${assetPath(vehicle.image)}')`
           }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(226,0,15,.22),transparent_42%,rgba(255,255,255,.08))]" />
+        <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(9,12,13,.15),transparent_48%)]" />
         <div className="container relative z-10 pb-16 pt-8">
           <nav className="mb-6 flex flex-wrap items-center gap-2 text-xs font-bold uppercase text-muted-foreground">
             <a className="hover:text-primary" href={mainLocaleHref(safeLocale)}>
@@ -158,14 +159,14 @@ export default async function VehiclePage({params}: PageProps) {
             </span>
           </nav>
 
-          <div className="mb-8 flex flex-wrap gap-3">
-            <Button asChild className="rounded-[3px]" variant="outline">
+          <div className="mb-5 flex flex-wrap gap-2">
+            <Button asChild className="rounded-xl" variant="outline">
               <a href={sitePath(`/${safeLocale}#manual-selector`)}>
                 <ArrowLeft className="h-4 w-4" />
                 {t("back")}
               </a>
             </Button>
-            <Button asChild className="rounded-[3px]" variant="outline">
+            <Button asChild className="hidden rounded-xl sm:inline-flex" variant="outline">
               <a href={chiptuningHref(safeLocale)}>{chiptuningLabel}</a>
             </Button>
           </div>
@@ -173,7 +174,7 @@ export default async function VehiclePage({params}: PageProps) {
             <Badge className="mb-4 border-primary/30 bg-primary/15 text-primary">
               {t("technical.ecuFamily")}: {technicalFamilyLabel(vehicle.ecuSupport, vehicle.ecuType, safeLocale)}
             </Badge>
-            <h1 className="racing-title text-5xl leading-none md:text-7xl">
+            <h1 className="racing-title text-[clamp(2.4rem,6vw,4.9rem)] leading-[1.03]">
               {vehicle.brand} {vehicle.model}
             </h1>
             <p className="mt-4 text-2xl font-bold text-slate-100 md:text-3xl">
@@ -274,6 +275,7 @@ export default async function VehiclePage({params}: PageProps) {
         />
       </section>
       <CatalogFooter locale={safeLocale} />
+      <MobileActionBar locale={safeLocale} mode="vehicle" vehicleLabel={`${vehicle.brand} ${vehicle.model} ${vehicle.engine}`}/>
       <FloatingWhatsappButton
         locale={safeLocale}
         mobileCtaOffset

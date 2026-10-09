@@ -246,13 +246,13 @@ export function ManualSelector({
   return (
     <section
       className={cn(
-        "panel-edge relative mx-auto w-full max-w-[920px] scroll-mt-24 overflow-hidden bg-[linear-gradient(135deg,rgba(14,14,14,.96),rgba(5,5,5,.9)_54%,rgba(227,6,19,.13))] p-4 shadow-[0_24px_90px_rgba(0,0,0,.48)] ring-1 ring-white/5 sm:p-5",
+        "panel-edge relative mx-auto w-full scroll-mt-24 overflow-hidden border border-white/10 bg-[#171a1b] p-4 sm:p-7",
         className
       )}
       id="manual-selector"
     >
-      <div className="pointer-events-none absolute -right-24 top-0 h-28 w-72 rotate-[-16deg] bg-[linear-gradient(90deg,transparent,rgba(226,0,15,.38),transparent)] blur-sm" />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(226,0,15,.75),transparent)]" />
+
+
 
       <div className="relative space-y-4">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
@@ -273,13 +273,14 @@ export function ManualSelector({
         </div>
 
         <div className="rounded-lg border border-white/10 bg-black/55 p-3 sm:p-4">
-          <label className="mb-2 block text-xs font-black uppercase tracking-normal text-slate-300">
+          <label htmlFor="manual-quick-search" className="mb-2 block text-xs font-bold text-slate-300">
             {text.quickSearch}
           </label>
           <div className="relative">
             <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-primary" />
             <Input
-              className="h-12 border-primary/25 bg-black/70 pl-10 text-sm font-semibold text-white shadow-[inset_0_0_24px_rgba(0,0,0,.32)] placeholder:text-slate-500 focus-visible:ring-primary"
+              id="manual-quick-search"
+              className="h-12 border-white/20 bg-[#242728] pl-10 text-base text-white placeholder:text-slate-400 focus-visible:ring-primary"
               onChange={(event) => setQuery(event.target.value)}
               placeholder={text.quickPlaceholder}
               value={query}
@@ -287,8 +288,8 @@ export function ManualSelector({
           </div>
         </div>
 
-        <div className="grid min-w-0 grid-cols-1 gap-4">
-          <div className="rounded-lg border border-white/10 bg-black/45 p-3 sm:p-4">
+        <div className="grid min-w-0 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)]">
+          <div data-testid="manual-popular-list" className={cn("rounded-2xl border border-white/10 bg-black/45 p-3 sm:p-4",hasSearchQuery?"order-1 lg:order-2":"order-2 lg:order-2")}>
             <div className="mb-3 flex items-center gap-2 text-xs font-black uppercase tracking-normal text-primary">
               <Star className="h-4 w-4 fill-primary" />
               {text.popular}
@@ -296,7 +297,7 @@ export function ManualSelector({
             <div className="grid gap-2">
               {visibleVehicles.map((vehicle) => { const ResultAction = vehicle.pagePath ? "a" : "button"; return (
                 <ResultAction
-                className="group grid w-full gap-2 rounded-[3px] text-left border border-white/10 bg-white/[0.035] p-3 transition hover:border-primary/50 hover:bg-primary/10"
+                className="group grid w-full gap-2 rounded-xl text-left border border-white/10 bg-white/[0.035] p-3 transition hover:border-primary/50 hover:bg-white/[0.07] focus-visible:ring-2 focus-visible:ring-primary"
                   href={detailHref(vehicle)}
                   type={vehicle.pagePath ? undefined : "button"}
                   data-testid="manual-result-action"
@@ -334,7 +335,7 @@ export function ManualSelector({
             </div>
           </div>
 
-          <div className="rounded-lg border border-primary/20 bg-black/55 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,.05)] sm:p-4">
+          <div data-testid="manual-vehicle-filters" className={cn("rounded-2xl border border-white/15 bg-[#202323] p-4 sm:p-5",hasSearchQuery?"order-2 lg:order-1":"order-1 lg:order-1")}>
             <label className="mb-2 block text-xs font-black uppercase tracking-normal text-slate-300">
               {text.brandSearch}
             </label>

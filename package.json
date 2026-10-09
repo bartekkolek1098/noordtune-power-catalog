@@ -16,6 +16,7 @@
     "test:rdw:focused": "node --no-warnings scripts/test-rdw-bulk-reviewed.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-2.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-3.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-4.ts && node scripts/test-rdw-qa-risk-plan.cjs",
     "qa:rdw:fast-browser": "node --no-warnings scripts/qa-rdw-browser-gate.cjs --smoke",
     "qa:rdw:full-browser": "node --no-warnings scripts/qa-rdw-browser-gate.cjs --full",
+    "qa:ux:mobile": "node --no-warnings scripts/qa-ux-mobile-seo.cjs",
     "report:rdw-funnel": "node --no-warnings scripts/report-rdw-evidence-funnel.ts --write",
     "test:seo": "node --no-warnings scripts/test-seo-polish.ts",
     "qa:seo": "node --no-warnings scripts/qa-seo-polish.cjs && node --no-warnings scripts/qa-seo-polish-browser.cjs",

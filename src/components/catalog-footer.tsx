@@ -1,4 +1,5 @@
 import {Clock, Mail, MapPin, MessageCircle, Phone} from "lucide-react";
+import Image from "next/image";
 import type {Locale} from "@/i18n/routing";
 import {NoordTuneLogo} from "@/components/noordtune-logo";
 import {
@@ -13,6 +14,13 @@ import {
   whatsappPhoneLabel
 } from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
+import {assetPath} from "@/lib/site-path";
+
+const designerCredit: Record<Locale,string> = {
+  nl: "Website en catalogussysteem ontwikkeld door",
+  en: "Website and catalog system developed by",
+  pl: "Projekt i wykonanie strony oraz systemu katalogowego:"
+};
 
 export function CatalogFooter({locale}: {locale: Locale}) {
   const copy = footerCopy(locale);
@@ -99,6 +107,18 @@ export function CatalogFooter({locale}: {locale: Locale}) {
               </a>
             ))}
           </div>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-start gap-x-3 gap-y-2 border-t border-white/10 py-4 sm:justify-end" aria-label="Zichtgroei">
+          <span className="text-[11px] leading-5 text-muted-foreground">{designerCredit[locale]}</span>
+          <Image
+            alt="Zichtgroei"
+            className="h-auto w-[112px] shrink-0 opacity-90"
+            height={22}
+            loading="lazy"
+            src={assetPath("/brand/zichtgroei-logo-footer.svg")}
+            width={112}
+          />
         </div>
       </div>
     </footer>

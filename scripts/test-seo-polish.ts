@@ -7,7 +7,7 @@ import {
   stageSlugMap
 } from "../src/data/catalog.ts";
 import {isPublicCatalogStageName} from "../src/data/catalog-shared.ts";
-import {popularCars} from "../src/data/homepage.ts";
+import {featuredCatalogCars} from "../src/data/homepage.ts";
 import {resolveStageQuote} from "../src/data/pricing.ts";
 import {routing} from "../src/i18n/routing.ts";
 import {
@@ -43,13 +43,13 @@ assert.equal(new Set(expectedRoutes).size, 219, "Every public sitemap route must
 
 const publicIds = new Set(engineCatalog.map((vehicle) => vehicle.id));
 const popularPublicIds = new Set(
-  popularCars.map((car) => car.detailId).filter((id) => publicIds.has(id))
+  featuredCatalogCars.map((car) => car.detailId).filter((id) => publicIds.has(id))
 );
 const additionalIds = engineCatalog
-  .filter((vehicle) => !popularCars.some((car) => car.detailId === vehicle.id))
+  .filter((vehicle) => !featuredCatalogCars.some((car) => car.detailId === vehicle.id))
   .map((vehicle) => vehicle.id);
-assert.equal(popularPublicIds.size, 4, "The pre-existing popular section should cover four curated profiles");
-assert.equal(additionalIds.length, 20, "The compact crawl-link group should cover the remaining profiles");
+assert.equal(popularPublicIds.size, 3, "The compact photo section must show three curated profiles");
+assert.equal(additionalIds.length, 21, "The compact crawl-link group must retain the other 21 profiles");
 assert.deepEqual(
   new Set([...popularPublicIds, ...additionalIds]),
   publicIds,

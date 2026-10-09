@@ -1,6 +1,7 @@
 import type {Metadata, Viewport} from "next";
 import {absoluteUrl, POWER_SITE_URL} from "@/lib/site-url";
 import "./globals.css";
+import "./editorial-v2.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -11,11 +12,11 @@ export const metadata: Metadata = {
     template: "%s | NoordTune"
   },
   description:
-    "RDW kenteken lookup en tuning catalog voor stages, deletes, DSG/TCU tuning en maatwerk offertes.",
+    "NoordTune vermogenscatalogus: RDW-kentekencheck, fabrieksvermogen, bronvermelde Stage 1-indicaties en voertuigprofielen.",
   openGraph: {
     title: "NoordTune Power Catalog",
     description:
-      "Vind direct tuning mogelijkheden per kenteken met RDW Open Data.",
+      "Controleer voertuigspecificaties en indicatieve Stage 1-resultaten met RDW Open Data. Voor diensten en afspraken: NoordTune.nl.",
     url: absoluteUrl("/nl"),
     siteName: "NoordTune Power Catalog",
     locale: "nl_NL",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#111111"
+  themeColor: "#101214"
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
