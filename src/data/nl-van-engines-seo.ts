@@ -205,6 +205,38 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "appIds": [
     "rdw-bulk-7-fiat-ducato-250-23multijet120-2020-21"
   ]
+},
+{
+  slug:"volkswagen-crafter-20-tdi-140-2017-20",
+  modelSlug:"volkswagen-crafter",
+  title:"Volkswagen Crafter 2.0 TDI 140 (2017–2020)",
+  intro:"De Volkswagen Crafter met 103 kW en 1968 cc diesel is voor toelatingsjaren 2017–2020 een afzonderlijke 140 pk-uitvoering. Twee onafhankelijk gepubliceerde Stage 1-bronnen komen overeen; nieuwere Euro 6d-Crafters en de 130 kW-versie vallen buiten deze selectie.",
+  checks:"Controleer RDW-type SYN1E, 1968 cc, 103 kW en eerste toelating binnen 2017–2020. Verifieer motorcode, werkelijke ECU, transmissie, aanhangergewicht, DPF en SCR/AdBlue voordat een belastbare werkbus wordt aangepast; de leverancierindicatie geeft geen gegarandeerde koppellimiet.",
+  appIds:["rdw-bulk-8-volkswagen-crafter-syn1e-20tdi140-2017-20"],
+},
+{
+  slug:"volkswagen-transporter-t61-20-tdi-150-2020-21",
+  modelSlug:"volkswagen-transporter",
+  title:"Volkswagen Transporter T6.1 2.0 TDI 150 (2020–2021)",
+  intro:"De Transporter T6.1 met originele 110 kW en 1968 cc is niet dezelfde uitvoering als de oudere T5 of T6. ATM en VAGtechniek publiceren voor de 150 pk-variant verschillende normale Stage 1-resultaten. Daarom is alleen een bereik onder voorbehoud zichtbaar.",
+  checks:"Controleer RDW-type 7J0, diesel 1968 cc, originele 110 kW en eerste toelating in 2020 of 2021. Bevestig T6.1-facelift, ECU Delphi DCM6.2, softwarefase, eventuele DQ500 DSG versus handbak, DPF/SCR en koppeling. Stage 1+ blijft buiten deze vergelijking.",
+  appIds:["rdw-bulk-8-volkswagen-transporter-7j0-t61-20tdi150-2020-21"],
+},
+{
+  slug:"renault-master-23-dci-145-2019-22",
+  modelSlug:"renault-master",
+  title:"Renault Master 2.3 dCi 145 (2019 / 2022)",
+  intro:"Voor de Renault Master met originele 107 kW en 2299 cc tonen we twee afzonderlijke RDW-types: MB uit 2019 en VAL uit 2022. De publicaties voor de Master III-facelift verschillen aanzienlijk in Stage 1-vermogen en koppel en zijn geen bevestiging dat de ECU's identiek zijn.",
+  checks:"Controleer originele 107 kW, 2299 cc, type MB 2019 of VAL 2022, werkelijke M9T-motorvariant en Continental SID310/SID321 ECU. Bij een bestelwagen voor transport of bouw moeten koppeling, automaat, temperatuur, DPF en SCR/AdBlue vóór een offerte gecontroleerd worden.",
+  appIds:["rdw-bulk-8-renault-master-mb-23dci145-2019","rdw-bulk-8-renault-master-val-23dci145-2022"],
+},
+{
+  slug:"fiat-doblo-16-multijet-105-2015-20",
+  modelSlug:"fiat-doblo",
+  title:"Fiat Doblò 1.6 MultiJet 105 (2015–2020)",
+  intro:"De compacte Fiat Doblò 1.6 MultiJet met 1598 cc en originele 77 kW heeft binnen RDW-type 263 een apart gecontroleerd Stage 1-bronprofiel voor 2015–2020. De nieuwere MultiJet 120, de 90 pk en andere Opel- of Peugeot-bestelwagens mogen deze cijfers niet overnemen.",
+  checks:"Vergelijk RDW FIAT DOBLO' type 263, originele 77 kW, 1598 cc, diesel en toelatingsjaar 2015–2020. Bevestig de 198A3000-motorcode, Bosch EDC17C49/EDC17C69/EDC16C39-variant, versnellingsbak en laadprofiel; DPF, EGR en SCR/AdBlue blijven volledig functioneren.",
+  appIds:["rdw-bulk-8-fiat-doblo-263-16multijet105-2015-20"],
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -221,7 +253,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==23||new Set(nlVanEngines.map(x=>x.slug)).size!==23)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==27||new Set(nlVanEngines.map(x=>x.slug)).size!==27)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];

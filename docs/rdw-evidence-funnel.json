@@ -24,16 +24,16 @@
     "missingFirstAdmissionYear": 0
   },
   "stage1": {
-    "sourceLinkedIndicative": 1783,
+    "sourceLinkedIndicative": 1785,
     "genericIndicative": 0,
     "canonicalEstimated": 0,
     "otherNumericUnverified": 5,
-    "withoutNumeric": 1212,
-    "anyNumeric": 1788,
-    "sourceLinkedShareOfFrozenPercent": 59.43,
-    "sourceLinkedWithinOrdinaryIce": 1783,
-    "sourceLinkedWithinFullTechnicalIdentity": 1656,
-    "sourceLinkedShareOfOrdinaryIcePercent": 68.84,
+    "withoutNumeric": 1210,
+    "anyNumeric": 1790,
+    "sourceLinkedShareOfFrozenPercent": 59.5,
+    "sourceLinkedWithinOrdinaryIce": 1785,
+    "sourceLinkedWithinFullTechnicalIdentity": 1658,
+    "sourceLinkedShareOfOrdinaryIcePercent": 68.92,
     "disclaimer": "Source-linked is an application/reference published Stage 1, NOT a measured or guaranteed owner/ECU result. Generic and generated canonical numbers are NOT counted as sourced."
   },
   "stage2": {
@@ -44,10 +44,10 @@
     "customerNumeric": 0
   },
   "internalCoverageClasses": {
-    "A": 207,
-    "B": 1571,
+    "A": 203,
+    "B": 1577,
     "C": 67,
-    "D": 752,
+    "D": 750,
     "E": 403,
     "unknown": 0
   },

@@ -5,14 +5,14 @@ import {
   nlVanModels,nlVanPending,nlVanModelBySlug,nlVanIndexedModels
 } from "../src/data/nl-vans-seo.ts";
 import {nlVanEngines} from "../src/data/nl-van-engines-seo.ts";
-assert.equal(nlVanModels.length,16);
+assert.equal(nlVanModels.length,17);
 assert.equal(nlVanPending.length,6);
-assert.equal(nlVanIndexedModels.length,16);
-assert.equal(nlVanEngines.length,23);
-assert.equal(new Set([...nlVanModels,...nlVanPending].map(x=>x.slug)).size,22);
-assert.equal(new Set(nlVanEngines.map(x=>x.slug)).size,23);
+assert.equal(nlVanIndexedModels.length,17);
+assert.equal(nlVanEngines.length,27);
+assert.equal(new Set([...nlVanModels,...nlVanPending].map(x=>x.slug)).size,23);
+assert.equal(new Set(nlVanEngines.map(x=>x.slug)).size,27);
 assert.equal(new Set(nlVanModels.map(x=>x.make)).size,7);
-assert.equal(manifest.indexed.length,16);
+assert.equal(manifest.indexed.length,17);
 const available=new Map(verifiedRdwApplications.map(x=>[x.id,x]));
 const uniqueModels=new Set<string>(),sourceUrl=new Set<string>();
 let apps=0;
@@ -39,7 +39,7 @@ for(const model of nlVanModels){
   assert.ok(slug&&!slug.includes("undefined"));
  }
 }
-assert.equal(apps,38,"Only exact audited van RDW applications can appear on indexed model pages");
+assert.equal(apps,43,"Only exact audited van RDW applications can appear on indexed model pages");
 for(const p of nlVanPending){
  assert.equal(p.indexable,false);
  assert.ok(!nlVanModelBySlug.has(p.slug),"Unreviewed van cannot get indexed model URL");
