@@ -17,7 +17,9 @@
       },
       "verifiedIds": [
         "rdw-bulk-four-ford-transit-fcd-20ecoblue130-2018-19",
-        "rdw-bulk-four-ford-transit-fed-20ecoblue130-2022"
+        "rdw-bulk-four-ford-transit-fed-20ecoblue130-2022",
+        "rdw-bulk-9-ford-transit-fcd-20ecoblue130-2024",
+        "rdw-bulk-9-ford-transit-fcd-20ecoblue165-2024"
       ],
       "engineSlugs": [],
       "faq": [
@@ -79,7 +81,8 @@
       "verifiedIds": [
         "rdw-bulk-four-ford-connect-pu2-15-ecoblue100-2019-20",
         "rdw-bulk-four-ford-connect-pu2-15-ecoblue100-2022",
-        "rdw-bulk-four-ford-connect-pu2-15-ecoblue120-2019-20"
+        "rdw-bulk-four-ford-connect-pu2-15-ecoblue120-2019-20",
+        "rdw-bulk-9-ford-transit-connect-pu2-15ecoblue100-2024"
       ],
       "engineSlugs": [
         "ford-transit-connect-15-ecoblue-100",
