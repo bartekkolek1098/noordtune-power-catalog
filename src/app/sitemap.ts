@@ -3,6 +3,8 @@ import {engineCatalog, getVehicleSeoSlugs, stageSlugMap} from "@/data/catalog";
 import {isPublicCatalogStageName} from "@/data/catalog-shared";
 import {nlStage1EngineProfiles,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
 import {nlModelFamilyHubs,nlModelHubPath} from "@/data/nl-model-family-seo";
+import {nlVanModels,nlVanModelPath,nlVanEnginePath} from "@/data/nl-vans-seo";
+import {nlVanEngines} from "@/data/nl-van-engines-seo";
 import {routing} from "@/i18n/routing";
 import {absoluteUrl} from "@/lib/site-url";
 
@@ -48,5 +50,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency:"monthly" as const,priority:0.74
     }))
   ];
-  return [...homePages, ...vehiclePages, ...stagePages, ...nlEnginePages, ...nlModelPages];
+  const nlVanPages=[
+    {url:absoluteUrl("/nl/bedrijfswagens"),changeFrequency:"monthly" as const,priority:0.8},
+    ...nlVanModels.map(m=>({
+      url:absoluteUrl(nlVanModelPath(m.slug)),changeFrequency:"monthly" as const,priority:0.74
+    })),
+    ...nlVanEngines.map(e=>({
+      url:absoluteUrl(nlVanEnginePath(e.slug)),changeFrequency:"monthly" as const,priority:0.73
+    }))
+  ];
+  return [...homePages, ...vehiclePages, ...stagePages, ...nlEnginePages, ...nlModelPages, ...nlVanPages];
 }

@@ -91,6 +91,7 @@ export default async function NlMotorenPage({params}:Props){
      voldoende onderscheidende informatie bevatten. Stage 2 en Stage 3 krijgen hier geen automatische vermogensbelofte.</p>
     <div className="ux-nl-model-crosslinks">
       <a href={sitePath("/nl/modellen")}>Vergelijk {nlModelFamilyHubs.length} automodellen<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
+      <a href={sitePath("/nl/bedrijfswagens")}>Bekijk bedrijfswagens en bussen<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
       <a href={sitePath("/nl#manual-selector")}>Zoek jouw merk, bouwjaar en motor<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
      </div>
    </section>

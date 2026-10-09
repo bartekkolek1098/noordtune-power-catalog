@@ -13,6 +13,7 @@ import {customerVehicle} from "@/lib/customer-profile";
 import {catalogHomeCopy} from "@/data/catalog-home-copy";
 import {nlStage1EngineProfiles,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
 import {nlModelFamilyHubs} from "@/data/nl-model-family-seo";
+import {nlVanModels} from "@/data/nl-vans-seo";
 import {chiptuningHref, mainLocaleHref} from "@/lib/noordtune-links";
 
 import {homeVisualCopy,featuredCatalogCars} from "@/data/homepage";
@@ -379,6 +380,7 @@ export default async function HomePage({params}: PageProps) {
            })}
            <a className="ux-nl-engine-teaser-all" href={sitePath("/nl/motoren")}>Alle {nlStage1EngineProfiles.length} Stage 1-motoren <ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
            <a className="ux-nl-engine-teaser-all" href={sitePath("/nl/modellen")}>Vergelijk {nlModelFamilyHubs.length} automodellen <ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
+           <a className="ux-nl-engine-teaser-all" href={sitePath("/nl/bedrijfswagens")}>Bedrijfswagens: {nlVanModels.length} modellen NL <ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
           </div>
          </div>
         ):null}
