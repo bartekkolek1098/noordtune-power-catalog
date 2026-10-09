@@ -24,16 +24,16 @@
     "missingFirstAdmissionYear": 0
   },
   "stage1": {
-    "sourceLinkedIndicative": 1821,
+    "sourceLinkedIndicative": 1842,
     "genericIndicative": 0,
     "canonicalEstimated": 0,
     "otherNumericUnverified": 5,
-    "withoutNumeric": 1174,
-    "anyNumeric": 1826,
-    "sourceLinkedShareOfFrozenPercent": 60.7,
-    "sourceLinkedWithinOrdinaryIce": 1821,
-    "sourceLinkedWithinFullTechnicalIdentity": 1694,
-    "sourceLinkedShareOfOrdinaryIcePercent": 70.31,
+    "withoutNumeric": 1153,
+    "anyNumeric": 1847,
+    "sourceLinkedShareOfFrozenPercent": 61.4,
+    "sourceLinkedWithinOrdinaryIce": 1838,
+    "sourceLinkedWithinFullTechnicalIdentity": 1711,
+    "sourceLinkedShareOfOrdinaryIcePercent": 70.97,
     "disclaimer": "Source-linked is an application/reference published Stage 1, NOT a measured or guaranteed owner/ECU result. Generic and generated canonical numbers are NOT counted as sourced."
   },
   "stage2": {
@@ -45,9 +45,9 @@
   },
   "internalCoverageClasses": {
     "A": 203,
-    "B": 1613,
-    "C": 60,
-    "D": 721,
+    "B": 1634,
+    "C": 59,
+    "D": 701,
     "E": 403,
     "unknown": 0
   },
@@ -460,17 +460,6 @@
       "technicalFactsComplete": 6
     },
     {
-      "priorityRank": 192,
-      "make": "VOLKSWAGEN",
-      "model": "CADDY",
-      "displacementCc": 1984,
-      "yearBand": "2010–2014",
-      "sampleCount": 12,
-      "sourceLinkedStage1": 0,
-      "notSourceLinkedStage1": 12,
-      "technicalFactsComplete": 3
-    },
-    {
       "priorityRank": 194,
       "make": "NISSAN",
       "model": "NISSAN QASHQAI",
@@ -491,6 +480,17 @@
       "sourceLinkedStage1": 0,
       "notSourceLinkedStage1": 12,
       "technicalFactsComplete": 0
+    },
+    {
+      "priorityRank": 204,
+      "make": "MERCEDES-BENZ",
+      "model": "E 200",
+      "displacementCc": 1991,
+      "yearBand": "2015–2019",
+      "sampleCount": 12,
+      "sourceLinkedStage1": 0,
+      "notSourceLinkedStage1": 12,
+      "technicalFactsComplete": 8
     }
   ],
   "nextDecisionRule": "Prioritize unresolved groups from this fixed nonrandom cohort, then verify precise stock kW, engine generation, RDW type, cc, fuel, ECU/gearbox constraints and independent tuner sources before releasing any Stage 1 result."
