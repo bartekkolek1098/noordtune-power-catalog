@@ -124,7 +124,8 @@
         "rdw-bulk-11-vw-transporter-7j0-t61-20tdi150-2024",
         "rdw-bulk-11-vw-transporter-7j0-t61-20tdi110-2024",
         "rdw-bulk-12-vw-transporter-7j0-t5-20bitdi180-2015",
-        "rdw-bulk-12-vw-transporter-7j0-t5-20tdi102-2015"
+        "rdw-bulk-12-vw-transporter-7j0-t5-20tdi102-2015",
+        "rdw-bulk-13-vw-transporter-7j0-t6-20tdi102-2020"
       ],
       "engineSlugs": [
         "volkswagen-transporter-t6-20-tdi-204"
@@ -157,7 +158,8 @@
       "verifiedIds": [
         "rdw-bulk-four-vw-crafter-syn1e-20tdi177-2018-20",
         "rdw-bulk-8-volkswagen-crafter-syn1e-20tdi140-2017-20",
-        "rdw-bulk-11-vw-crafter-syn1e-20tdi140-eu6d-2023-24"
+        "rdw-bulk-11-vw-crafter-syn1e-20tdi140-eu6d-2023-24",
+        "rdw-bulk-13-vw-crafter-syn1e-20tdi102-euro6-2018"
       ],
       "engineSlugs": [
         "volkswagen-crafter-20-tdi-177"
@@ -232,7 +234,9 @@
         "rdw-bulk-6-mercedes-sprinter-906bb35-1950-315cdi150-2024",
         "rdw-bulk-7-mercedes-sprinter-906bb35-20-317cdi170-2023-24",
         "rdw-bulk-12-mercedes-sprinter-906bb35-21-313cdi129-2013",
-        "rdw-bulk-12-mercedes-sprinter-906ka35-21-316cdi163-2010"
+        "rdw-bulk-12-mercedes-sprinter-906ka35-21-316cdi163-2010",
+        "rdw-bulk-13-mercedes-sprinter-906ba35-21-314cdi143-2018",
+        "rdw-bulk-13-mercedes-sprinter-906bb50-21-316cdi163-2018"
       ],
       "engineSlugs": [],
       "faq": [
@@ -440,7 +444,9 @@
         "rdw-bulk-four-renault-master-mf-23bluedci145-2022",
         "rdw-bulk-8-renault-master-mb-23dci145-2019",
         "rdw-bulk-8-renault-master-val-23dci145-2022",
-        "rdw-bulk-11-renault-master-ma-23dci130-euro6-2017"
+        "rdw-bulk-11-renault-master-ma-23dci130-euro6-2017",
+        "rdw-bulk-13-renault-master-ma-23dci110-euro6-2017",
+        "rdw-bulk-13-renault-master-ma-23bluedci135-2019"
       ],
       "engineSlugs": [
         "renault-master-iii-23-dci-145",
@@ -471,7 +477,8 @@
       "verifiedIds": [
         "rdw-bulk2-renault-kangoo-w-15dci75",
         "rdw-bulk-12-renault-kangoo-w-15dci90-2015",
-        "rdw-bulk-12-renault-kangoo-w-15dci90-2019"
+        "rdw-bulk-12-renault-kangoo-w-15dci90-2019",
+        "rdw-bulk-13-renault-kangoo-w-15dci110-2015"
       ],
       "engineSlugs": [],
       "faq": [
@@ -499,7 +506,8 @@
       "verifiedIds": [
         "rdw-bulk-6-fiat-ducato-250-23multijet130-2013-15",
         "rdw-bulk-6-fiat-ducato-250-23multijet130-euro6-2018-19",
-        "rdw-bulk-7-fiat-ducato-250-23multijet120-2020-21"
+        "rdw-bulk-7-fiat-ducato-250-23multijet120-2020-21",
+        "rdw-bulk-13-fiat-ducato-250-23multijet130-euro6-2020"
       ],
       "engineSlugs": [],
       "faq": [
@@ -525,7 +533,9 @@
       "checks": "Vergelijk FIAT DOBLO' type 263, originele 77 kW, 1598 cc diesel, toelatingsjaar 2015–2020, werkelijke 198A3000-motorcode, Bosch EDC ECU, handbak en DPF/SCR-status. EGR, DPF en AdBlue blijven werkend en legaal.",
       "manufacturerSource": null,
       "verifiedIds": [
-        "rdw-bulk-8-fiat-doblo-263-16multijet105-2015-20"
+        "rdw-bulk-8-fiat-doblo-263-16multijet105-2015-20",
+        "rdw-bulk-13-fiat-doblo-263-16multijet100-2015",
+        "rdw-bulk-13-fiat-doblo-263-16multijet120-2021"
       ],
       "engineSlugs": [],
       "faq": [
@@ -596,6 +606,58 @@
           "Nee. Het wettelijke laad- en trekgewicht blijft ongewijzigd. Voor weggebruik moeten SCR/AdBlue, DPF en EGR overeenkomstig de emissievoorschriften blijven functioneren; wij tonen hier alleen reguliere Stage 1-indicaties."
         ]
       ]
+    },
+    {
+      "slug": "opel-vivaro-c",
+      "make": "Opel",
+      "model": "Vivaro C",
+      "size": "Middel",
+      "indexable": true,
+      "intro": "De Opel Vivaro C is een moderne bedrijfswagen voor installateurs, bouwbedrijven en transporteurs. Voor de 2.0 diesel met originele 130 kW en 1997 cc in de gecontroleerde RDW-type V-uitvoering uit 2024 bestaan eigen Opel-specifieke Stage 1-bronnen, los van vergelijkbare Peugeot- of Citroën-modellen.",
+      "difference": "De Vivaro C op PSA/Stellantis-platform vanaf 2019 is een geheel andere generatie dan de Vivaro B met 1.6 CDTI en RDW-type F7. In 2024 kunnen verschillende Euro 6d-fasen en Delphi ECU-versies aanwezig zijn; de 177 pk en andere Vivaro C-motorvermogens hebben eigen oorspronkelijke kW en eigen software.",
+      "usage": "Bij servicebusjes met gereedschap, aanhangers en dagelijks beladen rijden moeten koppelbeheer, automatische EAT8-versnellingsbak, koeling en onderhoud vóór elk aanbod worden gecontroleerd. Meer koppel maakt wettelijke maximale trekgewichten en toegestane massa niet hoger.",
+      "checks": "Controleer OPEL VIVARO type V met originele 130 kW, diesel 1997 cc, vier cilinders en eerste toelating 2024. Verifieer echte DW10-motor en ECU- of Euro 6-fase, Delphi DCM7.1A-toegang, EAT8/handbak, DPF/EGR en SCR/AdBlue. Een gelijk platform als Peugeot is geen vrijbrief voor dezelfde kalibratie.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-13-opel-vivaro-v-20d177-2024"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Kan een Opel Vivaro C 2.0 diesel dezelfde software krijgen als een oudere Vivaro B?",
+          "Nee. De Vivaro C met originele 130 kW en 1997 cc behoort tot een andere motorfamilie en heeft een andere ECU en uitlaatgasnabehandeling dan de eerdere Vivaro B met 1598 cc. Eerst moet de werkelijk aanwezige software worden geïdentificeerd."
+        ],
+        [
+          "Is het externe Stage 1-koppel van 460 tot 465 Nm geschikt voor iedere Vivaro C-werkbus?",
+          "Nee. Dit is een gepubliceerde indicatie van externe tuners, geen gemeten NoordTune-resultaat of maximaal veilig transmissiekoppel. Bij een beladen bus moeten de EAT8 of handbak, motortemperatuur en SCR/AdBlue/DPF individueel worden gecontroleerd."
+        ]
+      ]
+    },
+    {
+      "slug": "citroen-berlingo",
+      "make": "Citroen",
+      "model": "Berlingo II",
+      "size": "Compact",
+      "indexable": true,
+      "intro": "De Citroën Berlingo II is een compacte bestelauto voor bezorgdiensten en installateurs. De oudere 1.6 HDi 75 uit het gecontroleerde RDW-overgangsjaar 2015 heeft originele 55 kW en 1560 cc, waarvoor aparte Citroën-specifieke Stage 1-bronnen bestaan. Dit is geen automatisch bewijs voor nieuwere BlueHDi-motoren.",
+      "difference": "In 2015 wisselde de Berlingo II deels van de oudere 1.6 HDi naar de nieuwere 1.6 BlueHDi. Die uitvoeringen verschillen in ECU, emissiesysteem en fabriekskoppel ondanks dezelfde geregistreerde 55 kW en 1560 cc. Het RDW-type 7 en eerste toelating 2015 zijn daarom nog geen definitieve motoridentificatie.",
+      "usage": "Een compacte werkbus voor elektriciens en bezorgers moet vooral betrouwbaar onder belasting zijn. Onderhoud, koppeling, EGR/DPF en koeling zijn belangrijker dan het hoogste gepubliceerde piekvermogen of een theoretische brandstofbesparing. Het wettelijk maximale laadgewicht verandert niet door Stage 1.",
+      "checks": "Controleer CITROEN BERLINGO type 7, originele 55 kW, 1560 cc diesel, vier cilinders en eerste toelating 2015. Bevestig via VIN, DV6-motorcode en EDC16C34/EDC17-ECU of de oudere HDi 75 aanwezig is; bij BlueHDi gelden andere resultaten. Roetfilter, EGR en eventuele SCR/AdBlue blijven functioneren.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-13-citroen-berlingo-7-16hdi75-2015"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Geldt de Stage 1 van Citroën Berlingo 1.6 HDi 75 voor een BlueHDi 75 uit 2015?",
+          "Niet automatisch. In 2015 zijn beide motorgeneraties mogelijk, met andere ECU, origineel koppel en emissiesoftware. De weergegeven leverancierscijfers horen alleen bij de eerdere HDi wanneer de werkelijke motoridentiteit is gecontroleerd."
+        ],
+        [
+          "Mag de roetfilter of AdBlue van mijn Berlingo voor de tuning buiten werking worden gezet?",
+          "Nee. Emissiesystemen die op het voertuig zijn gemonteerd moeten bij weggebruik legaal en functioneel blijven. NoordTune toont een voorwaardelijke gewone Stage 1-vermogensindicatie, geen optie voor uitschakeling van DPF, EGR of SCR/AdBlue."
+        ]
+      ]
     }
   ],
   "pending": [
@@ -611,13 +673,6 @@
       "make": "Citroën",
       "model": "Jumpy",
       "size": "Middel",
-      "indexable": false
-    },
-    {
-      "slug": "citroen-berlingo",
-      "make": "Citroën",
-      "model": "Berlingo",
-      "size": "Compact",
       "indexable": false
     },
     {
