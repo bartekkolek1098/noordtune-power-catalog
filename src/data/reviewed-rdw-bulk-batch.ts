@@ -5,7 +5,7 @@ import {sourceMake, sourceModelFamily} from "../lib/sourced-tuning-match.ts";
 import {sourcedTuningProfiles,tuningProfileSources} from "./tuning-profiles/index.ts";
 import type {EstimateSourceReference} from "./tuning-estimates-shared.ts";
 
-export type ExtraEvidence = {provider:string;title:string;url:string;stage1Hp:number;stage1Nm:number;scope:string};
+export type ExtraEvidence = {provider:string;title:string;url:string;stage1Hp:number;stage1Nm:number;scope:string;retrievedAt?:string};
 export type Seed = {
   id:string; make:string; model:string; rdwModel:string; type:string;
   from:number; to:number; cc:number; cylinders:number; kw:number;
@@ -112,7 +112,7 @@ export function buildReviewedRdwBulkBatch(entries: readonly Seed[]) { return ent
   for(const ex of seed.extras??[]){
     if(!ex.url.startsWith("https://")||!ex.provider||ex.stage1Hp<=0||ex.stage1Nm<=0)throw Error("Bad reviewed extra source "+seed.id);
     values.push({provider:ex.provider,powerHp:ex.stage1Hp,torqueNm:ex.stage1Nm,
-      ref:{title:ex.title,url:ex.url,sourceType:"tuner",retrievalMethod:"page",retrievedAt:"2026-10-08",scope:ex.scope}});
+      ref:{title:ex.title,url:ex.url,sourceType:"tuner",retrievalMethod:"page",retrievedAt:ex.retrievedAt??"2026-10-08",scope:ex.scope}});
   }
   const providers=[...new Set(values.map(v=>v.provider))];
   if(providers.length<2)throw Error("At least two independent Stage1 provider publishers required: "+seed.id);
