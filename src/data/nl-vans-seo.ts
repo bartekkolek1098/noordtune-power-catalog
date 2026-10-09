@@ -50,7 +50,7 @@ export const nlVanModels:readonly VanModel[]=manifest.indexed.map(m=>{
  return {...m,applications};
 });
 export const nlVanPending:readonly PendingVan[]=manifest.pending;
-if(nlVanModels.length!==16||nlVanPending.length!==6||new Set([...nlVanModels,...nlVanPending].map(x=>x.slug)).size!==22)throw Error("Van publication manifest changed, manual approval required");
+if(nlVanModels.length!==17||nlVanPending.length!==6||new Set([...nlVanModels,...nlVanPending].map(x=>x.slug)).size!==23)throw Error("Van publication manifest changed, manual approval required");
 export const nlVanModelBySlug=new Map(nlVanModels.map(x=>[x.slug,x]));
 export const nlVanIndexedModels=nlVanModels.filter(x=>x.indexable);
 export const nlVanBrandNames=["Ford","Volkswagen","Mercedes-Benz","Toyota","Peugeot","Renault","Opel","Citroën","Fiat","Iveco"] as const;

@@ -21,7 +21,7 @@
     "qa:seo:nl-models": "node scripts/qa-nl-model-family-seo.cjs",
     "qa:seo:nl-vans": "node scripts/qa-nl-vans.cjs",
     "report:rdw-funnel": "node --no-warnings scripts/report-rdw-evidence-funnel.ts --write",
-    "test:seo": "node --no-warnings scripts/test-seo-polish.ts && node --no-warnings scripts/test-nl-stage1-engine-seo.ts && node --no-warnings scripts/test-nl-model-family-seo.ts && node --no-warnings scripts/test-nl-vans-source-review.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-5.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-6.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-7.ts",
+    "test:seo": "node --no-warnings scripts/test-seo-polish.ts && node --no-warnings scripts/test-nl-stage1-engine-seo.ts && node --no-warnings scripts/test-nl-model-family-seo.ts && node --no-warnings scripts/test-nl-vans-source-review.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-5.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-6.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-7.ts && node --no-warnings scripts/test-rdw-bulk-reviewed-8.ts",
     "qa:seo": "node --no-warnings scripts/qa-seo-polish.cjs && node --no-warnings scripts/qa-seo-polish-browser.cjs",
     "tuning:build-data": "node --no-warnings scripts/build-tuning-profiles.ts",
     "research:rdw-fleet": "node scripts/research-rdw-fleet.cjs",

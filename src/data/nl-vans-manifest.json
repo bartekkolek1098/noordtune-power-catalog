@@ -112,7 +112,8 @@
       },
       "verifiedIds": [
         "rdw-bulk-vw-transporter-7j0-t5-20-tdi-140",
-        "rdw-bulk-four-vw-transporter-7j0-t6-20tdi204-2017-19"
+        "rdw-bulk-four-vw-transporter-7j0-t6-20tdi204-2017-19",
+        "rdw-bulk-8-volkswagen-transporter-7j0-t61-20tdi150-2020-21"
       ],
       "engineSlugs": [
         "volkswagen-transporter-t6-20-tdi-204"
@@ -143,7 +144,8 @@
         "url": "https://www.vwbedrijfswagens.nl/nl/modellen/brochures-en-prijslijsten.html"
       },
       "verifiedIds": [
-        "rdw-bulk-four-vw-crafter-syn1e-20tdi177-2018-20"
+        "rdw-bulk-four-vw-crafter-syn1e-20tdi177-2018-20",
+        "rdw-bulk-8-volkswagen-crafter-syn1e-20tdi140-2017-20"
       ],
       "engineSlugs": [
         "volkswagen-crafter-20-tdi-177"
@@ -418,7 +420,9 @@
       "manufacturerSource": null,
       "verifiedIds": [
         "rdw-bulk-four-renault-master-mf-23dci145-2017",
-        "rdw-bulk-four-renault-master-mf-23bluedci145-2022"
+        "rdw-bulk-four-renault-master-mf-23bluedci145-2022",
+        "rdw-bulk-8-renault-master-mb-23dci145-2019",
+        "rdw-bulk-8-renault-master-val-23dci145-2022"
       ],
       "engineSlugs": [
         "renault-master-iii-23-dci-145",
@@ -486,6 +490,32 @@
         [
           "Is een Stage 1-vermogen van circa 200 pk voor elke Ducato-camper veilig?",
           "Dat is niet automatisch het geval. De genoemde 200–203 pk zijn externe tunerindicaties voor een specifieke motorvariant, geen aanbevolen eindvermogen voor ieder voertuig. Koppeling, koeling, onderhoud, zware opbouw en langdurige belasting moeten individueel worden beoordeeld."
+        ]
+      ]
+    },
+    {
+      "slug": "fiat-doblo",
+      "make": "Fiat",
+      "model": "Doblò",
+      "size": "Compact",
+      "indexable": true,
+      "intro": "De Fiat Doblò is een compacte werkbus voor installateurs, bezorgers en zelfstandige vakmensen. Voor de 1.6 MultiJet 105 in de gecontroleerde RDW-generatie bestaan twee afzonderlijke Stage 1-publicaties, maar die horen niet bij alle motoren met de naam Doblò.",
+      "difference": "De 1.6 MultiJet 105 met 1598 cc en oorspronkelijke 77 kW is een andere uitvoering dan de 1.3 MultiJet, de Euro 6 1.6 MultiJet 120 en de latere nieuwe Doblò-generatie. Jaar van eerste toelating, RDW-type 263 en originele fabriekssoftware moeten overeenkomen.",
+      "usage": "Voor een bestelwagen die dagelijks zwaar beladen rijdt zijn koppelpieken, de conditie van de koppeling, versnellingsbak en koeling belangrijker dan een theoretisch hoog maximum op een vermogensgrafiek.",
+      "checks": "Vergelijk FIAT DOBLO' type 263, originele 77 kW, 1598 cc diesel, toelatingsjaar 2015–2020, werkelijke 198A3000-motorcode, Bosch EDC ECU, handbak en DPF/SCR-status. EGR, DPF en AdBlue blijven werkend en legaal.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-8-fiat-doblo-263-16multijet105-2015-20"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Geldt het Stage 1-resultaat van Doblò 105 ook voor de MultiJet 120?",
+          "Nee. De 105 pk heeft in deze RDW-controle 77 kW en 1598 cc; een 120 pk-uitvoering gebruikt een andere fabrieksafstelling en kan een andere Euro 6-ECU en emissiesoftware hebben."
+        ],
+        [
+          "Kan een bedrijf met een beladen Doblò rekenen op 140 pk na chiptuning?",
+          "De 140 pk komt uit twee externe Stage 1-publicaties en is geen meting of belofte van NoordTune. Voor een werkbus moeten eerst de werkelijke ECU, motorconditie, belasting en de koppelgrens van de versnellingsbak worden gecontroleerd."
         ]
       ]
     }
