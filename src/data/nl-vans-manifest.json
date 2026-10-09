@@ -37,24 +37,28 @@
       "model": "Transit Custom",
       "size": "Middel",
       "indexable": true,
-      "intro": "De Ford Transit Custom is een middelgrote bedrijfsbus met eigen motor- en chassistypen. De nieuwere Custom bestaat als 2.0 EcoBlue diesel, plug-inhybride en elektrisch; een bron voor dieselchiptuning geldt nooit automatisch voor de andere aandrijflijnen.",
-      "difference": "De oudere Custom- en nieuwe V710-generatie hebben afwijkende ECU- en transmissievarianten. Ook 110, 136, 150 of 170 pk badges zijn geen reden om een algemene Stage 1-winst te publiceren.",
+      "intro": "De Ford Transit Custom is een middelgrote bedrijfsbus met afzonderlijke dieselgeneraties. Voor bepaalde 2.2 TDCi 100/125 pk-varianten en een exact geregistreerde 2.0 EcoBlue 130 pk-uitvoering zijn nu meerdere onafhankelijke Stage 1-bronnen beschikbaar. Hybrid/PHEV/elektrisch krijgt deze cijfers niet.",
+      "difference": "De Custom I 2.2 TDCi van 2198 cc en originele 74/92 kW is niet gelijk aan de 2.0 EcoBlue van 1995 cc/95,6 kW. De gewone en mogelijke mild-hybrid EcoBlue-uitvoeringen kunnen verschillende ECU-software en koppelgrenzen gebruiken; brongetallen blijven voorwaardelijk.",
       "usage": "Monteurs en aannemers kiezen deze bus vanwege de laadruimte. Bij intensief werk met gereedschap en aanhangers is voorspelbaar koppel belangrijker dan een reclamepiek.",
       "checks": "Identificeer de generatie, originele kW, 1996 cc waar van toepassing, handbak of automaat, ECU, onderhoud en SCR-status. We tonen pas cijfers bij een geaccepteerde technische bronset.",
       "manufacturerSource": {
         "name": "Officiële modelinformatie van Ford",
         "url": "https://www.ford.nl/bedrijfswagens-en-pickups/nieuwe-transit-custom"
       },
-      "verifiedIds": [],
+      "verifiedIds": [
+        "rdw-bulk-5-ford-custom-fcc-22tdci100-2015-16",
+        "rdw-bulk-5-ford-custom-fcc-22tdci125-2016",
+        "rdw-bulk-5-ford-custom-fcc-20ecoblue130-2020"
+      ],
       "engineSlugs": [],
       "faq": [
         [
-          "Waarom heeft niet elke Transit Custom hier een pk-getal?",
-          "De Custom bestaat in meerdere generaties en aandrijflijnen. Bij onduidelijke ECU-identiteit is een individueel onderzoek veiliger dan een algemene voorspelling."
+          "Waarom verschillende Stage 1-waarden voor Transit Custom 100, 125 en 130 pk?",
+          "De 2.2 TDCi 100 en 125 gebruiken andere originele fabriekssoftware, terwijl 2.0 EcoBlue een nieuwere motorgeneratie is. Het RDW-vermogen, de werkelijke ECU en de versnellingsbak zijn doorslaggevend."
         ],
         [
-          "Kan een PHEV dezelfde tuninggegevens als een EcoBlue-diesel gebruiken?",
-          "Nee. De hybride- en diesel-aandrijflijnen zijn verschillend en moeten in de catalogus afzonderlijk worden behandeld."
+          "Zijn de 2.0 EcoBlue 130 pk-cijfers ook van toepassing op Micro Hybrid?",
+          "Niet automatisch. De bronnen verschillen en identificeren niet per kenteken de mild-hybrid of transmissieversie. Daarom is diagnose van de echte ECU en aandrijflijn noodzakelijk."
         ]
       ]
     },
@@ -199,24 +203,26 @@
       "model": "Sprinter",
       "size": "Groot",
       "indexable": true,
-      "intro": "Mercedes-Benz Sprinter is een zware werkbus voor bouwbedrijven en logistiek. Hij wordt geleverd met meerdere motoren, gewichtsklassen en aandrijvingen; de naam Sprinter alleen zegt weinig over een passend Stage 1-resultaat.",
-      "difference": "Een oudere 2.1 CDI en een nieuwere 2.0-diesel behoren niet automatisch tot dezelfde motorfamilie. Ook achterwielaandrijving, vierwielaandrijving en verschillende automaten maken de technische vergelijking relevant.",
+      "intro": "Mercedes-Benz Sprinter is een veelgebruikte bedrijfswagen voor bouw, bezorging en lichte vracht. Voor één nauw omschreven W906 214/314 CDI met originele 105 kW, 2143 cc en eerste toelating in 2018 is een bronvermeld Stage 1-bereik beschikbaar. Dit zegt niets over alle Sprinters.",
+      "difference": "Een Sprinter W906 214/314 CDI met OM651 2.1 diesel heeft een andere ECU-context dan latere W907/W910 of een 2.0 OM654. Zelfs bij dezelfde typebadge kunnen software en emissieapparatuur afwijken. De W906-bronnen verschillen aanzienlijk in koppel.",
       "usage": "Bij veel belading of een aanhanger zijn koelcapaciteit, versnellingsbak en onderhoud belangrijk. Een bronwaarde zonder exact motor- en ECU-bewijs zou misleidend zijn.",
       "checks": "Controleer de geregistreerde kW, werkelijke CDI-motorcode, ECU-software, automaat, voertuiggewicht, SCR en DPF. Numerieke Stage 1-cijfers blijven vooralsnog achterwege.",
       "manufacturerSource": {
         "name": "Officiële modelinformatie van Mercedes-Benz",
         "url": "https://www.mercedes-benz.nl/vans/models/transporter.html"
       },
-      "verifiedIds": [],
+      "verifiedIds": [
+        "rdw-bulk-5-mercedes-sprinter-906bb35-21cdi143-2018"
+      ],
       "engineSlugs": [],
       "faq": [
         [
-          "Waarom staat er bij de Sprinter nog geen vaste pk-winst?",
-          "Er zijn meerdere motorfamilies en ECU-generaties; zonder exacte onafhankelijke bronnen tonen we liever geen automatische getallen."
+          "Heeft iedere Mercedes Sprinter 143 pk dezelfde chiptuningmogelijkheden?",
+          "Nee. De gecontroleerde referentie betreft een 2018 W906-kandidaat met RDW-type 906BB35 en 2143 cc. W907, W910 en nieuwe 1950 cc-uitvoeringen moeten opnieuw aan ECU en bronnen worden gekoppeld."
         ],
         [
-          "Mag het SCR/AdBlue-systeem van een Sprinter worden uitgeschakeld?",
-          "Voor gebruik op de openbare weg moet de emissiereiniging correct werken. Storingen horen via diagnose en reparatie te worden verholpen."
+          "Zijn 430 tot 480 Nm gegarandeerd veilig voor een beladen Sprinter?",
+          "Nee. Dit zijn uiteenlopende gepubliceerde tunerwaarden, geen maximale koppellimiet van jouw werkbus. Diagnose van versnellingsbak, belasting, koeling en werkelijke ECU is verplicht."
         ]
       ]
     },
@@ -336,24 +342,26 @@
       "model": "Expert",
       "size": "Middel",
       "indexable": true,
-      "intro": "Peugeot Expert is een middelgrote werkbus die in verschillende dieseluitvoeringen en als elektrische e-Expert bestaat. De 1.5 BlueHDi en 2.0 BlueHDi gebruiken niet automatisch hetzelfde motormanagement.",
-      "difference": "Afhankelijk van uitvoering komen een 120 pk 1.5 BlueHDi, 145 pk 2.0 BlueHDi of 180 pk automaat voor. Dat zijn verschillende originele fabrieksafstellingen; een oudere 1.6 BlueHDi valt nog weer in een andere fase.",
+      "intro": "De Peugeot Expert is een middelgrote servicebus met meerdere dieselgeneraties. Voor één Expert III met 1997 cc, RDW-type V en 90 kW in 2018–2019 is nu een specifiek gedocumenteerde 2.0 BlueHDi 120-marketingvariant beschikbaar. Andere HDi-, 1.5-diesel- en elektrische modellen zijn uitgesloten.",
+      "difference": "De 2018–2019 2.0 BlueHDi 120 wordt door de RDW als 90 kW geregistreerd; dat rekent mathematisch om naar circa 122 metrische pk, terwijl tunerpublicaties 120 pk vermelden. Het originele Nm verschilt tussen bronnen (320–340 Nm) en staat niet als vaste RDW-waarde geregistreerd.",
       "usage": "Voor lange werkdagen met gereedschap zijn automaatbelasting, regeneratie en koeling kernpunten voor een verantwoorde beoordeling.",
       "checks": "Identificeer de echte motorcode, RDW-kW, bouwjaar, 1499/1997 cc, ECU en EAT8/handbak. Geen numerieke Stage 1 zonder twee passende onafhankelijke bronnen.",
       "manufacturerSource": {
         "name": "Officiële modelinformatie van Peugeot",
         "url": "https://www.peugeot.nl/professional/ontdek-onze-bedrijfswagens.html"
       },
-      "verifiedIds": [],
+      "verifiedIds": [
+        "rdw-bulk-5-peugeot-expert-v-20bluehdi120-2018-19"
+      ],
       "engineSlugs": [],
       "faq": [
         [
-          "Kan een Expert 1.5 BlueHDi dezelfde Stage 1 als een 2.0 krijgen?",
-          "Nee. Motoren, fabriekskoppel en transmissie verschillen, zodat een eigen bronnenreview nodig is."
+          "Waarom noemt de Expert 2.0 BlueHDi-pagina 120 en 122 pk?",
+          "Tunerpublicaties gebruiken de marketingaanduiding 120 pk. De RDW-registratie in het onderzochte cohort is 90 kW en komt omgerekend op ongeveer 122 metrische pk. De cijfers mogen niet zomaar aan andere uitvoeringen worden toegekend."
         ],
         [
-          "Is e-Expert een dieselvariant?",
-          "Nee. De e-Expert heeft een volledig elektrische aandrijving en is niet geschikt voor diesel-Stage 1-cijfers."
+          "Geldt dit Stage 1-profiel ook voor de Expert 1.5 of e-Expert?",
+          "Nee. Een 1.5 BlueHDi heeft een andere motorfamilie en e-Expert is elektrisch. Alleen de genoemde 1997 cc diesel met passend motormanagement kan na controle worden beoordeeld."
         ]
       ]
     },

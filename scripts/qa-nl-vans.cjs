@@ -37,10 +37,10 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.equal(sitemap.status(),200);
   const xml=await sitemap.text();
   const locs=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-  assert.equal(locs.length,269,"Full 269 route sitemap (248 previous +21 curated vans)");
+  assert.equal(locs.length,274,"274 route sitemap (269 previous + five validated engines)");
   const vanUrls=locs.filter(x=>x.includes("/nl/bedrijfswagens"));
-  assert.equal(vanUrls.length,21,"One directory plus 15 models and five exact engines");
-  assert.equal(new Set(vanUrls).size,21,"Van sitemap canonicals unique");
+  assert.equal(vanUrls.length,26,"One directory plus 15 models and ten exact engines");
+  assert.equal(new Set(vanUrls).size,26,"Van sitemap canonicals unique");
   assert.ok(!xml.includes("/en/bedrijfswagens")&&!xml.includes("/pl/bedrijfswagens"));
 
   for(const m of nlVanModels){
@@ -61,7 +61,7 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
    const r=await page.request.get(base+path);
    assert.equal(r.status(),404,"No unsupported translated pages "+path);
   }
-  for(const [slug,expected] of [["mercedes-sprinter",0],["toyota-proace",0],["peugeot-partner",1],["ford-transit-connect",3]]){
+  for(const [slug,expected] of [["mercedes-sprinter",1],["toyota-proace",0],["peugeot-partner",1],["ford-transit-connect",3],["ford-transit-custom",3],["peugeot-expert",1]]){
    const r=await page.goto(base+"/nl/bedrijfswagens/"+slug,{waitUntil:"domcontentloaded",timeout:45000});
    assert.equal(r?.status(),200);
    assert.equal(await page.locator("h1").count(),1);
@@ -74,7 +74,7 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
    if(slug==="ford-transit-connect")await page.screenshot({path:process.env.TEMP+"/noordtune-ford-connect-mobile.png",fullPage:false});
    console.log("NL_VAN_MODEL_BROWSER_PASS",slug,expected);
   }
-  for(const slug of ["ford-transit-20-ecoblue-130","volkswagen-transporter-t6-20-tdi-204","peugeot-partner-15-bluehdi-100"]){
+  for(const slug of ["ford-transit-20-ecoblue-130","volkswagen-transporter-t6-20-tdi-204","peugeot-partner-15-bluehdi-100","ford-transit-custom-22-tdci-100","ford-transit-custom-22-tdci-125","ford-transit-custom-20-ecoblue-130","mercedes-sprinter-w906-21-cdi-143","peugeot-expert-20-bluehdi-120"]){
    await page.goto(base+"/nl/bedrijfswagens/motoren/"+slug,{waitUntil:"domcontentloaded"});
    assert.equal(await page.locator("h1").count(),1);
    assert.ok(await page.locator('ul.ux-van-engine-source-links a').count()>=2);
@@ -93,8 +93,8 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.equal(await page.locator('a[href="/nl/bedrijfswagens"]').count(),1,"NL homepage links vans category");
   assert.deepEqual(errors,[],"No runtime JavaScript errors");
   console.log("NL_VAN_BROWSER_QA_PASS",JSON.stringify({
-   indexedVanPages:15,browseOnlyModels:7,exactStage1VanEnginePages:5,
-   verifiedSourceApplications:18,indexedVanUrls:21,totalSitemapUrls:269,
+   indexedVanPages:15,browseOnlyModels:7,exactStage1VanEnginePages:10,
+   verifiedSourceApplications:23,indexedVanUrls:26,totalSitemapUrls:274,
    testedWidths:[320,390,1440],translatedThin404:4
   }));
  }finally{await browser.close();}
