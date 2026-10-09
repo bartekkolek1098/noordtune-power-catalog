@@ -1,6 +1,7 @@
 import type {MetadataRoute} from "next";
 import {engineCatalog, getVehicleSeoSlugs, stageSlugMap} from "@/data/catalog";
 import {isPublicCatalogStageName} from "@/data/catalog-shared";
+import {nlStage1EngineProfiles,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
 import {routing} from "@/i18n/routing";
 import {absoluteUrl} from "@/lib/site-url";
 
@@ -31,5 +32,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  return [...homePages, ...vehiclePages, ...stagePages];
+  const nlEnginePages=[
+    {url:absoluteUrl("/nl/motoren"),changeFrequency:"monthly" as const,priority:0.75},
+    ...nlStage1EngineProfiles.map(profile=>({
+      url:absoluteUrl(nlStage1EnginePath(profile.slug)),
+      changeFrequency:"monthly" as const,
+      priority:0.7
+    }))
+  ];
+  return [...homePages, ...vehiclePages, ...stagePages, ...nlEnginePages];
 }

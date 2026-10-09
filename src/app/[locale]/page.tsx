@@ -11,6 +11,7 @@ import {
 import {formatEstimatePower, formatEstimateTorque} from "@/lib/estimate-copy";
 import {customerVehicle} from "@/lib/customer-profile";
 import {catalogHomeCopy} from "@/data/catalog-home-copy";
+import {nlStage1EngineProfiles,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
 import {chiptuningHref, mainLocaleHref} from "@/lib/noordtune-links";
 
 import {homeVisualCopy,featuredCatalogCars} from "@/data/homepage";
@@ -359,6 +360,26 @@ export default async function HomePage({params}: PageProps) {
             ))}
           </div>
         </details>
+        {safeLocale==="nl"?(
+         <div className="ux-nl-engine-featured-teaser">
+          <h3>Stage 1 per motorcode — met controleerbare bronnen</h3>
+          <p>De nieuwste motorprofielen bevatten RDW-varianten, originele vermogens en Stage 1-indicaties van onafhankelijke aanbieders. Geen automatische belofte voor jouw ECU.</p>
+          <div>
+           {[
+            "nissan-qashqai-j11-12-dig-t-115",
+            "bmw-320i-f30-b48-184",
+            "ford-transit-connect-15-ecoblue-100",
+            "volkswagen-golf-7-gti-performance-245",
+            "volkswagen-caddy-v-20-tdi-122",
+            "renault-master-iii-23-blue-dci-145"
+           ].map(slug=>{
+            const profile=nlStage1EngineProfiles.find(x=>x.slug===slug);
+            return profile?<a href={sitePath(nlStage1EnginePath(slug))} key={slug}>{profile.headline}</a>:null;
+           })}
+           <a className="ux-nl-engine-teaser-all" href={sitePath("/nl/motoren")}>Alle {nlStage1EngineProfiles.length} Stage 1-motoren <ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
+          </div>
+         </div>
+        ):null}
       </section>
 
       <section className="container ux-process-section" id="how">

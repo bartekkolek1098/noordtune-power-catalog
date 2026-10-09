@@ -8,11 +8,11 @@ const copy:Record<Locale,{find:string;configure:string;contact:string}> = {
  pl:{find:"Sprawdź auto",configure:"Zobacz tuning",contact:"Zapytaj"}
 };
 
-export function MobileActionBar({locale,mode="catalog",vehicleLabel}:{locale:Locale;mode?:"catalog"|"vehicle";vehicleLabel?:string}) {
+export function MobileActionBar({locale,mode="catalog",vehicleLabel,primaryHref}:{locale:Locale;mode?:"catalog"|"vehicle";vehicleLabel?:string;primaryHref?:string}) {
  const c=copy[locale];
  return (
   <nav className="ux-mobile-actions md:hidden" aria-label={mode==="catalog"?"Snelle acties":"Quick actions"}>
-   <a href={mode==="catalog"?"#rdw-check":"#tuning-calculator"}>
+   <a href={primaryHref??(mode==="catalog"?"#rdw-check":"#tuning-calculator")}>
     <Search className="h-4 w-4" aria-hidden="true"/>
     {mode==="catalog"?c.find:c.configure}
    </a>
