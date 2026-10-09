@@ -82,7 +82,8 @@
         "rdw-bulk-four-ford-connect-pu2-15-ecoblue100-2019-20",
         "rdw-bulk-four-ford-connect-pu2-15-ecoblue100-2022",
         "rdw-bulk-four-ford-connect-pu2-15-ecoblue120-2019-20",
-        "rdw-bulk-9-ford-transit-connect-pu2-15ecoblue100-2024"
+        "rdw-bulk-9-ford-transit-connect-pu2-15ecoblue100-2024",
+        "rdw-bulk-10-ford-transit-connect-pu2-15tdci120-2015"
       ],
       "engineSlugs": [
         "ford-transit-connect-15-ecoblue-100",
@@ -369,7 +370,8 @@
         "rdw-bulk-5-peugeot-expert-v-20bluehdi120-2018-19",
         "rdw-bulk-6-peugeot-expert-v-20bluehdi180-2019-22",
         "rdw-bulk-7-peugeot-expert-v-20bluehdi145-2022",
-        "rdw-bulk-7-peugeot-expert-v-20bluehdi145-2024"
+        "rdw-bulk-7-peugeot-expert-v-20bluehdi145-2024",
+        "rdw-bulk-10-peugeot-expert-v-20bluehdi177-2024"
       ],
       "engineSlugs": [],
       "faq": [
@@ -521,6 +523,35 @@
           "De 140 pk komt uit twee externe Stage 1-publicaties en is geen meting of belofte van NoordTune. Voor een werkbus moeten eerst de werkelijke ECU, motorconditie, belasting en de koppelgrens van de versnellingsbak worden gecontroleerd."
         ]
       ]
+    },
+    {
+      "slug": "opel-vivaro",
+      "make": "Opel",
+      "model": "Vivaro B",
+      "size": "Middel",
+      "indexable": true,
+      "intro": "De Opel Vivaro B is een populaire bedrijfsbus voor installatiebedrijven, onderhoudsteams en transport. Binnen de gecontroleerde RDW-generatie F7 bestaan verschillende 1.6 CDTI Euro 6-motoren met 70, 89, 92 of 107 kW; daarvoor zijn eigen Opel-bronnen beschikbaar, niet uitsluitend die van een zustermodel.",
+      "difference": "Vivaro B F7 met 1598 cc en R9M-dieselmotor is technisch niet gelijk aan de Vivaro type V op PSA/Stellantis-platform vanaf 2019. De 95 en 120 pk enkele turbodiesels verschillen bovendien van de 125 en 145 pk BiTurbo-varianten. RDW-kW, typecode, eerste toelating en ECU-software moeten gelijk zijn.",
+      "usage": "Bij aannemers, elektriciens, koeriers en installatiebedrijven telt vooral controleerbaar koppel onder belasting. Langdurige snelwegritten, zware laadruimte en aanhangers vragen om controle van koeling, koppeling, versnellingsbak en uitlaatgasnabehandeling.",
+      "checks": "Vergelijk de RDW-handelsbenaming VIVARO-B, type F7, 1598 cc en originele 70/89/92/107 kW diesel. Controleer R9M-motorcode, ECU-firmware, Euro 6-fase, handbak, Turbo/BiTurbo-uitvoering en daadwerkelijke SCR/AdBlue-, DPF- en EGR-staat. Geen automatische koppelmaxima bij zwaar bedrijf.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-10-opel-vivaro-b-f7-16cdti95-euro6-2017-19",
+        "rdw-bulk-10-opel-vivaro-b-f7-16cdti120-euro6-2017-19",
+        "rdw-bulk-10-opel-vivaro-b-f7-16biturbo125-euro6-2017-19",
+        "rdw-bulk-10-opel-vivaro-b-f7-16biturbo145-euro6-2019"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Heeft een Vivaro B 1.6 CDTI 95 dezelfde Stage 1 als de 125 pk BiTurbo?",
+          "Nee. De originele RDW-kW verschillen (70 tegenover 92 kW) en de turboconfiguratie en mogelijke ECU-software zijn anders. We tonen daarom vier technische profielen en controleren uw concrete voertuig voordat een afstelling wordt gekozen."
+        ],
+        [
+          "Blijft AdBlue bij de Vivaro B na Stage 1 werken?",
+          "Ja. Voor weggebruik horen SCR/AdBlue, roetfilter en EGR volgens de geldende emissie-eisen te blijven functioneren. Een normale Stage 1-vermogensindicatie is geen toestemming om emissiesystemen buiten werking te stellen."
+        ]
+      ]
     }
   ],
   "pending": [
@@ -528,13 +559,6 @@
       "slug": "renault-trafic",
       "make": "Renault",
       "model": "Trafic",
-      "size": "Middel",
-      "indexable": false
-    },
-    {
-      "slug": "opel-vivaro",
-      "make": "Opel",
-      "model": "Vivaro",
       "size": "Middel",
       "indexable": false
     },
