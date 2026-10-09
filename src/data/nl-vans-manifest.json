@@ -203,8 +203,8 @@
       "model": "Sprinter",
       "size": "Groot",
       "indexable": true,
-      "intro": "Mercedes-Benz Sprinter is een veelgebruikte bedrijfswagen voor bouw, bezorging en lichte vracht. Voor één nauw omschreven W906 214/314 CDI met originele 105 kW, 2143 cc en eerste toelating in 2018 is een bronvermeld Stage 1-bereik beschikbaar. Dit zegt niets over alle Sprinters.",
-      "difference": "Een Sprinter W906 214/314 CDI met OM651 2.1 diesel heeft een andere ECU-context dan latere W907/W910 of een 2.0 OM654. Zelfs bij dezelfde typebadge kunnen software en emissieapparatuur afwijken. De W906-bronnen verschillen aanzienlijk in koppel.",
+      "intro": "Mercedes-Benz Sprinter wordt gebruikt voor zware bedrijfsinrichting, koerierswerk en personenvervoer. Naast de eerder beoordeelde 2.1 CDI 143 pk bestaat er nu een eigen bronset voor de 1950 cc, 110 kW-diesel die bij onafhankelijke aanbieders als 315 CDI 150 pk bekendstaat. Deze motoren mogen niet als dezelfde Sprinter-generatie worden behandeld.",
+      "difference": "De eerder beoordeelde Sprinter 2.1 OM651 heeft 2143 cc en originele 105 kW. De nieuw beoordeelde 2.0-diesel heeft 1950 cc en 110 kW; in de RDW-steekproef komt technische typecode 906BB35 voor in 2020 en 2024. De typecode is geen sluitend bewijs van het marketingchassis W907/W910 of een specifieke ECU, zodat de publicaties alleen voorwaardelijke referenties zijn.",
       "usage": "Bij veel belading of een aanhanger zijn koelcapaciteit, versnellingsbak en onderhoud belangrijk. Een bronwaarde zonder exact motor- en ECU-bewijs zou misleidend zijn.",
       "checks": "Controleer de geregistreerde kW, werkelijke CDI-motorcode, ECU-software, automaat, voertuiggewicht, SCR en DPF. Numerieke Stage 1-cijfers blijven vooralsnog achterwege.",
       "manufacturerSource": {
@@ -212,17 +212,19 @@
         "url": "https://www.mercedes-benz.nl/vans/models/transporter.html"
       },
       "verifiedIds": [
-        "rdw-bulk-5-mercedes-sprinter-906bb35-21cdi143-2018"
+        "rdw-bulk-5-mercedes-sprinter-906bb35-21cdi143-2018",
+        "rdw-bulk-6-mercedes-sprinter-906bb35-1950-315cdi150-2020",
+        "rdw-bulk-6-mercedes-sprinter-906bb35-1950-315cdi150-2024"
       ],
       "engineSlugs": [],
       "faq": [
         [
-          "Heeft iedere Mercedes Sprinter 143 pk dezelfde chiptuningmogelijkheden?",
-          "Nee. De gecontroleerde referentie betreft een 2018 W906-kandidaat met RDW-type 906BB35 en 2143 cc. W907, W910 en nieuwe 1950 cc-uitvoeringen moeten opnieuw aan ECU en bronnen worden gekoppeld."
+          "Kan een Sprinter 314 CDI met 2143 cc de cijfers van 315 CDI 1950 cc gebruiken?",
+          "Nee. Het zijn verschillende originele motorfamilies, vermogensklassen en elektronische toepassingen. De werkelijke motorcode, ECU en cilinderinhoud moeten worden gecontroleerd voor een betrouwbare referentie."
         ],
         [
-          "Zijn 430 tot 480 Nm gegarandeerd veilig voor een beladen Sprinter?",
-          "Nee. Dit zijn uiteenlopende gepubliceerde tunerwaarden, geen maximale koppellimiet van jouw werkbus. Diagnose van versnellingsbak, belasting, koeling en werkelijke ECU is verplicht."
+          "Waarom heeft de Sprinter 315 CDI een voorwaardelijk Stage 1-resultaat?",
+          "De leveranciers noemen dezelfde 190 pk en 430 Nm voor de 1950 cc 150 pk-klasse, maar niet elk RDW-type identificeert een exacte softwareversie. Ook bouwjaar, milieunorm, vrachtgewicht en versnellingsbak spelen mee."
         ]
       ]
     },
@@ -232,24 +234,27 @@
       "model": "Vito",
       "size": "Middel",
       "indexable": true,
-      "intro": "Mercedes-Benz Vito is een populaire middelgrote bestelwagen voor service en personenvervoer. Verschillende CDI-motoren en automaten gebruiken andere ECU-instellingen en originele vermogens.",
-      "difference": "Een Vito 114 CDI met 100 kW is geen bewijs dat alle andere Vito-uitvoeringen dezelfde motorsoftware hebben. Ook de elektrische eVito hoort bij een geheel andere aandrijflijn.",
+      "intro": "Mercedes-Benz Vito is een middelgrote bedrijfswagen met meerdere CDI-vermogens en modelgeneraties. Voor een nauwkeurig omschreven Vito 114 CDI met originele 100 kW en 1950 cc zijn nu externe Stage 1-referenties beschikbaar voor 2023 en de afzonderlijk beoordeelde 2024 Euro 6e-periode.",
+      "difference": "In de huidige gegevens blijft RDW-type 639/4 bij beide jaren gelijk, terwijl tunerpublicaties andere Euro 6-emissiefasen en Stage 1-waarden noemen. Voor 2023 vermeldt de voorwaardelijke referentie 195 pk en 435 Nm; voor 2024 met bevestigde Euro 6e-condities 190 pk en 430 Nm. Het RDW-type bewijst niet de geïnstalleerde ECU.",
       "usage": "Voor lange diensten, passagiers en gereedschapsinrichting weegt betrouwbaarheid zwaarder dan een piekwaarde zonder controle van de auto.",
       "checks": "Controleer motorcode, originele RDW-kW, generatie, ECU, automaat of handbak, koeling en SCR/DPF. Zonder exact goedgekeurde bronset tonen we geen Stage 1-koppel.",
       "manufacturerSource": {
         "name": "Officiële modelinformatie van Mercedes-Benz",
         "url": "https://www.mercedes-benz.nl/vans/models/transporter.html"
       },
-      "verifiedIds": [],
+      "verifiedIds": [
+        "rdw-bulk-6-mercedes-vito-6394-1950-114cdi136-2023",
+        "rdw-bulk-6-mercedes-vito-6394-1950-114cdi136-euro6e-2024"
+      ],
       "engineSlugs": [],
       "faq": [
         [
-          "Is Vito 114 CDI dezelfde tuningvariant als 116 CDI?",
-          "Niet zonder meer. De originele afstelling en transmissie kunnen verschillen en vragen eigen identificatie."
+          "Waarom staat er bij Vito 114 CDI 2023 en 2024 niet exact hetzelfde Stage 1-getal?",
+          "Externe publicaties onderscheiden onder meer de Euro 6e-softwarefase vanaf 2024 van oudere Euro 6-versies. Zonder controle van de werkelijke motor, ECU en emissiehomologatie kun je de waarden niet veilig tussen jaren uitwisselen."
         ],
         [
-          "Zijn diesel-tuningcijfers toepasbaar op eVito?",
-          "Nee. Een eVito heeft een elektrische aandrijflijn die buiten dieselchiptuning valt. Ook het motormanagement werkt volledig anders."
+          "Kan ik 220 of zelfs 265 pk verwachten van iedere Vito 114 CDI?",
+          "Nee. Zulke hogere cijfers komen voor in andere aanbiederspublicaties en kunnen een andere ECU-versie of agressievere afstelling betreffen. Onze voorzichtiger bronsets worden uitsluitend onder voorbehoud van individuele diagnose getoond."
         ]
       ]
     },
@@ -342,8 +347,8 @@
       "model": "Expert",
       "size": "Middel",
       "indexable": true,
-      "intro": "De Peugeot Expert is een middelgrote servicebus met meerdere dieselgeneraties. Voor één Expert III met 1997 cc, RDW-type V en 90 kW in 2018–2019 is nu een specifiek gedocumenteerde 2.0 BlueHDi 120-marketingvariant beschikbaar. Andere HDi-, 1.5-diesel- en elektrische modellen zijn uitgesloten.",
-      "difference": "De 2018–2019 2.0 BlueHDi 120 wordt door de RDW als 90 kW geregistreerd; dat rekent mathematisch om naar circa 122 metrische pk, terwijl tunerpublicaties 120 pk vermelden. Het originele Nm verschilt tussen bronnen (320–340 Nm) en staat niet als vaste RDW-waarde geregistreerd.",
+      "intro": "Peugeot Expert is een middelgrote bedrijfsbus voor aannemers, installateurs en servicebedrijven. We hebben nu aparte Stage 1-referenties voor de 2.0 BlueHDi 120 en de krachtigere 2.0 BlueHDi 180, maar uitsluitend bij de juiste RDW-kW, motorcode, bouwfase en transmissie. De e-Expert blijft volledig buiten dieselchiptuning.",
+      "difference": "De beoordeelde 2.0 BlueHDi 120 heeft een origineel vermogen van 90 kW en andere ECU-voorwaarden dan de 2.0 BlueHDi 180 met 130 kW. De laatste komt volgens de RDW-omrekening op circa 177 metrische pk, terwijl tuners de marketingnaam 180 pk gebruiken. Getoonde gewone Stage 1-referenties verschillen tussen aanbieders van 205 tot 215 pk.",
       "usage": "Voor lange werkdagen met gereedschap zijn automaatbelasting, regeneratie en koeling kernpunten voor een verantwoorde beoordeling.",
       "checks": "Identificeer de echte motorcode, RDW-kW, bouwjaar, 1499/1997 cc, ECU en EAT8/handbak. Geen numerieke Stage 1 zonder twee passende onafhankelijke bronnen.",
       "manufacturerSource": {
@@ -351,17 +356,18 @@
         "url": "https://www.peugeot.nl/professional/ontdek-onze-bedrijfswagens.html"
       },
       "verifiedIds": [
-        "rdw-bulk-5-peugeot-expert-v-20bluehdi120-2018-19"
+        "rdw-bulk-5-peugeot-expert-v-20bluehdi120-2018-19",
+        "rdw-bulk-6-peugeot-expert-v-20bluehdi180-2019-22"
       ],
       "engineSlugs": [],
       "faq": [
         [
-          "Waarom noemt de Expert 2.0 BlueHDi-pagina 120 en 122 pk?",
-          "Tunerpublicaties gebruiken de marketingaanduiding 120 pk. De RDW-registratie in het onderzochte cohort is 90 kW en komt omgerekend op ongeveer 122 metrische pk. De cijfers mogen niet zomaar aan andere uitvoeringen worden toegekend."
+          "Is de 2.0 BlueHDi 120 technisch hetzelfde als de Expert 180?",
+          "Nee. Ondanks vergelijkbare cilinderinhoud verschillen originele kW en mogelijk turbo, motorsoftware en EAT8-transmissiegrenzen. Het RDW-type, motorgeneratie en ECU moeten afzonderlijk worden gecontroleerd."
         ],
         [
-          "Geldt dit Stage 1-profiel ook voor de Expert 1.5 of e-Expert?",
-          "Nee. Een 1.5 BlueHDi heeft een andere motorfamilie en e-Expert is elektrisch. Alleen de genoemde 1997 cc diesel met passend motormanagement kan na controle worden beoordeeld."
+          "Waarom toont de Expert 180-bronpagina 177 pk fabrieksvermogen?",
+          "De RDW-registratie van de onderzochte uitvoering is 130 kW, omgerekend circa 177 metrische pk. Sommige aanbieders gebruiken afgerond 180 pk als handelsnaam; dat is geen fout in het RDW-record."
         ]
       ]
     },
@@ -447,6 +453,33 @@
           "Nee. De aandrijftechniek en vermogensregelaar zijn volledig verschillend. Diesel-Stage 1-referenties gelden daarom niet voor elektrische modellen."
         ]
       ]
+    },
+    {
+      "slug": "fiat-ducato",
+      "make": "Fiat",
+      "model": "Ducato",
+      "size": "Groot",
+      "indexable": true,
+      "intro": "Fiat Ducato is een veelzijdige grote werkbus, camperbasis en bedrijfswagen met meerdere 2.3 MultiJet-dieselgeneraties. Voor de oudere motorversie en een latere Euro 6-variant met dezelfde originele 96 kW beschikken we over afzonderlijke, bronvermelde Stage 1-referenties. Deze zijn niet onderling uitwisselbaar.",
+      "difference": "De Ducato met 2287 cc en RDW-type 250 kan bij 96 kW in verschillende jaren een andere motorcode, ECU en emissieregeling hebben. Voor 2013–2015 publiceren onafhankelijke aanbieders Stage 1 rond 180 pk. Voor 2018–2019 Euro 6 zijn conservatievere 160 pk-referenties beoordeeld. De identieke RDW-kW-waarde bewijst niet dat hetzelfde motorbestand past.",
+      "usage": "Camperbezitters, aannemers en ondernemers rijden vaak lange afstanden met hoge belading. Bij een Ducato met veel massa zijn motortemperatuur, koppeling en versnellingsbak belangrijker dan alleen het hoogste getal uit een tuneradvertentie. De fabrikantlimieten en onderhoudstoestand blijven bepalend.",
+      "checks": "Controleer exacte eerste toelatingsdatum, origineel 96 kW, 2287 cc, RDW-type 250, Euro 5 tegenover Euro 6, werkelijke F1AE/F1AGL-motorcode, Marelli/Bosch ECU, koppeling, koeling, DPF en SCR/AdBlue. Een kenteken bewijst niet automatisch welke emissie- en softwareversie is gemonteerd.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-6-fiat-ducato-250-23multijet130-2013-15",
+        "rdw-bulk-6-fiat-ducato-250-23multijet130-euro6-2018-19"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Waarom verschillen de Stage 1-cijfers voor twee Ducato's met 130 pk?",
+          "De oudere 2.3 MultiJet van circa 2013–2015 en de latere Euro 6-versie hebben andere ECU- en emissievoorwaarden. Een 96 kW-registratie alleen is onvoldoende om dezelfde Stage 1-referentie toe te passen."
+        ],
+        [
+          "Kan een volgeladen Ducato-camper altijd naar de hoogste bronwaarde?",
+          "Nee. Toelaatbare thermische belasting, koppeling, automaat of handbak, voertuigconditie en hoogteverschillen onderweg moeten worden beoordeeld. Gepubliceerde vermogens zijn geen veilige gegarandeerde uitkomst voor iedere camper."
+        ]
+      ]
     }
   ],
   "pending": [
@@ -483,13 +516,6 @@
       "make": "Citroën",
       "model": "Berlingo",
       "size": "Compact",
-      "indexable": false
-    },
-    {
-      "slug": "fiat-ducato",
-      "make": "Fiat",
-      "model": "Ducato",
-      "size": "Groot",
       "indexable": false
     },
     {
