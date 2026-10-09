@@ -11,6 +11,7 @@ import {reviewedRdwBulkBatch7} from "./reviewed-rdw-bulk-batch-7.ts";
 import {reviewedRdwBulkBatch8} from "./reviewed-rdw-bulk-batch-8.ts";
 import {reviewedRdwBulkBatch9} from "./reviewed-rdw-bulk-batch-9.ts";
 import {reviewedRdwBulkBatch10} from "./reviewed-rdw-bulk-batch-10.ts";
+import {reviewedRdwBulkBatch11} from "./reviewed-rdw-bulk-batch-11.ts";
 import {normalizeCatalogFuel, registeredPowerToMetricHp} from "./catalog-matching.ts";
 import {unavailableEstimateStage, type EstimateResolution, type EstimateSourceReference} from "./tuning-estimates-shared.ts";
 import {firstAdmissionYear} from "../lib/rdw-date.ts";
@@ -392,7 +393,7 @@ export const verifiedRdwApplications: readonly VerifiedApplication[] = [{
       scope:"Megane III phase3 2013–2015, marketed factory 130PS / 205Nm, Stage 1 150PS / 240Nm; independent tuner claim only, not NoordTune approval of stated performance."}
   ],
   reviewNote:"Conservatively scoped phase3 TCe130 Stage 1 results: 140/230 (BR), 140/230 (Shiftech live page) and 150/240 (GSG). Shiftech indexed 145/255 contradicts the live page, so the higher torque is excluded pending manual reconciliation. The 140–150PS / 230–240Nm values are illustrative provider outputs, never a guaranteed range. 97kW RDW rounds to 132 metric PS, not the manufacturer's 130 PS marketing convention; torque 205Nm is manufacturer-sourced. Nominal 1198cc is in Renault's 2013 press information while RDW reports 1197cc. Check true H5Ft ECU, engine health, fuel and gearbox before any quote; no Stage 2/3."
-}, ...reviewedBulkRdwApplications, ...reviewedRdwBulkBatch2, ...reviewedRdwBulkBatch3, ...reviewedRdwBulkBatch4, ...reviewedRdwBulkBatch5, ...reviewedRdwBulkBatch6, ...reviewedRdwBulkBatch7, ...reviewedRdwBulkBatch8, ...reviewedRdwBulkBatch9, ...reviewedRdwBulkBatch10];
+}, ...reviewedBulkRdwApplications, ...reviewedRdwBulkBatch2, ...reviewedRdwBulkBatch3, ...reviewedRdwBulkBatch4, ...reviewedRdwBulkBatch5, ...reviewedRdwBulkBatch6, ...reviewedRdwBulkBatch7, ...reviewedRdwBulkBatch8, ...reviewedRdwBulkBatch9, ...reviewedRdwBulkBatch10, ...reviewedRdwBulkBatch11];
 
 function normalized(value?: string) {
   return (value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();

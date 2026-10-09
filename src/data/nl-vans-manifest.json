@@ -117,7 +117,9 @@
       "verifiedIds": [
         "rdw-bulk-vw-transporter-7j0-t5-20-tdi-140",
         "rdw-bulk-four-vw-transporter-7j0-t6-20tdi204-2017-19",
-        "rdw-bulk-8-volkswagen-transporter-7j0-t61-20tdi150-2020-21"
+        "rdw-bulk-8-volkswagen-transporter-7j0-t61-20tdi150-2020-21",
+        "rdw-bulk-11-vw-transporter-7j0-t61-20tdi150-2024",
+        "rdw-bulk-11-vw-transporter-7j0-t61-20tdi110-2024"
       ],
       "engineSlugs": [
         "volkswagen-transporter-t6-20-tdi-204"
@@ -149,7 +151,8 @@
       },
       "verifiedIds": [
         "rdw-bulk-four-vw-crafter-syn1e-20tdi177-2018-20",
-        "rdw-bulk-8-volkswagen-crafter-syn1e-20tdi140-2017-20"
+        "rdw-bulk-8-volkswagen-crafter-syn1e-20tdi140-2017-20",
+        "rdw-bulk-11-vw-crafter-syn1e-20tdi140-eu6d-2023-24"
       ],
       "engineSlugs": [
         "volkswagen-crafter-20-tdi-177"
@@ -427,7 +430,8 @@
         "rdw-bulk-four-renault-master-mf-23dci145-2017",
         "rdw-bulk-four-renault-master-mf-23bluedci145-2022",
         "rdw-bulk-8-renault-master-mb-23dci145-2019",
-        "rdw-bulk-8-renault-master-val-23dci145-2022"
+        "rdw-bulk-8-renault-master-val-23dci145-2022",
+        "rdw-bulk-11-renault-master-ma-23dci130-euro6-2017"
       ],
       "engineSlugs": [
         "renault-master-iii-23-dci-145",
