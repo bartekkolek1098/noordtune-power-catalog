@@ -1,0 +1,164 @@
+/* NoordTune NL Bedrijfswagens: discoverable model hub, verified source figures. */
+.ux-vans-hero,.ux-van-model-hero{background:radial-gradient(ellipse at 85% 10%,rgba(218,42,57,.12),transparent 39%),#131719;border-bottom:1px solid rgba(255,255,255,.12);padding:30px 0 65px;}
+.ux-vans-hero h1,.ux-van-model-hero h1{color:#f5f5f1;font-size:clamp(2.6rem,6vw,5.4rem);font-weight:800;letter-spacing:-.064em;line-height:1.02;margin-top:22px;text-wrap:balance;max-width:1050px;}
+.ux-vans-hero h1 span,.ux-van-model-hero h1 span{display:block;color:#f04b5c;}
+.ux-vans-hero-copy,.ux-van-model-hero>div>p:not(.ux-eyebrow){color:#bbc2c4;max-width:880px;font-size:clamp(14px,1.42vw,17px);line-height:1.75;margin-top:23px;}
+.ux-vans-hero-actions,.ux-van-model-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;}
+.ux-vans-hero-facts,.ux-van-model-keyfacts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;border-top:1px solid rgba(255,255,255,.18);margin-top:40px;padding-top:23px;max-width:930px;}
+.ux-vans-hero-facts>div,.ux-van-model-keyfacts>div{display:flex;flex-direction:column;align-items:flex-start;gap:7px;min-width:0;}
+.ux-vans-hero-facts strong,.ux-van-model-keyfacts strong{color:#f6f7f2;font-size:clamp(1.5rem,3vw,2.15rem);font-weight:780;letter-spacing:-.044em;line-height:1.1;}
+.ux-vans-hero-facts span,.ux-van-model-keyfacts span{font-size:12px;line-height:1.55;color:#afb7b8;}
+.ux-vans-directory-section{padding:76px 0 89px;}
+.ux-vans-directory-section h2{font-size:clamp(2rem,3.5vw,3rem);line-height:1.14;font-weight:790;letter-spacing:-.05em;margin-top:16px;}
+.ux-vans-directory-section>p:not(.ux-eyebrow){color:#b8bfc0;font-size:14px;line-height:1.75;max-width:830px;margin-top:15px;}
+.ux-vans-search{margin-top:29px;}
+.ux-vans-controls{border:1px solid rgba(255,255,255,.17);border-radius:16px;padding:19px;background:#202426;}
+.ux-vans-search-input{position:relative;display:flex;align-items:center;gap:13px;min-height:55px;border-radius:11px;border:1px solid #626a6d;background:#101415;color:#cbd0d1;padding:0 13px;}
+.ux-vans-search-input input{flex:1;min-width:0;background:transparent;border:0;outline:none;color:#f4f5f2;font-size:16px;padding:14px 0;}
+.ux-vans-search-input input::placeholder{color:#a9b0b2;}
+.ux-vans-search-input button{min-width:43px;min-height:43px;display:grid;place-items:center;color:#e1e5e4;}
+.ux-vans-search-input:focus-within{border-color:#f2596c;box-shadow:0 0 0 2px rgba(241,76,94,.13);}
+.ux-vans-size-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px;}
+.ux-vans-size{display:inline-flex;align-items:center;justify-content:center;min-height:43px;min-width:70px;padding:8px 15px;border:1px solid #535b5d;background:#272d2f;border-radius:8px;font-size:12px;font-weight:770;color:#d5dbd9;transition:background .18s,border-color .18s;}
+.ux-vans-size:hover{border-color:#f25164;}
+.ux-vans-size--active{background:#e23246;border-color:#e23246;color:#fff;}
+.ux-vans-filter-count{margin-top:13px;color:#b3bbbd;font-size:12px;line-height:1.6;}
+.ux-vans-brand-groups{margin-top:35px;}
+.ux-vans-brand-group{margin-top:36px;}
+.ux-vans-brand-group>h3{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid #474f50;padding-bottom:13px;font-size:22px;font-weight:790;letter-spacing:-.035em;color:#f2f3ef;}
+.ux-vans-brand-group>h3 span{font-size:12px;letter-spacing:0;color:#aeb7b9;font-weight:650;}
+.ux-vans-model-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:17px;}
+.ux-vans-model-card{display:flex;flex-direction:column;min-width:0;gap:12px;min-height:215px;padding:22px;border:1px solid #40484a;border-radius:14px;background:#1e2325;color:#f3f3ef;transition:border-color .2s,transform .2s;}
+.ux-vans-model-card:hover{border-color:#f45e6e;transform:translateY(-2px);}
+.ux-vans-model-eyebrow{font-size:10px;color:#fa6474;font-weight:750;text-transform:uppercase;letter-spacing:.07em;}
+.ux-vans-model-card>strong{font-size:21px;font-weight:770;line-height:1.25;letter-spacing:-.04em;}
+.ux-vans-model-description{font-size:13px;color:#bac4c5;line-height:1.63;}
+.ux-vans-model-action{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:13px;border-top:1px solid #444d4e;font-weight:730;font-size:12px;}
+.ux-vans-no-results{padding:32px;background:#1f2425;border-radius:13px;margin-top:24px;}
+.ux-vans-no-results>strong{display:block;color:#fafafa;font-size:20px;}
+.ux-vans-no-results p{color:#bfc4c5;margin-top:12px;line-height:1.7;font-size:14px;}
+.ux-vans-no-results button{border:1px solid #f25868;padding:12px 16px;color:#fff;border-radius:9px;margin-top:15px;min-height:47px;font-size:13px;font-weight:750;}
+.ux-vans-business{background:#1a1f20;border-block:1px solid #3c4243;padding:81px 0;}
+.ux-vans-business-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:center;}
+.ux-vans-business h2,.ux-vans-adblue h2,.ux-vans-handoff h2,.ux-van-model-section h2,.ux-van-model-handoff h2{font-size:clamp(1.9rem,3.3vw,2.75rem);line-height:1.16;font-weight:790;letter-spacing:-.048em;}
+.ux-vans-business h2,.ux-vans-handoff h2{margin-top:19px;}
+.ux-vans-business>div>div:first-child>p:not(.ux-eyebrow),.ux-vans-handoff p:not(.ux-eyebrow){color:#b9c0c2;font-size:14px;line-height:1.75;margin-top:16px;}
+.ux-vans-business-steps{display:grid;gap:11px;}
+.ux-vans-business-steps>div{display:grid;grid-template-columns:35px 1fr;gap:3px 13px;align-items:start;padding:17px 18px;background:#262c2d;border-radius:11px;}
+.ux-vans-business-steps>div span{grid-row:span 2;color:#f75f70;font-size:12px;font-weight:800;}
+.ux-vans-business-steps>div strong{color:#f4f5f1;font-size:14px;font-weight:755;}
+.ux-vans-business-steps>div p{color:#b9c1c3;font-size:12px;line-height:1.65;}
+.ux-vans-adblue{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:42px;align-items:center;padding-block:86px;}
+.ux-vans-adblue h2{margin-top:16px;}
+.ux-vans-adblue-intro>p:not(.ux-eyebrow){margin-top:20px;color:#bac2c4;line-height:1.8;font-size:14px;}
+.ux-vans-legal-link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:13px;font-weight:720;line-height:1.5;color:#f6f6f4;text-decoration:underline;text-underline-offset:4px;min-height:44px;}
+.ux-vans-legal-link:hover{color:#fc6070;}
+.ux-vans-adblue-steps{display:grid;gap:11px;}
+.ux-vans-adblue-steps article{background:#1e2325;border:1px solid #394143;border-radius:12px;padding:19px;}
+.ux-vans-adblue-steps article>svg{color:#f25b6c;}
+.ux-vans-adblue-steps h3{margin-top:10px;font-weight:760;color:#f5f5f1;font-size:15px;}
+.ux-vans-adblue-steps p{margin-top:7px;font-size:12px;line-height:1.67;color:#b8c0c2;}
+.ux-vans-handoff{background:radial-gradient(circle at 88% 10%,rgba(226,49,63,.13),transparent 36%),#191d1f;border-top:1px solid #41484a;padding:72px 0;}
+.ux-vans-handoff-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(235px,.8fr);gap:42px;align-items:center;}
+.ux-vans-handoff-links{display:grid;gap:11px;}
+.ux-van-model-hero{padding-bottom:51px;}
+.ux-van-model-keyfacts{margin-top:32px;}
+.ux-van-model-content{padding-block:10px 80px;}
+.ux-van-model-section{padding-block:51px;border-bottom:1px solid #384143;}
+.ux-van-model-section h2{margin-top:17px;max-width:950px;}
+.ux-van-model-section>p:not(.ux-eyebrow){margin-top:16px;line-height:1.8;max-width:880px;color:#b8c2c4;font-size:14px;}
+.ux-van-model-business-note{background:#202628;border-left:3px solid #f15968;padding:17px 21px;margin-top:21px!important;border-radius:0 11px 11px 0;}
+.ux-van-model-audit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:29px;}
+.ux-van-model-audit{min-width:0;background:#1e2425;border:1px solid #3e4748;border-radius:14px;padding:21px;}
+.ux-van-model-audit-top{display:flex;align-items:start;justify-content:space-between;gap:11px;flex-wrap:wrap;border-bottom:1px solid #414b4c;padding-bottom:15px;}
+.ux-van-model-audit-top strong{font-size:19px;font-weight:780;line-height:1.25;}
+.ux-van-model-audit-top span{font-size:12px;color:#ff7180;font-weight:700;}
+.ux-van-model-audit dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;margin-top:20px;}
+.ux-van-model-audit dt{font-size:11px;line-height:1.4;color:#b1bdbe;}
+.ux-van-model-audit dd{font-size:16px;line-height:1.34;font-weight:760;color:#f4f5f1;margin-top:6px;overflow-wrap:anywhere;}
+.ux-van-model-audit dl div:nth-child(2) dd{color:#fa6575;}
+.ux-van-model-audit-sources{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:11px;color:#abb5b6;border-top:1px solid #414b4c;padding-top:13px;margin-top:19px;}
+.ux-van-model-audit-sources a{display:inline-flex;align-items:center;gap:2px;padding:5px 6px;border-radius:6px;color:#f4f5f2;background:#2c3233;}
+.ux-van-model-audit-sources a:hover{color:#fc6575;}
+.ux-van-model-factory-note{font-size:12px!important;color:#acb5b7!important;margin-top:17px!important;}
+.ux-van-model-unverified{display:flex;align-items:flex-start;gap:17px;border:1px solid #545f61;border-radius:13px;padding:24px;background:#23292b;margin-top:25px;}
+.ux-van-model-unverified>svg{color:#f36b79;flex-shrink:0;}
+.ux-van-model-unverified h3{font-size:19px;font-weight:770;line-height:1.3;}
+.ux-van-model-unverified p{font-size:13px;line-height:1.73;color:#bbc4c5;margin-top:9px;}
+.ux-van-model-unverified a{display:inline-flex;align-items:center;gap:7px;margin-top:15px;color:#f5f5f0;min-height:42px;text-decoration:underline;text-underline-offset:4px;font-size:13px;font-weight:760;}
+.ux-van-model-engine-links{padding-top:31px;}
+.ux-van-model-engine-links h3{font-size:21px;font-weight:780;letter-spacing:-.035em;}
+.ux-van-model-engine-links>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:16px;}
+.ux-van-model-engine-links a{display:flex;justify-content:space-between;align-items:center;gap:13px;border:1px solid #3f484a;border-radius:12px;padding:17px;background:#222829;color:#f4f5f1;min-width:0;}
+.ux-van-model-engine-links a:hover{border-color:#ed5263;}
+.ux-van-model-engine-links a strong{display:block;font-size:14px;font-weight:760;line-height:1.4;}
+.ux-van-model-engine-links small{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin-top:7px;color:#b1bcbd;font-size:12px;line-height:1.55;}
+.ux-van-model-check-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:25px;}
+.ux-van-model-check-grid article{padding:21px;background:#222728;border-top:2px solid #606a6b;border-radius:0 0 11px 11px;}
+.ux-van-model-check-grid span{font-size:12px;color:#f26071;font-weight:800;}
+.ux-van-model-check-grid h3{font-size:15px;font-weight:755;line-height:1.4;margin-top:14px;}
+.ux-van-model-check-grid p{font-size:12px;line-height:1.75;color:#b5c0c1;margin-top:9px;}
+.ux-van-model-compliance{display:flex;align-items:flex-start;gap:19px;padding:24px;background:#243030;border:1px solid #566364;border-radius:14px;margin-top:45px;}
+.ux-van-model-compliance>svg{color:#a7d7ce;flex-shrink:0;}
+.ux-van-model-compliance h2{font-size:19px;font-weight:775;line-height:1.35;}
+.ux-van-model-compliance p{margin-top:13px;color:#c3cdcc;font-size:13px;line-height:1.77;}
+.ux-van-model-compliance a{display:inline-flex;align-items:center;gap:7px;margin-top:13px;color:#f5f6f3;font-size:12px;font-weight:730;min-height:43px;text-decoration:underline;text-underline-offset:4px;}
+.ux-van-model-maker-source{display:flex;flex-wrap:wrap;align-items:center;gap:5px;font-size:12px;color:#aeb8ba;line-height:1.7;margin-top:21px;}
+.ux-van-model-maker-source a{display:inline-flex;align-items:center;gap:4px;color:#f4f4f1;text-decoration:underline;text-underline-offset:3px;}
+.ux-van-model-faq details{margin-top:15px;background:#23282a;border:1px solid #3f494a;border-radius:11px;padding:0 18px;}
+.ux-van-model-faq summary{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:60px;padding:14px 0;font-size:14px;font-weight:765;line-height:1.45;cursor:pointer;list-style:none;}
+.ux-van-model-faq summary::-webkit-details-marker{display:none;}
+.ux-van-model-faq summary span{font-size:25px;font-weight:400;color:#fa6071;}
+.ux-van-model-faq details[open] summary span{transform:rotate(45deg);}
+.ux-van-model-faq details p{font-size:13px;color:#bac4c4;line-height:1.8;padding-bottom:17px;}
+.ux-van-model-handoff{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.8fr);align-items:center;gap:30px;background:radial-gradient(ellipse at 95% 0%,rgba(234,56,76,.15),transparent 44%),#252829;border:1px solid #485052;border-radius:16px;padding:30px;margin-top:47px;}
+.ux-van-model-handoff h2{margin-top:16px;}
+.ux-van-model-handoff>div>p:not(.ux-eyebrow){font-size:13px;line-height:1.75;margin-top:13px;color:#bbc3c5;}
+.ux-van-model-handoff-links{display:grid;gap:9px;}
+.ux-van-model-service-link{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;color:#d6dedc;font-size:12px;text-decoration:underline;text-underline-offset:4px;}
+.ux-van-model-related{padding-top:35px;}
+.ux-van-model-related h2{font-size:20px;font-weight:755;}
+.ux-van-model-related>div{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.ux-van-model-related a{display:inline-flex;align-items:center;gap:10px;min-height:45px;padding:12px 14px;border:1px solid #536061;border-radius:9px;color:#f4f4ef;font-size:13px;}
+.ux-van-model-related a:hover{border-color:#ef6171;}
+.ux-van-engine-content{padding:22px 0 80px;}
+.ux-van-engine-sources .ux-van-engine-source-links{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;padding:0;margin-top:27px;}
+.ux-van-engine-source-links li{min-width:0;background:#1d2325;padding:19px;border:1px solid #434c4e;border-radius:11px;}
+.ux-van-engine-source-links li a{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;font-weight:750;color:#f4f5f2;line-height:1.5;}
+.ux-van-engine-source-links li span{font-size:11px;color:#bac4c5;display:block;margin-top:11px;}
+@media(max-width:1023px){
+.ux-vans-model-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.ux-vans-business-layout,.ux-vans-adblue,.ux-vans-handoff-layout{grid-template-columns:1fr;gap:28px;}
+.ux-van-model-check-grid{grid-template-columns:1fr;}
+}
+@media(max-width:767px){
+.ux-vans-hero,.ux-van-model-hero{padding:27px 0 44px;}
+.ux-vans-hero h1,.ux-van-model-hero h1{font-size:clamp(2.32rem,9vw,3.15rem);}
+.ux-vans-hero-copy,.ux-van-model-hero>div>p:not(.ux-eyebrow){font-size:14px;line-height:1.64;}
+.ux-vans-hero-actions,.ux-van-model-hero-actions{display:grid;gap:10px;}
+.ux-vans-hero-facts,.ux-van-model-keyfacts{gap:9px;grid-template-columns:repeat(3,minmax(0,1fr));}
+.ux-vans-hero-facts strong,.ux-van-model-keyfacts strong{font-size:clamp(1.1rem,5vw,1.8rem);}
+.ux-vans-hero-facts span,.ux-van-model-keyfacts span{font-size:10px;}
+.ux-vans-directory-section{padding:52px 0 57px;}
+.ux-vans-controls{padding:13px;}
+.ux-vans-size-list{gap:6px;}
+.ux-vans-size{min-height:43px;font-size:11px;padding:8px 10px;}
+.ux-vans-brand-groups{margin-top:20px;}
+.ux-vans-brand-group{margin-top:27px;}
+.ux-vans-model-grid{grid-template-columns:1fr;gap:10px;}
+.ux-vans-model-card{min-height:170px;padding:18px;gap:9px;}
+.ux-vans-business,.ux-vans-handoff{padding:51px 0;}
+.ux-vans-adblue{padding:50px 0;gap:22px;}
+.ux-van-model-content{padding:5px 0 calc(77px + env(safe-area-inset-bottom));}
+.ux-van-model-section{padding:35px 0;}
+.ux-van-model-audit-grid,.ux-van-model-engine-links>div,.ux-van-engine-sources .ux-van-engine-source-links{grid-template-columns:1fr;}
+.ux-van-model-audit{padding:17px;}
+.ux-van-model-audit dd{font-size:14px;}
+.ux-van-model-unverified{padding:19px;}
+.ux-van-model-check-grid{grid-template-columns:1fr;}
+.ux-van-model-compliance{padding:18px;gap:11px;margin-top:32px;}
+.ux-van-model-compliance h2{font-size:17px;}
+.ux-van-model-handoff{grid-template-columns:1fr;gap:20px;padding:22px;margin-top:36px;}
+}
+@media(max-width:350px){.ux-vans-size{min-width:60px;}.ux-van-model-audit dl{gap:11px 8px;}.ux-van-model-audit dd{font-size:13px;}}
+@media(prefers-reduced-motion:reduce){.ux-vans-model-card{transition:none;transform:none!important;}}

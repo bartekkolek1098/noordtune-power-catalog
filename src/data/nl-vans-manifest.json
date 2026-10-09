@@ -1,0 +1,495 @@
+{
+  "version": "2026-10-09-v1",
+  "indexed": [
+    {
+      "slug": "ford-transit",
+      "make": "Ford",
+      "model": "Transit",
+      "size": "Groot",
+      "indexable": true,
+      "intro": "De grote Ford Transit wordt veel gebruikt met werkplaatsinrichting, gereedschap en aanhangers. Een Stage 1-indicatie moet daarom niet alleen bij de naam Transit passen, maar ook bij de oorspronkelijke RDW-kW, EcoBlue-motor en transmissie.",
+      "difference": "De 2.0 EcoBlue 130 pk komt in verschillende bouwfasen voor, waaronder beoordeelde FCD- en FED-typen met 1995 cc. Nieuwere Ford-varianten, andere dieselvermogens en elektrische E-Transit horen nadrukkelijk niet bij die bronwaarden.",
+      "usage": "Voor bouw- en installatiebedrijven tellen warmte bij belading, langdurig koppel en de conditie van de natte distributieriem zwaar mee.",
+      "checks": "Controleer originele kW, motorcode, ECU-firmware, koppeling of automaat, DPF en SCR/AdBlue. De externe maxima zijn niet automatisch geschikt voor de dagelijkse belading.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Ford",
+        "url": "https://www.ford.nl/bedrijfswagens-en-pickups/nieuwe-transit/van"
+      },
+      "verifiedIds": [
+        "rdw-bulk-four-ford-transit-fcd-20ecoblue130-2018-19",
+        "rdw-bulk-four-ford-transit-fed-20ecoblue130-2022"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Is een Transit 130 pk uit 2018 dezelfde versie als een Transit uit 2022?",
+          "Niet noodzakelijk. Type FCD en FED kunnen met verschillende ECU- en softwareversies geleverd zijn, dus de motorcode en transmissie worden per voertuig gecontroleerd."
+        ],
+        [
+          "Kun je de Transit zwaarder beladen na Stage 1?",
+          "Vermogensverhoging verandert het wettelijk laadgewicht niet. Koppeling, koeling en veiligheidsmarges moeten bij zwaar gebruik afzonderlijk worden beoordeeld."
+        ]
+      ]
+    },
+    {
+      "slug": "ford-transit-custom",
+      "make": "Ford",
+      "model": "Transit Custom",
+      "size": "Middel",
+      "indexable": true,
+      "intro": "De Ford Transit Custom is een middelgrote bedrijfsbus met eigen motor- en chassistypen. De nieuwere Custom bestaat als 2.0 EcoBlue diesel, plug-inhybride en elektrisch; een bron voor dieselchiptuning geldt nooit automatisch voor de andere aandrijflijnen.",
+      "difference": "De oudere Custom- en nieuwe V710-generatie hebben afwijkende ECU- en transmissievarianten. Ook 110, 136, 150 of 170 pk badges zijn geen reden om een algemene Stage 1-winst te publiceren.",
+      "usage": "Monteurs en aannemers kiezen deze bus vanwege de laadruimte. Bij intensief werk met gereedschap en aanhangers is voorspelbaar koppel belangrijker dan een reclamepiek.",
+      "checks": "Identificeer de generatie, originele kW, 1996 cc waar van toepassing, handbak of automaat, ECU, onderhoud en SCR-status. We tonen pas cijfers bij een geaccepteerde technische bronset.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Ford",
+        "url": "https://www.ford.nl/bedrijfswagens-en-pickups/nieuwe-transit-custom"
+      },
+      "verifiedIds": [],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Waarom heeft niet elke Transit Custom hier een pk-getal?",
+          "De Custom bestaat in meerdere generaties en aandrijflijnen. Bij onduidelijke ECU-identiteit is een individueel onderzoek veiliger dan een algemene voorspelling."
+        ],
+        [
+          "Kan een PHEV dezelfde tuninggegevens als een EcoBlue-diesel gebruiken?",
+          "Nee. De hybride- en diesel-aandrijflijnen zijn verschillend en moeten in de catalogus afzonderlijk worden behandeld."
+        ]
+      ]
+    },
+    {
+      "slug": "ford-transit-connect",
+      "make": "Ford",
+      "model": "Transit Connect",
+      "size": "Compact",
+      "indexable": true,
+      "intro": "Transit Connect is een compacte bedrijfswagen voor servicemonteurs en bezorgers. De oudere 1.5 TDCi, de 1.5 EcoBlue PU2 en de nieuwste 2.0 EcoBlue zijn verschillende motoren waarvoor niet dezelfde Stage 1-publicaties gelden.",
+      "difference": "Wij hebben exacte brongegevens voor 1.5 EcoBlue PU2 met 73,3, 73,5 en 88,3 kW. De nieuwere 2.0 EcoBlue die Ford levert wordt pas na eigen generatie- en ECU-validatie aan een Stage 1-profiel gekoppeld.",
+      "usage": "Bij dagelijks stop-and-go gebruik zijn DPF-regeneratie, motortemperatuur en de belasting van handbak of automaat belangrijk voor een betrouwbare bestelbus.",
+      "checks": "Controleer geregistreerde kW, 1499 of 1968 cc, motorgeneratie, motorcode, ECU-software, transmissie en AdBlue/SCR. Tunerbronnen spreken soms andere originele Nm-waarden uit.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Ford",
+        "url": "https://www.ford.nl/bedrijfswagens-en-pickups/new-transit-connect"
+      },
+      "verifiedIds": [
+        "rdw-bulk-four-ford-connect-pu2-15-ecoblue100-2019-20",
+        "rdw-bulk-four-ford-connect-pu2-15-ecoblue100-2022",
+        "rdw-bulk-four-ford-connect-pu2-15-ecoblue120-2019-20"
+      ],
+      "engineSlugs": [
+        "ford-transit-connect-15-ecoblue-100",
+        "ford-transit-connect-15-ecoblue-120"
+      ],
+      "faq": [
+        [
+          "Is de Transit Connect 100 pk gelijk aan de 120 pk-uitvoering?",
+          "Niet per definitie. Het originele vermogen en de ECU verschillen per versie; de bronwaarden worden aan exacte RDW-gegevens gekoppeld."
+        ],
+        [
+          "Zijn gegevens van de nieuwe 2.0 EcoBlue uitwisselbaar met 1.5 EcoBlue?",
+          "Nee. Motorfamilie en generatie veranderen, waardoor oudere cijfers zonder ECU-onderzoek niet toepasbaar zijn."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-transporter",
+      "make": "Volkswagen",
+      "model": "Transporter",
+      "size": "Middel",
+      "indexable": true,
+      "intro": "Volkswagen Transporter is een veelgebruikte werkbus bij bouw-, installatie- en vervoersbedrijven. T5, T6, T6.1 en de nieuwe Transporter-generatie hebben verschillende motormanagement- en transmissiesystemen.",
+      "difference": "De beoordeelde referenties voor T5 2.0 TDI 140 pk en T6 2.0 BiTDI 204 pk zijn afzonderlijke technische profielen. De nieuwe Transporter heeft ook hybride en elektrische aandrijflijnen die niet onder deze dieseldata vallen.",
+      "usage": "Bij een Transporter met kasten, trekhaak of personeninrichting moeten versnellingsbak en thermische reserve apart worden meegewogen.",
+      "checks": "Verifieer generatie, 1968 cc, geregistreerde kW, ECU, turbo-opbouw, handbak of DSG/DQ500 en intacte DPF/SCR-installatie.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Volkswagen",
+        "url": "https://www.vwbedrijfswagens.nl/nl/modellen/transporter.html"
+      },
+      "verifiedIds": [
+        "rdw-bulk-vw-transporter-7j0-t5-20-tdi-140",
+        "rdw-bulk-four-vw-transporter-7j0-t6-20tdi204-2017-19"
+      ],
+      "engineSlugs": [
+        "volkswagen-transporter-t6-20-tdi-204"
+      ],
+      "faq": [
+        [
+          "Kan een Transporter T5 en een T6 dezelfde Stage 1 krijgen?",
+          "Nee. De motorsoftware, turbosystemen en bakgrenzen verschillen. Daarom bestaan aparte technische pagina's voor de onderzochte T5 en T6."
+        ],
+        [
+          "Is de nieuwe elektrische Transporter geschikt voor diesel-Stage 1?",
+          "Nee. Een elektrische aandrijflijn heeft geen diesel-ECU en valt buiten de bronwaarden van eerdere generaties."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-crafter",
+      "make": "Volkswagen",
+      "model": "Crafter",
+      "size": "Groot",
+      "indexable": true,
+      "intro": "De Volkswagen Crafter is een grote bestelwagen voor bouwmateriaal, lange routes en bedrijfsinrichting. De 2.0 TDI-familie omvat meerdere originele vermogens en versnellingsbakken die afzonderlijk moeten worden vergeleken.",
+      "difference": "De bronvermelde Crafter II van 130 kW en 1968 cc geldt alleen voor een beoordeelde SYN1E-uitvoering uit 2018–2020. Andere vermogens en recente softwareupdates mogen niet met die brongegevens worden gelijkgesteld.",
+      "usage": "Bij veel lading en langdurige snelwegritten bepalen transmissie, koeling en turbo-/DPF-onderhoud of extra koppel verstandig is.",
+      "checks": "Controleer originele kW, RDW-type, ECU, turbo, bouwjaar, versnellingstype, DPF en SCR. Gepubliceerde Nm-maxima zijn niet automatisch veilige grenzen.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Volkswagen",
+        "url": "https://www.vwbedrijfswagens.nl/nl/modellen/brochures-en-prijslijsten.html"
+      },
+      "verifiedIds": [
+        "rdw-bulk-four-vw-crafter-syn1e-20tdi177-2018-20"
+      ],
+      "engineSlugs": [
+        "volkswagen-crafter-20-tdi-177"
+      ],
+      "faq": [
+        [
+          "Is de Crafter 140 pk hetzelfde als de 177 pk?",
+          "Niet noodzakelijk. Motorafstelling, turbo en ECU kunnen verschillen en vragen een eigen bronreview."
+        ],
+        [
+          "Kan een beladen Crafter het hoogste gepubliceerde Nm-getal gebruiken?",
+          "Niet zonder individuele beoordeling van de versnellingsbak, koeling en gebruiksomstandigheden."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-caddy",
+      "make": "Volkswagen",
+      "model": "Caddy",
+      "size": "Compact",
+      "indexable": true,
+      "intro": "Volkswagen Caddy wordt gebruikt voor onderhoud, bezorging en kleinere bouwprojecten. De oudere 2KN-generatie en nieuwere Caddy V SKN zijn niet automatisch hetzelfde voertuig, ook als beide een 2.0 TDI-badge dragen.",
+      "difference": "Onze beoordeelde profielen onderscheiden fabrieksvermogens van 75, 81, 90 en 103 kW. Een Caddy met 102 pk uit 2018 kan daarom andere ECU-software hebben dan een Caddy met 102 pk uit 2024.",
+      "usage": "Voor distributiewerk met veel korte ritten zijn DPF-regeneratie, versnellingsbakbelasting en onderhoud belangrijker dan uitsluitend de hoogste Stage 1-referentie.",
+      "checks": "Controleer 2KN versus SKN, geregistreerde kW, 1968 cc, ECU, turbo, DPF/SCR en handgeschakelde of DSG-versnellingsbak.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Volkswagen",
+        "url": "https://www.vwbedrijfswagens.nl/nl/modellen/brochures-en-prijslijsten.html"
+      },
+      "verifiedIds": [
+        "rdw-bulk2-vw-caddy-2kn-20tdi140-2013-14",
+        "rdw-bulk-four-vw-caddy-2kn-20tdi140-2015",
+        "rdw-bulk-four-vw-caddy-2kn-20tdi110-2014",
+        "rdw-bulk-four-vw-caddy-2kn-20tdi102-2017-20",
+        "rdw-bulk-four-vw-caddy-skn-20tdi102-2024",
+        "rdw-bulk-four-vw-caddy-skn-20tdi122-2022-24"
+      ],
+      "engineSlugs": [
+        "volkswagen-caddy-iv-20-tdi-102",
+        "volkswagen-caddy-v-20-tdi-102",
+        "volkswagen-caddy-v-20-tdi-122"
+      ],
+      "faq": [
+        [
+          "Kan een Caddy IV 102 pk hetzelfde als een Caddy V 102 pk worden getuned?",
+          "Nee. De verschillende modelgeneraties vragen controle van exacte ECU, motorfamilie en transmissie."
+        ],
+        [
+          "Waarom zijn er meerdere Caddy Stage 1-profielen?",
+          "Volkswagen leverde verschillende originele vermogens en bouwfasen. De juiste tuningreferentie hangt van die technische identiteit af."
+        ]
+      ]
+    },
+    {
+      "slug": "mercedes-sprinter",
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "size": "Groot",
+      "indexable": true,
+      "intro": "Mercedes-Benz Sprinter is een zware werkbus voor bouwbedrijven en logistiek. Hij wordt geleverd met meerdere motoren, gewichtsklassen en aandrijvingen; de naam Sprinter alleen zegt weinig over een passend Stage 1-resultaat.",
+      "difference": "Een oudere 2.1 CDI en een nieuwere 2.0-diesel behoren niet automatisch tot dezelfde motorfamilie. Ook achterwielaandrijving, vierwielaandrijving en verschillende automaten maken de technische vergelijking relevant.",
+      "usage": "Bij veel belading of een aanhanger zijn koelcapaciteit, versnellingsbak en onderhoud belangrijk. Een bronwaarde zonder exact motor- en ECU-bewijs zou misleidend zijn.",
+      "checks": "Controleer de geregistreerde kW, werkelijke CDI-motorcode, ECU-software, automaat, voertuiggewicht, SCR en DPF. Numerieke Stage 1-cijfers blijven vooralsnog achterwege.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Mercedes-Benz",
+        "url": "https://www.mercedes-benz.nl/vans/models/transporter.html"
+      },
+      "verifiedIds": [],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Waarom staat er bij de Sprinter nog geen vaste pk-winst?",
+          "Er zijn meerdere motorfamilies en ECU-generaties; zonder exacte onafhankelijke bronnen tonen we liever geen automatische getallen."
+        ],
+        [
+          "Mag het SCR/AdBlue-systeem van een Sprinter worden uitgeschakeld?",
+          "Voor gebruik op de openbare weg moet de emissiereiniging correct werken. Storingen horen via diagnose en reparatie te worden verholpen."
+        ]
+      ]
+    },
+    {
+      "slug": "mercedes-vito",
+      "make": "Mercedes-Benz",
+      "model": "Vito",
+      "size": "Middel",
+      "indexable": true,
+      "intro": "Mercedes-Benz Vito is een populaire middelgrote bestelwagen voor service en personenvervoer. Verschillende CDI-motoren en automaten gebruiken andere ECU-instellingen en originele vermogens.",
+      "difference": "Een Vito 114 CDI met 100 kW is geen bewijs dat alle andere Vito-uitvoeringen dezelfde motorsoftware hebben. Ook de elektrische eVito hoort bij een geheel andere aandrijflijn.",
+      "usage": "Voor lange diensten, passagiers en gereedschapsinrichting weegt betrouwbaarheid zwaarder dan een piekwaarde zonder controle van de auto.",
+      "checks": "Controleer motorcode, originele RDW-kW, generatie, ECU, automaat of handbak, koeling en SCR/DPF. Zonder exact goedgekeurde bronset tonen we geen Stage 1-koppel.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Mercedes-Benz",
+        "url": "https://www.mercedes-benz.nl/vans/models/transporter.html"
+      },
+      "verifiedIds": [],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Is Vito 114 CDI dezelfde tuningvariant als 116 CDI?",
+          "Niet zonder meer. De originele afstelling en transmissie kunnen verschillen en vragen eigen identificatie."
+        ],
+        [
+          "Zijn diesel-tuningcijfers toepasbaar op eVito?",
+          "Nee. Een eVito heeft een elektrische aandrijflijn die buiten dieselchiptuning valt. Ook het motormanagement werkt volledig anders."
+        ]
+      ]
+    },
+    {
+      "slug": "toyota-proace",
+      "make": "Toyota",
+      "model": "Proace",
+      "size": "Middel",
+      "indexable": true,
+      "intro": "Toyota Proace is een werkbus met verschillende diesels en volledig elektrische uitvoeringen. Ook binnen dezelfde Proace-generatie kunnen motorcode, originele kW en transmissie sterk uiteenlopen.",
+      "difference": "Oudere 1.5 en 2.0 D-4D-diesels zijn niet zonder meer gelijk aan een nieuwe Proace Worker. Dat bepaalde generaties techniek delen met Peugeot of Citroën betekent niet dat een ECU-bestand van een andere merkversie automatisch past.",
+      "usage": "Voor installatiebedrijven en monteurs zijn dagelijks koppel, onderhoud en functioneren van de emissievoorzieningen belangrijk bij een vermogenswens.",
+      "checks": "Controleer originele RDW-kW, D-4D-motorcode, software, transmissie, SCR/AdBlue en DPF. De numerieke Stage 1-publicatie wacht op een gevalideerde Toyota-RDW-variant.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Toyota",
+        "url": "https://www.toyota.nl/modellen/proace"
+      },
+      "verifiedIds": [],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Is de Proace hetzelfde als een Peugeot Expert?",
+          "Sommige generaties delen componenten, maar software, homologatie en motoridentiteit moeten zelfstandig worden gecontroleerd."
+        ],
+        [
+          "Heeft een elektrische Proace dezelfde Stage 1 als een diesel?",
+          "Nee. Elektrische en diesel-aandrijvingen gebruiken verschillende motor- en regelsystemen."
+        ]
+      ]
+    },
+    {
+      "slug": "toyota-proace-city",
+      "make": "Toyota",
+      "model": "Proace City",
+      "size": "Compact",
+      "indexable": true,
+      "intro": "Toyota Proace City is bedoeld voor compacte bedrijfsinzet met gereedschap en stadsritten. De dieselversies met 1.5 D-4D moeten apart worden gehouden van volledig elektrische Proace City-uitvoeringen.",
+      "difference": "Fabrieksvermogen, emissiefase en transmissie kunnen per bouwjaar verschillen. Een gedeelde platformtechniek met Peugeot Partner of Citroën Berlingo garandeert geen identieke ECU-software.",
+      "usage": "Voor veel korte ritten moet ook naar de conditie van DPF en het diesel-emissiesysteem worden gekeken voordat de auto extra koppel krijgt.",
+      "checks": "Controleer 1.5 D-4D, oorspronkelijke RDW-kW, bouwjaar, ECU, handbak/automaat en SCR. Er is nog geen exact Toyota-bronprofiel vrijgegeven.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Toyota",
+        "url": "https://www.toyota.nl/modellen/proace-city"
+      },
+      "verifiedIds": [],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Welke Toyota Proace City heeft een publiceerbaar Stage 1-getal?",
+          "Eerst moet de exacte versie met bronpublicaties overeenkomen. Op dit moment verwijzen we voor onzekere Toyota-uitvoeringen naar individuele beoordeling."
+        ],
+        [
+          "Mag ik Peugeot Partner-cijfers op mijn Toyota gebruiken?",
+          "Niet zonder ECU- en motorverificatie. Gedeelde techniek is geen garantie voor dezelfde afstelling."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-partner",
+      "make": "Peugeot",
+      "model": "Partner",
+      "size": "Compact",
+      "indexable": true,
+      "intro": "De Peugeot Partner wordt ingezet door servicebedrijven, aannemers en bezorgers. De nieuwere 1.5 BlueHDi is een andere motorfamilie dan oudere 1.6 BlueHDi-uitvoeringen.",
+      "difference": "Een specifieke Partner met RDW-type E, 1499 cc en originele 75 kW uit 2022–2024 heeft bronvermelde Stage 1-cijfers. Voor andere Partner-vermogens is die uitkomst niet zonder meer bruikbaar.",
+      "usage": "Bij stadsritten moet een diesel gezond kunnen regenereren. Problemen aan AdBlue, DPF of motorolie dienen eerst te worden opgelost.",
+      "checks": "Controleer originele kW, motorcode, 1499/1560 cc, ECU, automatische of handgeschakelde bak en SCR/DPF. Alleen exact gecontroleerde versies krijgen cijfers.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Peugeot",
+        "url": "https://www.peugeot.nl/professional/ontdek-onze-bedrijfswagens.html"
+      },
+      "verifiedIds": [
+        "rdw-bulk-peugeot-partner-e-15bluehdi100-2022-24"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Is een Partner 1.5 BlueHDi 100 dezelfde motor als de 130 pk?",
+          "Niet noodzakelijk. Originele afstelling, ECU en transmissie moeten afzonderlijk worden gecontroleerd."
+        ],
+        [
+          "Kan Stage 1 een AdBlue-storing oplossen?",
+          "Nee. Diagnose en reparatie van NOx-sensor, SCR-dosering en overige foutoorzaken blijven nodig."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-expert",
+      "make": "Peugeot",
+      "model": "Expert",
+      "size": "Middel",
+      "indexable": true,
+      "intro": "Peugeot Expert is een middelgrote werkbus die in verschillende dieseluitvoeringen en als elektrische e-Expert bestaat. De 1.5 BlueHDi en 2.0 BlueHDi gebruiken niet automatisch hetzelfde motormanagement.",
+      "difference": "Afhankelijk van uitvoering komen een 120 pk 1.5 BlueHDi, 145 pk 2.0 BlueHDi of 180 pk automaat voor. Dat zijn verschillende originele fabrieksafstellingen; een oudere 1.6 BlueHDi valt nog weer in een andere fase.",
+      "usage": "Voor lange werkdagen met gereedschap zijn automaatbelasting, regeneratie en koeling kernpunten voor een verantwoorde beoordeling.",
+      "checks": "Identificeer de echte motorcode, RDW-kW, bouwjaar, 1499/1997 cc, ECU en EAT8/handbak. Geen numerieke Stage 1 zonder twee passende onafhankelijke bronnen.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Peugeot",
+        "url": "https://www.peugeot.nl/professional/ontdek-onze-bedrijfswagens.html"
+      },
+      "verifiedIds": [],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Kan een Expert 1.5 BlueHDi dezelfde Stage 1 als een 2.0 krijgen?",
+          "Nee. Motoren, fabriekskoppel en transmissie verschillen, zodat een eigen bronnenreview nodig is."
+        ],
+        [
+          "Is e-Expert een dieselvariant?",
+          "Nee. De e-Expert heeft een volledig elektrische aandrijving en is niet geschikt voor diesel-Stage 1-cijfers."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-boxer",
+      "make": "Peugeot",
+      "model": "Boxer",
+      "size": "Groot",
+      "indexable": true,
+      "intro": "Peugeot Boxer is een grote bestelbus die vaak gebruikt wordt voor bouwmaterialen en campers. De verschillende BlueHDi-generaties hebben andere motorhardware en emissieregelingen.",
+      "difference": "Een oudere 2.0 BlueHDi en latere 2.2 BlueHDi kunnen op papier vergelijkbare vermogens hebben, maar dit zijn andere motorfamilies met verschillende ECU- en versnellingsbakbeperkingen.",
+      "usage": "Bij camperombouwen of permanent zwaar beladen Boxers speelt langdurige temperatuurbelasting een grote rol en kan een maximaal tunergetal misleidend zijn.",
+      "checks": "Controleer 2.0 versus 2.2, originele kW, motorcode, koeling, transmissie en SCR/DPF. Numerieke Stage 1 wacht op exacte RDW-bronverificatie.",
+      "manufacturerSource": {
+        "name": "Officiële modelinformatie van Peugeot",
+        "url": "https://www.peugeot.nl/professional/ontdek-onze-bedrijfswagens.html"
+      },
+      "verifiedIds": [],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Is de Boxer 2.2 BlueHDi dezelfde toepassing als een 2.0?",
+          "Nee. Motorfamilie, ECU en emissiefase verschillen en vragen een eigen bronprofiel met bevestigde motorcode en originele fabrieksgegevens."
+        ],
+        [
+          "Kan een camper met Boxer-motor altijd meer koppel hebben?",
+          "Gewicht, belasting, koeling en de versnellingsbak moeten eerst worden onderzocht. De waarde uit een tunerpublicatie is geen maximale veilige camperbelasting."
+        ]
+      ]
+    },
+    {
+      "slug": "renault-master",
+      "make": "Renault",
+      "model": "Master",
+      "size": "Groot",
+      "indexable": true,
+      "intro": "Renault Master is een veelgebruikte bedrijfsbus, ook voor opbouwen met veel gewicht. De 2.3 dCi en latere Blue dCi kennen verschillende software- en emissiefasen.",
+      "difference": "Bij de onderzochte Master III is er afzonderlijk bronbewijs voor 107 kW uit 2017 en 107 kW Blue dCi uit 2022. Hetzelfde originele vermogen maakt de motoren niet identiek.",
+      "usage": "Voor koeriers en aannemers staan motorconditie, SCR, koeling en een gezonde handgeschakelde transmissie centraal.",
+      "checks": "Controleer 2299 cc, RDW-type MF, oorspronkelijke 107 kW, bouwfase, ECU, turbo en AdBlue/SCR. De twee profielen zijn afzonderlijk beoordeeld.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-four-renault-master-mf-23dci145-2017",
+        "rdw-bulk-four-renault-master-mf-23bluedci145-2022"
+      ],
+      "engineSlugs": [
+        "renault-master-iii-23-dci-145",
+        "renault-master-iii-23-blue-dci-145"
+      ],
+      "faq": [
+        [
+          "Heeft Master dCi 145 uit 2017 dezelfde Stage 1 als Blue dCi 145 uit 2022?",
+          "Nee. Software, emissiesysteem en motorconfiguratie verschillen, ondanks hetzelfde fabrieksvermogen."
+        ],
+        [
+          "Wanneer is Stage 1 voor een zwaar beladen Master passend?",
+          "Pas na controle van motorconditie, koelreserve, koppeling, turbo en intensiteit van het gebruik."
+        ]
+      ]
+    },
+    {
+      "slug": "renault-kangoo",
+      "make": "Renault",
+      "model": "Kangoo",
+      "size": "Compact",
+      "indexable": true,
+      "intro": "De Renault Kangoo is een compacte bestelwagen voor onder meer servicewerk en stadsdistributie. Bij de Kangoo II gebruikte Renault 1.5 dCi-varianten met verschillende originele vermogens.",
+      "difference": "De onderzochte Kangoo W met 1461 cc, originele 55 kW en eerste toelating 2015–2019 is afzonderlijk bronvermeld. Nieuwere Blue dCi en elektrische Kangoo E-Tech zijn geen identieke motoren.",
+      "usage": "Bij veel korte ritten is goede dieselregeneratie en onderhoudstoestand belangrijk voor betrouwbare inzet.",
+      "checks": "Controleer motorcode K9K, 55 kW, 1461 cc, RDW-type W, ECU-software, transmissie en DPF voordat een bronwaarde geldt.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk2-renault-kangoo-w-15dci75"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Is de Kangoo 75 pk gelijk aan alle andere 1.5 dCi-versies?",
+          "Nee. Er bestaan verschillende fabrieksafstellingen. Ons cijferprofiel geldt voor de exact beoordeelde 55 kW-uitvoering. Andere ECU-generaties zijn uitgesloten."
+        ],
+        [
+          "Mag een elektrische Kangoo E-Tech met dieselgegevens worden vergeleken?",
+          "Nee. De aandrijftechniek en vermogensregelaar zijn volledig verschillend. Diesel-Stage 1-referenties gelden daarom niet voor elektrische modellen."
+        ]
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "slug": "renault-trafic",
+      "make": "Renault",
+      "model": "Trafic",
+      "size": "Middel",
+      "indexable": false
+    },
+    {
+      "slug": "opel-vivaro",
+      "make": "Opel",
+      "model": "Vivaro",
+      "size": "Middel",
+      "indexable": false
+    },
+    {
+      "slug": "opel-movano",
+      "make": "Opel",
+      "model": "Movano",
+      "size": "Groot",
+      "indexable": false
+    },
+    {
+      "slug": "citroen-jumpy",
+      "make": "Citroën",
+      "model": "Jumpy",
+      "size": "Middel",
+      "indexable": false
+    },
+    {
+      "slug": "citroen-berlingo",
+      "make": "Citroën",
+      "model": "Berlingo",
+      "size": "Compact",
+      "indexable": false
+    },
+    {
+      "slug": "fiat-ducato",
+      "make": "Fiat",
+      "model": "Ducato",
+      "size": "Groot",
+      "indexable": false
+    },
+    {
+      "slug": "iveco-daily",
+      "make": "Iveco",
+      "model": "Daily",
+      "size": "Groot",
+      "indexable": false
+    }
+  ]
+}
