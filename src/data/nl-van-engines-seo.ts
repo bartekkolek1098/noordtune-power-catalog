@@ -321,6 +321,46 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "appIds": [
     "rdw-bulk-10-peugeot-expert-v-20bluehdi177-2024"
   ]
+},
+{
+  "slug": "volkswagen-crafter-20-tdi-140-eu6d-2023-24",
+  "modelSlug": "volkswagen-crafter",
+  "title": "Volkswagen Crafter 2.0 TDI 140 Euro 6d (2023–2024)",
+  "intro": "De Crafter met 1968 cc en originele RDW-registratie van 103 kW uit 2023 of 2024 heeft andere mogelijke ECU-beveiliging dan een 2017–2020 Crafter. Twee onafhankelijke aanbieders hebben het nieuwere 2021+ Euro 6d-motortype onderzocht en melden dezelfde normale Stage 1-waarden; die zijn geen bewijs van een ontgrendelde ECU in elke werkbus.",
+  "checks": "Vergelijk VOLKSWAGEN CRAFTER type SYN1E, originele 103 kW, diesel 1968 cc, vier cilinders en toelating 2023 of 2024. Identificeer werkelijk Euro 6d, Bosch ECU MD1CS104 of andere versie, software-unlock, handbak of automaat en belading; DPF, SCR/AdBlue en EGR blijven volledig werken. Niet zomaar de oudere 2017–2020 file gebruiken.",
+  "appIds": [
+    "rdw-bulk-11-vw-crafter-syn1e-20tdi140-eu6d-2023-24"
+  ]
+},
+{
+  "slug": "volkswagen-transporter-t61-20-tdi-150-eu62-2024",
+  "modelSlug": "volkswagen-transporter",
+  "title": "Volkswagen Transporter T6.1 2.0 TDI 150 (2024)",
+  "intro": "Voor de VW Transporter T6.1 van 2024 met 110 kW en 1968 cc bestaan afzonderlijke Stage 1-publicaties voor de nieuwere Euro 6.2-uitvoering. Die mag niet worden samengevoegd met 2020-versies alleen omdat beide 150 pk op de achterklep hebben; de latere Bosch MD1CS104-ECU kan extra beveiliging hebben.",
+  "checks": "Controleer RDW TRANSPORTER type 7J0, diesel 1968 cc, originele 110 kW en eerste toelating in 2024. Identificeer werkelijke T6.1 en Euro 6.2, Bosch ECU en benodigde unlock, DSG DQ500 of handbak, staat van turbo en emissiesystemen. Twee leveranciers publiceren 190 pk/420 Nm, geen NoordTune-meting of gegarandeerd veilig koppel bij werkbelading.",
+  "appIds": [
+    "rdw-bulk-11-vw-transporter-7j0-t61-20tdi150-2024"
+  ]
+},
+{
+  "slug": "volkswagen-transporter-t61-20-tdi-110-2024",
+  "modelSlug": "volkswagen-transporter",
+  "title": "Volkswagen Transporter T6.1 2.0 TDI 110 (2024)",
+  "intro": "De 110 pk T6.1 uit 2024 heeft originele 81 kW en 1968 cc, anders dan de 110 kW sterke 150 pk-variant. Drie chiptuningaanbieders publiceren zeer uiteenlopende gewone Stage 1-indicaties. Daarom tonen we transparant een groot extern bereik, en nadrukkelijk geen aanbevolen eindkoppel voor een beladen bestelwagen.",
+  "checks": "Verifieer RDW-type 7J0, originele 81 kW, diesel 1968 cc, 2024, exacte Bosch MD1CS104-firmware, beschermingsunlock en handgeschakelde vijfversnellingsbak of andere transmissie. De leveranciers noemen 150–190 pk en 330–420 Nm; vooral het hoogste koppel is geen veilige versnellingsbakgrens. Laat eerst ECU, koppeling, koeling en SCR/DPF controleren.",
+  "appIds": [
+    "rdw-bulk-11-vw-transporter-7j0-t61-20tdi110-2024"
+  ]
+},
+{
+  "slug": "renault-master-23-dci-130-euro6-2017",
+  "modelSlug": "renault-master",
+  "title": "Renault Master 2.3 dCi 130 Euro 6 (2017)",
+  "intro": "De Renault Master 2.3 dCi 130 met oorspronkelijke 96 kW en 2299 cc uit 2017 heeft een Euro 6-bronset die afwijkt van de nieuwere 135 en 145 pk-motoren. Twee onafhankelijke leveranciers publiceren de gewone Stage 1-waarden voor Master Mk4 2016–2019, maar chassiscode MA alleen bewijst niet de geïnstalleerde motorsoftware.",
+  "checks": "Bevestig RDW MASTER type MA, 2017, 2299 cc, 96 kW diesel, vier cilinders, werkelijke M9T-motorcode, ECU-firmware, versnellingsbak en koelreserve. De 130 pk is een marketingnaam terwijl 96 kW rekenkundig op circa 131 metrische pk afrondt. Een beladen Master vereist een eigen diagnose; DPF, EGR en SCR/AdBlue blijven functioneren.",
+  "appIds": [
+    "rdw-bulk-11-renault-master-ma-23dci130-euro6-2017"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -337,7 +377,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==36||new Set(nlVanEngines.map(x=>x.slug)).size!==36)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==40||new Set(nlVanEngines.map(x=>x.slug)).size!==40)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];
