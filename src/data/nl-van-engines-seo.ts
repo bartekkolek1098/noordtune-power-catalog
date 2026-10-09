@@ -73,7 +73,68 @@ const specs:readonly ExtraVanEngineSpec[]=[
   intro:"Deze Peugeot Expert III met originele 90 kW, 1997 cc en RDW-type V uit 2018–2019 is geen oudere Expert II of elektrische e-Expert. De marketingnaam BlueHDi 120 komt overeen met ongeveer 122 metrische pk uit RDW; drie bronnen tonen een Stage 1-referentie voor deze motorfamilie.",
   checks:"Verifieer originele 90 kW, RDW-type V, 1997 cc, echte DW10 AH01-motorcode, Delphi DCM6.2A/DCM7.1A ECU, emissiefase, handbak of EAT-automaat en SCR/DPF. Bronnen verschillen in fabrieks-Nm; 320/340 Nm is geen RDW-registratie en moet worden gecontroleerd.",
   appIds:["rdw-bulk-5-peugeot-expert-v-20bluehdi120-2018-19"]
- }
+ },
+ {
+  "slug": "fiat-ducato-23-multijet-130-2013-15",
+  "modelSlug": "fiat-ducato",
+  "title": "Fiat Ducato 2.3 MultiJet 130 (2013–2015)",
+  "intro": "De oudere Fiat Ducato III Mk2 met 2287 cc en originele 96 kW is in tunerpublicaties meestal bekend als 2.3 130 MultiJet. Deze 2013–2015-uitvoering hoort niet bij de latere Euro 6-softwarefase, zelfs als beide bij RDW circa 131 metrische pk aangeven. Gepubliceerde Stage 1-waarden zijn alleen indicatief.",
+  "checks": "Controleer RDW-type 250, 2287 cc, originele 96 kW en toelatingsjaar 2013–2015; verifieer F1AE0481N-motorcode, exacte Marelli/Bosch ECU, koppeling, versnellingsbak, koeling, DPF en onderhoud. Niet automatisch toepassen op 2018–2019 Euro 6 Ducato of 2.2 MultiJet.",
+  "appIds": [
+    "rdw-bulk-6-fiat-ducato-250-23multijet130-2013-15"
+  ]
+},
+ {
+  "slug": "fiat-ducato-23-multijet-130-euro6-2018-19",
+  "modelSlug": "fiat-ducato",
+  "title": "Fiat Ducato 2.3 MultiJet 130 Euro 6 (2018–2019)",
+  "intro": "De Fiat Ducato met 2287 cc en originele 96 kW in 2018–2019 hoort bij een latere Euro 6-dieselgeneratie dan de oudere 2013–2015 2.3 MultiJet 130. Tunerpublicaties voor deze latere fase laten een ander, conservatiever Stage 1-bereik zien; dezelfde fabrieks-kW maakt de ECU's niet uitwisselbaar.",
+  "checks": "Controleer RDW-type 250, originele 96 kW, 2287 cc, datum eerste toelating 2018–2019, werkelijke F1AGL411D-motorcode, Marelli MJD9DF of Bosch EDC17C69 ECU en SCR/DPF. Ook koppeling, automaat/handbak en belasting bij camper- of bedrijfsgebruik moeten worden beoordeeld.",
+  "appIds": [
+    "rdw-bulk-6-fiat-ducato-250-23multijet130-euro6-2018-19"
+  ]
+},
+ {
+  "slug": "mercedes-vito-114-cdi-1950-2023",
+  "modelSlug": "mercedes-vito",
+  "title": "Mercedes-Benz Vito 114 CDI 2.0D (2023)",
+  "intro": "Bij deze Mercedes-Benz Vito 114 CDI bedraagt het originele RDW-vermogen 100 kW en de cilinderinhoud 1950 cc. Voor het beoordeelde type 639/4 met eerste toelating in 2023 bestaan meerdere bronpublicaties voor de 136 pk-motor. Exacte Euro 6-software en de werkelijke ECU blijven ondanks het bouwjaar te controleren.",
+  "checks": "Vergelijk RDW-gegevens 639/4, 1950 cc, 100 kW, eerste toelating 2023, daadwerkelijke OM654/OM651-aanduiding en Bosch MD1CP001 ECU, transmissie en SCR/DPF. Hogere cijfers van andere Euro 6 D-temp- of ECU-publicaties horen niet automatisch bij deze bronselectie.",
+  "appIds": [
+    "rdw-bulk-6-mercedes-vito-6394-1950-114cdi136-2023"
+  ]
+},
+ {
+  "slug": "mercedes-vito-114-cdi-1950-euro6e-2024",
+  "modelSlug": "mercedes-vito",
+  "title": "Mercedes-Benz Vito 114 CDI Euro 6e (2024)",
+  "intro": "De Mercedes-Benz Vito 114 CDI met originele 100 kW, 1950 cc en eerste toelating in 2024 heeft een afzonderlijke Euro 6e-bronset. De drie bekeken publicaties komen overeen in het normale Stage 1-resultaat, maar RDW-type 639/4 alleen bewijst niet dat de gemonteerde ECU daadwerkelijk overeenkomt met die softwarefase.",
+  "checks": "Bevestig Euro 6e-homologatie, ECU/firmware en type 639/4 met 100 kW en 1950 cc, jaargang 2024. Controleer Bosch MD1-variant, handbak of automaat, SCR/AdBlue, onderhoud en softwaretoegang voordat de gepubliceerde Stage 1-waarden op deze Vito worden toegepast.",
+  "appIds": [
+    "rdw-bulk-6-mercedes-vito-6394-1950-114cdi136-euro6e-2024"
+  ]
+},
+ {
+  "slug": "mercedes-sprinter-315-cdi-1950-150",
+  "modelSlug": "mercedes-sprinter",
+  "title": "Mercedes-Benz Sprinter 315 CDI 2.0 150",
+  "intro": "De Sprinter met originele 110 kW en 1950 cc komt in de gecontroleerde RDW-steekproef onder type 906BB35 in 2020 en 2024 voor. De externe 315 CDI-bronnen noemen vergelijkbare Stage 1-uitkomsten, maar de RDW-typecode bevestigt niet zelfstandig een W907/W910-generatie of exact OM654-ECU-bestand.",
+  "checks": "Controleer originele 110 kW, type 906BB35, 1950 cc, bouwjaar 2020 of 2024, werkelijk OM654-motorblok, Bosch MD1CP001/MRD1 software, handgeschakelde of automatische transmissie en SCR/AdBlue. Originele bronkoppelwaarden 330/340 Nm verschillen; dit is geen RDW Nm-meting of garantie.",
+  "appIds": [
+    "rdw-bulk-6-mercedes-sprinter-906bb35-1950-315cdi150-2020",
+    "rdw-bulk-6-mercedes-sprinter-906bb35-1950-315cdi150-2024"
+  ]
+},
+ {
+  "slug": "peugeot-expert-20-bluehdi-180-2019-22",
+  "modelSlug": "peugeot-expert",
+  "title": "Peugeot Expert III 2.0 BlueHDi 180",
+  "intro": "Deze Peugeot Expert III met 1997 cc en originele 130 kW is de 2.0 BlueHDi 180-marketingvariant. De 130 kW-registratie komt omgerekend op circa 177 metrische pk; de twee onafhankelijke aanbieders melden verschillende gewone Stage 1-uitkomsten, zodat de pagina bewust een voorwaardelijk bereik toont.",
+  "checks": "Bevestig RDW-type V, 1997 cc, originele 130 kW en eerste toelating 2019–2022, DW10-motorfamilie, ECU en unlock-staat, EAT8 of handbak en SCR/DPF. Xtreme-tuning, Euro 6e-varianten uit 2024, Opel Vivaro, Toyota Proace en e-Expert vallen buiten deze getallen.",
+  "appIds": [
+    "rdw-bulk-6-peugeot-expert-v-20bluehdi180-2019-22"
+  ]
+}
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
 export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
@@ -89,7 +150,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==10||new Set(nlVanEngines.map(x=>x.slug)).size!==10)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==16||new Set(nlVanEngines.map(x=>x.slug)).size!==16)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];
