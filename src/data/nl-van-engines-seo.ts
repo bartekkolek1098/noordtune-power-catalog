@@ -307,7 +307,7 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "modelSlug": "ford-transit-connect",
   "title": "Ford Transit Connect 1.5 TDCi 120 (2015)",
   "intro": "De oudere Ford Transit Connect PU2 1.5 TDCi 120 uit 2015 gebruikt 1499 cc en originele 88 kW. Het is nadrukkelijk niet dezelfde EcoBlue-generatie als de Connect 1.5 vanaf 2018 of de nieuwere 2.0 diesel. De uitgekozen onafhankelijke publicaties tonen verschillende gewone Stage 1-indicaties.",
-  "checks": "Identificeer RDW-model TRANSIT CONNECT, type PU2, eerste toelating 2015, 1499 cc, 88 kW diesel, vier cilinders, motorkode XWGB en de werkelijke ECU. ATM is specifiek voor Connect; de tweede leverancier groepeert Tourneo en Connect. Controleer handbak, DPF/EGR en de voertuigconditie.",
+  "checks": "Identificeer RDW-model TRANSIT CONNECT, type PU2, eerste toelating 2015, 1499 cc, 88 kW diesel, vier cilinders, motorkode XWGB en de werkelijke ECU. BR-Performance en Tuning Service noemen specifiek de Connect II in 2015; hun koppelindicaties verschillen. Controleer handbak, DPF/EGR en de voertuigconditie.",
   "appIds": [
     "rdw-bulk-10-ford-transit-connect-pu2-15tdci120-2015"
   ]

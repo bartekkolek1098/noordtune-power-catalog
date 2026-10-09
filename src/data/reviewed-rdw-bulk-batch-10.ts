@@ -226,7 +226,7 @@ const seeds:readonly Seed[] = [
     "fuel": "Diesel",
     "power": [
       140,
-      145
+      140
     ],
     "torque": [
       320,
@@ -235,25 +235,25 @@ const seeds:readonly Seed[] = [
     "profileIds": [],
     "extras": [
       {
-        "provider": "atm-chiptuning",
-        "title": "ATM Ford Transit Connect 1.5 TDCi 120",
-        "url": "https://www.atm-chiptuning.com/chiptuning/ford-transit-connect-15-tdci-120pk-10728/",
-        "stage1Hp": 145,
-        "stage1Nm": 320,
-        "scope": "Specific Transit Connect 120/270 1499cc engine XWGB, Stage1 145/320.",
+        "provider": "br-performance",
+        "title": "BR-Performance Transit Connect II 1.5 TDCi 120 (2015–2018)",
+        "url": "https://www.br-performance.lu/en-lu/chiptuning/1-cars/23-ford/12693-transit-connect/14273-ii-2013-2018/22987-1-5-tdci/",
+        "stage1Hp": 140,
+        "stage1Nm": 330,
+        "scope": "Specifically Ford Transit Connect II 1.5 TDCi 120, 2015–2018; stock120PS/270Nm, ordinary Stage1 140PS/330Nm. Manual vs Powershift explicitly requires workshop distinction.",
         "retrievedAt": "2026-10-09"
       },
       {
-        "provider": "ecu-soft",
-        "title": "ECU-Soft Ford Tourneo / Connect 2014–2018 1.5 TDCi 120",
-        "url": "https://www.ecu-soft.be/chiptuning/ford/tourneo-custom-connect-courier/6782/1-5-tdci-120-11835",
+        "provider": "tuningservice",
+        "title": "Tuning Service Transit Connect II 2013–2016 1.5 TDCi120",
+        "url": "https://tuningservice.nl/chiptuning/ford/transit-connect/2th-2013-2016/15-tdci-120pk/",
         "stage1Hp": 140,
-        "stage1Nm": 330,
-        "scope": "2014–18 1.5 TDCi 120/270 to140/330 includes Connect in catalog; distinguish from other Tourneo/Courier.",
+        "stage1Nm": 320,
+        "scope": "Transit Connect II 2013–2016 1.5 TDCi120 1499cc 270Nm engine XWGB Bosch EDC17C70; ordinary Stage1 140PS/320Nm.",
         "retrievedAt": "2026-10-09"
       }
     ],
-    "scope": "RDW 2015 FORD TRANSIT CONNECT PU2 diesel 1499cc 88kW; engine XWGB/Bosch ECU must be confirmed. Shared supplier category Tourneo/Connect/Courier only a secondary reference with exact motor output/cc, primary ATM is Connect-specific. Does not imply 2019/2024 EcoBlue calibration. Stage 1 is published external source indication, not a NoordTune dyno result, safety certification or guaranteed output. Confirm actual engine generation, ECU software, Euro phase, engine health, manual/automatic gearbox limits, cooling and load before owner-specific work. Keep DPF, EGR, SCR and AdBlue road-legal and functional. Stage2/3 numeric values withheld."
+    "scope": "RDW 2015 FORD TRANSIT CONNECT PU2 diesel 1499cc 88kW; engine XWGB/Bosch ECU must be confirmed. Two Transit Connect-specific independently published 2015-inclusive sources: BR-Performance 2015–18 and Tuning Service 2013–16. Exclude ATM's 2016+ generation and shared Tourneo/Courier category results. Does not imply 2019/2024 EcoBlue calibration. Stage 1 is published external source indication, not a NoordTune dyno result, safety certification or guaranteed output. Confirm actual engine generation, ECU software, Euro phase, engine health, manual/automatic gearbox limits, cooling and load before owner-specific work. Keep DPF, EGR, SCR and AdBlue road-legal and functional. Stage2/3 numeric values withheld."
   },
   {
     "id": "rdw-bulk-10-peugeot-expert-v-20bluehdi177-2024",
