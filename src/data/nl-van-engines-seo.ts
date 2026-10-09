@@ -472,6 +472,126 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "appIds": [
     "rdw-bulk-12-renault-trafic-l-20bluedci150-2023-24"
   ]
+},
+{
+  "slug": "renault-kangoo-15-dci-110-2015",
+  "modelSlug": "renault-kangoo",
+  "title": "Renault Kangoo II 1.5 dCi 110 (2015)",
+  "intro": "De Kangoo II 1.5 dCi 110 met 81 kW en 1461 cc is een sterkere K9K-diesel dan de 66 kW-uitvoering. Drie onafhankelijke leveranciers beschrijven specifiek de 2013–2020 motorfamilie, maar hun gepubliceerde resultaat is een indicatie voor een goed onderhouden voertuig en geen algemene garantie voor bestelwagens.",
+  "checks": "Vergelijk RDW KANGOO type W, toelating 2015, originele 81 kW, 1461 cc, vier cilinders en diesel. Controleer echte K9K-motorcode, ECU/firmware (Bosch EDC of Continental), Euro-emissiefase, koppeling, koelsysteem en roetfilter. Niet de Stage 1 van 66 kW dCi 90 of 55 kW overnemen.",
+  "appIds": [
+    "rdw-bulk-13-renault-kangoo-w-15dci110-2015"
+  ]
+},
+{
+  "slug": "renault-master-23-dci-110-euro6-2017",
+  "modelSlug": "renault-master",
+  "title": "Renault Master 2.3 dCi 110 Euro 6 (2017)",
+  "intro": "De Renault Master 2.3 dCi 110 met RDW-type MA, 81 kW en 2299 cc is een andere fabrieksuitvoering dan de 96 kW 130 pk of de nieuwere Blue dCi 135. Voor de Mk4 Euro 6-versie uit 2017 publiceren verschillende tuners uiteenlopende Stage 1-vermogens, die alleen als voorwaardelijk bereik kunnen worden weergegeven.",
+  "checks": "Verifieer MASTER type MA, originele 81 kW, 2299 cc diesel, eerste toelating 2017 en exacte M9T-motorcode. Bronwaarden variëren van 160 tot 180 pk en 390 tot 420 Nm; vaststellen van ECU, uitlaatgasnabehandeling, versnellingsbak, motortemperatuur en belasting is verplicht voordat een werkbus getuned kan worden.",
+  "appIds": [
+    "rdw-bulk-13-renault-master-ma-23dci110-euro6-2017"
+  ]
+},
+{
+  "slug": "renault-master-23-bluedci-135-2019",
+  "modelSlug": "renault-master",
+  "title": "Renault Master 2.3 Blue dCi 135 (2019)",
+  "intro": "De Master met originele 100 kW en 2299 cc uit 2019 is een Blue dCi 135-kandidaat uit de overgang tussen de Mk4 en Mk5. Twee afzonderlijke motorsoftwareaanbieders rapporteren een bescheiden gewone Stage 1 rond 175–180 pk, terwijl sterkere catalogusclaims van dezelfde handelsnaam hier bewust niet worden gebruikt.",
+  "checks": "Controleer MASTER RDW-type MA, 100 kW, 2299 cc diesel, eerste toelating in 2019, werkelijk M9T Blue dCi en geldende Euro 6-fase. 100 kW is rekenkundig circa 136 pk en niet precies de marketingnaam 135; bij een bouwbus eerst SID310/SID321-software, handbak en trekgewicht controleren. DPF/SCR/AdBlue blijven werken.",
+  "appIds": [
+    "rdw-bulk-13-renault-master-ma-23bluedci135-2019"
+  ]
+},
+{
+  "slug": "volkswagen-crafter-20-tdi-102-euro6-2018",
+  "modelSlug": "volkswagen-crafter",
+  "title": "Volkswagen Crafter 2.0 TDI 102 Euro 6 (2018)",
+  "intro": "Deze Volkswagen Crafter met originele 75 kW en 1968 cc behoort tot de 102 pk-instapmotor van de nieuwe Crafter-generatie. Drie aanbieders geven uiteenlopende cijfers, mede doordat zij het oorspronkelijke koppel verschillend publiceren. Dat koppel is geen geregistreerd RDW-feit en de hoogste Stage 1-waarde is geen goedkeuring voor zware belasting.",
+  "checks": "Controleer CRAFTER SYN1E, originele 75 kW, diesel 1968 cc, vier cilinders en eerste toelating 2018. Bosch EDC17C64 of Delphi DCM6.2V ECU, transmissie, eventuele dubbele massa, koelreserve en SCR/DPF moeten fysiek worden geïdentificeerd. Niet verwarren met 103 kW Crafter 140 uit 2018 of latere Euro 6d ECU.",
+  "appIds": [
+    "rdw-bulk-13-vw-crafter-syn1e-20tdi102-euro6-2018"
+  ]
+},
+{
+  "slug": "volkswagen-transporter-t6-20-tdi-102-2020",
+  "modelSlug": "volkswagen-transporter",
+  "title": "Volkswagen Transporter T6 2.0 TDI 102 (2020)",
+  "intro": "De Transporter 102 pk van 2020 heeft origineel 75 kW, 1968 cc en RDW-type 7J0. Dit registratietijdstip valt in de overgang van T6 naar T6.1 en van Delphi naar nieuwere Bosch ECU-beveiliging. Daarom worden alleen specifieke 102 pk-bronnen getoond en mag een Delphi-remap niet klakkeloos op Bosch worden overgenomen.",
+  "checks": "Bevestig TRANSPORTER type 7J0, originele 75 kW, diesel 1968 cc en eerste toelating 2020. Controleer of het werkelijk T6 met ondersteunde Delphi ECU is of een nieuwere T6.1 Bosch-versie, en of ontgrendeling mogelijk is; inspecteer vijfversnellingsbak, koppeling, DPF/SCR en belasting. De bronverschillen zijn geen veilige koppelgrens.",
+  "appIds": [
+    "rdw-bulk-13-vw-transporter-7j0-t6-20tdi102-2020"
+  ]
+},
+{
+  "slug": "fiat-doblo-16-multijet-100-2015",
+  "modelSlug": "fiat-doblo",
+  "title": "Fiat Doblò 1.6 MultiJet 100 (2015)",
+  "intro": "De Fiat Doblò 1.6 MultiJet 100 is een 1598 cc diesel met originele RDW-motoroutput 74 kW. Dit is niet dezelfde motorafstelling als de populaire 105 pk-uitvoering met 77 kW of de 120 pk-uitvoering met 88 kW. Meerdere onafhankelijke publicaties beschrijven gewone Stage 1 voor deze specifieke 100 pk-motor.",
+  "checks": "Controleer FIAT DOBLO' RDW-type 263, eerste toelating 2015, 1598 cc diesel, 74 kW en vier cilinders. De exacte Euro 5/6-generatie, motorcode 198A3.000 en Bosch EDC17 ECU moeten bij de auto worden vastgesteld, net als transmissie en onderhoud; Stage 1 140 pk/360 Nm is een externe indicatie, geen werkplaatsgarantie.",
+  "appIds": [
+    "rdw-bulk-13-fiat-doblo-263-16multijet100-2015"
+  ]
+},
+{
+  "slug": "fiat-doblo-16-multijet-120-2021",
+  "modelSlug": "fiat-doblo",
+  "title": "Fiat Doblò 1.6 MultiJet 120 (2021)",
+  "intro": "De Fiat Doblò met 88 kW, 1598 cc en RDW-type 263 uit 2021 is een eigen MultiJet 120-generatie. Dezelfde Doblò-modelnaam wordt na de overstap naar een andere voertuigfamilie opnieuw gebruikt, maar oudere MultiJet-koppelwaarden mogen nooit automatisch naar die nieuwere PSA/Stellantis-motoren worden gekopieerd.",
+  "checks": "Verifieer FIAT DOBLO' type 263, 1598 cc diesel, originele 88 kW en eerste toelating 2021. Controleer de werkelijk geïnstalleerde 1.6 MultiJet-motor, Bosch EDC17C69 ECU, Euro 6-emissiefase en koppeling of automaat; originele 320 Nm en Stage 1 140/360 komen uit leveranciersbronnen en niet uit RDW-koppelvelden.",
+  "appIds": [
+    "rdw-bulk-13-fiat-doblo-263-16multijet120-2021"
+  ]
+},
+{
+  "slug": "fiat-ducato-23-multijet-130-euro6-2020",
+  "modelSlug": "fiat-ducato",
+  "title": "Fiat Ducato 2.3 MultiJet 130 Euro 6 (2020)",
+  "intro": "De Ducato met originele 96 kW en 2287 cc uit 2020 moet worden onderscheiden van de 88 kW 120 pk en latere 2.2-dieselmotor. Voor deze generatie publiceren twee leveranciers conservatieve Stage 1-varianten vanaf ongeveer 150 pk; grotere cataloguscijfers worden niet als een geschikt eindvermogen voor zwaarbeladen campers gepresenteerd.",
+  "checks": "Vergelijk RDW FIAT DUCATO type 250, 2287 cc diesel, 96 kW, vier cilinders en toelating 2020. Controleer echte F1AGL411D-motor, Marelli MJD9DF of Bosch EDC17C69, Euro 6d versus oudere Euro 6b, versnellingsbak, thermisch beheer en camperopbouw; SCR/AdBlue en DPF blijven werkzaam.",
+  "appIds": [
+    "rdw-bulk-13-fiat-ducato-250-23multijet130-euro6-2020"
+  ]
+},
+{
+  "slug": "citroen-berlingo-16-hdi-75-2015",
+  "modelSlug": "citroen-berlingo",
+  "title": "Citroën Berlingo II 1.6 HDi 75 (2015)",
+  "intro": "De Citroën Berlingo 1.6 HDi 75 met 55 kW en 1560 cc zit in het overgangsjaar 2015 tussen de oudere HDi en de nieuwe BlueHDi. De vermogenswaarden uit de onderzochte publicaties horen alleen bij de oudere DV6-motorvariant en mogen zonder voertuigdiagnose niet aan een BlueHDi-motor worden toegeschreven.",
+  "checks": "Controleer CITROEN BERLINGO RDW-type 7, 1560 cc diesel, originele 55 kW en toelating 2015. Bevestig aan de hand van VIN en ECU of dit echt de oudere HDi DV6BTED4 is; BlueHDi75 kan een andere originele koppelwaarde en Euro 6-emissieafhandeling hebben. DPF/EGR/SCR waar aanwezig blijven legaal functioneren.",
+  "appIds": [
+    "rdw-bulk-13-citroen-berlingo-7-16hdi75-2015"
+  ]
+},
+{
+  "slug": "mercedes-sprinter-w906-314-cdi-143-2018",
+  "modelSlug": "mercedes-sprinter",
+  "title": "Mercedes-Benz Sprinter W906 314 CDI 143 (2018)",
+  "intro": "De 2018 Sprinter 314 CDI met originele 105 kW en 2143 cc hoort bij de overgang van W906 naar W907. Voor een echte W906 bestaan twee onafhankelijke Stage 1-publicaties met hoge koppelindicaties. De RDW-aanduiding 906BA35 is een filter, niet het bewijs dat de motor en ECU voor zo'n uitgangswaarde geschikt zijn.",
+  "checks": "Controleer SPRINTER type 906BA35, 2143 cc, originele 105 kW diesel en eerste toelating 2018. Bepaal aan VIN of dit W906 OM651 of W907-familie is en identificeer Delphi CRD3P ECU, Euro-fase, koppelgrens van de transmissie en laadgewicht; 460–480 Nm is een externe leveranciersclaim, geen NoordTune-aanbeveling.",
+  "appIds": [
+    "rdw-bulk-13-mercedes-sprinter-906ba35-21-314cdi143-2018"
+  ]
+},
+{
+  "slug": "mercedes-sprinter-w906-316-cdi-163-2018",
+  "modelSlug": "mercedes-sprinter",
+  "title": "Mercedes-Benz Sprinter W906 316 CDI 163 (2018)",
+  "intro": "De Mercedes Sprinter 316 CDI met 120 kW en 2143 cc uit 2018 is technisch niet gelijk aan de nieuwere OM654 of een automatische transmissie van de latere W907. De onderzochte W906-bronnen noemen 200 pk en 480 Nm als mogelijke normale Stage 1, maar dat is geen goedgekeurde koppelgrens voor een volledig beladen bestelbus.",
+  "checks": "Controleer SPRINTER RDW-type 906BB50, originele 120 kW, 2143 cc diesel en eerste toelating 2018. Verifieer chassis W906 via VIN, OM651, exact Delphi motorregelapparaat en handgeschakelde of automatische transmissie, gekoppeld aan bedrijfsbelading. Werkende uitlaatgasnabehandeling is verplicht; geen kopie van W907-calibratie.",
+  "appIds": [
+    "rdw-bulk-13-mercedes-sprinter-906bb50-21-316cdi163-2018"
+  ]
+},
+{
+  "slug": "opel-vivaro-c-20-d-177-2024",
+  "modelSlug": "opel-vivaro-c",
+  "title": "Opel Vivaro C 2.0 D 177 (2024)",
+  "intro": "De Opel Vivaro C 2.0 diesel uit 2024 heeft volgens RDW 130 kW en 1997 cc. De aanduiding 177 pk verwijst naar de nieuwere PSA/Stellantis-techniek en niet naar de oudere Vivaro B met 1.6 CDTI. Drie externe leveranciers publiceren vergelijkbare gewone Stage 1-resultaten, maar ECU- en transmissiesoftware kunnen tussen faceliftversies verschillen.",
+  "checks": "Controleer OPEL VIVARO type V, eerste toelating 2024, 1997 cc diesel en originele 130 kW, afzonderlijk van VIVARO-B type F7. Bevestig DW10-motor, ECU Delphi DCM7.1A of andere fase, SCR/AdBlue, DPF, EAT8/handbak en koelreserve. Gepubliceerde waarden 205–207 pk en 460–465 Nm zijn slechts voorwaardelijke leveranciersindicaties.",
+  "appIds": [
+    "rdw-bulk-13-opel-vivaro-v-20d177-2024"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -488,7 +608,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==51||new Set(nlVanEngines.map(x=>x.slug)).size!==51)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==63||new Set(nlVanEngines.map(x=>x.slug)).size!==63)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];
