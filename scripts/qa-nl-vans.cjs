@@ -37,10 +37,10 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.equal(sitemap.status(),200);
   const xml=await sitemap.text();
   const locs=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-  assert.equal(locs.length,333,"333 routes: batch 13 adds twelve source-reviewed NL van engines and two unique models");
+  assert.equal(locs.length,346,"346 routes: batch 14 adds thirteen exact Toyota and Boxer engine pages");
   const vanUrls=locs.filter(x=>x.includes("/nl/bedrijfswagens"));
-  assert.equal(vanUrls.length,85,"One van directory + 21 models + 63 sourced engine pages");
-  assert.equal(new Set(vanUrls).size,85,"Van sitemap canonicals unique");
+  assert.equal(vanUrls.length,98,"One van directory + 21 models + 76 sourced engine pages");
+  assert.equal(new Set(vanUrls).size,98,"Van sitemap canonicals unique");
   assert.ok(!xml.includes("/en/bedrijfswagens")&&!xml.includes("/pl/bedrijfswagens"));
 
   for(const m of nlVanModels){
@@ -61,7 +61,7 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
    const r=await page.request.get(base+path);
    assert.equal(r.status(),404,"No unsupported translated pages "+path);
   }
-  for(const [slug,expected] of [["opel-vivaro-c",1],["citroen-berlingo",1],["opel-vivaro",4],["volkswagen-caddy",7],["renault-kangoo",4],["volkswagen-crafter",4],["volkswagen-transporter",8],["renault-master",7],["renault-trafic",1],["fiat-doblo",3],["mercedes-sprinter",8],["mercedes-vito",6],["toyota-proace",0],["peugeot-partner",2],["ford-transit",7],["ford-transit-connect",5],["ford-transit-custom",3],["peugeot-expert",5],["fiat-ducato",4]]){
+  for(const [slug,expected] of [["opel-vivaro-c",1],["citroen-berlingo",1],["opel-vivaro",4],["volkswagen-caddy",7],["renault-kangoo",4],["volkswagen-crafter",4],["volkswagen-transporter",8],["renault-master",7],["renault-trafic",1],["fiat-doblo",3],["mercedes-sprinter",8],["mercedes-vito",6],["toyota-proace",5],["toyota-proace-city",4],["peugeot-boxer",4],["peugeot-partner",2],["ford-transit",7],["ford-transit-connect",5],["ford-transit-custom",3],["peugeot-expert",5],["fiat-ducato",4]]){
    const r=await page.goto(base+"/nl/bedrijfswagens/"+slug,{waitUntil:"domcontentloaded",timeout:45000});
    assert.equal(r?.status(),200);
    assert.equal(await page.locator("h1").count(),1);
@@ -93,8 +93,8 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.equal(await page.locator('a[href="/nl/bedrijfswagens"]').count(),1,"NL homepage links vans category");
   assert.deepEqual(errors,[],"No runtime JavaScript errors");
   console.log("NL_VAN_BROWSER_QA_PASS",JSON.stringify({
-   indexedVanPages:21,browseOnlyModels:3,exactStage1VanEnginePages:63,
-   verifiedSourceApplications:80,indexedVanUrls:85,totalSitemapUrls:333,
+   indexedVanPages:21,browseOnlyModels:3,exactStage1VanEnginePages:76,
+   verifiedSourceApplications:93,indexedVanUrls:98,totalSitemapUrls:346,
    testedWidths:[320,390,1440],translatedThin404:4
   }));
  }finally{await browser.close();}

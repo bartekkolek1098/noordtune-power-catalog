@@ -592,6 +592,136 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "appIds": [
     "rdw-bulk-13-opel-vivaro-v-20d177-2024"
   ]
+},
+{
+  "slug": "toyota-proace-20-d4d-122-2020-22",
+  "modelSlug": "toyota-proace",
+  "title": "Toyota Proace 2.0 D-4D 122 (2020–2022)",
+  "intro": "De Toyota Proace met RDW-type V en origineel 90 kW heeft de 2.0 D-4D 122-motor, die duidelijk anders is dan de 106 kW Proace 145 en de 130 kW Proace 177. Twee onafhankelijke leveranciers noemen uiteenlopende hoge Stage 1-waarden, die alleen dienen als externe indicatie voor een gezonde motor.",
+  "checks": "Vergelijk TOYOTA PROACE type V, eerste toelating 2020–2022, diesel 1997 cc, vier cilinders en 90 kW. Controleer het daadwerkelijke motorlabel, Delphi ECU/firmware, Euro 6-fase, handbak of EAT-automaat en belading; 450–460 Nm uit catalogi is geen veilige koppelgrens voor iedere bouwbus. SCR/AdBlue, DPF en EGR blijven werken.",
+  "appIds": [
+    "rdw-bulk-14-toyota-proace-v-20d4d122-2020-22"
+  ]
+},
+{
+  "slug": "toyota-proace-20-d4d-150-2019",
+  "modelSlug": "toyota-proace",
+  "title": "Toyota Proace 2.0 D-4D 150 (2019)",
+  "intro": "De Proace 2.0 D-4D 150 uit de 2016–2019 generatie heeft in de RDW-registratie 110 kW en 1997 cc. Twee Toyota-specifieke tuningpublicaties komen voor deze uitvoering overeen, maar de overeenkomende fabrieksmotor in een andere bestelwagen is geen bewijs dat identieke software gebruikt mag worden.",
+  "checks": "Controleer PROACE V, originele 110 kW, diesel 1997 cc, vier cilinders en eerste toelating 2019. Bevestig motorcode, Delphi ECU en transmissie; in latere 2020–2021 varianten kan de Euro 6-emissiefase afwijken, daarom gelden de cijfers hier uitsluitend voor deze beoordeelde RDW-identiteit. DPF, EGR en SCR blijven legaal in werking.",
+  "appIds": [
+    "rdw-bulk-14-toyota-proace-v-20d4d150-2019"
+  ]
+},
+{
+  "slug": "toyota-proace-20-d4d-177-2020-24",
+  "modelSlug": "toyota-proace",
+  "title": "Toyota Proace 2.0 D-4D 177 (2020–2024)",
+  "intro": "De sterkere Toyota Proace met originele 130 kW en 1997 cc is een 177 pk D-4D-uitvoering en geen 122 of 145 pk-variant. Voor deze motor zijn afzonderlijke Toyota-bronnen gevonden die verschillende normale Stage 1-uitkomsten noemen; een 2024 facelift kan alsnog andere softwarebeveiliging gebruiken.",
+  "checks": "Vergelijk RDW PROACE type V, origineel 130 kW, 1997 cc diesel en eerste toelating 2020–2024. Identificeer via ECU-read de juiste Delphi DCM7.1A of nieuwere besturing, passende EAT8-versnellingsbak, thermische marge en emissiefase. De externe 205–210 pk en 450–460 Nm zijn niet gegarandeerd voor zware belading of aanhangergebruik.",
+  "appIds": [
+    "rdw-bulk-14-toyota-proace-v-20d4d177-2020-24"
+  ]
+},
+{
+  "slug": "toyota-proace-15-d4d-100-2020-23",
+  "modelSlug": "toyota-proace",
+  "title": "Toyota Proace 1.5 D-4D 100 (2020–2023)",
+  "intro": "De Toyota Proace 1.5 diesel heeft voor deze 100 pk-marketingvariant originele RDW-motoroutput 75 kW en 1499 cc. De leveranciers verschillen over fabriekskoppel en Stage 1-koppel, daarom tonen we een voorwaardelijk bereik en geen schijnbaar exacte NoordTune-meting.",
+  "checks": "Controleer PROACE V, 1499 cc diesel, originele 75 kW en eerste toelating 2020–2023. De 100 pk-naam is afgerond: 75 kW rekent om naar circa 102 metrische pk. Controleer Bosch MD1CS003/MD1CS016-generatie, ontgrendeling, koppeling, Euro 6 en werkende DPF/AdBlue/EGR. Niet toepassen op de Proace City E of 88 kW 120 pk.",
+  "appIds": [
+    "rdw-bulk-14-toyota-proace-v-15d4d100-2020-23"
+  ]
+},
+{
+  "slug": "toyota-proace-15-d4d-120-2020-23",
+  "modelSlug": "toyota-proace",
+  "title": "Toyota Proace 1.5 D-4D 120 (2020–2023)",
+  "intro": "De 1.5 D-4D 120 Proace met originele 88 kW en 1499 cc hoort bij een andere fabrieksafstelling dan de 75 kW-instapmotor. Onafhankelijke Stage 1-publicaties noemen verschillende vermogens, zodat eerst de concrete ECU en bedrijfsbelasting moeten worden beoordeeld voordat een waarde als haalbaar wordt voorgesteld.",
+  "checks": "Verifieer Toyota PROACE type V, eerste toelating 2020–2023, 1499 cc diesel en geregistreerde 88 kW. Vergelijk motorcode, Bosch MD1-ECU, handbak, koppeling, DPF en SCR/AdBlue. De 150–160 pk en 340–360 Nm uit externe publicaties zijn geen transmissie- of trekgewichtsgarantie. Stage 2/3-waarden worden niet aangeboden.",
+  "appIds": [
+    "rdw-bulk-14-toyota-proace-v-15d4d120-2020-23"
+  ]
+},
+{
+  "slug": "toyota-proace-city-15-d4d-75-2020-22",
+  "modelSlug": "toyota-proace-city",
+  "title": "Toyota Proace City 1.5 D-4D 75 (2020–2022)",
+  "intro": "De compacte Toyota Proace City 1.5 D-4D 75 heeft originele 56 kW en 1499 cc, waarmee hij afwijkt van de 75 kW 100 pk-variant ondanks dezelfde carrosseriefamilie. Twee leveranciers publiceren een identiek indicatief Stage 1-resultaat voor deze kleine diesel, maar ECU-verificatie blijft noodzakelijk.",
+  "checks": "Controleer PROACE CITY type E, geregistreerd 56 kW, diesel 1499 cc en eerste toelating 2020–2022. 56 kW is afgerond circa 76 metrische pk, terwijl leveranciers de fabrieksuitvoering 75 pk noemen. Controleer Bosch MD1CS003, ECU-unlock, koppeling en emissies. Voor elektrische City of 100/130 pk diesel geldt dit resultaat niet.",
+  "appIds": [
+    "rdw-bulk-14-toyota-proace-city-e-15d4d75-2020-22"
+  ]
+},
+{
+  "slug": "toyota-proace-city-15-d4d-100-2020-23",
+  "modelSlug": "toyota-proace-city",
+  "title": "Toyota Proace City 1.5 D-4D 100 (2020–2023)",
+  "intro": "De Toyota Proace City met originele 75 kW en 1499 cc is een bedrijfswagen van type E, los van de grotere Toyota Proace V. Twee externe tuners publiceren verschillende oorspronkelijke koppelwaarden en verschillende normale Stage 1-uitkomsten; de bronverschillen worden niet weggemiddeld.",
+  "checks": "Verifieer PROACE CITY type E, 75 kW, 1499 cc diesel, eerste toelating 2020–2023 en daadwerkelijke MD1-ECU. De leveranciers spreken 254 of 270 Nm af fabriek, terwijl RDW geen koppel publiceert. Controleer handbak/automaat, Euro 6-fase, AdBlue/SCR en DPF; geen automatische toepassing op grotere Proace of op 2024 ECU.",
+  "appIds": [
+    "rdw-bulk-14-toyota-proace-city-e-15d4d100-2020-23"
+  ]
+},
+{
+  "slug": "toyota-proace-city-15-d4d-130-2020-23",
+  "modelSlug": "toyota-proace-city",
+  "title": "Toyota Proace City 1.5 D-4D 130 (2020–2023)",
+  "intro": "De Proace City 1.5 D-4D 130 heeft oorspronkelijke 96 kW en 1499 cc. 96 kW wordt afgerond circa 131 metrische pk, terwijl de handelsbenaming 130 is. Twee leveranciers geven dezelfde Stage 1-piekpower maar een licht verschillend koppel voor de 2019–2023 motorfamilie.",
+  "checks": "Controleer Toyota PROACE CITY type E, 96 kW, 1499 cc diesel en eerste toelating 2020–2023. Verifieer motorcode en aanwezige Bosch MD1CS003/andere softwarefase, emissieklasse, transmissie en belading. Het gepubliceerde 160 pk en 350–360 Nm is een externe indicatie en hoort niet bij de 75 of 100 pk-uitvoeringen.",
+  "appIds": [
+    "rdw-bulk-14-toyota-proace-city-e-15d4d130-2020-23"
+  ]
+},
+{
+  "slug": "toyota-proace-city-15-d4d-130-2024",
+  "modelSlug": "toyota-proace-city",
+  "title": "Toyota Proace City 1.5 D-4D 130 (2024)",
+  "intro": "De 2024 Toyota Proace City facelift behoudt bij de geselecteerde RDW-identiteit 96 kW en 1499 cc, maar niet noodzakelijk dezelfde ECU-toegankelijkheid als eerdere jaren. Twee afzonderlijke leveranciers beschrijven specifiek de nieuwere 2024+ motorvariant en dezelfde gewone Stage 1-indicatie.",
+  "checks": "Controleer PROACE CITY E, 2024 eerste toelating, diesel 1499 cc, originele 96 kW en werkelijk 130 pk-motorcode. Lees de ECU en bevestig of een hardware-unlock nodig is; uitlaatgasnabehandeling, handbak of automaat en gekoppelde koellast moeten worden gecontroleerd. Niet de 2020–2023 ECU-software blind overnemen.",
+  "appIds": [
+    "rdw-bulk-14-toyota-proace-city-e-15d4d130-2024"
+  ]
+},
+{
+  "slug": "peugeot-boxer-20-bluehdi-130-2017-19",
+  "modelSlug": "peugeot-boxer",
+  "title": "Peugeot Boxer 2.0 BlueHDi 130 (2017–2019)",
+  "intro": "De Peugeot Boxer 2.0 BlueHDi 130 uit de gecontroleerde 2017–2019 RDW-groep heeft originele 96 kW en 1997 cc. Deze motor is technisch anders dan de 2179 cc 2.2 BlueHDi vanaf 2019 en de nieuwere 2184 cc generatie, ook al delen de voertuigen dezelfde Boxer-naam.",
+  "checks": "Controleer PEUGEOT BOXER type Y, 1997 cc, originele 96 kW diesel, vier cilinders en eerste toelating 2017–2019. Identificeer Delphi DCM6.2/7.1B ECU, Euro-emissiefase, versnellingsbak en beladingsprofiel. De 200 pk/450 Nm wordt extern gepubliceerd, maar is geen aanbeveling voor alle campers of vrachtwagens.",
+  "appIds": [
+    "rdw-bulk-14-peugeot-boxer-y-20bluehdi130-2017-19"
+  ]
+},
+{
+  "slug": "peugeot-boxer-22-bluehdi-120-2020-23",
+  "modelSlug": "peugeot-boxer",
+  "title": "Peugeot Boxer 2.2 BlueHDi 120 (2020–2023)",
+  "intro": "De Boxer met 2179 cc en originele 88 kW is de 120 pk-variant van de oudere 2.2 BlueHDi-familie. Twee leveranciers geven opvallend verschillende Stage 1-piekvermogens, die vooral bij campers en beladen bouwbusjes kritisch beoordeeld moeten worden in plaats van als gegarandeerde tuningwaarde te gelden.",
+  "checks": "Controleer BOXER type Y, 2179 cc diesel, 88 kW en eerste toelating 2020–2023. Verifieer Delphi DCM7.1B en motorcode, emissieklasse, koelsysteem, handbak en toegestane bedrijfslast. Het externe vermogen 185–195 pk bij 430 Nm is geen mechanische toestemming voor een zware opbouw; DPF/SCR/AdBlue blijven actief.",
+  "appIds": [
+    "rdw-bulk-14-peugeot-boxer-y-22bluehdi120-2020-23"
+  ]
+},
+{
+  "slug": "peugeot-boxer-22-bluehdi-140-2020-23",
+  "modelSlug": "peugeot-boxer",
+  "title": "Peugeot Boxer 2.2 BlueHDi 140 (2020–2023)",
+  "intro": "De Peugeot Boxer 2.2 BlueHDi met originele 103 kW en 2179 cc correspondeert met de 140 pk-uitvoering van de 2019–2023 generatie. Drie externe aanbieders publiceren een normale Stage 1-waarde binnen een bereik; deze gegevens mogen niet gebruikt worden voor een 2024 Boxer met 2184 cc.",
+  "checks": "Vergelijk PEUGEOT BOXER RDW-type Y, originele 103 kW, 2179 cc diesel en eerste toelating 2020–2023. Bevestig Delphi ECU/firmware, Euro 6-afstelling, DPF en SCR/AdBlue en belastbaarheid van de transmissie. Een externe 185–195 pk en 430 Nm blijft maatwerkonder voorbehoud, geen standaardinstelling voor campers.",
+  "appIds": [
+    "rdw-bulk-14-peugeot-boxer-y-22bluehdi140-2020-23"
+  ]
+},
+{
+  "slug": "peugeot-boxer-22-bluehdi-165-2020-23",
+  "modelSlug": "peugeot-boxer",
+  "title": "Peugeot Boxer 2.2 BlueHDi 165 (2020–2023)",
+  "intro": "De 165 pk Boxer met 121 kW en 2179 cc heeft een hogere fabrieksafstelling dan de 103 kW 140 pk-variant. Onafhankelijke bronnen tonen een relatief beperkte extra vermogenswinst en vrijwel hetzelfde genoemde eindkoppel. Dat zegt niets over toegestane permanente belasting of betrouwbaarheid van een aangepaste camper.",
+  "checks": "Controleer BOXER Y, originele 121 kW, diesel 2179 cc, vier cilinders en toelating 2020–2023. Identificeer Delphi DCM7.1B en daadwerkelijke transmissie, belading en Euro 6-SCR-software. De 185–195 pk / 430 Nm is externe indicatie; het niet-onderzochte 2024 model met 2184 cc krijgt geen automatische Stage 1-cijfers.",
+  "appIds": [
+    "rdw-bulk-14-peugeot-boxer-y-22bluehdi165-2020-23"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -608,7 +738,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==63||new Set(nlVanEngines.map(x=>x.slug)).size!==63)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==76||new Set(nlVanEngines.map(x=>x.slug)).size!==76)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];
