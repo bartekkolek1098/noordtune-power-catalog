@@ -290,24 +290,30 @@
       "model": "Proace",
       "size": "Middel",
       "indexable": true,
-      "intro": "Toyota Proace is een werkbus met verschillende diesels en volledig elektrische uitvoeringen. Ook binnen dezelfde Proace-generatie kunnen motorcode, originele kW en transmissie sterk uiteenlopen.",
-      "difference": "Oudere 1.5 en 2.0 D-4D-diesels zijn niet zonder meer gelijk aan een nieuwe Proace Worker. Dat bepaalde generaties techniek delen met Peugeot of Citroën betekent niet dat een ECU-bestand van een andere merkversie automatisch past.",
-      "usage": "Voor installatiebedrijven en monteurs zijn dagelijks koppel, onderhoud en functioneren van de emissievoorzieningen belangrijk bij een vermogenswens.",
-      "checks": "Controleer originele RDW-kW, D-4D-motorcode, software, transmissie, SCR/AdBlue en DPF. De numerieke Stage 1-publicatie wacht op een gevalideerde Toyota-RDW-variant.",
+      "intro": "De Toyota Proace is een grote, intensief gebruikte bedrijfswagen voor bouw, montage en transport. De RDW-identiteit PROACE type V omvat meerdere afzonderlijke dieselmotoren van 1499 en 1997 cc. NoordTune vergelijkt alleen de daadwerkelijke originele kW-varianten met voor Toyota gepubliceerde Stage 1-bronnen; een gelijk Peugeot-platform is geen reden om motordata of ECU-programma's te kopiëren.",
+      "difference": "De Proace 1.5 D-4D 100 (75 kW) verschilt van de 120 (88 kW); bij de 2.0 D-4D verschillen 90 kW (122), 110 kW (150), 106 kW (145) en 130 kW (177). De 106 kW 145 pk blijft voorlopig zonder Stage 1-indicatie vanwege ontbrekende exacte generatiebronnen. Modeljaar en ECU-software kunnen ook binnen hetzelfde vermogen veranderen.",
+      "usage": "Voor aannemers, installateurs en transporteurs tellen de temperatuurhuishouding, werkbelasting, automatische EAT-transmissie en betrouwbare koppelmarge zwaarder dan een maximale dynopiek. Een hogere waarde uit een tunerwebsite verhoogt het toegestane trekgewicht, laadvermogen of de wettelijke massa niet.",
+      "checks": "Controleer RDW PROACE type V, exacte 1499/1997 cc, originele kW, diesel en eerste toelating. Maak onderscheid tussen Bosch MD1 en Delphi DCM ECU-generaties, mechanische handbak of EAT-automaat en Euro 6-fase. De externe Stage 1-waarden vereisen diagnose; SCR/AdBlue, DPF en EGR blijven legaal in werking.",
       "manufacturerSource": {
         "name": "Officiële modelinformatie van Toyota",
         "url": "https://www.toyota.nl/modellen/proace"
       },
-      "verifiedIds": [],
+      "verifiedIds": [
+        "rdw-bulk-14-toyota-proace-v-20d4d122-2020-22",
+        "rdw-bulk-14-toyota-proace-v-20d4d150-2019",
+        "rdw-bulk-14-toyota-proace-v-20d4d177-2020-24",
+        "rdw-bulk-14-toyota-proace-v-15d4d100-2020-23",
+        "rdw-bulk-14-toyota-proace-v-15d4d120-2020-23"
+      ],
       "engineSlugs": [],
       "faq": [
         [
-          "Is de Proace hetzelfde als een Peugeot Expert?",
-          "Sommige generaties delen componenten, maar software, homologatie en motoridentiteit moeten zelfstandig worden gecontroleerd."
+          "Heeft elke Toyota Proace 2.0 diesel hetzelfde Stage 1-resultaat?",
+          "Nee. Zelfs bij 1997 cc bestaan fabriekswaarden van 90, 106, 110 en 130 kW en verschillende softwaregeneraties. De 106 kW-uitvoering krijgt pas een bronvermeld cijfer na aparte verificatie; de andere onderzochte versies hebben een eigen RDW-toepassing."
         ],
         [
-          "Heeft een elektrische Proace dezelfde Stage 1 als een diesel?",
-          "Nee. Elektrische en diesel-aandrijvingen gebruiken verschillende motor- en regelsystemen."
+          "Is Stage 1 geschikt voor een zwaar beladen Proace?",
+          "Niet op basis van een websitecijfer alleen. Bij een bedrijfsbus moeten daadwerkelijke ECU, transmissie, thermische belasting, onderhoud en emissie-installatie worden gecontroleerd voordat een op maat gekozen koppelinstelling en offerte verantwoord zijn."
         ]
       ]
     },
@@ -317,24 +323,29 @@
       "model": "Proace City",
       "size": "Compact",
       "indexable": true,
-      "intro": "Toyota Proace City is bedoeld voor compacte bedrijfsinzet met gereedschap en stadsritten. De dieselversies met 1.5 D-4D moeten apart worden gehouden van volledig elektrische Proace City-uitvoeringen.",
-      "difference": "Fabrieksvermogen, emissiefase en transmissie kunnen per bouwjaar verschillen. Een gedeelde platformtechniek met Peugeot Partner of Citroën Berlingo garandeert geen identieke ECU-software.",
-      "usage": "Voor veel korte ritten moet ook naar de conditie van DPF en het diesel-emissiesysteem worden gekeken voordat de auto extra koppel krijgt.",
-      "checks": "Controleer 1.5 D-4D, oorspronkelijke RDW-kW, bouwjaar, ECU, handbak/automaat en SCR. Er is nog geen exact Toyota-bronprofiel vrijgegeven.",
+      "intro": "De Toyota Proace City is een compacte bestelauto voor koeriers, elektriciens en installateurs. In de officiële RDW-gegevens komt het type E voor met 1499 cc diesel in originele 56, 75 en 96 kW-motorvarianten. Elk origineel vermogen heeft zijn eigen bronvermelde Stage 1-profiel en oudere uitvoeringen worden niet automatisch gelijkgesteld aan de facelift uit 2024.",
+      "difference": "De grotere Toyota Proace heeft RDW-type V en is geen Proace City type E. De 1.5 D-4D 75/100/130 verschillen in oorspronkelijke motorsoftware, koppel en transmissie. Een e-Proace City is elektrisch en mag nooit dieselwaarden krijgen; de 2024 130 pk heeft een aparte bronset vanwege veranderde ECU-toegankelijkheid.",
+      "usage": "Voor dagelijkse koeriersritten en technische serviceauto's zijn betrouwbare lage-toerenrespons, bedrijfszekerheid onder belading en behoud van emissiecontrole belangrijker dan een hoog marketingpercentage. Stage 1 verandert niets aan toegestaan gewicht of voorgeschreven onderhoud.",
+      "checks": "Identificeer via RDW PROACE CITY type E, 1499 cc diesel, vier cilinders, originele 56/75/96 kW en eerste toelating. Bevestig aan het voertuig de werkelijke 1.5 D-4D-motorcode, Bosch MD1CS003/MD1CS016 fase, handbak of automaat en software-unlock. DPF, SCR/AdBlue en EGR blijven volledig functioneren.",
       "manufacturerSource": {
         "name": "Officiële modelinformatie van Toyota",
         "url": "https://www.toyota.nl/modellen/proace-city"
       },
-      "verifiedIds": [],
+      "verifiedIds": [
+        "rdw-bulk-14-toyota-proace-city-e-15d4d75-2020-22",
+        "rdw-bulk-14-toyota-proace-city-e-15d4d100-2020-23",
+        "rdw-bulk-14-toyota-proace-city-e-15d4d130-2020-23",
+        "rdw-bulk-14-toyota-proace-city-e-15d4d130-2024"
+      ],
       "engineSlugs": [],
       "faq": [
         [
-          "Welke Toyota Proace City heeft een publiceerbaar Stage 1-getal?",
-          "Eerst moet de exacte versie met bronpublicaties overeenkomen. Op dit moment verwijzen we voor onzekere Toyota-uitvoeringen naar individuele beoordeling."
+          "Kan de Proace City 1.5 D-4D 75 dezelfde software krijgen als de 100 of 130 pk?",
+          "Nee. De RDW-fabrieksvermogens zijn respectievelijk 56, 75 en 96 kW. Elke variant heeft een aparte kalibratie en andere mogelijke koppelgrenzen; ook de 2024-uitvoering is afzonderlijk beoordeeld."
         ],
         [
-          "Mag ik Peugeot Partner-cijfers op mijn Toyota gebruiken?",
-          "Niet zonder ECU- en motorverificatie. Gedeelde techniek is geen garantie voor dezelfde afstelling."
+          "Gelden deze Proace City-dieselwaarden ook voor de elektrische versie?",
+          "Nee. De elektrische Proace City gebruikt een andere aandrijflijn zonder diesel-ECU en heeft hier geen numerieke Stage 1-publicatie. Voor een diesel zijn de exacte originele kW, ECU-software en legale uitlaatgasnabehandeling eerst bepalend."
         ]
       ]
     },
@@ -407,24 +418,29 @@
       "model": "Boxer",
       "size": "Groot",
       "indexable": true,
-      "intro": "Peugeot Boxer is een grote bestelbus die vaak gebruikt wordt voor bouwmaterialen en campers. De verschillende BlueHDi-generaties hebben andere motorhardware en emissieregelingen.",
-      "difference": "Een oudere 2.0 BlueHDi en latere 2.2 BlueHDi kunnen op papier vergelijkbare vermogens hebben, maar dit zijn andere motorfamilies met verschillende ECU- en versnellingsbakbeperkingen.",
-      "usage": "Bij camperombouwen of permanent zwaar beladen Boxers speelt langdurige temperatuurbelasting een grote rol en kan een maximaal tunergetal misleidend zijn.",
-      "checks": "Controleer 2.0 versus 2.2, originele kW, motorcode, koeling, transmissie en SCR/DPF. Numerieke Stage 1 wacht op exacte RDW-bronverificatie.",
+      "intro": "De Peugeot Boxer is een grote bedrijfswagen en camperbasis die dagelijks zware lading, aanhangers of een opbouw kan vervoeren. RDW type Y omvat verschillende motorfamilies: de oudere 1997 cc 2.0 BlueHDi en de latere 2179 cc 2.2 BlueHDi met afzonderlijke fabrieksvermogens. NoordTune toont uitsluitend extern onderbouwde Stage 1-indicaties met expliciete generatiescheiding.",
+      "difference": "De 2.0 BlueHDi 130 heeft in geselecteerde RDW-voertuigen 1997 cc en 96 kW; de 2.2 120/140/165 pk heeft 2179 cc en originele 88/103/121 kW. De nieuwere Boxer uit 2024 komt ook met 2184 cc en een andere ECU en emissiefase voor. Voor die generatie publiceren we voorlopig geen cijfers van de oude 2179 cc-motor.",
+      "usage": "Bij campers, bestelwagens met werkplaatsinrichting en transport met laadgewicht is piekkoppel nooit het enige criterium. Eerst moeten versnellingsbak, koppeling, EAT- of handbakvariant, thermische marge en onderhoud gecontroleerd zijn. De door leveranciers getoonde hoogste resultaten zijn geen standaardadvies voor zware belasting.",
+      "checks": "Controleer PEUGEOT BOXER type Y, exacte 1997 of 2179 cc, originele 96/88/103/121 kW diesel en eerste toelating. Verifieer de Delphi ECU- en Euro 6-generatie via uitlezen, laadvermogen, koppeling en koeling. 2024 Boxer met 2184 cc blijft zonder overgedragen Stage 1-waarden. DPF, EGR en SCR/AdBlue blijven in gebruik.",
       "manufacturerSource": {
         "name": "Officiële modelinformatie van Peugeot",
         "url": "https://www.peugeot.nl/professional/ontdek-onze-bedrijfswagens.html"
       },
-      "verifiedIds": [],
+      "verifiedIds": [
+        "rdw-bulk-14-peugeot-boxer-y-20bluehdi130-2017-19",
+        "rdw-bulk-14-peugeot-boxer-y-22bluehdi120-2020-23",
+        "rdw-bulk-14-peugeot-boxer-y-22bluehdi140-2020-23",
+        "rdw-bulk-14-peugeot-boxer-y-22bluehdi165-2020-23"
+      ],
       "engineSlugs": [],
       "faq": [
         [
-          "Is de Boxer 2.2 BlueHDi dezelfde toepassing als een 2.0?",
-          "Nee. Motorfamilie, ECU en emissiefase verschillen en vragen een eigen bronprofiel met bevestigde motorcode en originele fabrieksgegevens."
+          "Heeft een Boxer 2.2 BlueHDi 140 uit 2024 dezelfde Stage 1 als een 2022-versie?",
+          "Dat volgt niet uit de modelnaam. In de beoordeelde RDW-gegevens komt 2024 ook met 2184 cc voor, tegenover 2179 cc voor de oudere 2.2 BlueHDi. Voor de 2184 cc-generatie wordt geen oud vermogensprofiel overgenomen."
         ],
         [
-          "Kan een camper met Boxer-motor altijd meer koppel hebben?",
-          "Gewicht, belasting, koeling en de versnellingsbak moeten eerst worden onderzocht. De waarde uit een tunerpublicatie is geen maximale veilige camperbelasting."
+          "Wat betekent Stage 1 bij een Boxer camper of zwaar beladen werkbus?",
+          "De getoonde leverancierswaarden zijn slechts indicaties. Bij zware en langdurige belasting beoordelen we eerst originele motorconditie, ECU, koppeling, versnellingsbak, koeling en emissiesysteem; het toegestane voertuiggewicht verandert nooit door motortuning."
         ]
       ]
     },

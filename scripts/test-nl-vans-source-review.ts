@@ -8,9 +8,9 @@ import {nlVanEngines} from "../src/data/nl-van-engines-seo.ts";
 assert.equal(nlVanModels.length,21);
 assert.equal(nlVanPending.length,3);
 assert.equal(nlVanIndexedModels.length,21);
-assert.equal(nlVanEngines.length,63);
+assert.equal(nlVanEngines.length,76);
 assert.equal(new Set([...nlVanModels,...nlVanPending].map(x=>x.slug)).size,24);
-assert.equal(new Set(nlVanEngines.map(x=>x.slug)).size,63);
+assert.equal(new Set(nlVanEngines.map(x=>x.slug)).size,76);
 assert.equal(new Set(nlVanModels.map(x=>x.make)).size,9);
 assert.equal(manifest.indexed.length,21);
 const available=new Map(verifiedRdwApplications.map(x=>[x.id,x]));
@@ -39,7 +39,7 @@ for(const model of nlVanModels){
   assert.ok(slug&&!slug.includes("undefined"));
  }
 }
-assert.equal(apps,80,"Only exact audited van RDW applications can appear on indexed model pages");
+assert.equal(apps,93,"Only exact audited van RDW applications can appear on indexed model pages");
 for(const p of nlVanPending){
  assert.equal(p.indexable,false);
  assert.ok(!nlVanModelBySlug.has(p.slug),"Unreviewed van cannot get indexed model URL");

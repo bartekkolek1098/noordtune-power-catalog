@@ -1,0 +1,625 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-10",
+  "purpose": "Targeted underrepresented NL vans RDW technical identity validation sample, NOT population coverage",
+  "method": "First <=45 lexicographically ordered RDW public plates per make/model/type/cc/admission year; plates joined to fuel in memory then discarded; only aggregated counts retained. Bias means NO national prevalence inference. Selected before Stage 1 matching.",
+  "datasets": {
+    "vehicles": "m9d7-ebf2",
+    "fuels": "8ys7-d773"
+  },
+  "groups": [
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1997,
+      "cylinders": 4,
+      "year": 2019,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 90,
+          "observed": 33
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 130,
+          "observed": 10
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 110,
+          "observed": 2
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1997,
+      "cylinders": 4,
+      "year": 2020,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 90,
+          "observed": 36
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 130,
+          "observed": 5
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 110,
+          "observed": 4
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1997,
+      "cylinders": 4,
+      "year": 2021,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 90,
+          "observed": 36
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 130,
+          "observed": 7
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 106,
+          "observed": 1
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 110,
+          "observed": 1
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1997,
+      "cylinders": 4,
+      "year": 2022,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 106,
+          "observed": 24
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 90,
+          "observed": 18
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 130,
+          "observed": 3
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1997,
+      "cylinders": 4,
+      "year": 2023,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 106,
+          "observed": 38
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 130,
+          "observed": 7
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1997,
+      "cylinders": 4,
+      "year": 2024,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 106,
+          "observed": 43
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 130,
+          "observed": 2
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1499,
+      "cylinders": 4,
+      "year": 2020,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 75,
+          "observed": 41
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 4
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1499,
+      "cylinders": 4,
+      "year": 2021,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 75,
+          "observed": 27
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 18
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1499,
+      "cylinders": 4,
+      "year": 2022,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 75,
+          "observed": 24
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 21
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "type": "V",
+      "cc": 1499,
+      "cylinders": 4,
+      "year": 2023,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 75,
+          "observed": 24
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 21
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE CITY",
+      "type": "E",
+      "cc": 1499,
+      "cylinders": 4,
+      "year": 2020,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 75,
+          "observed": 27
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 96,
+          "observed": 17
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 56,
+          "observed": 1
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE CITY",
+      "type": "E",
+      "cc": 1499,
+      "cylinders": 4,
+      "year": 2021,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 75,
+          "observed": 20
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 56,
+          "observed": 13
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 96,
+          "observed": 12
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE CITY",
+      "type": "E",
+      "cc": 1499,
+      "cylinders": 4,
+      "year": 2022,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 75,
+          "observed": 37
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 96,
+          "observed": 6
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 56,
+          "observed": 2
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE CITY",
+      "type": "E",
+      "cc": 1499,
+      "cylinders": 4,
+      "year": 2023,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 75,
+          "observed": 34
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 96,
+          "observed": 11
+        }
+      ]
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE CITY",
+      "type": "E",
+      "cc": 1499,
+      "cylinders": 4,
+      "year": 2024,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 75,
+          "observed": 32
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 96,
+          "observed": 13
+        }
+      ]
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "BOXER",
+      "type": "Y",
+      "cc": 2179,
+      "cylinders": 4,
+      "year": 2020,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 103,
+          "observed": 23
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 121,
+          "observed": 18
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 4
+        }
+      ]
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "BOXER",
+      "type": "Y",
+      "cc": 2179,
+      "cylinders": 4,
+      "year": 2021,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 103,
+          "observed": 32
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 121,
+          "observed": 7
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 6
+        }
+      ]
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "BOXER",
+      "type": "Y",
+      "cc": 2179,
+      "cylinders": 4,
+      "year": 2022,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 103,
+          "observed": 36
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 121,
+          "observed": 7
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 2
+        }
+      ]
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "BOXER",
+      "type": "Y",
+      "cc": 2179,
+      "cylinders": 4,
+      "year": 2023,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 103,
+          "observed": 31
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 121,
+          "observed": 11
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 3
+        }
+      ]
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "BOXER",
+      "type": "Y",
+      "cc": 1997,
+      "cylinders": 4,
+      "year": 2017,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 96,
+          "observed": 36
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 81,
+          "observed": 5
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 120,
+          "observed": 4
+        }
+      ]
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "BOXER",
+      "type": "Y",
+      "cc": 1997,
+      "cylinders": 4,
+      "year": 2018,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 96,
+          "observed": 30
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 120,
+          "observed": 8
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 81,
+          "observed": 7
+        }
+      ]
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "BOXER",
+      "type": "Y",
+      "cc": 1997,
+      "cylinders": 4,
+      "year": 2019,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 96,
+          "observed": 31
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 120,
+          "observed": 11
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 81,
+          "observed": 3
+        }
+      ]
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "BOXER",
+      "type": "Y",
+      "cc": 2184,
+      "cylinders": 4,
+      "year": 2024,
+      "checkedVehicleRows": 45,
+      "verifiedSingleFuelRows": 45,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 103,
+          "observed": 20
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 16
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 132,
+          "observed": 9
+        }
+      ]
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "BOXER",
+      "type": "Y",
+      "cc": 2184,
+      "cylinders": 4,
+      "year": 2025,
+      "checkedVehicleRows": 19,
+      "verifiedSingleFuelRows": 19,
+      "outputs": [
+        {
+          "fuel": "Diesel",
+          "kw": 103,
+          "observed": 13
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 132,
+          "observed": 4
+        },
+        {
+          "fuel": "Diesel",
+          "kw": 88,
+          "observed": 2
+        }
+      ]
+    }
+  ]
+}

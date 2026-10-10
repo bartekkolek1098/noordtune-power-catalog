@@ -1,0 +1,33 @@
+{
+  "method": "First <=45 lexicographically ordered RDW public plates per make/model/type/cc/admission year; plates joined to fuel in memory then discarded; only aggregated counts retained. Bias means NO national prevalence inference. Selected before Stage 1 matching.",
+  "nonRepresentative": true,
+  "referenceDate": "2026-10-10",
+  "frozenObservations": 1054,
+  "groups": 24,
+  "priorSourceLinked": 0,
+  "currentSourceLinked": 766,
+  "netNewSourceLinked": 766,
+  "reviewedApplications": 13,
+  "negativeChecks": 195,
+  "linkedRowsByApplication": {
+    "rdw-bulk-14-peugeot-boxer-y-20bluehdi130-2017-19": 97,
+    "rdw-bulk-14-peugeot-boxer-y-22bluehdi120-2020-23": 15,
+    "rdw-bulk-14-peugeot-boxer-y-22bluehdi140-2020-23": 122,
+    "rdw-bulk-14-peugeot-boxer-y-22bluehdi165-2020-23": 43,
+    "rdw-bulk-14-toyota-proace-city-e-15d4d100-2020-23": 118,
+    "rdw-bulk-14-toyota-proace-city-e-15d4d130-2020-23": 46,
+    "rdw-bulk-14-toyota-proace-city-e-15d4d130-2024": 13,
+    "rdw-bulk-14-toyota-proace-city-e-15d4d75-2020-22": 16,
+    "rdw-bulk-14-toyota-proace-v-15d4d100-2020-23": 116,
+    "rdw-bulk-14-toyota-proace-v-15d4d120-2020-23": 64,
+    "rdw-bulk-14-toyota-proace-v-20d4d122-2020-22": 90,
+    "rdw-bulk-14-toyota-proace-v-20d4d150-2019": 2,
+    "rdw-bulk-14-toyota-proace-v-20d4d177-2020-24": 24
+  },
+  "olderFrozenRDWBenchmark": "1,854/3,000 (unchanged; different denominator)",
+  "unknown": [
+    "Proace 2.0 145 106kW 2022-2024",
+    "Boxer 2184cc 2024+"
+  ],
+  "plateNumbersStored": false
+}
