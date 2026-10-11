@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import {notFound} from "next/navigation";
 import {ArrowLeft,ArrowUpRight,ChevronRight,Info,Search,ShieldCheck} from "lucide-react";
+import {CatalogEnquiryLink} from "@/components/catalog-enquiry-link";
 import {CatalogHeader} from "@/components/catalog-header";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
@@ -138,6 +139,7 @@ export default async function NlVanStage1Engine({params}:Props){
      <div className="ux-van-model-handoff-links">
       <a href={sitePath("/nl#rdw-check")} className="ux-nl-engine-primary-link"><Search className="h-4 w-4" aria-hidden="true"/>Kenteken controleren</a>
       <a href={whatsappHref({locale:"nl",vehicleLabel:e.title})} rel="noreferrer" target="_blank" className="ux-nl-engine-secondary-link">Individuele beoordeling<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
+      <CatalogEnquiryLink locale="nl" business reference={{kind:"engine",id:e.slug}}/>
       <a href={chiptuningHref("nl")} className="ux-van-model-service-link">Chiptuning als dienst<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
      </div>
     </section>
