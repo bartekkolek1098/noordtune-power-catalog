@@ -1,3 +1,4 @@
+import {reviewedVanSelectorItems} from './reviewed-van-selector.ts';
 import {allServiceOptionIds} from "./catalog-shared.ts";
 import type {
   EngineVariant,
@@ -1561,6 +1562,7 @@ export function getBrands() {
   return Array.from(
     new Set([
       ...taxonomyBrands(),
+      ...reviewedVanSelectorItems().map(x=>x.brand),
       ...engineCatalog.map(vehicle => vehicle.brand),
       ...tuningReferenceProfiles.map(profile => profile.brand),
       ...vehicleDatabase.map(vehicle => vehicle.brand)
@@ -1577,6 +1579,7 @@ export function getModelsForBrand(brand: string) {
   return Array.from(
     new Set([
       ...taxonomyModels,
+      ...reviewedVanSelectorItems({brand}).map(x=>x.model),
       ...legacyFallback,
       ...engineCatalog.filter(vehicle => vehicle.brand === brand).map(vehicle => vehicle.model),
       ...tuningReferenceProfiles.filter((profile) => profile.brand === brand).map((profile) => profile.model)
@@ -1595,6 +1598,7 @@ export function getYearsForModel(brand: string, model: string) {
   return Array.from(
     new Set([
       ...taxonomyYears,
+      ...reviewedVanSelectorItems({brand,model}).flatMap(x=>{const [a,b]=x.yearRange.split('–').map(Number);return Array.from({length:b-a+1},(_,i)=>a+i);}),
       ...legacyFallback,
       ...engineCatalog.filter(vehicle => vehicle.brand === brand && vehicle.model === model).flatMap(vehicle => vehicle.years),
       ...tuningReferenceProfiles.filter((profile) => profile.brand === brand && profile.model === model).flatMap(referenceProfileYears)
@@ -1666,6 +1670,7 @@ export function searchVehicleSelectorItems(query: string, limit = 4) {
   });
   const taxonomyMatches = searchTaxonomySelectorItems(query, limit);
   const selectorItems = [
+    ...reviewedVanSelectorItems({},query),
     ...referenceMatches.map(toReferenceSelectorItem),
     ...publicMatches.map(vehicle => toVehicleSelectorItem(vehicle)),
     ...taxonomyMatches
@@ -1706,6 +1711,7 @@ export function getVehicleSelectorItems({
 
   return uniqueVehicleSelectorItems(
     [
+      ...reviewedVanSelectorItems({brand,model,year}),
       ...tuningReferenceProfiles
         .filter(profile => profile.brand === brand && profile.model === model && referenceProfileYears(profile).includes(year))
         .map(toReferenceSelectorItem),

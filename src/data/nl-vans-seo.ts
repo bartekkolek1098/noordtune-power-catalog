@@ -1,8 +1,8 @@
 /**
  * Hand-reviewed NL company-van index.
  *
- * - 22 manually source-supported model comparisons are indexable.
- * - Three additional vans remain discoverable in the directory/plate search,
+ * - 25 model comparisons include reviewed engine scopes; this does not mean all engines are covered.
+ * - Additional unknown engines remain discoverable in the directory/plate search,
  *   not as invented Stage 1 SEO pages.
  * - Numeric engine values may only come from strict verified RDW applications.
  */
@@ -50,7 +50,7 @@ export const nlVanModels:readonly VanModel[]=manifest.indexed.map(m=>{
  return {...m,applications};
 });
 export const nlVanPending:readonly PendingVan[]=manifest.pending;
-if(nlVanModels.length!==22||nlVanPending.length!==3||new Set([...nlVanModels,...nlVanPending].map(x=>x.slug)).size!==25)throw Error("Van publication manifest changed, manual approval required");
+if(nlVanModels.length!==25||nlVanPending.length!==0||new Set([...nlVanModels,...nlVanPending].map(x=>x.slug)).size!==25)throw Error("Van publication manifest changed, manual approval required");
 export const nlVanModelBySlug=new Map(nlVanModels.map(x=>[x.slug,x]));
 export const nlVanIndexedModels=nlVanModels.filter(x=>x.indexable);
 export const nlVanBrandNames=["Ford","Volkswagen","Mercedes-Benz","Toyota","Peugeot","Renault","Opel","Citroën","Fiat","Iveco"] as const;

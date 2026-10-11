@@ -708,29 +708,94 @@
           "Nee. Het zijn indicaties uit Opel-specifieke leveranciersbronnen, geen NoordTune-meting of gegarandeerde veilige koppelgrens. Onderhoud, belading, motorconditie en transmissie bepalen welke individuele afstelling mogelijk is."
         ]
       ]
-    }
-  ],
-  "pending": [
+    },
+    {
+      "slug": "citroen-jumpy",
+      "make": "Citroen",
+      "model": "Jumpy",
+      "size": "Middel",
+      "indexable": true,
+      "intro": "De Citroën Jumpy is een middelgrote werkbus voor installateurs, aannemers en koeriers. Voor de beoordeelde derde generatie zijn eigen Citroën-bronnen beschikbaar voor 1.5 en 2.0 BlueHDi. Per motor tonen we het oorspronkelijke RDW-vermogen en afzonderlijke publicaties, niet simpelweg de cijfers van een Peugeot Expert of Toyota Proace.",
+      "difference": "RDW-type V omvat hier 1499 cc met 75 of 88 kW en 1997 cc met 106 of 130 kW. Een oudere Jumpy met 1560 cc, een elektrische ë-Jumpy en latere faceliftsoftware zijn niet dezelfde toepassing. Een bekende modelnaam alleen bewijst niet dat ECU, motorafstelling en transmissie overeenkomen.",
+      "usage": "Bij dagelijks werken met gereedschap, zware belading en aanhangers moet vooral het koppel binnen een passende voertuigspecifieke grens blijven. Temperatuur, koppeling, automaat en onderhoud zijn belangrijker dan het hoogste getal in een tunerpublicatie. Wettelijke voertuiggewichten veranderen niet.",
+      "checks": "Controleer echte motorinhoud en RDW-kW, toelatingsjaar, type V en diesel. Identificeer daarna Bosch MD1- of Delphi DCM-ECU, Euro 6-fase, softwaretoegang, handbak of automaat en belastbaarheid. DPF, EGR en SCR/AdBlue blijven functioneel. De nieuwe gegevens zijn indicaties; niet alle Jumpy-motoren zijn daarmee beoordeeld.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-16-jumpy-15-bluehdi100-jumpy-v",
+        "rdw-bulk-16-jumpy-15-bluehdi120-jumpy-v",
+        "rdw-bulk-16-jumpy-20-bluehdi145-jumpy-v",
+        "rdw-bulk-16-jumpy-20-bluehdi177-jumpy-v"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Gelden Proace- of Expert-cijfers automatisch voor mijn Citroën Jumpy?",
+          "Nee. Gedeelde platformtechniek bewijst geen gelijke software, ECU of versnellingsbak. Deze pagina gebruikt specifieke Citroën-publicaties en bewaart de verschillende oorspronkelijke kW- en cc-varianten afzonderlijk."
+        ],
+        [
+          "Waarom ontbreken hier oudere en elektrische Jumpy-uitvoeringen?",
+          "Voor niet-onderzochte generaties of aandrijflijnen wordt geen dieselresultaat gekopieerd. De beschikbare voertuiggegevens blijven zichtbaar; bij een ontbrekend getal is een gerichte controle nodig en wordt niet beweerd dat tuning onmogelijk is."
+        ]
+      ]
+    },
     {
       "slug": "opel-movano",
       "make": "Opel",
       "model": "Movano",
       "size": "Groot",
-      "indexable": false
-    },
-    {
-      "slug": "citroen-jumpy",
-      "make": "Citroën",
-      "model": "Jumpy",
-      "size": "Middel",
-      "indexable": false
+      "indexable": true,
+      "intro": "De Opel Movano wordt veel gebruikt als bestelwagen, werkplaatsbus en camperbasis. Voor de beoordeelde Movano C 2.2 diesel bestaan onafhankelijke Opel-specifieke publicaties voor de versies 120, 140 en 165 pk. Die worden niet verward met de oudere 2.3 of met de nieuwe 2184 cc-motor die dezelfde Movano-naam draagt.",
+      "difference": "De drie beoordeelde motoren hebben RDW-type Y, 2179 cc en originele 88, 103 of 121 kW in 2021–2023. Oude types MR/MS met 2299 cc en latere 2184 cc-types zijn afzonderlijke generaties. Bij de 120 pk verschillen leveranciers ook over fabriekskoppel: 300 tegenover 310 Nm.",
+      "usage": "Voor een zwaar beladen bedrijfswagen of camper zegt een maximale vermogenswinst weinig zonder controle van koeling, koppeling en transmissie. De externe 195 pk en 430 Nm zijn geen universele afstelling of veilige continue belasting; de concrete opbouw en het gebruik horen bij de beoordeling.",
+      "checks": "Vergelijk MOVANO Y, 2179 cc diesel, originele 88/103/121 kW en de geselecteerde jaren. Bevestig werkelijke motor- en ECU-code, Delphi DCM7.1B of afwijkende software, emissieklasse en handbak/automaat. Houd DPF/EGR/SCR/AdBlue in werking. Oudere 2.3 en nieuwe 2184 cc blijven afzonderlijk te onderzoeken.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-16-movano-c-22-120-movano-y",
+        "rdw-bulk-16-movano-c-22-140-movano-y",
+        "rdw-bulk-16-movano-c-22-165-movano-y"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Kan mijn Movano met 2184 cc de gegevens van een 2179 cc-versie gebruiken?",
+          "Nee. Ondanks dezelfde modelnaam en soms hetzelfde geregistreerde vermogen verschillen motor- en softwaregeneraties. De hier beoordeelde toepassingen zijn beperkt tot de genoemde 2179 cc diesel en oorspronkelijke kW."
+        ],
+        [
+          "Zijn de Stage 1-waarden geschikt voor iedere Movano camper of werkbus?",
+          "Nee. De cijfers komen van externe publicaties, niet van een meting aan jouw voertuig. Bij langdurige hoge belasting moeten motorgezondheid, koeling, versnellingsbak en koppelbeheer individueel worden gecontroleerd."
+        ]
+      ]
     },
     {
       "slug": "iveco-daily",
       "make": "Iveco",
       "model": "Daily",
       "size": "Groot",
-      "indexable": false
+      "indexable": true,
+      "intro": "De Iveco Daily staat bij RDW vaak als 35S14 of 35C14 geregistreerd, niet letterlijk als Daily. Voor de beoordeelde 2.3 diesel met 100 kW zijn daarom expliciete naam- en typecombinaties vastgelegd. Oudere Euro 6 en latere Euro 6Df gebruiken afzonderlijke bronsets en worden niet alleen op hun gelijke vermogen gekoppeld.",
+      "difference": "De geselecteerde 2287 cc en 100 kW verschillen van de 114,6/115 kW-versies, de 2998 cc 3.0, CNG en elektrische eDaily. Zelfs binnen 35S14 of 35C14 worden alleen de genoemde RDW-types gebruikt. Carrosseriecodes zijn geen automatische decoder voor de echte ECU of Hi-Matic-transmissie.",
+      "usage": "Daily-chassis krijgen uiteenlopende opbouwen en bedrijfslasten. Voor transport, werkplaatsinrichting of campergebruik moet een verantwoord koppel afgestemd worden op de echte handbak of automaat en thermische reserve. Extra vermogen wijzigt het toegestane gewicht, trekgewicht of remvermogen niet.",
+      "checks": "Bevestig 2287 cc diesel en originele 100 kW, exacte 35S14/35C14-handelsnaam, RDW-type en de afzonderlijke jaarreeks. Identificeer de F1A-motor, Euro-fase, Bosch ECU, handbak of Hi-Matic en emissiesysteem. Onbekende types, 3.0, CNG en elektrische uitvoeringen krijgen geen overgenomen 2.3-dieselcijfers.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-16-daily-23-136-euro6-35s14-is35sc2aa",
+        "rdw-bulk-16-daily-23-136-euro6-35s14-is35si2aa",
+        "rdw-bulk-16-daily-23-136-euro6-35c14-is35ci2aa",
+        "rdw-bulk-16-daily-23-136-euro6df-35s14-is35sc2aa",
+        "rdw-bulk-16-daily-23-136-euro6df-35c14-is35ci2aa"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Waarom wordt een Iveco Daily bij RDW als 35S14 of 35C14 weergegeven?",
+          "Dat zijn handelsbenamingen die in de onderzochte RDW-registraties voorkomen. Het catalogusmodel Daily bundelt alleen expliciet onderzochte combinaties; de letters of cijfers worden niet gebruikt om onbekende ECU of motorsoftware te raden."
+        ],
+        [
+          "Heeft iedere 2.3 Daily met 100 kW dezelfde Stage 1-indicatie?",
+          "Nee. De oudere Euro 6-bronnen verschillen onderling en worden niet overgenomen voor de latere Euro 6Df. Ook de gemonteerde ECU, emissiefase, transmissie en opbouw moeten aan het individuele voertuig worden vastgesteld."
+        ]
+      ]
     }
-  ]
+  ],
+  "pending": []
 }
