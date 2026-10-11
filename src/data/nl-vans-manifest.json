@@ -744,21 +744,24 @@
       "model": "Movano",
       "size": "Groot",
       "indexable": true,
-      "intro": "De Opel Movano wordt veel gebruikt als bestelwagen, werkplaatsbus en camperbasis. Voor de beoordeelde Movano C 2.2 diesel bestaan onafhankelijke Opel-specifieke publicaties voor de versies 120, 140 en 165 pk. Die worden niet verward met de oudere 2.3 of met de nieuwe 2184 cc-motor die dezelfde Movano-naam draagt.",
-      "difference": "De drie beoordeelde motoren hebben RDW-type Y, 2179 cc en originele 88, 103 of 121 kW in 2021–2023. Oude types MR/MS met 2299 cc en latere 2184 cc-types zijn afzonderlijke generaties. Bij de 120 pk verschillen leveranciers ook over fabriekskoppel: 300 tegenover 310 Nm.",
+      "intro": "De Opel Movano omvat zowel de oudere 2.3 CDTI van de B-generatie als de 2.2 diesel van de C-generatie. Bedrijven met verschillende werkbussen kunnen daarom niet op de modelnaam alleen afgaan. Voor de onderzochte 2.3 150/180 en 2.2 120/140/165 zijn afzonderlijke Opel-bronsets en RDW-identiteiten vastgelegd.",
+      "difference": "Movano B met 2299 cc en type MR of MS is niet dezelfde generatie als Movano C type Y met 2179 cc. De nieuwere 2184 cc vormt opnieuw een eigen grens. Origineel 110 of 132 kW bij de 2.3, en 88/103/121 kW bij de 2.2, worden strikt gescheiden; 100 kW 135/136 en onbekende types krijgen geen geleende cijfers.",
       "usage": "Voor een zwaar beladen bedrijfswagen of camper zegt een maximale vermogenswinst weinig zonder controle van koeling, koppeling en transmissie. De externe 195 pk en 430 Nm zijn geen universele afstelling of veilige continue belasting; de concrete opbouw en het gebruik horen bij de beoordeling.",
-      "checks": "Vergelijk MOVANO Y, 2179 cc diesel, originele 88/103/121 kW en de geselecteerde jaren. Bevestig werkelijke motor- en ECU-code, Delphi DCM7.1B of afwijkende software, emissieklasse en handbak/automaat. Houd DPF/EGR/SCR/AdBlue in werking. Oudere 2.3 en nieuwe 2184 cc blijven afzonderlijk te onderzoeken.",
+      "checks": "Controleer het echte RDW-type, originele kW, brandstof, cc en toelatingsjaar. Lees ECU en motorcode uit en controleer M9T of andere familie, Euro-fase, transmissie, koppeling, koeling en bedrijfsbelasting. De 480 Nm uit 2.3-tunerpublicaties is geen algemene veilige koppelgrens en verandert geen wettelijk laadgewicht. DPF/EGR/SCR/AdBlue blijven functioneren.",
       "manufacturerSource": null,
       "verifiedIds": [
         "rdw-bulk-16-movano-c-22-120-movano-y",
         "rdw-bulk-16-movano-c-22-140-movano-y",
-        "rdw-bulk-16-movano-c-22-165-movano-y"
+        "rdw-bulk-16-movano-c-22-165-movano-y",
+        "rdw-bulk-16-movano-b-23-cdti150-movano-mr",
+        "rdw-bulk-16-movano-b-23-cdti150-movano-ms",
+        "rdw-bulk-16-movano-b-23-cdti180-movano-mr"
       ],
       "engineSlugs": [],
       "faq": [
         [
           "Kan mijn Movano met 2184 cc de gegevens van een 2179 cc-versie gebruiken?",
-          "Nee. Ondanks dezelfde modelnaam en soms hetzelfde geregistreerde vermogen verschillen motor- en softwaregeneraties. De hier beoordeelde toepassingen zijn beperkt tot de genoemde 2179 cc diesel en oorspronkelijke kW."
+          "Nee. De beoordeelde 2.3 CDTI met 2299 cc en de oudere 2.2 met 2179 cc gebruiken afzonderlijke bronnen en RDW-types. De 2184 cc-generatie wordt niet op basis van dezelfde modelnaam of vergelijkbare kW aan een van die kalibraties gekoppeld."
         ],
         [
           "Zijn de Stage 1-waarden geschikt voor iedere Movano camper of werkbus?",
@@ -772,17 +775,29 @@
       "model": "Daily",
       "size": "Groot",
       "indexable": true,
-      "intro": "De Iveco Daily staat bij RDW vaak als 35S14 of 35C14 geregistreerd, niet letterlijk als Daily. Voor de beoordeelde 2.3 diesel met 100 kW zijn daarom expliciete naam- en typecombinaties vastgelegd. Oudere Euro 6 en latere Euro 6Df gebruiken afzonderlijke bronsets en worden niet alleen op hun gelijke vermogen gekoppeld.",
-      "difference": "De geselecteerde 2287 cc en 100 kW verschillen van de 114,6/115 kW-versies, de 2998 cc 3.0, CNG en elektrische eDaily. Zelfs binnen 35S14 of 35C14 worden alleen de genoemde RDW-types gebruikt. Carrosseriecodes zijn geen automatische decoder voor de echte ECU of Hi-Matic-transmissie.",
+      "intro": "De Iveco Daily wordt door bouwbedrijven, transporteurs en campergebruikers ingezet met uiteenlopende 2.3- en 3.0-diesels. RDW gebruikt vaak namen als 35S14, 35C16 of 35S18 in plaats van Daily. Daarom zijn alleen afzonderlijk onderzochte combinaties van naam, type, cilinderinhoud, vermogen en jaar gekoppeld aan bronvermelde Stage 1-indicaties.",
+      "difference": "Een 35C16 kan 2287 cc met 114,6 of 115 kW hebben, maar ook 2998 cc met 118 kW. De 2.3 Euro 6 en latere Euro 6Df verschillen bovendien in bronvermeld fabriekskoppel. De 3.0 met 132 kW uit 2017–2019 mag niet automatisch dezelfde cijfers krijgen als de latere 129 kW, onbekende chassiscode, CNG of elektrische Daily.",
       "usage": "Daily-chassis krijgen uiteenlopende opbouwen en bedrijfslasten. Voor transport, werkplaatsinrichting of campergebruik moet een verantwoord koppel afgestemd worden op de echte handbak of automaat en thermische reserve. Extra vermogen wijzigt het toegestane gewicht, trekgewicht of remvermogen niet.",
-      "checks": "Bevestig 2287 cc diesel en originele 100 kW, exacte 35S14/35C14-handelsnaam, RDW-type en de afzonderlijke jaarreeks. Identificeer de F1A-motor, Euro-fase, Bosch ECU, handbak of Hi-Matic en emissiesysteem. Onbekende types, 3.0, CNG en elektrische uitvoeringen krijgen geen overgenomen 2.3-dieselcijfers.",
+      "checks": "Vergelijk exacte RDW-handelsnaam en type, 2287 of 2998 cc, origineel kW, brandstof en toelatingsjaar. Verifieer vervolgens motorcode, echte ECU en emissiefase, softwaretoegang, handbak of Hi-Matic, koelreserve en lading. Een 35C- of 35S-code bewijst geen geschikte kalibratie; SCR/AdBlue, DPF en EGR blijven legaal functioneren.",
       "manufacturerSource": null,
       "verifiedIds": [
         "rdw-bulk-16-daily-23-136-euro6-35s14-is35sc2aa",
         "rdw-bulk-16-daily-23-136-euro6-35s14-is35si2aa",
         "rdw-bulk-16-daily-23-136-euro6-35c14-is35ci2aa",
         "rdw-bulk-16-daily-23-136-euro6df-35s14-is35sc2aa",
-        "rdw-bulk-16-daily-23-136-euro6df-35c14-is35ci2aa"
+        "rdw-bulk-16-daily-23-136-euro6df-35c14-is35ci2aa",
+        "rdw-bulk-16-daily-23-156-euro6-35s16-is35sc2aa",
+        "rdw-bulk-16-daily-23-156-euro6-35s16-is35si2aa",
+        "rdw-bulk-16-daily-23-156-euro6-35c16-is35ci2aa",
+        "rdw-bulk-16-daily-23-156-euro6-35c16-is35cc2aa",
+        "rdw-bulk-16-daily-23-156-euro6df-35s16-is35sc2aa",
+        "rdw-bulk-16-daily-23-156-euro6df-35s16-is35si2aa",
+        "rdw-bulk-16-daily-23-156-euro6df-35c16-is35ci2aa",
+        "rdw-bulk-16-daily-23-156-euro6df-35c16-is35cc2aa",
+        "rdw-bulk-16-daily-30-180-euro6-35s18-is35sc2aa",
+        "rdw-bulk-16-daily-30-180-euro6-35c18-is35ci2aa",
+        "rdw-bulk-16-daily-30-180-euro6-35c18-is35cc2aa",
+        "rdw-bulk-16-daily-30-160-euro6df-35c16-is35ci2aa"
       ],
       "engineSlugs": [],
       "faq": [

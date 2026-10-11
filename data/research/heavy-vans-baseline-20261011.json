@@ -1,0 +1,704 @@
+{
+  "baselineCommit": "d3f69addf513f7cf3cd0e2e580af34f127de08ea",
+  "samplePath": "data/research/nl-commercial-vans-20261011.json",
+  "baseline": [
+    {
+      "linked": true,
+      "profileId": "sourced-citroen-jumpy-474a2afbab05"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-citroen-jumpy-66bf5955fa20"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-52c1adc1a70d"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-citroen-jumpy-fb2cec65613a"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-citroen-jumpy-474a2afbab05"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-20-bluehdi177-jumpy-v"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-citroen-jumpy-66bf5955fa20"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-citroen-jumpy-db30d074ee8a"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-citroen-jumpy-fb2cec65613a"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-20-bluehdi177-jumpy-v"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-e5509372032a"
+    },
+    {
+      "linked": false,
+      "profileId": "citroen-jumpy-2-0-hdi-2021"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-20-bluehdi145-jumpy-v"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-15-bluehdi100-jumpy-v"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-20-bluehdi177-jumpy-v"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-e5509372032a"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-15-bluehdi120-jumpy-v"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-e5509372032a"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-20-bluehdi145-jumpy-v"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-20-bluehdi177-jumpy-v"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-15-bluehdi100-jumpy-v"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-4ee4b58a4439"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-jumpy-15-bluehdi120-jumpy-v"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-a02209727257"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-2946e26cb6e7"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-4ee4b58a4439"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-52c1adc1a70d"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ee55d2e1a4bb"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-d7c99b5c0213"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-9f031d9792e6"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-c42e154f2d2a"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-b775a507c311"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-b775a507c311"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-869a93f7d40c"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-869a93f7d40c"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-b775a507c311"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-b775a507c311"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-869a93f7d40c"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-5da9f079b467"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-d7c99b5c0213"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-869a93f7d40c"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-c42e154f2d2a"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ed365a4f5ded"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ed365a4f5ded"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ee55d2e1a4bb"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-5da9f079b467"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-5da9f079b467"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ee55d2e1a4bb"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-545fc6d0ed38"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-5da9f079b467"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-f3dc87a36e61"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-545fc6d0ed38"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ed365a4f5ded"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ee55d2e1a4bb"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-5b8fd91f2647"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-movano-c-22-140-movano-y"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-movano-c-22-165-movano-y"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-movano-c-22-120-movano-y"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ed365a4f5ded"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ee55d2e1a4bb"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ed365a4f5ded"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-854bef096c6a"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-movano-c-22-165-movano-y"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-movano-c-22-140-movano-y"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-fd6af554525f"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-5a6cb5e57f32"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-fd6af554525f"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-5a6cb5e57f32"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-c042228b37ad"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-opel-movano-c4e5c897447d"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-iveco-daily-94b3ea12f08e"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-iveco-daily-94b3ea12f08e"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-4b5ee313034d"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6-35s14-is35si2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-c0de29160cb2"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7811982cd14f"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-479c73b86ed6"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-479c73b86ed6"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6-35s14-is35sc2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-361eb081b19b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7811982cd14f"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-91cc8db9638d"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-91cc8db9638d"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6-35c14-is35ci2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-c0de29160cb2"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-28cb7db31603"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-3e3ea8fcd818"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-f5988f4dc09f"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-da6d77b29b37"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7bad98e68ee5"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6-35s14-is35si2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-c0de29160cb2"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6-35s14-is35sc2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7811982cd14f"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-91cc8db9638d"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-15bd72f8aa0f"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-4b5ee313034d"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-91cc8db9638d"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7811982cd14f"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6-35c14-is35ci2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-fc8ed8b7ee43"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-361eb081b19b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-479c73b86ed6"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-15bd72f8aa0f"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-10f8f1458d68"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6df-35s14-is35sc2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7811982cd14f"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-8e7a2ba1c766"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7811982cd14f"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-8e7a2ba1c766"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7b635eec39ff"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-10f8f1458d68"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-f0ce880ca441"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6df-35c14-is35ci2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-f0ce880ca441"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-4fae9b9135eb"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-4aa8effbeb9b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-0cc43f564edd"
+    },
+    {
+      "linked": true,
+      "profileId": "sourced-iveco-daily-daef20f61511"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6df-35s14-is35sc2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-10f8f1458d68"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-8e7a2ba1c766"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-b3b9c2f9f2c3"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-b3b9c2f9f2c3"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-02a8635227cf"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-fc8ed8b7ee43"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-15bd72f8aa0f"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-10f8f1458d68"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7cc9b44da54b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-0cc43f564edd"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-8e7a2ba1c766"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-b3b9c2f9f2c3"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7cc9b44da54b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-8e7a2ba1c766"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6df-35c14-is35ci2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-40c887b8462b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-ad8d16be9f74"
+    },
+    {
+      "linked": true,
+      "profileId": "rdw-bulk-16-daily-23-136-euro6df-35s14-is35sc2aa"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-10f8f1458d68"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-f0ce880ca441"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-b3b9c2f9f2c3"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-10f8f1458d68"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-b3b9c2f9f2c3"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7cc9b44da54b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7cc9b44da54b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7811982cd14f"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-75c0342a4b03"
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": null
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7cc9b44da54b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-b3b9c2f9f2c3"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-8e7a2ba1c766"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-5bc137ef64d3"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-fc8ed8b7ee43"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7cc9b44da54b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-4fae9b9135eb"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-56de0438c353"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-fc8ed8b7ee43"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-40c887b8462b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-56de0438c353"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-7cc9b44da54b"
+    },
+    {
+      "linked": false,
+      "profileId": "rdw-generic-905b8d5729b0"
+    }
+  ],
+  "rows": 810,
+  "linked": 426
+}

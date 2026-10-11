@@ -905,6 +905,75 @@ const specs:readonly ExtraVanEngineSpec[]=[
     "rdw-bulk-16-daily-23-136-euro6df-35s14-is35sc2aa",
     "rdw-bulk-16-daily-23-136-euro6df-35c14-is35ci2aa"
   ]
+},
+{
+  "slug": "iveco-daily-23-156-euro6-2017-19",
+  "modelSlug": "iveco-daily",
+  "title": "Iveco Daily 2.3 diesel 156 (2017–2019)",
+  "intro": "De Daily 2.3 met originele 114,6 kW hoort bij de 156 pk-uitvoering uit de oudere Euro 6-generatie. Deze versie komt als 35S16 en 35C16 in meerdere RDW-types voor. De cijfers voor een gelijk genoemde latere 115 kW-motor zijn niet zomaar uitwisselbaar: onder meer het bronvermelde fabriekskoppel verschilt.",
+  "checks": "Controleer de expliciete RDW-naam/type-combinatie 35S16 of 35C16, 2287 cc diesel, originele 114,6 kW en toelating 2017–2019. Beide bronnen noemen 185 pk, maar het koppel verschilt tussen 410 en 420 Nm. Bevestig werkelijke F1A-motor, Bosch EDC17-generatie, transmissie en onderhoud; cijfers voor Euro 6Df worden niet overgenomen.",
+  "appIds": [
+    "rdw-bulk-16-daily-23-156-euro6-35s16-is35sc2aa",
+    "rdw-bulk-16-daily-23-156-euro6-35s16-is35si2aa",
+    "rdw-bulk-16-daily-23-156-euro6-35c16-is35ci2aa",
+    "rdw-bulk-16-daily-23-156-euro6-35c16-is35cc2aa"
+  ]
+},
+{
+  "slug": "iveco-daily-23-156-euro6df-2020-23",
+  "modelSlug": "iveco-daily",
+  "title": "Iveco Daily 2.3 diesel 156 (2020–2023)",
+  "intro": "De latere Daily 2.3 156 heeft voor deze registratie 115 kW en 2287 cc. Bronnen uit de faceliftgeneratie noemen 400 Nm origineel, anders dan de eerdere Euro 6-versie met 350 Nm. Door deze varianten afzonderlijk te houden berekent de catalogus de koppelwinst niet vanaf een verkeerde fabriekswaarde.",
+  "checks": "Vergelijk 35S16/35C16 met de opgegeven RDW-typecode, 2287 cc, originele 115 kW en toelating 2020–2023. Deze bronset noemt 400 Nm origineel, tegenover 350 Nm voor de eerdere 114,6 kW. Euro 6Df/Dt, de echte ECU, softwaretoegang en Hi-Matic of handbak worden op het voertuig vastgesteld; 410–420 Nm is geen algemene veilige belastinggrens.",
+  "appIds": [
+    "rdw-bulk-16-daily-23-156-euro6df-35s16-is35sc2aa",
+    "rdw-bulk-16-daily-23-156-euro6df-35s16-is35si2aa",
+    "rdw-bulk-16-daily-23-156-euro6df-35c16-is35ci2aa",
+    "rdw-bulk-16-daily-23-156-euro6df-35c16-is35cc2aa"
+  ]
+},
+{
+  "slug": "iveco-daily-30-180-euro6-2017-19",
+  "modelSlug": "iveco-daily",
+  "title": "Iveco Daily 3.0 diesel 180 (2017–2019)",
+  "intro": "Voor een Daily met de aanduiding 35S18 of 35C18 volstaat het nummer op de achterdeur niet. Deze bronset hoort alleen bij 2998 cc en originele 132 kW uit 2017–2019. Twee leveranciers publiceren dezelfde gewone Stage 1-waarde voor de oudere 3.0 Euro 6, niet voor de nieuwere motor met 129 kW.",
+  "checks": "Controleer 35S18 of 35C18, exact toegestane typecode, 2998 cc diesel, originele 132 kW en 2017–2019. RDW rekent 132 kW om naar 179 pk, terwijl leveranciers 180 pk vermelden. Verifieer F1C, ECU, transmissie, koeling en belading. De 129 kW-motor en latere Euro 6Df krijgen deze bronset niet alleen vanwege de naam 35S18.",
+  "appIds": [
+    "rdw-bulk-16-daily-30-180-euro6-35s18-is35sc2aa",
+    "rdw-bulk-16-daily-30-180-euro6-35c18-is35ci2aa",
+    "rdw-bulk-16-daily-30-180-euro6-35c18-is35cc2aa"
+  ]
+},
+{
+  "slug": "iveco-daily-30-160-euro6df-2020-23",
+  "modelSlug": "iveco-daily",
+  "title": "Iveco Daily 3.0 diesel 160 (2020–2023)",
+  "intro": "Een Iveco 35C16 kan naast de 2.3 ook een 3.0 diesel hebben. De variant op deze pagina vereist 2998 cc en 118 kW, niet 2287 cc en 115 kW. De onderzochte Euro 6Df-publicaties geven beide 200 pk aan, maar het verschil tussen 420 en 440 Nm blijft als bronverschil zichtbaar.",
+  "checks": "Bij een 35C16 kan RDW zowel een 2.3 als een 3.0 diesel aangeven. Dit profiel vereist IS35CI2AA, 2998 cc, originele 118 kW en toelating 2020–2023. Controleer F1C-motorcode, werkelijke ECU en Euro 6Df-fase, transmissie en bedrijfsbelasting. Beide bronnen noemen 200 pk, maar 420 tegenover 440 Nm is een werkelijk verschil tussen publicaties.",
+  "appIds": [
+    "rdw-bulk-16-daily-30-160-euro6df-35c16-is35ci2aa"
+  ]
+},
+{
+  "slug": "opel-movano-b-23-cdti-150-2019-21",
+  "modelSlug": "opel-movano",
+  "title": "Opel Movano 2.3 CDTI 150 (2019–2021)",
+  "intro": "De Opel Movano B facelift met 2299 cc en 110 kW heeft een andere aandrijflijn dan de latere Movano C met 2179 of 2184 cc. Voor deze 150 pk-motor bestaan twee Opel-specifieke publicaties voor 2019–2021. De mogelijke ECU-generatie moet worden uitgelezen en wordt niet uit de RDW-typecode afgeleid.",
+  "checks": "Controleer MOVANO type MR of MS, 2299 cc diesel, originele 110 kW en 2019–2021. Movano B is niet de latere type Y met 2179 of 2184 cc. De leveranciers noemen 210 pk/480 Nm, maar verschillen over mogelijke ECU-generaties; alleen uitlezen bepaalt de echte controller en toegang. Inspecteer transmissie, koppeling, SCR/DPF en thermische belasting.",
+  "appIds": [
+    "rdw-bulk-16-movano-b-23-cdti150-movano-mr",
+    "rdw-bulk-16-movano-b-23-cdti150-movano-ms"
+  ]
+},
+{
+  "slug": "opel-movano-b-23-cdti-180-2019-21",
+  "modelSlug": "opel-movano",
+  "title": "Opel Movano 2.3 CDTI 180 (2019–2021)",
+  "intro": "Deze Movano B 2.3 CDTI is de 132 kW-uitvoering met 2299 cc uit 2019–2021. De handelsnaam 180 pk wijkt af van 179 pk na rekenkundige omzetting van RDW-kW. De gewone Stage 1-publicaties worden apart gehouden van de 125 kW-variant en de nieuwere 2.2 diesel, ook als de badge vergelijkbaar is.",
+  "checks": "Vergelijk MOVANO MR, 2299 cc, originele 132 kW diesel en toelating 2019–2021. De marketingnaam 180 pk is niet de rekenkundige RDW-uitkomst 179 pk. Controleer werkelijke M9T en ECU, turbo-uitvoering, versnellingsbak, koeling en emissies. Dezelfde naam Movano 180 op een 2.2-motor krijgt geen overgedragen waarden.",
+  "appIds": [
+    "rdw-bulk-16-movano-b-23-cdti180-movano-mr"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -921,7 +990,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==94||new Set(nlVanEngines.map(x=>x.slug)).size!==94)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==100||new Set(nlVanEngines.map(x=>x.slug)).size!==100)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];

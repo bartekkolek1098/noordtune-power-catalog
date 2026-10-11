@@ -1,5 +1,6 @@
 // Server-only reviewed engine families. Never infer all engines from a shared platform.
 import {buildReviewedRdwBulkBatch,type ExtraEvidence,type Seed} from './reviewed-rdw-bulk-batch.ts';
+import {heavyVanFamilies} from './reviewed-heavy-van-families.ts';
 export type CommercialVanFamily={
  id:string;make:string;selectorBrand:string;model:string;modelSlug:string;slug:string;generation:string;
  from:number;to:number;cc:number;kw:number;stockNm:number;marketingHp:number;engine:string;
@@ -45,6 +46,7 @@ export const commercialVanFamilies:readonly CommercialVanFamily[]=[
  scope:'Only two explicit observed 35S14/35C14 name/type pairs2287cc100kW2020–23. Later Euro6Df source set deliberately separate from2017–19 Euro6 supplier190PS claims. 115kW156PS,2998cc,CNG,eDaily and unknown RDW types are not included.',
  checksNl:'Verifieer 35S14/IS35SC2AA of 35C14/IS35CI2AA, 2287 cc, originele 100 kW diesel en 2020–2023. Bevestig werkelijke Euro 6Df-motor en ECU, softwaretoegang en handbak of Hi-Matic. De oudere Euro 6-publicatie tot 190 pk geldt niet automatisch; voor deze bronset tonen leveranciers 165 pk en 410 Nm.',
  sources:[source('ecu-soft','ECU-Soft Iveco Daily 2019–2024 2.3D Euro 6Df 136','https://www.ecu-soft.be/chiptuning/iveco/daily/14203/2-3d-eu6df-136-25769',165,410,'Daily2019–2024 Euro6Df136PS to165PS/410Nm, browser-rendered Stage1.'),source('powerconcept','Powerconcept Daily 2019–2024 140 2.3 Euro 6Df 136','https://www.powerconcept.be/reprogrammation/iveco/daily/2019-2024/140-23-eur-6df-136hp',165,410,'Daily2019–2024 2287cc136PS/350Nm to165PS/410Nm, direct ordinary Stage1 publication.')]}
+, ...heavyVanFamilies
 ];
 export function commercialApplicationId(f:CommercialVanFamily,s:{model:string;type:string}){return 'rdw-bulk-16-'+f.id+'-'+s.model.toLowerCase()+'-'+s.type.toLowerCase();}
 const entries:Seed[]=commercialVanFamilies.flatMap(f=>f.scopes.map(s=>({id:commercialApplicationId(f,s),make:f.make,model:s.model,rdwModel:s.model,type:s.type,from:f.from,to:f.to,cc:f.cc,cylinders:4,kw:f.kw,stockNm:f.stockNm,engine:f.model+' '+f.engine+' · '+f.generation,fuel:'Diesel' as const,profileIds:[],extras:f.sources,power:[Math.min(...f.sources.map(x=>x.stage1Hp)),Math.max(...f.sources.map(x=>x.stage1Hp))] as const,torque:[Math.min(...f.sources.map(x=>x.stage1Nm)),Math.max(...f.sources.map(x=>x.stage1Nm))] as const,scope:f.scope+' '+standard})));
