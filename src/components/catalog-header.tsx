@@ -24,7 +24,7 @@ export function CatalogHeader({
  const links=mainNavItems(locale);
  return (
   <header className={cn("ux-site-header sticky top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-xl",className)}>
-   <div className="site-header-shell mx-auto flex min-h-[72px] w-full max-w-[1280px] items-center justify-between gap-2 px-4 xl:min-h-[86px] xl:gap-3 xl:px-8">
+   <div className="site-header-shell mx-auto flex min-h-[72px] w-full max-w-[1280px] 2xl:max-w-[1536px] items-center justify-between gap-2 px-4 xl:min-h-[86px] xl:gap-3 xl:px-8">
     <a aria-label="NoordTune.nl home" className="flex shrink-0 items-center focus-visible:ring-2 focus-visible:ring-primary" href={mainLocaleHref(locale)}>
      <NoordTuneLogo className="h-[35px] w-28 min-[360px]:h-[40px] min-[360px]:w-32 min-[420px]:h-[44px] min-[420px]:w-36 sm:h-[59px] sm:w-48 xl:h-[64px] xl:w-52 2xl:h-[69px] 2xl:w-56"/>
     </a>

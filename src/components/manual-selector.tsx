@@ -12,6 +12,8 @@ import {cn} from "@/lib/utils";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
+import {ManualCatalogDetails} from "@/components/manual-catalog-details";
+import type {ManualCatalogResult} from "@/data/manual-catalog-result";
 import {ReferenceEstimateDetails} from "@/components/reference-estimate-details";
 
 type ManualSelectorCopy = {
@@ -65,6 +67,12 @@ export function ManualSelector({
   const [referenceLoading, setReferenceLoading] = useState(false);
   const [referenceError, setReferenceError] = useState(false);
   const [taxonomySelection, setTaxonomySelection] = useState<VehicleSelectorItem>();
+  const [taxonomyYear, setTaxonomyYear] = useState("");
+  const [taxonomyResult, setTaxonomyResult] = useState<ManualCatalogResult>();
+  const [taxonomyLoading, setTaxonomyLoading] = useState(false);
+  const [taxonomyError, setTaxonomyError] = useState(false);
+  const [taxonomyRequest, setTaxonomyRequest] = useState(0);
+  const searchLabel = {nl: "Bekijk resultaten", en: "View results", pl: "Szukaj"}[locale];
   const referenceCopy = locale === "en"
     ? {loading: "Loading the catalog estimate…", error: "The estimate could not be loaded. Select the vehicle to try again.", conditional: "Conditional reference: confirm the engine generation before applying these estimated figures.", connect: "Pre-facelift 1.5 TDCi reference only. Confirm the engine generation; a 2018 registration alone does not establish TDCi or EcoBlue."}
     : locale === "pl"
@@ -79,6 +87,23 @@ export function ManualSelector({
   const versionLabel = (vehicle: VehicleSelectorItem) => vehicle.kind === "reference" && vehicle.version === "Published Stage 1 reference"
     ? {nl: "Referentie voor Stage 1", en: "Stage 1 reference", pl: "Profil referencyjny Stage 1"}[locale]
     : vehicle.version;
+
+  useEffect(() => {
+    if (!taxonomySelection) {setTaxonomyResult(undefined); setTaxonomyLoading(false); setTaxonomyError(false); return;}
+    const controller = new AbortController();
+    setTaxonomyResult(undefined); setTaxonomyLoading(true); setTaxonomyError(false);
+    const params: Record<string, string> = {mode: "selection", id: taxonomySelection.id};
+    if (taxonomyYear) params.year = taxonomyYear;
+    fetchSelector<{result: ManualCatalogResult}>(params, controller.signal).then(data => {
+      if (controller.signal.aborted) return;
+      setTaxonomyResult(data.result); setTaxonomyLoading(false);
+      window.requestAnimationFrame(() => {if (!controller.signal.aborted) focusConfigurator("manual-taxonomy-result");});
+    }).catch(() => {
+      if (controller.signal.aborted) return;
+      setTaxonomyLoading(false); setTaxonomyError(true);
+    });
+    return () => controller.abort();
+  }, [taxonomySelection, taxonomyYear, taxonomyRequest]);
 
   useEffect(() => {
     if (!referenceId) {
@@ -219,9 +244,15 @@ export function ManualSelector({
     return vehicle.pagePath ? sitePath("/" + locale + vehicle.pagePath) : undefined;
   }
 
-  function selectReference(vehicle: VehicleSelectorItem) {
+  function selectReference(vehicle: VehicleSelectorItem, selectedYear = "") {
     if (vehicle.kind === "taxonomy") {
+      if (taxonomySelection?.id === vehicle.id && taxonomyYear === selectedYear && taxonomyResult && !taxonomyError) {
+        focusConfigurator("manual-taxonomy-result"); return;
+      }
       setTaxonomySelection(vehicle);
+      setTaxonomyYear(selectedYear);
+      setTaxonomyResult(undefined);
+      setTaxonomyRequest(request => request + 1);
       setReferenceId("");
       setReferenceEstimate(undefined);
       setReferenceError(false);
@@ -288,7 +319,7 @@ export function ManualSelector({
           </div>
         </div>
 
-        <div className="grid min-w-0 grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)]">
+        <div className="grid min-w-0 grid-cols-1 items-start gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)]">
           <div data-testid="manual-popular-list" className={cn("rounded-2xl border border-white/10 bg-black/45 p-3 sm:p-4",hasSearchQuery?"order-1 lg:order-2":"order-2 lg:order-2")}>
             <div className="mb-3 flex items-center gap-2 text-xs font-black uppercase tracking-normal text-primary">
               <Star className="h-4 w-4 fill-primary" />
@@ -301,6 +332,7 @@ export function ManualSelector({
                   href={detailHref(vehicle)}
                   type={vehicle.pagePath ? undefined : "button"}
                   data-testid="manual-result-action"
+                  data-selector-id={vehicle.id}
                   key={vehicle.id}
                   onClick={!vehicle.pagePath ? (event) => {
                     event.preventDefault();
@@ -392,7 +424,7 @@ export function ManualSelector({
                   if (value) {
                     const vehicle = engines.find((item) => item.id === value);
                     if (vehicle && !vehicle.pagePath) {
-                      selectReference(vehicle);
+                      selectReference(vehicle, year);
                     } else if (vehicle?.pagePath) {
                       window.location.href = detailHref(vehicle)!;
                     }
@@ -402,7 +434,7 @@ export function ManualSelector({
                   }
                 }}
                 options={engines.map((vehicle) => ({
-                  label: `${vehicle.engine} · ${versionLabel(vehicle)}`,
+                  label: `${vehicle.engine.replace(/\b(\d+)\s*KM\b/g, "$1 " + (locale === "nl" ? "pk" : locale === "en" ? "hp" : "KM"))} · ${versionLabel(vehicle)}`,
                   value: vehicle.id
                 }))}
                 placeholder={year ? text.selectEngine : model ? text.selectYear : text.selectModel}
@@ -428,20 +460,20 @@ export function ManualSelector({
                       {{nl: "ECU-controle vóór uitvoering", en: "ECU check before work", pl: "Kontrola ECU przed realizacją"}[locale]}
                     </p>
                   </div>
-                  <Button asChild className="h-auto min-h-10 max-w-full whitespace-normal rounded-[3px] py-2 text-center font-black uppercase shadow-[0_0_28px_rgba(227,6,19,.32)]">
+                  <Button asChild data-testid="manual-search-action" className="h-auto min-h-10 max-w-full whitespace-normal rounded-[3px] py-2 text-center font-black uppercase shadow-[0_0_28px_rgba(227,6,19,.32)]">
                     {selectedVehicle.pagePath ? (
                       <a href={detailHref(selectedVehicle)}>
-                        {detailsActionLabel({kind: "vehicle-page", path: selectedVehicle.pagePath}, locale)}
+                        {searchLabel}
                         <ChevronRight className="h-4 w-4" />
                       </a>
                     ) : selectedVehicle.kind === "taxonomy" ? (
-                      <button type="button" onClick={() => focusConfigurator("rdw-configurator")}>
-                        {{nl: "Bevestig met kenteken", en: "Confirm with plate", pl: "Potwierdź po rejestracji"}[locale]}
+                      <button type="button" onClick={() => selectReference(selectedVehicle, taxonomySelection?.id === selectedVehicle.id ? taxonomyYear : year)}>
+                        {searchLabel}
                         <ChevronRight className="h-4 w-4" />
                       </button>
                     ) : (
                       <button type="button" onClick={() => selectReference(selectedVehicle)}>
-                        {detailsActionLabel({kind: "inline-configurator", target: "rdw-configurator"}, locale)}
+                        {searchLabel}
                         <ChevronRight className="h-4 w-4" />
                       </button>
                     )}
@@ -454,6 +486,11 @@ export function ManualSelector({
                 </p>
               )}
             </div>
+            {taxonomySelection ? <div id="manual-taxonomy-result" tabIndex={-1} aria-label={searchLabel} aria-live="polite" aria-busy={taxonomyLoading} className="mt-5 min-w-0 scroll-mt-28 rounded-xl border border-white/15 bg-black/20 p-4 outline-none focus-visible:ring-2 focus-visible:ring-primary">
+              {taxonomyLoading ? <p role="status" className="text-sm text-slate-300">{referenceCopy.loading}</p> : null}
+              {taxonomyError ? <div role="alert" className="space-y-3"><p className="text-sm text-slate-300">{referenceCopy.error}</p><Button type="button" onClick={() => setTaxonomyRequest(request => request + 1)}>{searchLabel}</Button></div> : null}
+              {taxonomyResult?.vehicle.id === taxonomySelection.id && !taxonomyLoading ? <ManualCatalogDetails result={taxonomyResult} locale={locale} onYearChange={setTaxonomyYear} /> : null}
+            </div> : null}
           </div>
         </div>
         {referenceId ? (
