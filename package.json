@@ -46,7 +46,8 @@
     "qa:manual-selector": "node --no-warnings scripts/qa-manual-header.cjs",
     "test:commercial-vans": "node --no-warnings scripts/test-commercial-van-paths.ts",
     "qa:commercial-vans": "node --no-warnings scripts/qa-commercial-van-paths.cjs",
-    "test:heavy-vans": "node --no-warnings scripts/test-heavy-van-expansion.ts"
+    "test:heavy-vans": "node --no-warnings scripts/test-heavy-van-expansion.ts",
+    "test:catalog-handoff": "node --no-warnings scripts/test-catalog-enquiry.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",

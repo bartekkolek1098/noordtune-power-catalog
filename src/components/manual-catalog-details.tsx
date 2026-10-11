@@ -2,6 +2,7 @@
 import type {ManualCatalogResult} from "@/data/manual-catalog-result";
 import type {Locale} from "@/i18n/routing";
 import {whatsappHref} from "@/lib/whatsapp";
+import {CatalogEnquiryLink} from "@/components/catalog-enquiry-link";
 import {Button} from "@/components/ui/button";
 
 const copy = {
@@ -63,6 +64,7 @@ export function ManualCatalogDetails({result, locale, onYearChange}: {
     </details> : null}
     <div className="flex flex-wrap gap-3">
       <Button className="h-auto min-h-11 whitespace-normal px-4 py-3 text-sm font-bold" data-testid="manual-catalog-contact" onClick={contact} type="button">{t.ask}</Button>
+      <CatalogEnquiryLink locale={locale} reference={{kind:"manual",id:v.id,...(v.selectedYear?{year:v.selectedYear}:{})}}/>
       <a className="inline-flex min-h-11 items-center text-sm text-slate-300 underline" href="#rdw-check" data-testid="manual-optional-plate" onClick={event => {
         const input = document.querySelector<HTMLInputElement>('#rdw-check input');
         if (input) {event.preventDefault(); input.focus({preventScroll: true}); document.getElementById('rdw-check')?.scrollIntoView({block: 'start', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});}

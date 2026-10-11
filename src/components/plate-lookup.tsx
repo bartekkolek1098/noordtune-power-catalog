@@ -22,6 +22,7 @@ import type {RdwLookupResult} from "@/lib/rdw";
 import {serviceOptions} from "@/data/catalog-shared";
 import {unavailableEstimateStage} from "@/data/tuning-estimates-shared";
 import {addQuoteOptions, assessVehicleAccess, conditionalBudgetNote, formatAccessAssessment, formatQuote, formatQuoteScope, resolveStageQuote} from "@/data/pricing";
+import {CatalogEnquiryLink} from "@/components/catalog-enquiry-link";
 import {RdwVehicleFacts} from "@/components/rdw-vehicle-facts";
 import {RdwPerformanceSummary} from "@/components/rdw-performance-summary";
 import {RdwSourceComparison} from "@/components/rdw-source-comparison";
@@ -328,6 +329,7 @@ export function PlateLookup({
             >
               <RdwVehicleFacts cached={result.cached} locale={locale} vehicle={result.vehicle} compact />
               <RdwPerformanceSummary locale={locale} profile={profile} stage={selectedStage} registeredHp={result.vehicle.engine.powerHp} onContact={onLookupContact} />
+              {profile?.id.startsWith("rdw-") ? <CatalogEnquiryLink locale={locale} reference={{kind:"profile",id:profile.id,...(result.vehicle.registration.firstAdmissionYear?{year:result.vehicle.registration.firstAdmissionYear}:{})}}/> : null}
               {result.comparison ? <RdwSourceComparison comparison={result.comparison} locale={locale} /> : null}
 
               <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)]">
