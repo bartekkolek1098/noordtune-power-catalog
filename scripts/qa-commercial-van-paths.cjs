@@ -30,7 +30,7 @@ async function hydrate(page){await page.waitForFunction(()=>{const e=document.qu
    await result.getByTestId('manual-catalog-sources').locator('summary').click();assert.equal(await result.getByTestId('manual-catalog-sources').locator('a').count(),f.sources.length);
    await result.getByTestId('manual-catalog-contact').click();const contact=await page.evaluate(()=>window.__contacts.at(-1));assert.ok(decodeURIComponent(contact).includes(f.model)&&decodeURIComponent(contact).includes(String(f.from)));assert.ok(!contact.includes('QA0000'));
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
-   if(f.id==='daily-23-136-euro6df'&&locale==='nl'){await page.evaluate(()=>document.getElementById('manual-taxonomy-result')?.scrollIntoView({block:'start',behavior:'instant'}));await page.screenshot({path:path.join(output,'manual-daily-mobile.png'),fullPage:false});}
+   if(f.id==='daily-23-156-euro6df'&&locale==='nl'){await page.evaluate(()=>document.getElementById('manual-taxonomy-result')?.scrollIntoView({block:'start',behavior:'instant'}));await page.screenshot({path:path.join(output,'manual-daily-mobile.png'),fullPage:false});}
    const invalid=await page.request.get(base+'/api/catalog-selector?mode=selection&id='+id+'&year='+(f.to+1));assert.equal(invalid.status(),400);
    records.push({flow:'manual',family:f.id,locale});
   }
@@ -51,5 +51,5 @@ async function hydrate(page){await page.waitForFunction(()=>{const e=document.qu
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));assert.deepEqual(errors,[]);assert.deepEqual(leaks,[]);assert.equal(await page.locator('a[href*="QA0000"]').count(),0);
   records.push({flow:'plate-fixture',application:app.id,locale,width});await page.close();
  }
- assert.equal(records.length,39);fs.writeFileSync(path.join(output,'summary.json'),JSON.stringify({base,checks:records,realCustomerPlatesUsed:false},null,2)+'\n');console.log('COMMERCIAL_BOTH_PATHS_BROWSER_PASS',JSON.stringify({manual:27,plateFixtures:12,realCustomerPlatesUsed:false}));
+ assert.equal(records.length,72);fs.writeFileSync(path.join(output,'summary.json'),JSON.stringify({base,checks:records,realCustomerPlatesUsed:false},null,2)+'\n');console.log('COMMERCIAL_BOTH_PATHS_BROWSER_PASS',JSON.stringify({manual:45,plateFixtures:27,realCustomerPlatesUsed:false}));
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1});

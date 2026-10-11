@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import snapshot from '../data/research/nl-commercial-vans-20261011.json' with {type:'json'};
-import audit from '../data/research/commercial-van-source-audit-20261011.json' with {type:'json'};
+import originalAudit from '../data/research/commercial-van-source-audit-20261011.json' with {type:'json'};
+import heavyAudit from '../data/research/heavy-van-source-audit-20261011.json' with {type:'json'};
+const audit=[...originalAudit,...heavyAudit];
 import {commercialVanFamilies,commercialApplicationId,reviewedCommercialVanApplications} from '../src/data/reviewed-commercial-vans.ts';
 import {normalizeRdwVehicle} from '../src/lib/rdw.ts';
 import {resolveVerifiedRdwApplication} from '../src/data/verified-rdw-applications.ts';
@@ -12,7 +14,7 @@ import type {EstimateMatchInput} from '../src/data/tuning-estimates.ts';
 assert.equal(snapshot.baselineCommit,'dfd6c110dfd0a8d62207e9179090fccf4c6b69be');
 assert.deepEqual(snapshot.baselineCounts,{rows:810,linked:281});
 assert.equal(snapshot.groups.length,174);assert.equal(snapshot.baseline.length,174);
-assert.equal(commercialVanFamilies.length,9);assert.equal(reviewedCommercialVanApplications.length,12);
+assert.equal(commercialVanFamilies.length,15);assert.equal(reviewedCommercialVanApplications.length,27);
 const numeric=(r:ReturnType<typeof normalizeRdwVehicle>)=>{const p=r.tuningEstimate.profile,s=p?.stages.find(x=>x.name==='Stage 1');return !!(s&&(s.powerHp||s.powerRangeHp)&&p?.sourceReferences.some(x=>x.url?.startsWith('https://')));};
 function normalized(g:typeof snapshot.groups[number]){return normalizeRdwVehicle({merk:g.make,handelsbenaming:g.model,type:g.type??undefined,cilinderinhoud:g.cc==null?undefined:String(g.cc),aantal_cilinders:g.cylinders==null?undefined:String(g.cylinders),datum_eerste_toelating:g.year+'0615',datum_eerste_toelating_dt:g.year+'-06-15T00:00:00'},[{brandstof_omschrijving:g.fuel,nettomaximumvermogen:g.kw==null?undefined:String(g.kw)}],'QA0000');}
 const addedIds=new Set(reviewedCommercialVanApplications.map(x=>x.id)),matched=new Map<string,number>();
@@ -28,7 +30,7 @@ for(let i=0;i<snapshot.groups.length;i++){
  if(!linked)unresolved.push(g);
  if(g.fuel!=='Diesel')assert.ok(!id||!addedIds.has(id),'Diesel reference inherited by non-diesel van');
 }
-assert.equal(after-281,net);assert.ok(net>0);assert.equal(matched.size,12,'Every new application must match a frozen observed cell');
+assert.equal(after-281,net);assert.ok(net>0);assert.equal(matched.size,27,'Every new application must match a frozen observed cell');
 for(const a of reviewedCommercialVanApplications){
  const b:EstimateMatchInput={make:a.make,model:a.allowedRdwModels[0],type:a.requiredRdwType,firstRegistrationYear:a.yearFrom,firstRegistrationDate:a.yearFrom+'-06-15',displacementCc:a.displacementCc,cylinders:4,registeredPower:{unit:'kW',value:a.registeredPowerKw},fuel:'Diesel'};
  assert.ok(a.sources.length>=2);assert.ok(new Set(a.sources.map(s=>new URL(s.url??'').hostname.replace(/^www\./,''))).size>=2);
@@ -39,7 +41,7 @@ for(const a of reviewedCommercialVanApplications){
  const mutations:Partial<EstimateMatchInput>[]=[{firstRegistrationYear:a.yearFrom-1,firstRegistrationDate:(a.yearFrom-1)+'-06-15'},{firstRegistrationYear:a.yearTo+1,firstRegistrationDate:(a.yearTo+1)+'-06-15'},{type:undefined},{type:'DIFFERENT'},{displacementCc:a.displacementCc+5},{cylinders:3},{registeredPower:{unit:'kW',value:a.registeredPowerKw+1}},{registeredPower:{unit:'kW',value:a.registeredPowerKw-1}},{registeredPower:undefined},{fuel:'Benzine'},{fuel:'CNG'},{fuel:'Diesel / Elektriciteit'},{make:'OTHER MAKE'},{model:'UNKNOWN VAN'},{stockTorqueNm:a.stockTorqueNm+40}];
  for(const x of mutations){assert.notEqual(resolveVerifiedRdwApplication({...b,...x})?.profile?.id,a.id,'Unsafe match '+JSON.stringify(x));negative++;}
 }
-assert.equal(negative,180);
+assert.equal(negative,405);
 for(const f of commercialVanFamilies){
  const id='reviewed-van-'+f.id;
  assert.ok(getBrands().includes(f.selectorBrand));assert.ok(getModelsForBrand(f.selectorBrand).includes(f.model));
@@ -59,6 +61,6 @@ for(const f of commercialVanFamilies){
 assert.equal(getManualCatalogResult('reviewed-van-forged-id',2021),undefined);
 const oldDaily=getManualCatalogResult('reviewed-van-daily-23-136-euro6',2019),newDaily=getManualCatalogResult('reviewed-van-daily-23-136-euro6df',2021);
 assert.deepEqual(oldDaily?.stage1?.powerHp,[170,190]);assert.deepEqual(newDaily?.stage1?.powerHp,[165,165]);
-const report={date:'2026-10-11',baselineCommit:snapshot.baselineCommit,method:snapshot.method,sampleObservations:810,beforeSourceLinked:281,afterSourceLinked:after,netNewSourceLinked:net,byMake:Object.fromEntries(perMake),reviewedEngineFamilies:9,exactRdwScopes:12,negativeIdentityChecks:negative,observationsByNewApplication:Object.fromEntries(matched),unresolved,manualFamiliesVerified:9,disclaimer:'Purposive, nonrepresentative sample. 25 model pages do not mean all van engines are covered. No customer plates or VINs stored.'};
+const report={date:'2026-10-11',baselineCommit:snapshot.baselineCommit,method:snapshot.method,sampleObservations:810,beforeSourceLinked:281,afterSourceLinked:after,netNewSourceLinked:net,byMake:Object.fromEntries(perMake),reviewedEngineFamilies:15,exactRdwScopes:27,negativeIdentityChecks:negative,observationsByNewApplication:Object.fromEntries(matched),unresolved,manualFamiliesVerified:15,disclaimer:'Purposive, nonrepresentative sample. 25 model pages do not mean all van engines are covered. No customer plates or VINs stored.'};
 if(process.argv.includes('--write'))fs.writeFileSync('docs/commercial-van-paths-20261011.json',JSON.stringify(report,null,2)+'\n');
 console.log('COMMERCIAL_VAN_PATHS_PASS',JSON.stringify({...report,unresolved:undefined,observationsByNewApplication:undefined}));
