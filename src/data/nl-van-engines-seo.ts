@@ -812,6 +812,99 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "appIds": [
     "rdw-bulk-15-opel-combo-e-15d130-2019-22"
   ]
+},
+{
+  "slug": "citroen-jumpy-15-bluehdi-100-2019-23",
+  "modelSlug": "citroen-jumpy",
+  "title": "Citroën Jumpy 1.5 BlueHDi 100 (2019–2023)",
+  "intro": "De 1.5 BlueHDi met originele 75 kW is in de Jumpy een andere motorfamilie dan de oudere 1.6 diesel. Voor deze specifieke Citroën-uitvoering publiceren twee leveranciers sterk verschillende Stage 1-waarden. Het bereik is een bronvergelijking, geen gekozen afstelling of bewijs van een veilig eindkoppel.",
+  "checks": "Controleer JUMPY type V, 1499 cc, originele 75 kW diesel en toelating 2019–2023. De marketingnaam 100 pk verschilt van 102 pk na omrekening uit RDW. ATM en ECU-Soft verschillen sterk: 140/300 tegenover 160/350. Lees de werkelijke Bosch MD1CS003-ECU uit en beoordeel koppeling, belasting en SCR/DPF vóór een offerte.",
+  "appIds": [
+    "rdw-bulk-16-jumpy-15-bluehdi100-jumpy-v"
+  ]
+},
+{
+  "slug": "citroen-jumpy-15-bluehdi-120-2019-23",
+  "modelSlug": "citroen-jumpy",
+  "title": "Citroën Jumpy 1.5 BlueHDi 120 (2019–2023)",
+  "intro": "De Citroën Jumpy 1.5 BlueHDi 120 heeft originele 88 kW en 1499 cc. De bronpublicaties komen overeen over piekvermogen maar verschillen over het moment. De motor blijft apart van de 75 kW-instapversie en van grotere 2.0 BlueHDi-uitvoeringen, ook wanneer ze dezelfde bedrijfswagenopbouw gebruiken.",
+  "checks": "Vergelijk JUMPY V, 1499 cc diesel, originele 88 kW en 2019–2023. De 120 pk gebruikt een andere fabrieksafstelling dan de 75 kW-instapversie. Controleer Bosch MD1, Euro-fase, ontgrendeling, handbak en koelreserve. 160 pk en 350–360 Nm zijn externe indicaties, geen gegarandeerd resultaat voor jouw beladen bus.",
+  "appIds": [
+    "rdw-bulk-16-jumpy-15-bluehdi120-jumpy-v"
+  ]
+},
+{
+  "slug": "citroen-jumpy-20-bluehdi-145-2021-23",
+  "modelSlug": "citroen-jumpy",
+  "title": "Citroën Jumpy 2.0 BlueHDi 145 (2021–2023)",
+  "intro": "De Jumpy 2.0 BlueHDi 145 met originele 106 kW hoort bij de bronfamilie Euro 6.3 vanaf 2021. Deze toepassing verschilt van de 90, 110 en 130 kW 2.0-motoren. De registratie bepaalt niet zelfstandig de ECU-software; daarom moet het werkelijke voertuig eerst technisch worden gecontroleerd.",
+  "checks": "Controleer JUMPY V met originele 106 kW, diesel 1997 cc en eerste toelating 2021–2023. 106 kW rondt naar 144 pk, terwijl leveranciers deze uitvoering 145 pk noemen en soms 1998 cc schrijven. Bevestig werkelijke motorcode, Delphi DCM7.1A, Euro 6.3 en EAT/handbak. SCR/AdBlue, DPF en EGR blijven functioneren.",
+  "appIds": [
+    "rdw-bulk-16-jumpy-20-bluehdi145-jumpy-v"
+  ]
+},
+{
+  "slug": "citroen-jumpy-20-bluehdi-177-2019-23",
+  "modelSlug": "citroen-jumpy",
+  "title": "Citroën Jumpy 2.0 BlueHDi 177 (2019–2023)",
+  "intro": "De Jumpy met originele 130 kW en 1997 cc wordt als 177 pk BlueHDi gepubliceerd. Twee Citroën-specifieke aanbieders tonen dezelfde gewone Stage 1-indicatie voor de latere derde generatie. Een overeenkomende bronwaarde is geen vastgestelde mechanische limiet of individuele rollenbankmeting van NoordTune.",
+  "checks": "Vergelijk JUMPY type V, 1997 cc, 130 kW diesel en toelating 2019–2023. Twee leveranciers noemen 205 pk en 460 Nm, maar dit bewijst geen veilig continu koppel bij zware belasting. Controleer werkelijke DW10-motor, Delphi ECU, Euro-emissiefase, automaat of handbak en uitlaatgasnabehandeling vóór tuning.",
+  "appIds": [
+    "rdw-bulk-16-jumpy-20-bluehdi177-jumpy-v"
+  ]
+},
+{
+  "slug": "opel-movano-c-22-diesel-120-2021-23",
+  "modelSlug": "opel-movano",
+  "title": "Opel Movano 2.2 diesel 120 (2021–2023)",
+  "intro": "De Opel Movano C 2.2 diesel 120 heeft in deze bronselectie 2179 cc en originele 88 kW. De oudere Renault-gerelateerde 2.3 en de nieuwere 2184 cc diesel zijn andere families. De bronnen verschillen over het oorspronkelijke koppel; die onzekerheid mag niet worden verstopt in een exact ogende berekening.",
+  "checks": "Controleer MOVANO Y, 2179 cc diesel, 88 kW en toelating 2021–2023. De 2299 cc Movano B en 2184 cc van 2024 zijn andere generaties. Leveranciers verschillen over origineel 300/310 Nm; daarom ontbreekt dat getal in het handmatige overzicht. Controleer Delphi DCM7.1B, transmissie, koeling, belading en SCR/AdBlue.",
+  "appIds": [
+    "rdw-bulk-16-movano-c-22-120-movano-y"
+  ]
+},
+{
+  "slug": "opel-movano-c-22-diesel-140-2021-23",
+  "modelSlug": "opel-movano",
+  "title": "Opel Movano 2.2 diesel 140 (2021–2023)",
+  "intro": "De 140 pk-variant van de Movano C heeft originele 103 kW en 2179 cc in de beoordeelde jaren 2021–2023. Twee afzonderlijke Opel-publicaties noemen dezelfde Stage 1, maar hun koppelgetal is geen goedkeuring voor iedere camper, bestelbus of transmissie die op dit platform is geleverd.",
+  "checks": "Bevestig MOVANO type Y, 2179 cc, originele 103 kW diesel en 2021–2023. De latere 2184 cc kan eveneens 103 kW hebben, maar krijgt deze oudere indicatie niet. Lees de ECU uit, controleer Euro 6-software, koppeling of automaat en werkbelasting; 195 pk/430 Nm is een publicatie van leveranciers, geen NoordTune-meting.",
+  "appIds": [
+    "rdw-bulk-16-movano-c-22-140-movano-y"
+  ]
+},
+{
+  "slug": "opel-movano-c-22-diesel-165-2021-23",
+  "modelSlug": "opel-movano",
+  "title": "Opel Movano 2.2 diesel 165 (2021–2023)",
+  "intro": "De Opel Movano C 2.2 diesel met 121 kW is de 165 pk-fabrieksvariant, niet de oude 2.3 met vergelijkbare marketingnaam. De bronpublicaties zijn specifiek voor Opel en worden niet overgenomen uit het Boxer- of Ducato-katalogus. Software, onderhoud en belasting blijven voertuigafhankelijk.",
+  "checks": "Controleer MOVANO Y, 2179 cc diesel, 121 kW en eerste toelating 2021–2023. De 165 pk is een andere fabrieksafstelling dan 120/140 pk; oudere 2.3 en nieuwere 2.2 motoren zijn apart. Identificeer Delphi DCM7.1B, transmissie, koelreserve en DPF/SCR. Hogere trekkracht verhoogt het toegestane laadgewicht niet.",
+  "appIds": [
+    "rdw-bulk-16-movano-c-22-165-movano-y"
+  ]
+},
+{
+  "slug": "iveco-daily-23-136-euro6-2017-19",
+  "modelSlug": "iveco-daily",
+  "title": "Iveco Daily 2.3 diesel 136 (2017–2019)",
+  "intro": "De Daily 2.3 Euro 6 met 100 kW komt in de onderzochte RDW-gegevens voor als 35S14 en 35C14. Drie exacte naam/type-combinaties zijn afzonderlijk vastgelegd. De leveranciers verschillen over Stage 1-output, zodat een enkele beloofde vermogenswaarde geen eerlijke weergave van de beschikbare gegevens zou zijn.",
+  "checks": "Bij RDW heet deze Daily vaak 35S14 of 35C14, niet DAILY. Controleer de expliciet genoemde naam/type-combinatie, 2287 cc diesel, 100 kW en 2017–2019. ECU-bronnen noemen Bosch EDC17; een code op de carrosserie bewijst geen controller. 170–190 pk/410–420 Nm is geen veilig maximum voor zwaar beladen chassis.",
+  "appIds": [
+    "rdw-bulk-16-daily-23-136-euro6-35s14-is35sc2aa",
+    "rdw-bulk-16-daily-23-136-euro6-35s14-is35si2aa",
+    "rdw-bulk-16-daily-23-136-euro6-35c14-is35ci2aa"
+  ]
+},
+{
+  "slug": "iveco-daily-23-136-euro6df-2020-23",
+  "modelSlug": "iveco-daily",
+  "title": "Iveco Daily 2.3 diesel 136 (2020–2023)",
+  "intro": "De latere Daily 2.3 Euro 6Df behoudt voor deze motorvariant 2287 cc en 100 kW maar krijgt een eigen bronset. De oudere Euro 6-publicatie tot 190 pk wordt hier bewust niet hergebruikt. Het RDW-nummer of de aanduiding 35S14 alleen bewijst niet welke ECU en transmissie werkelijk zijn gemonteerd.",
+  "checks": "Verifieer 35S14/IS35SC2AA of 35C14/IS35CI2AA, 2287 cc, originele 100 kW diesel en 2020–2023. Bevestig werkelijke Euro 6Df-motor en ECU, softwaretoegang en handbak of Hi-Matic. De oudere Euro 6-publicatie tot 190 pk geldt niet automatisch; voor deze bronset tonen leveranciers 165 pk en 410 Nm.",
+  "appIds": [
+    "rdw-bulk-16-daily-23-136-euro6df-35s14-is35sc2aa",
+    "rdw-bulk-16-daily-23-136-euro6df-35c14-is35ci2aa"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -828,7 +921,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==85||new Set(nlVanEngines.map(x=>x.slug)).size!==85)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==94||new Set(nlVanEngines.map(x=>x.slug)).size!==94)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];

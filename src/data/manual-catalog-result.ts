@@ -10,4 +10,5 @@ export type ManualCatalogResult = {
   sources: {title: string; url: string; powerHp: number; torqueNm?: number}[];
   fuelRon: number[];
   sourceProfileId?: string;
+  reviewConditions?: {nl:string;en:string;pl:string};
 };

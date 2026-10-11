@@ -1,7 +1,7 @@
 import type {QuoteResolution} from "./pricing.ts";
 
 export type VehicleSelectorItem = {
-  kind?: "reference" | "estimate" | "taxonomy";
+  kind?: "reference" | "estimate" | "taxonomy" | "reviewed";
   pagePath?: `/vehicles/${string}`;
   id: string;
   brand: string;

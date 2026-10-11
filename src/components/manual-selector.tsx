@@ -245,7 +245,7 @@ export function ManualSelector({
   }
 
   function selectReference(vehicle: VehicleSelectorItem, selectedYear = "") {
-    if (vehicle.kind === "taxonomy") {
+    if (vehicle.kind === "taxonomy" || vehicle.kind === "reviewed") {
       if (taxonomySelection?.id === vehicle.id && taxonomyYear === selectedYear && taxonomyResult && !taxonomyError) {
         focusConfigurator("manual-taxonomy-result"); return;
       }
@@ -466,7 +466,7 @@ export function ManualSelector({
                         {searchLabel}
                         <ChevronRight className="h-4 w-4" />
                       </a>
-                    ) : selectedVehicle.kind === "taxonomy" ? (
+                    ) : (selectedVehicle.kind === "taxonomy" || selectedVehicle.kind === "reviewed") ? (
                       <button type="button" onClick={() => selectReference(selectedVehicle, taxonomySelection?.id === selectedVehicle.id ? taxonomyYear : year)}>
                         {searchLabel}
                         <ChevronRight className="h-4 w-4" />

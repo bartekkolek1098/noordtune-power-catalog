@@ -1,4 +1,5 @@
 // Server only. Discovery taxonomy identifies a selection, NEVER supplies tuning gains.
+import {getReviewedVanManualResult} from '../data/reviewed-van-selector.ts';
 import {catalogTaxonomyV2} from "../data/catalog-taxonomy-v2.ts";
 import {sourcedTuningProfiles, tuningProfileSources} from "../data/tuning-profiles/index.ts";
 import {matchSourcedProfile} from "./sourced-tuning-match.ts";
@@ -14,6 +15,7 @@ const band = (values: number[]): [number, number] => [Math.min(...values), Math.
  * RDW matching or inventing a registered vehicle type, VIN or an ECU identity.
  */
 export function getManualCatalogResult(id: string, selectedYear?: number): ManualCatalogResult | undefined {
+  if(id.startsWith('reviewed-van-'))return getReviewedVanManualResult(id,selectedYear);
   const row = byId.get(id);
   if (!row || (selectedYear !== undefined && (!Number.isInteger(selectedYear) || selectedYear < row.yearFrom || selectedYear > row.yearTo))) return undefined;
   const kw = row.engine.match(/\b(\d+(?:[.,]\d+)?)\s*kW\b/i)?.[1];

@@ -56,6 +56,7 @@ export function ManualCatalogDetails({result, locale, onYearChange}: {
       <p>{t.source}. {t.stockNote}</p><p>{t.notice}</p>
       {result.fuelRon.length ? <p data-testid="manual-fuel-condition">RON {result.fuelRon.join(" / ")}. {t.fuelNote}</p> : null}
     </div>}
+    {result.reviewConditions ? <p className="rounded-lg border border-white/15 bg-black/20 p-3 text-xs leading-5 text-slate-300" data-testid="manual-reviewed-conditions">{result.reviewConditions[locale]}</p> : null}
     {result.sources.length ? <details className="rounded-lg border border-white/15 p-3" data-testid="manual-catalog-sources">
       <summary className="cursor-pointer text-sm font-bold text-white">{t.sources} ({result.sources.length})</summary>
       <ul className="mt-3 space-y-3 text-sm">{result.sources.map(source => <li key={source.url} className="break-words"><a className="text-primary underline" href={source.url} target="_blank" rel="noreferrer">{source.title}</a><p className="text-slate-300">{fmt(source.powerHp)} {unit}{source.torqueNm ? ` / ${fmt(source.torqueNm)} Nm` : ""}</p></li>)}</ul>
