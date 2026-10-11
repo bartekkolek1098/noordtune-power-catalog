@@ -41,7 +41,9 @@
     "benchmark:tuning": "node --expose-gc --no-warnings scripts/benchmark-tuning-resolver.ts",
     "qa:rdw:nl-vans-expansion": "node --no-warnings scripts/test-rdw-vans-expansion-14.ts",
     "test:compact-vans": "node --no-warnings scripts/test-compact-van-coverage.ts",
-    "qa:plate-result": "node --no-warnings scripts/qa-plate-result-v2.cjs"
+    "qa:plate-result": "node --no-warnings scripts/qa-plate-result-v2.cjs",
+    "test:manual-selector": "node --no-warnings scripts/test-selector-taxonomy-v2.ts && node --no-warnings scripts/test-manual-catalog-result.ts",
+    "qa:manual-selector": "node --no-warnings scripts/qa-manual-header.cjs"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",

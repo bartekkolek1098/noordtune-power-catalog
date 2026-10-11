@@ -1,3 +1,4 @@
+import {getManualCatalogResult} from "@/lib/manual-catalog-result";
 import {customerProfile} from "@/lib/customer-profile";
 import {NextRequest, NextResponse} from "next/server";
 import {
@@ -22,6 +23,14 @@ export function GET(request: NextRequest) {
   const mode = params.get("mode");
   const brand = readParam(params, "brand");
   const model = readParam(params, "model");
+
+  if (mode === "selection") {
+    const id = readParam(params, "id");
+    const rawYear = params.get("year");
+    const selectedYear = rawYear === null ? undefined : /^\d{4}$/.test(rawYear) ? Number(rawYear) : NaN;
+    const result = id ? getManualCatalogResult(id, selectedYear) : undefined;
+    return result ? json({result}) : invalidRequest();
+  }
 
   if (mode === "reference") {
     const id = readParam(params, "id");
