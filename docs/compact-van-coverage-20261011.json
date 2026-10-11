@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-11",
+  "method": "First <=40 plate-ordered light commercial RDW records per selected model/1499cc/admission-year, sampled before profile matching; join by plate in memory only; no population prevalence inference.",
+  "baselineCommit": "5520827581bf5583d003a89e3488f5b58a1d05d0",
+  "sampleRows": 743,
+  "sourceLinkedBefore": 431,
+  "sourceLinkedAfter": 659,
+  "netNewSourceLinked": 228,
+  "negativeIdentityChecks": 135,
+  "byModel": {
+    "CITROEN BERLINGO": {
+      "observations": 244,
+      "before": 0,
+      "after": 203
+    },
+    "PEUGEOT PARTNER": {
+      "observations": 255,
+      "before": 215,
+      "after": 240
+    },
+    "OPEL COMBO": {
+      "observations": 244,
+      "before": 216,
+      "after": 216
+    }
+  },
+  "unresolved": [
+    {
+      "make": "CITROEN",
+      "model": "BERLINGO",
+      "type": null,
+      "cc": 1499,
+      "cylinders": 4,
+      "fuel": "Diesel",
+      "kw": 96,
+      "year": 2020,
+      "observed": 1
+    },
+    {
+      "make": "CITROEN",
+      "model": "BERLINGO",
+      "type": "E",
+      "cc": 1499,
+      "cylinders": 4,
+      "fuel": "Diesel",
+      "kw": 75,
+      "year": 2024,
+      "observed": 26
+    },
+    {
+      "make": "CITROEN",
+      "model": "BERLINGO",
+      "type": "E",
+      "cc": 1499,
+      "cylinders": 4,
+      "fuel": "Diesel",
+      "kw": 96,
+      "year": 2024,
+      "observed": 14
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "PARTNER",
+      "type": "E",
+      "cc": 1499,
+      "cylinders": 4,
+      "fuel": "Diesel",
+      "kw": 96,
+      "year": 2018,
+      "observed": 15
+    },
+    {
+      "make": "OPEL",
+      "model": "COMBO",
+      "type": "E",
+      "cc": 1499,
+      "cylinders": 4,
+      "fuel": "Diesel",
+      "kw": 75,
+      "year": 2024,
+      "observed": 28
+    }
+  ],
+  "familyReadiness": [
+    {
+      "make": "Ford",
+      "model": "Transit",
+      "slug": "ford-transit",
+      "reviewedApplications": 7
+    },
+    {
+      "make": "Ford",
+      "model": "Transit Custom",
+      "slug": "ford-transit-custom",
+      "reviewedApplications": 3
+    },
+    {
+      "make": "Ford",
+      "model": "Transit Connect",
+      "slug": "ford-transit-connect",
+      "reviewedApplications": 5
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Transporter",
+      "slug": "volkswagen-transporter",
+      "reviewedApplications": 8
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Crafter",
+      "slug": "volkswagen-crafter",
+      "reviewedApplications": 4
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Caddy",
+      "slug": "volkswagen-caddy",
+      "reviewedApplications": 7
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "slug": "mercedes-sprinter",
+      "reviewedApplications": 8
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "Vito",
+      "slug": "mercedes-vito",
+      "reviewedApplications": 6
+    },
+    {
+      "make": "Toyota",
+      "model": "Proace",
+      "slug": "toyota-proace",
+      "reviewedApplications": 5
+    },
+    {
+      "make": "Toyota",
+      "model": "Proace City",
+      "slug": "toyota-proace-city",
+      "reviewedApplications": 4
+    },
+    {
+      "make": "Peugeot",
+      "model": "Partner",
+      "slug": "peugeot-partner",
+      "reviewedApplications": 5
+    },
+    {
+      "make": "Peugeot",
+      "model": "Expert",
+      "slug": "peugeot-expert",
+      "reviewedApplications": 5
+    },
+    {
+      "make": "Peugeot",
+      "model": "Boxer",
+      "slug": "peugeot-boxer",
+      "reviewedApplications": 4
+    },
+    {
+      "make": "Renault",
+      "model": "Master",
+      "slug": "renault-master",
+      "reviewedApplications": 7
+    },
+    {
+      "make": "Renault",
+      "model": "Kangoo",
+      "slug": "renault-kangoo",
+      "reviewedApplications": 4
+    },
+    {
+      "make": "Fiat",
+      "model": "Ducato",
+      "slug": "fiat-ducato",
+      "reviewedApplications": 4
+    },
+    {
+      "make": "Fiat",
+      "model": "Doblò",
+      "slug": "fiat-doblo",
+      "reviewedApplications": 3
+    },
+    {
+      "make": "Opel",
+      "model": "Vivaro B",
+      "slug": "opel-vivaro",
+      "reviewedApplications": 4
+    },
+    {
+      "make": "Renault",
+      "model": "Trafic",
+      "slug": "renault-trafic",
+      "reviewedApplications": 1
+    },
+    {
+      "make": "Opel",
+      "model": "Vivaro C",
+      "slug": "opel-vivaro-c",
+      "reviewedApplications": 1
+    },
+    {
+      "make": "Citroen",
+      "model": "Berlingo",
+      "slug": "citroen-berlingo",
+      "reviewedApplications": 4
+    },
+    {
+      "make": "Opel",
+      "model": "Combo E",
+      "slug": "opel-combo",
+      "reviewedApplications": 3
+    }
+  ],
+  "pendingFamilies": [
+    "Opel Movano",
+    "Citroën Jumpy",
+    "Iveco Daily"
+  ],
+  "limits": "This is a purposive technical regression sample, not Netherlands-wide coverage. All-van/fleet coverage remains unmeasured. A missing numeric result is not a claim that tuning is impossible.",
+  "privacy": "No customer plates, VINs or full execution codes are stored."
+}

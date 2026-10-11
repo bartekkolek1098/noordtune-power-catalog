@@ -722,6 +722,96 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "appIds": [
     "rdw-bulk-14-peugeot-boxer-y-22bluehdi165-2020-23"
   ]
+},
+{
+  "slug": "citroen-berlingo-iii-15-bluehdi-75-2019-23",
+  "modelSlug": "citroen-berlingo",
+  "title": "Citroën Berlingo III 1.5 BlueHDi 75 (2019–2023)",
+  "intro": "De Berlingo III met 1499 cc en originele 56 kW is een andere motorfamilie dan de eerdere 1.6 HDi. De handelsnaam 75 pk wijkt door afronding af van de 76 metrische pk die uit RDW worden berekend. Drie Citroën-specifieke leveranciers publiceren verschillende gewone Stage 1-resultaten, waaronder 130 pk.",
+  "checks": "Controleer BERLINGO type E, 1499 cc, vier cilinders, diesel, originele 56 kW en eerste toelating 2019–2023. Identificeer de gemonteerde DV5-motor, ECU-software en toegang, koppeling en transmissie. De bronindicaties van 115–130 pk en 300–320 Nm zijn geen gegarandeerde meting of veilige koppelgrens voor een beladen bestelauto.",
+  "appIds": [
+    "rdw-bulk-15-citroen-berlingo-e-15bluehdi75-2019-23"
+  ]
+},
+{
+  "slug": "citroen-berlingo-iii-15-bluehdi-100-2019-23",
+  "modelSlug": "citroen-berlingo",
+  "title": "Citroën Berlingo III 1.5 BlueHDi 100/102 (2019–2023)",
+  "intro": "Deze Berlingo III heeft volgens RDW originele 75 kW, oftewel circa 102 metrische pk, en een dieselmotor van 1499 cc. De marketingnaam 100 pk identificeert niet vanzelf de oorspronkelijke software. Voor deze type E-uitvoering bestaan eigen Citroën-publicaties met verschillende vermogens- en koppelindicaties.",
+  "checks": "Verifieer BERLINGO E, diesel 1499 cc, originele 75 kW en eerste toelating 2019–2023. Controleer DV5-motorcode, Bosch ECU-generatie, firmware en benodigde ontgrendeling. De 56 kW 75 pk en 96 kW 130 pk horen bij andere bronprofielen; DPF, EGR en SCR/AdBlue blijven volledig functioneren.",
+  "appIds": [
+    "rdw-bulk-15-citroen-berlingo-e-15bluehdi100-2019-23"
+  ]
+},
+{
+  "slug": "citroen-berlingo-iii-15-bluehdi-130-2018-23",
+  "modelSlug": "citroen-berlingo",
+  "title": "Citroën Berlingo III 1.5 BlueHDi 130 (2018–2023)",
+  "intro": "De 1.5 BlueHDi 130 gebruikt in deze RDW-toepassing originele 96 kW en 1499 cc. Deze fabrieksafstelling verschilt van de zwakkere 56 en 75 kW-motoren. De geselecteerde leveranciers publiceren 160 pk na gewone Stage 1, maar verschillen over het piekkoppel en bevestigen niet de toestand van uw eigen voertuig.",
+  "checks": "Vergelijk BERLINGO type E, originele 96 kW, diesel 1499 cc en toelating 2018–2023. Stel motorcode, gemonteerde ECU, Euro-emissiefase en handbak of automaat vast voordat een offerte wordt gemaakt. De facelift uit 2024 en een oudere 1560 cc-diesel mogen niet automatisch dezelfde kalibratie krijgen.",
+  "appIds": [
+    "rdw-bulk-15-citroen-berlingo-e-15bluehdi130-2018-23"
+  ]
+},
+{
+  "slug": "peugeot-partner-iii-15-bluehdi-75-2019-23",
+  "modelSlug": "peugeot-partner",
+  "title": "Peugeot Partner III 1.5 BlueHDi 75 (2019–2023)",
+  "intro": "De Partner III met 56 kW en 1499 cc is niet de oudere Partner 1.6 HDi met 55 kW en 1560 cc. Voor de nieuwe 1.5 diesel zijn twee afzonderlijke Peugeot-publicaties gecontroleerd. De leveranciers verschillen over vermogen en koppel na Stage 1; RDW blijft de bron voor de originele geregistreerde motoroutput.",
+  "checks": "Controleer PEUGEOT PARTNER type E, 1499 cc diesel, vier cilinders, originele 56 kW en eerste toelating 2019–2023. Verifieer DV5 en de concrete ECU-versie, koppeling, transmissie en emissiesysteem. De externe 115–125 pk en 300–320 Nm zijn voorwaardelijke indicaties, geen gegarandeerd resultaat voor zwaar gebruik.",
+  "appIds": [
+    "rdw-bulk-15-peugeot-partner-e-15bluehdi75-2019-23"
+  ]
+},
+{
+  "slug": "peugeot-partner-iii-15-bluehdi-100-2019-21",
+  "modelSlug": "peugeot-partner",
+  "title": "Peugeot Partner III 1.5 BlueHDi 100/102 (2019–2021)",
+  "intro": "Deze Partner III uit 2019–2021 heeft originele 75 kW en een 1499 cc-diesel. De al beoordeelde latere 2022–2024 toepassing blijft apart bestaan, zodat oudere registraties niet afhankelijk zijn van een nieuwere ECU-bron. De originele kW blijven ongewijzigd, ook wanneer een aanbieder de uitvoering 100 pk noemt.",
+  "checks": "Identificeer PARTNER type E, 1499 cc diesel, originele 75 kW en toelating 2019–2021. Bevestig Bosch ECU, werkelijke DV5-variant, softwaretoegang en transmissie. Publicaties noemen 140 pk en 300–340 Nm na Stage 1; het originele koppel is leveranciersinformatie, niet een RDW-meting.",
+  "appIds": [
+    "rdw-bulk-15-peugeot-partner-e-15bluehdi100-2019-21"
+  ]
+},
+{
+  "slug": "peugeot-partner-iii-15-bluehdi-130-2019-23",
+  "modelSlug": "peugeot-partner",
+  "title": "Peugeot Partner III 1.5 BlueHDi 130 (2019–2023)",
+  "intro": "De Partner III 130 pk heeft originele RDW-motoroutput 96 kW bij 1499 cc. Deze uitvoering heeft eigen Peugeot-bronnen en is niet afgeleid van een vergelijkbare Toyota of Citroën. De gewone Stage 1-publicaties noemen dezelfde vermogenswaarde, maar een licht verschillend eindkoppel.",
+  "checks": "Controleer PARTNER type E, diesel 1499 cc, 96 kW en eerste toelating 2019–2023. Motorcode, ECU-firmware, handbak of automaat en bedrijfslast bepalen welke afstelling verantwoord is. De 2024 softwaregeneratie krijgt niet automatisch dit profiel; SCR/AdBlue, DPF en EGR blijven legaal actief.",
+  "appIds": [
+    "rdw-bulk-15-peugeot-partner-e-15bluehdi130-2019-23"
+  ]
+},
+{
+  "slug": "opel-combo-e-15-diesel-75-2019-22",
+  "modelSlug": "opel-combo",
+  "title": "Opel Combo E 1.5 Diesel 75 (2019–2022)",
+  "intro": "De Opel Combo E met 1499 cc en originele 56 kW behoort tot een andere generatie dan de eerdere Combo D op Fiat-techniek. Twee Opel-specifieke leveranciers beschrijven de 1.5 diesel 75. Hun verschillende gewone Stage 1-resultaten worden als indicatie getoond, zonder de gegevens van een zustermodel over te nemen.",
+  "checks": "Vergelijk OPEL COMBO type E, 1499 cc diesel, 56 kW en toelating 2019–2022. Bevestig D15DTL-motorcode, ECU-software, toegang en koppeling of automaat. De 115–125 pk en 300–320 Nm zijn externe bronwaarden; een beladen installatiebus vraagt altijd een individuele beoordeling van transmissie en koeling.",
+  "appIds": [
+    "rdw-bulk-15-opel-combo-e-15d75-2019-22"
+  ]
+},
+{
+  "slug": "opel-combo-e-15-diesel-102-2019-22",
+  "modelSlug": "opel-combo",
+  "title": "Opel Combo E 1.5 Diesel 100/102 (2019–2022)",
+  "intro": "De Combo E met originele 75 kW en 1499 cc wordt als 100 of 102 pk aangeduid. Dit is niet de latere 81 kW 110 pk, ondanks de overeenkomstige 1.5 dieselnaam. Beide onderzochte Opel-publicaties noemen 140 pk en 340 Nm na gewone Stage 1, maar dat is geen meting van uw bestelwagen.",
+  "checks": "Controleer COMBO E, originele 75 kW, diesel 1499 cc, vier cilinders en eerste toelating 2019–2022. Identificeer D15DT/F15DT en de werkelijk aanwezige ECU, software en transmissie. De 56 kW-instapmotor en 96 kW-topvariant blijven apart; emissiecontrole en voorgeschreven onderhoud moeten behouden blijven.",
+  "appIds": [
+    "rdw-bulk-15-opel-combo-e-15d102-2019-22"
+  ]
+},
+{
+  "slug": "opel-combo-e-15-diesel-130-2019-22",
+  "modelSlug": "opel-combo",
+  "title": "Opel Combo E 1.5 Diesel 130/131 (2019–2022)",
+  "intro": "De sterkere Combo E 1.5 diesel heeft originele 96 kW en 1499 cc. De marketingnaam 130 pk en de omgerekende 131 metrische pk kunnen naast elkaar bestaan zonder de RDW-waarde te veranderen. Twee Opel-publicaties ondersteunen gewone Stage 1, met een klein verschil in het genoemde piekkoppel.",
+  "checks": "Verifieer OPEL COMBO type E, 1499 cc diesel, originele 96 kW en toelating 2019–2022. Bevestig D15DTH/F15DTH, ECU-firmware, ontgrendeling en handgeschakelde of automatische versnellingsbak. De 160 pk en 350–360 Nm zijn geen veilige universele koppelgrens; andere emissie- of modeljaren vereisen aparte controle.",
+  "appIds": [
+    "rdw-bulk-15-opel-combo-e-15d130-2019-22"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -738,7 +828,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==76||new Set(nlVanEngines.map(x=>x.slug)).size!==76)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==85||new Set(nlVanEngines.map(x=>x.slug)).size!==85)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];

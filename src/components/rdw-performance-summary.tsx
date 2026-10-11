@@ -1,0 +1,27 @@
+"use client";
+import {ArrowUpRight, CheckCircle2, Info} from 'lucide-react';
+import type {Locale} from '@/i18n/routing';
+import type {EstimateStage,TuningEstimateProfile} from '@/data/tuning-estimates-shared';
+import {platePerformanceSummary,formatPerformanceRange} from '@/lib/plate-performance-summary';
+const copy={
+ nl:{eyebrow:'Jouw tuningoverzicht',heading:'Vermogen & koppel',stock:'Origineel',stage:'Na tuning',gain:'Vermogenswinst',stockNote:'Vermogen uit RDW',sourceNote:'Gepubliceerde indicatie',gainNote:'Berekend vanaf RDW',torque:'Koppel',pending:'Na controle',noGain:'Nog te bepalen',available:'Stage 1 met bronvermelding',unresolved:'Voertuig gevonden · motorvariant controleren',notice:'Indicatieve bronwaarden, geen meting of garantie voor jouw auto. ECU, versnellingsbak en voertuigconditie worden vóór uitvoering gecontroleerd.',torqueNote:'Het originele koppel komt uit motorbronnen, niet uit RDW.',missing:'Er is nog geen onderbouwd tuningresultaat voor deze uitvoering. Dat betekent niet dat tuning onmogelijk is. Stuur de voertuiggegevens mee voor een gerichte controle.',details:'Bronnen en voorwaarden',next:'Bespreek de mogelijkheden',sources:'bronnen'},
+ en:{eyebrow:'Your tuning overview',heading:'Power & torque',stock:'Original',stage:'After tuning',gain:'Power gain',stockNote:'Power from RDW',sourceNote:'Published indication',gainNote:'Calculated from RDW',torque:'Torque',pending:'After checks',noGain:'To be confirmed',available:'Source-backed Stage 1',unresolved:'Vehicle found · engine review needed',notice:'Indicative published values, not a measurement or guarantee for your vehicle. ECU, transmission and condition are checked before work.',torqueNote:'Original torque comes from engine sources, not RDW.',missing:'There is no source-backed tuning result for this exact variant yet. That does not mean it cannot be tuned. Send the vehicle details for an individual check.',details:'Sources and conditions',next:'Discuss the options',sources:'sources'},
+ pl:{eyebrow:'Możliwości Twojego auta',heading:'Moc i moment',stock:'Seryjnie',stage:'Po tuningu',gain:'Przyrost mocy',stockNote:'Moc według RDW',sourceNote:'Wskazanie ze źródeł',gainNote:'Obliczony od mocy RDW',torque:'Moment',pending:'Po weryfikacji',noGain:'Do potwierdzenia',available:'Stage 1 ze źródłami',unresolved:'Auto odnalezione · sprawdzimy silnik',notice:'Wartości orientacyjne ze źródeł, nie pomiar ani gwarancja dla tego auta. Przed realizacją sprawdzimy ECU, skrzynię i stan pojazdu.',torqueNote:'Moment seryjny pochodzi ze źródeł silnika, nie z RDW.',missing:'Dla tej wersji nie ma jeszcze potwierdzonego źródłami wyniku. To nie oznacza, że tuning jest niemożliwy. Wyślij dane pojazdu do indywidualnej weryfikacji.',details:'Źródła i warunki',next:'Zapytaj o możliwości',sources:'źródła'}
+} as const;
+export function RdwPerformanceSummary({locale,profile,stage,registeredHp,onContact}:{locale:Locale;profile?:TuningEstimateProfile;stage?:EstimateStage;registeredHp?:number|null;onContact:()=>void}){
+ const t=copy[locale],unit=locale==='pl'?'KM':locale==='en'?'hp':'pk';
+ const v=platePerformanceSummary(profile,stage,registeredHp);
+ const range=(x:Parameters<typeof formatPerformanceRange>[0],u=unit,g=false)=>formatPerformanceRange(x,locale,u,g);
+ const single=(x:number|undefined,u=unit)=>x===undefined?undefined:range([x,x],u);
+ const sourceCount=new Set(profile?.sourceReferences?.flatMap(s=>{try{return s.url?[new URL(s.url).hostname.replace(/^www\./,'')]:[];}catch{return [];}})||[]).size;
+ return <section className={'rdw-performance-summary'+(v.numeric?'':' rdw-performance-summary--pending')} data-testid="rdw-performance-summary" aria-label={t.eyebrow}>
+  <div className="rdw-performance-heading"><div><p className="rdw-performance-eyebrow">{t.eyebrow}</p><h3>{t.heading}</h3></div><span className="rdw-performance-status">{v.numeric?<CheckCircle2 aria-hidden="true"/>:<Info aria-hidden="true"/>}{v.numeric?t.available.replace('Stage 1',stage?.name??'Stage 1'):t.unresolved}</span></div>
+  <div className="rdw-performance-cards">
+   <div className="rdw-performance-card"><span>{t.stock}</span><strong data-testid="rdw-stock-power">{single(v.stockPower)??t.pending}</strong><small>{t.stockNote}</small><div className="rdw-performance-torque"><span>{t.torque}</span><b data-testid="rdw-stock-torque">{single(v.stockTorque,'Nm')??t.pending}</b></div></div>
+   <div className="rdw-performance-card rdw-performance-card--tuned"><span>{stage?.name??'Stage 1'} · {t.stage}</span><strong data-testid="rdw-stage-power">{range(v.power)??t.pending}</strong><small>{v.numeric?t.sourceNote:t.noGain}</small><div className="rdw-performance-torque"><span>{t.torque}</span><b data-testid="rdw-stage-torque">{range(v.torque,'Nm')??t.pending}</b></div></div>
+   <div className="rdw-performance-card rdw-performance-card--gain"><span>{t.gain}</span><strong data-testid="rdw-power-gain">{range(v.powerGain,unit,true)??t.noGain}</strong><small>{t.gainNote}</small><div className="rdw-performance-torque"><span>{t.torque}</span><b data-testid="rdw-torque-gain">{range(v.torqueGain,'Nm',true)??t.pending}</b></div></div>
+  </div>
+  <p className="rdw-performance-note">{v.numeric?t.notice:t.missing}{v.stockTorque!==undefined?' '+t.torqueNote:''}</p>
+  <div className="rdw-performance-actions"><button type="button" onClick={onContact} data-testid="rdw-summary-contact">{t.next}<ArrowUpRight aria-hidden="true"/></button>{v.numeric&&sourceCount>0?<span>{sourceCount} {t.sources} · ECU-check</span>:null}</div>
+ </section>;
+}

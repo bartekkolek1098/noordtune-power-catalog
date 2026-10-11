@@ -23,6 +23,7 @@ import {serviceOptions} from "@/data/catalog-shared";
 import {unavailableEstimateStage} from "@/data/tuning-estimates-shared";
 import {addQuoteOptions, assessVehicleAccess, conditionalBudgetNote, formatAccessAssessment, formatQuote, formatQuoteScope, resolveStageQuote} from "@/data/pricing";
 import {RdwVehicleFacts} from "@/components/rdw-vehicle-facts";
+import {RdwPerformanceSummary} from "@/components/rdw-performance-summary";
 import {RdwSourceComparison} from "@/components/rdw-source-comparison";
 import {isVehicleServiceSelectable} from "@/lib/vehicle-services";
 import {estimateLimitations, formatEstimatePower, formatEstimateSource, formatEstimateTorque} from "@/lib/estimate-copy";
@@ -320,12 +321,13 @@ export function PlateLookup({
           {result ? (
             <motion.div
               animate={{opacity: 1, y: 0}}
-              className="mt-6 space-y-5"
+              className="rdw-result-v2 mt-6 space-y-5"
               data-testid="rdw-result"
               exit={{opacity: 0, y: -8}}
               initial={{opacity: 0, y: 8}}
             >
-              <RdwVehicleFacts cached={result.cached} locale={locale} vehicle={result.vehicle} />
+              <RdwVehicleFacts cached={result.cached} locale={locale} vehicle={result.vehicle} compact />
+              <RdwPerformanceSummary locale={locale} profile={profile} stage={selectedStage} registeredHp={result.vehicle.engine.powerHp} onContact={onLookupContact} />
               {result.comparison ? <RdwSourceComparison comparison={result.comparison} locale={locale} /> : null}
 
               <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)]">
@@ -341,7 +343,7 @@ export function PlateLookup({
                       </span>
                     </div>
                     <div className="font-bold">
-                      {profile.brand} {profile.model}
+                      {presentation.heading}
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">
                       {profile.engine} · {localCopy.indicativeOutput}
@@ -350,10 +352,6 @@ export function PlateLookup({
                       {result.vehicle.engine.powerHp ?? profile.stockPowerHp} → {formatEstimatePower(selectedStage, locale)}
                       {!selectedStage.customHardware && (selectedStage.torqueNm !== undefined || selectedStage.torqueRangeNm) ? ` · ${formatEstimateTorque(selectedStage, locale)}` : ""}
                     </p>
-                    <p className="mt-2 text-xs leading-5 text-muted-foreground">{presentation.summary}</p>
-                    {presentation.limitations.map(note => <p className="mt-2 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>)}
-                    {profile.configurationNote ? <p className="mt-2 text-xs leading-5 text-muted-foreground">{profile.configurationNote[locale]}</p> : null}
-                    {estimateLimitations({...profile, conditionCodes: profile.conditionCodes?.filter(code => !["NOORDTUNE_TARGET_REVIEW_REQUIRED", "SOURCE_CONSENSUS_CONFLICT", "GENERIC_TORQUE_UNAVAILABLE"].includes(code))}, locale).map(note => <p className="mt-2 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>)}
                     <Button asChild className="mt-4 h-auto min-h-11 max-w-full whitespace-normal rounded-[3px] text-center" variant="outline">
                       {detailsAction.kind === "vehicle-page" ? <a data-testid="rdw-details-action" href={sitePath("/" + locale + detailsAction.path)}>
                         {detailsActionLabel(detailsAction, locale)}<ChevronRight className="h-4 w-4" />
@@ -364,6 +362,11 @@ export function PlateLookup({
                     {detailsAction.kind === "vehicle-page" ? <p className="mt-2 text-xs leading-5 text-muted-foreground">{{nl: "De tuningpagina toont de catalogusconfiguratie met een nieuwe Stage- en optiekeuze; de prijs is een familie-indicatie.", en: "The tuning page shows the catalog configuration with a fresh Stage and option selection; its price is a family estimate.", pl: "Strona tuningu pokazuje konfigurację katalogową z nowym wyborem Stage i opcji; cena jest orientacyjna dla rodziny pojazdów."}[locale]}</p> : null}
                     <details className="mt-4 text-sm leading-6 text-muted-foreground" id="rdw-estimate-details" open={detailsExpanded} onToggle={event => setDetailsExpanded(event.currentTarget.open)}>
                       <summary className="cursor-pointer font-semibold text-white">{presentation.heading}</summary>
+                    <p className="mt-2 text-xs leading-5 text-muted-foreground">{presentation.summary}</p>
+                    {presentation.limitations.map(note => <p className="mt-2 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>)}
+                    {profile.configurationNote ? <p className="mt-2 text-xs leading-5 text-muted-foreground">{profile.configurationNote[locale]}</p> : null}
+                    {estimateLimitations({...profile, conditionCodes: profile.conditionCodes?.filter(code => !["NOORDTUNE_TARGET_REVIEW_REQUIRED", "SOURCE_CONSENSUS_CONFLICT", "GENERIC_TORQUE_UNAVAILABLE"].includes(code))}, locale).map(note => <p className="mt-2 text-xs leading-5 text-muted-foreground" key={note}>{note}</p>)}
+
                       {presentation.requirements.length ? <ul className="mt-2 list-disc space-y-1 pl-4">{presentation.requirements.map(item => <li key={item}>{item}</li>)}</ul> : null}
                       {customerSources(profile, selectedStage).length ? <ul className="mt-2 space-y-2">{customerSources(profile, selectedStage).map(source => <li key={source.url}><a className="text-primary underline" href={source.url} rel="noreferrer" target="_blank">{source.label}</a></li>)}</ul> : null}
                     </details>
@@ -440,7 +443,7 @@ export function PlateLookup({
                 <CatalogVerificationNotice compact text={{...text.verification, badge: localCopy.catalogIndication, title: localCopy.ecuBeforeTuning, text: localCopy.profileVerification}} />
               ) : null}
 
-              {profile ? (
+              {profile && hasNumericStage1 ? (
                 <section
                   className="panel-edge overflow-hidden border-primary/35 p-5"
                   data-testid="rdw-recommended-package"
@@ -547,7 +550,7 @@ export function PlateLookup({
                   stockPower={result.vehicle.engine.powerHp ?? profile.stockPowerHp}
                   stockLabel={text.stock}
                   stockTorque={profile.stockTorqueNm}
-                /> : <div className="flex h-64 min-w-0 w-full items-center justify-center text-center text-sm text-muted-foreground" data-testid="rdw-pending-chart">{localCopy.pendingChart}</div>}
+                /> : <div className="flex min-w-0 w-full items-center justify-center p-3 text-center text-sm text-muted-foreground" data-testid="rdw-pending-chart">{localCopy.pendingChart}</div>}
               </div>
 
               <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)]">

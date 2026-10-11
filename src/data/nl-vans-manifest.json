@@ -365,7 +365,10 @@
       },
       "verifiedIds": [
         "rdw-bulk-peugeot-partner-e-15bluehdi100-2022-24",
-        "rdw-bulk-12-peugeot-partner-7-16hdi75-2015"
+        "rdw-bulk-12-peugeot-partner-7-16hdi75-2015",
+        "rdw-bulk-15-peugeot-partner-e-15bluehdi75-2019-23",
+        "rdw-bulk-15-peugeot-partner-e-15bluehdi100-2019-21",
+        "rdw-bulk-15-peugeot-partner-e-15bluehdi130-2019-23"
       ],
       "engineSlugs": [],
       "faq": [
@@ -652,26 +655,57 @@
     {
       "slug": "citroen-berlingo",
       "make": "Citroen",
-      "model": "Berlingo II",
+      "model": "Berlingo",
       "size": "Compact",
       "indexable": true,
-      "intro": "De Citroën Berlingo II is een compacte bestelauto voor bezorgdiensten en installateurs. De oudere 1.6 HDi 75 uit het gecontroleerde RDW-overgangsjaar 2015 heeft originele 55 kW en 1560 cc, waarvoor aparte Citroën-specifieke Stage 1-bronnen bestaan. Dit is geen automatisch bewijs voor nieuwere BlueHDi-motoren.",
-      "difference": "In 2015 wisselde de Berlingo II deels van de oudere 1.6 HDi naar de nieuwere 1.6 BlueHDi. Die uitvoeringen verschillen in ECU, emissiesysteem en fabriekskoppel ondanks dezelfde geregistreerde 55 kW en 1560 cc. Het RDW-type 7 en eerste toelating 2015 zijn daarom nog geen definitieve motoridentificatie.",
+      "intro": "De Citroën Berlingo is een compacte werkbus voor installateurs, koeriers en bouwbedrijven. De catalogus onderscheidt de oudere Berlingo II met 1560 cc HDi van de Berlingo III met 1499 cc BlueHDi. Voor de afzonderlijke originele kW-varianten zijn Citroën-specifieke Stage 1-publicaties beoordeeld; een gedeeld platform is geen bewijs voor identieke software.",
+      "difference": "Berlingo II RDW-type 7 en Berlingo III type E zijn verschillende motorgeneraties. De 1.5 BlueHDi gebruikt hier originele 56, 75 of 96 kW, terwijl de oude 1.6 HDi 75 met 55 kW en 1560 cc een eigen profiel heeft. Eerste toelating alleen bevestigt geen ECU, bouwjaar of emissievariant.",
       "usage": "Een compacte werkbus voor elektriciens en bezorgers moet vooral betrouwbaar onder belasting zijn. Onderhoud, koppeling, EGR/DPF en koeling zijn belangrijker dan het hoogste gepubliceerde piekvermogen of een theoretische brandstofbesparing. Het wettelijk maximale laadgewicht verandert niet door Stage 1.",
-      "checks": "Controleer CITROEN BERLINGO type 7, originele 55 kW, 1560 cc diesel, vier cilinders en eerste toelating 2015. Bevestig via VIN, DV6-motorcode en EDC16C34/EDC17-ECU of de oudere HDi 75 aanwezig is; bij BlueHDi gelden andere resultaten. Roetfilter, EGR en eventuele SCR/AdBlue blijven functioneren.",
+      "checks": "Controleer BERLINGO, exacte RDW-typecode 7 of E, 1560 of 1499 cc, originele kW en brandstof. Identificeer echte DV6/DV5-motor, ECU/firmware, softwaretoegang en transmissie; na Stage 1 blijven roetfilter, EGR en SCR/AdBlue waar aanwezig volledig functioneren.",
       "manufacturerSource": null,
       "verifiedIds": [
-        "rdw-bulk-13-citroen-berlingo-7-16hdi75-2015"
+        "rdw-bulk-13-citroen-berlingo-7-16hdi75-2015",
+        "rdw-bulk-15-citroen-berlingo-e-15bluehdi75-2019-23",
+        "rdw-bulk-15-citroen-berlingo-e-15bluehdi100-2019-23",
+        "rdw-bulk-15-citroen-berlingo-e-15bluehdi130-2018-23"
       ],
       "engineSlugs": [],
       "faq": [
         [
-          "Geldt de Stage 1 van Citroën Berlingo 1.6 HDi 75 voor een BlueHDi 75 uit 2015?",
-          "Niet automatisch. In 2015 zijn beide motorgeneraties mogelijk, met andere ECU, origineel koppel en emissiesoftware. De weergegeven leverancierscijfers horen alleen bij de eerdere HDi wanneer de werkelijke motoridentiteit is gecontroleerd."
+          "Waarom toont RDW 76 pk voor mijn Berlingo BlueHDi 75?",
+          "RDW registreert voor deze motor 56 kW. Omrekening levert afgerond 76 metrische pk op, terwijl de uitvoering als 75 pk wordt verkocht. Het systeem bewaart 56 kW en berekent de getoonde vermogenswinst vanaf de RDW-waarde, niet vanaf een aangepast marketinggetal."
         ],
         [
-          "Mag de roetfilter of AdBlue van mijn Berlingo voor de tuning buiten werking worden gezet?",
-          "Nee. Emissiesystemen die op het voertuig zijn gemonteerd moeten bij weggebruik legaal en functioneel blijven. NoordTune toont een voorwaardelijke gewone Stage 1-vermogensindicatie, geen optie voor uitschakeling van DPF, EGR of SCR/AdBlue."
+          "Geldt één Stage 1-resultaat voor alle Berlingo-bestelwagens?",
+          "Nee. Berlingo II en III, 1.6 HDi en 1.5 BlueHDi en de originele 56, 75 of 96 kW zijn aparte toepassingen. Eerst worden ECU, motorconditie en transmissie gecontroleerd; externe bronwaarden zijn geen gegarandeerde meting van uw eigen auto."
+        ]
+      ]
+    },
+    {
+      "slug": "opel-combo",
+      "make": "Opel",
+      "model": "Combo E",
+      "size": "Compact",
+      "indexable": true,
+      "intro": "De Opel Combo E is een compacte bedrijfswagen voor technische dienstverleners, koeriers en installatiebedrijven. Voor de 1499 cc-diesel bestaan drie verschillende oorspronkelijke RDW-vermogens die elk eigen Opel-bronnen hebben. De oudere Combo D, elektrische modellen en latere softwaregeneraties worden niet automatisch gelijkgesteld.",
+      "difference": "Combo E type E gebruikt andere motoren en ECU-techniek dan de eerdere Fiat-gerelateerde Combo D. Originele 56, 75 en 96 kW duiden verschillende afstellingen aan; ook de latere 81 kW 110 pk vraagt een eigen beoordeling. De naam 1.5 diesel alleen is onvoldoende om een kalibratie te kiezen.",
+      "usage": "Voor bestelwagens met gereedschap, aanhangers en dagelijks beladen rijden tellen betrouwbare koppelopbouw, goede koeling en de conditie van koppeling en transmissie. Meer gepubliceerd vermogen verandert nooit de toegestane voertuig- of aanhangermassa.",
+      "checks": "Vergelijk COMBO type E, 1499 cc diesel, originele 56/75/96 kW en toelating binnen de bronperiode. Controleer D15-motorcode, Bosch ECU-generatie, firmware en softwaretoegang, transmissie en bedrijfslast. DPF, EGR en SCR/AdBlue blijven legaal functioneren.",
+      "manufacturerSource": null,
+      "verifiedIds": [
+        "rdw-bulk-15-opel-combo-e-15d75-2019-22",
+        "rdw-bulk-15-opel-combo-e-15d102-2019-22",
+        "rdw-bulk-15-opel-combo-e-15d130-2019-22"
+      ],
+      "engineSlugs": [],
+      "faq": [
+        [
+          "Krijgt iedere Combo 1.5 diesel dezelfde software?",
+          "Nee. De originele 56, 75 en 96 kW-uitvoeringen hebben eigen fabrieksafstellingen en mogelijke transmissiegrenzen. Ook de werkelijk aanwezige ECU en emissiefase moeten eerst bij het voertuig worden gecontroleerd."
+        ],
+        [
+          "Zijn de gepubliceerde Stage 1-waarden gegarandeerd voor mijn werkbus?",
+          "Nee. Het zijn indicaties uit Opel-specifieke leveranciersbronnen, geen NoordTune-meting of gegarandeerde veilige koppelgrens. Onderhoud, belading, motorconditie en transmissie bepalen welke individuele afstelling mogelijk is."
         ]
       ]
     }
