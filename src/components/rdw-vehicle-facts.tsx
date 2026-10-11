@@ -54,7 +54,7 @@ const words = {
     disclaimer:"RDW nie potwierdza roku produkcji, dokładnej generacji silnika, ECU, skrzyni ani wyniku tuningu."}
 } as const;
 
-export function RdwVehicleFacts({vehicle,locale,cached}:{vehicle:Vehicle;locale:Locale;cached:boolean}){
+export function RdwVehicleFacts({vehicle,locale,cached,compact=false}:{vehicle:Vehicle;locale:Locale;cached:boolean;compact?:boolean}){
   const t=words[locale], fmt=(v:number|null|undefined)=> v == null ? undefined : new Intl.NumberFormat(locale==="en"?"en-GB":locale).format(v);
   const date=(v:string|undefined)=>v ? formatRegistrationDate(v,locale):undefined;
   const entry=(name:string,value:string|number|null|undefined,unit="") => value == null || value==="" ? undefined
@@ -89,6 +89,20 @@ export function RdwVehicleFacts({vehicle,locale,cached}:{vehicle:Vehicle;locale:
     entry(t.euro,vehicle.emissions.euroClass),
     entry(t.emission,vehicle.emissions.exhaustLevel)
   ].filter((a):a is {name:string;value:string}=>Boolean(a));
+
+  if(compact)return <section className="rdw-identity-card" data-testid="rdw-vehicle-facts">
+    <div className="rdw-identity-heading"><div><p>RDW · {cached?t.cached:t.newCheck}</p><h3>{vehicle.make} {vehicle.model}</h3></div><span className="rdw-identity-plate">{vehicle.plate}</span></div>
+    <div className="rdw-identity-meta">
+      <span data-testid="rdw-first-registration" title={t.admission}>{date(vehicle.registration.firstAdmission)??'—'}</span>
+      <span>{vehicle.fuel??'—'}</span>
+      <span>{vehicle.engine.displacementCc?fmt(vehicle.engine.displacementCc)+' cm³':'—'}</span>
+      <span title={t.power}>{vehicle.engine.powerKw!=null?fmt(vehicle.engine.powerKw)+' kW':'—'}</span>
+    </div>
+    <details className="rdw-identity-details" data-testid="rdw-technical-details"><summary>{t.extra}</summary>
+      <dl className="mt-3 grid min-w-0 grid-cols-1 gap-2 sm:grid-cols-2">{all.map(item=><div className="min-w-0 border-b border-white/10 py-1.5" key={item.name}><dt className="text-xs text-slate-400">{item.name}</dt><dd className="mt-0.5 break-all text-sm text-white">{item.value}</dd></div>)}</dl>
+      <p className="mt-3 text-xs leading-5 text-slate-400">{t.powerSource} {t.disclaimer}</p>
+    </details>
+  </section>;
 
   return <section className="min-w-0 rounded-[3px] border border-white/10 bg-black/35 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,.04)]" data-testid="rdw-vehicle-facts">
     <div className="mb-2 flex flex-wrap items-center justify-between gap-2">

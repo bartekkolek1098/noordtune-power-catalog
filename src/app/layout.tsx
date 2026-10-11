@@ -5,6 +5,7 @@ import "./editorial-v2.css";
 import "./nl-stage1-engine-seo.css";
 import "./nl-model-family-seo.css";
 import "./nl-vans-seo.css";
+import "./plate-result.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
