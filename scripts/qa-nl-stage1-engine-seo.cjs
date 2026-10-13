@@ -10,7 +10,11 @@ const priority=[
  "bmw-320i-f30-b48-184",
  "ford-transit-connect-15-ecoblue-100",
  "volkswagen-golf-7-gti-performance-245",
- "renault-master-iii-23-blue-dci-145"
+ "renault-master-iii-23-blue-dci-145",
+ "bmw-320i-g20-g21-b48-184",
+ "audi-a3-8p-14-tfsi-125",
+ "peugeot-5008-ii-12-puretech-130",
+ "nissan-juke-f16-10-dig-t-114"
 ];
 (async()=>{
  const bin=["C:/Program Files/Google/Chrome/Application/chrome.exe","C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"].find(fs.existsSync);
@@ -24,14 +28,14 @@ const priority=[
   assert.ok((await page.locator('link[rel="canonical"]').getAttribute("href")).endsWith("/nl/motoren"));
   assert.equal(await page.locator(".ux-mobile-actions a").first().getAttribute("href"),"/nl#rdw-check","Index mobile bar opens real RDW lookup");
   const links=await page.locator('a[href^="/nl/motoren/"]').evaluateAll(a=>[...new Set(a.map(x=>x.getAttribute("href")))]);
-  assert.equal(links.length,21,"21 unique engine profile links SSR on NL index");
+  assert.equal(links.length,nlStage1EngineProfiles.length,"All approved engine profiles linked SSR on NL index");
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=390));
   const sitemap=await page.request.get(base+"/sitemap.xml");
   assert.equal(sitemap.status(),200);
   const xml=await sitemap.text();
   const motorLoc=[...xml.matchAll(/<loc>([^<]*\/nl\/motoren(?:\/[^<]+)?)<\/loc>/g)].map(x=>x[1]);
-  assert.equal(motorLoc.length,22,"1 index plus 21 NL engine URLs");
-  assert.equal(new Set(motorLoc).size,22);
+  assert.equal(motorLoc.length,nlStage1EngineProfiles.length+1,"1 index plus approved NL engine URLs");
+  assert.equal(new Set(motorLoc).size,motorLoc.length);
   assert.ok(!xml.includes("/en/motoren/")&&!xml.includes("/pl/motoren/"),"Pilot only indexes Dutch URLs");
   await page.screenshot({path:process.env.TEMP+"/noordtune-nl-engine-index-mobile.png",fullPage:false});
 
@@ -53,6 +57,14 @@ const priority=[
    assert.equal(variantCount,entry.applications.length);
    const sourceLabels=await page.locator(".ux-nl-engine-sources ul").innerText();
    assert.ok(sourceLabels.includes("Stage 1")||sourceLabels.length>50);
+   if(entry.faq){
+    assert.equal(await page.locator("section[aria-labelledby='faq-title'] details").count(),2,slug+": 2 unique FAQ");
+   }
+   if(entry.photoKey){
+    const photo=page.locator("figure img[alt*='Voorbeeldfoto']");
+    assert.equal(await photo.count(),1,slug+": licensed generation photo");
+    assert.ok(await page.locator("figure figcaption a[href^='https://commons.wikimedia.org/']").count()>=1);
+   }
    const txt=await page.locator(".ux-nl-engine-scope-note").innerText();
    assert.match(txt,/Geen NoordTune-meting/);
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=391),"No mobile overflow on "+slug);
@@ -77,6 +89,6 @@ const priority=[
   assert.ok(sourceRows>=2);
   await page.screenshot({path:process.env.TEMP+"/noordtune-nl-engine-bmw-desktop.png",fullPage:false});
   assert.deepEqual(headErrors,[],"No frontend runtime errors");
-  console.log("NL_ENGINE_SEO_BROWSER_PASS",JSON.stringify({indexProfiles:links.length,sitemapNewUrls:motorLoc.length,visibleEngineJourneys:mobileVerified+1,ssgRoutes:21,nonDutchUrlsCorrectly404:4,sourceClaimsVisible:true,stableMobileDesktop:true}));
+  console.log("NL_ENGINE_SEO_BROWSER_PASS",JSON.stringify({indexProfiles:links.length,sitemapNewUrls:motorLoc.length,visibleEngineJourneys:mobileVerified+1,ssgRoutes:nlStage1EngineProfiles.length,nonDutchUrlsCorrectly404:4,sourceClaimsVisible:true,stableMobileDesktop:true}));
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -9,6 +9,7 @@ import {
 import {isPublicCatalogStageName} from "../src/data/catalog-shared.ts";
 import {featuredCatalogCars} from "../src/data/homepage.ts";
 import {nlStage1EngineProfiles,nlStage1EnginePath} from "../src/data/nl-stage1-engine-seo.ts";
+import {nlPassengerEngineProfiles} from "../src/data/nl-passenger-engine-expansion.ts";
 import {nlModelFamilyHubs,nlModelHubPath} from "../src/data/nl-model-family-seo.ts";
 import {nlVanModels,nlVanModelPath,nlVanEnginePath} from "../src/data/nl-vans-seo.ts";
 import {nlVanEngines} from "../src/data/nl-van-engines-seo.ts";
@@ -52,8 +53,8 @@ const expectedRoutes = [
 ];
 
 assert.equal(engineCatalog.length, 24, "The curated public catalog must stay at 24 vehicles");
-assert.equal(expectedRoutes.length, 375, "The sitemap includes 248 previous routes plus 21 curated NL van URLs");
-assert.equal(new Set(expectedRoutes).size, 375, "Every public sitemap route must be unique");
+assert.equal(expectedRoutes.length, 375+nlPassengerEngineProfiles.length, "Preserve the existing 375 routes and add only manually vetted passenger engines");
+assert.equal(new Set(expectedRoutes).size,expectedRoutes.length,"Every public sitemap route must be unique");
 
 const publicIds = new Set(engineCatalog.map((vehicle) => vehicle.id));
 const popularPublicIds = new Set(

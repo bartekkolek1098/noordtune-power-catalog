@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-13",
+  "items": [
+    {
+      "slug": "peugeot-2008-i-12-vti-82",
+      "headline": "Peugeot 2008 I 1.2 VTi 82",
+      "applicationIds": [
+        "rdw-bulk-peugeot-2008-c-12-vti-82"
+      ],
+      "intro": "De eerste Peugeot 2008 met atmosferische 1.2 VTi heeft 60 kW en 1199 cc. Bij deze motor zijn de gewone softwarewinsten bescheiden; cijfers van een latere turbomotor zouden een verkeerde verwachting scheppen.",
+      "workshopCheck": "Controleer de exacte EB2-variant, distributieriem in olie, oliedruk, onderhoud, motorstoringen en handbak. De kleine gepubliceerde Stage 1-toename is geen reden om de conditie van het oliesysteem over te slaan.",
+      "generationNote": "Dit profiel geldt voor RDW-type C uit 2013–2015, zonder turbo en met originele 60 kW; geen PureTech 110 of 130 met turbocompressor.",
+      "faq": [
+        [
+          "Waarom stijgt de 82 pk 2008 minder dan de 130 pk PureTech?",
+          "De 82 pk-uitvoering is atmosferisch, zonder turbo die extra turbodruk kan leveren. Externe Stage 1-publicaties laten daardoor een kleinere winst zien."
+        ],
+        [
+          "Moet de distributie vóór tuning worden gecontroleerd?",
+          "Ja. De geschiedenis van de riem-in-olie, oliespecificatie en oliedruk hoort bij de beoordeling van deze generatie, ongeacht de beperkte vermogenswinst."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-2008-ii-12-puretech-130",
+      "headline": "Peugeot 2008 II 1.2 PureTech 130",
+      "applicationIds": [
+        "rdw-bulk-peugeot-2008-u-12-puretech-130"
+      ],
+      "intro": "De tweede generatie Peugeot 2008 heeft in deze configuratie een 1.2 PureTech-turbobenzine van 96 kW en 1199 cc. Hij is technisch anders dan de atmosferische 82 pk van de vorige 2008.",
+      "workshopCheck": "Controleer de EB2-turbomotor, het juiste riem- of kettingsysteem, foutcodes, olieconditie, GPF en ECU. Bij een EAT-automaat is een gepubliceerde koppelwaarde niet automatisch de veilige transmissiegrens.",
+      "generationNote": "Deze bronreferentie betreft RDW-type U uit 2019–2020 met originele 96 kW; niet de hybride, elektrische e-2008 of 1.2 VTi.",
+      "faq": [
+        [
+          "Is de 2008 130 pk gelijk aan de e-2008?",
+          "Nee. De e-2008 is elektrisch en gebruikt geen 1.2 PureTech-verbrandingsmotor. De hier getoonde Stage 1-cijfers gelden uitsluitend voor benzine."
+        ],
+        [
+          "Waarom vermelden aanbieders 130 pk terwijl RDW rond 131 pk toont?",
+          "De commerciële motornaam is afgerond. De geregistreerde 96 kW en de exacte generatie zijn de betrouwbaardere vertrekpunten voor identificatie."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-3008-ii-12-puretech-130",
+      "headline": "Peugeot 3008 II 1.2 PureTech 130",
+      "applicationIds": [
+        "rdw-bulk-peugeot-3008-m-12-puretech-130"
+      ],
+      "intro": "De Peugeot 3008 van de tweede generatie met 1.2 PureTech 130 heeft een 1199 cc turbobenzine van 96 kW. Rond de facelift kunnen GPF, ECU en EAT-automaat per voertuig verschillen.",
+      "workshopCheck": "Onderzoek distributieonderhoud en olieconditie, ECU-software, GPF en de motorstatus. De EAT-koppellimiet en de afstelling van de turbo moeten worden bevestigd vóór een individuele Stage 1-offerte.",
+      "generationNote": "De geselecteerde RDW-registratie is type M uit 2020 met 96 kW, zonder hybride-aandrijving; niet de 1.6 PureTech 180.",
+      "faq": [
+        [
+          "Is deze 1.2 PureTech 130 hetzelfde als een 3008 Hybrid?",
+          "Nee. De hybride heeft aanvullende elektrische aandrijving en andere regeling. De Stage 1-bronnen voor een gewone benzine-3008 gelden niet voor Hybrid."
+        ],
+        [
+          "Waarom is bouwjaar 2020 extra belangrijk?",
+          "Rond de facelift kunnen ECU-revisie, GPF en automaatconfiguratie verschillen. Alleen de gecontroleerde 2020-uitvoering is hier gedocumenteerd."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-3008-ii-16-puretech-180",
+      "headline": "Peugeot 3008 II 1.6 PureTech 180",
+      "applicationIds": [
+        "rdw-bulk-peugeot-3008-m-16-puretech-180"
+      ],
+      "intro": "De Peugeot 3008 II 1.6 PureTech 180 heeft een viercilinder 1598 cc turbobenzine met originele 133 kW. Dit is een ander motorblok dan de 1.2 PureTech en geen plug-inhybride.",
+      "workshopCheck": "Verifieer de EP6-motorcode, 1598 cc, GPF, ECU-software, ontsteking, koeling en EAT-transmissie. De hogere gepubliceerde koppelwaarden zijn referenties, geen toestemming om automaatlimieten te overschrijden.",
+      "generationNote": "De beoordeelde toepassing betreft RDW-type M uit 2020 met 133 kW en uitsluitend niet-hybride benzineaandrijving.",
+      "faq": [
+        [
+          "Waarom zegt de RDW-omrekening ongeveer 181 pk?",
+          "Het originele getal is 133 kW; 180 pk is de commerciële motoraanduiding. Het kleine afrondingsverschil verandert de motoridentiteit niet."
+        ],
+        [
+          "Kan ik de cijfers van een 3008 1.2 PureTech gebruiken?",
+          "Nee. De 1.6 heeft een andere cilinderinhoud, turbo en afstelling. De Stage 1-bronnen zijn specifiek voor dit viercilinderprofiel."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-308-ii-12-puretech-130",
+      "headline": "Peugeot 308 II 1.2 PureTech 130",
+      "applicationIds": [
+        "rdw-bulk-peugeot-308-l-12-puretech-130"
+      ],
+      "intro": "De Peugeot 308 II/T9 met 1.2 PureTech 130 combineert een 1199 cc turbobenzine met originele 96 kW. Ondanks vergelijkbare naam hoort hij niet bij de nieuwere 308 III op het type F-platform.",
+      "workshopCheck": "Controleer motorgeneratie, natte distributieriem of eventuele latere revisie, olieconditie, ECU, GPF waar aanwezig en de EAT-/handbaklimieten. Het gepubliceerde koppel kan meer zijn dan de geschikte automaatmarge.",
+      "generationNote": "Deze RDW-toepassing betreft type L uit 2017, precies rond de faceliftfase; latere 308 III en hybrides krijgen geen overgenomen Stage 1-cijfers.",
+      "faq": [
+        [
+          "Is 308 II PureTech 130 gelijk aan een 308 III 130?",
+          "Nee. De 308 III heeft een andere voertuig- en ECU-generatie. Een overeenkomende commerciële pk-naam maakt de software niet uitwisselbaar."
+        ],
+        [
+          "Waarom moet een EAT-automaat worden bekeken?",
+          "Afhankelijk van de uitvoering kan de koppellimiet lager liggen dan een gepubliceerde tuningwaarde. NoordTune beoordeelt daarom de werkelijk gemonteerde transmissie."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-308-iii-12-puretech-110",
+      "headline": "Peugeot 308 III 1.2 PureTech 110",
+      "applicationIds": [
+        "rdw-bulk-peugeot-308-f-12-puretech-110"
+      ],
+      "intro": "De Peugeot 308 III type F met 1.2 PureTech 110 heeft originele 81 kW en 1199 cc. Het is een andere fabrieksafstelling dan de 96 kW 130 pk-uitvoering, zelfs als delen van de motorfamilie overeenkomen.",
+      "workshopCheck": "Bevestig ECU-hardware, motorcode, distributiesysteem, GPF, oliehistorie en handbak voordat de Stage 1-bron wordt toegepast. Uit een lagere fabrieksafstelling volgt niet dat turbo en koppeling automatisch gelijk zijn.",
+      "generationNote": "Alleen de onderzochte 2022 RDW-type F benzine 81 kW is opgenomen; 308 II, 130 pk en hybride-uitvoeringen blijven buiten scope.",
+      "faq": [
+        [
+          "Waarom is 110 pk niet hetzelfde als een 130 pk 308 III?",
+          "Het originele RDW-vermogen is 81 in plaats van 96 kW. Mogelijke overeenkomsten in motorfamilie zijn geen bewijs van dezelfde turbo, ECU en transmissie."
+        ],
+        [
+          "Is de gepubliceerde 145 pk gegarandeerd?",
+          "Nee. Het is een externe Stage 1-referentie. Eerst moet de aanwezige motor- en ECU-configuratie bij NoordTune bevestigd worden."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-308-iii-12-puretech-130",
+      "headline": "Peugeot 308 III 1.2 PureTech 130",
+      "applicationIds": [
+        "rdw-bulk-peugeot-308-f-12-puretech-130"
+      ],
+      "intro": "De Peugeot 308 III heeft met 1.2 PureTech 130 een 1199 cc benzineturbo van 96 kW. Dit technisch gecontroleerde type F verschilt van zowel de 110 pk 308 III als de oudere 308 II/T9.",
+      "workshopCheck": "Controleer 96 kW, motorcode, ECU, distributiesysteem, GPF, oliehistorie en werkelijke handbak- of EAT-versie. De gepubliceerde koppels zijn geen universele transmissielimieten.",
+      "generationNote": "Het geselecteerde RDW-cohort is type F uit 2022 met originele 96 kW. Cijfers van 308 II, 1.6 of hybrideversies worden niet gemengd.",
+      "faq": [
+        [
+          "Waarom staat er soms 131 pk in plaats van 130?",
+          "RDW registreert 96 kW en een metrische omrekening levert ongeveer 131 pk. De marketingnaam 130 pk verwijst naar dezelfde hier gecontroleerde basis."
+        ],
+        [
+          "Kan de 308 III 130 dezelfde file als de 308 III 110 gebruiken?",
+          "Dat is niet aangetoond. De ECU- en motorhardware moeten afzonderlijk worden gelezen, ook als beide uitvoeringen 1199 cc hebben."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-5008-ii-12-puretech-130",
+      "headline": "Peugeot 5008 II 1.2 PureTech 130",
+      "applicationIds": [
+        "rdw-bulk2-peugeot-5008-m-12t130-2018-19",
+        "rdw-bulk-peugeot-5008-m-12-puretech-130",
+        "rdw-bulk2-peugeot-5008-m-12t130-2021"
+      ],
+      "intro": "De Peugeot 5008 II met 1.2 PureTech 130 heeft 1199 cc en originele 96 kW. Drie beoordeelde RDW-cohorten tonen dezelfde basis, maar de GPF- en ECU-fase kan tussen 2018 en 2021 verschillen.",
+      "workshopCheck": "Controleer 96 kW, EB2-revisie, distributie en oliedruk, ECU-firmware, GPF en EAT of handbak. Bevestig de actuele motorstatus; gepubliceerde hoge koppels zijn geen vrijgave van iedere EAT-transmissie.",
+      "generationNote": "Hier zijn drie gecontroleerde type M-cohorten van 2018–2019, 2020 en 2021 gegroepeerd. Dit is geen 5008 Hybrid of 1.6 PureTech.",
+      "faq": [
+        [
+          "Waarom toont deze pagina meerdere toelatingsjaren?",
+          "Dezelfde RDW-typefamilie en 96 kW zijn in meerdere broncohorten beoordeeld. Jaar- en emissieverschillen blijven afzonderlijk zichtbaar in de technische tabel."
+        ],
+        [
+          "Is een 5008 130 automatisch gelijk aan een 3008 130?",
+          "Nee. De modellen delen soms een motorfamilie, maar voertuig, ECU-firmware en transmissielast moeten afzonderlijk worden gecontroleerd."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-208-ii-12-puretech-130",
+      "headline": "Peugeot 208 II 1.2 PureTech 130",
+      "applicationIds": [
+        "rdw-bulk-peugeot-208-u-12-puretech-130"
+      ],
+      "intro": "De tweede Peugeot 208 met 1.2 PureTech 130 gebruikt een 1199 cc benzineturbo van 96 kW. De stagegegevens horen bij de verbrandingsmotor en niet bij een elektrische e-208 of 208 I.",
+      "workshopCheck": "Laat 96 kW, ECU-software, distributiestatus, olieconditie en GPF controleren. De veelvoorkomende EAT8 vraagt een eigen koppelbeoordeling voordat de gepubliceerde bronwaarden op een auto worden betrokken.",
+      "generationNote": "Deze RDW-referentie betreft type U met eerste toelating in 2019; geen 208 I en geen E85, hybride of elektrische variant.",
+      "faq": [
+        [
+          "Is deze 208 130 hetzelfde als een e-208?",
+          "Nee. De e-208 heeft een elektrische aandrijving zonder deze PureTech-motor. Stage 1-cijfers voor benzine gelden er niet voor."
+        ],
+        [
+          "Kan de EAT8 alle gepubliceerde Nm aan?",
+          "Dat moet individueel worden nagegaan. De ECU- en transmissierevisie en de onderhoudsstaat bepalen of de externe referentie bruikbaar is."
+        ]
+      ]
+    },
+    {
+      "slug": "renault-clio-v-10-tce-100",
+      "headline": "Renault Clio V 1.0 TCe 100",
+      "applicationIds": [
+        "rdw-bulk2-renault-clio-v-tce100"
+      ],
+      "intro": "De Renault Clio V met 1.0 TCe 100 heeft een 999 cc H4Dt-turbobenzine en originele 74 kW. De RDW-omrekening kan rond 101 pk liggen, maar dit is geen latere TCe 90 of LPG-uitvoering.",
+      "workshopCheck": "Controleer H4Dt-motorcode, ECU-software, onderhoud en brandstofsoort; bevestig handbak versus eventuele CVT/automaat. Een LPG/ECO-G-variant valt buiten deze benzinebronnen.",
+      "generationNote": "De onderzochte RDW-type RJA-registratie betreft eerste toelating 2019–2020 met 74 kW pure benzine.",
+      "faq": [
+        [
+          "Waarom heet deze motor TCe 100 bij 74 kW?",
+          "De verkoopaanduiding is afgerond. De RDW-basis van 74 kW komt metrisch op ongeveer 101 pk; de juiste kW en motorcode zijn bepalend."
+        ],
+        [
+          "Is de Clio V TCe 100 hetzelfde als TCe 90?",
+          "Nee. De 67 kW-versie heeft een eigen ECU- en bronvergelijking. Deze pagina betreft uitsluitend de gecontroleerde 74 kW-configuratie."
+        ]
+      ]
+    },
+    {
+      "slug": "renault-clio-v-10-tce-90-2021",
+      "headline": "Renault Clio V 1.0 TCe 90 (2021)",
+      "applicationIds": [
+        "rdw-bulk2-renault-clio-v-tce90-2021"
+      ],
+      "intro": "De Clio V TCe 90 uit 2021 heeft een 999 cc driecilinder met originele 67 kW. Hij is niet dezelfde geregistreerde 74 kW TCe 100 en de latere facelift kan een afwijkende motorsoftwarefase hebben.",
+      "workshopCheck": "Controleer de juiste benzine-uitvoering, H4Dt-motorcode, ECU-software, motoronderhoud en handgeschakelde of andere transmissie. LPG-uitvoeringen zijn expliciet uitgesloten van dit profiel.",
+      "generationNote": "Deze vergelijking is beperkt tot type RJA met eerste toelating in 2021 en 67 kW, vóór de latere Clio V-facelift.",
+      "faq": [
+        [
+          "Kan ik deze 2021-waarden op een Clio uit 2024 toepassen?",
+          "Niet automatisch. De latere facelift heeft eigen onderzochte software- en Stage 1-bronnen; eerst moet de productie- en ECU-fase kloppen."
+        ],
+        [
+          "Waarom is TCe 90 soms circa 91 pk bij RDW?",
+          "67 kW wordt metrisch ongeveer 91 pk. De oorspronkelijke kW-registratie voorkomt verwarring met een andere verkoopaanduiding."
+        ]
+      ]
+    },
+    {
+      "slug": "renault-clio-v-facelift-10-tce-90",
+      "headline": "Renault Clio V facelift 1.0 TCe 90",
+      "applicationIds": [
+        "rdw-bulk2-renault-clio-v-tce90-facelift"
+      ],
+      "intro": "De Clio V facelift met 1.0 TCe 90 heeft nog steeds 999 cc en originele 67 kW, maar de bronnen zijn voor de faceliftfase vanaf 2023 geselecteerd, niet voor een oudere Clio V.",
+      "workshopCheck": "Verifieer de faceliftuitvoering, pure benzine, werkelijke ECU-firmware, motorcode en versnellingsbak. Toepassingen voor LPG of toekomstige Clio-generaties worden niet overgenomen.",
+      "generationNote": "Het onderzochte RDW-cohort RJA heeft eerste toelating 2024–2025, nog van de Clio V-generatie en niet van een latere opvolger.",
+      "faq": [
+        [
+          "Waarom heeft een Clio facelift een aparte pagina?",
+          "Uiterlijk en softwarefase veranderden terwijl de verkoopaanduiding gelijk bleef. Daarom zijn twee onafhankelijke aanbieders specifiek voor de facelift vergeleken."
+        ],
+        [
+          "Zijn ECO-G- en LPG-motoren inbegrepen?",
+          "Nee. Dit is uitsluitend de pure benzine TCe 90. Voor LPG zijn andere voorwaarden en brongegevens nodig."
+        ]
+      ]
+    },
+    {
+      "slug": "renault-megane-iii-12-tce-115",
+      "headline": "Renault Mégane III 1.2 TCe 115",
+      "applicationIds": [
+        "rdw-renault-megane-z-12-tce-115"
+      ],
+      "intro": "De Renault Mégane III met 1.2 TCe van originele 85 kW heeft een 1197 cc H5Ft-benzineturbo. De 115 pk-verkoopaanduiding wordt metrisch vaak rond 116 pk afgerond.",
+      "workshopCheck": "Controleer de H5Ft-motorcode, olie- en distributiehistorie, ECU-versie, motorgezondheid en handbak of EDC. Bij deze motor verdient eventuele olieverbruikgeschiedenis aandacht vóór extra belasting.",
+      "generationNote": "De beoordeelde RDW-code Z betreft eerste toelating 2012–2015 en originele 85 kW; geen Mégane IV of TCe 130.",
+      "faq": [
+        [
+          "Is dit dezelfde motor als de Mégane IV 1.2 TCe?",
+          "Niet zonder meer. Gelijke 1.2 TCe-namen kunnen andere ECU-software en revisies verbergen. Deze pagina is strikt voor Mégane III type Z."
+        ],
+        [
+          "Waarom wordt olieverbruik gecontroleerd?",
+          "Bij een oudere turbobenzinemotor moeten olieverbruik, onderhoud en distributie in orde zijn voordat extra turbodruk en belasting overwogen worden."
+        ]
+      ]
+    },
+    {
+      "slug": "renault-megane-iii-12-tce-130",
+      "headline": "Renault Mégane III 1.2 TCe 130",
+      "applicationIds": [
+        "rdw-renault-megane-z-12-tce-130"
+      ],
+      "intro": "De Mégane III 1.2 TCe 130 met 1197 cc heeft originele 97 kW en een andere fabrieksafstelling dan de 85 kW TCe 115. De metrische RDW-omrekening kan circa 132 pk tonen.",
+      "workshopCheck": "Controleer de H5Ft-variant, ECU-firmware, turbolader, ontsteking, onderhoud en olieverbruik. Het bronbereik is geen bewijs dat de 115 en 130 pk-hardware volledig overeenkomen.",
+      "generationNote": "Deze referentie geldt voor RDW-type Z uit 2013–2015 met 97 kW; de vierde generatie Mégane en de TCe 115 zijn uitgesloten.",
+      "faq": [
+        [
+          "Waarom wijkt RDW rond 132 pk af van de naam TCe 130?",
+          "De oorspronkelijke 97 kW wordt omgezet naar metrische pk en vervolgens afgerond. De technische identificatie gebeurt met kW en motorcode."
+        ],
+        [
+          "Kunnen beide Mégane 1.2 TCe-motoren dezelfde tuningfile krijgen?",
+          "Dat is niet bevestigd. Verschillende fabrieksvermogens en ECU-kalibraties moeten apart worden onderzocht."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan-micra-k14-10-ig-t-100",
+      "headline": "Nissan Micra K14 1.0 IG-T 100",
+      "applicationIds": [
+        "rdw-bulk2-nissan-micra-k14-10-igt100"
+      ],
+      "intro": "De Nissan Micra V K14 met 1.0 IG-T 100 gebruikt een 999 cc turbobenzinemotor van 74 kW. Dit profiel is gescheiden van de latere 68 kW-uitvoering die als 92 pk bekend staat.",
+      "workshopCheck": "Identificeer de HR10DET-motor, ECU, brandstof en transmissie; een X-Tronic/CVT vraagt een andere koppelafweging dan een handbak. Gegevens van Clio of Juke worden niet zomaar op Micra toegepast.",
+      "generationNote": "De onderzochte RDW-registraties vallen in 2019–2020, type K14 en 74 kW, niet de latere 68 kW IG-T 92.",
+      "faq": [
+        [
+          "Waarom heeft de Micra 100 soms circa 101 pk bij RDW?",
+          "De 74 kW-basis wordt metrisch naar ongeveer 101 pk omgerekend. Het getal in de verkoopnaam is afgerond."
+        ],
+        [
+          "Is een hoge Stage 1-koppelwaarde geschikt voor de CVT?",
+          "Niet automatisch. De werkelijk gemonteerde CVT of handbak en ECU moeten afzonderlijk worden beoordeeld."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan-micra-k14-10-ig-t-92",
+      "headline": "Nissan Micra K14 1.0 IG-T 92",
+      "applicationIds": [
+        "rdw-bulk-nissan-micra-k14-10igt92-2021-24"
+      ],
+      "intro": "De latere Micra K14 met 1.0 IG-T 92 heeft 68 kW en 999 cc. Deze herziening van de driecilinder is niet dezelfde fabrieksafstelling als de eerdere 74 kW Micra IG-T 100.",
+      "workshopCheck": "Controleer 68 kW, toegepaste ECU-software, motorcode, servicehistorie en transmissie. De grenzen van een eventueel CVT-systeem mogen niet uit tunerbrochures voor handgeschakelde auto's worden afgeleid.",
+      "generationNote": "Dit profiel is beperkt tot K14 uit 2021–2024 met originele 68 kW; de 100 pk- en oudere atmosferische Micra zijn anders.",
+      "faq": [
+        [
+          "Waarom is de Micra 92 apart van de Micra 100?",
+          "De 92-versie heeft een andere geregistreerde 68 kW-fabrieksafstelling en een latere bronfase. De Stage 1-gegevens zijn afzonderlijk gecontroleerd."
+        ],
+        [
+          "Hoe belangrijk is de CVT voor het resultaat?",
+          "Zeer belangrijk: een CVT kan een andere belastinggrens hebben dan een handbak. NoordTune beoordeelt daarom de werkelijke transmissie vóór een voorstel."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan-juke-f16-10-dig-t-117",
+      "headline": "Nissan Juke F16 1.0 DIG-T 117",
+      "applicationIds": [
+        "rdw-bulk-nissan-juke-f16-10digt117-2020"
+      ],
+      "intro": "De Nissan Juke II F16 met 1.0 DIG-T 117 heeft een 999 cc turbobenzine van 86 kW. Deze eerste generatie F16-afstelling is niet gelijk aan de latere 84 kW 114 pk-uitvoering.",
+      "workshopCheck": "Controleer de HR10DET-motor en ECU, brandstof, koeling en de aanwezige handbak of DCT. De publicaties zijn alleen gewone Stage 1-referenties, geen overdraagbare tuningfile.",
+      "generationNote": "De gecontroleerde RDW-aanmelding is type F16 uit 2020 met 86 kW; de oudere Juke F15 1.2 DIG-T is uitgesloten.",
+      "faq": [
+        [
+          "Waarom heeft de Juke II 117 een andere pagina dan de 114?",
+          "De originele RDW-waarden zijn 86 tegenover 84 kW en de uitvoering hoort bij een andere softwarefase. De bronnen zijn apart beoordeeld."
+        ],
+        [
+          "Kan de 117 pk Juke met DCT dezelfde waarden krijgen?",
+          "Een DCT vraagt een aparte controle van koppeling, ECU en transmissiebeheer. Het maximale koppel uit een advertentie is geen vooraf gegeven vrijgave."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan-juke-f16-10-dig-t-114",
+      "headline": "Nissan Juke F16 1.0 DIG-T 114",
+      "applicationIds": [
+        "rdw-bulk-nissan-juke-f16-10digt114-2021-24"
+      ],
+      "intro": "De Juke F16 1.0 DIG-T 114 gebruikt 999 cc en originele 84 kW. De latere 114 pk-aanduiding verwijst naar een andere fabrieksspecificatie dan de 86 kW 117 pk Juke uit 2020.",
+      "workshopCheck": "Verifieer ECU-revisie, werkelijke 84 kW-motorcode, brandstofsysteem en handbak of DCT. De verschillende gepubliceerde Stage 1-cijfers zijn geen bewijs van identieke motorhardware.",
+      "generationNote": "Deze technisch beoordeelde F16-variant betreft 2021–2024 met 84 kW, niet de eerdere 117 pk-uitvoering of de hybride Juke.",
+      "faq": [
+        [
+          "Kan ik een Juke Hybrid met deze referentie vergelijken?",
+          "Nee. Het hybride aandrijfsysteem heeft andere componenten en een andere regeling. Dit profiel is alleen voor pure benzine 84 kW."
+        ],
+        [
+          "Waarom geven tuners verschillende uitkomsten?",
+          "De twee externe publicaties verschillen. NoordTune kan pas na identificatie van ECU en versnellingsbak bepalen welke afstelling passend is."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan-x-trail-t32-16-dig-t-163",
+      "headline": "Nissan X-Trail T32 1.6 DIG-T 163",
+      "applicationIds": [
+        "rdw-bulk-nissan-xtrail-t32-16digt163-2017-19"
+      ],
+      "intro": "De Nissan X-Trail III T32 facelift heeft als 1.6 DIG-T een 1618 cc benzineturbo met originele 120 kW. De gecontroleerde bronnen noemen verschillende Stage 1-uitkomsten en zijn niet op ieder modeljaar even specifiek.",
+      "workshopCheck": "Controleer de MR16DDT-motorcode, ECU en softwarefase, benzinekwaliteit, koeling en handbak of CVT. Eén externe bron is smaller gedateerd, zodat het hoogste cijfer bij een auto uit 2019 extra verificatie vereist.",
+      "generationNote": "Het onderzochte T32-cohort beslaat 2017–2019 met 120 kW; een aanbiederspagina noemt slechts 2014–2017, dus latere ECU-toepasbaarheid staat niet vast.",
+      "faq": [
+        [
+          "Is de hoogste externe Stage 1-waarde ook mogelijk in een X-Trail van 2019?",
+          "Dat is niet bevestigd. Eén bron noemt een oudere jaargroep; de precieze ECU en motorgeneratie van een 2019-auto moeten eerst worden gecontroleerd."
+        ],
+        [
+          "Kunnen cijfers van een Juke 1.6 DIG-T worden overgenomen?",
+          "Nee. Dit profiel is alleen voor de X-Trail T32 met 120 kW en de gecontroleerde externe bronnen; verschillen in voertuig en transmissie zijn relevant."
+        ]
+      ]
+    },
+    {
+      "slug": "citroen-c3-iii-12-puretech-110",
+      "headline": "Citroën C3 III 1.2 PureTech 110",
+      "applicationIds": [
+        "rdw-bulk2-citroen-c3-s-12puretech110-2017"
+      ],
+      "intro": "De Citroën C3 van de derde generatie heeft met 1.2 PureTech 110 een 1199 cc turbobenzine van 81 kW. Hij is technisch niet dezelfde motorconfiguratie als de atmosferische PureTech 82.",
+      "workshopCheck": "Controleer distributieriem in olie of passende revisie, olieaanzuiging, ECU-versie, ontsteking en GPF waar gemonteerd. Bij de EAT-automaat of handbak is een onafhankelijke beoordeling van extra koppel nodig.",
+      "generationNote": "Deze gecontroleerde RDW-toepassing heeft type S en eerste toelating in 2017 met 81 kW; nieuwere facelifts en de 82 pk-motor vallen erbuiten.",
+      "faq": [
+        [
+          "Waarom verschilt PureTech 110 van PureTech 82?",
+          "De 110 pk is een turbomotor met een andere originele afstelling, terwijl de 82 pk atmosferisch is. De Stage 1-bronnen mogen niet worden verwisseld."
+        ],
+        [
+          "Is distributieonderhoud belangrijk voor Stage 1?",
+          "Ja. Bij deze motorfamilie zijn riem-, olie- en oliedrukstatus essentiële punten voor elke extra belasting."
+        ]
+      ]
+    },
+    {
+      "slug": "citroen-c4-iii-12-puretech-130",
+      "headline": "Citroën C4 III 1.2 PureTech 130",
+      "applicationIds": [
+        "rdw-bulk-citroen-c4-b-12puretech130-2020-22"
+      ],
+      "intro": "De Citroën C4 van de nieuwe generatie met 1.2 PureTech 130 heeft originele 96 kW en 1199 cc. De auto is geen oudere C4 II en geen elektrische ë-C4, ook al lijkt de modelnaam sterk.",
+      "workshopCheck": "Controleer de EB2-revisie, distributiesysteem en olieconditie, ECU-firmware, GPF en EAT- of handbakvariant. Vermeldingen van 130 versus circa 131 metrische pk vereisen geen fictieve andere motor.",
+      "generationNote": "De beoordeelde RDW-typecode is B met eerste toelating 2020–2022 en 96 kW pure benzine; hybride en elektrische C4 vallen buiten scope.",
+      "faq": [
+        [
+          "Is een Citroën ë-C4 inbegrepen?",
+          "Nee. De ë-C4 is elektrisch en gebruikt deze PureTech-motor niet. De getoonde Stage 1-publicaties zijn uitsluitend voor benzine."
+        ],
+        [
+          "Waarom zijn ECU en EAT bij C4 PureTech belangrijk?",
+          "De motor- en versnellingsbaksoftware kunnen per bouwfase verschillen. Voor een individueel aanbod moet de actuele ECU en transmissie worden geïdentificeerd."
+        ]
+      ]
+    },
+    {
+      "slug": "citroen-c5-aircross-12-puretech-130",
+      "headline": "Citroën C5 Aircross 1.2 PureTech 130",
+      "applicationIds": [
+        "rdw-bulk-citroen-c5-aircross-a-12puretech130-2020-21"
+      ],
+      "intro": "De Citroën C5 Aircross met 1.2 PureTech 130 is een SUV met 1199 cc benzineturbo van 96 kW. Deze motorvariant is niet gelijk aan een C5 Aircross plug-inhybride met andere aandrijftechniek.",
+      "workshopCheck": "Controleer originele 96 kW, ECU-software, distributie en oliehistorie, GPF en het type EAT-automaat. De belasting en massa van een SUV kunnen een conservatievere koppelafstelling wenselijk maken.",
+      "generationNote": "Deze RDW-referentie betreft type A uit 2020–2021 met pure benzine; 1.6 PureTech, diesel en hybrideversies zijn uitgesloten.",
+      "faq": [
+        [
+          "Kan ik deze Stage 1 op een C5 Aircross Hybrid toepassen?",
+          "Nee. De hybride heeft een andere aandrijving en ECU-context; Stage 1-publicaties voor de pure 1.2 benzinemotor zijn niet overdraagbaar."
+        ],
+        [
+          "Waarom verdient de transmissie van deze SUV extra aandacht?",
+          "De massa, het gebruik en de transmissievariant spelen mee bij de koppelbeoordeling. De externe bronwaarden zijn geen gegarandeerde trekprestaties."
+        ]
+      ]
+    },
+    {
+      "slug": "dacia-sandero-iii-10-tce-90",
+      "headline": "Dacia Sandero III 1.0 TCe 90",
+      "applicationIds": [
+        "rdw-bulk2-dacia-sandero-djf-tce90"
+      ],
+      "intro": "De Dacia Sandero III met 1.0 TCe 90 heeft een 999 cc turbobenzine van 67 kW. Deze pure benzine-uitvoering mag niet met de ECO-G LPG-variant of atmosferische SCe worden gelijkgesteld.",
+      "workshopCheck": "Controleer RDW-type DJF, originele 67 kW, motorcode, ECU-firmware en handbak/CVT. LPG-brandstofsystemen en ECO-G-regelsoftware zijn bewust uitgesloten van deze benzinebronnen.",
+      "generationNote": "De onderzochte toelatingen vallen in 2023–2024 bij type DJF en pure benzine; een Sandero Stepway ECO-G krijgt geen afgeleide Stage 1-belofte.",
+      "faq": [
+        [
+          "Kunnen ECO-G en TCe 90 dezelfde tuning krijgen?",
+          "Nee. LPG heeft een andere brandstof- en motorregeling. Deze gegevens gelden uitsluitend voor de gecontroleerde benzine-uitvoering."
+        ],
+        [
+          "Wat betekent 67 kW bij een Sandero TCe 90?",
+          "Bij metrische omrekening is dat ongeveer 91 pk. De oorspronkelijke kW-registratie is leidend bij het vaststellen van de juiste motorvariant."
+        ]
+      ]
+    },
+    {
+      "slug": "hyundai-i20-ii-gb-10-t-gdi-100",
+      "headline": "Hyundai i20 II GB 1.0 T-GDI 100",
+      "applicationIds": [
+        "rdw-bulk2-hyundai-i20-gb-10tgdi-100"
+      ],
+      "intro": "De Hyundai i20 II type GB/IB heeft een 998 cc driecilinder 1.0 T-GDI van 73,6 kW. Het onderzochte 2020-model hoort bij de oudere generatie en niet bij de nieuwe i20 BC3.",
+      "workshopCheck": "Controleer originele 73,6 kW, motorcode, ECU-software, benzinekwaliteit, turbolader en het type transmissie. Een stage-waarde uit een bron zonder E85 is niet automatisch bruikbaar voor andere brandstoffen.",
+      "generationNote": "Dit profiel betreft de beoordeelde GB/IB-uitvoering met eerste toelating 2020; de latere i20 III en mild-hybridvarianten zijn uitgesloten.",
+      "faq": [
+        [
+          "Waarom moet ik het i20-bouwjaar controleren?",
+          "Rond 2020 veranderde de i20-generatie. De oude GB/IB en nieuwe BC3 hebben niet automatisch hetzelfde motorbeheer en dezelfde Stage 1-bronnen."
+        ],
+        [
+          "Is deze i20 de 1.0 T-GDI 120 pk?",
+          "Nee. De geregistreerde 73,6 kW is de 100 pk-variant. Andere vermogens en ECU-kalibraties moeten apart onderzocht worden."
+        ]
+      ]
+    },
+    {
+      "slug": "mazda-mx5-nc1-18-mzr-126",
+      "headline": "Mazda MX-5 NC1 1.8 MZR 126",
+      "applicationIds": [
+        "rdw-bulk-mazda-mx5-nc1-18-mzr-126"
+      ],
+      "intro": "De Mazda MX-5 NC1 met 1.8 MZR heeft een atmosferische 1798 cc benzinemotor van 93 kW. Zonder turbodruk zijn normale Stage 1-winsten bescheiden in vergelijking met een turbomotor.",
+      "workshopCheck": "Controleer de werkelijke NC1-motor, ECU, onderhoud, ontsteking, variabele kleptiming waar van toepassing en de handgeschakelde transmissie. De twee externe bronnen verschillen ook in opgegeven origineel koppel.",
+      "generationNote": "De onderzochte RDW-registraties betreffen type NC1 uit 2007–2014 met originele 93 kW; NC2 2.0 en turboprojecten zijn uitgesloten.",
+      "faq": [
+        [
+          "Waarom levert een MX-5 1.8 weinig extra pk met alleen software?",
+          "De 1.8 MZR is atmosferisch en heeft niet de turbodrukmarge van een turbobenzinemotor. De onafhankelijke publicaties tonen daarom beperkte winsten."
+        ],
+        [
+          "Waarom verschillen de originele Nm in de publicaties?",
+          "De aanbieders hanteren verschillende fabrieksreferenties. RDW bevestigt niet ieder koppelniveau, zodat de werkelijk aanwezige motorvariant telt."
+        ]
+      ]
+    },
+    {
+      "slug": "fiat-500-312-09-twinair-85",
+      "headline": "Fiat 500 312 0.9 TwinAir 85",
+      "applicationIds": [
+        "rdw-bulk-fiat-500-312-09-twinair-85"
+      ],
+      "intro": "De Fiat 500 type 312 met 0.9 TwinAir heeft een bijzondere tweecilinder turbobenzinemotor van 875 cc en originele 63 kW. Dit is geen atmosferische 1.2 viercilinder.",
+      "workshopCheck": "Verifieer 875 cc, TwinAir-motorcode, specifieke Marelli-ECU, turbo, olie- en klepbedieningsonderhoud en handbak of gerobotiseerde transmissie. De koppelwinst uit publicaties vraagt een individuele aandrijflijncontrole.",
+      "generationNote": "Het gecontroleerde RDW-cohort is type 312 uit 2015 met originele 63 kW; latere hybrides en 1.2 69 pk zijn uitgesloten.",
+      "faq": [
+        [
+          "Waarom is een TwinAir niet gelijk aan een Fiat 500 1.2?",
+          "De TwinAir heeft twee cilinders, turbo en 875 cc, terwijl de 1.2 een ander motorblok is. De Stage 1-gegevens zijn volledig verschillend."
+        ],
+        [
+          "Is deze 0.9 TwinAir ook geschikt voor een automaat?",
+          "Een gerobotiseerde transmissie kan andere koppelgrenzen hebben dan een handbak. Eerst moeten ECU en versnellingsbak worden geïdentificeerd."
+        ]
+      ]
+    }
+  ]
+}

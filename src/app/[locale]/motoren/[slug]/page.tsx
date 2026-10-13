@@ -1,4 +1,5 @@
 import type {Metadata} from "next";
+import Image from "next/image";
 import {notFound} from "next/navigation";
 import {ArrowLeft, ArrowUpRight, ChevronRight, Info, Search} from "lucide-react";
 import {CatalogHeader} from "@/components/catalog-header";
@@ -15,6 +16,7 @@ import {sitePath} from "@/lib/site-path";
 import {chiptuningHref} from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
 import {breadcrumbListJsonLd} from "@/lib/seo";
+import {nlVehiclePhotoByKey} from "@/data/nl-vehicle-editorial";
 
 type Props={params:Promise<{locale:string;slug:string}>};
 export const dynamicParams=false;
@@ -52,7 +54,10 @@ export default async function NlStage1MotorPage({params}:Props){
  if(locale!=="nl"||!p)notFound();
  const power=allStage1PowerRange(p.applications);
  const torque=allStage1TorqueRange(p.applications);
- const related=nlStage1EngineProfiles.filter(other=>other.slug!==p.slug&&other.applications[0].make===p.applications[0].make).slice(0,4);
+ const related=nlStage1EngineProfiles.filter(other=>other.slug!==p.slug&&other.applications[0].make===p.applications[0].make)
+  .sort((a,b)=>Number(b.applications[0].model===p.applications[0].model)-Number(a.applications[0].model===p.applications[0].model))
+  .slice(0,4);
+ const photo=p.photoKey?nlVehiclePhotoByKey.get(p.photoKey):undefined;
  const modelHub=nlModelHubByEngineSlug.get(p.slug);
  const current=absoluteUrl(nlStage1EnginePath(p.slug));
  const list=absoluteUrl("/nl/motoren");
@@ -85,6 +90,16 @@ export default async function NlStage1MotorPage({params}:Props){
      <p className="ux-eyebrow">RDW-VERMOGEN · MOTORGENERATIE · STAGE 1-BRONNEN</p>
      <h1>{p.headline}<span>Stage 1 chiptuning</span></h1>
      <p className="ux-nl-engine-intro">{p.intro}</p>
+     {photo?(
+      <figure className="mt-7 max-w-3xl overflow-hidden rounded-2xl border border-white/15 bg-black/20">
+       <Image src={photo.src} width={photo.width} height={photo.height} quality={78}
+        alt={`Voorbeeldfoto van de ${p.headline}-generatie, geen NoordTune-realisatie`}
+        sizes="(max-width: 768px) 100vw, 768px" className="h-auto w-full object-cover" />
+       <figcaption className="px-4 py-3 text-xs text-white/65">
+        Illustratieve generatiefoto, geen NoordTune-realisatie. Foto: {photo.author} · <a href={photo.source} target="_blank" rel="noopener noreferrer" className="underline">{photo.license}</a> · <a href={photo.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline">licentie</a>.
+       </figcaption>
+      </figure>
+     ):null}
      <div className="ux-nl-engine-primary-facts" aria-label="Basisgegevens van dit motorprofiel">
       <div><span>Origineel RDW-vermogen</span><strong>{stockRange(p.applications,"stockPowerHp")}</strong></div>
       <div><span>Stage 1 volgens publicaties</span><strong>{range(power,"pk")}</strong></div>
@@ -131,6 +146,20 @@ export default async function NlStage1MotorPage({params}:Props){
       <div><span>03</span><strong>Staat en wettelijke eisen</strong><p>Onderhoud, foutcodes, temperaturen en originele emissievoorzieningen beoordelen; DPF, GPF, SCR en AdBlue blijven intact.</p></div>
      </div>
     </section>
+    {p.faq?.length?(
+     <section aria-labelledby="faq-title" className="ux-nl-engine-section">
+      <p className="ux-eyebrow">VEELGESTELDE VRAGEN</p>
+      <h2 id="faq-title">Vragen over deze motoruitvoering</h2>
+      <div className="space-y-3">
+       {p.faq.map(([question,answer])=>(
+        <details key={question} className="group rounded-xl border border-white/15 bg-white/[0.04] px-5 py-4">
+         <summary className="cursor-pointer text-base font-semibold text-white">{question}</summary>
+         <p className="mt-3 text-sm leading-relaxed text-white/75">{answer}</p>
+        </details>
+       ))}
+      </div>
+     </section>
+    ):null}
     <section aria-labelledby="sources-title" className="ux-nl-engine-section ux-nl-engine-sources">
      <p className="ux-eyebrow">TRANSPARANTE HERKOMST</p>
      <h2 id="sources-title">Onafhankelijke publicaties voor Stage 1</h2>

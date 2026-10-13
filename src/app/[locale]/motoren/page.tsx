@@ -18,13 +18,14 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
  const {locale}=await params;
  if(locale!=="nl")return {robots:{index:false,follow:false}};
  const title="Stage 1 motorprofielen | Zoek jouw motor";
- const description="Vergelijk Stage 1-indicaties voor Nissan, BMW, Volkswagen, Ford en Renault. Origineel vermogen, RDW-varianten, ECU-controles en onafhankelijke bronnen.";
+ const description="Vergelijk Nederlandse Stage 1-motorprofielen van BMW, Audi, Volkswagen, Ford, Peugeot, Renault en meer. Met originele RDW-gegevens, ECU-controles en bronvermelding.";
  return {title,description,robots:{index:true,follow:true},
   alternates:{canonical:absoluteUrl("/nl/motoren")},
   openGraph:{title,description,url:absoluteUrl("/nl/motoren"),locale:"nl_NL",siteName:"NoordTune Power Catalog",type:"website"}
  };
 }
-const makes=["BMW","Ford","Nissan","Renault","Volkswagen"] as const;
+const makes=[...new Set(nlStage1EngineProfiles.map(p=>p.applications[0].make))].sort((a,b)=>a.localeCompare(b,"nl"));
+const readableMake=(make:string)=>make==="Citroen"?"Citroën":make==="Seat"?"SEAT":make;
 export default async function NlMotorenPage({params}:Props){
  const {locale}=await params;if(locale!=="nl")notFound();
  const jsonLd={
@@ -66,7 +67,7 @@ export default async function NlMotorenPage({params}:Props){
       if(!profiles.length)return null;
       return (
         <div className="ux-nl-engine-make" key={make}>
-         <h3>{make}<span>{profiles.length} motorprofielen</span></h3>
+         <h3>{readableMake(make)}<span>{profiles.length} motorprofielen</span></h3>
          <div className="ux-nl-engine-make-grid">
           {profiles.map(p=>{
             const application=p.applications[0];
