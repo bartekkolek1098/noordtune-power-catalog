@@ -11,6 +11,8 @@ import {MobileActionBar} from "@/components/mobile-action-bar";
 import {CatalogVerificationNotice} from "@/components/catalog-verification-notice";
 import {FloatingWhatsappButton} from "@/components/floating-whatsapp";
 import {SeoInfoSections} from "@/components/seo-info-sections";
+import {NlVehicleKnowledge} from "@/components/nl-vehicle-knowledge";
+import {nlVehicleEditorialById,nlVehiclePhoto,nlVehicleDirectoryPath,nlVehicleEngineTitle} from "@/data/nl-vehicle-editorial";
 import {VehicleDetail} from "@/components/vehicle-detail";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
@@ -53,8 +55,15 @@ export async function generateMetadata({params}: PageProps) {
     return {};
   }
 
+  const metadata=vehicleMetadata(safeLocale,customerVehicle(vehicle));
+  const reviewedEditorial=safeLocale==="nl"?nlVehicleEditorialById.get(vehicle.id):undefined;
+  const licensedPhoto=reviewedEditorial?nlVehiclePhoto(reviewedEditorial):undefined;
   return {
-    ...vehicleMetadata(safeLocale, customerVehicle(vehicle)),
+    ...metadata,
+    ...(reviewedEditorial&&licensedPhoto?{
+      description:(vehicle.brand+" "+vehicle.model+" Stage 1: "+reviewedEditorial.intro).slice(0,158),
+      openGraph:{...metadata.openGraph,description:reviewedEditorial.intro.slice(0,174),images:[{url:absoluteUrl(licensedPhoto.src),width:licensedPhoto.width,height:licensedPhoto.height,alt:vehicle.brand+" "+vehicle.model+" modelillustratie"}]}
+    }:{}),
     alternates: {
       canonical: absoluteUrl(vehicleDetailPath(safeLocale, vehicle)),
       languages: alternateLanguageUrls(`/vehicles/${vehicle.id}`)
@@ -77,6 +86,8 @@ export default async function VehiclePage({params}: PageProps) {
 
   const safeLocale = locale as Locale;
   const displayVehicle = customerVehicle(vehicle);
+  const reviewedEditorial=safeLocale==="nl"?nlVehicleEditorialById.get(vehicle.id):undefined;
+  const licensedPhoto=reviewedEditorial?nlVehiclePhoto(reviewedEditorial):undefined;
   const t = await getTranslations({locale: safeLocale, namespace: "Vehicle"});
   const powerUnit = safeLocale === "en" ? "hp" : safeLocale === "pl" ? "KM" : "pk";
   const catalogLabel = safeLocale === "en" ? "Power Catalog" : safeLocale === "pl" ? "Katalog mocy" : "Catalogus";
@@ -105,13 +116,11 @@ export default async function VehiclePage({params}: PageProps) {
   )
     ? ["Volkswagen", "Audi", "Skoda", "SEAT"]
     : [vehicle.brand];
-  const relatedVehicles = engineCatalog
-    .filter(
-      (candidate) =>
-        candidate.id !== vehicle.id && relatedBrands.includes(candidate.brand)
-    )
-    .slice(0, 3);
+  const relatedVehicles = reviewedEditorial
+    ? reviewedEditorial.related.map(id=>getVehicleById(id)).filter((v):v is typeof vehicle=>Boolean(v))
+    : engineCatalog.filter(candidate=>candidate.id!==vehicle.id&&relatedBrands.includes(candidate.brand)).slice(0,3);
   const seoLinks = [
+    ...(safeLocale==="nl"?[{href:sitePath(nlVehicleDirectoryPath),label:"Alle gecontroleerde motoren bekijken"}]:[]),
     {
       href: "#tuning-calculator",
       label: t("seo.quoteLink"),
@@ -140,7 +149,7 @@ export default async function VehiclePage({params}: PageProps) {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `linear-gradient(90deg, rgba(2,4,8,.96), rgba(2,4,8,.78) 46%, rgba(2,4,8,.56)), url('${assetPath(vehicle.image)}')`
+            backgroundImage: `linear-gradient(90deg, rgba(2,4,8,.96), rgba(2,4,8,.78) 46%, rgba(2,4,8,.56)), url('${assetPath(licensedPhoto?.src??vehicle.image)}')`
           }}
         />
         <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(9,12,13,.15),transparent_48%)]" />
@@ -178,7 +187,7 @@ export default async function VehiclePage({params}: PageProps) {
               {vehicle.brand} {vehicle.model}
             </h1>
             <p className="mt-4 text-2xl font-bold text-slate-100 md:text-3xl">
-              {vehicle.engine} · {vehicle.version}
+              {safeLocale==="nl"?nlVehicleEngineTitle(vehicle.id,vehicle.engine):vehicle.engine} · {vehicle.version}
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-sm">
               <span className="rounded-md border border-white/10 bg-white/[0.05] px-3 py-2">
@@ -267,6 +276,7 @@ export default async function VehiclePage({params}: PageProps) {
           }}
           vehicle={displayVehicle}
         />
+        {reviewedEditorial ? <NlVehicleKnowledge vehicle={vehicle} article={reviewedEditorial}/> : null}
         <SeoInfoSections
           cards={seoCards}
           eyebrow={t("seo.eyebrow")}
