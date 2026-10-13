@@ -4,8 +4,14 @@
  * DO NOT programmatically create additional pages from arbitrary RDW makes, plate records or heuristics.
  */
 import {reviewedRdwBulkBatch4} from "./reviewed-rdw-bulk-batch-4.ts";
+import {nlPassengerEngineProfiles} from "./nl-passenger-engine-expansion.ts";
+import type {verifiedRdwApplications} from "./verified-rdw-applications.ts";
 
-export type ReviewedRdwApplication=(typeof reviewedRdwBulkBatch4)[number];
+export type ReviewedRdwApplication=(typeof verifiedRdwApplications)[number] & {
+ registeredPowerKw:number;
+ requiredRdwType:string;
+ allowedRdwModels:readonly string[];
+};
 export type NlStage1EngineProfile = {
  slug: string;
  headline: string;
@@ -13,6 +19,8 @@ export type NlStage1EngineProfile = {
  workshopCheck: string;
  generationNote: string;
  applicationIds: readonly string[];
+ faq?: readonly (readonly [question:string,answer:string])[];
+ photoKey?: string;
  applications: readonly ReviewedRdwApplication[];
  sources: readonly ReviewedRdwApplication["sources"][number][];
 };
@@ -43,7 +51,7 @@ const publications:readonly PublicationSpec[] = [
 ];
 const sourceById=new Map(reviewedRdwBulkBatch4.map(item=>[item.id,item]));
 const used=new Set<string>();
-export const nlStage1EngineProfiles:readonly NlStage1EngineProfile[] = publications.map(spec=>{
+const legacyStage1EngineProfiles:readonly NlStage1EngineProfile[] = publications.map(spec=>{
   if(!/^[a-z0-9-]+$/.test(spec.slug))throw Error("Invalid SEO slug "+spec.slug);
   const applications=spec.applicationIds.map(id=>{
     const item=sourceById.get(id);
@@ -59,7 +67,9 @@ export const nlStage1EngineProfiles:readonly NlStage1EngineProfile[] = publicati
   if(uniqueSources.size<2)throw Error("Source scarcity "+spec.slug);
   return {...spec,applications,sources:[...uniqueSources.values()]};
 });
-if(used.size!==reviewedRdwBulkBatch4.length||nlStage1EngineProfiles.length!==21)throw Error("Unpublished reviewed Stage 1 engine cohort; manual review required");
+if(used.size!==reviewedRdwBulkBatch4.length||legacyStage1EngineProfiles.length!==21)throw Error("Unpublished reviewed Stage 1 engine cohort; manual review required");
+export const nlStage1EngineProfiles:readonly NlStage1EngineProfile[]=[...legacyStage1EngineProfiles,...nlPassengerEngineProfiles];
+if(new Set(nlStage1EngineProfiles.map(x=>x.slug)).size!==nlStage1EngineProfiles.length)throw Error("Duplicate NL engine SEO canonical slug");
 export const nlStage1BySlug=new Map(nlStage1EngineProfiles.map(x=>[x.slug,x]));
 export function nlStage1EnginePath(slug:string){return `/nl/motoren/${slug}`;}
 export function nlStage1EngineMetadata(profile:NlStage1EngineProfile) {

@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-13",
+  "items": [
+    {
+      "slug": "bmw-320i-g20-g21-b48-184",
+      "headline": "BMW 320i G20/G21 B48 184",
+      "applicationIds": [
+        "rdw-bulk-bmw-320i-g3l-20t184-2019-20",
+        "rdw-bulk-bmw-320i-g3k-20t184-2020"
+      ],
+      "intro": "De BMW 320i van de G20/G21-generatie gebruikt hier de 1998 cc B48-turbobenzinemotor met 135 kW. Twee beoordeelde RDW-carrosseriecodes delen de fabrieksafstelling, maar niet automatisch dezelfde ECU-toegang of transmissie.",
+      "workshopCheck": "Controleer B48-motorcode, GPF, benzinekwaliteit, ECU-beveiliging en softwarestand vóór een offerte. Een hogere gepubliceerde waarde vereist bevestiging van turbohardware, koeling en de koppellimiet van de ZF-automaat of handbak.",
+      "generationNote": "Dit profiel bundelt G3L uit 2019–2020 en G3K uit 2020. Het vervangt geen 320i F30 B48, 330i, mild-hybrid of latere G20 LCI.",
+      "faq": [
+        [
+          "Is iedere G20 320i met 184 pk even ver te tunen?",
+          "Nee. De twee onafhankelijke bronnen tonen verschillende resultaten en de ECU-toegang kan per productiedatum verschillen. De hoogste referentie is geen garantie."
+        ],
+        [
+          "Welke benzine en versnellingsbak zijn belangrijk bij deze BMW?",
+          "De werkelijke brandstofkwaliteit en ZF- of handbakvariant moeten samen met ECU, GPF en motorconditie worden gecontroleerd voordat NoordTune een passende afstelling adviseert."
+        ]
+      ],
+      "photoKey": "bmw-g20"
+    },
+    {
+      "slug": "audi-a1-8x-12-tfsi-86",
+      "headline": "Audi A1 8X 1.2 TFSI 86",
+      "applicationIds": [
+        "rdw-audi-a1-8x-12-tfsi-86"
+      ],
+      "intro": "De eerste Audi A1 8X met 1.2 TFSI is een oudere viercilinder turbobenzine met 1197 cc en RDW-vermogen 63 kW. Dit is nadrukkelijk niet de latere driecilinder 1.0 TFSI uit dezelfde modelreeks.",
+      "workshopCheck": "Laat de motorcode, distributiekettinghistorie, aanwezige ECU-software en turbo controleren. Bij een eventuele S tronic met droge koppeling bepaalt de transmissieconditie mede hoeveel koppel verstandig is.",
+      "generationNote": "De onderzochte RDW-toelatingen vallen in 2010–2014 en hebben de 8X-code; cijfers voor 1.4 TFSI of facelift 1.0 TFSI horen er niet bij.",
+      "faq": [
+        [
+          "Waarom verschillen Stage 1-waarden van de Audi A1 1.2 TFSI?",
+          "De geraadpleegde tuners hanteren verschillende ECU- en motorcondities. Dit profiel toont daarom de bandbreedte van publicaties in plaats van één gegarandeerde uitkomst."
+        ],
+        [
+          "Is een Audi A1 1.2 TFSI hetzelfde als een 1.0 TFSI?",
+          "Nee. De 1.2 heeft 1197 cc en vier cilinders; de 1.0 TFSI behoort tot een andere generatie. De software en vermogensreferenties mogen niet worden uitgewisseld."
+        ]
+      ]
+    },
+    {
+      "slug": "audi-a1-8x-14-tfsi-122",
+      "headline": "Audi A1 8X 1.4 TFSI 122",
+      "applicationIds": [
+        "rdw-audi-a1-8x-14-tfsi-122"
+      ],
+      "intro": "De Audi A1 8X 1.4 TFSI met originele 90 kW en 1390 cc heeft een andere motorbasis dan de 1.2 TFSI en de latere 1.4 COD. De RDW-configuratie is specifiek beoordeeld op externe Stage 1-publicaties.",
+      "workshopCheck": "Controleer de EA111-motorcode, ketting en spanner, turbo, ontsteking, ECU-software en de S tronic of handbak. Brongegevens over de originele Nm kunnen uiteenlopen; de daadwerkelijke variant is leidend.",
+      "generationNote": "Deze pagina behandelt de 122 pk-uitvoering uit 2010–2014 met type 8X; geen 125 pk facelift, 140 pk COD of S1 quattro.",
+      "faq": [
+        [
+          "Kan de 1.4 TFSI 122 dezelfde afstelling krijgen als een A1 1.4 COD?",
+          "Nee. Het motorbeheer en de hardware van de COD-uitvoering verschillen. Alleen gepubliceerde cijfers voor deze 1390 cc 90 kW-variant zijn hier samengebracht."
+        ],
+        [
+          "Moet de distributieketting vóór Stage 1 worden beoordeeld?",
+          "Ja. Bij deze generatie horen geluiden, foutcodes en onderhoud aan ketting en spanner bij een verstandige controle, net als ontsteking en transmissie."
+        ]
+      ]
+    },
+    {
+      "slug": "audi-a1-sportback-8x-10-tfsi-95",
+      "headline": "Audi A1 Sportback 8X 1.0 TFSI 95",
+      "applicationIds": [
+        "rdw-bulk-audi-a1sportback-8x-10tfsi95-2015-17"
+      ],
+      "intro": "De gefacelifte Audi A1 Sportback 8X is met een 999 cc driecilinder 1.0 TFSI van 70 kW geleverd. Dat maakt hem technisch anders dan de oudere A1 1.2 TFSI, ook als beide instapmotoren zijn.",
+      "workshopCheck": "Controleer de EA211-driecilinder, originele 70 kW, ECU-variant en transmissie. Een eventuele droge DSG/S tronic vraagt een aparte koppelbeoordeling; sportieve brongetallen zijn geen versnellingsbakvrijgave.",
+      "generationNote": "Deze toepassing betreft de 8X Sportback met eerste toelating 2015–2017; 1.4 TFSI en de nieuwe GB-generatie zijn uitgesloten.",
+      "faq": [
+        [
+          "Past deze referentie op een nieuwe Audi A1 GB?",
+          "Nee. De nieuwe generatie heeft andere voertuig- en ECU-varianten. Eerst moeten generatie, 999 cc-motor en geregistreerde 70 kW kloppen."
+        ],
+        [
+          "Waarom is bij de 1.0 TFSI de transmissie relevant?",
+          "Extra koppel kan een droge koppeling anders belasten dan een handbak. De gekozen Stage 1-afstelling volgt daarom pas na identificatie van de transmissie."
+        ]
+      ]
+    },
+    {
+      "slug": "audi-a3-8p-14-tfsi-125",
+      "headline": "Audi A3 8P 1.4 TFSI 125",
+      "applicationIds": [
+        "rdw-audi-a3-8p-14-tfsi-125"
+      ],
+      "intro": "De Audi A3 van de 8P-generatie met 1.4 TFSI van 92 kW heeft een 1390 cc EA111-turbobenzinemotor. De technisch nieuwere A3 8V 1.4 TFSI met andere hardware hoort niet in dezelfde Stage 1-vergelijking.",
+      "workshopCheck": "Controleer de kettinghistorie, motorcode, ECU-kalibratie, turbo, ontsteking en de staat van handbak of S tronic. Publicaties voor de A3 8V mogen niet worden gebruikt om deze 8P automatisch hoger in te schatten.",
+      "generationNote": "De gecontroleerde RDW-configuratie betreft type 8P met eerste toelating 2008–2012 en originele 92 kW; geen 1.8 TFSI of A3 8V.",
+      "faq": [
+        [
+          "Waarom is een Audi A3 8P geen A3 8V voor chiptuning?",
+          "De generatiegrens verandert de motor- en ECU-context. Zelfs bij een gelijkende 1.4 TFSI-aanduiding moeten code, cilinderinhoud en originele kW overeenkomen."
+        ],
+        [
+          "Welke onderhoudspunten tellen mee bij een oudere 1.4 TFSI?",
+          "Distributieketting, foutcodes, ontsteking, turbo-aansturing en koppeling zijn belangrijker dan het theoretische hoogste getal in een externe tuningcatalogus."
+        ]
+      ]
+    },
+    {
+      "slug": "audi-q3-8u-20-tfsi-170",
+      "headline": "Audi Q3 8U 2.0 TFSI 170",
+      "applicationIds": [
+        "rdw-bulk-audi-q3-8u-20tfsi170-2012-15"
+      ],
+      "intro": "De Audi Q3 8U 2.0 TFSI met 125 kW is een specifieke EA888-turbobenzine-uitvoering. Sommige publicaties noemen grote Stage 1-winsten; die veronderstellen mogelijk hardwareverschillen die een kenteken niet bevestigt.",
+      "workshopCheck": "Bevestig werkelijke motorcode, ECU en turbolader vóór vergelijking met de hoge bronwaarden. Controleer 1984 cc, S tronic of handbak, brandstof en koeling; het gedeelde EA888-label bewijst geen identieke 211 pk-hardware.",
+      "generationNote": "Dit profiel betreft Q3 8U uit 2012–2015 met 125 kW; de latere Q3 F3, 180 pk-varianten en aangepaste turbosystemen zijn uitgesloten.",
+      "faq": [
+        [
+          "Garandeert de 170 pk Q3 dezelfde output als een fabrieks-211 pk Q3?",
+          "Nee. Een mogelijk gedeelde motorfamilie bewijst geen identieke turbo, ECU of aandrijving. De hoge externe referenties vereisen extra verificatie."
+        ],
+        [
+          "Waarom toont deze Q3-pagina een groot Stage 1-bereik?",
+          "Twee onafhankelijke tuners publiceren verschillende waarden. NoordTune beoordeelt welke configuratie werkelijk aanwezig is en belooft niet automatisch de bovengrens."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-polo-aw-10-tsi-95",
+      "headline": "Volkswagen Polo AW 1.0 TSI 95",
+      "applicationIds": [
+        "rdw-bulk-vw-polo-aw-10-tsi-95"
+      ],
+      "intro": "De Volkswagen Polo AW met 1.0 TSI van 70 kW heeft een driecilinder EA211 en 999 cc. De 95 pk-aanduiding is geen synoniem voor de 85 kW-versie die als 115 pk wordt verkocht.",
+      "workshopCheck": "Controleer ECU-versie, motorcode en RON-brandstof, maar vooral of er een handbak of DQ200 DSG met droge koppeling is gemonteerd. Gepubliceerde koppels boven 200 Nm zijn niet zonder meer geschikt voor elke transmissie.",
+      "generationNote": "Deze bronvergelijking geldt voor RDW-type AW uit 2018–2020 met originele 70 kW; latere Polo-facelifts en 85 kW-motoren hebben eigen gegevens.",
+      "faq": [
+        [
+          "Wat is het verschil tussen Polo AW 95 en 115 pk?",
+          "Het originele RDW-vermogen verschilt: 70 tegenover 85 kW. Stage 1-gegevens van de ene variant worden hier niet gebruikt voor de andere."
+        ],
+        [
+          "Is het hoogste gepubliceerde koppel veilig voor de DSG?",
+          "Niet automatisch. De DQ200-koppeling en softwareversie moeten apart worden beoordeeld; de tuningcatalogus geeft geen individuele koppelingstoestemming."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-polo-aw-10-tsi-115",
+      "headline": "Volkswagen Polo AW 1.0 TSI 115",
+      "applicationIds": [
+        "rdw-bulk-vw-polo-aw-10-tsi-115"
+      ],
+      "intro": "De 1.0 TSI 115 van de Polo AW heeft RDW-vermogen 85 kW en 999 cc. Dat wordt bij metrische omrekening afgerond tot circa 116 pk, hoewel de commerciële uitvoering 115 pk heet.",
+      "workshopCheck": "Verifieer de EA211-variant, originele 85 kW, ECU-software en eventuele DQ200. Brandstofkwaliteit en de capaciteit van de droge DSG-koppeling of handbak bepalen de praktische marge op gepubliceerde Stage 1-waarden.",
+      "generationNote": "De beoordeelde registratie betreft 2019–2020 en type AW; niet de minder krachtige 70 kW-versie of een andere motor in een Polo 6R.",
+      "faq": [
+        [
+          "Waarom wijkt de RDW-omrekening af van de naam 115 pk?",
+          "85 kW wordt afgerond ongeveer 116 metrische pk. De naam 115 pk blijft een marketingaanduiding; de kW-waarde is de veiligere identificatie."
+        ],
+        [
+          "Is de Polo AW 115 gelijk aan de Polo AW 95?",
+          "Nee. De originele afstelling en mogelijk turbo- of ECU-configuratie verschillen. Vergelijk alleen gegevens van de 85 kW-motor met het werkelijke voertuig."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-golf-6-14-tsi-122",
+      "headline": "Volkswagen Golf 6 1.4 TSI 122",
+      "applicationIds": [
+        "rdw-bulk2-vw-golf-1k-14tsi122-2009"
+      ],
+      "intro": "De Volkswagen Golf VI type 1K met 1.4 TSI 122 heeft 1390 cc en 90 kW. Deze EA111-generatie verschilt wezenlijk van de latere Golf VII EA211, ondanks dezelfde 1.4 TSI-naam.",
+      "workshopCheck": "Een betrouwbare beoordeling begint bij distributieketting en spanner, turbo, foutcodes, brandstof en ECU-software. Handbak en DQ200 met droge koppeling mogen niet dezelfde koppelgrens krijgen zonder controle.",
+      "generationNote": "Deze specifieke referentie is gebaseerd op een RDW-cohort van 2009, type 1K; andere Golf-generaties en twincharger-uitvoeringen worden niet samengevoegd.",
+      "faq": [
+        [
+          "Is de Golf 6 1.4 TSI 122 een twincharger?",
+          "Niet op grond van de naam alleen. Dit profiel betreft de beoordeelde 90 kW-variant; bevestig de exacte motorcode en de aanwezige hardware."
+        ],
+        [
+          "Waarom controleert NoordTune de ketting vóór tuning?",
+          "Bij een ouder EA111-motorblok zijn timing, onderhoudshistorie en mogelijke storingen essentieel voor een veilige beoordeling, vóór men extra belasting toevoegt."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-golf-7-12-tsi-105",
+      "headline": "Volkswagen Golf 7 1.2 TSI 105",
+      "applicationIds": [
+        "rdw-bulk2-vw-golf-au-12tsi105-2014-15"
+      ],
+      "intro": "De Golf VII type AU met 1.2 TSI van 77 kW is een EA211-turbobenzine van 1197 cc. Hij heeft een andere motorarchitectuur dan de oudere Golf VI 1.2 TSI en de latere 1.0 TSI.",
+      "workshopCheck": "Controleer de originele 77 kW, motorgeneratie, ECU-software, distributieonderhoud, DSG of handbak en brandstofkwaliteit. Een published Stage 1-waarde is geen bewijs dat de droge DSG-koppeling elk genoemd koppel aankan.",
+      "generationNote": "Alleen de gecontroleerde Golf VII AU-registraties uit 2014–2015 vallen binnen dit profiel; de 110 pk facelift en de Golf VIII niet.",
+      "faq": [
+        [
+          "Is 105 pk in de Golf 7 hetzelfde als de 110 pk-uitvoering?",
+          "Nee. De fabriekstoestand en soms software of hardware verschillen. Bij deze pagina hoort exact 77 kW en 1197 cc in de beoordeelde jaren."
+        ],
+        [
+          "Kan de 1.2 TSI met DSG Stage 1 krijgen?",
+          "Een individuele beoordeling is mogelijk, maar eerst moet de koppellimiet van de specifieke DSG, de ECU en de conditie van het voertuig worden vastgesteld."
+        ]
+      ],
+      "photoKey": "vw-golf-7"
+    },
+    {
+      "slug": "volkswagen-t-roc-a1-15-tsi-150",
+      "headline": "Volkswagen T-Roc I 1.5 TSI 150",
+      "applicationIds": [
+        "rdw-bulk-vw-troc-a1-15tsi150-2020"
+      ],
+      "intro": "De Volkswagen T-Roc van de eerste generatie is met een 1.5 TSI EA211 Evo van 110 kW en 1498 cc geleverd. Dit is een pure benzinevariant en niet de latere eTSI- of mild-hybridconfiguratie.",
+      "workshopCheck": "Verifieer motorcode, ECU-firmware, cilinderuitschakeling waar aanwezig, DSG/handbak en benzinekwaliteit. Een hogere tunerwaarde geeft geen automatische toestemming voor extra koppelingbelasting.",
+      "generationNote": "De bronnen en RDW-variant sluiten aan bij type A1, eerste toelating 2020, originele 110 kW; latere facelifts en T-Roc R horen elders.",
+      "faq": [
+        [
+          "Is deze T-Roc 1.5 TSI hetzelfde als een T-Roc R?",
+          "Nee. De 1.5 TSI heeft een andere cilinderinhoud, turbo en transmissiecontext dan de 2.0 TSI R. Tuningdata zijn niet uitwisselbaar."
+        ],
+        [
+          "Moet het DSG-type worden vastgesteld?",
+          "Ja. De motorrevisie, koppeling en transmissiesoftware bepalen samen de bruikbare marge; getoonde cijfers blijven externe Stage 1-indicaties."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-t-roc-r-a1-20-tsi-300",
+      "headline": "Volkswagen T-Roc R A1 2.0 TSI 300",
+      "applicationIds": [
+        "rdw-bulk-vw-troc-a1-r-20tsi300-2019-21"
+      ],
+      "intro": "De T-Roc R uit de eerste A1-serie heeft een 1984 cc EA888-turbobenzinemotor van 221 kW. Deze krachtige uitvoering vraagt een eigen beoordeling; Stage 1 plus aangepaste DSG of E85 is niet dezelfde dienst.",
+      "workshopCheck": "Controleer turbogeneratie, ECU, ontsteking, koeling, RON-kwaliteit en de DQ381/4Motion-aandrijving. Het hogere getal van gecombineerde ECU+DSG-programma's is bewust geen normale Stage 1-referentie.",
+      "generationNote": "De onderzochte T-Roc R is de 300 pk-uitvoering met eerste toelating 2019–2021; de latere facelift en standaard T-Roc 2.0 vallen buiten scope.",
+      "faq": [
+        [
+          "Waarom staat er een bandbreedte van Stage 1-vermogen?",
+          "Verschillende onafhankelijke aanbieders publiceren uiteenlopende normale Stage 1-resultaten. Pakketten met extra DSG-kalibratie en andere hardware zijn uitgesloten."
+        ],
+        [
+          "Is een T-Roc R dezelfde motorvariant als een gewone 1.5 TSI?",
+          "Nee. Cilinderinhoud, turbo, transmissie en originele fabrieksafstelling verschillen aanzienlijk; de ene Stage 1-referentie is geen vervanging voor de andere."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-tiguan-5n-20-tdi-177",
+      "headline": "Volkswagen Tiguan 5N 2.0 TDI 177",
+      "applicationIds": [
+        "rdw-bulk-vw-tiguan-5n-20-tdi-177"
+      ],
+      "intro": "De oudere Volkswagen Tiguan 5N heeft een 2.0 TDI-uitvoering van 130 kW met 1968 cc. Deze diesel moet worden onderscheiden van de latere Tiguan II en van lichtere 140 of 150 pk-versies.",
+      "workshopCheck": "Verifieer de juiste dieselmotorcode, ECU, turbo, DPF/EGR-status, onderhoud en het type transmissie. Bij vierwielaandrijving en DSG vraagt extra koppel een beoordeling van de gehele aandrijflijn.",
+      "generationNote": "Deze bronreferentie betreft type 5N uit 2014–2015 met 130 kW; geen latere 5N 2.0 TSI of Tiguan II 2.0 TDI.",
+      "faq": [
+        [
+          "Mag de Stage 1 van een Tiguan 150 TDI hier worden toegepast?",
+          "Nee. De 177 pk-variant heeft een andere originele 130 kW-afstelling. Motorcode, ECU en transmissie moeten voor de eigen versie overeenkomen."
+        ],
+        [
+          "Moeten DPF en EGR bij tuning worden uitgeschakeld?",
+          "Nee. Voor normaal weggebruik blijven de emissievoorzieningen intact. Storingen moeten eerst worden gediagnosticeerd en volgens de wettelijke eisen hersteld."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-tiguan-5n-20-tsi-180",
+      "headline": "Volkswagen Tiguan 5N 2.0 TSI 180",
+      "applicationIds": [
+        "rdw-bulk-vw-tiguan-5n-20tsi180-2012-14"
+      ],
+      "intro": "De Volkswagen Tiguan 5N 2.0 TSI met 132 kW is een oudere 1984 cc turbobenzine-uitvoering. Dit profiel is apart gehouden van het latere 180 pk Tiguan II-profiel, ondanks de gelijke commerciële motornaam.",
+      "workshopCheck": "Laat de exacte EA888-motorcode, distributiegeschiedenis, turbo en ECU bevestigen. Controleer benzine, koeling en de handbak/DSG-koppellimiet; eerdere generaties delen niet automatisch dezelfde software.",
+      "generationNote": "De onderzochte auto is een 5N met eerste toelating 2012–2014 en 132 kW; het bestaande Tiguan II-profiel betreft een andere fase.",
+      "faq": [
+        [
+          "Is een Tiguan 5N 180 pk gelijk aan een Tiguan II 180 pk?",
+          "Nee. Het motor- en elektronica-ontwerp kan verschillen; bouwjaar, typecode en ECU moeten exact worden bevestigd."
+        ],
+        [
+          "Welke technische controles zijn nodig bij een oudere 2.0 TSI?",
+          "Onderhoud van de distributie, olieverbruik, koeling en de staat van transmissie en ECU zijn relevante punten vóór een individuele motorafstelling."
+        ]
+      ]
+    },
+    {
+      "slug": "seat-ibiza-kj-10-tsi-95",
+      "headline": "SEAT Ibiza KJ 1.0 TSI 95",
+      "applicationIds": [
+        "rdw-bulk2-seat-ibiza-kj-tsi95-2018",
+        "rdw-bulk2-seat-ibiza-kj-tsi95-2019"
+      ],
+      "intro": "De SEAT Ibiza KJ met 1.0 TSI van 70 kW heeft een 999 cc driecilinder. De beoordeelde RDW-registraties uit 2018 en 2019 vormen één motoronderwerp, maar een andere motorvariant dan de 115 pk-uitvoering.",
+      "workshopCheck": "Controleer de EA211-motor, originele 70 kW, ECU-software, brandstof en transmissie. Voor een DSG met droge koppeling geldt niet automatisch de bovengrens van externe koppelpublicaties.",
+      "generationNote": "Dit profiel groepeert uitsluitend twee gecontroleerde KJ-cohorten van 2018 en 2019; het oudere 6J-model en de 85 kW KJ blijven apart.",
+      "faq": [
+        [
+          "Waarom worden 2018 en 2019 bij de Ibiza 95 pk samen getoond?",
+          "Beide zijn gecontroleerde KJ-toepassingen met dezelfde 70 kW- en 999 cc-basis; de bijbehorende RDW-jaren staan toch afzonderlijk vermeld."
+        ],
+        [
+          "Is de Ibiza KJ 95 hetzelfde als de Ibiza KJ 115?",
+          "Nee. De originele 85 kW-variant is afzonderlijk gedocumenteerd; een vergelijkbare motornaam maakt de ECU, turbo of transmissie niet identiek."
+        ]
+      ]
+    },
+    {
+      "slug": "seat-ibiza-kj-10-tsi-115",
+      "headline": "SEAT Ibiza KJ 1.0 TSI 115",
+      "applicationIds": [
+        "rdw-bulk2-seat-ibiza-kj-tsi115"
+      ],
+      "intro": "De Ibiza van de KJ-generatie met 1.0 TSI 85 kW wordt als 115 pk aangeboden. De RDW-omrekening kan rond 116 metrische pk uitkomen, maar dit is geen reden om de 70 kW Ibiza samen te voegen.",
+      "workshopCheck": "Verifieer de fabrieksafstelling van 85 kW, ECU-variant, motortype en versnellingsbak. De bruikbare koppellimiet van een eventuele DQ200 en de staat van de turbo vragen aparte aandacht.",
+      "generationNote": "De beoordeelde KJ-configuraties vallen in 2018–2019, niet in de oudere 6J-generatie of de Ibiza FR met een andere motor.",
+      "faq": [
+        [
+          "Waarom zegt RDW ongeveer 116 pk bij een Ibiza 115?",
+          "De technische basis is 85 kW; afgeronde commerciële pk-namen en metrische omrekening vallen niet altijd exact samen."
+        ],
+        [
+          "Kan dezelfde tuningfile op Ibiza 95 en 115 pk?",
+          "Dat mag niet worden aangenomen. De originele ECU-configuratie en aandrijving moeten eerst worden vastgesteld en bronnen zijn per fabrieksvermogen gekozen."
+        ]
+      ]
+    },
+    {
+      "slug": "seat-ibiza-6j-10-tsi-95",
+      "headline": "SEAT Ibiza 6J facelift 1.0 TSI 95",
+      "applicationIds": [
+        "rdw-bulk2-seat-ibiza-6j-tsi95"
+      ],
+      "intro": "De laatste facelift van de Ibiza IV draagt nog RDW-type 6J, hoewel de 1.0 TSI 95 soms als 6P wordt aangeduid. De 999 cc EA211-benzinemotor hoort niet bij de latere Ibiza V KJ.",
+      "workshopCheck": "Controleer 70 kW, type 6J, ECU-software, turbosysteem en brandstof. De handbak of droge DSG-koppeling kan de uiteindelijke koppelafstelling beperken.",
+      "generationNote": "Dit profiel is beperkt tot de onderzochte faceliftregistratie van 2015; oudere 1.2 TSI en latere KJ-modellen zijn uitgesloten.",
+      "faq": [
+        [
+          "Waarom staat bij een Ibiza uit 2015 soms 6P en bij RDW 6J?",
+          "6P is een gangbare faceliftbenaming, terwijl de geregistreerde typefamilie 6J kan blijven. Bouwfase en motorcode zijn daarom belangrijk."
+        ],
+        [
+          "Kan ik cijfers van de Ibiza KJ overnemen?",
+          "Nee. De nieuwe KJ-generatie is een afzonderlijke technische scope, ook wanneer beide auto's als 1.0 TSI 95 worden verkocht."
+        ]
+      ]
+    },
+    {
+      "slug": "ford-fiesta-ja8-10-ecoboost-100",
+      "headline": "Ford Fiesta JA8 1.0 EcoBoost 100",
+      "applicationIds": [
+        "rdw-bulk2-ford-fiesta-ja8-ecoboost100"
+      ],
+      "intro": "De Fiesta van de JA8-generatie met 1.0 EcoBoost heeft 998 cc en originele 74 kW. Deze oudere EcoBoost-generatie heeft een andere onderhouds- en ECU-context dan de latere Fiesta JHH.",
+      "workshopCheck": "Controleer timingriem-in-olie, juiste oliespecificatie, olieaanzuiging, koeling, motormanagement en de versnellingsbak. Extra vermogen mag nooit onderhoudsachterstand of oliedrukproblemen maskeren.",
+      "generationNote": "De beoordeelde RDW-toelating betreft JA8 uit 2015–2017; de JHH-opvolger en andere 1.0 EcoBoost-versies zijn gescheiden.",
+      "faq": [
+        [
+          "Waarom is de natte distributieriem relevant?",
+          "Veroudering of onjuiste olie kan bij bepaalde EcoBoost-uitvoeringen problemen veroorzaken. De onderhoudshistorie en motorconditie zijn belangrijk vóór tuning."
+        ],
+        [
+          "Kan de Stage 1 van een nieuwere Fiesta JHH worden gebruikt?",
+          "Nee. Ook bij gelijknamige 100 pk-motoren moet de juiste generatie, ECU-firmware en originele registratie worden vastgesteld."
+        ]
+      ]
+    },
+    {
+      "slug": "ford-fiesta-jhh-10-ecoboost-100",
+      "headline": "Ford Fiesta JHH 1.0 EcoBoost 100",
+      "applicationIds": [
+        "rdw-bulk2-ford-fiesta-jhh-ecoboost100"
+      ],
+      "intro": "De nieuwere Fiesta JHH heeft in deze beoordeelde versie een 998 cc 1.0 EcoBoost met 73,5 kW. Hij lijkt op de oudere JA8 100 pk, maar gebruikt een andere voertuig- en softwaregeneratie.",
+      "workshopCheck": "Controleer de oorspronkelijke 73,5 kW, motorcode, onderhoud van de natte riem waar van toepassing, oliedruk, koeling en ECU. De versnellingsbak en koppeling bepalen mee of het gepubliceerde koppel passend is.",
+      "generationNote": "Deze referentie geldt voor JHH met eerste toelating in 2019; latere mild-hybrid, ST of JA8-modellen vallen buiten deze vergelijking.",
+      "faq": [
+        [
+          "Waarom heeft deze Fiesta een ander RDW-vermogen dan de JA8?",
+          "De registraties horen bij verschillende generaties: JHH 73,5 kW en oudere JA8 74 kW. De softwareversie moet worden vastgesteld."
+        ],
+        [
+          "Is Stage 1 geschikt bij achterstallig onderhoud?",
+          "Een extra motorbelasting komt pas in beeld nadat servicehistorie, oliedruk, foutcodes en de werking van het koelsysteem zijn beoordeeld."
+        ]
+      ]
+    },
+    {
+      "slug": "mini-cooper-f55-f56-15-b38-136",
+      "headline": "MINI Cooper F55/F56 1.5 B38 136",
+      "applicationIds": [
+        "rdw-bulk-mini-cooper-ukll-15-136"
+      ],
+      "intro": "De MINI Cooper uit de F55/F56-familie gebruikt hier de driecilinder 1499 cc B38 met 100 kW. Een RDW-platformcode UKL-L alleen identificeert niet de exacte ECU of een Cooper S.",
+      "workshopCheck": "Controleer de B38-motorcode, 100 kW, ontsteking, turbodruk, koeling, gebruikte RON-brandstof en transmissie. Afwijkende originele Nm in externe publicaties vereisen voertuigidentificatie, geen automatische overname.",
+      "generationNote": "De beoordeelde UKL-L-toepassing betreft 2015–2017 en de gewone Cooper 1.5; niet de 2.0 Cooper S, One of latere facelift.",
+      "faq": [
+        [
+          "Is een MINI Cooper 1.5 gelijk aan een Cooper S?",
+          "Nee. Een Cooper S heeft andere motorhardware en cilinderinhoud. De Stage 1-referentie van deze B38 is uitsluitend voor de 100 kW-uitvoering."
+        ],
+        [
+          "Waarom verschillen originele koppelcijfers in catalogi?",
+          "Externe aanbieders kunnen een andere fabrieksbron of variant vermelden. RDW levert niet altijd Nm, zodat de auto en transmissie moeten worden gecontroleerd."
+        ]
+      ]
+    },
+    {
+      "slug": "opel-corsa-f-12-turbo-100",
+      "headline": "Opel Corsa F 1.2 Turbo 100",
+      "applicationIds": [
+        "rdw-bulk2-opel-corsa-u-f-12t100-2020"
+      ],
+      "intro": "De Opel Corsa F met 1.2 Turbo van 74 kW en 1199 cc hoort bij de PSA/Stellantis PureTech-motorfamilie. Hij is geen oudere GM Corsa E en geen elektrische Corsa-e.",
+      "workshopCheck": "Controleer de riem-in-olie of passende kettingrevisie, onderhoud en oliedruk, GPF, ECU en handbak of EAT-automaat. Extra koppel volgt pas na bevestiging van de motorconditie en transmissielimiet.",
+      "generationNote": "Deze gecontroleerde Corsa F-registratie betreft RDW-type U en eerste toelating 2020 met 74 kW benzine; de 130 pk-versie is anders.",
+      "faq": [
+        [
+          "Waarom is de Corsa F niet gelijk aan een Corsa E?",
+          "De generatie heeft een andere technische basis en motorfamilie. Oude Opel-motorcodes en tuningcijfers passen niet automatisch bij de 1199 cc Corsa F."
+        ],
+        [
+          "Wat controleert NoordTune bij deze PureTech?",
+          "Onderhoud van de distributie en het oliesysteem, foutcodes, emissiecomponenten, ECU en versnellingsbak zijn nodig voor een individuele beoordeling."
+        ]
+      ]
+    }
+  ]
+}

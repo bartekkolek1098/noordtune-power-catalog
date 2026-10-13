@@ -1,16 +1,18 @@
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 import {reviewedRdwBulkBatch4} from "../src/data/reviewed-rdw-bulk-batch-4.ts";
+import {nlPassengerEngineProfiles} from "../src/data/nl-passenger-engine-expansion.ts";
 import {
  nlStage1EngineProfiles,nlStage1BySlug,nlStage1EnginePath,
  nlStage1EngineMetadata,allStage1PowerRange,allStage1TorqueRange
 } from "../src/data/nl-stage1-engine-seo.ts";
 
-assert.equal(nlStage1EngineProfiles.length,21,"Publish only 21 distinct NL engine topics from batch 4");
-assert.equal(nlStage1BySlug.size,21,"Canonical slugs must be unique");
+assert.equal(nlStage1EngineProfiles.length,21+nlPassengerEngineProfiles.length,"Keep all 21 original source-backed topics and the reviewed expansion");
+assert.equal(nlStage1BySlug.size,nlStage1EngineProfiles.length,"Canonical slugs must be unique");
 const allIds=nlStage1EngineProfiles.flatMap(p=>p.applicationIds);
-assert.equal(new Set(allIds).size,reviewedRdwBulkBatch4.length);
-assert.deepEqual(new Set(allIds),new Set(reviewedRdwBulkBatch4.map(a=>a.id)));
+assert.equal(new Set(allIds).size,allIds.length,"No RDW application may appear on two canonical NL pages");
+const originalIds=new Set(reviewedRdwBulkBatch4.map(a=>a.id));
+assert.deepEqual(new Set(allIds.filter(id=>originalIds.has(id))),originalIds,"All previous 25 applications remain live");
 const titles=new Set<string>(), descriptions=new Set<string>();
 let verifiedReferences=0;
 for(const p of nlStage1EngineProfiles){
@@ -40,10 +42,11 @@ for(const p of nlStage1EngineProfiles){
  assert.ok(power[0]>0&&power[1]>=power[0]&&torque[0]>0&&torque[1]>=torque[0]);
  for(const a of p.applications){
   assert.ok(a.stockPowerHp>0&&a.registeredPowerKw>0&&a.displacementCc>0&&a.cylinders>0);
-  assert.ok(a.yearFrom<=a.yearTo&&a.requiredRdwType&&a.allowedRdwModels.length===1);
+  assert.ok(a.yearFrom<=a.yearTo&&a.requiredRdwType&&a.allowedRdwModels.length>=1);
   assert.ok(a.powerRangeHp[0]>a.stockPowerHp,"Stage 1 must show an evidenced positive HP gain");
   assert.ok(a.torqueRangeNm[0]>a.stockTorqueNm,"Stage 1 must show an evidenced torque gain");
-  assert.ok(a.reviewNote.toLowerCase().includes("not a guarantee"));
+  assert.ok(a.reviewNote.length>90,"Reviewed source and scope notes required");
+  if(originalIds.has(a.id))assert.ok(a.reviewNote.toLowerCase().includes("not a guarantee"));
  }
 }
 const details=readFileSync("src/app/[locale]/motoren/[slug]/page.tsx","utf8");
