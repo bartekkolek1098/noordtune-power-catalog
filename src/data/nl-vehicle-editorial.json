@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-12",
+  "scope": "Individually authored Dutch editorials for 24 existing reviewed EngineCatalog routes, not inferred from RDW plates",
+  "items": [
+    {
+      "id": "vw-golf-20-tsi-ea888",
+      "photoKey": "vw-golf-7",
+      "intro": "De Volkswagen Golf GTI met de EA888-turbobenzinemotor combineert dagelijks gebruik met een uitgesproken sportief karakter. Bij een Stage 1-vergelijking telt niet alleen het vermogen, maar ook welke GTI-versie, motorsoftware en transmissie daadwerkelijk in de auto aanwezig zijn.",
+      "difference": "Een Golf GTI Performance uit de zevende generatie is geen Golf R, en een vroege GTI heeft niet noodzakelijk dezelfde fabriekssoftware als een facelift met GPF. Controleer het originele motortype en de productieperiode voordat je Stage 1-publicaties met elkaar vergelijkt.",
+      "checks": "Laat de Continental Simos-ECU en softwareversie vaststellen, controleer de turbodrukregeling, ontsteking, brandstofkwaliteit en koeling. Bij een DSG of handbak is het beschikbare transmissiekoppel per uitvoering afzonderlijk te beoordelen.",
+      "usage": "Voor dagelijks woon-werkverkeer is voorspelbare gasrespons vaak waardevoller dan het hoogste getal uit een advertentie. De beschikbare Stage 1-cijfers zijn indicaties van externe aanbieders; een persoonlijke afstelling vereist inzicht in de technische conditie van deze GTI.",
+      "faq": [
+        [
+          "Is Stage 1 bij een Golf 7 GTI Performance hetzelfde als bij een Golf R?",
+          "Nee. Het motormanagement, de vierwielaandrijving en de motorconfiguratie van een Golf R zijn anders. De getoonde informatie geldt voor de geselecteerde GTI-uitvoering."
+        ],
+        [
+          "Moet de DSG van mijn Golf GTI vooraf worden gecontroleerd?",
+          "Ja. Originele koppellimieten en onderhoudstoestand van de transmissie horen bij de voertuigcontrole. Een gepubliceerd maximaal koppel is geen vrijgave voor iedere DSG."
+        ]
+      ],
+      "related": [
+        "volkswagen-golf-7-r-20-tsi",
+        "volkswagen-golf-7-20-tdi"
+      ]
+    },
+    {
+      "id": "bmw-320d-b47",
+      "photoKey": "bmw-f30",
+      "intro": "De BMW 320d met B47-dieselmotor is populair door zijn combinatie van trekkracht en relatief rustige snelwegritten. Deze NoordTune-pagina behandelt de 190 pk-versie als een afzonderlijke technische basis, niet als een algemene waarde voor alle 320d-varianten.",
+      "difference": "Bij de BMW 3 Serie F30/F31 vond de overstap van N47 naar B47 plaats rond de facelift. Een eerste toelating of het opschrift 320d bewijst dus niet dat de motorcode klopt. Ook latere 3 Serie-generaties kunnen dezelfde commerciële naam dragen.",
+      "checks": "Controleer B47-motorcode, originele ECU-software, emissievariant, kilometerstand en de conditie van DPF en EGR. Stel bij een handbak of ZF-automaat eerst de feitelijke transmissie en zijn koppelbegrenzing vast; stem daarop de beoogde motorrespons af.",
+      "usage": "Extra trekkracht kan vooral bij inhalen en lange ritten prettig zijn, maar de juiste kalibratie verschilt per onderhoudstoestand en gebruik. Laat een persoonlijke controle bepalen welke van de externe Stage 1-indicaties werkelijk op jouw 320d past.",
+      "faq": [
+        [
+          "Heeft iedere BMW 320d F30 de B47-motor?",
+          "Nee. Er zijn ook oudere N47-varianten. De exacte motorcode en ECU moeten worden bevestigd voordat B47-gegevens of een tuningbestand worden gebruikt."
+        ],
+        [
+          "Waarom verschilt het Stage 1-resultaat per BMW 320d?",
+          "De gekozen afstelling, ECU-versie, transmissie, emissiesysteem en onderhoudstoestand kunnen verschillen. Een tabel is een uitgangspunt voor een offerte, geen gegarandeerd resultaat."
+        ]
+      ],
+      "related": [
+        "bmw-3-series-f30-f31-318d",
+        "bmw-3-series-f30-f31-330d"
+      ]
+    },
+    {
+      "id": "audi-a3-20-tdi",
+      "photoKey": "audi-a3-8v",
+      "intro": "De Audi A3 8V 2.0 TDI met 150 pk is een veelgekozen diesel voor dagelijks verkeer. Bij het beoordelen van Stage 1 zijn de originele aandrijflijn en de technische generatie belangrijker dan de naam A3 of een vergelijkbare motor in een ander VAG-model.",
+      "difference": "De 2.0 TDI van deze A3 verschilt van de 1.6 TDI en van A3-modellen met andere ECU-generaties. Voorwielaandrijving, quattro en handbak/S tronic kunnen verschillende koppellimieten en kalibraties vereisen, ook als het originele vermogen gelijk lijkt.",
+      "checks": "Controleer de geregistreerde motorvariant, Bosch ECU, DPF- en eventuele SCR-configuratie, en de actuele onderhoudsstaat. Lees ook het type handbak of S tronic uit om de juiste koppelmarge te beoordelen voordat een softwarewijziging wordt uitgevoerd.",
+      "usage": "Een vloeiende acceleratie zonder onnodige belasting is voor een dagelijks gebruikte A3 vaak het belangrijkste uitgangspunt. NoordTune bespreekt daarom vooraf de technische staat, het beoogde rijgedrag en de voertuigafhankelijke mogelijkheden.",
+      "faq": [
+        [
+          "Kan de A3 2.0 TDI dezelfde tuning als een Golf 2.0 TDI krijgen?",
+          "Niet automatisch. Gedeelde motorfamilies betekenen niet dezelfde ECU-software, transmissie of emissievariant. De exacte A3-configuratie blijft leidend."
+        ],
+        [
+          "Is Stage 1 altijd gelijk bij A3 150 pk met handbak en S tronic?",
+          "Nee. Vooral de beschikbare koppelruimte en de elektronica van de transmissie kunnen verschillen. Daarom moet de daadwerkelijke uitvoering vóór de offerte worden vastgesteld."
+        ]
+      ],
+      "related": [
+        "audi-a3-8v-16-tdi",
+        "audi-a4-b9-20-tdi-190"
+      ]
+    },
+    {
+      "id": "mercedes-a45-amg-m133",
+      "photoKey": "mercedes-w176",
+      "intro": "De Mercedes-AMG A 45 W176 heeft een krachtige 2.0 turbobenzinemotor uit de M133-familie. Dit is een sportieve AMG-uitvoering met eigen koeling, aandrijflijn en motormanagement; de aanduiding A-Klasse alleen is onvoldoende om de Stage 1-mogelijkheden te beoordelen.",
+      "difference": "De W176 A 45 heeft andere techniek dan een gewone A 200 of A 250 en is ook niet zonder meer gelijk aan latere AMG A 45-modellen. Zelfs binnen de W176-generatie bestaan wijzigingen in afstelling en ECU naargelang de productieperiode.",
+      "checks": "Laat de echte M133-uitvoering, turbo- en koelsysteem, originele motorsoftware en onderhoudshistorie beoordelen. Controleer bij de AMG-transmissie ook de koppelgrenzen en thermische belasting; houd rekening met de voorgeschreven benzinekwaliteit.",
+      "usage": "Bij deze AMG is het doel niet alleen een hogere piek, maar een passende combinatie van respons, warmtebeheersing en betrouwbaar gebruik. Publicaties van aanbieders zijn technische referenties; NoordTune moet een concrete auto apart beoordelen.",
+      "faq": [
+        [
+          "Kan de software van een gewone Mercedes A-Klasse worden gebruikt voor de A 45?",
+          "Nee. De A 45 W176 heeft een eigen motor- en aandrijflijnconfiguratie. ECU-identiteit en software moeten specifiek bij het M133-profiel passen."
+        ],
+        [
+          "Welke rol speelt koeling bij Stage 1 op een A 45 AMG?",
+          "Turbo- en motortemperaturen zijn belangrijk bij deze krachtige benzinemotor. Onderhoud, koeling en de toestand van de transmissie worden meegewogen voordat een passend voorstel ontstaat."
+        ]
+      ],
+      "related": []
+    },
+    {
+      "id": "bmw-x3-e83-20d",
+      "photoKey": "bmw-e83",
+      "intro": "De BMW X3 E83 2.0d uit de laatste jaren van deze generatie is een oudere vierwielaangedreven diesel-SUV. Een Stage 1-afweging begint hier bij de motorcode en onderhoudstoestand, omdat de X3 E83 gedurende zijn levensloop meerdere 2.0d-varianten heeft gehad.",
+      "difference": "De beoordeelde uitvoering met 177 pk is niet dezelfde fabrieksconfiguratie als vroegere X3 2.0d-versies. De overgang tussen BMW-dieselmotorfamilies en het verschil tussen E83 en latere F25-voertuigen zijn belangrijke grenzen voor betrouwbare bronvergelijking.",
+      "checks": "Controleer de motorcode, distributiehistorie, turbo, DPF waar aanwezig, ECU-software en werking van het xDrive-systeem. Verifieer tevens de transmissie en bestaande storingen; oudere aandrijflijnen vragen extra aandacht voordat het koppel wordt gewijzigd.",
+      "usage": "Bij een X3 die ook in winterweer of met een aanhanger rijdt, verdient soepele koppelopbouw de voorkeur boven een maximaal advertentiecijfer. Een werkplaatscontrole bepaalt welke eventuele motorsoftware binnen de technische staat van de auto past.",
+      "faq": [
+        [
+          "Gelden dezelfde tuningwaarden voor alle BMW X3 E83 2.0d?",
+          "Nee. Afhankelijk van bouwjaar en motorcode verschillen het originele vermogen en de ECU. De 177 pk-uitvoering moet afzonderlijk worden geïdentificeerd."
+        ],
+        [
+          "Waarom is de onderhoudshistorie bij een oudere X3 extra belangrijk?",
+          "De conditie van distributie, turbo, emissiesysteem en transmissie heeft directe invloed op de marge voor extra koppel. Een softwarewijziging herstelt bestaande technische gebreken niet."
+        ]
+      ],
+      "related": [
+        "bmw-320d-b47",
+        "bmw-5-series-f10-f11-520d"
+      ]
+    },
+    {
+      "id": "volvo-xc60-d5",
+      "photoKey": "volvo-xc60",
+      "intro": "De Volvo XC60 D5 AWD van de eerste generatie combineert een vijfcilinder-dieselfamilie met vierwielaandrijving. Deze motor en zijn aandrijflijn mogen niet worden verward met latere XC60-generaties met een ander motorblok of mild-hybridtechniek.",
+      "difference": "De naam D5 werd over meerdere generaties en vermogensniveaus gebruikt. De onderzochte 2.4-liter uitvoering met 220 pk heeft een andere basis dan bijvoorbeeld de latere tweeliter Volvo-diesels; ook automaat en vierwielaandrijving vragen een eigen beoordeling.",
+      "checks": "Identificeer de werkelijke 2.4 D5-motor en ECU, controleer de automaat, AWD-aandrijving, onderhoud van het koelsysteem en de staat van DPF/EGR. De originele motorsoftware en de transmissie bepalen welk koppel verantwoord bespreekbaar is.",
+      "usage": "Voor een XC60 met veel snelwegkilometers of regelmatig trekwerk is stabiele aandrijving en een gecontroleerde motorbelasting belangrijk. Een hogere bronwaarde voor Stage 1 wordt nooit automatisch gezien als een geschikt maximum voor jouw Volvo.",
+      "faq": [
+        [
+          "Is iedere Volvo XC60 D5 een 2.4-liter vijfcilinder?",
+          "Nee. De naam D5 is voor verschillende motoren en modelgeneraties gebruikt. Voor deze pagina gaat het om de onderzochte 2.4 D5-uitvoering; controleer de motorcode."
+        ],
+        [
+          "Heeft AWD invloed op de Stage 1-keuze bij de XC60?",
+          "Ja. De aandrijflijn, transmissie en gebruiksbelasting horen bij de voertuigcontrole. Het externe koppelschatting is geen goedkeuring van alle AWD-componenten."
+        ]
+      ],
+      "related": []
+    },
+    {
+      "id": "ford-focus-st-20-ecoboost",
+      "photoKey": "ford-focus-st3",
+      "intro": "De Ford Focus ST Mk3 facelift met 2.0 EcoBoost is een sportieve turbobenzine-hatchback. De onderzochte uitvoering heeft een originele 250 pk-configuratie en moet worden onderscheiden van zowel de gewone Focus EcoBoost als de vierwielaangedreven Focus RS.",
+      "difference": "Bij een Focus ST kunnen motorsoftware, emissie-uitrusting en de omstandigheden waaronder een tuner zijn resultaten rapporteert verschillen. Een 2.0 EcoBoost in een ander Ford-model is daardoor niet automatisch dezelfde combinatie van turbo, ECU en transmissie.",
+      "checks": "Controleer de juiste EcoBoost-motorcode en ECU, de toestand van ontsteking, intercooler, turbo en koelsysteem en de gebruikte brandstof. Bekijk tevens de koppeling en handgeschakelde versnellingsbak op onderhoud en bestaande storingen.",
+      "usage": "Een goed afgestelde Focus ST behoudt voorspelbare respons bij dagelijks rijden en langere belasting. De hoogste externe Stage 1-claim is geen persoonlijke garantie; de technische conditie bepaalt de veilige scope van het gesprek.",
+      "faq": [
+        [
+          "Is de Focus ST Mk3 hetzelfde als de Focus RS?",
+          "Nee. De RS heeft een andere motor- en aandrijfconfiguratie. Stage 1-informatie voor deze voorwielaangedreven Focus ST mag niet worden overgenomen naar de RS."
+        ],
+        [
+          "Moet voor een 2.0 EcoBoost de brandstofkwaliteit worden gecontroleerd?",
+          "Ja. De vereiste benzinekwaliteit hoort bij de specifieke software en motortoestand. Een bron die andere brandstof gebruikt, kan andere resultaten publiceren."
+        ]
+      ],
+      "related": []
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118i",
+      "photoKey": "bmw-f20",
+      "intro": "De BMW 118i F20/F21 is als compacte turbobenzine-hatchback in verschillende motorfasen geleverd. Voor de beoordeelde 136 pk-configuratie is de werkelijke motorcode van belang: een oudere N13 mag niet worden verwisseld met een latere 1.5 B38.",
+      "difference": "De modelnaam 118i zegt niet of de auto de 1598 cc N13 of de 1499 cc B38 gebruikt. Dat verschil heeft gevolgen voor de ECU, turbodrukregeling en de toepasselijke Stage 1-literatuur; de pagina richt zich op de gecontroleerde technische variant.",
+      "checks": "Controleer het aantal cilinders, cilinderinhoud, motortype, ECU-software en gebruikte benzine. Vraag ook naar de automatische of handgeschakelde transmissie en bestaande motorstoringen, zodat een externe vermogensindicatie niet verkeerd wordt toegepast.",
+      "usage": "Voor een dagelijks gebruikte 118i gaat het om bruikbare motorrespons en een passende afstelling, niet om het grootste theoretische piekvermogen. NoordTune kan pas na motordiagnose de mogelijkheden voor deze individuele BMW bespreken.",
+      "faq": [
+        [
+          "Waarom zijn er verschillende BMW 118i F20-motoren?",
+          "BMW gebruikte verschillende turbobenzinemotoren binnen dezelfde modelnaam. De motorcode en cilinderinhoud zijn daarom noodzakelijk om de juiste Stage 1-referentie te kiezen."
+        ],
+        [
+          "Kan een 118i met oudere N13 dezelfde software krijgen als de B38?",
+          "Nee. De ECU en hardware verschillen. Een tuningbestand of vermogensclaim van de ene motorfamilie is niet geldig voor de andere."
+        ]
+      ],
+      "related": [
+        "bmw-1-series-f20-f21-118d",
+        "bmw-1-series-f20-f21-120d"
+      ]
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118d",
+      "photoKey": "bmw-f20",
+      "intro": "De BMW 118d F20/F21 facelift heeft een 2.0-liter diesel die in de onderzochte variant 150 pk levert. Dit is een aparte motorconfiguratie van de benzine-118i en van de sterker afgestelde 120d, ook al lijken de auto's visueel op elkaar.",
+      "difference": "De bekeken 118d is gekoppeld aan een 1995 cc-motor met eigen fabrieksvermogen en ECU-uitvoering. Oudere F20-diesels kunnen andere motorcodes hebben; zelfs bij dezelfde carrosserie mag een andere vermogensvariant niet zonder controle worden samengevoegd.",
+      "checks": "Controleer de dieselmotorcode, Bosch ECU, DPF/EGR, distributie- en onderhoudshistorie en originele transmissie. Een automaat kan een ander koppeltraject vragen dan de handbak; de werkelijke softwareversie moet eerst worden gelezen.",
+      "usage": "Bij dagelijks woon-werkverkeer kan een geleidelijke koppeltoename relevant zijn, maar alleen als de motor technisch gezond is. Gepubliceerde Stage 1-indicaties zijn een startpunt voor een voertuigafhankelijke offerte.",
+      "faq": [
+        [
+          "Wat is het verschil tussen BMW 118d en 120d F20?",
+          "Ze hebben andere fabrieksafstellingen en mogelijk verschillende ECU- en hardwarevarianten. Daarom hebben ze eigen profielen en mogen gepubliceerde Stage 1-cijfers niet zomaar worden overgenomen."
+        ],
+        [
+          "Blijft het roetfilter bij Stage 1 van een 118d functioneren?",
+          "Bij regulier weggebruik moeten de aanwezige emissiesystemen goed blijven werken. Een passende Stage 1 is geen toestemming om DPF of EGR uit te schakelen."
+        ]
+      ],
+      "related": [
+        "bmw-1-series-f20-f21-120d",
+        "bmw-1-series-f20-f21-118i"
+      ]
+    },
+    {
+      "id": "bmw-1-series-f20-f21-120d",
+      "photoKey": "bmw-f20",
+      "intro": "De BMW 120d F20/F21 met 190 pk is een sterkere 2.0-liter diesel dan de 118d van dezelfde carrosseriefamilie. De bekeken configuratie wordt niet gelijkgesteld aan oudere 120d's met een andere motorcode of aan zescilinder-BMW-diesels.",
+      "difference": "Het oorspronkelijke vermogen, turbo- en ECU-configuratie moeten passen bij de gekozen 120d-versie. Een vergelijkbaar resultaat van een 320d zegt niet dat de 120d dezelfde transmissie, koeling of softwarebeveiliging heeft.",
+      "checks": "Laat de werkelijke 1995 cc-motorcode bevestigen en controleer Bosch ECU, emissiecomponenten, onderhoud en handbak/automaat. Stel daarna pas de mogelijke motorkoppelverhoging tegenover de technische grenzen van deze uitvoering.",
+      "usage": "Bij een 120d met veel kilometers is een vlakke, voorspelbare koppelopbouw vaak waardevoller dan een hoge piek uit een catalogus. Beschouw Stage 1-waarden als externe indicaties die een onafhankelijke voertuigcontrole vereisen.",
+      "faq": [
+        [
+          "Kan mijn 120d F20 met dezelfde remap als een BMW 320d rijden?",
+          "Nee. Zelfs bij een vergelijkbare dieselmotor verschillen ECU-software, transmissie en voertuigspecifieke begrenzers. Een identieke remap is niet verantwoord zonder technische identificatie."
+        ],
+        [
+          "Waarvoor moet een 120d vóór tuning worden nagekeken?",
+          "Met name motorcode, ECU, onderhoud, DPF/EGR en de staat van koppeling of automaat. De fabrieksconfiguratie is bepalend voor een passend voorstel."
+        ]
+      ],
+      "related": [
+        "bmw-1-series-f20-f21-118d",
+        "bmw-320d-b47"
+      ]
+    },
+    {
+      "id": "bmw-3-series-f30-f31-318d",
+      "photoKey": "bmw-f30",
+      "intro": "De BMW 318d F30/F31 met 150 pk is een afzonderlijke dieselvariant binnen de 3 Serie. Hoewel hij qua uiterlijk dicht bij de 320d ligt, kan de originele software en de technische uitgangspositie anders zijn.",
+      "difference": "Bij het vergelijken van een 318d met een 320d B47 moet worden gekeken naar de werkelijke motorcode, 1995 cc, het toelatingsjaar en de ECU. Dezelfde viercilinder-familie betekent niet automatisch een identieke turbo of een gelijke veilige transmissiebelasting.",
+      "checks": "Controleer originele motormanagementgegevens, DPF/EGR, onderhoudshistorie en toestand van de handbak of ZF-automaat. Rond de facelift is identificatie van de motorfamilie extra belangrijk om geen cijfers van een andere generatie te gebruiken.",
+      "usage": "Een 318d wordt vaak voor lange trajecten gebruikt. Daar is een stabiele koppelcurve nuttiger dan een ongetoetst maximaal vermogenscijfer. NoordTune beoordeelt de concrete uitvoering voordat een offerte of afstelling wordt afgesproken.",
+      "faq": [
+        [
+          "Is een BMW 318d technisch hetzelfde als een 320d?",
+          "Niet zonder meer. Het originele vermogen, ECU-software en sommige hardware kunnen verschillen. Daarom zijn de vermogensindicaties per specifieke motorconfiguratie gescheiden."
+        ],
+        [
+          "Kan ik uit het bouwjaar afleiden of mijn 318d de B47 heeft?",
+          "Niet altijd. Rond modelovergangen moet de werkelijke motorcode en ECU worden bevestigd; alleen een eerste toelatingsdatum is onvoldoende."
+        ]
+      ],
+      "related": [
+        "bmw-320d-b47",
+        "bmw-3-series-f30-f31-330d"
+      ]
+    },
+    {
+      "id": "bmw-3-series-f30-f31-330d",
+      "photoKey": "bmw-f30",
+      "intro": "De BMW 330d F30/F31 met circa 258 pk is een zescilinder-diesel die duidelijk anders is dan de viercilinder-318d en 320d. De onderzochte configuratie heeft een 2993 cc-motor en vraagt een eigen ECU- en transmissiecontrole.",
+      "difference": "Een 330d uit de F30-generatie is geen 335d met andere turboaandrijving en ook niet dezelfde motorsoftware als een 330d van de latere G20-generatie. Vergelijk uitsluitend bronnen die het originele vermogen en de juiste motorgeneratie onderscheiden.",
+      "checks": "Controleer de echte zescilindermotor, Bosch ECU, turbo, koelcircuit, emissiesysteem en specificatie van de automatische transmissie. Bij hoog koppel moet de transmissieconditie voor het werk worden beoordeeld, zeker bij intensief of zwaar gebruik.",
+      "usage": "De zescilinder heeft al een hoog origineel koppel. De vraag is daarom niet alleen wat een externe Stage 1-tabel toont, maar of de eigen auto technisch voldoende reserve heeft voor een passende en beheerste afstelling.",
+      "faq": [
+        [
+          "Zijn de Stage 1-waarden van BMW 330d en 335d uitwisselbaar?",
+          "Nee. De turboladerconfiguratie, originele afstelling en ECU kunnen afwijken. Elk motortype vereist zijn eigen onderbouwde gegevens en diagnose."
+        ],
+        [
+          "Waarom controleert NoordTune de automaat bij een 330d?",
+          "Een hoger motorkoppel belast ook de transmissie. De exacte uitvoering, onderhoudsstaat en oorspronkelijke limieten moeten bij het afstellen worden betrokken."
+        ]
+      ],
+      "related": [
+        "bmw-320d-b47",
+        "bmw-3-series-f30-f31-318d"
+      ]
+    },
+    {
+      "id": "bmw-5-series-f10-f11-520d",
+      "photoKey": "bmw-f10",
+      "intro": "De BMW 520d van de F10/F11-generatie is een 2.0-liter diesel voor comfortabele lange ritten. Een 190 pk-uitvoering kan op een andere motorgeneratie en ECU zijn gebaseerd dan oudere 520d-modellen met hetzelfde opschrift.",
+      "difference": "Rond de latere bouwjaren veranderden de motor- en softwarevarianten binnen de F10/F11. Ook een Touring F11 heeft een andere gebruiksbelasting dan een sedan F10. Dat betekent niet dat alle Stage 1-resultaten van een 320d zomaar voor een 520d gelden.",
+      "checks": "Controleer de werkelijke 1995 cc-motorcode, motorsoftware, DPF/EGR, onderhoud en de automaat of handbak. Vraag bij veel kilometers naar eerdere reparaties en beoordeel de koeling en transmissie voordat extra koppel wordt overwogen.",
+      "usage": "De 520d wordt vaak voor lange afstanden gebruikt. Een gelijkmatige motorrespons met aandacht voor warmte en transmissie past beter bij dat gebruik dan een hoog, niet-geverifieerd piekcijfer uit een online lijst.",
+      "faq": [
+        [
+          "Kan mijn BMW 520d F10 dezelfde Stage 1 krijgen als een F30 320d?",
+          "Niet zonder controle. Vergelijkbare motorfamilies kunnen verschillende ECU-software, transmissies en emissievarianten hebben. De concrete 520d-uitvoering bepaalt het relevante profiel."
+        ],
+        [
+          "Is een 520d Touring hetzelfde voor chiptuning als een 520d sedan?",
+          "Ze kunnen een vergelijkbare motor hebben, maar aandrijflijn, gebruiksgewicht en voertuigbelasting verschillen. De ECU- en transmissie-identiteit blijft noodzakelijk voor een juist voorstel."
+        ]
+      ],
+      "related": [
+        "bmw-320d-b47",
+        "bmw-3-series-f30-f31-318d"
+      ]
+    },
+    {
+      "id": "bmw-3-series-g20-g21-320i",
+      "photoKey": "bmw-g20",
+      "intro": "De BMW 320i G20/G21 gebruikt een moderne 2.0-liter turbobenzineconfiguratie uit de B48-familie. De onderzochte 184 pk-versie is geen oudere 320i F30 met N20 en hoort ook niet bij een krachtiger M340i-profiel.",
+      "difference": "Een G20/G21 320i kan verschillen in motormanagement, emissievariant en productiefase. De modelnaam 320i is daarom geen betrouwbare aanwijzing voor een ECU-bestand; vooral rond latere software-updates moet de echte controller worden herkend.",
+      "checks": "Controleer de B48-generatie, 1998 cc, Bosch MG1-ECU en de eventuele softwarebeveiliging. Beoordeel koel- en ontstekingssysteem, benzinekwaliteit, kilometerstand en de automatische transmissie vóór een plan voor extra turbodruk of koppel.",
+      "usage": "De 320i is een dagelijks gebruikte benzine-BMW waarbij een voorspelbare respons belangrijker kan zijn dan het grootste advertentiecijfer. Bespreek vooraf jouw rijstijl en hoe een eventuele afstelling bij motor en transmissie past.",
+      "faq": [
+        [
+          "Is de 320i G20 hetzelfde als de 320i F30 B48?",
+          "Niet automatisch. De motorfamilie kan overeenkomen, maar ECU, emissiesysteem en softwareversies veranderen tussen generaties. Daarom moeten de werkelijke gegevens worden gelezen."
+        ],
+        [
+          "Waarom kan een ECU-check nodig zijn voordat Stage 1 mogelijk is?",
+          "Verschillende Bosch MG1-softwareversies hebben andere toegang of beveiliging. Zonder identificatie is niet zeker welke werkwijze of indicatieve Stage 1-bron passend is."
+        ]
+      ],
+      "related": [
+        "bmw-320d-b47",
+        "bmw-3-series-f30-f31-318d"
+      ]
+    },
+    {
+      "id": "volkswagen-golf-7-16-tdi",
+      "photoKey": "vw-golf-7",
+      "intro": "De Volkswagen Golf 7 1.6 TDI is een zuinige dieselhatchback met een andere motorbasis dan de 2.0 TDI uit dezelfde carrosseriefamilie. De bekeken versie heeft een originele 115 pk-afstelling en vraagt om een eigen motormanagementcontrole.",
+      "difference": "Een 1.6 TDI met 115 pk mag niet worden samengevoegd met oudere 90 of 105 pk-uitvoeringen of met de 2.0 TDI. Ook tussen handgeschakelde Golf en DSG bestaan verschillen in beschikbare koppelruimte en originele software.",
+      "checks": "Controleer de EA288-motorcode, het originele geregistreerde vermogen, Bosch ECU, turbo- en injectiestatus en de werking van DPF/EGR en eventuele SCR. Lees de daadwerkelijke transmissie uit en beoordeel de conditie van koppeling en vliegwiel.",
+      "usage": "Bij een Golf 1.6 TDI gaat het vaak om ontspannen dagelijks rijden. Een geleidelijke extra trekkracht kan alleen passend worden besproken wanneer de motor en aandrijflijn gezond zijn; een bronwaarde is nooit een individuele garantiemeting.",
+      "faq": [
+        [
+          "Krijgt de Golf 7 1.6 TDI dezelfde Stage 1 als de 2.0 TDI?",
+          "Nee. De cilinderinhoud, originele vermogensconfiguratie en mogelijke turbo- en ECU-varianten verschillen. De 1.6 en 2.0 krijgen daarom een eigen technische beoordeling."
+        ],
+        [
+          "Speelt de DSG-versie een rol bij de 1.6 TDI?",
+          "Ja. Koppeling en transmissie hebben eigen grenzen. Een getoonde koppeltoename is geen toestemming om die grenzen zonder technische controle te overschrijden."
+        ]
+      ],
+      "related": [
+        "volkswagen-golf-7-20-tdi",
+        "vw-golf-20-tsi-ea888"
+      ]
+    },
+    {
+      "id": "volkswagen-golf-7-20-tdi",
+      "photoKey": "vw-golf-7",
+      "intro": "De Golf VII 2.0 TDI met 150 pk wordt vaak gebruikt voor dagelijks verkeer en langere ritten. Dit is een eigen EA288-dieselvariant, niet hetzelfde motortype als de 1.6 TDI of de benzine-GTI en R.",
+      "difference": "De Golf 7 2.0 TDI bestaat in meerdere uitvoeringen en modeljaren; een vergelijkbare Passat- of Audi-motor kan een andere ECU-versie hebben. Daarom moeten originele kW, motortype en bouwfase eerst overeenkomen voordat gepubliceerde Stage 1-data worden gebruikt.",
+      "checks": "Laat de werkelijke 2.0 TDI-motorcode, Bosch ECU, eventuele emissie-updates, DPF/EGR/SCR en de transmissie identificeren. Controleer onderhoud en turbo, en stem een eventueel koppelvoorstel af op handbak of DSG.",
+      "usage": "De combinatie van rust bij kruissnelheid en beschikbare trekkracht is voor veel Golf-rijders belangrijk. Extra vermogen is alleen zinvol wanneer de auto technisch in orde is en de gekozen koppelopbouw bij dagelijks gebruik past.",
+      "faq": [
+        [
+          "Is een Golf 7 2.0 TDI 150 technisch gelijk aan een Passat B8 2.0 TDI 150?",
+          "Niet noodzakelijk. Zelfs bij gelijke cilindercapaciteit en fabrieksvermogen kunnen ECU, emissienorm en transmissie verschillen. De bronafstelling moet voertuigspecifiek passen."
+        ],
+        [
+          "Waarom kan een DPF-check vóór tuning nodig zijn?",
+          "Een diesel met bestaande roetfilter- of EGR-problemen moet eerst worden beoordeeld. Een Stage 1 lost zulke storingen niet op en maakt emissie-uitschakeling niet verantwoord."
+        ]
+      ],
+      "related": [
+        "volkswagen-golf-7-16-tdi",
+        "volkswagen-passat-b8-20-tdi"
+      ]
+    },
+    {
+      "id": "volkswagen-golf-7-r-20-tsi",
+      "photoKey": "vw-golf-7",
+      "intro": "De Volkswagen Golf 7 R met 2.0 TSI 300 pk is een sportieve vierwielaangedreven uitvoering. Hij heeft een eigen fabrieksconfiguratie en motormanagement: waarden van een Golf GTI Performance of een gewone Golf 2.0 TDI zijn hier niet toepasbaar.",
+      "difference": "Een Golf R verschilt in aandrijflijn, turbo, koeling en oorspronkelijke ECU-kalibratie van een GTI. Ook een latere facelift- of GPF-uitvoering kan afwijken van de onderzochte 300 pk-fase uit eerdere jaren.",
+      "checks": "Verifieer de EA888-uitvoering, turbo, koelsysteem, ontsteking, vereiste brandstof en Continental Simos-software. Controleer handgeschakelde of DSG-transmissie en de onderhoudstoestand van vierwielaandrijving voordat een extra koppelinstelling wordt overwogen.",
+      "usage": "Een Golf R kan bij stevig rijden veel thermische belasting krijgen. Een verantwoord voorstel kijkt daarom naar temperaturen, gasrespons en de staat van de volledige aandrijflijn, niet alleen naar een theoretische maximale Stage 1-piek.",
+      "faq": [
+        [
+          "Mag ik de Stage 1-cijfers van de Golf GTI gebruiken voor een Golf R?",
+          "Nee. De R heeft een andere combinatie van motorcomponenten en aandrijving. Het originele vermogen en de controller moeten bij de juiste Golf R-generatie horen."
+        ],
+        [
+          "Waarom is transmissieonderhoud belangrijk voor een Golf R?",
+          "De aandrijflijn verwerkt al een hoog fabriekskoppel. De DSG/handbak en vierwielaandrijving moeten technisch in orde zijn voordat een hogere belasting wordt besproken."
+        ]
+      ],
+      "related": [
+        "vw-golf-20-tsi-ea888",
+        "volkswagen-golf-7-20-tdi"
+      ]
+    },
+    {
+      "id": "volkswagen-passat-b8-20-tdi",
+      "photoKey": "vw-passat-b8",
+      "intro": "De Volkswagen Passat B8 facelift 2.0 TDI 150 is een comfortabele diesel voor lange trajecten. De onderzochte fase heeft een modernere ECU-context dan eerdere Passat B8-motoren, zodat dezelfde modelnaam niet automatisch hetzelfde Stage 1-profiel betekent.",
+      "difference": "Een Passat B8 van de faceliftperiode kan verschillen van de oudere 2.0 TDI en van de sterkere 190 pk-uitvoering. De originele kW, softwareversie en emissievariant moeten in overeenstemming zijn met de bron waarop een indicatie steunt.",
+      "checks": "Controleer de exacte 2.0 TDI-variant en Bosch MD1-ECU, de werkende DPF/EGR/SCR-nabehandeling en de onderhoudsgegevens. Bepaal of het een handbak of DSG is; vooral bij lange snelwegritten en trekwerk telt de toelaatbare continue belasting.",
+      "usage": "Voor een Passat die veel kilometers maakt, zijn rustige respons en thermische marge belangrijke aandachtspunten. Een werkplaatscontrole bepaalt of de gepubliceerde bronrange verantwoord met jouw voertuigconfiguratie kan worden besproken.",
+      "faq": [
+        [
+          "Heeft een Passat B8 facelift dezelfde software als een oudere B8 2.0 TDI?",
+          "Niet noodzakelijk. ECU- en emissie-updates kunnen de softwaregeneratie wijzigen. Controleer de geïnstalleerde controller en originele afstelling."
+        ],
+        [
+          "Zijn Stage 1-waarden van een Golf 2.0 TDI geschikt voor deze Passat?",
+          "Ze kunnen uit een verwante motorfamilie komen, maar zijn niet zonder meer uitwisselbaar. Koppeling, DSG, carrosseriegebruik en ECU moeten apart worden gecontroleerd."
+        ]
+      ],
+      "related": [
+        "volkswagen-golf-7-20-tdi",
+        "volkswagen-golf-7-16-tdi"
+      ]
+    },
+    {
+      "id": "audi-a3-8v-16-tdi",
+      "photoKey": "audi-a3-8v",
+      "intro": "De Audi A3 8V 1.6 TDI 116 pk is een andere dieselconfiguratie dan de 150 pk 2.0 TDI uit dezelfde generatie. Motorcode, originele kW en de transmissie vormen het vertrekpunt voor een betrouwbare vergelijking van tuningindicaties.",
+      "difference": "Zelfs bij A3 1.6 TDI uit hetzelfde modeljaar kunnen de emissievariant en software verschillen. Een 1.6-liter EA288 is niet dezelfde motor als de 2.0 TDI en mag niet worden gekoppeld aan een grotere turbomotor op basis van alleen de carrosserienaam.",
+      "checks": "Verifieer 1598 cc-motor en fabrieksvermogen, ECU-variant, DPF/EGR en eventuele SCR-uitrusting. Bij een S tronic met droge koppeling zijn de beschikbare koppelgrenzen mogelijk anders dan bij een handbak; laat de echte configuratie beoordelen.",
+      "usage": "Voor een dagelijkse A3 1.6 TDI kan een soepel middengebied wenselijk zijn. De bronwaarden zijn technische indicaties; een individuele offerte volgt pas na controle van motor, transmissie en onderhoudsstaat.",
+      "faq": [
+        [
+          "Kunnen de Stage 1-cijfers van A3 2.0 TDI gebruikt worden voor de 1.6 TDI?",
+          "Nee. De motorinhoud, hardware, fabrieksafstelling en ECU verschillen. Daarom moet de 1.6 TDI onder zijn eigen technische profiel worden beoordeeld."
+        ],
+        [
+          "Waarom is een S tronic-check belangrijk bij de Audi A3 diesel?",
+          "Transmissies hebben verschillende constructies en toelaatbare koppels. De specifieke S tronic- of handbakversie bepaalt mee welke afstelling kan worden besproken."
+        ]
+      ],
+      "related": [
+        "audi-a3-20-tdi",
+        "audi-a4-b9-20-tdi-190"
+      ]
+    },
+    {
+      "id": "audi-a4-b9-20-tdi-190",
+      "photoKey": "audi-a4-b9",
+      "intro": "De Audi A4 B9 2.0 TDI 190 pk combineert een sterke viercilinder diesel met de grotere A4-carrosserie. Deze originele vermogensvariant verschilt van de 150 pk TDI en van de benzine-2.0 TFSI, ook wanneer ze dezelfde B9-modelnaam dragen.",
+      "difference": "Een A4 B9 sedan of Avant kan qua transmissie, aandrijving en emissievariant afwijken. De motorsoftware kan bovendien tussen vroege B9-jaren en latere facelifts veranderen; een 190 pk-aanduiding bewijst geen specifieke ECU-firmware.",
+      "checks": "Controleer de werkelijke 2.0 TDI-motorcode, originele kW, Bosch ECU en DPF/EGR/SCR. Identificeer handbak of S tronic en eventuele quattro-uitrusting; inspecteer onderhoud en koeling voordat extra koppel ter sprake komt.",
+      "usage": "Voor snelwegritten of trekwerk is een gelijkmatige koppelontwikkeling belangrijk. Een Stage 1-publicatie van een tuner is een vergelijking, geen meting van deze A4 en evenmin een automatische vrijgave voor elke transmissie.",
+      "faq": [
+        [
+          "Heeft een Audi A4 B9 2.0 TDI 190 dezelfde ECU als de A3 2.0 TDI 150?",
+          "Niet zonder meer. Het motorvermogen, de voertuigconfiguratie en de gebruikte ECU-software kunnen verschillen. Beide uitvoeringen vereisen een aparte technische match."
+        ],
+        [
+          "Gelden dezelfde Stage 1-cijfers voor A4 sedan en Avant?",
+          "Alleen als motor, ECU, originele vermogensvariant en transmissie daadwerkelijk overeenkomen. Gebruik en belasting kunnen daarnaast invloed hebben op het uiteindelijke werkplaatsadvies."
+        ]
+      ],
+      "related": [
+        "audi-a4-b9-20-tfsi",
+        "audi-a3-20-tdi"
+      ]
+    },
+    {
+      "id": "audi-a4-b9-20-tfsi",
+      "photoKey": "audi-a4-b9",
+      "intro": "De Audi A4 B9 2.0 TFSI met 252 pk is een turbobenzinemotor en geen variatie op de 190 pk TDI-diesel. Zijn afstelling moet rekening houden met ontsteking, turbodrukregeling en de voorgeschreven brandstofkwaliteit.",
+      "difference": "De oorspronkelijke 252 pk-configuratie verschilt van zwakkere 2.0 TFSI-versies, en latere GPF/facelift-software kan andere eisen stellen. Een benzine-A4 B9 mag daarom niet onder een dieselprofiel of een Golf GTI-bron worden geplaatst.",
+      "checks": "Controleer de EA888-generatie, Bosch ECU, koeling, turbo, ontstekingsonderdelen en brandstofkwaliteit. Bepaal de exacte automaat of handbak en de eventuele quattro-aandrijving; de transmissielimiet moet bij het motorplan passen.",
+      "usage": "Een soepele respons met behoud van voorspelbaar dagelijks gebruik vraagt meer dan een piek uit een online tabel. NoordTune bespreekt vooraf de rijstijl en de conditie van turbo, koelsysteem en transmissie.",
+      "faq": [
+        [
+          "Kan ik Stage 1 van een Audi A4 2.0 TDI gebruiken op een 2.0 TFSI?",
+          "Nee. Het zijn verschillende brandstoffen, motorfamilies en ECU-systemen. De dieselcijfers zijn niet geldig voor deze benzine-A4."
+        ],
+        [
+          "Waarom is benzinekwaliteit van belang bij een A4 2.0 TFSI?",
+          "Een turbobenzineafstelling hangt samen met de gebruikte brandstof en ontstekingsmarges. De benodigde kwaliteit hoort bij de concrete software en moet vooraf worden afgesproken."
+        ]
+      ],
+      "related": [
+        "audi-a4-b9-20-tdi-190",
+        "audi-a6-c7-30-tdi-272"
+      ]
+    },
+    {
+      "id": "audi-a6-c7-30-tdi-272",
+      "photoKey": "audi-a6-c7",
+      "intro": "De Audi A6 C7 3.0 TDI 272 pk is een zescilinder-diesel met aanzienlijk hoger fabriekskoppel dan de viercilinder A4. Deze uitvoering vraagt daarom een eigen Stage 1-beoordeling en kan niet worden vervangen door generieke Audi-dieselwaarnemingen.",
+      "difference": "Een 3.0 TDI met 272 pk heeft een andere originele afstelling dan de 204, 218 of 245 pk-versies binnen de A6 C7-familie. Ook quattro, transmissie en ECU-generatie maken verschil; gelijke cilinderinhoud alleen is onvoldoende.",
+      "checks": "Controleer de werkelijke 3.0 V6-diesel, Bosch ECU, DPF/EGR/SCR, koel- en turbostatus en type automatische transmissie. Bespreek bij een hoog origineel koppel de duurzaamheid en onderhoudstoestand van de aandrijflijn voordat aanvullende belasting wordt gekozen.",
+      "usage": "De A6 is geschikt voor comfortabel reizen, waarbij een rustige koppelcurve vaak zinvoller is dan een maximaal tuninggetal. Een externe Stage 1-bron geeft alleen een technisch referentiebereik; de echte auto bepaalt het haalbare voorstel.",
+      "faq": [
+        [
+          "Is iedere Audi A6 C7 3.0 TDI gelijk voor Stage 1?",
+          "Nee. De originele motorvermogens 204 tot 272 pk en verschillende ECU-/transmissievarianten zijn niet uitwisselbaar. De exacte 272 pk-versie moet worden herkend."
+        ],
+        [
+          "Waarom telt de automaat mee bij een A6 3.0 TDI?",
+          "Deze diesel levert al veel koppel. De beschikbare transmissiemarge, onderhoud en eventuele vierwielaandrijving horen bij de beoordeling van een hogere motorbelasting."
+        ]
+      ],
+      "related": [
+        "audi-a4-b9-20-tdi-190",
+        "audi-a4-b9-20-tfsi"
+      ]
+    },
+    {
+      "id": "skoda-octavia-5e-20-tdi-150",
+      "photoKey": "skoda-5e",
+      "intro": "De Škoda Octavia III 5E 2.0 TDI 150 pk is een praktische diesel die zowel als hatchback als Combi voorkomt. Zijn 2.0-liter motortype moet worden gescheiden van de 1.6 TDI en de sportievere RS-uitvoeringen met andere originele fabrieksvermogens.",
+      "difference": "Een Octavia 5E met 150 pk kan dezelfde algemene motorfamilie delen met bepaalde Volkswagen-modellen, maar toch een andere transmissie of ECU-firmware hebben. De originele kW, motorgeneratie en emissieklasse blijven de juiste uitgangspunten.",
+      "checks": "Laat de exacte 2.0 TDI-motor en Bosch ECU identificeren, samen met het DPF/EGR/SCR-systeem en de onderhoudshistorie. Controleer handbak versus DSG en houd bij een Combi met laadgewicht rekening met continue motorbelasting.",
+      "usage": "Voor dagelijks vervoer of langere vakantieritten is voorspelbare trekkracht belangrijk. Een Stage 1-waarde uit een online bron is pas bruikbaar als de motor- en aandrijflijnconfiguratie bij de betreffende Octavia past.",
+      "faq": [
+        [
+          "Kan een Octavia 5E 2.0 TDI dezelfde software als een Golf 7 2.0 TDI gebruiken?",
+          "Niet automatisch. Verwante motorfamilies kunnen andere ECU-versies, emissie-eisen en versnellingsbakken hebben. Eerst is een eigen voertuigscan nodig."
+        ],
+        [
+          "Moet een Octavia Combi met DSG apart worden bekeken?",
+          "Ja. De feitelijke transmissie en gebruiksbelasting beïnvloeden de toegestane koppelmarge. Een standaard bronwaarde is geen garantie voor iedere DSG."
+        ]
+      ],
+      "related": [
+        "volkswagen-golf-7-20-tdi",
+        "audi-a3-20-tdi"
+      ]
+    },
+    {
+      "id": "seat-leon-cupra-5f-20-tsi-300",
+      "photoKey": "seat-leon-5f",
+      "intro": "De SEAT Leon Cupra 5F 2.0 TSI met 300 pk is een sportieve EA888-benzinevariant. De bekeken pre-GPF-uitvoering verschilt in fabriekssoftware en uitlaatgasuitrusting van sommige latere Cupra-modellen met een benzinepartikelfilter.",
+      "difference": "Een Leon Cupra 300 is niet automatisch gelijk aan een Cupra 280, een Cupra R of een Golf R met eigen aandrijving. De motorgeneratie, turbo, ECU en eventuele DSG-configuratie moeten overeenkomen voordat Stage 1-cijfers van een aanbieder worden gebruikt.",
+      "checks": "Controleer de EA888-motorcode, Continental Simos ECU, GPF-status, ontsteking, koelcircuit, turbo en brandstofkwaliteit. De mechanische staat van handbak of DSG is belangrijk bij de hoge originele en eventuele extra koppelniveaus.",
+      "usage": "Bij sportief gebruik komt thermische belasting snel op de voorgrond. Een verantwoorde afstelling richt zich op controleerbaar rijgedrag, niet op een ongetoetst hoog dynogetal; de beschikbare bronnen blijven indicatief.",
+      "faq": [
+        [
+          "Is Stage 1 voor Leon Cupra 300 altijd hetzelfde als voor Golf R?",
+          "Nee. De configuratie van aandrijving, ECU, turbo en emissiehardware kan verschillen. Een overeenkomstige motorfamilie is geen toestemming om dezelfde software te gebruiken."
+        ],
+        [
+          "Waarom maakt het bouwjaar bij een Cupra 300 verschil?",
+          "Rond de introductie van GPF en software-updates veranderde de technische uitvoering. Bevestig de daadwerkelijke ECU- en emissievariant voordat waarden worden vergeleken."
+        ]
+      ],
+      "related": [
+        "vw-golf-20-tsi-ea888",
+        "volkswagen-golf-7-r-20-tsi"
+      ]
+    }
+  ]
+}

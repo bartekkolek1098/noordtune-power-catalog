@@ -5,6 +5,7 @@ import {nlStage1EngineProfiles,nlStage1EnginePath} from "@/data/nl-stage1-engine
 import {nlModelFamilyHubs,nlModelHubPath} from "@/data/nl-model-family-seo";
 import {nlVanModels,nlVanModelPath,nlVanEnginePath} from "@/data/nl-vans-seo";
 import {nlVanEngines} from "@/data/nl-van-engines-seo";
+import {nlVehicleDirectoryPath} from "@/data/nl-vehicle-editorial";
 import {routing} from "@/i18n/routing";
 import {absoluteUrl} from "@/lib/site-url";
 
@@ -59,5 +60,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url:absoluteUrl(nlVanEnginePath(e.slug)),changeFrequency:"monthly" as const,priority:0.73
     }))
   ];
-  return [...homePages, ...vehiclePages, ...stagePages, ...nlEnginePages, ...nlModelPages, ...nlVanPages];
+  const reviewedVehicleDirectory=[{url:absoluteUrl(nlVehicleDirectoryPath),changeFrequency:"monthly" as const,priority:0.8}];
+  return [...homePages, ...vehiclePages, ...stagePages, ...reviewedVehicleDirectory, ...nlEnginePages, ...nlModelPages, ...nlVanPages];
 }

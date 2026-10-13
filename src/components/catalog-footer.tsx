@@ -1,5 +1,6 @@
 import {Clock, Mail, MapPin, MessageCircle, Phone} from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import type {Locale} from "@/i18n/routing";
 import {NoordTuneLogo} from "@/components/noordtune-logo";
 import {
@@ -87,6 +88,7 @@ export function CatalogFooter({locale}: {locale: Locale}) {
           <div>
             <h2 className="racing-title text-lg text-white">{copy.links}</h2>
             <div className="mt-4 grid grid-cols-2 gap-2 text-sm text-muted-foreground">
+              {locale==="nl"?<Link className="col-span-2 font-semibold text-slate-200 hover:text-primary" href="/nl/voertuigen">Alle motorprofielen vergelijken →</Link>:null}
               {nav
                 .filter((item) => !item.active)
                 .map((item) => (
