@@ -2,6 +2,8 @@ import type {Metadata} from "next";
 import {notFound} from "next/navigation";
 import {ArrowLeft,ArrowUpRight,ChevronRight,Info,Search,ShieldCheck} from "lucide-react";
 import {CatalogEnquiryLink} from "@/components/catalog-enquiry-link";
+import {NlVanGenerationPhoto} from "@/components/nl-van-generation-photo";
+import {getNlVanGenerationPhoto} from "@/data/nl-van-generation-photos";
 import {CatalogHeader} from "@/components/catalog-header";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
@@ -22,9 +24,11 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
  if(locale!=="nl"||!e)return {robots:{index:false,follow:false}};
  const {title,description}=nlVanEngineMetadata(e);
  const url=absoluteUrl(nlVanEnginePath(slug));
+ const photo=getNlVanGenerationPhoto(e);
  return {title,description,robots:{index:true,follow:true},
   alternates:{canonical:url},
-  openGraph:{title,description,siteName:"NoordTune Power Catalog",locale:"nl_NL",type:"article",url}};
+  openGraph:{title,description,siteName:"NoordTune Power Catalog",locale:"nl_NL",type:"article",url,
+   ...(photo?{images:[{url:absoluteUrl(photo.src),width:photo.width,height:photo.height,alt:"Modelillustratie "+e.title}]}:{})}};
 }
 function sourceRange([a,b]:readonly [number,number],suffix:string){
  return String(a)+(a===b?"":"–"+b)+" "+suffix;
@@ -83,6 +87,7 @@ export default async function NlVanStage1Engine({params}:Props){
      <p className="ux-nl-engine-scope-note"><Info className="h-4 w-4 shrink-0" aria-hidden="true"/>De Stage 1-waarden komen van onafhankelijke publicaties, niet van een individuele NoordTune-meting. Motorcode, ECU en versnellingsbak bepalen of jouw auto geschikt is.</p>
     </div>
    </section>
+   <NlVanGenerationPhoto engine={e} model={m}/>
    <div className="container ux-van-engine-content">
     <section className="ux-van-model-section" aria-labelledby="van-motor-facts">
      <p className="ux-eyebrow">NIET EEN GETAL VOOR ELKE BESTELWAGEN</p>
@@ -93,7 +98,7 @@ export default async function NlVanStage1Engine({params}:Props){
         <div className="ux-van-model-audit-top"><strong>{a.stockPowerHp} pk af fabriek</strong><span>RDW-type {a.requiredRdwType} · {a.yearFrom}{a.yearFrom===a.yearTo?"":"–"+a.yearTo}</span></div>
         <dl>
          <div><dt>Origineel geregistreerd</dt><dd>{String(a.registeredPowerKw).replace(".",",")} kW · {a.displacementCc} cc</dd></div>
-         <div><dt>Brandstof en cilinders</dt><dd>{a.fuel==="Diesel"?"Diesel":"Benzine"} · {a.cylinders} cilinders</dd></div>
+         <div><dt>Brandstof en cilinders</dt><dd>{a.fuel==="CNG"?"Aardgas (CNG)":a.fuel==="Diesel"?"Diesel":a.fuel==="Petrol"?"Benzine":a.fuel} · {a.cylinders} cilinders</dd></div>
          <div><dt>Stage 1-vermogen</dt><dd>{sourceRange(a.powerRangeHp,"pk")}</dd></div>
          <div><dt>Stage 1-moment</dt><dd>{sourceRange(a.torqueRangeNm,"Nm")}</dd></div>
          <div><dt>Gepubliceerd origineel koppel*</dt><dd>{a.stockTorqueNm} Nm</dd></div>
