@@ -9,7 +9,7 @@ import {nlVanEngines} from "@/data/nl-van-engines-seo";
 import {nlStage1BySlug,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
-import {chiptuningHref} from "@/lib/noordtune-links";
+import {dutchBusinessVansHref} from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
 import {breadcrumbListJsonLd} from "@/lib/seo";
 
@@ -190,7 +190,7 @@ export default async function NlBusinessVanModel({params}:Props){
       <a href={sitePath("/nl#rdw-check")} className="ux-nl-engine-primary-link"><Search className="h-4 w-4" aria-hidden="true"/>Kenteken controleren</a>
       <a href={whatsappHref({locale:"nl",vehicleLabel:m.make+" "+m.model})} rel="noreferrer" target="_blank" className="ux-nl-engine-secondary-link">
        Vraag een beoordeling<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
-      <a href={chiptuningHref("nl")} className="ux-van-model-service-link">Chiptuning als dienst op NoordTune.nl<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
+      <a href={dutchBusinessVansHref()} className="ux-van-model-service-link">Chiptuning als dienst op NoordTune.nl<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
      </div>
     </section>
     {siblings.length>0?(

@@ -1,6 +1,6 @@
 import type {Locale} from "@/i18n/routing";
-import {sitePath} from "@/lib/site-path";
-import {NOORDTUNE_BUSINESS} from "@/lib/business-info";
+import {sitePath} from "./site-path.ts";
+import {NOORDTUNE_BUSINESS} from "./business-info.ts";
 
 export const MAIN_SITE_URL = NOORDTUNE_BUSINESS.url;
 
@@ -28,6 +28,25 @@ export function chiptuningHref(locale: Locale) {
   };
 
   return `${MAIN_SITE_URL}${paths[locale]}`;
+}
+
+/**
+ * Verified NL landing pages on the commercial workshop website.
+ * These are explicitly published routes, not generated make-name slugs.
+ */
+const dutchBrandServicePaths: Readonly<Record<string,string>>={
+  bmw:"/nl/bmw-chiptuning",
+  audi:"/nl/audi-chiptuning",
+  volkswagen:"/nl/volkswagen-chiptuning",
+  ford:"/nl/ford-chiptuning",
+  toyota:"/nl/toyota-chiptuning"
+};
+export function dutchBrandChiptuningHref(make:string):string{
+  const path=dutchBrandServicePaths[make.trim().toLowerCase()];
+  return path?`${MAIN_SITE_URL}${path}`:chiptuningHref("nl");
+}
+export function dutchBusinessVansHref():string{
+  return `${MAIN_SITE_URL}/nl/bedrijfswagens`;
 }
 
 /**
