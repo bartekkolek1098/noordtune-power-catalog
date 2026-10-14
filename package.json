@@ -50,7 +50,8 @@
     "test:catalog-handoff": "node --no-warnings scripts/test-catalog-enquiry.ts",
     "qa:seo:nl-vehicles": "node scripts/qa-nl-vehicle-editorial.cjs",
     "qa:seo:nl-van-photos": "node scripts/qa-nl-van-generation-photos.cjs",
-    "qa:seo:nl-workshop-links": "node scripts/qa-nl-workshop-links.cjs"
+    "qa:seo:nl-workshop-links": "node scripts/qa-nl-workshop-links.cjs",
+    "qa:seo:nl-passenger-enquiry": "node scripts/qa-nl-passenger-enquiry.cjs"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",

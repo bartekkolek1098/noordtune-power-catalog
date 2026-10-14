@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import {notFound} from "next/navigation";
 import {ArrowLeft,ArrowUpRight,ChevronRight,Search} from "lucide-react";
 import {CatalogHeader} from "@/components/catalog-header";
+import {CatalogEnquiryLink} from "@/components/catalog-enquiry-link";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {nlModelFamilyHubs,nlModelHubBySlug,nlModelHubMetadata,nlModelHubPath} from "@/data/nl-model-family-seo";
@@ -10,6 +11,7 @@ import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
 import {dutchBrandChiptuningHref} from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
+import {passengerEngineEnquiryId} from "@/lib/catalog-enquiry-contract";
 import {breadcrumbListJsonLd} from "@/lib/seo";
 
 type Props={params:Promise<{locale:string;slug:string}>};
@@ -102,6 +104,7 @@ export default async function NlModelDetailPage({params}:Props){
            </dl>
            <span className="ux-nl-model-variant-sub">{apps.map(a=>`${String(a.registeredPowerKw).replace(".",",")} kW · ${a.displacementCc} cc`).join(" / ")} · {engine.sources.length} bronverwijzingen</span>
            <a href={sitePath(nlStage1EnginePath(engine.slug))} className="ux-nl-model-variant-link">Bekijk motor, ECU-voorwaarden en bronnen<ChevronRight aria-hidden="true" className="h-4 w-4 shrink-0"/></a>
+           <CatalogEnquiryLink locale="nl" reference={{kind:"engine",id:passengerEngineEnquiryId(engine.slug)}} className="mt-3 w-full" />
          </article>
         );
        })}
