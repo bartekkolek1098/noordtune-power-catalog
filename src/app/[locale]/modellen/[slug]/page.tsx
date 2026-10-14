@@ -88,7 +88,7 @@ export default async function NlModelDetailPage({params}:Props){
        {m.engines.map(engine=>{
         const apps=engine.applications;
         const stage1=allStage1PowerRange(apps),nm=allStage1TorqueRange(apps);
-        const years=`${Math.min(...apps.map(a=>a.yearFrom))}–${Math.max(...apps.map(a=>a.yearTo))}`;
+        const years=[...new Set(apps.map(a=>a.yearFrom===a.yearTo?String(a.yearFrom):`${a.yearFrom}–${a.yearTo}`))].join(", ");
         const factory=rangeLabel(apps.map(a=>a.stockPowerHp),"pk");
         return (
          <article data-testid="model-hub-variant-card" className="ux-nl-model-variant" key={engine.slug}>
