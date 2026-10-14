@@ -974,6 +974,16 @@ const specs:readonly ExtraVanEngineSpec[]=[
   "appIds": [
     "rdw-bulk-16-movano-b-23-cdti180-movano-mr"
   ]
+},
+{
+  "slug": "volkswagen-caddy-2kn-20-tdi-140-2013-14",
+  "modelSlug": "volkswagen-caddy",
+  "title": "Volkswagen Caddy 2KN 2.0 TDI 140 (2013–2014)",
+  "intro": "De Volkswagen Caddy III facelift met RDW-type 2KN, 1968 cc en originele 103 kW is hier uitsluitend voor de jaren 2013–2014 gecontroleerd. Deze 140 pk-diesel heeft een eigen externe Stage 1-bronset die niet automatisch geldt voor een 2015 Caddy IV, de 102 pk-versie of de nieuwere Caddy V. Vanwege mogelijke ECU- en emissieverschillen publiceren we dit als een apart modeljaarprofiel.",
+  "checks": "Verifieer type 2KN, handelsbenaming CADDY, originele 103 kW, 1968 cc diesel en eerste toelating 2013–2014. Controleer de daadwerkelijke EA189/2.0 TDI-motorcode, EDC17-software, injectoren, turbo, DPF, EGR en handbak of DSG-koppelgrenzen. De twee onafhankelijke tunerreferenties zijn geen individuele NoordTune-meting en geven geen vrijbrief voor extra belasting bij bedrijfsgebruik.",
+  "appIds": [
+    "rdw-bulk2-vw-caddy-2kn-20tdi140-2013-14"
+  ]
 }
 ];
 const ref=new Map(verifiedRdwApplications.map(a=>[a.id,a]));
@@ -990,7 +1000,7 @@ export const nlVanEngines:readonly NlVanEngine[]=specs.map(spec=>{
  if(sources.length<2)throw Error("Van engine needs independent source publications "+spec.slug);
  return {...spec,applications:apps,sources};
 });
-if(nlVanEngines.length!==100||new Set(nlVanEngines.map(x=>x.slug)).size!==100)throw Error("Manual van engine publication count changed");
+if(nlVanEngines.length!==101||new Set(nlVanEngines.map(x=>x.slug)).size!==101)throw Error("Manual van engine publication count changed");
 export const nlVanEngineBySlug=new Map(nlVanEngines.map(x=>[x.slug,x]));
 export function nlVanEngineMetadata(e:NlVanEngine){
  const a=e.applications[0];

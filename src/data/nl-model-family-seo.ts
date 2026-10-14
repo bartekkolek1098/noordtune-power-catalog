@@ -1,11 +1,12 @@
 /**
- * Nineteen individually reviewed NL model-family hubs with real motor/generation
+ * Twenty-one individually reviewed NL model-family hubs with real motor/generation
  * choices; no fictitious stages and no city keyword stuffing.
  * All linked engines are manually reviewed in nl-stage1-engine-seo.ts.
  */
 import {nlStage1BySlug,type NlStage1EngineProfile} from "./nl-stage1-engine-seo.ts";
 import modelExpansionA from "./nl-model-family-expansion-a.json" with {type:"json"};
 import modelExpansionB from "./nl-model-family-expansion-b.json" with {type:"json"};
+import modelExpansionC from "./nl-model-family-expansion-c.json" with {type:"json"};
 
 export type NlModelFamilyHub={
  slug:string;brand:string;model:string;headline:string;intro:string;
@@ -25,7 +26,7 @@ const originalSpecs:readonly ModelSpec[] = [
   {"slug":"volkswagen-caddy-20-tdi","brand":"Volkswagen","model":"Caddy 2.0 TDI","headline":"Volkswagen Caddy 2.0 TDI Stage 1","intro":"De Volkswagen Caddy 2.0 TDI is in diverse fabrieksvermogens en generaties geleverd. De oudere Caddy 2KN en de nieuwere Caddy V SKN delen de naam 2.0 TDI, maar niet automatisch hetzelfde motormanagement en dezelfde transmissielimieten. Dit overzicht maakt de afzonderlijk beoordeelde varianten inzichtelijk.","difference":"Bij de 2KN-generatie bekijken we 102, 110 en 140 pk-uitvoeringen, terwijl de SKN-generatie 102 en 122 pk als aparte referenties heeft. De geregistreerde 75, 81, 90 en 103 kW en de toelatingsjaren staan per motorprofiel vermeld, zodat het verschil niet verloren gaat.","checks":"Vergelijk 2KN tegenover SKN, 1968 cc en RDW-kW, ECU/firmware, turbo, DPF/SCR en handbak of DSG. Hogere Stage 1-uitkomsten van extern gepubliceerde gedowngrade diesels zijn uitsluitend indicatief en vragen extra controle van koppeling en koeling.","faq":[["Is een Caddy 2.0 TDI 102 pk uit 2018 hetzelfde als een exemplaar uit 2024?","Nee. De auto uit 2018 valt binnen de oudere 2KN-generatie; in 2024 betreft het veelal de Caddy V SKN met andere elektronica. Eén tuningprofiel voor beide is onbetrouwbaar."],["Waarom bestaan er meerdere Caddy 2.0 TDI-vermogens?","Volkswagen heeft 75, 81, 90 en 103 kW-configuraties gebruikt. De exacte originele afstelling en componenten bepalen welk technisch profiel en welke Stage 1-bronnen van toepassing zijn."]],"engineSlugs":["volkswagen-caddy-iv-20-tdi-102","volkswagen-caddy-v-20-tdi-102","volkswagen-caddy-v-20-tdi-122","volkswagen-caddy-2kn-20-tdi-140","volkswagen-caddy-2kn-20-tdi-110"]},
   {"slug":"renault-master-iii-23-dci","brand":"Renault","model":"Master III 2.3 dCi","headline":"Renault Master III 2.3 dCi Stage 1","intro":"De Renault Master III met 2.3-liter diesel is als gewone dCi en latere Blue dCi geleverd. Hoewel beide onderzochte varianten 107 kW als origineel RDW-vermogen hebben, kunnen ECU, emissiehardware en geschikte koppelgrenzen verschillen. Voor deze bedrijfswagen heeft die technische scheiding praktisch belang.","difference":"Het oudere dCi-referentieprofiel behandelt een MF-uitvoering uit 2017. De later beoordeelde Blue dCi van 2022 heeft een andere emissie- en softwarecontext. Zelfs bij hetzelfde oorspronkelijke vermogen van 145 pk mag je de gepubliceerde Stage 1-cijfers niet zonder motorverificatie uitwisselen.","checks":"Verifieer M9T-motorgeneratie, BiTurbo/Blue dCi-fase, ECU, SCR/AdBlue, DPF, onderhoud en handbak. Kijk ook naar de inzet als bestelwagen met belading en lange ritten; dit beïnvloedt een verantwoord koppeladvies.","faq":[["Is Master dCi 145 uit 2017 dezelfde tuningvariant als Blue dCi 145 uit 2022?","Nee. Het originele RDW-vermogen kan gelijk zijn, maar de motorsoftware en het emissiesysteem verschillen. Daarom zijn hier twee bronnenets en technische profielen opgenomen."],["Welke Stage 1 past bij een veelgebruikte bestelwagen?","Dat kan pas worden bepaald na controle van de exacte motor, ECU, versnellingsbak, koeling, servicehistorie en de belasting waarmee de wagen rijdt."]],"engineSlugs":["renault-master-iii-23-dci-145","renault-master-iii-23-blue-dci-145"]}
 ];
-const extraSpecs=[...modelExpansionA.items,...modelExpansionB.items] as unknown as readonly ModelSpec[];
+const extraSpecs=[...modelExpansionA.items,...modelExpansionB.items,...modelExpansionC.items] as unknown as readonly ModelSpec[];
 const specs:readonly ModelSpec[]=[...originalSpecs,...extraSpecs];
 export const nlModelFamilyHubs:readonly NlModelFamilyHub[] = specs.map(spec=>{
  if(!/^[a-z0-9-]+$/.test(spec.slug))throw Error("Invalid model SEO slug "+spec.slug);
@@ -41,7 +42,7 @@ export const nlModelFamilyHubs:readonly NlModelFamilyHub[] = specs.map(spec=>{
  if(new Set(engines.map(x=>x.slug)).size!==engines.length)throw Error("Duplicate model engine "+spec.slug);
  return {...spec,engines};
 });
-if(nlModelFamilyHubs.length!==19||new Set(nlModelFamilyHubs.map(x=>x.slug)).size!==19)
+if(nlModelFamilyHubs.length!==21||new Set(nlModelFamilyHubs.map(x=>x.slug)).size!==21)
  throw Error("Model SEO hubs require manual editorial review");
 export const nlModelHubBySlug=new Map(nlModelFamilyHubs.map(x=>[x.slug,x]));
 export const nlModelHubByEngineSlug=new Map(nlModelFamilyHubs.flatMap(hub=>hub.engineSlugs.map(slug=>[slug,hub] as const)));
