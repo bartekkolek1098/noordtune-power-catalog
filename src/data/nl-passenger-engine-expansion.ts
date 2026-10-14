@@ -6,6 +6,8 @@
  */
 import rawA from "./nl-passenger-engine-expansion-a.json" with {type:"json"};
 import rawB from "./nl-passenger-engine-expansion-b.json" with {type:"json"};
+import rawC from "./nl-passenger-engine-expansion-c.json" with {type:"json"};
+import {nlLegacyPassengerSeoScopedById} from "./nl-passenger-legacy-scope-review.ts";
 import {verifiedRdwApplications} from "./verified-rdw-applications.ts";
 import type {NlStage1EngineProfile,ReviewedRdwApplication} from "./nl-stage1-engine-seo.ts";
 
@@ -14,8 +16,8 @@ type Spec = {
  generationNote:string; applicationIds:readonly string[];
  faq:readonly (readonly [string,string])[]; photoKey?:string;
 };
-const specs=[...rawA.items,...rawB.items] as unknown as readonly Spec[];
-const reviewedMap=new Map(verifiedRdwApplications.map(item=>[item.id,item]));
+const specs=[...rawA.items,...rawB.items,...rawC.items] as unknown as readonly Spec[];
+const reviewedMap=new Map([...verifiedRdwApplications,...nlLegacyPassengerSeoScopedById.values()].map(item=>[item.id,item]));
 const usedIds=new Set<string>();
 const publishedSlugs=new Set<string>();
 const approvedPhotos=new Set(["bmw-g20","vw-golf-7","skoda-5e","seat-leon-5f"]);

@@ -24,9 +24,9 @@ const root=process.env.RDW_QA_URL||"http://127.0.0.1:3215";
   assert.equal(xmlRes.status(),200);
   const xml=await xmlRes.text();
   const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-  assert.equal(urls.length,435,"Sitemap should contain 435 unique canonical paths");
+  assert.equal(urls.length,443,"Sitemap should contain 443 unique canonical paths");
   const modelUrls=urls.filter(u=>/\/nl\/modellen(?:\/|$)/.test(u));
-  assert.equal(modelUrls.length,20,"1 NL model index plus 19 model pages");
+  assert.equal(modelUrls.length,22,"1 NL model index plus 21 model pages");
   assert.equal(new Set(modelUrls).size,modelUrls.length);
   assert.ok(!xml.includes("/pl/modellen")&&!xml.includes("/en/modellen"),"No unsupported locale duplicates");
 
@@ -71,6 +71,6 @@ const root=process.env.RDW_QA_URL||"http://127.0.0.1:3215";
   await mobile.goto(root+"/nl/motoren",{waitUntil:"domcontentloaded"});
   assert.ok(await mobile.locator('a[href="/nl/modellen"]').count()>=1,"NL engine directory links model category");
   assert.deepEqual(jsErrors,[],"No JS runtime errors in model hubs");
-  console.log("NL_MODEL_HUB_BROWSER_PASS",JSON.stringify({verifiedModelPages:verified,modelIndex:1,motorLinks:48,newSitemapUrls:13,totalSitemap:435,negativeLanguages404:4,mobileWidths:[320,390],desktop:1440,allSourceBacked:true}));
+  console.log("NL_MODEL_HUB_BROWSER_PASS",JSON.stringify({verifiedModelPages:verified,modelIndex:1,motorLinks:52,newSitemapUrls:8,totalSitemap:443,negativeLanguages404:4,mobileWidths:[320,390],desktop:1440,allSourceBacked:true}));
  } finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-14",
+  "items": [
+    {
+      "slug": "seat-leon-1p-5f",
+      "brand": "Seat",
+      "model": "Leon II 1P en III 5F",
+      "headline": "SEAT Leon 1P of 5F: 1.4 TSI en 1.0 EcoTSI Stage 1",
+      "engineSlugs": [
+        "seat-leon-1p-14-tsi-125",
+        "seat-leon-5f-10-ecotsi-115"
+      ],
+      "intro": "Wie een SEAT Leon laat chiptunen, moet weten of het om de oudere Leon II 1P of de nieuwere Leon III 5F gaat. Hier vergelijken we de 1.4 TSI 125 uit de 1P-facelift met de 1.0 EcoTSI 115 uit de 5F-facelift. Beide hebben een afzonderlijk beoordeelde RDW-identiteit, eigen tuningbronnen en andere motor- en transmissierisico's.",
+      "difference": "De Leon 1P heeft een viercilinder 1.4 TSI van 1390 cc en 92 kW, terwijl de Leon 5F 1.0 EcoTSI een 999 cc driecilinder van 85 kW gebruikt. De handelsnaam 115 pk van de 5F correspondeert met 85 kW, ongeveer 116 pk bij een metrische omzetting. Een overeenkomende TSI-badge bewijst geen overeenkomst in ECU, ketting/riem of koppellimiet.",
+      "checks": "Verifieer de RDW-typecode 1P of 5F, originele 92 of 85 kW, 1390 of 999 cc en de werkelijke motorcode CAXC of CHZD. De oudere EA111-distributieketting vraagt onderhoudscontrole, en bij de nieuwere EA211 tellen ontsteking, ECU-release en benzinekwaliteit mee. Controleer altijd handbak of DSG DQ200 en de toegestane koppelbelasting.",
+      "faq": [
+        [
+          "Kan ik Stage 1 van een Leon 1P 1.4 TSI gebruiken op een Leon 5F 1.0 EcoTSI?",
+          "Nee. Het zijn verschillende motorfamilies met andere cilinderinhoud, cilindergetal en fabrieksvermogens. De ECU-, turbo- en transmissiegegevens worden daarom per exacte RDW-variant beoordeeld en de indicatieve Stage 1-cijfers staan op afzonderlijke motorpagina's."
+        ],
+        [
+          "Waarom toont de Leon 5F 85 kW terwijl advertenties 115 pk noemen?",
+          "85 kW komt bij metrische omrekening uit op circa 116 pk. De handelsbenaming van aanbieders is vaak 115 pk. Beide getallen duiden in dit gecontroleerde geval op dezelfde 85 kW-uitvoering, maar zijn geen reden om de 1P of een andere 5F-motor te verwisselen."
+        ]
+      ]
+    },
+    {
+      "slug": "skoda-octavia-1z-5e",
+      "brand": "Skoda",
+      "model": "Octavia II 1Z en III 5E",
+      "headline": "Skoda Octavia 1Z of 5E 1.4 TSI Stage 1 vergelijken",
+      "engineSlugs": [
+        "skoda-octavia-1z-14-tsi-122",
+        "skoda-octavia-5e-14-tsi-140"
+      ],
+      "intro": "Bij de Škoda Octavia is de naam 1.4 TSI op zichzelf geen betrouwbare motoridentificatie. De oudere Octavia II 1Z facelift met 122 pk en de nieuwere Octavia III 5E met 140 pk gebruiken verschillende TSI-motorgeneraties. Het verschil bepaalt welke ECU, distributie, fabrieksregistratie en onafhankelijke Stage 1-bronnen relevant zijn voor jouw auto.",
+      "difference": "De Octavia 1Z heeft een 1390 cc EA111 met origineel 90 kW en een CAXA-gerelateerde configuratie. De Octavia 5E heeft in het geselecteerde profiel 1395 cc, 103 kW en een EA211/CHPA-gerelateerde generatie. Ze verschillen in distributie, turbosysteem en software. De latere 150 pk en aardgas-G-TEC zijn geen onderdeel van deze 122/140 pk-vergelijking.",
+      "checks": "Controleer de RDW-typecode 1Z versus 5E, 1390 tegenover 1395 cc, originele 90 tegenover 103 kW en de echte motorcode. Bij de 1Z zijn distributieketting, olieverbruik en oudere ECU-revisies aandachtspunten; bij de 5E gaat het om de latere EA211-hardware en ECU. Handbak/DSG, koeling en actuele foutcodes bepalen of extra koppel verstandig is.",
+      "faq": [
+        [
+          "Kan mijn Octavia 1Z 122 dezelfde Stage 1 krijgen als de Octavia 5E 140?",
+          "Nee. De oudere 1Z heeft een 90 kW EA111-motor, de onderzochte 5E een 103 kW EA211. Ze hebben afzonderlijke ECU- en motorfamilies. De twee getoonde Stage 1-bereiken komen uitsluitend uit publicaties die bij de betreffende generatie passen."
+        ],
+        [
+          "Hoe herken ik een Octavia 5E 140 zonder hem met de latere 150 te verwarren?",
+          "Controleer de originele RDW-registratie: 103 kW bij 1395 cc en type 5E is het onderzochte 140 pk-profiel. Een later 110 kW- of G-TEC-exemplaar heeft andere techniek. De werkelijke motorcode en ECU-versie moeten alsnog bij het voertuig worden vastgesteld."
+        ]
+      ]
+    }
+  ]
+}

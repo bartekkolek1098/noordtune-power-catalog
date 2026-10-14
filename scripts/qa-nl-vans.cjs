@@ -37,9 +37,9 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.equal(sitemap.status(),200);
   const xml=await sitemap.text();
   const locs=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-  assert.equal(locs.length,375,"375 routes: one curated Dutch vehicle directory added; previous van pages unchanged");
+  assert.equal(locs.length,443,"443 reviewed canonical routes across catalog, engines, models and vans");
   const vanUrls=locs.filter(x=>x.includes("/nl/bedrijfswagens"));
-  assert.equal(vanUrls.length,126,"One van directory + 25 models + 94 sourced engine pages");
+  assert.equal(vanUrls.length,127,"One van directory + 25 models + 101 sourced engine pages");
   assert.equal(new Set(vanUrls).size,126,"Van sitemap canonicals unique");
   assert.ok(!xml.includes("/en/bedrijfswagens")&&!xml.includes("/pl/bedrijfswagens"));
 
@@ -93,8 +93,8 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.equal(await page.locator('a[href="/nl/bedrijfswagens"]').count(),1,"NL homepage links vans category");
   assert.deepEqual(errors,[],"No runtime JavaScript errors");
   console.log("NL_VAN_BROWSER_QA_PASS",JSON.stringify({
-   indexedVanPages:25,browseOnlyModels:0,exactStage1VanEnginePages:100,
-   verifiedSourceApplications:129,indexedVanUrls:126,totalSitemapUrls:375,
+   indexedVanPages:25,browseOnlyModels:0,exactStage1VanEnginePages:101,
+   verifiedSourceApplications:129,indexedVanUrls:127,totalSitemapUrls:443,
    testedWidths:[320,390,1440],translatedThin404:4
   }));
  }finally{await browser.close();}

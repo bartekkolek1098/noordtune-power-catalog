@@ -5,9 +5,9 @@ import {nlStage1EngineProfiles,nlStage1BySlug,nlStage1EnginePath} from "../src/d
 import {nlVanEngines} from "../src/data/nl-van-engines-seo.ts";
 import {nlVehiclePhotoByKey} from "../src/data/nl-vehicle-editorial.ts";
 
-assert.equal(nlPassengerEngineProfiles.length,47,"Only the 47 individually edited passenger topics may be published in this batch");
-assert.equal(nlStage1EngineProfiles.length,68,"Preserve 21 original NL engine pages plus 47 source-reviewed pages");
-assert.equal(nlStage1BySlug.size,68,"No overlapping engine canonical slugs");
+assert.equal(nlPassengerEngineProfiles.length,52,"47 existing plus 5 independently reviewed passenger topics");
+assert.equal(nlStage1EngineProfiles.length,73,"Preserve 21 original plus 52 individually reviewed engine pages");
+assert.equal(nlStage1BySlug.size,73,"No overlapping engine canonical slugs");
 const vanIds=new Set(nlVanEngines.flatMap(e=>e.applications.map(a=>a.id)));
 const passengerIds=new Set<string>();
 const titles=new Set<string>();

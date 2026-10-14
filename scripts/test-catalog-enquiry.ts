@@ -36,7 +36,7 @@ test('every published van-engine page resolves its own public catalogue label', 
 });
 test('every indexed Dutch passenger engine has a prefilled contact with verified model and technical year', () => {
   const existingVanSlugs=new Set(nlVanEngines.map(e=>e.slug));
-  assert.equal(nlStage1EngineProfiles.length,68);
+  assert.equal(nlStage1EngineProfiles.length,73);
   for (const engine of nlStage1EngineProfiles) {
     const reference={kind:'engine' as const,id:passengerEngineEnquiryId(engine.slug)};
     assert.ok(!existingVanSlugs.has(reference.id),engine.slug+': handoff identifier must not collide with commercial van profile');
@@ -62,7 +62,7 @@ test('every indexed Dutch passenger engine has a prefilled contact with verified
     assert.equal(url.search,'');
     assert.deepEqual(parseCatalogEnquiryHash(url.hash),reference);
   }
-  assert.equal(nlModelFamilyHubs.length,19);
+  assert.equal(nlModelFamilyHubs.length,21);
   for(const hub of nlModelFamilyHubs){
     for(const engine of hub.engines){
       const ref={kind:'engine' as const,id:passengerEngineEnquiryId(engine.slug)};

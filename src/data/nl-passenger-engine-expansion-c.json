@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-14",
+  "items": [
+    {
+      "slug": "seat-leon-1p-14-tsi-125",
+      "headline": "SEAT Leon II 1P 1.4 TSI 125",
+      "applicationIds": [
+        "rdw-seat-leon-1p-14-tsi-125"
+      ],
+      "intro": "De SEAT Leon II met 1.4 TSI van 125 pk is een viercilinder-turbobenzine uit de 1P-generatie. De afgebakende RDW-identiteit bestaat uit 1390 cc, 92 kW en type 1P, met onderzochte eerste toelatingen tussen 2009 en 2011. Externe Stage 1-aanbieders beschrijven andere prestaties dan bij de nieuwere Leon 5F, dus alleen een correcte generatiecheck maakt de indicatie zinvol.",
+      "workshopCheck": "Bij de Leon 1P 1.4 TSI is het noodzakelijk de EA111/CAXC-motorvariant, Bosch MED17-software, koude start en onderhoud van de distributieketting te onderzoeken. Controleer de aanwezige handbak of DSG met droge koppeling en de werkelijk geldende koppelgrenzen voordat een gepubliceerde waarde wordt besproken. RON-kwaliteit en bekende foutcodes tellen eveneens mee.",
+      "generationNote": "Dit profiel gaat uitsluitend over de Leon II/1P facelift met 1390 cc en 92 kW uit het beoordeelde tijdvak 2009–2011. De nieuwere Leon III/5F 1.0 EcoTSI heeft 999 cc, drie cilinders en een andere ECU-generatie; ook Cupra, TDI en aardgas vallen hier niet onder.",
+      "faq": [
+        [
+          "Is de Leon 1P 1.4 TSI 125 hetzelfde als de Leon 5F 1.0 TSI?",
+          "Nee. De 1P gebruikt een 1390 cc viercilinder met 92 kW, terwijl de onderzochte 5F 999 cc en 85 kW heeft. De motorcode, ECU en mogelijke versnellingsbakgrenzen verschillen; de gepubliceerde Stage 1-ranges horen alleen bij de exacte generatie."
+        ],
+        [
+          "Waarom controleren jullie de ketting bij de oudere Leon 1.4 TSI?",
+          "Bij deze EA111-generatie kan de historie van de distributieketting belangrijk zijn voor een betrouwbare motorbasis. Afwijkend startgeluid, onderhoud en foutcodes vragen onderzoek vóór softwareoptimalisatie; een hogere externe Nm-waarde is geen vervanging voor diagnose."
+        ]
+      ]
+    },
+    {
+      "slug": "seat-leon-5f-10-ecotsi-115",
+      "headline": "SEAT Leon III 5F 1.0 EcoTSI 115",
+      "applicationIds": [
+        "rdw-seat-leon-5f-10-tsi-85kw"
+      ],
+      "intro": "De Leon III 5F met 1.0 EcoTSI is een driecilinder uit een veel latere motorgeneratie dan de 1P 1.4 TSI. Het onderzochte RDW-cohort heeft 999 cc en een geregistreerd fabrieksvermogen van 85 kW, omgerekend ongeveer 116 pk; aanbieders gebruiken doorgaans de handelsnaam 115 pk. Hier tonen we uitsluitend de onderbouwde standaard Stage 1-resultaten van deze motorvariant.",
+      "workshopCheck": "Verifieer de Leon 5F, 85 kW, drie cilinders en de daadwerkelijk gemonteerde EA211/CHZD-motor met ECU-software voordat een afstelling wordt gekozen. Bij een DSG DQ200 met droge koppeling vraagt de koppellimiet bijzondere aandacht; de hoogste externe Nm-range is niet automatisch geschikt voor iedere automaat. Controleer ook onderhoud, bougies, brandstofkwaliteit en eventuele storingen.",
+      "generationNote": "De technisch onderzochte Leon III/5F gebruikt 999 cc, 85 kW en benzine binnen 2015–2020. De latere 1.5 TSI, oudere 1P, 1.0 TSI 95 pk en hybride of CNG-uitvoeringen vallen buiten deze specifieke RDW- en Stage 1-bronvergelijking.",
+      "faq": [
+        [
+          "Waarom staat er 116 pk bij RDW maar 115 pk bij de Leon 1.0 EcoTSI?",
+          "De RDW-waarde is 85 kW en wordt hier omgerekend naar ongeveer 116 metrische pk. Fabrikanten en tuners ronden de commerciële aanduiding vaak af naar 115 pk. De officiële 85 kW plus motorcode bepalen de technische keuze, niet die ene pk verschil."
+        ],
+        [
+          "Kan een DSG Leon 5F dezelfde Stage 1-koppelwaarde krijgen als een handbak?",
+          "Niet zonder controle. Onder meer DQ200-koppellimieten, slijtage en software kunnen het verantwoorde motorkoppel beperken. Publicaties van verschillende tuners zijn indicaties; de eigen ECU en transmissie worden vóór een offerte geïdentificeerd."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan-juke-f15-12-dig-t-115",
+      "headline": "Nissan Juke F15 1.2 DIG-T 115",
+      "applicationIds": [
+        "rdw-nissan-juke-f15-12-digt-85kw"
+      ],
+      "intro": "De eerste Nissan Juke F15 met 1.2 DIG-T 115 is een viercilinder-turbobenzine met 1197 cc en officieel 85 kW. Die RDW-registratie rekent af op circa 116 pk, terwijl Nissan en tuningaanbieders gewoonlijk 115 pk als handelsvermogen vermelden. De motor hoort bij de oudere F15 en mag niet worden verward met de latere Juke F16 1.0 DIG-T.",
+      "workshopCheck": "Laat de HR12DDT/HRA2-motor, de ECU-versie en de werkelijke transmissie bevestigen. De onderzochte Stage 1-referenties gaan uit van de juiste handgeschakelde Juke en mogen niet automatisch op een andere automaat of CVT worden toegepast. Onderhoud, olieverbruik, distributie, turbodruk en eventuele motorstoringen moeten vóór het aanpassen van de software worden bekeken.",
+      "generationNote": "Deze bronwaarden zijn beperkt tot type F15, 1197 cc, 85 kW en eerste toelatingen binnen 2014–2019. De Nissan Juke F16 heeft een andere 999 cc driecilinder en aparte 114/117 pk-profielen. Ook de Qashqai 1.2 DIG-T is geen automatisch uitwisselbare Juke-uitvoering.",
+      "faq": [
+        [
+          "Is de Juke F15 DIG-T 115 dezelfde motor als de Juke F16 DIG-T 117?",
+          "Nee. De onderzochte F15 heeft een 1197 cc viercilinder en 85 kW, terwijl de F16 1.0 DIG-T een 999 cc driecilinder gebruikt. De motoren, ECU en transmissieopties horen bij verschillende generaties en vragen aparte Stage 1-bronnen."
+        ],
+        [
+          "Waarom geven verschillende tuners 130 of 131 pk voor dezelfde Juke op?",
+          "Externe aanbieders publiceren licht verschillende Stage 1-referenties en afrondingen. Dat bereik is geen NoordTune-vermogensmeting of garantie. De echte motor, firmware, brandstof en staat van het voertuig bepalen wat verantwoord is."
+        ]
+      ]
+    },
+    {
+      "slug": "skoda-octavia-1z-14-tsi-122",
+      "headline": "Škoda Octavia II 1Z 1.4 TSI 122",
+      "applicationIds": [
+        "rdw-skoda-octavia-1z-14-tsi-122"
+      ],
+      "intro": "De Škoda Octavia II facelift van de 1Z-generatie heeft in deze beoordeling een 1.4 TSI met 1390 cc en 90 kW, meestal aangeduid als 122 pk. Dit is een EA111-turbobenzinemotor en niet dezelfde motor als de latere Octavia III/5E 1.4 TSI 140. De onafhankelijke Stage 1-referenties gelden voor de specifieke oudere CAXA-familie.",
+      "workshopCheck": "Controleer bij deze Octavia eerst type 1Z, de werkelijke CAXA-motorcode, Bosch MED17.5.x ECU en de onderhoudsgeschiedenis van de distributieketting. De capaciteit van handbak, koppeling of DSG DQ200 met droge koppeling kan een lagere veilige koppellimiet opleveren dan een extern gepubliceerde piekwaarde. Ook koeling, ontsteking en brandstofkwaliteit tellen mee.",
+      "generationNote": "Alleen de Octavia II 1Z facelift met 1390 cc, 90 kW, benzine en onderzochte eerste toelatingen van 2009–2013 hoort bij dit profiel. De Octavia III 5E met 1395 cc en 103 kW, de 150 pk EA211 en G-TEC aardgas hebben andere technische voorwaarden.",
+      "faq": [
+        [
+          "Waarom is de 1.4 TSI uit de Octavia 1Z niet dezelfde als de 5E?",
+          "De oudere 1Z gebruikt de 1390 cc EA111 en 90 kW origineel; de latere 5E in dit onderzoek heeft 1395 cc en 103 kW met een andere motorgeneratie. Daardoor verschillen ook de ECU, distributie en Stage 1-bronnen."
+        ],
+        [
+          "Kan de DSG van mijn Octavia 1Z alle gepubliceerde extra Nm aan?",
+          "Dat volgt niet uit de motorpublicatie. Het type DSG, droge koppelingen, onderhoudstoestand en TCU-software moeten worden gecontroleerd. De aangegeven Stage 1-range is een externe referentie en geen goedkeuring voor de aanwezige transmissie."
+        ]
+      ]
+    },
+    {
+      "slug": "skoda-octavia-5e-14-tsi-140",
+      "headline": "Škoda Octavia III 5E 1.4 TSI 140",
+      "applicationIds": [
+        "rdw-skoda-octavia-5e-14-tsi-140"
+      ],
+      "intro": "De derde generatie Škoda Octavia 5E werd ook geleverd met de 1.4 TSI 140 pk van 103 kW en 1395 cc. Deze EA211/CHPA-motorgeneratie verschilt wezenlijk van de eerdere Octavia II/1Z 1.4 TSI 122, hoewel beide in advertenties simpelweg 1.4 TSI worden genoemd. Dit profiel beperkt zich tot de afzonderlijk gecontroleerde 140 pk-uitvoering.",
+      "workshopCheck": "Controleer de RDW-aanduiding 5E, origineel 103 kW en 1395 cc, en bevestig de werkelijk gemonteerde CHPA-motor, ECU, koeling en brandstofkwaliteit. Handbak en DSG stellen verschillende eisen aan koppel en thermische belasting. Let erop dat de opvolgende 1.4 TSI 150 pk en de CNG G-TEC niet onder dit bronmateriaal vallen.",
+      "generationNote": "De gebruikte bronnen behandelen uitsluitend Octavia III/5E pre-facelift 1.4 TSI 140 met RDW-cohorten 2013–2015. De oudere 1Z 122 pk, latere 150 pk EA211 en 1.4 TGI/G-TEC hebben andere RDW-waarden en krijgen geen automatisch overgenomen vermogen.",
+      "faq": [
+        [
+          "Heeft een Octavia 5E 1.4 TSI 140 dezelfde Stage 1 als de 150 pk-versie?",
+          "Nee. Het uitgangsvermogen van de onderzochte 140 is 103 kW. De latere 150 pk-motor gebruikt een andere fabrieksafstelling en mogelijk andere onderdelen of ECU-firmware. Gebruik daarom uitsluitend de brongegevens die bij de 103 kW-uitvoering passen."
+        ],
+        [
+          "Mag ik de hoge Nm-waarde uit een Octavia-tuningcatalogus overnemen?",
+          "Niet zonder diagnose. De gehanteerde 300–320 Nm is een externe Stage 1-range, geen individuele transmissiegoedkeuring. De ECU, mogelijke DSG en staat van het voertuig bepalen of een lagere waarde of een ander advies passend is."
+        ]
+      ],
+      "photoKey": "skoda-5e"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 /**
  * First NL-only SEO publication list, independently hand-reviewed by engine generation.
- * Exactly 25 already source-audited RDW applications grouped into 21 distinct motor topics.
+ * The original 25 source-audited RDW applications form 21 legacy motor topics;
+ * further NL engine pages come exclusively from reviewed editorial whitelists.
  * DO NOT programmatically create additional pages from arbitrary RDW makes, plate records or heuristics.
  */
 import {reviewedRdwBulkBatch4} from "./reviewed-rdw-bulk-batch-4.ts";

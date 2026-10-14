@@ -5,9 +5,9 @@ import {nlVanEngines} from "../src/data/nl-van-engines-seo.ts";
 import {nlVanPhotos,nlVanPhotoByEngineSlug,getNlVanGenerationPhoto} from "../src/data/nl-van-generation-photos.ts";
 import manifest from "../src/data/nl-van-generation-photos.json" with {type:"json"};
 assert.equal(manifest.schemaVersion,1);
-assert.equal(nlVanEngines.length,100,"Van SEO engine pages must not accidentally disappear");
+assert.equal(nlVanEngines.length,101,"Van SEO engine pages must preserve 100 originals plus reviewed Caddy");
 assert.equal(Object.keys(nlVanPhotos).length,27,"All 27 manually chosen van-generation photos retained");
-assert.equal(nlVanPhotoByEngineSlug.size,85,"Only 85 confidently matched NL van engine photos may publish");
+assert.equal(nlVanPhotoByEngineSlug.size,86,"Existing 85 plus same-generation approved Caddy 2KN photo");
 const allowedLicensed=/^CC BY(?:-SA)? [234]\.0$/;
 for(const [key,photo] of Object.entries(nlVanPhotos)){
  assert.equal(photo.src,"/images/seo-vans/"+key+".jpg","Photo key cannot leak a wrong-generation path");
@@ -22,9 +22,10 @@ for(const [key,photo] of Object.entries(nlVanPhotos)){
  assert.equal(file[0],255);assert.equal(file[1],216);
 }
 const uncovered=nlVanEngines.filter(e=>!getNlVanGenerationPhoto(e));
-assert.equal(uncovered.length,15);
+assert.equal(uncovered.length,15,"The additional 2KN Caddy uses a reviewed matching-generation image");
 const required=[
  ["volkswagen-transporter-t5-20-tdi-140","/vw-transporter-t5.jpg"],
+ ["volkswagen-caddy-2kn-20-tdi-140-2013-14","/vw-caddy-2kn.jpg"],
  ["volkswagen-transporter-t6-20-tdi-204","/vw-transporter-t6.jpg"],
  ["volkswagen-transporter-t61-20-tdi-150-2020-21","/vw-transporter-t61.jpg"],
  ["citroen-berlingo-16-hdi-75-2015","/citroen-berlingo-ii.jpg"],
@@ -55,4 +56,4 @@ assert.match(comp,/Modelgeneratie ter illustratie, geen NoordTune-klantauto/);
 assert.match(comp,/photo\.source/);
 assert.match(comp,/photo\.licenseUrl/);
 assert.match(comp,/quality=\{78\}/);
-console.log("NL_VAN_GENERATION_IMAGES_PASS",JSON.stringify({enginePages:100,licensedGenerationImages:27,correctlyMatchedEnginePages:85,withheldUncertainPages:15,selectedAdversarialScopeChecks:required.length+withheld.length,existingStage1Preserved:true}));
+console.log("NL_VAN_GENERATION_IMAGES_PASS",JSON.stringify({enginePages:101,licensedGenerationImages:27,correctlyMatchedEnginePages:86,withheldUncertainPages:15,selectedAdversarialScopeChecks:required.length+withheld.length,existingStage1Preserved:true}));
