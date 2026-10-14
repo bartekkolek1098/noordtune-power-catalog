@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-14",
+  "items": [
+    {
+      "slug": "audi-a1-8x",
+      "brand": "Audi",
+      "model": "A1 8X 1.0, 1.2 en 1.4 TFSI",
+      "headline": "Audi A1 8X chiptuning: 1.0, 1.2 of 1.4 TFSI?",
+      "engineSlugs": [
+        "audi-a1-8x-12-tfsi-86",
+        "audi-a1-8x-14-tfsi-122",
+        "audi-a1-sportback-8x-10-tfsi-95"
+      ],
+      "intro": "Een Audi A1 8X kan met 1.2 TFSI 86, 1.4 TFSI 122 of de latere 1.0 TFSI 95 zijn uitgerust. Die motoren delen dezelfde modelgeneratie, maar verschillen in cilinderinhoud, cilinders, turbosysteem en motormanagement. In dit overzicht kies je een op brongegevens gebaseerd Stage 1-profiel op basis van de oorspronkelijke RDW-specificatie.",
+      "difference": "De oudere 1.2 TFSI heeft 1197 cc en 63 kW, de 1.4 TFSI 1390 cc en 90 kW. De 1.0 TFSI van de facelift heeft juist 999 cc en drie cilinders bij 70 kW. Dat zijn drie technisch andere uitvoeringen; een A1 Sportback of driecilinder is niet automatisch een 1.2 of 1.4 van dezelfde ECU-generatie.",
+      "checks": "Controleer eerst 8X, cilinderinhoud, origineel kW-vermogen en datum eerste toelating. Bij de oudere TFSI's verdienen distributieketting en ontsteking extra aandacht; bij de latere 1.0 TFSI zijn EA211, ECU en mogelijke S tronic-koppellimieten belangrijk. Stage 1-gegevens worden uitsluitend na motoridentificatie bekeken.",
+      "faq": [
+        [
+          "Welke Audi A1 8X heeft de 1.0 TFSI met drie cilinders?",
+          "De later geïntroduceerde 1.0 TFSI van deze serie heeft 999 cc, drie cilinders en in het beoordeelde profiel 70 kW. De oudere 1.2 en 1.4 TFSI zijn andere viercilinderconfiguraties die een afzonderlijke ECU-controle vragen."
+        ],
+        [
+          "Is een Audi A1 1.4 TFSI 122 pk een goede bron voor 1.2 TFSI-chiptuning?",
+          "Nee. De 1.4 heeft een andere fabrieksafstelling, motorinhoud en mogelijke transmissiegrens. De tabellen vergelijken daarom de drie gecontroleerde motoren apart, zonder hun vermogens of koppel onderling over te nemen."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-polo-6r-aw",
+      "brand": "Volkswagen",
+      "model": "Polo 6R en AW TSI",
+      "headline": "Volkswagen Polo 6R of AW chiptuning per TSI-motor",
+      "engineSlugs": [
+        "volkswagen-polo-6r-12-tsi-90",
+        "volkswagen-polo-aw-10-tsi-95",
+        "volkswagen-polo-aw-10-tsi-115"
+      ],
+      "intro": "De Volkswagen Polo 6R 1.2 TSI en de latere Polo AW 1.0 TSI lijken in advertenties beide compacte turbobenzines, maar de generatie, originele kW en elektronica verschillen. Op deze modelpagina staan alleen de motorversies waarvoor gecontroleerde RDW-toepassingen en onafhankelijke Stage 1-bronwaarden beschikbaar zijn.",
+      "difference": "De oudere 6R gebruikt in dit onderzoek een 1197 cc 1.2 TSI van 66 kW. De Polo AW heeft een 999 cc driecilinder in twee afzonderlijke afstellingen: 70 kW (95 pk) en 85 kW (als 115 pk verkocht). Een overeenkomend modelnaamplaatje of TSI-logo mag nooit deze drie verschillende motorprofielen verbergen.",
+      "checks": "Verifieer RDW-type 6R of AW, 1197 tegenover 999 cc, originele 66/70/85 kW en de juiste ECU-firmware. Controleer onderhoud aan distributie en turbosysteem, RON-brandstof en vooral de koppellimiet van een eventueel DQ200 DSG met droge koppeling; publicaties tonen geen goedkeuring voor iedere automaat.",
+      "faq": [
+        [
+          "Waarom bestaan er twee Polo AW 1.0 TSI-profielen?",
+          "De Polo AW 95 heeft oorspronkelijk 70 kW en de 115-versie 85 kW. De bronreferenties kunnen afwijken, dus de werkelijke fabrieksafstelling en ECU moeten worden bevestigd voordat het juiste profiel gekozen wordt."
+        ],
+        [
+          "Kan een Polo 6R 1.2 TSI dezelfde software als een Polo AW 1.0 TSI gebruiken?",
+          "Nee. De motoren verschillen in cilinderinhoud, motorgeneratie en mogelijk ECU- en transmissiehardware. Het oorspronkelijke type en kW-vermogen zijn leidend; een algemene TSI-tuningfile zou onbetrouwbaar zijn."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-t-roc-a1",
+      "brand": "Volkswagen",
+      "model": "T-Roc I 1.5 TSI en R 2.0 TSI",
+      "headline": "Volkswagen T-Roc 1.5 TSI of T-Roc R Stage 1",
+      "engineSlugs": [
+        "volkswagen-t-roc-a1-15-tsi-150",
+        "volkswagen-t-roc-r-a1-20-tsi-300"
+      ],
+      "intro": "Niet iedere Volkswagen T-Roc A1 is technisch dezelfde auto. De gewone 1.5 TSI 150 en de T-Roc R 2.0 TSI 300 verschillen sterk in turbohardware, koeling, originele aandrijflijn en de manier waarop extra koppel veilig verwerkt wordt. Vergelijk eerst de juiste RDW-motorvariant voordat je een Stage 1-referentie bekijkt.",
+      "difference": "De 1.5 TSI heeft hier 1498 cc en 110 kW, terwijl de sportieve T-Roc R een EA888 van 1984 cc en 221 kW gebruikt. Voor de R bestaan externe publicaties met hoge Stage 1-cijfers, maar gecombineerde ECU- plus DSG-pakketten vallen nadrukkelijk buiten de normale softwarevergelijking.",
+      "checks": "Controleer originele 110 of 221 kW, motorgeneratie, ECU, turbo, brandstofkwaliteit en werkelijke transmissie. Bij een R moeten 4Motion, koeling en DSG-variant in de beoordeling meewegen; bij een 1.5 TSI zijn specifieke TSI-revisie en de mogelijke koppellimiet van de transmissie relevant.",
+      "faq": [
+        [
+          "Is de T-Roc R 2.0 TSI dezelfde motor als de T-Roc 1.5 TSI?",
+          "Nee. De T-Roc R gebruikt een andere 1984 cc-motorfamilie en heeft in de gecontroleerde uitvoering 221 kW origineel. De 1.5 TSI heeft 1498 cc en 110 kW. Stage 1-cijfers en ECU-bestanden zijn niet uitwisselbaar."
+        ],
+        [
+          "Zijn de hoogste Stage 1-cijfers voor de T-Roc R inclusief DSG-tuning?",
+          "Niet op deze vergelijking. Alleen de externe gewone Stage 1-motorreferenties worden getoond. Pakketten met aanvullend DSG-programma, andere brandstof of extra hardware mogen niet als standaard Stage 1 beloofd worden."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-tiguan-generaties",
+      "brand": "Volkswagen",
+      "model": "Tiguan 5N en Tiguan II",
+      "headline": "Volkswagen Tiguan 5N en II: TDI of TSI Stage 1",
+      "engineSlugs": [
+        "volkswagen-tiguan-5n-20-tdi-177",
+        "volkswagen-tiguan-5n-20-tsi-180",
+        "volkswagen-tiguan-ii-20-tsi-180"
+      ],
+      "intro": "Een Volkswagen Tiguan van de 5N-generatie is niet automatisch identiek aan een Tiguan II. Zelfs een 2.0 TSI 180 uit twee verschillende generaties kan andere ECU-, turbo- en transmissievarianten hebben. Hier staan afzonderlijke, bronvermelde diesel- en benzinemotorprofielen zodat de juiste auto wordt gekozen.",
+      "difference": "De 5N 2.0 TDI 177 is een 1968 cc diesel van 130 kW. De 5N 2.0 TSI 180 heeft 1984 cc benzine en 132 kW; ook de onderzochte Tiguan II 2.0 TSI heeft 132 kW, maar komt uit een andere technische bouwfase. Gelijke fabrieks-kW bewijzen nooit dezelfde ECU of turbolader.",
+      "checks": "Controleer bij RDW zowel brandstof, 1968/1984 cc, originele kW als eerste toelating. Bij de TDI gelden DPF, EGR, turbo, transmissie en onderhoud; bij de TSI benzinekwaliteit, EA888-generatie, distributie en eventuele DSG. Koppelgrenzen zijn afhankelijk van de daadwerkelijk gemonteerde aandrijving.",
+      "faq": [
+        [
+          "Is de Tiguan 5N 2.0 TSI 180 hetzelfde als de Tiguan II 180?",
+          "Nee. Hoewel beide onderzocht zijn met 132 kW en 1984 cc, onderscheiden modelgeneratie, software en mogelijk turbo- en transmissiehardware de uitvoeringen. Ze blijven daarom gescheiden bronprofielen."
+        ],
+        [
+          "Kan ik de Stage 1 van een Tiguan 2.0 TSI op een 2.0 TDI gebruiken?",
+          "Nee. Diesel en benzine zijn verschillende motor- en ECU-systemen; ook de originele kW en het koppel verschillen. Eerst moet de brandstof en echte motorgeneratie bevestigd worden, pas dan volgt de passende vergelijking."
+        ]
+      ]
+    },
+    {
+      "slug": "seat-ibiza-6j-kj",
+      "brand": "Seat",
+      "model": "Ibiza 6J en KJ 1.0 TSI",
+      "headline": "SEAT Ibiza 6J of KJ: Stage 1 voor 95 en 115 pk",
+      "engineSlugs": [
+        "seat-ibiza-6j-10-tsi-95",
+        "seat-ibiza-kj-10-tsi-95",
+        "seat-ibiza-kj-10-tsi-115"
+      ],
+      "intro": "De SEAT Ibiza 1.0 TSI is als facelift van de vierde generatie en als geheel nieuwe vijfde generatie geleverd. De Ibiza 6J/6P-aanduiding en de latere KJ mogen bij chiptuning niet door elkaar worden gehaald, zelfs wanneer op beide auto's '95 pk' in de advertentie staat.",
+      "difference": "De Ibiza 6J-facelift en de KJ 95 hebben in de onderzochte RDW-registraties allebei 999 cc en 70 kW, maar ze zijn verschillend van bouwfase en ECU-context. De KJ 115 gebruikt 85 kW en verdient daarnaast een apart profiel. Dezelfde cilinderinhoud of vermogensnaam is dus geen bewijs van dezelfde software.",
+      "checks": "Controleer de juiste generatie 6J-facelift tegenover KJ, originele 70 of 85 kW, motorcode en ECU-firmware. Bij de mogelijke DSG DQ200 met droge koppeling mogen hoge gepubliceerde koppels niet zonder aandrijflijncontrole worden toegepast. Ook brandstof en onderhoud zijn onderdeel van de check.",
+      "faq": [
+        [
+          "Is Ibiza 6J 1.0 TSI 95 gelijk aan Ibiza KJ 1.0 TSI 95?",
+          "Niet automatisch. De originele 70 kW en 999 cc komen overeen, maar het gaat om een andere bouwfase en mogelijk ECU-firmware. Daarom zijn het aparte onderzochte technische profielen in plaats van één algemeen Ibiza-resultaat."
+        ],
+        [
+          "Welke Ibiza 1.0 TSI heeft 85 kW origineel?",
+          "De onderzochte Ibiza KJ 115 heeft 85 kW, terwijl beide 95 pk-varianten 70 kW registreren. Gebruik de RDW-gegevens en bevestig de motorsoftware en transmissie voordat een Stage 1-waarde relevant is."
+        ]
+      ]
+    },
+    {
+      "slug": "ford-fiesta-ja8-jhh",
+      "brand": "Ford",
+      "model": "Fiesta 1.0 EcoBoost JA8 en JHH",
+      "headline": "Ford Fiesta 1.0 EcoBoost Stage 1 per generatie",
+      "engineSlugs": [
+        "ford-fiesta-ja8-10-ecoboost-100",
+        "ford-fiesta-jhh-10-ecoboost-100"
+      ],
+      "intro": "Bij de Ford Fiesta 1.0 EcoBoost 100 pk is het modeljaar niet slechts een detail. De oudere JA8 en nieuwere JHH hebben allebei een compacte 998 cc turbobenzine, maar verschillen in technische bouwfase en RDW-registratie. Dit overzicht maakt duidelijk welk onderbouwd Stage 1-profiel bij jouw Fiesta kan passen.",
+      "difference": "De onderzochte JA8 uit 2015–2017 heeft 74 kW origineel, tegenover 73,5 kW bij de JHH uit 2019. Het afgeronde marketingvermogen lijkt identiek, maar ECU-firmware, turbosysteem, onderhoudseisen en transmissie kunnen verschillen. De cijfers van de ene generatie mogen niet zonder controle naar de andere worden gekopieerd.",
+      "checks": "Controleer JA8 of JHH, originele kW en 998 cc, plus de motorcode en ECU-software. Beoordeel nadrukkelijk de toestand van de natte distributieriem en oliepompaandrijving waar gemonteerd, de juiste olie, turbodruk, koeling en handbak of automaat vóór extra motorbelasting.",
+      "faq": [
+        [
+          "Waarom zijn er twee Fiesta 1.0 EcoBoost 100 pk-profielen?",
+          "Omdat de JA8 en JHH verschillende generaties zijn met verschillende originele RDW-kW en mogelijk ECU-revisies. Het is nauwkeuriger om twee brongroepen te tonen dan één schijnbaar universele Fiesta-afstelling."
+        ],
+        [
+          "Waarom is de distributieriem bij deze EcoBoost belangrijk?",
+          "Bij bepaalde 1.0 EcoBoost-uitvoeringen werkt een riem in olie. Verkeerde olie, achterstallig onderhoud of slijtage kunnen problemen veroorzaken. Controle van riemhistorie en oliedruk gaat daarom vóór tuning."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-2008-i-ii",
+      "brand": "Peugeot",
+      "model": "2008 I en II PureTech",
+      "headline": "Peugeot 2008: 1.2 VTi 82 of PureTech 130 Stage 1",
+      "engineSlugs": [
+        "peugeot-2008-i-12-vti-82",
+        "peugeot-2008-ii-12-puretech-130"
+      ],
+      "intro": "Bij de Peugeot 2008 maakt het verschil tussen generatie I en II én tussen atmosferische en turbobenzinemotor een groot onderscheid. Een 1.2 VTi 82 levert bij gewone software-aanpassing relatief weinig extra vermogen, terwijl een 1.2 PureTech 130 een ander motor- en turbosysteem heeft.",
+      "difference": "De eerste 2008 heeft in dit onderzoek een atmosferische 1199 cc-benzine met 60 kW. De tweede generatie wordt hier vertegenwoordigd door de 1199 cc PureTech-turbo van 96 kW. Ondanks dezelfde inhoud zijn turbo, originele belasting, ECU en transmissie niet gelijk; een Stage 1-publicatie voor 130 pk past niet op de 82 pk-motor.",
+      "checks": "Controleer de RDW-typecode C of U, originele 60 of 96 kW, bouwfase en echte EB2-motorvariant. Riem in olie of kettingrevisie, onderhoud/oliedruk, GPF waar aanwezig en handbak of EAT-automaat bepalen samen of een individuele afstelling verstandig is.",
+      "faq": [
+        [
+          "Waarom heeft een Peugeot 2008 VTi 82 zo weinig Stage 1-winst?",
+          "De VTi 82 in deze vergelijking is atmosferisch en kan geen extra turbodruk leveren. De afzonderlijk onderzochte PureTech 130 heeft een turbo en andere motorhardware; hun broncijfers mogen niet gemengd worden."
+        ],
+        [
+          "Past Peugeot 2008 II 1.2 PureTech 130 Stage 1 ook op de e-2008?",
+          "Nee. De e-2008 heeft een volledig elektrische aandrijving zonder de genoemde 1.2-turbobenzinemotor. Deze vergelijking betreft uitsluitend twee afzonderlijk beoordeelde benzineversies."
+        ]
+      ]
+    }
+  ]
+}

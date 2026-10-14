@@ -53,7 +53,7 @@ const expectedRoutes = [
 ];
 
 assert.equal(engineCatalog.length, 24, "The curated public catalog must stay at 24 vehicles");
-assert.equal(expectedRoutes.length, 375+nlPassengerEngineProfiles.length, "Preserve the existing 375 routes and add only manually vetted passenger engines");
+assert.equal(expectedRoutes.length, 375+nlPassengerEngineProfiles.length+(nlModelFamilyHubs.length-6), "Preserve the original 375 routes and include only reviewed passenger engines and model comparisons");
 assert.equal(new Set(expectedRoutes).size,expectedRoutes.length,"Every public sitemap route must be unique");
 
 const publicIds = new Set(engineCatalog.map((vehicle) => vehicle.id));

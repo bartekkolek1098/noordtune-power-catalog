@@ -5,6 +5,7 @@ import {CatalogHeader} from "@/components/catalog-header";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {nlModelFamilyHubs,nlModelHubPath} from "@/data/nl-model-family-seo";
+import {nlStage1EngineProfiles} from "@/data/nl-stage1-engine-seo";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
 import {chiptuningHref} from "@/lib/noordtune-links";
@@ -14,7 +15,7 @@ export function generateStaticParams(){return [{locale:"nl"}];}
 export async function generateMetadata({params}:Props):Promise<Metadata>{
  const {locale}=await params;if(locale!=="nl")return {robots:{index:false,follow:false}};
  const title="Chiptuning per automodel vergelijken";
- const description="Vergelijk Stage 1-motorvarianten binnen BMW 320i, Nissan Qashqai, Ford Transit Connect, VW Golf, VW Caddy en Renault Master. Met originele RDW-gegevens en bronnen.";
+ const description="Vergelijk gecontroleerde Stage 1-motorvarianten van Audi, BMW, Volkswagen, Peugeot, Renault, Nissan en Ford. Met RDW-vermogens, ECU-verschillen en onafhankelijke bronnen.";
  return {title,description,robots:{index:true,follow:true},
   alternates:{canonical:absoluteUrl("/nl/modellen")},
   openGraph:{title,description,url:absoluteUrl("/nl/modellen"),siteName:"NoordTune Power Catalog",type:"website",locale:"nl_NL"}
@@ -53,7 +54,7 @@ export default async function NlModelListPage({params}:Props){
       van de verkeerde motor. Alle gepubliceerde waarden blijven indicaties uit onafhankelijke bronnen.</p>
      <div className="ux-nl-model-intro-actions">
       <a className="ux-nl-engine-primary-link" href={sitePath("/nl#rdw-check")}><Search className="h-4 w-4" aria-hidden="true"/>Kenteken controleren</a>
-      <a className="ux-nl-engine-secondary-link" href={sitePath("/nl/motoren")}>Bekijk alle 21 motorprofielen<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
+      <a className="ux-nl-engine-secondary-link" href={sitePath("/nl/motoren")}>Bekijk alle {nlStage1EngineProfiles.length} motorprofielen<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
      </div>
     </div>
    </section>
@@ -63,7 +64,7 @@ export default async function NlModelListPage({params}:Props){
     <div className="ux-nl-model-groups-grid">
      {nlModelFamilyHubs.map((m,i)=>(
       <article key={m.slug} className="ux-nl-model-group-card">
-       <span className="ux-nl-model-group-eyebrow">{String(i+1).padStart(2,"0")} / 0{nlModelFamilyHubs.length} · {m.brand}</span>
+       <span className="ux-nl-model-group-eyebrow">{String(i+1).padStart(2,"0")} / {String(nlModelFamilyHubs.length).padStart(2,"0")} · {m.brand}</span>
        <h3><a href={sitePath(nlModelHubPath(m.slug))}>{m.model}</a></h3>
        <p>{m.intro}</p>
        <div className="ux-nl-model-group-engines">

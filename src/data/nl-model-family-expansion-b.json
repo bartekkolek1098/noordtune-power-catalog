@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-14",
+  "items": [
+    {
+      "slug": "peugeot-3008-ii",
+      "brand": "Peugeot",
+      "model": "3008 II 1.2 en 1.6 PureTech",
+      "headline": "Peugeot 3008 II: 1.2 PureTech 130 of 1.6 PureTech 180",
+      "engineSlugs": [
+        "peugeot-3008-ii-12-puretech-130",
+        "peugeot-3008-ii-16-puretech-180"
+      ],
+      "intro": "De Peugeot 3008 II is geleverd met meerdere PureTech-turbobenzinemotoren. De 1.2 PureTech 130 en 1.6 PureTech 180 zijn geen softwarevarianten van dezelfde motor; ze verschillen in het aantal cilinders, fabrieksvermogen, koppelaanbod en ECU. Hier worden alleen apart onderbouwde RDW- en Stage 1-profielen vergeleken.",
+      "difference": "De 1.2 PureTech 130 gebruikt 1199 cc, drie cilinders en 96 kW origineel. De 1.6 PureTech 180 heeft 1598 cc, vier cilinders en 133 kW. Rond bouwjaar 2020 kunnen ECU-, GPF- en transmissievarianten verschillen. Plug-inhybride 3008-uitvoeringen vallen niet onder deze twee gewone benzineprofielen.",
+      "checks": "Vergelijk originele 96 of 133 kW met 1199 of 1598 cc en controleer EB2 tegenover EP6, ECU-software, benzinekwaliteit en EAT-transmissie. Bij de 1.2 moet distributie- en oliehistorie worden beoordeeld; bij de 1.6 zijn onder meer turbo, koeling en ontsteking belangrijk.",
+      "faq": [
+        [
+          "Is de Peugeot 3008 1.6 PureTech 180 een opgevoerde 1.2 PureTech?",
+          "Nee. De 1.6 is een viercilinder van 1598 cc met een andere turbo- en ECU-configuratie. De 1.2 PureTech heeft 1199 cc en drie cilinders. Stage 1-resultaten zijn daarom per motor met eigen bronnen weergegeven."
+        ],
+        [
+          "Kan ik de Stage 1 van de 3008 PureTech gebruiken voor een 3008 Hybrid?",
+          "Nee. De plug-inhybride combineert een verbrandingsmotor met elektrische aandrijving en ander motormanagement. De hier onderzochte twee motorvarianten betreffen uitsluitend gewone benzine-uitvoeringen."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot-308-ii-iii",
+      "brand": "Peugeot",
+      "model": "308 II en III PureTech",
+      "headline": "Peugeot 308 II of III chiptuning: 110 en 130 pk",
+      "engineSlugs": [
+        "peugeot-308-ii-12-puretech-130",
+        "peugeot-308-iii-12-puretech-110",
+        "peugeot-308-iii-12-puretech-130"
+      ],
+      "intro": "De Peugeot 308 met 1.2 PureTech kan uit de tweede of derde modelgeneratie komen, en binnen de 308 III bestaan aparte fabrieksafstellingen van 110 en 130 pk. Daardoor is de vermelding '1.2 PureTech' zonder typecode en kW onvoldoende om een betrouwbare Stage 1-bron te selecteren.",
+      "difference": "De 308 II/T9 uit dit onderzoek gebruikt RDW-type L met 96 kW, terwijl de 308 III type F is beoordeeld met zowel 81 als 96 kW. Alle hebben 1199 cc, maar motorgeneratie, ECU, GPF, distributierevisie en transmissie kunnen verschillen. 110 pk betekent niet automatisch dat de 130 pk-hardware identiek is.",
+      "checks": "Controleer RDW-type L of F, eerste toelating, originele 81/96 kW en benzine-aandrijving. Bij deze PureTech-generaties verdienen riem in olie of passende kettingrevisie, motorolie, foutcodes, GPF en de specifieke EAT-/handbak-koppelgrens aandacht voordat tuning wordt geadviseerd.",
+      "faq": [
+        [
+          "Is een Peugeot 308 II PureTech 130 dezelfde motor als een 308 III PureTech 130?",
+          "Dat mag je niet aannemen. Ondanks gelijke commerciële vermogensnaam en cilinderinhoud kunnen de bouwfase, ECU en emissiehardware verschillen. Daarom krijgen de 308 II en 308 III ieder een eigen gecontroleerd motorprofiel."
+        ],
+        [
+          "Kan de Peugeot 308 III 110 pk dezelfde tuning krijgen als de 130 pk?",
+          "Niet zonder technische bevestiging. De geregistreerde fabrieksvermogens zijn 81 en 96 kW; ECU, turbo en transmissie moeten afzonderlijk worden beoordeeld. Alleen bronwaarden voor de exacte variant worden op de motorpagina gebruikt."
+        ]
+      ]
+    },
+    {
+      "slug": "renault-clio-v-tce",
+      "brand": "Renault",
+      "model": "Clio V 1.0 TCe",
+      "headline": "Renault Clio V 1.0 TCe 90 of 100 Stage 1",
+      "engineSlugs": [
+        "renault-clio-v-10-tce-100",
+        "renault-clio-v-10-tce-90-2021",
+        "renault-clio-v-facelift-10-tce-90"
+      ],
+      "intro": "De Renault Clio V met 1.0 TCe is als TCe 100 en TCe 90 geleverd, ook rondom de facelift. Een vrijwel gelijk uitziende auto kan 74 kW of 67 kW origineel hebben en op een andere ECU-softwarefase draaien. Vergelijk daarom de gecontroleerde varianten vóór je een Stage 1-publicatie interpreteert.",
+      "difference": "Het onderzochte 1.0 TCe 100-profiel betreft 74 kW rond 2019–2020. De TCe 90 van 2021 heeft 67 kW, net als de apart gecontroleerde TCe 90-facelift uit 2024–2025. Dezelfde cilinderinhoud van 999 cc maakt de software niet universeel; LPG/ECO-G blijft uitgesloten.",
+      "checks": "Controleer RDW-type RJA, origineel 74/67 kW en eerste toelating. Laat de motorcode, ECU-versie, koeling, servicehistorie en handbak of CVT vaststellen. De externe bronwaarden gelden voor pure benzine en vormen geen garantie voor een andere softwarefase of LPG-installatie.",
+      "faq": [
+        [
+          "Waarom staan er twee Renault Clio TCe 90-profielen?",
+          "Omdat de gecontroleerde voor-facelift Clio uit 2021 en latere facelift uit 2024–2025 op een andere softwarefase kunnen zitten. Ondanks hetzelfde originele vermogen van 67 kW blijven de onafhankelijke bronreferenties apart."
+        ],
+        [
+          "Kan de Clio TCe 100 Stage 1 worden gebruikt voor een Clio TCe 90?",
+          "Nee, niet automatisch. De originele fabrieksafstelling is anders en transmissie, ECU en motorconfiguratie moeten apart worden gecontroleerd. De vergelijking koppelt de gepubliceerde waarden alleen aan de juiste 74 of 67 kW-uitvoering."
+        ]
+      ]
+    },
+    {
+      "slug": "renault-megane-iii-iv-tce",
+      "brand": "Renault",
+      "model": "Mégane III en IV 1.2 TCe",
+      "headline": "Renault Mégane III of IV 1.2 TCe Stage 1",
+      "engineSlugs": [
+        "renault-megane-iii-12-tce-115",
+        "renault-megane-iii-12-tce-130",
+        "renault-megane-iv-12-tce-100"
+      ],
+      "intro": "De Renault Mégane met 1.2 TCe heeft verschillende fabrieksvermogens en modelgeneraties. De Mégane III 115 en 130 en de latere Mégane IV 100 mogen niet op dezelfde motor- of ECU-kaart worden gezet, ook al gebruiken alle onderzochte profielen ongeveer 1,2 liter cilinderinhoud.",
+      "difference": "Bij de Mégane III type Z zijn onderbouwde uitvoeringen van 85 kW (TCe 115) en 97 kW (TCe 130) beschikbaar. De Mégane IV heeft hier een apart 74 kW-profiel. De H5Ft-gerelateerde naam, modeljaar en 1197 cc leveren op zichzelf nog geen bewijs van dezelfde motorrevisie of ECU.",
+      "checks": "Verifieer Mégane III type Z tegenover Mégane IV type RFB, originele 74/85/97 kW, motorcode, ECU, olieverbruik en distributieonderhoud. Bij een handbak of EDC moeten koppelbeperkingen en de technische conditie apart worden gecontroleerd, vooral bij oudere 1.2 TCe-motoren.",
+      "faq": [
+        [
+          "Is de Renault Mégane III TCe 130 hetzelfde als TCe 115?",
+          "Nee. Beide zijn onderzocht bij type Z met 1197 cc, maar het oorspronkelijke RDW-vermogen verschilt 97 tegenover 85 kW. De ECU-afstelling en mogelijke hardwareverschillen moeten eerst worden bevestigd."
+        ],
+        [
+          "Kan ik Mégane III 1.2 TCe-bronwaarden gebruiken voor een Mégane IV?",
+          "Niet zonder meer. De latere Mégane IV heeft een andere voertuig- en softwaregeneratie; de onderzochte 100 pk-versie heeft ook een eigen originele 74 kW-waarde. Daarom zijn de Stage 1-referenties gescheiden."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan-micra-k14",
+      "brand": "Nissan",
+      "model": "Micra K14 1.0 IG-T",
+      "headline": "Nissan Micra K14: 1.0 IG-T 100 of 92 chiptuning",
+      "engineSlugs": [
+        "nissan-micra-k14-10-ig-t-100",
+        "nissan-micra-k14-10-ig-t-92"
+      ],
+      "intro": "De Nissan Micra V van de K14-generatie is met verschillende 1.0 IG-T-benzinemotorafstellingen verkocht. De eerdere 100 pk- en latere 92 pk-uitvoering lijken sterk op elkaar, maar de originele RDW-kW en ECU-fase wijken af. Hier staan bronvergelijkingen voor beide afzonderlijke motorvarianten.",
+      "difference": "De eerder beoordeelde Micra K14 IG-T 100 heeft 74 kW origineel en valt binnen 2019–2020. De latere IG-T 92 gebruikt 68 kW en is onderzocht in 2021–2024. Beide hebben 999 cc; dat is onvoldoende om motormanagement, turbo en transmissie gelijk te stellen.",
+      "checks": "Controleer type K14, eerste toelating, originele 74 of 68 kW, motorcode en daadwerkelijke ECU-software. Handbak en X-Tronic/CVT kunnen sterk verschillen in koppelcapaciteit. Een gepubliceerde waarde voor de handgeschakelde Micra geldt niet automatisch voor de CVT.",
+      "faq": [
+        [
+          "Wat is het technische verschil tussen Micra IG-T 100 en IG-T 92?",
+          "De geregistreerde fabrieksvermogens zijn respectievelijk 74 en 68 kW en ze horen bij verschillende onderzoeksperioden. De exacte ECU- en transmissievariant bepaalt welke externe Stage 1-vermogensreferentie toepasselijk is."
+        ],
+        [
+          "Kan een Nissan Micra met X-Tronic dezelfde Nm krijgen als een handbak?",
+          "Dat is niet vanzelfsprekend. Een CVT heeft specifieke koppel- en temperatuurlimieten. Daarom beoordeelt NoordTune eerst de versnellingsbak en de aanwezige ECU voordat tuning kan worden besproken."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan-juke-f16",
+      "brand": "Nissan",
+      "model": "Juke F16 1.0 DIG-T",
+      "headline": "Nissan Juke F16: DIG-T 117 of 114 Stage 1",
+      "engineSlugs": [
+        "nissan-juke-f16-10-dig-t-117",
+        "nissan-juke-f16-10-dig-t-114"
+      ],
+      "intro": "De Nissan Juke II F16 heeft twee sterk verwante 1.0 DIG-T-benzine-uitvoeringen met andere originele vermogens. Een Juke 117 uit de vroege fase en een 114 uit latere jaren zijn niet per definitie op dezelfde ECU-software afgesteld. Kies daarom het juiste profiel op basis van RDW en toelatingsjaar.",
+      "difference": "De vroege 1.0 DIG-T 117 is in de onderzochte F16-registratie een 86 kW-benzine uit 2020. De latere DIG-T 114 heeft 84 kW en de bronperiode 2021–2024. Beide hebben 999 cc, maar dat maakt de turbo-, ECU- of versnellingsbaksoftware nog niet uitwisselbaar.",
+      "checks": "Controleer Juke II F16, 999 cc, originele 86 tegenover 84 kW, motorcode, ECU-nummer en handbak of DCT. Een hybride Juke gebruikt andere aandrijftechniek en valt buiten deze gegevens. Check onderhoud, koeling en het emissiesysteem voordat hogere bronwaarden worden beoordeeld.",
+      "faq": [
+        [
+          "Waarom heeft de Juke 1.0 DIG-T 114 een andere Stage 1 dan 117?",
+          "De oorspronkelijke kW-registratie en de beoordeelde bronperiode verschillen. Daarom wordt de latere 84 kW-uitvoering apart gehouden van de 86 kW-Juke uit de vroege F16-fase."
+        ],
+        [
+          "Gelden deze Nissan Juke Stage 1-referenties ook voor de Juke Hybrid?",
+          "Nee. De Hybrid heeft andere elektrische aandrijvingscomponenten en motormanagement. De weergegeven twee 1.0 DIG-T-varianten zijn pure benzine-uitvoeringen waarvoor bronwaarden apart werden onderzocht."
+        ]
+      ]
+    }
+  ]
+}

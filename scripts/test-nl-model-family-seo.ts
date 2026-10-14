@@ -6,9 +6,9 @@ import {
  nlModelHubPath,nlModelHubMetadata,nlModelEnginesTotal
 } from "../src/data/nl-model-family-seo.ts";
 
-assert.equal(nlModelFamilyHubs.length,6,"Publish six researched multi-engine NL model hubs");
-assert.equal(nlModelHubBySlug.size,6);
-assert.equal(nlModelEnginesTotal(),15,"Only 15 source-backed engine topics are assigned to researched model families");
+assert.equal(nlModelFamilyHubs.length,19,"Preserve six original plus 13 researched multi-engine NL model hubs");
+assert.equal(nlModelHubBySlug.size,19);
+assert.equal(nlModelEnginesTotal(),48,"Precisely 48 source-backed engines belong to researched model families");
 const slugs=new Set<string>(),titles=new Set<string>(),descriptions=new Set<string>();
 const linked=new Set<string>();
 for(const m of nlModelFamilyHubs){
@@ -23,7 +23,7 @@ for(const m of nlModelFamilyHubs){
  const {title,description}=nlModelHubMetadata(m);
  assert.ok(!titles.has(title)||!descriptions.has(description),"No repeated metadata across models");
  titles.add(title);descriptions.add(description);
- assert.ok(title.includes("Stage 1")&&title.includes(m.brand));
+ assert.ok(title.includes("Stage 1")&&title.toLowerCase().includes(m.brand.toLowerCase()));
  assert.ok(!title.includes("| NoordTune"),"Layout appends NoordTune branding once");
  assert.ok(description.includes("ECU")&&description.includes(m.model));
  assert.ok(description.length>=115&&description.length<200);
@@ -36,7 +36,7 @@ for(const m of nlModelFamilyHubs){
   linked.add(engine.slug);
  }
 }
-assert.equal(linked.size,15);
+assert.equal(linked.size,48);
 const homepage=readFileSync("src/app/[locale]/page.tsx","utf8");
 const engineIndex=readFileSync("src/app/[locale]/motoren/page.tsx","utf8");
 const engineDetail=readFileSync("src/app/[locale]/motoren/[slug]/page.tsx","utf8");
@@ -52,4 +52,4 @@ assert.ok(modelDetail.includes("ItemList"),"Model page has actual engine navigat
 assert.ok(!modelDetail.includes('"@type":"Offer"'),"No invented service offers");
 assert.ok(modelDetail.includes("geen NoordTune-meting"),"Averred published performance should not be claims of NoordTune dyno readings");
 assert.ok(sitemap.includes("...nlModelPages"),"NL model pages belong in sitemap");
-console.log("NL_MODEL_HUB_SEO_PASS",JSON.stringify({nlModelHubs:nlModelFamilyHubs.length,distinctEngines:linked.size,originalFaqs:nlModelFamilyHubs.reduce((n,m)=>n+m.faq.length,0),originalSitemapRoutes:241,newRoutes:7,totalRoutes:248,duplicates:0,onlyNl:true}));
+console.log("NL_MODEL_HUB_SEO_PASS",JSON.stringify({nlModelHubs:nlModelFamilyHubs.length,distinctEngines:linked.size,originalFaqs:nlModelFamilyHubs.reduce((n,m)=>n+m.faq.length,0),originalSitemapRoutes:422,newRoutes:13,totalRoutes:435,duplicates:0,onlyNl:true}));
