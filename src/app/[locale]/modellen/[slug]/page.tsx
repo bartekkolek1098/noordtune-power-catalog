@@ -8,7 +8,7 @@ import {nlModelFamilyHubs,nlModelHubBySlug,nlModelHubMetadata,nlModelHubPath} fr
 import {nlStage1EnginePath,allStage1PowerRange,allStage1TorqueRange} from "@/data/nl-stage1-engine-seo";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
-import {chiptuningHref} from "@/lib/noordtune-links";
+import {dutchBrandChiptuningHref} from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
 import {breadcrumbListJsonLd} from "@/lib/seo";
 
@@ -135,7 +135,7 @@ export default async function NlModelDetailPage({params}:Props){
      <div className="ux-nl-model-cta-actions">
        <a className="ux-nl-engine-primary-link" href={sitePath("/nl#rdw-check")}><Search aria-hidden="true" className="h-4 w-4"/>Kenteken controleren</a>
        <a className="ux-nl-engine-secondary-link" href={whatsappHref({locale:"nl",vehicleLabel:m.brand+" "+m.model})} target="_blank" rel="noreferrer">Vraag advies <ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
-       <a className="ux-nl-model-service-link" href={chiptuningHref("nl")}>Bekijk chiptuning als dienst op NoordTune.nl<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
+       <a className="ux-nl-model-service-link" href={dutchBrandChiptuningHref(m.brand)}>Bekijk chiptuning als dienst op NoordTune.nl<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
      </div>
     </section>
     <a className="ux-nl-engine-back" href={sitePath("/nl/modellen")}><ArrowLeft aria-hidden="true" className="h-4 w-4"/> Alle vergelijkbare automodellen</a>

@@ -8,7 +8,7 @@ import {VanDirectory,type VanDirectoryItem} from "@/components/van-directory";
 import {nlVanModels,nlVanPending,nlVanModelPath} from "@/data/nl-vans-seo";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
-import {chiptuningHref,mainLocaleHref} from "@/lib/noordtune-links";
+import {dutchBusinessVansHref,mainLocaleHref} from "@/lib/noordtune-links";
 
 type Props={params:Promise<{locale:string}>};
 export const dynamicParams=false;
@@ -131,7 +131,7 @@ export default async function NlBusinessVanDirectory({params}:Props){
        uitvoering en afspraken bezoek je de hoofdwebsite van NoordTune in Assen.</p>
      </div>
      <div className="ux-vans-handoff-links">
-      <a className="ux-nl-engine-primary-link" href={chiptuningHref("nl")}>Chiptuning bij NoordTune.nl<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
+      <a className="ux-nl-engine-primary-link" href={dutchBusinessVansHref()}>Bedrijfswagen chiptuning bij NoordTune.nl<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
       <a className="ux-nl-engine-secondary-link" href={mainLocaleHref("nl")}>Naar de hoofdwebsite<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
      </div>
     </div>

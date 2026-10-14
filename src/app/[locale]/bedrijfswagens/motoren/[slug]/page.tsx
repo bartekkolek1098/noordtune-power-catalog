@@ -11,7 +11,7 @@ import {nlVanEngines,nlVanEngineBySlug,nlVanEngineMetadata} from "@/data/nl-van-
 import {nlVanModelBySlug,nlVanEnginePath,nlVanModelPath,type ApprovedVanApplication} from "@/data/nl-vans-seo";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
-import {chiptuningHref} from "@/lib/noordtune-links";
+import {dutchBusinessVansHref} from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
 import {breadcrumbListJsonLd} from "@/lib/seo";
 
@@ -145,7 +145,7 @@ export default async function NlVanStage1Engine({params}:Props){
       <a href={sitePath("/nl#rdw-check")} className="ux-nl-engine-primary-link"><Search className="h-4 w-4" aria-hidden="true"/>Kenteken controleren</a>
       <a href={whatsappHref({locale:"nl",vehicleLabel:e.title})} rel="noreferrer" target="_blank" className="ux-nl-engine-secondary-link">Individuele beoordeling<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
       <CatalogEnquiryLink locale="nl" business reference={{kind:"engine",id:e.slug}}/>
-      <a href={chiptuningHref("nl")} className="ux-van-model-service-link">Chiptuning als dienst<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
+      <a href={dutchBusinessVansHref()} className="ux-van-model-service-link">Chiptuning als dienst<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
      </div>
     </section>
     <a className="ux-nl-engine-back" href={sitePath(nlVanModelPath(m.slug))}><ArrowLeft className="h-4 w-4" aria-hidden="true"/> Terug naar {m.make} {m.model}</a>
