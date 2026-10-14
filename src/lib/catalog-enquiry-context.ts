@@ -2,7 +2,8 @@
 import {getManualCatalogResult} from './manual-catalog-result.ts';
 import {verifiedRdwApplications} from '../data/verified-rdw-applications.ts';
 import {nlVanEngineBySlug} from '../data/nl-van-engines-seo.ts';
-import {validCatalogEnquiryContext, type CatalogEnquiryRef, type CatalogEnquiryContext} from './catalog-enquiry-contract.ts';
+import {nlStage1BySlug} from '../data/nl-stage1-engine-seo.ts';
+import {passengerEngineEnquiryId,validCatalogEnquiryContext, type CatalogEnquiryRef, type CatalogEnquiryContext} from './catalog-enquiry-contract.ts';
 const byProfile = new Map(verifiedRdwApplications.map(a => [a.id, a]));
 
 export function getCatalogEnquiryContext(ref: CatalogEnquiryRef): CatalogEnquiryContext | undefined {
@@ -19,11 +20,16 @@ export function getCatalogEnquiryContext(ref: CatalogEnquiryRef): CatalogEnquiry
     title = [a.make + ' ' + a.model, a.engineLabel, a.registeredPowerKw ? a.registeredPowerKw + ' kW' : undefined].filter(Boolean).join(' · ');
     from = a.yearFrom; to = a.yearTo;
   } else {
-    const e = nlVanEngineBySlug.get(ref.id);
-    if (!e || (ref.year !== undefined && !e.applications.some(a => ref.year! >= a.yearFrom && ref.year! <= a.yearTo))) return;
-    title = e.title;
-    from = Math.min(...e.applications.map(a => a.yearFrom));
-    to = Math.max(...e.applications.map(a => a.yearTo));
+    const van = nlVanEngineBySlug.get(ref.id);
+    const passengerSlug=ref.id.startsWith('auto-')?ref.id.slice(5):undefined;
+    const passenger = passengerSlug?nlStage1BySlug.get(passengerSlug):undefined;
+    // Only published, explicitly namespaced passenger topics may be submitted.
+    if ((!van && !passenger) || (van && passenger) || (passenger && passengerEngineEnquiryId(passenger.slug)!==ref.id)) return;
+    const applications = van ? van.applications : passenger!.applications;
+    if (ref.year !== undefined && !applications.some(a => ref.year! >= a.yearFrom && ref.year! <= a.yearTo)) return;
+    title = van ? van.title : passenger!.headline;
+    from = Math.min(...applications.map(a => a.yearFrom));
+    to = Math.max(...applications.map(a => a.yearTo));
   }
   if (ref.year !== undefined && (ref.year < from || ref.year > to)) return;
   const suffix = ref.year !== undefined ? ' · ' + ref.year : '';

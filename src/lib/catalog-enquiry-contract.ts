@@ -5,6 +5,11 @@ export type CatalogEnquiryContext = CatalogEnquiryRef & {
   version: 1; label: string; yearFrom: number; yearTo: number;
 };
 export const catalogEnquiryPrefix = '#catalog-v1?';
+/** Wire namespace disambiguates Dutch passenger SEO pages from existing van-engine slugs. */
+export function passengerEngineEnquiryId(slug:string):string {
+  if (!/^[a-z][a-z0-9]*(?:-[a-z0-9]+){2,}$/.test(slug) || slug.length>174) throw new Error('Invalid published passenger engine slug');
+  return 'auto-'+slug;
+}
 const kinds = new Set(['manual', 'profile', 'engine']);
 const idPattern = /^[a-z0-9][a-z0-9_-]{3,179}$/;
 const validYear = (n: unknown): n is number => Number.isInteger(n) && Number(n) >= 1886 && Number(n) <= 2100;

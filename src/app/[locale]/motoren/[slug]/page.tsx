@@ -3,6 +3,7 @@ import Image from "next/image";
 import {notFound} from "next/navigation";
 import {ArrowLeft, ArrowUpRight, ChevronRight, Info, Search} from "lucide-react";
 import {CatalogHeader} from "@/components/catalog-header";
+import {CatalogEnquiryLink} from "@/components/catalog-enquiry-link";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {
@@ -15,6 +16,7 @@ import {nlModelHubByEngineSlug,nlModelHubPath} from "@/data/nl-model-family-seo"
 import {sitePath} from "@/lib/site-path";
 import {dutchBrandChiptuningHref} from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
+import {passengerEngineEnquiryId} from "@/lib/catalog-enquiry-contract";
 import {breadcrumbListJsonLd} from "@/lib/seo";
 import {nlVehiclePhotoByKey} from "@/data/nl-vehicle-editorial";
 
@@ -184,6 +186,7 @@ export default async function NlStage1MotorPage({params}:Props){
      <div className="ux-nl-engine-cta-links">
       <a href={sitePath("/nl#rdw-check")} className="ux-nl-engine-primary-link"><Search className="h-4 w-4" aria-hidden="true"/>Controleer kenteken</a>
       <a href={whatsappHref({locale:"nl",vehicleLabel:p.headline})} className="ux-nl-engine-secondary-link" rel="noreferrer" target="_blank">Vraag individueel advies<ArrowUpRight aria-hidden="true" className="h-4 w-4"/></a>
+      <CatalogEnquiryLink locale="nl" reference={{kind:"engine",id:passengerEngineEnquiryId(p.slug)}} />
       <a href={dutchBrandChiptuningHref(p.applications[0].make)} className="ux-nl-engine-underlink">Meer over chiptuning bij NoordTune.nl<ArrowUpRight aria-hidden="true" className="h-4 w-4"/></a>
      </div>
     </section>
