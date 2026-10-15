@@ -22,8 +22,8 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3141";
   assert.equal(sitemap.status(),200);
   const xml=await sitemap.text();
   const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-  assert.equal(urls.length,459,"16 brand routes added to 443 original sitemap URLs");
-  assert.equal(new Set(urls).size,459);
+  assert.equal(urls.length,462,"15 reviewed brand guides plus three new generation comparisons");
+  assert.equal(new Set(urls).size,462);
   assert.equal(urls.filter(url=>url.includes("/nl/merken")).length,16,"One index and 15 brand guides");
   assert.ok(!xml.includes("/en/merken")&&!xml.includes("/pl/merken"),"No thin translations");
   let checked=0,totalCars=0,totalVans=0,totalModels=0,totalHubs=0;
@@ -79,6 +79,6 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3141";
   await page.goto(base+"/nl/motoren",{waitUntil:"domcontentloaded"});
   assert.ok(await page.locator('a[href="/nl/merken"]').count()>=1,"Passenger engine index links brand discovery");
   assert.deepEqual(errors,[]);
-  console.log("NL_BRAND_ENGINE_BROWSER_PASS",JSON.stringify({brandPages:checked,indexPages:1,sitemapRoutes:459,passengerLinks:totalCars,vanEngineLinks:totalVans,vanModelLinks:totalModels,modelHubs:totalHubs,negativeLocale404:6,responsive:[320,390,1440],correctCanonicals:true,rdwAndSourcesGrounded:true}));
+  console.log("NL_BRAND_ENGINE_BROWSER_PASS",JSON.stringify({brandPages:checked,indexPages:1,sitemapRoutes:462,passengerLinks:totalCars,vanEngineLinks:totalVans,vanModelLinks:totalModels,modelHubs:totalHubs,negativeLocale404:6,responsive:[320,390,1440],correctCanonicals:true,rdwAndSourcesGrounded:true}));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

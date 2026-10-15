@@ -5,6 +5,8 @@ import {CatalogHeader} from "@/components/catalog-header";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {nlStage1EngineProfiles,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
+import {NlReviewedMotorFinder} from "@/components/nl-reviewed-motor-finder";
+import {nlReviewedMotorResults} from "@/data/nl-reviewed-motor-finder";
 import {nlModelFamilyHubs} from "@/data/nl-model-family-seo";
 import {nlBrandEngineIndexPath,getNlBrandGuide,nlBrandGuidePath} from "@/data/nl-brand-engine-guides";
 import {absoluteUrl} from "@/lib/site-url";
@@ -54,10 +56,12 @@ export default async function NlMotorenPage({params}:Props){
      </p>
      <div className="ux-nl-engine-index-actions">
       <a href={sitePath("/nl#rdw-check")} className="ux-nl-engine-primary-link"><Search aria-hidden="true" className="h-4 w-4"/> Controleer Nederlands kenteken</a>
+      <a href="#motor-zoeken" className="ux-nl-engine-secondary-link">Zoek op merk en bouwjaar<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
       <a href={chiptuningHref("nl")} className="ux-nl-engine-secondary-link">Chiptuning bij NoordTune.nl<ArrowUpRight aria-hidden="true" className="h-4 w-4"/></a>
      </div>
     </div>
    </section>
+   <NlReviewedMotorFinder items={nlReviewedMotorResults}/>
    <section className="container ux-nl-engine-index-list" aria-labelledby="motor-profiles-heading">
     <div className="ux-nl-engine-heading">
      <h2 id="motor-profiles-heading">{nlStage1EngineProfiles.length} afzonderlijke motortypen met bronnen</h2>

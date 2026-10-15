@@ -12,7 +12,7 @@ import {
  type ReviewedRdwApplication
 } from "@/data/nl-stage1-engine-seo";
 import {absoluteUrl} from "@/lib/site-url";
-import {nlModelHubByEngineSlug,nlModelHubPath} from "@/data/nl-model-family-seo";
+import {nlModelHubsByEngineSlug,nlModelHubPath} from "@/data/nl-model-family-seo";
 import {getNlBrandGuide,nlBrandGuidePath} from "@/data/nl-brand-engine-guides";
 import {sitePath} from "@/lib/site-path";
 import {dutchBrandChiptuningHref} from "@/lib/noordtune-links";
@@ -61,7 +61,7 @@ export default async function NlStage1MotorPage({params}:Props){
   .sort((a,b)=>Number(b.applications[0].model===p.applications[0].model)-Number(a.applications[0].model===p.applications[0].model))
   .slice(0,4);
  const photo=p.photoKey?nlVehiclePhotoByKey.get(p.photoKey):undefined;
- const modelHub=nlModelHubByEngineSlug.get(p.slug);
+ const comparisonHubs=nlModelHubsByEngineSlug.get(p.slug)??[];
  const current=absoluteUrl(nlStage1EnginePath(p.slug));
  const list=absoluteUrl("/nl/motoren");
  const bread=breadcrumbListJsonLd([
@@ -191,12 +191,12 @@ export default async function NlStage1MotorPage({params}:Props){
       <a href={dutchBrandChiptuningHref(p.applications[0].make)} className="ux-nl-engine-underlink">Meer over chiptuning bij NoordTune.nl<ArrowUpRight aria-hidden="true" className="h-4 w-4"/></a>
      </div>
     </section>
-    {modelHub?(
-      <a className="ux-nl-model-engine-crosslink" href={sitePath(nlModelHubPath(modelHub.slug))}>
-       <span>Vergelijk alle beoordeelde motorvarianten van {modelHub.brand} {modelHub.model}</span>
+    {comparisonHubs.map(hub=>(
+      <a className="ux-nl-model-engine-crosslink" data-testid="engine-model-hub-backlink" key={hub.slug} href={sitePath(nlModelHubPath(hub.slug))}>
+       <span>Vergelijk alle beoordeelde motorvarianten van {hub.brand} {hub.model}</span>
        <ChevronRight aria-hidden="true" className="h-4 w-4 shrink-0"/>
       </a>
-    ):null}
+    ))}
     {related.length>0?(
      <section className="ux-nl-engine-related" aria-labelledby="related-title">
       <h2 id="related-title">Andere motorvarianten van {p.applications[0].make}</h2>
