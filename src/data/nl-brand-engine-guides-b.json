@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-15",
+  "items": [
+    {
+      "slug": "toyota",
+      "make": "Toyota",
+      "headline": "Toyota Proace en Proace City D-4D motoren",
+      "intro": "De Toyota Proace en Proace City zijn bij NoordTune opgenomen als afzonderlijke bedrijfswagenfamilies met eigen RDW-identiteiten en Stage 1-bronnen. De naam Proace of D-4D alleen zegt niet welke dieselmotor, ECU- of emissieversie aanwezig is. In deze technische Toyota-wijzer vind je de beoordeelde 1.5- en 2.0-liter uitvoeringen, met verwijzingen naar de originele fabrieks-kW en de passende bestelwagenpagina.",
+      "difference": "Proace City is een compacte werkbus met andere uitvoeringen dan de grotere Proace. Binnen beide families bestaan 1.5 D-4D-kW-varianten, terwijl bij de grotere Proace ook gecontroleerde 2.0 D-4D-versies voorkomen. Een 2.0 D-4D 177 uit een latere emissiefase hoeft niet dezelfde ECU-software of koppelgrens te hebben als de 1.5 of een oudere 2.0. We nemen geen Peugeot- of Citroën-tuningcijfers automatisch over op Toyota.",
+      "checks": "Controleer merk en werkelijke modelvariant, RDW-type, eerste toelatingsjaar, origineel kW-vermogen en 1499 of 1997 cc. Bij de werkplaatsinspectie tellen de gemonteerde ECU, SCR/AdBlue, DPF, motorcode, servicehistorie en werkelijke EAT-automaat of handbak. Voor Proace met gereedschap, personenvervoer of aanhanger moet de koppelopbouw bovendien bij het daadwerkelijke gebruik passen.",
+      "faq": [
+        [
+          "Heeft Toyota Proace dezelfde Stage 1 als een Peugeot Expert met vergelijkbare motor?",
+          "Dat volgt niet automatisch uit gedeelde platformtechniek. Toyota-, Peugeot- en Citroën-uitvoeringen kunnen eigen typecodes, fabrieks-kW, software- en emissiefases hebben. NoordTune toont daarom alleen Toyota-specifiek beoordeelde RDW-toepassingen en bronreferenties op deze pagina."
+        ],
+        [
+          "Waarom staan Proace en Proace City apart in het overzicht?",
+          "Proace City is een andere voertuigfamilie dan de grotere Proace. De beschikbare motorvermogens, inzet, transmissies en emissievarianten verschillen; een Stage 1-vermogensindicatie van de ene mag niet uitsluitend op basis van de D-4D-naam op de andere worden toegepast."
+        ]
+      ]
+    },
+    {
+      "slug": "peugeot",
+      "make": "Peugeot",
+      "headline": "Peugeot PureTech en BlueHDi per generatie",
+      "intro": "Peugeot heeft in de NoordTune-catalogus zowel benzinepersonenauto's als dieselbedrijfswagens. Bij de 208, 2008, 308 en 3008 vergelijken we onderbouwde PureTech- of VTi-profielen; bij Partner, Expert en Boxer bestaan afzonderlijke BlueHDi-bronnen. Het brede motorenaanbod maakt een goede generatiecheck belangrijk, vooral wanneer een autobadge dezelfde cilinderinhoud toont maar de werkelijke fabrieksafstelling verandert.",
+      "difference": "Een atmosferische 1.2 VTi 82 in de eerste 2008 is technisch niet de 1.2 PureTech 130 met turbo uit de tweede generatie. De 308 II/T9 en III/F kennen eigen 1.2 PureTech-uitvoeringen van 110 of 130 pk. Bij de Expert en Boxer onderscheiden 1.5, 2.0 en 2.2 diesel verschillende bronreeksen en SCR-uitrustingen. Daarmee zijn hogere Stage 1-bereiken niet zomaar van een viercilinder op een driecilinder of andersom over te nemen.",
+      "checks": "Bij PureTech is onderzoek naar de gemonteerde EB/EP-motorrevisie, riem-in-olie of toepasselijke kettingvariant, oliehistorie, foutcodes en GPF essentieel. Voor BlueHDi controleren we RDW-kW, cc, ECU, DPF, SCR/AdBlue en de versnellingsbak; voor bestelwagens komt belasting met materiaal of aanhanger erbij. Elke Stage 1-range is een externe bronindicatie en geen persoonlijk gegarandeerd resultaat.",
+      "faq": [
+        [
+          "Kan mijn Peugeot 2008 1.2 VTi 82 dezelfde Stage 1 krijgen als een PureTech 130?",
+          "Nee. De onderzochte VTi 82 is atmosferisch en heeft geen turbo, terwijl de 130 pk PureTech een andere turbobenzineconfiguratie gebruikt. Ook eerste en tweede 2008-generaties verschillen. Alleen de motor- en RDW-gegevens van de juiste uitvoering horen bij de getoonde bronwaarden."
+        ],
+        [
+          "Geldt een BlueHDi-resultaat van een Expert automatisch ook voor een Boxer?",
+          "Nee. Hoewel beide Peugeot-bedrijfswagens diesels gebruiken, zijn voertuiggewicht, cilinderinhoud, ECU, emissiefase en transmissie vaak anders. NoordTune gebruikt aparte reviewed profielen en controleert eerst de werkelijke inzet en technische conditie van de bus."
+        ]
+      ]
+    },
+    {
+      "slug": "renault",
+      "make": "Renault",
+      "headline": "Renault TCe en dCi: Clio, Mégane en Master",
+      "intro": "Renault omvat in deze catalogus onder meer de Clio V, Mégane III/IV en werkbussen als Master, Kangoo en Trafic. Voor de benzineauto's zijn 1.0 TCe- en 1.2 TCe-uitvoeringen beoordeeld; voor bedrijfswagens zijn verschillende dCi en Blue dCi-cohorten gepubliceerd. De broncijfers zijn aan een specifieke registratie gekoppeld en mogen niet op een gelijkklinkende motor uit een andere generatie worden overgezet.",
+      "difference": "De Clio V TCe 100 en TCe 90 hebben verschillende oorspronkelijke kW en er is zelfs een afzonderlijke faceliftsoftwarefase. De oudere Mégane III 1.2 TCe 115/130 en Mégane IV 100 vormen andere voertuigcohorten. Bij de Master III bestaan oudere 2.3 dCi en latere Blue dCi-generaties, terwijl Kangoo en Trafic eigen motoren en belastingsprofielen hebben. Een gelijke modelbadge bewijst geen gelijke ECU of emissietechniek.",
+      "checks": "Verifieer per Renault de voertuigtypecode, correcte motorfamilie, originele kW en toelatingsjaren. Bij oudere 1.2 TCe verdienen olieverbruik, onderhoud en ketting bijzondere aandacht; bij een Clio kan een CVT of andere automaat de koppellimiet veranderen. Voor Master, Kangoo en Trafic toetsen we de werkelijke ECU, DPF/SCR, koppeling, koeling en lading voordat Stage 1 wordt besproken.",
+      "faq": [
+        [
+          "Waarom zijn Renault Clio TCe 90 en TCe 100 geen identieke tuning?",
+          "Ze hebben andere originele fabrieksvermogens en mogelijk andere ECU-kalibratie en transmissie. De beoordeelde Clio V-facelift is ook een eigen bouwfase. Daarom toont NoordTune afzonderlijke bronnen en vraagt eerst bevestiging van de specifieke motor en software."
+        ],
+        [
+          "Wat is het verschil tussen Master dCi en Blue dCi bij chiptuning?",
+          "Onder meer emissiefase, motormanagement en systeem voor SCR/AdBlue kunnen verschillen. De beoordeling blijft gekoppeld aan de juiste RDW-uitvoering; een overeenkomstig origineel 145 pk-cijfer is geen bewijs dat een oude en nieuwe Master dezelfde ECU- en koppellimieten hebben."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan",
+      "make": "Nissan",
+      "headline": "Nissan DIG-T en IG-T: Juke, Qashqai en Micra",
+      "intro": "De Nissan-modellen Juke, Qashqai en Micra delen soms vergelijkbare DIG-T- of IG-T-aanduidingen, maar hebben verschillende motorcodes, cilinderinhouden en automaatopties. NoordTune publiceert aparte profielen voor onder meer Qashqai J11, Juke F15/F16 en Micra K14. Deze merkwijzer helpt het geregistreerde originele vermogen en de juiste modelgeneratie te vinden voordat je onafhankelijke Stage 1-resultaten vergelijkt.",
+      "difference": "De Juke F15 1.2 DIG-T met 1197 cc is een viercilinder, terwijl de Juke F16 1.0 DIG-T van 999 cc een andere driecilinderbasis heeft. De Qashqai J11 werd geleverd met 1.2 en later 1.3 DIG-T; bij de Micra K14 bestaan 1.0 IG-T-uitvoeringen met 100 en 92 pk als afzonderlijke softwarefases. Deze naamvarianten verschillen niet alleen in afgeronde pk's maar vaak ook in aandrijflijn.",
+      "checks": "Controleer bij Nissan originele RDW-kW, model- en voertuigtype F15/F16/J11/K14, cc, werkelijke ECU en motorkode. Vooral de aanwezigheid van X-Tronic/CVT of een dubbele koppeling vraagt afzonderlijke koppelbeoordeling; de bovengrens uit een handgeschakelde tunerpublicatie is daar geen goedkeuring voor. Bekijk ook onderhoud, turbo, oliehistorie en GPF waar aanwezig.",
+      "faq": [
+        [
+          "Kan ik een Nissan Juke F15 1.2 DIG-T zoals een Juke F16 1.0 tunen?",
+          "Nee. De F15 heeft in het onderzochte profiel 1197 cc en 85 kW, terwijl de F16 999 cc en andere oorspronkelijke kW-versies heeft. Motorfamilie, ECU en eventueel de transmissie verschillen. Beide generaties staan daarom in afzonderlijke onderbouwde motorpagina's."
+        ],
+        [
+          "Is de originele 85 kW van een Nissan altijd precies 115 pk?",
+          "RDW registreert het fabrieksvermogen in kW. De metrische omzetting van 85 kW geeft afgerond 116 pk, terwijl fabrikanten dezelfde uitvoering soms als 115 pk benoemen. De exacte geregistreerde kW en motoridentiteit blijven bepalend voor het juiste profiel."
+        ]
+      ]
+    },
+    {
+      "slug": "opel",
+      "make": "Opel",
+      "headline": "Opel Corsa, Vivaro, Combo en Movano Stage 1",
+      "intro": "Bij Opel zijn zowel de Corsa F 1.2 Turbo als diverse bedrijfswagens met gecontroleerde Stage 1-bronnen vertegenwoordigd. De Vivaro B, Vivaro C, Combo en Movano B/C verschillen sterk in motorafkomst, emissieopbouw en gebruiksbelasting. Via dit overzicht vind je direct de al gepubliceerde originele RDW-specificaties en de juiste uitvoering, zonder een 1.6 CDTI, 2.0 diesel en 2.3 Movano onder één algemene Opel-range te plaatsen.",
+      "difference": "Vivaro B 1.6 CDTI en BiTurbo is technisch iets anders dan de latere Vivaro C met 2.0 diesel. Bij Movano maakt de overgang van oudere 2.3 CDTI naar nieuwe 2.2-liter techniek een groot verschil in RDW-type en ECU. De compacte Opel Combo is opnieuw een andere voertuigfamilie met eigen 1.5-diesels. De Corsa F gebruikt in het onderzochte profiel een 1.2 Turbo-benzinemotor, geen bedrijfswagendiesel.",
+      "checks": "Controleer voor Opel eerst RDW-modelnaam, typecode, geregistreerde kW, cc, toelating en brandstof. Vervolgens zijn daadwerkelijke motorcode en ECU, distributieonderhoud, turbolader, koppeling/automaat en intacte DPF/SCR/AdBlue afhankelijk van de uitvoering te controleren. Bij een werkbus moet het vermogen bovendien passen bij belading, aanhanger en lange dagelijkse ritten.",
+      "faq": [
+        [
+          "Is een Opel Vivaro B 1.6 CDTI hetzelfde als Vivaro C 2.0 diesel?",
+          "Nee. Het zijn verschillende voertuig- en motorgeneraties met andere cc, ECU en emissiefases. De 1.6 CDTI-/BiTurbo-profielen en de 2.0-dieseluitvoeringen worden daarom afzonderlijk aan hun RDW-type en fabrieks-kW gekoppeld."
+        ],
+        [
+          "Kan ik Stage 1 van een Movano B 2.3 gebruiken voor een Movano C 2.2?",
+          "Dat is niet verantwoord. De cilinderinhoud, motorfamilie en vaak ECU- en SCR-techniek verschillen. Raadpleeg de exacte bedrijfswagenmotor en laat motorcode, transmissie en belading beoordelen voordat er een vermogens- of koppelvoorstel volgt."
+        ]
+      ]
+    }
+  ]
+}

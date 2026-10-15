@@ -8,6 +8,7 @@ import {CatalogHeader} from "@/components/catalog-header";
 import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {nlVanEngines,nlVanEngineBySlug,nlVanEngineMetadata} from "@/data/nl-van-engines-seo";
+import {getNlBrandGuide,nlBrandGuidePath} from "@/data/nl-brand-engine-guides";
 import {nlVanModelBySlug,nlVanEnginePath,nlVanModelPath,type ApprovedVanApplication} from "@/data/nl-vans-seo";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
@@ -148,6 +149,7 @@ export default async function NlVanStage1Engine({params}:Props){
       <a href={dutchBusinessVansHref()} className="ux-van-model-service-link">Chiptuning als dienst<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
      </div>
     </section>
+    {getNlBrandGuide(m.make)?<a className="ux-nl-model-engine-crosslink" data-testid="van-engine-to-brand-link" href={sitePath(nlBrandGuidePath(getNlBrandGuide(m.make)!.slug))}>Bekijk andere {m.make}-motoren en bedrijfswagens<ChevronRight aria-hidden="true" className="h-4 w-4 shrink-0"/></a>:null}
     <a className="ux-nl-engine-back" href={sitePath(nlVanModelPath(m.slug))}><ArrowLeft className="h-4 w-4" aria-hidden="true"/> Terug naar {m.make} {m.model}</a>
    </div>
    <CatalogFooter locale="nl"/>

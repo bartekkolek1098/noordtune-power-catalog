@@ -28,8 +28,8 @@ const hubs=[
   }
   const xml=await (await p.request.get(base+"/sitemap.xml")).text();
   const locs=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-  assert.equal(locs.length,443);
-  assert.equal(new Set(locs).size,443);
+  assert.equal(locs.length,459);
+  assert.equal(new Set(locs).size,459);
   for(const item of cases){
    assert.ok(locs.some(url=>url.endsWith(item.path)),item.path+" is present in sitemap");
    const response=await p.goto(base+item.path,{waitUntil:"domcontentloaded",timeout:45000});
@@ -102,6 +102,6 @@ const hubs=[
   await p.goto(base+vanUrl,{waitUntil:"domcontentloaded"});
   assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=1441),"Desktop new Caddy no overflow");
   assert.deepEqual(errors,[]);
-  console.log("NL_ENGINE_FACTORY_BATCH5_BROWSER_PASS",JSON.stringify({passengerEnginePages:5,newVanEnginePages:1,newModelHubs:2,existingVanPreserved:true,newUrls:8,sitemapUrls:443,seoScopes:nlLegacyPassengerSeoScopedApplications.length,nonDutchNoindex:true,mobile:[320,390],desktop:1440,allHTTP200:true,engineEnquiryLinks:true,noFakeStageClaims:true}));
+  console.log("NL_ENGINE_FACTORY_BATCH5_BROWSER_PASS",JSON.stringify({passengerEnginePages:5,newVanEnginePages:1,newModelHubs:2,existingVanPreserved:true,newUrls:8,sitemapUrls:459,seoScopes:nlLegacyPassengerSeoScopedApplications.length,nonDutchNoindex:true,mobile:[320,390],desktop:1440,allHTTP200:true,engineEnquiryLinks:true,noFakeStageClaims:true}));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

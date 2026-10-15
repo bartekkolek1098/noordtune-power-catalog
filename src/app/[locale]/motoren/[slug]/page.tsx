@@ -13,6 +13,7 @@ import {
 } from "@/data/nl-stage1-engine-seo";
 import {absoluteUrl} from "@/lib/site-url";
 import {nlModelHubByEngineSlug,nlModelHubPath} from "@/data/nl-model-family-seo";
+import {getNlBrandGuide,nlBrandGuidePath} from "@/data/nl-brand-engine-guides";
 import {sitePath} from "@/lib/site-path";
 import {dutchBrandChiptuningHref} from "@/lib/noordtune-links";
 import {whatsappHref} from "@/lib/whatsapp";
@@ -202,6 +203,7 @@ export default async function NlStage1MotorPage({params}:Props){
       <div>{related.map(item=><a href={sitePath(nlStage1EnginePath(item.slug))} key={item.slug}>{item.headline}<ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true"/></a>)}</div>
      </section>
     ):null}
+    {getNlBrandGuide(p.applications[0].make)?<a className="ux-nl-model-engine-crosslink" data-testid="engine-to-brand-link" href={sitePath(nlBrandGuidePath(getNlBrandGuide(p.applications[0].make)!.slug))}>Vergelijk meer motoren en generaties van {getNlBrandGuide(p.applications[0].make)!.name}<ChevronRight aria-hidden="true" className="h-4 w-4 shrink-0"/></a>:null}
     <a className="ux-nl-engine-back" href={sitePath("/nl/motoren")}><ArrowLeft aria-hidden="true" className="h-4 w-4"/> Terug naar alle Stage 1-motoren</a>
    </div>
    <CatalogFooter locale="nl"/>

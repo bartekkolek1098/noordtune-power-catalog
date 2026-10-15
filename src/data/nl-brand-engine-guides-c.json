@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-15",
+  "items": [
+    {
+      "slug": "citroen",
+      "make": "Citroen",
+      "headline": "Citroën PureTech, HDi en BlueHDi motoren",
+      "intro": "De Citroën-catalogus van NoordTune bundelt beoordeelde personenautomotoren uit onder meer C3, C4 en C5 Aircross naast bedrijfswagens als Berlingo en Jumpy. De benamingen PureTech, HDi en BlueHDi verschillen in brandstof, motorfamilie, emissiehardware en oorspronkelijke fabrieksafstelling. Deze technische ingang leidt naar afzonderlijke RDW-motorprofielen; een carrosserienaam of inhoud van 1,2 of 1,5 liter is geen bewijs van een identieke softwarevariant.",
+      "difference": "Een C3 III 1.2 PureTech 110 is niet hetzelfde voertuig als een C4 III 1.2 PureTech 130 of C5 Aircross, ook wanneer de cilinderinhoud overeenkomt. De Berlingo II 1.6 HDi en Berlingo III 1.5 BlueHDi horen bij verschillende dieselmotorfamilies; een Jumpy met 2.0 BlueHDi is opnieuw anders. De gepubliceerde Stage 1-bronnen verschillen daardoor per originele kW, motorcode en RDW-type.",
+      "checks": "Bij PureTech-benzinemotoren controleren we motorgeneratie, geschikte oliespecificatie, distributieriem-in-olie of toegepaste kettingrevisie, turbosysteem en ECU-software. Voor HDi en BlueHDi onderzoeken we DPF, SCR/AdBlue, sensoren en mogelijke automatische transmissie. Bij een Berlingo of Jumpy met lading tellen koeling en koppellimieten extra mee. Stage 1 hoort bij de werkelijke motor en niet bij een willekeurige Citroën-badge.",
+      "faq": [
+        [
+          "Zijn Citroën Berlingo 1.6 HDi en 1.5 BlueHDi gelijk bij chiptuning?",
+          "Nee. Het zijn verschillende motorgeneraties met andere cilinderinhouden en vaak andere DPF/SCR- en ECU-opbouw. De motorpagina's zijn daarom gekoppeld aan hun oorspronkelijke RDW-registratie en toelatingsjaar. Een hoog koppel uit een andere generatie mag niet zonder verificatie worden overgenomen."
+        ],
+        [
+          "Kan een PureTech-probleem met olie of distributie eerst met software worden opgelost?",
+          "Nee. Bij onduidelijke oliedruk, onderhoudshistorie of distributieconditie hoort technische diagnose vóór een Stage 1-beoordeling. De exacte EB-motor- en revisiecode bepaalt welk distributiesysteem aanwezig is. Een tuningpublicatie is geen bewijs dat een auto mechanisch in orde is."
+        ]
+      ]
+    },
+    {
+      "slug": "fiat",
+      "make": "Fiat",
+      "headline": "Fiat 500 TwinAir, Doblò en Ducato Stage 1",
+      "intro": "Bij Fiat zijn in de NoordTune-catalogus zowel de compacte 500 met TwinAir-benzinemotor als zakelijke diesels van Doblò en Ducato vertegenwoordigd. De techniek is sterk uiteenlopend: een tweecilinder TwinAir vereist een heel andere beoordeling dan een 1.6 MultiJet in een werkbus of een 2.3 MultiJet in een Ducato. Het overzicht houdt daarom fabrieksregistratie, ECU-versie, motorjaar en onafhankelijke Stage 1-bronnen per exact model gescheiden.",
+      "difference": "De onderzochte Fiat 500 0.9 TwinAir levert een ander type koppel en vermogen dan Doblò 1.6 MultiJet. Bij Ducato 2.3 MultiJet 130 bestaan bovendien aparte oudere toelatingsjaren 2013–2015 en latere Euro 6-jaren 2018–2019. Ondanks overeenkomstige 96 kW kunnen software, emissiesysteem en werkelijke ECU in deze fases afwijken. Een Ducato-camper met veel belading vraagt ook een andere koppelbeoordeling dan een lichte personenauto.",
+      "checks": "Controleer bij Fiat de volledige modelgeneratie, geregistreerde cc/kW, gebruikte benzine of diesel, motorcode en ECU-firmware. Bij TwinAir tellen onderhoud, oliekwaliteit en ontsteking; bij Doblò en Ducato zijn injectie, turbo, koeling, DPF/SCR en koppeling of automaat essentieel. Zakelijk gebruik, campergewicht en lange ritten kunnen aanleiding zijn voor een conservatiever koppeladvies dan de hoogste tunerpublicatie.",
+      "faq": [
+        [
+          "Heeft Ducato 2.3 MultiJet 130 uit 2014 dezelfde tuning als eentje uit 2019?",
+          "Niet zonder meer. De oorspronkelijke kW kan gelijk zijn, maar het gaat om verschillende emissie- en ECU-fases. NoordTune houdt de oude en Euro 6-motorprofielen uit elkaar en controleert de daadwerkelijke ECU, versnellingsbak en voertuigbelasting voordat een afstelling kan worden besproken."
+        ],
+        [
+          "Is Fiat 500 TwinAir vergelijkbaar met MultiJet bij Stage 1?",
+          "Nee. TwinAir is een kleine turbobenzinemotor met twee cilinders, terwijl MultiJet een dieselsysteem is dat in andere voertuigfamilies wordt gebruikt. Fabrieksvermogen, brandstof, turbodruk, ECU en passende Stage 1-bronnen zijn daarom niet uitwisselbaar."
+        ]
+      ]
+    },
+    {
+      "slug": "iveco",
+      "make": "Iveco",
+      "headline": "Iveco Daily 2.3 en 3.0 diesel Stage 1",
+      "intro": "De Iveco Daily is bedoeld voor bedrijfsmatig werk en wordt in de NoordTune-catalogus niet als één universele 3.0-diesel behandeld. We onderscheiden goedgekeurde technische profielen met verschillende 2.3- en 3.0-liter motorvermogens en Euro-fases. Welke Daily je hebt, hangt onder meer af van de RDW-typecode, chassisuitvoering, geregistreerde kW, toelatingsjaar en werkelijke ECU. Deze overzichtspagina bundelt alle eerder gecontroleerde Daily-motoren.",
+      "difference": "Een Iveco Daily 35S16 of 35C16 kan afhankelijk van het onderzochte profiel een 2.3- of 3.0-liter diesel hebben. De 3.0-uitvoeringen met 118 kW en 132 kW zijn onderling verschillend, net als oudere Euro 6 en latere Euro 6Df-homologaties. Het cijfer 160 of 180 op een badge bewijst dus geen exacte motorcode, fabrieks-Nm of geschikte Stage 1-software. Deze pagina bevat uitsluitend reeds beschreven toepassingsgroepen.",
+      "checks": "Verifieer bij Iveco eerst het RDW-type, 2287 of 2998 cc, originele kW, echte F1A/F1C-motoridentiteit en ECU-nummer. Controleer Hi-Matic of handbak, achteras- en voertuigbelasting, koeling, DPF/SCR/AdBlue en onderhoud. Bij bedrijfswagens met opbouw of aanhanger is continue thermische belasting relevant; een gepubliceerde Nm-piek is geen gegarandeerd verantwoord werkmoment.",
+      "faq": [
+        [
+          "Betekent Iveco Daily 35C16 altijd een 3.0-liter motor?",
+          "Nee. De badge duidt niet ondubbelzinnig de cilinderinhoud aan. Binnen de bekeken technische uitvoeringen moet je werkelijk geregistreerde 2287 of 2998 cc, RDW-kW, motorcode en toelatingsjaar controleren om het juiste bronprofiel te vinden."
+        ],
+        [
+          "Is de hoogste Stage 1-koppelwaarde geschikt voor een zwaar beladen Daily?",
+          "Niet automatisch. Transmissie, koeling, belading, opbouw en onderhoud beïnvloeden welke koppelopbouw verstandig is. NoordTune gebruikt de bronwaarden voor een vergelijking en beoordeelt de echte werkbus individueel; het maximaal toegestane laad- of trekgewicht verandert niet door chiptuning."
+        ]
+      ]
+    },
+    {
+      "slug": "seat",
+      "make": "Seat",
+      "headline": "SEAT Ibiza en Leon TSI generaties vergelijken",
+      "intro": "De SEAT-catalogus van NoordTune bevat afzonderlijk beoordeelde TSI-benzinemotoren voor Ibiza en Leon. Vooral de generatiegrenzen maken verschil: Ibiza 6J-facelift en KJ hebben andere elektronica en originele kW, terwijl Leon II 1P met 1.4 TSI en Leon III 5F met 1.0 EcoTSI heel verschillende motorfamilies zijn. Kies via deze technische merkpagina de juiste modelreeks voordat je gepubliceerde Stage 1-cijfers bekijkt.",
+      "difference": "Bij de Ibiza is de 1.0 TSI 95 uit een oudere 6J-facelift niet automatisch gelijk aan de KJ 95, en de KJ 115 heeft een andere fabrieksafstelling. De Leon 1P 1.4 TSI 125 gebruikt 1390 cc en 92 kW, terwijl de Leon 5F 1.0 EcoTSI uit het onderzochte cohort 999 cc en 85 kW heeft. Dezelfde TSI-benaming betekent niet dat motorcode, distributie, ECU of DSG-koppelgrens gelijk zijn.",
+      "checks": "Controleer het RDW-type 1P/5F voor Leon of 6J/KJ voor Ibiza, originele kW, cc en aantal cilinders. Identificeer daarna de werkelijke EA111/EA211-motorcode, ontsteking, motorsoftware en brandstofkwaliteit. De oudere kettinghistorie verdient aandacht, evenals eventuele DSG DQ200 met droge koppelingen; een extern gepubliceerd maximumkoppel is geen vrijgave voor elke transmissie.",
+      "faq": [
+        [
+          "Zijn SEAT Ibiza 6J en KJ allebei dezelfde 1.0 TSI?",
+          "Nee. Zelfs bij het overeenkomstige marketingvermogen van 95 pk kunnen modelgeneratie, ECU en bouwfase verschillen. De 115 pk KJ heeft bovendien een andere geregistreerde kW-waarde. De NoordTune-profielen koppelen daarom de bronindicatie aan de specifieke RDW-versie."
+        ],
+        [
+          "Waarom wijken SEAT Leon 1P en 5F Stage 1-cijfers van elkaar af?",
+          "De Leon II 1P 1.4 TSI en Leon III 5F 1.0 EcoTSI hebben verschillende cilinderinhoud, motorconstructie en software. De ouderdom, distributietechniek, transmissie en werkelijke ECU moeten afzonderlijk worden bekeken; een overeenkomstig merklogo is daarvoor niet voldoende."
+        ]
+      ]
+    },
+    {
+      "slug": "skoda",
+      "make": "Skoda",
+      "headline": "Škoda Octavia 1Z en 5E 1.4 TSI motoren",
+      "intro": "Voor Škoda heeft NoordTune afzonderlijk beoordeelde profielen van de Octavia II 1Z en Octavia III 5E met 1.4 TSI. De oude 122 pk- en latere 140 pk-versie worden niet samengevoegd tot één tuningadvies, omdat motorfamilie, RDW-vermogens en elektronica verschillen. Deze technische merkpagina biedt een overzicht van de bestaande Octavia-motorpagina's en hun generatievergelijking, inclusief onafhankelijke Stage 1-bronnen.",
+      "difference": "De Octavia II 1Z uit de onderzochte faceliftfase heeft 1390 cc, 90 kW en een EA111/CAXA-gerelateerde motor. De Octavia III 5E pre-facelift heeft 1395 cc, 103 kW en de nieuwere EA211/CHPA-context. Daardoor kunnen distributie, turbolader, ECU en koppelbeheer verschillen. De latere 150 pk- en aardgas-G-TEC-uitvoeringen zijn niet in deze twee gecontroleerde benzineprofielen opgenomen.",
+      "checks": "Verifieer eerst de RDW-typecode 1Z of 5E, oorspronkelijke 90 of 103 kW, 1390 of 1395 cc, brandstof en toelatingsjaar. Beoordeel vervolgens CAXA/CHPA-motorcode, onderhoud aan distributie, turbo, koel- en ontstekingssysteem en DSG/handbak. Gepubliceerde Stage 1-ranges zijn een uitgangspunt voor advies, maar geen bewijs dat de aanwezige ECU of koppeling geschikt is voor de hoogste Nm-waarde.",
+      "faq": [
+        [
+          "Is Škoda Octavia 1Z 1.4 TSI 122 identiek aan Octavia 5E 1.4 TSI 140?",
+          "Nee. Het zijn verschillende motorgeneraties met andere oorspronkelijke RDW-kW en cilinderinhouden. De oude EA111 en de latere EA211 hebben bovendien een andere software- en distributiecontext. Hun Stage 1-referenties zijn daarom afzonderlijk gepubliceerd."
+        ],
+        [
+          "Kan ik een Octavia 5E 1.4 TSI 150 vergelijken met de 140 pk-pagina?",
+          "Je kunt de technische generatie als oriëntatie gebruiken, maar niet het Stage 1-getal overnemen. Het beoordeelde 5E-profiel heeft origineel 103 kW; een latere 150 pk-configuratie is een andere oorspronkelijke afstelling. Eerst de daadwerkelijke motor en ECU identificeren."
+        ]
+      ]
+    }
+  ]
+}

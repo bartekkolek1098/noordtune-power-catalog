@@ -6,6 +6,7 @@ import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {VanDirectory,type VanDirectoryItem} from "@/components/van-directory";
 import {nlVanModels,nlVanPending,nlVanModelPath} from "@/data/nl-vans-seo";
+import {nlBrandEngineIndexPath} from "@/data/nl-brand-engine-guides";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
 import {dutchBusinessVansHref,mainLocaleHref} from "@/lib/noordtune-links";
@@ -83,6 +84,7 @@ export default async function NlBusinessVanDirectory({params}:Props){
     <p>Zoek hieronder je bedrijfswagen of filter op formaat. Bij modellen met gecontroleerde bronnen staan
       de technische kW-varianten apart. Voor overige modellen ga je door naar de kentekencheck of de handmatige selectie.</p>
     <VanDirectory items={items}/>
+    <p className="mt-6 text-sm text-white/70">Ook personenauto&apos;s vergelijken? <a className="font-semibold text-primary underline underline-offset-4" href={sitePath(nlBrandEngineIndexPath)}>Bekijk de motoren per merk</a>.</p>
    </section>
    <section className="ux-vans-business" aria-labelledby="van-business-heading">
     <div className="container ux-vans-business-layout">
