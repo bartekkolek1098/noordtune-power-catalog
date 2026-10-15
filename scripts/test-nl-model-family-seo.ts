@@ -2,13 +2,13 @@ import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 import {nlStage1EngineProfiles} from "../src/data/nl-stage1-engine-seo.ts";
 import {
- nlModelFamilyHubs,nlModelHubBySlug,nlModelHubByEngineSlug,
+ nlModelFamilyHubs,nlModelHubBySlug,nlModelHubByEngineSlug,nlModelHubsByEngineSlug,
  nlModelHubPath,nlModelHubMetadata,nlModelEnginesTotal
 } from "../src/data/nl-model-family-seo.ts";
 
-assert.equal(nlModelFamilyHubs.length,21,"Preserve 19 prior hubs plus two researched generation comparisons");
-assert.equal(nlModelHubBySlug.size,21);
-assert.equal(nlModelEnginesTotal(),52,"Precisely 52 source-backed engines belong to reviewed model comparisons");
+assert.equal(nlModelFamilyHubs.length,24,"21 prior editorial model hubs plus 3 researched cross-generation comparisons");
+assert.equal(nlModelHubBySlug.size,24);
+assert.equal(nlModelEnginesTotal(),56,"Precisely 56 distinct reviewed engines now appear in model comparisons");
 const slugs=new Set<string>(),titles=new Set<string>(),descriptions=new Set<string>();
 const linked=new Set<string>();
 for(const m of nlModelFamilyHubs){
@@ -31,12 +31,12 @@ for(const m of nlModelFamilyHubs){
   assert.ok(nlStage1EngineProfiles.includes(engine),"Only reviewed published motor topics in hubs");
   assert.equal(engine.applications[0].make,m.brand);
   assert.ok(engine.sources.length>=2&&engine.sources.every(s=>s.url?.startsWith("https://")));
-  assert.equal(nlModelHubByEngineSlug.get(engine.slug),m,"Reverse engine→model link");
-  assert.ok(!linked.has(engine.slug),"Each motor in exactly one primary model family");
+  assert.ok(nlModelHubsByEngineSlug.get(engine.slug)?.includes(m),"All reviewed comparisons link back to the same motor");
+  assert.ok(nlModelHubByEngineSlug.has(engine.slug),"Every compared engine retains a primary model family");
   linked.add(engine.slug);
  }
 }
-assert.equal(linked.size,52);
+assert.equal(linked.size,56);
 const homepage=readFileSync("src/app/[locale]/page.tsx","utf8");
 const engineIndex=readFileSync("src/app/[locale]/motoren/page.tsx","utf8");
 const engineDetail=readFileSync("src/app/[locale]/motoren/[slug]/page.tsx","utf8");
@@ -45,11 +45,11 @@ const modelDetail=readFileSync("src/app/[locale]/modellen/[slug]/page.tsx","utf8
 const sitemap=readFileSync("src/app/sitemap.ts","utf8");
 assert.ok(homepage.includes('sitePath("/nl/modellen")'),"Homepage links model category");
 assert.ok(engineIndex.includes('sitePath("/nl/modellen")'),"Engine index links models");
-assert.ok(engineDetail.includes("nlModelHubByEngineSlug.get(p.slug)"),"Engine detail has contextual backlink");
+assert.ok(engineDetail.includes("nlModelHubsByEngineSlug.get(p.slug)"),"Engine detail links to every relevant model comparison");
 assert.ok(modelsPage.includes('dynamicParams=false')&&modelDetail.includes('dynamicParams=false'));
 assert.ok(modelsPage.includes('locale!=="nl"')&&modelDetail.includes('locale!=="nl"'),"No thin translations yet");
 assert.ok(modelDetail.includes("ItemList"),"Model page has actual engine navigation");
 assert.ok(!modelDetail.includes('"@type":"Offer"'),"No invented service offers");
 assert.ok(modelDetail.includes("geen NoordTune-meting"),"Averred published performance should not be claims of NoordTune dyno readings");
 assert.ok(sitemap.includes("...nlModelPages"),"NL model pages belong in sitemap");
-console.log("NL_MODEL_HUB_SEO_PASS",JSON.stringify({nlModelHubs:nlModelFamilyHubs.length,distinctEngines:linked.size,originalFaqs:nlModelFamilyHubs.reduce((n,m)=>n+m.faq.length,0),originalSitemapRoutes:435,newRoutes:8,totalRoutes:443,duplicates:0,onlyNl:true}));
+console.log("NL_MODEL_HUB_SEO_PASS",JSON.stringify({nlModelHubs:nlModelFamilyHubs.length,distinctEngines:linked.size,originalFaqs:nlModelFamilyHubs.reduce((n,m)=>n+m.faq.length,0),originalSitemapRoutes:459,newRoutes:3,totalRoutes:462,duplicates:0,onlyNl:true}));

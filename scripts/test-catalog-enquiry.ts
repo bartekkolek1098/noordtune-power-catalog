@@ -62,7 +62,7 @@ test('every indexed Dutch passenger engine has a prefilled contact with verified
     assert.equal(url.search,'');
     assert.deepEqual(parseCatalogEnquiryHash(url.hash),reference);
   }
-  assert.equal(nlModelFamilyHubs.length,21);
+  assert.equal(nlModelFamilyHubs.length,24);
   for(const hub of nlModelFamilyHubs){
     for(const engine of hub.engines){
       const ref={kind:'engine' as const,id:passengerEngineEnquiryId(engine.slug)};

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16",
+  "items": [
+    {
+      "slug": "bmw-320i-f30-g20",
+      "brand": "BMW",
+      "model": "320i F30/F31 en G20/G21",
+      "headline": "BMW 320i F30 of G20 Stage 1: N20 en B48 vergelijken",
+      "engineSlugs": [
+        "bmw-320i-f30-n20-184",
+        "bmw-320i-f30-b48-184",
+        "bmw-320i-g20-g21-b48-184"
+      ],
+      "intro": "Een BMW 320i met origineel 184 pk kan uit verschillende technische generaties komen. Rond de facelift van de F30/F31 stapte BMW over van de N20 naar de B48, en daarna verscheen de G20/G21 met een verdere B48- en ECU-ontwikkeling. Een algemene zoekopdracht 'BMW 320i chiptuning' vertelt daarom niet welk bronbereik relevant is. Hier vergelijken we alleen drie werkelijk gecontroleerde NL Stage 1-profielen, inclusief hun geregistreerde RDW-kW, cilinderinhoud en toelatingsscope.",
+      "difference": "De onderzochte F30/F31 N20 heeft RDW 135 kW en 1997 cc, tegenover de F30/F31 B48 met eveneens 135 kW maar 1998 cc. De BMW G20/G21 B48 heeft in onze bronnen opnieuw 135 kW en 1998 cc, maar andere RDW-typecodes G3L/G3K en een latere ECU-fase. Voor de F30 komen typecodes 3K/3L voor. De gelijke verkoopnaam 320i en fabrieks-kW betekenen niet dat een N20-tuningbestand of koppelmaximum geschikt is voor een B48, of dat F30- en G20-software onderling uitwisselbaar zijn.",
+      "checks": "Bevestig bij de F30 eerst N20 tegenover B48 met de echte motorcode, 1997 tegenover 1998 cc en geregistreerde 135 kW. Bij G20/G21 zijn RDW-typecode G3L/G3K, softwareversie en mogelijk beschermde ECU-firmware bepalend. Controleer brandstof RON, koeling, onderhoud en de exacte ZF-automaat of handbak voordat een vermogenswinst wordt besproken. De onafhankelijke Stage 1-ranges zijn geen meting van jouw BMW en garanderen geen beschikbaar ECU-unlock.",
+      "faq": [
+        [
+          "Waarom levert een BMW 320i N20 soms een ander Stage 1-resultaat dan een 320i B48?",
+          "De F30 N20 en B48 hebben andere motor- en ECU-families, ondanks hetzelfde originele RDW-vermogen van 135 kW. De tunerpublicaties gebruiken verschillende software- en hardwareconfiguraties. NoordTune neemt daarom geen Nm- of pk-waarde van de ene generatie over op de andere zonder het daadwerkelijke motorblok te identificeren."
+        ],
+        [
+          "Kan een BMW 320i G20 met B48 dezelfde software krijgen als een oudere F30 B48?",
+          "Nee, dat kan niet op basis van alleen de motorfamilie worden aangenomen. De G20/G21 gebruikt een latere voertuig- en softwaregeneratie, met andere RDW-typecodes en mogelijk andere ECU-beveiliging. Lees de ECU-versie en transmissie uit voordat de bronschatting van het juiste profiel wordt besproken."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen-golf-6-7",
+      "brand": "Volkswagen",
+      "model": "Golf VI en Golf VII TSI/GTI",
+      "headline": "Volkswagen Golf 6 of 7 Stage 1: TSI en GTI motoren vergelijken",
+      "engineSlugs": [
+        "volkswagen-golf-6-14-tsi-122",
+        "volkswagen-golf-7-12-tsi-105",
+        "volkswagen-golf-7-10-tsi-110",
+        "volkswagen-golf-7-gti-performance-245"
+      ],
+      "intro": "Onder de naam Volkswagen Golf worden zeer verschillende turbobenzinemotoren verkocht. Zelfs binnen de onderzochte Golf VI en Golf VII bestaan een oudere 1.4 TSI 122, een 1.2 TSI 105, een latere 1.0 TSI 110 en de GTI Performance 245. Deze overzichtspagina vergelijkt de exacte fabrieksspecificaties, generaties en reeds gecontroleerde Stage 1-bronnen. Zo kan iemand die een Golf op kenteken of motorbadge zoekt vermijden dat het vermogen van een GTI, een 1.2 TSI en een oudere 1.4 TSI door elkaar wordt gehaald.",
+      "difference": "De Golf VI 1.4 TSI heeft in de geselecteerde RDW-uitvoering type 1K, 1390 cc en origineel 90 kW. De Golf VII 1.2 TSI type AU heeft 1197 cc en 77 kW; bij de onderzochte driecilinder 1.0 TSI zijn dat 999 cc en 81 kW. De GTI Performance Golf VII facelift gebruikt een EA888 2.0 TSI met 1984 cc en 180 kW. Hetzelfde woord TSI duidt dus vier andere turbo-, cilinder- en ECU-configuraties aan. De getoonde ranges zijn uitsluitend de al apart gepubliceerde externe Stage 1-waarden.",
+      "checks": "Voor een Golf VI is de 1K-typecode met 1390 cc en 90 kW het uitgangspunt; inspecteer de toepasselijke EA111-distributiehistorie, ECU en aanwezige DSG. Bij Golf VII type AU controleer je of de auto werkelijk een 1.2 of 1.0 EA211 heeft, inclusief fabriek-kW, turbo en DSG DQ200-koppellimiet. Voor GTI Performance zijn EA888-, brandstof-, thermische en zwaardere DSG-factoren relevant. Een hogere tunerpublicatie uit een GTI geldt nooit als indicatie voor een normale Golf.",
+      "faq": [
+        [
+          "Kan ik de 1.4 TSI uit een Golf 6 vergelijken met een 1.2 of 1.0 TSI uit een Golf 7?",
+          "Ja, als technische oriëntatie via de afzonderlijke motorprofielen, maar niet door hun Stage 1-bestanden of eindwaarden uit te wisselen. Golf VI 1K en Golf VII AU zijn andere bouwfases met andere cilinderinhoud, oorspronkelijke kW, ECU en mogelijk DSG-beperkingen. De bronvergelijkingen blijven per exacte motor gescheiden."
+        ],
+        [
+          "Valt een Golf 7 GTI Performance 245 onder dezelfde chiptuning als een 1.0 TSI 110?",
+          "Nee. De GTI Performance in onze gecontroleerde gegevens heeft een 2.0 TSI van 180 kW, tegenover de 1.0 TSI met 999 cc en 81 kW. Het zijn verschillende motorfamilies, aandrijflijnen en koppelbelastingen. Een tuningwaarde van een GTI is geen belofte voor een gewone Golf VII."
+        ]
+      ]
+    },
+    {
+      "slug": "nissan-juke-f15-f16",
+      "brand": "Nissan",
+      "model": "Juke I F15 en II F16",
+      "headline": "Nissan Juke F15 of F16 Stage 1: 1.2 DIG-T en 1.0 DIG-T",
+      "engineSlugs": [
+        "nissan-juke-f15-12-dig-t-115",
+        "nissan-juke-f16-10-dig-t-117",
+        "nissan-juke-f16-10-dig-t-114"
+      ],
+      "intro": "Een Nissan Juke met DIG-T-badge kan een viercilinder 1.2 uit de F15-generatie of een veel nieuwere driecilinder 1.0 uit de F16-generatie zijn. Binnen de F16 zijn bovendien de uitvoeringen met 117 en 114 pk niet simpelweg identieke RDW-registraties. Dit modeloverzicht vergelijkt drie onafhankelijk beoordeelde motorgroepen, met hun originele kW, typecodes en bronvermelde Stage 1-ranges. Het doel is de correcte motor te vinden voordat de klant contact opneemt voor een individuele beoordeling.",
+      "difference": "De Nissan Juke F15 1.2 DIG-T uit 2014–2019 gebruikt volgens de geselecteerde RDW-identiteit 1197 cc en 85 kW, omgerekend circa 116 metrische pk bij een commerciële badge van 115. De vroege F16 1.0 DIG-T 117 heeft 999 cc en 86 kW in het gecontroleerde cohort 2020, terwijl de latere F16 DIG-T 114 dezelfde 999 cc heeft maar 84 kW in 2021–2024. Daardoor verschillen minstens motorfamilie, ECU-fase en oorspronkelijke afstelling. De Juke Hybrid hoort nadrukkelijk niet bij deze drie benzineprofielen.",
+      "checks": "Controleer bij een Nissan Juke eerst RDW-type F15 of F16, originele 85/86/84 kW, 1197 of 999 cc, datum eerste toelating en de juiste motorcode. Bij F15 kunnen ketting-/oliehistorie en de daadwerkelijke ECU belangrijk zijn. Voor de F16 controleren we de 1.0 DIG-T ECU en de softwarefase; een DCT of andere automaat vereist een eigen koppellimiet. Externe tunerbronnen geven een indicatie, geen bevestiging dat een CVT of handbak iedere gepubliceerde Nm aankan.",
+      "faq": [
+        [
+          "Is Nissan Juke 1.2 DIG-T 115 hetzelfde als 1.0 DIG-T 117?",
+          "Nee. De Juke F15 1.2 DIG-T is een 1197 cc viercilinder met 85 kW origineel, terwijl de eerste F16 1.0 DIG-T een 999 cc driecilinder met 86 kW is. De motorcode, ECU, cilinderconstructie en mogelijke automaat verschillen. De Stage 1-resultaten zijn daarom niet uitwisselbaar."
+        ],
+        [
+          "Waarom staan Nissan Juke F16 114 en 117 pk apart op deze pagina?",
+          "De geselecteerde F16 117 heeft RDW 86 kW voor de vroegere 2020-bouwfase, terwijl de F16 114 met 84 kW in latere toelatingsjaren is gecontroleerd. Zelfs met dezelfde 999 cc zijn softwarefase en transmissie te bevestigen; NoordTune toont de externe tuningindicaties afzonderlijk per fabrieksversie."
+        ]
+      ]
+    }
+  ]
+}

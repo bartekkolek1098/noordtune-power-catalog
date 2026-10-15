@@ -84,6 +84,7 @@ export default async function NlBusinessVanDirectory({params}:Props){
     <p>Zoek hieronder je bedrijfswagen of filter op formaat. Bij modellen met gecontroleerde bronnen staan
       de technische kW-varianten apart. Voor overige modellen ga je door naar de kentekencheck of de handmatige selectie.</p>
     <VanDirectory items={items}/>
+    <p className="mt-6 text-sm text-white/70">Weet je al welke motor en welk jaar je zoekt? <a className="font-semibold text-primary underline underline-offset-4" href={sitePath("/nl/motoren#motor-zoeken")}>Zoek in alle beoordeelde busmotoren op bouwjaar en RDW-kW</a>.</p>
     <p className="mt-6 text-sm text-white/70">Ook personenauto&apos;s vergelijken? <a className="font-semibold text-primary underline underline-offset-4" href={sitePath(nlBrandEngineIndexPath)}>Bekijk de motoren per merk</a>.</p>
    </section>
    <section className="ux-vans-business" aria-labelledby="van-business-heading">
