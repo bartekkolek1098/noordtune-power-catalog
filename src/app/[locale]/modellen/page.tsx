@@ -6,6 +6,7 @@ import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {nlModelFamilyHubs,nlModelHubPath} from "@/data/nl-model-family-seo";
 import {nlStage1EngineProfiles} from "@/data/nl-stage1-engine-seo";
+import {nlBrandEngineIndexPath} from "@/data/nl-brand-engine-guides";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
 import {chiptuningHref} from "@/lib/noordtune-links";
@@ -88,6 +89,7 @@ export default async function NlModelListPage({params}:Props){
       Je kunt in de gewone catalogus ook zonder aparte modelpagina zoeken op kenteken of op merk, model, jaar en motor.</p>
     <div><a href={sitePath("/nl#manual-selector")}>Handmatig zoeken<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
      <a href={chiptuningHref("nl")}>Chiptuning bij NoordTune.nl<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
+     <a href={sitePath(nlBrandEngineIndexPath)}>Stage 1-motoren per automerk<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>
      <a href={sitePath("/nl/bedrijfswagens")}>Bekijk bedrijfswagens<ChevronRight className="h-4 w-4" aria-hidden="true"/></a></div>
    </section>
    <CatalogFooter locale="nl"/>

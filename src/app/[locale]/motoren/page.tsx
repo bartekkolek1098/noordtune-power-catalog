@@ -6,6 +6,7 @@ import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {nlStage1EngineProfiles,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
 import {nlModelFamilyHubs} from "@/data/nl-model-family-seo";
+import {nlBrandEngineIndexPath,getNlBrandGuide,nlBrandGuidePath} from "@/data/nl-brand-engine-guides";
 import {absoluteUrl} from "@/lib/site-url";
 import {chiptuningHref} from "@/lib/noordtune-links";
 import {sitePath} from "@/lib/site-path";
@@ -68,6 +69,7 @@ export default async function NlMotorenPage({params}:Props){
       return (
         <div className="ux-nl-engine-make" key={make}>
          <h3>{readableMake(make)}<span>{profiles.length} motorprofielen</span></h3>
+         {getNlBrandGuide(make)?<a className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-primary underline underline-offset-4" href={sitePath(nlBrandGuidePath(getNlBrandGuide(make)!.slug))}>Alle onderzochte {readableMake(make)}-motoren en generaties<ChevronRight className="h-4 w-4" aria-hidden="true"/></a>:null}
          <div className="ux-nl-engine-make-grid">
           {profiles.map(p=>{
             const application=p.applications[0];
@@ -91,6 +93,7 @@ export default async function NlMotorenPage({params}:Props){
      Daarom voegen we overeenkomstige bronvarianten samen en publiceren we alleen motorprofielen die
      voldoende onderscheidende informatie bevatten. Stage 2 en Stage 3 krijgen hier geen automatische vermogensbelofte.</p>
     <div className="ux-nl-model-crosslinks">
+      <a href={sitePath(nlBrandEngineIndexPath)}>Vind je motor per automerk<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
       <a href={sitePath("/nl/modellen")}>Vergelijk {nlModelFamilyHubs.length} automodellen<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
       <a href={sitePath("/nl/bedrijfswagens")}>Bekijk bedrijfswagens en bussen<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>
       <a href={sitePath("/nl#manual-selector")}>Zoek jouw merk, bouwjaar en motor<ChevronRight aria-hidden="true" className="h-4 w-4"/></a>

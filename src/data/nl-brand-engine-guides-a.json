@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-15",
+  "items": [
+    {
+      "slug": "bmw",
+      "make": "BMW",
+      "headline": "BMW motoren en generaties voor Stage 1 vergelijken",
+      "intro": "Bij BMW bepaalt de typeaanduiding op de achterklep niet welke motor of ECU in de auto zit. NoordTune heeft afzonderlijk gecontroleerde Stage 1-bronnen voor BMW 320i-uitvoeringen uit de F30/F31- en G20/G21-generaties. Kies de 320i niet op basis van alleen '184 pk': in verschillende bouwfases kunnen N20 en B48 onder vrijwel dezelfde modelnaam zijn geleverd. In de motorprofielen vind je de originele RDW-specificatie, toelatingsscope en gepubliceerde Stage 1-indicaties.",
+      "difference": "De oudere BMW 320i F30/F31 komt in het onderzochte materiaal voor met een N20 van 1997 cc en met een B48 van 1998 cc. De G20/G21 320i heeft opnieuw een B48-context, maar een latere software- en voertuiggeneratie. Gelijke 135 kW betekent daarom niet dat een N20-, F30 B48- of G20 B48-bestand onderling kan worden gewisseld. De BMW 320d B47 en andere diesels horen bij andere bronnen en ECU-systemen.",
+      "checks": "Controleer eerst de exacte carrosseriegeneratie, motorcode N20 of B48, RDW-kW, motorinhoud en eerste toelating. Daarna zijn ECU-versie, brandstofkwaliteit, koeling, onderhoud en de werkelijke ZF-automaat of handgeschakelde transmissie relevant. Een externe vermogensrange is geen NoordTune-dynometing en zegt niets definitiefs over jouw ECU-toegang. Voor de werkplaatsbeoordeling telt de actuele staat meer dan alleen de modelbadge.",
+      "faq": [
+        [
+          "Is elke BMW 320i met 184 pk geschikt voor dezelfde Stage 1?",
+          "Nee. Er zijn in de gecontroleerde profielen verschillende N20- en B48-generaties, ook met een vergelijkbaar fabrieksvermogen. Het voertuigtype, de werkelijke motorcode en ECU-software moeten overeenkomen met het gekozen profiel. Voor de G20 geldt bovendien een andere bouwfase dan de F30."
+        ],
+        [
+          "Waarom toont het catalogusoverzicht niet automatisch één getal voor mijn BMW?",
+          "Bronaanbieders publiceren niet identieke vermogens- en koppelwaarden, en RDW bevestigt geen volledig ECU- of transmissienummer. NoordTune laat daarom het onderbouwde bereik zien en vraagt eerst een individuele controle voordat er een concreet voorstel kan worden gedaan."
+        ]
+      ]
+    },
+    {
+      "slug": "audi",
+      "make": "Audi",
+      "headline": "Audi TFSI motorgeneraties en Stage 1-bronnen",
+      "intro": "Voor Audi bestaan in de NoordTune-catalogus afzonderlijke motorpagina's voor de A1 8X, A3 8P en Q3 8U. Dat zijn geen uitwisselbare TFSI's. De A1 is al binnen één generatie leverbaar geweest met 1.0, 1.2 en 1.4 liter turbo; bij de A3 8P speelt een oudere motorfamilie en bij de Q3 8U een sterkere 2.0 TFSI. Via dit overzicht kies je eerst de juiste voertuigfamilie en daarna de gecontroleerde originele RDW-kW.",
+      "difference": "Een Audi A1 8X 1.0 TFSI heeft een driecilinder, terwijl de oudere 1.2 en 1.4 TFSI andere viercilinders en ECU-fases hebben. De A3 8P 1.4 TFSI 125 kan niet aan de modernere A1-data worden gelijkgesteld. De Q3 8U 2.0 TFSI heeft weer een andere turbo-, koel- en aandrijflijncontext. Alleen de modelnaam of algemene TFSI-techniek is dus onvoldoende om Stage 1-vermogenscijfers over te nemen.",
+      "checks": "Bij elke Audi controleren we RDW-type, fabrieks-kW en cc, maar ook daadwerkelijke EA111/EA211/EA888-motorcode en ECU-identificatie. Voor oudere kettingaangedreven motoren zijn de onderhoudshistorie en een rustige koude start belangrijk; voor S tronic, DSG of quattro-uitvoeringen beoordelen we koppelopbouw en transmissie apart. Alleen gewone Stage 1 op een passende configuratie komt in deze bronvergelijking terecht.",
+      "faq": [
+        [
+          "Kan ik de Audi A1 1.4 TFSI-cijfers gebruiken voor een A3 met 1.4 TFSI?",
+          "Nee. De A1 8X en A3 8P behoren tot andere generatie- en ECU-contexten. Zelfs bij eenzelfde cilinderinhoud of TFSI-aanduiding moet het geregistreerde fabrieksvermogen, de motorcode en de werkelijke softwareversie voor de gekozen bron overeenkomen."
+        ],
+        [
+          "Wat is belangrijker voor Audi chiptuning: bouwjaar of motorcode?",
+          "Beide zijn nodig, maar geen van beide afzonderlijk is voldoende. RDW bevestigt onder meer jaar, type, cc en kW; de werkplaats leest daarnaast motorcode, ECU-software en transmissie uit. Pas die combinatie bepaalt of de gepubliceerde Stage 1-indicatie relevant is."
+        ]
+      ]
+    },
+    {
+      "slug": "volkswagen",
+      "make": "Volkswagen",
+      "headline": "Volkswagen TSI en TDI per generatie — Stage 1",
+      "intro": "Volkswagen heeft een brede Stage 1-dekking in de NoordTune-catalogus: personenauto's als Golf, Polo, Tiguan en T-Roc naast zakelijke modellen als Transporter, Crafter en Caddy. Juist binnen dit merk komen dezelfde motorlabels in heel verschillende generaties voor. Deze technische merkwijzer groepeert uitsluitend reeds beoordeelde motorprofielen en bestelwagens, met links naar oorspronkelijke RDW-specificaties en afzonderlijke tuningpublicaties.",
+      "difference": "Bij de Golf verschillen een oudere 1.4 TSI, Golf VII 1.0 TSI en GTI Performance 2.0 TSI aanzienlijk. De Polo 6R 1.2 TSI is niet de Polo AW 1.0 TSI. Caddy 2KN en Caddy V SKN hebben andere elektronica, en bij de Transporter zijn T5, T6 en T6.1 niet één dieselmotor. Ook een T-Roc R 2.0 TSI heeft andere hardware dan een gewone 1.5 TSI. Het overzicht houdt die verschillen zichtbaar.",
+      "checks": "Controleer per Volkswagen eerst de RDW-typecode, geregistreerde kW, motorinhoud, brandstof en toegangsjaar. Vervolgens moeten ECU, turbogeneratie, onderhoud, koelcapaciteit, eventuele GPF/DPF en de precieze DSG of handbak worden onderzocht. Voor een zakelijke Transporter of Crafter beoordelen we ook aanhangergebruik en belading. Gepubliceerde hoogste Nm-waarden zijn geen vrijgave voor iedere DQ200, DQ500 of handmatige koppeling.",
+      "faq": [
+        [
+          "Zijn Volkswagen Caddy 2KN en Caddy V met 2.0 TDI dezelfde tuningauto?",
+          "Nee. De oudere 2KN-generatie en de latere SKN gebruiken andere software- en voertuiggeneraties. Zelfs als cilinderinhoud en marketingvermogen overeenkomen, verifiëren we RDW-kW, motorcode, ECU en transmissie afzonderlijk. De motorpagina's zijn bewust per toepassingsscope gescheiden."
+        ],
+        [
+          "Waarom staan Transit-achtige werkbussen en Golf GTI niet in één Stage 1-tabel?",
+          "Een bestelwagen met langdurige belasting heeft een ander gebruiks- en koelingsprofiel dan een GTI. Bovendien zijn de motorfamilies en koppelgrenzen anders. NoordTune toont daarom bij elk type eigen bronwaarden in plaats van één algemene Volkswagen-vermogensbelofte."
+        ]
+      ]
+    },
+    {
+      "slug": "mercedes",
+      "make": "Mercedes-Benz",
+      "headline": "Mercedes Sprinter en Vito CDI: motor en ECU",
+      "intro": "Bij Mercedes-Benz behandelt het gecontroleerde NoordTune-aanbod in deze catalogus vooral zakelijke dieseluitvoeringen van Sprinter en Vito. De badge 114, 116, 119, 313, 315 of 317 CDI zegt op zichzelf weinig over de daadwerkelijke motor- en emissiegeneratie. Deze merkpagina helpt de Sprinter- en Vito-profielen te vinden, gesorteerd naar de bestaande voertuigmodellen en hun exact beoordeelde motoruitvoeringen.",
+      "difference": "In de oudere Sprinter W906 komen onder meer 2.1 CDI/OM651-gerelateerde 2143 cc-uitvoeringen voor. Andere gecontroleerde Sprinter-profielen hebben een 1950 cc-diesel en een andere ECU-fase, ook als een RDW-typecode ogenschijnlijk overeenkomt. Bij de Vito maken 114/116/119 CDI en de overgang naar Euro 6e in latere toelatingsjaren een afzonderlijke technische beoordeling noodzakelijk. We nemen daarom geen koppel van de ene CDI-badge over naar de andere.",
+      "checks": "Voor iedere Mercedes-bedrijfswagen verifiëren we geregistreerde kW, cc, datum eerste toelating, chassis- en motorcode, werkelijk ingelezen ECU en transmissie. Daarna beoordelen we DPF/SCR/AdBlue, onderhoud, motortemperaturen en zakelijk gebruik met gewicht of aanhanger. Een hogere tunerpublicatie is geen garantie dat de automaat of koppeling van een individuele Sprinter dezelfde belasting verantwoord verwerkt.",
+      "faq": [
+        [
+          "Is een Mercedes Sprinter 315 CDI uit 2020 gelijk aan eentje uit 2024?",
+          "Dat is niet automatisch het geval. Ook bij dezelfde handelsaanduiding en oorspronkelijke kW kunnen ECU, emissiefase en softwaretoegang per toelatingsjaar wijzigen. Het catalogusprofiel bewaart afzonderlijke RDW-toepassingen; voor de werkplaats moet de daadwerkelijke ECU worden bevestigd."
+        ],
+        [
+          "Kunnen jullie een Sprinter met AdBlue-storing direct tunen?",
+          "Eerst is een diagnose van het emissiesysteem nodig. Voor gebruik op de openbare weg moeten DPF, SCR en AdBlue blijven functioneren. Een motorsoftware-aanpassing is geen vervanging voor herstel van een NOx-sensor, pomp, doseersysteem of andere defecte emissievoorziening."
+        ]
+      ]
+    },
+    {
+      "slug": "ford",
+      "make": "Ford",
+      "headline": "Ford EcoBoost, EcoBlue en Transit Stage 1",
+      "intro": "Ford heeft bij NoordTune zowel personenauto's als bedrijfswagens met afzonderlijke Stage 1-bronnen. Voor Fiesta 1.0 EcoBoost onderscheiden we JA8 en JHH; bij Transit, Transit Custom en Transit Connect spelen de verschillende 2.2 TDCi, 1.5-diesel en 2.0 EcoBlue-generaties. Kies via dit merkoverzicht de juiste auto en motor voordat je fabrieksvermogen of indicatieve extra Nm beoordeelt.",
+      "difference": "De Fiesta JA8 en JHH zijn allebei als 1.0 EcoBoost 100 verkocht, maar komen uit verschillende ontwikkelfases. De oudere Transit Custom 2.2 TDCi gebruikt niet de latere 2.0 EcoBlue, en bij Transit Connect kan de 1.5 TDCi niet klakkeloos worden verward met EcoBlue van een nieuwere generatie. De originele RDW-waarde en toelatingsjaren maken het onderscheid in de bronpagina's zichtbaar.",
+      "checks": "Bij Ford moeten werkelijke motorcode, ECU-firmware, turbosysteem en onderhoud overeenkomen met het gekozen profiel. Bij bepaalde 1.0 EcoBoost- en EcoBlue-uitvoeringen verdienen riem-in-olie, juiste oliespecificatie en oliedruk bijzondere aandacht. Bij werkbussen kijken we extra naar koeling, belading, koppeling, automaat en intacte DPF/SCR. Eén maximaal extern koppelgetal is geen advies voor een complete vloot.",
+      "faq": [
+        [
+          "Waarom mogen Transit 2.2 TDCi-cijfers niet naar een 2.0 EcoBlue worden gekopieerd?",
+          "Het zijn verschillende dieselmotorfamilies en softwaregeneraties met andere cilinderinhoud, ECU en mogelijk emissievoorzieningen. De fabrieksregistratie en werkelijke hardware moeten overeenkomen met de getoonde Stage 1-bronnen. Belast gebruik van een werkbus vraagt bovendien eigen koppelcontrole."
+        ],
+        [
+          "Is distributieonderhoud belangrijk vóór Ford EcoBoost- of EcoBlue-tuning?",
+          "Ja, bij varianten met een natte riem kan de onderhouds- en oliehistorie cruciaal zijn. Welk distributiesysteem exact aanwezig is, verifiëren we op de motorcode en bouwfase. Eerst motorconditie en foutcodes, daarna pas een verantwoorde softwarebeoordeling."
+        ]
+      ]
+    }
+  ]
+}

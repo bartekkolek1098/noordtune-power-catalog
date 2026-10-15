@@ -11,6 +11,7 @@ import {featuredCatalogCars} from "../src/data/homepage.ts";
 import {nlStage1EngineProfiles,nlStage1EnginePath} from "../src/data/nl-stage1-engine-seo.ts";
 import {nlPassengerEngineProfiles} from "../src/data/nl-passenger-engine-expansion.ts";
 import {nlModelFamilyHubs,nlModelHubPath} from "../src/data/nl-model-family-seo.ts";
+import {nlBrandEngineGuides,nlBrandEngineIndexPath,nlBrandGuidePath} from "../src/data/nl-brand-engine-guides.ts";
 import {nlVanModels,nlVanModelPath,nlVanEnginePath} from "../src/data/nl-vans-seo.ts";
 import {nlVanEngines} from "../src/data/nl-van-engines-seo.ts";
 import {resolveStageQuote} from "../src/data/pricing.ts";
@@ -47,13 +48,15 @@ const expectedRoutes = [
   ...nlStage1EngineProfiles.map(p=>nlStage1EnginePath(p.slug)),
   "/nl/modellen",
   ...nlModelFamilyHubs.map(h=>nlModelHubPath(h.slug)),
+  nlBrandEngineIndexPath,
+  ...nlBrandEngineGuides.map(g=>nlBrandGuidePath(g.slug)),
   "/nl/bedrijfswagens",
   ...nlVanModels.map(m=>nlVanModelPath(m.slug)),
   ...nlVanEngines.map(e=>nlVanEnginePath(e.slug))
 ];
 
 assert.equal(engineCatalog.length, 24, "The curated public catalog must stay at 24 vehicles");
-assert.equal(expectedRoutes.length, 375+nlPassengerEngineProfiles.length+(nlModelFamilyHubs.length-6)+(nlVanEngines.length-100), "Preserve the original 375 routes and include only reviewed passenger engines and model comparisons");
+assert.equal(expectedRoutes.length, 375+nlPassengerEngineProfiles.length+(nlModelFamilyHubs.length-6)+(nlVanEngines.length-100)+(nlBrandEngineGuides.length+1), "Preserve the original 375 routes and include only reviewed passenger engines and model comparisons");
 assert.equal(new Set(expectedRoutes).size,expectedRoutes.length,"Every public sitemap route must be unique");
 
 const publicIds = new Set(engineCatalog.map((vehicle) => vehicle.id));
