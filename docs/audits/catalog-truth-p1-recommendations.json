@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "title": "Catalog Truth P1 exact before-to-proposed-after recommendations",
+  "status": "RESEARCH_ONLY_NO_PRODUCT_CHANGES",
+  "baselineCommit": "63974758f1720d89aaeb031f8366f2d0757d6711",
+  "profiles": [
+    {
+      "id": "bmw-3-series-g20-g21-320i",
+      "before": {
+        "grade": "C",
+        "stock": {"powerHp": 184, "torqueNm": 300},
+        "ecuBasis": "unconfirmed",
+        "stage1": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage2": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"}
+      },
+      "proposedAfter": {
+        "grade": "C",
+        "identityBoundary": "European G20/G21 320i 184/300 only; exclude 184/270 applications",
+        "stock": {"powerHp": 184, "torqueNm": 300, "change": "KEEP"},
+        "scope": "European G20/G21 320i 184/300; engine/DME/fuel/catalyst/transmission require identification",
+        "engine": "1998 cc four-cylinder petrol; exact B48 suffix remains unconfirmed",
+        "ecuBasis": "Bosch MG1CS201 documented application for a 184/300 configuration; installed DME/software/access unconfirmed; MG1CS003 184/270 application is incompatible and excluded",
+        "transmissionBasis": "8-speed Steptronic in the factory launch scope; installed gearbox/TCU and torque limits require confirmation",
+        "stage1": {"action": "WITHHOLD_UNTIL_IDENTIFIED", "output": null, "price": "ON_REQUEST"},
+        "stage2": {"action": "WITHHOLD_UNTIL_IDENTIFIED", "output": null, "price": "ON_REQUEST"},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"},
+        "customerNote": "European 184 hp / 300 Nm configuration. We confirm the engine, installed DME, access state, fuel, catalyst configuration and transmission before giving tuning output or a numeric quote.",
+        "tests": ["184/270 sources cannot populate this route", "No numeric output or quote before identity", "MG1CS201 remains application wording rather than fitted-unit wording"]
+      },
+      "reason": "Factory identity is resolved, but exact controller/calibration scope and published tuning outputs remain incompatible or materially divergent."
+    },
+    {
+      "id": "volkswagen-passat-b8-20-tdi-150",
+      "before": {
+        "grade": "C",
+        "scope": "2015-2020 B8",
+        "stock": {"powerHp": 150, "torqueNm": null},
+        "ecuBasis": "unconfirmed",
+        "stage1": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage2": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"}
+      },
+      "proposedAfter": {
+        "grade": "B_CONDITIONAL",
+        "identityBoundary": "Confirmed 2019-2020 B8 facelift 2.0 TDI Evo 150/340 configuration only for numeric values",
+        "scope": "Numeric values only for confirmed 2019-2020 facelift 150/340 configuration; older B8 and 150/360 seven-speed DSG cases remain withheld",
+        "stock": {"powerHp": 150, "torqueNm": 340, "applicability": "supported facelift 340 Nm scope only"},
+        "engine": "2.0 TDI Evo in the supported facelift scope; exact engine code must be confirmed",
+        "ecuBasis": "Bosch MD1CS004 documented facelift application; earlier EDC17C74 application possible; installed controller/access required",
+        "transmissionBasis": "340 Nm manual and 360 Nm 7-speed DSG factory configurations remain separate; numeric Stage 1 applies only to the confirmed 340 Nm scope",
+        "stage1": {"action": "SUPPORTED_POINT", "powerHp": 190, "torqueNm": 420, "price": {"fromEur": 449}, "applicability": "confirmed 2019-2020 facelift 150/340 scope only"},
+        "stage2": {"action": "CUSTOM_ON_REQUEST", "output": null, "price": "ON_REQUEST"},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"},
+        "customerNote": "The 190 hp / 420 Nm indication applies only after confirming the facelift 150/340 configuration. Older cars and the 150/360 DSG configuration need a separate evidence match.",
+        "tests": ["340 Nm and 360 Nm stock configurations remain distinct", "Pre-facelift remains withheld", "Only confirmed 150/340 scope receives 190/420 and the Stage 1 from-price"]
+      },
+      "reason": "Factory gearbox split and two compatible tuners support 190/420 for the 340 Nm facelift configuration, while Stage 2 lacks shared package evidence."
+    },
+    {
+      "id": "ford-focus-st-20-ecoboost",
+      "before": {
+        "grade": "C",
+        "scope": "Mk3 2012-2018",
+        "stock": {"powerHp": 250, "torqueNm": 360},
+        "ecuBasis": "unconfirmed",
+        "stage1": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage2": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"}
+      },
+      "proposedAfter": {
+        "grade": "B_CONDITIONAL",
+        "identityBoundary": "Facelift Mk3 2.0 EcoBoost 250/360 petrol with MMT6 six-speed manual",
+        "scope": "Numeric values only for identified facelift 250/360 petrol with MMT6 six-speed manual; pre-facelift remains withheld",
+        "stock": {"powerHp": 250, "torqueNm": 360},
+        "engine": "2.0 EcoBoost petrol; calibration/build identity required",
+        "ecuBasis": "Bosch MEDG17.0 and MED17.0 are documented applications; fitted ECU required",
+        "transmissionBasis": "MMT6 six-speed manual in the supported scope; no TCU tuning offer",
+        "fuel": "Premium petrol appropriate to calibration; E85 excluded",
+        "stage1": {"action": "SUPPORTED_RANGE", "powerHp": {"min": 265, "max": 270}, "torqueNm": {"min": 430, "max": 440}, "price": {"fromEur": 449}},
+        "stage2": {"action": "CUSTOM_ON_REQUEST", "output": null, "price": "ON_REQUEST", "requirements": ["agree intake", "agree intercooler", "agree emissions-compliant sport-catalyst exhaust", "confirm clutch condition"]},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"},
+        "tcuOffer": false,
+        "customerNote": "The 265-270 hp / 430-440 Nm indication is for an identified facelift petrol/manual car on suitable premium fuel. It excludes E85; Stage 2 hardware is quoted after inspection.",
+        "tests": ["Facelift and pre-facelift paths remain distinct", "E85 is excluded", "Manual profile exposes no TCU product", "Stage 2 has no numeric output or bundled hardware"]
+      },
+      "reason": "Two compatible facelift tuners support a conservative Stage 1 range; Stage 2 outputs and hardware packages differ materially."
+    },
+    {
+      "id": "seat-leon-cupra-5f-300",
+      "before": {
+        "grade": "C",
+        "scope": "2017-2018 Cupra 300",
+        "stock": {"powerHp": 300, "torqueNm": null},
+        "ecuBasis": "Simos 18.x documented application",
+        "stage1": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage2": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"}
+      },
+      "proposedAfter": {
+        "grade": "B_CONDITIONAL",
+        "identityBoundary": "Confirmed 2017-2018 pre-GPF Leon Cupra 5F 300/380; exclude later 290, GPF and DQ381 configurations",
+        "scope": "Confirmed 2017-2018 pre-GPF Cupra 300/380 only; later 290/GPF/DQ381 configurations excluded",
+        "stock": {"powerHp": 300, "torqueNm": 380},
+        "engine": "2.0 TSI Cupra 300; exact engine/emissions identity required",
+        "fuelRon": 98,
+        "ecuBasis": "Continental Simos 18.x documented application; exact installed suffix required",
+        "transmissionBasis": "Six-speed manual or DSG in factory scope; DQ250 documented application, fitted gearbox/TCU required",
+        "stage1": {"action": "SUPPORTED_POINT", "powerHp": 350, "torqueNm": 460, "price": {"fromEur": 549}},
+        "stage2": {"action": "CUSTOM_ON_REQUEST", "output": null, "price": "ON_REQUEST", "requirements": ["confirm body and drivetrain", "confirm manual clutch or DSG/TCU", "agree downpipe and emissions-compliant sport catalyst", "agree intake/cooling", "RON 98"]},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"},
+        "tcu": {"fromEur": 249, "conditional": true},
+        "customerNote": "The 350 hp / 460 Nm indication uses RON 98 and applies only to a confirmed pre-GPF 300/380 car. We identify the Simos unit, body/drivetrain and manual or DSG hardware before quoting Stage 2.",
+        "tests": ["300/380 pre-GPF route excludes 290, GPF and DQ381 data", "Simos remains family-level wording", "TCU price stays conditional", "Stage 2 has no numeric output"]
+      },
+      "reason": "Manufacturer material resolves 300/380 and two compatible tuners converge on 350/460; their Stage 2 packages do not converge."
+    },
+    {
+      "id": "bmw-1-series-f20-f21-118d",
+      "before": {
+        "grade": "C",
+        "stock": {"powerHp": 150, "torqueNm": null},
+        "engine": "2.0 diesel",
+        "ecuBasis": "EDC17 documented application",
+        "stage1": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage2": {"action": "WITHHOLD", "output": null, "price": "ON_REQUEST"},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"}
+      },
+      "proposedAfter": {
+        "grade": "B_CONDITIONAL",
+        "identityBoundary": "Confirmed Dutch 2015+ F20/F21 LCI 118d 150/320",
+        "scope": "Confirmed Dutch 2015+ F20/F21 LCI 118d 150/320",
+        "stock": {"powerHp": 150, "torqueNm": 320},
+        "engine": "F20/F21 LCI 2.0 diesel; B47 is matching application evidence and vehicle-specific engine identity remains required",
+        "ecuBasis": "Bosch EDC17C50 documented application; installed ECU/software/access required",
+        "transmissionBasis": "Six-speed manual or optional eight-speed Steptronic; fitted gearbox/TCU required",
+        "stage1": {"action": "SUPPORTED_POINT", "powerHp": 190, "torqueNm": 400, "price": {"fromEur": 449}},
+        "stage2": {"action": "CUSTOM_ON_REQUEST", "output": null, "price": "ON_REQUEST", "requirements": ["confirm diesel hardware", "retain emissions equipment", "confirm manual or automatic torque limits"]},
+        "stage3Plus": {"action": "CUSTOM_ON_REQUEST"},
+        "tcu": {"fromEur": 249, "conditional": true},
+        "customerNote": "The 190 hp / 400 Nm indication applies to a confirmed Dutch-market F20/F21 LCI 150/320 car. We confirm engine, ECU and manual or eight-speed transmission before tuning; Stage 2 remains a custom package.",
+        "tests": ["150/320 LCI route excludes 330 Nm and generic template values", "EDC17C50 remains application wording", "Automatic TCU price stays conditional", "Stage 2 has no numeric output"]
+      },
+      "reason": "BMW Netherlands resolves 320 Nm and three compatible tuners converge on 190/400; Stage 2 still lacks a second complete compatible package."
+    }
+  ],
+  "global": {
+    "priceScheduleChanges": [],
+    "stage3PlusDecision": "CUSTOM_ON_REQUEST_FOR_ALL_FIVE",
+    "no269Fallback": true,
+    "advancedUnlock": {"fromEur": 700, "conditional": true},
+    "tcu": {"fromEur": 249, "conditional": true},
+    "hardwareIncludedInSoftwarePrice": false,
+    "numericStage2Profiles": [],
+    "productFilesToChangeInThisResearchTask": [],
+    "pr18Action": "NONE"
+  },
+  "futureImplementationTests": [
+    "Exact identity and grade contract checks for all five profiles",
+    "G20 184/270 evidence cannot populate the 184/300 route",
+    "Passat 340 Nm manual, 360 Nm DSG and pre-facelift paths remain distinct",
+    "Focus facelift-only numeric scope, E85 exclusion and no manual TCU offer",
+    "Leon pre-GPF 300/380 scope excludes later 290, GPF and DQ381 variants",
+    "118d 150/320 LCI scope excludes incompatible 330 Nm and generic template values",
+    "NL, EN and PL UI, structured Offer and decoded WhatsApp draft remain equivalent",
+    "No WhatsApp message is sent during verification",
+    "No plate appears in routes, queries, analytics, storage, logs or tracked artifacts",
+    "Prices preserve 449 and 549 schedules, conditional 249 TCU, conditional 700 unlock, no 269 fallback and hardware extra",
+    "Sitemap remains 291 unique URLs with 24 public vehicles and no plate/query routes",
+    "Client bundle does not import the 58586-record server catalog"
+  ]
+}
