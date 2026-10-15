@@ -1,0 +1,1032 @@
+{
+  "createdAt": "2026-10-07T12:56:39.543Z",
+  "current": {
+    "publicVehicles": 24,
+    "canonicalVehicles": 58586,
+    "sourcedProfiles": 1269
+  },
+  "competitor": {
+    "vtechTaxonomyRows": 4722,
+    "vtechBrands": 60,
+    "vtechModels": 462,
+    "sourceObservations": 3377,
+    "stageObservations": 3572,
+    "uniqueSourceConfigurations": 3075
+  },
+  "stage1": {
+    "groups": 3074,
+    "multiSource": 42,
+    "supportedRange": 28,
+    "singleSource": 3032,
+    "conflicts": 14
+  },
+  "stage2": {
+    "groups": 309,
+    "ownerReviewCandidates": 2,
+    "customOnRequest": 307
+  },
+  "generatedCrossProductRiskCandidates": 1844,
+  "top50RedCustomerRiskCandidates": [
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 1.2 TSI",
+      "engine": "1.2 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 175,
+      "stage1": 130,
+      "stage2": 150,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2017,
+      "yearTo": 2026,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-arteon-1-2-tsi-2017",
+        "volkswagen-arteon-1-2-tsi-2018",
+        "volkswagen-arteon-1-2-tsi-2019"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 1.9 TDI",
+      "engine": "1.9 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "stage1": 125,
+      "stage2": 140,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2017,
+      "yearTo": 2026,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-arteon-1-9-tdi-2017",
+        "volkswagen-arteon-1-9-tdi-2018",
+        "volkswagen-arteon-1-9-tdi-2019"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 1.0 TSI",
+      "engine": "1.0 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 200,
+      "stage1": 135,
+      "stage2": 155,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2017,
+      "yearTo": 2026,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-arteon-1-0-tsi-2017",
+        "volkswagen-arteon-1-0-tsi-2018",
+        "volkswagen-arteon-1-0-tsi-2019"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 1.6 TDI",
+      "engine": "1.6 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 250,
+      "stage1": 140,
+      "stage2": 155,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2012,
+      "yearTo": 2026,
+      "canonicalRows": 15,
+      "exampleIds": [
+        "volkswagen-arteon-1-6-tdi-2012",
+        "volkswagen-arteon-1-6-tdi-2013",
+        "volkswagen-arteon-1-6-tdi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 2.0 TDI 120",
+      "engine": "2.0 TDI 120",
+      "fuel": "Diesel",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 300,
+      "stage1": 145,
+      "stage2": 160,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2017,
+      "yearTo": 2026,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-arteon-2-0-tdi-120-2017",
+        "volkswagen-arteon-2-0-tdi-120-2018",
+        "volkswagen-arteon-2-0-tdi-120-2019"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 2.0 TDI 140",
+      "engine": "2.0 TDI 140",
+      "fuel": "Diesel",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 320,
+      "stage1": 170,
+      "stage2": 190,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2017,
+      "yearTo": 2026,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-arteon-2-0-tdi-140-2017",
+        "volkswagen-arteon-2-0-tdi-140-2018",
+        "volkswagen-arteon-2-0-tdi-140-2019"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 1.4 TSI",
+      "engine": "1.4 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "stage1": 185,
+      "stage2": 215,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2012,
+      "yearTo": 2026,
+      "canonicalRows": 15,
+      "exampleIds": [
+        "volkswagen-arteon-1-4-tsi-2012",
+        "volkswagen-arteon-1-4-tsi-2013",
+        "volkswagen-arteon-1-4-tsi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 1.5 TSI",
+      "engine": "1.5 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "stage1": 185,
+      "stage2": 215,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2012,
+      "yearTo": 2026,
+      "canonicalRows": 11,
+      "exampleIds": [
+        "volkswagen-arteon-1-5-tsi-2012",
+        "volkswagen-arteon-1-5-tsi-2013",
+        "volkswagen-arteon-1-5-tsi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 2.0 TDI",
+      "engine": "2.0 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 340,
+      "stage1": 180,
+      "stage2": 200,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2012,
+      "yearTo": 2016,
+      "canonicalRows": 5,
+      "exampleIds": [
+        "volkswagen-arteon-2-0-tdi-2012",
+        "volkswagen-arteon-2-0-tdi-2013",
+        "volkswagen-arteon-2-0-tdi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 1.8 TSI",
+      "engine": "1.8 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 250,
+      "stage1": 220,
+      "stage2": 255,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2017,
+      "yearTo": 2026,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-arteon-1-8-tsi-2017",
+        "volkswagen-arteon-1-8-tsi-2018",
+        "volkswagen-arteon-1-8-tsi-2019"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 2.0 BiTDI",
+      "engine": "2.0 BiTDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 450,
+      "stage1": 245,
+      "stage2": 275,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2012,
+      "yearTo": 2026,
+      "canonicalRows": 15,
+      "exampleIds": [
+        "volkswagen-arteon-2-0-bitdi-2012",
+        "volkswagen-arteon-2-0-bitdi-2013",
+        "volkswagen-arteon-2-0-bitdi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 2.0 TSI GTI",
+      "engine": "2.0 TSI GTI",
+      "fuel": "Petrol",
+      "stockPowerHp": 230,
+      "stockTorqueNm": 350,
+      "stage1": 280,
+      "stage2": 325,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2012,
+      "yearTo": 2026,
+      "canonicalRows": 15,
+      "exampleIds": [
+        "volkswagen-arteon-2-0-tsi-gti-2012",
+        "volkswagen-arteon-2-0-tsi-gti-2013",
+        "volkswagen-arteon-2-0-tsi-gti-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon GTE",
+      "engine": "GTE",
+      "fuel": "Hybrid",
+      "stockPowerHp": 245,
+      "stockTorqueNm": 400,
+      "stage1": 280,
+      "stage2": 305,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2017,
+      "yearTo": 2026,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-arteon-gte-2017",
+        "volkswagen-arteon-gte-2018",
+        "volkswagen-arteon-gte-2019"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 3.0 TDI",
+      "engine": "3.0 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 286,
+      "stockTorqueNm": 600,
+      "stage1": 345,
+      "stage2": 385,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2017,
+      "yearTo": 2026,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-arteon-3-0-tdi-2017",
+        "volkswagen-arteon-3-0-tdi-2018",
+        "volkswagen-arteon-3-0-tdi-2019"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 2.0 TSI R",
+      "engine": "2.0 TSI R",
+      "fuel": "Petrol",
+      "stockPowerHp": 300,
+      "stockTorqueNm": 400,
+      "stage1": 365,
+      "stage2": 425,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2012,
+      "yearTo": 2026,
+      "canonicalRows": 15,
+      "exampleIds": [
+        "volkswagen-arteon-2-0-tsi-r-2012",
+        "volkswagen-arteon-2-0-tsi-r-2013",
+        "volkswagen-arteon-2-0-tsi-r-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "rawModel": "Arteon 2.5 TFSI",
+      "engine": "2.5 TFSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 400,
+      "stockTorqueNm": 480,
+      "stage1": 490,
+      "stage2": 570,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2017,
+      "yearTo": 2026,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-arteon-2-5-tfsi-2017",
+        "volkswagen-arteon-2-5-tfsi-2018",
+        "volkswagen-arteon-2-5-tfsi-2019"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 1.2 TSI",
+      "engine": "1.2 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 175,
+      "stage1": 130,
+      "stage2": 150,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 17,
+      "exampleIds": [
+        "volkswagen-caddy-1-2-tsi-2004",
+        "volkswagen-caddy-1-2-tsi-2005",
+        "volkswagen-caddy-1-2-tsi-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 1.6 TDI",
+      "engine": "1.6 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "stage1": 125,
+      "stage2": 140,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2011,
+      "canonicalRows": 8,
+      "exampleIds": [
+        "volkswagen-caddy-1-6-tdi-2004",
+        "volkswagen-caddy-1-6-tdi-2005",
+        "volkswagen-caddy-1-6-tdi-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 1.9 TDI",
+      "engine": "1.9 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "stage1": 125,
+      "stage2": 140,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2011,
+      "yearTo": 2026,
+      "canonicalRows": 16,
+      "exampleIds": [
+        "volkswagen-caddy-1-9-tdi-2011",
+        "volkswagen-caddy-1-9-tdi-2012",
+        "volkswagen-caddy-1-9-tdi-2013"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 1.0 TSI",
+      "engine": "1.0 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 200,
+      "stage1": 135,
+      "stage2": 155,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-1-0-tsi-2004",
+        "volkswagen-caddy-1-0-tsi-2005",
+        "volkswagen-caddy-1-0-tsi-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 1.6 TDI",
+      "engine": "1.6 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 115,
+      "stockTorqueNm": 250,
+      "stage1": 140,
+      "stage2": 155,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2012,
+      "yearTo": 2026,
+      "canonicalRows": 15,
+      "exampleIds": [
+        "volkswagen-caddy-1-6-tdi-2012",
+        "volkswagen-caddy-1-6-tdi-2013",
+        "volkswagen-caddy-1-6-tdi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 2.0 TDI 120",
+      "engine": "2.0 TDI 120",
+      "fuel": "Diesel",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 300,
+      "stage1": 145,
+      "stage2": 160,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-2-0-tdi-120-2004",
+        "volkswagen-caddy-2-0-tdi-120-2005",
+        "volkswagen-caddy-2-0-tdi-120-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 2.0 TDI 140",
+      "engine": "2.0 TDI 140",
+      "fuel": "Diesel",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 320,
+      "stage1": 170,
+      "stage2": 190,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2016,
+      "yearTo": 2026,
+      "canonicalRows": 11,
+      "exampleIds": [
+        "volkswagen-caddy-2-0-tdi-140-2016",
+        "volkswagen-caddy-2-0-tdi-140-2017",
+        "volkswagen-caddy-2-0-tdi-140-2018"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 1.4 TSI",
+      "engine": "1.4 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "stage1": 185,
+      "stage2": 215,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-1-4-tsi-2012",
+        "volkswagen-caddy-1-4-tsi-2013",
+        "volkswagen-caddy-1-4-tsi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 1.5 TSI",
+      "engine": "1.5 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "stage1": 185,
+      "stage2": 215,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-1-5-tsi-2012",
+        "volkswagen-caddy-1-5-tsi-2013",
+        "volkswagen-caddy-1-5-tsi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 2.0 TDI",
+      "engine": "2.0 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 340,
+      "stage1": 180,
+      "stage2": 200,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2012,
+      "yearTo": 2026,
+      "canonicalRows": 9,
+      "exampleIds": [
+        "volkswagen-caddy-2-0-tdi-2012",
+        "volkswagen-caddy-2-0-tdi-2013",
+        "volkswagen-caddy-2-0-tdi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 2.0 TDI 150",
+      "engine": "2.0 TDI 150",
+      "fuel": "Diesel",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 340,
+      "stage1": 180,
+      "stage2": 200,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 17,
+      "exampleIds": [
+        "volkswagen-caddy-2-0-tdi-150-2004",
+        "volkswagen-caddy-2-0-tdi-150-2005",
+        "volkswagen-caddy-2-0-tdi-150-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 1.8 TSI",
+      "engine": "1.8 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 250,
+      "stage1": 220,
+      "stage2": 255,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-1-8-tsi-2004",
+        "volkswagen-caddy-1-8-tsi-2005",
+        "volkswagen-caddy-1-8-tsi-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 2.0 TDI 190",
+      "engine": "2.0 TDI 190",
+      "fuel": "Diesel",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "stage1": 230,
+      "stage2": 255,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-2-0-tdi-190-2004",
+        "volkswagen-caddy-2-0-tdi-190-2005",
+        "volkswagen-caddy-2-0-tdi-190-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 2.0 BiTDI",
+      "engine": "2.0 BiTDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 450,
+      "stage1": 245,
+      "stage2": 275,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-2-0-bitdi-2012",
+        "volkswagen-caddy-2-0-bitdi-2013",
+        "volkswagen-caddy-2-0-bitdi-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 2.0 TSI GTI",
+      "engine": "2.0 TSI GTI",
+      "fuel": "Petrol",
+      "stockPowerHp": 230,
+      "stockTorqueNm": 350,
+      "stage1": 280,
+      "stage2": 325,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-2-0-tsi-gti-2012",
+        "volkswagen-caddy-2-0-tsi-gti-2013",
+        "volkswagen-caddy-2-0-tsi-gti-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy GTE",
+      "engine": "GTE",
+      "fuel": "Hybrid",
+      "stockPowerHp": 245,
+      "stockTorqueNm": 400,
+      "stage1": 280,
+      "stage2": 305,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-gte-2004",
+        "volkswagen-caddy-gte-2005",
+        "volkswagen-caddy-gte-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 3.0 TDI",
+      "engine": "3.0 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 286,
+      "stockTorqueNm": 600,
+      "stage1": 345,
+      "stage2": 385,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-3-0-tdi-2004",
+        "volkswagen-caddy-3-0-tdi-2005",
+        "volkswagen-caddy-3-0-tdi-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 2.0 TSI R",
+      "engine": "2.0 TSI R",
+      "fuel": "Petrol",
+      "stockPowerHp": 300,
+      "stockTorqueNm": 400,
+      "stage1": 365,
+      "stage2": 425,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-2-0-tsi-r-2012",
+        "volkswagen-caddy-2-0-tsi-r-2013",
+        "volkswagen-caddy-2-0-tsi-r-2014"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Caddy",
+      "rawModel": "Caddy 2.5 TFSI",
+      "engine": "2.5 TFSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 400,
+      "stockTorqueNm": 480,
+      "stage1": 490,
+      "stage2": 570,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2004,
+      "yearTo": 2026,
+      "canonicalRows": 23,
+      "exampleIds": [
+        "volkswagen-caddy-2-5-tfsi-2004",
+        "volkswagen-caddy-2-5-tfsi-2005",
+        "volkswagen-caddy-2-5-tfsi-2006"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 1.2 TSI",
+      "engine": "1.2 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 175,
+      "stage1": 130,
+      "stage2": 150,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-1-2-tsi-2006",
+        "volkswagen-crafter-1-2-tsi-2007",
+        "volkswagen-crafter-1-2-tsi-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 1.6 TDI",
+      "engine": "1.6 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "stage1": 125,
+      "stage2": 140,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-1-6-tdi-2006",
+        "volkswagen-crafter-1-6-tdi-2007",
+        "volkswagen-crafter-1-6-tdi-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 1.9 TDI",
+      "engine": "1.9 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 105,
+      "stockTorqueNm": 250,
+      "stage1": 125,
+      "stage2": 140,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-1-9-tdi-2006",
+        "volkswagen-crafter-1-9-tdi-2007",
+        "volkswagen-crafter-1-9-tdi-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 1.0 TSI",
+      "engine": "1.0 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 110,
+      "stockTorqueNm": 200,
+      "stage1": 135,
+      "stage2": 155,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-1-0-tsi-2006",
+        "volkswagen-crafter-1-0-tsi-2007",
+        "volkswagen-crafter-1-0-tsi-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 2.0 TDI 120",
+      "engine": "2.0 TDI 120",
+      "fuel": "Diesel",
+      "stockPowerHp": 120,
+      "stockTorqueNm": 300,
+      "stage1": 145,
+      "stage2": 160,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-2-0-tdi-120-2006",
+        "volkswagen-crafter-2-0-tdi-120-2007",
+        "volkswagen-crafter-2-0-tdi-120-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 2.0 TDI 140",
+      "engine": "2.0 TDI 140",
+      "fuel": "Diesel",
+      "stockPowerHp": 140,
+      "stockTorqueNm": 320,
+      "stage1": 170,
+      "stage2": 190,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2015,
+      "canonicalRows": 10,
+      "exampleIds": [
+        "volkswagen-crafter-2-0-tdi-140-2006",
+        "volkswagen-crafter-2-0-tdi-140-2007",
+        "volkswagen-crafter-2-0-tdi-140-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 1.4 TSI",
+      "engine": "1.4 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "stage1": 185,
+      "stage2": 215,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-1-4-tsi-2006",
+        "volkswagen-crafter-1-4-tsi-2007",
+        "volkswagen-crafter-1-4-tsi-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 1.5 TSI",
+      "engine": "1.5 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 250,
+      "stage1": 185,
+      "stage2": 215,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-1-5-tsi-2006",
+        "volkswagen-crafter-1-5-tsi-2007",
+        "volkswagen-crafter-1-5-tsi-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 2.0 TDI 150",
+      "engine": "2.0 TDI 150",
+      "fuel": "Diesel",
+      "stockPowerHp": 150,
+      "stockTorqueNm": 340,
+      "stage1": 180,
+      "stage2": 200,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-2-0-tdi-150-2006",
+        "volkswagen-crafter-2-0-tdi-150-2007",
+        "volkswagen-crafter-2-0-tdi-150-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 1.8 TSI",
+      "engine": "1.8 TSI",
+      "fuel": "Petrol",
+      "stockPowerHp": 180,
+      "stockTorqueNm": 250,
+      "stage1": 220,
+      "stage2": 255,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-1-8-tsi-2006",
+        "volkswagen-crafter-1-8-tsi-2007",
+        "volkswagen-crafter-1-8-tsi-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 2.0 TDI 190",
+      "engine": "2.0 TDI 190",
+      "fuel": "Diesel",
+      "stockPowerHp": 190,
+      "stockTorqueNm": 400,
+      "stage1": 230,
+      "stage2": 255,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-2-0-tdi-190-2006",
+        "volkswagen-crafter-2-0-tdi-190-2007",
+        "volkswagen-crafter-2-0-tdi-190-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 2.0 BiTDI",
+      "engine": "2.0 BiTDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 204,
+      "stockTorqueNm": 450,
+      "stage1": 245,
+      "stage2": 275,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-2-0-bitdi-2006",
+        "volkswagen-crafter-2-0-bitdi-2007",
+        "volkswagen-crafter-2-0-bitdi-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 2.0 TSI GTI",
+      "engine": "2.0 TSI GTI",
+      "fuel": "Petrol",
+      "stockPowerHp": 230,
+      "stockTorqueNm": 350,
+      "stage1": 280,
+      "stage2": 325,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-2-0-tsi-gti-2006",
+        "volkswagen-crafter-2-0-tsi-gti-2007",
+        "volkswagen-crafter-2-0-tsi-gti-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter GTE",
+      "engine": "GTE",
+      "fuel": "Hybrid",
+      "stockPowerHp": 245,
+      "stockTorqueNm": 400,
+      "stage1": 280,
+      "stage2": 305,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-gte-2006",
+        "volkswagen-crafter-gte-2007",
+        "volkswagen-crafter-gte-2008"
+      ]
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Crafter",
+      "rawModel": "Crafter 3.0 TDI",
+      "engine": "3.0 TDI",
+      "fuel": "Diesel",
+      "stockPowerHp": 286,
+      "stockTorqueNm": 600,
+      "stage1": 345,
+      "stage2": 385,
+      "reason": "GENERATED_CROSS_PRODUCT_WITHOUT_VTECH_TAXONOMY_MATCH",
+      "yearFrom": 2006,
+      "yearTo": 2026,
+      "canonicalRows": 21,
+      "exampleIds": [
+        "volkswagen-crafter-3-0-tdi-2006",
+        "volkswagen-crafter-3-0-tdi-2007",
+        "volkswagen-crafter-3-0-tdi-2008"
+      ]
+    }
+  ],
+  "note": "Absence from one competitor taxonomy is a risk signal, not proof a vehicle does not exist. Cross-product architecture plus incompatible known examples is the actionable root cause."
+}
