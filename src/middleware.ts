@@ -1,6 +1,6 @@
 import createMiddleware from "next-intl/middleware";
 import {NextRequest, NextResponse} from "next/server";
-import {isLocale, routing, type Locale} from "@/i18n/routing";
+import {isLocale, routing, sharedLocaleCookieName, type Locale} from "@/i18n/routing";
 
 const intlMiddleware = createMiddleware({
   ...routing,
@@ -14,10 +14,13 @@ export default function middleware(request: NextRequest) {
   const pathLocale = pathname.split("/")[1];
 
   if (pathname === "/") {
-    const cookieLocale = request.cookies.get(localeCookie)?.value;
-    const locale = isLocale(cookieLocale)
-      ? cookieLocale
-      : detectPreferredLocale(request.headers.get("accept-language"));
+    const crossDomainLocale = request.cookies.get(sharedLocaleCookieName)?.value;
+    const legacyLocale = request.cookies.get(localeCookie)?.value;
+    const locale = isLocale(crossDomainLocale)
+      ? crossDomainLocale
+      : isLocale(legacyLocale)
+        ? legacyLocale
+        : detectPreferredLocale(request.headers.get("accept-language"));
     const url = request.nextUrl.clone();
     url.pathname = `/${locale}`;
     const response = NextResponse.redirect(url);

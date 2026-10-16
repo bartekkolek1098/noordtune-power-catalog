@@ -28,7 +28,7 @@ const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
      const visible=e=>e.getBoundingClientRect().width>0&&e.getBoundingClientRect().height>0;
      const nav=h.querySelector('nav[aria-label="Main menu"]');
      const logo=h.querySelector('.site-header-shell > a');
-     const languages=[...h.querySelectorAll('nav[aria-label="Language switcher"]')].find(visible);
+     const languages=[...h.querySelectorAll('[data-testid="language-switcher"]')].find(visible);
      const links=nav&&visible(nav)?[...nav.querySelectorAll('a')].map(e=>({text:e.textContent,box:rect(e),clickable:(()=>{const r=e.getBoundingClientRect();const at=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return at===e||e.contains(at);})()})):[];
      return {width:innerWidth,logo:rect(logo),flags:languages?rect(languages):null,links,overflow:document.documentElement.scrollWidth-innerWidth};
     });
