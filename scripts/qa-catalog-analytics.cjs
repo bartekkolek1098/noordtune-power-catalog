@@ -49,9 +49,22 @@ assert.ok(allowed.has(base),"Catalog conversion QA is restricted to local QA or 
   assert.equal(homepage?.status(),200);
   assert.ok(await page.locator('a[data-catalog-analytics-source="mobile_whatsapp"]').count()>=1);
   assert.ok(await page.locator('a[data-catalog-analytics-source="header_whatsapp"]').count()>=1);
-  await page.waitForFunction(()=>document.querySelectorAll('script[src*="/_vercel/insights/"]').length===1,null,{timeout:15000});
-  const scripts=await page.locator('script[src*="/_vercel/insights/"]').count();
-  assert.equal(scripts,1,"Exactly one Vercel Analytics loader after client hydration");
+  // On Vercel production the first-party Analytics loader uses a project-specific
+  // hashed route /<16-hex>/script.js. Local Next uses /_vercel/insights/script.js.
+  // Identify the SDK by its actual data-sdkn metadata, not by an assumed URL.
+  await page.waitForFunction(()=>document.querySelectorAll('script[data-sdkn^="@vercel/analytics"]').length===1,null,{timeout:15000});
+  const sdk=page.locator('script[data-sdkn^="@vercel/analytics"]');
+  const scripts=await sdk.count();
+  assert.equal(scripts,1,"Exactly one first-party Vercel Analytics loader after hydration");
+  const src=await sdk.getAttribute("src");
+  assert.ok(/^\/(?:_vercel\/insights|[a-f0-9]{16})\/script\.js$/.test(src??""),"Vercel local/production analytics endpoint");
+  assert.equal(await sdk.getAttribute("data-sdkv"),"2.0.1","Pinned reviewed Analytics SDK version");
+  assert.equal(await page.evaluate(()=>typeof window.va),"function","Analytics event dispatcher is active");
+  if(isLive){
+   const firstPartyLoader=await page.request.get(base+src,{timeout:30000});
+   assert.equal(firstPartyLoader.status(),200,"Vercel first-party production Analytics loader is served successfully");
+   assert.match(firstPartyLoader.headers()["content-type"]??"",/javascript/,"Analytics script MIME type");
+  }
 
   // Verify real cross-domain referrer and exact context; no customer enquiry sent.
   await page.goto(base+"/nl/bedrijfswagens/motoren/mercedes-sprinter-w906-313-cdi-129-2013",{waitUntil:"domcontentloaded"});
