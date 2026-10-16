@@ -1,4 +1,5 @@
 import {MessageCircle} from "lucide-react";
+import {CatalogTrackedLink} from "@/components/catalog-tracked-link";
 import type {Locale} from "@/i18n/routing";
 import {CatalogMobileMenu} from "@/components/catalog-mobile-menu";
 import {LanguageSwitcher} from "@/components/language-switcher";
@@ -46,13 +47,13 @@ export function CatalogHeader({
     </div>
     <div className="hidden shrink-0 items-center gap-3 xl:flex">
       <LanguageSwitcher locale={locale} path={languagePath}/>
-      <a
+      <CatalogTrackedLink
        className="hidden h-11 items-center gap-2 whitespace-nowrap rounded-[3px] border border-white/25 bg-black/35 px-4 text-sm font-semibold text-white transition hover:border-primary 2xl:inline-flex"
-       href={whatsappHref({locale})} rel="noreferrer" target="_blank"
+       href={whatsappHref({locale})} action={{name:"catalog_whatsapp_click",properties:{locale,source:"header_whatsapp"}}} rel="noreferrer" target="_blank"
       >
        <MessageCircle className="h-4 w-4"/>
        {whatsappPhoneLabel}
-      </a>
+      </CatalogTrackedLink>
     </div>
     <CatalogMobileMenu languagePath={languagePath} locale={locale}/>
    </div>
