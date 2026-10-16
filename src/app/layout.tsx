@@ -1,4 +1,5 @@
 import type {Metadata, Viewport} from "next";
+import {Analytics} from "@vercel/analytics/next";
 import {absoluteUrl, POWER_SITE_URL} from "@/lib/site-url";
 import "./globals.css";
 import "./editorial-v2.css";
@@ -59,6 +60,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           }}
         />
         {children}
+        <Analytics />
       </body>
     </html>
   );

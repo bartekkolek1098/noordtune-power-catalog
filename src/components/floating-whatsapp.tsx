@@ -1,4 +1,5 @@
 import {MessageCircle} from "lucide-react";
+import {CatalogTrackedLink} from "@/components/catalog-tracked-link";
 import type {Locale} from "@/i18n/routing";
 import {whatsappHref} from "@/lib/whatsapp";
 import {cn} from "@/lib/utils";
@@ -19,7 +20,8 @@ export function FloatingWhatsappButton({
   vehicleLabel?: string;
 }) {
   return (
-    <a
+    <CatalogTrackedLink
+      action={{name:"catalog_whatsapp_click",properties:{locale,source:"floating_whatsapp"}}}
       aria-label={labels[locale]}
       data-testid="floating-whatsapp"
       className={cn(
@@ -34,6 +36,6 @@ export function FloatingWhatsappButton({
       title={labels[locale]}
     >
       <MessageCircle className="h-7 w-7" />
-    </a>
+    </CatalogTrackedLink>
   );
 }

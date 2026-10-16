@@ -1,4 +1,5 @@
 import {ArrowUpRight, MessageCircle, Search} from "lucide-react";
+import {CatalogTrackedLink} from "@/components/catalog-tracked-link";
 import type {Locale} from "@/i18n/routing";
 import {whatsappHref} from "@/lib/whatsapp";
 
@@ -16,10 +17,11 @@ export function MobileActionBar({locale,mode="catalog",vehicleLabel,primaryHref}
     <Search className="h-4 w-4" aria-hidden="true"/>
     {mode==="catalog"?c.find:c.configure}
    </a>
-   <a href={whatsappHref({locale,vehicleLabel})} target="_blank" rel="noreferrer">
+   <CatalogTrackedLink href={whatsappHref({locale,vehicleLabel})} target="_blank" rel="noreferrer"
+     action={{name:"catalog_whatsapp_click",properties:{locale,source:"mobile_whatsapp"}}}>
     <MessageCircle className="h-4 w-4" aria-hidden="true"/>
     {c.contact}<ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true"/>
-   </a>
+   </CatalogTrackedLink>
   </nav>
  );
 }
