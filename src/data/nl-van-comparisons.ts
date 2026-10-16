@@ -1,11 +1,13 @@
 /**
- * Nine hand-authored, source-backed Dutch technical diesel van comparisons.
+ * Twenty-one hand-authored, source-backed Dutch technical diesel van comparisons.
  * All original RDW factory kW and Stage 1 estimates are read exclusively from
  * existing approved van engine pages, without new tuning calculations/sources.
  */
 import rawA from "./nl-van-comparison-batch-a.json" with {type:"json"};
 import rawB from "./nl-van-comparison-batch-b.json" with {type:"json"};
 import rawC from "./nl-van-comparison-batch-c.json" with {type:"json"};
+import rawD from "./nl-van-comparison-batch-d.json" with {type:"json"};
+import rawE from "./nl-van-comparison-batch-e.json" with {type:"json"};
 import {nlVanEngineBySlug,type NlVanEngine} from "./nl-van-engines-seo.ts";
 import {nlVanModelBySlug} from "./nl-vans-seo.ts";
 
@@ -20,7 +22,7 @@ export type NlVanComparison=VanCompareSpec&{
 };
 export const nlVanCompareIndexPath="/nl/bedrijfswagens/vergelijken";
 export function nlVanComparePath(slug:string){return "/nl/bedrijfswagens/vergelijken/"+slug;}
-const approvedSpecs=[...rawA.items,...rawB.items,...rawC.items] as unknown as readonly VanCompareSpec[];
+const approvedSpecs=[...rawA.items,...rawB.items,...rawC.items,...rawD.items,...rawE.items] as unknown as readonly VanCompareSpec[];
 const publishedSlugs=new Set<string>();
 export const nlVanComparisons:readonly NlVanComparison[]=approvedSpecs.map(spec=>{
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)+$/.test(spec.slug)||publishedSlugs.has(spec.slug))
@@ -34,7 +36,8 @@ export const nlVanComparisons:readonly NlVanComparison[]=approvedSpecs.map(spec=
   throw Error("Van comparison needs substantial unique technical editorial review "+spec.slug);
  if(spec.faq.length!==2||spec.faq.some(([q,a])=>q.length<40||a.length<185))
   throw Error("Each van comparison requires 2 original technically substantial FAQs "+spec.slug);
- if(!spec.headline.includes(model.make.split("-")[0])||spec.headline.length<48||spec.headline.length>92)
+ const plain=(v:string)=>v.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+ if(!plain(spec.headline).includes(plain(model.make.split("-")[0]))||spec.headline.length<48||spec.headline.length>92)
   throw Error("Model comparison headline invalid "+spec.slug);
  const engines=spec.engineSlugs.map(slug=>{
   const engine=nlVanEngineBySlug.get(slug);
@@ -54,9 +57,9 @@ export const nlVanComparisons:readonly NlVanComparison[]=approvedSpecs.map(spec=
   throw Error("Comparison lacks independently reviewed identity or source coverage "+spec.slug);
  return {...spec,make:model.make,model:model.model,engines,auditedScopes:scopes.size,sourceUrls:sources.size};
 });
-if(nlVanComparisons.length!==9||publishedSlugs.size!==9||
- new Set(nlVanComparisons.map(c=>c.modelSlug)).size!==9)
- throw Error("Nine individually hand-reviewed van comparisons required");
+if(nlVanComparisons.length!==21||publishedSlugs.size!==21||
+ new Set(nlVanComparisons.map(c=>c.modelSlug)).size!==21)
+ throw Error("Twenty-one individually hand-reviewed van comparisons required");
 export const nlVanCompareBySlug=new Map(nlVanComparisons.map(x=>[x.slug,x]));
 export const nlVanCompareByModelSlug=new Map(nlVanComparisons.map(x=>[x.modelSlug,x]));
 export const nlVanCompareByEngineSlug=new Map(nlVanComparisons.flatMap(c=>c.engineSlugs.map(slug=>[slug,c] as const)));

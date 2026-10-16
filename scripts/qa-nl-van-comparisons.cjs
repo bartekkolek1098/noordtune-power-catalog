@@ -16,16 +16,16 @@ const mk=(url)=>base+url;
   assert.equal(r?.status(),200,"Comparison index");
   assert.equal(await page.locator("h1").count(),1);
   assert.ok((await page.locator('link[rel="canonical"]').getAttribute("href")).endsWith(index));
-  assert.equal(await page.getByTestId("nl-van-comparison-index").locator("[data-van-comparison-slug]").count(),9);
+  assert.equal(await page.getByTestId("nl-van-comparison-index").locator("[data-van-comparison-slug]").count(),21);
   const links=await page.getByTestId("nl-van-comparison-index").locator("[data-van-comparison-slug]").evaluateAll(nodes=>nodes.map(n=>n.getAttribute("href")));
   assert.deepEqual(new Set(links),new Set(nlVanComparisons.map(c=>nlVanComparePath(c.slug))),"Index links every audited comparison");
   const sitemap=await page.request.get(mk("/sitemap.xml"),{timeout:45000});
   assert.equal(sitemap.status(),200);
   const xml=await sitemap.text();
   const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(a=>a[1]);
-  assert.equal(urls.length,472,"Nine reviewed van comparisons plus one index");
-  assert.equal(new Set(urls).size,472);
-  assert.equal(urls.filter(x=>x.includes("/nl/bedrijfswagens/vergelijken")).length,10);
+  assert.equal(urls.length,484,"Twenty-one reviewed van comparisons plus one index");
+  assert.equal(new Set(urls).size,484);
+  assert.equal(urls.filter(x=>x.includes("/nl/bedrijfswagens/vergelijken")).length,22);
   let engineCards=0,scopeRows=0,quoteLinks=0,sourcesVisible=0;
   for(const c of nlVanComparisons){
    const path=nlVanComparePath(c.slug);
@@ -77,7 +77,12 @@ const mk=(url)=>base+url;
    ["mercedes-vito-114-119-cdi","mercedes-vito","mercedes-vito-119-cdi-1950-euro6e-2024"],
    ["volkswagen-transporter-t5-t6-t61","volkswagen-transporter","volkswagen-transporter-t61-20-tdi-150-2020-21"],
    ["ford-transit-custom-22-tdci-20-ecoblue","ford-transit-custom","ford-transit-custom-20-ecoblue-130"],
-   ["toyota-proace-15-20-d4d","toyota-proace","toyota-proace-20-d4d-177-2020-24"]
+   ["toyota-proace-15-20-d4d","toyota-proace","toyota-proace-20-d4d-177-2020-24"],
+   ["iveco-daily-23-30-euro6-euro6df","iveco-daily","iveco-daily-23-136-euro6df-2020-23"],
+   ["renault-master-23-dci-blue-dci","renault-master","renault-master-23-dci-145-2019-22"],
+   ["peugeot-expert-20-bluehdi-120-180","peugeot-expert","peugeot-expert-20-bluehdi-145-2022-24"],
+   ["opel-movano-b-c-23-cdti-22-diesel","opel-movano","opel-movano-c-22-diesel-140-2021-23"],
+   ["citroen-berlingo-ii-iii-hdi-bluehdi","citroen-berlingo","citroen-berlingo-iii-15-bluehdi-100-2019-23"]
   ]){
    const dest=nlVanComparePath(slug);
    r=await page.goto(mk("/nl/bedrijfswagens/"+modelSlug),{waitUntil:"domcontentloaded"});
@@ -90,12 +95,17 @@ const mk=(url)=>base+url;
   r=await page.goto(mk("/nl/bedrijfswagens"),{waitUntil:"domcontentloaded"});
   assert.equal(r?.status(),200);
   assert.ok(await page.locator('a[href="/nl/bedrijfswagens/vergelijken"]').count()>=1,"Directory links index");
-  for(const slug of ["mercedes-sprinter-313-317-cdi","volkswagen-transporter-t5-t6-t61","ford-transit-ecoblue-130-165-170"]){
+  for(const slug of ["mercedes-sprinter-313-317-cdi","volkswagen-transporter-t5-t6-t61","ford-transit-ecoblue-130-165-170","iveco-daily-23-30-euro6-euro6df","renault-master-23-dci-blue-dci","peugeot-expert-20-bluehdi-120-180"]){
    assert.ok(await page.locator('a[href="'+nlVanComparePath(slug)+'"]').count()>=1,"Featured van comparison "+slug);
   }
   r=await page.goto(mk("/nl/merken/mercedes"),{waitUntil:"domcontentloaded"});
   assert.equal(r?.status(),200);
   assert.equal(await page.getByTestId("brand-van-comparisons").locator('a[href^="/nl/bedrijfswagens/vergelijken/"]').count(),2,"Mercedes link to Sprinter and Vito comparisons");
+  for(const [make,expected] of [["iveco",1],["renault",2],["peugeot",3],["opel",3],["toyota",2],["citroen",2],["fiat",2]]){
+    const res=await page.goto(mk("/nl/merken/"+make),{waitUntil:"domcontentloaded"});
+    assert.equal(res?.status(),200,make+" technical brand");
+    assert.equal(await page.getByTestId("brand-van-comparisons").locator('a[href^="/nl/bedrijfswagens/vergelijken/"]').count(),expected,make+" source-backed model comparisons");
+  }
   await page.setViewportSize({width:320,height:720});
   await page.goto(mk(nlVanComparePath("volkswagen-transporter-t5-t6-t61")),{waitUntil:"domcontentloaded"});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=321),"320px comparisons no horizontal overflow");
@@ -109,6 +119,6 @@ const mk=(url)=>base+url;
    assert.equal(resp.status(),404,"No invented translated version "+path);
   }
   assert.deepEqual(runtimeErrors,[],"No JavaScript runtime errors");
-  console.log("NL_VAN_COMPARISONS_BROWSER_PASS",JSON.stringify({comparisonPages:9,indexPages:1,engineCards,sourceScopes:scopeRows,contactForms:quoteLinks,sourceLinks:sourcesVisible,sitemapRoutes:472,correctCanonicals:true,uniqueFaq:true,existingModelAndEngineURLsPreserved:true,nonDutch404:4,viewports:[320,390,1440]}));
+  console.log("NL_VAN_COMPARISONS_BROWSER_PASS",JSON.stringify({comparisonPages:21,indexPages:1,engineCards,sourceScopes:scopeRows,contactForms:quoteLinks,sourceLinks:sourcesVisible,sitemapRoutes:484,correctCanonicals:true,uniqueFaq:true,existingModelAndEngineURLsPreserved:true,nonDutch404:4,viewports:[320,390,1440]}));
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});

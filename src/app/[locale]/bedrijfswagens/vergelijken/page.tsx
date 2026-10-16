@@ -18,7 +18,7 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
  const {locale}=await params;
  if(locale!=="nl")return {robots:{index:false,follow:false}};
  const title="Bestelwagen motoren vergelijken: Transit, Sprinter, Transporter";
- const description="Vergelijk gecontroleerde Stage 1 dieselmotoren en bouwfases van Sprinter, Vito, Ford Transit, VW Transporter, Crafter, Toyota Proace, Boxer en Ducato. RDW-kW, ECU en onafhankelijke bronnen.";
+ const description="Vergelijk goedgekeurde dieselmotoren en bouwjaren van Sprinter, Transit, Transporter, Iveco Daily, Renault Master, Berlingo en meer. RDW-kW, ECU en Stage 1-bronnen.";
  return {title,description,robots:{index:true,follow:true},
   alternates:{canonical:absoluteUrl(nlVanCompareIndexPath)},
   openGraph:{title,description,url:absoluteUrl(nlVanCompareIndexPath),locale:"nl_NL",siteName:"NoordTune Power Catalog",type:"website"}};
@@ -53,7 +53,7 @@ export default async function NlVanCompareDirectory({params}:Props){
     </h1>
     <p className="mt-6 max-w-4xl text-base leading-8 text-white/70 md:text-lg">
      Dezelfde bestelwagen kan verschillende fabrieksvermogens, cilinderinhouden en ECU-generaties hebben.
-     Vergelijk de afzonderlijk gecontroleerde uitvoeringen van negen populaire bedrijfswagenfamilies.
+     Vergelijk de afzonderlijk gecontroleerde uitvoeringen van 21 populaire bedrijfswagenfamilies.
      Alle Stage 1-indicaties komen uit onafhankelijke tunerpublicaties en zijn geen gegarandeerde NoordTune-resultaten.
     </p>
     <div className="mt-7 flex flex-wrap gap-3">

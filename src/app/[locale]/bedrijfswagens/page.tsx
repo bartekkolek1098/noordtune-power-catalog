@@ -88,9 +88,9 @@ export default async function NlBusinessVanDirectory({params}:Props){
     <div className="mt-9 rounded-xl border border-primary/35 bg-[#17191b] p-6" aria-labelledby="van-compare-directory-link">
      <p className="ux-eyebrow">MOTORGENERATIES EN ORIGINELE RDW-KW</p>
      <h3 id="van-compare-directory-link" className="racing-title mt-2 text-2xl text-white md:text-3xl">Zelfde bestelwagen, andere motor?</h3>
-     <p className="mt-3 max-w-4xl text-sm leading-7 text-white/70">Vergelijk negen beoordeelde motorfamilies, waaronder Sprinter, Vito, Transit, Transporter, Crafter en Proace. We scheiden originele kW, ECU en toelatingsjaren, zonder cijfers van andere motoren over te nemen.</p>
+     <p className="mt-3 max-w-4xl text-sm leading-7 text-white/70">Vergelijk {nlVanComparisons.length} beoordeelde bedrijfswagenfamilies, waaronder Sprinter, Transit, Daily, Master, Expert, Vivaro, Berlingo en Proace City. We scheiden originele kW, ECU en toelatingsjaren, zonder cijfers van andere motoren over te nemen.</p>
      <div className="mt-5 flex flex-wrap gap-4">
-      {nlVanComparisons.filter(c=>["mercedes-sprinter","volkswagen-transporter","ford-transit"].includes(c.modelSlug)).map(c=><a key={c.slug} href={sitePath(nlVanComparePath(c.slug))} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-white underline decoration-primary underline-offset-4">{c.make} {c.model}<ChevronRight className="h-4 w-4 text-primary" aria-hidden="true"/></a>)}
+      {nlVanComparisons.filter(c=>["mercedes-sprinter","volkswagen-transporter","ford-transit","iveco-daily","renault-master","peugeot-expert"].includes(c.modelSlug)).map(c=><a key={c.slug} href={sitePath(nlVanComparePath(c.slug))} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-white underline decoration-primary underline-offset-4">{c.make} {c.model}<ChevronRight className="h-4 w-4 text-primary" aria-hidden="true"/></a>)}
       <a href={sitePath(nlVanCompareIndexPath)} className="inline-flex min-h-11 items-center gap-2 text-sm font-bold text-primary underline underline-offset-4">Bekijk alle {nlVanComparisons.length} motorvergelijkingen<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
      </div>
     </div>
