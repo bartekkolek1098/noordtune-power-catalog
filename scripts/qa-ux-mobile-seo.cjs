@@ -64,9 +64,15 @@ const scenarios=[["nl",320,720],["nl",390,844],["nl",768,900],["nl",1440,900],["
    await input.waitFor({state:"visible"});
    const submit=input.locator("xpath=ancestor::form").locator('button[type="submit"]');
    await submit.waitFor({state:"visible"});
-   const lang=page.locator('header nav[aria-label="Language switcher"]:visible').first();
-   assert.equal(await lang.locator("a").count(),3,"Header must show three flags as on NoordTune.nl");
-   assert.ok((await lang.locator('a[lang="pl"]').first().getAttribute("href"))?.startsWith("/pl"),"Polish locale stays on catalog");
+   const trigger=page.locator('header [data-testid="language-switcher-trigger"]:visible').first();
+   assert.equal(await trigger.count(),1,"Header must visibly show one language switcher");
+   assert.ok((await trigger.innerText()).includes(locale.toUpperCase()),"Current language is visible");
+   await trigger.click();
+   const choices=page.locator('header [data-testid="language-switcher-options"]:visible').first();
+   assert.equal(await choices.locator("a").count(),3,"Dropdown shows all three language options");
+   assert.ok((await choices.locator('a[lang="pl"]').first().getAttribute("href"))?.startsWith("/pl"),"Polish locale stays on catalog");
+   await page.keyboard.press("Escape");
+   assert.equal(await trigger.getAttribute("aria-expanded"),"false","Escape closes language picker");
    assert.equal(await page.locator("header").first().evaluate(e=>Math.round(e.getBoundingClientRect().height)),width>=1280?87:73,"Header height matches the corporate website");
    const homeHref=await page.locator('header a[aria-label="NoordTune.nl home"]').getAttribute("href");
    assert.equal(homeHref,"https://www.noordtune.nl/"+locale,"Brand logo opens localized corporate site");

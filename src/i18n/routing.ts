@@ -5,6 +5,8 @@ export const routing = {
 
 export type Locale = (typeof routing.locales)[number];
 
+export const sharedLocaleCookieName = "noordtune_preferred_locale";
+
 export function isLocale(value: string | undefined): value is Locale {
   return routing.locales.includes(value as Locale);
 }

@@ -88,7 +88,7 @@ export function CatalogMobileMenu({locale,languagePath=""}:{locale:Locale;langua
        <div className="border-b border-white/10 py-4">
         <p className="text-xs font-black uppercase text-primary">{t.eyebrow}</p>
         <p className="mt-1 text-sm text-white/70">{t.subtitle}</p>
-        <LanguageSwitcher className="mt-4 flex-wrap gap-2" locale={locale} path={languagePath}/>
+        <LanguageSwitcher className="mt-4" expanded locale={locale} path={languagePath}/>
        </div>
        <nav aria-label={t.dialog} className="grid py-4">
         {links.map(item=>(
