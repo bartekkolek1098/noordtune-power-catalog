@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16",
+  "items": [
+    {
+      "slug": "ford-transit-custom-22-tdci-20-ecoblue",
+      "modelSlug": "ford-transit-custom",
+      "headline": "Ford Transit Custom 2.2 TDCi versus 2.0 EcoBlue Stage 1",
+      "intro": "Een Ford Transit Custom voor installatie- of bouwwerk is niet op basis van de naam Transit Custom aan één Stage 1-waarde te koppelen. De oudere 2.2 TDCi met 100 of 125 pk en de latere 2.0 EcoBlue met 130 pk zijn twee verschillende dieselmotorfamilies. Het gecontroleerde NoordTune-materiaal bevat afzonderlijke RDW-records voor de 2198 cc- en 1995 cc-varianten, met verschillende originele kW en toelatingsjaren. Deze vergelijking helpt bedrijven de juiste motor en werkplaatscontrole te kiezen voordat ze een offerte aanvragen.",
+      "difference": "Voor de onderzochte Transit Custom 2.2 TDCi 100 uit 2015–2016 staat 74 kW geregistreerd en voor de 125 uit 2016 92 kW; beide hebben 2198 cc en de gecontroleerde typecode FCC. De 2.0 EcoBlue 130 uit 2020 gebruikt in deze brondata 1995 cc en 95,6 kW met dezelfde typecode. De badge of typecode FCC is dus niet voldoende om het motormanagement vast te stellen. Ford documenteerde de introductie van 2.0 EcoBlue als een andere motorgeneratie dan 2.2 TDCi, met vernieuwde injectie en nabehandeling. Nieuwe V710 of elektrische/PHEV-Customs zijn hier nadrukkelijk niet inbegrepen.",
+      "checks": "Controleer het eerste toelatingsjaar, geregistreerde 74, 92 of 95,6 kW, cilinderinhoud en exacte motorcode. Verifieer daarna het ECU-onderdeelnummer, turbosysteem en de actuele transmissie. Bij geschikte EcoBlue-uitvoeringen kan riem-in-olie-onderhoud relevant zijn; welk distributiesysteem daadwerkelijk geplaatst is, moet op motorrevisie worden gecontroleerd. Bekijk bovendien de staat van olie- en koelcircuit, injectoren, DPF/SCR/AdBlue en eventuele foutcodes voordat een softwarewijziging wordt overwogen.",
+      "usage": "Transit Custom-bussen trekken regelmatig aanhangers en vervoeren zware werkplaatsinrichting. Een hoger gepubliceerd piekkoppel is daardoor geen geschikt universeel advies voor alle handbakken en koppelingen. NoordTune beoordeelt de conditie van de concrete 2.2 TDCi of 2.0 EcoBlue, de thermische belasting en de wettelijk voorgeschreven emissievoorzieningen. Gebruik deze vergelijking om het juiste motordossier bij een individuele offerte mee te sturen.",
+      "faq": [
+        [
+          "Kan ik Stage 1-gegevens van Transit Custom 2.2 TDCi 125 pk voor een 2.0 EcoBlue 130 gebruiken?",
+          "Nee. De onderzochte 2.2 TDCi uit 2016 heeft 2198 cc en 92 kW; de 2.0 EcoBlue uit 2020 1995 cc en 95,6 kW. Het zijn verschillende dieselmotor- en ECU-families. Ook DPF/SCR, distributie, turbo en beschikbare koppellimieten moeten afzonderlijk worden gecontroleerd."
+        ],
+        [
+          "Zijn Transit Custom 2.2 TDCi 100 en 125 pk één en dezelfde chiptuning?",
+          "Ze delen in het gecontroleerde materiaal 2198 cc en RDW-type FCC maar hebben andere originele vermogens van 74 en 92 kW. Een overeenkomstige motorfamilie betekent niet dat de werkelijke ECU-software, turbo, koppeling of fabrieksafstelling gelijk is. Kies eerst het juiste RDW-profiel en laat de hardware bevestigen."
+        ]
+      ],
+      "engineSlugs": [
+        "ford-transit-custom-22-tdci-100",
+        "ford-transit-custom-22-tdci-125",
+        "ford-transit-custom-20-ecoblue-130"
+      ]
+    },
+    {
+      "slug": "ford-transit-ecoblue-130-165-170",
+      "modelSlug": "ford-transit",
+      "headline": "Ford Transit 2.0 EcoBlue 130, 165 en 170: bouwjaren vergelijken",
+      "intro": "De grote Ford Transit met 2.0 EcoBlue verschijnt in het NoordTune-onderzoek met meerdere fabrieksvermogens en goedgekeurde RDW-cohorten. Voor bestelwagens van bouw- en servicebedrijven is het verschil tussen een 130, 165 of 170 pk-uitvoering belangrijker dan één gemiddelde Stage 1-belofte. Het dossier vergelijkt de al onderzochte FCD- en FED-registraties, de 1995 en 1996 cc-bouwfases en de daadwerkelijke eerste toelatingsjaren 2016 tot en met 2024, zonder ongedocumenteerde tussenliggende uitvoeringen alsnog als gedekt aan te merken.",
+      "difference": "Bij oudere 2.0 EcoBlue 130-varianten staan in het beoordeelde bestand onder andere 96 kW of 95,6 kW en 1995 cc. De 170 uit 2016 is apart geregistreerd met 125 kW. Voor een latere 2024 FCD staan zowel een 130 met 95,7 kW als een 165 met 121,3 kW, beide in een 1996 cc-cohort. Een gedeelde badge 130 of RDW-type FCD bepaalt dus niet zelfstandig de softwareversie. Er zijn ook aparte FCD- en FED-profielen voor specifieke toelatingsjaren; iedere Stage 1-bronreeks blijft bij haar eigen scope.",
+      "checks": "Bevestig aan de hand van RDW of de Transit FCD/FED, origineel 95,6/95,7/96, 121,3 of 125 kW, en 1995/1996 cc heeft. Controleer exact toelatingsjaar, motorcode, ECU-firmware, beschikbaar motorkoppel en de aanwezige versnellingsbak of automaat. Bij de EcoBlue-familie zijn onderhoudsdocumentatie, juiste olie en toepasselijk distributie- en riem-in-oliesysteem met oliedruk essentieel om te beoordelen. DPF, SCR/AdBlue, NOx-sensoren en andere storingen worden eerst onderzocht en hersteld.",
+      "usage": "Een Transit die veel kilometers met belading, opbouw of een aanhanger rijdt, vraagt een conservatieve belastingafweging. Het is niet vanzelfsprekend dat de bronwaarde van 170 pk-fabrieksafstelling overeenkomt met de toelaatbare momentopbouw van een vroegere 130 of 2024 165. Stuur bij de offerte de originele RDW-kW en het type mee zodat geen range van een andere bedrijfswagen terechtkomt in het advies.",
+      "faq": [
+        [
+          "Waarom staan er Ford Transit 130 pk-varianten met 95,6, 95,7 en 96 kW?",
+          "De gecontroleerde RDW-toepassingen betreffen verschillende exacte typen, motorinhouden, toelatingsjaren en fabrieksregistraties. Kleine kW-verschillen en een 1995/1996 cc-grens mogen niet worden weggepoetst, omdat software en motorrevisie kunnen verschillen. NoordTune bevestigt de motorcode en ECU voordat een gepubliceerde Stage 1-range relevant wordt."
+        ],
+        [
+          "Kan een Transit 165 uit 2024 dezelfde Stage 1 krijgen als een 170 uit 2016?",
+          "Nee, niet op basis van hun marketingvermogens. In de gecontroleerde data heeft de 2024 165 121,3 kW en 1996 cc; de eerdere 170 125 kW en 1995 cc. ECU-generatie, emissiehardware, transmissie en belading moeten apart worden onderzocht. De externe tuningcijfers op iedere motorpagina zijn geen individuele garantie."
+        ]
+      ],
+      "engineSlugs": [
+        "ford-transit-fcd-20-ecoblue-170-2016",
+        "ford-transit-fed-20-ecoblue-130-2018-19",
+        "ford-transit-20-ecoblue-130",
+        "ford-transit-fcd-20-ecoblue-130-2019",
+        "ford-transit-20-ecoblue-130-2024",
+        "ford-transit-20-ecoblue-165-2024"
+      ]
+    },
+    {
+      "slug": "volkswagen-crafter-20-tdi-102-140",
+      "modelSlug": "volkswagen-crafter",
+      "headline": "Volkswagen Crafter 2.0 TDI 102 of 140: Euro 6 vergelijken",
+      "intro": "De Volkswagen Crafter II is leverbaar met verschillende 2.0 TDI-fabrieksafstellingen. In de beoordeelde NoordTune-records zien we 102 en 140 pk-profielen, elk met eigen originele kW, RDW-toelatingsjaar en Stage 1-bronnen. Wie voor een Crafter een hoger koppel zoekt bij dagelijks transport, moet eerst onderscheid maken tussen een originele 75 kW en 103 kW-uitvoering en vervolgens vaststellen welke ECU-, emissie- en transmissiegeneratie aanwezig is. Deze vergelijking is gericht op die werkelijk gecontroleerde gegevens, niet op elke denkbare Crafter.",
+      "difference": "De geselecteerde Crafter 2.0 TDI 102 uit 2018 heeft 1968 cc en 75 kW. Voor de Crafter 140 staan twee aparte 103 kW/1968 cc-cohorten beschreven: een oudere reeks 2017–2020 en een recentere uit 2023–2024 met andere Euro 6d-context. RDW-type SYN1E komt bij deze onderzochte varianten voor, dus de typecode alleen vertelt niet of 102 of 140 pk origineel was of welke softwarefase aanwezig is. Zelfs twee verschillende 140 pk-Crafters hoeven niet dezelfde ECU-sleutel of uitlaatgasnabehandeling te hebben.",
+      "checks": "Controleer de originele 75 of 103 kW en 1968 cc, RDW-type SYN1E, eerste toelating en echte motor-/ECU-softwareversie. Beoordeel aanhangwagengebruik, laadgewicht en de transmissie: een werkbus met zware opbouw kan extra thermische belasting ervaren. Controleer bovendien de staat van DPF, SCR, AdBlue, koelcircuit en onderhoud. De externe 102- en 140 pk-vermogensranges zijn afzonderlijke bronpublicaties en geven geen toestemming om hardwarelimieten te overschrijden.",
+      "usage": "Voor lange koeriersritten en Crafters met inbouw, materiaal of trekgewicht is betrouwbaarheid belangrijker dan een kortstondige maximaal gepubliceerde Nm-piek. Ook de vraag of een 2018-bedrijfswagen geschikt is voor de hoogste bronrange volgt niet uit de naam 2.0 TDI. Vraag na de kentekencheck een ECU- en transmissiebeoordeling aan voor het individuele voertuig.",
+      "faq": [
+        [
+          "Kan ik de Stage 1-waarde van een Crafter 140 Euro 6d uit 2024 gebruiken voor een Crafter 140 uit 2018?",
+          "Niet automatisch. Beide onderzochte uitvoeringen hebben 103 kW en 1968 cc, maar zijn uit verschillende toelatings- en emissiefases afkomstig. De werkelijke ECU-software, mogelijke DPF/SCR-updates en de aanwezige versnellingsbak moeten eerst worden vastgesteld."
+        ],
+        [
+          "Is Volkswagen Crafter 2.0 TDI 102 pk hetzelfde als de 140 pk-uitvoering?",
+          "Nee. De gecontroleerde 102 is origineel 75 kW en de 140 103 kW, ondanks identieke 1968 cc en soms dezelfde RDW-typecode. De motorafstelling, koppellimieten en mogelijk hardware verschillen. NoordTune koppelt daarom Stage 1-bronwaarden aan het exacte fabrieksvermogen en bouwjaar."
+        ]
+      ],
+      "engineSlugs": [
+        "volkswagen-crafter-20-tdi-102-euro6-2018",
+        "volkswagen-crafter-20-tdi-140-2017-20",
+        "volkswagen-crafter-20-tdi-140-eu6d-2023-24"
+      ]
+    }
+  ]
+}

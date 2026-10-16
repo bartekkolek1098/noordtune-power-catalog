@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16",
+  "items": [
+    {
+      "slug": "toyota-proace-15-20-d4d",
+      "modelSlug": "toyota-proace",
+      "headline": "Toyota Proace 1.5 of 2.0 D-4D 100–177: Stage 1 vergelijken",
+      "intro": "Bij Toyota Proace wordt de naam D-4D gebruikt voor verschillende dieselmotoren die qua cilinderinhoud, originele fabrieks-kW en ECU niet onderling uitwisselbaar zijn. Deze vergelijking bundelt de source-reviewed Proace V-varianten met 1.5 D-4D 100/120 en 2.0 D-4D 122/150/177. Elke uitvoering heeft eigen RDW-gegevens en onafhankelijke Stage 1-publicaties. Een installateur die een Proace voor het werk rijdt, kan op deze pagina eerst zijn geregistreerde motorvariant en eerste toelating controleren voordat hij een passende individuele offerte aanvraagt.",
+      "difference": "De onderzochte 1.5 D-4D is 1499 cc en heeft origineel 75 of 88 kW. Bij de 2.0 D-4D liggen de originele RDW-vermogens op 90, 110 of 130 kW bij 1997 cc. De 150 pk-versie is in de brondata voor 2019 onderzocht, de 122/177 binnen apart aangegeven 2020–2024-cohorten. Delen van het voertuigplatform worden met andere merken gedeeld, maar een Peugeot- of Citroën-softwarebestand of tunerwaarde wordt daarom niet automatisch aan Toyota toegewezen. Alleen de gepubliceerde Toyota Proace-V-profielen zijn hieronder onderling vergeleken.",
+      "checks": "Leg eerst type V, origineel 75/88/90/110/130 kW, 1499 of 1997 cc en het correcte toelatingsjaar vast. Verifieer daarna aan de echte wagen het ECU- en motornummer, brandstofinjectie, turbo, koeling en mogelijke handbak of automaat. Bij de dieselprofielen horen ook DPF, SCR/AdBlue en foutcodes bij de beoordeling. Een externe Stage 1-range voor een Proace 2.0 177 zegt niet of een 1.5 100 dezelfde warmte- of koppellimiet aankan.",
+      "usage": "Een Proace met gereedschap, service-inrichting, trekhaak of dagelijks personenvervoer vraagt een andere belastingafweging dan een lichte testauto. De langetermijnstaat van de automaat, turbo, koeling en emissievoorzieningen heeft voorrang op de hoogste gepubliceerde Nm-waarde. Een individuele NoordTune-beoordeling kan pas na selectie en controle van de werkelijk gemonteerde motor plaatsvinden.",
+      "faq": [
+        [
+          "Waarom heeft Toyota Proace 1.5 D-4D 100 niet hetzelfde Stage 1-resultaat als 2.0 D-4D 122?",
+          "De onderzochte 1.5 D-4D 100 heeft 1499 cc en 75 kW, terwijl de 2.0 D-4D 122 1997 cc en 90 kW heeft. Motorcode, turbosysteem, ECU en de toelaatbare transmissiebelasting kunnen verschillen. De Stage 1-ranges horen daarom bij afzonderlijke RDW- en tunerbronnen."
+        ],
+        [
+          "Kan een Toyota Proace 2.0 D-4D 150 uit 2019 dezelfde motorsoftware krijgen als 177 uit 2024?",
+          "Dat mag niet uit de naam 2.0 D-4D worden afgeleid. Het geselecteerde 150 pk-profiel heeft origineel 110 kW en een andere toelatingsscope dan de 177 met 130 kW uit 2020–2024. Beide vereisen een eigen ECU-identificatie, controle van emissiehardware en transmissie."
+        ]
+      ],
+      "engineSlugs": [
+        "toyota-proace-15-d4d-100-2020-23",
+        "toyota-proace-15-d4d-120-2020-23",
+        "toyota-proace-20-d4d-122-2020-22",
+        "toyota-proace-20-d4d-150-2019",
+        "toyota-proace-20-d4d-177-2020-24"
+      ]
+    },
+    {
+      "slug": "peugeot-boxer-20-22-bluehdi",
+      "modelSlug": "peugeot-boxer",
+      "headline": "Peugeot Boxer 2.0 versus 2.2 BlueHDi 120–165: Stage 1",
+      "intro": "De Peugeot Boxer is een veelgebruikte bedrijfswagen en camperbasis, maar de naam BlueHDi vertelt niet of er een oudere 2.0 of een latere 2.2 diesel is gemonteerd. In de geauditeerde NoordTune-profielen worden de Boxer 2.0 BlueHDi 130 uit 2017–2019 en drie verschillende 2.2 BlueHDi 120/140/165-versies uit 2020–2023 afzonderlijk gevolgd. Deze vergelijking maakt duidelijk waarom een overeenkomende carrosserie en gedeelde RDW-typecode geen vrijbrief zijn om ECU, Stage 1-koppel of oorspronkelijke fabriekswaarden te mengen.",
+      "difference": "De 2.0 BlueHDi 130 is in onze RDW-toepassing 1997 cc en 96 kW. De drie geselecteerde 2.2 BlueHDi-motoren gebruiken 2179 cc met respectievelijk 88, 103 en 121 kW origineel. RDW-type Y kan bij deze uitvoeringen terugkomen, maar de andere cilinderinhoud en fabrieksafstelling betekenen dat de motor- en ECU-identificatie apart moet gebeuren. Zelfs de 120, 140 en 165 binnen dezelfde 2.2-familie worden niet op basis van alleen het blokvolume gelijkgetrokken: hun bronresultaten blijven op afzonderlijke motorpagina's.",
+      "checks": "Controleer het Boxer-kenteken met RDW-type Y, de originele kW, 1997 of 2179 cc en het eerste toelatingsjaar. Beoordeel vervolgens de ECU-identiteit, motorcode, injectie, turbo, DPF, SCR/AdBlue, koelcircuit en eventuele handbak. Bij een camper, koeriersbus of zwaar beladen Boxer bepalen onder andere lange snelwegritten, opbouw en versnellingsbakconditie hoe het gepubliceerde extra koppel daadwerkelijk zou worden belast. Eerst diagnose, dan eventueel software.",
+      "usage": "Een Boxer met camperopbouw, bouwmaterialen of veel laadgewicht is op lange ritten langdurig aan thermische belasting blootgesteld. Het hoogste Stage 1-cijfer uit een externe vergelijking is daarom niet automatisch het verstandigste werkplaatsadvies. De wettelijk toegestane laad- en trekgewichten blijven ongewijzigd en voorgeschreven emissiecontrole moet in orde zijn.",
+      "faq": [
+        [
+          "Waarom is Boxer BlueHDi 130 uit 2018 geen 2.2 BlueHDi 140 uit 2022?",
+          "In de gecontroleerde RDW-gegevens gebruikt de 130 uit 2017–2019 1997 cc en 96 kW, terwijl de 2.2 BlueHDi 140 uit 2020–2023 2179 cc en 103 kW heeft. Het zijn andere cilinderinhoud- en ECU-contexten. Dezelfde carrosserie of type Y verandert dat verschil niet."
+        ],
+        [
+          "Kan een Peugeot Boxer 2.2 BlueHDi 120 dezelfde Stage 1 krijgen als 165?",
+          "Niet op basis van de 2.2 BlueHDi-naam. De originele fabrieksvermogens zijn respectievelijk 88 en 121 kW bij de geselecteerde motoren, en verschillende hardware of kalibraties zijn mogelijk. De bronranges zijn afzonderlijk per uitvoering gepubliceerd. Een controle van motor, ECU, emissiesysteem en versnellingsbak blijft noodzakelijk."
+        ]
+      ],
+      "engineSlugs": [
+        "peugeot-boxer-20-bluehdi-130-2017-19",
+        "peugeot-boxer-22-bluehdi-120-2020-23",
+        "peugeot-boxer-22-bluehdi-140-2020-23",
+        "peugeot-boxer-22-bluehdi-165-2020-23"
+      ]
+    },
+    {
+      "slug": "fiat-ducato-23-multijet-euro6",
+      "modelSlug": "fiat-ducato",
+      "headline": "Fiat Ducato 2.3 MultiJet 120/130: Euro 6 en bouwjaar",
+      "intro": "Fiat Ducato 2.3 MultiJet wordt vaak gebruikt door bedrijven en als basis voor campers. Een Ducato 130 met 96 kW uit 2014 is echter niet zonder meer dezelfde ECU- en emissieversie als een Ducato 130 uit 2019 of 2020. De gecontroleerde NoordTune-dossiers bevatten afzonderlijke 2.3-liter MultiJet 120 en 130-motoren met originele RDW-registraties en onafhankelijke Stage 1-bronnen. Dit overzicht vergelijkt bouwfases en voorkomt dat dezelfde badge leidt tot een onterechte aanname over tuningresultaat of koppelgrens.",
+      "difference": "De geselecteerde Ducato 2.3 MultiJet 130 heeft in de onderzochte 2013–2015-, Euro 6/2018–2019- en 2020-toepassingen een origineel fabrieksvermogen van 96 kW bij 2287 cc. Desondanks zijn deze cohorten afzonderlijk onderbouwd omdat ECU-firmware, nabehandeling en motormanagement per fase kunnen veranderen. De 120-versie uit 2020–2021 is apart als 88 kW geregistreerd. Een gelijke RDW-typecode 250 en 2287 cc zijn dus geen garantie dat een oudere 130 hetzelfde tuningbestand, bron-Nm of diagnoseprotocol gebruikt als een nieuwere.",
+      "checks": "Verifieer eerst RDW-type 250, originele 96 of 88 kW, 2287 cc, bouwfase en juiste toelatingsjaar. Lees daarna de ECU-hardware- en software-identificatie en controleer of de MultiJet-injectie, turbo, DPF en eventuele SCR/AdBlue werken zoals vereist. Voor campers moet de extra thermische belasting door opbouw, lange snelwegritten en versnellingsbak expliciet in de afstelling worden meegenomen. Bronwaarden van een oudere Euro 5-fase zijn niet automatisch geldig voor Euro 6.",
+      "usage": "Of de Ducato wordt ingezet als koerierswagen, camper of werkbus verandert de mechanische belasting bij extra koppel. Daarom toont NoordTune externe Stage 1-ranges uitsluitend bij het onderbouwde cohort, zonder een universele garantie. Vraag bij een offerte het exacte modeljaar, fabrieks-kW en de voertuigconfiguratie door en laat storingen aan emissievoorzieningen eerst conform verhelpen.",
+      "faq": [
+        [
+          "Waarom kunnen Fiat Ducato 2.3 MultiJet 130 uit 2014, 2019 en 2020 niet één Stage 1 krijgen?",
+          "De gecontroleerde registraties tonen in alle drie de gevallen 2287 cc en 96 kW, maar het zijn verschillende model- en emissiefases met mogelijk andere ECU-software. Die overeenkomst in originele kW is niet voldoende voor bestandscompatibiliteit. Iedere bronset hoort bij de specifiek onderzochte jaren en hardware."
+        ],
+        [
+          "Is Fiat Ducato 2.3 MultiJet 120 een gedowngrade 130 met gegarandeerd hetzelfde eindvermogen?",
+          "Dat is niet uit de RDW-gegevens of gedeelde motorinhoud af te leiden. De onderzochte 120 heeft origineel 88 kW en de 130 96 kW; eventuele turbo-, ECU-, emissie- en transmissieverschillen moeten aan het voertuig worden gecontroleerd. De gepubliceerde Stage 1-range blijft een externe indicatie, geen gegarandeerd NoordTune-resultaat."
+        ]
+      ],
+      "engineSlugs": [
+        "fiat-ducato-23-multijet-130-2013-15",
+        "fiat-ducato-23-multijet-130-euro6-2018-19",
+        "fiat-ducato-23-multijet-120-euro6-2020-21",
+        "fiat-ducato-23-multijet-130-euro6-2020"
+      ]
+    }
+  ]
+}

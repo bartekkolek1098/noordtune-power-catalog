@@ -6,6 +6,7 @@ import {nlModelFamilyHubs,nlModelHubPath} from "@/data/nl-model-family-seo";
 import {nlBrandEngineGuides,nlBrandEngineIndexPath,nlBrandGuidePath} from "@/data/nl-brand-engine-guides";
 import {nlVanModels,nlVanModelPath,nlVanEnginePath} from "@/data/nl-vans-seo";
 import {nlVanEngines} from "@/data/nl-van-engines-seo";
+import {nlVanComparisons,nlVanCompareIndexPath,nlVanComparePath} from "@/data/nl-van-comparisons";
 import {nlVehicleDirectoryPath} from "@/data/nl-vehicle-editorial";
 import {routing} from "@/i18n/routing";
 import {absoluteUrl} from "@/lib/site-url";
@@ -67,6 +68,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url:absoluteUrl(nlVanEnginePath(e.slug)),changeFrequency:"monthly" as const,priority:0.73
     }))
   ];
+  const nlVanComparisonPages=[
+    {url:absoluteUrl(nlVanCompareIndexPath),changeFrequency:"monthly" as const,priority:0.79},
+    ...nlVanComparisons.map(c=>({url:absoluteUrl(nlVanComparePath(c.slug)),
+      changeFrequency:"monthly" as const,priority:0.76}))
+  ];
   const reviewedVehicleDirectory=[{url:absoluteUrl(nlVehicleDirectoryPath),changeFrequency:"monthly" as const,priority:0.8}];
-  return [...homePages, ...vehiclePages, ...stagePages, ...reviewedVehicleDirectory, ...nlEnginePages, ...nlModelPages, ...nlBrandPages, ...nlVanPages];
+  return [...homePages, ...vehiclePages, ...stagePages, ...reviewedVehicleDirectory, ...nlEnginePages, ...nlModelPages, ...nlBrandPages, ...nlVanPages, ...nlVanComparisonPages];
 }

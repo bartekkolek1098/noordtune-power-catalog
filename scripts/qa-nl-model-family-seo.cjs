@@ -24,7 +24,7 @@ const root=process.env.RDW_QA_URL||"http://127.0.0.1:3215";
   assert.equal(xmlRes.status(),200);
   const xml=await xmlRes.text();
   const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-  assert.equal(urls.length,462,"Three new generation comparisons and existing brand guides retained");
+  assert.equal(urls.length,472,"Existing passenger models and nine van comparisons retained");
   const modelUrls=urls.filter(u=>/\/nl\/modellen(?:\/|$)/.test(u));
   assert.equal(modelUrls.length,25,"One NL model index plus 24 independently authored comparisons");
   assert.equal(new Set(modelUrls).size,modelUrls.length);
@@ -71,6 +71,6 @@ const root=process.env.RDW_QA_URL||"http://127.0.0.1:3215";
   await mobile.goto(root+"/nl/motoren",{waitUntil:"domcontentloaded"});
   assert.ok(await mobile.locator('a[href="/nl/modellen"]').count()>=1,"NL engine directory links model category");
   assert.deepEqual(jsErrors,[],"No JS runtime errors in model hubs");
-  console.log("NL_MODEL_HUB_BROWSER_PASS",JSON.stringify({verifiedModelPages:verified,modelIndex:1,motorLinks:56,newSitemapUrls:3,totalSitemap:462,negativeLanguages404:4,mobileWidths:[320,390],desktop:1440,allSourceBacked:true}));
+  console.log("NL_MODEL_HUB_BROWSER_PASS",JSON.stringify({verifiedModelPages:verified,modelIndex:1,motorLinks:56,newSitemapUrls:3,totalSitemap:472,negativeLanguages404:4,mobileWidths:[320,390],desktop:1440,allSourceBacked:true}));
  } finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16",
+  "items": [
+    {
+      "slug": "mercedes-sprinter-313-317-cdi",
+      "modelSlug": "mercedes-sprinter",
+      "headline": "Mercedes Sprinter 313, 314, 315, 316 en 317 CDI: Stage 1 vergelijken",
+      "intro": "Een Mercedes-Benz Sprinter met het opschrift 313, 314, 315, 316 of 317 CDI vraagt om meer dan een herkenning op de achterdeur. In de gecontroleerde NoordTune-publicaties staan afzonderlijke dieselvarianten met 2143 cc en 1950 cc, originele RDW-vermogens van 95 tot 125 kW en verschillende eerste toelatingsjaren. Deze vergelijking laat zien welke fabrieksregistraties bij de al gepubliceerde Stage 1-bronprofielen horen. Zo kan een bedrijf met meerdere Sprinters per voertuig de juiste motor selecteren in plaats van één willekeurige vermogensverhoging op de hele vloot toe te passen.",
+      "difference": "De onderzochte oudere 313 CDI uit 2013 heeft 2143 cc en 95 kW; de 314 CDI van 2018 met dezelfde inhoud staat op 105 kW en de 316 CDI op 120 kW. De latere 315 CDI heeft in de gecontroleerde gegevens 1950 cc en 110 kW, terwijl de 317 CDI 1950 cc en 125 kW heeft. Sommige RDW-typecodes overlappen ondanks deze technische verschillen: een 906BB35-aanduiding identificeert dus niet zelfstandig de motorcode of software. Het profiel 315 CDI bevat bovendien afzonderlijk gecontroleerde toelatingen in 2020 en 2024. Wij voegen hun ontbrekende tussenliggende bouwjaren niet automatisch toe.",
+      "checks": "Controleer op kenteken de daadwerkelijk geregistreerde kW, cilinderinhoud, RDW-typecode, eerste toelating en brandstof. Vergelijk daarna aan het voertuig de motoridentiteit, ECU/hardwareversie, SCR en AdBlue, DPF, foutcodes en een eventuele automatische transmissie. Voor de 2143 cc-uitvoeringen en 1950 cc-uitvoeringen kan een andere injectie- en softwarearchitectuur gelden. Een externe pk- of Nm-publicatie van 316 CDI is geen vrijgave voor een 315 of 317 CDI, zelfs niet als dezelfde busopbouw wordt gebruikt.",
+      "usage": "Bij Sprinters met gereedschapsinrichting, lange bestelroutes, een gesloten kast of een aanhanger beïnvloeden koeling, koppeling, gewicht en langdurige belasting het technisch verantwoorde moment. Vraag daarom een beoordeling voor de exacte werkbus aan. Een Stage 1-calibratie verhoogt het wettelijk toegelaten laad- of trekgewicht niet en een SCR-storing hoort eerst conform te worden verholpen.",
+      "faq": [
+        [
+          "Is Sprinter 315 CDI uit 2020 hetzelfde chiptuningprofiel als een 315 CDI uit 2024?",
+          "Niet automatisch. In deze catalogus bestaan een gecontroleerd 1950 cc/110 kW-profiel met afzonderlijke 2020- en 2024-toepassingen, maar de ECU-software en emissiefase kunnen per voertuig verschillen. Een overeenkomende badge en kW zijn geen bewijs voor een identiek schrijfbestand. De werkelijke ECU moet eerst gelezen worden."
+        ],
+        [
+          "Kan ik de Stage 1-waarden van een Sprinter 316 CDI 163 pk op de 317 CDI 170 pk gebruiken?",
+          "Nee. De gecontroleerde 316 CDI met 2143 cc en 120 kW heeft andere kenmerken dan de 317 CDI met 1950 cc en 125 kW. Hun bronpublicaties zijn afzonderlijk beoordeeld. Motorcode, transmissie, actuele gezondheid en DPF/SCR blijven bepalend voordat NoordTune een passend koppeladvies kan geven."
+        ]
+      ],
+      "engineSlugs": [
+        "mercedes-sprinter-w906-313-cdi-129-2013",
+        "mercedes-sprinter-w906-314-cdi-143-2018",
+        "mercedes-sprinter-w906-21-cdi-143",
+        "mercedes-sprinter-w906-316-cdi-163-2010",
+        "mercedes-sprinter-w906-316-cdi-163-2018",
+        "mercedes-sprinter-315-cdi-1950-150",
+        "mercedes-sprinter-317-cdi-1950-170-2023-24"
+      ]
+    },
+    {
+      "slug": "mercedes-vito-114-119-cdi",
+      "modelSlug": "mercedes-vito",
+      "headline": "Mercedes Vito 114, 116 en 119 CDI: bouwjaar, ECU en Stage 1",
+      "intro": "Bij de Mercedes Vito met 114, 116 of 119 CDI kan een uiterlijk gelijkende bestelwagen een andere fabrieksafstelling en emissieversie hebben. NoordTune heeft afzonderlijk geauditeerde motorprofielen voor 2020, 2023 en 2024, met 1950 cc en oorspronkelijke vermogens van 100, 120 of 140 kW. Deze keuzehulp vergelijkt die RDW-identiteiten en de afzonderlijke Stage 1-bronreeksen. De cijfers hebben alleen betrekking op de genoemde toepassingsjaren, niet op iedere Vito sinds de introductie.",
+      "difference": "De gecontroleerde Vito 114 CDI heeft origineel 100 kW, de 116 CDI 120 kW en de 119 CDI 140 kW. Voor de 114 en 116 zijn 2023 en Euro 6e/2024 in verschillende motorprofielen uitgewerkt, terwijl de 119 wordt onderscheiden in een gecontroleerde 2020-uitvoering en een Euro 6e-uitvoering uit 2024. De RDW-types 639/2 en 639/4 verschillen eveneens per broncohort. Eenzelfde 1950 cc-inhoud is dus geen bewijs dat de ECU, softwareversie, uitlaatgasnabehandeling of automaat gelijk is.",
+      "checks": "Leg de Vito eerst vast met kenteken, RDW-type 639/2 of 639/4, exacte originele kW, 1950 cc en eerste toelating. Lees aan de auto daarna de werkelijke motorcode en ECU-software uit en controleer automaat, olie- en koelconditie, injectie, DPF, AdBlue en NOx-sensoren. Euro 6e geeft aanleiding om de toegangs- en emissievereisten apart te beoordelen; broncijfers uit 2023 zijn niet zonder meer overdraagbaar op een 2024-auto.",
+      "usage": "Een Vito die dagelijks servicepersoneel of materiaal vervoert, moet betrouwbaar en voorspelbaar blijven. Extra gepubliceerde koppelpieken kunnen ongeschikt zijn wanneer een automaat, koppeling of emissiesysteem al problemen vertoont. NoordTune beoordeelt daarom de motor en de bedrijfsinzet voordat een individuele kalibratie wordt aangeboden; de bronnen zijn geen proefbankresultaat van jouw wagen.",
+      "faq": [
+        [
+          "Waarom staan Mercedes Vito 114 CDI 2023 en 2024 apart in de catalogus?",
+          "Beide kunnen volgens de gecontroleerde RDW-toepassingen 1950 cc en 100 kW origineel hebben, maar 2024 is als andere Euro 6e-software- en emissiecontext onderzocht. Dat betekent niet dat elke Vito van hetzelfde uiterlijk identiek kan worden geprogrammeerd. Een actuele ECU-identificatie en controle van SCR en transmissie blijven nodig."
+        ],
+        [
+          "Is de Vito 119 CDI geschikt voor hetzelfde Stage 1-koppel als 116 CDI?",
+          "Dat volgt niet uit de badge of gedeelde inhoud van 1950 cc. De beoordeelde 119 heeft origineel 140 kW tegenover 120 kW voor de 116 en is apart van onafhankelijke tunerbronnen voorzien. Ook de automaat, staat van de aandrijflijn en eventuele 2024-emissiefase bepalen de uiteindelijk verantwoorde instelling."
+        ]
+      ],
+      "engineSlugs": [
+        "mercedes-vito-114-cdi-1950-2023",
+        "mercedes-vito-114-cdi-1950-euro6e-2024",
+        "mercedes-vito-116-cdi-1950-2023",
+        "mercedes-vito-116-cdi-1950-euro6e-2024",
+        "mercedes-vito-119-cdi-1950-2020",
+        "mercedes-vito-119-cdi-1950-euro6e-2024"
+      ]
+    },
+    {
+      "slug": "volkswagen-transporter-t5-t6-t61",
+      "modelSlug": "volkswagen-transporter",
+      "headline": "Volkswagen Transporter T5, T6 en T6.1 2.0 TDI vergelijken",
+      "intro": "De Volkswagen Transporter heeft voor bouwbedrijven en installateurs een lange modelgeschiedenis: T5, T6 en T6.1 lijken soms sterk op elkaar en komen allemaal met de badge 2.0 TDI voor. Toch tonen de gecontroleerde NoordTune-bronnen duidelijk andere fabrieksvermogens, ECU-fases, turboconfiguraties en toelatingsjaren. Deze technische vergelijking brengt de daadwerkelijk beoordeelde 75, 81, 103, 110, 132 en 150 kW-uitvoeringen bijeen en koppelt ieder resultaat rechtstreeks aan zijn eigen RDW-motorprofiel.",
+      "difference": "De onderzochte T5 omvat onder andere 2.0 TDI 140 met 103 kW in 2012–2014 en de 102 en BiTDI 180 van 2015. Bij T6 staat een 204 pk/150 kW-motor uit 2017–2019 naast een apart gecontroleerde 102 pk/75 kW uit 2020. T6.1 komt voor met 110 kW en verschillende 2020–2021 versus 2024-ECU-fases en met 81 kW in 2024. Veel toepassingsrecords delen RDW-type 7J0 en 1968 cc. Daarom is de typecode alleen onvoldoende om een T5-, T6- of T6.1-kalibratie uit te kiezen.",
+      "checks": "Controleer kenteken, carrosseriefase, geregistreerde kW, RDW-type, 1968 cc en eerste toelating. Bevestig vervolgens de werkelijk gemonteerde 2.0 TDI-/BiTDI-hardware, ECU-software, turbo- en injectiestatus, DSG of handbak en koeling. Bij een gebruikte T5 BiTDI verdient thermische gezondheid extra aandacht; bij T6.1 moeten latere emissie- en ECU-updates worden meegenomen. Hetzelfde marketingvermogen in 2021 en 2024 betekent niet dat hetzelfde ECU-bestand past.",
+      "usage": "Transporters rijden vaak beladen met stellingen, gereedschap of een aanhanger. Een soepel middengebied kan voor zulke toepassingen relevanter zijn dan een korte gepubliceerde koppelspits. Een Stage 1-advies houdt rekening met versnellingsbak, onderhoud, brandstofkwaliteit en intacte DPF/SCR/AdBlue. Trekmassa, laadvermogen en emissie-eisen worden niet verruimd door een motorsoftwareaanpassing.",
+      "faq": [
+        [
+          "Waarom kan een Transporter T5 2.0 TDI 140 niet automatisch de Stage 1 van een T6.1 150 krijgen?",
+          "De T5 140 heeft in deze controle origineel 103 kW, terwijl de beoordeelde T6.1 150 op 110 kW geregistreerd is. Ook ECU-fase, turbo, transmissie en emissiesysteem kunnen verschillen. Zelfs de gedeelde 1968 cc-inhoud en soms identieke RDW-typecode 7J0 geven geen technische vrijgave voor een tuningbestand van een andere generatie."
+        ],
+        [
+          "Zijn de Transporter T6.1 150 uit 2020–2021 en uit 2024 dezelfde motorsoftware?",
+          "Dat mag niet zonder voertuigcontrole worden aangenomen. De catalogus toont bewust afzonderlijke bronprofielen voor die jaren en emissiefases. Laat de werkelijke ECU-onderdeel- en softwaresleutel, DPF/SCR en de gebruikte DSG of handbak identificeren voordat een bronbereik uit één cohort op een andere wagen wordt toegepast."
+        ]
+      ],
+      "engineSlugs": [
+        "volkswagen-transporter-t5-20-tdi-140",
+        "volkswagen-transporter-t5-20-tdi-102-2015",
+        "volkswagen-transporter-t5-20-bitdi-180-2015",
+        "volkswagen-transporter-t6-20-tdi-102-2020",
+        "volkswagen-transporter-t6-20-tdi-204",
+        "volkswagen-transporter-t61-20-tdi-150-2020-21",
+        "volkswagen-transporter-t61-20-tdi-150-eu62-2024",
+        "volkswagen-transporter-t61-20-tdi-110-2024"
+      ]
+    }
+  ]
+}

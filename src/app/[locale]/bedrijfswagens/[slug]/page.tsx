@@ -6,6 +6,7 @@ import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {nlVanModels,nlVanModelBySlug,nlVanModelPath,nlVanEnginePath,nlVanModelMetadata} from "@/data/nl-vans-seo";
 import {nlVanEngines} from "@/data/nl-van-engines-seo";
+import {nlVanCompareByModelSlug,nlVanComparePath} from "@/data/nl-van-comparisons";
 import {nlStage1BySlug,nlStage1EnginePath} from "@/data/nl-stage1-engine-seo";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
@@ -92,6 +93,9 @@ export default async function NlBusinessVanModel({params}:Props){
      <p>{m.difference}</p>
      <p className="ux-van-model-business-note">{m.usage}</p>
     </section>
+    {nlVanCompareByModelSlug.get(m.slug)?<a data-testid="van-model-to-comparison" className="ux-nl-model-engine-crosslink" href={sitePath(nlVanComparePath(nlVanCompareByModelSlug.get(m.slug)!.slug))}>
+      Vergelijk alle {nlVanCompareByModelSlug.get(m.slug)!.engines.length} beoordeelde motoren van {m.make} {m.model} per bouwjaar, originele RDW-kW en Stage 1-bron<ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true"/>
+    </a>:null}
     <section className="ux-van-model-section" id="motor-varianten" aria-labelledby="van-engine-cases-heading">
      <p className="ux-eyebrow">RDW · EXACTE IDENTITEIT · CONTROLEERBARE BRONNEN</p>
      <h2 id="van-engine-cases-heading">Bronvermelde Stage 1-varianten</h2>

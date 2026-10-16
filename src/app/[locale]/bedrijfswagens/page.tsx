@@ -6,6 +6,7 @@ import {CatalogFooter} from "@/components/catalog-footer";
 import {MobileActionBar} from "@/components/mobile-action-bar";
 import {VanDirectory,type VanDirectoryItem} from "@/components/van-directory";
 import {nlVanModels,nlVanPending,nlVanModelPath} from "@/data/nl-vans-seo";
+import {nlVanComparisons,nlVanCompareIndexPath,nlVanComparePath} from "@/data/nl-van-comparisons";
 import {nlBrandEngineIndexPath} from "@/data/nl-brand-engine-guides";
 import {absoluteUrl} from "@/lib/site-url";
 import {sitePath} from "@/lib/site-path";
@@ -84,6 +85,15 @@ export default async function NlBusinessVanDirectory({params}:Props){
     <p>Zoek hieronder je bedrijfswagen of filter op formaat. Bij modellen met gecontroleerde bronnen staan
       de technische kW-varianten apart. Voor overige modellen ga je door naar de kentekencheck of de handmatige selectie.</p>
     <VanDirectory items={items}/>
+    <div className="mt-9 rounded-xl border border-primary/35 bg-[#17191b] p-6" aria-labelledby="van-compare-directory-link">
+     <p className="ux-eyebrow">MOTORGENERATIES EN ORIGINELE RDW-KW</p>
+     <h3 id="van-compare-directory-link" className="racing-title mt-2 text-2xl text-white md:text-3xl">Zelfde bestelwagen, andere motor?</h3>
+     <p className="mt-3 max-w-4xl text-sm leading-7 text-white/70">Vergelijk negen beoordeelde motorfamilies, waaronder Sprinter, Vito, Transit, Transporter, Crafter en Proace. We scheiden originele kW, ECU en toelatingsjaren, zonder cijfers van andere motoren over te nemen.</p>
+     <div className="mt-5 flex flex-wrap gap-4">
+      {nlVanComparisons.filter(c=>["mercedes-sprinter","volkswagen-transporter","ford-transit"].includes(c.modelSlug)).map(c=><a key={c.slug} href={sitePath(nlVanComparePath(c.slug))} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-white underline decoration-primary underline-offset-4">{c.make} {c.model}<ChevronRight className="h-4 w-4 text-primary" aria-hidden="true"/></a>)}
+      <a href={sitePath(nlVanCompareIndexPath)} className="inline-flex min-h-11 items-center gap-2 text-sm font-bold text-primary underline underline-offset-4">Bekijk alle {nlVanComparisons.length} motorvergelijkingen<ArrowUpRight className="h-4 w-4" aria-hidden="true"/></a>
+     </div>
+    </div>
     <p className="mt-6 text-sm text-white/70">Weet je al welke motor en welk jaar je zoekt? <a className="font-semibold text-primary underline underline-offset-4" href={sitePath("/nl/motoren#motor-zoeken")}>Zoek in alle beoordeelde busmotoren op bouwjaar en RDW-kW</a>.</p>
     <p className="mt-6 text-sm text-white/70">Ook personenauto&apos;s vergelijken? <a className="font-semibold text-primary underline underline-offset-4" href={sitePath(nlBrandEngineIndexPath)}>Bekijk de motoren per merk</a>.</p>
    </section>

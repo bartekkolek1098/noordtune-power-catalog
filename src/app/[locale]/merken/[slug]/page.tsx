@@ -7,6 +7,7 @@ import {MobileActionBar} from "@/components/mobile-action-bar";
 import {nlBrandEngineGuides,nlBrandGuideBySlug,nlBrandGuidePath,nlBrandGuideMetadata,nlBrandEngineIndexPath} from "@/data/nl-brand-engine-guides";
 import {nlStage1EnginePath,allStage1PowerRange,allStage1TorqueRange} from "@/data/nl-stage1-engine-seo";
 import {nlVanEnginePath,nlVanModelPath} from "@/data/nl-vans-seo";
+import {nlVanComparisons,nlVanComparePath} from "@/data/nl-van-comparisons";
 import {nlModelHubPath} from "@/data/nl-model-family-seo";
 import {dutchBrandChiptuningHref,dutchBusinessVansHref} from "@/lib/noordtune-links";
 import {absoluteUrl} from "@/lib/site-url";
@@ -134,6 +135,16 @@ export default async function NlTechnicalBrandGuide({params}:Props){
       className="flex min-w-0 items-start justify-between gap-3 rounded-lg border border-white/15 bg-white/[.04] p-5 hover:border-primary/60">
       <span><strong className="block text-lg text-white">{g.name} {m.model}</strong><span className="mt-2 block text-sm text-white/65">RDW-varianten en gebruik van de bestelwagen</span></span>
       <ChevronRight className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden="true"/>
+     </a>)}
+    </div>
+   </section>:null}
+   {nlVanComparisons.some(c=>c.make===g.make)?<section aria-labelledby="brand-bus-comparisons-title">
+    <p className="ux-eyebrow">ZAKELIJKE DIESELGENERATIES VERGELIJKEN</p>
+    <h2 id="brand-bus-comparisons-title" className="racing-title mt-3 text-3xl text-white md:text-4xl">Vergelijk {g.name}-busmotoren en bouwjaren</h2>
+    <div className="mt-6 grid min-w-0 gap-3 md:grid-cols-2" data-testid="brand-van-comparisons">
+     {nlVanComparisons.filter(c=>c.make===g.make).map(c=><a key={c.slug} href={sitePath(nlVanComparePath(c.slug))} className="flex min-w-0 items-center justify-between gap-3 rounded-lg border border-white/15 bg-white/[.035] p-5 text-white hover:border-primary/65">
+      <span><strong className="block text-base">{c.headline}</strong><span className="mt-2 block text-sm text-white/65">{c.engines.length} beoordeelde motoren · RDW-kW en Stage 1-bronnen</span></span>
+      <ChevronRight className="h-5 w-5 shrink-0 text-primary" aria-hidden="true"/>
      </a>)}
     </div>
    </section>:null}
