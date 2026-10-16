@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16",
+  "items": [
+    {
+      "slug": "citroen-jumpy-15-20-bluehdi",
+      "modelSlug": "citroen-jumpy",
+      "headline": "Citroën Jumpy 1.5 vs 2.0 BlueHDi 100–177 Stage 1",
+      "intro": "De Citroën Jumpy combineert personen- en goederenvervoer met verschillende dieselmotoren onder de naam BlueHDi. In het beoordeelde NoordTune-aanbod bestaan twee 1.5 BlueHDi-uitvoeringen en twee 2.0 BlueHDi-varianten, elk met een eigen originele RDW-kW, eerste toelating en tunerbron. Dat onderscheid is belangrijk voor een servicebus met dagelijks gereedschap, een bedrijfswagen met aanhanger of een personenbus. Deze vergelijking volgt alleen de vier reeds onafhankelijk gepubliceerde motorprofielen en doet geen uitspraak over niet-gecontroleerde Jumpy-bouwjaren.",
+      "difference": "De geselecteerde Jumpy 1.5 BlueHDi 100 uit 2019–2023 heeft 1499 cc en origineel 75 kW; de 1.5 120 uit dezelfde periode staat op 88 kW. Bij de 2.0 BlueHDi 145 uit 2021–2023 hoort 1997 cc en 106 kW, terwijl de 2.0 177 uit 2019–2023 1997 cc en 130 kW registreert. RDW-type V komt in alle vier voor en is op zichzelf dus onvoldoende om een ECU of turbo te identificeren. Het verschil tussen 1499 en 1997 cc, oorspronkelijke kW en de aparte Stage 1-referenties maakt een generieke BlueHDi-tuningvergelijking onverantwoord.",
+      "checks": "Controleer eerst het geregistreerde vermogen 75/88/106/130 kW, 1499 of 1997 cc, RDW-type V en de eerste toelatingsdatum. Inspecteer vervolgens de werkelijk toegepaste motor- en ECU-onderdeelnummers, injectorcorrecties, turbo, koeling en aanwezige automaat of handbak. Controleer ook onderhoud, storingen en werking van DPF, SCR/AdBlue en NOx-sensoren. Een 2.0-diesel die origineel 130 kW levert is geen bron voor automatische vermogensverhoging van een 1.5-uitvoering.",
+      "usage": "Een Jumpy voor installatie-, schoonmaak- of shuttlewerk rijdt regelmatig met wisselende lading en maakt veel korte stops. Dan zijn bedrijfszekerheid, DPF-regeneratie en transmissieconditie relevanter dan de hoogste kortstondige Nm-piek. NoordTune beoordeelt de individuele gebruiksomstandigheden en behoudt de wettelijk voorgeschreven emissiesystemen; Stage 1 verandert het toegelaten laad- of trekgewicht niet.",
+      "faq": [
+        [
+          "Kan ik de Citroën Jumpy 1.5 BlueHDi 120 gelijkstellen aan de 2.0 BlueHDi 145?",
+          "Nee. De onderzochte 1.5 BlueHDi 120 heeft 1499 cc en 88 kW, tegenover 1997 cc en 106 kW voor de 2.0 BlueHDi 145. Motorfamilie, turbo, ECU en transmissie kunnen daardoor sterk verschillen. De afzonderlijke bronpagina's tonen welke Stage 1-ranges daadwerkelijk bij de juiste RDW-registratie zijn gepubliceerd."
+        ],
+        [
+          "Heeft een Citroën Jumpy 2.0 BlueHDi 177 dezelfde ECU als de 145?",
+          "Een gedeelde inhoud van 1997 cc en RDW-type V geeft daarvoor geen bewijs. De originele waarden zijn 130 kW voor de 177 en 106 kW voor de 145, met eigen gecontroleerde bouwfasen en tunerpublicaties. Laat motorcode, softwareversie, automaat en emissiehardware vaststellen voordat een tuningresultaat wordt besproken."
+        ]
+      ],
+      "engineSlugs": [
+        "citroen-jumpy-15-bluehdi-100-2019-23",
+        "citroen-jumpy-15-bluehdi-120-2019-23",
+        "citroen-jumpy-20-bluehdi-145-2021-23",
+        "citroen-jumpy-20-bluehdi-177-2019-23"
+      ]
+    },
+    {
+      "slug": "citroen-berlingo-ii-iii-hdi-bluehdi",
+      "modelSlug": "citroen-berlingo",
+      "headline": "Citroën Berlingo II vs III HDi en BlueHDi Stage 1",
+      "intro": "De Citroën Berlingo is voor kleine ondernemingen een veelgebruikte compacte bestelwagen, maar tussen de oude 1.6 HDi van Berlingo II en de 1.5 BlueHDi van Berlingo III bestaan duidelijke verschillen. Het gecontroleerde NoordTune-materiaal omvat een 2015 1.6 HDi 75 en drie nieuwere 1.5 BlueHDi-versies van 75, 100 en 130. Hier worden uitsluitend die vier eigen Citroën RDW-toepassingen naast elkaar gezet. Het feit dat een Peugeot Partner of Opel Combo onderdelen deelt, betekent niet dat voor een Berlingo dezelfde ECU-versie of bronwaarde vaststaat.",
+      "difference": "De geselecteerde Berlingo II 1.6 HDi 75 uit 2015 registreert 1560 cc, 55 kW en RDW-type 7. De latere Berlingo III gebruikt 1499 cc en type E, met originele 56 kW bij de 75, 75 kW bij de 100 en 96 kW bij de 130, binnen apart beoordeelde toelatingsperioden van 2018 tot 2023. Daardoor is zelfs de badge 75 niet voldoende om de oude HDi met de latere BlueHDi gelijk te stellen. Distributie-/motorrevisie, emissiefase en softwarekalibratie worden per broncohort afzonderlijk gevolgd.",
+      "checks": "Verifieer dat het echt gaat om type 7/1560 cc of type E/1499 cc, met de juiste originele kW, bouwfase en motorcode. Controleer daarna ECU-software, injectie, oliehistorie, toepasselijke distributietechniek en de conditie van turbo en koelcircuit. Bij BlueHDi worden DPF, SCR/AdBlue en NOx-gerelateerde storingen vooraf onderzocht. Een werkbus met veel stadsritten vraagt ook aandacht voor regeneratie en de gebruikte versnellingsbak.",
+      "usage": "Een Berlingo van een monteur, bouwbedrijf of bezorgdienst wordt vaak met veel gereedschap en korte ritten gebruikt. Een prettig koppelverloop zonder overmatige rook of thermische belasting kan daarom belangrijker zijn dan een hoge publicatiepiek. Laat de gemonteerde ECU, koppeling en emissiesystemen beoordelen voordat een individueel Stage 1-advies wordt gegeven; de wettelijke bedrijfswagenlimieten veranderen niet.",
+      "faq": [
+        [
+          "Is een Citroën Berlingo 1.6 HDi 75 uit 2015 dezelfde motor als een BlueHDi 75 uit 2020?",
+          "Nee. De in 2015 gecontroleerde Berlingo II heeft 1560 cc en 55 kW, terwijl de latere Berlingo III BlueHDi 75 1499 cc en 56 kW heeft. Ook RDW-type 7 tegenover E en de emissie-/softwaregeneratie verschillen. Hun Stage 1-bronvermogens worden daarom niet gemengd, ook al tonen beide badges 75."
+        ],
+        [
+          "Waarom kan een Berlingo III BlueHDi 130 niet automatisch de Stage 1 van de 100 krijgen?",
+          "De onderzochte 130 heeft origineel 96 kW en de 100 75 kW. Zij delen wel een 1499 cc-basis maar kunnen verschillen in ECU-software, turbo, koppeling en transmissiebeheer. Alleen een exacte controle van motorcode, eerste toelating, onderhoud en het werkende SCR/DPF-systeem maakt de gekozen bronindicatie relevant."
+        ]
+      ],
+      "engineSlugs": [
+        "citroen-berlingo-16-hdi-75-2015",
+        "citroen-berlingo-iii-15-bluehdi-75-2019-23",
+        "citroen-berlingo-iii-15-bluehdi-100-2019-23",
+        "citroen-berlingo-iii-15-bluehdi-130-2018-23"
+      ]
+    },
+    {
+      "slug": "peugeot-partner-ii-iii-hdi-bluehdi",
+      "modelSlug": "peugeot-partner",
+      "headline": "Peugeot Partner II/III 1.6 HDi vs 1.5 BlueHDi Stage 1",
+      "intro": "Peugeot Partner verschijnt bij NoordTune met verschillende dieselprofielen voor oude en nieuwe generaties. De Partner II 1.6 HDi 75 en Partner III 1.5 BlueHDi 75, 100/102 en 130 hebben andere fabrieksgegevens, ondanks dat ze hetzelfde werkbusmodel dragen. Daarnaast is een 1.5 BlueHDi 100 uit 2022–2024 afzonderlijk van de onderzochte 2019–2021-cohorten gepubliceerd. Deze vergelijking helpt een kleine ondernemer de juiste bouwfase en brongegevens te vinden zonder koppel- of vermogenscijfers van een andere Peugeot of Citroën over te nemen.",
+      "difference": "De Partner II 1.6 HDi 75 uit 2015 heeft 1560 cc, 55 kW en RDW-type 7. De nieuwere Partner III gebruikt 1499 cc en type E, met geregistreerde 56 kW voor de 75, 75 kW voor de 100/102 en 96 kW voor de 130. De 75 kW-motor komt voor in twee afzonderlijk gepubliceerde Stage 1-profielen, 2019–2021 en 2022–2024. Een gelijk origineel kW-getal zegt dus niet dat hardware, toegangsmethode of uitlaatgasnabehandeling dezelfde zijn. Het modeloverzicht bewaart de exacte registratiejaren per motor.",
+      "checks": "Controleer bij de Partner eerst RDW-type 7 of E, 1560 versus 1499 cc, origineel 55/56/75/96 kW, daadwerkelijke motorcode en toelating. Verifieer daarna de ECU-software, het onderhoud van de toepasselijke distributie, injector- en turboconditie en de koppeling of automaat. Bij de jongere BlueHDi is diagnose van DPF, SCR/AdBlue, NOx-sensoren en regeneratie relevant. Alleen op basis van een Partner-logo kan nooit een Stage 1-bestand of veilig moment worden gekozen.",
+      "usage": "Partner-bussen worden vaak gebruikt door kleine servicebedrijven, bezorgers en installateurs met gereedschap in het laadgedeelte. Door veel korte ritten verdienen DPF-conditie en koude bedrijfsvoering extra aandacht. NoordTune beoordeelt de concrete belasting en legt uit waarom externe Stage 1-ranges geen prestatiegarantie zijn; de wettelijke massa- en emissievoorwaarden blijven gelden.",
+      "faq": [
+        [
+          "Waarom heeft Peugeot Partner BlueHDi 100 uit 2020 soms andere Stage 1-bronnen dan uit 2023?",
+          "De gecontroleerde 1499 cc-variant heeft in beide fasen origineel 75 kW, maar de 2019–2021- en 2022–2024-profielen zijn afzonderlijk door tuners gepubliceerd. ECU-release, emissiefase, transmissie en motorconditie kunnen veranderen. Gebruik daarom het bronbereik dat bij de werkelijk aanwezige software en toelating past."
+        ],
+        [
+          "Is een Partner II HDi 75 uit 2015 gelijk aan een Partner III BlueHDi 75 uit 2019?",
+          "Nee. De oudere HDi heeft 1560 cc en 55 kW bij RDW-type 7; de latere BlueHDi gebruikt 1499 cc, 56 kW en type E. Er is verschil in motorgeneratie en mogelijk emissiehardware en ECU. De gelijke badge 75 is geen technische identificatie en maakt hun Stage 1-waarden niet uitwisselbaar."
+        ]
+      ],
+      "engineSlugs": [
+        "peugeot-partner-16-hdi-75-2015",
+        "peugeot-partner-iii-15-bluehdi-75-2019-23",
+        "peugeot-partner-iii-15-bluehdi-100-2019-21",
+        "peugeot-partner-15-bluehdi-100",
+        "peugeot-partner-iii-15-bluehdi-130-2019-23"
+      ]
+    },
+    {
+      "slug": "fiat-doblo-16-multijet-100-120",
+      "modelSlug": "fiat-doblo",
+      "headline": "Fiat Doblò 1.6 MultiJet 100, 105 en 120: Stage 1",
+      "intro": "De Fiat Doblò 1.6 MultiJet is een praktische service- en bestelwagen waarvoor meerdere fabrieksvermogens bestaan. NoordTune heeft drie afzonderlijk gecontroleerde profielen: 100 uit 2015, 105 uit 2015–2020 en 120 uit 2021. Hoewel die uitvoeringen allemaal een vergelijkbare 1.6-dieselaanduiding dragen, zijn de oorspronkelijke RDW-kW en de beschikbare ECU-bronpublicaties per cohort verschillend. Deze vergelijking helpt bedrijven voorkomen dat één universele MultiJet-waarde wordt toegepast op een andere uitvoering.",
+      "difference": "De drie beoordeelde Doblò-motoren hebben elk 1598 cc en RDW-type 263, maar de originele vermogens zijn 74 kW voor de 100, 77 kW voor de 105 en 88 kW voor de 120. De 100 hoort specifiek bij 2015, de 105 bij 2015–2020 en de 120 bij 2021. Sommige externe Stage 1-resultaten lijken numeriek op elkaar, maar dat bewijst niet dat de inspuitsoftware, turbo of versnellingsbak dezelfde belasting toelaat. De afzonderlijke Stage 1-profielen tonen de precieze bronwaarden zonder die als voor iedere Doblò haalbaar te presenteren.",
+      "checks": "Controleer RDW-type 263, 1598 cc, het exacte origineel van 74/77/88 kW, eerste toelating en de werkelijk gemonteerde MultiJet-motorcode. Lees de ECU-versie uit en bekijk injectie, turbo, onderhoud, koeling, koppeling en transmissie. Bekijk bij dieselbussen ook de staat van DPF, EGR en eventuele SCR/AdBlue als die op deze specifieke uitvoering zijn vereist. Een overeenkomstige motorinhoud maakt de tunerpublicatie van een 120 niet vanzelf geldig voor de 100.",
+      "usage": "Een Doblò met kleine gereedschapsvoorraad of voor stadsdistributie maakt veel korte ritten; voor andere ondernemers draait hij urenlang op de snelweg. Die belasting bepaalt of een meer gematigde koppelafgifte verstandig is. NoordTune toetst daarom de feitelijke werkbus, onderhoudstoestand en emissievoorzieningen voordat een individueel vermogensvoorstel kan worden besproken.",
+      "faq": [
+        [
+          "Kan een Fiat Doblò 1.6 MultiJet 100 dezelfde Stage 1-kalibratie krijgen als de 105?",
+          "Niet zonder technische verificatie. Bij de beoordeelde 100 hoort origineel 74 kW en bij de 105 77 kW, ondanks de gedeelde 1598 cc en type 263. Een gelijk of bijna gelijk extern eindvermogen zegt niets definitiefs over ECU-firmware, injectie, turbo en koppeling. De werkelijke motor- en software-identiteit moet eerst worden vastgesteld."
+        ],
+        [
+          "Waarom staat de Fiat Doblò 1.6 MultiJet 120 uit 2021 apart van de oudere motoren?",
+          "De geregistreerde fabrieksafstelling is bij de onderzochte 120 88 kW, hoger dan bij de 100 en 105. De uitvoering heeft ook een eigen toelatingsjaar en onafhankelijk beoordeelde bronpublicaties. Dat betekent geen gegarandeerd beter dagelijks resultaat: transmissie, belading, DPF en onderhoud blijven bepalend voor een verantwoord individueel advies."
+        ]
+      ],
+      "engineSlugs": [
+        "fiat-doblo-16-multijet-100-2015",
+        "fiat-doblo-16-multijet-105-2015-20",
+        "fiat-doblo-16-multijet-120-2021"
+      ]
+    },
+    {
+      "slug": "opel-combo-e-15-diesel-75-130",
+      "modelSlug": "opel-combo",
+      "headline": "Opel Combo E 1.5 diesel 75, 102 en 130 Stage 1 vergelijken",
+      "intro": "De Opel Combo E is een compacte bedrijfswagen en gezinsauto met verschillende 1.5-diesels onder een gelijkende modelnaam. In het onafhankelijke NoordTune-bronmateriaal zijn de 75, 100/102 en 130/131 uit de onderzochte toelatingsjaren 2019–2022 afzonderlijk opgenomen. Ondernemers die een kleine bestelwagen zoeken op kenteken, kunnen met deze vergelijking de originele RDW-kW en passende motorprofielen onderscheiden. Een verwantschap met Berlingo, Partner of Proace City levert op zichzelf geen bewijs voor dezelfde ECU-firmware.",
+      "difference": "De gecontroleerde Opel Combo E-registraties hebben alle 1499 cc en RDW-type E, maar het oorspronkelijke vermogen is 56 kW voor de 75, 75 kW voor de 100/102 en 96 kW voor de 130/131. De marketingnaam 102 of 131 kan door afronding afwijken van andere merken met vergelijkbare kW, maar voor de gekozen toepassing is de precieze RDW-waarde leidend. De afzonderlijk beoordeelde Stage 1-ranges per motor mogen niet op basis van een gedeeld platform of motorinhoud worden vermengd.",
+      "checks": "Bevestig de geregistreerde 56, 75 of 96 kW, 1499 cc, type E en eerste toelating; controleer vervolgens de echte Opel-motorcode, ECU-software en versnellingsbak. De distributie- en olieonderhoudshistorie verdient aandacht, naast turbo, injectoren en koeling. Bekijk bij de BlueHDi-gerelateerde dieseluitvoering ook DPF, SCR/AdBlue, NOx-sensoren en mogelijke foutmeldingen. Er wordt geen uitlaatgasvoorziening voor weggebruik uitgeschakeld.",
+      "usage": "Een Combo E wordt vaak gebruikt voor leveringen met stop-startbewegingen en beperkte laadruimte. Daarom zijn rustige koppelopbouw, betrouwbare regeneratie en de toestand van een eventuele automaat belangrijker dan een getal op zichzelf. Extra motorvermogen verandert de wettelijke laad- of trekgewichten niet. De externe waarden zijn een startpunt voor voertuiggebonden werkplaatsadvies.",
+      "faq": [
+        [
+          "Zijn Opel Combo E 1.5 diesel 75 en 102 mechanisch altijd dezelfde motor?",
+          "Ze delen in de gecontroleerde RDW-records 1499 cc en type E, maar de originele vermogens zijn 56 en 75 kW. Dat is onvoldoende om turbo-, ECU- of koppelingverschillen uit te sluiten. De NoordTune-catalogus toont daarom afzonderlijke tunerpublicaties en vraagt controle van de werkelijke motorcode en software voordat een kalibratie wordt besproken."
+        ],
+        [
+          "Mag ik de Stage 1-resultaten van Peugeot Partner BlueHDi kopiëren naar mijn Opel Combo?",
+          "Nee. Een technisch verwant platform bewijst geen identieke RDW-registratie, ECU-release, uitlaatgasnabehandeling of versnellingsbak. Voor Opel zijn eigen gecontroleerde toepassingen voor 56, 75 en 96 kW gepubliceerd. Kies die exact passende variant en laat de ECU-, onderhouds- en transmissiegegevens van jouw Combo beoordelen."
+        ]
+      ],
+      "engineSlugs": [
+        "opel-combo-e-15-diesel-75-2019-22",
+        "opel-combo-e-15-diesel-102-2019-22",
+        "opel-combo-e-15-diesel-130-2019-22"
+      ]
+    },
+    {
+      "slug": "renault-kangoo-15-dci-75-110",
+      "modelSlug": "renault-kangoo",
+      "headline": "Renault Kangoo II 1.5 dCi 75, 90 en 110 vergelijken",
+      "intro": "De Renault Kangoo II is een compacte bedrijfswagen die zowel in de stad als bij kleine ondernemingen veel wordt ingezet. NoordTune heeft aparte, reeds gereviewde motorprofielen voor 1.5 dCi 75, 90 en 110, met originele RDW-kW en verschillende toelatingsjaren. Bij de 90 zijn zelfs alleen 2015 en 2019 als afzonderlijke broncohorten vastgelegd. Deze vergelijking is bedoeld om de juiste motorafstelling te vinden; ontbrekende tussenliggende jaren worden niet als automatisch gedocumenteerd beschouwd en er worden geen Stage 1-waarden uit andere Renaults overgenomen.",
+      "difference": "Alle onderzochte Kangoo II 1.5 dCi-uitvoeringen hebben 1461 cc en type W. Hun originele vermogens verschillen echter: 55 kW voor de 75, 66 kW voor de 90 en 81 kW voor de 110. De 75 heeft een gepubliceerd cohort 2015–2019, de 90 twee afzonderlijke geregistreerde toepassingen in 2015 en 2019, en de 110 een specifiek 2015-profiel. De overeenkomstige 1.5 dCi-naam is dus geen garantie voor identieke ECU, turbodruk, injectie of geschikte koppellimiet. Iedere motor heeft zijn eigen onafhankelijke Stage 1-bronset.",
+      "checks": "Controleer bij de Kangoo eerst de originele 55/66/81 kW, 1461 cc, type W, eerste toelating en echte motorcode. Onderzoek de ECU-revisie, injectoren, turbodruk, onderhoud, koeling en koppeling of EDC-automaat indien aanwezig. DPF, EGR en eventuele SCR-hardware moeten normaal werken. Een oudere 75 met een andere ECU-versie kan geen tuningbestand krijgen dat uitsluitend bij de gecontroleerde 110-publicatie is beschreven.",
+      "usage": "Een Kangoo rijdt vaak korte bezorgritten met veel stops of juist dagelijks lange servicetrajecten. Die belasting heeft gevolgen voor DPF-regeneratie en opbouw van het koppel. NoordTune kijkt naar de echte technische conditie en inzet alvorens Stage 1 te bespreken; vermogens- en momentcijfers van andere aanbieders zijn indicaties, geen gegarandeerde werkplaatsuitkomst.",
+      "faq": [
+        [
+          "Kan ik een Renault Kangoo 1.5 dCi 75 met Stage 1 automatisch dezelfde waarde geven als een 110?",
+          "Niet verantwoord op basis van uitsluitend 1461 cc. De 75 heeft in het gecontroleerde materiaal origineel 55 kW en de 110 81 kW; ECU, injectie, turbo en transmissie kunnen afwijkend zijn. De Stage 1-ranges horen bij hun eigen tunerpublicaties en kunnen na controle van de daadwerkelijke Kangoo anders uitvallen."
+        ],
+        [
+          "Waarom ontbreken bij de Kangoo 1.5 dCi 90 enkele bouwjaren tussen 2015 en 2019?",
+          "Het gecontroleerde 90 pk-profiel bevat twee afzonderlijke RDW-toepassingen uit 2015 en 2019, maar niet automatisch alle tussenliggende toelatingen. Dat is een begrenzing van beschikbare bronverificatie, geen uitspraak dat Stage 1 onmogelijk is. NoordTune kan op basis van jouw originele 66 kW, ECU-software en onderhoud alsnog individueel onderzoeken wat verantwoord is."
+        ]
+      ],
+      "engineSlugs": [
+        "renault-kangoo-15-dci-75",
+        "renault-kangoo-15-dci-90-2015-2019",
+        "renault-kangoo-15-dci-110-2015"
+      ]
+    }
+  ]
+}

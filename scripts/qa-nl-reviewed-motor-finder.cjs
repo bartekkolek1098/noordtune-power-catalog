@@ -102,8 +102,8 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3149";
   assert.equal(sitemap.status(),200);
   const xml=await sitemap.text();
   const paths=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-  assert.equal(paths.length,472);
-  assert.equal(new Set(paths).size,472);
+  assert.equal(paths.length,484);
+  assert.equal(new Set(paths).size,484);
   for(const slug of ["bmw-320i-f30-g20","volkswagen-golf-6-7","nissan-juke-f15-f16"])
    assert.ok(paths.some(path=>path.endsWith("/nl/modellen/"+slug)));
   await page.setViewportSize({width:320,height:720});
@@ -119,6 +119,6 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3149";
    }
   }
   assert.deepEqual(errors,[],"No JavaScript runtime errors");
-  console.log("NL_REVIEWED_MOTOR_SEARCH_BROWSER_PASS",JSON.stringify({approvedEngineOptions:174,cars:61,vans:113,firstRendered:24,paginationVerified:48,sourceScopedYearAndKw:true,cngSeparate:true,accentAware:true,newGenerationHubs:3,overlapBacklinks:true,sitemap:472,unsupportedTranslations404:6,responsive:[320,390,1440],noPersonalData:true}));
+  console.log("NL_REVIEWED_MOTOR_SEARCH_BROWSER_PASS",JSON.stringify({approvedEngineOptions:174,cars:61,vans:113,firstRendered:24,paginationVerified:48,sourceScopedYearAndKw:true,cngSeparate:true,accentAware:true,newGenerationHubs:3,overlapBacklinks:true,sitemap:484,unsupportedTranslations404:6,responsive:[320,390,1440],noPersonalData:true}));
  }finally{await browser.close()}
 })().catch(err=>{console.error(err);process.exitCode=1});

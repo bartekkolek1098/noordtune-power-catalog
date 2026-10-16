@@ -37,10 +37,10 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.equal(sitemap.status(),200);
   const xml=await sitemap.text();
   const locs=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
-  assert.equal(locs.length,472,"472 canonical routes including nine technical van comparisons and index");
+  assert.equal(locs.length,484,"484 canonical routes including twenty-one technical van comparisons and index");
   const vanUrls=locs.filter(x=>x.includes("/nl/bedrijfswagens"));
-  assert.equal(vanUrls.length,137,"Van directory, 25 models, 101 engines and 10 source-reviewed comparison URLs");
-  assert.equal(new Set(vanUrls).size,137,"Every van sitemap canonical is unique");
+  assert.equal(vanUrls.length,149,"Van directory, 25 models, 101 engines and 22 source-reviewed comparison URLs");
+  assert.equal(new Set(vanUrls).size,149,"Every van sitemap canonical is unique");
   assert.ok(!xml.includes("/en/bedrijfswagens")&&!xml.includes("/pl/bedrijfswagens"));
 
   for(const m of nlVanModels){
@@ -94,7 +94,7 @@ const base=process.env.RDW_QA_URL||"http://127.0.0.1:3225";
   assert.deepEqual(errors,[],"No runtime JavaScript errors");
   console.log("NL_VAN_BROWSER_QA_PASS",JSON.stringify({
    indexedVanPages:25,browseOnlyModels:0,exactStage1VanEnginePages:101,
-   verifiedSourceApplications:129,indexedVanUrls:127,totalSitemapUrls:472,
+   verifiedSourceApplications:129,indexedVanUrls:127,totalSitemapUrls:484,
    testedWidths:[320,390,1440],translatedThin404:4
   }));
  }finally{await browser.close();}

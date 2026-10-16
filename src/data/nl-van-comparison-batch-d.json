@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16",
+  "items": [
+    {
+      "slug": "iveco-daily-23-30-euro6-euro6df",
+      "modelSlug": "iveco-daily",
+      "headline": "Iveco Daily 2.3 en 3.0 diesel: Euro 6 en Euro 6Df vergelijken",
+      "intro": "De Iveco Daily komt als bedrijfswagen met uiteenlopende opbouwen en gewichten voor. In de gecontroleerde NoordTune-registraties staan zowel 2.3-liter diesels van 136 en 156 pk als 3.0-liter uitvoeringen van 160 en 180 pk. Bovendien worden voor de 2.3 motoren oudere Euro 6- en latere Euro 6Df-cohorten apart onderscheiden. Deze vergelijking combineert zes reeds gepubliceerde technische motorprofielen, zonder ervan uit te gaan dat eenzelfde 35S- of 35C-badge de ECU, motorkoppelgrens of verantwoord gebruik vastlegt.",
+      "difference": "De onderzochte 2.3 Daily heeft 2287 cc met een originele RDW-registratie van 100, 114,6 of 115 kW, afhankelijk van motoraanduiding en toegelaten bouwfase. De 3.0-versies gebruiken 2998 cc met 118 of 132 kW. Voor 136 en 156 pk zijn de modeljaren 2017–2019 apart van 2020–2023 opgenomen; de 160 en 180 pk 3.0-varianten hebben weer eigen cohorten. Types als IS35SC2AA en IS35CI2AA komen bij meerdere vermogens voor, zodat alleen de RDW-typecode geen sluitende ECU-identificatie geeft. De per motor vermelde Stage 1-getallen komen uitsluitend uit de bestaande externe publicaties.",
+      "checks": "Controleer de complete voertuigregistratie: type, 2287 of 2998 cc, originele 100, 114,6, 115, 118 of 132 kW en eerste toelating. Lees vervolgens het echte motortype, ECU- en softwareversie, de gebruikte Hi-Matic of handbak en actuele storingen uit. Inspecteer turbo, injectoren, koeling, uitlaatgastemperaturen en werkende DPF/SCR/AdBlue. Een originele 35C16 met 3.0 is niet vanzelf uitwisselbaar met een 35S16 met 2.3; het feitelijke chassis en de belasting tellen mee.",
+      "usage": "Voor een Daily met bakwagenopbouw, een zware gereedschapsinrichting, koelmotor of aanhanger kan extra continu koppel meer thermische belasting veroorzaken dan bij een onbeladen testwagen. Daarom zijn de hoogste externe tunerwaarden geen universele instelling. Wettelijk toegestane laad- en trekgewichten blijven ongewijzigd, ook na een eventueel individueel passend Stage 1-advies.",
+      "faq": [
+        [
+          "Hoe kan een Iveco Daily 35S16 een andere motor hebben dan een 35C16?",
+          "De badge of chassisfamilie identificeert niet in elk geval de cilinderinhoud en ECU. In de gecontroleerde uitvoeringen bestaan 2.3-liter motoren van 2287 cc en 3.0-liter motoren van 2998 cc met verschillende oorspronkelijke kW. Controleer de RDW-registratie, fysieke motorcode en versnellingsbak voordat je een bronwaarde van een andere Daily gebruikt."
+        ],
+        [
+          "Waarom verschillen de Stage 1-referenties van Daily 2.3 136 uit 2018 en 2022?",
+          "De oudere Euro 6- en latere Euro 6Df-cohorten zijn onafhankelijk met een eigen RDW-periode en Stage 1-bronnen beoordeeld. Zelfs wanneer beide origineel 100 kW leveren, kunnen ECU-software, emissiefase, transmissie en gebruiksbelasting verschillen. De catalogus publiceert daarom de afzonderlijke motorpagina's; NoordTune bevestigt pas na diagnose welke instelling technisch passend is."
+        ]
+      ],
+      "engineSlugs": [
+        "iveco-daily-23-136-euro6-2017-19",
+        "iveco-daily-23-136-euro6df-2020-23",
+        "iveco-daily-23-156-euro6-2017-19",
+        "iveco-daily-23-156-euro6df-2020-23",
+        "iveco-daily-30-180-euro6-2017-19",
+        "iveco-daily-30-160-euro6df-2020-23"
+      ]
+    },
+    {
+      "slug": "renault-master-23-dci-blue-dci",
+      "modelSlug": "renault-master",
+      "headline": "Renault Master 2.3 dCi en Blue dCi 110–145 vergelijken",
+      "intro": "De Renault Master heeft een lange geschiedenis als werkbus voor transport, bouw, service en camperombouw. Een badge van 110, 130, 135 of 145 pk geeft echter niet automatisch de exacte ECU- en emissieversie aan. NoordTune heeft vier specifieke motorpagina's met originele RDW-gegevens voor de 2.3 dCi en Blue dCi, waaronder verschillende registraties van 145 pk uit 2019 en 2022. Dit technische overzicht helpt eigenaren de aangetoonde eerste toelating en oorspronkelijke motorafstelling te kiezen voordat zij externe Stage 1-bronnen en een individuele offerte vergelijken.",
+      "difference": "De onderzochte Master III 2.3 dCi 110 uit 2017 is 2299 cc en origineel 81 kW; de 130 uit dat jaar heeft 96 kW. De Blue dCi 135 uit 2019 staat afzonderlijk op 100 kW en het dCi 145-profiel op 107 kW. Bij die 145 bestaan twee onderzochte RDW-toepassingen met type MB in 2019 en type VAL in 2022, zonder dat de tussenliggende jaren automatisch volledig zijn gedocumenteerd. De typecodes MA, MB en VAL en verschillende originele kW betekenen dat er geen algemene 2.3 dCi-calibratie voor iedere Master mag worden verondersteld.",
+      "checks": "Verifieer kenteken, RDW-type MA/MB/VAL, originele 81/96/100/107 kW, 2299 cc en het daadwerkelijke bouwjaar. Controleer motorcode, ECU-software, injectoren, turbo, onderhoud, koelcapaciteit, koppeling en eventueel toegepaste automaat. Latere Blue dCi- en emissiefases vragen een aparte beoordeling van DPF en SCR/AdBlue. De technische bronwaarden mogen pas na bevestiging van de motoridentiteit en foutloze basisconditie op een specifieke Master worden betrokken.",
+      "usage": "Een Master met personenvervoer, grote laadruimte of camperopbouw vraagt vaak langdurig vermogen bij een hoge belasting. We beoordelen daarom vooral de opbouw van het middengebied, de transmissie en de thermische reserve; het hoogste vermelde piekmoment is geen standaardinstelling voor elke vloot. Softwareoptimalisatie verandert ook niet het wettelijk toegestane maximale laad- of aanhangergewicht.",
+      "faq": [
+        [
+          "Waarom mag ik de Renault Master 2.3 dCi 110 niet beoordelen met de cijfers van de 145?",
+          "De gecontroleerde 110 uit 2017 heeft origineel 81 kW tegenover 107 kW bij de onderzochte 145. Ook het RDW-type en de ECU- of emissiefase kunnen afwijken. De externe Stage 1-ranges zijn afzonderlijk verzameld en vormen geen bewijs voor dezelfde injectie-, turbo- of koppellimieten. NoordTune vraagt daarom de werkelijke motor- en softwaregegevens."
+        ],
+        [
+          "Is de Master dCi 145 van 2019 dezelfde uitvoering als de registratie uit 2022?",
+          "Niet zonder voertuiginspectie. Het gecontroleerde profiel bevat type MB/2019 en VAL/2022 met dezelfde originele 107 kW, maar dat levert geen garantie op voor de ECU-firmware, SCR-hardware of tussenliggende toelatingsjaren. De catalogus toont beide beoordeelde RDW-toepassingen afzonderlijk; de echte software en transmissie worden voor de offerte vastgesteld."
+        ]
+      ],
+      "engineSlugs": [
+        "renault-master-23-dci-110-euro6-2017",
+        "renault-master-23-dci-130-euro6-2017",
+        "renault-master-23-bluedci-135-2019",
+        "renault-master-23-dci-145-2019-22"
+      ]
+    },
+    {
+      "slug": "peugeot-expert-20-bluehdi-120-180",
+      "modelSlug": "peugeot-expert",
+      "headline": "Peugeot Expert 2.0 BlueHDi 120–180: bouwjaar en Stage 1",
+      "intro": "De Peugeot Expert III heeft een 2.0 BlueHDi-dieselmotor in verschillende fabrieksafstellingen voor werk- en personenvervoer. In de gecontroleerde NoordTune-bronnen komen uitvoeringen voor met de commerciële namen 120, 145, 177 en 180, maar de oorspronkelijke RDW-kW en ECU-fases zijn bepalender dan afgeronde badges. Bij de 145 zijn bovendien afzonderlijke toepassingen uit 2022 en 2024 gedocumenteerd. Deze vergelijking verbindt vier bestaande motorprofielen met hun juiste bronbereiken, zonder aan te nemen dat elke Expert uit ontbrekende jaren daardoor automatisch een passend Stage 1-profiel heeft.",
+      "difference": "De beoordeelde Expert III 2.0 BlueHDi 120 uit 2018–2019 is 1997 cc en heeft 90 kW origineel. De 145 uit 2022 en 2024 heeft in afzonderlijke RDW-cohorten 106 kW; bij de 180 uit 2019–2022 staat 130 kW en bij de 177 uit 2024 eveneens 130 kW. Die gelijke 130 kW vormt geen bewijs voor identieke ECU-software: emissie- en voertuigfase kunnen verschillen. Alle vier komen in de geselecteerde dataset met type V voor. Het motoroverzicht houdt daarom de 120/145/177/180-profielen en hun publicaties gescheiden.",
+      "checks": "Controleer eerst RDW-type V, originele 90/106/130 kW, 1997 cc, eerste toelating en de werkelijke motorcode. Laat daarna ECU- en transmissieversie, injectorcorrecties, turbodruk, koeling en de staat van DPF/SCR/AdBlue beoordelen. Een Expert met een automatische transmissie of zware lading kan een andere koppelafgifte vereisen dan een lichte handgeschakelde uitvoering. De bronresultaten zijn onafhankelijke indicaties; een modelnaam of gelijke fabrieks-kW bewijst geen ECU-bestandstoegang.",
+      "usage": "Expert-bussen worden als koerierswagen, shuttle of servicebus gebruikt, vaak met frequente stops, aanhangergebruik of lange snelwegritten. Dat maakt duurzame koeling en transmissieconditie relevant. Een hogere externe Nm-waarde is niet automatisch beter voor iedere bedrijfsinzet; het aan te houden laad- en trekgewicht verandert niet en defecte emissievoorzieningen horen vooraf te worden hersteld.",
+      "faq": [
+        [
+          "Waarom staan de Peugeot Expert 2.0 BlueHDi 177 en 180 met beide 130 kW toch apart?",
+          "De onderzochte Expert 180 heeft toelatingen uit 2019–2022 en de 177 uit 2024. Een overeenkomstig RDW-fabrieksvermogen van 130 kW en 1997 cc zegt niet alles over ECU-revisie, emissiefase en transmissie. Beide motoren hebben afzonderlijke tunerpublicaties en worden niet op basis van hun marketingnaam samengevoegd."
+        ],
+        [
+          "Mag ik de Stage 1-waarde van de Expert BlueHDi 145 uit 2024 voor een auto uit 2023 gebruiken?",
+          "Niet enkel omdat het bouwjaar tussen twee onderzochte data ligt. De gecontroleerde 145-toepassingen zijn specifiek 2022 en 2024, terwijl software en registratie in 2023 nog moeten worden geverifieerd. NoordTune toont de bekende RDW-scopes apart en vraagt motorcode, originele 106 kW, ECU-identiteit en transmissie voordat een concrete afstelling wordt voorgesteld."
+        ]
+      ],
+      "engineSlugs": [
+        "peugeot-expert-20-bluehdi-120",
+        "peugeot-expert-20-bluehdi-145-2022-24",
+        "peugeot-expert-20-bluehdi-180-2019-22",
+        "peugeot-expert-20-bluehdi-177-2024"
+      ]
+    },
+    {
+      "slug": "toyota-proace-city-15-d4d-75-130",
+      "modelSlug": "toyota-proace-city",
+      "headline": "Toyota Proace City 1.5 D-4D 75–130: Stage 1 en ECU",
+      "intro": "De Toyota Proace City is een compacte bedrijfswagen waarvoor meerdere 1.5 D-4D-dieselvermogens zijn beoordeeld. De badge D-4D vertelt niet of het gaat om de originele 75, 100 of 130 pk-motor, en zelfs een 130 uit 2024 is in deze catalogus een afzonderlijk broncohort tegenover de oudere 130 uit 2020–2023. Deze vergelijking helpt monteurs en ondernemers de juiste RDW-kW, eerste toelating en ECU-fase te selecteren. Ze is bewust Toyota-specifiek: eventuele overeenkomst met een Peugeot Partner, Citroën Berlingo of Opel Combo vervangt geen voertuigcontrole.",
+      "difference": "Alle geselecteerde Proace City-motoren hebben 1499 cc en RDW-type E, maar de originele fabrieksvermogens lopen uiteen: 56 kW bij de 75, 75 kW bij de 100 en 96 kW bij de 130. Voor die 130 zijn een 2020–2023-uitvoering en een eigen 2024-profiel met verschillende onafhankelijke tunerbronnen gepubliceerd. Een identieke cc-waarde of het merkoverstijgende platform geeft dus geen garantie dat ECU-onderdeelnummer, emissie-update of koppelbegrenzing gelijk zijn. De bronvermogens en Nm worden per gecontroleerd motorprofiel getoond.",
+      "checks": "Verifieer het geregistreerde origineel van 56, 75 of 96 kW, 1499 cc, type E, daadwerkelijke eerste toelating en Toyota-motoridentiteit. Laat daarna ECU-software, onderhoud, injectiesysteem, turbo en de aanwezige handbak of automaat controleren. Onderzoek storingen aan DPF, SCR/AdBlue en NOx-sensoren voordat een Stage 1-afstelling wordt overwogen. Voor de 2024 130 pk-uitvoering telt de werkelijke emissie- en softwarefase nadrukkelijk mee.",
+      "usage": "Een Proace City werkt vaak in de stad met korte ritten en veel laadstops. DPF-regeneratie, onderhoudstoestand en een vlotte maar gecontroleerde koppelopbouw zijn dan relevanter dan een kale vermogenspiek. NoordTune beoordeelt de belasting door gereedschap, aanhanger of koeriersgebruik per voertuig; de originele toegestane gewichten blijven onveranderd.",
+      "faq": [
+        [
+          "Kan een Toyota Proace City D-4D 75 na Stage 1 automatisch dezelfde motor worden als de 130?",
+          "Nee. De goedgekeurde 75 heeft 56 kW origineel en de 130 96 kW, ondanks beide 1499 cc en RDW-type E. Gelijke cilinderinhoud bewijst geen identieke turbo, injectorhardware, ECU of transmissie. De externe Stage 1-bronnen tonen afzonderlijke indicatieve ranges en er wordt geen gegarandeerde ombouw naar de 130-specificatie aangeboden."
+        ],
+        [
+          "Waarom staat de Toyota Proace City 1.5 D-4D 130 uit 2024 apart?",
+          "De oorspronkelijke RDW-waarde is nog steeds 96 kW, maar de 2024-motor is met eigen onafhankelijke Stage 1-bronnen en een specifieke toelatingsscope beoordeeld. Dat kan met andere ECU- of emissiesoftware samengaan. Gebruik daarom niet automatisch de 2020–2023-afstelling; bevestig eerst de werkelijke ECU-code, automaat en emissiehardware."
+        ]
+      ],
+      "engineSlugs": [
+        "toyota-proace-city-15-d4d-75-2020-22",
+        "toyota-proace-city-15-d4d-100-2020-23",
+        "toyota-proace-city-15-d4d-130-2020-23",
+        "toyota-proace-city-15-d4d-130-2024"
+      ]
+    },
+    {
+      "slug": "opel-vivaro-b-16-cdti-biturbo",
+      "modelSlug": "opel-vivaro",
+      "headline": "Opel Vivaro B 1.6 CDTI en BiTurbo 95–145 vergelijken",
+      "intro": "De Opel Vivaro B is een praktische bestelwagen voor koeriers, servicemonteurs en installatiebedrijven. Binnen dezelfde 1.6 CDTI-familie kunnen originele fabrieksvermogens en turbo-opbouw aanzienlijk verschillen: de gecontroleerde NoordTune-dossiers omvatten 95, 120, 125 BiTurbo en 145 BiTurbo. De Stage 1-referenties zijn per uitvoering verzameld voor de beoordeelde Euro 6-jaren. Deze pagina vergelijkt precies die vier bronprofielen, niet de latere Vivaro C met een andere 2.0-dieselmotor of elektrische uitvoeringen.",
+      "difference": "Alle geselecteerde Vivaro B-motoren hebben 1598 cc en RDW-type F7, maar origineel 70, 89, 92 of 107 kW. De 95 en 120 horen bij de onderzochte 2017–2019-cohorten; ook de 125 BiTurbo betreft 2017–2019 en de BiTurbo 145 heeft een afzonderlijk gecontroleerd 2019-profiel. Een gedeeld F7-type en dezelfde inhoud verbergen dus relevante verschillen in oorspronkelijke kalibratie en mogelijk turboconfiguratie. De 120 en 125 liggen in naam dicht bij elkaar maar staan technisch op andere RDW-kW en tunerpublicaties.",
+      "checks": "Controleer type F7, 1598 cc, het geregistreerde 70/89/92/107 kW-vermogen, motorcode en exacte toelating. Onderzoek vervolgens of het werkelijk een enkelvoudige turbo- of BiTurbo-uitvoering is, samen met ECU-firmware, turbodruk, intercooler, injectie en een eventuele automaat. Kijk naar koppeling, koeling, onderhoud en DPF/SCR waar van toepassing. Een hoge externe Stage 1-koppelwaarde is geen vrijgave voor iedere Vivaro-transmissie.",
+      "usage": "Vivaros met binneninrichting of aanhanger maken vaak veel ritten met wisselende belading. De juiste koppelverdeling moet bij laagtoerig gebruik beheersbaar blijven, zonder de turbo of aandrijflijn langdurig extra te belasten. Het hoogste externe getal kan daarom afwijken van het uiteindelijke NoordTune-advies na inspectie; wettelijke laad- en trekgewichten blijven dezelfde.",
+      "faq": [
+        [
+          "Is een Opel Vivaro B 1.6 CDTI 120 hetzelfde als de BiTurbo 125?",
+          "Nee. In de gecontroleerde RDW-toepassingen heeft de 120 origineel 89 kW en de 125 BiTurbo 92 kW. Ze kunnen andere turbohardware, ECU-kalibratie en koppellimieten hebben. De afzonderlijke Stage 1-publicaties zijn daarom niet automatisch uitwisselbaar, ook al zijn beide 1598 cc en vallen ze onder RDW-type F7."
+        ],
+        [
+          "Kan ik de 145 pk BiTurbo-waarde op mijn 95 pk Vivaro toepassen?",
+          "Niet zonder exact motoronderzoek. De 145 uit 2019 heeft origineel 107 kW tegenover 70 kW bij de 95. Dat verschil kan met afwijkende turbo- en ECU-hardware samengaan en wordt niet opgeheven door de 1.6 CDTI-badge. Eerst de werkelijke motor, emissiefase, turbo-opstelling, transmissie en eventuele storingen controleren."
+        ]
+      ],
+      "engineSlugs": [
+        "opel-vivaro-b-16-cdti-95-euro6-2017-19",
+        "opel-vivaro-b-16-cdti-120-euro6-2017-19",
+        "opel-vivaro-b-16-biturbo-125-euro6-2017-19",
+        "opel-vivaro-b-16-biturbo-145-euro6-2019"
+      ]
+    },
+    {
+      "slug": "opel-movano-b-c-23-cdti-22-diesel",
+      "modelSlug": "opel-movano",
+      "headline": "Opel Movano B 2.3 CDTI vs Movano C 2.2 diesel vergelijken",
+      "intro": "Opel Movano B en Movano C kunnen qua bestelwagentoepassing overeenkomen, maar zijn verschillende technische generaties. De gecontroleerde NoordTune-profielen omvatten de oudere 2.3 CDTI 150/180 van de Movano B en de 2.2 diesel 120/140/165 uit de latere Movano C. Deze vergelijking is bedoeld voor eigenaren van zware werkbussen, campers en bestelwagens met opbouw die de juiste motor- en ECU-generatie moeten kiezen voordat zij Stage 1-prestaties of extra koppel bekijken.",
+      "difference": "De oudere Movano B 2.3 CDTI heeft 2299 cc met oorspronkelijke RDW-registraties van 110 kW (150 pk) of 132 kW (180 pk), binnen 2019–2021 en type MR of MS. De Movano C 2.2 gebruikt 2179 cc met 88, 103 en 121 kW voor respectievelijk 120, 140 en 165 pk in de onderzochte 2021–2023-cohorten, type Y. De overgang van MR/MS naar Y en van 2299 naar 2179 cc betekent een andere motor- en ECU-familie. Stage 1-ranges van de oude 2.3 kunnen niet op basis van gedeelde modelnaam op de nieuwere 2.2 worden overgenomen.",
+      "checks": "Verifieer of de auto daadwerkelijk een Movano B of C is, met de juiste RDW-typecode MR/MS of Y, originele kW, cilinderinhoud en eerste toelating. Controleer daarna aan de auto motorcode, ECU-software, werkelijke versnellingsbak, turbostatus, injectie en koeling. Voor de dieseluitvoeringen horen DPF, SCR/AdBlue en eventuele foutcodes bij een normale diagnose. Bij een zware opbouw is een thermische en mechanische belastingcontrole nodig vóór het tunen.",
+      "usage": "Een Movano wordt vaak als bestelauto met laadklep, camper of personenbus ingezet. Langdurig snelweggebruik, extra massa en aanhanger kunnen de koppeling, koeling en het emissiesysteem sterker belasten dan korte dynotests. Daarom interpreteert NoordTune de externe Stage 1-referenties als oriëntatie; het toegelaten gewicht en de uiteindelijke koppelgrens blijven voertuigafhankelijk.",
+      "faq": [
+        [
+          "Waarom heeft mijn Opel Movano 150 uit 2020 niet dezelfde techniek als een 140 uit 2022?",
+          "De gecontroleerde Movano B 150 uit 2019–2021 heeft 2299 cc en 110 kW, terwijl de Movano C 140 uit 2021–2023 2179 cc en 103 kW gebruikt. Ook RDW-type MR/MS versus Y onderscheidt de technische generatie. Deze motoren hebben andere ECU-contexten en dus afzonderlijke Stage 1-bronnen."
+        ],
+        [
+          "Mag ik de 2.3 CDTI-Stage 1 van Movano B toepassen op de 2.2 diesel van Movano C?",
+          "Nee. De andere cilinderinhoud, motorfamilie, oorspronkelijke fabrieksprestaties en emissiefase vereisen een eigen diagnose. Zelfs binnen de Movano C zijn 88, 103 en 121 kW als afzonderlijke varianten onderzocht. De externe bronwaarden geven geen garantie voor een bepaalde ECU-toegang of blijvend veilig koppel bij een beladen bus."
+        ]
+      ],
+      "engineSlugs": [
+        "opel-movano-b-23-cdti-150-2019-21",
+        "opel-movano-b-23-cdti-180-2019-21",
+        "opel-movano-c-22-diesel-120-2021-23",
+        "opel-movano-c-22-diesel-140-2021-23",
+        "opel-movano-c-22-diesel-165-2021-23"
+      ]
+    }
+  ]
+}
