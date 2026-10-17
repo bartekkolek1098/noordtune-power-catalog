@@ -1,0 +1,845 @@
+{
+  "reportVersion": "rdw-source-audit-v1",
+  "auditDate": "2026-10-08",
+  "inputs": {
+    "taxonomySha256": "f510f7ccfa5b5e2b3d58c26facbac2ff2650e8589c9ab0d3b199cdf28b4a1e47",
+    "sourceProfilesSha256": "03161af7dad6cba9727c5d8dc1e2bfc22e86685be3723a5dc2bec9e479c9b835",
+    "rdwFleetGroupsSha256": "2d630e89883147ed9899990a0e3c5a6f4520373ae374118bb574b4c4bfc85b78"
+  },
+  "publicStage3Allowed": false,
+  "sourceProfiles": 1269,
+  "taxonomy": {
+    "all": 4592,
+    "petrolDiesel": 3708,
+    "otherFuel": 884,
+    "candidateSomeYear": 551,
+    "candidateEveryCheckedYear": 194,
+    "noCandidate": 3157,
+    "ambiguousWithoutCandidate": 20,
+    "testedYearApplications": 26223,
+    "candidateYearApplications": 2547,
+    "distinctCandidateSources": 512,
+    "firstMissingFilter": {
+      "noManufacturerProfile": 146,
+      "noMatchingFuel": 26,
+      "noCloseFactoryPower": 1222,
+      "noCloseDisplacement": 738,
+      "noOverlappingSourceYear": 200,
+      "noMatchingModelFamily": 772,
+      "generationBadgeOrAmbiguity": 53,
+      "invalidYearWindow": 0
+    },
+    "byBrand": [
+      {
+        "make": "Volkswagen",
+        "iceConfigurations": 491,
+        "candidateConfigurations": 158,
+        "noCandidateConfigurations": 333,
+        "ambiguousConfigurations": 5
+      },
+      {
+        "make": "BMW",
+        "iceConfigurations": 424,
+        "candidateConfigurations": 17,
+        "noCandidateConfigurations": 407,
+        "ambiguousConfigurations": 5
+      },
+      {
+        "make": "Audi",
+        "iceConfigurations": 417,
+        "candidateConfigurations": 23,
+        "noCandidateConfigurations": 394,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Mercedes-Benz",
+        "iceConfigurations": 253,
+        "candidateConfigurations": 17,
+        "noCandidateConfigurations": 236,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Ford",
+        "iceConfigurations": 244,
+        "candidateConfigurations": 41,
+        "noCandidateConfigurations": 203,
+        "ambiguousConfigurations": 4
+      },
+      {
+        "make": "Renault",
+        "iceConfigurations": 208,
+        "candidateConfigurations": 55,
+        "noCandidateConfigurations": 153,
+        "ambiguousConfigurations": 2
+      },
+      {
+        "make": "Skoda",
+        "iceConfigurations": 167,
+        "candidateConfigurations": 28,
+        "noCandidateConfigurations": 139,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "SEAT",
+        "iceConfigurations": 159,
+        "candidateConfigurations": 22,
+        "noCandidateConfigurations": 137,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Citroën",
+        "iceConfigurations": 146,
+        "candidateConfigurations": 12,
+        "noCandidateConfigurations": 134,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Volvo",
+        "iceConfigurations": 139,
+        "candidateConfigurations": 21,
+        "noCandidateConfigurations": 118,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Peugeot",
+        "iceConfigurations": 128,
+        "candidateConfigurations": 33,
+        "noCandidateConfigurations": 95,
+        "ambiguousConfigurations": 3
+      },
+      {
+        "make": "Opel",
+        "iceConfigurations": 127,
+        "candidateConfigurations": 8,
+        "noCandidateConfigurations": 119,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Kia",
+        "iceConfigurations": 91,
+        "candidateConfigurations": 38,
+        "noCandidateConfigurations": 53,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Fiat",
+        "iceConfigurations": 86,
+        "candidateConfigurations": 5,
+        "noCandidateConfigurations": 81,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Toyota",
+        "iceConfigurations": 79,
+        "candidateConfigurations": 9,
+        "noCandidateConfigurations": 70,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Alfa Romeo",
+        "iceConfigurations": 66,
+        "candidateConfigurations": 5,
+        "noCandidateConfigurations": 61,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Hyundai",
+        "iceConfigurations": 65,
+        "candidateConfigurations": 21,
+        "noCandidateConfigurations": 44,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Mazda",
+        "iceConfigurations": 40,
+        "candidateConfigurations": 9,
+        "noCandidateConfigurations": 31,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Jeep",
+        "iceConfigurations": 39,
+        "candidateConfigurations": 5,
+        "noCandidateConfigurations": 34,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Nissan",
+        "iceConfigurations": 36,
+        "candidateConfigurations": 4,
+        "noCandidateConfigurations": 32,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Land Rover",
+        "iceConfigurations": 35,
+        "candidateConfigurations": 2,
+        "noCandidateConfigurations": 33,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Honda",
+        "iceConfigurations": 29,
+        "candidateConfigurations": 5,
+        "noCandidateConfigurations": 24,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "MINI",
+        "iceConfigurations": 25,
+        "candidateConfigurations": 10,
+        "noCandidateConfigurations": 15,
+        "ambiguousConfigurations": 1
+      },
+      {
+        "make": "Dacia",
+        "iceConfigurations": 22,
+        "candidateConfigurations": 1,
+        "noCandidateConfigurations": 21,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Mitsubishi",
+        "iceConfigurations": 21,
+        "candidateConfigurations": 1,
+        "noCandidateConfigurations": 20,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Chrysler",
+        "iceConfigurations": 19,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 19,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Subaru",
+        "iceConfigurations": 19,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 19,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Jaguar",
+        "iceConfigurations": 18,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 18,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Porsche",
+        "iceConfigurations": 16,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 16,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Cupra",
+        "iceConfigurations": 14,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 14,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Saab",
+        "iceConfigurations": 14,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 14,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Lancia",
+        "iceConfigurations": 10,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 10,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Cadillac",
+        "iceConfigurations": 9,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 9,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Chevrolet",
+        "iceConfigurations": 8,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 8,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "DS",
+        "iceConfigurations": 8,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 8,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Suzuki",
+        "iceConfigurations": 7,
+        "candidateConfigurations": 1,
+        "noCandidateConfigurations": 6,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Lexus",
+        "iceConfigurations": 4,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 4,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Chatenet",
+        "iceConfigurations": 3,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 3,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Isuzu",
+        "iceConfigurations": 3,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 3,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "SsangYong",
+        "iceConfigurations": 3,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 3,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Abarth",
+        "iceConfigurations": 2,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 2,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Infiniti",
+        "iceConfigurations": 2,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 2,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Mercedes Truck",
+        "iceConfigurations": 2,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 2,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "MG",
+        "iceConfigurations": 2,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 2,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "BAIC",
+        "iceConfigurations": 1,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 1,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Dodge",
+        "iceConfigurations": 1,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 1,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Foton",
+        "iceConfigurations": 1,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 1,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "GAZ",
+        "iceConfigurations": 1,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 1,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Jaecoo",
+        "iceConfigurations": 1,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 1,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Maserati",
+        "iceConfigurations": 1,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 1,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Omoda",
+        "iceConfigurations": 1,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 1,
+        "ambiguousConfigurations": 0
+      },
+      {
+        "make": "Smart",
+        "iceConfigurations": 1,
+        "candidateConfigurations": 0,
+        "noCandidateConfigurations": 1,
+        "ambiguousConfigurations": 0
+      }
+    ]
+  },
+  "rdwFleetPossibleFamilySource": {
+    "selectedGroups": 5000,
+    "registrationsInSelectedGroups": 10155079,
+    "reportedRdwPopulation": 11327762,
+    "groupsWithPossibleModelSource": 1082,
+    "registrationsInGroupsWithPossibleModelSource": 4348674,
+    "groupsWithoutPossibleModelSource": 3918,
+    "registrationsInGroupsWithoutPossibleModelSource": 5806405,
+    "byMake": [
+      {
+        "make": "VOLKSWAGEN",
+        "groups": 458,
+        "registrations": 1313830,
+        "potentialFamilySourceGroups": 183,
+        "registrationsInPotentialGroups": 969595
+      },
+      {
+        "make": "TOYOTA",
+        "groups": 174,
+        "registrations": 747193,
+        "potentialFamilySourceGroups": 22,
+        "registrationsInPotentialGroups": 146396
+      },
+      {
+        "make": "RENAULT",
+        "groups": 226,
+        "registrations": 694814,
+        "potentialFamilySourceGroups": 81,
+        "registrationsInPotentialGroups": 432830
+      },
+      {
+        "make": "FORD",
+        "groups": 236,
+        "registrations": 690260,
+        "potentialFamilySourceGroups": 98,
+        "registrationsInPotentialGroups": 430298
+      },
+      {
+        "make": "PEUGEOT",
+        "groups": 189,
+        "registrations": 662460,
+        "potentialFamilySourceGroups": 67,
+        "registrationsInPotentialGroups": 409233
+      },
+      {
+        "make": "OPEL",
+        "groups": 286,
+        "registrations": 641342,
+        "potentialFamilySourceGroups": 44,
+        "registrationsInPotentialGroups": 208373
+      },
+      {
+        "make": "MERCEDES-BENZ",
+        "groups": 445,
+        "registrations": 502951,
+        "potentialFamilySourceGroups": 83,
+        "registrationsInPotentialGroups": 203269
+      },
+      {
+        "make": "KIA",
+        "groups": 107,
+        "registrations": 483812,
+        "potentialFamilySourceGroups": 39,
+        "registrationsInPotentialGroups": 261706
+      },
+      {
+        "make": "BMW",
+        "groups": 380,
+        "registrations": 395428,
+        "potentialFamilySourceGroups": 66,
+        "registrationsInPotentialGroups": 97336
+      },
+      {
+        "make": "VOLVO",
+        "groups": 198,
+        "registrations": 387632,
+        "potentialFamilySourceGroups": 41,
+        "registrationsInPotentialGroups": 127951
+      },
+      {
+        "make": "CITROEN",
+        "groups": 179,
+        "registrations": 370176,
+        "potentialFamilySourceGroups": 26,
+        "registrationsInPotentialGroups": 124306
+      },
+      {
+        "make": "AUDI",
+        "groups": 350,
+        "registrations": 354997,
+        "potentialFamilySourceGroups": 55,
+        "registrationsInPotentialGroups": 70342
+      },
+      {
+        "make": "HYUNDAI",
+        "groups": 110,
+        "registrations": 335112,
+        "potentialFamilySourceGroups": 24,
+        "registrationsInPotentialGroups": 100781
+      },
+      {
+        "make": "FIAT",
+        "groups": 155,
+        "registrations": 314976,
+        "potentialFamilySourceGroups": 24,
+        "registrationsInPotentialGroups": 86857
+      },
+      {
+        "make": "SKODA",
+        "groups": 101,
+        "registrations": 285498,
+        "potentialFamilySourceGroups": 31,
+        "registrationsInPotentialGroups": 122445
+      },
+      {
+        "make": "SUZUKI",
+        "groups": 99,
+        "registrations": 280864,
+        "potentialFamilySourceGroups": 9,
+        "registrationsInPotentialGroups": 69773
+      },
+      {
+        "make": "NISSAN",
+        "groups": 113,
+        "registrations": 242535,
+        "potentialFamilySourceGroups": 29,
+        "registrationsInPotentialGroups": 135144
+      },
+      {
+        "make": "SEAT",
+        "groups": 122,
+        "registrations": 209015,
+        "potentialFamilySourceGroups": 37,
+        "registrationsInPotentialGroups": 70124
+      },
+      {
+        "make": "MAZDA",
+        "groups": 85,
+        "registrations": 181580,
+        "potentialFamilySourceGroups": 20,
+        "registrationsInPotentialGroups": 86604
+      },
+      {
+        "make": "MINI",
+        "groups": 104,
+        "registrations": 147972,
+        "potentialFamilySourceGroups": 60,
+        "registrationsInPotentialGroups": 93933
+      },
+      {
+        "make": "MITSUBISHI",
+        "groups": 61,
+        "registrations": 122969,
+        "potentialFamilySourceGroups": 5,
+        "registrationsInPotentialGroups": 35601
+      },
+      {
+        "make": "TESLA",
+        "groups": 14,
+        "registrations": 117417,
+        "potentialFamilySourceGroups": 0,
+        "registrationsInPotentialGroups": 0
+      },
+      {
+        "make": "DACIA",
+        "groups": 54,
+        "registrations": 84796,
+        "potentialFamilySourceGroups": 10,
+        "registrationsInPotentialGroups": 34933
+      },
+      {
+        "make": "HONDA",
+        "groups": 65,
+        "registrations": 59331,
+        "potentialFamilySourceGroups": 11,
+        "registrationsInPotentialGroups": 5331
+      },
+      {
+        "make": "LAND ROVER",
+        "groups": 64,
+        "registrations": 42180,
+        "potentialFamilySourceGroups": 4,
+        "registrationsInPotentialGroups": 1870
+      }
+    ],
+    "largestGroupsWithoutFamilySource": [
+      {
+        "make": "TOYOTA",
+        "model": "TOYOTA AYGO",
+        "displacementCc": 998,
+        "admissionYearBand": [
+          2015,
+          2019
+        ],
+        "registrations": 40285
+      },
+      {
+        "make": "TESLA",
+        "model": "MODEL Y",
+        "displacementCc": null,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 39308
+      },
+      {
+        "make": "TOYOTA",
+        "model": "TOYOTA YARIS",
+        "displacementCc": 1490,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 35440
+      },
+      {
+        "make": "FORD",
+        "model": "KA",
+        "displacementCc": 1242,
+        "admissionYearBand": [
+          2010,
+          2014
+        ],
+        "registrations": 33140
+      },
+      {
+        "make": "PEUGEOT",
+        "model": "108",
+        "displacementCc": 998,
+        "admissionYearBand": [
+          2015,
+          2019
+        ],
+        "registrations": 33118
+      },
+      {
+        "make": "TOYOTA",
+        "model": "TOYOTA YARIS HYBRID",
+        "displacementCc": 1497,
+        "admissionYearBand": [
+          2015,
+          2019
+        ],
+        "registrations": 32423
+      },
+      {
+        "make": "SUZUKI",
+        "model": "ALTO",
+        "displacementCc": 996,
+        "admissionYearBand": [
+          2010,
+          2014
+        ],
+        "registrations": 31243
+      },
+      {
+        "make": "TOYOTA",
+        "model": "TOYOTA YARIS CROSS",
+        "displacementCc": 1490,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 30644
+      },
+      {
+        "make": "LYNK&CO",
+        "model": "LYNK & CO 01",
+        "displacementCc": 1477,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 29637
+      },
+      {
+        "make": "OPEL",
+        "model": "KARL / VIVA",
+        "displacementCc": 999,
+        "admissionYearBand": [
+          2015,
+          2019
+        ],
+        "registrations": 28961
+      },
+      {
+        "make": "KIA",
+        "model": "NIRO",
+        "displacementCc": 1580,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 27293
+      },
+      {
+        "make": "HYUNDAI",
+        "model": "I10",
+        "displacementCc": 998,
+        "admissionYearBand": [
+          2015,
+          2019
+        ],
+        "registrations": 26099
+      },
+      {
+        "make": "TESLA",
+        "model": "MODEL 3",
+        "displacementCc": null,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 24737
+      },
+      {
+        "make": "VOLKSWAGEN",
+        "model": "T-ROC",
+        "displacementCc": 1498,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 23808
+      },
+      {
+        "make": "FORD",
+        "model": "KUGA",
+        "displacementCc": 2488,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 23650
+      },
+      {
+        "make": "VOLVO",
+        "model": "XC60",
+        "displacementCc": 1969,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 22718
+      },
+      {
+        "make": "KIA",
+        "model": "NIRO",
+        "displacementCc": null,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 22674
+      },
+      {
+        "make": "TOYOTA",
+        "model": "TOYOTA AURIS",
+        "displacementCc": 1798,
+        "admissionYearBand": [
+          2010,
+          2014
+        ],
+        "registrations": 22558
+      },
+      {
+        "make": "TOYOTA",
+        "model": "TOYOTA AYGO X",
+        "displacementCc": 998,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 22348
+      },
+      {
+        "make": "FIAT",
+        "model": "FIAT PANDA",
+        "displacementCc": 1242,
+        "admissionYearBand": [
+          2010,
+          2014
+        ],
+        "registrations": 21907
+      },
+      {
+        "make": "FIAT",
+        "model": "FIAT PANDA",
+        "displacementCc": 1242,
+        "admissionYearBand": [
+          2005,
+          2009
+        ],
+        "registrations": 21619
+      },
+      {
+        "make": "TOYOTA",
+        "model": "TOYOTA COROLLA",
+        "displacementCc": 1798,
+        "admissionYearBand": [
+          2020,
+          2024
+        ],
+        "registrations": 21135
+      },
+      {
+        "make": "KIA",
+        "model": "NIRO",
+        "displacementCc": 1580,
+        "admissionYearBand": [
+          2015,
+          2019
+        ],
+        "registrations": 20959
+      },
+      {
+        "make": "CITROEN",
+        "model": "C3",
+        "displacementCc": 1199,
+        "admissionYearBand": [
+          2015,
+          2019
+        ],
+        "registrations": 20653
+      },
+      {
+        "make": "SUZUKI",
+        "model": "SWIFT",
+        "displacementCc": 1242,
+        "admissionYearBand": [
+          2010,
+          2014
+        ],
+        "registrations": 20228
+      }
+    ]
+  },
+  "limitations": [
+    "Rows in the 4,592-option selector are supplier taxonomy observations, not unique RDW registrations, VINs or approved tuning outputs.",
+    "A taxonomy source candidate matches tested make/model/fuel/nominal displacement/stock hp/generation/year; original torque, actual engine code, ECU and hardware still need verification.",
+    "The 5,000 selected RDW aggregate groups omit a joined fuel and factory-power breakdown. The group-level source presence test only checks make/model family/displacement/year and is deliberately a loose POSSIBLE source indicator, never numeric tuning availability.",
+    "Aggregated group sizes include naturally aspirated, hybrid, electric and possibly untunable variants. Do not use cohort counts as eligible tuning customers or a full-fleet Stage 1 percentage.",
+    "First admission year is not necessarily the factory model year or engine generation. Unknown/mixed fuel and short historical publication dates require manual source review.",
+    "The selected 5,000 RDW groups do not include every RDW registration; no individual registration number, VIN or owner record was read or retained."
+  ]
+}
